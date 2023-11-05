@@ -4,11 +4,11 @@
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <linux/panic_notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
+#include <freax/kernel.h>
+#include <freax/notifier.h>
+#include <freax/panic_notifier.h>
+#include <freax/reboot.h>
+#include <freax/init.h>
 
 #include <asm/hypervisor.h>
 #include <asm/spitfire.h>
@@ -36,17 +36,17 @@ static void do_set_sstate(unsigned long state, const char *msg)
 }
 
 static const char booting_msg[32] __attribute__((aligned(32))) =
-	"Linux booting";
+	"freax booting";
 static const char running_msg[32] __attribute__((aligned(32))) =
-	"Linux running";
+	"freax running";
 static const char halting_msg[32] __attribute__((aligned(32))) =
-	"Linux halting";
+	"freax halting";
 static const char poweroff_msg[32] __attribute__((aligned(32))) =
-	"Linux powering off";
+	"freax powering off";
 static const char rebooting_msg[32] __attribute__((aligned(32))) =
-	"Linux rebooting";
+	"freax rebooting";
 static const char panicking_msg[32] __attribute__((aligned(32))) =
-	"Linux panicking";
+	"freax panicking";
 
 static int sstate_reboot_call(struct notifier_block *np, unsigned long type, void *_unused)
 {

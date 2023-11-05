@@ -12,20 +12,20 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/ethtool.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/crc32.h>
-#include <linux/crc32c.h>
-#include <linux/circ_buf.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/dma-mapping.h>
+#include <freax/ethtool.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/crc32.h>
+#include <freax/crc32c.h>
+#include <freax/circ_buf.h>
 
 #include "moxart_ether.h"
 

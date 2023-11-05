@@ -6,9 +6,9 @@
 #ifndef BTRFS_LOCKING_H
 #define BTRFS_LOCKING_H
 
-#include <linux/atomic.h>
-#include <linux/wait.h>
-#include <linux/percpu_counter.h>
+#include <freax/atomic.h>
+#include <freax/wait.h>
+#include <freax/percpu_counter.h>
 #include "extent_io.h"
 
 #define BTRFS_WRITE_LOCK 1

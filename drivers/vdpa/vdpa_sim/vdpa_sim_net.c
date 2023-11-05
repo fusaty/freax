@@ -7,16 +7,16 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/etherdevice.h>
-#include <linux/vringh.h>
-#include <linux/vdpa.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/etherdevice.h>
+#include <freax/vringh.h>
+#include <freax/vdpa.h>
 #include <net/netlink.h>
-#include <uapi/linux/virtio_net.h>
-#include <uapi/linux/vdpa.h>
+#include <uapi/freax/virtio_net.h>
+#include <uapi/freax/vdpa.h>
 
 #include "vdpa_sim.h"
 

@@ -9,7 +9,7 @@
 #define _GNU_SOURCE
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/landlock.h>
+#include <freax/landlock.h>
 #include <string.h>
 #include <sys/prctl.h>
 #include <sys/socket.h>

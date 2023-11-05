@@ -20,8 +20,8 @@
  * OF THIS SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/uaccess.h>
+#include <freax/export.h>
+#include <freax/uaccess.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_drv.h>

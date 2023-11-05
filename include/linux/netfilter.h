@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_NETFILTER_H
-#define __LINUX_NETFILTER_H
+#ifndef __freax_NETFILTER_H
+#define __freax_NETFILTER_H
 
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/net.h>
-#include <linux/if.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/static_key.h>
-#include <linux/module.h>
-#include <linux/netfilter_defs.h>
-#include <linux/netdevice.h>
-#include <linux/sockptr.h>
+#include <freax/init.h>
+#include <freax/skbuff.h>
+#include <freax/net.h>
+#include <freax/if.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/wait.h>
+#include <freax/list.h>
+#include <freax/static_key.h>
+#include <freax/module.h>
+#include <freax/netfilter_defs.h>
+#include <freax/netdevice.h>
+#include <freax/sockptr.h>
 #include <net/net_namespace.h>
 
 static inline int NF_DROP_GETERR(int verdict)
@@ -446,7 +446,7 @@ nf_nat_decode_session(struct sk_buff *skb, struct flowi *fl, u_int8_t family)
 #endif /*CONFIG_NETFILTER*/
 
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
-#include <linux/netfilter/nf_conntrack_zones_common.h>
+#include <freax/netfilter/nf_conntrack_zones_common.h>
 
 void nf_ct_attach(struct sk_buff *, const struct sk_buff *);
 void nf_ct_set_closing(struct nf_conntrack *nfct);
@@ -517,4 +517,4 @@ DECLARE_PER_CPU(bool, nf_skb_duplicated);
  * Can't be pernet due to NETLINK_LISTEN_ALL_NSID setsockopt flag.
  */
 extern u8 nf_ctnetlink_has_listener;
-#endif /*__LINUX_NETFILTER_H*/
+#endif /*__freax_NETFILTER_H*/

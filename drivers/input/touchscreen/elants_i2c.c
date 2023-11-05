@@ -19,27 +19,27 @@
  */
 
 
-#include <linux/bits.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/async.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/uuid.h>
+#include <freax/bits.h>
+#include <freax/module.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/platform_device.h>
+#include <freax/async.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/uaccess.h>
+#include <freax/buffer_head.h>
+#include <freax/slab.h>
+#include <freax/firmware.h>
+#include <freax/input/mt.h>
+#include <freax/input/touchscreen.h>
+#include <freax/acpi.h>
+#include <freax/of.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regulator/consumer.h>
+#include <freax/uuid.h>
 #include <asm/unaligned.h>
 
 /* Device, Driver information */

@@ -7,18 +7,18 @@
 //
 // This driver is based on max8998.c
 
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/of_gpio.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/mfd/max8997.h>
-#include <linux/mfd/max8997-private.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/bug.h>
+#include <freax/err.h>
+#include <freax/gpio.h>
+#include <freax/of_gpio.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/mfd/max8997.h>
+#include <freax/mfd/max8997-private.h>
+#include <freax/regulator/of_regulator.h>
 
 struct max8997_data {
 	struct device *dev;

@@ -4,24 +4,24 @@
  *
  * Author: Ryan Wilson <hap9@epoch.ncsc.mil>
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/mm.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/mm.h>
 #include <xen/xenbus.h>
 #include <xen/events.h>
 #include <xen/grant_table.h>
 #include <xen/page.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
+#include <freax/spinlock.h>
+#include <freax/pci.h>
+#include <freax/msi.h>
 #include <xen/interface/io/pciif.h>
 #include <asm/xen/pci.h>
-#include <linux/interrupt.h>
-#include <linux/atomic.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/time.h>
-#include <linux/ktime.h>
+#include <freax/interrupt.h>
+#include <freax/atomic.h>
+#include <freax/workqueue.h>
+#include <freax/bitops.h>
+#include <freax/time.h>
+#include <freax/ktime.h>
 #include <xen/platform_pci.h>
 
 #include <asm/xen/swiotlb-xen.h>

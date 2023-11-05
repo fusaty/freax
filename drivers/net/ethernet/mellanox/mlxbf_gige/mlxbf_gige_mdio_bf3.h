@@ -16,7 +16,7 @@
 #ifndef __MLXBF_GIGE_MDIO_BF3_H__
 #define __MLXBF_GIGE_MDIO_BF3_H__
 
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 #define MLXBF3_GIGE_MDIO_GW_OFFSET	0x80
 #define MLXBF3_GIGE_MDIO_DATA_READ	0x8c

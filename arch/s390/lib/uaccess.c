@@ -8,9 +8,9 @@
  *		 Gerald Schaefer (gerald.schaefer@de.ibm.com)
  */
 
-#include <linux/uaccess.h>
-#include <linux/export.h>
-#include <linux/mm.h>
+#include <freax/uaccess.h>
+#include <freax/export.h>
+#include <freax/mm.h>
 #include <asm/asm-extable.h>
 #include <asm/ctlreg.h>
 

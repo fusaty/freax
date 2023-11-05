@@ -6,7 +6,7 @@
 #if !defined(_TRACE_FSI_MASTER_I2CR_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_FSI_MASTER_I2CR_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 TRACE_EVENT(i2cr_i2c_error,
 	TP_PROTO(const struct i2c_client *client, uint32_t command, int rc),

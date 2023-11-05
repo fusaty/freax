@@ -3,7 +3,7 @@
 .. _virtio:
 
 ===============
-Virtio on Linux
+Virtio on freax
 ===============
 
 Introduction
@@ -16,7 +16,7 @@ for paravirtualized devices implemented by a hypervisor, it can be used
 to interface any compliant device (real or emulated) with a driver.
 
 For illustrative purposes, this document will focus on the common case
-of a Linux kernel running in a virtual machine and using paravirtualized
+of a freax kernel running in a virtual machine and using paravirtualized
 devices provided by the hypervisor, which exposes them as virtio devices
 via standard mechanisms such as PCI.
 
@@ -37,7 +37,7 @@ devices so efficient) using specialized data structures called
 virtqueues, which are actually ring buffers [#f1]_ of buffer descriptors
 similar to the ones used in a network device:
 
-.. kernel-doc:: include/uapi/linux/virtio_ring.h
+.. kernel-doc:: include/uapi/freax/virtio_ring.h
     :identifiers: struct vring_desc
 
 All the buffers the descriptors point to are allocated by the guest and
@@ -53,7 +53,7 @@ ring buffers and management data. Embedded in this struct is the
 :c:type:`virtqueue` struct, which is the data structure that's
 ultimately used by virtio drivers:
 
-.. kernel-doc:: include/linux/virtio.h
+.. kernel-doc:: include/freax/virtio.h
     :identifiers: struct virtqueue
 
 The callback function pointed by this struct is triggered when the

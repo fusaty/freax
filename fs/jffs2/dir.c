@@ -12,14 +12,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/crc32.h>
-#include <linux/jffs2.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/crc32.h>
+#include <freax/jffs2.h>
 #include "jffs2_fs_i.h"
 #include "jffs2_fs_sb.h"
-#include <linux/time.h>
+#include <freax/time.h>
 #include "nodelist.h"
 
 static int jffs2_readdir (struct file *, struct dir_context *);

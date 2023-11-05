@@ -9,10 +9,10 @@
  * kind, whether express or implied.
  */
 
-#include <linux/init.h>
+#include <freax/init.h>
 #include <generated/utsrelease.h>
-#include <linux/pci.h>
-#include <linux/of.h>
+#include <freax/pci.h>
+#include <freax/of.h>
 #include <asm/dma.h>
 #include <asm/time.h>
 #include <asm/machdep.h>
@@ -190,7 +190,7 @@ static void __init efika_setup_arch(void)
 #endif
 
 	if (ppc_md.progress)
-		ppc_md.progress("Linux/PPC " UTS_RELEASE " running on Efika ;-)\n", 0x0);
+		ppc_md.progress("freax/PPC " UTS_RELEASE " running on Efika ;-)\n", 0x0);
 }
 
 static int __init efika_probe(void)

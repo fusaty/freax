@@ -12,13 +12,13 @@
  *
  */
 
-#include <linux/percpu.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/smp.h>
+#include <freax/percpu.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/smp.h>
 #include <asm/nmi.h>
-#include <linux/kprobes.h>
+#include <freax/kprobes.h>
 
 #include <asm/apic.h>
 #include <asm/perf_event.h>

@@ -160,7 +160,7 @@ struct hwc_caller_ctx {
 	void *output_buf;
 	u32 output_buflen;
 
-	u32 error; /* Linux error code */
+	u32 error; /* freax error code */
 	u32 status_code;
 };
 

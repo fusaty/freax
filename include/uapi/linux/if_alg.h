@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * if_alg: User-space algorithm interface
  *
@@ -11,10 +11,10 @@
  *
  */
 
-#ifndef _LINUX_IF_ALG_H
-#define _LINUX_IF_ALG_H
+#ifndef _freax_IF_ALG_H
+#define _freax_IF_ALG_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct sockaddr_alg {
 	__u16	salg_family;
@@ -25,7 +25,7 @@ struct sockaddr_alg {
 };
 
 /*
- * Linux v4.12 and later removed the 64-byte limit on salg_name[]; it's now an
+ * freax v4.12 and later removed the 64-byte limit on salg_name[]; it's now an
  * arbitrary-length field.  We had to keep the original struct above for source
  * compatibility with existing userspace programs, though.  Use the new struct
  * below if support for very long algorithm names is needed.  To do this,
@@ -58,4 +58,4 @@ struct af_alg_iv {
 #define ALG_OP_DECRYPT			0
 #define ALG_OP_ENCRYPT			1
 
-#endif	/* _LINUX_IF_ALG_H */
+#endif	/* _freax_IF_ALG_H */

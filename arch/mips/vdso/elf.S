@@ -8,11 +8,11 @@
 
 #include <asm/isa-rev.h>
 
-#include <linux/elfnote.h>
-#include <linux/version.h>
+#include <freax/elfnote.h>
+#include <freax/version.h>
 
-ELFNOTE_START(Linux, 0, "a")
-	.long LINUX_VERSION_CODE
+ELFNOTE_START(freax, 0, "a")
+	.long freax_VERSION_CODE
 ELFNOTE_END
 
 /*

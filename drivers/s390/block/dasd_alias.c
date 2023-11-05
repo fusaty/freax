@@ -8,8 +8,8 @@
 
 #define KMSG_COMPONENT "dasd-eckd"
 
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 #include <asm/ebcdic.h>
 #include "dasd_int.h"
 #include "dasd_eckd.h"

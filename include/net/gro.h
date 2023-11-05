@@ -3,11 +3,11 @@
 #ifndef _NET_IPV6_GRO_H
 #define _NET_IPV6_GRO_H
 
-#include <linux/indirect_call_wrapper.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/indirect_call_wrapper.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include <net/ip6_checksum.h>
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/udp.h>
 
 struct napi_gro_cb {

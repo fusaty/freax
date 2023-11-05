@@ -13,8 +13,8 @@
  */
 
 
-#include <linux/linkage.h>
-#include <linux/pgtable.h>
+#include <freax/linkage.h>
+#include <freax/pgtable.h>
 #include <asm/page.h>
 #include <asm/asmmacro.h>
 #include <asm/cacheasm.h>

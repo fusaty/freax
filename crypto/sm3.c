@@ -5,10 +5,10 @@
  *
  * Copyright (C) 2017 ARM Limited or its affiliates.
  * Copyright (C) 2017 Gilad Ben-Yossef <gilad@benyossef.com>
- * Copyright (C) 2021 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (C) 2021 Tianjia Zhang <tianjia.zhang@freax.alibaba.com>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <asm/unaligned.h>
 #include <crypto/sm3.h>
 

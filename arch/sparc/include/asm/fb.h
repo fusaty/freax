@@ -2,7 +2,7 @@
 #ifndef _SPARC_FB_H_
 #define _SPARC_FB_H_
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 #include <asm/page.h>
 

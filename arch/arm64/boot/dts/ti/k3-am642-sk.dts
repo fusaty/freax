@@ -230,7 +230,7 @@
 			color = <LED_COLOR_ID_AMBER>;
 			function = LED_FUNCTION_HEARTBEAT;
 			function-enumerator = <8>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			gpios = <&exp2 7 GPIO_ACTIVE_HIGH>;
 		};
 	};

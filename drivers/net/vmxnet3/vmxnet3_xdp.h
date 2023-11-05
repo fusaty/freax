@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later
  *
- * Linux driver for VMware's vmxnet3 ethernet NIC.
+ * freax driver for VMware's vmxnet3 ethernet NIC.
  * Copyright (C) 2008-2023, VMware, Inc. All Rights Reserved.
  * Maintained by: pv-drivers@vmware.com
  *
@@ -9,9 +9,9 @@
 #ifndef _VMXNET3_XDP_H
 #define _VMXNET3_XDP_H
 
-#include <linux/filter.h>
-#include <linux/bpf_trace.h>
-#include <linux/netlink.h>
+#include <freax/filter.h>
+#include <freax/bpf_trace.h>
+#include <freax/netlink.h>
 
 #include "vmxnet3_int.h"
 

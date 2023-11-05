@@ -2,7 +2,7 @@
 #ifndef __ASM_MEMORY_MODEL_H
 #define __ASM_MEMORY_MODEL_H
 
-#include <linux/pfn.h>
+#include <freax/pfn.h>
 
 #ifndef __ASSEMBLY__
 
@@ -22,7 +22,7 @@
 #ifndef pfn_valid
 static inline int pfn_valid(unsigned long pfn)
 {
-	/* avoid <linux/mm.h> include hell */
+	/* avoid <freax/mm.h> include hell */
 	extern unsigned long max_mapnr;
 	unsigned long pfn_offset = ARCH_PFN_OFFSET;
 

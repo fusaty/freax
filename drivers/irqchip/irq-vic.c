@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/arch/arm/common/vic.c
+ *  freax/arch/arm/common/vic.c
  *
  *  Copyright (C) 1999 - 2003 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/syscore_ops.h>
-#include <linux/device.h>
-#include <linux/amba/bus.h>
-#include <linux/irqchip/arm-vic.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/syscore_ops.h>
+#include <freax/device.h>
+#include <freax/amba/bus.h>
+#include <freax/irqchip/arm-vic.h>
 
 #include <asm/exception.h>
 #include <asm/irq.h>

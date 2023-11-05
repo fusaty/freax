@@ -8,23 +8,23 @@
 // This is based on a driver originally written by Andy Liu at TI and
 // posted here:
 //
-//    https://e2e.ti.com/support/audio-group/audio/f/audio-forum/722027/linux-tas5825m-linux-drivers
+//    https://e2e.ti.com/support/audio-group/audio/f/audio-forum/722027/freax-tas5825m-freax-drivers
 //
 // It has been simplified a little and reworked for the 5.x ALSA SoC API.
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/atomic.h>
-#include <linux/workqueue.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/firmware.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regulator/consumer.h>
+#include <freax/atomic.h>
+#include <freax/workqueue.h>
 
 #include <sound/soc.h>
 #include <sound/pcm.h>

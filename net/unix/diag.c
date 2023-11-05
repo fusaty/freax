@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/sock_diag.h>
-#include <linux/unix_diag.h>
-#include <linux/skbuff.h>
-#include <linux/module.h>
-#include <linux/uidgid.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/sock_diag.h>
+#include <freax/unix_diag.h>
+#include <freax/skbuff.h>
+#include <freax/module.h>
+#include <freax/uidgid.h>
 #include <net/netlink.h>
 #include <net/af_unix.h>
 #include <net/tcp_states.h>

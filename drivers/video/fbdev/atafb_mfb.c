@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/mfb.c -- Low level frame buffer operations for
+ *  freax/drivers/video/mfb.c -- Low level frame buffer operations for
  *				 monochrome
  *
  *	Created 5 Apr 1997 by Geert Uytterhoeven
@@ -9,8 +9,8 @@
  *  more details.
  */
 
-#include <linux/string.h>
-#include <linux/fb.h>
+#include <freax/string.h>
+#include <freax/fb.h>
 
 #include "atafb.h"
 #include "atafb_utils.h"

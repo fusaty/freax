@@ -7,16 +7,16 @@
  * Copyright (c) 2004 Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/sort.h>
-#include <linux/delay.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/leds.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/sort.h>
+#include <freax/delay.h>
+#include <freax/ctype.h>
+#include <freax/string.h>
+#include <freax/bitops.h>
+#include <freax/module.h>
+#include <freax/leds.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/tlv.h>

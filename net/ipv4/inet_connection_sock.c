@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -9,8 +9,8 @@
  * Authors:	See the TCP sources
  */
 
-#include <linux/module.h>
-#include <linux/jhash.h>
+#include <freax/module.h>
+#include <freax/jhash.h>
 
 #include <net/inet_connection_sock.h>
 #include <net/inet_hashtables.h>
@@ -893,7 +893,7 @@ static struct request_sock *inet_reqsk_clone(struct request_sock *req,
 
 	nreq = kmem_cache_alloc(req->rsk_ops->slab, GFP_ATOMIC | __GFP_NOWARN);
 	if (!nreq) {
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPMIGRATEREQFAILURE);
+		__NET_INC_STATS(sock_net(sk), freax_MIB_TCPMIGRATEREQFAILURE);
 
 		/* paired with refcount_inc_not_zero() in reuseport_migrate_sock() */
 		sock_put(sk);
@@ -1070,7 +1070,7 @@ static void reqsk_timer_handler(struct timer_list *t)
 			goto no_ownership;
 		}
 
-		__NET_INC_STATS(net, LINUX_MIB_TCPMIGRATEREQSUCCESS);
+		__NET_INC_STATS(net, freax_MIB_TCPMIGRATEREQSUCCESS);
 		reqsk_migrate_reset(oreq);
 		reqsk_queue_removed(&inet_csk(oreq->rsk_listener)->icsk_accept_queue, oreq);
 		reqsk_put(oreq);
@@ -1084,7 +1084,7 @@ static void reqsk_timer_handler(struct timer_list *t)
 	 * CPU may win the "own_req" race so that inet_ehash_insert() fails.
 	 */
 	if (nreq) {
-		__NET_INC_STATS(net, LINUX_MIB_TCPMIGRATEREQFAILURE);
+		__NET_INC_STATS(net, freax_MIB_TCPMIGRATEREQFAILURE);
 no_ownership:
 		reqsk_migrate_reset(nreq);
 		reqsk_queue_removed(queue, nreq);
@@ -1342,13 +1342,13 @@ struct sock *inet_csk_complete_hashdance(struct sock *sk, struct sock *child,
 
 			refcount_set(&nreq->rsk_refcnt, 1);
 			if (inet_csk_reqsk_queue_add(sk, nreq, child)) {
-				__NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPMIGRATEREQSUCCESS);
+				__NET_INC_STATS(sock_net(sk), freax_MIB_TCPMIGRATEREQSUCCESS);
 				reqsk_migrate_reset(req);
 				reqsk_put(req);
 				return child;
 			}
 
-			__NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPMIGRATEREQFAILURE);
+			__NET_INC_STATS(sock_net(sk), freax_MIB_TCPMIGRATEREQFAILURE);
 			reqsk_migrate_reset(nreq);
 			__reqsk_free(nreq);
 		} else if (inet_csk_reqsk_queue_add(sk, req, child)) {
@@ -1398,11 +1398,11 @@ void inet_csk_listen_stop(struct sock *sk)
 
 				if (inet_csk_reqsk_queue_add(nsk, nreq, child)) {
 					__NET_INC_STATS(sock_net(nsk),
-							LINUX_MIB_TCPMIGRATEREQSUCCESS);
+							freax_MIB_TCPMIGRATEREQSUCCESS);
 					reqsk_migrate_reset(req);
 				} else {
 					__NET_INC_STATS(sock_net(nsk),
-							LINUX_MIB_TCPMIGRATEREQFAILURE);
+							freax_MIB_TCPMIGRATEREQFAILURE);
 					reqsk_migrate_reset(nreq);
 					__reqsk_free(nreq);
 				}

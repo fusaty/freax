@@ -3,13 +3,13 @@
  * Copyright (C) 1999, 2000 Ralf Baechle (ralf@gnu.org)
  * Copyright (C) 1999, 2000 Silicon Graphics, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kernel_stat.h>
-#include <linux/param.h>
-#include <linux/timex.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/kernel_stat.h>
+#include <freax/param.h>
+#include <freax/timex.h>
+#include <freax/mm.h>
 
 #include <asm/sn/klconfig.h>
 #include <asm/sn/arch.h>

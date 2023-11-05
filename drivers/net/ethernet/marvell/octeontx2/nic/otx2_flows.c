@@ -6,7 +6,7 @@
  */
 
 #include <net/ipv6.h>
-#include <linux/sort.h>
+#include <freax/sort.h>
 
 #include "otx2_common.h"
 

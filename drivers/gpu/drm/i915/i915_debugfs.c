@@ -26,9 +26,9 @@
  *
  */
 
-#include <linux/sched/mm.h>
-#include <linux/sort.h>
-#include <linux/string_helpers.h>
+#include <freax/sched/mm.h>
+#include <freax/sort.h>
+#include <freax/string_helpers.h>
 
 #include <drm/drm_debugfs.h>
 

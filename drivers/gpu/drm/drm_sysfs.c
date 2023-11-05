@@ -10,16 +10,16 @@
  * Copyright (c) 2003-2004 IBM Corp.
  */
 
-#include <linux/acpi.h>
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/gfp.h>
-#include <linux/i2c.h>
-#include <linux/kdev_t.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/component.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/gfp.h>
+#include <freax/i2c.h>
+#include <freax/kdev_t.h>
+#include <freax/property.h>
+#include <freax/slab.h>
 
 #include <drm/drm_accel.h>
 #include <drm/drm_connector.h>

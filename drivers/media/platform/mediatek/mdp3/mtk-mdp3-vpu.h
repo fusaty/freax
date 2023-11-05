@@ -7,7 +7,7 @@
 #ifndef __MTK_MDP3_VPU_H__
 #define __MTK_MDP3_VPU_H__
 
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 #include "mtk-img-ipi.h"
 
 enum mdp_ipi_result {

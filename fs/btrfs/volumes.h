@@ -6,8 +6,8 @@
 #ifndef BTRFS_VOLUMES_H
 #define BTRFS_VOLUMES_H
 
-#include <linux/sort.h>
-#include <linux/btrfs.h>
+#include <freax/sort.h>
+#include <freax/btrfs.h>
 #include "async-thread.h"
 #include "messages.h"
 #include "tree-checker.h"
@@ -62,7 +62,7 @@ enum btrfs_raid_types {
  * 32-bit processors.
  */
 #if BITS_PER_LONG==32 && defined(CONFIG_SMP)
-#include <linux/seqlock.h>
+#include <freax/seqlock.h>
 #define __BTRFS_NEED_DEVICE_DATA_ORDERED
 #define btrfs_device_data_ordered_init(device)	\
 	seqcount_init(&device->data_seqcount)

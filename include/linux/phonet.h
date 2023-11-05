@@ -6,10 +6,10 @@
  *
  * Copyright (C) 2008 Nokia Corporation. All rights reserved.
  */
-#ifndef LINUX_PHONET_H
-#define LINUX_PHONET_H
+#ifndef freax_PHONET_H
+#define freax_PHONET_H
 
-#include <uapi/linux/phonet.h>
+#include <uapi/freax/phonet.h>
 
 #define SIOCPNGAUTOCONF		(SIOCDEVPRIVATE + 0)
 

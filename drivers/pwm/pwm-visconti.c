@@ -18,12 +18,12 @@
  *   the output at low level at all times.
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
 
 #define PIPGM_PCSR(ch) (0x400 + 4 * (ch))
 #define PIPGM_PDUT(ch) (0x420 + 4 * (ch))

@@ -4,21 +4,21 @@
  *
  * Copyright (C) 2020 Nuvoton Technologies tali.perry@nuvoton.com
  */
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/irq.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/irq.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 enum i2c_mode {
 	I2C_MASTER,

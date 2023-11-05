@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: freax filesystem encryption layer
  *
  * Copyright (C) 1997-2003 Erez Zadok
  * Copyright (C) 2001-2003 Stony Brook University
@@ -9,14 +9,14 @@
  *              Michael C. Thompson <mcthomps@us.ibm.com>
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/key.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/file.h>
-#include <linux/statfs.h>
-#include <linux/magic.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
+#include <freax/key.h>
+#include <freax/slab.h>
+#include <freax/seq_file.h>
+#include <freax/file.h>
+#include <freax/statfs.h>
+#include <freax/magic.h>
 #include "ecryptfs_kernel.h"
 
 struct kmem_cache *ecryptfs_inode_info_cache;

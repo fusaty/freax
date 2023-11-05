@@ -15,7 +15,7 @@
  * hex while segment addresses are written as segment:offset.
  *
  */
-#include <linux/pe.h>
+#include <freax/pe.h>
 #include <asm/segment.h>
 #include <asm/boot.h>
 #include <asm/page_types.h>
@@ -48,7 +48,7 @@ SYSSEG		= 0x1000		/* historical load address >> 4 */
 	#
 	# Offset to the PE header.
 	#
-	.long	LINUX_PE_MAGIC
+	.long	freax_PE_MAGIC
 	.long	pe_header
 pe_header:
 	.long	PE_MAGIC
@@ -100,8 +100,8 @@ extra_header_fields:
 	.long	falign				# FileAlignment
 	.word	0				# MajorOperatingSystemVersion
 	.word	0				# MinorOperatingSystemVersion
-	.word	LINUX_EFISTUB_MAJOR_VERSION	# MajorImageVersion
-	.word	LINUX_EFISTUB_MINOR_VERSION	# MinorImageVersion
+	.word	freax_EFISTUB_MAJOR_VERSION	# MajorImageVersion
+	.word	freax_EFISTUB_MINOR_VERSION	# MinorImageVersion
 	.word	0				# MajorSubsystemVersion
 	.word	0				# MinorSubsystemVersion
 	.long	0				# Win32VersionValue

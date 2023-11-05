@@ -3,12 +3,12 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/cache.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/cache.h>
 
 static inline bool arc_uncached_addr_space(phys_addr_t paddr)
 {

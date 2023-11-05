@@ -8,13 +8,13 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/videodev2.h>
+#include <freax/clk.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/videodev2.h>
 
 #include <media/v4l2-fwnode.h>
 #include <media/v4l2-subdev.h>

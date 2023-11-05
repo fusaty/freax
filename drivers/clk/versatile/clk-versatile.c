@@ -4,10 +4,10 @@
  * Versatile PB boards.
  * Copyright (C) 2012 Linus Walleij
  */
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 #include "icst.h"
 #include "clk-icst.h"

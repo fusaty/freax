@@ -8,27 +8,27 @@
  *  Copyright (C) 2012 Bertrand Achard (nvram access fixes)
  */
 
-#include <linux/bcd.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kstrtox.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/rtc/ds1307.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/watchdog.h>
+#include <freax/bcd.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kstrtox.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/rtc/ds1307.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/clk-provider.h>
+#include <freax/regmap.h>
+#include <freax/watchdog.h>
 
 /*
- * We can't determine type by probing, but if we expect pre-Linux code
+ * We can't determine type by probing, but if we expect pre-freax code
  * to have set the chip up as a clock (turning on the oscillator and
- * setting the date and time), Linux can ignore the non-clock features.
+ * setting the date and time), freax can ignore the non-clock features.
  * That's a natural job for a factory or repair bench.
  */
 enum ds_type {

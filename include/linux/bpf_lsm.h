@@ -4,18 +4,18 @@
  * Copyright (C) 2020 Google LLC.
  */
 
-#ifndef _LINUX_BPF_LSM_H
-#define _LINUX_BPF_LSM_H
+#ifndef _freax_BPF_LSM_H
+#define _freax_BPF_LSM_H
 
-#include <linux/sched.h>
-#include <linux/bpf.h>
-#include <linux/lsm_hooks.h>
+#include <freax/sched.h>
+#include <freax/bpf.h>
+#include <freax/lsm_hooks.h>
 
 #ifdef CONFIG_BPF_LSM
 
 #define LSM_HOOK(RET, DEFAULT, NAME, ...) \
 	RET bpf_lsm_##NAME(__VA_ARGS__);
-#include <linux/lsm_hook_defs.h>
+#include <freax/lsm_hook_defs.h>
 #undef LSM_HOOK
 
 struct bpf_storage_blob {
@@ -80,4 +80,4 @@ static inline void bpf_lsm_find_cgroup_shim(const struct bpf_prog *prog,
 
 #endif /* CONFIG_BPF_LSM */
 
-#endif /* _LINUX_BPF_LSM_H */
+#endif /* _freax_BPF_LSM_H */

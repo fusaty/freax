@@ -7,16 +7,16 @@
  * Driver layout based loosely on tgafb.c, see that file for credits.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/fb.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/fb.h>
+#include <freax/mm.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/fbio.h>

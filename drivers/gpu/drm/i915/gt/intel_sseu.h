@@ -6,8 +6,8 @@
 #ifndef __INTEL_SSEU_H__
 #define __INTEL_SSEU_H__
 
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
 
 #include "i915_gem.h"
 
@@ -59,7 +59,7 @@ struct drm_printer;
 typedef union {
 	u8 hsw[GEN_MAX_HSW_SLICES];
 
-	/* Bitmap compatible with linux/bitmap.h; may exceed size of u64 */
+	/* Bitmap compatible with freax/bitmap.h; may exceed size of u64 */
 	unsigned long xehp[BITS_TO_LONGS(I915_MAX_SS_FUSE_BITS)];
 } intel_sseu_ss_mask_t;
 

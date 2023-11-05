@@ -8,8 +8,8 @@
  * Author: Max Asböck <amax@us.ibm.com>
  */
 
-#include <linux/notifier.h>
-#include <linux/panic_notifier.h>
+#include <freax/notifier.h>
+#include <freax/panic_notifier.h>
 #include "ibmasm.h"
 #include "dot_command.h"
 #include "lowlevel.h"

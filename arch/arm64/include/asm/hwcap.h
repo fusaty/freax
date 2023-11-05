@@ -47,7 +47,7 @@
 #define COMPAT_HWCAP2_SSBS	(1 << 6)
 
 #ifndef __ASSEMBLY__
-#include <linux/log2.h>
+#include <freax/log2.h>
 
 /*
  * For userspace we represent hwcaps as a collection of HWCAP{,2}_x bitfields

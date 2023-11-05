@@ -7,14 +7,14 @@
 
 #undef DEBUG
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/atomic.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/mod_devicetable.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/atomic.h>
 
 #include <asm/errno.h>
 #include <asm/topology.h>

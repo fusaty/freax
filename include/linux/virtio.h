@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_VIRTIO_H
-#define _LINUX_VIRTIO_H
+#ifndef _freax_VIRTIO_H
+#define _freax_VIRTIO_H
 /* Everything a virtio driver needs to work with any particular virtio
  * implementation. */
-#include <linux/types.h>
-#include <linux/scatterlist.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
-#include <linux/gfp.h>
-#include <linux/dma-mapping.h>
+#include <freax/types.h>
+#include <freax/scatterlist.h>
+#include <freax/spinlock.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/gfp.h>
+#include <freax/dma-mapping.h>
 
 /**
  * struct virtqueue - a queue to register buffers for sending or receiving.
@@ -226,4 +226,4 @@ void virtqueue_dma_sync_single_range_for_cpu(struct virtqueue *_vq, dma_addr_t a
 void virtqueue_dma_sync_single_range_for_device(struct virtqueue *_vq, dma_addr_t addr,
 						unsigned long offset, size_t size,
 						enum dma_data_direction dir);
-#endif /* _LINUX_VIRTIO_H */
+#endif /* _freax_VIRTIO_H */

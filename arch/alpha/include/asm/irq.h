@@ -3,12 +3,12 @@
 #define _ALPHA_IRQ_H
 
 /*
- *	linux/include/alpha/irq.h
+ *	freax/include/alpha/irq.h
  *
  *	(C) 1994 Linus Torvalds
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 #if   defined(CONFIG_ALPHA_GENERIC)
 

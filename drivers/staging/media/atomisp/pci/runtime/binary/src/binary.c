@@ -13,7 +13,7 @@
  * more details.
  */
 
-#include <linux/math.h>
+#include <freax/math.h>
 
 #include <math_support.h>
 #include <gdc_device.h>	/* HR_GDC_N */

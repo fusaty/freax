@@ -8,14 +8,14 @@
  * Here we can supply some information useful to userland.
  */
 
-#include <linux/uts.h>
-#include <linux/version.h>
-#include <linux/elfnote.h>
-#include <linux/build-salt.h>
+#include <freax/uts.h>
+#include <freax/version.h>
+#include <freax/elfnote.h>
+#include <freax/build-salt.h>
 #include <asm/assembler.h>
 
-ELFNOTE_START(Linux, 0, "a")
-	.long LINUX_VERSION_CODE
+ELFNOTE_START(freax, 0, "a")
+	.long freax_VERSION_CODE
 ELFNOTE_END
 
 BUILD_SALT

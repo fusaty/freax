@@ -1,5 +1,5 @@
 /*
- *  linux/include/linux/console.h
+ *  freax/include/freax/console.h
  *
  *  Copyright (C) 1993        Hamish Macdonald
  *
@@ -8,16 +8,16 @@
  * for more details.
  *
  * Changed:
- * 10-Mar-94: Arno Griffioen: Conversion for vt100 emulator port from PC LINUX
+ * 10-Mar-94: Arno Griffioen: Conversion for vt100 emulator port from PC freax
  */
 
-#ifndef _LINUX_CONSOLE_H_
-#define _LINUX_CONSOLE_H_ 1
+#ifndef _freax_CONSOLE_H_
+#define _freax_CONSOLE_H_ 1
 
-#include <linux/atomic.h>
-#include <linux/bits.h>
-#include <linux/rculist.h>
-#include <linux/types.h>
+#include <freax/atomic.h>
+#include <freax/bits.h>
+#include <freax/rculist.h>
+#include <freax/types.h>
 
 struct vc_data;
 struct console_font_op;
@@ -532,4 +532,4 @@ extern void console_init(void);
 void dummycon_register_output_notifier(struct notifier_block *nb);
 void dummycon_unregister_output_notifier(struct notifier_block *nb);
 
-#endif /* _LINUX_CONSOLE_H */
+#endif /* _freax_CONSOLE_H */

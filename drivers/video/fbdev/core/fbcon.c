@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/fbcon.c -- Low level frame buffer based console driver
+ *  freax/drivers/video/fbcon.c -- Low level frame buffer based console driver
  *
  *	Copyright (C) 1995 Geert Uytterhoeven
  *
@@ -27,7 +27,7 @@
  *  Hardware cursor support added by Emmanuel Marty (core@ggi-project.org)
  *  Smart redraw scrolling, arbitrary font width support, 512char font support
  *  and software scrollback added by
- *                         Jakub Jelinek (jj@ultra.linux.cz)
+ *                         Jakub Jelinek (jj@ultra.freax.cz)
  *
  *  Random hacking by Martin Mares <mj@ucw.cz>
  *
@@ -56,25 +56,25 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>	/* MSch: for IRQ probe */
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/kd.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/fbcon.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
-#include <linux/font.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/crc32.h> /* For counting font checksums */
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>	/* MSch: for IRQ probe */
+#include <freax/console.h>
+#include <freax/string.h>
+#include <freax/kd.h>
+#include <freax/slab.h>
+#include <freax/fb.h>
+#include <freax/fbcon.h>
+#include <freax/vt_kern.h>
+#include <freax/selection.h>
+#include <freax/font.h>
+#include <freax/smp.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/crc32.h> /* For counting font checksums */
+#include <freax/uaccess.h>
 #include <asm/irq.h>
 
 #include "fbcon.h"
@@ -2514,7 +2514,7 @@ static int fbcon_set_font(struct vc_data *vc, struct console_font *font,
 		memcpy(new_data + i*h*pitch, data +  i*vpitch*pitch, h*pitch);
 	}
 
-	/* Since linux has a nice crc32 function use it for counting font
+	/* Since freax has a nice crc32 function use it for counting font
 	 * checksums. */
 	csum = crc32(0, new_data, size);
 

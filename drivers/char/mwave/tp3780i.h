@@ -46,8 +46,8 @@
 *	First release to the public
 */
 
-#ifndef _LINUX_TP3780I_H
-#define _LINUX_TP3780I_H
+#ifndef _freax_TP3780I_H
+#define _freax_TP3780I_H
 
 #include <asm/io.h>
 #include "mwavepub.h"

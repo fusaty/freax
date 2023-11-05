@@ -21,10 +21,10 @@
  *          15 May 2002
  */
 
-#ifndef LINUX_MMC_MMC_H
-#define LINUX_MMC_MMC_H
+#ifndef freax_MMC_MMC_H
+#define freax_MMC_MMC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Standard MMC commands (4.1)           type  argument     response */
    /* class 1 */
@@ -455,4 +455,4 @@ static inline bool mmc_ready_for_data(u32 status)
 
 #define mmc_driver_type_mask(n)		(1 << (n))
 
-#endif /* LINUX_MMC_MMC_H */
+#endif /* freax_MMC_MMC_H */

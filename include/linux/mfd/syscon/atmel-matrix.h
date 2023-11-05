@@ -5,8 +5,8 @@
  * Memory Controllers (MATRIX, EBI) - System peripherals registers.
  */
 
-#ifndef _LINUX_MFD_SYSCON_ATMEL_MATRIX_H
-#define _LINUX_MFD_SYSCON_ATMEL_MATRIX_H
+#ifndef _freax_MFD_SYSCON_ATMEL_MATRIX_H
+#define _freax_MFD_SYSCON_ATMEL_MATRIX_H
 
 #define AT91SAM9260_MATRIX_MCFG			0x00
 #define AT91SAM9260_MATRIX_SCFG			0x40
@@ -109,4 +109,4 @@
 
 #define AT91_MATRIX_USBPUCR_PUON		BIT(30)
 
-#endif /* _LINUX_MFD_SYSCON_ATMEL_MATRIX_H */
+#endif /* _freax_MFD_SYSCON_ATMEL_MATRIX_H */

@@ -6,18 +6,18 @@
  * Rajeev Kumar<rajeev-dlh.kumar@st.com>
  */
 
-#include <linux/bcd.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/bcd.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 /* RTC registers */
 #define TIME_REG		0x00

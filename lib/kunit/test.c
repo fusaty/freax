@@ -10,12 +10,12 @@
 #include <kunit/test.h>
 #include <kunit/test-bug.h>
 #include <kunit/attributes.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/panic.h>
-#include <linux/sched/debug.h>
-#include <linux/sched.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/panic.h>
+#include <freax/sched/debug.h>
+#include <freax/sched.h>
 
 #include "debugfs.h"
 #include "hooks-impl.h"

@@ -24,14 +24,14 @@
  * out how the hardware works.  It contains a lot magic numbers because of
  * that and only has minimal functionality.
  */
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/completion.h>
-#include <linux/firmware.h>
-#include <linux/skbuff.h>
-#include <linux/usb.h>
+#include <freax/compiler.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/completion.h>
+#include <freax/firmware.h>
+#include <freax/skbuff.h>
+#include <freax/usb.h>
 #include <net/mac80211.h>
 
 #include "ar5523.h"

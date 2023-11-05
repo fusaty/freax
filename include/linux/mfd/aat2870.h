@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/include/linux/mfd/aat2870.h
+ * freax/include/freax/mfd/aat2870.h
  *
  * Copyright (c) 2011, NVIDIA Corporation.
  * Author: Jin Park <jinyoungp@nvidia.com>
  */
 
-#ifndef __LINUX_MFD_AAT2870_H
-#define __LINUX_MFD_AAT2870_H
+#ifndef __freax_MFD_AAT2870_H
+#define __freax_MFD_AAT2870_H
 
-#include <linux/debugfs.h>
-#include <linux/i2c.h>
+#include <freax/debugfs.h>
+#include <freax/i2c.h>
 
 /* Register offsets */
 #define AAT2870_BL_CH_EN	0x00
@@ -164,4 +164,4 @@ struct aat2870_bl_platform_data {
 	int max_brightness;
 };
 
-#endif /* __LINUX_MFD_AAT2870_H */
+#endif /* __freax_MFD_AAT2870_H */

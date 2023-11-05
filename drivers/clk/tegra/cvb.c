@@ -4,9 +4,9 @@
  *
  * Copyright (C) 2012-2019 NVIDIA Corporation.  All rights reserved.
  */
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/pm_opp.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/pm_opp.h>
 
 #include "cvb.h"
 

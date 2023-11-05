@@ -1,4 +1,4 @@
-/* 3c509.c: A 3c509 EtherLink3 ethernet driver for linux. */
+/* 3c509.c: A 3c509 EtherLink3 ethernet driver for freax. */
 /*
 	Written 1993-2000 by Donald Becker.
 
@@ -49,13 +49,13 @@
 			- Power Management support
 		v1.18c 1Mar2002 David Ruggiero <jdr@farfalle.com>
 			- Full duplex support
-		v1.19  16Oct2002 Zwane Mwaikambo <zwane@linuxpower.ca>
+		v1.19  16Oct2002 Zwane Mwaikambo <zwane@freaxpower.ca>
 			- Additional ethtool features
 		v1.19a 28Oct2002 Davud Ruggiero <jdr@farfalle.com>
 			- Increase *read_eeprom udelay to workaround oops with 2 cards.
 		v1.19b 08Nov2002 Marc Zyngier <maz@wild-wind.fr.eu.org>
 			- Introduce driver model for EISA cards.
-		v1.20  04Feb2008 Ondrej Zary <linux@rainbow-software.org>
+		v1.20  04Feb2008 Ondrej Zary <freax@rainbow-software.org>
 			- convert to isa_driver and pnp_driver and some cleanups
 */
 
@@ -66,27 +66,27 @@
 /* Time in jiffies before concluding the transmitter is hung. */
 #define TX_TIMEOUT  (400*HZ/1000)
 
-#include <linux/module.h>
-#include <linux/isa.h>
-#include <linux/pnp.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/pm.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>	/* for udelay() */
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/device.h>
-#include <linux/eisa.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/isa.h>
+#include <freax/pnp.h>
+#include <freax/string.h>
+#include <freax/interrupt.h>
+#include <freax/errno.h>
+#include <freax/in.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/pm.h>
+#include <freax/skbuff.h>
+#include <freax/delay.h>	/* for udelay() */
+#include <freax/spinlock.h>
+#include <freax/ethtool.h>
+#include <freax/device.h>
+#include <freax/eisa.h>
+#include <freax/bitops.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 

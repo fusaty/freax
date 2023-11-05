@@ -3,16 +3,16 @@
  * Copyright 2007-2008 Paul Mackerras, IBM Corp.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/pagewalk.h>
-#include <linux/hugetlb.h>
-#include <linux/syscalls.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/gfp.h>
+#include <freax/types.h>
+#include <freax/pagewalk.h>
+#include <freax/hugetlb.h>
+#include <freax/syscalls.h>
 
-#include <linux/pgtable.h>
-#include <linux/uaccess.h>
+#include <freax/pgtable.h>
+#include <freax/uaccess.h>
 
 /*
  * Free all pages allocated for subpage protection maps and pointers.

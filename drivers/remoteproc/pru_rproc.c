@@ -12,16 +12,16 @@
  *	Md Danish Anwar <danishanwar@ti.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc/pruss.h>
-#include <linux/pruss_driver.h>
-#include <linux/remoteproc.h>
+#include <freax/bitops.h>
+#include <freax/debugfs.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/remoteproc/pruss.h>
+#include <freax/pruss_driver.h>
+#include <freax/remoteproc.h>
 
 #include "remoteproc_internal.h"
 #include "remoteproc_elf_helpers.h"

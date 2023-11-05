@@ -23,7 +23,7 @@
  * contributors:
  * 	Daris A Nevil <dnevil@snmc.com>
  *      Nicolas Pitre <nico@fluxnic.net>
- *	Russell King <rmk@arm.linux.org.uk>
+ *	Russell King <rmk@arm.freax.org.uk>
  *
  * History:
  *   08/20/00  Arnaldo Melo       fix kfree(skb) in smc_hardware_send_packet
@@ -53,27 +53,27 @@ static const char version[] =
 #endif
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/crc32.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/workqueue.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/crc32.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/workqueue.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
 
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
 
 #include <asm/io.h>
 

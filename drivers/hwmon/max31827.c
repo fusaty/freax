@@ -5,13 +5,13 @@
  * Copyright (c) 2023 Daniel Matyas <daniel.matyas@analog.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/hwmon.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/hwmon.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/regmap.h>
 
 #define MAX31827_T_REG			0x0
 #define MAX31827_CONFIGURATION_REG	0x2

@@ -2,7 +2,7 @@
 
 /* Copyright (C) 2022 Linaro Ltd. */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "../ipa.h"
 #include "../ipa_reg.h"

@@ -2,7 +2,7 @@
 //
 // Apple SoCs MCA driver
 //
-// Copyright (C) The Asahi Linux Contributors
+// Copyright (C) The Asahi freax Contributors
 //
 // The MCA peripheral is made up of a number of identical units called clusters.
 // Each cluster has its separate clock parent, SYNC signal generator, carries
@@ -20,20 +20,20 @@
 // frontends and backends is determined by the machine driver in the DAPM paths
 // it supplies.
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/of_dma.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_clk.h>
+#include <freax/of_dma.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

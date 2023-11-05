@@ -5,13 +5,13 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_ASN1_BER_BYTECODE_H
-#define _LINUX_ASN1_BER_BYTECODE_H
+#ifndef _freax_ASN1_BER_BYTECODE_H
+#define _freax_ASN1_BER_BYTECODE_H
 
 #ifdef __KERNEL__
-#include <linux/types.h>
+#include <freax/types.h>
 #endif
-#include <linux/asn1.h>
+#include <freax/asn1.h>
 
 typedef int (*asn1_action_t)(void *context,
 			     size_t hdrlen, /* In case of ANY type */
@@ -86,4 +86,4 @@ enum asn1_opcode {
 #define _jump_target(N) (N)
 #define _action(N) (N)
 
-#endif /* _LINUX_ASN1_BER_BYTECODE_H */
+#endif /* _freax_ASN1_BER_BYTECODE_H */

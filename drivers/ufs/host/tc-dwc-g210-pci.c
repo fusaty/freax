@@ -11,9 +11,9 @@
 #include "ufshcd-dwc.h"
 #include "tc-dwc-g210.h"
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
 
 /* Test Chip type expected values */
 #define TC_G210_20BIT 20

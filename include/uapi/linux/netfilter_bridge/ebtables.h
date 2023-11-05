@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  *  ebtables
  *
@@ -11,11 +11,11 @@
  *  Copyright (C) 1999 Paul `Rusty' Russell & Michael J. Neuling
  */
 
-#ifndef _UAPI__LINUX_BRIDGE_EFF_H
-#define _UAPI__LINUX_BRIDGE_EFF_H
-#include <linux/types.h>
-#include <linux/if.h>
-#include <linux/netfilter_bridge.h>
+#ifndef _UAPI__freax_BRIDGE_EFF_H
+#define _UAPI__freax_BRIDGE_EFF_H
+#include <freax/types.h>
+#include <freax/if.h>
+#include <freax/netfilter_bridge.h>
 
 #define EBT_TABLE_MAXNAMELEN 32
 #define EBT_CHAIN_MAXNAMELEN EBT_TABLE_MAXNAMELEN
@@ -284,4 +284,4 @@ ebt_get_target(struct ebt_entry *e)
 	__ret;                                              \
 })
 
-#endif /* _UAPI__LINUX_BRIDGE_EFF_H */
+#endif /* _UAPI__freax_BRIDGE_EFF_H */

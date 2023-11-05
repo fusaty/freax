@@ -1,14 +1,14 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/process/management-style.rst <managementstyle>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
+:Translator: Alex Shi <alex.shi@freax.alibaba.com>
 
 .. _cn_managementstyle:
 
-Linux内核管理风格
+freax内核管理风格
 =================
 
-这是一个简短的文档，描述了Linux内核首选的（或胡编的，取决于您问谁）管理风格。
+这是一个简短的文档，描述了freax内核首选的（或胡编的，取决于您问谁）管理风格。
 它的目的是在某种程度上参照 :ref:`process/coding-style.rst <codingstyle>`
 主要是为了避免反复回答 [#cnf1]_ 相同（或类似）的问题。
 

@@ -1,25 +1,25 @@
 /* SPDX-License-Identifier: GPL-2.0
  *
- * linux/sound/soc.h -- ALSA SoC Layer
+ * freax/sound/soc.h -- ALSA SoC Layer
  *
  * Author:	Liam Girdwood
  * Created:	Aug 11th 2005
  * Copyright:	Wolfson Microelectronics. PLC.
  */
 
-#ifndef __LINUX_SND_SOC_H
-#define __LINUX_SND_SOC_H
+#ifndef __freax_SND_SOC_H
+#define __freax_SND_SOC_H
 
-#include <linux/args.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
-#include <linux/notifier.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/regmap.h>
-#include <linux/log2.h>
+#include <freax/args.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
+#include <freax/notifier.h>
+#include <freax/workqueue.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/regmap.h>
+#include <freax/log2.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/compress_driver.h>

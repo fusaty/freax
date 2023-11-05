@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: MIT */
-/* based on linux-kernel/tools/testing/selftests/net/msg_zerocopy.c */
+/* based on freax-kernel/tools/testing/selftests/net/msg_zerocopy.c */
 #include <assert.h>
 #include <errno.h>
 #include <error.h>
@@ -13,12 +13,12 @@
 #include <unistd.h>
 
 #include <arpa/inet.h>
-#include <linux/errqueue.h>
-#include <linux/if_packet.h>
-#include <linux/io_uring.h>
-#include <linux/ipv6.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
+#include <freax/errqueue.h>
+#include <freax/if_packet.h>
+#include <freax/io_uring.h>
+#include <freax/ipv6.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
 #include <net/ethernet.h>
 #include <net/if.h>
 #include <netinet/in.h>

@@ -5,13 +5,13 @@
  * Copyright (C) 2016 MEN Mikroelektronik GmbH (www.men.de)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/mcb.h>
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/mcb.h>
+#include <freax/bitops.h>
+#include <freax/gpio/driver.h>
 
 #define MEN_Z127_CTRL	0x00
 #define MEN_Z127_PSR	0x04

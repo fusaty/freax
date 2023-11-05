@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/devtree.c
+ *  freax/arch/arm/kernel/devtree.c
  *
  *  Copyright (C) 2009 Canonical Ltd. <jeremy.kerr@canonical.com>
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_irq.h>
-#include <linux/smp.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/memblock.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
+#include <freax/of_irq.h>
+#include <freax/smp.h>
 
 #include <asm/cputype.h>
 #include <asm/setup.h>

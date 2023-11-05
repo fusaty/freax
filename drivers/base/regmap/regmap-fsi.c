@@ -4,11 +4,11 @@
 //
 // Copyright 2022 IBM Corp
 //
-// Author: Eddie James <eajames@linux.ibm.com>
+// Author: Eddie James <eajames@freax.ibm.com>
 
-#include <linux/fsi.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/fsi.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
 #include "internal.h"
 

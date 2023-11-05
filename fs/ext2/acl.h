@@ -5,7 +5,7 @@
   (C) 2001 Andreas Gruenbacher, <a.gruenbacher@computer.org>
 */
 
-#include <linux/posix_acl_xattr.h>
+#include <freax/posix_acl_xattr.h>
 
 #define EXT2_ACL_VERSION	0x0001
 
@@ -61,7 +61,7 @@ extern int ext2_set_acl(struct mnt_idmap *idmap, struct dentry *dentry,
 extern int ext2_init_acl (struct inode *, struct inode *);
 
 #else
-#include <linux/sched.h>
+#include <freax/sched.h>
 #define ext2_get_acl	NULL
 #define ext2_set_acl	NULL
 

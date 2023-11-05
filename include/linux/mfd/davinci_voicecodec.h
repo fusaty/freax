@@ -7,13 +7,13 @@
  * Author: Miguel Aguilar <miguel.aguilar@ridgerun.com>
  */
 
-#ifndef __LINUX_MFD_DAVINCI_VOICECODEC_H_
-#define __LINUX_MFD_DAVINCI_VOICECODEC_H_
+#ifndef __freax_MFD_DAVINCI_VOICECODEC_H_
+#define __freax_MFD_DAVINCI_VOICECODEC_H_
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/platform_data/edma.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/core.h>
+#include <freax/platform_data/edma.h>
 
 struct regmap;
 

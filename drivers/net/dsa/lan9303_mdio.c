@@ -5,11 +5,11 @@
  * Partially based on a patch from
  * Copyright (c) 2014 Stefan Roese <sr@denx.de>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mdio.h>
-#include <linux/phy.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mdio.h>
+#include <freax/phy.h>
+#include <freax/of.h>
 
 #include "lan9303.h"
 

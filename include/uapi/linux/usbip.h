@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  *	usbip.h
  *
  *	USBIP uapi defines and function prototypes etc.
 */
 
-#ifndef _UAPI_LINUX_USBIP_H
-#define _UAPI_LINUX_USBIP_H
+#ifndef _UAPI_freax_USBIP_H
+#define _UAPI_freax_USBIP_H
 
 /* usbip device status - exported in usbip device sysfs status */
 enum usbip_device_status {
@@ -50,4 +50,4 @@ enum usbip_device_status {
 #define USBIP_URB_DMA_SG_COMBINED	0x00400000
 #define USBIP_URB_ALIGNED_TEMP_BUFFER	0x00800000
 
-#endif /* _UAPI_LINUX_USBIP_H */
+#endif /* _UAPI_freax_USBIP_H */

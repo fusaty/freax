@@ -4,16 +4,16 @@
  *
  *  Copyright (C) 2008  Paul Mundt
  */
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/serial.h>
-#include <linux/mm.h>
-#include <linux/serial_sci.h>
-#include <linux/uio_driver.h>
-#include <linux/usb/r8a66597.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
-#include <linux/io.h>
+#include <freax/platform_device.h>
+#include <freax/init.h>
+#include <freax/serial.h>
+#include <freax/mm.h>
+#include <freax/serial_sci.h>
+#include <freax/uio_driver.h>
+#include <freax/usb/r8a66597.h>
+#include <freax/sh_timer.h>
+#include <freax/sh_intc.h>
+#include <freax/io.h>
 #include <asm/clock.h>
 #include <asm/mmzone.h>
 #include <asm/platform_early.h>

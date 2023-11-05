@@ -4,13 +4,13 @@
  *
  *  Copyright by Michał Mirosław, 2008-2009
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
-#include <linux/cb710.h>
-#include <linux/gfp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/idr.h>
+#include <freax/cb710.h>
+#include <freax/gfp.h>
 
 static DEFINE_IDA(cb710_ida);
 
@@ -323,7 +323,7 @@ static void __exit cb710_cleanup_module(void)
 module_init(cb710_init_module);
 module_exit(cb710_cleanup_module);
 
-MODULE_AUTHOR("Michał Mirosław <mirq-linux@rere.qmqm.pl>");
+MODULE_AUTHOR("Michał Mirosław <mirq-freax@rere.qmqm.pl>");
 MODULE_DESCRIPTION("ENE CB710 memory card reader driver");
 MODULE_LICENSE("GPL");
 MODULE_DEVICE_TABLE(pci, cb710_pci_tbl);

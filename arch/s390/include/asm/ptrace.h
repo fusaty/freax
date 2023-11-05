@@ -7,7 +7,7 @@
 #ifndef _S390_PTRACE_H
 #define _S390_PTRACE_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 #include <uapi/asm/ptrace.h>
 #include <asm/tpi.h>
 
@@ -204,7 +204,7 @@ static inline int test_and_clear_pt_regs_flag(struct pt_regs *regs, int flag)
 }
 
 /*
- * These are defined as per linux/ptrace.h, which see.
+ * These are defined as per freax/ptrace.h, which see.
  */
 #define arch_has_single_step()	(1)
 #define arch_has_block_step()	(1)

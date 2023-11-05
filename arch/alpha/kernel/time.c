@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/alpha/kernel/time.c
+ *  freax/arch/alpha/kernel/time.c
  *
  *  Copyright (C) 1991, 1992, 1995, 1999, 2000  Linus Torvalds
  *
@@ -19,31 +19,31 @@
  * 2003-06-03	R. Scott Bailey <scott.bailey@eds.com>
  *	Tighten sanity in time_init from 1% (10,000 PPM) to 250 PPM
  */
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/bcd.h>
-#include <linux/profile.h>
-#include <linux/irq_work.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/bcd.h>
+#include <freax/profile.h>
+#include <freax/irq_work.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/hwrpb.h>
 
-#include <linux/mc146818rtc.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
+#include <freax/mc146818rtc.h>
+#include <freax/time.h>
+#include <freax/timex.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
 
 #include "proto.h"
 #include "irq_impl.h"
@@ -372,7 +372,7 @@ calibrate_cc_with_pit(void)
 	return ((long)cc * PIT_TICK_RATE) / (CALIBRATE_LATCH + 1);
 }
 
-/* The Linux interpretation of the CMOS clock register contents:
+/* The freax interpretation of the CMOS clock register contents:
    When the Update-In-Progress (UIP) flag goes from 1 to 0, the
    RTC registers show the second which has precisely just started.
    Let's hope other operating systems interpret the RTC the same way.  */

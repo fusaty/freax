@@ -5,12 +5,12 @@
 #ifndef __DEVCOREDUMP_H
 #define __DEVCOREDUMP_H
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/vmalloc.h>
 
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
 
 /*
  * _devcd_free_sgtable - free all the memory of the given scatterlist table

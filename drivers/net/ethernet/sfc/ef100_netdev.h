@@ -9,7 +9,7 @@
  * by the Free Software Foundation, incorporated herein by reference.
  */
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 #include "ef100_rep.h"
 
 netdev_tx_t __ef100_hard_start_xmit(struct sk_buff *skb,

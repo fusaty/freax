@@ -16,9 +16,9 @@
  * Inspired by sdhci-pci.c, by Pierre Ossman
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/property.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/property.h>
 #ifdef CONFIG_PPC
 #include <asm/machdep.h>
 #endif

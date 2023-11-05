@@ -5,20 +5,20 @@
  * Amit Bhor, Kanika Nema: Codito Technologies 2004
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
 
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/elf.h>
-#include <linux/tick.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/unistd.h>
+#include <freax/ptrace.h>
+#include <freax/slab.h>
+#include <freax/syscalls.h>
+#include <freax/elf.h>
+#include <freax/tick.h>
 
 #include <asm/fpu.h>
 

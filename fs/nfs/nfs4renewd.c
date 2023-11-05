@@ -38,14 +38,14 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/clnt.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/sunrpc/sched.h>
+#include <freax/sunrpc/clnt.h>
 
-#include <linux/nfs.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
+#include <freax/nfs.h>
+#include <freax/nfs4.h>
+#include <freax/nfs_fs.h>
 #include "nfs4_fs.h"
 #include "delegation.h"
 

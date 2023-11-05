@@ -2,21 +2,21 @@
 /*
  * CXL Flash Device Driver
  *
- * Written by: Matthew R. Ochs <mrochs@linux.vnet.ibm.com>, IBM Corporation
- *             Uma Krishnan <ukrishn@linux.vnet.ibm.com>, IBM Corporation
+ * Written by: Matthew R. Ochs <mrochs@freax.vnet.ibm.com>, IBM Corporation
+ *             Uma Krishnan <ukrishn@freax.vnet.ibm.com>, IBM Corporation
  *
  * Copyright (C) 2018 IBM Corporation
  */
 
-#include <linux/file.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/poll.h>
-#include <linux/sched/signal.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
+#include <freax/file.h>
+#include <freax/idr.h>
+#include <freax/module.h>
+#include <freax/mount.h>
+#include <freax/pseudo_fs.h>
+#include <freax/poll.h>
+#include <freax/sched/signal.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
 #include <asm/xive.h>
 #include <misc/ocxl.h>
 

@@ -6,12 +6,12 @@
  * Rajendra Nayak
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/clk/ti.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
+#include <freax/clk/ti.h>
 
 #include "clock.h"
 

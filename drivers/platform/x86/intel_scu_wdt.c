@@ -3,13 +3,13 @@
  * Intel Merrifield watchdog platform device library file
  *
  * (C) Copyright 2014 Intel Corporation
- * Author: David Cohen <david.a.cohen@linux.intel.com>
+ * Author: David Cohen <david.a.cohen@freax.intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/intel-mid_wdt.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/intel-mid_wdt.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>

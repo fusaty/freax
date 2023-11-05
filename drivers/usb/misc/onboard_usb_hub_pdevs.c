@@ -5,17 +5,17 @@
  * Copyright (c) 2022, Google LLC
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/of.h>
-#include <linux/usb/onboard_hub.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/of.h>
+#include <freax/usb/onboard_hub.h>
 
 #include "onboard_usb_hub.h"
 

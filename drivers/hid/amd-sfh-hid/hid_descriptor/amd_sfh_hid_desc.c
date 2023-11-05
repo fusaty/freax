@@ -7,9 +7,9 @@
  *	     Basavaraj Natikar <Basavaraj.Natikar@amd.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 #include "amd_sfh_pcie.h"
 #include "amd_sfh_hid_desc.h"
 #include "amd_sfh_hid_report_desc.h"

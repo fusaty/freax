@@ -6,10 +6,10 @@
  *      Haojian Zhuang <haojian.zhuang@marvell.com>
  */
 
-#ifndef __LINUX_REGULATOR_MAX8649_H
-#define	__LINUX_REGULATOR_MAX8649_H
+#ifndef __freax_REGULATOR_MAX8649_H
+#define	__freax_REGULATOR_MAX8649_H
 
-#include <linux/regulator/machine.h>
+#include <freax/regulator/machine.h>
 
 enum {
 	MAX8649_EXTCLK_26MHZ = 0,
@@ -38,4 +38,4 @@ struct max8649_platform_data {
 	unsigned	ramp_down:1;
 };
 
-#endif	/* __LINUX_REGULATOR_MAX8649_H */
+#endif	/* __freax_REGULATOR_MAX8649_H */

@@ -14,22 +14,22 @@
  * - Added Input- Output- enable functionality, to allow full communication
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/rio.h>
-#include <linux/rio_drv.h>
-#include <linux/rio_ids.h>
-#include <linux/rio_regs.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
-#include <linux/jiffies.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/rio.h>
+#include <freax/rio_drv.h>
+#include <freax/rio_ids.h>
+#include <freax/rio_regs.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <freax/sched.h>
+#include <freax/jiffies.h>
+#include <freax/slab.h>
 
 #include "rio.h"
 

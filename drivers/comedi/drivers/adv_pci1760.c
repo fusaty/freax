@@ -6,7 +6,7 @@
  * Based on the pci1760 support in the adv_pci_dio driver written by:
  *	Michal Dobes <dobes@tesnet.cz>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -21,8 +21,8 @@
  * Configuration Options: not applicable, uses PCI auto config
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedi_pci.h>
+#include <freax/module.h>
+#include <freax/comedi/comedi_pci.h>
 
 /*
  * PCI-1760 Register Map

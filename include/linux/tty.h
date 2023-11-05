@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TTY_H
-#define _LINUX_TTY_H
+#ifndef _freax_TTY_H
+#define _freax_TTY_H
 
-#include <linux/fs.h>
-#include <linux/major.h>
-#include <linux/termios.h>
-#include <linux/workqueue.h>
-#include <linux/tty_buffer.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_ldisc.h>
-#include <linux/tty_port.h>
-#include <linux/mutex.h>
-#include <linux/tty_flags.h>
-#include <uapi/linux/tty.h>
-#include <linux/rwsem.h>
-#include <linux/llist.h>
+#include <freax/fs.h>
+#include <freax/major.h>
+#include <freax/termios.h>
+#include <freax/workqueue.h>
+#include <freax/tty_buffer.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_ldisc.h>
+#include <freax/tty_port.h>
+#include <freax/mutex.h>
+#include <freax/tty_flags.h>
+#include <uapi/freax/tty.h>
+#include <freax/rwsem.h>
+#include <freax/llist.h>
 
 
 /*

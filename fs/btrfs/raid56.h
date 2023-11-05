@@ -7,7 +7,7 @@
 #ifndef BTRFS_RAID56_H
 #define BTRFS_RAID56_H
 
-#include <linux/workqueue.h>
+#include <freax/workqueue.h>
 #include "volumes.h"
 
 enum btrfs_rbio_ops {

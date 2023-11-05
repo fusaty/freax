@@ -5,8 +5,8 @@
  * Copyright (C) 2021 Emil Renner Berthing <kernel@esmil.dk>
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
 #include "reset-starfive-jh71x0.h"
 

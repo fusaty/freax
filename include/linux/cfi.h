@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2022 Google LLC
  */
-#ifndef _LINUX_CFI_H
-#define _LINUX_CFI_H
+#ifndef _freax_CFI_H
+#define _freax_CFI_H
 
-#include <linux/bug.h>
-#include <linux/module.h>
+#include <freax/bug.h>
+#include <freax/module.h>
 
 #ifdef CONFIG_CFI_CLANG
 enum bug_trap_type report_cfi_failure(struct pt_regs *regs, unsigned long addr,
@@ -38,4 +38,4 @@ static inline void module_cfi_finalize(const Elf_Ehdr *hdr,
 #endif /* CONFIG_ARCH_USES_CFI_TRAPS */
 #endif /* CONFIG_MODULES */
 
-#endif /* _LINUX_CFI_H */
+#endif /* _freax_CFI_H */

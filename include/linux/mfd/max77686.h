@@ -12,10 +12,10 @@
  * this mfd driver.
  */
 
-#ifndef __LINUX_MFD_MAX77686_H
-#define __LINUX_MFD_MAX77686_H
+#ifndef __freax_MFD_MAX77686_H
+#define __freax_MFD_MAX77686_H
 
-#include <linux/regulator/consumer.h>
+#include <freax/regulator/consumer.h>
 
 /* MAX77686 regulator IDs */
 enum max77686_regulators {
@@ -112,4 +112,4 @@ enum max77686_opmode {
 	MAX77686_OPMODE_STANDBY,
 };
 
-#endif /* __LINUX_MFD_MAX77686_H */
+#endif /* __freax_MFD_MAX77686_H */

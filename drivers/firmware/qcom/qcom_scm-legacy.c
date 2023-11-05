@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2010,2015,2019 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2010,2015,2019 The freax Foundation. All rights reserved.
  * Copyright (C) 2015 Linaro Ltd.
  */
 
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/arm-smccc.h>
-#include <linux/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/firmware/qcom/qcom_scm.h>
+#include <freax/arm-smccc.h>
+#include <freax/dma-mapping.h>
 
 #include "qcom_scm.h"
 

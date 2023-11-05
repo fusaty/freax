@@ -5,11 +5,11 @@
  * Interface between console.c, tty_io.c, vt.c, vc_screen.c and selection.c
  */
 
-#ifndef _LINUX_SELECTION_H_
-#define _LINUX_SELECTION_H_
+#ifndef _freax_SELECTION_H_
+#define _freax_SELECTION_H_
 
-#include <linux/tiocl.h>
-#include <linux/vt_buffer.h>
+#include <freax/tiocl.h>
+#include <freax/vt_buffer.h>
 
 struct tty_struct;
 struct vc_data;

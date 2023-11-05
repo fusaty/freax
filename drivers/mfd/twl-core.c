@@ -15,28 +15,28 @@
  * by syed khasim <x0khasim@ti.com>
  */
 
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/device.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
 
-#include <linux/regulator/machine.h>
+#include <freax/regulator/machine.h>
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/twl.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/twl.h>
 
 /* Register descriptions for audio */
-#include <linux/mfd/twl4030-audio.h>
+#include <freax/mfd/twl4030-audio.h>
 
 #include "twl-core.h"
 
@@ -162,7 +162,7 @@ static struct twl_private *twl_priv;
 static struct twl_mapping twl4030_map[] = {
 	/*
 	 * NOTE:  don't change this table without updating the
-	 * <linux/mfd/twl.h> defines for TWL4030_MODULE_*
+	 * <freax/mfd/twl.h> defines for TWL4030_MODULE_*
 	 * so they continue to match the order in this table.
 	 */
 
@@ -333,7 +333,7 @@ static const struct regmap_config twl4030_regmap_config[4] = {
 static struct twl_mapping twl6030_map[] = {
 	/*
 	 * NOTE:  don't change this table without updating the
-	 * <linux/mfd/twl.h> defines for TWL4030_MODULE_*
+	 * <freax/mfd/twl.h> defines for TWL4030_MODULE_*
 	 * so they continue to match the order in this table.
 	 */
 

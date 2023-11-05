@@ -2,6 +2,6 @@
 image
 bzImage
 section_cmp.*
-vmlinux
-vmlinux.lds
-vmlinux.syms
+vmfreax
+vmfreax.lds
+vmfreax.syms

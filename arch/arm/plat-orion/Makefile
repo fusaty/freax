@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for the linux kernel.
+# Makefile for the freax kernel.
 #
 ccflags-y := -I$(srctree)/$(src)/include
 

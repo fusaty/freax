@@ -10,13 +10,13 @@
  * Written by Michael Halcrow, 2015.
  * Modified by Jaegeuk Kim, 2015.
  */
-#ifndef _LINUX_FSCRYPT_H
-#define _LINUX_FSCRYPT_H
+#ifndef _freax_FSCRYPT_H
+#define _freax_FSCRYPT_H
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <uapi/linux/fscrypt.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <uapi/freax/fscrypt.h>
 
 /*
  * The lengths of all file contents blocks must be divisible by this value.
@@ -1067,4 +1067,4 @@ static inline void fscrypt_finalize_bounce_page(struct page **pagep)
 	}
 }
 
-#endif	/* _LINUX_FSCRYPT_H */
+#endif	/* _freax_FSCRYPT_H */

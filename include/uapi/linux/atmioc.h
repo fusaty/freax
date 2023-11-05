@@ -1,17 +1,17 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* atmioc.h - ranges for ATM-related ioctl numbers */
  
 /* Written 1995-1999 by Werner Almesberger, EPFL LRC/ICA */
 
 
 /*
- * See https://icawww1.epfl.ch/linux-atm/magic.html for the complete list of
+ * See https://icawww1.epfl.ch/freax-atm/magic.html for the complete list of
  * "magic" ioctl numbers.
  */
 
 
-#ifndef _LINUX_ATMIOC_H
-#define _LINUX_ATMIOC_H
+#ifndef _freax_ATMIOC_H
+#define _freax_ATMIOC_H
 
 #include <asm/ioctl.h>
 		/* everybody including atmioc.h will also need _IO{,R,W,WR} */

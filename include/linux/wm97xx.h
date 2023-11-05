@@ -4,17 +4,17 @@
  * Register bits and API for Wolfson WM97xx series of codecs
  */
 
-#ifndef _LINUX_WM97XX_H
-#define _LINUX_WM97XX_H
+#ifndef _freax_WM97XX_H
+#define _freax_WM97XX_H
 
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/ac97_codec.h>
 #include <sound/initval.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/input.h>	/* Input device layer */
-#include <linux/platform_device.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/input.h>	/* Input device layer */
+#include <freax/platform_device.h>
 
 /*
  * WM97xx variants

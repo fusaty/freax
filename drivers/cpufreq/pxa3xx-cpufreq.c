@@ -3,15 +3,15 @@
  * Copyright (C) 2008 Marvell International Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/soc/pxa/cpu.h>
-#include <linux/clk/pxa.h>
-#include <linux/slab.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/cpufreq.h>
+#include <freax/soc/pxa/cpu.h>
+#include <freax/clk/pxa.h>
+#include <freax/slab.h>
+#include <freax/io.h>
 
 #define HSS_104M	(0)
 #define HSS_156M	(1)

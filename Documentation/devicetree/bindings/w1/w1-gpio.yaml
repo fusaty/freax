@@ -19,7 +19,7 @@ properties:
       - description: Data I/O pin
       - description: Enable pin for an external pull-up resistor
 
-  linux,open-drain:
+  freax,open-drain:
     type: boolean
     description: >
       If specified, the data pin is considered in open-drain mode.

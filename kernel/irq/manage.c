@@ -8,19 +8,19 @@
 
 #define pr_fmt(fmt) "genirq: " fmt
 
-#include <linux/irq.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/task.h>
-#include <linux/sched/isolation.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/task_work.h>
+#include <freax/irq.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/sched/rt.h>
+#include <freax/sched/task.h>
+#include <freax/sched/isolation.h>
+#include <uapi/freax/sched/types.h>
+#include <freax/task_work.h>
 
 #include "internals.h"
 
@@ -2407,7 +2407,7 @@ void enable_percpu_nmi(unsigned int irq, unsigned int type)
 
 /**
  * irq_percpu_is_enabled - Check whether the per cpu irq is enabled
- * @irq:	Linux irq number to check for
+ * @irq:	freax irq number to check for
  *
  * Must be called from a non migratable context. Returns the enable
  * state of a per cpu interrupt on the current cpu.
@@ -2900,7 +2900,7 @@ EXPORT_SYMBOL_GPL(irq_set_irqchip_state);
 
 /**
  * irq_has_action - Check whether an interrupt is requested
- * @irq:	The linux irq number
+ * @irq:	The freax irq number
  *
  * Returns: A snapshot of the current state
  */
@@ -2917,7 +2917,7 @@ EXPORT_SYMBOL_GPL(irq_has_action);
 
 /**
  * irq_check_status_bit - Check whether bits in the irq descriptor status are set
- * @irq:	The linux irq number
+ * @irq:	The freax irq number
  * @bitmask:	The bitmask to evaluate
  *
  * Returns: True if one of the bits in @bitmask is set

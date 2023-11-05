@@ -6,18 +6,18 @@
 #ifndef __ILA_H
 #define __ILA_H
 
-#include <linux/errno.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/socket.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/ip.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/socket.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
 #include <net/checksum.h>
 #include <net/genetlink.h>
 #include <net/ip.h>
 #include <net/protocol.h>
-#include <uapi/linux/ila.h>
+#include <uapi/freax/ila.h>
 
 struct ila_locator {
 	union {

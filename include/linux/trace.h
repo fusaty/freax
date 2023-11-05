@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TRACE_H
-#define _LINUX_TRACE_H
+#ifndef _freax_TRACE_H
+#define _freax_TRACE_H
 
 #define TRACE_EXPORT_FUNCTION	BIT(0)
 #define TRACE_EXPORT_EVENT	BIT(1)
@@ -94,4 +94,4 @@ static inline int trace_array_destroy(struct trace_array *tr)
 }
 #endif	/* CONFIG_TRACING */
 
-#endif	/* _LINUX_TRACE_H */
+#endif	/* _freax_TRACE_H */

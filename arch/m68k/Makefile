@@ -17,7 +17,7 @@ KBUILD_DEFCONFIG := multi_defconfig
 ifdef cross_compiling
 	ifeq ($(CROSS_COMPILE),)
 		CROSS_COMPILE := $(call cc-cross-prefix, \
-			m68k-linux-gnu- m68k-linux- m68k-unknown-linux-gnu-)
+			m68k-freax-gnu- m68k-freax- m68k-unknown-freax-gnu-)
 	endif
 endif
 
@@ -66,15 +66,15 @@ KBUILD_CFLAGS += -pipe -ffreestanding
 ifdef CONFIG_MMU
 KBUILD_CFLAGS += -ffixed-a2
 else
-# we can use a m68k-linux-gcc toolchain with these in place
-KBUILD_CPPFLAGS += -DUTS_SYSNAME=\"uClinux\"
-KBUILD_CPPFLAGS += -D__uClinux__
+# we can use a m68k-freax-gcc toolchain with these in place
+KBUILD_CPPFLAGS += -DUTS_SYSNAME=\"uCfreax\"
+KBUILD_CPPFLAGS += -D__uCfreax__
 endif
 
 KBUILD_LDFLAGS := -m m68kelf
 
 ifdef CONFIG_SUN3
-LDFLAGS_vmlinux = -N
+LDFLAGS_vmfreax = -N
 endif
 
 CHECKFLAGS += -D__mc68000__
@@ -91,44 +91,44 @@ libs-y				+= arch/m68k/lib/
 
 all:	zImage
 
-lilo:	vmlinux
-	if [ -f $(INSTALL_PATH)/vmlinux ]; then mv -f $(INSTALL_PATH)/vmlinux $(INSTALL_PATH)/vmlinux.old; fi
+lilo:	vmfreax
+	if [ -f $(INSTALL_PATH)/vmfreax ]; then mv -f $(INSTALL_PATH)/vmfreax $(INSTALL_PATH)/vmfreax.old; fi
 	if [ -f $(INSTALL_PATH)/System.map ]; then mv -f $(INSTALL_PATH)/System.map $(INSTALL_PATH)/System.old; fi
-	cat vmlinux > $(INSTALL_PATH)/vmlinux
+	cat vmfreax > $(INSTALL_PATH)/vmfreax
 	cp System.map $(INSTALL_PATH)/System.map
 	if [ -x /sbin/lilo ]; then /sbin/lilo; else /etc/lilo/install; fi
 
-zImage compressed: vmlinux.gz
+zImage compressed: vmfreax.gz
 
-vmlinux.gz: vmlinux
-
-ifndef CONFIG_KGDB
-	cp vmlinux vmlinux.tmp
-	$(STRIP) vmlinux.tmp
-	$(KGZIP) -9c vmlinux.tmp >vmlinux.gz
-	rm vmlinux.tmp
-else
-	$(KGZIP) -9c vmlinux >vmlinux.gz
-endif
-
-bzImage: vmlinux.bz2
-
-vmlinux.bz2: vmlinux
+vmfreax.gz: vmfreax
 
 ifndef CONFIG_KGDB
-	cp vmlinux vmlinux.tmp
-	$(STRIP) vmlinux.tmp
-	$(KBZIP2) -1c vmlinux.tmp >vmlinux.bz2
-	rm vmlinux.tmp
+	cp vmfreax vmfreax.tmp
+	$(STRIP) vmfreax.tmp
+	$(KGZIP) -9c vmfreax.tmp >vmfreax.gz
+	rm vmfreax.tmp
 else
-	$(KBZIP2) -1c vmlinux >vmlinux.bz2
+	$(KGZIP) -9c vmfreax >vmfreax.gz
 endif
 
-CLEAN_FILES += vmlinux.gz vmlinux.bz2
+bzImage: vmfreax.bz2
+
+vmfreax.bz2: vmfreax
+
+ifndef CONFIG_KGDB
+	cp vmfreax vmfreax.tmp
+	$(STRIP) vmfreax.tmp
+	$(KBZIP2) -1c vmfreax.tmp >vmfreax.bz2
+	rm vmfreax.tmp
+else
+	$(KBZIP2) -1c vmfreax >vmfreax.bz2
+endif
+
+CLEAN_FILES += vmfreax.gz vmfreax.bz2
 
 archheaders:
 	$(Q)$(MAKE) $(build)=arch/m68k/kernel/syscalls all
 
-install: KBUILD_IMAGE := vmlinux.gz
+install: KBUILD_IMAGE := vmfreax.gz
 install:
 	$(call cmd,install)

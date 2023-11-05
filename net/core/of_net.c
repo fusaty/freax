@@ -4,15 +4,15 @@
  *
  * Initially copied out of arch/powerpc/kernel/prom_parse.c
  */
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/export.h>
-#include <linux/device.h>
-#include <linux/nvmem-consumer.h>
+#include <freax/etherdevice.h>
+#include <freax/kernel.h>
+#include <freax/of_net.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/phy.h>
+#include <freax/export.h>
+#include <freax/device.h>
+#include <freax/nvmem-consumer.h>
 
 /**
  * of_get_phy_mode - Get phy mode for given device_node

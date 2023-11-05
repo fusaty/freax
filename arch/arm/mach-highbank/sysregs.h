@@ -5,8 +5,8 @@
 #ifndef _MACH_HIGHBANK__SYSREGS_H_
 #define _MACH_HIGHBANK__SYSREGS_H_
 
-#include <linux/io.h>
-#include <linux/smp.h>
+#include <freax/io.h>
+#include <freax/smp.h>
 #include <asm/smp_plat.h>
 #include <asm/smp_scu.h>
 #include "core.h"

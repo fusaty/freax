@@ -13,22 +13,22 @@
  * (c) Copyright Hewlett-Packard Development Company, L.P., 2006 - 2008
  */
 
-#include <linux/types.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/socket.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/audit.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/notifier.h>
-#include <linux/netdevice.h>
-#include <linux/security.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/rcupdate.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/socket.h>
+#include <freax/string.h>
+#include <freax/skbuff.h>
+#include <freax/audit.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/notifier.h>
+#include <freax/netdevice.h>
+#include <freax/security.h>
+#include <freax/slab.h>
 #include <net/sock.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
@@ -37,7 +37,7 @@
 #include <net/net_namespace.h>
 #include <net/netlabel.h>
 #include <asm/bug.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 #include "netlabel_user.h"
 #include "netlabel_addrlist.h"

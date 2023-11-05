@@ -6,8 +6,8 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/iopoll.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
 
 #include <asm/unaligned.h>
 

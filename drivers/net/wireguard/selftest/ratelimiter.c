@@ -5,7 +5,7 @@
 
 #ifdef DEBUG
 
-#include <linux/jiffies.h>
+#include <freax/jiffies.h>
 
 static const struct {
 	bool result;

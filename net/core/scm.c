@@ -5,32 +5,32 @@
  *              Alignment and value checking mods by Craig Metz
  */
 
-#include <linux/module.h>
-#include <linux/signal.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/user.h>
-#include <linux/mm.h>
-#include <linux/kernel.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/file.h>
-#include <linux/fcntl.h>
-#include <linux/net.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/security.h>
-#include <linux/pid_namespace.h>
-#include <linux/pid.h>
-#include <linux/nsproxy.h>
-#include <linux/slab.h>
-#include <linux/errqueue.h>
+#include <freax/module.h>
+#include <freax/signal.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/sched/user.h>
+#include <freax/mm.h>
+#include <freax/kernel.h>
+#include <freax/stat.h>
+#include <freax/socket.h>
+#include <freax/file.h>
+#include <freax/fcntl.h>
+#include <freax/net.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/security.h>
+#include <freax/pid_namespace.h>
+#include <freax/pid.h>
+#include <freax/nsproxy.h>
+#include <freax/slab.h>
+#include <freax/errqueue.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/sock.h>
 #include <net/compat.h>
 #include <net/scm.h>

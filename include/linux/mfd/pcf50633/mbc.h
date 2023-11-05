@@ -6,11 +6,11 @@
  * All rights reserved.
  */
 
-#ifndef __LINUX_MFD_PCF50633_MBC_H
-#define __LINUX_MFD_PCF50633_MBC_H
+#ifndef __freax_MFD_PCF50633_MBC_H
+#define __freax_MFD_PCF50633_MBC_H
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/platform_device.h>
+#include <freax/mfd/pcf50633/core.h>
+#include <freax/platform_device.h>
 
 #define PCF50633_REG_MBCC1	0x43
 #define PCF50633_REG_MBCC2	0x44

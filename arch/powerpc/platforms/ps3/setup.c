@@ -6,14 +6,14 @@
  *  Copyright 2006 Sony Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/root_dev.h>
-#include <linux/console.h>
-#include <linux/export.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/root_dev.h>
+#include <freax/console.h>
+#include <freax/export.h>
+#include <freax/memblock.h>
+#include <freax/of.h>
 
 #include <asm/machdep.h>
 #include <asm/firmware.h>

@@ -26,9 +26,9 @@ hid_surface_dial-objs := hid_surface_dial.o
 always-y := $(tprogs-y)
 
 ifeq ($(ARCH), arm)
-# Strip all except -D__LINUX_ARM_ARCH__ option needed to handle linux
+# Strip all except -D__freax_ARM_ARCH__ option needed to handle freax
 # headers when arm instruction set identification is requested.
-ARM_ARCH_SELECTOR := $(filter -D__LINUX_ARM_ARCH__%, $(KBUILD_CFLAGS))
+ARM_ARCH_SELECTOR := $(filter -D__freax_ARM_ARCH__%, $(KBUILD_CFLAGS))
 BPF_EXTRA_CFLAGS := $(ARM_ARCH_SELECTOR)
 TPROGS_CFLAGS += $(ARM_ARCH_SELECTOR)
 endif
@@ -73,7 +73,7 @@ endif
 
 # Don't evaluate probes and warnings if we need to run make recursively
 ifneq ($(src),)
-HDR_PROBE := $(shell printf "$(pound)include <linux/types.h>\n struct list_head { int a; }; int main() { return 0; }" | \
+HDR_PROBE := $(shell printf "$(pound)include <freax/types.h>\n struct list_head { int a; }; int main() { return 0; }" | \
 	$(CC) $(TPROGS_CFLAGS) $(TPROGS_LDFLAGS) -x c - \
 	-o /dev/null 2>/dev/null && echo okay)
 
@@ -162,23 +162,23 @@ $(obj)/hid_surface_dial.o: $(obj)/hid_surface_dial.skel.h
 
 -include $(HID_SAMPLES_PATH)/Makefile.target
 
-VMLINUX_BTF_PATHS ?= $(abspath $(if $(O),$(O)/vmlinux))				\
-		     $(abspath $(if $(KBUILD_OUTPUT),$(KBUILD_OUTPUT)/vmlinux))	\
-		     $(abspath ./vmlinux)
-VMLINUX_BTF ?= $(abspath $(firstword $(wildcard $(VMLINUX_BTF_PATHS))))
+VMfreax_BTF_PATHS ?= $(abspath $(if $(O),$(O)/vmfreax))				\
+		     $(abspath $(if $(KBUILD_OUTPUT),$(KBUILD_OUTPUT)/vmfreax))	\
+		     $(abspath ./vmfreax)
+VMfreax_BTF ?= $(abspath $(firstword $(wildcard $(VMfreax_BTF_PATHS))))
 
-$(obj)/vmlinux.h: $(VMLINUX_BTF) $(BPFTOOL)
-ifeq ($(VMLINUX_H),)
-ifeq ($(VMLINUX_BTF),)
-	$(error Cannot find a vmlinux for VMLINUX_BTF at any of "$(VMLINUX_BTF_PATHS)",\
-		build the kernel or set VMLINUX_BTF or VMLINUX_H variable)
+$(obj)/vmfreax.h: $(VMfreax_BTF) $(BPFTOOL)
+ifeq ($(VMfreax_H),)
+ifeq ($(VMfreax_BTF),)
+	$(error Cannot find a vmfreax for VMfreax_BTF at any of "$(VMfreax_BTF_PATHS)",\
+		build the kernel or set VMfreax_BTF or VMfreax_H variable)
 endif
-	$(Q)$(BPFTOOL) btf dump file $(VMLINUX_BTF) format c > $@
+	$(Q)$(BPFTOOL) btf dump file $(VMfreax_BTF) format c > $@
 else
-	$(Q)cp "$(VMLINUX_H)" $@
+	$(Q)cp "$(VMfreax_H)" $@
 endif
 
-clean-files += vmlinux.h
+clean-files += vmfreax.h
 
 # Get Clang's default includes on this system, as opposed to those seen by
 # '--target=bpf'. This fixes "missing" files on some architectures/distros,
@@ -196,7 +196,7 @@ CLANG_SYS_INCLUDES = $(call get_sys_includes,$(CLANG))
 
 EXTRA_BPF_HEADERS_SRC := $(addprefix $(src)/,$(EXTRA_BPF_HEADERS))
 
-$(obj)/%.bpf.o: $(src)/%.bpf.c $(EXTRA_BPF_HEADERS_SRC) $(obj)/vmlinux.h
+$(obj)/%.bpf.o: $(src)/%.bpf.c $(EXTRA_BPF_HEADERS_SRC) $(obj)/vmfreax.h
 	@echo "  CLANG-BPF " $@
 	$(Q)$(CLANG) -g -O2 --target=bpf -D__TARGET_ARCH_$(SRCARCH) \
 		-Wno-compare-distinct-pointer-types -I$(srctree)/include \
@@ -232,7 +232,7 @@ $(BPF_SKELS_LINKED): $(BPF_OBJS_LINKED) $(BPFTOOL)
 # 'opt' output to IR, and finally 'llc' generates bpf byte code.
 $(obj)/%.o: $(src)/%.c
 	@echo "  CLANG-bpf " $@
-	$(Q)$(CLANG) $(NOSTDINC_FLAGS) $(LINUXINCLUDE) $(BPF_EXTRA_CFLAGS) \
+	$(Q)$(CLANG) $(NOSTDINC_FLAGS) $(freaxINCLUDE) $(BPF_EXTRA_CFLAGS) \
 		-I$(obj) -I$(srctree)/tools/testing/selftests/bpf/ \
 		-I$(LIBBPF_INCLUDE) \
 		-D__KERNEL__ -D__BPF_TRACING__ -Wno-unused-value -Wno-pointer-sign \
@@ -243,7 +243,7 @@ $(obj)/%.o: $(src)/%.c
 		-fno-asynchronous-unwind-tables \
 		-I$(srctree)/samples/hid/ \
 		-O2 -emit-llvm -Xclang -disable-llvm-passes -c $< -o - | \
-		$(OPT) -O2 -mtriple=bpf-pc-linux | $(LLVM_DIS) | \
+		$(OPT) -O2 -mtriple=bpf-pc-freax | $(LLVM_DIS) | \
 		$(LLC) -march=bpf $(LLC_FLAGS) -filetype=obj -o $@
 ifeq ($(DWARF2BTF),y)
 	$(BTF_PAHOLE) -J $@

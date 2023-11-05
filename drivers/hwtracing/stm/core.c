@@ -7,22 +7,22 @@
  * as defined in MIPI STPv2 specification.
  */
 
-#include <linux/pm_runtime.h>
-#include <linux/uaccess.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/compat.h>
-#include <linux/kdev_t.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/stm.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <freax/pm_runtime.h>
+#include <freax/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/compat.h>
+#include <freax/kdev_t.h>
+#include <freax/srcu.h>
+#include <freax/slab.h>
+#include <freax/stm.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
 #include "stm.h"
 
-#include <uapi/linux/stm.h>
+#include <uapi/freax/stm.h>
 
 static unsigned int stm_core_up;
 
@@ -1360,4 +1360,4 @@ module_exit(stm_core_exit);
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("System Trace Module device class");
-MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@linux.intel.com>");
+MODULE_AUTHOR("Alexander Shishkin <alexander.shishkin@freax.intel.com>");

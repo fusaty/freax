@@ -10,7 +10,7 @@
 #define DRV_NAME "libertas_tf"
 #endif
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
 #ifdef CONFIG_LIBERTAS_THINFIRM_DEBUG
 #define DEBUG

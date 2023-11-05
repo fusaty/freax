@@ -8,27 +8,27 @@
  * Copyright (C) 2000-2004 Russell King
  */
 
-#include <linux/acpi_iort.h>
-#include <linux/atomic.h>
-#include <linux/crash_dump.h>
-#include <linux/device.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
-#include <linux/gfp.h>
-#include <linux/huge_mm.h>
-#include <linux/iommu.h>
-#include <linux/iova.h>
-#include <linux/irq.h>
-#include <linux/list_sort.h>
-#include <linux/memremap.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/of_iommu.h>
-#include <linux/pci.h>
-#include <linux/scatterlist.h>
-#include <linux/spinlock.h>
-#include <linux/swiotlb.h>
-#include <linux/vmalloc.h>
+#include <freax/acpi_iort.h>
+#include <freax/atomic.h>
+#include <freax/crash_dump.h>
+#include <freax/device.h>
+#include <freax/dma-direct.h>
+#include <freax/dma-map-ops.h>
+#include <freax/gfp.h>
+#include <freax/huge_mm.h>
+#include <freax/iommu.h>
+#include <freax/iova.h>
+#include <freax/irq.h>
+#include <freax/list_sort.h>
+#include <freax/memremap.h>
+#include <freax/mm.h>
+#include <freax/mutex.h>
+#include <freax/of_iommu.h>
+#include <freax/pci.h>
+#include <freax/scatterlist.h>
+#include <freax/spinlock.h>
+#include <freax/swiotlb.h>
+#include <freax/vmalloc.h>
 
 #include "dma-iommu.h"
 

@@ -10,14 +10,14 @@
  * ICST clock code from the ARM tree should probably be merged into this
  * file.
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/err.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
 
 #include "icst.h"
 #include "clk-icst.h"

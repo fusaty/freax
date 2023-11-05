@@ -37,11 +37,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/security.h>
-#include <linux/xarray.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/security.h>
+#include <freax/xarray.h>
 #include <rdma/ib_cache.h>
 
 #include "mad_priv.h"

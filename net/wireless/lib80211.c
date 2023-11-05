@@ -10,19 +10,19 @@
  * Host AP crypto routines
  *
  * Copyright (c) 2002-2003, Jouni Malinen <j@w1.fi>
- * Portions Copyright (C) 2004, Intel Corporation <jketreno@linux.intel.com>
+ * Portions Copyright (C) 2004, Intel Corporation <jketreno@freax.intel.com>
  *
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/ieee80211.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/module.h>
+#include <freax/ctype.h>
+#include <freax/ieee80211.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 #include <net/lib80211.h>
 

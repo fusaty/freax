@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* mvme147.c  : the  Linux/mvme147/lance ethernet driver
+/* mvme147.c  : the  freax/mvme147/lance ethernet driver
  *
  * Copyright (C) 05/1998 Peter Maydell <pmaydell@chiark.greenend.org.uk>
  * Based on the Sun Lance driver and the NetBSD HP Lance driver
  * Uses the generic 7990.c LANCE code.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/pgtable.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/gfp.h>
+#include <freax/pgtable.h>
 /* Used for the temporal inet entries and routing */
-#include <linux/socket.h>
-#include <linux/route.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <freax/socket.h>
+#include <freax/route.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
 
 #include <asm/io.h>
 #include <asm/mvme147hw.h>

@@ -21,11 +21,11 @@
 
 drivers/of/base.c
 
-include/linux/of.h
+include/freax/of.h
 
 drivers/of/property.c
 
-include/linux/of_graph.h
+include/freax/of_graph.h
 
 drivers/of/address.c
 
@@ -38,11 +38,11 @@ drivers/of/fdt.c
 
 该API在以下内核代码中:
 
-include/linux/of_device.h
+include/freax/of_device.h
 
 drivers/of/device.c
 
-include/linux/of_platform.h
+include/freax/of_platform.h
 
 drivers/of/platform.c
 

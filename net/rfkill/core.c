@@ -5,22 +5,22 @@
  * Copyright 2009 Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/workqueue.h>
-#include <linux/capability.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rfkill.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/workqueue.h>
+#include <freax/capability.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/rfkill.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/device.h>
+#include <freax/miscdevice.h>
+#include <freax/wait.h>
+#include <freax/poll.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
 
 #include "rfkill.h"
 

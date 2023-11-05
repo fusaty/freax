@@ -2,7 +2,7 @@
 /* Copyright (C) 2023 Yafang Shao <laoar.shao@gmail.com> */
 
 #include <string.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <test_progs.h>
 #include "test_ptr_untrusted.skel.h"
 

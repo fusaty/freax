@@ -22,7 +22,7 @@
  */
 #include "ecdh_helper.h"
 
-#include <linux/scatterlist.h>
+#include <freax/scatterlist.h>
 #include <crypto/ecdh.h>
 
 static inline void swap_digits(u64 *in, u64 *out, unsigned int ndigits)

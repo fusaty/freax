@@ -11,8 +11,8 @@
  * See Documentation/security/keys/trusted-encrypted.rst
  */
 
-#include <linux/uaccess.h>
-#include <linux/err.h>
+#include <freax/uaccess.h>
+#include <freax/err.h>
 #include <keys/trusted-type.h>
 #include <keys/encrypted-type.h>
 #include "encrypted.h"

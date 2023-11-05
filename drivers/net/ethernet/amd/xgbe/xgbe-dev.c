@@ -114,12 +114,12 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/phy.h>
-#include <linux/mdio.h>
-#include <linux/clk.h>
-#include <linux/bitrev.h>
-#include <linux/crc32.h>
-#include <linux/crc32poly.h>
+#include <freax/phy.h>
+#include <freax/mdio.h>
+#include <freax/clk.h>
+#include <freax/bitrev.h>
+#include <freax/crc32.h>
+#include <freax/crc32poly.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

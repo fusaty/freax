@@ -11,14 +11,14 @@
 
 #define ASM_OFFSETS_C
 
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/kbuild.h>
+#include <freax/stddef.h>
+#include <freax/sched.h>
+#include <freax/kernel_stat.h>
+#include <freax/kbuild.h>
 #include <asm/bootinfo.h>
 #include <asm/irq.h>
 #include <asm/amigahw.h>
-#include <linux/font.h>
+#include <freax/font.h>
 
 int main(void)
 {

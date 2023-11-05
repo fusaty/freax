@@ -33,14 +33,14 @@
  *   0.7: rewrite code that urb->interval is always 1
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/fcntl.h>
-#include <linux/compiler.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/fcntl.h>
+#include <freax/compiler.h>
 #include <asm/unaligned.h>
-#include <linux/comedi/comedi_usb.h>
+#include <freax/comedi/comedi_usb.h>
 
 /* timeout for the USB-transfer in ms*/
 #define BULK_TIMEOUT 1000

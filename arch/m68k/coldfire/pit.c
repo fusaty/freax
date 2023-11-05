@@ -13,13 +13,13 @@
 
 /***************************************************************************/
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/param.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clockchips.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/param.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/clockchips.h>
 #include <asm/machdep.h>
 #include <asm/io.h>
 #include <asm/coldfire.h>

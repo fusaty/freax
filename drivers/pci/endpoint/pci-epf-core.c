@@ -6,14 +6,14 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
-#include <linux/pci-ep-cfs.h>
+#include <freax/pci-epc.h>
+#include <freax/pci-epf.h>
+#include <freax/pci-ep-cfs.h>
 
 static DEFINE_MUTEX(pci_epf_mutex);
 

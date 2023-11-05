@@ -9,7 +9,7 @@
 #ifndef __INTEL_UNCORE_FREQ_COMMON_H
 #define __INTEL_UNCORE_FREQ_COMMON_H
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 /**
  * struct uncore_data - Encapsulate all uncore data

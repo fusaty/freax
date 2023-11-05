@@ -11,16 +11,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpumask.h>
-#include <linux/cpufreq.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/syscore_ops.h>
-#include <linux/acpi.h>
+#include <freax/cpumask.h>
+#include <freax/cpufreq.h>
+#include <freax/freezer.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/syscore_ops.h>
+#include <freax/acpi.h>
 #include <acpi/processor.h>
 #include <xen/xen.h>
 #include <xen/interface/platform.h>

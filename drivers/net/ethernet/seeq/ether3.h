@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/acorn/net/ether3.h
+ *  freax/drivers/acorn/net/ether3.h
  *
  *  Copyright (C) 1995-2000 Russell King
  *
  *  network driver for Acorn/ANT Ether3 cards
  */
 
-#ifndef _LINUX_ether3_H
-#define _LINUX_ether3_H
+#ifndef _freax_ether3_H
+#define _freax_ether3_H
 
 /* use 0 for production, 1 for verification, >2 for debug. debug flags: */
 #define DEBUG_TX	 2

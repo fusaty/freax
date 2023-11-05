@@ -73,9 +73,9 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/etherdevice.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/etherdevice.h>
 
 #include "tag.h"
 

@@ -6,7 +6,7 @@
 #ifndef __SMB_COMMON_H__
 #define __SMB_COMMON_H__
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include "glob.h"
 #include "nterr.h"

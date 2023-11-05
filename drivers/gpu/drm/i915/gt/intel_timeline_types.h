@@ -6,11 +6,11 @@
 #ifndef __I915_TIMELINE_TYPES_H__
 #define __I915_TIMELINE_TYPES_H__
 
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/types.h>
+#include <freax/list.h>
+#include <freax/kref.h>
+#include <freax/mutex.h>
+#include <freax/rcupdate.h>
+#include <freax/types.h>
 
 #include "i915_active_types.h"
 

@@ -7,12 +7,12 @@
  * Copyright 2015 Freescale Semiconductor, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/mdio.h>
-#include <linux/phy.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/mdio.h>
+#include <freax/phy.h>
 
 MODULE_DESCRIPTION("Teranetics PHY driver");
 MODULE_AUTHOR("Shaohui Xie <Shaohui.Xie@freescale.com>");

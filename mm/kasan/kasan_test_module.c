@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) "kasan: test: " fmt
 
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/mman.h>
+#include <freax/module.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
 #include "kasan.h"
 

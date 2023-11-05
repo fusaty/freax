@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mm/proc-v7.S
+ *  freax/arch/arm/mm/proc-v7.S
  *
  *  Copyright (C) 2001 Deep Blue Solutions Ltd.
  *
  *  This is the "shell" of the ARMv7 processor support.
  */
-#include <linux/arm-smccc.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/pgtable.h>
+#include <freax/arm-smccc.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
+#include <freax/pgtable.h>
 #include <asm/assembler.h>
 #include <asm/asm-offsets.h>
 #include <asm/hwcap.h>

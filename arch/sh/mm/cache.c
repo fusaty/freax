@@ -5,13 +5,13 @@
  * Copyright (C) 1999, 2000, 2002  Niibe Yutaka
  * Copyright (C) 2002 - 2010  Paul Mundt
  */
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/highmem.h>
-#include <linux/module.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/fs.h>
+#include <freax/smp.h>
+#include <freax/highmem.h>
+#include <freax/module.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
 

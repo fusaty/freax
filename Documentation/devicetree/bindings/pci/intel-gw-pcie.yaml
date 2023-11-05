@@ -97,7 +97,7 @@ examples:
             <0xd2000000 0x800000>,
             <0xd0a41000 0x1000>;
       reg-names = "dbi", "config", "app";
-      linux,pci-domain = <0>;
+      freax,pci-domain = <0>;
       max-link-speed = <4>;
       bus-range = <0x00 0x08>;
       #interrupt-cells = <1>;

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MATH_H
-#define _LINUX_MATH_H
+#ifndef _freax_MATH_H
+#define _freax_MATH_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/div64.h>
-#include <uapi/linux/kernel.h>
+#include <uapi/freax/kernel.h>
 
 /*
  * This looks more complex than it should be. But we need to
@@ -205,4 +205,4 @@ static inline u32 int_sqrt64(u64 x)
 }
 #endif
 
-#endif	/* _LINUX_MATH_H */
+#endif	/* _freax_MATH_H */

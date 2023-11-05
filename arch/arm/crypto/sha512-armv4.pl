@@ -190,7 +190,7 @@ $code=<<___;
 # define VFP_ABI_PUSH	vstmdb	sp!,{d8-d15}
 # define VFP_ABI_POP	vldmia	sp!,{d8-d15}
 #else
-# define __ARM_ARCH__ __LINUX_ARM_ARCH__
+# define __ARM_ARCH__ __freax_ARM_ARCH__
 # define __ARM_MAX_ARCH__ 7
 # define VFP_ABI_PUSH
 # define VFP_ABI_POP

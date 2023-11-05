@@ -4,11 +4,11 @@
  * Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
 
 #include <asm/mach-ralink/ralink_regs.h>
 

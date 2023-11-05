@@ -7,14 +7,14 @@
 #ifndef _BPF_LOCAL_STORAGE_H
 #define _BPF_LOCAL_STORAGE_H
 
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/rculist.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/types.h>
-#include <linux/bpf_mem_alloc.h>
-#include <uapi/linux/btf.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
+#include <freax/rculist.h>
+#include <freax/list.h>
+#include <freax/hash.h>
+#include <freax/types.h>
+#include <freax/bpf_mem_alloc.h>
+#include <uapi/freax/btf.h>
 
 #define BPF_LOCAL_STORAGE_CACHE_SIZE	16
 

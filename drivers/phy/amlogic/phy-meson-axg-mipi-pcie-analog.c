@@ -4,15 +4,15 @@
  *
  * Copyright (C) 2019 Remi Pommarel <repk@triplefau.lt>
  */
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/phy/phy.h>
-#include <linux/regmap.h>
-#include <linux/delay.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/module.h>
+#include <freax/phy/phy.h>
+#include <freax/regmap.h>
+#include <freax/delay.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 #include <dt-bindings/phy/phy.h>
 
 #define HHI_MIPI_CNTL0 0x00

@@ -5,31 +5,31 @@
  * Copyright (C) 2003-2006 Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
+#include <freax/bitops.h>
+#include <freax/bug.h>
+#include <freax/compiler.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/firewire.h>
+#include <freax/firewire-constants.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/time.h>
+#include <freax/vmalloc.h>
+#include <freax/workqueue.h>
 
 #include <asm/byteorder.h>
 #include <asm/page.h>
@@ -1978,7 +1978,7 @@ static void bus_reset_work(struct work_struct *work)
 	 * the DMA buffer will be overwritten with new self IDs and we
 	 * will read out inconsistent data.  The OHCI specification
 	 * (section 11.2) recommends a technique similar to
-	 * linux/seqlock.h, where we remember the generation of the
+	 * freax/seqlock.h, where we remember the generation of the
 	 * self IDs in the buffer before reading them out and compare
 	 * it to the current generation after reading them out.  If
 	 * the two generations match we know we have a consistent set

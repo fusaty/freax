@@ -8,14 +8,14 @@
 
 #define pr_fmt(fmt) "psci: " fmt
 
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/smp.h>
-#include <linux/delay.h>
-#include <linux/psci.h>
-#include <linux/mm.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/smp.h>
+#include <freax/delay.h>
+#include <freax/psci.h>
+#include <freax/mm.h>
 
-#include <uapi/linux/psci.h>
+#include <uapi/freax/psci.h>
 
 #include <asm/cpu_ops.h>
 #include <asm/errno.h>

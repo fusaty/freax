@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/mmu_notifier.h>
-#include <linux/rmap.h>
-#include <linux/swap.h>
-#include <linux/mm_inline.h>
-#include <linux/kthread.h>
-#include <linux/khugepaged.h>
-#include <linux/freezer.h>
-#include <linux/mman.h>
-#include <linux/hashtable.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/page_idle.h>
-#include <linux/page_table_check.h>
-#include <linux/swapops.h>
-#include <linux/shmem_fs.h>
-#include <linux/ksm.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/coredump.h>
+#include <freax/mmu_notifier.h>
+#include <freax/rmap.h>
+#include <freax/swap.h>
+#include <freax/mm_inline.h>
+#include <freax/kthread.h>
+#include <freax/khugepaged.h>
+#include <freax/freezer.h>
+#include <freax/mman.h>
+#include <freax/hashtable.h>
+#include <freax/userfaultfd_k.h>
+#include <freax/page_idle.h>
+#include <freax/page_table_check.h>
+#include <freax/swapops.h>
+#include <freax/shmem_fs.h>
+#include <freax/ksm.h>
 
 #include <asm/tlb.h>
 #include <asm/pgalloc.h>

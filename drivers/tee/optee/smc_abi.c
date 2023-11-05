@@ -6,30 +6,30 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/arm-smccc.h>
-#include <linux/cpuhotplug.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tee_drv.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/arm-smccc.h>
+#include <freax/cpuhotplug.h>
+#include <freax/errno.h>
+#include <freax/firmware.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/tee_drv.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 #include "optee_private.h"
 #include "optee_smc.h"
 #include "optee_rpc_cmd.h"
-#include <linux/kmemleak.h>
+#include <freax/kmemleak.h>
 #define CREATE_TRACE_POINTS
 #include "optee_trace.h"
 
@@ -422,7 +422,7 @@ static void optee_fill_pages_list(u64 *dst, struct page **pages, int num_pages,
 
 	pages_data = (void *)dst;
 	/*
-	 * If linux page is bigger than 4k, and user buffer offset is
+	 * If freax page is bigger than 4k, and user buffer offset is
 	 * larger than 4k/8k/12k/etc this will skip first 4k pages,
 	 * because they bear no value data for OP-TEE.
 	 */
@@ -844,8 +844,8 @@ static void optee_handle_rpc(struct tee_context *ctx,
 	case OPTEE_SMC_RPC_FUNC_FOREIGN_INTR:
 		/*
 		 * A foreign interrupt was raised while secure world was
-		 * executing, since they are handled in Linux a dummy RPC is
-		 * performed to let Linux take the interrupt through the normal
+		 * executing, since they are handled in freax a dummy RPC is
+		 * performed to let freax take the interrupt through the normal
 		 * vector.
 		 */
 		break;

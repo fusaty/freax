@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/nfs/namespace.c
+ * freax/fs/nfs/namespace.c
  *
  * Copyright (C) 2005 Trond Myklebust <Trond.Myklebust@netapp.com>
  * - Modified by David Howells <dhowells@redhat.com>
@@ -8,16 +8,16 @@
  * NFS namespace
  */
 
-#include <linux/module.h>
-#include <linux/dcache.h>
-#include <linux/gfp.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/nfs_fs.h>
-#include <linux/string.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/vfs.h>
-#include <linux/sunrpc/gss_api.h>
+#include <freax/module.h>
+#include <freax/dcache.h>
+#include <freax/gfp.h>
+#include <freax/mount.h>
+#include <freax/namei.h>
+#include <freax/nfs_fs.h>
+#include <freax/string.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/vfs.h>
+#include <freax/sunrpc/gss_api.h>
 #include "internal.h"
 #include "nfs.h"
 

@@ -7,21 +7,21 @@
  *	Sumit Semwal
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/slab.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
-#include <linux/platform_data/omapdss.h>
+#include <freax/platform_data/omapdss.h>
 #include "omap_hwmod.h"
 #include "omap_device.h"
 #include "common.h"

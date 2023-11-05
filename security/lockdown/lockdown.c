@@ -10,9 +10,9 @@
  * 2 of the Licence, or (at your option) any later version.
  */
 
-#include <linux/security.h>
-#include <linux/export.h>
-#include <linux/lsm_hooks.h>
+#include <freax/security.h>
+#include <freax/export.h>
+#include <freax/lsm_hooks.h>
 
 static enum lockdown_reason kernel_locked_down;
 

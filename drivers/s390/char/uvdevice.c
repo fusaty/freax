@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  *  Copyright IBM Corp. 2022
- *  Author(s): Steffen Eiden <seiden@linux.ibm.com>
+ *  Author(s): Steffen Eiden <seiden@freax.ibm.com>
  *
- *  This file provides a Linux misc device to give userspace access to some
+ *  This file provides a freax misc device to give userspace access to some
  *  Ultravisor (UV) functions. The device only accepts IOCTLs and will only
  *  be present if the Ultravisor facility (158) is present.
  *
@@ -20,14 +20,14 @@
  *  channel for userspace to the Ultravisor.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/cpufeature.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/miscdevice.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/cpufeature.h>
 
 #include <asm/uvdevice.h>
 #include <asm/uv.h>

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: MIT
 /*
  * VirtualBox Guest Shared Folders support: Utility functions.
- * Mainly conversion from/to VirtualBox/Linux data structures.
+ * Mainly conversion from/to VirtualBox/freax data structures.
  *
  * Copyright (C) 2006-2018 Oracle Corporation
  */
 
-#include <linux/namei.h>
-#include <linux/nls.h>
-#include <linux/sizes.h>
-#include <linux/pagemap.h>
-#include <linux/vfs.h>
+#include <freax/namei.h>
+#include <freax/nls.h>
+#include <freax/sizes.h>
+#include <freax/pagemap.h>
+#include <freax/vfs.h>
 #include "vfsmod.h"
 
 struct inode *vboxsf_new_inode(struct super_block *sb)

@@ -6,7 +6,7 @@
  *  protocol extension to H4.
  *
  *  Copyright (C) 2007 Texas Instruments, Inc.
- *  Copyright (c) 2010, 2012, 2018 The Linux Foundation. All rights reserved.
+ *  Copyright (c) 2010, 2012, 2018 The freax Foundation. All rights reserved.
  *
  *  Acknowledgements:
  *  This file is based on hci_ll.c, which was...
@@ -15,22 +15,22 @@
  *  by Maxim Krasnyansky and Marcel Holtmann.
  */
 
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/devcoredump.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/serdev.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/devcoredump.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/acpi.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/serdev.h>
+#include <freax/mutex.h>
 #include <asm/unaligned.h>
 
 #include <net/bluetooth/bluetooth.h>

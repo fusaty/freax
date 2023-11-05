@@ -6,14 +6,14 @@
 #ifndef METER_H
 #define METER_H 1
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netlink.h>
-#include <linux/openvswitch.h>
-#include <linux/genetlink.h>
-#include <linux/skbuff.h>
-#include <linux/bits.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/netlink.h>
+#include <freax/openvswitch.h>
+#include <freax/genetlink.h>
+#include <freax/skbuff.h>
+#include <freax/bits.h>
 
 #include "flow.h"
 struct datapath;

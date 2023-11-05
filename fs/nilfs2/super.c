@@ -7,7 +7,7 @@
  * Written by Ryusuke Konishi.
  */
 /*
- *  linux/fs/ext2/super.c
+ *  freax/fs/ext2/super.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -16,7 +16,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  freax/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -24,18 +24,18 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/parser.h>
-#include <linux/crc32.h>
-#include <linux/vfs.h>
-#include <linux/writeback.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/blkdev.h>
+#include <freax/parser.h>
+#include <freax/crc32.h>
+#include <freax/vfs.h>
+#include <freax/writeback.h>
+#include <freax/seq_file.h>
+#include <freax/mount.h>
+#include <freax/fs_context.h>
 #include "nilfs.h"
 #include "export.h"
 #include "mdt.h"

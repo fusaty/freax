@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/genalloc.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
-#include <linux/list_sort.h>
-#include <linux/libnvdimm.h>
-#include <linux/ndctl.h>
+#include <freax/platform_device.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/genalloc.h>
+#include <freax/vmalloc.h>
+#include <freax/dma-mapping.h>
+#include <freax/list_sort.h>
+#include <freax/libnvdimm.h>
+#include <freax/ndctl.h>
 #include <nd-core.h>
-#include <linux/printk.h>
-#include <linux/seq_buf.h>
+#include <freax/printk.h>
+#include <freax/seq_buf.h>
 
 #include "../watermark.h"
 #include "nfit_test.h"

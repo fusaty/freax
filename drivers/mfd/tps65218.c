@@ -5,22 +5,22 @@
  * Copyright (C) 2014 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/regmap.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/mutex.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps65218.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/tps65218.h>
 
 #define TPS65218_PASSWORD_REGS_UNLOCK   0x7D
 

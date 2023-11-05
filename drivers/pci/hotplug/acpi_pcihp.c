@@ -9,15 +9,15 @@
  * Send feedback to <kristen.c.accardi@intel.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/acpi.h>
-#include <linux/pci-acpi.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/pci_hotplug.h>
+#include <freax/acpi.h>
+#include <freax/pci-acpi.h>
+#include <freax/slab.h>
 
 #define MY_NAME	"acpi_pcihp"
 

@@ -295,7 +295,7 @@ properties:
           applies to both directions along the same axis.
 
         properties:
-          linux,code: true
+          freax,code: true
 
           azoteq,gesture-max-ms:
             minimum: 0
@@ -464,7 +464,7 @@ properties:
         maximum: 255
         description: Specifies the ALP's conversion frequency fraction.
 
-      linux,code: true
+      freax,code: true
 
     additionalProperties: false
 
@@ -577,7 +577,7 @@ properties:
           Represents a proximity or touch event reported by the button.
 
         properties:
-          linux,code: true
+          freax,code: true
 
         additionalProperties: false
 
@@ -685,13 +685,13 @@ examples:
                             azoteq,touch-exit = <36>;
 
                             event-touch {
-                                    linux,code = <KEY_HOME>;
+                                    freax,code = <KEY_HOME>;
                             };
                     };
 
                     alp {
                             azoteq,sense-mode = <1>;
-                            linux,code = <KEY_POWER>;
+                            freax,code = <KEY_POWER>;
                     };
             };
     };
@@ -712,55 +712,55 @@ examples:
 
                     trackpad {
                             event-tap {
-                                    linux,code = <KEY_PLAYPAUSE>;
+                                    freax,code = <KEY_PLAYPAUSE>;
                             };
 
                             event-tap-double {
-                                    linux,code = <KEY_SHUFFLE>;
+                                    freax,code = <KEY_SHUFFLE>;
                             };
 
                             event-tap-triple {
-                                    linux,code = <KEY_AGAIN>;
+                                    freax,code = <KEY_AGAIN>;
                             };
 
                             event-hold {
-                                    linux,code = <KEY_STOP>;
+                                    freax,code = <KEY_STOP>;
                             };
 
                             event-palm {
-                                    linux,code = <KEY_EXIT>;
+                                    freax,code = <KEY_EXIT>;
                             };
 
                             event-swipe-x-pos {
-                                    linux,code = <KEY_REWIND>;
+                                    freax,code = <KEY_REWIND>;
                             };
 
                             event-swipe-x-pos-hold {
-                                    linux,code = <KEY_PREVIOUS>;
+                                    freax,code = <KEY_PREVIOUS>;
                             };
 
                             event-swipe-x-neg {
-                                    linux,code = <KEY_FASTFORWARD>;
+                                    freax,code = <KEY_FASTFORWARD>;
                             };
 
                             event-swipe-x-neg-hold {
-                                    linux,code = <KEY_NEXT>;
+                                    freax,code = <KEY_NEXT>;
                             };
 
                             event-swipe-y-pos {
-                                    linux,code = <KEY_VOLUMEUP>;
+                                    freax,code = <KEY_VOLUMEUP>;
                             };
 
                             event-swipe-y-pos-hold {
-                                    linux,code = <KEY_MUTE>;
+                                    freax,code = <KEY_MUTE>;
                             };
 
                             event-swipe-y-neg {
-                                    linux,code = <KEY_VOLUMEDOWN>;
+                                    freax,code = <KEY_VOLUMEDOWN>;
                             };
 
                             event-swipe-y-neg-hold {
-                                    linux,code = <KEY_MUTE>;
+                                    freax,code = <KEY_MUTE>;
                             };
                     };
             };

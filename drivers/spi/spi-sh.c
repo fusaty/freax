@@ -8,18 +8,18 @@
  * Copyright (C) 2005 Stephen Street / StreetFire Sound Labs
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/list.h>
+#include <freax/workqueue.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/spi/spi.h>
 
 #define SPI_SH_TBR		0x00
 #define SPI_SH_RBR		0x00

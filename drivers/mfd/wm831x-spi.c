@@ -7,15 +7,15 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/spi/spi.h>
-#include <linux/regmap.h>
-#include <linux/err.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/pm.h>
+#include <freax/spi/spi.h>
+#include <freax/regmap.h>
+#include <freax/err.h>
 
-#include <linux/mfd/wm831x/core.h>
+#include <freax/mfd/wm831x/core.h>
 
 static int wm831x_spi_probe(struct spi_device *spi)
 {

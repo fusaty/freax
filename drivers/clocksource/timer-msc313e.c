@@ -7,18 +7,18 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqreturn.h>
-#include <linux/sched_clock.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/clk.h>
+#include <freax/clockchips.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqreturn.h>
+#include <freax/sched_clock.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 #ifdef CONFIG_ARM
-#include <linux/delay.h>
+#include <freax/delay.h>
 #endif
 
 #include "timer-of.h"

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/ptrace.h>
+#include <freax/ptrace.h>
 #include <asm/bugs.h>
 #include <asm/traps.h>
 

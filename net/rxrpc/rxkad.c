@@ -8,14 +8,14 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <crypto/skcipher.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/udp.h>
-#include <linux/scatterlist.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/key-type.h>
+#include <freax/module.h>
+#include <freax/net.h>
+#include <freax/skbuff.h>
+#include <freax/udp.h>
+#include <freax/scatterlist.h>
+#include <freax/ctype.h>
+#include <freax/slab.h>
+#include <freax/key-type.h>
 #include <net/sock.h>
 #include <net/af_rxrpc.h>
 #include <keys/rxrpc-type.h>

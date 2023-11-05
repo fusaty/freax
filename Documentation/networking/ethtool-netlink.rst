@@ -8,7 +8,7 @@ Basic information
 
 Netlink interface for ethtool uses generic netlink family ``ethtool``
 (userspace application should use macros ``ETHTOOL_GENL_NAME`` and
-``ETHTOOL_GENL_VERSION`` defined in ``<linux/ethtool_netlink.h>`` uapi
+``ETHTOOL_GENL_VERSION`` defined in ``<freax/ethtool_netlink.h>`` uapi
 header). This family does not use a specific header, all information in
 requests and replies is passed using netlink attributes.
 
@@ -1118,7 +1118,7 @@ Request contents:
 
 ``ETHTOOL_A_PAUSE_STATS_SRC`` is optional. It takes values from:
 
-.. kernel-doc:: include/uapi/linux/ethtool.h
+.. kernel-doc:: include/uapi/freax/ethtool.h
     :identifiers: ethtool_mac_stats_src
 
 If absent from the request, stats will be provided with
@@ -1140,7 +1140,7 @@ in ``ETHTOOL_A_HEADER_FLAGS``.
 It will be empty if driver did not report any statistics. Drivers fill in
 the statistics in the following structure:
 
-.. kernel-doc:: include/linux/ethtool.h
+.. kernel-doc:: include/freax/ethtool.h
     :identifiers: ethtool_pause_stats
 
 Each member has a corresponding attribute defined.
@@ -1468,7 +1468,7 @@ the array will be:
 
 Drivers fill in the statistics in the following structure:
 
-.. kernel-doc:: include/linux/ethtool.h
+.. kernel-doc:: include/freax/ethtool.h
     :identifiers: ethtool_fec_stats
 
 FEC_SET
@@ -1664,7 +1664,7 @@ The optional ``ETHTHOOL_A_MODULE_POWER_MODE`` attribute encodes the operational
 power mode policy of the transceiver module. It is only reported when a module
 is plugged-in. Possible values are:
 
-.. kernel-doc:: include/uapi/linux/ethtool.h
+.. kernel-doc:: include/uapi/freax/ethtool.h
     :identifiers: ethtool_module_power_mode
 
 MODULE_SET
@@ -1683,7 +1683,7 @@ When set, the optional ``ETHTOOL_A_MODULE_POWER_MODE_POLICY`` attribute is used
 to set the transceiver module power policy enforced by the host. Possible
 values are:
 
-.. kernel-doc:: include/uapi/linux/ethtool.h
+.. kernel-doc:: include/uapi/freax/ethtool.h
     :identifiers: ethtool_module_power_mode_policy
 
 For SFF-8636 modules, low power mode is forced by the host according to table
@@ -1719,7 +1719,7 @@ PSE function can be changed using the ``ETHTOOL_A_PODL_PSE_ADMIN_CONTROL``
 action. This option is corresponding to ``IEEE 802.3-2018`` 30.15.1.1.2
 aPoDLPSEAdminState. Possible values are:
 
-.. kernel-doc:: include/uapi/linux/ethtool.h
+.. kernel-doc:: include/uapi/freax/ethtool.h
     :identifiers: ethtool_podl_pse_admin_state
 
 When set, the optional ``ETHTOOL_A_PODL_PSE_PW_D_STATUS`` attribute identifies
@@ -1728,7 +1728,7 @@ state machine and automatic PD classification support. This option is
 corresponding to ``IEEE 802.3-2018`` 30.15.1.1.3 aPoDLPSEPowerDetectionStatus.
 Possible values are:
 
-.. kernel-doc:: include/uapi/linux/ethtool.h
+.. kernel-doc:: include/uapi/freax/ethtool.h
     :identifiers: ethtool_podl_pse_pw_d_status
 
 PSE_SET
@@ -1949,12 +1949,12 @@ Kernel response contents:
 The attributes are populated by the device driver through the following
 structure:
 
-.. kernel-doc:: include/linux/ethtool.h
+.. kernel-doc:: include/freax/ethtool.h
     :identifiers: ethtool_mm_state
 
 The ``ETHTOOL_A_MM_VERIFY_STATUS`` will report one of the values from
 
-.. kernel-doc:: include/uapi/linux/ethtool.h
+.. kernel-doc:: include/uapi/freax/ethtool.h
     :identifiers: ethtool_mm_verify_status
 
 If ``ETHTOOL_A_MM_VERIFY_ENABLED`` was passed as false in the ``MM_SET``
@@ -1971,7 +1971,7 @@ the default values from ``ETHTOOL_MSG_MM_GET`` requests.
 report any statistics. Drivers fill in the statistics in the following
 structure:
 
-.. kernel-doc:: include/linux/ethtool.h
+.. kernel-doc:: include/freax/ethtool.h
     :identifiers: ethtool_mm_stats
 
 MM_SET
@@ -1991,7 +1991,7 @@ Request contents:
 
 The attributes are propagated to the driver through the following structure:
 
-.. kernel-doc:: include/linux/ethtool.h
+.. kernel-doc:: include/freax/ethtool.h
     :identifiers: ethtool_mm_cfg
 
 Request translation

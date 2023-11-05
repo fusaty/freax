@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/sh/kernel/signal.c
+ *  freax/arch/sh/kernel/signal.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -9,25 +9,25 @@
  *  SuperH version:  Copyright (C) 1999, 2000  Niibe Yutaka & Kaz Kojima
  *
  */
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/tty.h>
-#include <linux/elf.h>
-#include <linux/personality.h>
-#include <linux/binfmts.h>
-#include <linux/io.h>
-#include <linux/resume_user_mode.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/errno.h>
+#include <freax/wait.h>
+#include <freax/ptrace.h>
+#include <freax/unistd.h>
+#include <freax/stddef.h>
+#include <freax/tty.h>
+#include <freax/elf.h>
+#include <freax/personality.h>
+#include <freax/binfmts.h>
+#include <freax/io.h>
+#include <freax/resume_user_mode.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/syscalls.h>
 #include <asm/fpu.h>

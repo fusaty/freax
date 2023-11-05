@@ -6,9 +6,9 @@
  *     Atish Patra <atish.patra@wdc.com>
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/kvm_host.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/kvm_host.h>
 #include <asm/sbi.h>
 #include <asm/kvm_vcpu_sbi.h>
 

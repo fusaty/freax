@@ -30,10 +30,10 @@
 #ifndef FS_NFS_PNFS_H
 #define FS_NFS_PNFS_H
 
-#include <linux/refcount.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/workqueue.h>
+#include <freax/refcount.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_page.h>
+#include <freax/workqueue.h>
 
 struct nfs4_opendata;
 

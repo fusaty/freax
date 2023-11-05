@@ -4,21 +4,21 @@
  *
  * Copyright (C) Josef Gajdusek <atx@atx.name>
  *
- * based on other Linux RTC drivers
+ * based on other freax RTC drivers
  *
  * Device datasheet:
  * https://ww1.microchip.com/downloads/en/DeviceDoc/22280A.pdf
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/printk.h>
-#include <linux/spi/spi.h>
-#include <linux/rtc.h>
-#include <linux/of.h>
-#include <linux/bcd.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/printk.h>
+#include <freax/spi/spi.h>
+#include <freax/rtc.h>
+#include <freax/of.h>
+#include <freax/bcd.h>
+#include <freax/delay.h>
 
 /* MCP795 Instructions, see datasheet table 3-1 */
 #define MCP795_EEREAD	0x03

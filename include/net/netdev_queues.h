@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_NET_QUEUES_H
-#define _LINUX_NET_QUEUES_H
+#ifndef _freax_NET_QUEUES_H
+#define _freax_NET_QUEUES_H
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 /**
  * DOC: Lockless queue stopping / waking helpers.

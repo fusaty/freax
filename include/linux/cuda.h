@@ -5,11 +5,11 @@
  *
  * Copyright (C) 1996 Paul Mackerras.
  */
-#ifndef _LINUX_CUDA_H
-#define _LINUX_CUDA_H
+#ifndef _freax_CUDA_H
+#define _freax_CUDA_H
 
-#include <linux/rtc.h>
-#include <uapi/linux/cuda.h>
+#include <freax/rtc.h>
+#include <uapi/freax/cuda.h>
 
 
 extern int __init find_via_cuda(void);
@@ -20,4 +20,4 @@ extern void cuda_poll(void);
 extern time64_t cuda_get_time(void);
 extern int cuda_set_rtc_time(struct rtc_time *tm);
 
-#endif /* _LINUX_CUDA_H */
+#endif /* _freax_CUDA_H */

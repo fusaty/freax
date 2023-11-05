@@ -8,11 +8,11 @@
 #ifndef _DMA_HSU_H
 #define _DMA_HSU_H
 
-#include <linux/errno.h>
-#include <linux/kconfig.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/kconfig.h>
+#include <freax/types.h>
 
-#include <linux/platform_data/dma-hsu.h>
+#include <freax/platform_data/dma-hsu.h>
 
 struct device;
 struct hsu_dma;

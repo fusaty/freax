@@ -5,12 +5,12 @@
  * Copyright 2015-2016 Google Inc.
  */
 
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/idr.h>
+#include <freax/string.h>
+#include <freax/sysfs.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/idr.h>
 
 #include "audio_manager.h"
 #include "audio_manager_private.h"

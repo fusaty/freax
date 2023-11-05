@@ -7,13 +7,13 @@
 
 
 #include <asm/cacheflush.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/host1x.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kfifo.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/host1x.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/kfifo.h>
+#include <freax/slab.h>
 #include <trace/events/host1x.h>
 
 #include "cdma.h"

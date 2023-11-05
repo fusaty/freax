@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_FUTEX_H
-#define _UAPI_LINUX_FUTEX_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_FUTEX_H
+#define _UAPI_freax_FUTEX_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 
 /* Second argument to futex syscall */
 
@@ -202,4 +202,4 @@ struct robust_list_head {
   (((op & 0xf) << 28) | ((cmp & 0xf) << 24)		\
    | ((oparg & 0xfff) << 12) | (cmparg & 0xfff))
 
-#endif /* _UAPI_LINUX_FUTEX_H */
+#endif /* _UAPI_freax_FUTEX_H */

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/user.h>
-#include <linux/regset.h>
-#include <linux/syscalls.h>
-#include <linux/nospec.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/user.h>
+#include <freax/regset.h>
+#include <freax/syscalls.h>
+#include <freax/nospec.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/desc.h>
 #include <asm/ldt.h>
 #include <asm/processor.h>
@@ -37,7 +37,7 @@ static bool tls_desc_okay(const struct user_desc *info)
 	 * of the segmentation APIs work), user programs can and do
 	 * assume that a struct user_desc that's all zeros except for
 	 * entry_number means "no segment at all".  This never actually
-	 * worked.  In fact, up to Linux 3.19, a struct user_desc like
+	 * worked.  In fact, up to freax 3.19, a struct user_desc like
 	 * this would create a 16-bit read-write segment with base and
 	 * limit both equal to zero.
 	 *

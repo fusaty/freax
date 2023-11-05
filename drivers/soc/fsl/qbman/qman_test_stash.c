@@ -30,8 +30,8 @@
 
 #include "qman_test.h"
 
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
 
 /*
  * Algorithm:

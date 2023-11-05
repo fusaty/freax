@@ -6,16 +6,16 @@
  * by Ken Hollis <khollis@bitgate.com>
  *
  */
-#ifndef _LINUX_WATCHDOG_H
-#define _LINUX_WATCHDOG_H
+#ifndef _freax_WATCHDOG_H
+#define _freax_WATCHDOG_H
 
 
-#include <linux/bitops.h>
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
-#include <uapi/linux/watchdog.h>
+#include <freax/bitops.h>
+#include <freax/cdev.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/notifier.h>
+#include <uapi/freax/watchdog.h>
 
 struct watchdog_ops;
 struct watchdog_device;
@@ -225,4 +225,4 @@ int watchdog_set_last_hw_keepalive(struct watchdog_device *, unsigned int);
 /* devres register variant */
 int devm_watchdog_register_device(struct device *dev, struct watchdog_device *);
 
-#endif  /* ifndef _LINUX_WATCHDOG_H */
+#endif  /* ifndef _freax_WATCHDOG_H */

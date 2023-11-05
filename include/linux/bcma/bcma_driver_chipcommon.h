@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_BCMA_DRIVER_CC_H_
-#define LINUX_BCMA_DRIVER_CC_H_
+#ifndef freax_BCMA_DRIVER_CC_H_
+#define freax_BCMA_DRIVER_CC_H_
 
-#include <linux/platform_device.h>
-#include <linux/platform_data/brcmnand.h>
-#include <linux/gpio/driver.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/brcmnand.h>
+#include <freax/gpio/driver.h>
 
 /** ChipCommon core registers. **/
 #define BCMA_CC_ID			0x0000
@@ -719,4 +719,4 @@ extern u32 bcma_pmu_get_bus_clock(struct bcma_drv_cc *cc);
 
 void bcma_chipco_b_mii_write(struct bcma_drv_cc_b *ccb, u32 offset, u32 value);
 
-#endif /* LINUX_BCMA_DRIVER_CC_H_ */
+#endif /* freax_BCMA_DRIVER_CC_H_ */

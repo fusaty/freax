@@ -4,9 +4,9 @@
  * Copyright 2015, Qualcomm Atheros, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/err.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/err.h>
 #include <crypto/aead.h>
 #include <crypto/aes.h>
 

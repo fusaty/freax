@@ -5,14 +5,14 @@
  * - Incorporating suggestions made by Linus Torvalds
  */
 
-#ifndef _LINUX_THREAD_INFO_H
-#define _LINUX_THREAD_INFO_H
+#ifndef _freax_THREAD_INFO_H
+#define _freax_THREAD_INFO_H
 
-#include <linux/types.h>
-#include <linux/limits.h>
-#include <linux/bug.h>
-#include <linux/restart_block.h>
-#include <linux/errno.h>
+#include <freax/types.h>
+#include <freax/limits.h>
+#include <freax/bug.h>
+#include <freax/restart_block.h>
+#include <freax/errno.h>
 
 #ifdef CONFIG_THREAD_INFO_IN_TASK
 /*
@@ -24,7 +24,7 @@
 #define current_thread_info() ((struct thread_info *)current)
 #endif
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 /*
  * For per-arch arch_within_stack_frames() implementations, defined in
@@ -263,4 +263,4 @@ int arch_dup_task_struct(struct task_struct *dst,
 
 #endif	/* __KERNEL__ */
 
-#endif /* _LINUX_THREAD_INFO_H */
+#endif /* _freax_THREAD_INFO_H */

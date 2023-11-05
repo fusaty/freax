@@ -7,12 +7,12 @@
  *	Christian König <christian.koenig@amd.com>
  */
 
-#ifndef __LINUX_DMA_FENCE_CHAIN_H
-#define __LINUX_DMA_FENCE_CHAIN_H
+#ifndef __freax_DMA_FENCE_CHAIN_H
+#define __freax_DMA_FENCE_CHAIN_H
 
-#include <linux/dma-fence.h>
-#include <linux/irq_work.h>
-#include <linux/slab.h>
+#include <freax/dma-fence.h>
+#include <freax/irq_work.h>
+#include <freax/slab.h>
 
 /**
  * struct dma_fence_chain - fence to represent an node of a fence chain
@@ -126,4 +126,4 @@ void dma_fence_chain_init(struct dma_fence_chain *chain,
 			  struct dma_fence *fence,
 			  uint64_t seqno);
 
-#endif /* __LINUX_DMA_FENCE_CHAIN_H */
+#endif /* __freax_DMA_FENCE_CHAIN_H */

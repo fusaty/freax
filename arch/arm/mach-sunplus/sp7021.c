@@ -3,7 +3,7 @@
  * Copyright (C) Sunplus Technology Co., Ltd.
  *       All rights reserved.
  */
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <asm/mach/arch.h>
 
 static const char *sp7021_compat[] __initconst = {

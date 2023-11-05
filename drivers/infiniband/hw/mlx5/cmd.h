@@ -34,8 +34,8 @@
 #define MLX5_IB_CMD_H
 
 #include "mlx5_ib.h"
-#include <linux/kernel.h>
-#include <linux/mlx5/driver.h>
+#include <freax/kernel.h>
+#include <freax/mlx5/driver.h>
 
 int mlx5r_cmd_query_special_mkeys(struct mlx5_ib_dev *dev);
 int mlx5_cmd_query_cong_params(struct mlx5_core_dev *dev, int cong_point,

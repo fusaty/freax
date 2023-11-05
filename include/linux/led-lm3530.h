@@ -9,8 +9,8 @@
  * based on leds-lm3530.c by Dan Murphy <D.Murphy@motorola.com>
  */
 
-#ifndef _LINUX_LED_LM3530_H__
-#define _LINUX_LED_LM3530_H__
+#ifndef _freax_LED_LM3530_H__
+#define _freax_LED_LM3530_H__
 
 #define LM3530_FS_CURR_5mA		(0) /* Full Scale Current */
 #define LM3530_FS_CURR_8mA		(1)
@@ -117,4 +117,4 @@ struct lm3530_platform_data {
 	struct lm3530_pwm_data pwm_data;
 };
 
-#endif	/* _LINUX_LED_LM3530_H__ */
+#endif	/* _freax_LED_LM3530_H__ */

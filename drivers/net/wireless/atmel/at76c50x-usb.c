@@ -20,24 +20,24 @@
  * https://wireless.wiki.kernel.org/en/users/Drivers/at76c50x-usb#TODO
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/wireless.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/usb.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/wireless.h>
 #include <net/iw_handler.h>
 #include <net/ieee80211_radiotap.h>
-#include <linux/firmware.h>
-#include <linux/leds.h>
+#include <freax/firmware.h>
+#include <freax/leds.h>
 #include <net/mac80211.h>
 
 #include "at76c50x-usb.h"

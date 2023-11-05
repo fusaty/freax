@@ -38,7 +38,7 @@
  * Reorganized FASYNC support so mouse code can share it.
  *	-- ctm@ardi.com, 9Sep95
  *
- * New TIOCLINUX variants added.
+ * New TIOCfreax variants added.
  *	-- mj@k332.feld.cvut.cz, 19-Nov-95
  *
  * Restrict vt switching via ioctl()
@@ -58,57 +58,57 @@
  *      -- C. Scott Ananian <cananian@alumni.princeton.edu>, 14-Jan-1998
  *
  * Reduced memory usage for older ARM systems
- *      -- Russell King <rmk@arm.linux.org.uk>
+ *      -- Russell King <rmk@arm.freax.org.uk>
  *
  * Move do_SAK() into process context.  Less stack use in devfs functions.
  * alloc_tty_struct() always uses kmalloc()
  *			 -- Andrew Morton <andrewm@uow.edu.eu> 17Mar01
  */
 
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/fcntl.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/interrupt.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/devpts_fs.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/console.h>
-#include <linux/timer.h>
-#include <linux/ctype.h>
-#include <linux/kd.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/seq_file.h>
-#include <linux/serial.h>
-#include <linux/ratelimit.h>
-#include <linux/compat.h>
-#include <linux/uaccess.h>
-#include <linux/termios_internal.h>
-#include <linux/fs.h>
+#include <freax/types.h>
+#include <freax/major.h>
+#include <freax/errno.h>
+#include <freax/signal.h>
+#include <freax/fcntl.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task.h>
+#include <freax/interrupt.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/devpts_fs.h>
+#include <freax/file.h>
+#include <freax/fdtable.h>
+#include <freax/console.h>
+#include <freax/timer.h>
+#include <freax/ctype.h>
+#include <freax/kd.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/ppp-ioctl.h>
+#include <freax/proc_fs.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/wait.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/seq_file.h>
+#include <freax/serial.h>
+#include <freax/ratelimit.h>
+#include <freax/compat.h>
+#include <freax/uaccess.h>
+#include <freax/termios_internal.h>
+#include <freax/fs.h>
 
-#include <linux/kbd_kern.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
+#include <freax/kbd_kern.h>
+#include <freax/vt_kern.h>
+#include <freax/selection.h>
 
-#include <linux/kmod.h>
-#include <linux/nsproxy.h>
+#include <freax/kmod.h>
+#include <freax/nsproxy.h>
 #include "tty.h"
 
 #undef TTY_DEBUG_HANGUP
@@ -2355,7 +2355,7 @@ EXPORT_SYMBOL(tty_do_resize);
  * @arg: user buffer for result
  *
  * Copies the user idea of the window size to the kernel. Traditionally this is
- * just advisory information but for the Linux console it actually has driver
+ * just advisory information but for the freax console it actually has driver
  * level meaning and triggers a VC resize.
  *
  * Locking:

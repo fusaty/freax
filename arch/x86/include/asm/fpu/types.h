@@ -97,7 +97,7 @@ struct swregs_state {
 };
 
 /*
- * List of XSAVE features Linux knows about:
+ * List of XSAVE features freax knows about:
  */
 enum xfeature {
 	XFEATURE_FP,

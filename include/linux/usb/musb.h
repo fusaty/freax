@@ -8,8 +8,8 @@
  * key configuration differences between boards.
  */
 
-#ifndef __LINUX_USB_MUSB_H
-#define __LINUX_USB_MUSB_H
+#ifndef __freax_USB_MUSB_H
+#define __freax_USB_MUSB_H
 
 /* The USB role is defined by the connector used on the board, so long as
  * standards are being followed.  (Developer boards sometimes won't.)
@@ -132,4 +132,4 @@ static inline int musb_mailbox(enum musb_vbus_id_status status)
 #define	TUSB6010_REFCLK_24	41667	/* psec/clk @ 24.0 MHz XI */
 #define	TUSB6010_REFCLK_19	52083	/* psec/clk @ 19.2 MHz CLKIN */
 
-#endif /* __LINUX_USB_MUSB_H */
+#endif /* __freax_USB_MUSB_H */

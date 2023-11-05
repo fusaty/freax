@@ -4,11 +4,11 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/vmalloc.h>
-#include <linux/crash_dump.h>
-#include <linux/qed/qed_iov_if.h>
+#include <freax/etherdevice.h>
+#include <freax/crc32.h>
+#include <freax/vmalloc.h>
+#include <freax/crash_dump.h>
+#include <freax/qed/qed_iov_if.h>
 #include "qed_cxt.h"
 #include "qed_hsi.h"
 #include "qed_iro_hsi.h"
@@ -1635,7 +1635,7 @@ static void qed_iov_vf_mbx_acquire(struct qed_hwfn *p_hwfn,
 	 */
 	pfdev_info->minor_fp_hsi = min_t(u8, ETH_HSI_VER_MINOR,
 					 req->vfdev_info.eth_fp_hsi_minor);
-	pfdev_info->os_type = VFPF_ACQUIRE_OS_LINUX;
+	pfdev_info->os_type = VFPF_ACQUIRE_OS_freax;
 	qed_mcp_get_mfw_ver(p_hwfn, p_ptt, &pfdev_info->mfw_ver, NULL);
 
 	pfdev_info->dev_type = p_hwfn->cdev->type;

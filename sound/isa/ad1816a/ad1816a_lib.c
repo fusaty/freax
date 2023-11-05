@@ -5,12 +5,12 @@
 
 */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
 #include <sound/core.h>
 #include <sound/tlv.h>
 #include <sound/ad1816a.h>

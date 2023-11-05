@@ -8,8 +8,8 @@
 #include <asm/page.h>
 #include <asm/cache.h>
 
-#include <linux/bug.h>
-#include <linux/string.h>
+#include <freax/bug.h>
+#include <freax/string.h>
 
 #define TASK_SIZE_MAX DEFAULT_TASK_SIZE
 #include <asm/pgtable.h>

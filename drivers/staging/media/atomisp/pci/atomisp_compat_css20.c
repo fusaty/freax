@@ -37,8 +37,8 @@
 #include "sh_css_hrt.h"
 #include "ia_css_isys.h"
 
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
 
 /* Assume max number of ACC stages */
 #define MAX_ACC_STAGES	20

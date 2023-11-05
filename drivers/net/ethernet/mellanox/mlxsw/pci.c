@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2015-2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/if_vlan.h>
-#include <linux/log2.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/export.h>
+#include <freax/err.h>
+#include <freax/device.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/wait.h>
+#include <freax/types.h>
+#include <freax/skbuff.h>
+#include <freax/if_vlan.h>
+#include <freax/log2.h>
+#include <freax/string.h>
 
 #include "pci_hw.h"
 #include "pci.h"

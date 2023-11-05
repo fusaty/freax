@@ -6,9 +6,9 @@
 // Copyright (c) 2018 MediaTek Inc.
 // Author: Shunli Wang <shunli.wang@mediatek.com>
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
 #include <sound/jack.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

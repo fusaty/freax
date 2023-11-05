@@ -9,19 +9,19 @@
 #include "dm-bio-prison-v1.h"
 #include "dm.h"
 
-#include <linux/device-mapper.h>
-#include <linux/dm-io.h>
-#include <linux/dm-kcopyd.h>
-#include <linux/jiffies.h>
-#include <linux/log2.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/sort.h>
-#include <linux/rbtree.h>
+#include <freax/device-mapper.h>
+#include <freax/dm-io.h>
+#include <freax/dm-kcopyd.h>
+#include <freax/jiffies.h>
+#include <freax/log2.h>
+#include <freax/list.h>
+#include <freax/rculist.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/sort.h>
+#include <freax/rbtree.h>
 
 #define	DM_MSG_PREFIX	"thin"
 

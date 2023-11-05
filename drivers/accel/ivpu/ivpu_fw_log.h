@@ -6,7 +6,7 @@
 #ifndef __IVPU_FW_LOG_H__
 #define __IVPU_FW_LOG_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include <drm/drm_print.h>
 

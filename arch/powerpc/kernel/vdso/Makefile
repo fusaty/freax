@@ -62,10 +62,10 @@ ldflags-$(CONFIG_LD_ORPHAN_WARN) += -Wl,--orphan-handling=$(CONFIG_LD_ORPHAN_WAR
 ldflags-y += $(filter-out $(CC_AUTO_VAR_INIT_ZERO_ENABLER) $(CC_FLAGS_FTRACE) -Wa$(comma)%, $(KBUILD_CFLAGS))
 
 CC32FLAGS := -m32
-LD32FLAGS := -Wl,-soname=linux-vdso32.so.1
+LD32FLAGS := -Wl,-soname=freax-vdso32.so.1
 AS32FLAGS := -D__VDSO32__
 
-LD64FLAGS := -Wl,-soname=linux-vdso64.so.1
+LD64FLAGS := -Wl,-soname=freax-vdso64.so.1
 AS64FLAGS := -D__VDSO64__
 
 targets += vdso32.lds

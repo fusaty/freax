@@ -21,8 +21,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
+#include <freax/pci.h>
+#include <freax/acpi.h>
 #include "kfd_crat.h"
 #include "kfd_priv.h"
 #include "kfd_topology.h"

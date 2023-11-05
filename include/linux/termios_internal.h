@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TERMIOS_CONV_H
-#define _LINUX_TERMIOS_CONV_H
+#ifndef _freax_TERMIOS_CONV_H
+#define _freax_TERMIOS_CONV_H
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/termios.h>
 
 /*	intr=^C		quit=^\		erase=del	kill=^U
@@ -46,4 +46,4 @@ int user_termios_to_kernel_termios(struct ktermios *, struct termios __user *);
 int kernel_termios_to_user_termios(struct termios __user *, struct ktermios *);
 #endif /* TCGETS2 */
 
-#endif /* _LINUX_TERMIOS_CONV_H */
+#endif /* _freax_TERMIOS_CONV_H */

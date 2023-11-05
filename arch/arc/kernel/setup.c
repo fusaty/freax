@@ -3,21 +3,21 @@
  * Copyright (C) 2004, 2007-2010, 2011-2012 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/root_dev.h>
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/console.h>
-#include <linux/module.h>
-#include <linux/sizes.h>
-#include <linux/cpu.h>
-#include <linux/of_clk.h>
-#include <linux/of_fdt.h>
-#include <linux/of.h>
-#include <linux/cache.h>
-#include <uapi/linux/mount.h>
+#include <freax/seq_file.h>
+#include <freax/fs.h>
+#include <freax/delay.h>
+#include <freax/root_dev.h>
+#include <freax/clk.h>
+#include <freax/clocksource.h>
+#include <freax/console.h>
+#include <freax/module.h>
+#include <freax/sizes.h>
+#include <freax/cpu.h>
+#include <freax/of_clk.h>
+#include <freax/of_fdt.h>
+#include <freax/of.h>
+#include <freax/cache.h>
+#include <uapi/freax/mount.h>
 #include <asm/sections.h>
 #include <asm/arcregs.h>
 #include <asm/asserts.h>
@@ -392,18 +392,18 @@ static void arc_chk_core_config(struct cpuinfo_arc *info)
 #ifdef CONFIG_ARC_HAS_DCCM
 	/*
 	 * DCCM can be arbit placed in hardware.
-	 * Make sure it's placement/sz matches what Linux is built with
+	 * Make sure it's placement/sz matches what freax is built with
 	 */
 	if ((unsigned int)__arc_dccm_base != info->dccm.base)
-		panic("Linux built with incorrect DCCM Base address\n");
+		panic("freax built with incorrect DCCM Base address\n");
 
 	if (CONFIG_ARC_DCCM_SZ * SZ_1K != info->dccm.sz)
-		panic("Linux built with incorrect DCCM Size\n");
+		panic("freax built with incorrect DCCM Size\n");
 #endif
 
 #ifdef CONFIG_ARC_HAS_ICCM
 	if (CONFIG_ARC_ICCM_SZ * SZ_1K != info->iccm.sz)
-		panic("Linux built with incorrect ICCM Size\n");
+		panic("freax built with incorrect ICCM Size\n");
 #endif
 }
 

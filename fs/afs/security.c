@@ -5,12 +5,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/ctype.h>
-#include <linux/sched.h>
-#include <linux/hashtable.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/ctype.h>
+#include <freax/sched.h>
+#include <freax/hashtable.h>
 #include <keys/rxrpc-type.h>
 #include "internal.h"
 

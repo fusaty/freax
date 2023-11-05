@@ -5,19 +5,19 @@
  *    Copyright (C) 2008 Pengutronix
  */
 
-#include <linux/kernel.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/isa.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-pca.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/ioport.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/wait.h>
+#include <freax/isa.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-pca.h>
+#include <freax/io.h>
 
 #include <asm/irq.h>
 

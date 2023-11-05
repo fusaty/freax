@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0 OR MIT
 /* Copyright 2017-2019 Qiang Yu <yuq825@gmail.com> */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/device.h>
+#include <freax/slab.h>
 
 #include <drm/lima_drm.h>
 

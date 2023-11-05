@@ -8,15 +8,15 @@
  *              David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/mtd/super.h>
-#include <linux/namei.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/major.h>
-#include <linux/backing-dev.h>
-#include <linux/blkdev.h>
-#include <linux/fs_context.h>
+#include <freax/mtd/super.h>
+#include <freax/namei.h>
+#include <freax/export.h>
+#include <freax/ctype.h>
+#include <freax/slab.h>
+#include <freax/major.h>
+#include <freax/backing-dev.h>
+#include <freax/blkdev.h>
+#include <freax/fs_context.h>
 #include "mtdcore.h"
 
 /*

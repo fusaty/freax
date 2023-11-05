@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * SPU info structures
  *
@@ -10,7 +10,7 @@
 #ifndef _UAPI_SPU_INFO_H
 #define _UAPI_SPU_INFO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifndef __KERNEL__
 struct mfc_cq_sr {

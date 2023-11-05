@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/nfs/file.c
+ *  freax/fs/nfs/file.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -17,21 +17,21 @@
  *  nfs regular file handling functions
  */
 
-#include <linux/module.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/stat.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/gfp.h>
-#include <linux/swap.h>
+#include <freax/module.h>
+#include <freax/time.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/fcntl.h>
+#include <freax/stat.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_mount.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/gfp.h>
+#include <freax/swap.h>
 
-#include <linux/uaccess.h>
-#include <linux/filelock.h>
+#include <freax/uaccess.h>
+#include <freax/filelock.h>
 
 #include "delegation.h"
 #include "internal.h"

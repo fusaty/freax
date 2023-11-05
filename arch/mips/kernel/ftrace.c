@@ -9,10 +9,10 @@
  * Thanks goes to Steven Rostedt for writing the original x86 version.
  */
 
-#include <linux/uaccess.h>
-#include <linux/init.h>
-#include <linux/ftrace.h>
-#include <linux/syscalls.h>
+#include <freax/uaccess.h>
+#include <freax/init.h>
+#include <freax/ftrace.h>
+#include <freax/syscalls.h>
 
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>
@@ -376,7 +376,7 @@ out:
 #ifdef CONFIG_32BIT
 unsigned long __init arch_syscall_addr(int nr)
 {
-	return (unsigned long)sys_call_table[nr - __NR_O32_Linux];
+	return (unsigned long)sys_call_table[nr - __NR_O32_freax];
 }
 #endif
 
@@ -385,14 +385,14 @@ unsigned long __init arch_syscall_addr(int nr)
 unsigned long __init arch_syscall_addr(int nr)
 {
 #ifdef CONFIG_MIPS32_N32
-	if (nr >= __NR_N32_Linux && nr < __NR_N32_Linux + __NR_N32_Linux_syscalls)
-		return (unsigned long)sysn32_call_table[nr - __NR_N32_Linux];
+	if (nr >= __NR_N32_freax && nr < __NR_N32_freax + __NR_N32_freax_syscalls)
+		return (unsigned long)sysn32_call_table[nr - __NR_N32_freax];
 #endif
-	if (nr >= __NR_64_Linux  && nr < __NR_64_Linux + __NR_64_Linux_syscalls)
-		return (unsigned long)sys_call_table[nr - __NR_64_Linux];
+	if (nr >= __NR_64_freax  && nr < __NR_64_freax + __NR_64_freax_syscalls)
+		return (unsigned long)sys_call_table[nr - __NR_64_freax];
 #ifdef CONFIG_MIPS32_O32
-	if (nr >= __NR_O32_Linux && nr < __NR_O32_Linux + __NR_O32_Linux_syscalls)
-		return (unsigned long)sys32_call_table[nr - __NR_O32_Linux];
+	if (nr >= __NR_O32_freax && nr < __NR_O32_freax + __NR_O32_freax_syscalls)
+		return (unsigned long)sys32_call_table[nr - __NR_O32_freax];
 #endif
 
 	return (unsigned long) &sys_ni_syscall;

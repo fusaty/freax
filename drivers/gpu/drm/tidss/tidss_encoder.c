@@ -4,7 +4,7 @@
  * Author: Tomi Valkeinen <tomi.valkeinen@ti.com>
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

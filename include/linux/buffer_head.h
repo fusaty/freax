@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/buffer_head.h
+ * include/freax/buffer_head.h
  *
  * Everything to do with buffer_heads.
  */
 
-#ifndef _LINUX_BUFFER_HEAD_H
-#define _LINUX_BUFFER_HEAD_H
+#ifndef _freax_BUFFER_HEAD_H
+#define _freax_BUFFER_HEAD_H
 
-#include <linux/types.h>
-#include <linux/blk_types.h>
-#include <linux/fs.h>
-#include <linux/linkage.h>
-#include <linux/pagemap.h>
-#include <linux/wait.h>
-#include <linux/atomic.h>
+#include <freax/types.h>
+#include <freax/blk_types.h>
+#include <freax/fs.h>
+#include <freax/linkage.h>
+#include <freax/pagemap.h>
+#include <freax/wait.h>
+#include <freax/atomic.h>
 
 enum bh_state_bits {
 	BH_Uptodate,	/* Contains valid data */
@@ -506,4 +506,4 @@ static inline bool has_bh_in_lru(int cpu, void *dummy) { return false; }
 #define buffer_heads_over_limit 0
 
 #endif /* CONFIG_BUFFER_HEAD */
-#endif /* _LINUX_BUFFER_HEAD_H */
+#endif /* _freax_BUFFER_HEAD_H */

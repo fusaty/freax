@@ -7,8 +7,8 @@
  *
  * Authors: Peter Chen <peter.chen@nxp.com>
  */
-#ifndef __LINUX_CDNS3_GADGET_EXPORT
-#define __LINUX_CDNS3_GADGET_EXPORT
+#ifndef __freax_CDNS3_GADGET_EXPORT
+#define __freax_CDNS3_GADGET_EXPORT
 
 #if IS_ENABLED(CONFIG_USB_CDNSP_GADGET)
 
@@ -34,4 +34,4 @@ static inline int cdns3_gadget_init(struct cdns *cdns)
 
 #endif /* CONFIG_USB_CDNS3_GADGET */
 
-#endif /* __LINUX_CDNS3_GADGET_EXPORT */
+#endif /* __freax_CDNS3_GADGET_EXPORT */

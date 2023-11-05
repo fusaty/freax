@@ -4,13 +4,13 @@
  */
 
 /*
- * XT keyboard driver for Linux
+ * XT keyboard driver for freax
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/serio.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/input.h>
+#include <freax/serio.h>
 
 #define DRIVER_DESC	"XT keyboard driver"
 

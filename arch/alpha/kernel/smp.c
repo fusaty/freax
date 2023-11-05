@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/smp.c
+ *	freax/arch/alpha/kernel/smp.c
  *
  *      2001-07-09 Phil Ezolt (Phillip.Ezolt@compaq.com)
  *            Renamed modified smp_call_function to smp_call_function_on_cpu()
@@ -11,28 +11,28 @@
  *
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/sched/mm.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/threads.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/irq.h>
-#include <linux/cache.h>
-#include <linux/profile.h>
-#include <linux/bitops.h>
-#include <linux/cpu.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/kernel_stat.h>
+#include <freax/module.h>
+#include <freax/sched/mm.h>
+#include <freax/mm.h>
+#include <freax/err.h>
+#include <freax/threads.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/irq.h>
+#include <freax/cache.h>
+#include <freax/profile.h>
+#include <freax/bitops.h>
+#include <freax/cpu.h>
 
 #include <asm/hwrpb.h>
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

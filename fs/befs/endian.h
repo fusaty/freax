@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/fs/befs/endian.h
+ * freax/fs/befs/endian.h
  *
  * Copyright (C) 2001 Will Dyson <will_dyson@pobox.com>
  *
  * Partially based on similar funtions in the sysv driver.
  */
 
-#ifndef LINUX_BEFS_ENDIAN
-#define LINUX_BEFS_ENDIAN
+#ifndef freax_BEFS_ENDIAN
+#define freax_BEFS_ENDIAN
 
 #include <asm/byteorder.h>
 
@@ -123,4 +123,4 @@ fsds_to_cpu(const struct super_block *sb, const befs_disk_data_stream *n)
 	return data;
 }
 
-#endif				//LINUX_BEFS_ENDIAN
+#endif				//freax_BEFS_ENDIAN

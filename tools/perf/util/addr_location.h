@@ -2,7 +2,7 @@
 #ifndef __PERF_ADDR_LOCATION
 #define __PERF_ADDR_LOCATION 1
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct thread;
 struct maps;

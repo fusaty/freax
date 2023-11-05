@@ -9,15 +9,15 @@
  * TODO: irq, user offset, oversampling, continuous mode
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/delay.h>
+#include <freax/regulator/consumer.h>
 
 #define MAG3110_STATUS 0x00
 #define MAG3110_OUT_X 0x01 /* MSB first */

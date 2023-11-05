@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * include/linux/if_team.h - Network team device driver header
+ * include/freax/if_team.h - Network team device driver header
  * Copyright (c) 2011 Jiri Pirko <jpirko@redhat.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -9,8 +9,8 @@
  * (at your option) any later version.
  */
 
-#ifndef _UAPI_LINUX_IF_TEAM_H_
-#define _UAPI_LINUX_IF_TEAM_H_
+#ifndef _UAPI_freax_IF_TEAM_H_
+#define _UAPI_freax_IF_TEAM_H_
 
 
 #define TEAM_STRING_MAX_LEN 32
@@ -105,4 +105,4 @@ enum {
 #define TEAM_GENL_VERSION 0x1
 #define TEAM_GENL_CHANGE_EVENT_MC_GRP_NAME "change_event"
 
-#endif /* _UAPI_LINUX_IF_TEAM_H_ */
+#endif /* _UAPI_freax_IF_TEAM_H_ */

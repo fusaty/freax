@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MSDOS_PARTITION_H
-#define _LINUX_MSDOS_PARTITION_H
+#ifndef _freax_MSDOS_PARTITION_H
+#define _freax_MSDOS_PARTITION_H
 
 #define MSDOS_LABEL_MAGIC		0xAA55
 
@@ -24,14 +24,14 @@ enum msdos_sys_ind {
 	 * cylinder 1023.
 	 */
 	DOS_EXTENDED_PARTITION = 5,
-	LINUX_EXTENDED_PARTITION = 0x85,
+	freax_EXTENDED_PARTITION = 0x85,
 	WIN98_EXTENDED_PARTITION = 0x0f,
 
-	LINUX_DATA_PARTITION = 0x83,
-	LINUX_LVM_PARTITION = 0x8e,
-	LINUX_RAID_PARTITION = 0xfd,	/* autodetect RAID partition */
+	freax_DATA_PARTITION = 0x83,
+	freax_LVM_PARTITION = 0x8e,
+	freax_RAID_PARTITION = 0xfd,	/* autodetect RAID partition */
 
-	SOLARIS_X86_PARTITION =	0x82,	/* also Linux swap partitions */
+	SOLARIS_X86_PARTITION =	0x82,	/* also freax swap partitions */
 	NEW_SOLARIS_X86_PARTITION = 0xbf,
 
 	DM6_AUX1PARTITION = 0x51,	/* no DDO:  use xlated geom */
@@ -47,4 +47,4 @@ enum msdos_sys_ind {
 	UNIXWARE_PARTITION = 0x63,	/* Same as GNU_HURD and SCO Unix */
 };
 
-#endif /* LINUX_MSDOS_PARTITION_H */
+#endif /* freax_MSDOS_PARTITION_H */

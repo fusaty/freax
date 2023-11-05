@@ -2,8 +2,8 @@
 /* Copyright(c) 2021-2023  Realtek Corporation
  */
 
-#include <linux/acpi.h>
-#include <linux/uuid.h>
+#include <freax/acpi.h>
+#include <freax/uuid.h>
 
 #include "acpi.h"
 #include "debug.h"

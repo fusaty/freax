@@ -31,12 +31,12 @@
  * Copyright (C) Stefan Hajnoczi <stefanha@redhat.com>, 2015
  */
 
-#ifndef _UAPI_LINUX_VIRTIO_VSOCK_H
-#define _UAPI_LINUX_VIRTIO_VSOCK_H
+#ifndef _UAPI_freax_VIRTIO_VSOCK_H
+#define _UAPI_freax_VIRTIO_VSOCK_H
 
-#include <linux/types.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
+#include <freax/types.h>
+#include <freax/virtio_ids.h>
+#include <freax/virtio_config.h>
 
 /* The feature bitmap for virtio vsock */
 #define VIRTIO_VSOCK_F_SEQPACKET	1	/* SOCK_SEQPACKET supported */
@@ -101,4 +101,4 @@ enum virtio_vsock_rw {
 	VIRTIO_VSOCK_SEQ_EOR = 2,
 };
 
-#endif /* _UAPI_LINUX_VIRTIO_VSOCK_H */
+#endif /* _UAPI_freax_VIRTIO_VSOCK_H */

@@ -8,7 +8,7 @@
 #include "../habanalabs.h"
 #include "../../include/hw_ip/mmu/mmu_general.h"
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 #define MMU_V1_MAX_HOPS	(MMU_HOP4 + 1)
 

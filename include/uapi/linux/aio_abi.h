@@ -1,4 +1,4 @@
-/* include/linux/aio_abi.h
+/* include/freax/aio_abi.h
  *
  * Copyright 2000,2001,2002 Red Hat.
  *
@@ -24,11 +24,11 @@
  * RED HAT HAS NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
  * ENHANCEMENTS, OR MODIFICATIONS.
  */
-#ifndef __LINUX__AIO_ABI_H
-#define __LINUX__AIO_ABI_H
+#ifndef __freax__AIO_ABI_H
+#define __freax__AIO_ABI_H
 
-#include <linux/types.h>
-#include <linux/fs.h>
+#include <freax/types.h>
+#include <freax/fs.h>
 #include <asm/byteorder.h>
 
 typedef __kernel_ulong_t aio_context_t;
@@ -109,5 +109,5 @@ struct iocb {
 #undef IFBIG
 #undef IFLITTLE
 
-#endif /* __LINUX__AIO_ABI_H */
+#endif /* __freax__AIO_ABI_H */
 

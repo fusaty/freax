@@ -7,7 +7,7 @@
  * 2005 (c) MontaVista Software, Inc.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 
 #include "pxa2xx-regs.h"

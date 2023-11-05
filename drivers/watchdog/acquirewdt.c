@@ -51,19 +51,19 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 /* Includes */
-#include <linux/module.h>		/* For module specific items */
-#include <linux/moduleparam.h>		/* For new moduleparam's */
-#include <linux/types.h>		/* For standard types (like size_t) */
-#include <linux/errno.h>		/* For the -ENODEV/... values */
-#include <linux/kernel.h>		/* For printk/panic/... */
-#include <linux/miscdevice.h>		/* For struct miscdevice */
-#include <linux/watchdog.h>		/* For the watchdog specific items */
-#include <linux/fs.h>			/* For file operations */
-#include <linux/ioport.h>		/* For io-port access */
-#include <linux/platform_device.h>	/* For platform_driver framework */
-#include <linux/init.h>			/* For __init/__exit/... */
-#include <linux/uaccess.h>		/* For copy_to_user/put_user/... */
-#include <linux/io.h>			/* For inb/outb/... */
+#include <freax/module.h>		/* For module specific items */
+#include <freax/moduleparam.h>		/* For new moduleparam's */
+#include <freax/types.h>		/* For standard types (like size_t) */
+#include <freax/errno.h>		/* For the -ENODEV/... values */
+#include <freax/kernel.h>		/* For printk/panic/... */
+#include <freax/miscdevice.h>		/* For struct miscdevice */
+#include <freax/watchdog.h>		/* For the watchdog specific items */
+#include <freax/fs.h>			/* For file operations */
+#include <freax/ioport.h>		/* For io-port access */
+#include <freax/platform_device.h>	/* For platform_driver framework */
+#include <freax/init.h>			/* For __init/__exit/... */
+#include <freax/uaccess.h>		/* For copy_to_user/put_user/... */
+#include <freax/io.h>			/* For inb/outb/... */
 
 /* Module information */
 #define DRV_NAME "acquirewdt"

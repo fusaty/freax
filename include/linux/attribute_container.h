@@ -8,8 +8,8 @@
 #ifndef _ATTRIBUTE_CONTAINER_H_
 #define _ATTRIBUTE_CONTAINER_H_
 
-#include <linux/list.h>
-#include <linux/klist.h>
+#include <freax/list.h>
+#include <freax/klist.h>
 
 struct device;
 

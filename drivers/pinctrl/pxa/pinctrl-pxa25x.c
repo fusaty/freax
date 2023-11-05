@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2016 Robert Jarzmik
  */
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/pinctrl/pinctrl.h>
 
 #include "pinctrl-pxa2xx.h"
 

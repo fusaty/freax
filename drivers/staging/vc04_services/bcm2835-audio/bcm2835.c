@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright 2011 Broadcom Corporation.  All rights reserved. */
 
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 #include "../interface/vchiq_arm/vchiq_bus.h"
 #include "bcm2835.h"

@@ -18,7 +18,7 @@
 
 set -e
 
-# this should work for both the pSeries zImage and the iSeries vmlinux.sm
+# this should work for both the pSeries zImage and the iSeries vmfreax.sm
 image_name=`basename $2`
 
 

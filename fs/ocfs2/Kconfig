@@ -20,7 +20,7 @@ config OCFS2_FS
 
 	  Project web page:    https://ocfs2.wiki.kernel.org/
 	  Tools web page:      https://github.com/markfasheh/ocfs2-tools
-	  OCFS2 mailing lists: https://subspace.kernel.org/lists.linux.dev.html
+	  OCFS2 mailing lists: https://subspace.kernel.org/lists.freax.dev.html
 
 	  For more information on OCFS2, see the file
 	  <file:Documentation/filesystems/ocfs2.rst>.

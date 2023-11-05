@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-#ifndef _LINUX_SYSFB_H
-#define _LINUX_SYSFB_H
+#ifndef _freax_SYSFB_H
+#define _freax_SYSFB_H
 
 /*
  * Generic System Framebuffers on x86
  * Copyright (c) 2012-2013 David Herrmann <dh.herrmann@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_data/simplefb.h>
+#include <freax/kernel.h>
+#include <freax/platform_data/simplefb.h>
 
 struct screen_info;
 
@@ -109,4 +109,4 @@ static inline struct platform_device *sysfb_create_simplefb(const struct screen_
 
 #endif /* CONFIG_SYSFB_SIMPLE */
 
-#endif /* _LINUX_SYSFB_H */
+#endif /* _freax_SYSFB_H */

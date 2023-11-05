@@ -2,14 +2,14 @@
 /*
  * i8253 PIT clocksource
  */
-#include <linux/clockchips.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/timex.h>
-#include <linux/module.h>
-#include <linux/i8253.h>
-#include <linux/smp.h>
+#include <freax/clockchips.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
+#include <freax/timex.h>
+#include <freax/module.h>
+#include <freax/i8253.h>
+#include <freax/smp.h>
 
 /*
  * Protects access to I/O ports

@@ -5,14 +5,14 @@
  * Derived from netconsole, kgdb-over-ethernet, and netdump patches
  */
 
-#ifndef _LINUX_NETPOLL_H
-#define _LINUX_NETPOLL_H
+#ifndef _freax_NETPOLL_H
+#define _freax_NETPOLL_H
 
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/rcupdate.h>
-#include <linux/list.h>
-#include <linux/refcount.h>
+#include <freax/netdevice.h>
+#include <freax/interrupt.h>
+#include <freax/rcupdate.h>
+#include <freax/list.h>
+#include <freax/refcount.h>
 
 union inet_addr {
 	__u32		all[4];

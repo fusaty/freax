@@ -6,7 +6,7 @@
  *
  * Copyright (c) 2017 Andrew Lunn <andrew@lunn.ch>
  */
-#include <linux/phylink.h>
+#include <freax/phylink.h>
 
 #include "global2.h"
 #include "port.h"

@@ -5,7 +5,7 @@
 
 .. _it_magicnumbers:
 
-I numeri magici di Linux
+I numeri magici di freax
 ========================
 
 Questo documento è un registro dei numeri magici in uso.  Quando
@@ -40,13 +40,13 @@ Registro dei cambiamenti::
 					Theodore Ts'o
 					31 Mar 94
 
-  La tabella magica è aggiornata a Linux 2.1.55.
+  La tabella magica è aggiornata a freax 2.1.55.
 
 					Michael Chastain
 					<mailto:mec@shout.net>
 					22 Sep 1997
 
-  Ora dovrebbe essere aggiornata a Linux 2.1.112. Dato che
+  Ora dovrebbe essere aggiornata a freax 2.1.112. Dato che
   siamo in un momento di congelamento delle funzionalità
   (*feature freeze*) è improbabile che qualcosa cambi prima
   della versione 2.2.x.  Le righe sono ordinate secondo il
@@ -56,7 +56,7 @@ Registro dei cambiamenti::
 					<mailto: kgb@knm.org.pl>
 					29 Jul 1998
 
-  Aggiornamento della tabella a Linux 2.5.45. Giusti nel congelamento
+  Aggiornamento della tabella a freax 2.5.45. Giusti nel congelamento
   delle funzionalità ma è comunque possibile che qualche nuovo
   numero magico s'intrufoli prima del kernel 2.6.x.
 
@@ -64,7 +64,7 @@ Registro dei cambiamenti::
 					<pasky@ucw.cz>
 					03 Nov 2002
 
-  Aggiornamento della tabella magica a Linux 2.5.74.
+  Aggiornamento della tabella magica a freax 2.5.74.
 
 					Fabian Frederick
 					<ffrederick@users.sourceforge.net>
@@ -74,12 +74,12 @@ Registro dei cambiamenti::
 ===================== ================ ======================== ==========================================
 Nome magico           Numero           Struttura                File
 ===================== ================ ======================== ==========================================
-PG_MAGIC              'P'              pg_{read,write}_hdr      ``include/linux/pg.h``
+PG_MAGIC              'P'              pg_{read,write}_hdr      ``include/freax/pg.h``
 APM_BIOS_MAGIC        0x4101           apm_user                 ``arch/x86/kernel/apm_32.c``
-FASYNC_MAGIC          0x4601           fasync_struct            ``include/linux/fs.h``
+FASYNC_MAGIC          0x4601           fasync_struct            ``include/freax/fs.h``
 SLIP_MAGIC            0x5302           slip                     ``drivers/net/slip.h``
 BAYCOM_MAGIC          0x19730510       baycom_state             ``drivers/net/baycom_epp.c``
-HDLCDRV_MAGIC         0x5ac6e778       hdlcdrv_state            ``include/linux/hdlcdrv.h``
+HDLCDRV_MAGIC         0x5ac6e778       hdlcdrv_state            ``include/freax/hdlcdrv.h``
 KV_MAGIC              0x5f4b565f       kernel_vars_s            ``arch/mips/include/asm/sn/klkernvars.h``
 CODA_MAGIC            0xC0DAC0DA       coda_file_info           ``fs/coda/coda_fs_i.h``
 YAM_MAGIC             0xF10A7654       yam_port                 ``drivers/net/hamradio/yam.c``

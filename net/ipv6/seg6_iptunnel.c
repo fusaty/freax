@@ -6,10 +6,10 @@
  *  David Lebrun <david.lebrun@uclouvain.be>
  */
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/net.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/skbuff.h>
+#include <freax/net.h>
+#include <freax/module.h>
 #include <net/ip.h>
 #include <net/ip_tunnels.h>
 #include <net/lwtunnel.h>
@@ -18,15 +18,15 @@
 #include <net/ip6_fib.h>
 #include <net/route.h>
 #include <net/seg6.h>
-#include <linux/seg6.h>
-#include <linux/seg6_iptunnel.h>
+#include <freax/seg6.h>
+#include <freax/seg6_iptunnel.h>
 #include <net/addrconf.h>
 #include <net/ip6_route.h>
 #include <net/dst_cache.h>
 #ifdef CONFIG_IPV6_SEG6_HMAC
 #include <net/seg6_hmac.h>
 #endif
-#include <linux/netfilter.h>
+#include <freax/netfilter.h>
 
 static size_t seg6_lwt_headroom(struct seg6_iptunnel_encap *tuninfo)
 {

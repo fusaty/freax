@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_GFP_TYPES_H
-#define __LINUX_GFP_TYPES_H
+#ifndef __freax_GFP_TYPES_H
+#define __freax_GFP_TYPES_H
 
 /* The typedef is in types.h but we want the documentation here */
 #if 0
 /**
  * typedef gfp_t - Memory allocation flags.
  *
- * GFP flags are commonly used throughout Linux to indicate how memory
+ * GFP flags are commonly used throughout freax to indicate how memory
  * should be allocated.  The GFP acronym stands for get_free_pages(),
  * the underlying memory allocation function.  Not every GFP flag is
  * supported by every function which may allocate memory.  Most users
@@ -61,7 +61,7 @@ typedef unsigned int __bitwise gfp_t;
 /* If the above are modified, __GFP_BITS_SHIFT may need updating */
 
 /*
- * Physical address zone modifiers (see linux/mmzone.h - low four bits)
+ * Physical address zone modifiers (see freax/mmzone.h - low four bits)
  *
  * Do not put any conditional on these. If necessary modify the definitions
  * without the underscores and use them consistently. The definitions here may
@@ -337,4 +337,4 @@ typedef unsigned int __bitwise gfp_t;
 			 __GFP_NOMEMALLOC | __GFP_NOWARN) & ~__GFP_RECLAIM)
 #define GFP_TRANSHUGE	(GFP_TRANSHUGE_LIGHT | __GFP_DIRECT_RECLAIM)
 
-#endif /* __LINUX_GFP_TYPES_H */
+#endif /* __freax_GFP_TYPES_H */

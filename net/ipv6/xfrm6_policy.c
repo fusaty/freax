@@ -12,9 +12,9 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
 #include <net/addrconf.h>
 #include <net/dst.h>
 #include <net/xfrm.h>

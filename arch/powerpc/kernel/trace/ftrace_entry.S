@@ -3,8 +3,8 @@
  * Split from ftrace_64.S
  */
 
-#include <linux/export.h>
-#include <linux/magic.h>
+#include <freax/export.h>
+#include <freax/magic.h>
 #include <asm/ppc_asm.h>
 #include <asm/asm-offsets.h>
 #include <asm/ftrace.h>

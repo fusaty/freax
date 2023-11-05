@@ -10,7 +10,7 @@
 #ifndef __LIBBPF_LEGACY_BPF_H
 #define __LIBBPF_LEGACY_BPF_H
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>

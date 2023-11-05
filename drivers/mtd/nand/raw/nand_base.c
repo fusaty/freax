@@ -5,7 +5,7 @@
  *   capable of working with almost all NAND chips currently available.
  *
  *	Additional technical information is available on
- *	http://www.linux-mtd.infradead.org/doc/nand.html
+ *	http://www.freax-mtd.infradead.org/doc/nand.html
  *
  *  Copyright (C) 2000 Steven J. Hill (sjhill@realitydiluted.com)
  *		  2002-2006 Thomas Gleixner (tglx@linutronix.de)
@@ -25,25 +25,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/mtd/nand-ecc-sw-bch.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/types.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/nand.h>
+#include <freax/mtd/nand-ecc-sw-hamming.h>
+#include <freax/mtd/nand-ecc-sw-bch.h>
+#include <freax/interrupt.h>
+#include <freax/bitops.h>
+#include <freax/io.h>
+#include <freax/mtd/partitions.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/gpio/consumer.h>
 
 #include "internals.h"
 

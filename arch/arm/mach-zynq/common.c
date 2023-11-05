@@ -6,25 +6,25 @@
  *  Copyright (C) 2011 Xilinx
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/cpumask.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/clk/zynq.h>
-#include <linux/clocksource.h>
-#include <linux/of_address.h>
-#include <linux/of_clk.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/of.h>
-#include <linux/memblock.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
-#include <linux/pgtable.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/cpumask.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/clk/zynq.h>
+#include <freax/clocksource.h>
+#include <freax/of_address.h>
+#include <freax/of_clk.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/of.h>
+#include <freax/memblock.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/arm-gic.h>
+#include <freax/slab.h>
+#include <freax/sys_soc.h>
+#include <freax/pgtable.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

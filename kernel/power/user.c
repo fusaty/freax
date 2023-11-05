@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/kernel/power/user.c
+ * freax/kernel/power/user.c
  *
  * This file provides the user space interface for software suspend/resume.
  *
  * Copyright (C) 2006 Rafael J. Wysocki <rjw@sisk.pl>
  */
 
-#include <linux/suspend.h>
-#include <linux/reboot.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pm.h>
-#include <linux/fs.h>
-#include <linux/compat.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/freezer.h>
+#include <freax/suspend.h>
+#include <freax/reboot.h>
+#include <freax/string.h>
+#include <freax/device.h>
+#include <freax/miscdevice.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/pm.h>
+#include <freax/fs.h>
+#include <freax/compat.h>
+#include <freax/console.h>
+#include <freax/cpu.h>
+#include <freax/freezer.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "power.h"
 

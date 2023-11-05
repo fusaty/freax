@@ -3,18 +3,18 @@
  * gpio_backlight.c - Simple GPIO-controlled backlight
  */
 
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/fb.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_data/gpio_backlight.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <freax/backlight.h>
+#include <freax/err.h>
+#include <freax/fb.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_data/gpio_backlight.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/slab.h>
 
 struct gpio_backlight {
 	struct device *dev;

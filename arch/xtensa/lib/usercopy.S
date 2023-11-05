@@ -53,7 +53,7 @@
  *	a11/ original length
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/asmmacro.h>
 #include <asm/core.h>
 

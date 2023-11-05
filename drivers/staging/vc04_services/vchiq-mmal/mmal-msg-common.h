@@ -14,7 +14,7 @@
 #ifndef MMAL_MSG_COMMON_H
 #define MMAL_MSG_COMMON_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum mmal_msg_status {
 	MMAL_MSG_STATUS_SUCCESS = 0, /**< Success */

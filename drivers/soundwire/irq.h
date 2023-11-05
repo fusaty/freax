@@ -7,8 +7,8 @@
 #ifndef __SDW_IRQ_H
 #define __SDW_IRQ_H
 
-#include <linux/soundwire/sdw.h>
-#include <linux/fwnode.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/fwnode.h>
 
 #if IS_ENABLED(CONFIG_IRQ_DOMAIN)
 

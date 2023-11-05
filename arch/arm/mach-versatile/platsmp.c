@@ -8,12 +8,12 @@
  * woken, and where there is no way to hot-unplug CPUs.  Real platforms
  * should not copy this code.
  */
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/smp.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/jiffies.h>
+#include <freax/smp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>

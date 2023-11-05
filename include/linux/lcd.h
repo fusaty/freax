@@ -6,13 +6,13 @@
  *
  */
 
-#ifndef _LINUX_LCD_H
-#define _LINUX_LCD_H
+#ifndef _freax_LCD_H
+#define _freax_LCD_H
 
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/fb.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/fb.h>
 
 /* Notes on locking:
  *

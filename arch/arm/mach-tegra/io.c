@@ -9,11 +9,11 @@
  *	Erik Gilling <konkers@google.com>
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
 
 #include <asm/mach/map.h>
 #include <asm/page.h>

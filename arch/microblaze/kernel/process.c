@@ -8,16 +8,16 @@
  * for more details.
  */
 
-#include <linux/cpu.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/bitops.h>
-#include <linux/ptrace.h>
+#include <freax/cpu.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/pm.h>
+#include <freax/tick.h>
+#include <freax/bitops.h>
+#include <freax/ptrace.h>
 #include <asm/cacheflush.h>
 
 void show_regs(struct pt_regs *regs)
@@ -129,7 +129,7 @@ void start_thread(struct pt_regs *regs, unsigned long pc, unsigned long usp)
 	regs->msr &= ~MSR_VM;
 }
 
-#include <linux/elfcore.h>
+#include <freax/elfcore.h>
 /*
  * Set up a thread for executing a new program
  */

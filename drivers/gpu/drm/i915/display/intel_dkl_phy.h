@@ -6,7 +6,7 @@
 #ifndef __INTEL_DKL_PHY_H__
 #define __INTEL_DKL_PHY_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "intel_dkl_phy_regs.h"
 

@@ -10,15 +10,15 @@
  *
  * Copyright (c) Alan Smithee.
  * Copyright (c) Andrew McDonald <andrew@mcdonald.org.uk>
- * Copyright (c) Jean-Francois Dive <jef@linuxbe.org>
+ * Copyright (c) Jean-Francois Dive <jef@freaxbe.org>
  */
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 #include <crypto/sha1.h>
 #include <crypto/sha1_base.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/module.h>
 #include <asm/byteorder.h>
 #include <asm/octeon/octeon.h>
 #include <crypto/internal/hash.h>

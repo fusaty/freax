@@ -6,12 +6,12 @@
  * Copyright (C) 2015 Cadence Design Systems Inc.
  */
 
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
 
 #include <asm/core.h>
 #include <asm/processor.h>

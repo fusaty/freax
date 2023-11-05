@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  *  Copyright IBM Corp. 2012, 2022
- *  Author(s): Holger Dengler <hd@linux.vnet.ibm.com>
+ *  Author(s): Holger Dengler <hd@freax.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
-#include <linux/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/atomic.h>
+#include <freax/uaccess.h>
+#include <freax/mod_devicetable.h>
 
 #include "ap_bus.h"
 #include "zcrypt_api.h"

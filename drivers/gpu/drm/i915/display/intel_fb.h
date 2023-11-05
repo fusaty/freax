@@ -6,8 +6,8 @@
 #ifndef __INTEL_FB_H__
 #define __INTEL_FB_H__
 
-#include <linux/bits.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/types.h>
 
 struct drm_device;
 struct drm_file;

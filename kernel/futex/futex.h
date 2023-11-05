@@ -2,13 +2,13 @@
 #ifndef _FUTEX_H
 #define _FUTEX_H
 
-#include <linux/futex.h>
-#include <linux/rtmutex.h>
-#include <linux/sched/wake_q.h>
-#include <linux/compat.h>
+#include <freax/futex.h>
+#include <freax/rtmutex.h>
+#include <freax/sched/wake_q.h>
+#include <freax/compat.h>
 
 #ifdef CONFIG_PREEMPT_RT
-#include <linux/rcuwait.h>
+#include <freax/rcuwait.h>
 #endif
 
 #include <asm/futex.h>

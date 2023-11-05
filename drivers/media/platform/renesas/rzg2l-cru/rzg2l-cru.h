@@ -8,7 +8,7 @@
 #ifndef __RZG2L_CRU__
 #define __RZG2L_CRU__
 
-#include <linux/reset.h>
+#include <freax/reset.h>
 
 #include <media/v4l2-async.h>
 #include <media/v4l2-dev.h>

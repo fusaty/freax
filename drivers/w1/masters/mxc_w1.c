@@ -4,15 +4,15 @@
  * Copyright 2008 Luotao Fu, kernel@pengutronix.de
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/ktime.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
-#include <linux/w1.h>
+#include <freax/w1.h>
 
 /*
  * MXC W1 Register offsets

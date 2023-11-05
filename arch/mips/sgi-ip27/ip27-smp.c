@@ -6,11 +6,11 @@
  * Copyright (C) 2000 - 2001 by Kanoj Sarcar (kanoj@sgi.com)
  * Copyright (C) 2000 - 2001 by Silicon Graphics, Inc.
  */
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/topology.h>
-#include <linux/nodemask.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/topology.h>
+#include <freax/nodemask.h>
 
 #include <asm/page.h>
 #include <asm/processor.h>

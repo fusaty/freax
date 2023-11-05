@@ -5,8 +5,8 @@
  * Copyright (C) 2013 Stefani Seibold <stefani@seibold.net>
  */
 
-#ifndef _LINUX_KFIFO_H
-#define _LINUX_KFIFO_H
+#ifndef _freax_KFIFO_H
+#define _freax_KFIFO_H
 
 /*
  * How to porting drivers to the new generic FIFO API:
@@ -36,10 +36,10 @@
  * to lock the reader.
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/stddef.h>
-#include <linux/scatterlist.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/stddef.h>
+#include <freax/scatterlist.h>
 
 struct __kfifo {
 	unsigned int	in;

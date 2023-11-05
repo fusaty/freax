@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/sysfs.c
+ *  freax/fs/ext4/sysfs.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -8,12 +8,12 @@
  *
  */
 
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/proc_fs.h>
-#include <linux/part_stat.h>
+#include <freax/time.h>
+#include <freax/fs.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/proc_fs.h>
+#include <freax/part_stat.h>
 
 #include "ext4.h"
 #include "ext4_jbd2.h"

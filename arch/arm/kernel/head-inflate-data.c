@@ -6,8 +6,8 @@
  * Copyright:	(C) 2017  Linaro Limited
  */
 
-#include <linux/init.h>
-#include <linux/zutil.h>
+#include <freax/init.h>
+#include <freax/zutil.h>
 #include "head.h"
 
 /* for struct inflate_state */

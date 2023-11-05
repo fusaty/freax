@@ -5,9 +5,9 @@
  */
 
 #include <errno.h>
-#include <linux/bpf.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
+#include <freax/bpf.h>
+#include <freax/ip.h>
+#include <freax/udp.h>
 #include <bpf/bpf_helpers.h>
 
 #include "progs/cg_storage_multi.h"

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_GTP_H_
-#define _UAPI_LINUX_GTP_H_
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_GTP_H_
+#define _UAPI_freax_GTP_H_
 
 #define GTP_GENL_MCGRP_NAME	"gtp"
 
@@ -35,4 +35,4 @@ enum gtp_attrs {
 };
 #define GTPA_MAX (__GTPA_MAX - 1)
 
-#endif /* _UAPI_LINUX_GTP_H_ */
+#endif /* _UAPI_freax_GTP_H_ */

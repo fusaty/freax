@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * sysctl.c: General linux system control interface
+ * sysctl.c: General freax system control interface
  *
  * Begun 24 March 1995, Stephen Tweedie
  * Added /proc support, Dec 1995
@@ -19,54 +19,54 @@
  *  Removed it and replaced it with older style, 03/23/00, Bill Wendling
  */
 
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/bitmap.h>
-#include <linux/signal.h>
-#include <linux/panic.h>
-#include <linux/printk.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/ctype.h>
-#include <linux/kmemleak.h>
-#include <linux/filter.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kobject.h>
-#include <linux/net.h>
-#include <linux/sysrq.h>
-#include <linux/highuid.h>
-#include <linux/writeback.h>
-#include <linux/ratelimit.h>
-#include <linux/hugetlb.h>
-#include <linux/initrd.h>
-#include <linux/key.h>
-#include <linux/times.h>
-#include <linux/limits.h>
-#include <linux/dcache.h>
-#include <linux/syscalls.h>
-#include <linux/vmstat.h>
-#include <linux/nfs_fs.h>
-#include <linux/acpi.h>
-#include <linux/reboot.h>
-#include <linux/ftrace.h>
-#include <linux/perf_event.h>
-#include <linux/oom.h>
-#include <linux/kmod.h>
-#include <linux/capability.h>
-#include <linux/binfmts.h>
-#include <linux/sched/sysctl.h>
-#include <linux/mount.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/pid.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/slab.h>
+#include <freax/sysctl.h>
+#include <freax/bitmap.h>
+#include <freax/signal.h>
+#include <freax/panic.h>
+#include <freax/printk.h>
+#include <freax/proc_fs.h>
+#include <freax/security.h>
+#include <freax/ctype.h>
+#include <freax/kmemleak.h>
+#include <freax/filter.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/kobject.h>
+#include <freax/net.h>
+#include <freax/sysrq.h>
+#include <freax/highuid.h>
+#include <freax/writeback.h>
+#include <freax/ratelimit.h>
+#include <freax/hugetlb.h>
+#include <freax/initrd.h>
+#include <freax/key.h>
+#include <freax/times.h>
+#include <freax/limits.h>
+#include <freax/dcache.h>
+#include <freax/syscalls.h>
+#include <freax/vmstat.h>
+#include <freax/nfs_fs.h>
+#include <freax/acpi.h>
+#include <freax/reboot.h>
+#include <freax/ftrace.h>
+#include <freax/perf_event.h>
+#include <freax/oom.h>
+#include <freax/kmod.h>
+#include <freax/capability.h>
+#include <freax/binfmts.h>
+#include <freax/sched/sysctl.h>
+#include <freax/mount.h>
+#include <freax/userfaultfd_k.h>
+#include <freax/pid.h>
 
 #include "../lib/kstrtox.h"
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/processor.h>
 
 #ifdef CONFIG_X86
@@ -78,7 +78,7 @@
 #include <asm/setup.h>
 #endif
 #ifdef CONFIG_RT_MUTEXES
-#include <linux/rtmutex.h>
+#include <freax/rtmutex.h>
 #endif
 
 /* shared constants to be used in various sysctls */

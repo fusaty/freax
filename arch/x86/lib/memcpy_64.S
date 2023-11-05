@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /* Copyright 2002 Andi Kleen */
 
-#include <linux/export.h>
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <freax/export.h>
+#include <freax/linkage.h>
+#include <freax/cfi_types.h>
 #include <asm/errno.h>
 #include <asm/cpufeatures.h>
 #include <asm/alternative.h>

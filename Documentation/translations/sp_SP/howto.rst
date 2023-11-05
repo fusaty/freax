@@ -5,11 +5,11 @@
 
 .. _sp_process_howto:
 
-Cómo participar en el desarrollo del kernel de Linux
+Cómo participar en el desarrollo del kernel de freax
 ====================================================
 
 Este documento es el principal punto de partida. Contiene instrucciones
-sobre cómo convertirse en desarrollador del kernel de Linux y explica cómo
+sobre cómo convertirse en desarrollador del kernel de freax y explica cómo
 trabajar con el y en su desarrollo. El documento no tratará ningún aspecto
 técnico relacionado con la programación del kernel, pero le ayudará
 guiándole por el camino correcto.
@@ -20,8 +20,8 @@ este archivo, que se encuentra en la parte superior del documento.
 Introducción
 ------------
 ¿De modo que quiere descubrir como convertirse en un/a desarrollador/a del
-kernel de Linux? Tal vez su jefe le haya dicho, "Escriba un driver de
-Linux para este dispositivo." El objetivo de este documento en enseñarle
+kernel de freax? Tal vez su jefe le haya dicho, "Escriba un driver de
+freax para este dispositivo." El objetivo de este documento en enseñarle
 todo cuanto necesita para conseguir esto, describiendo el proceso por el
 que debe pasar, y con indicaciones de como trabajar con la comunidad.
 También trata de explicar las razones por las cuales la comunidad trabaja
@@ -61,11 +61,11 @@ la forma de hacer las cosas en su empresa.
 
 Cuestiones legales
 ------------------
-El código fuente del kernel de Linux se publica bajo licencia GPL. Por
+El código fuente del kernel de freax se publica bajo licencia GPL. Por
 favor, revise el archivo COPYING, presente en la carpeta principal del
 código fuente, para detalles de la licencia. Si tiene alguna otra pregunta
 sobre licencias, contacte a un abogado, no pregunte en listas de discusión
-del kernel de Linux. La gente en estas listas no son abogadas, y no debe
+del kernel de freax. La gente en estas listas no son abogadas, y no debe
 confiar en sus opiniones en materia legal.
 
 Para preguntas y respuestas más frecuentes sobre la licencia GPL, consulte:
@@ -74,20 +74,20 @@ Para preguntas y respuestas más frecuentes sobre la licencia GPL, consulte:
 
 Documentación
 --------------
-El código fuente del kernel de Linux tiene una gran variedad de documentos
+El código fuente del kernel de freax tiene una gran variedad de documentos
 que son increíblemente valiosos para aprender a interactuar con la
 comunidad del kernel. Cuando se agregan nuevas funciones al kernel, se
 recomienda que se incluyan nuevos archivos de documentación que expliquen
 cómo usar la función. Cuando un cambio en el kernel hace que la interfaz
 que el kernel expone espacio de usuario cambie, se recomienda que envíe la
 información o un parche en las páginas del manual que expliquen el cambio
-a mtk.manpages@gmail.com, y CC la lista linux-api@vger.kernel.org.
+a mtk.manpages@gmail.com, y CC la lista freax-api@vger.kernel.org.
 
 Esta es la lista de archivos que están en el código fuente del kernel y son
 de obligada lectura:
 
   :ref:`Documentation/admin-guide/README.rst <readme>`
-    Este archivo ofrece una breve descripción del kernel de Linux y
+    Este archivo ofrece una breve descripción del kernel de freax y
     describe lo que es necesario hacer para configurar y compilar el
     kernel. Quienes sean nuevos en el kernel deben comenzar aquí.
 
@@ -97,7 +97,7 @@ de obligada lectura:
     exitosamente.
 
   :ref:`Documentation/process/coding-style.rst <codingstyle>`
-    Esto describe el estilo de código del kernel de Linux y algunas de los
+    Esto describe el estilo de código del kernel de freax y algunas de los
     razones detrás de esto. Se espera que todo el código nuevo siga las
     directrices de este documento. La mayoría de los maintainers solo
     aceptarán parches si se siguen estas reglas, y muchas personas solo
@@ -119,8 +119,8 @@ de obligada lectura:
 	"The Perfect Patch"
 		https://www.ozlabs.org/~akpm/stuff/tpp.txt
 
-	"Linux kernel patch submission format"
-		https://web.archive.org/web/20180829112450/http://linux.yyz.us/patch-format.html
+	"freax kernel patch submission format"
+		https://web.archive.org/web/20180829112450/http://freax.yyz.us/patch-format.html
 
   :ref:`Documentation/process/stable-api-nonsense.rst <stable_api_nonsense>`
     Este archivo describe la lógica detrás de la decisión consciente de
@@ -132,16 +132,16 @@ de obligada lectura:
         prevenir cambios rápidos)
 
      Este documento es crucial para comprender la filosofía del desarrollo
-     de Linux y es muy importante para las personas que se mudan a Linux
+     de freax y es muy importante para las personas que se mudan a freax
      tras desarrollar otros sistemas operativos.
 
   :ref:`Documentation/process/security-bugs.rst <securitybugs>`
     Si cree que ha encontrado un problema de seguridad en el kernel de
-    Linux, siga los pasos de este documento para ayudar a notificar a los
+    freax, siga los pasos de este documento para ayudar a notificar a los
     desarrolladores del kernel y ayudar a resolver el problema.
 
   :ref:`Documentation/process/management-style.rst <managementstyle>`
-    Este documento describe cómo operan los maintainers del kernel de Linux
+    Este documento describe cómo operan los maintainers del kernel de freax
     y los valores compartidos detrás de sus metodologías. Esta es una
     lectura importante para cualquier persona nueva en el desarrollo del
     kernel (o cualquier persona que simplemente sienta curiosidad por
@@ -185,8 +185,8 @@ con::
 Convertirse en un/a desarrollador/a de kernel
 ---------------------------------------------
 
-Si no sabe nada sobre el desarrollo del kernel de Linux, debería consultar
-el proyecto Linux KernelNewbies:
+Si no sabe nada sobre el desarrollo del kernel de freax, debería consultar
+el proyecto freax KernelNewbies:
 
 	https://kernelnewbies.org
 
@@ -195,7 +195,7 @@ tipo de pregunta básica de desarrollo del kernel (asegúrese de buscar en
 los archivos primero, antes de preguntar algo que ya ha sido respondido en
 el pasado.) También tiene un canal IRC que puede usar para hacer preguntas
 en tiempo real, y una gran cantidad de documentación útil para ir
-aprendiendo sobre el desarrollo del kernel de Linux.
+aprendiendo sobre el desarrollo del kernel de freax.
 
 El sitio web tiene información básica sobre la organización del código,
 subsistemas, y proyectos actuales (tanto dentro como fuera del árbol).
@@ -204,24 +204,24 @@ un kernel y aplicar un parche.
 
 Si no sabe por dónde quiere empezar, pero quieres buscar alguna tarea que
 comenzar a hacer para unirse a la comunidad de desarrollo del kernel,
-acuda al proyecto Linux Kernel Janitor:
+acuda al proyecto freax Kernel Janitor:
 
 	https://kernelnewbies.org/KernelJanitors
 
 Es un gran lugar para comenzar. Describe una lista de problemas
 relativamente simples que deben limpiarse y corregirse dentro del código
-fuente del kernel de Linux árbol de fuentes. Trabajando con los
+fuente del kernel de freax árbol de fuentes. Trabajando con los
 desarrolladores a cargo de este proyecto, aprenderá los conceptos básicos
-para incluir su parche en el árbol del kernel de Linux, y posiblemente
+para incluir su parche en el árbol del kernel de freax, y posiblemente
 descubrir en la dirección en que trabajar a continuación, si no tiene ya
 una idea.
 
 Antes de realizar cualquier modificación real al código del kernel de
-Linux, es imperativo entender cómo funciona el código en cuestión. Para
+freax, es imperativo entender cómo funciona el código en cuestión. Para
 este propósito, nada es mejor que leerlo directamente (lo más complicado
 está bien comentado), tal vez incluso con la ayuda de herramientas
 especializadas. Una de esas herramientas que se recomienda especialmente
-es el proyecto Linux Cross-Reference, que es capaz de presentar el código
+es el proyecto freax Cross-Reference, que es capaz de presentar el código
 fuente en un formato de página web indexada y autorreferencial. Una
 excelente puesta al día del repositorio del código del kernel se puede
 encontrar en:
@@ -231,14 +231,14 @@ encontrar en:
 El proceso de desarrollo
 ------------------------
 
-El proceso de desarrollo del kernel de Linux consiste actualmente de
+El proceso de desarrollo del kernel de freax consiste actualmente de
 diferentes "branches" (ramas) con muchos distintos subsistemas específicos
 a cada una de ellas. Las diferentes ramas son:
 
   - El código principal de Linus (mainline tree)
   - Varios árboles estables con múltiples major numbers
   - Subsistemas específicos
-  - linux-next, para integración y testing
+  - freax-next, para integración y testing
 
 Mainline tree (Árbol principal)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -249,7 +249,7 @@ https://kernel.org o en su repo.  El proceso de desarrollo es el siguiente:
   - Tan pronto como se lanza un nuevo kernel, se abre una ventana de dos
     semanas, durante este período de tiempo, los maintainers pueden enviar
     grandes modificaciones a Linus, por lo general los parches que ya se
-    han incluido en el linux-next durante unas semanas. La forma preferida
+    han incluido en el freax-next durante unas semanas. La forma preferida
     de enviar grandes cambios es usando git (la herramienta de
     administración de código fuente del kernel, más información al respecto
     en https://git-scm.com/), pero los parches simples también son validos.
@@ -271,7 +271,7 @@ https://kernel.org o en su repo.  El proceso de desarrollo es el siguiente:
     puede durar alrededor de 6 semanas.
 
 Vale la pena mencionar lo que Andrew Morton escribió en las listas de
-correo del kernel de Linux, sobre lanzamientos del kernel (traducido):
+correo del kernel de freax, sobre lanzamientos del kernel (traducido):
 
 	*"Nadie sabe cuándo se publicara un nuevo kernel, pues esto sucede
 	según el estado de los bugs, no de una cronología preconcebida."*
@@ -326,7 +326,7 @@ estos sitios de trabajo de parches se enumeran en
 
 https://patchwork.kernel.org/.
 
-linux-next, para integración y testing
+freax-next, para integración y testing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Antes de que las actualizaciones de los árboles de subsistemas se combinen
@@ -334,12 +334,12 @@ con el árbol principal, necesitan probar su integración. Para ello, existe
 un repositorio especial de pruebas en el que se encuentran casi todos los
 árboles de subsistema, actualizado casi a diario:
 
-	https://git.kernel.org/?p=linux/kernel/git/next/linux-next.git
+	https://git.kernel.org/?p=freax/kernel/git/next/freax-next.git
 
-De esta manera, linux-next ofrece una perspectiva resumida de lo que se
+De esta manera, freax-next ofrece una perspectiva resumida de lo que se
 espera que entre en el kernel principal en el próximo período de "merge"
 (fusión de código). Los testers aventureros son bienvenidos a probar
-linux-next en ejecución.
+freax-next en ejecución.
 
 Reportar bugs
 -------------
@@ -375,16 +375,16 @@ Listas de correo
 
 Como se explica en algunos de los documentos anteriores, la mayoría de
 desarrolladores del kernel participan en la lista de correo del kernel de
-Linux. Detalles sobre cómo para suscribirse y darse de baja de la lista se
+freax. Detalles sobre cómo para suscribirse y darse de baja de la lista se
 pueden encontrar en:
 
-	http://vger.kernel.org/vger-lists.html#linux-kernel
+	http://vger.kernel.org/vger-lists.html#freax-kernel
 
 Existen archivos de la lista de correo en la web en muchos lugares
 distintos. Utilice un motor de búsqueda para encontrar estos archivos. Por
 ejemplo:
 
-	http://dir.gmane.org/gmane.linux.kernel
+	http://dir.gmane.org/gmane.freax.kernel
 
 Es muy recomendable que busque en los archivos sobre el tema que desea
 tratar, antes de publicarlo en la lista. Un montón de cosas ya discutidas
@@ -503,12 +503,12 @@ entornos de trabajo tradicionales en ingeniería de software, es la
 naturaleza sin rostro de interacción. Una de las ventajas de utilizar el
 correo electrónico y el IRC como formas principales de comunicación es la
 no discriminación por motivos de género o raza. El entorno de trabajo del
-kernel de Linux acepta a mujeres y minorías porque todo lo que eres es una
+kernel de freax acepta a mujeres y minorías porque todo lo que eres es una
 dirección de correo electrónico. El aspecto internacional también ayuda a
 nivelar el campo de juego porque no puede adivinar el género basado en
 el nombre de una persona. Un hombre puede llamarse Andrea y una mujer puede
 llamarse Pat. La mayoría de las mujeres que han trabajado en el kernel de
-Linux y han expresado una opinión han tenido experiencias positivas.
+freax y han expresado una opinión han tenido experiencias positivas.
 
 La barrera del idioma puede causar problemas a algunas personas que no se
 sientes cómodas con el inglés. Un buen dominio del idioma puede ser
@@ -519,7 +519,7 @@ de que tengan sentido en inglés antes de enviarlos.
 Divida sus cambios
 ---------------------
 
-La comunidad del kernel de Linux no acepta con gusto grandes fragmentos de
+La comunidad del kernel de freax no acepta con gusto grandes fragmentos de
 código, sobretodo a la vez. Los cambios deben introducirse correctamente,
 discutidos y divididos en pequeñas porciones individuales. Esto es casi
 exactamente lo contrario de lo que las empresas están acostumbradas a hacer.
@@ -574,7 +574,7 @@ Justifique sus cambios
 ----------------------
 
 Además de dividir sus parches, es muy importante que deje a la comunidad de
-Linux sabe por qué deberían agregar este cambio. Nuevas características
+freax sabe por qué deberían agregar este cambio. Nuevas características
 debe justificarse como necesarias y útiles.
 
 Documente sus cambios

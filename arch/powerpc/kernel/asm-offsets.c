@@ -9,22 +9,22 @@
  * #defines from the assembly-language output.
  */
 
-#include <linux/compat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/suspend.h>
-#include <linux/hrtimer.h>
+#include <freax/compat.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/suspend.h>
+#include <freax/hrtimer.h>
 #ifdef CONFIG_PPC64
-#include <linux/time.h>
-#include <linux/hardirq.h>
+#include <freax/time.h>
+#include <freax/hardirq.h>
 #endif
-#include <linux/kbuild.h>
+#include <freax/kbuild.h>
 
 #include <asm/io.h>
 #include <asm/page.h>
@@ -46,7 +46,7 @@
 #include <asm/opal.h>
 #endif
 #if defined(CONFIG_KVM) || defined(CONFIG_KVM_GUEST)
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 #endif
 #if defined(CONFIG_KVM) && defined(CONFIG_PPC_BOOK3S)
 #include <asm/kvm_book3s.h>

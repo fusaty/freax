@@ -11,14 +11,14 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_bitbang.h>
-#include <linux/spi/xilinx_spi.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi_bitbang.h>
+#include <freax/spi/xilinx_spi.h>
+#include <freax/io.h>
 
 #define XILINX_SPI_MAX_CS	32
 

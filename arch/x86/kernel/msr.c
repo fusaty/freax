@@ -19,22 +19,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fcntl.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/smp.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/uaccess.h>
-#include <linux/gfp.h>
-#include <linux/security.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/fcntl.h>
+#include <freax/init.h>
+#include <freax/poll.h>
+#include <freax/smp.h>
+#include <freax/major.h>
+#include <freax/fs.h>
+#include <freax/device.h>
+#include <freax/cpu.h>
+#include <freax/notifier.h>
+#include <freax/uaccess.h>
+#include <freax/gfp.h>
+#include <freax/security.h>
 
 #include <asm/cpufeature.h>
 #include <asm/msr.h>
@@ -100,7 +100,7 @@ static int filter_write(u32 reg)
 
 	pr_warn("Write to unrecognized MSR 0x%x by %s (pid: %d).\n",
 	        reg, current->comm, current->pid);
-	pr_warn("See https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git/about for details.\n");
+	pr_warn("See https://git.kernel.org/pub/scm/freax/kernel/git/tip/tip.git/about for details.\n");
 
 	return 0;
 }

@@ -96,7 +96,7 @@ LIBTHERMAL_IN := $(OUTPUT)libthermal-in.o
 LIBTHERMAL_PC := $(OUTPUT)libthermal.pc
 LIBTHERMAL_ALL := $(LIBTHERMAL_A) $(OUTPUT)libthermal.so*
 
-THERMAL_UAPI := include/uapi/linux/thermal.h
+THERMAL_UAPI := include/uapi/freax/thermal.h
 
 $(THERMAL_UAPI): FORCE
 	ln -sf $(srctree)/$@ $(srctree)/tools/$@

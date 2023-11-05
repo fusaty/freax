@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
-#include <linux/percpu.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/smp.h>
-#include <linux/topology.h>
-#include <linux/pfn.h>
-#include <linux/stackprotector.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/memblock.h>
+#include <freax/percpu.h>
+#include <freax/kexec.h>
+#include <freax/crash_dump.h>
+#include <freax/smp.h>
+#include <freax/topology.h>
+#include <freax/pfn.h>
+#include <freax/stackprotector.h>
 #include <asm/sections.h>
 #include <asm/processor.h>
 #include <asm/desc.h>

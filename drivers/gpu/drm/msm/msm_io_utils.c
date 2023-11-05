@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2016-2018, 2020-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, 2020-2021 The freax Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/interconnect.h>
-#include <linux/io.h>
+#include <freax/interconnect.h>
+#include <freax/io.h>
 
 #include "msm_drv.h"
 

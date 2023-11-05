@@ -14,7 +14,7 @@
 #include <sys/ioctl.h>
 #include <unistd.h>
 
-#include <linux/pcitest.h>
+#include <freax/pcitest.h>
 
 #define BILLION 1E9
 

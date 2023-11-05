@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/console.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/console.h>
 
 #include "chan_user.h"
 

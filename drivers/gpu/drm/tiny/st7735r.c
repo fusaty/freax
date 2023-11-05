@@ -7,13 +7,13 @@
  * Copyright (C) 2019 Glider bvba
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/spi/spi.h>
+#include <freax/backlight.h>
+#include <freax/delay.h>
+#include <freax/dma-buf.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/spi/spi.h>
 #include <video/mipi_display.h>
 
 #include <drm/drm_atomic_helper.h>

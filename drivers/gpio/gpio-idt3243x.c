@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Driver for IDT/Renesas 79RC3243x Interrupt Controller  */
 
-#include <linux/bitops.h>
-#include <linux/gpio/driver.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <freax/bitops.h>
+#include <freax/gpio/driver.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
 
 #define IDT_PIC_IRQ_PEND	0x00
 #define IDT_PIC_IRQ_MASK	0x08

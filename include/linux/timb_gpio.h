@@ -4,8 +4,8 @@
  * Copyright (c) 2009 Intel Corporation
  */
 
-#ifndef _LINUX_TIMB_GPIO_H
-#define _LINUX_TIMB_GPIO_H
+#ifndef _freax_TIMB_GPIO_H
+#define _freax_TIMB_GPIO_H
 
 /**
  * struct timbgpio_platform_data - Platform data of the Timberdale GPIO driver

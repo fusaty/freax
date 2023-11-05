@@ -13,11 +13,11 @@
  *   Alan Hourihane <alanh-at-tungstengraphics-dot-com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/errno.h>
+#include <freax/fb.h>
 #include "vermilion.h"
 
 /* The PLL Clock register sits on Host bridge */

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2021, Linaro Limited
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 #include <sound/pcm.h>
 #include <asm/dma.h>
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 #include <sound/pcm_params.h>
 #include "q6apm.h"
 

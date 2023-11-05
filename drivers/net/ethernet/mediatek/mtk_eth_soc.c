@@ -6,24 +6,24 @@
  *   Copyright (C) 2013-2016 Michael Lee <igvtee@gmail.com>
  */
 
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_address.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/if_vlan.h>
-#include <linux/reset.h>
-#include <linux/tcp.h>
-#include <linux/interrupt.h>
-#include <linux/pinctrl/devinfo.h>
-#include <linux/phylink.h>
-#include <linux/pcs/pcs-mtk-lynxi.h>
-#include <linux/jhash.h>
-#include <linux/bitfield.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/of_address.h>
+#include <freax/mfd/syscon.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/clk.h>
+#include <freax/pm_runtime.h>
+#include <freax/if_vlan.h>
+#include <freax/reset.h>
+#include <freax/tcp.h>
+#include <freax/interrupt.h>
+#include <freax/pinctrl/devinfo.h>
+#include <freax/phylink.h>
+#include <freax/pcs/pcs-mtk-lynxi.h>
+#include <freax/jhash.h>
+#include <freax/bitfield.h>
 #include <net/dsa.h>
 #include <net/dst_metadata.h>
 #include <net/page_pool/helpers.h>

@@ -3,10 +3,10 @@
  * Copyright (C) 2013 Fusion IO.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/magic.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
+#include <freax/pseudo_fs.h>
+#include <freax/magic.h>
 #include "btrfs-tests.h"
 #include "../ctree.h"
 #include "../free-space-cache.h"

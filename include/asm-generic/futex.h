@@ -2,8 +2,8 @@
 #ifndef _ASM_GENERIC_FUTEX_H
 #define _ASM_GENERIC_FUTEX_H
 
-#include <linux/futex.h>
-#include <linux/uaccess.h>
+#include <freax/futex.h>
+#include <freax/uaccess.h>
 #include <asm/errno.h>
 
 #ifndef futex_atomic_cmpxchg_inatomic

@@ -5,9 +5,9 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>

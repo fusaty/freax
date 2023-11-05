@@ -10,24 +10,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/aperture.h>
-#include <linux/device.h>
-#include <linux/eventfd.h>
-#include <linux/file.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/vgaarb.h>
-#include <linux/nospec.h>
-#include <linux/sched/mm.h>
-#include <linux/iommufd.h>
+#include <freax/aperture.h>
+#include <freax/device.h>
+#include <freax/eventfd.h>
+#include <freax/file.h>
+#include <freax/interrupt.h>
+#include <freax/iommu.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
+#include <freax/vgaarb.h>
+#include <freax/nospec.h>
+#include <freax/sched/mm.h>
+#include <freax/iommufd.h>
 #if IS_ENABLED(CONFIG_EEH)
 #include <asm/eeh.h>
 #endif

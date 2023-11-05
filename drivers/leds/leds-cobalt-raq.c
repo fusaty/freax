@@ -2,16 +2,16 @@
 /*
  *  LEDs driver for the Cobalt Raq series.
  *
- *  Copyright (C) 2007  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2007  Yoichi Yuasa <yuasa@freax-mips.org>
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/export.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/leds.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/export.h>
 
 #define LED_WEB		0x04
 #define LED_POWER_OFF	0x08

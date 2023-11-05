@@ -3,15 +3,15 @@
  * Copyright (C) 2007 Red Hat.  All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/rwsem.h>
-#include <linux/xattr.h>
-#include <linux/security.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/iversion.h>
-#include <linux/sched/mm.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/rwsem.h>
+#include <freax/xattr.h>
+#include <freax/security.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/iversion.h>
+#include <freax/sched/mm.h>
 #include "ctree.h"
 #include "fs.h"
 #include "messages.h"

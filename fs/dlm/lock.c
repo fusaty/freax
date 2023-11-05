@@ -55,11 +55,11 @@
 */
 #include <trace/events/dlm.h>
 
-#include <linux/types.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/rbtree.h>
+#include <freax/slab.h>
 #include "dlm_internal.h"
-#include <linux/dlm_device.h>
+#include <freax/dlm_device.h>
 #include "memory.h"
 #include "midcomms.h"
 #include "requestqueue.h"

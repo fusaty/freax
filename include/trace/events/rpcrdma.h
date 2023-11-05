@@ -10,9 +10,9 @@
 #if !defined(_TRACE_RPCRDMA_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RPCRDMA_H
 
-#include <linux/scatterlist.h>
-#include <linux/sunrpc/rpc_rdma_cid.h>
-#include <linux/tracepoint.h>
+#include <freax/scatterlist.h>
+#include <freax/sunrpc/rpc_rdma_cid.h>
+#include <freax/tracepoint.h>
 #include <rdma/ib_cm.h>
 
 #include <trace/misc/rdma.h>

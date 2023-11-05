@@ -1,8 +1,8 @@
 #ifndef __NET_FIB_NOTIFIER_H
 #define __NET_FIB_NOTIFIER_H
 
-#include <linux/types.h>
-#include <linux/notifier.h>
+#include <freax/types.h>
+#include <freax/notifier.h>
 #include <net/net_namespace.h>
 
 struct module;

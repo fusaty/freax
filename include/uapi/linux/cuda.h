@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Definitions for talking to the CUDA.  The CUDA is a microcontroller
  * which controls the ADB, system power, RTC, and various other things.
@@ -6,8 +6,8 @@
  * Copyright (C) 1996 Paul Mackerras.
  */
 
-#ifndef _UAPI_LINUX_CUDA_H
-#define _UAPI_LINUX_CUDA_H
+#ifndef _UAPI_freax_CUDA_H
+#define _UAPI_freax_CUDA_H
 
 /* CUDA commands (2nd byte) */
 #define CUDA_WARM_START		0
@@ -31,4 +31,4 @@
 #define CUDA_GET_SET_IIC	0x22
 
 
-#endif /* _UAPI_LINUX_CUDA_H */
+#endif /* _UAPI_freax_CUDA_H */

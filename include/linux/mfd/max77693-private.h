@@ -8,10 +8,10 @@
  * This program is not provided / owned by Maxim Integrated Products.
  */
 
-#ifndef __LINUX_MFD_MAX77693_PRIV_H
-#define __LINUX_MFD_MAX77693_PRIV_H
+#ifndef __freax_MFD_MAX77693_PRIV_H
+#define __freax_MFD_MAX77693_PRIV_H
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 
 #define MAX77693_REG_INVALID		(0xff)
 
@@ -516,4 +516,4 @@ enum max77693_irq_muic {
 	MAX77693_MUIC_IRQ_NR,
 };
 
-#endif /*  __LINUX_MFD_MAX77693_PRIV_H */
+#endif /*  __freax_MFD_MAX77693_PRIV_H */

@@ -7,18 +7,18 @@
  *
  *  All MC4_MISCi registers are shared between cores on a node.
  */
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/kobject.h>
-#include <linux/percpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/smp.h>
-#include <linux/string.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/kobject.h>
+#include <freax/percpu.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/sysfs.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/cpu.h>
+#include <freax/smp.h>
+#include <freax/string.h>
 
 #include <asm/amd_nb.h>
 #include <asm/traps.h>

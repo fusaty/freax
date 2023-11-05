@@ -6,13 +6,13 @@
  *     Author: Alex Williamson <alex.williamson@redhat.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pci_regs.h>
+#include <freax/types.h>
 
 #include "pci.h"
 

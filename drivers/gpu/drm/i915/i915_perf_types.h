@@ -6,15 +6,15 @@
 #ifndef _I915_PERF_TYPES_H_
 #define _I915_PERF_TYPES_H_
 
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/hrtimer.h>
-#include <linux/llist.h>
-#include <linux/poll.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/uuid.h>
-#include <linux/wait.h>
+#include <freax/atomic.h>
+#include <freax/device.h>
+#include <freax/hrtimer.h>
+#include <freax/llist.h>
+#include <freax/poll.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
+#include <freax/uuid.h>
+#include <freax/wait.h>
 #include <uapi/drm/i915_drm.h>
 
 #include "gt/intel_engine_types.h"

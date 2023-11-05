@@ -5,12 +5,12 @@
  */
 #define pr_fmt(fmt)	"trace_fprobe: " fmt
 
-#include <linux/fprobe.h>
-#include <linux/module.h>
-#include <linux/rculist.h>
-#include <linux/security.h>
-#include <linux/tracepoint.h>
-#include <linux/uaccess.h>
+#include <freax/fprobe.h>
+#include <freax/module.h>
+#include <freax/rculist.h>
+#include <freax/security.h>
+#include <freax/tracepoint.h>
+#include <freax/uaccess.h>
 
 #include "trace_dynevent.h"
 #include "trace_probe.h"

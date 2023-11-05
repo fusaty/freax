@@ -6,7 +6,7 @@
 #ifndef XILINX_TIMER_H
 #define XILINX_TIMER_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 #define TCSR0	0x00
 #define TLR0	0x04

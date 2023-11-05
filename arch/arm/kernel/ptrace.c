@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/ptrace.c
+ *  freax/arch/arm/kernel/ptrace.c
  *
  *  By Ross Biro 1/23/92
  * edited by Linus Torvalds
  * ARM modifications Copyright (C) 2000 Russell King
  */
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/elf.h>
-#include <linux/smp.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/uaccess.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/regset.h>
-#include <linux/audit.h>
-#include <linux/unistd.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task_stack.h>
+#include <freax/mm.h>
+#include <freax/elf.h>
+#include <freax/smp.h>
+#include <freax/ptrace.h>
+#include <freax/user.h>
+#include <freax/security.h>
+#include <freax/init.h>
+#include <freax/signal.h>
+#include <freax/uaccess.h>
+#include <freax/perf_event.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/regset.h>
+#include <freax/audit.h>
+#include <freax/unistd.h>
 
 #include <asm/syscall.h>
 #include <asm/traps.h>

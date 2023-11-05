@@ -3,14 +3,14 @@
  * Copyright (C) 2011-2012 Avionic Design GmbH
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/gpio/driver.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
 #define GPIO_DDR(gpio) (0x00 << (gpio)->reg_shift)
 #define GPIO_PLR(gpio) (0x01 << (gpio)->reg_shift)

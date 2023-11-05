@@ -6,9 +6,9 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/seq_file.h>
+#include <freax/dma-mapping.h>
+#include <freax/of.h>
+#include <freax/seq_file.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_device.h>

@@ -9,7 +9,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email addresched(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    Xin Long <lucien.xin@gmail.com>
@@ -19,7 +19,7 @@
 #include <net/sctp/sctp.h>
 #include <net/sctp/sm.h>
 #include <net/sctp/ulpevent.h>
-#include <linux/sctp.h>
+#include <freax/sctp.h>
 
 static struct sctp_chunk *sctp_make_idatafrag_empty(
 					const struct sctp_association *asoc,

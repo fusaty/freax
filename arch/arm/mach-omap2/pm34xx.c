@@ -15,18 +15,18 @@
  * Based on pm.c for omap1
  */
 
-#include <linux/cpu_pm.h>
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/cpuidle.h>
+#include <freax/cpu_pm.h>
+#include <freax/pm.h>
+#include <freax/suspend.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/cpuidle.h>
 
 #include <trace/events/power.h>
 

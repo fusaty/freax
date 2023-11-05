@@ -5,23 +5,23 @@
  * Author: Wyon Bi <bivvy.bi@rock-chips.com>
  */
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/time64.h>
+#include <freax/bits.h>
+#include <freax/kernel.h>
+#include <freax/clk.h>
+#include <freax/iopoll.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/time64.h>
 
-#include <linux/phy/phy.h>
-#include <linux/phy/phy-mipi-dphy.h>
+#include <freax/phy/phy.h>
+#include <freax/phy/phy-mipi-dphy.h>
 
 #define UPDATE(x, h, l)	(((x) << (l)) & GENMASK((h), (l)))
 

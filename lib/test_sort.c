@@ -2,9 +2,9 @@
 
 #include <kunit/test.h>
 
-#include <linux/sort.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/sort.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 /* a simple boot-time regression test */
 

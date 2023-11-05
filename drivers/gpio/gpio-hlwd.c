@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0+
-// Copyright (C) 2008-2009 The GameCube Linux Team
+// Copyright (C) 2008-2009 The GameCube freax Team
 // Copyright (C) 2008,2009 Albert Herranz
 // Copyright (C) 2017-2018 Jonathan Neuschäfer
 //
 // Nintendo Wii (Hollywood) GPIO driver
 
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/gpio/driver.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
 /*
  * Register names and offsets courtesy of WiiBrew:

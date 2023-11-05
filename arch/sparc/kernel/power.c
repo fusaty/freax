@@ -4,13 +4,13 @@
  * Copyright (C) 1999, 2007, 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/reboot.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/reboot.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <asm/prom.h>
 #include <asm/io.h>

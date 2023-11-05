@@ -7,8 +7,8 @@
  * Author: Ludovic Desroches <ludovic.desroches@atmel.com>
  */
 
-#ifndef _LINUX_MFD_SYSCON_ATMEL_SFR_H
-#define _LINUX_MFD_SYSCON_ATMEL_SFR_H
+#ifndef _freax_MFD_SYSCON_ATMEL_SFR_H
+#define _freax_MFD_SYSCON_ATMEL_SFR_H
 
 #define AT91_SFR_DDRCFG		0x04	/* DDR Configuration Register */
 #define AT91_SFR_CCFG_EBICSA	0x04	/* EBI Chip Select Register */
@@ -48,4 +48,4 @@
 #define AT91_SFR_WPMR_WPEN			BIT(0)
 #define AT91_SFR_WPMR_WPKEY_MASK		GENMASK(31, 8)
 
-#endif /* _LINUX_MFD_SYSCON_ATMEL_SFR_H */
+#endif /* _freax_MFD_SYSCON_ATMEL_SFR_H */

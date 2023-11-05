@@ -6,12 +6,12 @@
  *  MyungJoo Ham <myungjoo.ham@samsung.com>
  */
 
-#ifndef __LINUX_MFD_MAX8997_PRIV_H
-#define __LINUX_MFD_MAX8997_PRIV_H
+#ifndef __freax_MFD_MAX8997_PRIV_H
+#define __freax_MFD_MAX8997_PRIV_H
 
-#include <linux/i2c.h>
-#include <linux/export.h>
-#include <linux/irqdomain.h>
+#include <freax/i2c.h>
+#include <freax/export.h>
+#include <freax/irqdomain.h>
 
 #define MAX8997_REG_INVALID	(0xff)
 
@@ -414,4 +414,4 @@ extern int max8997_update_reg(struct i2c_client *i2c, u8 reg, u8 val, u8 mask);
 
 #define MAX8997_GPIO_INT_MASK	(0x3 << 4)
 #define MAX8997_GPIO_DATA_MASK	(0x1 << 2)
-#endif /*  __LINUX_MFD_MAX8997_PRIV_H */
+#endif /*  __freax_MFD_MAX8997_PRIV_H */

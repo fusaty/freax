@@ -3,27 +3,27 @@
  * ACPI support for Intel Lynxpoint LPSS.
  *
  * Copyright (C) 2013, Intel Corporation
- * Authors: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Mika Westerberg <mika.westerberg@freax.intel.com>
  *          Rafael J. Wysocki <rafael.j.wysocki@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/dmi.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/x86/clk-lpss.h>
-#include <linux/platform_data/x86/pmc_atom.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/pwm.h>
-#include <linux/pxa2xx_ssp.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
+#include <freax/acpi.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/dmi.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/x86/clk-lpss.h>
+#include <freax/platform_data/x86/pmc_atom.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
+#include <freax/pwm.h>
+#include <freax/pxa2xx_ssp.h>
+#include <freax/suspend.h>
+#include <freax/delay.h>
 
 #include "internal.h"
 

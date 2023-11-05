@@ -3,14 +3,14 @@
  * Copyright (C) IBM Corporation 2020
  */
 
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/spinlock.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/kernel.h>
+#include <freax/limits.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/spinlock.h>
 
 #define DEVICE_NAME		"ibm-panel"
 #define PANEL_KEYCODES_COUNT	3
@@ -139,7 +139,7 @@ static int ibm_panel_probe(struct i2c_client *client)
 	panel->input->id.bustype = BUS_I2C;
 
 	error = device_property_read_u32_array(&client->dev,
-					       "linux,keycodes",
+					       "freax,keycodes",
 					       panel->keycodes,
 					       PANEL_KEYCODES_COUNT);
 	if (error) {
@@ -194,6 +194,6 @@ static struct i2c_driver ibm_panel_driver = {
 };
 module_i2c_driver(ibm_panel_driver);
 
-MODULE_AUTHOR("Eddie James <eajames@linux.ibm.com>");
+MODULE_AUTHOR("Eddie James <eajames@freax.ibm.com>");
 MODULE_DESCRIPTION("IBM Operation Panel Driver");
 MODULE_LICENSE("GPL");

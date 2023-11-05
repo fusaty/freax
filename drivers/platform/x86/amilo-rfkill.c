@@ -9,13 +9,13 @@
  * Copyright 2006 Martin Večeřa.
  */
 
-#include <linux/module.h>
-#include <linux/dmi.h>
-#include <linux/i8042.h>
-#include <linux/io.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/rfkill.h>
+#include <freax/module.h>
+#include <freax/dmi.h>
+#include <freax/i8042.h>
+#include <freax/io.h>
+#include <freax/moduleparam.h>
+#include <freax/platform_device.h>
+#include <freax/rfkill.h>
 
 /*
  * These values were obtained from disassembling and debugging the

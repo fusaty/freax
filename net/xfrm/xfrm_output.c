@@ -5,13 +5,13 @@
  * Copyright (c) 2007 Herbert Xu <herbert@gondor.apana.org.au>
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/netfilter.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 #include <net/dst.h>
 #include <net/gso.h>
 #include <net/icmp.h>
@@ -46,7 +46,7 @@ static int xfrm_skb_check_space(struct sk_buff *skb)
 }
 
 /* Children define the path of the packet through the
- * Linux networking.  Thus, destinations are stackable.
+ * freax networking.  Thus, destinations are stackable.
  */
 
 static struct dst_entry *skb_dst_pop(struct sk_buff *skb)
@@ -499,7 +499,7 @@ static int xfrm_output_one(struct sk_buff *skb, int err)
 	do {
 		err = xfrm_skb_check_space(skb);
 		if (err) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTERROR);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTERROR);
 			goto error_nolock;
 		}
 
@@ -507,27 +507,27 @@ static int xfrm_output_one(struct sk_buff *skb, int err)
 
 		err = xfrm_outer_mode_output(x, skb);
 		if (err) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTSTATEMODEERROR);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTSTATEMODEERROR);
 			goto error_nolock;
 		}
 
 		spin_lock_bh(&x->lock);
 
 		if (unlikely(x->km.state != XFRM_STATE_VALID)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTSTATEINVALID);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTSTATEINVALID);
 			err = -EINVAL;
 			goto error;
 		}
 
 		err = xfrm_state_check_expire(x);
 		if (err) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTSTATEEXPIRED);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTSTATEEXPIRED);
 			goto error;
 		}
 
 		err = xfrm_replay_overflow(x, skb);
 		if (err) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTSTATESEQERROR);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTSTATESEQERROR);
 			goto error;
 		}
 
@@ -539,7 +539,7 @@ static int xfrm_output_one(struct sk_buff *skb, int err)
 
 		skb_dst_force(skb);
 		if (!skb_dst(skb)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTERROR);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTERROR);
 			err = -EHOSTUNREACH;
 			goto error_nolock;
 		}
@@ -557,13 +557,13 @@ static int xfrm_output_one(struct sk_buff *skb, int err)
 
 resume:
 		if (err) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTSTATEPROTOERROR);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTSTATEPROTOERROR);
 			goto error_nolock;
 		}
 
 		dst = skb_dst_pop(skb);
 		if (!dst) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTERROR);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTERROR);
 			err = -EHOSTUNREACH;
 			goto error_nolock;
 		}
@@ -720,7 +720,7 @@ int xfrm_output(struct sock *sk, struct sk_buff *skb)
 
 	if (x->xso.type == XFRM_DEV_OFFLOAD_PACKET) {
 		if (!xfrm_dev_offload_ok(skb, x)) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTERROR);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTERROR);
 			kfree_skb(skb);
 			return -EHOSTUNREACH;
 		}
@@ -735,7 +735,7 @@ int xfrm_output(struct sock *sk, struct sk_buff *skb)
 
 		sp = secpath_set(skb);
 		if (!sp) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTERROR);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTERROR);
 			kfree_skb(skb);
 			return -ENOMEM;
 		}
@@ -765,7 +765,7 @@ int xfrm_output(struct sock *sk, struct sk_buff *skb)
 	if (skb->ip_summed == CHECKSUM_PARTIAL) {
 		err = skb_checksum_help(skb);
 		if (err) {
-			XFRM_INC_STATS(net, LINUX_MIB_XFRMOUTERROR);
+			XFRM_INC_STATS(net, freax_MIB_XFRMOUTERROR);
 			kfree_skb(skb);
 			return err;
 		}

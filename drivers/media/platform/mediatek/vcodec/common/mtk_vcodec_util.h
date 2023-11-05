@@ -8,8 +8,8 @@
 #ifndef _MTK_VCODEC_UTIL_H_
 #define _MTK_VCODEC_UTIL_H_
 
-#include <linux/types.h>
-#include <linux/dma-direction.h>
+#include <freax/types.h>
+#include <freax/dma-direction.h>
 
 #define MTK_DBG_VCODEC_STR "[MTK_VCODEC]"
 #define MTK_DBG_V4L2_STR "[MTK_V4L2]"

@@ -3,19 +3,19 @@
  * Copyright (c) 2007-2014 Nicira, Inc.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/jhash.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/percpu.h>
-#include <linux/rcupdate.h>
-#include <linux/rtnetlink.h>
-#include <linux/compat.h>
+#include <freax/etherdevice.h>
+#include <freax/if.h>
+#include <freax/if_vlan.h>
+#include <freax/jhash.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/percpu.h>
+#include <freax/rcupdate.h>
+#include <freax/rtnetlink.h>
+#include <freax/compat.h>
 #include <net/net_namespace.h>
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include "datapath.h"
 #include "vport.h"

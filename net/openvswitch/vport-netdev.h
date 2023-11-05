@@ -6,8 +6,8 @@
 #ifndef VPORT_NETDEV_H
 #define VPORT_NETDEV_H 1
 
-#include <linux/netdevice.h>
-#include <linux/rcupdate.h>
+#include <freax/netdevice.h>
+#include <freax/rcupdate.h>
 
 #include "vport.h"
 

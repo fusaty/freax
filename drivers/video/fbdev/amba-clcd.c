@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/amba-clcd.c
+ *  freax/drivers/video/amba-clcd.c
  *
  * Copyright (C) 2001 ARM Limited, by David A Rusling
  * Updated to 2.5, Deep Blue Solutions Ltd.
@@ -10,22 +10,22 @@
  *
  *  ARM PrimeCell PL110 Color LCD Controller
  */
-#include <linux/amba/bus.h>
-#include <linux/amba/clcd.h>
-#include <linux/backlight.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_graph.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/amba/bus.h>
+#include <freax/amba/clcd.h>
+#include <freax/backlight.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_graph.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include <video/display_timing.h>
 #include <video/of_display_timing.h>
 #include <video/videomode.h>

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_TIME_TYPES_H
-#define _UAPI_LINUX_TIME_TYPES_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_TIME_TYPES_H
+#define _UAPI_freax_TIME_TYPES_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct __kernel_timespec {
 	__kernel_time64_t       tv_sec;                 /* seconds */
@@ -43,4 +43,4 @@ struct __kernel_sock_timeval {
 	__s64 tv_usec;
 };
 
-#endif /* _UAPI_LINUX_TIME_TYPES_H */
+#endif /* _UAPI_freax_TIME_TYPES_H */

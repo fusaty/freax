@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_NET_RATELIMIT_H
-#define _LINUX_NET_RATELIMIT_H
+#ifndef _freax_NET_RATELIMIT_H
+#define _freax_NET_RATELIMIT_H
 
-#include <linux/ratelimit.h>
+#include <freax/ratelimit.h>
 
 extern struct ratelimit_state net_ratelimit_state;
 
-#endif	/* _LINUX_NET_RATELIMIT_H */
+#endif	/* _freax_NET_RATELIMIT_H */

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/cpufreq/cpufreq.c
+ *  freax/drivers/cpufreq/cpufreq.c
  *
  *  Copyright (C) 2001 Russell King
- *            (C) 2002 - 2003 Dominik Brodowski <linux@brodo.de>
+ *            (C) 2002 - 2003 Dominik Brodowski <freax@brodo.de>
  *            (C) 2013 Viresh Kumar <viresh.kumar@linaro.org>
  *
  *  Oct 2005 - Ashok Raj <ashok.raj@intel.com>
@@ -14,21 +14,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/cpu_cooling.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pm_qos.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/tick.h>
-#include <linux/units.h>
+#include <freax/cpu.h>
+#include <freax/cpufreq.h>
+#include <freax/cpu_cooling.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/kernel_stat.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/pm_qos.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
+#include <freax/syscore_ops.h>
+#include <freax/tick.h>
+#include <freax/units.h>
 #include <trace/events/power.h>
 
 static LIST_HEAD(cpufreq_policy_list);

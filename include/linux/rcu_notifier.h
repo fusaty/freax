@@ -6,8 +6,8 @@
  * Copyright (C) 2023 Paul E. McKenney.
  */
 
-#ifndef __LINUX_RCU_NOTIFIER_H
-#define __LINUX_RCU_NOTIFIER_H
+#ifndef __freax_RCU_NOTIFIER_H
+#define __freax_RCU_NOTIFIER_H
 
 // Actions for RCU CPU stall notifier calls.
 #define RCU_STALL_NOTIFY_NORM	1
@@ -15,8 +15,8 @@
 
 #ifdef CONFIG_RCU_STALL_COMMON
 
-#include <linux/notifier.h>
-#include <linux/types.h>
+#include <freax/notifier.h>
+#include <freax/types.h>
 
 int rcu_stall_chain_notifier_register(struct notifier_block *n);
 int rcu_stall_chain_notifier_unregister(struct notifier_block *n);
@@ -29,4 +29,4 @@ static inline int rcu_stall_chain_notifier_unregister(struct notifier_block *n) 
 
 #endif // #else // #ifdef CONFIG_RCU_STALL_COMMON
 
-#endif /* __LINUX_RCU_NOTIFIER_H */
+#endif /* __freax_RCU_NOTIFIER_H */

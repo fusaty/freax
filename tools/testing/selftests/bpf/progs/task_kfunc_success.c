@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2022 Meta Platforms, Inc. and affiliates. */
 
-#include <vmlinux.h>
+#include <vmfreax.h>
 #include <bpf/bpf_tracing.h>
 #include <bpf/bpf_helpers.h>
 
@@ -72,7 +72,7 @@ int BPF_PROG(test_task_kfunc_flavor_relo, struct task_struct *task, u64 clone_fl
 		acquired = bpf_task_acquire___one(task);
 	} else if (bpf_ksym_exists(bpf_task_acquire___two)) {
 		/* Here, bpf_object__resolve_ksym_func_btf_id's find_ksym_btf_id
-		 * call will find vmlinux's bpf_task_acquire, but subsequent
+		 * call will find vmfreax's bpf_task_acquire, but subsequent
 		 * bpf_core_types_are_compat will fail
 		 */
 		acquired = bpf_task_acquire___two(task, &fake_ctx);

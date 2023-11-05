@@ -1,5 +1,5 @@
 #
-# gdb helper commands and functions for Linux kernel debugging
+# gdb helper commands and functions for freax kernel debugging
 #
 #  loader module
 #
@@ -19,33 +19,33 @@ try:
     gdb.parse_and_eval("0")
     gdb.execute("", to_string=True)
 except:
-    gdb.write("NOTE: gdb 7.2 or later required for Linux helper scripts to "
+    gdb.write("NOTE: gdb 7.2 or later required for freax helper scripts to "
               "work.\n")
 else:
-    import linux.constants
-    if linux.constants.LX_CONFIG_DEBUG_INFO_REDUCED:
+    import freax.constants
+    if freax.constants.LX_CONFIG_DEBUG_INFO_REDUCED:
         raise gdb.GdbError("Reduced debug information will prevent GDB "
                            "from having complete types.\n")
-    import linux.utils
-    import linux.symbols
-    import linux.modules
-    import linux.dmesg
-    import linux.tasks
-    import linux.config
-    import linux.cpus
-    import linux.lists
-    import linux.rbtree
-    import linux.proc
-    import linux.timerlist
-    import linux.clk
-    import linux.genpd
-    import linux.device
-    import linux.vfs
-    import linux.pgtable
-    import linux.radixtree
-    import linux.interrupts
-    import linux.mm
-    import linux.stackdepot
-    import linux.page_owner
-    import linux.slab
-    import linux.vmalloc
+    import freax.utils
+    import freax.symbols
+    import freax.modules
+    import freax.dmesg
+    import freax.tasks
+    import freax.config
+    import freax.cpus
+    import freax.lists
+    import freax.rbtree
+    import freax.proc
+    import freax.timerlist
+    import freax.clk
+    import freax.genpd
+    import freax.device
+    import freax.vfs
+    import freax.pgtable
+    import freax.radixtree
+    import freax.interrupts
+    import freax.mm
+    import freax.stackdepot
+    import freax.page_owner
+    import freax.slab
+    import freax.vmalloc

@@ -5,7 +5,7 @@
  * Copyright (C) 2019 Intel Corporation
  *****************************************************************************/
 
-#include <linux/units.h>
+#include <freax/units.h>
 
 /*
  * DVM device-specific data & functions

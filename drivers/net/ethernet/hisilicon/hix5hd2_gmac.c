@@ -3,17 +3,17 @@
  * Copyright (c) 2014 Hisilicon Limited.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/reset.h>
-#include <linux/clk.h>
-#include <linux/circ_buf.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/etherdevice.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/of_mdio.h>
+#include <freax/reset.h>
+#include <freax/clk.h>
+#include <freax/circ_buf.h>
 
 #define STATION_ADDR_LOW		0x0000
 #define STATION_ADDR_HIGH		0x0004

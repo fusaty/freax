@@ -12,10 +12,10 @@
 #ifndef _ASM_IO_H
 #define _ASM_IO_H
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/irqflags.h>
+#include <freax/compiler.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/irqflags.h>
 
 #include <asm/addrspace.h>
 #include <asm/barrier.h>

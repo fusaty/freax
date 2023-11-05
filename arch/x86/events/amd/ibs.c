@@ -6,13 +6,13 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#include <linux/perf_event.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/ptrace.h>
-#include <linux/syscore_ops.h>
-#include <linux/sched/clock.h>
+#include <freax/perf_event.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/pci.h>
+#include <freax/ptrace.h>
+#include <freax/syscore_ops.h>
+#include <freax/sched/clock.h>
 
 #include <asm/apic.h>
 
@@ -22,8 +22,8 @@ static u32 ibs_caps;
 
 #if defined(CONFIG_PERF_EVENTS) && defined(CONFIG_CPU_SUP_AMD)
 
-#include <linux/kprobes.h>
-#include <linux/hardirq.h>
+#include <freax/kprobes.h>
+#include <freax/hardirq.h>
 
 #include <asm/nmi.h>
 #include <asm/amd-ibs.h>

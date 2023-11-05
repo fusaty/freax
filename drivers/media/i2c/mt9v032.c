@@ -9,19 +9,19 @@
  * Copyright (C) 2008, Guennadi Liakhovetski <kernel@pengutronix.de>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/log2.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/v4l2-mediabus.h>
-#include <linux/module.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/log2.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
+#include <freax/v4l2-mediabus.h>
+#include <freax/module.h>
 
 #include <media/i2c/mt9v032.h>
 #include <media/v4l2-ctrls.h>

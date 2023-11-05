@@ -6,7 +6,7 @@
 #ifndef _CIFS_MD4_H
 #define _CIFS_MD4_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define MD4_DIGEST_SIZE		16
 #define MD4_HMAC_BLOCK_SIZE	64

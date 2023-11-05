@@ -2,11 +2,11 @@
 /*
  * io_uring opcode handling table
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/io_uring.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/io_uring.h>
 
 #include "io_uring.h"
 #include "opdef.h"

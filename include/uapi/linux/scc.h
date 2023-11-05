@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* $Id: scc.h,v 1.29 1997/04/02 14:56:45 jreuter Exp jreuter $ */
 
 #ifndef _UAPI_SCC_H
 #define _UAPI_SCC_H
 
-#include <linux/sockios.h>
+#include <freax/sockios.h>
 
 /* selection of hardware types */
 

@@ -3,11 +3,11 @@
  * Copyright (C) 2021 Emil Renner Berthing
  */
 
-#include <linux/mfd/tps65086.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
+#include <freax/mfd/tps65086.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
 
 struct tps65086_restart {
 	struct notifier_block handler;

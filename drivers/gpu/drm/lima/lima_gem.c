@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0 OR MIT
 /* Copyright 2017-2019 Qiang Yu <yuq825@gmail.com> */
 
-#include <linux/mm.h>
-#include <linux/iosys-map.h>
-#include <linux/sync_file.h>
-#include <linux/pagemap.h>
-#include <linux/shmem_fs.h>
-#include <linux/dma-mapping.h>
+#include <freax/mm.h>
+#include <freax/iosys-map.h>
+#include <freax/sync_file.h>
+#include <freax/pagemap.h>
+#include <freax/shmem_fs.h>
+#include <freax/dma-mapping.h>
 
 #include <drm/drm_file.h>
 #include <drm/drm_syncobj.h>

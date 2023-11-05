@@ -2,16 +2,16 @@
 /*
  * Copyright (c) 2022 Broadcom Corporation
  */
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/kmod.h>
-#include <linux/list.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/printk.h>
-#include <linux/jiffies.h>
-#include <linux/workqueue.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/module.h>
+#include <freax/kmod.h>
+#include <freax/list.h>
+#include <freax/completion.h>
+#include <freax/mutex.h>
+#include <freax/printk.h>
+#include <freax/jiffies.h>
+#include <freax/workqueue.h>
 
 #include "core.h"
 #include "bus.h"

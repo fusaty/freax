@@ -6,10 +6,10 @@
  * This file defines the interface for parallel port IDE adapter chip drivers.
  */
 
-#ifndef LINUX_PATA_PARPORT_H
-#define LINUX_PATA_PARPORT_H
+#ifndef freax_PATA_PARPORT_H
+#define freax_PATA_PARPORT_H
 
-#include <linux/libata.h>
+#include <freax/libata.h>
 
 struct pi_adapter {
 	struct device dev;
@@ -93,4 +93,4 @@ void pata_parport_unregister_driver(struct pi_protocol *pr);
 #define module_pata_parport_driver(__pi_protocol) \
 	module_driver(__pi_protocol, pata_parport_register_driver, pata_parport_unregister_driver)
 
-#endif /* LINUX_PATA_PARPORT_H */
+#endif /* freax_PATA_PARPORT_H */

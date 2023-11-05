@@ -6,17 +6,17 @@
  */
 
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/acpi.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
+#include <freax/acpi.h>
 
 #include <asm/unaligned.h>
 

@@ -10,10 +10,10 @@
 #ifndef _NILFS_BTREE_H
 #define _NILFS_BTREE_H
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/list.h>
-#include <linux/nilfs2_ondisk.h>	/* nilfs_btree_node */
+#include <freax/types.h>
+#include <freax/buffer_head.h>
+#include <freax/list.h>
+#include <freax/nilfs2_ondisk.h>	/* nilfs_btree_node */
 #include "btnode.h"
 #include "bmap.h"
 

@@ -5,15 +5,15 @@
 
 /* Overhauled routines for dealing with different mmap regions of flash */
 
-#ifndef __LINUX_MTD_MAP_H__
-#define __LINUX_MTD_MAP_H__
+#ifndef __freax_MTD_MAP_H__
+#define __freax_MTD_MAP_H__
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/string.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
 
 #include <asm/unaligned.h>
 #include <asm/barrier.h>
@@ -461,4 +461,4 @@ extern void simple_map_init(struct map_info *);
 
 #endif /* !CONFIG_MTD_COMPLEX_MAPPINGS */
 
-#endif /* __LINUX_MTD_MAP_H__ */
+#endif /* __freax_MTD_MAP_H__ */

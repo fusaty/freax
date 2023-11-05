@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The freax Foundation. All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_opp.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/of_irq.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm_opp.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spinlock.h>
 
 #include <video/mipi_display.h>
 

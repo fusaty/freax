@@ -39,7 +39,7 @@
 		- Adding/Editing Timeline Functions
 		- Adding/Editing Dev Timeline Source Functions
 		- Verifying your Custom Functions
-	- Testing on consumer linux Operating Systems
+	- Testing on consumer freax Operating Systems
 		- Android
 
 ------------------------------------------------------------------
@@ -47,7 +47,7 @@
 ------------------------------------------------------------------
 
  This tool suite is designed to assist kernel and OS developers in optimizing
- their linux stack's suspend/resume & boot time. Using a kernel image built
+ their freax stack's suspend/resume & boot time. Using a kernel image built
  with a few extra options enabled, the tools will execute a suspend or boot,
  and will capture dmesg and ftrace data. This data is transformed into a set of
  timelines and a callgraph to give a quick and detailed view of which devices
@@ -62,13 +62,13 @@
        - python
        - python-configparser (for python2 sleepgraph)
        - python-requests (for stresstester.py)
-       - linux-tools-common (for turbostat usage in sleepgraph)
+       - freax-tools-common (for turbostat usage in sleepgraph)
 
        Ubuntu:
-          sudo apt-get install python python-configparser python-requests linux-tools-common
+          sudo apt-get install python python-configparser python-requests freax-tools-common
 
        Fedora:
-          sudo dnf install python python-configparser python-requests linux-tools-common
+          sudo dnf install python python-configparser python-requests freax-tools-common
 
     The tools can most easily be installed via git clone and make install
 
@@ -100,7 +100,7 @@
 	If you're using bootgraph, or sleepgraph with a kernel older than 3.15.0,
 		the following additional kernel parameters are required:
         (e.g. in file /etc/default/grub)
-        GRUB_CMDLINE_LINUX_DEFAULT="... initcall_debug log_buf_len=32M ..."
+        GRUB_CMDLINE_freax_DEFAULT="... initcall_debug log_buf_len=32M ..."
 
 	If you're using a kernel older than 3.11-rc2, the following simple
 		patch must be applied to enable ftrace data:
@@ -584,7 +584,7 @@ _______________________________
 
 
 ------------------------------------------------------------------
-|           TESTING ON CONSUMER LINUX OPERATING SYSTEMS          |
+|           TESTING ON CONSUMER freax OPERATING SYSTEMS          |
 ------------------------------------------------------------------
 
 Android

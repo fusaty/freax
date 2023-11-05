@@ -9,16 +9,16 @@
  * Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/moduleparam.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/moduleparam.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>
@@ -34,7 +34,7 @@
 
 #if defined(CONFIG_PCI) && defined(CONFIG_SPARC64)
 #define EBUS_SUPPORT
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include <asm/ebus_dma.h>
 #endif
 

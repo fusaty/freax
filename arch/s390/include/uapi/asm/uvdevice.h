@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  *  Copyright IBM Corp. 2022
- *  Author(s): Steffen Eiden <seiden@linux.ibm.com>
+ *  Author(s): Steffen Eiden <seiden@freax.ibm.com>
  */
 #ifndef __S390_ASM_UVDEVICE_H
 #define __S390_ASM_UVDEVICE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct uvio_ioctl_cb {
 	__u32 flags;

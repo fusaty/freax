@@ -10,7 +10,7 @@
  * cryptographic offload hardware. In some chips the PDC is referred to as MDE,
  * and in others the FA2/FA+ hardware is used with this PDC driver.
  *
- * The PDC driver registers with the Linux mailbox framework as a mailbox
+ * The PDC driver registers with the freax mailbox framework as a mailbox
  * controller, once for each PDC instance. Ring 0 for each PDC is registered as
  * a mailbox channel. The PDC driver uses interrupts to determine when data
  * transfers to and from an offload engine are complete. The PDC driver uses
@@ -25,25 +25,25 @@
  * descriptors from the tx and rx ring, thus processing one response at a time.
  */
 
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/interrupt.h>
-#include <linux/wait.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox/brcm-message.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/debugfs.h>
+#include <freax/interrupt.h>
+#include <freax/wait.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/mailbox_controller.h>
+#include <freax/mailbox/brcm-message.h>
+#include <freax/scatterlist.h>
+#include <freax/dma-direction.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
 
 #define PDC_SUCCESS  0
 

@@ -12,7 +12,7 @@
 #include "hists_common.h"
 #include "util/mmap.h"
 #include <errno.h>
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 struct sample {
 	u32 pid;

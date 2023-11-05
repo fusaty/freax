@@ -6,23 +6,23 @@
 // Author: Argus Lin <argus.lin@mediatek.com>
 //
 
-#include <linux/of.h>
-#include <linux/input.h>
-#include <linux/kthread.h>
-#include <linux/io.h>
-#include <linux/sched/clock.h>
-#include <linux/workqueue.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/regmap.h>
+#include <freax/of.h>
+#include <freax/input.h>
+#include <freax/kthread.h>
+#include <freax/io.h>
+#include <freax/sched/clock.h>
+#include <freax/workqueue.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/init.h>
+#include <freax/irqdomain.h>
+#include <freax/irq.h>
+#include <freax/regmap.h>
 #include <sound/soc.h>
 #include <sound/jack.h>
-#include <linux/mfd/mt6397/core.h>
+#include <freax/mfd/mt6397/core.h>
 
 #include "mt6359-accdet.h"
 #include "mt6359.h"

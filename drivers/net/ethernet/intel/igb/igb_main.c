@@ -3,40 +3,40 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/netdevice.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/vmalloc.h>
+#include <freax/pagemap.h>
+#include <freax/netdevice.h>
+#include <freax/ipv6.h>
+#include <freax/slab.h>
 #include <net/checksum.h>
 #include <net/ip6_checksum.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>
-#include <linux/net_tstamp.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/if_ether.h>
-#include <linux/prefetch.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/pm_runtime.h>
-#include <linux/etherdevice.h>
+#include <freax/net_tstamp.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/if.h>
+#include <freax/if_vlan.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/sctp.h>
+#include <freax/if_ether.h>
+#include <freax/prefetch.h>
+#include <freax/bpf.h>
+#include <freax/bpf_trace.h>
+#include <freax/pm_runtime.h>
+#include <freax/etherdevice.h>
 #ifdef CONFIG_IGB_DCA
-#include <linux/dca.h>
+#include <freax/dca.h>
 #endif
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 #include "igb.h"
 
 enum queue_mode {

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/se/7721/irq.c
+ * freax/arch/sh/boards/se/7721/irq.c
  *
  * Copyright (C) 2008  Renesas Solutions Corp.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
 #include <mach-se/mach/se7721.h>
 
 enum {

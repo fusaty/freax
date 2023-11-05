@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * OpenRISC Linux
+ * OpenRISC freax
  *
- * Linux architectural port borrowing liberally from similar works of
+ * freax architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -22,8 +22,8 @@
  */
 #define FIXADDR_TOP	((unsigned long) (-2*PAGE_SIZE))
 
-#include <linux/kernel.h>
-#include <linux/bug.h>
+#include <freax/kernel.h>
+#include <freax/bug.h>
 #include <asm/page.h>
 
 /*

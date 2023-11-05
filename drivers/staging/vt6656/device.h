@@ -14,24 +14,24 @@
 #ifndef __DEVICE_H__
 #define __DEVICE_H__
 
-#include <linux/bits.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/suspend.h>
-#include <linux/if_arp.h>
-#include <linux/wireless.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
-#include <linux/crc32.h>
+#include <freax/bits.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/suspend.h>
+#include <freax/if_arp.h>
+#include <freax/wireless.h>
+#include <freax/timer.h>
+#include <freax/usb.h>
+#include <freax/crc32.h>
 #include <net/mac80211.h>
 
 #ifdef SIOCETHTOOL
 #define DEVICE_ETHTOOL_IOCTL_SUPPORT
-#include <linux/ethtool.h>
+#include <freax/ethtool.h>
 #else
 #undef DEVICE_ETHTOOL_IOCTL_SUPPORT
 #endif

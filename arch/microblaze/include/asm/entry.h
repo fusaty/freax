@@ -12,7 +12,7 @@
 
 #include <asm/percpu.h>
 #include <asm/ptrace.h>
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 /*
  * These are per-cpu variables required in entry.S, among other

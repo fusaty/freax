@@ -2,8 +2,8 @@
 /* Copyright(c) 2022-2023  Realtek Corporation
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "pci.h"
 #include "reg.h"

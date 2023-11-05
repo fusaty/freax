@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * time.h - NTFS time conversion functions.  Part of the Linux-NTFS project.
+ * time.h - NTFS time conversion functions.  Part of the freax-NTFS project.
  *
  * Copyright (c) 2001-2005 Anton Altaparmakov
  */
 
-#ifndef _LINUX_NTFS_TIME_H
-#define _LINUX_NTFS_TIME_H
+#ifndef _freax_NTFS_TIME_H
+#define _freax_NTFS_TIME_H
 
-#include <linux/time.h>		/* For current_kernel_time(). */
+#include <freax/time.h>		/* For current_kernel_time(). */
 #include <asm/div64.h>		/* For do_div(). */
 
 #include "endian.h"
@@ -16,13 +16,13 @@
 #define NTFS_TIME_OFFSET ((s64)(369 * 365 + 89) * 24 * 3600 * 10000000)
 
 /**
- * utc2ntfs - convert Linux UTC time to NTFS time
- * @ts:		Linux UTC time to convert to NTFS time
+ * utc2ntfs - convert freax UTC time to NTFS time
+ * @ts:		freax UTC time to convert to NTFS time
  *
- * Convert the Linux UTC time @ts to its corresponding NTFS time and return
+ * Convert the freax UTC time @ts to its corresponding NTFS time and return
  * that in little endian format.
  *
- * Linux stores time in a struct timespec64 consisting of a time64_t tv_sec
+ * freax stores time in a struct timespec64 consisting of a time64_t tv_sec
  * and a long tv_nsec where tv_sec is the number of 1-second intervals since
  * 1st January 1970, 00:00:00 UTC and tv_nsec is the number of 1-nano-second
  * intervals since the value of tv_sec.
@@ -44,7 +44,7 @@ static inline sle64 utc2ntfs(const struct timespec64 ts)
 /**
  * get_current_ntfs_time - get the current time in little endian NTFS format
  *
- * Get the current time from the Linux kernel, convert it to its corresponding
+ * Get the current time from the freax kernel, convert it to its corresponding
  * NTFS time and return that in little endian format.
  */
 static inline sle64 get_current_ntfs_time(void)
@@ -56,13 +56,13 @@ static inline sle64 get_current_ntfs_time(void)
 }
 
 /**
- * ntfs2utc - convert NTFS time to Linux time
- * @time:	NTFS time (little endian) to convert to Linux UTC
+ * ntfs2utc - convert NTFS time to freax time
+ * @time:	NTFS time (little endian) to convert to freax UTC
  *
- * Convert the little endian NTFS time @time to its corresponding Linux UTC
+ * Convert the little endian NTFS time @time to its corresponding freax UTC
  * time and return that in cpu format.
  *
- * Linux stores time in a struct timespec64 consisting of a time64_t tv_sec
+ * freax stores time in a struct timespec64 consisting of a time64_t tv_sec
  * and a long tv_nsec where tv_sec is the number of 1-second intervals since
  * 1st January 1970, 00:00:00 UTC and tv_nsec is the number of 1-nano-second
  * intervals since the value of tv_sec.
@@ -86,4 +86,4 @@ static inline struct timespec64 ntfs2utc(const sle64 time)
 	return ts;
 }
 
-#endif /* _LINUX_NTFS_TIME_H */
+#endif /* _freax_NTFS_TIME_H */

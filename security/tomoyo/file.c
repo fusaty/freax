@@ -6,7 +6,7 @@
  */
 
 #include "common.h"
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 /*
  * Mapping table from "enum tomoyo_path_acl_index" to "enum tomoyo_mac_index".

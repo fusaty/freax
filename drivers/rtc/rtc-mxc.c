@@ -2,15 +2,15 @@
 //
 // Copyright 2004-2008 Freescale Semiconductor, Inc. All Rights Reserved.
 
-#include <linux/io.h>
-#include <linux/rtc.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/clk.h>
-#include <linux/of.h>
+#include <freax/io.h>
+#include <freax/rtc.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/clk.h>
+#include <freax/of.h>
 
 #define RTC_INPUT_CLK_32768HZ	(0x00 << 5)
 #define RTC_INPUT_CLK_32000HZ	(0x01 << 5)

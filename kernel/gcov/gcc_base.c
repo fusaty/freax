@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/mutex.h>
 #include "gcov.h"
 
 /*

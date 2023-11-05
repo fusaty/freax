@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/misc/xillybus_of.c
+ * freax/drivers/misc/xillybus_of.c
  *
  * Copyright 2011 Xillybus Ltd, http://xillybus.com
  *
  * Driver for the Xillybus FPGA/host framework using Open Firmware.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/err.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/err.h>
 #include "xillybus.h"
 
 MODULE_DESCRIPTION("Xillybus driver for Open Firmware");

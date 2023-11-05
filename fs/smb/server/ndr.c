@@ -4,7 +4,7 @@
  *   Author(s): Namjae Jeon <linkinjeon@kernel.org>
  */
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 
 #include "glob.h"
 #include "ndr.h"

@@ -8,11 +8,11 @@
  * Copyright 2011 Lars-Peter Clausen <lars@metafoo.de>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #include <sound/core.h>
 #include <sound/soc.h>

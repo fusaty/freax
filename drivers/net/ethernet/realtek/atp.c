@@ -1,4 +1,4 @@
-/* atp.c: Attached (pocket) ethernet adapter driver for linux. */
+/* atp.c: Attached (pocket) ethernet adapter driver for freax. */
 /*
 	This is a driver for commonly OEM pocket (parallel port)
 	ethernet adapters based on the Realtek RTL8002 and RTL8012 chips.
@@ -122,23 +122,23 @@ static int xcvr[NUM_UNITS]; 			/* The data transfer mode. */
 	interpretations of the device registers.
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/in.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/crc32.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>
@@ -184,7 +184,7 @@ struct net_local {
    hangs the device. */
 #define TIMED_CHECKER (HZ/4)
 #ifdef TIMED_CHECKER
-#include <linux/timer.h>
+#include <freax/timer.h>
 static void atp_timed_checker(struct timer_list *t);
 #endif
 

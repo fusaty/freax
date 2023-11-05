@@ -6,8 +6,8 @@
 #ifndef __MESON_CLKC_UTILS_H__
 #define __MESON_CLKC_UTILS_H__
 
-#include <linux/of_device.h>
-#include <linux/clk-provider.h>
+#include <freax/of_device.h>
+#include <freax/clk-provider.h>
 
 struct meson_clk_hw_data {
 	struct clk_hw	**hws;

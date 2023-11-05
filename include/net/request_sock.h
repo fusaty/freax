@@ -11,11 +11,11 @@
 #ifndef _REQUEST_SOCK_H
 #define _REQUEST_SOCK_H
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/bug.h>
-#include <linux/refcount.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/bug.h>
+#include <freax/refcount.h>
 
 #include <net/sock.h>
 

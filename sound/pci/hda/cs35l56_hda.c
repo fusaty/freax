@@ -6,13 +6,13 @@
 //                    Cirrus Logic International Semiconductor Ltd.
 //
 
-#include <linux/acpi.h>
-#include <linux/debugfs.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/debugfs.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/hda_codec.h>
 #include <sound/tlv.h>

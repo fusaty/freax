@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/filesystems.c
+ *  freax/fs/filesystems.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
  *  table of configured filesystems
  */
 
-#include <linux/syscalls.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/fs_parser.h>
+#include <freax/syscalls.h>
+#include <freax/fs.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/kmod.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/fs_parser.h>
 
 /*
  * Handling of filesystem drivers list.

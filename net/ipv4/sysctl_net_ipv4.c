@@ -6,10 +6,10 @@
  * Added /proc/sys/net/ipv4 directory entry (empty =) ). [MS]
  */
 
-#include <linux/sysctl.h>
-#include <linux/seqlock.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <freax/sysctl.h>
+#include <freax/seqlock.h>
+#include <freax/init.h>
+#include <freax/slab.h>
 #include <net/icmp.h>
 #include <net/ip.h>
 #include <net/ip_fib.h>

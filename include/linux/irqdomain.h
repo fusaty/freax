@@ -2,13 +2,13 @@
 /*
  * irq_domain - IRQ translation domains
  *
- * Translation infrastructure between hw and linux irq numbers.  This is
+ * Translation infrastructure between hw and freax irq numbers.  This is
  * helpful for interrupt controllers to implement mapping between hardware
- * irq numbers and the Linux irq number space.
+ * irq numbers and the freax irq number space.
  *
  * irq_domains also have hooks for translating device tree or other
  * firmware interrupt representations into a hardware irq number that
- * can be mapped back to a Linux irq number without any extra platform
+ * can be mapped back to a freax irq number without any extra platform
  * support code.
  *
  * Interrupt controller "domain" data structure. This could be defined as a
@@ -27,15 +27,15 @@
  * code offers a fwnode allocator.
  */
 
-#ifndef _LINUX_IRQDOMAIN_H
-#define _LINUX_IRQDOMAIN_H
+#ifndef _freax_IRQDOMAIN_H
+#define _freax_IRQDOMAIN_H
 
-#include <linux/types.h>
-#include <linux/irqdomain_defs.h>
-#include <linux/irqhandler.h>
-#include <linux/of.h>
-#include <linux/mutex.h>
-#include <linux/radix-tree.h>
+#include <freax/types.h>
+#include <freax/irqdomain_defs.h>
+#include <freax/irqhandler.h>
+#include <freax/of.h>
+#include <freax/mutex.h>
+#include <freax/radix-tree.h>
 
 struct device_node;
 struct fwnode_handle;
@@ -78,7 +78,7 @@ void of_phandle_args_to_fwspec(struct device_node *np, const u32 *args,
  *       irq number. This is called only once for a given mapping.
  * @unmap: Dispose of such a mapping
  * @xlate: Given a device tree node and interrupt specifier, decode
- *         the hardware irq number and linux irq type value.
+ *         the hardware irq number and freax irq type value.
  *
  * Functions below are provided by the driver and called whenever a new mapping
  * is created or an old mapping is disposed. The driver can then proceed to
@@ -418,7 +418,7 @@ static inline struct irq_desc *irq_resolve_mapping(struct irq_domain *domain,
 }
 
 /**
- * irq_find_mapping() - Find a linux irq from a hw irq number.
+ * irq_find_mapping() - Find a freax irq from a hw irq number.
  * @domain: domain owning this hardware interrupt
  * @hwirq: hardware irq number in that domain space
  */
@@ -628,4 +628,4 @@ static inline struct irq_domain *irq_find_matching_fwnode(
 }
 #endif /* !CONFIG_IRQ_DOMAIN */
 
-#endif /* _LINUX_IRQDOMAIN_H */
+#endif /* _freax_IRQDOMAIN_H */

@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2021, NVIDIA CORPORATION & AFFILIATES. */
 
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 
 #include "en_tc.h"
 #include "en/tc_priv.h"

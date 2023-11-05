@@ -9,12 +9,12 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/cpu_pm.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/of_address.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/cpu_pm.h>
 
 #include "soc.h"
 #include "iomap.h"

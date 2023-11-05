@@ -24,16 +24,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/kdev_t.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/kdev_t.h>
 #include "bttvp.h"
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
@@ -41,7 +41,7 @@
 #include <media/i2c/tvaudio.h>
 #include <media/drv-intf/msp3400.h>
 
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 
 #include <asm/io.h>
 #include <asm/byteorder.h>
@@ -1460,7 +1460,7 @@ format_by_fourcc(int fourcc)
 }
 
 /* ----------------------------------------------------------------------- */
-/* video4linux (1) interface                                               */
+/* video4freax (1) interface                                               */
 
 static int queue_setup(struct vb2_queue *q, unsigned int *num_buffers,
 		       unsigned int *num_planes, unsigned int sizes[],
@@ -3111,7 +3111,7 @@ static void bttv_unregister_video(struct bttv *btv)
 	video_unregister_device(&btv->radio_dev);
 }
 
-/* register video4linux devices */
+/* register video4freax devices */
 static int bttv_register_video(struct bttv *btv)
 {
 	/* video */
@@ -3385,7 +3385,7 @@ static int bttv_probe(struct pci_dev *dev, const struct pci_device_id *pci_id)
 	/* mute device */
 	audio_mute(btv, 1);
 
-	/* register video4linux + input */
+	/* register video4freax + input */
 	if (!bttv_tvcards[btv->c.type].no_video) {
 		v4l2_ctrl_add_handler(&btv->radio_ctrl_handler, hdl,
 				v4l2_ctrl_radio_filter, false);
@@ -3464,7 +3464,7 @@ static void bttv_remove(struct pci_dev *pci_dev)
 	/* unregister i2c_bus + input */
 	fini_bttv_i2c(btv);
 
-	/* unregister video4linux */
+	/* unregister video4freax */
 	bttv_unregister_video(btv);
 
 	/* free allocated memory */

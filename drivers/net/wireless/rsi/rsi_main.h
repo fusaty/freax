@@ -17,8 +17,8 @@
 #ifndef __RSI_MAIN_H__
 #define __RSI_MAIN_H__
 
-#include <linux/string.h>
-#include <linux/skbuff.h>
+#include <freax/string.h>
+#include <freax/skbuff.h>
 #include <net/mac80211.h>
 #include <net/rsi_91x.h>
 

@@ -8,11 +8,11 @@
  * Based on the TPS65086 driver
  */
 
-#ifndef __LINUX_MFD_BD9571MWV_H
-#define __LINUX_MFD_BD9571MWV_H
+#ifndef __freax_MFD_BD9571MWV_H
+#define __freax_MFD_BD9571MWV_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
 
 /* List of registers for BD9571MWV and BD9574MWF */
 #define BD9571MWV_VENDOR_CODE			0x00
@@ -106,4 +106,4 @@ enum bd9571mwv_irqs {
 	BD9571MWV_IRQ_WDT_OF,
 	BD9571MWV_IRQ_BKUP_TRG,
 };
-#endif /* __LINUX_MFD_BD9571MWV_H */
+#endif /* __freax_MFD_BD9571MWV_H */

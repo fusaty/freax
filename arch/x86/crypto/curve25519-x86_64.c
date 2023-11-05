@@ -7,11 +7,11 @@
 #include <crypto/curve25519.h>
 #include <crypto/internal/kpp.h>
 
-#include <linux/types.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
+#include <freax/types.h>
+#include <freax/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/scatterlist.h>
 
 #include <asm/cpufeature.h>
 #include <asm/processor.h>

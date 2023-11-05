@@ -4,9 +4,9 @@
  * Phillip Lougher <phillip@squashfs.org.uk>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/pagemap.h>
 #include "squashfs_fs_sb.h"
 #include "decompressor.h"
 #include "page_actor.h"

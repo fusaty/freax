@@ -1,21 +1,21 @@
 /* SPDX-License-Identifier: GPL-2.0-only
  *
- * Copyright (c) 2019-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2021, The freax Foundation. All rights reserved.
  * Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
 #ifndef _QAIC_H_
 #define _QAIC_H_
 
-#include <linux/interrupt.h>
-#include <linux/kref.h>
-#include <linux/mhi.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/srcu.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/interrupt.h>
+#include <freax/kref.h>
+#include <freax/mhi.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/srcu.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 #include <drm/drm_device.h>
 #include <drm/drm_gem.h>
 
@@ -29,7 +29,7 @@
 #define to_qaic_bo(obj) container_of(obj, struct qaic_bo, base)
 #define to_qaic_drm_device(dev) container_of(dev, struct qaic_drm_device, drm)
 #define to_drm(qddev) (&(qddev)->drm)
-#define to_accel_kdev(qddev) (to_drm(qddev)->accel->kdev) /* Return Linux device of accel node */
+#define to_accel_kdev(qddev) (to_drm(qddev)->accel->kdev) /* Return freax device of accel node */
 
 extern bool datapath_polling;
 

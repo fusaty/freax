@@ -6,7 +6,7 @@
 #ifndef BTRFS_CTREE_H
 #define BTRFS_CTREE_H
 
-#include <linux/pagemap.h>
+#include <freax/pagemap.h>
 #include "locking.h"
 #include "fs.h"
 #include "accessors.h"

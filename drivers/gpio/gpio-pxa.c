@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/plat-pxa/gpio.c
+ *  freax/arch/arm/plat-pxa/gpio.c
  *
  *  Generic PXA GPIO handling
  *
@@ -8,22 +8,22 @@
  *  Created:	Jun 15, 2001
  *  Copyright:	MontaVista Software Inc.
  */
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio-pxa.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio-pxa.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/syscore_ops.h>
+#include <freax/slab.h>
 
 /*
  * We handle the GPIOs by banks, each bank covers up to 32 GPIOs with

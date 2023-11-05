@@ -6,16 +6,16 @@
  * Copyright 1994-1998 Paul Mackerras.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
+#include <freax/string.h>
 
-#include <linux/ppp_defs.h>
-#include <linux/ppp-comp.h>
+#include <freax/ppp_defs.h>
+#include <freax/ppp-comp.h>
 
-#include <linux/zlib.h>
+#include <freax/zlib.h>
 #include <asm/unaligned.h>
 
 /*

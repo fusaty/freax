@@ -3,25 +3,25 @@
  * Copyright (c) 2021, Microsoft Corporation.
  *
  * Authors:
- *   Beau Belgrave <beaub@linux.microsoft.com>
+ *   Beau Belgrave <beaub@freax.microsoft.com>
  */
 
-#include <linux/bitmap.h>
-#include <linux/cdev.h>
-#include <linux/hashtable.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/uio.h>
-#include <linux/ioctl.h>
-#include <linux/jhash.h>
-#include <linux/refcount.h>
-#include <linux/trace_events.h>
-#include <linux/tracefs.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/user_events.h>
+#include <freax/bitmap.h>
+#include <freax/cdev.h>
+#include <freax/hashtable.h>
+#include <freax/list.h>
+#include <freax/io.h>
+#include <freax/uio.h>
+#include <freax/ioctl.h>
+#include <freax/jhash.h>
+#include <freax/refcount.h>
+#include <freax/trace_events.h>
+#include <freax/tracefs.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
+#include <freax/highmem.h>
+#include <freax/init.h>
+#include <freax/user_events.h>
 #include "trace_dynevent.h"
 #include "trace_output.h"
 #include "trace.h"

@@ -3,11 +3,11 @@
  * mdio-boardinfo - Collect pre-declarations for MDIO devices
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
 
 #include "mdio-boardinfo.h"
 

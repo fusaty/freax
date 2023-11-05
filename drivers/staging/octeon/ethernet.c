@@ -5,18 +5,18 @@
  * Copyright (c) 2003-2007 Cavium Networks
  */
 
-#include <linux/platform_device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
+#include <freax/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/phy.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
 
 #include <net/dst.h>
 
@@ -69,7 +69,7 @@ MODULE_PARM_DESC(always_use_pow, "\n"
 	"\tapplication changes the config, packets will still be\n"
 	"\treceived from the low level hardware. Use this option\n"
 	"\tto allow a CVMX app to intercept all packets from the\n"
-	"\tlinux kernel. You must specify pow_send_group along with\n"
+	"\tfreax kernel. You must specify pow_send_group along with\n"
 	"\tthis option.");
 
 char pow_send_list[128] = "";
@@ -424,7 +424,7 @@ int cvm_oct_common_init(struct net_device *dev)
 	if (priv->queue != -1)
 		dev->features |= NETIF_F_SG | NETIF_F_IP_CSUM;
 
-	/* We do our own locking, Linux doesn't need to */
+	/* We do our own locking, freax doesn't need to */
 	dev->features |= NETIF_F_LLTX;
 	dev->ethtool_ops = &cvm_oct_ethtool_ops;
 

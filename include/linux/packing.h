@@ -2,11 +2,11 @@
  * Copyright 2016-2018 NXP
  * Copyright (c) 2018-2019, Vladimir Oltean <olteanv@gmail.com>
  */
-#ifndef _LINUX_PACKING_H
-#define _LINUX_PACKING_H
+#ifndef _freax_PACKING_H
+#define _freax_PACKING_H
 
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
 
 #define QUIRK_MSB_ON_THE_RIGHT	BIT(0)
 #define QUIRK_LITTLE_ENDIAN	BIT(1)

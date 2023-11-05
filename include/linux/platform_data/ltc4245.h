@@ -5,13 +5,13 @@
  * Copyright (c) 2010 Ira W. Snyder <iws@ovro.caltech.edu>
  */
 
-#ifndef LINUX_LTC4245_H
-#define LINUX_LTC4245_H
+#ifndef freax_LTC4245_H
+#define freax_LTC4245_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct ltc4245_platform_data {
 	bool use_extra_gpios;
 };
 
-#endif /* LINUX_LTC4245_H */
+#endif /* freax_LTC4245_H */

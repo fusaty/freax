@@ -98,7 +98,7 @@ static void off_cpu_finish(void *arg __maybe_unused)
 /* v5.18 kernel added prev_state arg, so it needs to check the signature */
 static void check_sched_switch_args(void)
 {
-	struct btf *btf = btf__load_vmlinux_btf();
+	struct btf *btf = btf__load_vmfreax_btf();
 	const struct btf_type *t1, *t2, *t3;
 	u32 type_id;
 

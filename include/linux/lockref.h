@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_LOCKREF_H
-#define __LINUX_LOCKREF_H
+#ifndef __freax_LOCKREF_H
+#define __freax_LOCKREF_H
 
 /*
  * Locked reference counts.
@@ -15,7 +15,7 @@
  * example).
  */
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 #include <generated/bounds.h>
 
 #define USE_CMPXCHG_LOCKREF \
@@ -49,4 +49,4 @@ static inline bool __lockref_is_dead(const struct lockref *l)
 	return ((int)l->count < 0);
 }
 
-#endif /* __LINUX_LOCKREF_H */
+#endif /* __freax_LOCKREF_H */

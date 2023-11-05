@@ -33,7 +33,7 @@ Multi channel is supported by Multi-SSI, or TDM-SSI.
 
 See datasheet to check SRC/CTU/MIX/DVC connect-limitation.
 DT controls enabling/disabling module.
-${LINUX}/arch/arm/boot/dts/r8a7790-lager.dts can be good example.
+${freax}/arch/arm/boot/dts/r8a7790-lager.dts can be good example.
 This is example of
 
 Playback: [MEM] -> [SRC2] -> [DVC0] -> [SSIU0/SSI0] -> [codec]
@@ -42,7 +42,7 @@ Capture:  [MEM] <- [DVC1] <- [SRC3] <- [SSIU1/SSI1] <- [codec]
 see "Example: simple sound card"
 
 You can use below.
-${LINUX}/arch/arm/boot/dts/r8a7790.dts can be good example.
+${freax}/arch/arm/boot/dts/r8a7790.dts can be good example.
 
 	&src0	&ctu00	&mix0	&dvc0	&ssi0
 	&src1	&ctu01	&mix1	&dvc1	&ssi1
@@ -109,7 +109,7 @@ For more detail information, see below
 	  - Register Description
 	   - CTUn Scale Value exx Register (CTUn_SVxxR)
 
-	${LINUX}/sound/soc/sh/rcar/ctu.c
+	${freax}/sound/soc/sh/rcar/ctu.c
 	 - comment of header
 
 You need to use "simple-scu-audio-card" or "audio-graph-scu-card" for it.

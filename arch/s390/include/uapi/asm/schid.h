@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _UAPIASM_SCHID_H
 #define _UAPIASM_SCHID_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifndef __ASSEMBLY__
 

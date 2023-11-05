@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/svc.h
+ * freax/include/freax/sunrpc/svc.h
  *
  * RPC server declarations.
  *
@@ -11,16 +11,16 @@
 #ifndef SUNRPC_SVC_H
 #define SUNRPC_SVC_H
 
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/sunrpc/types.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/auth.h>
-#include <linux/sunrpc/svcauth.h>
-#include <linux/lwq.h>
-#include <linux/wait.h>
-#include <linux/mm.h>
-#include <linux/pagevec.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/sunrpc/types.h>
+#include <freax/sunrpc/xdr.h>
+#include <freax/sunrpc/auth.h>
+#include <freax/sunrpc/svcauth.h>
+#include <freax/lwq.h>
+#include <freax/wait.h>
+#include <freax/mm.h>
+#include <freax/pagevec.h>
 
 /*
  *
@@ -136,7 +136,7 @@ static inline void svc_put(struct svc_serv *serv)
  * has to fit into the IP datagram limit of 64K.  The largest
  * feasible number for all known page sizes is probably 48K,
  * but we choose 32K here.  This is the same as the historical
- * Linux limit; someone who cares more about NFS/UDP performance
+ * freax limit; someone who cares more about NFS/UDP performance
  * can test a larger number.
  *
  * For TCP transports we have more freedom.  A size of 1MB is

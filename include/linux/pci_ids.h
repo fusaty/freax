@@ -7,8 +7,8 @@
  *	Do not add new entries to this file unless the definitions
  *	are shared between multiple drivers.
  */
-#ifndef _LINUX_PCI_IDS_H
-#define _LINUX_PCI_IDS_H
+#ifndef _freax_PCI_IDS_H
+#define _freax_PCI_IDS_H
 
 /* Device classes and subclasses */
 
@@ -3213,4 +3213,4 @@
 
 #define PCI_VENDOR_ID_NCUBE		0x10ff
 
-#endif /* _LINUX_PCI_IDS_H */
+#endif /* _freax_PCI_IDS_H */

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2013 - 2018 Intel Corporation. */
 
-#include <linux/bpf_trace.h>
-#include <linux/prefetch.h>
-#include <linux/sctp.h>
+#include <freax/bpf_trace.h>
+#include <freax/prefetch.h>
+#include <freax/sctp.h>
 #include <net/mpls.h>
 #include <net/xdp.h>
 #include "i40e_txrx_common.h"

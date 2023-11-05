@@ -36,30 +36,30 @@
 
 #include "udfdecl.h"
 
-#include <linux/blkdev.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/parser.h>
-#include <linux/stat.h>
-#include <linux/cdrom.h>
-#include <linux/nls.h>
-#include <linux/vfs.h>
-#include <linux/vmalloc.h>
-#include <linux/errno.h>
-#include <linux/mount.h>
-#include <linux/seq_file.h>
-#include <linux/bitmap.h>
-#include <linux/crc-itu-t.h>
-#include <linux/log2.h>
+#include <freax/blkdev.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/parser.h>
+#include <freax/stat.h>
+#include <freax/cdrom.h>
+#include <freax/nls.h>
+#include <freax/vfs.h>
+#include <freax/vmalloc.h>
+#include <freax/errno.h>
+#include <freax/mount.h>
+#include <freax/seq_file.h>
+#include <freax/bitmap.h>
+#include <freax/crc-itu-t.h>
+#include <freax/log2.h>
 #include <asm/byteorder.h>
-#include <linux/iversion.h>
+#include <freax/iversion.h>
 
 #include "udf_sb.h"
 #include "udf_i.h"
 
-#include <linux/init.h>
-#include <linux/uaccess.h>
+#include <freax/init.h>
+#include <freax/uaccess.h>
 
 enum {
 	VDS_POS_PRIMARY_VOL_DESC,
@@ -2003,7 +2003,7 @@ static void udf_open_lvid(struct super_block *sb)
 
 	mutex_lock(&sbi->s_alloc_mutex);
 	lvidiu->impIdent.identSuffix[0] = UDF_OS_CLASS_UNIX;
-	lvidiu->impIdent.identSuffix[1] = UDF_OS_ID_LINUX;
+	lvidiu->impIdent.identSuffix[1] = UDF_OS_ID_freax;
 	if (le32_to_cpu(lvid->integrityType) == LVID_INTEGRITY_TYPE_CLOSE)
 		lvid->integrityType = cpu_to_le32(LVID_INTEGRITY_TYPE_OPEN);
 	else
@@ -2033,7 +2033,7 @@ static void udf_close_lvid(struct super_block *sb)
 
 	mutex_lock(&sbi->s_alloc_mutex);
 	lvidiu->impIdent.identSuffix[0] = UDF_OS_CLASS_UNIX;
-	lvidiu->impIdent.identSuffix[1] = UDF_OS_ID_LINUX;
+	lvidiu->impIdent.identSuffix[1] = UDF_OS_ID_freax;
 	if (UDF_MAX_WRITE_VERSION > le16_to_cpu(lvidiu->maxUDFWriteRev))
 		lvidiu->maxUDFWriteRev = cpu_to_le16(UDF_MAX_WRITE_VERSION);
 	if (sbi->s_udfrev > le16_to_cpu(lvidiu->minUDFReadRev))

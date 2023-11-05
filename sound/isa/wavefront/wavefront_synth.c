@@ -17,17 +17,17 @@
  *
  */
 
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
-#include <linux/firmware.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/time.h>
+#include <freax/wait.h>
+#include <freax/sched/signal.h>
+#include <freax/firmware.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/snd_wavefront.h>
 #include <sound/initval.h>

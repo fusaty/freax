@@ -2,17 +2,17 @@
 /* 
  *    EISA "eeprom" support routines
  *
- *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-linux.org>
+ *    Copyright (C) 2001 Thomas Bogendoerfer <tsbogend at parisc-freax.org>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/miscdevice.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/eisa_eeprom.h>
 
 #define 	EISA_EEPROM_MINOR 241

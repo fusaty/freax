@@ -19,17 +19,17 @@
 #ifndef _DMXDEV_H_
 #define _DMXDEV_H_
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/wait.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/time.h>
+#include <freax/timer.h>
+#include <freax/wait.h>
+#include <freax/fs.h>
+#include <freax/string.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
 
-#include <linux/dvb/dmx.h>
+#include <freax/dvb/dmx.h>
 
 #include <media/dvbdev.h>
 #include <media/demux.h>

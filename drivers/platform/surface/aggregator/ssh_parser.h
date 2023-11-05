@@ -8,12 +8,12 @@
 #ifndef _SURFACE_AGGREGATOR_SSH_PARSER_H
 #define _SURFACE_AGGREGATOR_SSH_PARSER_H
 
-#include <linux/device.h>
-#include <linux/kfifo.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/kfifo.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
-#include <linux/surface_aggregator/serial_hub.h>
+#include <freax/surface_aggregator/serial_hub.h>
 
 /**
  * struct sshp_buf - Parser buffer for SSH messages.

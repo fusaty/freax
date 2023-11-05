@@ -20,8 +20,8 @@ check_sysfs_value  "$MOD_LIVEPATCH" "enabled" "1"
 check_sysfs_rights "$MOD_LIVEPATCH" "force" "--w-------"
 check_sysfs_rights "$MOD_LIVEPATCH" "transition" "-r--r--r--"
 check_sysfs_value  "$MOD_LIVEPATCH" "transition" "0"
-check_sysfs_rights "$MOD_LIVEPATCH" "vmlinux/patched" "-r--r--r--"
-check_sysfs_value  "$MOD_LIVEPATCH" "vmlinux/patched" "1"
+check_sysfs_rights "$MOD_LIVEPATCH" "vmfreax/patched" "-r--r--r--"
+check_sysfs_value  "$MOD_LIVEPATCH" "vmfreax/patched" "1"
 
 disable_lp $MOD_LIVEPATCH
 
@@ -59,10 +59,10 @@ unload_lp $MOD_LIVEPATCH
 check_result "% modprobe test_klp_callbacks_demo
 livepatch: enabling patch 'test_klp_callbacks_demo'
 livepatch: 'test_klp_callbacks_demo': initializing patching transition
-test_klp_callbacks_demo: pre_patch_callback: vmlinux
+test_klp_callbacks_demo: pre_patch_callback: vmfreax
 livepatch: 'test_klp_callbacks_demo': starting patching transition
 livepatch: 'test_klp_callbacks_demo': completing patching transition
-test_klp_callbacks_demo: post_patch_callback: vmlinux
+test_klp_callbacks_demo: post_patch_callback: vmfreax
 livepatch: 'test_klp_callbacks_demo': patching complete
 % modprobe test_klp_callbacks_mod
 livepatch: applying patch 'test_klp_callbacks_demo' to loading module 'test_klp_callbacks_mod'
@@ -76,10 +76,10 @@ livepatch: reverting patch 'test_klp_callbacks_demo' on unloading module 'test_k
 test_klp_callbacks_demo: post_unpatch_callback: test_klp_callbacks_mod -> [MODULE_STATE_GOING] Going away
 % echo 0 > /sys/kernel/livepatch/test_klp_callbacks_demo/enabled
 livepatch: 'test_klp_callbacks_demo': initializing unpatching transition
-test_klp_callbacks_demo: pre_unpatch_callback: vmlinux
+test_klp_callbacks_demo: pre_unpatch_callback: vmfreax
 livepatch: 'test_klp_callbacks_demo': starting unpatching transition
 livepatch: 'test_klp_callbacks_demo': completing unpatching transition
-test_klp_callbacks_demo: post_unpatch_callback: vmlinux
+test_klp_callbacks_demo: post_unpatch_callback: vmfreax
 livepatch: 'test_klp_callbacks_demo': unpatching complete
 % rmmod test_klp_callbacks_demo"
 

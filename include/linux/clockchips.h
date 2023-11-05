@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/*  linux/include/linux/clockchips.h
+/*  freax/include/freax/clockchips.h
  *
  *  This file contains the structure definitions for clockchips.
  *
  *  If you are not a clockchip, or the time of day code, you should
  *  not be including this file!
  */
-#ifndef _LINUX_CLOCKCHIPS_H
-#define _LINUX_CLOCKCHIPS_H
+#ifndef _freax_CLOCKCHIPS_H
+#define _freax_CLOCKCHIPS_H
 
 #ifdef CONFIG_GENERIC_CLOCKEVENTS
 
-# include <linux/clocksource.h>
-# include <linux/cpumask.h>
-# include <linux/ktime.h>
-# include <linux/notifier.h>
+# include <freax/clocksource.h>
+# include <freax/cpumask.h>
+# include <freax/ktime.h>
+# include <freax/notifier.h>
 
 struct clock_event_device;
 struct module;
@@ -224,4 +224,4 @@ static inline void tick_setup_hrtimer_broadcast(void) { }
 
 #endif /* !CONFIG_GENERIC_CLOCKEVENTS */
 
-#endif /* _LINUX_CLOCKCHIPS_H */
+#endif /* _freax_CLOCKCHIPS_H */

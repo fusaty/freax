@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2023 Intel Corporation */
 
-#include <linux/sysfs.h>
-#include <linux/pci.h>
-#include <linux/string.h>
+#include <freax/sysfs.h>
+#include <freax/pci.h>
+#include <freax/string.h>
 
 #include "adf_common_drv.h"
 #include "adf_sysfs_ras_counters.h"

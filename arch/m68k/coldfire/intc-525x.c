@@ -9,12 +9,12 @@
  * for more details.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/io.h>
 #include <asm/coldfire.h>
 #include <asm/mcfsim.h>
 

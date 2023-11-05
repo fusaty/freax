@@ -7,14 +7,14 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
 
-#include <linux/iio/common/st_sensors.h>
-#include <linux/iio/common/st_sensors_i2c.h>
+#include <freax/iio/common/st_sensors.h>
+#include <freax/iio/common/st_sensors_i2c.h>
 #include "st_gyro.h"
 
 static const struct of_device_id st_gyro_of_match[] = {

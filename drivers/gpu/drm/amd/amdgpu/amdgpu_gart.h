@@ -24,7 +24,7 @@
 #ifndef __AMDGPU_GART_H__
 #define __AMDGPU_GART_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * GART structures, functions & helpers

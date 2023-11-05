@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * linux/include/linux/jbd2.h
+ * freax/include/freax/jbd2.h
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>
  *
@@ -10,8 +10,8 @@
  * filesystem journaling support.
  */
 
-#ifndef _LINUX_JBD2_H
-#define _LINUX_JBD2_H
+#ifndef _freax_JBD2_H
+#define _freax_JBD2_H
 
 /* Allow this file to be included directly into e2fsprogs */
 #ifndef __KERNEL__
@@ -19,15 +19,15 @@
 #define JBD2_DEBUG
 #else
 
-#include <linux/types.h>
-#include <linux/buffer_head.h>
-#include <linux/journal-head.h>
-#include <linux/stddef.h>
-#include <linux/mutex.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/bit_spinlock.h>
-#include <linux/blkdev.h>
+#include <freax/types.h>
+#include <freax/buffer_head.h>
+#include <freax/journal-head.h>
+#include <freax/stddef.h>
+#include <freax/mutex.h>
+#include <freax/timer.h>
+#include <freax/slab.h>
+#include <freax/bit_spinlock.h>
+#include <freax/blkdev.h>
 #include <crypto/hash.h>
 #endif
 
@@ -299,8 +299,8 @@ typedef struct journal_superblock_s
 
 #ifdef __KERNEL__
 
-#include <linux/fs.h>
-#include <linux/sched.h>
+#include <freax/fs.h>
+#include <freax/sched.h>
 
 enum jbd_state_bits {
 	BH_JBD			/* Has an attached ext3 journal_head */
@@ -1827,4 +1827,4 @@ static inline int jbd2_handle_buffer_credits(handle_t *handle)
 #define EFSBADCRC	EBADMSG		/* Bad CRC detected */
 #define EFSCORRUPTED	EUCLEAN		/* Filesystem is corrupted */
 
-#endif	/* _LINUX_JBD2_H */
+#endif	/* _freax_JBD2_H */

@@ -6,24 +6,24 @@
  * Author: Arnaud Pouliquen <arnaud.pouliquen@st.com>.
  */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/iio/adc/stm32-dfsdm-adc.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/hw-consumer.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/timer/stm32-lptim-trigger.h>
-#include <linux/iio/timer/stm32-timer-trigger.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/iio/adc/stm32-dfsdm-adc.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/hw-consumer.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/timer/stm32-lptim-trigger.h>
+#include <freax/iio/timer/stm32-timer-trigger.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #include "stm32-dfsdm.h"
 

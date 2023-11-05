@@ -11,13 +11,13 @@
  *  Adapted for multiple architectures by Andres Salomon <dilinger@queued.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_pdt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_pdt.h>
 
 static struct of_pdt_ops *of_pdt_prom_ops __initdata;
 

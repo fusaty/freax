@@ -35,14 +35,14 @@
 #include <drm/ttm/ttm_placement.h>
 #include <drm/ttm/ttm_tt.h>
 
-#include <linux/jiffies.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/atomic.h>
-#include <linux/dma-resv.h>
+#include <freax/jiffies.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/file.h>
+#include <freax/module.h>
+#include <freax/atomic.h>
+#include <freax/dma-resv.h>
 
 #include "ttm_module.h"
 

@@ -6,14 +6,14 @@
  * Copyright (C) 2015 Regents of the University of California
  */
 
-#include <linux/elf.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/binfmts.h>
-#include <linux/err.h>
+#include <freax/elf.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/binfmts.h>
+#include <freax/err.h>
 #include <asm/page.h>
 #include <asm/vdso.h>
-#include <linux/time_namespace.h>
+#include <freax/time_namespace.h>
 #include <vdso/datapage.h>
 #include <vdso/vsyscall.h>
 
@@ -213,7 +213,7 @@ static int __init vdso_init(void)
 arch_initcall(vdso_init);
 
 static int __setup_additional_pages(struct mm_struct *mm,
-				    struct linux_binprm *bprm,
+				    struct freax_binprm *bprm,
 				    int uses_interp,
 				    struct __vdso_info *vdso_info)
 {
@@ -256,7 +256,7 @@ up_fail:
 }
 
 #ifdef CONFIG_COMPAT
-int compat_arch_setup_additional_pages(struct linux_binprm *bprm,
+int compat_arch_setup_additional_pages(struct freax_binprm *bprm,
 				       int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
@@ -273,7 +273,7 @@ int compat_arch_setup_additional_pages(struct linux_binprm *bprm,
 }
 #endif
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct freax_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	int ret;

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2019 Andes Technology Corporation
 
-#include <linux/pfn.h>
-#include <linux/init_task.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/pgtable.h>
+#include <freax/pfn.h>
+#include <freax/init_task.h>
+#include <freax/kasan.h>
+#include <freax/kernel.h>
+#include <freax/memblock.h>
+#include <freax/pgtable.h>
 #include <asm/tlbflush.h>
 #include <asm/fixmap.h>
 #include <asm/pgalloc.h>

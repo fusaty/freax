@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * STMicroelectronics TPM Linux driver for TPM ST33ZP24
+ * STMicroelectronics TPM freax driver for TPM ST33ZP24
  * Copyright (C) 2009 - 2016 STMicroelectronics
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/freezer.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/gpio/consumer.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/wait.h>
+#include <freax/freezer.h>
+#include <freax/string.h>
+#include <freax/interrupt.h>
+#include <freax/gpio/consumer.h>
+#include <freax/sched.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
 #include "../tpm.h"
 #include "st33zp24.h"

@@ -13,12 +13,12 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/platform_device.h>
+#include <freax/firmware.h>
+#include <freax/delay.h>
 #include <sound/pcm.h>
 #include <sound/soc-acpi.h>
 #include <sound/soc-acpi-intel-match.h>

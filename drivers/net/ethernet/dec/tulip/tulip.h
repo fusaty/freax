@@ -1,7 +1,7 @@
 /*
 	drivers/net/ethernet/dec/tulip/tulip.h
 
-	Copyright 2000,2001  The Linux Kernel Team
+	Copyright 2000,2001  The freax Kernel Team
 	Written/copyright 1994-2001 by Donald Becker.
 
 	This software may be used and distributed according to the terms
@@ -13,14 +13,14 @@
 #ifndef __NET_TULIP_H__
 #define __NET_TULIP_H__
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/unaligned.h>

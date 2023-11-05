@@ -4,10 +4,10 @@
  * Copyright (C) IBM Corporation 2016
  */
 
-#ifndef LINUX_FSI_H
-#define LINUX_FSI_H
+#ifndef freax_FSI_H
+#define freax_FSI_H
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 struct fsi_device {
 	struct device		dev;
@@ -82,4 +82,4 @@ extern int fsi_get_new_minor(struct fsi_device *fdev, enum fsi_dev_type type,
 			     dev_t *out_dev, int *out_index);
 extern void fsi_free_minor(dev_t dev);
 
-#endif /* LINUX_FSI_H */
+#endif /* freax_FSI_H */

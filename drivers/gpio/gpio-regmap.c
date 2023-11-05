@@ -5,17 +5,17 @@
  * Copyright 2020 Michael Walle <michael@walle.cc>
  */
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
-#include <linux/gpio/driver.h>
-#include <linux/gpio/regmap.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/regmap.h>
 
 struct gpio_regmap {
 	struct device *parent;

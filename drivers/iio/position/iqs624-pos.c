@@ -5,16 +5,16 @@
  * Copyright (C) 2019 Jeff LaBundy <jeff@labundy.com>
  */
 
-#include <linux/device.h>
-#include <linux/iio/events.h>
-#include <linux/iio/iio.h>
-#include <linux/kernel.h>
-#include <linux/mfd/iqs62x.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/iio/events.h>
+#include <freax/iio/iio.h>
+#include <freax/kernel.h>
+#include <freax/mfd/iqs62x.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define IQS624_POS_DEG_OUT			0x16
 

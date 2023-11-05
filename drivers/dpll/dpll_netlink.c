@@ -6,13 +6,13 @@
  *  Copyright (c) 2023 Intel and affiliates
  *
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
 #include <net/genetlink.h>
 #include "dpll_core.h"
 #include "dpll_netlink.h"
 #include "dpll_nl.h"
-#include <uapi/linux/dpll.h>
+#include <uapi/freax/dpll.h>
 
 #define ASSERT_NOT_NULL(ptr)	(WARN_ON(!ptr))
 

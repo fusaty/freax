@@ -11,9 +11,9 @@
 #ifndef _ASM_S390_ARCHRANDOM_H
 #define _ASM_S390_ARCHRANDOM_H
 
-#include <linux/static_key.h>
-#include <linux/preempt.h>
-#include <linux/atomic.h>
+#include <freax/static_key.h>
+#include <freax/preempt.h>
+#include <freax/atomic.h>
 #include <asm/cpacf.h>
 
 DECLARE_STATIC_KEY_FALSE(s390_arch_random_available);

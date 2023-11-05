@@ -8,21 +8,21 @@
  *  Routines for control of EMU10K1 chips
  */
 
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mutex.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/iommu.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/mutex.h>
 
 
 #include <sound/core.h>
 #include <sound/emu10k1.h>
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 #include "p16v.h"
 #include "tina2.h"
 #include "p17v.h"

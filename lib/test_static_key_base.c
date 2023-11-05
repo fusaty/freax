@@ -8,8 +8,8 @@
  *      Jason Baron       <jbaron@akamai.com>
  */
 
-#include <linux/module.h>
-#include <linux/jump_label.h>
+#include <freax/module.h>
+#include <freax/jump_label.h>
 
 /* old keys */
 struct static_key base_old_true_key = STATIC_KEY_INIT_TRUE;

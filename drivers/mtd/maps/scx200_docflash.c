@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/mtd/maps/scx200_docflash.c
+/* freax/drivers/mtd/maps/scx200_docflash.c
 
    Copyright (c) 2001,2002 Christer Weinigel <wingel@nano-system.com>
 
    National Semiconductor SCx200 flash mapped with DOCCS
 */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
 #include <asm/io.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/partitions.h>
 
-#include <linux/pci.h>
-#include <linux/scx200.h>
+#include <freax/pci.h>
+#include <freax/scx200.h>
 
 #define NAME "scx200_docflash"
 

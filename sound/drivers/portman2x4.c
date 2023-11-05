@@ -24,13 +24,13 @@
  *      - ported from alsa 0.5 to 1.0
  */
 
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/parport.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/parport.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>

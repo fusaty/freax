@@ -33,12 +33,12 @@
  * SOFTWARE.
  */
 
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include <rdma/uverbs_types.h>
 #include <rdma/uverbs_std_types.h>

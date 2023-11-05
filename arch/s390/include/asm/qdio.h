@@ -2,13 +2,13 @@
 /*
  * Copyright IBM Corp. 2000, 2008
  * Author(s): Utz Bacher <utz.bacher@de.ibm.com>
- *	      Jan Glauber <jang@linux.vnet.ibm.com>
+ *	      Jan Glauber <jang@freax.vnet.ibm.com>
  *
  */
 #ifndef __QDIO_H__
 #define __QDIO_H__
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 #include <asm/cio.h>
 #include <asm/ccwdev.h>
 

@@ -2,7 +2,7 @@
 #ifndef	__ASM_PATCHING_H
 #define	__ASM_PATCHING_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 int aarch64_insn_read(void *addr, u32 *insnp);
 int aarch64_insn_write(void *addr, u32 insn);

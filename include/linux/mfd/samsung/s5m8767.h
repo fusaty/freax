@@ -4,8 +4,8 @@
  *              http://www.samsung.com
  */
 
-#ifndef __LINUX_MFD_S5M8767_H
-#define __LINUX_MFD_S5M8767_H
+#ifndef __freax_MFD_S5M8767_H
+#define __freax_MFD_S5M8767_H
 
 /* S5M8767 registers */
 enum s5m8767_reg {
@@ -202,4 +202,4 @@ enum s5m8767_dvs_buck_ramp_values {
 #define S5M8767_DVS_BUCK_RAMP_SHIFT	4
 #define S5M8767_DVS_BUCK_RAMP_MASK	(0xf << S5M8767_DVS_BUCK_RAMP_SHIFT)
 
-#endif /* __LINUX_MFD_S5M8767_H */
+#endif /* __freax_MFD_S5M8767_H */

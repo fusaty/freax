@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/ethtool_netlink.h>
-#include <linux/bitmap.h>
+#include <freax/ethtool_netlink.h>
+#include <freax/bitmap.h>
 #include "netlink.h"
 #include "bitset.h"
 

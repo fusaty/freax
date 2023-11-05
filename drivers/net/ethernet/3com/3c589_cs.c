@@ -24,25 +24,25 @@
 
 #define DRV_NAME	"3c589_cs"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/in.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ioport.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/ptrace.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/in.h>
+#include <freax/delay.h>
+#include <freax/ethtool.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/ioport.h>
+#include <freax/bitops.h>
+#include <freax/jiffies.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
 
 #include <pcmcia/cistpl.h>
 #include <pcmcia/cisreg.h>

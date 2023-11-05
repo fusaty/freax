@@ -2,10 +2,10 @@
 /*
  * procfs namespace bits
  */
-#ifndef _LINUX_PROC_NS_H
-#define _LINUX_PROC_NS_H
+#ifndef _freax_PROC_NS_H
+#define _freax_PROC_NS_H
 
-#include <linux/ns_common.h>
+#include <freax/ns_common.h>
 
 struct pid_namespace;
 struct nsset;
@@ -85,4 +85,4 @@ extern int ns_get_name(char *buf, size_t size, struct task_struct *task,
 			const struct proc_ns_operations *ns_ops);
 extern void nsfs_init(void);
 
-#endif /* _LINUX_PROC_NS_H */
+#endif /* _freax_PROC_NS_H */

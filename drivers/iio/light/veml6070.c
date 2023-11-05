@@ -9,14 +9,14 @@
  * TODO: integration time, ACK signal
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/err.h>
+#include <freax/delay.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 #define VEML6070_DRV_NAME "veml6070"
 

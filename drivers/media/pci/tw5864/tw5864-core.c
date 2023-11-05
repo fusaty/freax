@@ -5,19 +5,19 @@
  *  Copyright (C) 2016 Bluecherry, LLC <maintainers@bluecherrydvr.com>
  */
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/sound.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/pm.h>
-#include <linux/pci_ids.h>
-#include <linux/jiffies.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/kmod.h>
+#include <freax/sound.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/pm.h>
+#include <freax/pci_ids.h>
+#include <freax/jiffies.h>
 #include <asm/dma.h>
 #include <media/v4l2-dev.h>
 

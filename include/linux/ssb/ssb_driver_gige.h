@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_SSB_DRIVER_GIGE_H_
-#define LINUX_SSB_DRIVER_GIGE_H_
+#ifndef freax_SSB_DRIVER_GIGE_H_
+#define freax_SSB_DRIVER_GIGE_H_
 
-#include <linux/ssb/ssb.h>
-#include <linux/bug.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
+#include <freax/ssb/ssb.h>
+#include <freax/bug.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
 
 
 #ifdef CONFIG_SSB_DRIVER_GIGE
@@ -191,4 +191,4 @@ static inline int ssb_gige_get_phyaddr(struct pci_dev *pdev)
 }
 
 #endif /* CONFIG_SSB_DRIVER_GIGE */
-#endif /* LINUX_SSB_DRIVER_GIGE_H_ */
+#endif /* freax_SSB_DRIVER_GIGE_H_ */

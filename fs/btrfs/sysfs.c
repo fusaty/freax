@@ -3,13 +3,13 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/bug.h>
-#include <linux/list.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/bug.h>
+#include <freax/list.h>
 #include <crypto/hash.h>
 #include "messages.h"
 #include "ctree.h"

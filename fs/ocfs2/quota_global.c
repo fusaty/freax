@@ -2,17 +2,17 @@
 /*
  *  Implementation of operations over global quota file
  */
-#include <linux/spinlock.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/quota.h>
-#include <linux/quotaops.h>
-#include <linux/dqblk_qtree.h>
-#include <linux/jiffies.h>
-#include <linux/writeback.h>
-#include <linux/workqueue.h>
-#include <linux/llist.h>
-#include <linux/iversion.h>
+#include <freax/spinlock.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/quota.h>
+#include <freax/quotaops.h>
+#include <freax/dqblk_qtree.h>
+#include <freax/jiffies.h>
+#include <freax/writeback.h>
+#include <freax/workqueue.h>
+#include <freax/llist.h>
+#include <freax/iversion.h>
 
 #include <cluster/masklog.h>
 

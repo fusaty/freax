@@ -5,7 +5,7 @@
  * Copyright (C) 2022, STMicroelectronics - All Rights Reserved
  */
 
-#include <linux/tee_drv.h>
+#include <freax/tee_drv.h>
 
 #include "stm32-bsec-optee-ta.h"
 

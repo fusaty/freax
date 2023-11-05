@@ -3,12 +3,12 @@
  * Copyright(c) 2015 EZchip Technologies.
  */
 
-#include <linux/module.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of_net.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/mod_devicetable.h>
+#include <freax/of_net.h>
+#include <freax/platform_device.h>
 #include "nps_enet.h"
 
 #define DRV_NAME			"nps_mgt_enet"

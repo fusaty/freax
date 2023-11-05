@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_GEN_STATS_H
-#define __LINUX_GEN_STATS_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_GEN_STATS_H
+#define __freax_GEN_STATS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum {
 	TCA_STATS_UNSPEC,
@@ -75,4 +75,4 @@ struct gnet_estimator {
 };
 
 
-#endif /* __LINUX_GEN_STATS_H */
+#endif /* __freax_GEN_STATS_H */

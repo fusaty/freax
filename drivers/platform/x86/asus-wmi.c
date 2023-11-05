@@ -7,37 +7,37 @@
  *
  * Portions based on wistron_btns.c:
  * Copyright (C) 2005 Miloslav Trmac <mitr@volny.cz>
- * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arklinux.org>
+ * Copyright (C) 2005 Bernhard Rosenkraenzer <bero@arkfreax.org>
  * Copyright (C) 2005 Dmitry Torokhov <dtor@mail.ru>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/backlight.h>
-#include <linux/debugfs.h>
-#include <linux/dmi.h>
-#include <linux/fb.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/input/sparse-keymap.h>
-#include <linux/kernel.h>
-#include <linux/leds.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/platform_data/x86/asus-wmi.h>
-#include <linux/platform_device.h>
-#include <linux/platform_profile.h>
-#include <linux/power_supply.h>
-#include <linux/rfkill.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/units.h>
+#include <freax/acpi.h>
+#include <freax/backlight.h>
+#include <freax/debugfs.h>
+#include <freax/dmi.h>
+#include <freax/fb.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/input/sparse-keymap.h>
+#include <freax/kernel.h>
+#include <freax/leds.h>
+#include <freax/minmax.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pci_hotplug.h>
+#include <freax/platform_data/x86/asus-wmi.h>
+#include <freax/platform_device.h>
+#include <freax/platform_profile.h>
+#include <freax/power_supply.h>
+#include <freax/rfkill.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/units.h>
 
 #include <acpi/battery.h>
 #include <acpi/video.h>

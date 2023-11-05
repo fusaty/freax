@@ -40,31 +40,31 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/tcp.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/dca.h>
-#include <linux/ip.h>
-#include <linux/inet.h>
-#include <linux/in.h>
-#include <linux/ethtool.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/crc32.h>
-#include <linux/moduleparam.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
+#include <freax/tcp.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/string.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/etherdevice.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/dca.h>
+#include <freax/ip.h>
+#include <freax/inet.h>
+#include <freax/in.h>
+#include <freax/ethtool.h>
+#include <freax/firmware.h>
+#include <freax/delay.h>
+#include <freax/timer.h>
+#include <freax/vmalloc.h>
+#include <freax/crc32.h>
+#include <freax/moduleparam.h>
+#include <freax/io.h>
+#include <freax/log2.h>
+#include <freax/slab.h>
+#include <freax/prefetch.h>
 #include <net/checksum.h>
 #include <net/gso.h>
 #include <net/ip.h>
@@ -2427,8 +2427,8 @@ static int myri10ge_open(struct net_device *dev)
 	}
 
 	/*
-	 * Set Linux style TSO mode; this is needed only on newer
-	 *  firmware versions.  Older versions default to Linux
+	 * Set freax style TSO mode; this is needed only on newer
+	 *  firmware versions.  Older versions default to freax
 	 *  style TSO
 	 */
 	cmd.data0 = 0;

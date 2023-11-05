@@ -11,7 +11,7 @@
  *
  *	Thanks to Intel for making available several different Pentium,
  *	Pentium Pro and Pentium-II/Xeon MP machines.
- *	Original development of Linux SMP code supported by Caldera.
+ *	Original development of freax SMP code supported by Caldera.
  *
  *	Fixes
  *		Felix Koop	:	NR_CPUS used properly
@@ -39,27 +39,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/topology.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/percpu.h>
-#include <linux/memblock.h>
-#include <linux/err.h>
-#include <linux/nmi.h>
-#include <linux/tboot.h>
-#include <linux/gfp.h>
-#include <linux/cpuidle.h>
-#include <linux/kexec.h>
-#include <linux/numa.h>
-#include <linux/pgtable.h>
-#include <linux/overflow.h>
-#include <linux/stackprotector.h>
-#include <linux/cpuhotplug.h>
-#include <linux/mc146818rtc.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/sched/topology.h>
+#include <freax/sched/hotplug.h>
+#include <freax/sched/task_stack.h>
+#include <freax/percpu.h>
+#include <freax/memblock.h>
+#include <freax/err.h>
+#include <freax/nmi.h>
+#include <freax/tboot.h>
+#include <freax/gfp.h>
+#include <freax/cpuidle.h>
+#include <freax/kexec.h>
+#include <freax/numa.h>
+#include <freax/pgtable.h>
+#include <freax/overflow.h>
+#include <freax/stackprotector.h>
+#include <freax/cpuhotplug.h>
+#include <freax/mc146818rtc.h>
 
 #include <asm/acpi.h>
 #include <asm/cacheinfo.h>

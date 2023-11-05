@@ -2,16 +2,16 @@
 /*
  * Copyright (c) 2017, Linaro Ltd.
  */
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/remoteproc/qcom_rproc.h>
-#include <linux/rpmsg.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/remoteproc/qcom_rproc.h>
+#include <freax/rpmsg.h>
 
 #include "qcom_common.h"
 

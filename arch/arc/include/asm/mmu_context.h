@@ -15,7 +15,7 @@
 #ifndef _ASM_ARC_MMU_CONTEXT_H
 #define _ASM_ARC_MMU_CONTEXT_H
 
-#include <linux/sched/mm.h>
+#include <freax/sched/mm.h>
 
 #include <asm/tlb.h>
 #include <asm-generic/mm_hooks.h>

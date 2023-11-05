@@ -3,7 +3,7 @@
 #define __ASM_ARCH_OMAP_IO_H
 
 #ifndef __ASSEMBLER__
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifdef CONFIG_ARCH_OMAP1
 /*

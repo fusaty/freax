@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * machine_kexec.c - handle transition of Linux booting another kernel
+ * machine_kexec.c - handle transition of freax booting another kernel
  * Copyright (C) 2002-2003 Eric Biederman  <ebiederm@xmission.com>
  *
  * GameCube/ppc32 port Copyright (C) 2004 Albert Herranz
  * LANDISK/sh4 supported by kogiidena
  */
-#include <linux/mm.h>
-#include <linux/kexec.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/numa.h>
-#include <linux/ftrace.h>
-#include <linux/suspend.h>
-#include <linux/memblock.h>
+#include <freax/mm.h>
+#include <freax/kexec.h>
+#include <freax/delay.h>
+#include <freax/reboot.h>
+#include <freax/numa.h>
+#include <freax/ftrace.h>
+#include <freax/suspend.h>
+#include <freax/memblock.h>
 #include <asm/mmu_context.h>
 #include <asm/io.h>
 #include <asm/cacheflush.h>

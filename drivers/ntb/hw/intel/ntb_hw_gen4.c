@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: (GPL-2.0 OR BSD-3-Clause)
 /* Copyright(c) 2020 Intel Corporation. All rights reserved. */
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/ntb.h>
-#include <linux/log2.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/ntb.h>
+#include <freax/log2.h>
 
 #include "ntb_hw_intel.h"
 #include "ntb_hw_gen1.h"

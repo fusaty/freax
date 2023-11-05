@@ -6,7 +6,7 @@
  * Copyright 2016 Linaro Ltd.
  */
 
-#include <linux/greybus.h>
+#include <freax/greybus.h>
 #include "greybus_trace.h"
 
 static ssize_t eject_store(struct device *dev,

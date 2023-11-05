@@ -5,11 +5,11 @@
  * Copyright (C) 2019  IBM Corporation
  *
  * Author:
- * Thiago Jung Bauermann <bauerman@linux.ibm.com>
+ * Thiago Jung Bauermann <bauerman@freax.ibm.com>
  */
 
-#include <linux/types.h>
-#include <linux/module_signature.h>
+#include <freax/types.h>
+#include <freax/module_signature.h>
 #include <keys/asymmetric-type.h>
 #include <crypto/pkcs7.h>
 

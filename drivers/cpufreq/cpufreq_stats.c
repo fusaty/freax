@@ -6,11 +6,11 @@
  *  (C) 2004 Zou Nan hai <nanhai.zou@intel.com>.
  */
 
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/module.h>
-#include <linux/sched/clock.h>
-#include <linux/slab.h>
+#include <freax/cpu.h>
+#include <freax/cpufreq.h>
+#include <freax/module.h>
+#include <freax/sched/clock.h>
+#include <freax/slab.h>
 
 struct cpufreq_stats {
 	unsigned int total_trans;

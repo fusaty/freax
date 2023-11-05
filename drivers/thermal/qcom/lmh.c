@@ -3,14 +3,14 @@
 /*
  * Copyright (C) 2021, Linaro Limited. All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/of_platform.h>
-#include <linux/slab.h>
-#include <linux/firmware/qcom/qcom_scm.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/of_platform.h>
+#include <freax/slab.h>
+#include <freax/firmware/qcom/qcom_scm.h>
 
 #define LMH_NODE_DCVS			0x44435653
 #define LMH_CLUSTER0_NODE_ID		0x6370302D

@@ -4,7 +4,7 @@
  * Copyright (C) 2017 Broadcom
  */
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

@@ -5,9 +5,9 @@
  * Clément Léger <clement.leger@bootlin.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
+#include <freax/bitfield.h>
+#include <freax/etherdevice.h>
+#include <freax/if_ether.h>
 #include <net/dsa.h>
 
 #include "tag.h"

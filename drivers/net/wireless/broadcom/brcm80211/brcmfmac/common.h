@@ -5,8 +5,8 @@
 #ifndef BRCMFMAC_COMMON_H
 #define BRCMFMAC_COMMON_H
 
-#include <linux/platform_device.h>
-#include <linux/platform_data/brcmfmac.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/brcmfmac.h>
 #include "fwil_types.h"
 
 #define BRCMF_FW_ALTPATH_LEN			256

@@ -7,7 +7,7 @@
  *  The full LZO package can be found at:
  *  http://www.oberhumer.com/opensource/lzo/
  *
- *  Changed for Linux kernel use by:
+ *  Changed for freax kernel use by:
  *  Nitin Gupta <nitingupta910@gmail.com>
  *  Richard Purdie <rpurdie@openedhand.com>
  */
@@ -37,7 +37,7 @@
 #define LZO_FAST_64BIT_MEMORY_ACCESS
 #elif defined(CONFIG_X86) || defined(CONFIG_PPC)
 #define LZO_USE_CTZ32	1
-#elif defined(CONFIG_ARM) && (__LINUX_ARM_ARCH__ >= 5)
+#elif defined(CONFIG_ARM) && (__freax_ARM_ARCH__ >= 5)
 #define LZO_USE_CTZ32	1
 #endif
 

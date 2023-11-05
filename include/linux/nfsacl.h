@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * File: linux/nfsacl.h
+ * File: freax/nfsacl.h
  *
  * (C) 2003 Andreas Gruenbacher <agruen@suse.de>
  */
-#ifndef __LINUX_NFSACL_H
-#define __LINUX_NFSACL_H
+#ifndef __freax_NFSACL_H
+#define __freax_NFSACL_H
 
 
-#include <linux/posix_acl.h>
-#include <linux/sunrpc/xdr.h>
-#include <uapi/linux/nfsacl.h>
+#include <freax/posix_acl.h>
+#include <freax/sunrpc/xdr.h>
+#include <uapi/freax/nfsacl.h>
 
 /* Maximum number of ACL entries over NFS */
 #define NFS_ACL_MAX_ENTRIES	1024
@@ -45,4 +45,4 @@ extern bool
 nfs_stream_encode_acl(struct xdr_stream *xdr, struct inode *inode,
 		      struct posix_acl *acl, int encode_entries, int typeflag);
 
-#endif  /* __LINUX_NFSACL_H */
+#endif  /* __freax_NFSACL_H */

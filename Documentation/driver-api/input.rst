@@ -4,7 +4,7 @@ Input Subsystem
 Input core
 ----------
 
-.. kernel-doc:: include/linux/input.h
+.. kernel-doc:: include/freax/input.h
    :internal:
 
 .. kernel-doc:: drivers/input/input.c
@@ -19,7 +19,7 @@ Input core
 Multitouch Library
 ------------------
 
-.. kernel-doc:: include/linux/input/mt.h
+.. kernel-doc:: include/freax/input/mt.h
    :internal:
 
 .. kernel-doc:: drivers/input/input-mt.c
@@ -28,13 +28,13 @@ Multitouch Library
 Matrix keyboards/keypads
 ------------------------
 
-.. kernel-doc:: include/linux/input/matrix_keypad.h
+.. kernel-doc:: include/freax/input/matrix_keypad.h
    :internal:
 
 Sparse keymap support
 ---------------------
 
-.. kernel-doc:: include/linux/input/sparse-keymap.h
+.. kernel-doc:: include/freax/input/sparse-keymap.h
    :internal:
 
 .. kernel-doc:: drivers/input/sparse-keymap.c

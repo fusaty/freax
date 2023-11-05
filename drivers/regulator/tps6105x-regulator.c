@@ -9,15 +9,15 @@
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/regmap.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps6105x.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/regmap.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/tps6105x.h>
 
 static const unsigned int tps6105x_voltages[] = {
 	4500000,

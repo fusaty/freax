@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/div64.S
+ *  freax/arch/arm/lib/div64.S
  *
  *  Optimized computation of 64-bit dividend / 32-bit divisor
  *
@@ -9,7 +9,7 @@
  *  Copyright:	Monta Vista Software, Inc.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 #include <asm/unwind.h>
 
@@ -60,7 +60,7 @@ UNWIND(.fnstart)
 	@ The aligned divisor is stored in yl preserving the original.
 	@ The bit position is stored in ip.
 
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 
 	clz	yl, r4
 	clz	ip, xh
@@ -120,7 +120,7 @@ UNWIND(.fnstart)
 
 	@ We still have remainer bits in the low part.  Bring them up.
 
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 
 	clz	xh, xl			@ we know xh is zero here so...
 	add	xh, xh, #1
@@ -147,7 +147,7 @@ UNWIND(.fnstart)
 8:	@ Division by a power of 2: determine what that divisor order is
 	@ then simply shift values around
 
-#if __LINUX_ARM_ARCH__ >= 5
+#if __freax_ARM_ARCH__ >= 5
 
 	clz	ip, r4
 	rsb	ip, ip, #31

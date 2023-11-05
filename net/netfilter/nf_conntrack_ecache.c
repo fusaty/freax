@@ -5,21 +5,21 @@
  * (C) 2005 Harald Welte <laforge@gnumonks.org>
  * (C) 2005 Patrick McHardy <kaber@trash.net>
  * (C) 2005-2006 Netfilter Core Team <coreteam@netfilter.org>
- * (C) 2005 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ * (C) 2005 USAGI/WIDE Project <http://www.freax-ipv6.org>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/stddef.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/types.h>
+#include <freax/netfilter.h>
+#include <freax/skbuff.h>
+#include <freax/vmalloc.h>
+#include <freax/stddef.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>

@@ -5,19 +5,19 @@
  * Copyright 31 August 2008 James Bottomley
  * Copyright (C) 2013, Intel Corporation
  */
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/export.h>
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/limits.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/string_helpers.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/export.h>
+#include <freax/ctype.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/limits.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/string_helpers.h>
 
 /**
  * string_get_size - get the size in the specified units

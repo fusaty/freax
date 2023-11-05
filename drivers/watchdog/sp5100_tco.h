@@ -7,7 +7,7 @@
  *	TCO timer driver for sp5100 chipsets
  */
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 /*
  * Some address definitions for the Watchdog

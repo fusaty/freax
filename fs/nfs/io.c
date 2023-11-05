@@ -5,12 +5,12 @@
  * I/O and data path helper functionality.
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/rwsem.h>
-#include <linux/fs.h>
-#include <linux/nfs_fs.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/rwsem.h>
+#include <freax/fs.h>
+#include <freax/nfs_fs.h>
 
 #include "internal.h"
 

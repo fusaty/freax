@@ -29,8 +29,8 @@ fi
 WHITELIST="add_reloc_offset __bss_start __bss_stop copy_and_flush
 _end enter_prom $MEM_FUNCS reloc_offset __secondary_hold
 __secondary_hold_acknowledge __secondary_hold_spinloop __start
-logo_linux_clut224 btext_prepare_BAT
-reloc_got2 kernstart_addr memstart_addr linux_banner _stext
+logo_freax_clut224 btext_prepare_BAT
+reloc_got2 kernstart_addr memstart_addr freax_banner _stext
 btext_setup_display TOC. relocate"
 
 NM="$1"

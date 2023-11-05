@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/quota.h>
-#include <linux/quotaops.h>
-#include <linux/dqblk_v1.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/quota.h>
+#include <freax/quotaops.h>
+#include <freax/dqblk_v1.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
 
 #include <asm/byteorder.h>
 

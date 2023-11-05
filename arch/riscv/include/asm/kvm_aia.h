@@ -10,8 +10,8 @@
 #ifndef __KVM_RISCV_AIA_H
 #define __KVM_RISCV_AIA_H
 
-#include <linux/jump_label.h>
-#include <linux/kvm_types.h>
+#include <freax/jump_label.h>
+#include <freax/kvm_types.h>
 #include <asm/csr.h>
 
 struct kvm_aia {

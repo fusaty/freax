@@ -34,18 +34,18 @@
  *        always after h/w and remote ports.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/moduleparam.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/moduleparam.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/rawmidi.h>
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 /*
  *      globals

@@ -7,11 +7,11 @@
  * Contact: Ohad Ben-Cohen <ohad@wizery.com>
  */
 
-#ifndef __LINUX_HWSPINLOCK_H
-#define __LINUX_HWSPINLOCK_H
+#ifndef __freax_HWSPINLOCK_H
+#define __freax_HWSPINLOCK_H
 
-#include <linux/err.h>
-#include <linux/sched.h>
+#include <freax/err.h>
+#include <freax/sched.h>
 
 /* hwspinlock mode argument */
 #define HWLOCK_IRQSTATE		0x01 /* Disable interrupts, save state */
@@ -457,4 +457,4 @@ static inline void hwspin_unlock(struct hwspinlock *hwlock)
 	__hwspin_unlock(hwlock, 0, NULL);
 }
 
-#endif /* __LINUX_HWSPINLOCK_H */
+#endif /* __freax_HWSPINLOCK_H */

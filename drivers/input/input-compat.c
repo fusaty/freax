@@ -5,8 +5,8 @@
  * Very heavily based on evdev.c - Copyright (c) 1999-2002 Vojtech Pavlik
  */
 
-#include <linux/export.h>
-#include <linux/uaccess.h>
+#include <freax/export.h>
+#include <freax/uaccess.h>
 #include "input-compat.h"
 
 #ifdef CONFIG_COMPAT

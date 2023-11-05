@@ -3,8 +3,8 @@
  * Copyright (C) 2017 SiFive
  */
 
-#include <linux/cpu.h>
-#include <linux/of.h>
+#include <freax/cpu.h>
+#include <freax/of.h>
 #include <asm/cacheinfo.h>
 
 static struct riscv_cacheinfo_ops *rv_cache_ops;

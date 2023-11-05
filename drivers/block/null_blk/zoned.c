@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/vmalloc.h>
-#include <linux/bitmap.h>
+#include <freax/vmalloc.h>
+#include <freax/bitmap.h>
 #include "null_blk.h"
 
 #define CREATE_TRACE_POINTS

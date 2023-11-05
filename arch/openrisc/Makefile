@@ -20,10 +20,10 @@ KBUILD_DEFCONFIG := or1ksim_defconfig
 OBJCOPYFLAGS    := -O binary -R .note -R .comment -S
 LIBGCC 		:= $(shell $(CC) $(KBUILD_CFLAGS) -print-libgcc-file-name)
 
-KBUILD_CFLAGS	+= -pipe -ffixed-r10 -D__linux__
+KBUILD_CFLAGS	+= -pipe -ffixed-r10 -D__freax__
 KBUILD_CFLAGS	+= -msfimm -mshftimm
 
-all: vmlinux.bin
+all: vmfreax.bin
 
 boot := arch/$(ARCH)/boot
 
@@ -57,7 +57,7 @@ endif
 
 libs-y		+= $(LIBGCC)
 
-PHONY += vmlinux.bin
+PHONY += vmfreax.bin
 
-vmlinux.bin: vmlinux
+vmfreax.bin: vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@

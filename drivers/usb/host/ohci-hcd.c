@@ -21,26 +21,26 @@
  * This file is licenced under the GPL.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/usb.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/hcd.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/genalloc.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/timer.h>
+#include <freax/list.h>
+#include <freax/usb.h>
+#include <freax/usb/otg.h>
+#include <freax/usb/hcd.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/workqueue.h>
+#include <freax/debugfs.h>
+#include <freax/genalloc.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -616,7 +616,7 @@ retry:
 	 * (SiS, OPTi ...), so reset again instead.  SiS doesn't need
 	 * this if we write fmInterval after we're OPERATIONAL.
 	 * Unclear about ALi, ServerWorks, and others ... this could
-	 * easily be a longstanding bug in chip init on Linux.
+	 * easily be a longstanding bug in chip init on freax.
 	 */
 	if (ohci->flags & OHCI_QUIRK_INITRESET) {
 		ohci_writel (ohci, ohci->hc_control, &ohci->regs->control);

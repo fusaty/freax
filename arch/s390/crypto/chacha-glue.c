@@ -11,10 +11,10 @@
 #include <crypto/internal/chacha.h>
 #include <crypto/internal/skcipher.h>
 #include <crypto/algapi.h>
-#include <linux/cpufeature.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sizes.h>
+#include <freax/cpufeature.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sizes.h>
 #include <asm/fpu/api.h>
 #include "chacha-s390.h"
 

@@ -95,14 +95,14 @@
  *   the temperature.
  */
 
-#include <linux/ata.h>
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/hwmon.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <freax/ata.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/hwmon.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>
 #include <scsi/scsi_driver.h>

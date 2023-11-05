@@ -7,18 +7,18 @@
  *				Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/string_helpers.h>
-#include <linux/skbuff.h>
-#include <linux/mutex.h>
-#include <linux/bitmap.h>
-#include <linux/rwsem.h>
-#include <linux/idr.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/string_helpers.h>
+#include <freax/skbuff.h>
+#include <freax/mutex.h>
+#include <freax/bitmap.h>
+#include <freax/rwsem.h>
+#include <freax/idr.h>
 #include <net/sock.h>
 #include <net/genetlink.h>
 

@@ -4,15 +4,15 @@
  * Copyright (C) 2012 Intel Corp. All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/bio.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/raid/pq.h>
-#include <linux/hash.h>
-#include <linux/list_sort.h>
-#include <linux/raid/xor.h>
-#include <linux/mm.h>
+#include <freax/sched.h>
+#include <freax/bio.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/raid/pq.h>
+#include <freax/hash.h>
+#include <freax/list_sort.h>
+#include <freax/raid/xor.h>
+#include <freax/mm.h>
 #include "messages.h"
 #include "misc.h"
 #include "ctree.h"

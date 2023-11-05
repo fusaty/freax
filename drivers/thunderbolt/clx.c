@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2020 - 2023, Intel Corporation
  * Authors: Gil Fine <gil.fine@intel.com>
- *	    Mika Westerberg <mika.westerberg@linux.intel.com>
+ *	    Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include "tb.h"
 

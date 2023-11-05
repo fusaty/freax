@@ -8,7 +8,7 @@
 #include "../habanalabs.h"
 #include "../../include/hw_ip/pci/pci_general.h"
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include <trace/events/habanalabs.h>
 

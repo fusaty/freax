@@ -5,7 +5,7 @@
  * Pasha Tatashin <pasha.tatashin@soleen.com>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 #include <asm/kvm_asm.h>
 

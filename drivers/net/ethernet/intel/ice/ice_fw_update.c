@@ -2,9 +2,9 @@
 /* Copyright (C) 2018-2019, Intel Corporation. */
 
 #include <asm/unaligned.h>
-#include <linux/uuid.h>
-#include <linux/crc32.h>
-#include <linux/pldmfw.h>
+#include <freax/uuid.h>
+#include <freax/crc32.h>
+#include <freax/pldmfw.h>
 #include "ice.h"
 #include "ice_fw_update.h"
 

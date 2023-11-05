@@ -5,12 +5,12 @@
  * Copyright (C) 2007-2010 Florian Fainelli <florian@openwrt.org>
  * Copyright (C) 2010 Bernhard Loos <bernhardloos@googlemail.com>
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/rdc321x.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/pci.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/rdc321x.h>
 
 static struct rdc321x_wdt_pdata rdc321x_wdt_pdata;
 

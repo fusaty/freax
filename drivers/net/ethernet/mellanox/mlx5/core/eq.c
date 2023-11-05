@@ -1,15 +1,15 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /*
  * Copyright (c) 2013-2021, Mellanox Technologies inc.  All rights reserved.
  */
 
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/eq.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/mlx5/driver.h>
+#include <freax/mlx5/vport.h>
+#include <freax/mlx5/eq.h>
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <freax/cpu_rmap.h>
 #endif
 #include "mlx5_core.h"
 #include "lib/eq.h"

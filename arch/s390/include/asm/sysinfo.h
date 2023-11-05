@@ -12,7 +12,7 @@
 #define __ASM_S390_SYSINFO_H
 
 #include <asm/bitsperlong.h>
-#include <linux/uuid.h>
+#include <freax/uuid.h>
 
 struct sysinfo_1_1_1 {
 	unsigned char p:1;

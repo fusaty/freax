@@ -7,17 +7,17 @@
  * Author: Adam Thomson <Adam.Thomson.Opensource@diasemi.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/power_supply.h>
-#include <linux/notifier.h>
-#include <linux/usb/phy.h>
-#include <linux/iio/consumer.h>
-#include <linux/mfd/da9150/core.h>
-#include <linux/mfd/da9150/registers.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/power_supply.h>
+#include <freax/notifier.h>
+#include <freax/usb/phy.h>
+#include <freax/iio/consumer.h>
+#include <freax/mfd/da9150/core.h>
+#include <freax/mfd/da9150/registers.h>
 
 /* Private data */
 struct da9150_charger {

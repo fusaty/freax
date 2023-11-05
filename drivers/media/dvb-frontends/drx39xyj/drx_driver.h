@@ -31,10 +31,10 @@
 #ifndef __DRXDRIVER_H__
 #define __DRXDRIVER_H__
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/firmware.h>
+#include <freax/i2c.h>
 
 /*
  * This structure contains the I2C address, the device ID and a user_data pointer.

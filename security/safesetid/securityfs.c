@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * SafeSetID Linux Security Module
+ * SafeSetID freax Security Module
  *
  * Author: Micah Morton <mortonm@chromium.org>
  *
@@ -14,8 +14,8 @@
 
 #define pr_fmt(fmt) "SafeSetID: " fmt
 
-#include <linux/security.h>
-#include <linux/cred.h>
+#include <freax/security.h>
+#include <freax/cred.h>
 
 #include "lsm.h"
 

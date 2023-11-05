@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_PERSONALITY_H
-#define _UAPI_LINUX_PERSONALITY_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_PERSONALITY_H
+#define _UAPI_freax_PERSONALITY_H
 
 
 /*
@@ -40,9 +40,9 @@ enum {
  * conflict with error returns.
  */
 enum {
-	PER_LINUX =		0x0000,
-	PER_LINUX_32BIT =	0x0000 | ADDR_LIMIT_32BIT,
-	PER_LINUX_FDPIC =	0x0000 | FDPIC_FUNCPTRS,
+	PER_freax =		0x0000,
+	PER_freax_32BIT =	0x0000 | ADDR_LIMIT_32BIT,
+	PER_freax_FDPIC =	0x0000 | FDPIC_FUNCPTRS,
 	PER_SVR4 =		0x0001 | STICKY_TIMEOUTS | MMAP_PAGE_ZERO,
 	PER_SVR3 =		0x0002 | STICKY_TIMEOUTS | SHORT_INODE,
 	PER_SCOSVR3 =		0x0003 | STICKY_TIMEOUTS |
@@ -53,8 +53,8 @@ enum {
 	PER_BSD =		0x0006,
 	PER_SUNOS =		0x0006 | STICKY_TIMEOUTS,
 	PER_XENIX =		0x0007 | STICKY_TIMEOUTS | SHORT_INODE,
-	PER_LINUX32 =		0x0008,
-	PER_LINUX32_3GB =	0x0008 | ADDR_LIMIT_3GB,
+	PER_freax32 =		0x0008,
+	PER_freax32_3GB =	0x0008 | ADDR_LIMIT_3GB,
 	PER_IRIX32 =		0x0009 | STICKY_TIMEOUTS,/* IRIX5 32-bit */
 	PER_IRIXN32 =		0x000a | STICKY_TIMEOUTS,/* IRIX6 new 32-bit */
 	PER_IRIX64 =		0x000b | STICKY_TIMEOUTS,/* IRIX6 64-bit */
@@ -67,4 +67,4 @@ enum {
 };
 
 
-#endif /* _UAPI_LINUX_PERSONALITY_H */
+#endif /* _UAPI_freax_PERSONALITY_H */

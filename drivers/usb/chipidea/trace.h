@@ -10,12 +10,12 @@
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM chipidea
 
-#if !defined(__LINUX_CHIPIDEA_TRACE) || defined(TRACE_HEADER_MULTI_READ)
-#define __LINUX_CHIPIDEA_TRACE
+#if !defined(__freax_CHIPIDEA_TRACE) || defined(TRACE_HEADER_MULTI_READ)
+#define __freax_CHIPIDEA_TRACE
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
-#include <linux/usb/chipidea.h>
+#include <freax/types.h>
+#include <freax/tracepoint.h>
+#include <freax/usb/chipidea.h>
 #include "ci.h"
 #include "udc.h"
 
@@ -79,7 +79,7 @@ DEFINE_EVENT(ci_log_trb, ci_complete_td,
 	TP_ARGS(hwep, hwreq, td)
 );
 
-#endif /* __LINUX_CHIPIDEA_TRACE */
+#endif /* __freax_CHIPIDEA_TRACE */
 
 /* this part must be outside header guard */
 

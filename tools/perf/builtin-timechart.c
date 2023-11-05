@@ -5,7 +5,7 @@
  * (C) Copyright 2009 Intel Corporation
  *
  * Authors:
- *     Arjan van de Ven <arjan@linux.intel.com>
+ *     Arjan van de Ven <arjan@freax.intel.com>
  */
 
 #include <errno.h>
@@ -13,13 +13,13 @@
 
 #include "builtin.h"
 #include "util/color.h"
-#include <linux/list.h>
+#include <freax/list.h>
 #include "util/evlist.h" // for struct evsel_str_handler
 #include "util/evsel.h"
-#include <linux/kernel.h>
-#include <linux/rbtree.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/rbtree.h>
+#include <freax/time64.h>
+#include <freax/zalloc.h>
 #include "util/symbol.h"
 #include "util/thread.h"
 #include "util/callchain.h"
@@ -37,7 +37,7 @@
 #include "util/string2.h"
 #include "util/tracepoint.h"
 #include "util/util.h"
-#include <linux/err.h>
+#include <freax/err.h>
 #include <traceevent/event-parse.h>
 
 #ifdef LACKS_OPEN_MEMSTREAM_PROTOTYPE

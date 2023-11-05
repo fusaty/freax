@@ -12,19 +12,19 @@
 #include <limits.h>
 #include <errno.h>
 
-#include <linux/kernel.h>
-#include <linux/perf_event.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/string.h>
-#include <linux/time64.h>
+#include <freax/kernel.h>
+#include <freax/perf_event.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
+#include <freax/log2.h>
+#include <freax/string.h>
+#include <freax/time64.h>
 
 #include <sys/param.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <linux/list.h>
-#include <linux/zalloc.h>
+#include <freax/list.h>
+#include <freax/zalloc.h>
 
 #include "config.h"
 #include "evlist.h"
@@ -40,7 +40,7 @@
 #include "asm/bug.h"
 #include "auxtrace.h"
 
-#include <linux/hash.h>
+#include <freax/hash.h>
 
 #include "event.h"
 #include "record.h"
@@ -56,7 +56,7 @@
 #include "s390-cpumsf.h"
 #include "util/mmap.h"
 
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 #include "symbol/kallsyms.h"
 #include <internal/lib.h>
 #include "util/sample.h"

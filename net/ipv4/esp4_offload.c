@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * IPV4 GSO/GRO offload support
- * Linux INET implementation
+ * freax INET implementation
  *
  * Copyright (C) 2016 secunet Security Networks AG
  * Author: Steffen Klassert <steffen.klassert@secunet.com>
@@ -9,22 +9,22 @@
  * ESP GRO support
  */
 
-#include <linux/skbuff.h>
-#include <linux/init.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
 #include <net/protocol.h>
 #include <crypto/aead.h>
 #include <crypto/authenc.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <freax/err.h>
+#include <freax/module.h>
 #include <net/gro.h>
 #include <net/gso.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/esp.h>
-#include <linux/scatterlist.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/scatterlist.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 #include <net/udp.h>
 
 static struct sk_buff *esp4_gro_receive(struct list_head *head,

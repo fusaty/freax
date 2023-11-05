@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/perf_event.h>
-#include <linux/types.h>
+#include <freax/perf_event.h>
+#include <freax/types.h>
 
 #include "../perf_event.h"
 

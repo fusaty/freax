@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_FOTG210_H
-#define __LINUX_FOTG210_H
+#ifndef __freax_FOTG210_H
+#define __freax_FOTG210_H
 
-#include <linux/usb/ehci-dbgp.h>
+#include <freax/usb/ehci-dbgp.h>
 
 /* definitions used for the EHCI driver */
 
@@ -686,4 +686,4 @@ static inline unsigned fotg210_read_frame_index(struct fotg210_hcd *fotg210)
 
 /*-------------------------------------------------------------------------*/
 
-#endif /* __LINUX_FOTG210_H */
+#endif /* __freax_FOTG210_H */

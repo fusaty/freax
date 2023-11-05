@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/ext2/acl.c
+ * freax/fs/ext2/acl.c
  *
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
 #include "ext2.h"
 #include "xattr.h"
 #include "acl.h"

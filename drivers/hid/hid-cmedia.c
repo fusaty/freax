@@ -4,12 +4,12 @@
  * and HS100B mute buttons
  *
  * Copyright (C) 2015 Ben Chen <ben_chen@bizlinktech.com>
- * Copyright (C) 2021 Thomas Weißschuh <linux@weissschuh.net>
+ * Copyright (C) 2021 Thomas Weißschuh <freax@weissschuh.net>
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/module.h>
 #include "hid-ids.h"
 
 MODULE_AUTHOR("Ben Chen");

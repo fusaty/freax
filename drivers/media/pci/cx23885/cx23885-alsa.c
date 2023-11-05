@@ -11,13 +11,13 @@
 #include "cx23885.h"
 #include "cx23885-reg.h"
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/vmalloc.h>
+#include <freax/dma-mapping.h>
+#include <freax/pci.h>
 
 #include <asm/delay.h>
 

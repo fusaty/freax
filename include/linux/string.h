@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_STRING_H_
-#define _LINUX_STRING_H_
+#ifndef _freax_STRING_H_
+#define _freax_STRING_H_
 
-#include <linux/array_size.h>
-#include <linux/compiler.h>	/* for inline */
-#include <linux/types.h>	/* for size_t */
-#include <linux/stddef.h>	/* for NULL */
-#include <linux/err.h>		/* for ERR_PTR() */
-#include <linux/errno.h>	/* for E2BIG */
-#include <linux/overflow.h>	/* for check_mul_overflow() */
-#include <linux/stdarg.h>
-#include <uapi/linux/string.h>
+#include <freax/array_size.h>
+#include <freax/compiler.h>	/* for inline */
+#include <freax/types.h>	/* for size_t */
+#include <freax/stddef.h>	/* for NULL */
+#include <freax/err.h>		/* for ERR_PTR() */
+#include <freax/errno.h>	/* for E2BIG */
+#include <freax/overflow.h>	/* for check_mul_overflow() */
+#include <freax/stdarg.h>
+#include <uapi/freax/string.h>
 
 extern char *strndup_user(const char __user *, long);
 extern void *memdup_user(const void __user *, size_t);
@@ -292,7 +292,7 @@ static inline const char *kbasename(const char *path)
 }
 
 #if !defined(__NO_FORTIFY) && defined(__OPTIMIZE__) && defined(CONFIG_FORTIFY_SOURCE)
-#include <linux/fortify-string.h>
+#include <freax/fortify-string.h>
 #endif
 #ifndef unsafe_memcpy
 #define unsafe_memcpy(dst, src, bytes, justification)		\
@@ -404,4 +404,4 @@ static __always_inline size_t str_has_prefix(const char *str, const char *prefix
 	return strncmp(str, prefix, len) == 0 ? len : 0;
 }
 
-#endif /* _LINUX_STRING_H_ */
+#endif /* _freax_STRING_H_ */

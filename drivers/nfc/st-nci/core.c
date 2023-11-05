@@ -5,8 +5,8 @@
  * Copyright (C) 2014-2015  STMicroelectronics SAS. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/nfc.h>
+#include <freax/module.h>
+#include <freax/nfc.h>
 #include <net/nfc/nci.h>
 #include <net/nfc/nci_core.h>
 

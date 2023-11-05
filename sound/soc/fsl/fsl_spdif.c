@@ -9,12 +9,12 @@
 // Copyright 2008 SigmaTel, Inc
 // Copyright 2008 Embedded Alley Solutions, Inc
 
-#include <linux/bitrev.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/pm_runtime.h>
+#include <freax/bitrev.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/pm_runtime.h>
 
 #include <sound/asoundef.h>
 #include <sound/dmaengine_pcm.h>

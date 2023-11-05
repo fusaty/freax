@@ -21,18 +21,18 @@
    an i2c_algorithm to access them.
 */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/stddef.h>
-#include <linux/ioport.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/stddef.h>
+#include <freax/ioport.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/dmi.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
 
 
 /* PIIX4 SMBus address offsets */

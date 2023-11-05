@@ -5,9 +5,9 @@
  * (C) Copyright 1998 Linus Torvalds
  */
 
-#include <linux/compiler.h>
-#include <linux/export.h>
-#include <linux/preempt.h>
+#include <freax/compiler.h>
+#include <freax/export.h>
+#include <freax/preempt.h>
 #include <asm/thread_info.h>
 
 #if defined(CONFIG_ALPHA_EV6) || defined(CONFIG_ALPHA_EV67)

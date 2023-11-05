@@ -9,44 +9,44 @@
   Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
 
   Documentation available at:
-	http://www.stlinux.com
+	http://www.stfreax.com
   Support available at:
-	https://bugzilla.stlinux.com/
+	https://bugzilla.stfreax.com/
 *******************************************************************************/
 
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/crc32.h>
-#include <linux/mii.h>
-#include <linux/if.h>
-#include <linux/if_vlan.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/prefetch.h>
-#include <linux/pinctrl/consumer.h>
+#include <freax/clk.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/skbuff.h>
+#include <freax/ethtool.h>
+#include <freax/if_ether.h>
+#include <freax/crc32.h>
+#include <freax/mii.h>
+#include <freax/if.h>
+#include <freax/if_vlan.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
+#include <freax/prefetch.h>
+#include <freax/pinctrl/consumer.h>
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 #endif /* CONFIG_DEBUG_FS */
-#include <linux/net_tstamp.h>
-#include <linux/phylink.h>
-#include <linux/udp.h>
-#include <linux/bpf_trace.h>
+#include <freax/net_tstamp.h>
+#include <freax/phylink.h>
+#include <freax/udp.h>
+#include <freax/bpf_trace.h>
 #include <net/page_pool/helpers.h>
 #include <net/pkt_cls.h>
 #include <net/xdp_sock_drv.h>
 #include "stmmac_ptp.h"
 #include "stmmac.h"
 #include "stmmac_xdp.h"
-#include <linux/reset.h>
-#include <linux/of_mdio.h>
+#include <freax/reset.h>
+#include <freax/of_mdio.h>
 #include "dwmac1000.h"
 #include "dwxgmac2.h"
 #include "hwif.h"

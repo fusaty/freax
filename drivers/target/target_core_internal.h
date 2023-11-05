@@ -2,9 +2,9 @@
 #ifndef TARGET_CORE_INTERNAL_H
 #define TARGET_CORE_INTERNAL_H
 
-#include <linux/configfs.h>
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/configfs.h>
+#include <freax/list.h>
+#include <freax/types.h>
 #include <target/target_core_base.h>
 
 #define TARGET_CORE_NAME_MAX_LEN	64

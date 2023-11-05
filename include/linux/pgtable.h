@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PGTABLE_H
-#define _LINUX_PGTABLE_H
+#ifndef _freax_PGTABLE_H
+#define _freax_PGTABLE_H
 
-#include <linux/pfn.h>
+#include <freax/pfn.h>
 #include <asm/pgtable.h>
 
 #define PMD_ORDER	(PMD_SHIFT - PAGE_SHIFT)
@@ -11,11 +11,11 @@
 #ifndef __ASSEMBLY__
 #ifdef CONFIG_MMU
 
-#include <linux/mm_types.h>
-#include <linux/bug.h>
-#include <linux/errno.h>
+#include <freax/mm_types.h>
+#include <freax/bug.h>
+#include <freax/errno.h>
 #include <asm-generic/pgtable_uffd.h>
-#include <linux/page_table_check.h>
+#include <freax/page_table_check.h>
 
 #if 5 - defined(__PAGETABLE_P4D_FOLDED) - defined(__PAGETABLE_PUD_FOLDED) - \
 	defined(__PAGETABLE_PMD_FOLDED) != CONFIG_PGTABLE_LEVELS
@@ -1700,4 +1700,4 @@ pgprot_t vm_get_page_prot(unsigned long vm_flags)			\
 }									\
 EXPORT_SYMBOL(vm_get_page_prot);
 
-#endif /* _LINUX_PGTABLE_H */
+#endif /* _freax_PGTABLE_H */

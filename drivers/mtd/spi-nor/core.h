@@ -4,8 +4,8 @@
  * Copyright (C) 2014, Freescale Semiconductor, Inc.
  */
 
-#ifndef __LINUX_MTD_SPI_NOR_INTERNAL_H
-#define __LINUX_MTD_SPI_NOR_INTERNAL_H
+#ifndef __freax_MTD_SPI_NOR_INTERNAL_H
+#define __freax_MTD_SPI_NOR_INTERNAL_H
 
 #include "sfdp.h"
 
@@ -742,4 +742,4 @@ static inline void spi_nor_debugfs_register(struct spi_nor *nor) {}
 static inline void spi_nor_debugfs_shutdown(void) {}
 #endif
 
-#endif /* __LINUX_MTD_SPI_NOR_INTERNAL_H */
+#endif /* __freax_MTD_SPI_NOR_INTERNAL_H */

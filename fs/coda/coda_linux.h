@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* 
- * Coda File System, Linux Kernel module
+ * Coda File System, freax Kernel module
  * 
  * Original version, adapted from cfs_mach.c, (C) Carnegie Mellon University
- * Linux modifications (C) 1996, Peter J. Braam
- * Rewritten for Linux 2.1 (C) 1997 Carnegie Mellon University
+ * freax modifications (C) 1996, Peter J. Braam
+ * Rewritten for freax 2.1 (C) 1997 Carnegie Mellon University
  *
  * Carnegie Mellon University encourages users of this software to
  * contribute improvements to the Coda project.
  */
 
-#ifndef _LINUX_CODA_FS
-#define _LINUX_CODA_FS
+#ifndef _freax_CODA_FS
+#define _freax_CODA_FS
 
 #ifdef pr_fmt
 #undef pr_fmt
@@ -19,14 +19,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/wait.h>		
-#include <linux/types.h>
-#include <linux/fs.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/wait.h>		
+#include <freax/types.h>
+#include <freax/fs.h>
 #include "coda_fs_i.h"
 
 /* operations */

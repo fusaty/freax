@@ -4,18 +4,18 @@
  * Author: Radu Pirea <radu-nicolae.pirea@oss.nxp.com>
  */
 
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/ethtool_netlink.h>
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/phy.h>
-#include <linux/processor.h>
-#include <linux/property.h>
-#include <linux/ptp_classify.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/net_tstamp.h>
+#include <freax/delay.h>
+#include <freax/ethtool.h>
+#include <freax/ethtool_netlink.h>
+#include <freax/kernel.h>
+#include <freax/mii.h>
+#include <freax/module.h>
+#include <freax/phy.h>
+#include <freax/processor.h>
+#include <freax/property.h>
+#include <freax/ptp_classify.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/net_tstamp.h>
 
 #define PHY_ID_TJA_1103			0x001BB010
 #define PHY_ID_TJA_1120			0x001BB031

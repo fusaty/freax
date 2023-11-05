@@ -5,9 +5,9 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/const.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
+#include <freax/const.h>
 #include <asm/assembler.h>
 #include <asm/page.h>
 

@@ -7,16 +7,16 @@
  *   Reworked by Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/bitfield.h>
+#include <freax/completion.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #include "denali.h"
 

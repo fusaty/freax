@@ -38,7 +38,7 @@
 
 		key-1 {
 			gpios = <&gpio6 18 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_1>;
+			freax,code = <KEY_1>;
 			label = "SW47";
 			wakeup-source;
 			debounce-interval = <20>;
@@ -46,7 +46,7 @@
 
 		key-2 {
 			gpios = <&gpio6 19 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_2>;
+			freax,code = <KEY_2>;
 			label = "SW48";
 			wakeup-source;
 			debounce-interval = <20>;
@@ -54,7 +54,7 @@
 
 		key-3 {
 			gpios = <&gpio6 20 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_3>;
+			freax,code = <KEY_3>;
 			label = "SW49";
 			wakeup-source;
 			debounce-interval = <20>;

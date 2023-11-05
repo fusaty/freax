@@ -4,15 +4,15 @@
  *   Author: Masahiro Yamada <yamada.masahiro@socionext.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
 
 #include "sdhci-pltfm.h"
 

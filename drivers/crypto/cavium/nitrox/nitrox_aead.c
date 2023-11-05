@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/crypto.h>
-#include <linux/rtnetlink.h>
+#include <freax/kernel.h>
+#include <freax/printk.h>
+#include <freax/crypto.h>
+#include <freax/rtnetlink.h>
 
 #include <crypto/aead.h>
 #include <crypto/authenc.h>

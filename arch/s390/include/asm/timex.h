@@ -10,8 +10,8 @@
 #ifndef _ASM_S390_TIMEX_H
 #define _ASM_S390_TIMEX_H
 
-#include <linux/preempt.h>
-#include <linux/time64.h>
+#include <freax/preempt.h>
+#include <freax/time64.h>
 #include <asm/lowcore.h>
 
 /* The value of the TOD clock for 1.1.1970. */

@@ -27,9 +27,9 @@
 #include <string.h>
 #include <stdbool.h>
 #include <errno.h>
-#include <linux/bitmap.h>
-#include <linux/compiler.h>
-#include <linux/time64.h>
+#include <freax/bitmap.h>
+#include <freax/compiler.h>
+#include <freax/time64.h>
 #ifdef HAVE_LIBTRACEEVENT
 #include <traceevent/event-parse.h>
 #endif

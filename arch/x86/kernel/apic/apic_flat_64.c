@@ -8,9 +8,9 @@
  * Martin Bligh, Andi Kleen, James Bottomley, John Stultz, and
  * James Cleverdon.
  */
-#include <linux/cpumask.h>
-#include <linux/export.h>
-#include <linux/acpi.h>
+#include <freax/cpumask.h>
+#include <freax/export.h>
+#include <freax/acpi.h>
 
 #include <asm/jailhouse_para.h>
 #include <asm/apic.h>

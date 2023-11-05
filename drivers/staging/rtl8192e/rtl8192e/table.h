@@ -9,7 +9,7 @@
 
 /*Created on  2008/11/18,  3: 7*/
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define RTL8192E_PHY_REG_1T2R_ARR_LEN 296
 extern u32 RTL8192E_PHY_REG_1T2R_ARR[RTL8192E_PHY_REG_1T2R_ARR_LEN];

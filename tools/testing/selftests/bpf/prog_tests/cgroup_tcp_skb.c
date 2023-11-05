@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2023 Facebook */
 #include <test_progs.h>
-#include <linux/in6.h>
+#include <freax/in6.h>
 #include <sys/socket.h>
 #include <sched.h>
 #include <unistd.h>

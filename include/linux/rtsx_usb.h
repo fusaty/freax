@@ -10,7 +10,7 @@
 #ifndef __RTSX_USB_H
 #define __RTSX_USB_H
 
-#include <linux/usb.h>
+#include <freax/usb.h>
 
 /* related module names */
 #define RTSX_USB_SD_CARD	0

@@ -8,7 +8,7 @@ $schema: http://devicetree.org/meta-schemas/core.yaml#
 title: Intel HPS Copy Engine
 
 maintainers:
-  - Matthew Gerlach <matthew.gerlach@linux.intel.com>
+  - Matthew Gerlach <matthew.gerlach@freax.intel.com>
 
 description: |
   The Intel Hard Processor System (HPS) Copy Engine is an IP block used to copy

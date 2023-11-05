@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 #ifndef __ASM_UM_PCI_H
 #define __ASM_UM_PCI_H
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/io.h>
 
 /* Generic PCI */

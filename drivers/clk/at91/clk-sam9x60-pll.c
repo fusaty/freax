@@ -4,14 +4,14 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/clk/at91_pmc.h>
-#include <linux/of.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
+#include <freax/clk/at91_pmc.h>
+#include <freax/of.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
 #include "pmc.h"
 

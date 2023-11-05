@@ -17,13 +17,13 @@
  * nct7904d     20    12    4     5      8    0xc5
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/hwmon.h>
-#include <linux/watchdog.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/hwmon.h>
+#include <freax/watchdog.h>
 
 #define VENDOR_ID_REG		0x7A	/* Any bank */
 #define NUVOTON_ID		0x50

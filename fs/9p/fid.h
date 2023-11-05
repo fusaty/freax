@@ -6,7 +6,7 @@
  */
 #ifndef FS_9P_FID_H
 #define FS_9P_FID_H
-#include <linux/list.h>
+#include <freax/list.h>
 #include "v9fs.h"
 
 struct p9_fid *v9fs_fid_find_inode(struct inode *inode, bool want_writeable,

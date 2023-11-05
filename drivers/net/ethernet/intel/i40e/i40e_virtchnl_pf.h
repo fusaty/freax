@@ -4,8 +4,8 @@
 #ifndef _I40E_VIRTCHNL_PF_H_
 #define _I40E_VIRTCHNL_PF_H_
 
-#include <linux/avf/virtchnl.h>
-#include <linux/netdevice.h>
+#include <freax/avf/virtchnl.h>
+#include <freax/netdevice.h>
 #include "i40e_type.h"
 
 #define I40E_MAX_VLANID 4095

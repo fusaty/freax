@@ -29,5 +29,5 @@ build-arch:
 
 .PHONY: clean
 clean:
-	rm -rf debian/files debian/linux-*
+	rm -rf debian/files debian/freax-*
 	$(MAKE) -f $(srctree)/Makefile ARCH=$(ARCH) clean

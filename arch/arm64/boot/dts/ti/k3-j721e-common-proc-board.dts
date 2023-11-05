@@ -41,13 +41,13 @@
 
 		sw10: switch-10 {
 			label = "GPIO Key USER1";
-			linux,code = <BTN_0>;
+			freax,code = <BTN_0>;
 			gpios = <&main_gpio0 0 GPIO_ACTIVE_LOW>;
 		};
 
 		sw11: switch-11 {
 			label = "GPIO Key USER2";
-			linux,code = <BTN_1>;
+			freax,code = <BTN_1>;
 			gpios = <&wkup_gpio0 7 GPIO_ACTIVE_LOW>;
 		};
 	};

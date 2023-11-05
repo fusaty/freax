@@ -8,17 +8,17 @@
  * Based on the example driver written by Emard <emard@softhome.net>
  */
 
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/random.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/printk.h>
+#include <freax/random.h>
+#include <freax/ratelimit.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/workqueue.h>
 
 #include <media/dvb_frontend.h>
 

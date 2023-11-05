@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* This file is derived from the GAS 2.1.4 assembler control file.
    The GAS product is under the GNU General Public License, version 2 or later.
    As such, this file is also under that license.
@@ -11,8 +11,8 @@
    more information about COFF, then O'Reilly has a very excellent book.
 */
 
-#ifndef _UAPI_LINUX_COFF_H
-#define _UAPI_LINUX_COFF_H
+#ifndef _UAPI_freax_COFF_H
+#define _UAPI_freax_COFF_H
 
 #define  E_SYMNMLEN  8   /* Number of characters in a symbol name         */
 #define  E_FILNMLEN 14   /* Number of characters in a file name           */
@@ -102,7 +102,7 @@ struct COFF_filehdr {
 #define  COFF_F_PATCH		0002000
 #define  COFF_F_NODF		0002000
 
-#define	COFF_I386MAGIC	        0x14c   /* Linux's system    */
+#define	COFF_I386MAGIC	        0x14c   /* freax's system    */
 
 #if 0   /* Perhaps, someday, these formats may be used.      */
 #define COFF_I386PTXMAGIC	0x154
@@ -119,9 +119,9 @@ struct COFF_filehdr {
 
 /********************** AOUT "OPTIONAL HEADER" **********************/
 
-/* Linux COFF must have this "optional" header. Standard COFF has no entry
+/* freax COFF must have this "optional" header. Standard COFF has no entry
    location for the "entry" point. They normally would start with the first
-   location of the .text section. This is not a good idea for linux. So,
+   location of the .text section. This is not a good idea for freax. So,
    the use of this "optional" header is not optional. It is required.
 
    Do not be tempted to assume that the size of the optional header is
@@ -354,4 +354,4 @@ struct COFF_reloc {
 /* For new sections we haven't heard of before */
 #define COFF_DEF_SECTION_ALIGNMENT       4
 
-#endif /* _UAPI_LINUX_COFF_H */
+#endif /* _UAPI_freax_COFF_H */

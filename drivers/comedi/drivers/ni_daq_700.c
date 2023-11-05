@@ -4,7 +4,7 @@
  *     Driver for DAQCard-700 DIO/AI
  *     copied from 8255
  *
- *     COMEDI - Linux Control and Measurement Device Interface
+ *     COMEDI - freax Control and Measurement Device Interface
  *     Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
@@ -38,10 +38,10 @@
  *		User Manual:	https://www.ni.com/pdf/manuals/320676d.pdf
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedi_pcmcia.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/comedi/comedi_pcmcia.h>
 
 /* daqcard700 registers */
 #define DIO_W		0x04	/* WO 8bit */

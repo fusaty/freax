@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf_endian.h>
 #include <bpf/bpf_helpers.h>
-#include <linux/ip.h>
+#include <freax/ip.h>
 #include "bpf_tracing_net.h"
 
 /* We don't care about whether the packet can be received by network stack.

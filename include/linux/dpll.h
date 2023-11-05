@@ -7,9 +7,9 @@
 #ifndef __DPLL_H__
 #define __DPLL_H__
 
-#include <uapi/linux/dpll.h>
-#include <linux/device.h>
-#include <linux/netlink.h>
+#include <uapi/freax/dpll.h>
+#include <freax/device.h>
+#include <freax/netlink.h>
 
 struct dpll_device;
 struct dpll_pin;

@@ -5,7 +5,7 @@
 #ifndef AM65_CPSW_QOS_H_
 #define AM65_CPSW_QOS_H_
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 #include <net/pkt_sched.h>
 
 struct am65_cpsw_common;

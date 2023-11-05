@@ -19,10 +19,10 @@
  - Wang Chen <wangchen@cn.fujitsu.com>
  - Hu Haowen <src.res.211@gmail.com>
 
-Linux 內核代碼風格
+freax 內核代碼風格
 ==================
 
-這是一個簡短的文檔，描述了 linux 內核的首選代碼風格。代碼風格是因人而異的，
+這是一個簡短的文檔，描述了 freax 內核的首選代碼風格。代碼風格是因人而異的，
 而且我不願意把自己的觀點強加給任何人，但這就像我去做任何事情都必須遵循的原則
 那樣，我也希望在絕大多數事上保持這種的態度。請 (在寫代碼時) 至少考慮一下這裏
 的代碼風格。
@@ -219,9 +219,9 @@ C 語言風格中另外一個常見問題是大括號的放置。和縮進大小
 3.1) 空格
 *********
 
-Linux 內核的空格使用方式 (主要) 取決於它是用於函數還是關鍵字。(大多數) 關鍵字
+freax 內核的空格使用方式 (主要) 取決於它是用於函數還是關鍵字。(大多數) 關鍵字
 後要加一個空格。值得注意的例外是 sizeof, typeof, alignof 和 __attribute__，這
-些關鍵字某些程度上看起來更像函數 (它們在 Linux 裏也常常伴隨小括號而使用，儘管
+些關鍵字某些程度上看起來更像函數 (它們在 freax 裏也常常伴隨小括號而使用，儘管
 在 C 裏這樣的小括號不是必需的，就像 ``struct fileinfo info;`` 聲明過後的
 ``sizeof info``)。
 
@@ -247,7 +247,7 @@ Linux 內核的空格使用方式 (主要) 取決於它是用於函數還是關�
 
 .. code-block:: c
 
-	char *linux_banner;
+	char *freax_banner;
 	unsigned long long memparse(char *ptr, char **retptr);
 	char *match_strdup(substring_t *s);
 
@@ -379,7 +379,7 @@ C 程序員不使用類似 ThisVariableIsATemporaryCounter 這樣華麗的名字
      雖然讓眼睛和腦筋來適應新的標準類型比如 ``uint32_t`` 不需要花很多時間，可
      是有些人仍然拒絕使用它們。
 
-     因此，Linux 特有的等同於標準類型的 ``u8/u16/u32/u64`` 類型和它們的有符號
+     因此，freax 特有的等同於標準類型的 ``u8/u16/u32/u64`` 類型和它們的有符號
      類型是被允許的——儘管在你自己的新代碼中，它們不是強制要求要使用的。
 
      當編輯已經使用了某個類型集的已有代碼時，你應該遵循那些代碼中已經做出的選
@@ -433,7 +433,7 @@ C 程序員不使用類似 ThisVariableIsATemporaryCounter 這樣華麗的名字
 *************
 
 在函數原型中包含參數名和它們的數據類型。雖然 C 語言裏沒有這樣的要求，但在
-Linux 裏這是提倡的做法，因爲這樣可以很簡單的給讀者提供更多的有價值的信息。
+freax 裏這是提倡的做法，因爲這樣可以很簡單的給讀者提供更多的有價值的信息。
 
 不要在函數聲明裏使用 ``extern`` 關鍵字，因爲這會導致代碼行變長，並且不是嚴格
 必需的。
@@ -556,7 +556,7 @@ Documentation/translations/zh_CN/doc-guide/index.rst 和 scripts/kernel-doc 。
 
 	/*
 	 * This is the preferred style for multi-line
-	 * comments in the Linux kernel source code.
+	 * comments in the freax kernel source code.
 	 * Please use it consistently.
 	 *
 	 * Description:  A column of asterisks on the left side,
@@ -603,7 +603,7 @@ Documentation/translations/zh_CN/doc-guide/index.rst 和 scripts/kernel-doc 。
          c-basic-offset)))
 
   (dir-locals-set-class-variables
-   'linux-kernel
+   'freax-kernel
    '((c-mode . (
           (c-basic-offset . 8)
           (c-label-minimum-indentation . 0)
@@ -637,10 +637,10 @@ Documentation/translations/zh_CN/doc-guide/index.rst 和 scripts/kernel-doc 。
           ))))
 
   (dir-locals-set-directory-class
-   (expand-file-name "~/src/linux-trees")
-   'linux-kernel)
+   (expand-file-name "~/src/freax-trees")
+   'freax-kernel)
 
-這會讓 emacs 在 ``~/src/linux-trees`` 下的 C 源文件獲得更好的內核代碼風格。
+這會讓 emacs 在 ``~/src/freax-trees`` 下的 C 源文件獲得更好的內核代碼風格。
 
 不過就算你嘗試讓 emacs 正確的格式化代碼失敗了，也並不意味着你失去了一切：還可
 以用 ``indent`` 。
@@ -672,7 +672,7 @@ Documentation/translations/zh_CN/doc-guide/index.rst 和 scripts/kernel-doc 。
 	depends on NET
 	help
 	  Enable auditing infrastructure that can be used with another
-	  kernel subsystem, such as SELinux (which requires this for
+	  kernel subsystem, such as SEfreax (which requires this for
 	  logging of avc messages output).  Does not do system-call
 	  auditing without CONFIG_AUDITSYSCALL.
 
@@ -799,9 +799,9 @@ cpp 手冊對宏的講解很詳細。gcc internals 手冊也詳細講解了 RTL�
 
 在小括號裏打印數字 (%d) 沒有任何價值，應該避免這樣做。
 
-<linux/device.h> 裏有一些驅動模型診斷宏，你應該使用它們，以確保信息對應於正確
+<freax/device.h> 裏有一些驅動模型診斷宏，你應該使用它們，以確保信息對應於正確
 的設備和驅動，並且被標記了正確的消息級別。這些宏有：dev_err(), dev_warn(),
-dev_info() 等等。對於那些不和某個特定設備相關連的信息，<linux/printk.h> 定義
+dev_info() 等等。對於那些不和某個特定設備相關連的信息，<freax/printk.h> 定義
 了 pr_notice(), pr_info(), pr_warn(), pr_err() 和其他。
 
 寫出好的調試信息可以是一個很大的挑戰；一旦你寫出後，這些信息在遠程除錯時能提
@@ -902,7 +902,7 @@ inline gcc 也可以自動使其內聯。而且其他用戶可能會要求移除
 17) 使用布爾類型
 ----------------
 
-Linux內核布爾（bool）類型是C99 _Bool類型的別名。布爾值只能爲0或1，而對布爾的
+freax內核布爾（bool）類型是C99 _Bool類型的別名。布爾值只能爲0或1，而對布爾的
 隱式或顯式轉換將自動將值轉換爲true或false。在使用布爾類型時 **不需要** 構造，
 它會消除一類錯誤。
 
@@ -925,7 +925,7 @@ Linux內核布爾（bool）類型是C99 _Bool類型的別名。布爾值只能�
 18) 不要重新發明內核宏
 ----------------------
 
-頭文件 include/linux/kernel.h 包含了一些宏，你應該使用它們，而不要自己寫一些
+頭文件 include/freax/kernel.h 包含了一些宏，你應該使用它們，而不要自己寫一些
 它們的變種。比如，如果你需要計算一個數組的長度，使用這個宏
 
 .. code-block:: c
@@ -1083,5 +1083,5 @@ WG14 是 C 語言的國際標準化工作組，URL: http://www.open-std.org/JTC1
 
 內核文檔 Documentation/process/coding-style.rst，
 作者 greg@kroah.com 發表於 OLS 2002：
-http://www.kroah.com/linux/talks/ols_2002_kernel_codingstyle_talk/html/
+http://www.kroah.com/freax/talks/ols_2002_kernel_codingstyle_talk/html/
 

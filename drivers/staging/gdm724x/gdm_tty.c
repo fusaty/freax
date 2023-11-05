@@ -3,15 +3,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb/cdc.h>
-#include <linux/serial.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/usb/cdc.h>
+#include <freax/serial.h>
 #include "gdm_tty.h"
 
 #define GDM_TTY_MAJOR 0

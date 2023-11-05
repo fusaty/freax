@@ -8,17 +8,17 @@
  *  Co-author: Meng-Huang Kuo <mhkuo@nuvoton.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/int_log.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/acpi.h>
-#include <linux/math64.h>
-#include <linux/semaphore.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/int_log.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/acpi.h>
+#include <freax/math64.h>
+#include <freax/semaphore.h>
 
 #include <sound/initval.h>
 #include <sound/tlv.h>

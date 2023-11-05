@@ -7,7 +7,7 @@
 
 #include <asm/vdso/vdso.h>
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <uapi/asm/unistd.h>
 
 #include <asm/regdef.h>

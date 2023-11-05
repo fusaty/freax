@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /* 
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  */
 
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/sched/mm.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/oom.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task.h>
+#include <freax/sched/mm.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/oom.h>
 #include <kern_util.h>
 #include <os.h>
 #include <skas.h>

@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux kernel.
+# Makefile for the freax kernel.
 #
 
 ifdef CONFIG_FUNCTION_TRACER
@@ -43,7 +43,7 @@ obj-y	+= entry.o reipl.o kdebugfs.o alternative.o
 obj-y	+= nospec-branch.o ipl_vmparm.o machine_kexec_reloc.o unwind_bc.o
 obj-y	+= smp.o text_amode31.o stacktrace.o abs_lowcore.o
 
-extra-y				+= vmlinux.lds
+extra-y				+= vmfreax.lds
 
 obj-$(CONFIG_SYSFS)		+= nospec-sysfs.o
 CFLAGS_REMOVE_nospec-branch.o	+= $(CC_FLAGS_EXPOLINE)
@@ -53,7 +53,7 @@ obj-$(CONFIG_SCHED_TOPOLOGY)	+= topology.o
 obj-$(CONFIG_NUMA)		+= numa.o
 obj-$(CONFIG_AUDIT)		+= audit.o
 compat-obj-$(CONFIG_AUDIT)	+= compat_audit.o
-obj-$(CONFIG_COMPAT)		+= compat_linux.o compat_signal.o
+obj-$(CONFIG_COMPAT)		+= compat_freax.o compat_signal.o
 obj-$(CONFIG_COMPAT)		+= $(compat-obj-y)
 obj-$(CONFIG_EARLY_PRINTK)	+= early_printk.o
 obj-$(CONFIG_KPROBES)		+= kprobes.o

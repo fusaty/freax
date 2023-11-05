@@ -2,8 +2,8 @@
 /*
  * internal.h - printk internal definitions
  */
-#include <linux/percpu.h>
-#include <linux/console.h>
+#include <freax/percpu.h>
+#include <freax/console.h>
 #include "printk_ringbuffer.h"
 
 #if defined(CONFIG_PRINTK) && defined(CONFIG_SYSCTL)

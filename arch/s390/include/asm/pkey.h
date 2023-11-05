@@ -11,8 +11,8 @@
 #ifndef _KAPI_PKEY_H
 #define _KAPI_PKEY_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 #include <uapi/asm/pkey.h>
 
 /*

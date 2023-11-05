@@ -5,18 +5,18 @@
 
 #define pr_fmt(fmt) "IDT_82p33xxx: " fmt
 
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/timekeeping.h>
-#include <linux/bitops.h>
-#include <linux/of.h>
-#include <linux/mfd/rsmu.h>
-#include <linux/mfd/idt82p33_reg.h>
+#include <freax/firmware.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/timekeeping.h>
+#include <freax/bitops.h>
+#include <freax/of.h>
+#include <freax/mfd/rsmu.h>
+#include <freax/mfd/idt82p33_reg.h>
 
 #include "ptp_private.h"
 #include "ptp_idt82p33.h"

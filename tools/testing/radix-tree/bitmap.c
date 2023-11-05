@@ -1,6 +1,6 @@
 /* lib/bitmap.c pulls in at least two other files. */
 
-#include <linux/bitmap.h>
+#include <freax/bitmap.h>
 
 void bitmap_clear(unsigned long *map, unsigned int start, int len)
 {

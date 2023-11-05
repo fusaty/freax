@@ -10,17 +10,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bcm963xx_nvram.h>
-#include <linux/bcm963xx_tag.h>
-#include <linux/crc32.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
+#include <freax/bcm963xx_nvram.h>
+#include <freax/bcm963xx_tag.h>
+#include <freax/crc32.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/of.h>
 
 #ifdef CONFIG_MIPS
 #include <asm/bootinfo.h>
@@ -108,8 +108,8 @@ static int bcm63xx_parse_cfe_nor_partitions(struct mtd_info *master,
 	parts[curpart].size = nvramlen;
 	curpart++;
 
-	/* Global partition "linux" to make easy firmware upgrade */
-	parts[curpart].name = "linux";
+	/* Global partition "freax" to make easy firmware upgrade */
+	parts[curpart].name = "freax";
 	parts[curpart].offset = cfelen;
 	parts[curpart].size = master->size - cfelen - nvramlen;
 	parts[curpart].types = bcm63xx_cfe_part_types;

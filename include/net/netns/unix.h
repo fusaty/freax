@@ -5,7 +5,7 @@
 #ifndef __NETNS_UNIX_H__
 #define __NETNS_UNIX_H__
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
 struct unix_table {
 	spinlock_t		*locks;

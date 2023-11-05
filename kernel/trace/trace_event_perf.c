@@ -6,9 +6,9 @@
  * Copyright (C) 2009-2010 Frederic Weisbecker <fweisbec@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/kprobes.h>
-#include <linux/security.h>
+#include <freax/module.h>
+#include <freax/kprobes.h>
+#include <freax/security.h>
 #include "trace.h"
 #include "trace_probe.h"
 

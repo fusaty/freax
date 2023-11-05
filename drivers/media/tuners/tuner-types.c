@@ -5,8 +5,8 @@
  *
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
 #include <media/tuner.h>
 #include <media/tuner-types.h>
 

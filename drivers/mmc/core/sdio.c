@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/mmc/sdio.c
+ *  freax/drivers/mmc/sdio.c
  *
  *  Copyright 2006-2007 Pierre Ossman
  */
 
-#include <linux/err.h>
-#include <linux/pm_runtime.h>
-#include <linux/sysfs.h>
+#include <freax/err.h>
+#include <freax/pm_runtime.h>
+#include <freax/sysfs.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/sdio.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/mmc/sdio_ids.h>
 
 #include "core.h"
 #include "card.h"

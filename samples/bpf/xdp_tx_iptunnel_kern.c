@@ -9,13 +9,13 @@
  * and then XDP_TX it out.
  */
 #define KBUILD_MODNAME "foo"
-#include <uapi/linux/bpf.h>
-#include <linux/in.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <uapi/freax/bpf.h>
+#include <freax/in.h>
+#include <freax/if_ether.h>
+#include <freax/if_packet.h>
+#include <freax/if_vlan.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include <bpf/bpf_helpers.h>
 #include "xdp_tx_iptunnel_common.h"
 

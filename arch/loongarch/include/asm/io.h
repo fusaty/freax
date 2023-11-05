@@ -5,8 +5,8 @@
 #ifndef _ASM_IO_H
 #define _ASM_IO_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
 
 #include <asm/addrspace.h>
 #include <asm/cpu.h>

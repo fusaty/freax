@@ -2,8 +2,8 @@
 /* Copyright(c) 2022 Intel Corporation. All rights reserved. */
 #ifndef _TEST_CXL_WATERMARK_H_
 #define _TEST_CXL_WATERMARK_H_
-#include <linux/module.h>
-#include <linux/printk.h>
+#include <freax/module.h>
+#include <freax/printk.h>
 
 int cxl_acpi_test(void);
 int cxl_core_test(void);

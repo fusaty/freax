@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/mm/oom_kill.c
+ *  freax/mm/oom_kill.c
  * 
  *  Copyright (C)  1998,2000  Rik van Riel
  *	Thanks go out to Claus Fischer for some serious inspiration and
@@ -18,32 +18,32 @@
  *  kernel subsystems and hints as to where to find out what things do.
  */
 
-#include <linux/oom.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/task.h>
-#include <linux/sched/debug.h>
-#include <linux/swap.h>
-#include <linux/syscalls.h>
-#include <linux/timex.h>
-#include <linux/jiffies.h>
-#include <linux/cpuset.h>
-#include <linux/export.h>
-#include <linux/notifier.h>
-#include <linux/memcontrol.h>
-#include <linux/mempolicy.h>
-#include <linux/security.h>
-#include <linux/ptrace.h>
-#include <linux/freezer.h>
-#include <linux/ftrace.h>
-#include <linux/ratelimit.h>
-#include <linux/kthread.h>
-#include <linux/init.h>
-#include <linux/mmu_notifier.h>
+#include <freax/oom.h>
+#include <freax/mm.h>
+#include <freax/err.h>
+#include <freax/gfp.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/coredump.h>
+#include <freax/sched/task.h>
+#include <freax/sched/debug.h>
+#include <freax/swap.h>
+#include <freax/syscalls.h>
+#include <freax/timex.h>
+#include <freax/jiffies.h>
+#include <freax/cpuset.h>
+#include <freax/export.h>
+#include <freax/notifier.h>
+#include <freax/memcontrol.h>
+#include <freax/mempolicy.h>
+#include <freax/security.h>
+#include <freax/ptrace.h>
+#include <freax/freezer.h>
+#include <freax/ftrace.h>
+#include <freax/ratelimit.h>
+#include <freax/kthread.h>
+#include <freax/init.h>
+#include <freax/mmu_notifier.h>
 
 #include <asm/tlb.h>
 #include "internal.h"

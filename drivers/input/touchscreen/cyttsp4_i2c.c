@@ -16,8 +16,8 @@
 
 #include "cyttsp4_core.h"
 
-#include <linux/i2c.h>
-#include <linux/input.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
 
 #define CYTTSP4_I2C_DATA_SIZE	(3 * 256)
 

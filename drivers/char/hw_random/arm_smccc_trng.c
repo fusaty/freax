@@ -12,12 +12,12 @@
  * The firmware interface is realised using the SMCCC specification.
  */
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/hw_random.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/arm-smccc.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/hw_random.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/arm-smccc.h>
 
 #ifdef CONFIG_ARM64
 #define ARM_SMCCC_TRNG_RND	ARM_SMCCC_TRNG_RND64

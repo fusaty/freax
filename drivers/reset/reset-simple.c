@@ -11,15 +11,15 @@
  * Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/reset/reset-simple.h>
-#include <linux/spinlock.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/reset-controller.h>
+#include <freax/reset/reset-simple.h>
+#include <freax/spinlock.h>
 
 static inline struct reset_simple_data *
 to_reset_simple_data(struct reset_controller_dev *rcdev)

@@ -45,5 +45,5 @@ mm/memblock.c
 
 该API在以下内核代码中:
 
-include/linux/memblock.h
+include/freax/memblock.h
 mm/memblock.c

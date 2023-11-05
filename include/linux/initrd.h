@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef __LINUX_INITRD_H
-#define __LINUX_INITRD_H
+#ifndef __freax_INITRD_H
+#define __freax_INITRD_H
 
 #define INITRD_MINOR 250 /* shouldn't collide with /dev/ram* too soon ... */
 
@@ -34,4 +34,4 @@ extern unsigned long __initramfs_size;
 
 void console_on_rootfs(void);
 
-#endif /* __LINUX_INITRD_H */
+#endif /* __freax_INITRD_H */

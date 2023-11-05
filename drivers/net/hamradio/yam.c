@@ -27,36 +27,36 @@
 
 /*****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/net.h>
-#include <linux/in.h>
-#include <linux/if.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/bitops.h>
-#include <linux/random.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/net.h>
+#include <freax/in.h>
+#include <freax/if.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/bitops.h>
+#include <freax/random.h>
 #include <asm/io.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/firmware.h>
+#include <freax/platform_device.h>
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
 #include <net/ax25.h>
 
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <freax/kernel.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
 #include <net/net_namespace.h>
 
-#include <linux/uaccess.h>
-#include <linux/init.h>
+#include <freax/uaccess.h>
+#include <freax/init.h>
 
-#include <linux/yam.h>
+#include <freax/yam.h>
 
 /* --------------------------------------------------------------------- */
 

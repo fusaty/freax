@@ -3,10 +3,10 @@
  * Copyright (C) 2019 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#ifndef __LINUX_MTD_HYPERBUS_H__
-#define __LINUX_MTD_HYPERBUS_H__
+#ifndef __freax_MTD_HYPERBUS_H__
+#define __freax_MTD_HYPERBUS_H__
 
-#include <linux/mtd/map.h>
+#include <freax/mtd/map.h>
 
 /* HyperBus command bits */
 #define HYPERBUS_RW	0x80	/* R/W# */
@@ -92,4 +92,4 @@ int hyperbus_register_device(struct hyperbus_device *hbdev);
  */
 void hyperbus_unregister_device(struct hyperbus_device *hbdev);
 
-#endif /* __LINUX_MTD_HYPERBUS_H__ */
+#endif /* __freax_MTD_HYPERBUS_H__ */

@@ -4,19 +4,19 @@
  * This version contains the part of the user interface to the Real Time Clock
  * service. It is used with both the legacy mc146818 and also  EFI
  * Struct rtc_time and first 12 ioctl by Paul Gortmaker, 1996 - separated out
- * from <linux/mc146818rtc.h> to this file for 2.4 kernels.
+ * from <freax/mc146818rtc.h> to this file for 2.4 kernels.
  *
  * Copyright (C) 1999 Hewlett-Packard Co.
  * Copyright (C) 1999 Stephane Eranian <eranian@hpl.hp.com>
  */
-#ifndef _LINUX_RTC_H_
-#define _LINUX_RTC_H_
+#ifndef _freax_RTC_H_
+#define _freax_RTC_H_
 
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/nvmem-provider.h>
-#include <uapi/linux/rtc.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/nvmem-provider.h>
+#include <uapi/freax/rtc.h>
 
 extern int rtc_month_days(unsigned int month, unsigned int year);
 extern int rtc_year_days(unsigned int day, unsigned int month, unsigned int year);
@@ -34,13 +34,13 @@ static inline time64_t rtc_tm_sub(struct rtc_time *lhs, struct rtc_time *rhs)
 	return rtc_tm_to_time64(lhs) - rtc_tm_to_time64(rhs);
 }
 
-#include <linux/device.h>
-#include <linux/seq_file.h>
-#include <linux/cdev.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/timerqueue.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/seq_file.h>
+#include <freax/cdev.h>
+#include <freax/poll.h>
+#include <freax/mutex.h>
+#include <freax/timerqueue.h>
+#include <freax/workqueue.h>
 
 extern struct class *rtc_class;
 
@@ -278,4 +278,4 @@ int rtc_add_groups(struct rtc_device *rtc, const struct attribute_group **grps)
 	return 0;
 }
 #endif
-#endif /* _LINUX_RTC_H_ */
+#endif /* _freax_RTC_H_ */

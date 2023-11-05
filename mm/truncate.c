@@ -8,19 +8,19 @@
  *		Initial version.
  */
 
-#include <linux/kernel.h>
-#include <linux/backing-dev.h>
-#include <linux/dax.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/export.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
-#include <linux/pagevec.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/shmem_fs.h>
-#include <linux/rmap.h>
+#include <freax/kernel.h>
+#include <freax/backing-dev.h>
+#include <freax/dax.h>
+#include <freax/gfp.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/export.h>
+#include <freax/pagemap.h>
+#include <freax/highmem.h>
+#include <freax/pagevec.h>
+#include <freax/task_io_accounting_ops.h>
+#include <freax/shmem_fs.h>
+#include <freax/rmap.h>
 #include "internal.h"
 
 /*

@@ -3,13 +3,13 @@
  * Copyright (C) 2017 Sean Young <sean@mess.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pwm.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pwm.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 #include <media/rc-core.h>
 
 #define DRIVER_NAME	"pwm-ir-tx"

@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_UTSNAME_H
-#define _LINUX_UTSNAME_H
+#ifndef _freax_UTSNAME_H
+#define _freax_UTSNAME_H
 
 
-#include <linux/sched.h>
-#include <linux/nsproxy.h>
-#include <linux/ns_common.h>
-#include <linux/err.h>
-#include <uapi/linux/utsname.h>
+#include <freax/sched.h>
+#include <freax/nsproxy.h>
+#include <freax/ns_common.h>
+#include <freax/err.h>
+#include <uapi/freax/utsname.h>
 
 enum uts_proc {
 	UTS_PROC_ARCH,
@@ -89,4 +89,4 @@ static inline struct new_utsname *init_utsname(void)
 
 extern struct rw_semaphore uts_sem;
 
-#endif /* _LINUX_UTSNAME_H */
+#endif /* _freax_UTSNAME_H */

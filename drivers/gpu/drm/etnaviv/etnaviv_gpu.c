@@ -3,17 +3,17 @@
  * Copyright (C) 2015-2018 Etnaviv Project
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/delay.h>
-#include <linux/dma-fence.h>
-#include <linux/dma-mapping.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/thermal.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/delay.h>
+#include <freax/dma-fence.h>
+#include <freax/dma-mapping.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
+#include <freax/thermal.h>
 
 #include "etnaviv_cmdbuf.h"
 #include "etnaviv_dump.h"

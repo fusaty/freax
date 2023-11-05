@@ -8,11 +8,11 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/etherdevice.h>
 
 #include "u_ether.h"
 #include "u_ether_configfs.h"
@@ -74,7 +74,7 @@ static inline struct f_ecm *func_to_ecm(struct usb_function *f)
  * packet, to simplify cancellation; and a big transfer interval, to
  * waste less bandwidth.
  *
- * Some drivers (like Linux 2.4 cdc-ether!) "need" it to exist even
+ * Some drivers (like freax 2.4 cdc-ether!) "need" it to exist even
  * if they ignore the connect/disconnect notifications that real aether
  * can provide.  More advanced cdc configurations might want to support
  * encapsulated commands (vendor-specific, using control-OUT).
@@ -420,7 +420,7 @@ static void ecm_do_notify(struct f_ecm *ecm)
 
 static void ecm_notify(struct f_ecm *ecm)
 {
-	/* NOTE on most versions of Linux, host side cdc-ethernet
+	/* NOTE on most versions of freax, host side cdc-ethernet
 	 * won't listen for notifications until its netdevice opens.
 	 * The first notification then sits in the FIFO for a long
 	 * time, and the second one is queued.

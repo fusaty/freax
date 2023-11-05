@@ -5,20 +5,20 @@
  * Detect the decompression method based on magic number
  */
 
-#include <linux/decompress/generic.h>
+#include <freax/decompress/generic.h>
 
-#include <linux/decompress/bunzip2.h>
-#include <linux/decompress/unlzma.h>
-#include <linux/decompress/unxz.h>
-#include <linux/decompress/inflate.h>
-#include <linux/decompress/unlzo.h>
-#include <linux/decompress/unlz4.h>
-#include <linux/decompress/unzstd.h>
+#include <freax/decompress/bunzip2.h>
+#include <freax/decompress/unlzma.h>
+#include <freax/decompress/unxz.h>
+#include <freax/decompress/inflate.h>
+#include <freax/decompress/unlzo.h>
+#include <freax/decompress/unlz4.h>
+#include <freax/decompress/unzstd.h>
 
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/printk.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/printk.h>
 
 #ifndef CONFIG_DECOMPRESS_GZIP
 # define gunzip NULL

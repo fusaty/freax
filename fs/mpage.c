@@ -13,22 +13,22 @@
  *		use bio_add_page() to build bio's just the right size
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/kdev_t.h>
-#include <linux/gfp.h>
-#include <linux/bio.h>
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/blkdev.h>
-#include <linux/highmem.h>
-#include <linux/prefetch.h>
-#include <linux/mpage.h>
-#include <linux/mm_inline.h>
-#include <linux/writeback.h>
-#include <linux/backing-dev.h>
-#include <linux/pagevec.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/mm.h>
+#include <freax/kdev_t.h>
+#include <freax/gfp.h>
+#include <freax/bio.h>
+#include <freax/fs.h>
+#include <freax/buffer_head.h>
+#include <freax/blkdev.h>
+#include <freax/highmem.h>
+#include <freax/prefetch.h>
+#include <freax/mpage.h>
+#include <freax/mm_inline.h>
+#include <freax/writeback.h>
+#include <freax/backing-dev.h>
+#include <freax/pagevec.h>
 #include "internal.h"
 
 /*

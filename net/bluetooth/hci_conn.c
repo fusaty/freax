@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for freax
    Copyright (c) 2000-2001, 2010, Code Aurora Forum. All rights reserved.
    Copyright 2023 NXP
 
@@ -25,8 +25,8 @@
 
 /* Bluetooth HCI connection handling. */
 
-#include <linux/export.h>
-#include <linux/debugfs.h>
+#include <freax/export.h>
+#include <freax/debugfs.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

@@ -4,18 +4,18 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/ctype.h>
-#include <linux/pm.h>
-#include <linux/debugfs.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/file.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/ctype.h>
+#include <freax/pm.h>
+#include <freax/debugfs.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
 
 #include <sound/core.h>
 #include <sound/control.h>

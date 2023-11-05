@@ -13,25 +13,25 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/blkdev.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sd.h>
-#include <linux/sched.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/clk.h>
-#include <linux/bitops.h>
-#include <linux/of_dma.h>
-#include <linux/spinlock.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/blkdev.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/sd.h>
+#include <freax/sched.h>
+#include <freax/io.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/clk.h>
+#include <freax/bitops.h>
+#include <freax/of_dma.h>
+#include <freax/spinlock.h>
 
 #define REG_COMMAND		0
 #define REG_ARGUMENT		4

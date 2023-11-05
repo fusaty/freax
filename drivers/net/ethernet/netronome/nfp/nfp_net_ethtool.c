@@ -10,15 +10,15 @@
  *          Brad Petrus <brad.petrus@netronome.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/ethtool.h>
-#include <linux/firmware.h>
-#include <linux/sfp.h>
+#include <freax/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/ethtool.h>
+#include <freax/firmware.h>
+#include <freax/sfp.h>
 
 #include "nfpcore/nfp.h"
 #include "nfpcore/nfp_dev.h"

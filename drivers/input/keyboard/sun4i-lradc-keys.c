@@ -14,21 +14,21 @@
  * there are no boards known to use channel 1.
  */
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/pm_wakeup.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/pm_wakeup.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
 
 #define LRADC_CTRL		0x00
 #define LRADC_INTC		0x04
@@ -241,9 +241,9 @@ static int sun4i_lradc_load_dt_keymap(struct device *dev,
 			return -EINVAL;
 		}
 
-		error = of_property_read_u32(pp, "linux,code", &map->keycode);
+		error = of_property_read_u32(pp, "freax,code", &map->keycode);
 		if (error) {
-			dev_err(dev, "%pOFn: Inval linux,code prop\n", pp);
+			dev_err(dev, "%pOFn: Inval freax,code prop\n", pp);
 			of_node_put(pp);
 			return -EINVAL;
 		}

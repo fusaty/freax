@@ -1,5 +1,5 @@
 /*
- * Linux driver for VMware's para-virtualized SCSI HBA.
+ * freax driver for VMware's para-virtualized SCSI HBA.
  *
  * Copyright (C) 2008-2014, VMware, Inc. All Rights Reserved.
  *
@@ -19,12 +19,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/pci.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
@@ -34,9 +34,9 @@
 
 #include "vmw_pvscsi.h"
 
-#define PVSCSI_LINUX_DRIVER_DESC "VMware PVSCSI driver"
+#define PVSCSI_freax_DRIVER_DESC "VMware PVSCSI driver"
 
-MODULE_DESCRIPTION(PVSCSI_LINUX_DRIVER_DESC);
+MODULE_DESCRIPTION(PVSCSI_freax_DRIVER_DESC);
 MODULE_AUTHOR("VMware, Inc.");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(PVSCSI_DRIVER_VERSION_STRING);
@@ -685,7 +685,7 @@ static void pvscsi_process_completion_ring(struct pvscsi_adapter *adapter)
 }
 
 /*
- * Translate a Linux SCSI request into a request ring entry.
+ * Translate a freax SCSI request into a request ring entry.
  */
 static int pvscsi_queue_ring(struct pvscsi_adapter *adapter,
 			     struct pvscsi_ctx *ctx, struct scsi_cmnd *cmd)
@@ -1608,7 +1608,7 @@ static struct pci_driver pvscsi_pci_driver = {
 static int __init pvscsi_init(void)
 {
 	pr_info("%s - version %s\n",
-		PVSCSI_LINUX_DRIVER_DESC, PVSCSI_DRIVER_VERSION_STRING);
+		PVSCSI_freax_DRIVER_DESC, PVSCSI_DRIVER_VERSION_STRING);
 	return pci_register_driver(&pvscsi_pci_driver);
 }
 

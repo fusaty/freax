@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/fbmem.c
+ *  freax/drivers/video/fbmem.c
  *
  *  Copyright (C) 1994 Martin Schaller
  *
@@ -11,10 +11,10 @@
  * for more details.
  */
 
-#include <linux/console.h>
-#include <linux/export.h>
-#include <linux/fb.h>
-#include <linux/fbcon.h>
+#include <freax/console.h>
+#include <freax/export.h>
+#include <freax/fb.h>
+#include <freax/fbcon.h>
 
 #include <video/nomodeset.h>
 

@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_PERCPU_H
-#define __LINUX_PERCPU_H
+#ifndef __freax_PERCPU_H
+#define __freax_PERCPU_H
 
-#include <linux/mmdebug.h>
-#include <linux/preempt.h>
-#include <linux/smp.h>
-#include <linux/cpumask.h>
-#include <linux/pfn.h>
-#include <linux/init.h>
-#include <linux/cleanup.h>
+#include <freax/mmdebug.h>
+#include <freax/preempt.h>
+#include <freax/smp.h>
+#include <freax/cpumask.h>
+#include <freax/pfn.h>
+#include <freax/init.h>
+#include <freax/cleanup.h>
 
 #include <asm/percpu.h>
 
@@ -147,4 +147,4 @@ extern phys_addr_t per_cpu_ptr_to_phys(void *addr);
 
 extern unsigned long pcpu_nr_pages(void);
 
-#endif /* __LINUX_PERCPU_H */
+#endif /* __freax_PERCPU_H */

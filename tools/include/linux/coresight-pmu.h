@@ -4,10 +4,10 @@
  * Author: Mathieu Poirier <mathieu.poirier@linaro.org>
  */
 
-#ifndef _LINUX_CORESIGHT_PMU_H
-#define _LINUX_CORESIGHT_PMU_H
+#ifndef _freax_CORESIGHT_PMU_H
+#define _freax_CORESIGHT_PMU_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 #define CORESIGHT_ETM_PMU_NAME "cs_etm"
 

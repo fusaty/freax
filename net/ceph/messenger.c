@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/crc32c.h>
-#include <linux/ctype.h>
-#include <linux/highmem.h>
-#include <linux/inet.h>
-#include <linux/kthread.h>
-#include <linux/net.h>
-#include <linux/nsproxy.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/socket.h>
-#include <linux/string.h>
+#include <freax/crc32c.h>
+#include <freax/ctype.h>
+#include <freax/highmem.h>
+#include <freax/inet.h>
+#include <freax/kthread.h>
+#include <freax/net.h>
+#include <freax/nsproxy.h>
+#include <freax/sched/mm.h>
+#include <freax/slab.h>
+#include <freax/socket.h>
+#include <freax/string.h>
 #ifdef	CONFIG_BLOCK
-#include <linux/bio.h>
+#include <freax/bio.h>
 #endif	/* CONFIG_BLOCK */
-#include <linux/dns_resolver.h>
+#include <freax/dns_resolver.h>
 #include <net/tcp.h>
 #include <trace/events/sock.h>
 
-#include <linux/ceph/ceph_features.h>
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/messenger.h>
-#include <linux/ceph/decode.h>
-#include <linux/ceph/pagelist.h>
-#include <linux/export.h>
+#include <freax/ceph/ceph_features.h>
+#include <freax/ceph/libceph.h>
+#include <freax/ceph/messenger.h>
+#include <freax/ceph/decode.h>
+#include <freax/ceph/pagelist.h>
+#include <freax/export.h>
 
 /*
  * Ceph uses the messenger to exchange ceph_msg messages with other

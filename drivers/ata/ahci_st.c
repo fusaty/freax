@@ -6,17 +6,17 @@
  *	    Alexandre Torgue <alexandre.torgue@st.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/ahci_platform.h>
-#include <linux/libata.h>
-#include <linux/reset.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/export.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/ahci_platform.h>
+#include <freax/libata.h>
+#include <freax/reset.h>
+#include <freax/io.h>
+#include <freax/dma-mapping.h>
 
 #include "ahci.h"
 

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_RPMSG_NS_H
-#define _LINUX_RPMSG_NS_H
+#ifndef _freax_RPMSG_NS_H
+#define _freax_RPMSG_NS_H
 
-#include <linux/mod_devicetable.h>
-#include <linux/rpmsg.h>
-#include <linux/rpmsg/byteorder.h>
-#include <linux/types.h>
+#include <freax/mod_devicetable.h>
+#include <freax/rpmsg.h>
+#include <freax/rpmsg/byteorder.h>
+#include <freax/types.h>
 
 /**
  * struct rpmsg_ns_msg - dynamic name service announcement message

@@ -5,16 +5,16 @@
  * Copyright (C) 2016 Intel Corporation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/thermal.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/mfd/intel_soc_pmic.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
+#include <freax/thermal.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/mfd/intel_soc_pmic.h>
 
 #define BXTWC_THRM0IRQ		0x4E04
 #define BXTWC_THRM1IRQ		0x4E05

@@ -3,8 +3,8 @@
 #include <media/drv-intf/saa7146_vv.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-ctrls.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
 
 /* format descriptions for capture and preview */
 static struct saa7146_format formats[] = {

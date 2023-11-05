@@ -8,25 +8,25 @@
  *
  */
 
-#include <linux/mm.h>
-#include <linux/kcore.h>
-#include <linux/user.h>
-#include <linux/elf.h>
-#include <linux/elfcore.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/printk.h>
-#include <linux/memblock.h>
-#include <linux/init.h>
-#include <linux/crash_dump.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/cc_platform.h>
+#include <freax/mm.h>
+#include <freax/kcore.h>
+#include <freax/user.h>
+#include <freax/elf.h>
+#include <freax/elfcore.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/highmem.h>
+#include <freax/printk.h>
+#include <freax/memblock.h>
+#include <freax/init.h>
+#include <freax/crash_dump.h>
+#include <freax/list.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/vmalloc.h>
+#include <freax/pagemap.h>
+#include <freax/uio.h>
+#include <freax/cc_platform.h>
 #include <asm/io.h>
 #include "internal.h"
 

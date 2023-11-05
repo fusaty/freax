@@ -2,13 +2,13 @@
 #ifndef __PERF_HEADER_H
 #define __PERF_HEADER_H
 
-#include <linux/stddef.h>
-#include <linux/perf_event.h>
+#include <freax/stddef.h>
+#include <freax/perf_event.h>
 #include <sys/types.h>
 #include <stdio.h> // FILE
 #include <stdbool.h>
-#include <linux/bitmap.h>
-#include <linux/types.h>
+#include <freax/bitmap.h>
+#include <freax/types.h>
 #include "env.h"
 #include "pmu.h"
 

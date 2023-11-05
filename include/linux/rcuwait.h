@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_RCUWAIT_H_
-#define _LINUX_RCUWAIT_H_
+#ifndef _freax_RCUWAIT_H_
+#define _freax_RCUWAIT_H_
 
-#include <linux/rcupdate.h>
-#include <linux/sched/signal.h>
+#include <freax/rcupdate.h>
+#include <freax/sched/signal.h>
 
 /*
  * rcuwait provides a way of blocking and waking up a single
@@ -90,4 +90,4 @@ extern void finish_rcuwait(struct rcuwait *w);
 	__ret;								\
 })
 
-#endif /* _LINUX_RCUWAIT_H_ */
+#endif /* _freax_RCUWAIT_H_ */

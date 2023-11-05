@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2019-2020 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2020 The freax Foundation. All rights reserved.
  * Copyright (c) 2021-2023 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/pci.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/pci.h>
+#include <freax/of.h>
 
 #include "pci.h"
 #include "core.h"

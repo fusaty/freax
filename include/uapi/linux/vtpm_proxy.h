@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Definitions for the VTPM proxy driver
  * Copyright (c) 2015, 2016, IBM Corporation
@@ -14,11 +14,11 @@
  * more details.
  */
 
-#ifndef _UAPI_LINUX_VTPM_PROXY_H
-#define _UAPI_LINUX_VTPM_PROXY_H
+#ifndef _UAPI_freax_VTPM_PROXY_H
+#define _UAPI_freax_VTPM_PROXY_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 /**
  * enum vtpm_proxy_flags - flags for the proxy TPM
@@ -51,4 +51,4 @@ struct vtpm_proxy_new_dev {
 #define TPM2_CC_SET_LOCALITY	0x20001000
 #define TPM_ORD_SET_LOCALITY	0x20001000
 
-#endif /* _UAPI_LINUX_VTPM_PROXY_H */
+#endif /* _UAPI_freax_VTPM_PROXY_H */

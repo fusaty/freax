@@ -11,22 +11,22 @@
  *
  */
 
-#include <linux/ethtool.h>
-#include <linux/if_arp.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/mhi.h>
-#include <linux/mii.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
-#include <linux/usb/cdc_ncm.h>
-#include <linux/wwan.h>
+#include <freax/ethtool.h>
+#include <freax/if_arp.h>
+#include <freax/if_vlan.h>
+#include <freax/ip.h>
+#include <freax/mhi.h>
+#include <freax/mii.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/u64_stats_sync.h>
+#include <freax/usb.h>
+#include <freax/usb/cdc.h>
+#include <freax/usb/usbnet.h>
+#include <freax/usb/cdc_ncm.h>
+#include <freax/wwan.h>
 
 /* 3500 allows to optimize skb allocation, the skbs will basically fit in
  * one 4K page. Large MBIM packets will simply be split over several MHI

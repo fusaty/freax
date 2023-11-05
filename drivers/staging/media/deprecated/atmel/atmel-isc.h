@@ -10,8 +10,8 @@
  */
 #ifndef _ATMEL_ISC_H_
 
-#include <linux/clk-provider.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/platform_device.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

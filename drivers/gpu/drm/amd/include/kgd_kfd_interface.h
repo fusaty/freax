@@ -28,9 +28,9 @@
 #ifndef KGD_KFD_INTERFACE_H_INCLUDED
 #define KGD_KFD_INTERFACE_H_INCLUDED
 
-#include <linux/types.h>
-#include <linux/bitmap.h>
-#include <linux/dma-fence.h>
+#include <freax/types.h>
+#include <freax/bitmap.h>
+#include <freax/dma-fence.h>
 #include "amdgpu_irq.h"
 #include "amdgpu_gfx.h"
 

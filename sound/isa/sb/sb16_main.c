@@ -18,11 +18,11 @@
  *        "16bit DMA Allocation" setting set to Playback or Capture.
  */
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/dma.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/sb.h>
 #include <sound/sb16_csp.h>

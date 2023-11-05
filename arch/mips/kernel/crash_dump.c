@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/highmem.h>
-#include <linux/crash_dump.h>
-#include <linux/uio.h>
+#include <freax/highmem.h>
+#include <freax/crash_dump.h>
+#include <freax/uio.h>
 
 ssize_t copy_oldmem_page(struct iov_iter *iter, unsigned long pfn,
 			 size_t csize, unsigned long offset)

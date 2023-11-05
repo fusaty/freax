@@ -2,7 +2,7 @@
 #ifndef _BCD_H
 #define _BCD_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 #define bcd2bin(x)					\
 		(__builtin_constant_p((u8 )(x)) ?	\

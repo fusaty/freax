@@ -13,20 +13,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/cpufreq.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/pm_opp.h>
-#include <linux/cpu.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/cpufreq.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/pm_opp.h>
+#include <freax/cpu.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
 
 #include <asm/smp_plat.h>
 #include <asm/cpu.h>

@@ -3,12 +3,12 @@
  * Secure VM platform
  *
  * Copyright 2018 IBM Corporation
- * Author: Anshuman Khandual <khandual@linux.vnet.ibm.com>
+ * Author: Anshuman Khandual <khandual@freax.vnet.ibm.com>
  */
 
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/cc_platform.h>
+#include <freax/mm.h>
+#include <freax/memblock.h>
+#include <freax/cc_platform.h>
 #include <asm/machdep.h>
 #include <asm/svm.h>
 #include <asm/swiotlb.h>

@@ -7,7 +7,7 @@
 
 #include <asm/unaligned.h>
 #include <crypto/utils.h>
-#include <linux/module.h>
+#include <freax/module.h>
 
 /*
  * XOR @len bytes from @src1 and @src2 together, writing the result to @dst

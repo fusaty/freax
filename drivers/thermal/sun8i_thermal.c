@@ -8,18 +8,18 @@
  * Based on the work of Josef Gajdusek <atx@atx.name>
  */
 
-#include <linux/bitmap.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/thermal.h>
+#include <freax/bitmap.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/thermal.h>
 
 #include "thermal_hwmon.h"
 

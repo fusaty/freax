@@ -4,11 +4,11 @@
  */
 #undef DEBUG
 
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
 #include <asm/io.h>
 #include <asm/i8259.h>
 

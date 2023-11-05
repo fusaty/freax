@@ -7,9 +7,9 @@
 #ifndef __MDP_KMS_H__
 #define __MDP_KMS_H__
 
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
 
 #include "msm_drv.h"
 #include "msm_kms.h"

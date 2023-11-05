@@ -2,9 +2,9 @@
 #ifndef _BCACHEFS_TWO_STATE_LOCK_H
 #define _BCACHEFS_TWO_STATE_LOCK_H
 
-#include <linux/atomic.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <freax/atomic.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
 
 #include "util.h"
 

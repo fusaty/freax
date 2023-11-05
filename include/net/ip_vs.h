@@ -6,30 +6,30 @@
 #ifndef _NET_IP_VS_H
 #define _NET_IP_VS_H
 
-#include <linux/ip_vs.h>                /* definitions shared with userland */
+#include <freax/ip_vs.h>                /* definitions shared with userland */
 
 #include <asm/types.h>                  /* for __uXX types */
 
-#include <linux/list.h>                 /* for struct list_head */
-#include <linux/spinlock.h>             /* for struct rwlock_t */
-#include <linux/atomic.h>               /* for struct atomic_t */
-#include <linux/refcount.h>             /* for struct refcount_t */
-#include <linux/workqueue.h>
+#include <freax/list.h>                 /* for struct list_head */
+#include <freax/spinlock.h>             /* for struct rwlock_t */
+#include <freax/atomic.h>               /* for struct atomic_t */
+#include <freax/refcount.h>             /* for struct refcount_t */
+#include <freax/workqueue.h>
 
-#include <linux/compiler.h>
-#include <linux/timer.h>
-#include <linux/bug.h>
+#include <freax/compiler.h>
+#include <freax/timer.h>
+#include <freax/bug.h>
 
 #include <net/checksum.h>
-#include <linux/netfilter.h>		/* for union nf_inet_addr */
-#include <linux/ip.h>
-#include <linux/ipv6.h>			/* for struct ipv6hdr */
+#include <freax/netfilter.h>		/* for union nf_inet_addr */
+#include <freax/ip.h>
+#include <freax/ipv6.h>			/* for struct ipv6hdr */
 #include <net/ipv6.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #include <net/netfilter/nf_conntrack.h>
 #endif
 #include <net/net_namespace.h>		/* Netw namespace */
-#include <linux/sched/isolation.h>
+#include <freax/sched/isolation.h>
 
 #define IP_VS_HDR_INVERSE	1
 #define IP_VS_HDR_ICMP		2
@@ -185,7 +185,7 @@ static inline int ip_vs_addr_equal(int af, const union nf_inet_addr *a,
 }
 
 #ifdef CONFIG_IP_VS_DEBUG
-#include <linux/net.h>
+#include <freax/net.h>
 
 int ip_vs_get_debug_level(void);
 

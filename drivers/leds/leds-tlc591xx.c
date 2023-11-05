@@ -4,12 +4,12 @@
  * Copyright 2015 Andrew Lunn <andrew@lunn.ch>
  */
 
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/i2c.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define TLC591XX_MAX_LEDS	16
 #define TLC591XX_MAX_BRIGHTNESS	256

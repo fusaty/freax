@@ -10,10 +10,10 @@
 #ifndef _NILFS_SEGBUF_H
 #define _NILFS_SEGBUF_H
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/bio.h>
-#include <linux/completion.h>
+#include <freax/fs.h>
+#include <freax/buffer_head.h>
+#include <freax/bio.h>
+#include <freax/completion.h>
 
 /**
  * struct nilfs_segsum_info - On-memory segment summary

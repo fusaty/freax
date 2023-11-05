@@ -6,19 +6,19 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/statfs.h>
-#include <linux/sysctl.h>
-#include <linux/miscdevice.h>
-#include <linux/netfs.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/completion.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/namei.h>
+#include <freax/mount.h>
+#include <freax/statfs.h>
+#include <freax/sysctl.h>
+#include <freax/miscdevice.h>
+#include <freax/netfs.h>
 #include <trace/events/netfs.h>
 #define CREATE_TRACE_POINTS
 #include "internal.h"

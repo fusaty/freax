@@ -21,13 +21,13 @@
 
 #define pr_fmt(fmt)	"OF: " fmt
 
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/of_irq.h>
-#include <linux/string.h>
-#include <linux/moduleparam.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_device.h>
+#include <freax/of_graph.h>
+#include <freax/of_irq.h>
+#include <freax/string.h>
+#include <freax/moduleparam.h>
 
 #include "of_private.h"
 

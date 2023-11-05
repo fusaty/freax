@@ -7,8 +7,8 @@
  * Copyright (c) 2006-2009, Intel Corporation
  */
 
-#ifndef _LINUX_TBOOT_H
-#define _LINUX_TBOOT_H
+#ifndef _freax_TBOOT_H
+#define _freax_TBOOT_H
 
 /* these must have the values from 0-5 in this order */
 enum {
@@ -21,7 +21,7 @@ enum {
 };
 
 #ifdef CONFIG_INTEL_TXT
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 /* used to communicate between tboot and the launched kernel */
 
 #define TB_KEY_SIZE             64   /* 512 bits */
@@ -138,4 +138,4 @@ extern struct acpi_table_header *tboot_get_dmar_table(
 
 #endif /* !CONFIG_INTEL_TXT */
 
-#endif /* _LINUX_TBOOT_H */
+#endif /* _freax_TBOOT_H */

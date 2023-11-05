@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * core.c - Implementation of core module of MOST Linux driver stack
+ * core.c - Implementation of core module of MOST freax driver stack
  *
  * Copyright (C) 2013-2020 Microchip Technology Germany II GmbH & Co. KG
  */
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/poll.h>
-#include <linux/wait.h>
-#include <linux/kobject.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/sysfs.h>
-#include <linux/kthread.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/most.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/poll.h>
+#include <freax/wait.h>
+#include <freax/kobject.h>
+#include <freax/mutex.h>
+#include <freax/completion.h>
+#include <freax/sysfs.h>
+#include <freax/kthread.h>
+#include <freax/dma-mapping.h>
+#include <freax/idr.h>
+#include <freax/most.h>
 
 #define MAX_CHANNELS	64
 #define STRING_SIZE	80
@@ -1485,4 +1485,4 @@ subsys_initcall(most_init);
 module_exit(most_exit);
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Christian Gromm <christian.gromm@microchip.com>");
-MODULE_DESCRIPTION("Core module of stacked MOST Linux driver");
+MODULE_DESCRIPTION("Core module of stacked MOST freax driver");

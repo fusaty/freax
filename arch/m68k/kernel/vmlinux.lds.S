@@ -6,10 +6,10 @@ PHDRS
   data PT_LOAD FLAGS (7);
 }
 #ifdef CONFIG_SUN3
-#include "vmlinux-sun3.lds"
+#include "vmfreax-sun3.lds"
 #else
-#include "vmlinux-std.lds"
+#include "vmfreax-std.lds"
 #endif
 #else
-#include "vmlinux-nommu.lds"
+#include "vmfreax-nommu.lds"
 #endif

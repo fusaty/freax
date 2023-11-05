@@ -23,7 +23,7 @@
  */
 
 #include <drm/drm_prime.h>
-#include <linux/virtio_dma_buf.h>
+#include <freax/virtio_dma_buf.h>
 
 #include "virtgpu_drv.h"
 

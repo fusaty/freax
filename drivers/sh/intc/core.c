@@ -18,21 +18,21 @@
  */
 #define pr_fmt(fmt) "intc: " fmt
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/interrupt.h>
-#include <linux/sh_intc.h>
-#include <linux/irqdomain.h>
-#include <linux/device.h>
-#include <linux/syscore_ops.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/radix-tree.h>
-#include <linux/export.h>
-#include <linux/sort.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/interrupt.h>
+#include <freax/sh_intc.h>
+#include <freax/irqdomain.h>
+#include <freax/device.h>
+#include <freax/syscore_ops.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/radix-tree.h>
+#include <freax/export.h>
+#include <freax/sort.h>
 #include "internals.h"
 
 LIST_HEAD(intc_list);

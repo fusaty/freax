@@ -58,7 +58,7 @@ single syscall from within a test program:
     #include <sys/mman.h>
     #include <unistd.h>
     #include <fcntl.h>
-    #include <linux/types.h>
+    #include <freax/types.h>
 
     #define KCOV_INIT_TRACE			_IOR('c', 1, unsigned long)
     #define KCOV_ENABLE			_IO('c', 100)

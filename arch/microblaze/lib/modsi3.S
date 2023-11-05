@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 /*
 * modulo operation for 32 bit integers.

@@ -6,11 +6,11 @@
  * Copyright 2009-2010 Analog Devices Inc.
  */
 
-#ifndef __LINUX_I2C_ADP8860_H
-#define __LINUX_I2C_ADP8860_H
+#ifndef __freax_I2C_ADP8860_H
+#define __freax_I2C_ADP8860_H
 
-#include <linux/leds.h>
-#include <linux/types.h>
+#include <freax/leds.h>
+#include <freax/types.h>
 
 #define ID_ADP8860		8860
 
@@ -150,4 +150,4 @@ struct adp8860_backlight_platform_data {
 	u8 gdwn_dis;
 };
 
-#endif /* __LINUX_I2C_ADP8860_H */
+#endif /* __freax_I2C_ADP8860_H */

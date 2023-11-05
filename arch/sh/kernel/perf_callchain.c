@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2009  Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/perf_event.h>
-#include <linux/percpu.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/perf_event.h>
+#include <freax/percpu.h>
 #include <asm/unwinder.h>
 #include <asm/ptrace.h>
 

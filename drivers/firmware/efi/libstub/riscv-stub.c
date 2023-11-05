@@ -3,7 +3,7 @@
  * Copyright (C) 2020 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/efi.h>
+#include <freax/efi.h>
 
 #include <asm/efi.h>
 #include <asm/sections.h>

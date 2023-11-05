@@ -3,21 +3,21 @@
  * Copyright 2016 Broadcom
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/crypto.h>
-#include <linux/kthread.h>
-#include <linux/rtnetlink.h>
-#include <linux/sched.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/bitops.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/scatterlist.h>
+#include <freax/crypto.h>
+#include <freax/kthread.h>
+#include <freax/rtnetlink.h>
+#include <freax/sched.h>
+#include <freax/of.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
 
 #include <crypto/algapi.h>
 #include <crypto/aead.h>

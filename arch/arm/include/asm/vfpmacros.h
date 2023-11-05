@@ -30,14 +30,14 @@
 	@ read all the working registers back into the VFP
 	.macro	VFPFLDMIA, base, tmp
 	.fpu	vfpv2
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 	fldmiax	\base!, {d0-d15}
 #else
 	vldmia	\base!, {d0-d15}
 #endif
 #ifdef CONFIG_VFPv3
 	.fpu	vfpv3
-#if __LINUX_ARM_ARCH__ <= 6
+#if __freax_ARM_ARCH__ <= 6
 	ldr	\tmp, =elf_hwcap		    @ may not have MVFR regs
 	ldr	\tmp, [\tmp, #0]
 	tst	\tmp, #HWCAP_VFPD32
@@ -55,14 +55,14 @@
 
 	@ write all the working registers out of the VFP
 	.macro	VFPFSTMIA, base, tmp
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 	fstmiax	\base!, {d0-d15}
 #else
 	vstmia	\base!, {d0-d15}
 #endif
 #ifdef CONFIG_VFPv3
 	.fpu	vfpv3
-#if __LINUX_ARM_ARCH__ <= 6
+#if __freax_ARM_ARCH__ <= 6
 	ldr	\tmp, =elf_hwcap		    @ may not have MVFR regs
 	ldr	\tmp, [\tmp, #0]
 	tst	\tmp, #HWCAP_VFPD32

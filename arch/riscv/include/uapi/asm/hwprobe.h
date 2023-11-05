@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright 2023 Rivos, Inc
  */
@@ -6,7 +6,7 @@
 #ifndef _UAPI_ASM_HWPROBE_H
 #define _UAPI_ASM_HWPROBE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Interface for probing hardware capabilities from userspace, see

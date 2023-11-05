@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/sizes.h>
-#include <linux/list_sort.h>
+#include <freax/sizes.h>
+#include <freax/list_sort.h>
 #include "misc.h"
 #include "ctree.h"
 #include "block-group.h"

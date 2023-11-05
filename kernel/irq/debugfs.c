@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright 2017 Thomas Gleixner <tglx@linutronix.de>
 
-#include <linux/irqdomain.h>
-#include <linux/irq.h>
-#include <linux/uaccess.h>
+#include <freax/irqdomain.h>
+#include <freax/irq.h>
+#include <freax/uaccess.h>
 
 #include "internals.h"
 

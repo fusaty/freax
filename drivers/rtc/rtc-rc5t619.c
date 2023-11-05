@@ -7,18 +7,18 @@
  * Copyright (C) 2019 Andreas Kemnade
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mfd/rn5t618.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/bcd.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mfd/rn5t618.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/bcd.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
+#include <freax/irqdomain.h>
 
 struct rc5t619_rtc {
 	int			irq;

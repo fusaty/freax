@@ -26,7 +26,7 @@
 
 #include "nbio/nbio_7_2_0_offset.h"
 #include "nbio/nbio_7_2_0_sh_mask.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/freax/kfd_ioctl.h>
 
 #define regRCC_STRAP0_RCC_DEV0_EPF0_STRAP0_YC				0x0015
 #define regRCC_STRAP0_RCC_DEV0_EPF0_STRAP0_YC_BASE_IDX		2

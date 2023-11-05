@@ -3,7 +3,7 @@
 #ifndef _NF_CONNTRACK_BPF_H
 #define _NF_CONNTRACK_BPF_H
 
-#include <linux/kconfig.h>
+#include <freax/kconfig.h>
 #include <net/netfilter/nf_conntrack.h>
 
 struct nf_conn___init {

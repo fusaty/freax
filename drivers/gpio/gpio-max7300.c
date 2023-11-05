@@ -5,13 +5,13 @@
  * Check max730x.c for further details.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/i2c.h>
-#include <linux/spi/max7301.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/i2c.h>
+#include <freax/spi/max7301.h>
+#include <freax/slab.h>
 
 static int max7300_i2c_write(struct device *dev, unsigned int reg,
 				unsigned int val)

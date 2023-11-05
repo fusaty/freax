@@ -7,17 +7,17 @@
  *  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/gpio/driver.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/usb.h>
+#include <freax/gpio/driver.h>
 
-#include <linux/mfd/viperboard.h>
+#include <freax/mfd/viperboard.h>
 
 #define VPRBRD_GPIOA_CLK_1MHZ		0
 #define VPRBRD_GPIOA_CLK_100KHZ		1

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/libfdt.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/libfdt.h>
 
 /*
  * Declare the functions that are exported (but prefixed) here so that LLVM

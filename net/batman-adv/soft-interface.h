@@ -9,10 +9,10 @@
 
 #include "main.h"
 
-#include <linux/kref.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <freax/kref.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
 #include <net/rtnetlink.h>
 
 int batadv_skb_head_push(struct sk_buff *skb, unsigned int len);

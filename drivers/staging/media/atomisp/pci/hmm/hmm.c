@@ -20,12 +20,12 @@
 /*
  * This file contains entry functions for memory management of ISP driver
  */
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>	/* for kmap */
-#include <linux/io.h>		/* for page_to_phys */
-#include <linux/sysfs.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/highmem.h>	/* for kmap */
+#include <freax/io.h>		/* for page_to_phys */
+#include <freax/sysfs.h>
 
 #include "hmm/hmm.h"
 #include "hmm/hmm_bo.h"

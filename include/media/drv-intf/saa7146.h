@@ -2,22 +2,22 @@
 #ifndef __SAA7146__
 #define __SAA7146__
 
-#include <linux/delay.h>	/* for delay-stuff */
-#include <linux/slab.h>		/* for kmalloc/kfree */
-#include <linux/pci.h>		/* for pci-config-stuff, vendor ids etc. */
-#include <linux/init.h>		/* for "__init" */
-#include <linux/interrupt.h>	/* for IMMEDIATE_BH */
-#include <linux/kmod.h>		/* for kernel module loader */
-#include <linux/i2c.h>		/* for i2c subsystem */
+#include <freax/delay.h>	/* for delay-stuff */
+#include <freax/slab.h>		/* for kmalloc/kfree */
+#include <freax/pci.h>		/* for pci-config-stuff, vendor ids etc. */
+#include <freax/init.h>		/* for "__init" */
+#include <freax/interrupt.h>	/* for IMMEDIATE_BH */
+#include <freax/kmod.h>		/* for kernel module loader */
+#include <freax/i2c.h>		/* for i2c subsystem */
 #include <asm/io.h>		/* for accessing devices */
-#include <linux/stringify.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
+#include <freax/stringify.h>
+#include <freax/mutex.h>
+#include <freax/scatterlist.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 
-#include <linux/vmalloc.h>	/* for vmalloc() */
-#include <linux/mm.h>		/* for vmalloc_to_page() */
+#include <freax/vmalloc.h>	/* for vmalloc() */
+#include <freax/mm.h>		/* for vmalloc_to_page() */
 
 #define saa7146_write(sxy,adr,dat)    writel((dat),(sxy->mem+(adr)))
 #define saa7146_read(sxy,adr)         readl(sxy->mem+(adr))

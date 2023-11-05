@@ -5,7 +5,7 @@
 import gdb
 import zlib
 
-from linux import utils
+from freax import utils
 
 
 class LxConfigDump(gdb.Command):

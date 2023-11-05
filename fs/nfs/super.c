@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/nfs/super.c
+ *  freax/fs/nfs/super.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -21,45 +21,45 @@
  *   of another (see nfs_lookup())
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/init.h>
 
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/metrics.h>
-#include <linux/sunrpc/xprtsock.h>
-#include <linux/sunrpc/xprtrdma.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/lockd/bind.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/vfs.h>
-#include <linux/inet.h>
-#include <linux/in6.h>
-#include <linux/slab.h>
+#include <freax/time.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/stat.h>
+#include <freax/errno.h>
+#include <freax/unistd.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/sunrpc/stats.h>
+#include <freax/sunrpc/metrics.h>
+#include <freax/sunrpc/xprtsock.h>
+#include <freax/sunrpc/xprtrdma.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_mount.h>
+#include <freax/nfs4_mount.h>
+#include <freax/lockd/bind.h>
+#include <freax/seq_file.h>
+#include <freax/mount.h>
+#include <freax/namei.h>
+#include <freax/vfs.h>
+#include <freax/inet.h>
+#include <freax/in6.h>
+#include <freax/slab.h>
 #include <net/ipv6.h>
-#include <linux/netdevice.h>
-#include <linux/nfs_xdr.h>
-#include <linux/magic.h>
-#include <linux/parser.h>
-#include <linux/nsproxy.h>
-#include <linux/rcupdate.h>
+#include <freax/netdevice.h>
+#include <freax/nfs_xdr.h>
+#include <freax/magic.h>
+#include <freax/parser.h>
+#include <freax/nsproxy.h>
+#include <freax/rcupdate.h>
 
-#include <linux/uaccess.h>
-#include <linux/nfs_ssc.h>
+#include <freax/uaccess.h>
+#include <freax/nfs_ssc.h>
 
-#include <uapi/linux/tls.h>
+#include <uapi/freax/tls.h>
 
 #include "nfs4_fs.h"
 #include "callback.h"
@@ -284,9 +284,9 @@ int nfs_statfs(struct dentry *dentry, struct kstatfs *buf)
 
 	/*
 	 * On most *nix systems, f_blocks, f_bfree, and f_bavail
-	 * are reported in units of f_frsize.  Linux hasn't had
+	 * are reported in units of f_frsize.  freax hasn't had
 	 * an f_frsize field in its statfs struct until recently,
-	 * thus historically Linux's sys_statfs reports these
+	 * thus historically freax's sys_statfs reports these
 	 * fields in units of f_bsize.
 	 */
 	buf->f_bsize = dentry->d_sb->s_blocksize;

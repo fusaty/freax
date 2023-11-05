@@ -6,8 +6,8 @@
 #ifndef __I915_IRQ_H__
 #define __I915_IRQ_H__
 
-#include <linux/ktime.h>
-#include <linux/types.h>
+#include <freax/ktime.h>
+#include <freax/types.h>
 
 #include "i915_reg_defs.h"
 

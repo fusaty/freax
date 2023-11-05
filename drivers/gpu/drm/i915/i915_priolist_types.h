@@ -7,8 +7,8 @@
 #ifndef _I915_PRIOLIST_TYPES_H_
 #define _I915_PRIOLIST_TYPES_H_
 
-#include <linux/list.h>
-#include <linux/rbtree.h>
+#include <freax/list.h>
+#include <freax/rbtree.h>
 
 #include <uapi/drm/i915_drm.h>
 

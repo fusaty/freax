@@ -6,10 +6,10 @@
  *
  * See Documentation/mm/hmm.rst for reasons and overview of what HMM is.
  */
-#ifndef LINUX_HMM_H
-#define LINUX_HMM_H
+#ifndef freax_HMM_H
+#define freax_HMM_H
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 
 struct mmu_interval_notifier;
 
@@ -113,4 +113,4 @@ int hmm_range_fault(struct hmm_range *range);
  */
 #define HMM_RANGE_DEFAULT_TIMEOUT 1000
 
-#endif /* LINUX_HMM_H */
+#endif /* freax_HMM_H */

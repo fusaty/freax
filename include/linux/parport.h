@@ -7,15 +7,15 @@
 #define _PARPORT_H_
 
 
-#include <linux/jiffies.h>
-#include <linux/proc_fs.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/irqreturn.h>
-#include <linux/semaphore.h>
-#include <linux/device.h>
+#include <freax/jiffies.h>
+#include <freax/proc_fs.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
+#include <freax/irqreturn.h>
+#include <freax/semaphore.h>
+#include <freax/device.h>
 #include <asm/ptrace.h>
-#include <uapi/linux/parport.h>
+#include <uapi/freax/parport.h>
 
 /* Define this later. */
 struct parport;
@@ -516,7 +516,7 @@ extern int parport_device_proc_unregister(struct pardevice *device);
 /* If PC hardware is the only type supported, we can optimise a bit.  */
 #if !defined(CONFIG_PARPORT_NOT_PC) && defined(CONFIG_PARPORT_PC)
 
-#include <linux/parport_pc.h>
+#include <freax/parport_pc.h>
 #define parport_write_data(p,x)            parport_pc_write_data(p,x)
 #define parport_read_data(p)               parport_pc_read_data(p)
 #define parport_write_control(p,x)         parport_pc_write_control(p,x)

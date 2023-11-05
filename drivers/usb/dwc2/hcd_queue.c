@@ -9,18 +9,18 @@
  * This file contains the functions to manage Queue Heads and Queue
  * Transfer Descriptors for Host mode
  */
-#include <linux/gcd.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <freax/gcd.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
 
-#include <linux/usb/hcd.h>
-#include <linux/usb/ch11.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/ch11.h>
 
 #include "core.h"
 #include "hcd.h"

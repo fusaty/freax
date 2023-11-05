@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/pci_iommu.c
+ *	freax/arch/alpha/kernel/pci_iommu.c
  */
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/scatterlist.h>
-#include <linux/log2.h>
-#include <linux/dma-map-ops.h>
-#include <linux/iommu-helper.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/pci.h>
+#include <freax/gfp.h>
+#include <freax/memblock.h>
+#include <freax/export.h>
+#include <freax/scatterlist.h>
+#include <freax/log2.h>
+#include <freax/dma-map-ops.h>
+#include <freax/iommu-helper.h>
 
 #include <asm/io.h>
 #include <asm/hwrpb.h>

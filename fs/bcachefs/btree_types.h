@@ -2,8 +2,8 @@
 #ifndef _BCACHEFS_BTREE_TYPES_H
 #define _BCACHEFS_BTREE_TYPES_H
 
-#include <linux/list.h>
-#include <linux/rhashtable.h>
+#include <freax/list.h>
+#include <freax/rhashtable.h>
 
 //#include "bkey_methods.h"
 #include "buckets_types.h"

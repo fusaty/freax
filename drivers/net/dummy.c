@@ -29,17 +29,17 @@
 			Alan Cox, 30th May 1994
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/rtnetlink.h>
-#include <linux/net_tstamp.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/init.h>
+#include <freax/moduleparam.h>
+#include <freax/rtnetlink.h>
+#include <freax/net_tstamp.h>
 #include <net/rtnetlink.h>
-#include <linux/u64_stats_sync.h>
+#include <freax/u64_stats_sync.h>
 
 #define DRV_NAME	"dummy"
 

@@ -5,8 +5,8 @@
 #if !defined(_TRACE_EXT4_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_EXT4_H
 
-#include <linux/writeback.h>
-#include <linux/tracepoint.h>
+#include <freax/writeback.h>
+#include <freax/tracepoint.h>
 
 struct ext4_allocation_context;
 struct ext4_allocation_request;

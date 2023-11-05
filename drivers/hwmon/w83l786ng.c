@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * w83l786ng.c - Linux kernel driver for hardware monitoring
+ * w83l786ng.c - freax kernel driver for hardware monitoring
  * Copyright (c) 2007 Kevin Lo <kevlo@kevlo.org>
  */
 
@@ -11,15 +11,15 @@
  * w83l786ng	3	2	2	2	0x7b	0x5ca3	yes	no
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/jiffies.h>
 
 /* Addresses to scan */
 static const unsigned short normal_i2c[] = { 0x2e, 0x2f, I2C_CLIENT_END };

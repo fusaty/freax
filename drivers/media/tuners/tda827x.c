@@ -5,11 +5,11 @@
  * (c) 2007 Michael Krufky
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include <asm/types.h>
-#include <linux/dvb/frontend.h>
-#include <linux/videodev2.h>
+#include <freax/dvb/frontend.h>
+#include <freax/videodev2.h>
 
 #include "tda827x.h"
 
@@ -891,5 +891,5 @@ EXPORT_SYMBOL_GPL(tda827x_attach);
 
 MODULE_DESCRIPTION("DVB TDA827x driver");
 MODULE_AUTHOR("Hartmut Hackmann <hartmut.hackmann@t-online.de>");
-MODULE_AUTHOR("Michael Krufky <mkrufky@linuxtv.org>");
+MODULE_AUTHOR("Michael Krufky <mkrufky@freaxtv.org>");
 MODULE_LICENSE("GPL");

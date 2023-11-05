@@ -5,9 +5,9 @@
  * Copyright (c) 2023 Collabora Ltd.
  *                    AngeloGioacchino Del Regno <angelogioacchino.delregno@collabora.com>
  */
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include "clk-pll.h"
 #include "clk-mtk.h"

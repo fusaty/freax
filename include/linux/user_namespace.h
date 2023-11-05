@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_USER_NAMESPACE_H
-#define _LINUX_USER_NAMESPACE_H
+#ifndef _freax_USER_NAMESPACE_H
+#define _freax_USER_NAMESPACE_H
 
-#include <linux/kref.h>
-#include <linux/nsproxy.h>
-#include <linux/ns_common.h>
-#include <linux/sched.h>
-#include <linux/workqueue.h>
-#include <linux/rwsem.h>
-#include <linux/sysctl.h>
-#include <linux/err.h>
+#include <freax/kref.h>
+#include <freax/nsproxy.h>
+#include <freax/ns_common.h>
+#include <freax/sched.h>
+#include <freax/workqueue.h>
+#include <freax/rwsem.h>
+#include <freax/sysctl.h>
+#include <freax/err.h>
 
 #define UID_GID_MAP_MAX_BASE_EXTENTS 5
 #define UID_GID_MAP_MAX_EXTENTS 340
@@ -233,4 +233,4 @@ static inline struct ns_common *ns_get_owner(struct ns_common *ns)
 }
 #endif
 
-#endif /* _LINUX_USER_H */
+#endif /* _freax_USER_H */

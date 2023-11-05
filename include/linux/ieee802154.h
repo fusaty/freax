@@ -12,11 +12,11 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
 
-#ifndef LINUX_IEEE802154_H
-#define LINUX_IEEE802154_H
+#ifndef freax_IEEE802154_H
+#define freax_IEEE802154_H
 
-#include <linux/types.h>
-#include <linux/random.h>
+#include <freax/types.h>
+#include <freax/random.h>
 
 #define IEEE802154_MTU			127
 #define IEEE802154_ACK_PSDU_LEN		5
@@ -448,4 +448,4 @@ static inline void ieee802154_random_extended_addr(__le64 *addr)
 	((u8 *)addr)[IEEE802154_EXTENDED_ADDR_LEN - 1] |= 0x02;
 }
 
-#endif /* LINUX_IEEE802154_H */
+#endif /* freax_IEEE802154_H */

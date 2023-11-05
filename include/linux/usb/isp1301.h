@@ -5,10 +5,10 @@
  * Copyright (C) 2012 Roland Stigge <stigge@antcom.de>
  */
 
-#ifndef __LINUX_USB_ISP1301_H
-#define __LINUX_USB_ISP1301_H
+#ifndef __freax_USB_ISP1301_H
+#define __freax_USB_ISP1301_H
 
-#include <linux/of.h>
+#include <freax/of.h>
 
 /* I2C Register definitions: */
 
@@ -68,4 +68,4 @@
 
 struct i2c_client *isp1301_get_client(struct device_node *node);
 
-#endif /* __LINUX_USB_ISP1301_H */
+#endif /* __freax_USB_ISP1301_H */

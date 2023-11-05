@@ -5,22 +5,22 @@
  *	Quentin Schulz <quentin.schulz@free-electrons.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
+#include <freax/bitfield.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/thermal.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/machine.h>
-#include <linux/mfd/axp20x.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/driver.h>
+#include <freax/iio/machine.h>
+#include <freax/mfd/axp20x.h>
 
 #define AXP20X_ADC_EN1_MASK			GENMASK(7, 0)
 #define AXP20X_ADC_EN2_MASK			(GENMASK(3, 2) | BIT(7))

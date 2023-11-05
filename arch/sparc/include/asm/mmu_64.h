@@ -2,7 +2,7 @@
 #ifndef __MMU_H
 #define __MMU_H
 
-#include <linux/const.h>
+#include <freax/const.h>
 #include <asm/page.h>
 #include <asm/hypervisor.h>
 

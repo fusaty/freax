@@ -7,14 +7,14 @@
  *
  * Based on PPC64 eBPF JIT compiler by Naveen N. Rao
  */
-#include <linux/moduleloader.h>
+#include <freax/moduleloader.h>
 #include <asm/cacheflush.h>
 #include <asm/asm-compat.h>
-#include <linux/netdevice.h>
-#include <linux/filter.h>
-#include <linux/if_vlan.h>
+#include <freax/netdevice.h>
+#include <freax/filter.h>
+#include <freax/if_vlan.h>
 #include <asm/kprobes.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 
 #include "bpf_jit.h"
 

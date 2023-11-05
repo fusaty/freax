@@ -35,11 +35,11 @@
  * SOFTWARE.
  */
 
-#include <linux/bug.h>
-#include <linux/sched/signal.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/splice.h>
+#include <freax/bug.h>
+#include <freax/sched/signal.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/splice.h>
 #include <crypto/aead.h>
 
 #include <net/strparser.h>
@@ -207,7 +207,7 @@ static void tls_decrypt_done(void *data, int err)
 	/* Propagate if there was an err */
 	if (err) {
 		if (err == -EBADMSG)
-			TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSDECRYPTERROR);
+			TLS_INC_STATS(sock_net(sk), freax_MIB_TLSDECRYPTERROR);
 		ctx->async_wait.err = err;
 		tls_err_abort(sk, err);
 	}
@@ -1615,7 +1615,7 @@ tls_decrypt_sw(struct sock *sk, struct tls_context *tls_ctx,
 	err = tls_decrypt_sg(sk, &msg->msg_iter, NULL, darg);
 	if (err < 0) {
 		if (err == -EBADMSG)
-			TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSDECRYPTERROR);
+			TLS_INC_STATS(sock_net(sk), freax_MIB_TLSDECRYPTERROR);
 		return err;
 	}
 	/* keep going even for ->async, the code below is TLS 1.3 */
@@ -1625,8 +1625,8 @@ tls_decrypt_sw(struct sock *sk, struct tls_context *tls_ctx,
 		     darg->tail != TLS_RECORD_TYPE_DATA)) {
 		darg->zc = false;
 		if (!darg->tail)
-			TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSRXNOPADVIOL);
-		TLS_INC_STATS(sock_net(sk), LINUX_MIB_TLSDECRYPTRETRY);
+			TLS_INC_STATS(sock_net(sk), freax_MIB_TLSRXNOPADVIOL);
+		TLS_INC_STATS(sock_net(sk), freax_MIB_TLSDECRYPTRETRY);
 		return tls_decrypt_sw(sk, tls_ctx, msg, darg);
 	}
 

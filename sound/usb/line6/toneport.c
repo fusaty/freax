@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Line 6 Linux USB driver
+ * Line 6 freax USB driver
  *
  * Copyright (C) 2004-2010 Markus Grabner (grabner@icg.tugraz.at)
  *                         Emil Myhrman (emil.myhrman@gmail.com)
  */
 
-#include <linux/wait.h>
-#include <linux/usb.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/leds.h>
+#include <freax/wait.h>
+#include <freax/usb.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/leds.h>
 #include <sound/core.h>
 #include <sound/control.h>
 

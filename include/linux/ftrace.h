@@ -4,21 +4,21 @@
  * scattered below, see: Documentation/trace/ftrace-design.rst
  */
 
-#ifndef _LINUX_FTRACE_H
-#define _LINUX_FTRACE_H
+#ifndef _freax_FTRACE_H
+#define _freax_FTRACE_H
 
-#include <linux/trace_recursion.h>
-#include <linux/trace_clock.h>
-#include <linux/jump_label.h>
-#include <linux/kallsyms.h>
-#include <linux/linkage.h>
-#include <linux/bitops.h>
-#include <linux/ptrace.h>
-#include <linux/ktime.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/fs.h>
+#include <freax/trace_recursion.h>
+#include <freax/trace_clock.h>
+#include <freax/jump_label.h>
+#include <freax/kallsyms.h>
+#include <freax/linkage.h>
+#include <freax/bitops.h>
+#include <freax/ptrace.h>
+#include <freax/ktime.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/fs.h>
 
 #include <asm/ftrace.h>
 
@@ -1170,4 +1170,4 @@ unsigned long arch_syscall_addr(int nr);
 
 #endif /* CONFIG_FTRACE_SYSCALLS */
 
-#endif /* _LINUX_FTRACE_H */
+#endif /* _freax_FTRACE_H */

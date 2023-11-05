@@ -4,17 +4,17 @@
  */
 
 /*
- * Sun keyboard driver for Linux
+ * Sun keyboard driver for freax
  */
 
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/workqueue.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
+#include <freax/serio.h>
+#include <freax/workqueue.h>
 
 #define DRIVER_DESC	"Sun keyboard driver"
 

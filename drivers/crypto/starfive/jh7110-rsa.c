@@ -5,14 +5,14 @@
  * Copyright (c) 2022 StarFive Technology
  */
 
-#include <linux/crypto.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-direct.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
+#include <freax/crypto.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-direct.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/io.h>
+#include <freax/mod_devicetable.h>
 #include <crypto/akcipher.h>
 #include <crypto/algapi.h>
 #include <crypto/internal/akcipher.h>

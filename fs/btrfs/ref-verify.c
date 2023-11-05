@@ -3,8 +3,8 @@
  * Copyright (C) 2014 Facebook.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/stacktrace.h>
+#include <freax/sched.h>
+#include <freax/stacktrace.h>
 #include "messages.h"
 #include "ctree.h"
 #include "disk-io.h"

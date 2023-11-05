@@ -5,7 +5,7 @@
 #ifndef _ASM_DELAY_H
 #define _ASM_DELAY_H
 
-#include <linux/param.h>
+#include <freax/param.h>
 
 extern void __delay(unsigned long cycles);
 extern void __ndelay(unsigned long ns);

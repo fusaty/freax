@@ -9,17 +9,17 @@
  *		Catalin(ux aka Dino) BOIE <catab at umbrella dot ro>
  */
 
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/rtnetlink.h>
-#include <linux/reciprocal_div.h>
-#include <linux/rbtree.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/skbuff.h>
+#include <freax/vmalloc.h>
+#include <freax/rtnetlink.h>
+#include <freax/reciprocal_div.h>
+#include <freax/rbtree.h>
 
 #include <net/gso.h>
 #include <net/netlink.h>
@@ -31,7 +31,7 @@
 /*	Network Emulation Queuing algorithm.
 	====================================
 
-	Sources: [1] Mark Carson, Darrin Santay, "NIST Net - A Linux-based
+	Sources: [1] Mark Carson, Darrin Santay, "NIST Net - A freax-based
 		 Network Emulation Tool
 		 [2] Luigi Rizzo, DummyNet for FreeBSD
 
@@ -59,7 +59,7 @@
 	[1] NetemCLG Home http://netgroup.uniroma2.it/NetemCLG
 	[2] S. Salsano, F. Ludovici, A. Ordine, "Definition of a general
 	and intuitive loss model for packet networks and its implementation
-	in the Netem module in the Linux kernel", available in [1]
+	in the Netem module in the freax kernel", available in [1]
 
 	Authors: Stefano Salsano <stefano.salsano at uniroma2.it
 		 Fabio Ludovici <fabio.ludovici at yahoo.it>

@@ -10,8 +10,8 @@
 #ifndef FIMC_IS_SENSOR_H_
 #define FIMC_IS_SENSOR_H_
 
-#include <linux/of.h>
-#include <linux/types.h>
+#include <freax/of.h>
+#include <freax/types.h>
 
 #define S5K6A3_OPEN_TIMEOUT		2000 /* ms */
 #define S5K6A3_SENSOR_WIDTH		1392

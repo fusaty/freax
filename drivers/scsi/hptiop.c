@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * HighPoint RR3xxx/4xxx controller driver for Linux
+ * HighPoint RR3xxx/4xxx controller driver for freax
  * Copyright (C) 2006-2015 HighPoint Technologies, Inc. All Rights Reserved.
  *
- * Please report bugs/comments/suggestions to linux@highpoint-tech.com
+ * Please report bugs/comments/suggestions to freax@highpoint-tech.com
  *
  * For more information, visit http://www.highpoint-tech.com
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/spinlock.h>
-#include <linux/gfp.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/timer.h>
+#include <freax/spinlock.h>
+#include <freax/gfp.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/div64.h>
 #include <scsi/scsi_cmnd.h>

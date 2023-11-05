@@ -8,7 +8,7 @@
  *  -- paulus
  *
  *  Derived from arch/ppc/mm/init.c:
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *
  *  Modifications by Paul Mackerras (PowerMac) (paulus@cs.anu.edu.au)
  *  and Cort Dougan (PReP) (cort@cs.nmt.edu)
@@ -19,8 +19,8 @@
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
+#include <freax/mm.h>
+#include <freax/init.h>
 
 #include <asm/tlbflush.h>
 #include <asm/mmu_context.h>

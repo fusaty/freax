@@ -5,9 +5,9 @@
  *      Sandy Huang <hjc@rock-chips.com>
  */
 
-#include <linux/component.h>
-#include <linux/media-bus-format.h>
-#include <linux/of_graph.h>
+#include <freax/component.h>
+#include <freax/media-bus-format.h>
+#include <freax/of_graph.h>
 
 #include <drm/display/drm_dp_helper.h>
 #include <drm/drm_atomic_helper.h>

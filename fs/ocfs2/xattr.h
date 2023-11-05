@@ -8,8 +8,8 @@
 #ifndef OCFS2_XATTR_H
 #define OCFS2_XATTR_H
 
-#include <linux/init.h>
-#include <linux/xattr.h>
+#include <freax/init.h>
+#include <freax/xattr.h>
 
 enum ocfs2_xattr_type {
 	OCFS2_XATTR_INDEX_USER = 1,

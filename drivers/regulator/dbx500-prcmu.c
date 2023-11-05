@@ -8,13 +8,13 @@
  * UX500 common part of Power domain regulators
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/regulator/driver.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/regulator/driver.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 #include "dbx500-prcmu.h"
 

@@ -7,8 +7,8 @@
 #ifndef _ASM_UNWIND_H
 #define _ASM_UNWIND_H
 
-#include <linux/sched.h>
-#include <linux/ftrace.h>
+#include <freax/sched.h>
+#include <freax/ftrace.h>
 
 #include <asm/ptrace.h>
 #include <asm/stacktrace.h>

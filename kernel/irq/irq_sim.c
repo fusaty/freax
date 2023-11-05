@@ -4,11 +4,11 @@
  * Copyright (C) 2020 Bartosz Golaszewski <bgolaszewski@baylibre.com>
  */
 
-#include <linux/irq.h>
-#include <linux/irq_sim.h>
-#include <linux/irq_work.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <freax/irq.h>
+#include <freax/irq_sim.h>
+#include <freax/irq_work.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
 
 struct irq_sim_work_ctx {
 	struct irq_work		work;

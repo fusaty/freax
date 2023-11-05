@@ -8,7 +8,7 @@
 #ifndef __INTEL_NHLT_H__
 #define __INTEL_NHLT_H__
 
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 
 enum nhlt_link_type {
 	NHLT_LINK_HDA = 0,

@@ -8,8 +8,8 @@
 *         Daniel Jeong <daniel.jeong@ti.com>
 */
 
-#ifndef __LINUX_LM3642_H
-#define __LINUX_LM3642_H
+#ifndef __freax_LM3642_H
+#define __freax_LM3642_H
 
 #define LM3642_NAME "leds-lm3642"
 
@@ -34,4 +34,4 @@ struct lm3642_platform_data {
 	enum lm3642_tx_pin_enable tx_pin;
 };
 
-#endif /* __LINUX_LM3642_H */
+#endif /* __freax_LM3642_H */

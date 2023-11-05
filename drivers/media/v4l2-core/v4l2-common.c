@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *	Video for Linux Two
+ *	Video for freax Two
  *
- *	A generic video device interface for the LINUX operating system
+ *	A generic video device interface for the freax operating system
  *	using a set of device structures/vectors for low level operations.
  *
  *	This file replaces the videodev.c file that comes with the
@@ -13,9 +13,9 @@
  */
 
 /*
- * Video capture interface for Linux
+ * Video capture interface for freax
  *
- *	A generic video device interface for the LINUX operating system
+ *	A generic video device interface for the freax operating system
  *	using a set of device structures/vectors for low level operations.
  *
  * Author:	Alan Cox, <alan@lxorguk.ukuu.org.uk>
@@ -24,7 +24,7 @@
  */
 
 /*
- * Video4linux 1/2 integration by Justin Schoeman
+ * Video4freax 1/2 integration by Justin Schoeman
  * <justin@suntiger.ee.up.ac.za>
  * 2.4 PROCFS support ported from 2.4 kernels by
  *  Iñaki García Etxebarria <garetxe@euskalnet.net>
@@ -34,20 +34,20 @@
  * Added Gerd Knorrs v4l1 enhancements (Justin Schoeman)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/div64.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 
-#include <linux/videodev2.h>
+#include <freax/videodev2.h>
 
 /*
  *

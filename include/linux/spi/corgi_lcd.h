@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SPI_CORGI_LCD_H
-#define __LINUX_SPI_CORGI_LCD_H
+#ifndef __freax_SPI_CORGI_LCD_H
+#define __freax_SPI_CORGI_LCD_H
 
 #define CORGI_LCD_MODE_QVGA	1
 #define CORGI_LCD_MODE_VGA	2
@@ -17,4 +17,4 @@ struct corgi_lcd_platform_data {
 
 void corgi_lcd_limit_intensity(int limit);
 
-#endif /* __LINUX_SPI_CORGI_LCD_H */
+#endif /* __freax_SPI_CORGI_LCD_H */

@@ -6,9 +6,9 @@
  * archive for more details.
  */
 
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/pgtable.h>
+#include <freax/export.h>
+#include <freax/string.h>
+#include <freax/pgtable.h>
 
 #include <asm/cacheflush.h>
 

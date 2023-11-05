@@ -9,17 +9,17 @@
  */
 
 #include <drm/drm_bridge.h>
-#include <linux/bitfield.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_graph.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/usb/typec_dp.h>
-#include <linux/usb/typec_mux.h>
-#include <linux/usb/typec_retimer.h>
+#include <freax/bitfield.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of_graph.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/usb/typec_dp.h>
+#include <freax/usb/typec_mux.h>
+#include <freax/usb/typec_retimer.h>
 
 #define PTN36502_CHIP_ID_REG				0x00
 #define PTN36502_CHIP_ID				0x02

@@ -18,7 +18,7 @@
 #include <bpf/libbpf.h>
 
 #include "bpf_util.h"
-#include "../../../include/linux/filter.h"
+#include "../../../include/freax/filter.h"
 
 #define LOCAL_FREE_TARGET	(128)
 #define PERCPU_FREE_TARGET	(4)

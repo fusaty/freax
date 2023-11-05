@@ -15,8 +15,8 @@
 #ifndef _ASM_NIOS2_PGTABLE_H
 #define _ASM_NIOS2_PGTABLE_H
 
-#include <linux/io.h>
-#include <linux/bug.h>
+#include <freax/io.h>
+#include <freax/bug.h>
 #include <asm/page.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
@@ -171,7 +171,7 @@ static inline void pmd_clear(pmd_t *pmdp)
 #define pte_page(pte)		(pfn_to_page(pte_pfn(pte)))
 
 /*
- * Store a linux PTE into the linux page table.
+ * Store a freax PTE into the freax page table.
  */
 static inline void set_pte(pte_t *ptep, pte_t pteval)
 {

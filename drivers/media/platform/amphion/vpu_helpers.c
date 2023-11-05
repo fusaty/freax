@@ -3,13 +3,13 @@
  * Copyright 2020-2021 NXP
  */
 
-#include <linux/init.h>
-#include <linux/interconnect.h>
-#include <linux/ioctl.h>
-#include <linux/list.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/init.h>
+#include <freax/interconnect.h>
+#include <freax/ioctl.h>
+#include <freax/list.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include "vpu.h"
 #include "vpu_defs.h"
 #include "vpu_core.h"

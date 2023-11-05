@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_BRIDGE_EBT_VLAN_H
-#define __LINUX_BRIDGE_EBT_VLAN_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_BRIDGE_EBT_VLAN_H
+#define __freax_BRIDGE_EBT_VLAN_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define EBT_VLAN_ID	0x01
 #define EBT_VLAN_PRIO	0x02

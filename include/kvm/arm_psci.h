@@ -7,8 +7,8 @@
 #ifndef __KVM_ARM_PSCI_H__
 #define __KVM_ARM_PSCI_H__
 
-#include <linux/kvm_host.h>
-#include <uapi/linux/psci.h>
+#include <freax/kvm_host.h>
+#include <uapi/freax/psci.h>
 
 #define KVM_ARM_PSCI_0_1	PSCI_VERSION(0, 1)
 #define KVM_ARM_PSCI_0_2	PSCI_VERSION(0, 2)

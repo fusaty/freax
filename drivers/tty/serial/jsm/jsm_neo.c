@@ -9,10 +9,10 @@
  * Wendy Xiong   <wendyx@us.ibm.com>
  *
  ***********************************************************************/
-#include <linux/delay.h>	/* For udelay */
-#include <linux/serial_reg.h>	/* For the various UART offsets */
-#include <linux/tty.h>
-#include <linux/pci.h>
+#include <freax/delay.h>	/* For udelay */
+#include <freax/serial_reg.h>	/* For the various UART offsets */
+#include <freax/tty.h>
+#include <freax/pci.h>
 #include <asm/io.h>
 
 #include "jsm.h"		/* Driver main header file */

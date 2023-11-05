@@ -3,13 +3,13 @@
  * Copyright (C) 2009 Oracle.  All rights reserved.
  */
 
-#include <linux/sched.h>
-#include <linux/pagemap.h>
-#include <linux/writeback.h>
-#include <linux/blkdev.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <linux/error-injection.h>
+#include <freax/sched.h>
+#include <freax/pagemap.h>
+#include <freax/writeback.h>
+#include <freax/blkdev.h>
+#include <freax/rbtree.h>
+#include <freax/slab.h>
+#include <freax/error-injection.h>
 #include "ctree.h"
 #include "disk-io.h"
 #include "transaction.h"

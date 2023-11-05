@@ -21,13 +21,13 @@
 #endif
 
 #include <errno.h>
-#include <linux/filter.h>
+#include <freax/filter.h>
 #include <sys/prctl.h>
 #include <sys/ptrace.h>
 #include <sys/user.h>
-#include <linux/prctl.h>
-#include <linux/ptrace.h>
-#include <linux/seccomp.h>
+#include <freax/prctl.h>
+#include <freax/ptrace.h>
+#include <freax/seccomp.h>
 #include <pthread.h>
 #include <semaphore.h>
 #include <signal.h>
@@ -36,7 +36,7 @@
 #include <string.h>
 #include <time.h>
 #include <limits.h>
-#include <linux/elf.h>
+#include <freax/elf.h>
 #include <sys/uio.h>
 #include <sys/utsname.h>
 #include <sys/fcntl.h>
@@ -44,7 +44,7 @@
 #include <sys/times.h>
 #include <sys/socket.h>
 #include <sys/ioctl.h>
-#include <linux/kcmp.h>
+#include <freax/kcmp.h>
 #include <sys/resource.h>
 #include <sys/capability.h>
 
@@ -1819,7 +1819,7 @@ TEST_F(TRACE_poke, getpid_runs_normally)
 # define SYSCALL_NUM(_regs)				\
 	({						\
 		typeof((_regs).regs[2]) _nr;		\
-		if ((_regs).regs[2] == __NR_O32_Linux)	\
+		if ((_regs).regs[2] == __NR_O32_freax)	\
 			_nr = (_regs).regs[4];		\
 		else					\
 			_nr = (_regs).regs[2];		\
@@ -1827,7 +1827,7 @@ TEST_F(TRACE_poke, getpid_runs_normally)
 	})
 # define SYSCALL_NUM_SET(_regs, _nr)			\
 	do {						\
-		if ((_regs).regs[2] == __NR_O32_Linux)	\
+		if ((_regs).regs[2] == __NR_O32_freax)	\
 			(_regs).regs[4] = _nr;		\
 		else					\
 			(_regs).regs[2] = _nr;		\
@@ -1912,7 +1912,7 @@ const bool ptrace_entry_set_syscall_ret =
 
 /*
  * Use PTRACE_GETREGS and PTRACE_SETREGS when available. This is useful for
- * architectures without HAVE_ARCH_TRACEHOOK (e.g. User-mode Linux).
+ * architectures without HAVE_ARCH_TRACEHOOK (e.g. User-mode freax).
  */
 #if defined(__x86_64__) || defined(__i386__) || defined(__mips__) || defined(__mc68000__)
 # define ARCH_GETREGS(_regs)	ptrace(PTRACE_GETREGS, tracee, 0, &(_regs))

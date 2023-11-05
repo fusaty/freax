@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/memblock.h>
-#include <linux/compiler.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/ksm.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/huge_mm.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/hugetlb.h>
-#include <linux/memremap.h>
-#include <linux/memcontrol.h>
-#include <linux/mmu_notifier.h>
-#include <linux/page_idle.h>
-#include <linux/kernel-page-flags.h>
-#include <linux/uaccess.h>
+#include <freax/memblock.h>
+#include <freax/compiler.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/ksm.h>
+#include <freax/mm.h>
+#include <freax/mmzone.h>
+#include <freax/huge_mm.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/hugetlb.h>
+#include <freax/memremap.h>
+#include <freax/memcontrol.h>
+#include <freax/mmu_notifier.h>
+#include <freax/page_idle.h>
+#include <freax/kernel-page-flags.h>
+#include <freax/uaccess.h>
 #include "internal.h"
 
 #define KPMSIZE sizeof(u64)

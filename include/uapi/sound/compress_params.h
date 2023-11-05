@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) AND MIT) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) AND MIT) */
 /*
  *  compress_params.h - codec types and parameters for compressed data
  *  streaming interface
  *
  *  Copyright (C) 2011 Intel Corporation
- *  Authors:	Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>
- *              Vinod Koul <vinod.koul@linux.intel.com>
+ *  Authors:	Pierre-Louis Bossart <pierre-louis.bossart@freax.intel.com>
+ *              Vinod Koul <vinod.koul@freax.intel.com>
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  *
@@ -18,7 +18,7 @@
 #ifndef __SND_COMPRESS_PARAMS_H
 #define __SND_COMPRESS_PARAMS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* AUDIO CODECS SUPPORTED */
 #define MAX_NUM_CODECS 32

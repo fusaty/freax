@@ -22,13 +22,13 @@
  */
 
 #include <drm/display/drm_dp.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/hdmi.h>
-#include <linux/string.h>
-#include <linux/device.h>
+#include <freax/bitops.h>
+#include <freax/bug.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/hdmi.h>
+#include <freax/string.h>
+#include <freax/device.h>
 
 #define hdmi_log(fmt, ...) dev_printk(level, dev, fmt, ##__VA_ARGS__)
 

@@ -19,12 +19,12 @@
  * The valid range of num_buffers is: num >= 2 && num <= 4.
  */
 
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/kstrtox.h>
-#include <linux/usb/composite.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/kstrtox.h>
+#include <freax/usb/composite.h>
 
 #include "storage_common.h"
 

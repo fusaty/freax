@@ -9,9 +9,9 @@
 #ifndef _RISCV_PMU_H
 #define _RISCV_PMU_H
 
-#include <linux/perf_event.h>
-#include <linux/ptrace.h>
-#include <linux/interrupt.h>
+#include <freax/perf_event.h>
+#include <freax/ptrace.h>
+#include <freax/interrupt.h>
 
 #ifdef CONFIG_RISCV_PMU
 

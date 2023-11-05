@@ -24,7 +24,7 @@
 // in it's original order shown in the first table. ECC can't be turned on when
 // auto-format is off.
 //
-// However, Linux SPI-NAND driver expects the data returned as:
+// However, freax SPI-NAND driver expects the data returned as:
 // +------+-----+
 // | Page | OOB |
 // +------+-----+
@@ -45,7 +45,7 @@
 //
 // Write requests operates in a similar manner.
 // As a limitation of this strategy, we won't be able to access any ECC parity
-// data at all in Linux.
+// data at all in freax.
 //
 // Here's the bad block mark situation on MTK chips:
 // In older chips like mt7622, MTK uses the first FDM byte in the first sector
@@ -67,21 +67,21 @@
 //    [page_size - (nsectors - 1) * spare_size]
 // Similarly, when writing, we need to perform swaps in the other direction.
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/iopoll.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/nand-ecc-mtk.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/mtd/nand.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/iopoll.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/mtd/nand-ecc-mtk.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi-mem.h>
+#include <freax/mtd/nand.h>
 
 // NFI registers
 #define NFI_CNFG 0x000

@@ -8,19 +8,19 @@
  *  - Currently only 'Parallel-in -> CSI-out' mode is supported!
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/phy/phy-mipi-dphy.h>
-#include <linux/property.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/units.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/phy/phy-mipi-dphy.h>
+#include <freax/property.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/units.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-fwnode.h>

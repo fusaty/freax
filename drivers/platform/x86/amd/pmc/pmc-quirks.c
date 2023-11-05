@@ -8,9 +8,9 @@
  * Author: Mario Limonciello <mario.limonciello@amd.com>
  */
 
-#include <linux/dmi.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
+#include <freax/dmi.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
 
 #include "pmc.h"
 

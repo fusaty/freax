@@ -7,16 +7,16 @@
  *
  */
 /* #define DEBUG */
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/media-bus-format.h>
+#include <freax/module.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
 
 #include <asm/unaligned.h>
 

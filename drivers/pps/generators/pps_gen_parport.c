@@ -13,12 +13,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/hrtimer.h>
-#include <linux/parport.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/hrtimer.h>
+#include <freax/parport.h>
 
 #define SIGNAL		0
 #define NO_SIGNAL	PARPORT_CONTROL_STROBE

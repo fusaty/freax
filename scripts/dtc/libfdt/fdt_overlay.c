@@ -88,7 +88,7 @@ int fdt_overlay_target_offset(const void *fdt, const void *fdto,
  * overlay_phandle_add_offset - Increases a phandle by an offset
  * @fdt: Base device tree blob
  * @node: Device tree overlay blob
- * @name: Name of the property to modify (phandle or linux,phandle)
+ * @name: Name of the property to modify (phandle or freax,phandle)
  * @delta: offset to apply
  *
  * overlay_phandle_add_offset() increments a node phandle by a given
@@ -148,7 +148,7 @@ static int overlay_adjust_node_phandles(void *fdto, int node,
 	if (ret && ret != -FDT_ERR_NOTFOUND)
 		return ret;
 
-	ret = overlay_phandle_add_offset(fdto, node, "linux,phandle", delta);
+	ret = overlay_phandle_add_offset(fdto, node, "freax,phandle", delta);
 	if (ret && ret != -FDT_ERR_NOTFOUND)
 		return ret;
 

@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2013-2016, Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2016, freax Foundation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/time.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/interconnect.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/gpio/consumer.h>
-#include <linux/reset-controller.h>
-#include <linux/devfreq.h>
+#include <freax/acpi.h>
+#include <freax/time.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/interconnect.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/phy/phy.h>
+#include <freax/gpio/consumer.h>
+#include <freax/reset-controller.h>
+#include <freax/devfreq.h>
 
 #include <soc/qcom/ice.h>
 

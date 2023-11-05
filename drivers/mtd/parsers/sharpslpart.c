@@ -7,7 +7,7 @@
  * Based on SHARP GPL 2.4 sources:
  *   http://support.ezaurus.com/developer/source/source_dl.asp
  *     drivers/mtd/nand/sharp_sl_logical.c
- *     linux/include/asm-arm/sharp_nand_logical.h
+ *     freax/include/asm-arm/sharp_nand_logical.h
  *
  * Copyright (C) 2002 SHARP
  *
@@ -23,14 +23,14 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/sizes.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
+#include <freax/sizes.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
 
 /* oob structure */
 #define NAND_NOOB_LOGADDR_00		8

@@ -6,19 +6,19 @@
  *
  * Author: Stefan Agner <stefan@agner.ch>.
  */
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/irq.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/pinctrl/consumer.h>
 
 #define VF610_GPIO_PER_PORT		32
 

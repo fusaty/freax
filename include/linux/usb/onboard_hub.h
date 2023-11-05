@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef __LINUX_USB_ONBOARD_HUB_H
-#define __LINUX_USB_ONBOARD_HUB_H
+#ifndef __freax_USB_ONBOARD_HUB_H
+#define __freax_USB_ONBOARD_HUB_H
 
 struct usb_device;
 struct list_head;
@@ -15,4 +15,4 @@ static inline void onboard_hub_create_pdevs(struct usb_device *parent_hub,
 static inline void onboard_hub_destroy_pdevs(struct list_head *pdev_list) {}
 #endif
 
-#endif /* __LINUX_USB_ONBOARD_HUB_H */
+#endif /* __freax_USB_ONBOARD_HUB_H */

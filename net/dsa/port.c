@@ -2,15 +2,15 @@
 /*
  * Handling of a single switch port
  *
- * Copyright (c) 2017 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2017 Savoir-faire freax Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairefreax.com>
  */
 
-#include <linux/if_bridge.h>
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
+#include <freax/if_bridge.h>
+#include <freax/netdevice.h>
+#include <freax/notifier.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
 
 #include "dsa.h"
 #include "port.h"

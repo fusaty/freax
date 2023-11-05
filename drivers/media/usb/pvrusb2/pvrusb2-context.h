@@ -6,9 +6,9 @@
 #ifndef __PVRUSB2_CONTEXT_H
 #define __PVRUSB2_CONTEXT_H
 
-#include <linux/mutex.h>
-#include <linux/usb.h>
-#include <linux/workqueue.h>
+#include <freax/mutex.h>
+#include <freax/usb.h>
+#include <freax/workqueue.h>
 
 struct pvr2_hdw;     /* hardware interface - defined elsewhere */
 struct pvr2_stream;  /* stream interface - defined elsewhere */

@@ -6,19 +6,19 @@
  * Copyright (C) 2015 STMicroelectronics Pvt. Ltd. All rights reserved.
  */
 
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/nfc.h>
-#include <linux/of_gpio.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/wait.h>
+#include <freax/err.h>
+#include <freax/gpio.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/nfc.h>
+#include <freax/of_gpio.h>
+#include <freax/of.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/wait.h>
 #include <net/nfc/digital.h>
 #include <net/nfc/nfc.h>
 

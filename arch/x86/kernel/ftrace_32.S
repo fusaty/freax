@@ -3,8 +3,8 @@
  *  Copyright (C) 2017  Steven Rostedt, VMware Inc.
  */
 
-#include <linux/export.h>
-#include <linux/linkage.h>
+#include <freax/export.h>
+#include <freax/linkage.h>
 #include <asm/page_types.h>
 #include <asm/segment.h>
 #include <asm/ftrace.h>

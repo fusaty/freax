@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Equalizer Load-balancer for serial network interfaces.
  *
@@ -17,8 +17,8 @@
  *    Phone: 1-703-847-0040 ext 103
  */
 
-#ifndef _UAPI_LINUX_IF_EQL_H
-#define _UAPI_LINUX_IF_EQL_H
+#ifndef _UAPI_freax_IF_EQL_H
+#define _UAPI_freax_IF_EQL_H
 
 #define EQL_DEFAULT_SLAVE_PRIORITY 28800
 #define EQL_DEFAULT_MAX_SLAVES     4
@@ -52,4 +52,4 @@ typedef struct slaving_request {
 } slaving_request_t;
 
 
-#endif /* _UAPI_LINUX_IF_EQL_H */
+#endif /* _UAPI_freax_IF_EQL_H */

@@ -31,21 +31,21 @@
 #ifndef __DPAA_SYS_H
 #define __DPAA_SYS_H
 
-#include <linux/cpu.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/sched/signal.h>
-#include <linux/vmalloc.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/prefetch.h>
-#include <linux/genalloc.h>
+#include <freax/cpu.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/kthread.h>
+#include <freax/sched/signal.h>
+#include <freax/vmalloc.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/prefetch.h>
+#include <freax/genalloc.h>
 #include <asm/cacheflush.h>
-#include <linux/io.h>
-#include <linux/delay.h>
+#include <freax/io.h>
+#include <freax/delay.h>
 
 /* For 2-element tables related to cache-inhibited and cache-enabled mappings */
 #define DPAA_PORTAL_CE 0

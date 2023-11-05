@@ -10,7 +10,7 @@
 #ifndef RTRS_CLT_H
 #define RTRS_CLT_H
 
-#include <linux/device.h>
+#include <freax/device.h>
 #include "rtrs-pri.h"
 
 /**

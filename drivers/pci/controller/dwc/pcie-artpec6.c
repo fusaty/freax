@@ -7,18 +7,18 @@
  * Based on work done by Phil Edworthy <phil@edworthys.org>
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
-#include <linux/signal.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/resource.h>
+#include <freax/signal.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
 #include "pcie-designware.h"
 

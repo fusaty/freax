@@ -1,23 +1,23 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_COMPAT_H
-#define _LINUX_COMPAT_H
+#ifndef _freax_COMPAT_H
+#define _freax_COMPAT_H
 /*
  * These are the type definitions for the architecture specific
  * syscall compatibility layer.
  */
 
-#include <linux/types.h>
-#include <linux/time.h>
+#include <freax/types.h>
+#include <freax/time.h>
 
-#include <linux/stat.h>
-#include <linux/param.h>	/* for HZ */
-#include <linux/sem.h>
-#include <linux/socket.h>
-#include <linux/if.h>
-#include <linux/fs.h>
-#include <linux/aio_abi.h>	/* for aio_context_t */
-#include <linux/uaccess.h>
-#include <linux/unistd.h>
+#include <freax/stat.h>
+#include <freax/param.h>	/* for HZ */
+#include <freax/sem.h>
+#include <freax/socket.h>
+#include <freax/if.h>
+#include <freax/fs.h>
+#include <freax/aio_abi.h>	/* for aio_context_t */
+#include <freax/uaccess.h>
+#include <freax/unistd.h>
 
 #include <asm/compat.h>
 #include <asm/siginfo.h>
@@ -414,9 +414,9 @@ struct compat_keyctl_kdf_params {
 struct compat_stat;
 struct compat_statfs;
 struct compat_statfs64;
-struct compat_old_linux_dirent;
-struct compat_linux_dirent;
-struct linux_dirent64;
+struct compat_old_freax_dirent;
+struct compat_freax_dirent;
+struct freax_dirent64;
 struct compat_msghdr;
 struct compat_mmsghdr;
 struct compat_sysinfo;
@@ -613,7 +613,7 @@ asmlinkage long compat_sys_ftruncate(unsigned int, compat_ulong_t);
 asmlinkage long compat_sys_openat(int dfd, const char __user *filename,
 				  int flags, umode_t mode);
 asmlinkage long compat_sys_getdents(unsigned int fd,
-				    struct compat_linux_dirent __user *dirent,
+				    struct compat_freax_dirent __user *dirent,
 				    unsigned int count);
 asmlinkage long compat_sys_lseek(unsigned int, compat_off_t, unsigned int);
 /* No generic prototype for pread64 and pwrite64 */
@@ -833,7 +833,7 @@ asmlinkage long compat_sys_recv(int fd, void __user *buf, compat_size_t len,
 
 /* obsolete */
 asmlinkage long compat_sys_old_readdir(unsigned int fd,
-				       struct compat_old_linux_dirent __user *,
+				       struct compat_old_freax_dirent __user *,
 				       unsigned int count);
 
 /* obsolete */
@@ -984,4 +984,4 @@ static inline compat_uptr_t ptr_to_compat(void __user *uptr)
 	return (u32)(unsigned long)uptr;
 }
 
-#endif /* _LINUX_COMPAT_H */
+#endif /* _freax_COMPAT_H */

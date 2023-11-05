@@ -7,10 +7,10 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ptp_clock_kernel.h>
+#include <freax/acpi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/ptp_clock_kernel.h>
 #include <asm/hypervisor.h>
 #include <asm/vmware.h>
 

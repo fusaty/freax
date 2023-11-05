@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TOPOLOGY_H
-#define _LINUX_TOPOLOGY_H
+#ifndef _freax_TOPOLOGY_H
+#define _freax_TOPOLOGY_H
 
-#include <linux/cpumask.h>
+#include <freax/cpumask.h>
 
-#endif /* _LINUX_TOPOLOGY_H */
+#endif /* _freax_TOPOLOGY_H */

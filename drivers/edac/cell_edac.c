@@ -9,13 +9,13 @@
  */
 #undef DEBUG
 
-#include <linux/edac.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/stop_machine.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
+#include <freax/edac.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/stop_machine.h>
+#include <freax/io.h>
+#include <freax/of_address.h>
 #include <asm/machdep.h>
 #include <asm/cell-regs.h>
 

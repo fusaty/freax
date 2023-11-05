@@ -4,13 +4,13 @@
  *
  * Copyright (C) 2017 Intel Corporation
  *
- * Author: Lu Baolu <baolu.lu@linux.intel.com>
+ * Author: Lu Baolu <baolu.lu@freax.intel.com>
  */
-#ifndef __LINUX_XHCI_DBGCAP_H
-#define __LINUX_XHCI_DBGCAP_H
+#ifndef __freax_XHCI_DBGCAP_H
+#define __freax_XHCI_DBGCAP_H
 
-#include <linux/tty.h>
-#include <linux/kfifo.h>
+#include <freax/tty.h>
+#include <freax/kfifo.h>
 
 struct dbc_regs {
 	__le32	capability;
@@ -48,8 +48,8 @@ struct dbc_info_context {
 
 #define DBC_MAX_PACKET			1024
 #define DBC_MAX_STRING_LENGTH		64
-#define DBC_STRING_MANUFACTURER		"Linux Foundation"
-#define DBC_STRING_PRODUCT		"Linux USB Debug Target"
+#define DBC_STRING_MANUFACTURER		"freax Foundation"
+#define DBC_STRING_PRODUCT		"freax USB Debug Target"
 #define DBC_STRING_SERIAL		"0001"
 #define	DBC_CONTEXT_SIZE		64
 
@@ -71,7 +71,7 @@ struct dbc_str_descs {
 };
 
 #define DBC_PROTOCOL			1	/* GNU Remote Debug Command */
-#define DBC_VENDOR_ID			0x1d6b	/* Linux Foundation 0x1d6b */
+#define DBC_VENDOR_ID			0x1d6b	/* freax Foundation 0x1d6b */
 #define DBC_PRODUCT_ID			0x0010	/* device 0010 */
 #define DBC_DEVICE_REV			0x0010	/* 0.10 */
 
@@ -245,4 +245,4 @@ static inline int xhci_dbc_resume(struct xhci_hcd *xhci)
 	return 0;
 }
 #endif /* CONFIG_USB_XHCI_DBGCAP */
-#endif /* __LINUX_XHCI_DBGCAP_H */
+#endif /* __freax_XHCI_DBGCAP_H */

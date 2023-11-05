@@ -5,11 +5,11 @@
  * Copyright (c) 2021 Liam Beguin <liambeguin@gmail.com>
  */
 
-#include <linux/gcd.h>
-#include <linux/overflow.h>
+#include <freax/gcd.h>
+#include <freax/overflow.h>
 
-#include <linux/iio/afe/rescale.h>
-#include <linux/iio/iio.h>
+#include <freax/iio/afe/rescale.h>
+#include <freax/iio/iio.h>
 
 #include <kunit/test.h>
 

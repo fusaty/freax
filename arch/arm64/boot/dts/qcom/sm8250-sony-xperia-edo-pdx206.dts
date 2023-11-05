@@ -24,10 +24,10 @@
 
 	g-assist-key {
 		label = "Google Assistant Key";
-		linux,code = <KEY_LEFTMETA>;
+		freax,code = <KEY_LEFTMETA>;
 		gpios = <&pm8150_gpios 6 GPIO_ACTIVE_LOW>;
 		debounce-interval = <15>;
-		linux,can-disable;
+		freax,can-disable;
 		wakeup-source;
 	};
 };

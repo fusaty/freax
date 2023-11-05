@@ -4,28 +4,28 @@
  *
  *  Copyright (C) 2001, 2002 Andy Grover <andrew.grover@intel.com>
  *  Copyright (C) 2001, 2002 Paul Diefenbaugh <paul.s.diefenbaugh@intel.com>
- *  Copyright (C) 2002 - 2004 Dominik Brodowski <linux@brodo.de>
+ *  Copyright (C) 2002 - 2004 Dominik Brodowski <freax@brodo.de>
  *  Copyright (C) 2006       Denis Sadykov <denis.m.sadykov@intel.com>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/sched.h>
-#include <linux/cpufreq.h>
-#include <linux/compiler.h>
-#include <linux/dmi.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/sched.h>
+#include <freax/cpufreq.h>
+#include <freax/compiler.h>
+#include <freax/dmi.h>
+#include <freax/slab.h>
+#include <freax/string_helpers.h>
+#include <freax/platform_device.h>
 
-#include <linux/acpi.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
+#include <freax/acpi.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/uaccess.h>
 
 #include <acpi/processor.h>
 #include <acpi/cppc_acpi.h>

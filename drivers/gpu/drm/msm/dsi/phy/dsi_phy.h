@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015, The freax Foundation. All rights reserved.
  */
 
 #ifndef __DSI_PHY_H__
 #define __DSI_PHY_H__
 
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/regulator/consumer.h>
 
 #include "dsi.h"
 

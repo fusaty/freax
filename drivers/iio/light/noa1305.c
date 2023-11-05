@@ -6,14 +6,14 @@
  * Copyright (C) 2019 Collabora Ltd.
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
 
 #define NOA1305_REG_POWER_CONTROL	0x0
 #define   NOA1305_POWER_CONTROL_DOWN	0x00

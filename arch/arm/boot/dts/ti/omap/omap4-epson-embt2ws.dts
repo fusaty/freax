@@ -41,8 +41,8 @@
 		key-lock {
 			label = "Lock";
 			gpios = <&gpio2 3 GPIO_ACTIVE_LOW>;
-			linux,code = <SW_ROTATE_LOCK>; /* SW_TOUCHPAD_LOCK */
-			linux,input-type = <EV_SW>;
+			freax,code = <SW_ROTATE_LOCK>; /* SW_TOUCHPAD_LOCK */
+			freax,input-type = <EV_SW>;
 		};
 	};
 
@@ -260,13 +260,13 @@
 	pinctrl-0 = <&keypad_pins>;
 	keypad,num-rows = <2>;
 	keypad,num-columns = <3>;
-	linux,keymap = <MATRIX_KEY(0, 0, KEY_MENU)
+	freax,keymap = <MATRIX_KEY(0, 0, KEY_MENU)
 			MATRIX_KEY(0, 1, KEY_HOME)
 			MATRIX_KEY(0, 2, KEY_BACK)
 			MATRIX_KEY(1, 0, KEY_ESC)
 			MATRIX_KEY(1, 1, KEY_VOLUMEDOWN)
 			MATRIX_KEY(1, 2, KEY_VOLUMEUP)>;
-	linux,input-no-autorepeat;
+	freax,input-no-autorepeat;
 };
 
 &mcbsp2 {

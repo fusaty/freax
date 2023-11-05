@@ -7,7 +7,7 @@
 #ifndef __TIDSS_IRQ_H__
 #define __TIDSS_IRQ_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "tidss_drv.h"
 

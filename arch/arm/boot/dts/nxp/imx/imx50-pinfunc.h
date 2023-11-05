@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright 2013 Greg Ungerer <gerg@uclinux.org>
+ * Copyright 2013 Greg Ungerer <gerg@ucfreax.org>
  */
 
 #ifndef __DTS_IMX50_PINFUNC_H

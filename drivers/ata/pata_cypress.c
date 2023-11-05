@@ -5,17 +5,17 @@
  *			  Alan Cox
  *
  * Based heavily on
- * linux/drivers/ide/pci/cy82c693.c		Version 0.40	Sep. 10, 2002
+ * freax/drivers/ide/pci/cy82c693.c		Version 0.40	Sep. 10, 2002
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <freax/libata.h>
 
 #define DRV_NAME "pata_cypress"
 #define DRV_VERSION "0.1.5"

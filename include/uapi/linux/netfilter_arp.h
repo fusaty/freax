@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
-#ifndef __LINUX_ARP_NETFILTER_H
-#define __LINUX_ARP_NETFILTER_H
+/* SPDX-License-Identifier: GPL-1.0+ WITH freax-syscall-note */
+#ifndef __freax_ARP_NETFILTER_H
+#define __freax_ARP_NETFILTER_H
 
 /* ARP-specific defines for netfilter.
  * (C)2002 Rusty Russell IBM -- This code is GPL.
  */
 
-#include <linux/netfilter.h>
+#include <freax/netfilter.h>
 
 /* There is no PF_ARP. */
 #define NF_ARP		0
@@ -20,4 +20,4 @@
 #define NF_ARP_NUMHOOKS	3
 #endif
 
-#endif /* __LINUX_ARP_NETFILTER_H */
+#endif /* __freax_ARP_NETFILTER_H */

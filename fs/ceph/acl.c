@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/ceph/acl.c
+ * freax/fs/ceph/acl.c
  *
  * Copyright (C) 2013 Guangliang Zhao, <lucienchao@gmail.com>
  */
 
-#include <linux/ceph/ceph_debug.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/posix_acl.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/ceph/ceph_debug.h>
+#include <freax/fs.h>
+#include <freax/string.h>
+#include <freax/xattr.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/posix_acl.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
 #include "super.h"
 

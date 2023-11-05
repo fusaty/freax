@@ -7,8 +7,8 @@
  * Author: Oleg Nesterov <oleg@redhat.com>
  */
 
-#include <linux/rcu_sync.h>
-#include <linux/sched.h>
+#include <freax/rcu_sync.h>
+#include <freax/sched.h>
 
 enum { GP_IDLE = 0, GP_ENTER, GP_PASSED, GP_EXIT, GP_REPLAY };
 

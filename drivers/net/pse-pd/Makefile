@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-only
-# Makefile for Linux PSE drivers
+# Makefile for freax PSE drivers
 
 obj-$(CONFIG_PSE_CONTROLLER) += pse_core.o
 

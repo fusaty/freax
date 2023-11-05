@@ -6,14 +6,14 @@
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM avc
 
-#if !defined(_TRACE_SELINUX_H) || defined(TRACE_HEADER_MULTI_READ)
-#define _TRACE_SELINUX_H
+#if !defined(_TRACE_SEfreax_H) || defined(TRACE_HEADER_MULTI_READ)
+#define _TRACE_SEfreax_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
-TRACE_EVENT(selinux_audited,
+TRACE_EVENT(sefreax_audited,
 
-	TP_PROTO(struct selinux_audit_data *sad,
+	TP_PROTO(struct sefreax_audit_data *sad,
 		char *scontext,
 		char *tcontext,
 		const char *tclass

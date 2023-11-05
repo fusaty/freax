@@ -6,14 +6,14 @@
  *
  * Copyright (C) 2018 Stefan Wahren <stefan.wahren@i2se.com>
  */
-#include <linux/device.h>
-#include <linux/devm-helpers.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/devm-helpers.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 #include <soc/bcm2835/raspberrypi-firmware.h>
 
 #define UNDERVOLTAGE_STICKY_BIT	BIT(16)

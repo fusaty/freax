@@ -4,10 +4,10 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/acpi.h>
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/wmi.h>
+#include <freax/acpi.h>
+#include <freax/hwmon.h>
+#include <freax/module.h>
+#include <freax/wmi.h>
 
 #define GIGABYTE_WMI_GUID	"DEADBEEF-2001-0000-00A0-C90629100000"
 #define NUM_TEMPERATURE_SENSORS	6

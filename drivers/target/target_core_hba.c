@@ -10,13 +10,13 @@
  *
  ******************************************************************************/
 
-#include <linux/net.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/in.h>
-#include <linux/module.h>
+#include <freax/net.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/in.h>
+#include <freax/module.h>
 #include <net/sock.h>
 #include <net/tcp.h>
 

@@ -5,13 +5,13 @@
  *  Copyright (c) 2002 Vojtech Pavlik
  *  Copyright (c) 2002, 2006, 2008 David S. Miller (davem@davemloft.net)
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include <asm/io.h>
 

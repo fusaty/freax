@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_KCONFIG_H
-#define _TOOLS_LINUX_KCONFIG_H
+#ifndef _TOOLS_freax_KCONFIG_H
+#define _TOOLS_freax_KCONFIG_H
 
 /* CONFIG_CC_VERSION_TEXT (Do not delete this comment. See help in Kconfig) */
 
@@ -64,4 +64,4 @@
  */
 #define IS_ENABLED(option) __or(IS_BUILTIN(option), IS_MODULE(option))
 
-#endif /* _TOOLS_LINUX_KCONFIG_H */
+#endif /* _TOOLS_freax_KCONFIG_H */

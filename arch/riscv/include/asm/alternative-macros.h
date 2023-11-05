@@ -56,7 +56,7 @@
 #else /* !__ASSEMBLY__ */
 
 #include <asm/asm.h>
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 
 #define ALT_ENTRY(oldptr, newptr, vendor_id, patch_id, newlen)		\
 	".4byte	((" oldptr ") - .) \n"					\

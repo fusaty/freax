@@ -18,9 +18,9 @@
  * | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - |
  *   | | [ ]                       [ ] [      thresh_cmp     ]   [  thresh_ctl   ]
  *   | |  |                         |                                     |
- *   | |  *- IFM (Linux)            |	               thresh start/stop -*
- *   | *- BHRB (Linux)              *sm
- *   *- EBB (Linux)
+ *   | |  *- IFM (freax)            |	               thresh start/stop -*
+ *   | *- BHRB (freax)              *sm
+ *   *- EBB (freax)
  *
  *        28        24        20        16        12         8         4         0
  * | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - | - - - - |

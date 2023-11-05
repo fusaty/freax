@@ -9,8 +9,8 @@
 #include "../browser.h"
 #include "../libslang.h"
 #include "config.h"
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
 #include <stdlib.h>
 
 #define SCRIPT_NAMELEN	128

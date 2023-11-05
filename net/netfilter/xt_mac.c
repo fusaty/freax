@@ -5,16 +5,16 @@
  * (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/if_ether.h>
+#include <freax/etherdevice.h>
 
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/xt_mac.h>
-#include <linux/netfilter/x_tables.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netfilter/xt_mac.h>
+#include <freax/netfilter/x_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Netfilter Core Team <coreteam@netfilter.org>");

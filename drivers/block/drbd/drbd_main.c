@@ -16,32 +16,32 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/drbd.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/jiffies.h>
+#include <freax/drbd.h>
+#include <freax/uaccess.h>
 #include <asm/types.h>
 #include <net/sock.h>
-#include <linux/ctype.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/reboot.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/workqueue.h>
-#include <linux/unistd.h>
-#include <linux/vmalloc.h>
-#include <linux/sched/signal.h>
+#include <freax/ctype.h>
+#include <freax/mutex.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/proc_fs.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/memcontrol.h>
+#include <freax/mm_inline.h>
+#include <freax/slab.h>
+#include <freax/random.h>
+#include <freax/reboot.h>
+#include <freax/notifier.h>
+#include <freax/kthread.h>
+#include <freax/workqueue.h>
+#include <freax/unistd.h>
+#include <freax/vmalloc.h>
+#include <freax/sched/signal.h>
 
-#include <linux/drbd_limits.h>
+#include <freax/drbd_limits.h>
 #include "drbd_int.h"
 #include "drbd_protocol.h"
 #include "drbd_req.h" /* only for _req_mod in tl_release and tl_clear */
@@ -63,7 +63,7 @@ MODULE_PARM_DESC(minor_count, "Approximate number of drbd devices ("
 		 __stringify(DRBD_MINOR_COUNT_MIN) "-" __stringify(DRBD_MINOR_COUNT_MAX) ")");
 MODULE_ALIAS_BLOCKDEV_MAJOR(DRBD_MAJOR);
 
-#include <linux/moduleparam.h>
+#include <freax/moduleparam.h>
 /* thanks to these macros, if compiled into the kernel (not-module),
  * these become boot parameters (e.g., drbd.minor_count) */
 

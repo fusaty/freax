@@ -8,15 +8,15 @@
  *	Andi Kleen / Andreas Herrmann	: CPUID4 emulation on AMD.
  */
 
-#include <linux/slab.h>
-#include <linux/cacheinfo.h>
-#include <linux/cpu.h>
-#include <linux/cpuhotplug.h>
-#include <linux/sched.h>
-#include <linux/capability.h>
-#include <linux/sysfs.h>
-#include <linux/pci.h>
-#include <linux/stop_machine.h>
+#include <freax/slab.h>
+#include <freax/cacheinfo.h>
+#include <freax/cpu.h>
+#include <freax/cpuhotplug.h>
+#include <freax/sched.h>
+#include <freax/capability.h>
+#include <freax/sysfs.h>
+#include <freax/pci.h>
+#include <freax/stop_machine.h>
 
 #include <asm/cpufeature.h>
 #include <asm/cacheinfo.h>

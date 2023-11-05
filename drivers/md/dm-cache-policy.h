@@ -10,7 +10,7 @@
 
 #include "dm-cache-block-types.h"
 
-#include <linux/device-mapper.h>
+#include <freax/device-mapper.h>
 
 /*----------------------------------------------------------------*/
 

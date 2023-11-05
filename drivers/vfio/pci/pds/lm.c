@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright(c) 2023 Advanced Micro Devices, Inc. */
 
-#include <linux/anon_inodes.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/vfio.h>
-#include <linux/vfio_pci_core.h>
+#include <freax/anon_inodes.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/highmem.h>
+#include <freax/vfio.h>
+#include <freax/vfio_pci_core.h>
 
 #include "vfio_dev.h"
 #include "cmds.h"

@@ -27,27 +27,27 @@
 /* End of FZA configurable parameters.  No need to change anything below.    */
 /* ------------------------------------------------------------------------- */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/fddidevice.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/tc.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/wait.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/fddidevice.h>
+#include <freax/sched.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/stat.h>
+#include <freax/tc.h>
+#include <freax/timer.h>
+#include <freax/types.h>
+#include <freax/wait.h>
 
 #include <asm/barrier.h>
 

@@ -7,18 +7,18 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/gpio/legacy-of-mm-gpiochip.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/property.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/gpio/legacy-of-mm-gpiochip.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/driver.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/property.h>
 
 #include <soc/fsl/qe/qe.h>
 

@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/mmc/core/mmc_ops.h
+ *  freax/drivers/mmc/core/mmc_ops.h
  *
  *  Copyright 2006-2007 Pierre Ossman
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/types.h>
+#include <freax/scatterlist.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/mmc.h>
 
 #include "core.h"
 #include "card.h"

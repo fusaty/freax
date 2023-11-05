@@ -3,14 +3,14 @@
  * Copyright(c) 2015-2018 Intel Corporation.
  */
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ratelimit.h>
-#include <linux/fault-inject.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/ratelimit.h>
+#include <freax/fault-inject.h>
 
 #include "hfi.h"
 #include "trace.h"

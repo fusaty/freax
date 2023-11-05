@@ -7,21 +7,21 @@
  * Copyright 2019-2022 Broadcom Ltd
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/pm_runtime.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/spi/spi.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/spi/spi-mem.h>
+#include <freax/pm_runtime.h>
 
 #define HSSPI_GLOBAL_CTRL_REG			0x0
 #define GLOBAL_CTRL_CS_POLARITY_SHIFT		0

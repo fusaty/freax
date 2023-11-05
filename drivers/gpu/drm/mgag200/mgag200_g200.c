@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
+#include <freax/pci.h>
+#include <freax/vmalloc.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

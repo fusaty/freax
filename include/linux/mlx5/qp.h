@@ -33,8 +33,8 @@
 #ifndef MLX5_QP_H
 #define MLX5_QP_H
 
-#include <linux/mlx5/device.h>
-#include <linux/mlx5/driver.h>
+#include <freax/mlx5/device.h>
+#include <freax/mlx5/driver.h>
 
 #define MLX5_TERMINATE_SCATTER_LIST_LKEY cpu_to_be32(0x100)
 /* UMR (3 WQE_BB's) + SIG (3 WQE_BB's) + PSV (mem) + PSV (wire) */

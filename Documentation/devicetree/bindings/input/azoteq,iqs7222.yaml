@@ -252,10 +252,10 @@ properties:
         $ref: input.yaml#
         description:
           Represents a press or gesture event reported by the trackpad. Specify
-          'linux,code' under the press event to report absolute coordinates.
+          'freax,code' under the press event to report absolute coordinates.
 
         properties:
-          linux,code: true
+          freax,code: true
 
           azoteq,gesture-angle-tighten:
             type: boolean
@@ -615,9 +615,9 @@ patternProperties:
               The IQS7222B does not feature channel-specific timeouts; the time-
               out specified for any one channel applies to all channels.
 
-          linux,code: true
+          freax,code: true
 
-          linux,input-type:
+          freax,input-type:
             enum: [1, 5]
             default: 1
             description:
@@ -705,7 +705,7 @@ patternProperties:
           channels instead of their corresponding touch states. Note the slider
           cannot report granular coordinates during a state of proximity.
 
-      linux,axis:
+      freax,axis:
         $ref: /schemas/types.yaml#/definitions/uint32
         description:
           Specifies the absolute axis to which coordinates are mapped. Specify
@@ -720,7 +720,7 @@ patternProperties:
           the slider.
 
         properties:
-          linux,code: true
+          freax,code: true
 
           azoteq,gesture-max-ms:
             multipleOf: 16
@@ -1058,7 +1058,7 @@ examples:
                             azoteq,ati-mode = <5>;
 
                             event-touch {
-                                    linux,code = <KEY_MUTE>;
+                                    freax,code = <KEY_MUTE>;
                             };
                     };
 
@@ -1071,7 +1071,7 @@ examples:
                             azoteq,ati-mode = <5>;
 
                             event-touch {
-                                    linux,code = <KEY_VOLUMEDOWN>;
+                                    freax,code = <KEY_VOLUMEDOWN>;
                             };
                     };
 
@@ -1084,7 +1084,7 @@ examples:
                             azoteq,ati-mode = <5>;
 
                             event-touch {
-                                    linux,code = <KEY_VOLUMEUP>;
+                                    freax,code = <KEY_VOLUMEUP>;
                             };
                     };
 
@@ -1097,7 +1097,7 @@ examples:
                             azoteq,ati-mode = <5>;
 
                             event-touch {
-                                    linux,code = <KEY_POWER>;
+                                    freax,code = <KEY_POWER>;
                             };
                     };
 
@@ -1107,8 +1107,8 @@ examples:
                             azoteq,ati-base = <112>;
 
                             event-touch {
-                                    linux,code = <SW_LID>;
-                                    linux,input-type = <EV_SW>;
+                                    freax,code = <SW_LID>;
+                                    freax,input-type = <EV_SW>;
                             };
                     };
 
@@ -1127,19 +1127,19 @@ examples:
                             azoteq,bottom-beta = <3>;
 
                             event-tap {
-                                    linux,code = <KEY_PLAYPAUSE>;
+                                    freax,code = <KEY_PLAYPAUSE>;
                                     azoteq,gesture-max-ms = <400>;
                                     azoteq,gesture-min-ms = <32>;
                             };
 
                             event-flick-pos {
-                                    linux,code = <KEY_NEXTSONG>;
+                                    freax,code = <KEY_NEXTSONG>;
                                     azoteq,gesture-max-ms = <800>;
                                     azoteq,gesture-dist = <800>;
                             };
 
                             event-flick-neg {
-                                    linux,code = <KEY_PREVIOUSSONG>;
+                                    freax,code = <KEY_PREVIOUSSONG>;
                             };
                     };
             };

@@ -3,16 +3,16 @@
 #ifndef __CROS_EC_TYPEC__
 #define __CROS_EC_TYPEC__
 
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/usb/pd.h>
-#include <linux/usb/role.h>
-#include <linux/usb/typec.h>
-#include <linux/usb/typec_altmode.h>
-#include <linux/usb/typec_mux.h>
-#include <linux/usb/typec_retimer.h>
-#include <linux/workqueue.h>
+#include <freax/list.h>
+#include <freax/notifier.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/usb/pd.h>
+#include <freax/usb/role.h>
+#include <freax/usb/typec.h>
+#include <freax/usb/typec_altmode.h>
+#include <freax/usb/typec_mux.h>
+#include <freax/usb/typec_retimer.h>
+#include <freax/workqueue.h>
 
 /* Supported alt modes. */
 enum {

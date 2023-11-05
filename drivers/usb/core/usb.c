@@ -23,27 +23,27 @@
  * with no callbacks.  Callbacks are evil.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/of.h>
-#include <linux/string.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/errno.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/usb/of.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/of.h>
+#include <freax/string.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
+#include <freax/kmod.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/errno.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
+#include <freax/debugfs.h>
+#include <freax/usb/of.h>
 
 #include <asm/io.h>
-#include <linux/scatterlist.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
+#include <freax/scatterlist.h>
+#include <freax/mm.h>
+#include <freax/dma-mapping.h>
 
 #include "hub.h"
 

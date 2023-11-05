@@ -3,27 +3,27 @@
  * Copyright © 1999-2010 David Woodhouse <dwmw2@infradead.org>
  */
 
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/mutex.h>
-#include <linux/backing-dev.h>
-#include <linux/compat.h>
-#include <linux/mount.h>
-#include <linux/blkpg.h>
-#include <linux/magic.h>
-#include <linux/major.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/map.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/mutex.h>
+#include <freax/backing-dev.h>
+#include <freax/compat.h>
+#include <freax/mount.h>
+#include <freax/blkpg.h>
+#include <freax/magic.h>
+#include <freax/major.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/map.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "mtdcore.h"
 

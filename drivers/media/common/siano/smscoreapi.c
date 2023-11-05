@@ -11,17 +11,17 @@
 
 #include "smscoreapi.h"
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
-#include <linux/firmware.h>
-#include <linux/wait.h>
+#include <freax/firmware.h>
+#include <freax/wait.h>
 #include <asm/byteorder.h>
 
 #include "sms-cards.h"

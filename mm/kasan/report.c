@@ -10,23 +10,23 @@
  */
 
 #include <kunit/test.h>
-#include <linux/bitops.h>
-#include <linux/ftrace.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/lockdep.h>
-#include <linux/mm.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/stackdepot.h>
-#include <linux/stacktrace.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/kasan.h>
-#include <linux/module.h>
-#include <linux/sched/task_stack.h>
-#include <linux/uaccess.h>
+#include <freax/bitops.h>
+#include <freax/ftrace.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/lockdep.h>
+#include <freax/mm.h>
+#include <freax/printk.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/stackdepot.h>
+#include <freax/stacktrace.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/kasan.h>
+#include <freax/module.h>
+#include <freax/sched/task_stack.h>
+#include <freax/uaccess.h>
 #include <trace/events/error_report.h>
 
 #include <asm/sections.h>

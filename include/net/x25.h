@@ -10,9 +10,9 @@
 
 #ifndef _X25_H
 #define _X25_H 
-#include <linux/x25.h>
-#include <linux/slab.h>
-#include <linux/refcount.h>
+#include <freax/x25.h>
+#include <freax/slab.h>
+#include <freax/refcount.h>
 #include <net/sock.h>
 
 #define	X25_ADDR_LEN			16

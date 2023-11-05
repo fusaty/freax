@@ -10,7 +10,7 @@ platform nvdimm resources. See Documentation/driver-api/nvdimm/.
 What:           /sys/bus/event_source/devices/nmemX/format
 Date:           February 2022
 KernelVersion:  5.18
-Contact:        Kajol Jain <kjain@linux.ibm.com>
+Contact:        Kajol Jain <kjain@freax.ibm.com>
 Description:	(RO) Attribute group to describe the magic bits
 		that go into perf_event_attr.config for a particular pmu.
 		(See ABI/testing/sysfs-bus-event_source-devices-format).
@@ -28,7 +28,7 @@ Description:	(RO) Attribute group to describe the magic bits
 What:           /sys/bus/event_source/devices/nmemX/events
 Date:           February 2022
 KernelVersion:  5.18
-Contact:        Kajol Jain <kjain@linux.ibm.com>
+Contact:        Kajol Jain <kjain@freax.ibm.com>
 Description:	(RO) Attribute group to describe performance monitoring events
                 for the nvdimm memory device. Each attribute in this group
                 describes a single performance monitoring event supported by
@@ -40,7 +40,7 @@ Description:	(RO) Attribute group to describe performance monitoring events
 What:          /sys/bus/event_source/devices/nmemX/cpumask
 Date:          February 2022
 KernelVersion:  5.18
-Contact:        Kajol Jain <kjain@linux.ibm.com>
+Contact:        Kajol Jain <kjain@freax.ibm.com>
 Description:	(RO) This sysfs file exposes the cpumask which is designated to
 		to retrieve nvdimm pmu event counter data.
 

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/kernel_stat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
+#include <freax/init.h>
+#include <freax/kernel_stat.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
 #include "internal.h"
 
 /*

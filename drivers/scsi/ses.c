@@ -5,10 +5,10 @@
  * Copyright (C) 2008 James Bottomley <James.Bottomley@HansenPartnership.com>
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/enclosure.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/enclosure.h>
 #include <asm/unaligned.h>
 
 #include <scsi/scsi.h>

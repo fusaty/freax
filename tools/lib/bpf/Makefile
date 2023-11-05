@@ -51,7 +51,7 @@ export DESTDIR DESTDIR_SQ
 
 include $(srctree)/tools/scripts/Makefile.include
 
-# copy a bit from Linux kbuild
+# copy a bit from freax kbuild
 
 ifeq ("$(origin V)", "command line")
   VERBOSE = $(V)
@@ -142,23 +142,23 @@ all: fixdep
 all_cmd: $(CMD_TARGETS) check
 
 $(BPF_IN_SHARED): force $(BPF_GENERATED)
-	@(test -f ../../include/uapi/linux/bpf.h -a -f ../../../include/uapi/linux/bpf.h && ( \
-	(diff -B ../../include/uapi/linux/bpf.h ../../../include/uapi/linux/bpf.h >/dev/null) || \
-	echo "Warning: Kernel ABI header at 'tools/include/uapi/linux/bpf.h' differs from latest version at 'include/uapi/linux/bpf.h'" >&2 )) || true
-	@(test -f ../../include/uapi/linux/bpf_common.h -a -f ../../../include/uapi/linux/bpf_common.h && ( \
-	(diff -B ../../include/uapi/linux/bpf_common.h ../../../include/uapi/linux/bpf_common.h >/dev/null) || \
-	echo "Warning: Kernel ABI header at 'tools/include/uapi/linux/bpf_common.h' differs from latest version at 'include/uapi/linux/bpf_common.h'" >&2 )) || true
-	@(test -f ../../include/uapi/linux/if_xdp.h -a -f ../../../include/uapi/linux/if_xdp.h && ( \
-	(diff -B ../../include/uapi/linux/if_xdp.h ../../../include/uapi/linux/if_xdp.h >/dev/null) || \
-	echo "Warning: Kernel ABI header at 'tools/include/uapi/linux/if_xdp.h' differs from latest version at 'include/uapi/linux/if_xdp.h'" >&2 )) || true
+	@(test -f ../../include/uapi/freax/bpf.h -a -f ../../../include/uapi/freax/bpf.h && ( \
+	(diff -B ../../include/uapi/freax/bpf.h ../../../include/uapi/freax/bpf.h >/dev/null) || \
+	echo "Warning: Kernel ABI header at 'tools/include/uapi/freax/bpf.h' differs from latest version at 'include/uapi/freax/bpf.h'" >&2 )) || true
+	@(test -f ../../include/uapi/freax/bpf_common.h -a -f ../../../include/uapi/freax/bpf_common.h && ( \
+	(diff -B ../../include/uapi/freax/bpf_common.h ../../../include/uapi/freax/bpf_common.h >/dev/null) || \
+	echo "Warning: Kernel ABI header at 'tools/include/uapi/freax/bpf_common.h' differs from latest version at 'include/uapi/freax/bpf_common.h'" >&2 )) || true
+	@(test -f ../../include/uapi/freax/if_xdp.h -a -f ../../../include/uapi/freax/if_xdp.h && ( \
+	(diff -B ../../include/uapi/freax/if_xdp.h ../../../include/uapi/freax/if_xdp.h >/dev/null) || \
+	echo "Warning: Kernel ABI header at 'tools/include/uapi/freax/if_xdp.h' differs from latest version at 'include/uapi/freax/if_xdp.h'" >&2 )) || true
 	$(Q)$(MAKE) $(build)=libbpf OUTPUT=$(SHARED_OBJDIR) CFLAGS="$(CFLAGS) $(SHLIB_FLAGS)"
 
 $(BPF_IN_STATIC): force $(BPF_GENERATED)
 	$(Q)$(MAKE) $(build)=libbpf OUTPUT=$(STATIC_OBJDIR)
 
-$(BPF_HELPER_DEFS): $(srctree)/tools/include/uapi/linux/bpf.h
+$(BPF_HELPER_DEFS): $(srctree)/tools/include/uapi/freax/bpf.h
 	$(QUIET_GEN)$(srctree)/scripts/bpf_doc.py --header \
-		--file $(srctree)/tools/include/uapi/linux/bpf.h > $(BPF_HELPER_DEFS)
+		--file $(srctree)/tools/include/uapi/freax/bpf.h > $(BPF_HELPER_DEFS)
 
 $(OUTPUT)libbpf.so: $(OUTPUT)libbpf.so.$(LIBBPF_VERSION)
 

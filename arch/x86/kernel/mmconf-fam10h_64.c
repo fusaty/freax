@@ -3,15 +3,15 @@
  * AMD Family 10h mmconfig enablement
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/pci.h>
-#include <linux/dmi.h>
-#include <linux/range.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/pci.h>
+#include <freax/dmi.h>
+#include <freax/range.h>
 
 #include <asm/pci-direct.h>
-#include <linux/sort.h>
+#include <freax/sort.h>
 #include <asm/io.h>
 #include <asm/msr.h>
 #include <asm/acpi.h>

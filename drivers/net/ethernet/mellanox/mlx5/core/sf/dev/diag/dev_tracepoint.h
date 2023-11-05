@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2021, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
 #undef TRACE_SYSTEM
@@ -7,8 +7,8 @@
 #if !defined(_MLX5_SF_DEV_TP_) || defined(TRACE_HEADER_MULTI_READ)
 #define _MLX5_SF_DEV_TP_
 
-#include <linux/tracepoint.h>
-#include <linux/mlx5/driver.h>
+#include <freax/tracepoint.h>
+#include <freax/mlx5/driver.h>
 #include "../../dev/dev.h"
 
 DECLARE_EVENT_CLASS(mlx5_sf_dev_template,

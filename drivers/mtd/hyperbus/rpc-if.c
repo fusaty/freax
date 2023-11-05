@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Linux driver for RPC-IF HyperFlash
+ * freax driver for RPC-IF HyperFlash
  *
  * Copyright (C) 2019-2020 Cogent Embedded, Inc.
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtd/hyperbus.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mux/consumer.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mtd/hyperbus.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mux/consumer.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
 
 #include <memory/renesas-rpc-if.h>
 

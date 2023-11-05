@@ -39,7 +39,7 @@
 
 /* A "hypercall" is an "sc 1" instruction.  This header file provides C
  * wrapper functions for the ePAPR hypervisor interface.  It is inteded
- * for use by Linux device drivers and other operating systems.
+ * for use by freax device drivers and other operating systems.
  *
  * The hypercalls are implemented as inline assembly, rather than assembly
  * language functions in a .S file, for optimization.  It allows
@@ -53,8 +53,8 @@
 #include <uapi/asm/epapr_hcalls.h>
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <freax/types.h>
+#include <freax/errno.h>
 #include <asm/byteorder.h>
 
 /*

@@ -2,7 +2,7 @@
 #ifndef COMPONENT_H
 #define COMPONENT_H
 
-#include <linux/stddef.h>
+#include <freax/stddef.h>
 
 
 struct device;

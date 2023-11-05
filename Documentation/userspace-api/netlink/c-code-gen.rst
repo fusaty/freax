@@ -103,5 +103,5 @@ with the ``c-define-name`` property.
 Code generation
 ===============
 
-uAPI header is assumed to come from ``<linux/$family.h>`` in the default header
+uAPI header is assumed to come from ``<freax/$family.h>`` in the default header
 search path. It can be changed using the ``uapi-header`` global property.

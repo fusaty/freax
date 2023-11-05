@@ -35,7 +35,7 @@ cflags-$(CONFIG_EFI_PARAMS_FROM_FDT)	+= -I$(srctree)/scripts/dtc/libfdt
 
 KBUILD_CFLAGS			:= $(subst $(CC_FLAGS_FTRACE),,$(cflags-y)) \
 				   -Os -DDISABLE_BRANCH_PROFILING \
-				   -include $(srctree)/include/linux/hidden.h \
+				   -include $(srctree)/include/freax/hidden.h \
 				   -D__NO_FORTIFY \
 				   -ffreestanding \
 				   -fno-stack-protector \
@@ -43,7 +43,7 @@ KBUILD_CFLAGS			:= $(subst $(CC_FLAGS_FTRACE),,$(cflags-y)) \
 				   -D__DISABLE_EXPORTS
 
 #
-# struct randomization only makes sense for Linux internal types, which the EFI
+# struct randomization only makes sense for freax internal types, which the EFI
 # stub code never touches, so let's turn off struct randomization for the stub
 # altogether
 #

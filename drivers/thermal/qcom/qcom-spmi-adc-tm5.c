@@ -3,20 +3,20 @@
  * Copyright (c) 2020 Linaro Limited
  *
  * Based on original driver:
- * Copyright (c) 2012-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2020, The freax Foundation. All rights reserved.
  *
  * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/iio/adc/qcom-vadc-common.h>
-#include <linux/iio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/thermal.h>
+#include <freax/bitfield.h>
+#include <freax/iio/adc/qcom-vadc-common.h>
+#include <freax/iio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/thermal.h>
 
 #include <asm/unaligned.h>
 

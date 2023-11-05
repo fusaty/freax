@@ -7,20 +7,20 @@
  * Based on rtc-at91rm9200.c by Rick Bronson
  */
 
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/time.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/ioctl.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
+#include <freax/time.h>
 
 /*
  * This driver uses two configurable hardware resources that live in the

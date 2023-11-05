@@ -8,15 +8,15 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sysctl.h>
-#include <linux/reboot.h>
-#include <linux/hyperv.h>
-#include <linux/clockchips.h>
-#include <linux/ptp_clock_kernel.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/sysctl.h>
+#include <freax/reboot.h>
+#include <freax/hyperv.h>
+#include <freax/clockchips.h>
+#include <freax/ptp_clock_kernel.h>
 #include <asm/mshyperv.h>
 
 #include "hyperv_vmbus.h"
@@ -234,7 +234,7 @@ static void shutdown_onchannelcallback(void *context)
 		/*
 		 * shutdown_msg->flags can be 0(shut down), 2(reboot),
 		 * or 4(hibernate). It may bitwise-OR 1, which means
-		 * performing the request by force. Linux always tries
+		 * performing the request by force. freax always tries
 		 * to perform the request by force.
 		 */
 		switch (shutdown_msg->flags) {

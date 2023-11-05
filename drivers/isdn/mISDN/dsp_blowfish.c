@@ -8,8 +8,8 @@
  *
  */
 
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
+#include <freax/mISDNif.h>
+#include <freax/mISDNdsp.h>
 #include "core.h"
 #include "dsp.h"
 

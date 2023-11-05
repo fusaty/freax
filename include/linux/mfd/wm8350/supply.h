@@ -5,11 +5,11 @@
  * Copyright 2007 Wolfson Microelectronics PLC
  */
 
-#ifndef __LINUX_MFD_WM8350_SUPPLY_H_
-#define __LINUX_MFD_WM8350_SUPPLY_H_
+#ifndef __freax_MFD_WM8350_SUPPLY_H_
+#define __freax_MFD_WM8350_SUPPLY_H_
 
-#include <linux/mutex.h>
-#include <linux/power_supply.h>
+#include <freax/mutex.h>
+#include <freax/power_supply.h>
 
 /*
  * Charger registers

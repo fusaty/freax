@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* ld script to make ARM Linux kernel
+/* ld script to make ARM freax kernel
  * taken from the i386 version by Russell King
  * Written by Martin Mares <mj@atrey.karlin.mff.cuni.cz>
  */
 
 #ifdef CONFIG_XIP_KERNEL
-#include "vmlinux-xip.lds.S"
+#include "vmfreax-xip.lds.S"
 #else
 
-#include <linux/pgtable.h>
-#include <asm/vmlinux.lds.h>
+#include <freax/pgtable.h>
+#include <asm/vmfreax.lds.h>
 #include <asm/cache.h>
 #include <asm/thread_info.h>
 #include <asm/page.h>

@@ -34,7 +34,7 @@
 
 		button-recovery {
 			label = "recovery";
-			linux,code = <KEY_VENDOR>;
+			freax,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <0>;
 		};
 	};
@@ -46,7 +46,7 @@
 			label = "mk808:blue:power";
 			gpios = <&gpio0 RK_PA3 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 	};
 

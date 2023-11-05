@@ -2,8 +2,8 @@
 #ifndef __PERF_BLOCK_H
 #define __PERF_BLOCK_H
 
-#include <linux/types.h>
-#include <linux/refcount.h>
+#include <freax/types.h>
+#include <freax/refcount.h>
 #include "hist.h"
 #include "symbol.h"
 #include "sort.h"

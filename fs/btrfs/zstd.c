@@ -5,18 +5,18 @@
  *
  */
 
-#include <linux/bio.h>
-#include <linux/bitmap.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/pagemap.h>
-#include <linux/refcount.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/zstd.h>
+#include <freax/bio.h>
+#include <freax/bitmap.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/sched/mm.h>
+#include <freax/pagemap.h>
+#include <freax/refcount.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/zstd.h>
 #include "misc.h"
 #include "compression.h"
 #include "ctree.h"

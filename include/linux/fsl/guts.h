@@ -11,8 +11,8 @@
 #ifndef __FSL_GUTS_H__
 #define __FSL_GUTS_H__
 
-#include <linux/types.h>
-#include <linux/io.h>
+#include <freax/types.h>
+#include <freax/io.h>
 
 /*
  * Global Utility Registers.

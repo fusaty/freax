@@ -5,13 +5,13 @@
  * Copyright (c) 2011, Google, Inc.
  */
 
-#include <linux/debugfs.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/seq_file.h>
-#include <linux/suspend.h>
-#include <linux/time.h>
+#include <freax/debugfs.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/seq_file.h>
+#include <freax/suspend.h>
+#include <freax/time.h>
 
 #include "timekeeping_internal.h"
 

@@ -6,7 +6,7 @@
  * the ppc64 non-hashed page table.
  */
 
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 
 #include <asm/nohash/64/pgtable-4k.h>
 #include <asm/barrier.h>

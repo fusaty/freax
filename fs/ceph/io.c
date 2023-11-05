@@ -8,12 +8,12 @@
  * Heavily borrowed from equivalent code in fs/nfs/io.c
  */
 
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/rwsem.h>
-#include <linux/fs.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/rwsem.h>
+#include <freax/fs.h>
 
 #include "super.h"
 #include "io.h"

@@ -3,10 +3,10 @@
  * lm8323.h - Configuration for LM8323 keypad driver.
  */
 
-#ifndef __LINUX_LM8323_H
-#define __LINUX_LM8323_H
+#ifndef __freax_LM8323_H
+#define __freax_LM8323_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Largest keycode that the chip can send, plus one,
@@ -31,4 +31,4 @@ struct lm8323_platform_data {
 	const char *name; /* Device name. */
 };
 
-#endif /* __LINUX_LM8323_H */
+#endif /* __freax_LM8323_H */

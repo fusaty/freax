@@ -11,18 +11,18 @@
  *  - Retrieve IO total power (uW)
  *  - Retrieve SoC temperature (milli-degree C) and alarm
  */
-#include <linux/acpi.h>
-#include <linux/dma-mapping.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/kfifo.h>
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/dma-mapping.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/kfifo.h>
+#include <freax/mailbox_controller.h>
+#include <freax/mailbox_client.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <acpi/pcc.h>
 

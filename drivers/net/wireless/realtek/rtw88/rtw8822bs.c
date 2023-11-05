@@ -2,9 +2,9 @@
 /* Copyright(c) Jernej Skrabec <jernej.skrabec@gmail.com>
  */
 
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/module.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/mmc/sdio_ids.h>
+#include <freax/module.h>
 #include "main.h"
 #include "rtw8822b.h"
 #include "sdio.h"

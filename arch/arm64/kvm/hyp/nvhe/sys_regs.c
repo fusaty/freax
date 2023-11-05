@@ -4,7 +4,7 @@
  * Author: Fuad Tabba <tabba@google.com>
  */
 
-#include <linux/irqchip/arm-gic-v3.h>
+#include <freax/irqchip/arm-gic-v3.h>
 
 #include <asm/kvm_asm.h>
 #include <asm/kvm_mmu.h>

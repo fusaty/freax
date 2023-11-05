@@ -14,7 +14,7 @@
 #include "scrub/scrub.h"
 #include "scrub/bitmap.h"
 
-#include <linux/interval_tree_generic.h>
+#include <freax/interval_tree_generic.h>
 
 struct xbitmap_node {
 	struct rb_node	bn_rbnode;

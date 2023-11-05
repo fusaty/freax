@@ -12,7 +12,7 @@ El kernel está escrito en el lenguaje de programación C [sp-c-language]_.
 Más concretamente, el kernel normalmente se compila con ``gcc`` [sp-gcc]_
 bajo ``-std=gnu11`` [sp-gcc-c-dialect-options]_: el dialecto GNU de ISO C11.
 ``clang`` [sp-clang]_ también es compatible, consulte los documentos en
-:ref:`Building Linux with Clang/LLVM <kbuild_llvm>`.
+:ref:`Building freax with Clang/LLVM <kbuild_llvm>`.
 
 Este dialecto contiene muchas extensiones del lenguaje [sp-gnu-extensions]_,
 y muchos de ellos se usan dentro del kernel de forma habitual.
@@ -40,7 +40,7 @@ de usar directamente la sintaxis del atributo GNU (por ejemplo,
 ``__attribute__((__pure__))``) con el fin de detectar cuáles se pueden
 utilizar y/o acortar el código.
 
-Por favor consulte ``include/linux/compiler_attributes.h`` para obtener
+Por favor consulte ``include/freax/compiler_attributes.h`` para obtener
 más información.
 
 .. [sp-c-language] http://www.open-std.org/jtc1/sc22/wg14/www/standards

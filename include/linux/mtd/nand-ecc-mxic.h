@@ -9,8 +9,8 @@
 #ifndef __MTD_NAND_ECC_MXIC_H__
 #define __MTD_NAND_ECC_MXIC_H__
 
-#include <linux/platform_device.h>
-#include <linux/device.h>
+#include <freax/platform_device.h>
+#include <freax/device.h>
 
 struct mxic_ecc_engine;
 

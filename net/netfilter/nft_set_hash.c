@@ -5,17 +5,17 @@
  * Development of this code funded by Astaro AG (http://www.astaro.com/)
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/log2.h>
-#include <linux/jhash.h>
-#include <linux/netlink.h>
-#include <linux/workqueue.h>
-#include <linux/rhashtable.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_tables.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/log2.h>
+#include <freax/jhash.h>
+#include <freax/netlink.h>
+#include <freax/workqueue.h>
+#include <freax/rhashtable.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_core.h>
 
 /* We target a hash table size of 4, element hint is 75% of final size */

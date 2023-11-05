@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2020, The freax Foundation. All rights reserved.
  */
 
 #define pr_fmt(fmt)	"[drm-dp] %s: " fmt, __func__
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_opp.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pm_opp.h>
 #include "dp_power.h"
 #include "msm_drv.h"
 

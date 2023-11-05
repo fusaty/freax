@@ -4,7 +4,7 @@
 #include "util/env.h"
 #include "map_symbol.h"
 #include "mem-events.h"
-#include "linux/string.h"
+#include "freax/string.h"
 #include "env.h"
 
 static char mem_loads_name[100];

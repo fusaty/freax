@@ -7,10 +7,10 @@
  *
  */
 
-#ifndef _LINUX_KMSAN_CHECKS_H
-#define _LINUX_KMSAN_CHECKS_H
+#ifndef _freax_KMSAN_CHECKS_H
+#define _freax_KMSAN_CHECKS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifdef CONFIG_KMSAN
 
@@ -80,4 +80,4 @@ static inline void kmsan_copy_to_user(void __user *to, const void *from,
 
 #endif
 
-#endif /* _LINUX_KMSAN_CHECKS_H */
+#endif /* _freax_KMSAN_CHECKS_H */

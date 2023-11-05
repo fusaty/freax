@@ -1,5 +1,5 @@
 /*
- * Atari Keyboard driver for 680x0 Linux
+ * Atari Keyboard driver for 680x0 freax
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file COPYING in the main directory of this archive
@@ -14,18 +14,18 @@
  * 06/07 Michael Schmitz
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/keyboard.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/kd.h>
-#include <linux/random.h>
-#include <linux/init.h>
-#include <linux/kbd_kern.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/errno.h>
+#include <freax/keyboard.h>
+#include <freax/delay.h>
+#include <freax/timer.h>
+#include <freax/kd.h>
+#include <freax/random.h>
+#include <freax/init.h>
+#include <freax/kbd_kern.h>
 
 #include <asm/atariints.h>
 #include <asm/atarihw.h>
@@ -223,7 +223,7 @@ repeat:
 
 					set_bit(scancode, broken_keys);
 					self_test_last_rcv = jiffies;
-					/* new Linux scancodes; approx. */
+					/* new freax scancodes; approx. */
 					keyval = scancode;
 					keytyp = KTYP(keyval) - 0xf0;
 					keyval = KVAL(keyval);
@@ -277,7 +277,7 @@ repeat:
 			if (kb_state.len == 6) {
 				kb_state.state = KEYBOARD;
 				/* wake up someone waiting for this.
-				   But will this ever be used, as Linux keeps its own time.
+				   But will this ever be used, as freax keeps its own time.
 				   Perhaps for synchronization purposes? */
 				/* wake_up_interruptible(&clock_wait); */
 			}

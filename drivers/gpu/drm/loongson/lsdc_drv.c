@@ -3,8 +3,8 @@
  * Copyright (C) 2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/pci.h>
-#include <linux/vgaarb.h>
+#include <freax/pci.h>
+#include <freax/vgaarb.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic.h>

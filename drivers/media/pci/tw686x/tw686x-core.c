@@ -28,14 +28,14 @@
  * a timer to limit the rate at which DMA is reset on DMA channels error.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci_ids.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
 
 #include "tw686x.h"
 #include "tw686x-regs.h"

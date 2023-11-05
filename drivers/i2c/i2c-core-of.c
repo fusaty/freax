@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux I2C core OF support code
+ * freax I2C core OF support code
  *
  * Copyright (C) 2008 Jochen Friedrich <jochen@scram.de>
  * based on a previous patch from Jon Smirl <jonsmirl@gmail.com>
@@ -9,13 +9,13 @@
  */
 
 #include <dt-bindings/i2c/i2c.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/sysfs.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/sysfs.h>
 
 #include "i2c-core.h"
 

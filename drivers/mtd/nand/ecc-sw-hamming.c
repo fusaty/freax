@@ -14,12 +14,12 @@
  * can be found in Documentation/driver-api/mtd/nand_ecc.rst
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtd/nand.h>
-#include <linux/mtd/nand-ecc-sw-hamming.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mtd/nand.h>
+#include <freax/mtd/nand-ecc-sw-hamming.h>
+#include <freax/slab.h>
 #include <asm/byteorder.h>
 
 /*

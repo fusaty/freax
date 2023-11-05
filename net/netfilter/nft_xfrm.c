@@ -4,15 +4,15 @@
  * Generic part shared by ipv4 and ipv6 backends.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_tables.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/netlink.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_core.h>
 #include <net/netfilter/nf_tables.h>
-#include <linux/in.h>
+#include <freax/in.h>
 #include <net/xfrm.h>
 
 static const struct nla_policy nft_xfrm_policy[NFTA_XFRM_MAX + 1] = {

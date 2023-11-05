@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SERIAL_SCI_H
-#define __LINUX_SERIAL_SCI_H
+#ifndef __freax_SERIAL_SCI_H
+#define __freax_SERIAL_SCI_H
 
-#include <linux/bitops.h>
-#include <linux/serial_core.h>
-#include <linux/sh_dma.h>
+#include <freax/bitops.h>
+#include <freax/serial_core.h>
+#include <freax/sh_dma.h>
 
 /*
  * Generic header for SuperH (H)SCI(F) (used by sh/sh64 and related parts)
@@ -63,4 +63,4 @@ struct plat_sci_port {
 	struct plat_sci_port_ops	*ops;
 };
 
-#endif /* __LINUX_SERIAL_SCI_H */
+#endif /* __freax_SERIAL_SCI_H */

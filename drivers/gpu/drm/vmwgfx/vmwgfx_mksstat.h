@@ -29,7 +29,7 @@
 #define _VMWGFX_MKSSTAT_H_
 
 #include <asm/page.h>
-#include <linux/kconfig.h>
+#include <freax/kconfig.h>
 
 /* Reservation marker for mksstat pid's */
 #define MKSSTAT_PID_RESERVED -1

@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_PTRACE_H
-#define _UAPI_LINUX_PTRACE_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_PTRACE_H
+#define _UAPI_freax_PTRACE_H
 /* ptrace.h */
 /* structs and defines to help the user use the ptrace system call. */
 
 /* has the defines to get at the registers. */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define PTRACE_TRACEME		   0
 #define PTRACE_PEEKTEXT		   1
@@ -183,4 +183,4 @@ struct ptrace_sud_config {
 #include <asm/ptrace.h>
 
 
-#endif /* _UAPI_LINUX_PTRACE_H */
+#endif /* _UAPI_freax_PTRACE_H */

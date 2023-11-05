@@ -10,13 +10,13 @@
  * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
  * more details.
  */
-#ifndef _LINUX_NDCTL_H
-#define _LINUX_NDCTL_H
+#ifndef _freax_NDCTL_H
+#define _freax_NDCTL_H
 
-#include <uapi/linux/ndctl.h>
+#include <uapi/freax/ndctl.h>
 
 enum {
 	ND_MIN_NAMESPACE_SIZE = PAGE_SIZE,
 };
 
-#endif /* _LINUX_NDCTL_H */
+#endif /* _freax_NDCTL_H */

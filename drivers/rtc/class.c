@@ -10,13 +10,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/rtc.h>
-#include <linux/kdev_t.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/rtc.h>
+#include <freax/kdev_t.h>
+#include <freax/idr.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 #include "rtc-core.h"
 

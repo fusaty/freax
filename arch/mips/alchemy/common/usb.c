@@ -10,12 +10,12 @@
  *
  */
 
-#include <linux/clk.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/syscore_ops.h>
+#include <freax/clk.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
+#include <freax/syscore_ops.h>
 #include <asm/cpu.h>
 #include <asm/mach-au1x00/au1000.h>
 

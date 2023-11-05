@@ -6,7 +6,7 @@
 #ifndef __INTEL_VDSC_H__
 #define __INTEL_VDSC_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum transcoder;
 struct intel_crtc;

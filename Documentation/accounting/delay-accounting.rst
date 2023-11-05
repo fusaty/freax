@@ -45,7 +45,7 @@ generic data structure to userspace corresponding to per-pid and per-tgid
 statistics. The delay accounting functionality populates specific fields of
 this structure. See
 
-     include/uapi/linux/taskstats.h
+     include/uapi/freax/taskstats.h
 
 for a description of the fields pertaining to delay accounting.
 It will generally be in the form of counters returning the cumulative
@@ -128,6 +128,6 @@ Get IO accounting for pid 1, it works only with -p::
 
 	# ./getdelays -i -p 1
 	printing IO accounting
-	linuxrc: read=65536, write=0, cancelled_write=0
+	freaxrc: read=65536, write=0, cancelled_write=0
 
 The above command can be used with -v to get more debug information.

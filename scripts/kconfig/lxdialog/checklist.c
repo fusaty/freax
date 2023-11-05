@@ -5,7 +5,7 @@
  *  ORIGINAL AUTHOR: Savio Lam (lam836@cs.cuhk.hk)
  *     Stuart Herbert - S.Herbert@sheffield.ac.uk: radiolist extension
  *     Alessandro Rubini - rubini@ipvvis.unipv.it: merged the two
- *  MODIFIED FOR LINUX KERNEL CONFIG BY: William Roadcap (roadcap@cfw.com)
+ *  MODIFIED FOR freax KERNEL CONFIG BY: William Roadcap (roadcap@cfw.com)
  */
 
 #include "dialog.h"

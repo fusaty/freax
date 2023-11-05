@@ -9,13 +9,13 @@
  *			Florian Fainelli <florian@openwrt.org>
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/console.h>
-#include <linux/memblock.h>
-#include <linux/ioport.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/export.h>
+#include <freax/string.h>
+#include <freax/console.h>
+#include <freax/memblock.h>
+#include <freax/ioport.h>
 
 #include <asm/bootinfo.h>
 #include <asm/mach-rc32434/ddr.h>

@@ -5,14 +5,14 @@
  * Copyright (C) 2014 Akihiro Tsukada <tskd08@gmail.com>
  */
 
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/sched/signal.h>
+#include <freax/freezer.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/string.h>
+#include <freax/sched/signal.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

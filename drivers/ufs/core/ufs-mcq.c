@@ -8,14 +8,14 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include "ufshcd-priv.h"
-#include <linux/delay.h>
+#include <freax/delay.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/bitfield.h>
-#include <linux/iopoll.h>
+#include <freax/bitfield.h>
+#include <freax/iopoll.h>
 
 #define MAX_QUEUE_SUP GENMASK(7, 0)
 #define UFS_MCQ_MIN_RW_QUEUES 2

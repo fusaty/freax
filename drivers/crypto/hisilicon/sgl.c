@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 HiSilicon Limited. */
-#include <linux/align.h>
-#include <linux/dma-mapping.h>
-#include <linux/hisi_acc_qm.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/align.h>
+#include <freax/dma-mapping.h>
+#include <freax/hisi_acc_qm.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #define HISI_ACC_SGL_SGE_NR_MIN		1
 #define HISI_ACC_SGL_NR_MAX		256

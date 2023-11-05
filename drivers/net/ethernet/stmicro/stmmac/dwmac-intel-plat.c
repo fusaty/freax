@@ -4,12 +4,12 @@
  * Copyright(C) 2020 Intel Corporation
  */
 
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/stmmac.h>
+#include <freax/ethtool.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/stmmac.h>
 
 #include "dwmac4.h"
 #include "stmmac.h"

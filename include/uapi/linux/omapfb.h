@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * File: include/linux/omapfb.h
+ * File: include/freax/omapfb.h
  *
  * Framebuffer driver for TI OMAP boards
  *
@@ -22,12 +22,12 @@
  * 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
  */
 
-#ifndef _UAPI__LINUX_OMAPFB_H__
-#define _UAPI__LINUX_OMAPFB_H__
+#ifndef _UAPI__freax_OMAPFB_H__
+#define _UAPI__freax_OMAPFB_H__
 
-#include <linux/fb.h>
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/fb.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 /* IOCTL commands. */
 
@@ -220,4 +220,4 @@ struct omapfb_display_info {
 };
 
 
-#endif /* _UAPI__LINUX_OMAPFB_H__ */
+#endif /* _UAPI__freax_OMAPFB_H__ */

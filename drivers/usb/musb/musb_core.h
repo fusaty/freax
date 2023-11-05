@@ -10,19 +10,19 @@
 #ifndef __MUSB_CORE_H__
 #define __MUSB_CORE_H__
 
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/musb.h>
-#include <linux/phy/phy.h>
-#include <linux/workqueue.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/errno.h>
+#include <freax/timer.h>
+#include <freax/device.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb.h>
+#include <freax/usb/otg.h>
+#include <freax/usb/musb.h>
+#include <freax/phy/phy.h>
+#include <freax/workqueue.h>
 
 struct musb;
 struct musb_hw_ep;
@@ -45,7 +45,7 @@ struct musb_qh;
 #include "musb_io.h"
 
 #include "musb_gadget.h"
-#include <linux/usb/hcd.h>
+#include <freax/usb/hcd.h>
 #include "musb_host.h"
 
 /* NOTE:  otg and peripheral-only state machines start at B_IDLE.

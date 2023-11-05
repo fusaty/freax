@@ -6,8 +6,8 @@
  * Copyright (C) 2008 Lyrtech inc
  */
 
-#ifndef __LINUX_SND_SOC_PCM3008_H
-#define __LINUX_SND_SOC_PCM3008_H
+#ifndef __freax_SND_SOC_PCM3008_H
+#define __freax_SND_SOC_PCM3008_H
 
 struct pcm3008_setup_data {
 	unsigned dem0_pin;

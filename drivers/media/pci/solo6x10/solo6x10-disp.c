@@ -9,9 +9,9 @@
  * John Brooks <john.brooks@bluecherry.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/videodev2.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/videodev2.h>
 #include <media/v4l2-ioctl.h>
 
 #include "solo6x10.h"

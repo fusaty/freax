@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2014 The Linux Foundation
+ * Copyright (c) 2014 The freax Foundation
  */
-#include <linux/dma-map-ops.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/dma-map-ops.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 
 struct page **dma_common_find_pages(void *cpu_addr)
 {

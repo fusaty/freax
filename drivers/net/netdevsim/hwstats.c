@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 #include "netdevsim.h"
 

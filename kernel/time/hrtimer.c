@@ -22,27 +22,27 @@
  *	et. al.
  */
 
-#include <linux/cpu.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/hrtimer.h>
-#include <linux/notifier.h>
-#include <linux/syscalls.h>
-#include <linux/interrupt.h>
-#include <linux/tick.h>
-#include <linux/err.h>
-#include <linux/debugobjects.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/sysctl.h>
-#include <linux/sched/rt.h>
-#include <linux/sched/deadline.h>
-#include <linux/sched/nohz.h>
-#include <linux/sched/debug.h>
-#include <linux/timer.h>
-#include <linux/freezer.h>
-#include <linux/compat.h>
+#include <freax/cpu.h>
+#include <freax/export.h>
+#include <freax/percpu.h>
+#include <freax/hrtimer.h>
+#include <freax/notifier.h>
+#include <freax/syscalls.h>
+#include <freax/interrupt.h>
+#include <freax/tick.h>
+#include <freax/err.h>
+#include <freax/debugobjects.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/sysctl.h>
+#include <freax/sched/rt.h>
+#include <freax/sched/deadline.h>
+#include <freax/sched/nohz.h>
+#include <freax/sched/debug.h>
+#include <freax/timer.h>
+#include <freax/freezer.h>
+#include <freax/compat.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include <trace/events/timer.h>
 

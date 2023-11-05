@@ -7,14 +7,14 @@
  * Author: Ivan Khoronzhuk <ivan.khoronzhuk@ti.com>
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
 
 #define RSTYPE_RG			0x0
 #define RSCTRL_RG			0x4

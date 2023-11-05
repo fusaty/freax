@@ -9,13 +9,13 @@
  *  All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/time.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
 #include <sound/core.h>
 #include <sound/ac97_codec.h>
 #include <sound/initval.h>

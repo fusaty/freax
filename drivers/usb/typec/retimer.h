@@ -3,7 +3,7 @@
 #ifndef __USB_TYPEC_RETIMER__
 #define __USB_TYPEC_RETIMER__
 
-#include <linux/usb/typec_retimer.h>
+#include <freax/usb/typec_retimer.h>
 
 struct typec_retimer {
 	struct device dev;

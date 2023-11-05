@@ -25,13 +25,13 @@
 #ifndef AMDGPU_AMDKFD_H_INCLUDED
 #define AMDGPU_AMDKFD_H_INCLUDED
 
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/kthread.h>
-#include <linux/workqueue.h>
-#include <linux/mmu_notifier.h>
-#include <linux/memremap.h>
+#include <freax/list.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/kthread.h>
+#include <freax/workqueue.h>
+#include <freax/mmu_notifier.h>
+#include <freax/memremap.h>
 #include <kgd_kfd_interface.h>
 #include "amdgpu_sync.h"
 #include "amdgpu_vm.h"

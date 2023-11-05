@@ -5,26 +5,26 @@
  * Communication to userspace based on kernel/printk.c
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/poll.h>
-#include <linux/proc_fs.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
-#include <linux/spinlock.h>
-#include <linux/cpu.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/topology.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/poll.h>
+#include <freax/proc_fs.h>
+#include <freax/init.h>
+#include <freax/vmalloc.h>
+#include <freax/spinlock.h>
+#include <freax/cpu.h>
+#include <freax/workqueue.h>
+#include <freax/slab.h>
+#include <freax/topology.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/rtas.h>
 #include <asm/nvram.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/machdep.h>
 #include <asm/topology.h>
 

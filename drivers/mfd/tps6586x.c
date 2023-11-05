@@ -12,22 +12,22 @@
  * Eric Miao <eric.miao@marvell.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
+#include <freax/regmap.h>
+#include <freax/of.h>
 
-#include <linux/mfd/core.h>
-#include <linux/mfd/tps6586x.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/tps6586x.h>
 
 #define TPS6586X_SUPPLYENE	0x14
 #define SOFT_RST_BIT		BIT(0)

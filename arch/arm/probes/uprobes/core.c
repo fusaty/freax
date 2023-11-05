@@ -3,13 +3,13 @@
  * Copyright (C) 2012 Rabin Vincent <rabin at rab.in>
  */
 
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/errno.h>
-#include <linux/highmem.h>
-#include <linux/sched.h>
-#include <linux/uprobes.h>
-#include <linux/notifier.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/errno.h>
+#include <freax/highmem.h>
+#include <freax/sched.h>
+#include <freax/uprobes.h>
+#include <freax/notifier.h>
 
 #include <asm/opcodes.h>
 #include <asm/traps.h>

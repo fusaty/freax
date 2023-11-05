@@ -7,12 +7,12 @@
 
 #define pr_fmt(fmt)        "ipmi-powernv: " fmt
 
-#include <linux/ipmi_smi.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/interrupt.h>
+#include <freax/ipmi_smi.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/interrupt.h>
 
 #include <asm/opal.h>
 

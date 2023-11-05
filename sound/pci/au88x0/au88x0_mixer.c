@@ -6,8 +6,8 @@
  *
  */
 
-#include <linux/time.h>
-#include <linux/init.h>
+#include <freax/time.h>
+#include <freax/init.h>
 #include <sound/core.h>
 #include "au88x0.h"
 

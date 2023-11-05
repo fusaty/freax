@@ -30,7 +30,7 @@
  * SOFTWARE.
  */
 
-#include <linux/mlx5/port.h>
+#include <freax/mlx5/port.h>
 #include "mlx5_core.h"
 
 /* calling with verbose false will not print error to log */

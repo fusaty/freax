@@ -11,28 +11,28 @@
  * Author: Samu Onkalo <samu.p.onkalo@nokia.com>
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h> /* For irq_get_irq_data() */
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/random.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/kernel.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h> /* For irq_get_irq_data() */
+#include <freax/completion.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/bitops.h>
+#include <freax/random.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pm_runtime.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
 
 /*
  * 16-bit registers are little-endian. LSB is at the address defined below

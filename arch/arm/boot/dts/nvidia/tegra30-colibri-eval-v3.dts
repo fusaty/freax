@@ -150,7 +150,7 @@
 		key-wakeup {
 			label = "SODIMM pin 45 wakeup";
 			gpios = <&gpio TEGRA_GPIO(V, 1) GPIO_ACTIVE_HIGH>;
-			linux,code = <KEY_WAKEUP>;
+			freax,code = <KEY_WAKEUP>;
 			debounce-interval = <10>;
 			wakeup-source;
 		};

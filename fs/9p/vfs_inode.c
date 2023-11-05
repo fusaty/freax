@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/pagemap.h>
+#include <freax/stat.h>
+#include <freax/string.h>
+#include <freax/namei.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/xattr.h>
+#include <freax/posix_acl.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 
@@ -491,7 +491,7 @@ v9fs_inode_from_fid(struct v9fs_session_info *v9ses, struct p9_fid *fid,
 }
 
 /**
- * v9fs_at_to_dotl_flags- convert Linux specific AT flags to
+ * v9fs_at_to_dotl_flags- convert freax specific AT flags to
  * plan 9 AT flag.
  * @flags: flags to convert
  */

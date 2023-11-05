@@ -4,11 +4,11 @@
 
 #include <stdlib.h>
 #include <assert.h>
-#include <linux/types.h>
-#include <linux/seq_file.h>
-#include <linux/memblock.h>
-#include <linux/sizes.h>
-#include <linux/printk.h>
+#include <freax/types.h>
+#include <freax/seq_file.h>
+#include <freax/memblock.h>
+#include <freax/sizes.h>
+#include <freax/printk.h>
 #include <../selftests/kselftest.h>
 
 #define MEM_SIZE		SZ_32K

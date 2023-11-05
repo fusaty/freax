@@ -3,13 +3,13 @@
  * Copyright 2022 NXP
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/iopoll.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
 
 #define MIX_SLICE_SW_CTRL_OFF		0x20
 #define SLICE_SW_CTRL_PSW_CTRL_OFF_MASK	BIT(4)

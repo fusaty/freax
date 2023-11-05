@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2015, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015, The freax Foundation. All rights reserved.
  */
-#ifndef LINUX_MMC_CQHCI_H
-#define LINUX_MMC_CQHCI_H
+#ifndef freax_MMC_CQHCI_H
+#define freax_MMC_CQHCI_H
 
-#include <linux/compiler.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/spinlock_types.h>
-#include <linux/types.h>
-#include <linux/completion.h>
-#include <linux/wait.h>
-#include <linux/irqreturn.h>
+#include <freax/compiler.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/spinlock_types.h>
+#include <freax/types.h>
+#include <freax/completion.h>
+#include <freax/wait.h>
+#include <freax/irqreturn.h>
 #include <asm/io.h>
 
 /* registers */

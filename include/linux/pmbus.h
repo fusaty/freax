@@ -8,7 +8,7 @@
 #ifndef _PMBUS_H_
 #define _PMBUS_H_
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /* flags */
 

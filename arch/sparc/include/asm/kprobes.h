@@ -8,8 +8,8 @@
 #define BREAKPOINT_INSTRUCTION_2 0x91d02071 /* ta 0x71 */
 
 #ifdef CONFIG_KPROBES
-#include <linux/types.h>
-#include <linux/percpu.h>
+#include <freax/types.h>
+#include <freax/percpu.h>
 
 typedef u32 kprobe_opcode_t;
 

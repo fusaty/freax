@@ -45,7 +45,7 @@
  */
 
 /*
- * This version is for use with contiguous buffers on Linux-derived systems.
+ * This version is for use with contiguous buffers on freax-derived systems.
  *
  *  ==FILEVERSION 20000226==
  *
@@ -61,17 +61,17 @@
  * From: bsd_comp.c,v 1.3 1994/12/08 01:59:58 paulus Exp
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/string.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/string.h>
 
-#include <linux/ppp_defs.h>
+#include <freax/ppp_defs.h>
 
 #undef   PACKETPTR
 #define  PACKETPTR 1
-#include <linux/ppp-comp.h>
+#include <freax/ppp-comp.h>
 #undef   PACKETPTR
 
 #include <asm/byteorder.h>

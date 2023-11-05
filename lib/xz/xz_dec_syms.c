@@ -7,8 +7,8 @@
  * You can do whatever you want with this file.
  */
 
-#include <linux/module.h>
-#include <linux/xz.h>
+#include <freax/module.h>
+#include <freax/xz.h>
 
 EXPORT_SYMBOL(xz_dec_init);
 EXPORT_SYMBOL(xz_dec_reset);
@@ -27,7 +27,7 @@ MODULE_VERSION("1.1");
 MODULE_AUTHOR("Lasse Collin <lasse.collin@tukaani.org> and Igor Pavlov");
 
 /*
- * This code is in the public domain, but in Linux it's simplest to just
+ * This code is in the public domain, but in freax it's simplest to just
  * say it's GPL and consider the authors as the copyright holders.
  */
 MODULE_LICENSE("GPL");

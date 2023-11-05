@@ -13,12 +13,12 @@
  *   Copyright (C) 2008 Nokia Corporation and/or its subsidiary(-ies).
  */
 
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
+#include <freax/firmware.h>
+#include <freax/etherdevice.h>
 
 #include <net/mac80211.h>
 #ifdef CONFIG_P54_LEDS
-#include <linux/leds.h>
+#include <freax/leds.h>
 #endif /* CONFIG_P54_LEDS */
 
 #include "p54.h"

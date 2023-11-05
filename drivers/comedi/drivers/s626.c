@@ -3,10 +3,10 @@
  * comedi/drivers/s626.c
  * Sensoray s626 Comedi driver
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  *
- * Based on Sensoray Model 626 Linux driver Version 0.2
+ * Based on Sensoray Model 626 freax driver Version 0.2
  * Copyright (C) 2002-2004 Sensoray Co., Inc.
  */
 
@@ -50,12 +50,12 @@
  *    comedi_do_insn(cf,&insn); //executing configuration
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/comedi/comedi_pci.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/comedi/comedi_pci.h>
 
 #include "s626.h"
 

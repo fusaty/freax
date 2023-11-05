@@ -46,7 +46,7 @@
 			abs-flat = <10>;
 			abs-fuzz = <10>;
 			abs-range = <180 800>;
-			linux,code = <ABS_X>;
+			freax,code = <ABS_X>;
 		};
 
 		axis@1 {
@@ -54,7 +54,7 @@
 			abs-flat = <10>;
 			abs-fuzz = <10>;
 			abs-range = <180 800>;
-			linux,code = <ABS_RX>;
+			freax,code = <ABS_RX>;
 		};
 
 		axis@2 {
@@ -62,7 +62,7 @@
 			abs-flat = <10>;
 			abs-fuzz = <10>;
 			abs-range = <180 800>;
-			linux,code = <ABS_Y>;
+			freax,code = <ABS_Y>;
 		};
 
 		axis@3 {
@@ -70,7 +70,7 @@
 			abs-flat = <10>;
 			abs-fuzz = <10>;
 			abs-range = <180 800>;
-			linux,code = <ABS_RY>;
+			freax,code = <ABS_RY>;
 		};
 	};
 
@@ -102,13 +102,13 @@
 		button-vol-down {
 			gpios = <&gpio2 RK_PA1 GPIO_ACTIVE_LOW>;
 			label = "VOLUMEDOWN";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 		};
 
 		button-volume-up {
 			gpios = <&gpio2 RK_PA0 GPIO_ACTIVE_LOW>;
 			label = "VOLUMEUP";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 		};
 	};
 };
@@ -121,23 +121,23 @@
 	button-sw19 {
 		gpios = <&gpio3 RK_PB1 GPIO_ACTIVE_LOW>;
 		label = "SELECT";
-		linux,code = <BTN_SELECT>;
+		freax,code = <BTN_SELECT>;
 	};
 	/* note that TR2 and TL2 are swapped */
 	button-sw20 {
 		gpios = <&gpio3 RK_PB7 GPIO_ACTIVE_LOW>;
 		label = "TOP-RIGHT 2";
-		linux,code = <BTN_TR2>;
+		freax,code = <BTN_TR2>;
 	};
 	button-sw21 {
 		gpios = <&gpio3 RK_PB2 GPIO_ACTIVE_LOW>;
 		label = "TOP-LEFT 2";
-		linux,code = <BTN_TL2>;
+		freax,code = <BTN_TL2>;
 	};
 	button-sw22 {
 		gpios = <&gpio3 RK_PB4 GPIO_ACTIVE_LOW>;
 		label = "START";
-		linux,code = <BTN_START>;
+		freax,code = <BTN_START>;
 	};
 };
 

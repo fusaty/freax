@@ -2,9 +2,9 @@
 /* Copyright (C) 2018 Netronome Systems, Inc */
 /* Copyright (C) 2021 Corigine, Inc */
 
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <freax/dma-direction.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
 #include <net/xdp_sock_drv.h>
 #include <trace/events/xdp.h>
 

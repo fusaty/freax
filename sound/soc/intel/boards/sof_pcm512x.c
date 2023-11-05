@@ -5,13 +5,13 @@
  * Intel SOF Machine Driver for Intel platforms with TI PCM512x codec,
  * e.g. Up or Up2 with Hifiberry DAC+ HAT
  */
-#include <linux/clk.h>
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/dmi.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
 #include <sound/core.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>

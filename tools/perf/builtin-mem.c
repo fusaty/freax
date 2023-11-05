@@ -21,7 +21,7 @@
 #include "util/sample.h"
 #include "util/string2.h"
 #include "util/util.h"
-#include <linux/err.h>
+#include <freax/err.h>
 
 #define MEM_OPERATION_LOAD	0x1
 #define MEM_OPERATION_STORE	0x2

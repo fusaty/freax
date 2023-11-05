@@ -5,12 +5,12 @@
  * Copyright (C) 1996 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/profile.h>
-#include <linux/delay.h>
-#include <linux/sched/mm.h>
-#include <linux/cpu.h>
+#include <freax/clockchips.h>
+#include <freax/interrupt.h>
+#include <freax/profile.h>
+#include <freax/delay.h>
+#include <freax/sched/mm.h>
+#include <freax/cpu.h>
 
 #include <asm/cacheflush.h>
 #include <asm/switch_to.h>

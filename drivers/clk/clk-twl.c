@@ -5,11 +5,11 @@
  * inspired by the driver for the Palmas device
  */
 
-#include <linux/clk-provider.h>
-#include <linux/mfd/twl.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/mfd/twl.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #define VREG_STATE              2
 #define TWL6030_CFG_STATE_OFF   0x00

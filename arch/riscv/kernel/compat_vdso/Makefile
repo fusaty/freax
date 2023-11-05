@@ -46,7 +46,7 @@ $(obj)/compat_vdso.o: $(obj)/compat_vdso.so
 # link rule for the .so file, .lds has to be first
 $(obj)/compat_vdso.so.dbg: $(obj)/compat_vdso.lds $(obj-compat_vdso) FORCE
 	$(call if_changed,compat_vdsold)
-LDFLAGS_compat_vdso.so.dbg = -shared -S -soname=linux-compat_vdso.so.1 \
+LDFLAGS_compat_vdso.so.dbg = -shared -S -soname=freax-compat_vdso.so.1 \
 	--build-id=sha1 --hash-style=both --eh-frame-hdr
 
 $(obj-compat_vdso): %.o: %.S FORCE

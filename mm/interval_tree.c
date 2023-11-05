@@ -5,10 +5,10 @@
  * Copyright (C) 2012, Michel Lespinasse <walken@google.com>
  */
 
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/rmap.h>
-#include <linux/interval_tree_generic.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/rmap.h>
+#include <freax/interval_tree_generic.h>
 
 static inline unsigned long vma_start_pgoff(struct vm_area_struct *v)
 {

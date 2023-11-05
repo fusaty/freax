@@ -170,7 +170,7 @@
 
 /* Verdin UART_1, connector X50 through RS485 transceiver */
 &uart1 {
-	linux,rs485-enabled-at-boot-time;
+	freax,rs485-enabled-at-boot-time;
 	rs485-rts-active-low;
 	rs485-rx-during-tx;
 	status = "okay";
@@ -181,7 +181,7 @@
 	status = "okay";
 };
 
-/* Verdin UART_3, used as the Linux Console */
+/* Verdin UART_3, used as the freax Console */
 &uart3 {
 	status = "okay";
 };

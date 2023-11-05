@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <test_progs.h>
 #include <net/if.h>
-#include <linux/netfilter.h>
+#include <freax/netfilter.h>
 #include <network_helpers.h>
 #include "ip_check_defrag.skel.h"
 #include "ip_check_defrag_frags.h"

@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_BPFILTER_H
-#define _UAPI_LINUX_BPFILTER_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_BPFILTER_H
+#define _UAPI_freax_BPFILTER_H
 
-#include <linux/if.h>
+#include <freax/if.h>
 
 enum {
 	BPFILTER_IPT_SO_SET_REPLACE = 64,
@@ -18,4 +18,4 @@ enum {
 	BPFILTER_IPT_GET_MAX,
 };
 
-#endif /* _UAPI_LINUX_BPFILTER_H */
+#endif /* _UAPI_freax_BPFILTER_H */

@@ -22,19 +22,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
 
 #include <media/i2c/tvaudio.h>
 #include <media/v4l2-device.h>
@@ -1780,7 +1780,7 @@ static int tvaudio_s_ctrl(struct v4l2_ctrl *ctrl)
 
 
 /* ---------------------------------------------------------------------- */
-/* video4linux interface                                                  */
+/* video4freax interface                                                  */
 
 static int tvaudio_s_radio(struct v4l2_subdev *sd)
 {

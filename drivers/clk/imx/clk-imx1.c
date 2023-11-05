@@ -3,12 +3,12 @@
  *  Copyright (C) 2008 Sascha Hauer <s.hauer@pengutronix.de>, Pengutronix
  */
 
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 #include <dt-bindings/clock/imx1-clock.h>
 #include <asm/irq.h>
 

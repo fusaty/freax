@@ -2,10 +2,10 @@
 /*
  * Generic PWM backlight driver data - see drivers/video/backlight/pwm_bl.c
  */
-#ifndef __LINUX_PWM_BACKLIGHT_H
-#define __LINUX_PWM_BACKLIGHT_H
+#ifndef __freax_PWM_BACKLIGHT_H
+#define __freax_PWM_BACKLIGHT_H
 
-#include <linux/backlight.h>
+#include <freax/backlight.h>
 
 struct platform_pwm_backlight_data {
 	unsigned int max_brightness;

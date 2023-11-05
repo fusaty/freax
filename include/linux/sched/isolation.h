@@ -1,9 +1,9 @@
-#ifndef _LINUX_SCHED_ISOLATION_H
-#define _LINUX_SCHED_ISOLATION_H
+#ifndef _freax_SCHED_ISOLATION_H
+#define _freax_SCHED_ISOLATION_H
 
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/tick.h>
+#include <freax/cpumask.h>
+#include <freax/init.h>
+#include <freax/tick.h>
 
 enum hk_type {
 	HK_TYPE_TIMER,
@@ -70,4 +70,4 @@ static inline bool cpu_is_isolated(int cpu)
 		 !housekeeping_test_cpu(cpu, HK_TYPE_TICK);
 }
 
-#endif /* _LINUX_SCHED_ISOLATION_H */
+#endif /* _freax_SCHED_ISOLATION_H */

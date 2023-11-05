@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/node.h - generic node definition
+ * include/freax/node.h - generic node definition
  *
  * This is mainly for topological representation. We define the
  * basic 'struct node' here, which can be embedded in per-arch
@@ -12,12 +12,12 @@
  * Nodes are exported via driverfs in the class/node/devices/
  * directory.
  */
-#ifndef _LINUX_NODE_H_
-#define _LINUX_NODE_H_
+#ifndef _freax_NODE_H_
+#define _freax_NODE_H_
 
-#include <linux/device.h>
-#include <linux/cpumask.h>
-#include <linux/list.h>
+#include <freax/device.h>
+#include <freax/cpumask.h>
+#include <freax/list.h>
 
 /**
  * struct node_hmem_attrs - heterogeneous memory performance attributes
@@ -169,4 +169,4 @@ static inline void unregister_memory_block_under_nodes(struct memory_block *mem_
 
 #define to_node(device) container_of(device, struct node, dev)
 
-#endif /* _LINUX_NODE_H_ */
+#endif /* _freax_NODE_H_ */

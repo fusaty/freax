@@ -8,11 +8,11 @@
  * Reference taken from OMAP4 cminst44xx.c
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/io.h>
 
 #include "clockdomain.h"
 #include "cm.h"
@@ -169,7 +169,7 @@ static void am33xx_cm_clkdm_enable_hwsup(u16 inst, u16 cdoffs)
  *
  * Put a clockdomain referred to by (@inst, @cdoffs) into
  * software-supervised idle mode, i.e., controlled manually by the
- * Linux OMAP clockdomain code.  No return value.
+ * freax OMAP clockdomain code.  No return value.
  */
 static void am33xx_cm_clkdm_disable_hwsup(u16 inst, u16 cdoffs)
 {

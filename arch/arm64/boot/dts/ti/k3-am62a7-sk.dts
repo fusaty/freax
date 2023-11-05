@@ -120,7 +120,7 @@
 		led-0 {
 			label = "am62a-sk:green:heartbeat";
 			gpios = <&main_gpio1 49 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			function = LED_FUNCTION_HEARTBEAT;
 			default-state = "off";
 		};

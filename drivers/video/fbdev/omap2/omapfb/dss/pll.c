@@ -5,11 +5,11 @@
 
 #define DSS_SUBSYS_NAME "PLL"
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sched.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/regulator/consumer.h>
+#include <freax/sched.h>
 
 #include <video/omapfb_dss.h>
 

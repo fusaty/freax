@@ -60,17 +60,17 @@
  *                          are considered as fatal)
  */
 
-#include <linux/agp_backend.h>
-#include <linux/atomic.h>
-#include <linux/wait.h>
-#include <linux/list.h>
-#include <linux/kref.h>
-#include <linux/interval_tree.h>
-#include <linux/hashtable.h>
-#include <linux/dma-fence.h>
+#include <freax/agp_backend.h>
+#include <freax/atomic.h>
+#include <freax/wait.h>
+#include <freax/list.h>
+#include <freax/kref.h>
+#include <freax/interval_tree.h>
+#include <freax/hashtable.h>
+#include <freax/dma-fence.h>
 
 #ifdef CONFIG_MMU_NOTIFIER
-#include <linux/mmu_notifier.h>
+#include <freax/mmu_notifier.h>
 #endif
 
 #include <drm/ttm/ttm_bo.h>

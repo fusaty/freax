@@ -6,15 +6,15 @@
  * Author: Feng Kan <fkan@apm.com>.
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/gpio/driver.h>
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <freax/acpi.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
+#include <freax/platform_device.h>
+#include <freax/gpio/driver.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
 
 #define GPIO_SET_DR_OFFSET	0x0C
 #define GPIO_DATA_OFFSET	0x14

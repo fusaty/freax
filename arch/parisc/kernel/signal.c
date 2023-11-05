@@ -3,30 +3,30 @@
  *  PA-RISC architecture-specific signal handling support.
  *
  *  Copyright (C) 2000 David Huggins-Daines <dhd@debian.org>
- *  Copyright (C) 2000 Linuxcare, Inc.
+ *  Copyright (C) 2000 freaxcare, Inc.
  *  Copyright (C) 2000-2022 Helge Deller <deller@gmx.de>
  *  Copyright (C) 2022 John David Anglin <dave.anglin@bell.net>
  *
  *  Based on the ia64, i386, and alpha versions.
  */
 
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/resume_user_mode.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/compat.h>
-#include <linux/elf.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/errno.h>
+#include <freax/wait.h>
+#include <freax/ptrace.h>
+#include <freax/resume_user_mode.h>
+#include <freax/unistd.h>
+#include <freax/stddef.h>
+#include <freax/compat.h>
+#include <freax/elf.h>
 #include <asm/ucontext.h>
 #include <asm/rt_sigframe.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/cacheflush.h>
 #include <asm/asm-offsets.h>
 #include <asm/vdso.h>

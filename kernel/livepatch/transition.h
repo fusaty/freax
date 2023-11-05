@@ -2,7 +2,7 @@
 #ifndef _LIVEPATCH_TRANSITION_H
 #define _LIVEPATCH_TRANSITION_H
 
-#include <linux/livepatch.h>
+#include <freax/livepatch.h>
 
 extern struct klp_patch *klp_transition_patch;
 

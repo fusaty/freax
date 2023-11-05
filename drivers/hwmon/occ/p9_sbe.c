@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright IBM Corp 2019
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/fsi-occ.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/fsi-occ.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/string.h>
+#include <freax/sysfs.h>
 
 #include "common.h"
 
@@ -198,6 +198,6 @@ static struct platform_driver p9_sbe_occ_driver = {
 
 module_platform_driver(p9_sbe_occ_driver);
 
-MODULE_AUTHOR("Eddie James <eajames@linux.ibm.com>");
+MODULE_AUTHOR("Eddie James <eajames@freax.ibm.com>");
 MODULE_DESCRIPTION("BMC P9 OCC hwmon driver");
 MODULE_LICENSE("GPL");

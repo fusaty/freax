@@ -9,15 +9,15 @@
  * Derived from leds-lp5521.c, leds-lp5523.c
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/platform_data/leds-lp55xx.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/i2c.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/platform_data/leds-lp55xx.h>
+#include <freax/slab.h>
+#include <freax/gpio/consumer.h>
 #include <dt-bindings/leds/leds-lp55xx.h>
 
 #include "leds-lp55xx-common.h"
@@ -636,7 +636,7 @@ static int lp55xx_parse_logical_led(struct device_node *np,
 	int chan_nr = 0;
 
 	cfg[child_number].default_trigger =
-		of_get_property(np, "linux,default-trigger", NULL);
+		of_get_property(np, "freax,default-trigger", NULL);
 
 	ret = of_property_read_u32(np, "color", &led_color);
 	if (ret)

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: BSD-3-Clause OR GPL-2.0
 /* Copyright (c) 2018 Mellanox Technologies. All rights reserved */
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
 
 #include "spectrum.h"
 #include "core.h"

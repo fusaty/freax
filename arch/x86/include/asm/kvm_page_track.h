@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_KVM_PAGE_TRACK_H
 #define _ASM_X86_KVM_PAGE_TRACK_H
 
-#include <linux/kvm_types.h>
+#include <freax/kvm_types.h>
 
 #ifdef CONFIG_KVM_EXTERNAL_WRITE_TRACKING
 /*

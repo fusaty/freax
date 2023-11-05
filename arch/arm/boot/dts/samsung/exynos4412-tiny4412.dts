@@ -38,7 +38,7 @@
 			function = LED_FUNCTION_HEARTBEAT;
 			gpios = <&gpm4 0 GPIO_ACTIVE_LOW>;
 			default-state = "off";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		led2 {
@@ -58,7 +58,7 @@
 			function = LED_FUNCTION_DISK_ACTIVITY;
 			gpios = <&gpm4 3 GPIO_ACTIVE_LOW>;
 			default-state = "off";
-			linux,default-trigger = "mmc0";
+			freax,default-trigger = "mmc0";
 		};
 	};
 

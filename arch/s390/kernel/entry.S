@@ -8,9 +8,9 @@
  *		 Denis Joseph Barrow (djbarrow@de.ibm.com,barrow_dj@yahoo.com),
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
 #include <asm/asm-extable.h>
 #include <asm/alternative-asm.h>
 #include <asm/processor.h>

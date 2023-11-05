@@ -5,15 +5,15 @@
  * Copyright (C) 2008, Volker Weiss <dev@tintuc.de>
  * Copyright (C) 2007-2010 Florian Fainelli <florian@openwrt.org>
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/gpio/driver.h>
-#include <linux/mfd/rdc321x.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/platform_device.h>
+#include <freax/pci.h>
+#include <freax/gpio/driver.h>
+#include <freax/mfd/rdc321x.h>
+#include <freax/slab.h>
 
 struct rdc321x_gpio {
 	spinlock_t		lock;

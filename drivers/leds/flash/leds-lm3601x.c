@@ -3,13 +3,13 @@
 // Flash driver chip family
 // Copyright (C) 2018 Texas Instruments Incorporated - https://www.ti.com/
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/led-class-flash.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/leds.h>
+#include <freax/led-class-flash.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define LM3601X_LED_IR		0x0
 #define LM3601X_LED_TORCH	0x1

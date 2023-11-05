@@ -15,17 +15,17 @@
 #include <asm/processor.h>
 #include <asm/coprocessor.h>
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/thread_info.h>
-#include <linux/ptrace.h>
-#include <linux/mm.h>
-#include <linux/kbuild.h>
-#include <linux/suspend.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/thread_info.h>
+#include <freax/ptrace.h>
+#include <freax/mm.h>
+#include <freax/kbuild.h>
+#include <freax/suspend.h>
 
 #include <asm/ptrace.h>
 #include <asm/traps.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 int main(void)
 {

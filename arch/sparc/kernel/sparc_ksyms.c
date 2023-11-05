@@ -5,8 +5,8 @@
  * Copyright (C) 1996 Eddie C. Dost (ecd@skynet.be)
  */
 
-#include <linux/init.h>
-#include <linux/export.h>
+#include <freax/init.h>
+#include <freax/export.h>
 
 /* This is needed only for drivers/sbus/char/openprom.c */
 EXPORT_SYMBOL(saved_command_line);

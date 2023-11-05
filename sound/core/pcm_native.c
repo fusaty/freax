@@ -4,17 +4,17 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/compat.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/file.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/time.h>
-#include <linux/pm_qos.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/vmalloc.h>
+#include <freax/compat.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/file.h>
+#include <freax/slab.h>
+#include <freax/sched/signal.h>
+#include <freax/time.h>
+#include <freax/pm_qos.h>
+#include <freax/io.h>
+#include <freax/dma-mapping.h>
+#include <freax/vmalloc.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/info.h>
@@ -22,8 +22,8 @@
 #include <sound/pcm_params.h>
 #include <sound/timer.h>
 #include <sound/minors.h>
-#include <linux/uio.h>
-#include <linux/delay.h>
+#include <freax/uio.h>
+#include <freax/delay.h>
 
 #include "pcm_local.h"
 

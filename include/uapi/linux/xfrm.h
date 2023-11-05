@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_XFRM_H
-#define _LINUX_XFRM_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_XFRM_H
+#define _freax_XFRM_H
 
-#include <linux/in6.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
+#include <freax/in6.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
 
 /* All of the structures in this file may not change size as they are
  * passed into the kernel from userspace via netlink sockets.
@@ -43,7 +43,7 @@ struct xfrm_sec_ctx {
 
 /* Security Context Algorithms */
 #define XFRM_SC_ALG_RESERVED 0
-#define XFRM_SC_ALG_SELINUX 1
+#define XFRM_SC_ALG_SEfreax 1
 
 /* Selector, used as selector both on policy rules (SPD) and SAs. */
 
@@ -234,7 +234,7 @@ enum {
 struct xfrm_user_sec_ctx {
 	__u16			len;
 	__u16			exttype;
-	__u8			ctx_alg;  /* LSMs: e.g., selinux == 1 */
+	__u8			ctx_alg;  /* LSMs: e.g., sefreax == 1 */
 	__u8			ctx_doi;
 	__u16			ctx_len;
 };
@@ -568,4 +568,4 @@ enum xfrm_nlgroups {
 };
 #define XFRMNLGRP_MAX	(__XFRMNLGRP_MAX - 1)
 
-#endif /* _LINUX_XFRM_H */
+#endif /* _freax_XFRM_H */

@@ -5,19 +5,19 @@
  */
 #include "qla_def.h"
 
-#include <linux/bitfield.h>
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/refcount.h>
-#include <linux/crash_dump.h>
-#include <linux/trace_events.h>
-#include <linux/trace.h>
+#include <freax/bitfield.h>
+#include <freax/moduleparam.h>
+#include <freax/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/kthread.h>
+#include <freax/mutex.h>
+#include <freax/kobject.h>
+#include <freax/slab.h>
+#include <freax/blk-mq-pci.h>
+#include <freax/refcount.h>
+#include <freax/crash_dump.h>
+#include <freax/trace_events.h>
+#include <freax/trace.h>
 
 #include <scsi/scsi_tcq.h>
 #include <scsi/scsicam.h>
@@ -1237,7 +1237,7 @@ qla2x00_wait_for_chip_reset(scsi_qla_host_t *vha)
 *    The abort function will abort the specified command.
 *
 * Input:
-*    cmd = Linux SCSI command packet to be aborted.
+*    cmd = freax SCSI command packet to be aborted.
 *
 * Returns:
 *    Either SUCCESS or FAILED.
@@ -1589,7 +1589,7 @@ eh_reset_failed:
 *    commands.
 *
 * Input:
-*    cmd = Linux SCSI command packet of the command that cause the
+*    cmd = freax SCSI command packet of the command that cause the
 *          bus reset.
 *
 * Returns:
@@ -1656,7 +1656,7 @@ eh_bus_reset_done:
 *    The reset function will reset the Adapter.
 *
 * Input:
-*      cmd = Linux SCSI command packet of the command that cause the
+*      cmd = freax SCSI command packet of the command that cause the
 *            adapter reset.
 *
 * Returns:

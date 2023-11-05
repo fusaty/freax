@@ -17,16 +17,16 @@
 
 #define pr_fmt(fmt) "mvebu-coherency: " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/smp.h>
-#include <linux/dma-map-ops.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mbus.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/of_address.h>
+#include <freax/io.h>
+#include <freax/smp.h>
+#include <freax/dma-map-ops.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/mbus.h>
+#include <freax/pci.h>
 #include <asm/smp_plat.h>
 #include <asm/cacheflush.h>
 #include <asm/mach/map.h>

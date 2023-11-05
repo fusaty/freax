@@ -13,24 +13,24 @@
  * or Al Borchers <alborchers@steinerpoint.com>.
  */
 
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/serial.h>
-#include <linux/swab.h>
-#include <linux/kfifo.h>
-#include <linux/ioctl.h>
-#include <linux/firmware.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <freax/kernel.h>
+#include <freax/jiffies.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/serial.h>
+#include <freax/swab.h>
+#include <freax/kfifo.h>
+#include <freax/ioctl.h>
+#include <freax/firmware.h>
+#include <freax/uaccess.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
 
 #include "io_16654.h"
 #include "io_usbvend.h"

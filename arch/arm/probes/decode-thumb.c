@@ -5,9 +5,9 @@
  * Copyright (C) 2011 Jon Medhurst <tixy@yxit.co.uk>.
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #include "decode.h"
 #include "decode-thumb.h"

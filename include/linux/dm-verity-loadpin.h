@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef __LINUX_DM_VERITY_LOADPIN_H
-#define __LINUX_DM_VERITY_LOADPIN_H
+#ifndef __freax_DM_VERITY_LOADPIN_H
+#define __freax_DM_VERITY_LOADPIN_H
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 struct block_device;
 
@@ -24,4 +24,4 @@ static inline bool dm_verity_loadpin_is_bdev_trusted(struct block_device *bdev)
 }
 #endif
 
-#endif /* __LINUX_DM_VERITY_LOADPIN_H */
+#endif /* __freax_DM_VERITY_LOADPIN_H */

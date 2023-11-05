@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_INIT_H
-#define _LINUX_INIT_H
+#ifndef _freax_INIT_H
+#define _freax_INIT_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include <asm/export.h>
-#include <linux/memory_hotplug.h>
+#include <freax/memory_hotplug.h>
 
 #define __section(section)              __attribute__((__section__(section)))
 

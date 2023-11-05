@@ -11,18 +11,18 @@
  *  Copyright (c) 2008-2014 Silicon Graphics, Inc.  All Rights Reserved.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
+#include <freax/device.h>
+#include <freax/miscdevice.h>
+#include <freax/interrupt.h>
+#include <freax/proc_fs.h>
+#include <freax/uaccess.h>
 #ifdef CONFIG_X86_64
 #include <asm/uv/uv_irq.h>
 #endif

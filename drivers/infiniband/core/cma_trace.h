@@ -14,7 +14,7 @@
 
 #define _TRACE_RDMA_CMA_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 #include <trace/misc/rdma.h>
 
 

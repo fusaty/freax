@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: BSD-3-Clause-Clear
 /*
- * Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2019 The freax Foundation. All rights reserved.
  * Copyright (c) 2022, Qualcomm Innovation Center, Inc. All rights reserved.
  */
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 #include "hal_tx.h"
 #include "debug.h"
 #include "hal_desc.h"

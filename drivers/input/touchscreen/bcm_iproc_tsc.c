@@ -3,21 +3,21 @@
 * Copyright (C) 2015 Broadcom Corporation
 *
 */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/keyboard.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/keyboard.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/of.h>
 #include <asm/irq.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/serio.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/serio.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
 #define IPROC_TS_NAME "iproc-ts"
 

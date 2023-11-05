@@ -12,7 +12,7 @@
 #ifndef __HI655X_PMIC_H
 #define __HI655X_PMIC_H
 
-#include <linux/gpio/consumer.h>
+#include <freax/gpio/consumer.h>
 
 /* Hi655x registers are mapped to memory bus in 4 bytes stride */
 #define HI655X_STRIDE                   4

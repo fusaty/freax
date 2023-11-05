@@ -54,7 +54,7 @@ static int get_bpf_testmod_btf_fd(void)
 
 void test_module_fentry_shadow(void)
 {
-	struct btf *vmlinux_btf = NULL, *mod_btf = NULL;
+	struct btf *vmfreax_btf = NULL, *mod_btf = NULL;
 	int err, i;
 	int btf_fd[2] = {};
 	int prog_fd[2] = {};
@@ -75,19 +75,19 @@ void test_module_fentry_shadow(void)
 		BPF_EXIT_INSN(),
 	};
 
-	vmlinux_btf = btf__load_vmlinux_btf();
-	if (!ASSERT_OK_PTR(vmlinux_btf, "load_vmlinux_btf"))
+	vmfreax_btf = btf__load_vmfreax_btf();
+	if (!ASSERT_OK_PTR(vmfreax_btf, "load_vmfreax_btf"))
 		return;
 
 	btf_fd[1] = get_bpf_testmod_btf_fd();
 	if (!ASSERT_GE(btf_fd[1], 0, "get_bpf_testmod_btf_fd"))
 		goto out;
 
-	mod_btf = btf_get_from_fd(btf_fd[1], vmlinux_btf);
+	mod_btf = btf_get_from_fd(btf_fd[1], vmfreax_btf);
 	if (!ASSERT_OK_PTR(mod_btf, "btf_get_from_fd"))
 		goto out;
 
-	btf_id[0] = btf__find_by_name_kind(vmlinux_btf, symbol_name, BTF_KIND_FUNC);
+	btf_id[0] = btf__find_by_name_kind(vmfreax_btf, symbol_name, BTF_KIND_FUNC);
 	if (!ASSERT_GT(btf_id[0], 0, "btf_find_by_name"))
 		goto out;
 
@@ -107,7 +107,7 @@ void test_module_fentry_shadow(void)
 
 		/* If the verifier incorrectly resolves addresses of the
 		 * shadowed functions and uses the same address for both the
-		 * vmlinux and the bpf_testmod functions, this will fail on
+		 * vmfreax and the bpf_testmod functions, this will fail on
 		 * attempting to create two trampolines for the same address,
 		 * which is forbidden.
 		 */
@@ -120,7 +120,7 @@ void test_module_fentry_shadow(void)
 	ASSERT_OK(err, "running test");
 
 out:
-	btf__free(vmlinux_btf);
+	btf__free(vmfreax_btf);
 	btf__free(mod_btf);
 	for (i = 0; i < 2; i++) {
 		if (btf_fd[i])

@@ -34,18 +34,18 @@
  *	Added WDIOC_GETTIMEOUT and WDIOC_SETTIMOUT.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/reboot.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/miscdevice.h>
+#include <freax/watchdog.h>
+#include <freax/reboot.h>
+#include <freax/mutex.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
 #include "mconsole.h"
 #include "harddog.h"
 

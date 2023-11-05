@@ -10,24 +10,24 @@
  */
 
 /*
- * Many thanks to Richard Hirst <rhirst@linuxcare.com> for patiently
+ * Many thanks to Richard Hirst <rhirst@freaxcare.com> for patiently
  * debugging this driver on the parisc architecture and suggesting
  * many improvements and bug fixes.
  *
- * Thanks also go to Linuxcare Inc. for providing several PARISC
+ * Thanks also go to freaxcare Inc. for providing several PARISC
  * machines for me to debug the driver on.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/blkdev.h>
-#include <linux/ioport.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/stat.h>
+#include <freax/mm.h>
+#include <freax/blkdev.h>
+#include <freax/ioport.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
 
 #include <asm/page.h>
 #include <asm/irq.h>

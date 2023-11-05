@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _ASM_S390_TPI_H
 #define _ASM_S390_TPI_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <uapi/asm/schid.h>
 
 #ifndef __ASSEMBLY__

@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2018, The freax Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/dma-buf.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma-resv.h>
-#include <linux/idr.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/sort.h>
-#include <linux/of_platform.h>
-#include <linux/rpmsg.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/firmware/qcom/qcom_scm.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/dma-buf.h>
+#include <freax/dma-mapping.h>
+#include <freax/dma-resv.h>
+#include <freax/idr.h>
+#include <freax/list.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/sort.h>
+#include <freax/of_platform.h>
+#include <freax/rpmsg.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/firmware/qcom/qcom_scm.h>
 #include <uapi/misc/fastrpc.h>
-#include <linux/of_reserved_mem.h>
+#include <freax/of_reserved_mem.h>
 
 #define ADSP_DOMAIN_ID (0)
 #define MDSP_DOMAIN_ID (1)

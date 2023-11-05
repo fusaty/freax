@@ -9,17 +9,17 @@
  *  ARM HDLCD Driver
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/console.h>
-#include <linux/dma-mapping.h>
-#include <linux/list.h>
-#include <linux/of_graph.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/console.h>
+#include <freax/dma-mapping.h>
+#include <freax/list.h>
+#include <freax/of_graph.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic_helper.h>

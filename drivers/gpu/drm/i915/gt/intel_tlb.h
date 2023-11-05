@@ -6,8 +6,8 @@
 #ifndef INTEL_TLB_H
 #define INTEL_TLB_H
 
-#include <linux/seqlock.h>
-#include <linux/types.h>
+#include <freax/seqlock.h>
+#include <freax/types.h>
 
 #include "intel_gt_types.h"
 

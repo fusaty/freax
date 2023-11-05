@@ -4,9 +4,9 @@
  *
  * DEBUG_PREEMPT variant of smp_processor_id().
  */
-#include <linux/export.h>
-#include <linux/kprobes.h>
-#include <linux/sched.h>
+#include <freax/export.h>
+#include <freax/kprobes.h>
+#include <freax/sched.h>
 
 noinstr static
 unsigned int check_preemption_disabled(const char *what1, const char *what2)

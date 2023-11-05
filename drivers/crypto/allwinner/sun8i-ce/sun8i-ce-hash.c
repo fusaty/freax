@@ -14,13 +14,13 @@
 #include <crypto/md5.h>
 #include <crypto/sha1.h>
 #include <crypto/sha2.h>
-#include <linux/bottom_half.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/pm_runtime.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/bottom_half.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/pm_runtime.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include "sun8i-ce.h"
 
 int sun8i_ce_hash_init_tfm(struct crypto_ahash *tfm)

@@ -14,7 +14,7 @@
  *  Michael S. Tsirkin <mst@redhat.com>
  */
 
-#include "linux/virtio_pci_legacy.h"
+#include "freax/virtio_pci_legacy.h"
 #include "virtio_pci_common.h"
 
 /* virtio config->get_features() implementation */

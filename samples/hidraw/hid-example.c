@@ -10,10 +10,10 @@
  * applications using hidraw.
  */
 
-/* Linux */
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/hidraw.h>
+/* freax */
+#include <freax/types.h>
+#include <freax/input.h>
+#include <freax/hidraw.h>
 
 /*
  * Ugly hack to work around failing compilation on systems that don't

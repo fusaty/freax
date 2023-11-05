@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _ASM_X86_BOOTPARAM_H
 #define _ASM_X86_BOOTPARAM_H
 
@@ -41,10 +41,10 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
-#include <linux/screen_info.h>
-#include <linux/apm_bios.h>
-#include <linux/edd.h>
+#include <freax/types.h>
+#include <freax/screen_info.h>
+#include <freax/apm_bios.h>
+#include <freax/edd.h>
 #include <asm/ist.h>
 #include <video/edid.h>
 
@@ -111,7 +111,7 @@ struct sys_desc_table {
 	__u8  table[14];
 };
 
-/* Gleaned from OFW's set-parameters in cpu/x86/pc/linux.fth */
+/* Gleaned from OFW's set-parameters in cpu/x86/pc/freax.fth */
 struct olpc_ofw_header {
 	__u32 ofw_magic;	/* OFW signature */
 	__u32 ofw_version;
@@ -239,9 +239,9 @@ struct boot_params {
  * sequences. This enum represents accepted values for the x86
  * hardware_subarch.  Custom x86 boot sequences (not X86_SUBARCH_PC) do not
  * have or simply *cannot* make use of natural stubs like BIOS or EFI, the
- * hardware_subarch can be used on the Linux entry path to revector to a
+ * hardware_subarch can be used on the freax entry path to revector to a
  * subarchitecture stub when needed. This subarchitecture stub can be used to
- * set up Linux boot parameters or for special care to account for nonstandard
+ * set up freax boot parameters or for special care to account for nonstandard
  * handling of page tables.
  *
  * These enums should only ever be used by x86 code, and the code that uses

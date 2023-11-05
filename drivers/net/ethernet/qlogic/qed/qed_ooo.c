@@ -4,13 +4,13 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/types.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include "qed.h"
 #include "qed_iscsi.h"
 #include "qed_ll2.h"

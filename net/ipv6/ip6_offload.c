@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPV6 GSO/GRO offload support
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  */
 
-#include <linux/kernel.h>
-#include <linux/socket.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/printk.h>
+#include <freax/kernel.h>
+#include <freax/socket.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/printk.h>
 
 #include <net/protocol.h>
 #include <net/ipv6.h>

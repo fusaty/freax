@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 static inline int __get_inst(u32 *i, u32 *p, bool user)
 {

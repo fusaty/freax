@@ -5,7 +5,7 @@
  * Copyright 2011-2020 NXP
  */
 
-#include <linux/suspend.h>
+#include <freax/suspend.h>
 
 #include "main.h"
 #include "wmm.h"

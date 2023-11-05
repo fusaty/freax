@@ -26,7 +26,7 @@
  * Authors: Dave Airlie <airlied@redhat.com>
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_drv.h>

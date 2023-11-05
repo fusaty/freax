@@ -2,7 +2,7 @@
 /*
  * Auvitek AU0828 USB Bridge (Analog video support)
  *
- * Copyright (C) 2009 Devin Heitmueller <dheitmueller@linuxtv.org>
+ * Copyright (C) 2009 Devin Heitmueller <dheitmueller@freaxtv.org>
  * Copyright (C) 2005-2008 Auvitek International, Ltd.
  */
 
@@ -16,10 +16,10 @@
 #include "au0828.h"
 #include "au8522.h"
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/device.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/device.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-mc.h>
 #include <media/v4l2-ioctl.h>

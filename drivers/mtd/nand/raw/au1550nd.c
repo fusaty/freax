@@ -3,14 +3,14 @@
  *  Copyright (C) 2004 Embedded Edge, LLC
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_device.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/platform_device.h>
 #include <asm/io.h>
 #include <asm/mach-au1x00/au1000.h>
 #include <asm/mach-au1x00/au1550nd.h>

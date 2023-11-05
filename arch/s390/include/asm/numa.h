@@ -12,7 +12,7 @@
 
 #ifdef CONFIG_NUMA
 
-#include <linux/numa.h>
+#include <freax/numa.h>
 
 void numa_setup(void);
 

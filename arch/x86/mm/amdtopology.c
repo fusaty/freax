@@ -7,15 +7,15 @@
  *
  * Copyright 2002,2003 Andi Kleen, SuSE Labs.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/nodemask.h>
-#include <linux/memblock.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/nodemask.h>
+#include <freax/memblock.h>
 
 #include <asm/io.h>
-#include <linux/pci_ids.h>
-#include <linux/acpi.h>
+#include <freax/pci_ids.h>
+#include <freax/acpi.h>
 #include <asm/types.h>
 #include <asm/mmzone.h>
 #include <asm/proto.h>

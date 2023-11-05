@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  include/linux/mmc/sdio_func.h
+ *  include/freax/mmc/sdio_func.h
  *
  *  Copyright 2007-2008 Pierre Ossman
  */
 
-#ifndef LINUX_MMC_SDIO_FUNC_H
-#define LINUX_MMC_SDIO_FUNC_H
+#ifndef freax_MMC_SDIO_FUNC_H
+#define freax_MMC_SDIO_FUNC_H
 
-#include <linux/device.h>
-#include <linux/mod_devicetable.h>
+#include <freax/device.h>
+#include <freax/mod_devicetable.h>
 
-#include <linux/mmc/pm.h>
+#include <freax/mmc/pm.h>
 
 struct mmc_card;
 struct sdio_func;
@@ -175,4 +175,4 @@ extern void sdio_retune_crc_enable(struct sdio_func *func);
 extern void sdio_retune_hold_now(struct sdio_func *func);
 extern void sdio_retune_release(struct sdio_func *func);
 
-#endif /* LINUX_MMC_SDIO_FUNC_H */
+#endif /* freax_MMC_SDIO_FUNC_H */

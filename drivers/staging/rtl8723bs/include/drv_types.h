@@ -14,7 +14,7 @@
 #ifndef __DRV_TYPES_H__
 #define __DRV_TYPES_H__
 
-#include <linux/sched/signal.h>
+#include <freax/sched/signal.h>
 #include <basic_types.h>
 #include <osdep_service.h>
 #include <rtw_byteorder.h>
@@ -53,8 +53,8 @@
 
 #include "ioctl_cfg80211.h"
 
-#include <linux/ip.h>
-#include <linux/if_ether.h>
+#include <freax/ip.h>
+#include <freax/if_ether.h>
 
 #define SPEC_DEV_ID_NONE BIT(0)
 #define SPEC_DEV_ID_DISABLE_HT BIT(1)

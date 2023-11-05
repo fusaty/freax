@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-#include <linux/err.h>
+#include <freax/err.h>
 
 #include "util/ftrace.h"
 #include "util/cpumap.h"

@@ -3,13 +3,13 @@
  * devoard misc stuff.
  */
 
-#include <linux/init.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/physmap.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
+#include <freax/init.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/physmap.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
 
 #include <asm/bootinfo.h>
 #include <asm/idle.h>

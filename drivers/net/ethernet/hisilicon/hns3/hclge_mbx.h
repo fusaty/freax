@@ -3,9 +3,9 @@
 
 #ifndef __HCLGE_MBX_H
 #define __HCLGE_MBX_H
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
 
 enum HCLGE_MBX_OPCODE {
 	HCLGE_MBX_RESET = 0x01,		/* (VF -> PF) assert reset */

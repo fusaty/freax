@@ -11,10 +11,10 @@
  * Copyright (C) 2002  Ralf Baechle
  * Copyright (C) 2002  Maciej W. Rozycki
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/mm.h>
 
 #include <asm/page.h>
 #include <asm/mmu_context.h>

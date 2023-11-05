@@ -10,13 +10,13 @@
  * Datasheet: http://www.maxim-ic.com/quick_view2.cfm/qv_pk/5456
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pm.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/pm.h>
+#include <freax/input.h>
+#include <freax/input/matrix_keypad.h>
 
 #define MAX7359_MAX_KEY_ROWS	8
 #define MAX7359_MAX_KEY_COLS	8

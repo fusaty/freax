@@ -7,18 +7,18 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/idr.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/idr.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
 
 static struct class *phy_class;
 static struct dentry *phy_debugfs_root;

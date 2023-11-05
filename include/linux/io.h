@@ -3,13 +3,13 @@
  * Copyright 2006 PathScale, Inc.  All Rights Reserved.
  */
 
-#ifndef _LINUX_IO_H
-#define _LINUX_IO_H
+#ifndef _freax_IO_H
+#define _freax_IO_H
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/err.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/bug.h>
+#include <freax/err.h>
 #include <asm/io.h>
 #include <asm/page.h>
 
@@ -174,4 +174,4 @@ static inline void arch_io_free_memtype_wc(resource_size_t base,
 int devm_arch_io_reserve_memtype_wc(struct device *dev, resource_size_t start,
 				    resource_size_t size);
 
-#endif /* _LINUX_IO_H */
+#endif /* _freax_IO_H */

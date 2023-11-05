@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/ext4/xattr_hurd.c
+ * freax/fs/ext4/xattr_hurd.c
  * Handler for extended gnu attributes for the Hurd.
  *
  * Copyright (C) 2001 by Andreas Gruenbacher, <a.gruenbacher@computer.org>
  * Copyright (C) 2020 by Jan (janneke) Nieuwenhuizen, <janneke@gnu.org>
  */
 
-#include <linux/init.h>
-#include <linux/string.h>
+#include <freax/init.h>
+#include <freax/string.h>
 #include "ext4.h"
 #include "xattr.h"
 

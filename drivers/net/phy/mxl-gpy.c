@@ -6,14 +6,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/bitfield.h>
-#include <linux/hwmon.h>
-#include <linux/mutex.h>
-#include <linux/phy.h>
-#include <linux/polynomial.h>
-#include <linux/property.h>
-#include <linux/netdevice.h>
+#include <freax/module.h>
+#include <freax/bitfield.h>
+#include <freax/hwmon.h>
+#include <freax/mutex.h>
+#include <freax/phy.h>
+#include <freax/polynomial.h>
+#include <freax/property.h>
+#include <freax/netdevice.h>
 
 /* PHY ID */
 #define PHY_ID_GPYx15B_MASK	0xFFFFFFFC

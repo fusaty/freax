@@ -2,7 +2,7 @@
 #ifndef __PARISC_IRQFLAGS_H
 #define __PARISC_IRQFLAGS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/psw.h>
 
 static inline unsigned long arch_local_save_flags(void)

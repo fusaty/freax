@@ -5,9 +5,9 @@
  *
  */
 
-#include <linux/etherdevice.h>
-#include <linux/types.h>
-#include <linux/regmap.h>
+#include <freax/etherdevice.h>
+#include <freax/types.h>
+#include <freax/regmap.h>
 
 #include "icssg_prueth.h"
 

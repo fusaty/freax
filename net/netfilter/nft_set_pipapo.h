@@ -2,7 +2,7 @@
 
 #ifndef _NFT_SET_PIPAPO_H
 
-#include <linux/log2.h>
+#include <freax/log2.h>
 #include <net/ipv6.h>			/* For the maximum length of a field */
 
 /* Count of concatenated fields depends on count of 32-bit nftables registers */

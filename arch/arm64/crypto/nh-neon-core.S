@@ -7,8 +7,8 @@
  * Author: Eric Biggers <ebiggers@google.com>
  */
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <freax/linkage.h>
+#include <freax/cfi_types.h>
 
 	KEY		.req	x0
 	MESSAGE		.req	x1

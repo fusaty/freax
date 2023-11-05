@@ -5,14 +5,14 @@
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/reboot.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/of.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/smp.h>
+#include <freax/reboot.h>
+#include <freax/kexec.h>
+#include <freax/crash_dump.h>
+#include <freax/of.h>
 
 #include <asm/kexec.h>
 #include <asm/reg.h>

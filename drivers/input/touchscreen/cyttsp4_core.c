@@ -13,13 +13,13 @@
  */
 
 #include "cyttsp4_core.h"
-#include <linux/delay.h>
-#include <linux/gpio.h>
-#include <linux/input/mt.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/gpio.h>
+#include <freax/input/mt.h>
+#include <freax/interrupt.h>
+#include <freax/pm_runtime.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
 /* Timeout in ms. */
 #define CY_CORE_REQUEST_EXCLUSIVE_TIMEOUT	500

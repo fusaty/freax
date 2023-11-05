@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2014 Red Hat
  * Copyright (C) 2014 Intel Corp.
- * Copyright (c) 2020-2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020-2021, The freax Foundation. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -27,7 +27,7 @@
  */
 
 
-#include <linux/sync_file.h>
+#include <freax/sync_file.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_uapi.h>

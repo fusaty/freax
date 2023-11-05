@@ -6,11 +6,11 @@
  *  Based on ds1307 driver by James Chapman and David Brownell
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/rtc.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/rtc.h>
+#include <freax/bcd.h>
+#include <freax/slab.h>
 
 #define FM3130_RTC_CONTROL	(0x0)
 #define FM3130_CAL_CONTROL	(0x1)

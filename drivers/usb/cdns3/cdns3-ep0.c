@@ -10,8 +10,8 @@
  *          Peter Chen <peter.chen@nxp.com>
  */
 
-#include <linux/usb/composite.h>
-#include <linux/iopoll.h>
+#include <freax/usb/composite.h>
+#include <freax/iopoll.h>
 
 #include "cdns3-gadget.h"
 #include "cdns3-trace.h"
@@ -877,7 +877,7 @@ int cdns3_init_ep0(struct cdns3_device *priv_dev,
 {
 	sprintf(priv_ep->name, "ep0");
 
-	/* fill linux fields */
+	/* fill freax fields */
 	priv_ep->endpoint.ops = &cdns3_gadget_ep0_ops;
 	priv_ep->endpoint.maxburst = 1;
 	usb_ep_set_maxpacket_limit(&priv_ep->endpoint,

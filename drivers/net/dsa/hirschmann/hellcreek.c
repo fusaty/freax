@@ -7,20 +7,20 @@
  * Author Kurt Kanzenbach <kurt@linutronix.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_device.h>
-#include <linux/bitops.h>
-#include <linux/if_bridge.h>
-#include <linux/if_vlan.h>
-#include <linux/etherdevice.h>
-#include <linux/random.h>
-#include <linux/iopoll.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/platform_device.h>
+#include <freax/bitops.h>
+#include <freax/if_bridge.h>
+#include <freax/if_vlan.h>
+#include <freax/etherdevice.h>
+#include <freax/random.h>
+#include <freax/iopoll.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
 #include <net/dsa.h>
 
 #include "hellcreek.h"

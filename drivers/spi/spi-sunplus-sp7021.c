@@ -2,17 +2,17 @@
 // Copyright (c) 2021 Sunplus Inc.
 // Author: Li-hao Kuo <lhjeff911@gmail.com>
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/spi/spi.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/spi/spi.h>
 
 #define SP7021_DATA_RDY_REG		0x0044
 #define SP7021_SLAVE_DMA_CTRL_REG	0x0048

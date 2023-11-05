@@ -6,17 +6,17 @@
  * Copyright © 2007-2008  Andres Salomon <dilinger@debian.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/syscore_ops.h>
-#include <linux/mutex.h>
-#include <linux/olpc-ec.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/string.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/syscore_ops.h>
+#include <freax/mutex.h>
+#include <freax/olpc-ec.h>
 
 #include <asm/geode.h>
 #include <asm/setup.h>

@@ -5,7 +5,7 @@
  *
  * Copyright 2022-2023 NXP
  */
-#include <linux/ethtool.h>
+#include <freax/ethtool.h>
 #include <soc/mscc/ocelot.h>
 #include <soc/mscc/ocelot_dev.h>
 #include <soc/mscc/ocelot_qsys.h>

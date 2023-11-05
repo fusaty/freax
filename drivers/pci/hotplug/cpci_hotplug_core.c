@@ -11,17 +11,17 @@
  * Send feedback to <scottm@somanetworks.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/pci_hotplug.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/pci_hotplug.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/atomic.h>
+#include <freax/delay.h>
+#include <freax/kthread.h>
 #include "cpci_hotplug.h"
 
 #define DRIVER_AUTHOR	"Scott Murray <scottm@somanetworks.com>"

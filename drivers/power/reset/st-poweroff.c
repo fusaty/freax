@@ -7,13 +7,13 @@
  * Author: Christophe Kerello <christophe.kerello@st.com>
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/syscon.h>
-#include <linux/reboot.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/syscon.h>
+#include <freax/reboot.h>
+#include <freax/regmap.h>
 
 struct reset_syscfg {
 	struct regmap *regmap;

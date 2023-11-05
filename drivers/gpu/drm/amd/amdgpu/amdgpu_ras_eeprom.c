@@ -24,12 +24,12 @@
 #include "amdgpu_ras_eeprom.h"
 #include "amdgpu.h"
 #include "amdgpu_ras.h"
-#include <linux/bits.h>
+#include <freax/bits.h>
 #include "atom.h"
 #include "amdgpu_eeprom.h"
 #include "amdgpu_atomfirmware.h"
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
+#include <freax/debugfs.h>
+#include <freax/uaccess.h>
 
 #include "amdgpu_reset.h"
 

@@ -2,7 +2,7 @@
 /*
  * Copyright (c) 2022 Konrad Dybcio <konrad.dybcio@somainline.org>
  *
- * Generated with linux-mdss-dsi-panel-driver-generator with a
+ * Generated with freax-mdss-dsi-panel-driver-generator with a
  * substantial amount of manual adjustments.
  *
  * SONY Downstream kernel calls this one:
@@ -10,11 +10,11 @@
  * - "JDI ID4" for Apollo (XZ2 Compact)
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regulator/consumer.h>
 
 #include <video/mipi_display.h>
 

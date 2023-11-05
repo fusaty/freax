@@ -35,13 +35,13 @@
  *
  */
 
-#ifndef _LINUX_HP_SDC_H
-#define _LINUX_HP_SDC_H
+#ifndef _freax_HP_SDC_H
+#define _freax_HP_SDC_H
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/timer.h>
+#include <freax/interrupt.h>
+#include <freax/types.h>
+#include <freax/time.h>
+#include <freax/timer.h>
 #if defined(__hppa__)
 #include <asm/hardware.h>
 #endif
@@ -298,4 +298,4 @@ typedef struct {
 
 } hp_i8042_sdc;
 
-#endif /* _LINUX_HP_SDC_H */
+#endif /* _freax_HP_SDC_H */

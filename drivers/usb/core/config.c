@@ -3,13 +3,13 @@
  * Released under the GPLv2 only.
  */
 
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/quirks.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <freax/usb.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/quirks.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/device.h>
 #include <asm/byteorder.h>
 #include "usb.h"
 

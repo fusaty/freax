@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hfsplus/dir.c
+ *  freax/fs/hfsplus/dir.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -9,11 +9,11 @@
  * Handling of directories
  */
 
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/nls.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/random.h>
+#include <freax/nls.h>
 
 #include "hfsplus_fs.h"
 #include "hfsplus_raw.h"

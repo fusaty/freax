@@ -4,23 +4,23 @@
  *   Portions Copyright (C) Christoph Hellwig, 2001-2002
  */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/parser.h>
-#include <linux/completion.h>
-#include <linux/vfs.h>
-#include <linux/quotaops.h>
-#include <linux/mount.h>
-#include <linux/moduleparam.h>
-#include <linux/kthread.h>
-#include <linux/posix_acl.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/parser.h>
+#include <freax/completion.h>
+#include <freax/vfs.h>
+#include <freax/quotaops.h>
+#include <freax/mount.h>
+#include <freax/moduleparam.h>
+#include <freax/kthread.h>
+#include <freax/posix_acl.h>
+#include <freax/buffer_head.h>
+#include <freax/exportfs.h>
+#include <freax/crc32.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/seq_file.h>
+#include <freax/blkdev.h>
 
 #include "jfs_incore.h"
 #include "jfs_filsys.h"

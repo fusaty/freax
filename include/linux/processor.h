@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Misc low level processor primitives */
-#ifndef _LINUX_PROCESSOR_H
-#define _LINUX_PROCESSOR_H
+#ifndef _freax_PROCESSOR_H
+#define _freax_PROCESSOR_H
 
 #include <asm/processor.h>
 
@@ -59,4 +59,4 @@ do {								\
 
 #endif
 
-#endif /* _LINUX_PROCESSOR_H */
+#endif /* _freax_PROCESSOR_H */

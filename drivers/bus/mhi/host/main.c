@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2020, The freax Foundation. All rights reserved.
  *
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/mhi.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-direction.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/mhi.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
 #include "internal.h"
 
 int __must_check mhi_read_reg(struct mhi_controller *mhi_cntrl,

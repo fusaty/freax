@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2020 Mellanox Technologies */
 
 #ifndef __MLX5E_EN_MOD_HDR_H__
 #define __MLX5E_EN_MOD_HDR_H__
 
-#include <linux/hashtable.h>
-#include <linux/mlx5/fs.h>
+#include <freax/hashtable.h>
+#include <freax/mlx5/fs.h>
 
 #define MLX5_MH_ACT_SZ MLX5_UN_SZ_BYTES(set_add_copy_action_in_auto)
 

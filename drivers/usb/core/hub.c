@@ -10,30 +10,30 @@
  * Released under the GPLv2 only.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/completion.h>
-#include <linux/sched/mm.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/kcov.h>
-#include <linux/ioctl.h>
-#include <linux/usb.h>
-#include <linux/usbdevice_fs.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/onboard_hub.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/quirks.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/pm_qos.h>
-#include <linux/kobject.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/completion.h>
+#include <freax/sched/mm.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/kcov.h>
+#include <freax/ioctl.h>
+#include <freax/usb.h>
+#include <freax/usbdevice_fs.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/onboard_hub.h>
+#include <freax/usb/otg.h>
+#include <freax/usb/quirks.h>
+#include <freax/workqueue.h>
+#include <freax/mutex.h>
+#include <freax/random.h>
+#include <freax/pm_qos.h>
+#include <freax/kobject.h>
 
-#include <linux/bitfield.h>
-#include <linux/uaccess.h>
+#include <freax/bitfield.h>
+#include <freax/uaccess.h>
 #include <asm/byteorder.h>
 
 #include "hub.h"
@@ -3389,7 +3389,7 @@ EXPORT_SYMBOL_GPL(usb_wakeup_enabled_descendants);
  * Once VBUS drop breaks the circuit, the port it's using has to go through
  * normal re-enumeration procedures, starting with enabling VBUS power.
  * Other than re-initializing the hub (plug/unplug, except for root hubs),
- * Linux (2.6) currently has NO mechanisms to initiate that:  no hub_wq
+ * freax (2.6) currently has NO mechanisms to initiate that:  no hub_wq
  * timer, no SRP, no requests through sysfs.
  *
  * If Runtime PM isn't enabled or used, non-SuperSpeed devices may not get
@@ -3540,7 +3540,7 @@ static int finish_port_resume(struct usb_device *udev)
 		udev->reset_resume ? "finish reset-resume" : "finish resume");
 
 	/* usb ch9 identifies four variants of SUSPENDED, based on what
-	 * state the device resumes to.  Linux currently won't see the
+	 * state the device resumes to.  freax currently won't see the
 	 * first two on the host side; they'd be inside hub_port_init()
 	 * during many timeouts, but hub_wq can't suspend until later.
 	 */
@@ -4914,7 +4914,7 @@ hub_port_init(struct usb_hub *hub, struct usb_device *udev, int port1,
 
 	/* Why interleave GET_DESCRIPTOR and SET_ADDRESS this way?
 	 * Because device hardware and firmware is sometimes buggy in
-	 * this area, and this is how Linux has done it for ages.
+	 * this area, and this is how freax has done it for ages.
 	 * Change it cautiously.
 	 *
 	 * NOTE:  If use_new_scheme() is true we will start by issuing

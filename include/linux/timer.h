@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TIMER_H
-#define _LINUX_TIMER_H
+#ifndef _freax_TIMER_H
+#define _freax_TIMER_H
 
-#include <linux/list.h>
-#include <linux/ktime.h>
-#include <linux/stddef.h>
-#include <linux/debugobjects.h>
-#include <linux/stringify.h>
+#include <freax/list.h>
+#include <freax/ktime.h>
+#include <freax/stddef.h>
+#include <freax/debugobjects.h>
+#include <freax/stringify.h>
 
 struct timer_list {
 	/*

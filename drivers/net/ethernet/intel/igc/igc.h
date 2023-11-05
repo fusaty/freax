@@ -4,17 +4,17 @@
 #ifndef _IGC_H_
 #define _IGC_H_
 
-#include <linux/kobject.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/ethtool.h>
-#include <linux/sctp.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/timecounter.h>
-#include <linux/net_tstamp.h>
-#include <linux/bitfield.h>
-#include <linux/hrtimer.h>
+#include <freax/kobject.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/ethtool.h>
+#include <freax/sctp.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/timecounter.h>
+#include <freax/net_tstamp.h>
+#include <freax/bitfield.h>
+#include <freax/hrtimer.h>
 #include <net/xdp.h>
 
 #include "igc_hw.h"

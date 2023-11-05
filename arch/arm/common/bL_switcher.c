@@ -6,31 +6,31 @@
  * Copyright:	(C) 2012-2013  Linaro Limited
  */
 
-#include <linux/atomic.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/interrupt.h>
-#include <linux/cpu_pm.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/clockchips.h>
-#include <linux/hrtimer.h>
-#include <linux/tick.h>
-#include <linux/notifier.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/irqchip/arm-gic.h>
-#include <linux/moduleparam.h>
+#include <freax/atomic.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched/signal.h>
+#include <uapi/freax/sched/types.h>
+#include <freax/interrupt.h>
+#include <freax/cpu_pm.h>
+#include <freax/cpu.h>
+#include <freax/cpumask.h>
+#include <freax/kthread.h>
+#include <freax/wait.h>
+#include <freax/time.h>
+#include <freax/clockchips.h>
+#include <freax/hrtimer.h>
+#include <freax/tick.h>
+#include <freax/notifier.h>
+#include <freax/mm.h>
+#include <freax/mutex.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/sysfs.h>
+#include <freax/irqchip/arm-gic.h>
+#include <freax/moduleparam.h>
 
 #include <asm/smp_plat.h>
 #include <asm/cputype.h>

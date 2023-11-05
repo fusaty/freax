@@ -8,7 +8,7 @@ include $(srctree)/lib/vdso/Makefile
 # Same as cc-*option, but using CC_COMPAT instead of CC
 ifeq ($(CONFIG_CC_IS_CLANG), y)
 CC_COMPAT ?= $(CC)
-CC_COMPAT += --target=arm-linux-gnueabi
+CC_COMPAT += --target=arm-freax-gnueabi
 else
 CC_COMPAT ?= $(CROSS_COMPILE_COMPAT)gcc
 endif
@@ -34,7 +34,7 @@ cc32-disable-warning = $(call try-run,\
 # KBUILD_CPPFLAGS and NOSTDINC_FLAGS from top-level Makefile
 VDSO_CPPFLAGS := -DBUILD_VDSO -D__KERNEL__ -nostdinc
 VDSO_CPPFLAGS += -isystem $(shell $(CC_COMPAT) -print-file-name=include 2>/dev/null)
-VDSO_CPPFLAGS += $(LINUXINCLUDE)
+VDSO_CPPFLAGS += $(freaxINCLUDE)
 
 # Common C and assembly flags
 # From top-level Makefile
@@ -46,7 +46,7 @@ endif
 
 # From arm Makefile
 VDSO_CAFLAGS += $(call cc32-option,-fno-dwarf2-cfi-asm)
-VDSO_CAFLAGS += -mabi=aapcs-linux -mfloat-abi=soft
+VDSO_CAFLAGS += -mabi=aapcs-freax -mfloat-abi=soft
 ifeq ($(CONFIG_CPU_BIG_ENDIAN), y)
 VDSO_CAFLAGS += -mbig-endian
 else
@@ -96,7 +96,7 @@ VDSO_AFLAGS := $(VDSO_CAFLAGS)
 VDSO_AFLAGS += -D__ASSEMBLY__
 
 # From arm vDSO Makefile
-VDSO_LDFLAGS += -Bsymbolic --no-undefined -soname=linux-vdso.so.1
+VDSO_LDFLAGS += -Bsymbolic --no-undefined -soname=freax-vdso.so.1
 VDSO_LDFLAGS += -z max-page-size=4096 -z common-page-size=4096
 VDSO_LDFLAGS += -shared --hash-style=sysv --build-id=sha1
 VDSO_LDFLAGS += --orphan-handling=$(CONFIG_LD_ORPHAN_WARN_LEVEL)

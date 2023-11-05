@@ -6,11 +6,11 @@
  *	Suman Anna <s-anna@ti.com>
  */
 
-#ifndef __LINUX_PRUSS_H
-#define __LINUX_PRUSS_H
+#ifndef __freax_PRUSS_H
+#define __freax_PRUSS_H
 
-#include <linux/device.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/types.h>
 
 #define PRU_RPROC_DRVNAME "pru-rproc"
 
@@ -80,4 +80,4 @@ static inline bool is_pru_rproc(struct device *dev)
 	return true;
 }
 
-#endif /* __LINUX_PRUSS_H */
+#endif /* __freax_PRUSS_H */

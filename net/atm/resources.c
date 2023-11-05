@@ -10,17 +10,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ":%s: " fmt, __func__
 
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/atmdev.h>
-#include <linux/sonet.h>
-#include <linux/kernel.h> /* for barrier */
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <freax/ctype.h>
+#include <freax/string.h>
+#include <freax/atmdev.h>
+#include <freax/sonet.h>
+#include <freax/kernel.h> /* for barrier */
+#include <freax/module.h>
+#include <freax/bitops.h>
+#include <freax/capability.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
 
 #include <net/sock.h>	 /* for struct sock */
 

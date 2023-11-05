@@ -14,13 +14,13 @@
 
 /***************************************************************************/
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/clocksource.h>
-#include <linux/rtc.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/clocksource.h>
+#include <freax/rtc.h>
 #include <asm/setup.h>
 #include <asm/machdep.h>
 #include <asm/MC68VZ328.h>

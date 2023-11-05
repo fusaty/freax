@@ -1,5 +1,5 @@
 /*
- * linux/arch/m68k/mm/sun3kmap.c
+ * freax/arch/m68k/mm/sun3kmap.c
  *
  * Copyright (C) 2002 Sam Creasey <sammy@sammy.net>
  *
@@ -8,11 +8,11 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
 
 #include <asm/page.h>
 #include <asm/io.h>

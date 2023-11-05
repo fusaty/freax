@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_NSFS_H
-#define __LINUX_NSFS_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_NSFS_H
+#define __freax_NSFS_H
 
-#include <linux/ioctl.h>
+#include <freax/ioctl.h>
 
 #define NSIO	0xb7
 
@@ -16,4 +16,4 @@
 /* Get owner UID (in the caller's user namespace) for a user namespace */
 #define NS_GET_OWNER_UID	_IO(NSIO, 0x4)
 
-#endif /* __LINUX_NSFS_H */
+#endif /* __freax_NSFS_H */

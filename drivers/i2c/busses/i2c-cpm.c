@@ -16,20 +16,20 @@
  * (C) 2007,2008 Jochen Friedrich <jochen@scram.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/errno.h>
-#include <linux/stddef.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/errno.h>
+#include <freax/stddef.h>
+#include <freax/i2c.h>
+#include <freax/io.h>
+#include <freax/dma-mapping.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
 #include <sysdev/fsl_soc.h>
 #include <asm/cpm.h>
 
@@ -496,7 +496,7 @@ static int cpm_i2c_setup(struct cpm_i2c *cpm)
 	}
 	cpm->cp_command = *data;
 
-	data = of_get_property(ofdev->dev.of_node, "linux,i2c-class", &len);
+	data = of_get_property(ofdev->dev.of_node, "freax,i2c-class", &len);
 	if (data && len == 4)
 		cpm->adap.class = *data;
 
@@ -657,7 +657,7 @@ static int cpm_i2c_probe(struct platform_device *ofdev)
 
 	/* register new adapter to i2c module... */
 
-	data = of_get_property(ofdev->dev.of_node, "linux,i2c-index", &len);
+	data = of_get_property(ofdev->dev.of_node, "freax,i2c-index", &len);
 	cpm->adap.nr = (data && len == 4) ? be32_to_cpup(data) : -1;
 	result = i2c_add_numbered_adapter(&cpm->adap);
 

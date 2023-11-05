@@ -28,7 +28,7 @@
 /*
  * Small helper utilities.
  */
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include <asm/octeon/octeon.h>
 

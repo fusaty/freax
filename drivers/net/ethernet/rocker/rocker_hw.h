@@ -8,7 +8,7 @@
 #ifndef _ROCKER_HW_H
 #define _ROCKER_HW_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Return codes */
 enum {

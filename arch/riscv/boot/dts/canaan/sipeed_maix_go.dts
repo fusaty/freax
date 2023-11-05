@@ -48,19 +48,19 @@
 
 		key-up {
 			label = "UP";
-			linux,code = <BTN_1>;
+			freax,code = <BTN_1>;
 			gpios = <&gpio1_0 7 GPIO_ACTIVE_LOW>;
 		};
 
 		key-press {
 			label = "PRESS";
-			linux,code = <BTN_0>;
+			freax,code = <BTN_0>;
 			gpios = <&gpio0 0 GPIO_ACTIVE_LOW>;
 		};
 
 		key-down {
 			label = "DOWN";
-			linux,code = <BTN_2>;
+			freax,code = <BTN_2>;
 			gpios = <&gpio0 1 GPIO_ACTIVE_LOW>;
 		};
 	};

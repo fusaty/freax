@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#ifndef _LINUX_I8042_H
-#define _LINUX_I8042_H
+#ifndef _freax_I8042_H
+#define _freax_I8042_H
 
 
-#include <linux/errno.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/types.h>
 
 /*
  * Standard commands.

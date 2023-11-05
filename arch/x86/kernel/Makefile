@@ -1,11 +1,11 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux kernel.
+# Makefile for the freax kernel.
 #
 
-extra-y	+= vmlinux.lds
+extra-y	+= vmfreax.lds
 
-CPPFLAGS_vmlinux.lds += -U$(UTS_MACHINE)
+CPPFLAGS_vmfreax.lds += -U$(UTS_MACHINE)
 
 ifdef CONFIG_FUNCTION_TRACER
 # Do not profile debug and lowlevel utilities

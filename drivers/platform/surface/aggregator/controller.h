@@ -8,19 +8,19 @@
 #ifndef _SURFACE_AGGREGATOR_CONTROLLER_H
 #define _SURFACE_AGGREGATOR_CONTROLLER_H
 
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/rwsem.h>
-#include <linux/serdev.h>
-#include <linux/spinlock.h>
-#include <linux/srcu.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/rbtree.h>
+#include <freax/rwsem.h>
+#include <freax/serdev.h>
+#include <freax/spinlock.h>
+#include <freax/srcu.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_aggregator/serial_hub.h>
+#include <freax/surface_aggregator/controller.h>
+#include <freax/surface_aggregator/serial_hub.h>
 
 #include "ssh_request_layer.h"
 

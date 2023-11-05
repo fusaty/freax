@@ -10,12 +10,12 @@
 #include "dm-cache-policy.h"
 #include "dm.h"
 
-#include <linux/hash.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/vmalloc.h>
-#include <linux/math64.h>
+#include <freax/hash.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/vmalloc.h>
+#include <freax/math64.h>
 
 #define DM_MSG_PREFIX "cache-policy-smq"
 

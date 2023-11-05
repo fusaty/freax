@@ -6,19 +6,19 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/atomic.h>
-#include <linux/completion.h>
-#include <linux/error-injection.h>
-#include <linux/ktime.h>
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/completion.h>
+#include <freax/error-injection.h>
+#include <freax/ktime.h>
+#include <freax/limits.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
-#include <linux/surface_aggregator/serial_hub.h>
-#include <linux/surface_aggregator/controller.h>
+#include <freax/surface_aggregator/serial_hub.h>
+#include <freax/surface_aggregator/controller.h>
 
 #include "ssh_packet_layer.h"
 #include "ssh_request_layer.h"

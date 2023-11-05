@@ -1,7 +1,7 @@
-#include <linux/notifier.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <freax/notifier.h>
+#include <freax/socket.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
 #include <net/net_namespace.h>
 #include <net/fib_notifier.h>
 #include <net/netns/ipv6.h>

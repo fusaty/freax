@@ -7,14 +7,14 @@
  *	Sangmin Lee <lsmin.lee@samsung.com>
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
 
 #include <drm/drm_fourcc.h>
 #include <drm/drm_print.h>

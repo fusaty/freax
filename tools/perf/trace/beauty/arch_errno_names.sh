@@ -4,7 +4,7 @@
 # Generate C file mapping errno codes to errno names.
 #
 # Copyright IBM Corp. 2018
-# Author(s):  Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+# Author(s):  Hendrik Brueckner <brueckner@freax.vnet.ibm.com>
 
 gcc="$1"
 toolsdir="$2"

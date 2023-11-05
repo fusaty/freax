@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * linux/include/linux/nfsd/debug.h
+ * freax/include/freax/nfsd/debug.h
  *
  * Debugging-related stuff for nfsd
  *
  * Copyright (C) 1995 Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef _UAPILINUX_NFSD_DEBUG_H
-#define _UAPILINUX_NFSD_DEBUG_H
+#ifndef _UAPIfreax_NFSD_DEBUG_H
+#define _UAPIfreax_NFSD_DEBUG_H
 
-#include <linux/sunrpc/debug.h>
+#include <freax/sunrpc/debug.h>
 
 /*
  * knfsd debug flags
@@ -31,4 +31,4 @@
 
 
 
-#endif /* _UAPILINUX_NFSD_DEBUG_H */
+#endif /* _UAPIfreax_NFSD_DEBUG_H */

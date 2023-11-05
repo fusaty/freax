@@ -3,10 +3,10 @@
  * This file contains the routines for initializing kernel userspace protection
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/printk.h>
-#include <linux/smp.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/printk.h>
+#include <freax/smp.h>
 
 #include <asm/kup.h>
 #include <asm/smp.h>

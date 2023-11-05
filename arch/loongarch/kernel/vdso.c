@@ -4,18 +4,18 @@
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
 
-#include <linux/binfmts.h>
-#include <linux/elf.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/time_namespace.h>
-#include <linux/timekeeper_internal.h>
+#include <freax/binfmts.h>
+#include <freax/elf.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/random.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/time_namespace.h>
+#include <freax/timekeeper_internal.h>
 
 #include <asm/page.h>
 #include <asm/vdso.h>
@@ -160,7 +160,7 @@ static unsigned long vdso_base(void)
 	return base;
 }
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct freax_binprm *bprm, int uses_interp)
 {
 	int ret;
 	unsigned long size, data_addr, vdso_addr;

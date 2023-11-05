@@ -8,16 +8,16 @@
  *      (c) 2008 Alexey Starikovskiy <astarikovskiy@suse.de>
  */
 
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/memblock.h>
-#include <linux/kernel_stat.h>
-#include <linux/mc146818rtc.h>
-#include <linux/bitops.h>
-#include <linux/acpi.h>
-#include <linux/smp.h>
-#include <linux/pci.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/memblock.h>
+#include <freax/kernel_stat.h>
+#include <freax/mc146818rtc.h>
+#include <freax/bitops.h>
+#include <freax/acpi.h>
+#include <freax/smp.h>
+#include <freax/pci.h>
 
 #include <asm/i8259.h>
 #include <asm/io_apic.h>
@@ -592,7 +592,7 @@ void __init default_find_smp_config(void)
 	unsigned int address;
 
 	/*
-	 * FIXME: Linux assumes you have 640K of base ram..
+	 * FIXME: freax assumes you have 640K of base ram..
 	 * this continues the error...
 	 *
 	 * 1) Scan the bottom 1K for a signature
@@ -611,7 +611,7 @@ void __init default_find_smp_config(void)
 	 * there is a real-mode segmented pointer pointing to the
 	 * 4K EBDA area at 0x40E, calculate and scan it here.
 	 *
-	 * NOTE! There are Linux loaders that will corrupt the EBDA
+	 * NOTE! There are freax loaders that will corrupt the EBDA
 	 * area, and as such this kind of SMP config may be less
 	 * trustworthy, simply because the SMP table may have been
 	 * stomped on during early boot. These loaders are buggy and

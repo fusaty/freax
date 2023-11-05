@@ -1,13 +1,13 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- *	include/linux/bfs_fs.h - BFS data structures on disk.
+ *	include/freax/bfs_fs.h - BFS data structures on disk.
  *	Copyright (C) 1999-2018 Tigran Aivazian <aivazian.tigran@gmail.com>
  */
 
-#ifndef _LINUX_BFS_FS_H
-#define _LINUX_BFS_FS_H
+#ifndef _freax_BFS_FS_H
+#define _freax_BFS_FS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define BFS_BSIZE_BITS		9
 #define BFS_BSIZE		(1<<BFS_BSIZE_BITS)
@@ -79,4 +79,4 @@ struct bfs_super_block {
 	((le32_to_cpu(bfs_sb->s_from) != -1) && (le32_to_cpu(bfs_sb->s_to) != -1) && !(sb->s_flags & SB_RDONLY))
 
 
-#endif	/* _LINUX_BFS_FS_H */
+#endif	/* _freax_BFS_FS_H */

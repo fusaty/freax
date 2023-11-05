@@ -3,7 +3,7 @@
  * comedi/drivers/8255.c
  * Driver for 8255
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
@@ -39,9 +39,9 @@
  * I/O port base address can be found in the output of 'lspci -v'.
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8255.h>
+#include <freax/module.h>
+#include <freax/comedi/comedidev.h>
+#include <freax/comedi/comedi_8255.h>
 
 static int dev_8255_attach(struct comedi_device *dev,
 			   struct comedi_devconfig *it)

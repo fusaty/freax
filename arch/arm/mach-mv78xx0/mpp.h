@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/arch/arm/mach-mv78xx0/mpp.h -- Multi Purpose Pins
+ * freax/arch/arm/mach-mv78xx0/mpp.h -- Multi Purpose Pins
  *
  * sebastien requiem <sebastien@requiem.fr>
  */

@@ -7,15 +7,15 @@
  * Maciej Soltysiak <solt@dns.toxicfilms.tv>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include <net/checksum.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_ipv4/ipt_TTL.h>
-#include <linux/netfilter_ipv6/ip6t_HL.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_ipv4/ipt_TTL.h>
+#include <freax/netfilter_ipv6/ip6t_HL.h>
 
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");
 MODULE_AUTHOR("Maciej Soltysiak <solt@dns.toxicfilms.tv>");

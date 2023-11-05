@@ -9,11 +9,11 @@
  * hashtables.
  */
 
-#ifndef _LINUX_SIPHASH_H
-#define _LINUX_SIPHASH_H
+#ifndef _freax_SIPHASH_H
+#define _freax_SIPHASH_H
 
-#include <linux/types.h>
-#include <linux/kernel.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
 
 #define SIPHASH_ALIGNMENT __alignof__(u64)
 typedef struct {
@@ -165,4 +165,4 @@ static inline u32 hsiphash(const void *data, size_t len,
 #define HSIPHASH_CONST_2 0x6c796765U
 #define HSIPHASH_CONST_3 0x74656462U
 
-#endif /* _LINUX_SIPHASH_H */
+#endif /* _freax_SIPHASH_H */

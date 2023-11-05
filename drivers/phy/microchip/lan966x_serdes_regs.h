@@ -3,9 +3,9 @@
 #ifndef _LAN966X_SERDES_REGS_H_
 #define _LAN966X_SERDES_REGS_H_
 
-#include <linux/bitfield.h>
-#include <linux/types.h>
-#include <linux/bug.h>
+#include <freax/bitfield.h>
+#include <freax/types.h>
+#include <freax/bug.h>
 
 enum lan966x_target {
 	TARGET_HSIO = 32,

@@ -6,12 +6,12 @@
  * Author: Roberto Sassu <roberto.sassu@huawei.com>
  */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include <errno.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
 
-/* From include/linux/mm.h. */
+/* From include/freax/mm.h. */
 #define FMODE_WRITE	0x2
 
 struct {

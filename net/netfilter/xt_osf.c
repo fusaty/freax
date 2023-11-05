@@ -3,26 +3,26 @@
  * Copyright (c) 2003+ Evgeniy Polyakov <zbr@ioremap.net>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
 
-#include <linux/capability.h>
-#include <linux/if.h>
-#include <linux/inetdevice.h>
-#include <linux/ip.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/tcp.h>
+#include <freax/capability.h>
+#include <freax/if.h>
+#include <freax/inetdevice.h>
+#include <freax/ip.h>
+#include <freax/list.h>
+#include <freax/rculist.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/tcp.h>
 
 #include <net/ip.h>
 #include <net/tcp.h>
 
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/x_tables.h>
+#include <freax/netfilter/nfnetlink.h>
+#include <freax/netfilter/x_tables.h>
 #include <net/netfilter/nf_log.h>
-#include <linux/netfilter/xt_osf.h>
+#include <freax/netfilter/xt_osf.h>
 
 static bool
 xt_osf_match_packet(const struct sk_buff *skb, struct xt_action_param *p)

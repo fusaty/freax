@@ -21,7 +21,7 @@
 	};
 
 	extcon_usbotg: extcon-usbotg0 {
-		compatible = "linux,extcon-usb-gpio";
+		compatible = "freax,extcon-usb-gpio";
 		pinctrl-names = "default";
 		pinctrl-0 = <&pinctrl_usbcon0>;
 		id-gpios = <&gpio1 10 GPIO_ACTIVE_HIGH>;

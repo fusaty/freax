@@ -16,33 +16,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/list.h>
+#include <freax/rculist.h>
+#include <freax/uaccess.h>
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/kthread.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/jiffies.h>
 
-#include <linux/netdevice.h>
-#include <linux/net.h>
-#include <linux/inetdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/udp.h>
-#include <linux/l2tp.h>
-#include <linux/hash.h>
-#include <linux/sort.h>
-#include <linux/file.h>
-#include <linux/nsproxy.h>
+#include <freax/netdevice.h>
+#include <freax/net.h>
+#include <freax/inetdevice.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/udp.h>
+#include <freax/l2tp.h>
+#include <freax/hash.h>
+#include <freax/sort.h>
+#include <freax/file.h>
+#include <freax/nsproxy.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/dst.h>
@@ -58,7 +58,7 @@
 #include <net/ip6_checksum.h>
 
 #include <asm/byteorder.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 #include "l2tp_core.h"
 #include "trace.h"

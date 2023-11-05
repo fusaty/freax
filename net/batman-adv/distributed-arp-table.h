@@ -9,12 +9,12 @@
 
 #include "main.h"
 
-#include <linux/compiler.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <uapi/linux/batadv_packet.h>
+#include <freax/compiler.h>
+#include <freax/netdevice.h>
+#include <freax/netlink.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
+#include <uapi/freax/batadv_packet.h>
 
 #include "originator.h"
 

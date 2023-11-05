@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (C) 2023 Intel Corporation. All rights reserved.
- * Intel Visual Sensing Controller ACE Linux driver
+ * Intel Visual Sensing Controller ACE freax driver
  */
 
 /*
@@ -18,17 +18,17 @@
  * already powered up by firmware.
  */
 
-#include <linux/acpi.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/mei_cl_bus.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/uuid.h>
-#include <linux/workqueue.h>
+#include <freax/acpi.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/mei_cl_bus.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/uuid.h>
+#include <freax/workqueue.h>
 
 #define	MEI_ACE_DRIVER_NAME	"ivsc_ace"
 

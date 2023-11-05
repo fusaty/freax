@@ -5,14 +5,14 @@
  *                     <angelogioacchino.delregno@collabora.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
 
 #define RC_UPDATE_EN		BIT(0)
 #define RC_ROOT_EN		BIT(1)

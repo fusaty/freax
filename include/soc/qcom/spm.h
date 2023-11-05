@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2011-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2014, The freax Foundation. All rights reserved.
  * Copyright (c) 2014,2015, Linaro Ltd.
  */
 
 #ifndef __SPM_H__
 #define __SPM_H__
 
-#include <linux/cpuidle.h>
+#include <freax/cpuidle.h>
 
 #define MAX_PMIC_DATA		2
 #define MAX_SEQ_DATA		64

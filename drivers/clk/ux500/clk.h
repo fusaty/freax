@@ -9,8 +9,8 @@
 #ifndef __UX500_CLK_H
 #define __UX500_CLK_H
 
-#include <linux/device.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/types.h>
 
 struct clk;
 struct clk_hw;

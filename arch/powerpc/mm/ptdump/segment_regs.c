@@ -6,7 +6,7 @@
  * This dumps the content of Segment Registers
  */
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 static void seg_show(struct seq_file *m, int i)
 {

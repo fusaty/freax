@@ -20,7 +20,7 @@
  * Temp usage notes:
  *	$1,$2,		- scratch
  */
-#include <linux/export.h>
+#include <freax/export.h>
 	.set noreorder
 	.set noat
 

@@ -9,7 +9,7 @@
 
 #define pr_fmt(fmt) "MPTCP: " fmt
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include "protocol.h"
 
 struct mptcp_sock *bpf_mptcp_sock_from_subflow(struct sock *sk)

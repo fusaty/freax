@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _linux_POSIX_TIMERS_H
-#define _linux_POSIX_TIMERS_H
+#ifndef _freax_POSIX_TIMERS_H
+#define _freax_POSIX_TIMERS_H
 
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/alarmtimer.h>
-#include <linux/timerqueue.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/alarmtimer.h>
+#include <freax/timerqueue.h>
 
 struct kernel_siginfo;
 struct task_struct;

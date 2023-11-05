@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/nfs/inode.c
+ *  freax/fs/nfs/inode.c
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
@@ -14,33 +14,33 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/time.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/errno.h>
-#include <linux/unistd.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/metrics.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/lockd/bind.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/vfs.h>
-#include <linux/inet.h>
-#include <linux/nfs_xdr.h>
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/freezer.h>
-#include <linux/uaccess.h>
-#include <linux/iversion.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/sched/signal.h>
+#include <freax/time.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/stat.h>
+#include <freax/errno.h>
+#include <freax/unistd.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/stats.h>
+#include <freax/sunrpc/metrics.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_mount.h>
+#include <freax/nfs4_mount.h>
+#include <freax/lockd/bind.h>
+#include <freax/seq_file.h>
+#include <freax/mount.h>
+#include <freax/vfs.h>
+#include <freax/inet.h>
+#include <freax/nfs_xdr.h>
+#include <freax/slab.h>
+#include <freax/compat.h>
+#include <freax/freezer.h>
+#include <freax/uaccess.h>
+#include <freax/iversion.h>
 
 #include "nfs4_fs.h"
 #include "callback.h"

@@ -1,23 +1,23 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/sunrpc/xprt.h
+ *  freax/include/freax/sunrpc/xprt.h
  *
  *  Declarations for the RPC transport interface.
  *
  *  Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef _LINUX_SUNRPC_XPRT_H
-#define _LINUX_SUNRPC_XPRT_H
+#ifndef _freax_SUNRPC_XPRT_H
+#define _freax_SUNRPC_XPRT_H
 
-#include <linux/uio.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/ktime.h>
-#include <linux/kref.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/msg_prot.h>
+#include <freax/uio.h>
+#include <freax/socket.h>
+#include <freax/in.h>
+#include <freax/ktime.h>
+#include <freax/kref.h>
+#include <freax/sunrpc/sched.h>
+#include <freax/sunrpc/xdr.h>
+#include <freax/sunrpc/msg_prot.h>
 
 #define RPC_MIN_SLOT_TABLE	(2U)
 #define RPC_DEF_SLOT_TABLE	(16U)
@@ -57,7 +57,7 @@ struct xprt_class;
 struct seq_file;
 struct svc_serv;
 struct net;
-#include <linux/lwq.h>
+#include <freax/lwq.h>
 
 /*
  * This describes a complete RPC request
@@ -530,4 +530,4 @@ static inline int xprt_test_and_set_binding(struct rpc_xprt *xprt)
 void xprt_set_offline_locked(struct rpc_xprt *xprt, struct rpc_xprt_switch *xps);
 void xprt_set_online_locked(struct rpc_xprt *xprt, struct rpc_xprt_switch *xps);
 void xprt_delete_locked(struct rpc_xprt *xprt, struct rpc_xprt_switch *xps);
-#endif /* _LINUX_SUNRPC_XPRT_H */
+#endif /* _freax_SUNRPC_XPRT_H */

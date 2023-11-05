@@ -7,11 +7,11 @@
  * Author: Oleg Nesterov <oleg@redhat.com>
  */
 
-#ifndef _LINUX_RCU_SYNC_H_
-#define _LINUX_RCU_SYNC_H_
+#ifndef _freax_RCU_SYNC_H_
+#define _freax_RCU_SYNC_H_
 
-#include <linux/wait.h>
-#include <linux/rcupdate.h>
+#include <freax/wait.h>
+#include <freax/rcupdate.h>
 
 /* Structure to mediate between updaters and fastpath-using readers.  */
 struct rcu_sync {
@@ -51,4 +51,4 @@ extern void rcu_sync_dtor(struct rcu_sync *);
 #define	DEFINE_RCU_SYNC(name)	\
 	struct rcu_sync name = __RCU_SYNC_INITIALIZER(name)
 
-#endif /* _LINUX_RCU_SYNC_H_ */
+#endif /* _freax_RCU_SYNC_H_ */

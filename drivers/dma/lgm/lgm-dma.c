@@ -5,19 +5,19 @@
  * Copyright (c) 2016 - 2020 Intel Corporation.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/of_dma.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/of_dma.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
 
 #include "../dmaengine.h"
 #include "../virt-dma.h"

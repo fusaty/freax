@@ -34,7 +34,7 @@ drivers/misc/tps6594-pfsm.c
 Driver type definitions
 =======================
 
-include/uapi/linux/tps6594_pfsm.h
+include/uapi/freax/tps6594_pfsm.h
 
 Driver IOCTLs
 =============

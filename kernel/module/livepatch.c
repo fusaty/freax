@@ -5,9 +5,9 @@
  * Copyright (C) 2016 Jessica Yu <jeyu@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 #include "internal.h"
 
 /*

@@ -7,17 +7,17 @@
  * Author: Paul Handrigan <paul.handrigan@cirrus.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

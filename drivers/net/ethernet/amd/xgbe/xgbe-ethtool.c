@@ -114,9 +114,9 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/spinlock.h>
-#include <linux/phy.h>
-#include <linux/net_tstamp.h>
+#include <freax/spinlock.h>
+#include <freax/phy.h>
+#include <freax/net_tstamp.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

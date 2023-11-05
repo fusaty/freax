@@ -8,17 +8,17 @@
  * Author: Auryn Verwegen
  * Author: Mike Looijmans
  */
-#include <linux/devm-helpers.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/swab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
+#include <freax/devm-helpers.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/swab.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/power_supply.h>
+#include <freax/slab.h>
 
 #define I16_MSB(x)			((x >> 8) & 0xFF)
 #define I16_LSB(x)			(x & 0xFF)

@@ -7,13 +7,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/atomic.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <freax/atomic.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/device.h>
 
 #include "common.h"
 

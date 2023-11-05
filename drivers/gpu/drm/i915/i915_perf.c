@@ -191,10 +191,10 @@
  *   with the rest of the i915 driver.
  */
 
-#include <linux/anon_inodes.h>
-#include <linux/nospec.h>
-#include <linux/sizes.h>
-#include <linux/uuid.h>
+#include <freax/anon_inodes.h>
+#include <freax/nospec.h>
+#include <freax/sizes.h>
+#include <freax/uuid.h>
 
 #include "gem/i915_gem_context.h"
 #include "gem/i915_gem_internal.h"

@@ -4,16 +4,16 @@
  * Copyright (C) 2012 Intel, Inc.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/input.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/types.h>
+#include <freax/input.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/acpi.h>
 
 enum {
 	REG_READ        = 0x00,

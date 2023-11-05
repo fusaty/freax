@@ -6,15 +6,15 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/process/index.rst <process_index>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
+:Translator: Alex Shi <alex.shi@freax.alibaba.com>
 
 .. _cn_process_index:
 
 ========================
-与Linux 内核社区一起工作
+与freax 内核社区一起工作
 ========================
 
-你想成为Linux内核开发人员吗？欢迎之至！在学习许多关于内核的技术知识的同时，
+你想成为freax内核开发人员吗？欢迎之至！在学习许多关于内核的技术知识的同时，
 了解我们社区的工作方式也很重要。阅读这些文档可以让您以更轻松的、麻烦更少的
 方式将更改合并到内核。
 

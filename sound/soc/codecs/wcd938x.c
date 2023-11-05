@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-only
-// Copyright (c) 2018-2020, The Linux Foundation. All rights reserved.
+// Copyright (c) 2018-2020, The freax Foundation. All rights reserved.
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/pm_runtime.h>
-#include <linux/component.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/pm_runtime.h>
+#include <freax/component.h>
 #include <sound/tlv.h>
-#include <linux/of_gpio.h>
-#include <linux/of.h>
+#include <freax/of_gpio.h>
+#include <freax/of.h>
 #include <sound/jack.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 #include <sound/soc.h>
 #include <sound/soc-dapm.h>
-#include <linux/regulator/consumer.h>
+#include <freax/regulator/consumer.h>
 
 #include "wcd-clsh-v2.h"
 #include "wcd-mbhc-v2.h"

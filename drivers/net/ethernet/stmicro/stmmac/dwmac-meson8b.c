@@ -5,19 +5,19 @@
  * Copyright (C) 2016 Martin Blumenstingl <martin.blumenstingl@googlemail.com>
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/stmmac.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/ethtool.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/mfd/syscon.h>
+#include <freax/platform_device.h>
+#include <freax/stmmac.h>
 
 #include "stmmac_platform.h"
 

@@ -5,8 +5,8 @@
 #if !defined(_TRACE_UDP_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_UDP_H
 
-#include <linux/udp.h>
-#include <linux/tracepoint.h>
+#include <freax/udp.h>
+#include <freax/tracepoint.h>
 
 TRACE_EVENT(udp_fail_queue_rcv_skb,
 

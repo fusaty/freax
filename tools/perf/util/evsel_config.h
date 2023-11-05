@@ -2,7 +2,7 @@
 #ifndef __PERF_EVSEL_CONFIG_H
 #define __PERF_EVSEL_CONFIG_H 1
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <stdbool.h>
 
 /*

@@ -7,12 +7,12 @@
 
 #define pr_fmt(fmt) "bpf_jit: " fmt
 
-#include <linux/bitfield.h>
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/memory.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
+#include <freax/bitfield.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
+#include <freax/memory.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
 
 #include <asm/asm-extable.h>
 #include <asm/byteorder.h>

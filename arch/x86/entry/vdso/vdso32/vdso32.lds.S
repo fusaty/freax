@@ -21,7 +21,7 @@ ENTRY(__kernel_vsyscall);
  */
 VERSION
 {
-	LINUX_2.6 {
+	freax_2.6 {
 	global:
 		__vdso_clock_gettime;
 		__vdso_gettimeofday;
@@ -31,7 +31,7 @@ VERSION
 		__vdso_getcpu;
 	};
 
-	LINUX_2.5 {
+	freax_2.5 {
 	global:
 		__kernel_vsyscall;
 		__kernel_sigreturn;

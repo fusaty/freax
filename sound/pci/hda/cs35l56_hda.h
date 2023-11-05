@@ -9,11 +9,11 @@
 #ifndef __CS35L56_HDA_H__
 #define __CS35L56_HDA_H__
 
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/firmware/cirrus/cs_dsp.h>
-#include <linux/firmware/cirrus/wmfw.h>
-#include <linux/regulator/consumer.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/firmware/cirrus/cs_dsp.h>
+#include <freax/firmware/cirrus/wmfw.h>
+#include <freax/regulator/consumer.h>
 #include <sound/cs35l56.h>
 
 struct dentry;

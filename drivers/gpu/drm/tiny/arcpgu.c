@@ -5,7 +5,7 @@
  * Copyright (C) 2016 Synopsys, Inc. (www.synopsys.com)
  */
 
-#include <linux/clk.h>
+#include <freax/clk.h>
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_debugfs.h>
 #include <drm/drm_device.h>
@@ -21,10 +21,10 @@
 #include <drm/drm_of.h>
 #include <drm/drm_probe_helper.h>
 #include <drm/drm_simple_kms_helper.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/platform_device.h>
 
 #define ARCPGU_REG_CTRL		0x00
 #define ARCPGU_REG_STAT		0x04

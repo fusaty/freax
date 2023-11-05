@@ -5,8 +5,8 @@
 #if !defined(__RVT_TRACE_QP_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __RVT_TRACE_QP_H
 
-#include <linux/tracepoint.h>
-#include <linux/trace_seq.h>
+#include <freax/tracepoint.h>
+#include <freax/trace_seq.h>
 
 #include <rdma/ib_verbs.h>
 #include <rdma/rdmavt_qp.h>

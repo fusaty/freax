@@ -3,7 +3,7 @@
 #ifndef __KVM_X86_MMU_TDP_MMU_H
 #define __KVM_X86_MMU_TDP_MMU_H
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 
 #include "spte.h"
 

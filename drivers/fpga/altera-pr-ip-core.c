@@ -7,10 +7,10 @@
  * Based on socfpga-a10.c Copyright (C) 2015-2016 Altera Corporation
  *  by Alan Tull <atull@opensource.altera.com>
  */
-#include <linux/delay.h>
-#include <linux/fpga/altera-pr-ip-core.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/module.h>
+#include <freax/delay.h>
+#include <freax/fpga/altera-pr-ip-core.h>
+#include <freax/fpga/fpga-mgr.h>
+#include <freax/module.h>
 
 #define ALT_PR_DATA_OFST		0x00
 #define ALT_PR_CSR_OFST			0x04
@@ -196,6 +196,6 @@ int alt_pr_register(struct device *dev, void __iomem *reg_base)
 }
 EXPORT_SYMBOL_GPL(alt_pr_register);
 
-MODULE_AUTHOR("Matthew Gerlach <matthew.gerlach@linux.intel.com>");
+MODULE_AUTHOR("Matthew Gerlach <matthew.gerlach@freax.intel.com>");
 MODULE_DESCRIPTION("Altera Partial Reconfiguration IP Core");
 MODULE_LICENSE("GPL v2");

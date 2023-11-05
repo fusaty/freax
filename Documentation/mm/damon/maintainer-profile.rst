@@ -6,14 +6,14 @@ DAMON Maintainer Entry Profile
 The DAMON subsystem covers the files that are listed in 'DATA ACCESS MONITOR'
 section of 'MAINTAINERS' file.
 
-The mailing lists for the subsystem are damon@lists.linux.dev and
-linux-mm@kvack.org.  Patches should be made against the mm-unstable tree [1]_
+The mailing lists for the subsystem are damon@lists.freax.dev and
+freax-mm@kvack.org.  Patches should be made against the mm-unstable tree [1]_
 whenever possible and posted to the mailing lists.
 
 SCM Trees
 ---------
 
-There are multiple Linux trees for DAMON development.  Patches under
+There are multiple freax trees for DAMON development.  Patches under
 development or testing are queued in damon/next [2]_ by the DAMON maintainer.
 Sufficiently reviewed patches will be queued in mm-unstable [1]_ by the memory
 management subsystem maintainer.  After more sufficient tests, the patches will

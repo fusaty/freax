@@ -10,7 +10,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    La Monte H.P. Yarroll <piggy@acm.org>
@@ -21,20 +21,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/wait.h>
-#include <linux/time.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/wait.h>
+#include <freax/time.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/init.h>
+#include <freax/slab.h>
 #include <net/inet_ecn.h>
 #include <net/ip.h>
 #include <net/icmp.h>
 #include <net/net_namespace.h>
 
-#include <linux/socket.h> /* for sa_family_t */
+#include <freax/socket.h> /* for sa_family_t */
 #include <net/sock.h>
 
 #include <net/sctp/sctp.h>

@@ -7,7 +7,7 @@
  *  Amir Hanania <amir.hanania@intel.com>
  *  Haijun Liu <haijun.liu@mediatek.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *
  * Contributors:
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
@@ -18,8 +18,8 @@
 #ifndef __T7XX_DPMAIF_H__
 #define __T7XX_DPMAIF_H__
 
-#include <linux/bits.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/types.h>
 
 #define DPMAIF_DL_PIT_SEQ_VALUE		251
 #define DPMAIF_UL_DRB_SIZE_WORD		4

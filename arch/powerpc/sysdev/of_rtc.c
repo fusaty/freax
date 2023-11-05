@@ -4,12 +4,12 @@
  *
  * Copyright 2007 David Gibson <dwg@au1.ibm.com>, IBM Corporation.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include <asm/prom.h>
 

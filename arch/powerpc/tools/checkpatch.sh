@@ -10,7 +10,7 @@ exec $script_base/../../../scripts/checkpatch.pl \
 	--subjective \
 	--no-summary \
 	--show-types \
-	--ignore ARCH_INCLUDE_LINUX \
+	--ignore ARCH_INCLUDE_freax \
 	--ignore BIT_MACRO \
 	--ignore COMPARISON_TO_NULL \
 	--ignore EMAIL_SUBJECT \

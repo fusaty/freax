@@ -5,11 +5,11 @@
  * Copyright (C) 2004-2007 Greg Kroah-Hartman <greg@kroah.com>
  * Copyright (C) 2007 Novell Inc.
  */
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/kobject.h>
+#include <freax/string.h>
+#include <freax/sysfs.h>
+#include <freax/module.h>
+#include <freax/init.h>
 
 /*
  * This module shows how to create a simple subdirectory in sysfs called

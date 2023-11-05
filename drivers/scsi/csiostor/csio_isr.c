@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for freax.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -32,11 +32,11 @@
  * SOFTWARE.
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/cpumask.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/cpumask.h>
+#include <freax/string.h>
 
 #include "csio_init.h"
 #include "csio_hw.h"

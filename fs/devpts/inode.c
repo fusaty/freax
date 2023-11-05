@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- --------------------------------------------------------- *
+/* -*- freax-c -*- --------------------------------------------------------- *
  *
- * linux/fs/devpts/inode.c
+ * freax/fs/devpts/inode.c
  *
  *  Copyright 1998-2004 H. Peter Anvin -- All Rights Reserved
  *
@@ -9,21 +9,21 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/mount.h>
-#include <linux/tty.h>
-#include <linux/mutex.h>
-#include <linux/magic.h>
-#include <linux/idr.h>
-#include <linux/devpts_fs.h>
-#include <linux/parser.h>
-#include <linux/fsnotify.h>
-#include <linux/seq_file.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/sched.h>
+#include <freax/namei.h>
+#include <freax/slab.h>
+#include <freax/mount.h>
+#include <freax/tty.h>
+#include <freax/mutex.h>
+#include <freax/magic.h>
+#include <freax/idr.h>
+#include <freax/devpts_fs.h>
+#include <freax/parser.h>
+#include <freax/fsnotify.h>
+#include <freax/seq_file.h>
 
 #define DEVPTS_DEFAULT_MODE 0600
 /*

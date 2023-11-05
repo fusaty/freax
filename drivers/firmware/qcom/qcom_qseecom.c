@@ -5,14 +5,14 @@
  *
  * Copyright (C) 2023 Maximilian Luz <luzmaximilian@gmail.com>
  */
-#include <linux/auxiliary_bus.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
-#include <linux/firmware/qcom/qcom_qseecom.h>
-#include <linux/firmware/qcom/qcom_scm.h>
+#include <freax/firmware/qcom/qcom_qseecom.h>
+#include <freax/firmware/qcom/qcom_scm.h>
 
 struct qseecom_app_desc {
 	const char *app_name;

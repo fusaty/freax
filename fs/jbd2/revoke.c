@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * linux/fs/jbd2/revoke.c
+ * freax/fs/jbd2/revoke.c
  *
  * Written by Stephen C. Tweedie <sct@redhat.com>, 2000
  *
@@ -80,16 +80,16 @@
 #ifndef __KERNEL__
 #include "jfs_user.h"
 #else
-#include <linux/time.h>
-#include <linux/fs.h>
-#include <linux/jbd2.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/bio.h>
-#include <linux/log2.h>
-#include <linux/hash.h>
+#include <freax/time.h>
+#include <freax/fs.h>
+#include <freax/jbd2.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/init.h>
+#include <freax/bio.h>
+#include <freax/log2.h>
+#include <freax/hash.h>
 #endif
 
 static struct kmem_cache *jbd2_revoke_record_cache;

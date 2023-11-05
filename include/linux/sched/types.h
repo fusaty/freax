@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_TYPES_H
-#define _LINUX_SCHED_TYPES_H
+#ifndef _freax_SCHED_TYPES_H
+#define _freax_SCHED_TYPES_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * struct task_cputime - collected CPU time counts
@@ -20,4 +20,4 @@ struct task_cputime {
 	unsigned long long		sum_exec_runtime;
 };
 
-#endif /* _LINUX_SCHED_TYPES_H */
+#endif /* _freax_SCHED_TYPES_H */

@@ -8,7 +8,7 @@
 #ifndef _MWIFIEX_FW_H_
 #define _MWIFIEX_FW_H_
 
-#include <linux/if_ether.h>
+#include <freax/if_ether.h>
 
 
 #define INTF_HEADER_LEN     4

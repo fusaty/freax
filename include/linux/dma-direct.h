@@ -3,14 +3,14 @@
  * Internals of the DMA direct mapping implementation.  Only for use by the
  * DMA mapping code and IOMMU drivers.
  */
-#ifndef _LINUX_DMA_DIRECT_H
-#define _LINUX_DMA_DIRECT_H 1
+#ifndef _freax_DMA_DIRECT_H
+#define _freax_DMA_DIRECT_H 1
 
-#include <linux/dma-mapping.h>
-#include <linux/dma-map-ops.h>
-#include <linux/memblock.h> /* for min_low_pfn */
-#include <linux/mem_encrypt.h>
-#include <linux/swiotlb.h>
+#include <freax/dma-mapping.h>
+#include <freax/dma-map-ops.h>
+#include <freax/memblock.h> /* for min_low_pfn */
+#include <freax/mem_encrypt.h>
+#include <freax/swiotlb.h>
 
 extern unsigned int zone_dma_bits;
 
@@ -124,4 +124,4 @@ int dma_direct_supported(struct device *dev, u64 mask);
 dma_addr_t dma_direct_map_resource(struct device *dev, phys_addr_t paddr,
 		size_t size, enum dma_data_direction dir, unsigned long attrs);
 
-#endif /* _LINUX_DMA_DIRECT_H */
+#endif /* _freax_DMA_DIRECT_H */

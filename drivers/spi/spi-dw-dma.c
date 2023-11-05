@@ -5,16 +5,16 @@
  * Copyright (c) 2009, 2014 Intel Corporation.
  */
 
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/irqreturn.h>
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_data/dma-dw.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
+#include <freax/completion.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/irqreturn.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/platform_data/dma-dw.h>
+#include <freax/spi/spi.h>
+#include <freax/types.h>
 
 #include "spi-dw.h"
 

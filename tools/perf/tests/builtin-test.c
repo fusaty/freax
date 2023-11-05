@@ -23,10 +23,10 @@
 #include "string2.h"
 #include "symbol.h"
 #include "util/rlimit.h"
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 #include <subcmd/exec-cmd.h>
-#include <linux/zalloc.h>
+#include <freax/zalloc.h>
 
 #include "builtin-test-list.h"
 
@@ -47,7 +47,7 @@ static struct test_suite *arch_tests[] = {
 #endif
 
 static struct test_suite *generic_tests[] = {
-	&suite__vmlinux_matches_kallsyms,
+	&suite__vmfreax_matches_kallsyms,
 #ifdef HAVE_LIBTRACEEVENT
 	&suite__openat_syscall_event,
 	&suite__openat_syscall_event_on_all_cpus,
@@ -549,7 +549,7 @@ int cmd_test(int argc, const char **argv)
 		return run_workload(workload, argc, argv);
 
 	symbol_conf.priv_size = sizeof(int);
-	symbol_conf.try_vmlinux_path = true;
+	symbol_conf.try_vmfreax_path = true;
 
 	if (symbol__init(NULL) < 0)
 		return -1;

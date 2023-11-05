@@ -9,10 +9,10 @@
  * John Brooks <john.brooks@bluecherry.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/font.h>
-#include <linux/bitrev.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/font.h>
+#include <freax/bitrev.h>
+#include <freax/slab.h>
 
 #include "solo6x10.h"
 

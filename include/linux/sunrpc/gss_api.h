@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/gss_api.h
+ * freax/include/freax/sunrpc/gss_api.h
  *
  * Somewhat simplified version of the gss api.
  *
@@ -10,12 +10,12 @@
  * Copyright (c) 2000 The Regents of the University of Michigan
  */
 
-#ifndef _LINUX_SUNRPC_GSS_API_H
-#define _LINUX_SUNRPC_GSS_API_H
+#ifndef _freax_SUNRPC_GSS_API_H
+#define _freax_SUNRPC_GSS_API_H
 
-#include <linux/sunrpc/xdr.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/uio.h>
+#include <freax/sunrpc/xdr.h>
+#include <freax/sunrpc/msg_prot.h>
+#include <freax/uio.h>
 
 /* The mechanism-independent gss-api context: */
 struct gss_ctx {
@@ -160,5 +160,5 @@ struct gss_api_mech * gss_mech_get(struct gss_api_mech *);
  * corresponding call to gss_mech_put. */
 void gss_mech_put(struct gss_api_mech *);
 
-#endif /* _LINUX_SUNRPC_GSS_API_H */
+#endif /* _freax_SUNRPC_GSS_API_H */
 

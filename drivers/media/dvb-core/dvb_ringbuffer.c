@@ -22,12 +22,12 @@
 
 
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/string.h>
+#include <freax/uaccess.h>
 
 #include <media/dvb_ringbuffer.h>
 

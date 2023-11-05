@@ -7,14 +7,14 @@
  * Copyright 2009,2012 Gražvydas Ignotas <notasas@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/mfd/twl.h>
-#include <linux/err.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/backlight.h>
+#include <freax/mfd/twl.h>
+#include <freax/err.h>
 
 #define TWL_PWM0_ON		0x00
 #define TWL_PWM0_OFF		0x01

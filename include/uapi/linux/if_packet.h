@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_IF_PACKET_H
-#define __LINUX_IF_PACKET_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_IF_PACKET_H
+#define __freax_IF_PACKET_H
 
 #include <asm/byteorder.h>
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct sockaddr_pkt {
 	unsigned short spkt_family;

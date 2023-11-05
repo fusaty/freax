@@ -12,31 +12,31 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/netdevice.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_bridge.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/init.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/netdevice.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter_bridge.h>
 #include <net/netlink.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nfnetlink_log.h>
-#include <linux/netfilter/nf_conntrack_common.h>
-#include <linux/spinlock.h>
-#include <linux/sysctl.h>
-#include <linux/proc_fs.h>
-#include <linux/security.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/netfilter/nfnetlink.h>
+#include <freax/netfilter/nfnetlink_log.h>
+#include <freax/netfilter/nf_conntrack_common.h>
+#include <freax/spinlock.h>
+#include <freax/sysctl.h>
+#include <freax/proc_fs.h>
+#include <freax/security.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 #include <net/sock.h>
 #include <net/netfilter/nf_log.h>
 #include <net/netns/generic.h>
 
-#include <linux/atomic.h>
-#include <linux/refcount.h>
+#include <freax/atomic.h>
+#include <freax/refcount.h>
 
 
 #if IS_ENABLED(CONFIG_BRIDGE_NETFILTER)

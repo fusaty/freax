@@ -8,12 +8,12 @@
 // Copyright (C) 2009 Gateworks Corporation
 // Authors: Chris Lang, Imre Kaloz
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
+#include <freax/bits.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/gpio/driver.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
 
 /**
  * struct gw_pld - State container for Gateworks PLD

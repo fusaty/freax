@@ -5,7 +5,7 @@
 #ifndef _ASM_LOONGARCH_KDEBUG_H
 #define _ASM_LOONGARCH_KDEBUG_H
 
-#include <linux/notifier.h>
+#include <freax/notifier.h>
 
 enum die_val {
 	DIE_OOPS = 1,

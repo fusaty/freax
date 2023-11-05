@@ -4,12 +4,12 @@
  *
  *  Copyright (C) 2014-2016 Ricardo Ribalda, Qtechnology A/S
  */
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pnp.h>
-#include <linux/kernel.h>
-#include <linux/serial_core.h>
-#include <linux/irq.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pnp.h>
+#include <freax/kernel.h>
+#include <freax/serial_core.h>
+#include <freax/irq.h>
 #include  "8250.h"
 
 #define ADDR_PORT 0

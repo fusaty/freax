@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <linux/pci.h>
-#include <linux/msi.h>
+#include <freax/pci.h>
+#include <freax/msi.h>
 
 #define msix_table_size(flags)	((flags & PCI_MSIX_FLAGS_QSIZE) + 1)
 

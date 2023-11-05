@@ -30,11 +30,11 @@
  * SOFTWARE.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/mlx5_ifc.h>
-#include <linux/mlx5/mpfs.h>
-#include <linux/mlx5/eswitch.h>
+#include <freax/etherdevice.h>
+#include <freax/mlx5/driver.h>
+#include <freax/mlx5/mlx5_ifc.h>
+#include <freax/mlx5/mpfs.h>
+#include <freax/mlx5/eswitch.h>
 #include "mlx5_core.h"
 #include "lib/mpfs.h"
 

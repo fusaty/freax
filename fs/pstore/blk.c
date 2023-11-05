@@ -6,18 +6,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
-#include <linux/string.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/pstore_blk.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/init_syscalls.h>
-#include <linux/mount.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
+#include <freax/string.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/pstore_blk.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/init_syscalls.h>
+#include <freax/mount.h>
 
 static long kmsg_size = CONFIG_PSTORE_BLK_KMSG_SIZE;
 module_param(kmsg_size, long, 0400);

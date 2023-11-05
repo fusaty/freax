@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PART_STAT_H
-#define _LINUX_PART_STAT_H
+#ifndef _freax_PART_STAT_H
+#define _freax_PART_STAT_H
 
-#include <linux/blkdev.h>
+#include <freax/blkdev.h>
 #include <asm/local.h>
 
 struct disk_stats {
@@ -79,4 +79,4 @@ static inline void part_stat_set_all(struct block_device *part, int value)
 #define part_stat_local_read_cpu(part, field, cpu)			\
 	local_read(&(part_stat_get_cpu(part, field, cpu)))
 
-#endif /* _LINUX_PART_STAT_H */
+#endif /* _freax_PART_STAT_H */

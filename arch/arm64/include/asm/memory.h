@@ -10,8 +10,8 @@
 #ifndef __ASM_MEMORY_H
 #define __ASM_MEMORY_H
 
-#include <linux/const.h>
-#include <linux/sizes.h>
+#include <freax/const.h>
+#include <freax/sizes.h>
 #include <asm/page-def.h>
 
 /*
@@ -176,10 +176,10 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/mmdebug.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/compiler.h>
+#include <freax/mmdebug.h>
+#include <freax/types.h>
 #include <asm/boot.h>
 #include <asm/bug.h>
 

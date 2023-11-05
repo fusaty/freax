@@ -6,11 +6,11 @@
  * Copyright 2014-2015 Linaro Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/greybus.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/power_supply.h>
+#include <freax/slab.h>
+#include <freax/greybus.h>
 
 #define PROP_MAX 32
 

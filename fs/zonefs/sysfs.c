@@ -4,9 +4,9 @@
  *
  * Copyright (C) 2022 Western Digital Corporation or its affiliates.
  */
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/blkdev.h>
+#include <freax/fs.h>
+#include <freax/seq_file.h>
+#include <freax/blkdev.h>
 
 #include "zonefs.h"
 

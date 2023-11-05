@@ -4,8 +4,8 @@
  */
 
 #include <errno.h>
-#include <linux/bits.h>
-#include <linux/sizes.h>
+#include <freax/bits.h>
+#include <freax/sizes.h>
 
 #include "kvm_util.h"
 

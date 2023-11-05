@@ -4,18 +4,18 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
 #include "qed.h"
 #include "qed_cxt.h"
 #include "qed_dev_api.h"

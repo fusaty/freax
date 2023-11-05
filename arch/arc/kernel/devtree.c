@@ -6,11 +6,11 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/reboot.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
+#include <freax/init.h>
+#include <freax/reboot.h>
+#include <freax/memblock.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
 #include <asm/mach_desc.h>
 #include <asm/serial.h>
 

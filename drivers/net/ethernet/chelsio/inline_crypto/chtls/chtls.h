@@ -19,7 +19,7 @@
 #include <crypto/aead.h>
 #include <crypto/scatterwalk.h>
 #include <crypto/internal/hash.h>
-#include <linux/tls.h>
+#include <freax/tls.h>
 #include <net/tls.h>
 #include <net/tls_prot.h>
 #include <net/tls_toe.h>

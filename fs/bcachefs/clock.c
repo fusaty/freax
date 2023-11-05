@@ -2,9 +2,9 @@
 #include "bcachefs.h"
 #include "clock.h"
 
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/preempt.h>
+#include <freax/freezer.h>
+#include <freax/kthread.h>
+#include <freax/preempt.h>
 
 static inline long io_timer_cmp(io_timer_heap *h,
 				struct io_timer *l,

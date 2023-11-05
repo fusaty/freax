@@ -6,11 +6,11 @@
  * Author: Jose Abreu <Jose.Abreu@synopsys.com>
  */
 
-#include <linux/delay.h>
-#include <linux/pcs/pcs-xpcs.h>
-#include <linux/mdio.h>
-#include <linux/phylink.h>
-#include <linux/workqueue.h>
+#include <freax/delay.h>
+#include <freax/pcs/pcs-xpcs.h>
+#include <freax/mdio.h>
+#include <freax/phylink.h>
+#include <freax/workqueue.h>
 #include "pcs-xpcs.h"
 
 #define phylink_pcs_to_xpcs(pl_pcs) \

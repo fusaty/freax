@@ -8,14 +8,14 @@
  *         Simon Xue <xxm@rock-chips.com>
  */
 
-#include <linux/configfs.h>
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/pci-epc.h>
-#include <linux/platform_device.h>
-#include <linux/pci-epf.h>
-#include <linux/sizes.h>
+#include <freax/configfs.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/pci-epc.h>
+#include <freax/platform_device.h>
+#include <freax/pci-epf.h>
+#include <freax/sizes.h>
 
 #include "pcie-rockchip.h"
 

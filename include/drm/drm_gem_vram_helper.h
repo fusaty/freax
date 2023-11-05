@@ -11,8 +11,8 @@
 #include <drm/ttm/ttm_bo.h>
 #include <drm/ttm/ttm_placement.h>
 
-#include <linux/container_of.h>
-#include <linux/iosys-map.h>
+#include <freax/container_of.h>
+#include <freax/iosys-map.h>
 
 struct drm_mode_create_dumb;
 struct drm_plane;

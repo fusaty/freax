@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_HELPER_MACROS_H_
-#define _LINUX_HELPER_MACROS_H_
+#ifndef _freax_HELPER_MACROS_H_
+#define _freax_HELPER_MACROS_H_
 
-#include <linux/math.h>
+#include <freax/math.h>
 
 #define __find_closest(x, a, as, op)					\
 ({									\

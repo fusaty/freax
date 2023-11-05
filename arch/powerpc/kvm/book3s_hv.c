@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright 2011 Paul Mackerras, IBM Corp. <paulus@au1.ibm.com>
- * Copyright (C) 2009. SUSE Linux Products GmbH. All rights reserved.
+ * Copyright (C) 2009. SUSE freax Products GmbH. All rights reserved.
  *
  * Authors:
  *    Paul Mackerras <paulus@au1.ibm.com>
@@ -15,35 +15,35 @@
  * by Alexander Graf <agraf@suse.de>.
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/preempt.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/stat.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/anon_inodes.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/spinlock.h>
-#include <linux/page-flags.h>
-#include <linux/srcu.h>
-#include <linux/miscdevice.h>
-#include <linux/debugfs.h>
-#include <linux/gfp.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/kvm_irqfd.h>
-#include <linux/irqbypass.h>
-#include <linux/module.h>
-#include <linux/compiler.h>
-#include <linux/of.h>
-#include <linux/irqdomain.h>
-#include <linux/smp.h>
+#include <freax/kvm_host.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/preempt.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/stat.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/fs.h>
+#include <freax/anon_inodes.h>
+#include <freax/cpu.h>
+#include <freax/cpumask.h>
+#include <freax/spinlock.h>
+#include <freax/page-flags.h>
+#include <freax/srcu.h>
+#include <freax/miscdevice.h>
+#include <freax/debugfs.h>
+#include <freax/gfp.h>
+#include <freax/vmalloc.h>
+#include <freax/highmem.h>
+#include <freax/hugetlb.h>
+#include <freax/kvm_irqfd.h>
+#include <freax/irqbypass.h>
+#include <freax/module.h>
+#include <freax/compiler.h>
+#include <freax/of.h>
+#include <freax/irqdomain.h>
+#include <freax/smp.h>
 
 #include <asm/ftrace.h>
 #include <asm/reg.h>
@@ -54,7 +54,7 @@
 #include <asm/disassemble.h>
 #include <asm/cputable.h>
 #include <asm/cacheflush.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/interrupt.h>
 #include <asm/io.h>
 #include <asm/kvm_ppc.h>

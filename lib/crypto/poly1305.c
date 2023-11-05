@@ -8,8 +8,8 @@
  */
 
 #include <crypto/internal/poly1305.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 #include <asm/unaligned.h>
 
 void poly1305_init_generic(struct poly1305_desc_ctx *desc,

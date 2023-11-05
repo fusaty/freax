@@ -3,7 +3,7 @@
 #ifndef __NET_NETKIT_H
 #define __NET_NETKIT_H
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 
 #ifdef CONFIG_NETKIT
 int netkit_prog_attach(const union bpf_attr *attr, struct bpf_prog *prog);

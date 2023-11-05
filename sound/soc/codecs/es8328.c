@@ -7,13 +7,13 @@
  * Author: Sean Cross <xobs@kosagi.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/pm.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/regulator/consumer.h>
 #include <sound/core.h>
 #include <sound/initval.h>
 #include <sound/pcm.h>

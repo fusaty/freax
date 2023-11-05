@@ -11,7 +11,7 @@
  */
 #define pr_fmt(fmt)	"trace_probe: " fmt
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include "trace_btf.h"
 
 #include "trace_probe.h"

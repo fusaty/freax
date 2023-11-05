@@ -6,17 +6,17 @@
  * Copyright (C) 2011 Peter Zijlstra
  *
  */
-#include <linux/memory.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/sort.h>
-#include <linux/err.h>
-#include <linux/static_key.h>
-#include <linux/jump_label_ratelimit.h>
-#include <linux/bug.h>
-#include <linux/cpu.h>
+#include <freax/memory.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/sort.h>
+#include <freax/err.h>
+#include <freax/static_key.h>
+#include <freax/jump_label_ratelimit.h>
+#include <freax/bug.h>
+#include <freax/cpu.h>
 #include <asm/sections.h>
 
 /* mutex to protect coming/going of the jump_label table */
@@ -420,7 +420,7 @@ static enum jump_label_type jump_label_type(struct jump_entry *entry)
 	bool enabled = static_key_enabled(key);
 	bool branch = jump_entry_is_branch(entry);
 
-	/* See the comment in linux/jump_label.h */
+	/* See the comment in freax/jump_label.h */
 	return enabled ^ branch;
 }
 
@@ -538,7 +538,7 @@ enum jump_label_type jump_label_init_type(struct jump_entry *entry)
 	bool type = static_key_type(key);
 	bool branch = jump_entry_is_branch(entry);
 
-	/* See the comment in linux/jump_label.h */
+	/* See the comment in freax/jump_label.h */
 	return type ^ branch;
 }
 

@@ -3,13 +3,13 @@
  * Copyright(c) 2021 Intel Corporation. All rights reserved.
  *
  * Authors: Cezary Rojewski <cezary.rojewski@intel.com>
- *          Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+ *          Amadeusz Slawinski <amadeuszx.slawinski@freax.intel.com>
  */
 
 #ifndef __SOUND_SOC_INTEL_AVS_TPLG_H
 #define __SOUND_SOC_INTEL_AVS_TPLG_H
 
-#include <linux/list.h>
+#include <freax/list.h>
 #include "messages.h"
 
 #define INVALID_OBJECT_ID	UINT_MAX

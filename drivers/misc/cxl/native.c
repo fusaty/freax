@@ -3,15 +3,15 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/spinlock.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/irqdomain.h>
+#include <freax/spinlock.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/mm.h>
+#include <freax/uaccess.h>
+#include <freax/delay.h>
+#include <freax/irqdomain.h>
 #include <asm/synch.h>
 #include <asm/switch_to.h>
 #include <misc/cxl-base.h>

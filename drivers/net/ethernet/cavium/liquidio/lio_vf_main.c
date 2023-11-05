@@ -15,9 +15,9 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, TITLE, or
  * NONINFRINGEMENT.  See the GNU General Public License for more details.
  ***********************************************************************/
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
 #include <net/vxlan.h>
 #include "liquidio_common.h"
 #include "octeon_droq.h"
@@ -398,7 +398,7 @@ liquidio_vf_probe(struct pci_dev *pdev,
 	/* Assign octeon_device for this device to the private data area. */
 	pci_set_drvdata(pdev, oct_dev);
 
-	/* set linux specific device pointer */
+	/* set freax specific device pointer */
 	oct_dev->pci_dev = pdev;
 
 	oct_dev->subsystem_id = pdev->subsystem_vendor |

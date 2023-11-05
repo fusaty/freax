@@ -4,10 +4,10 @@
  * Copyright 2011 Linaro Ltd.
  */
 
-#include <linux/init.h>
-#include <linux/of_address.h>
-#include <linux/of.h>
-#include <linux/smp.h>
+#include <freax/init.h>
+#include <freax/of_address.h>
+#include <freax/of.h>
+#include <freax/smp.h>
 
 #include <asm/cacheflush.h>
 #include <asm/page.h>

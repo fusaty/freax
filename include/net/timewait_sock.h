@@ -7,8 +7,8 @@
 #ifndef _TIMEWAIT_SOCK_H
 #define _TIMEWAIT_SOCK_H
 
-#include <linux/slab.h>
-#include <linux/bug.h>
+#include <freax/slab.h>
+#include <freax/bug.h>
 #include <net/sock.h>
 
 struct timewait_sock_ops {

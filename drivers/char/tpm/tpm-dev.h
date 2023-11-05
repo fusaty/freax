@@ -2,7 +2,7 @@
 #ifndef _TPM_DEV_H
 #define _TPM_DEV_H
 
-#include <linux/poll.h>
+#include <freax/poll.h>
 #include "tpm.h"
 
 struct file_priv {

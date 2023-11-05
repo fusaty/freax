@@ -4,15 +4,15 @@
  * Copyright (C) 2016-2017 Intel Deutschland GmbH
  * Copyright (C) 2019-2021, 2023 Intel Corporation
  */
-#include <linux/kernel.h>
-#include <linux/bsearch.h>
+#include <freax/kernel.h>
+#include <freax/bsearch.h>
 
 #include "fw/api/tx.h"
 #include "iwl-trans.h"
 #include "iwl-drv.h"
 #include "iwl-fh.h"
 #include "queue/tx.h"
-#include <linux/dmapool.h>
+#include <freax/dmapool.h>
 #include "fw/api/commands.h"
 
 struct iwl_trans *iwl_trans_alloc(unsigned int priv_size,

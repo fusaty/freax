@@ -5,10 +5,10 @@
  * Copyright 1995-2002, Russell King
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/blkdev.h>
+#include <freax/init.h>
 
 #include <asm/ecard.h>
 #include <asm/io.h>

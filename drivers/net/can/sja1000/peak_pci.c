@@ -8,17 +8,17 @@
  * Copyright (C) 2001-2006  PEAK System-Technik GmbH
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/io.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
-#include <linux/can.h>
-#include <linux/can/dev.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/io.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
+#include <freax/can.h>
+#include <freax/can/dev.h>
 
 #include "sja1000.h"
 

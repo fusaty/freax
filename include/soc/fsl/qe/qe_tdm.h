@@ -10,8 +10,8 @@
 #ifndef _QE_TDM_H_
 #define _QE_TDM_H_
 
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/list.h>
+#include <freax/types.h>
 
 #include <soc/fsl/qe/immap_qe.h>
 #include <soc/fsl/qe/qe.h>

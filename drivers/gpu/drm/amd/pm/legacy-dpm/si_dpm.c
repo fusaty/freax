@@ -21,8 +21,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "amdgpu.h"
 #include "amdgpu_pm.h"
@@ -35,9 +35,9 @@
 #include "si_dpm.h"
 #include "atom.h"
 #include "../include/pptable.h"
-#include <linux/math64.h>
-#include <linux/seq_file.h>
-#include <linux/firmware.h>
+#include <freax/math64.h>
+#include <freax/seq_file.h>
+#include <freax/firmware.h>
 #include <legacy_dpm.h>
 
 #define MC_CG_ARB_FREQ_F0           0x0a

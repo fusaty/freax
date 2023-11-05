@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2005-2014, 2018-2019, 2021 Intel Corporation
  */
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 
 #include "iwl-drv.h"
 #include "iwl-debug.h"

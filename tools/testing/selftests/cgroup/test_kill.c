@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
 #include <errno.h>
-#include <linux/limits.h>
+#include <freax/limits.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>

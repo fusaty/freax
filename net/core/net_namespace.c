@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/workqueue.h>
-#include <linux/rtnetlink.h>
-#include <linux/cache.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/idr.h>
-#include <linux/rculist.h>
-#include <linux/nsproxy.h>
-#include <linux/fs.h>
-#include <linux/proc_ns.h>
-#include <linux/file.h>
-#include <linux/export.h>
-#include <linux/user_namespace.h>
-#include <linux/net_namespace.h>
-#include <linux/sched/task.h>
-#include <linux/uidgid.h>
-#include <linux/cookie.h>
-#include <linux/proc_fs.h>
+#include <freax/workqueue.h>
+#include <freax/rtnetlink.h>
+#include <freax/cache.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/idr.h>
+#include <freax/rculist.h>
+#include <freax/nsproxy.h>
+#include <freax/fs.h>
+#include <freax/proc_ns.h>
+#include <freax/file.h>
+#include <freax/export.h>
+#include <freax/user_namespace.h>
+#include <freax/net_namespace.h>
+#include <freax/sched/task.h>
+#include <freax/uidgid.h>
+#include <freax/cookie.h>
+#include <freax/proc_fs.h>
 
 #include <net/sock.h>
 #include <net/netlink.h>

@@ -5,18 +5,18 @@
  * Copyright (C) 2023 Renesas Electronics Corporation
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/count_zeros.h>
-#include <linux/interrupt.h>
-#include <linux/iopoll.h>
-#include <linux/log2.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/reset.h>
-#include <linux/spi/spi.h>
-#include <linux/units.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/count_zeros.h>
+#include <freax/interrupt.h>
+#include <freax/iopoll.h>
+#include <freax/log2.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/reset.h>
+#include <freax/spi/spi.h>
+#include <freax/units.h>
 
 /* Registers */
 #define CSI_MODE		0x00	/* CSI mode control */
@@ -643,7 +643,7 @@ static int rzv2m_csi_probe(struct platform_device *pdev)
 
 	/*
 	 * The reset also affects other HW that is not under the control
-	 * of Linux. Therefore, all we can do is make sure the reset is
+	 * of freax. Therefore, all we can do is make sure the reset is
 	 * deasserted.
 	 */
 	reset_control_deassert(rstc);

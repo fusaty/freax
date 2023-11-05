@@ -5,9 +5,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
 
 #include "rvu_reg.h"
 #include "mbox.h"

@@ -5,9 +5,9 @@
 #ifndef _NET_DSA_TAG_OCELOT_H
 #define _NET_DSA_TAG_OCELOT_H
 
-#include <linux/kthread.h>
-#include <linux/packing.h>
-#include <linux/skbuff.h>
+#include <freax/kthread.h>
+#include <freax/packing.h>
+#include <freax/skbuff.h>
 #include <net/dsa.h>
 
 struct ocelot_skb_cb {

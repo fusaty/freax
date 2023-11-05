@@ -8,14 +8,14 @@
  * Author: Andrey Smirnov <andrew.smirnov@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/videodev2.h>
-#include <linux/mutex.h>
-#include <linux/debugfs.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/atomic.h>
+#include <freax/videodev2.h>
+#include <freax/mutex.h>
+#include <freax/debugfs.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>
@@ -23,7 +23,7 @@
 #include <media/v4l2-device.h>
 
 #include <media/drv-intf/si476x.h>
-#include <linux/mfd/si476x-core.h>
+#include <freax/mfd/si476x-core.h>
 
 #define FM_FREQ_RANGE_LOW   64000000
 #define FM_FREQ_RANGE_HIGH 108000000

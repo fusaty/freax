@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mfd/ucb1x00-assabet.c
+ *  freax/drivers/mfd/ucb1x00-assabet.c
  *
  *  Copyright (C) 2001-2003 Russell King, All Rights Reserved.
  *
  *  We handle the machine-specific bits of the UCB1x00 driver here.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/platform_device.h>
-#include <linux/proc_fs.h>
-#include <linux/mfd/ucb1x00.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/gpio_keys.h>
+#include <freax/input.h>
+#include <freax/platform_device.h>
+#include <freax/proc_fs.h>
+#include <freax/mfd/ucb1x00.h>
 
 #define UCB1X00_ATTR(name,input)\
 static ssize_t name##_show(struct device *dev, struct device_attribute *attr, \
@@ -98,6 +98,6 @@ static void __exit ucb1x00_assabet_exit(void)
 module_init(ucb1x00_assabet_init);
 module_exit(ucb1x00_assabet_exit);
 
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.freax.org.uk>");
 MODULE_DESCRIPTION("Assabet noddy testing only example ADC driver");
 MODULE_LICENSE("GPL");

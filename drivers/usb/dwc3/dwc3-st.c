@@ -14,21 +14,21 @@
  * Inspired by dwc3-omap.c and dwc3-exynos.c.
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/usb/of.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/usb/of.h>
 
 #include "core.h"
 #include "io.h"

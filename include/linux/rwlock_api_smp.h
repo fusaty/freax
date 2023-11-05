@@ -1,12 +1,12 @@
-#ifndef __LINUX_RWLOCK_API_SMP_H
-#define __LINUX_RWLOCK_API_SMP_H
+#ifndef __freax_RWLOCK_API_SMP_H
+#define __freax_RWLOCK_API_SMP_H
 
-#ifndef __LINUX_SPINLOCK_API_SMP_H
+#ifndef __freax_SPINLOCK_API_SMP_H
 # error "please don't include this file directly"
 #endif
 
 /*
- * include/linux/rwlock_api_smp.h
+ * include/freax/rwlock_api_smp.h
  *
  * spinlock API declarations on SMP (and debug)
  * (implemented in kernel/spinlock.c)
@@ -281,4 +281,4 @@ static inline void __raw_write_unlock_bh(rwlock_t *lock)
 	__local_bh_enable_ip(_RET_IP_, SOFTIRQ_LOCK_OFFSET);
 }
 
-#endif /* __LINUX_RWLOCK_API_SMP_H */
+#endif /* __freax_RWLOCK_API_SMP_H */

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	IPv6 BSD socket options interface
- *	Linux INET6 implementation
+ *	freax INET6 implementation
  *
  *	Authors:
  *	Pedro Roque		<roque@di.fc.ul.pt>
  *
- *	Based on linux/net/ipv4/ip_sockglue.c
+ *	Based on freax/net/ipv4/ip_sockglue.c
  *
  *	FIXME: Make the setsockopt code POSIX compliant: That is
  *
@@ -18,21 +18,21 @@
  *		- added multicast source filtering API for MLDv2
  */
 
-#include <linux/module.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/in6.h>
-#include <linux/mroute6.h>
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/netfilter.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/net.h>
+#include <freax/in6.h>
+#include <freax/mroute6.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/init.h>
+#include <freax/sysctl.h>
+#include <freax/netfilter.h>
+#include <freax/slab.h>
 
 #include <net/sock.h>
 #include <net/snmp.h>
@@ -50,7 +50,7 @@
 #include <net/compat.h>
 #include <net/seg6.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 struct ip6_ra_chain *ip6_ra_chain;
 DEFINE_RWLOCK(ip6_ra_lock);

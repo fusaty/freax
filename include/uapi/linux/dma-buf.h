@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Framework for buffer objects that can be shared across devices/subsystems.
  *
@@ -20,7 +20,7 @@
 #ifndef _DMA_BUF_UAPI_H_
 #define _DMA_BUF_UAPI_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /**
  * struct dma_buf_sync - Synchronize with CPU access.

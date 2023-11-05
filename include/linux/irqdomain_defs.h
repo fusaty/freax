@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IRQDOMAIN_DEFS_H
-#define _LINUX_IRQDOMAIN_DEFS_H
+#ifndef _freax_IRQDOMAIN_DEFS_H
+#define _freax_IRQDOMAIN_DEFS_H
 
 /*
  * Should several domains have the same device node, but serve
@@ -28,4 +28,4 @@ enum irq_domain_bus_token {
 	DOMAIN_BUS_PCI_DEVICE_IMS,
 };
 
-#endif /* _LINUX_IRQDOMAIN_DEFS_H */
+#endif /* _freax_IRQDOMAIN_DEFS_H */

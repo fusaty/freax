@@ -6,25 +6,25 @@
  *         ChiaEn Wu <chiaen_wu@richtek.com>
  */
 
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kstrtox.h>
-#include <linux/linear_range.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/units.h>
-#include <linux/sysfs.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/kstrtox.h>
+#include <freax/linear_range.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/units.h>
+#include <freax/sysfs.h>
 
 #define RT9467_REG_CORE_CTRL0		0x00
 #define RT9467_REG_CHG_CTRL1		0x01

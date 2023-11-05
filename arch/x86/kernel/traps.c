@@ -3,7 +3,7 @@
  *  Copyright (C) 2000, 2001, 2002 Andi Kleen, SuSE Labs
  *
  *  Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@vafreax.com>, May 2000
  */
 
 /*
@@ -12,35 +12,35 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/context_tracking.h>
-#include <linux/interrupt.h>
-#include <linux/kallsyms.h>
-#include <linux/kmsan.h>
-#include <linux/spinlock.h>
-#include <linux/kprobes.h>
-#include <linux/uaccess.h>
-#include <linux/kdebug.h>
-#include <linux/kgdb.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/ptrace.h>
-#include <linux/uprobes.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/kexec.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/bug.h>
-#include <linux/nmi.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/io.h>
-#include <linux/hardirq.h>
-#include <linux/atomic.h>
-#include <linux/iommu.h>
+#include <freax/context_tracking.h>
+#include <freax/interrupt.h>
+#include <freax/kallsyms.h>
+#include <freax/kmsan.h>
+#include <freax/spinlock.h>
+#include <freax/kprobes.h>
+#include <freax/uaccess.h>
+#include <freax/kdebug.h>
+#include <freax/kgdb.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/ptrace.h>
+#include <freax/uprobes.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/kexec.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/timer.h>
+#include <freax/init.h>
+#include <freax/bug.h>
+#include <freax/nmi.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/io.h>
+#include <freax/hardirq.h>
+#include <freax/atomic.h>
+#include <freax/iommu.h>
 
 #include <asm/stacktrace.h>
 #include <asm/processor.h>
@@ -1297,7 +1297,7 @@ static void ve_raise_fault(struct pt_regs *regs, long error_code,
  *  * Specific CPUID leaf accesses
  *  * Access to specific guest physical addresses
  *
- * In the settings that Linux will run in, virtualization exceptions are
+ * In the settings that freax will run in, virtualization exceptions are
  * never generated on accesses to normal, TD-private memory that has been
  * accepted (by BIOS or with tdx_enc_status_changed()).
  *

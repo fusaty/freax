@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2016-2018, 2020-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2018, 2020-2021 The freax Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
-#include <linux/kthread.h>
-#include <linux/sched/mm.h>
-#include <uapi/linux/sched/types.h>
+#include <freax/kthread.h>
+#include <freax/sched/mm.h>
+#include <uapi/freax/sched/types.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_drv.h>

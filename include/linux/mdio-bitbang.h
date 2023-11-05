@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_MDIO_BITBANG_H
-#define __LINUX_MDIO_BITBANG_H
+#ifndef __freax_MDIO_BITBANG_H
+#define __freax_MDIO_BITBANG_H
 
-#include <linux/phy.h>
+#include <freax/phy.h>
 
 struct module;
 

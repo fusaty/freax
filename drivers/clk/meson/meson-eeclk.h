@@ -7,7 +7,7 @@
 #ifndef __MESON_CLKC_H
 #define __MESON_CLKC_H
 
-#include <linux/clk-provider.h>
+#include <freax/clk-provider.h>
 #include "clk-regmap.h"
 #include "meson-clkc-utils.h"
 

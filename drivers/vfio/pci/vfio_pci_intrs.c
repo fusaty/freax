@@ -10,15 +10,15 @@
  * Author: Tom Lyon, pugs@cisco.com
  */
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/eventfd.h>
-#include <linux/msi.h>
-#include <linux/pci.h>
-#include <linux/file.h>
-#include <linux/vfio.h>
-#include <linux/wait.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/eventfd.h>
+#include <freax/msi.h>
+#include <freax/pci.h>
+#include <freax/file.h>
+#include <freax/vfio.h>
+#include <freax/wait.h>
+#include <freax/slab.h>
 
 #include "vfio_pci_priv.h"
 
@@ -382,8 +382,8 @@ static int vfio_msi_enable(struct vfio_pci_core_device *vdev, int nvec, bool msi
 }
 
 /*
- * vfio_msi_alloc_irq() returns the Linux IRQ number of an MSI or MSI-X device
- * interrupt vector. If a Linux IRQ number is not available then a new
+ * vfio_msi_alloc_irq() returns the freax IRQ number of an MSI or MSI-X device
+ * interrupt vector. If a freax IRQ number is not available then a new
  * interrupt is allocated if dynamic MSI-X is supported.
  *
  * Where is vfio_msi_free_irq()? Allocated interrupts are maintained,

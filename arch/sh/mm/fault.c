@@ -4,21 +4,21 @@
  *  Copyright (C) 1999  Niibe Yutaka
  *  Copyright (C) 2003 - 2012  Paul Mundt
  *
- *  Based on linux/arch/i386/mm/fault.c:
+ *  Based on freax/arch/i386/mm/fault.c:
  *   Copyright (C) 1995  Linus Torvalds
  *
  * This file is subject to the terms and conditions of the GNU General Public
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched/signal.h>
-#include <linux/hardirq.h>
-#include <linux/kprobes.h>
-#include <linux/perf_event.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/sched/signal.h>
+#include <freax/hardirq.h>
+#include <freax/kprobes.h>
+#include <freax/perf_event.h>
+#include <freax/kdebug.h>
+#include <freax/uaccess.h>
 #include <asm/io_trapped.h>
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>

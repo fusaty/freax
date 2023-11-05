@@ -5,12 +5,12 @@
  * 	- Added _PDC for SMP C-states on Intel CPUs
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/sched.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/acpi.h>
+#include <freax/cpu.h>
+#include <freax/sched.h>
 
 #include <acpi/processor.h>
 #include <asm/mwait.h>

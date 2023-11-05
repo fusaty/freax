@@ -192,7 +192,7 @@
 		user_led {
 			label = "user_led";
 			gpios = <&pioB 21 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 
@@ -202,7 +202,7 @@
 		button-user {
 			label = "user_pb";
 			gpios = <&pioB 10 GPIO_ACTIVE_LOW>;
-			linux,code = <28>;
+			freax,code = <28>;
 			wakeup-source;
 		};
 	};

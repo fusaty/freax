@@ -6,27 +6,27 @@
  * This file is released under the GPL.
  */
 
-#include <linux/device-mapper.h>
+#include <freax/device-mapper.h>
 
 #include "dm-rq.h"
 #include "dm-bio-record.h"
 #include "dm-path-selector.h"
 #include "dm-uevent.h"
 
-#include <linux/blkdev.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/delay.h>
+#include <freax/blkdev.h>
+#include <freax/ctype.h>
+#include <freax/init.h>
+#include <freax/mempool.h>
+#include <freax/module.h>
+#include <freax/pagemap.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
+#include <freax/delay.h>
 #include <scsi/scsi_dh.h>
-#include <linux/atomic.h>
-#include <linux/blk-mq.h>
+#include <freax/atomic.h>
+#include <freax/blk-mq.h>
 
 static struct workqueue_struct *dm_mpath_wq;
 

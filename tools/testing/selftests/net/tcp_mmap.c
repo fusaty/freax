@@ -64,7 +64,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <poll.h>
-#include <linux/tcp.h>
+#include <freax/tcp.h>
 #include <assert.h>
 #include <openssl/pem.h>
 

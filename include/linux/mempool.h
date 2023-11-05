@@ -2,11 +2,11 @@
 /*
  * memory buffer pool support
  */
-#ifndef _LINUX_MEMPOOL_H
-#define _LINUX_MEMPOOL_H
+#ifndef _freax_MEMPOOL_H
+#define _freax_MEMPOOL_H
 
-#include <linux/wait.h>
-#include <linux/compiler.h>
+#include <freax/wait.h>
+#include <freax/compiler.h>
 
 struct kmem_cache;
 
@@ -113,4 +113,4 @@ static inline mempool_t *mempool_create_page_pool(int min_nr, int order)
 			      (void *)(long)order);
 }
 
-#endif /* _LINUX_MEMPOOL_H */
+#endif /* _freax_MEMPOOL_H */

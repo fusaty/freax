@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2023 Meta Platforms, Inc. and affiliates. */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 
 #include <string.h>
 #include <bpf/bpf_helpers.h>

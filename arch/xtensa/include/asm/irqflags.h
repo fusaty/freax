@@ -12,8 +12,8 @@
 #ifndef _XTENSA_IRQFLAGS_H
 #define _XTENSA_IRQFLAGS_H
 
-#include <linux/stringify.h>
-#include <linux/types.h>
+#include <freax/stringify.h>
+#include <freax/types.h>
 #include <asm/processor.h>
 
 static inline unsigned long arch_local_save_flags(void)

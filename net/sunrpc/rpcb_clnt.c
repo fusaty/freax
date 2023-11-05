@@ -13,23 +13,23 @@
  *  Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/un.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
 #include <net/ipv6.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/xprtsock.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/sunrpc/sched.h>
+#include <freax/sunrpc/xprtsock.h>
 
 #include <trace/events/sunrpc.h>
 
@@ -948,7 +948,7 @@ out_fail:
 
 /*
  * Not all rpcbind procedures described in RFC 1833 are implemented
- * since the Linux kernel RPC code requires only these.
+ * since the freax kernel RPC code requires only these.
  */
 
 static const struct rpc_procinfo rpcb_procedures2[] = {

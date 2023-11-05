@@ -6,7 +6,7 @@
 #ifndef __ASM_LOONGARCH_KVM_MMU_H__
 #define __ASM_LOONGARCH_KVM_MMU_H__
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 #include <asm/pgalloc.h>
 #include <asm/tlb.h>
 

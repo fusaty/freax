@@ -2,14 +2,14 @@
 #ifndef _PARISC_CACHEFLUSH_H
 #define _PARISC_CACHEFLUSH_H
 
-#include <linux/mm.h>
-#include <linux/uaccess.h>
+#include <freax/mm.h>
+#include <freax/uaccess.h>
 #include <asm/tlbflush.h>
 
 /* The usual comment is "Caches aren't brain-dead on the <architecture>".
  * Unfortunately, that doesn't apply to PA-RISC. */
 
-#include <linux/jump_label.h>
+#include <freax/jump_label.h>
 
 DECLARE_STATIC_KEY_TRUE(parisc_has_cache);
 DECLARE_STATIC_KEY_TRUE(parisc_has_dcache);

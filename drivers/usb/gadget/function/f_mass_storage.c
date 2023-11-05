@@ -168,33 +168,33 @@
 /* #define VERBOSE_DEBUG */
 /* #define DUMP_MSGS */
 
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/dcache.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/fcntl.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/kstrtox.h>
-#include <linux/kthread.h>
-#include <linux/sched/signal.h>
-#include <linux/limits.h>
-#include <linux/pagemap.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/freezer.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <freax/blkdev.h>
+#include <freax/completion.h>
+#include <freax/dcache.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/fcntl.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/kstrtox.h>
+#include <freax/kthread.h>
+#include <freax/sched/signal.h>
+#include <freax/limits.h>
+#include <freax/pagemap.h>
+#include <freax/rwsem.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/freezer.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
 #include <asm/unaligned.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/composite.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/composite.h>
 
-#include <linux/nospec.h>
+#include <freax/nospec.h>
 
 #include "configfs.h"
 
@@ -2967,7 +2967,7 @@ void fsg_common_set_inquiry_string(struct fsg_common *common, const char *vn,
 	/* Prepare inquiryString */
 	i = get_default_bcdDevice();
 	snprintf(common->inquiry_string, sizeof(common->inquiry_string),
-		 "%-8s%-16s%04x", vn ?: "Linux",
+		 "%-8s%-16s%04x", vn ?: "freax",
 		 /* Assume product name dependent on the first LUN */
 		 pn ?: ((*common->luns)->cdrom
 		     ? "File-CD Gadget"

@@ -11,13 +11,13 @@
  */
 
 /* LCD power functions */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/fb.h>
+#include <freax/backlight.h>
 
 #include <asm/hardware/locomo.h>
 #include <asm/irq.h>

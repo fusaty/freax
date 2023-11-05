@@ -8,10 +8,10 @@
  * Copyright (C) 2016 Cadence Design Systems Inc.
  */
 
-#include <linux/hw_breakpoint.h>
-#include <linux/log2.h>
-#include <linux/percpu.h>
-#include <linux/perf_event.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/log2.h>
+#include <freax/percpu.h>
+#include <freax/perf_event.h>
 #include <asm/core.h>
 #include <asm/hw_breakpoint.h>
 

@@ -10,16 +10,16 @@
 #define _NET_DST_H
 
 #include <net/dst_ops.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/rcupdate.h>
-#include <linux/bug.h>
-#include <linux/jiffies.h>
-#include <linux/refcount.h>
-#include <linux/rcuref.h>
+#include <freax/netdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/rcupdate.h>
+#include <freax/bug.h>
+#include <freax/jiffies.h>
+#include <freax/refcount.h>
+#include <freax/rcuref.h>
 #include <net/neighbour.h>
 #include <asm/processor.h>
-#include <linux/indirect_call_wrapper.h>
+#include <freax/indirect_call_wrapper.h>
 
 struct sk_buff;
 

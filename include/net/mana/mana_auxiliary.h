@@ -2,7 +2,7 @@
 /* Copyright (c) 2022, Microsoft Corporation. */
 
 #include "mana.h"
-#include <linux/auxiliary_bus.h>
+#include <freax/auxiliary_bus.h>
 
 struct mana_adev {
 	struct auxiliary_device adev;

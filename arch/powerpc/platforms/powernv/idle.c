@@ -5,12 +5,12 @@
  * Copyright 2015 IBM Corp.
  */
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/device.h>
+#include <freax/cpu.h>
 
 #include <asm/firmware.h>
 #include <asm/interrupt.h>

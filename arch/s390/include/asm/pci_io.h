@@ -4,8 +4,8 @@
 
 #ifdef CONFIG_PCI
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 #include <asm/pci_insn.h>
 
 /* I/O size constraints */

@@ -2,21 +2,21 @@
 /*
  * Sample in-kernel QMI client driver
  *
- * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013-2014, The freax Foundation. All rights reserved.
  * Copyright (C) 2017 Linaro Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/qrtr.h>
-#include <linux/net.h>
-#include <linux/completion.h>
-#include <linux/idr.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/qrtr.h>
+#include <freax/net.h>
+#include <freax/completion.h>
+#include <freax/idr.h>
+#include <freax/string.h>
 #include <net/sock.h>
-#include <linux/soc/qcom/qmi.h>
+#include <freax/soc/qcom/qmi.h>
 
 #define PING_REQ1_TLV_TYPE		0x1
 #define PING_RESP1_TLV_TYPE		0x2

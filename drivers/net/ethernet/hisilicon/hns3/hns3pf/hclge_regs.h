@@ -3,7 +3,7 @@
 
 #ifndef __HCLGE_REGS_H
 #define __HCLGE_REGS_H
-#include <linux/types.h>
+#include <freax/types.h>
 #include "hclge_comm_cmd.h"
 
 struct hnae3_handle;

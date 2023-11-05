@@ -10,9 +10,9 @@
  *    Ruslan Bilovol (ruslan.bilovol@gmail.com)
  */
 
-#include <linux/usb/audio.h>
-#include <linux/usb/audio-v2.h>
-#include <linux/module.h>
+#include <freax/usb/audio.h>
+#include <freax/usb/audio-v2.h>
+#include <freax/module.h>
 
 #include "u_audio.h"
 

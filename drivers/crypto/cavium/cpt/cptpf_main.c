@@ -3,13 +3,13 @@
  * Copyright (C) 2016 Cavium, Inc.
  */
 
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/printk.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/pci.h>
+#include <freax/printk.h>
 
 #include "cptpf.h"
 

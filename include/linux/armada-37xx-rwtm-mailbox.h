@@ -5,10 +5,10 @@
  * Author: Marek Behún <kabel@kernel.org>
  */
 
-#ifndef _LINUX_ARMADA_37XX_RWTM_MAILBOX_H_
-#define _LINUX_ARMADA_37XX_RWTM_MAILBOX_H_
+#ifndef _freax_ARMADA_37XX_RWTM_MAILBOX_H_
+#define _freax_ARMADA_37XX_RWTM_MAILBOX_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct armada_37xx_rwtm_tx_msg {
 	u16 command;
@@ -20,4 +20,4 @@ struct armada_37xx_rwtm_rx_msg {
 	u32 status[16];
 };
 
-#endif /* _LINUX_ARMADA_37XX_RWTM_MAILBOX_H_ */
+#endif /* _freax_ARMADA_37XX_RWTM_MAILBOX_H_ */

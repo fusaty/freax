@@ -2,7 +2,7 @@
 #ifndef __OMAP_COMMON_BOARD_DEVICES__
 #define __OMAP_COMMON_BOARD_DEVICES__
 
-#include <linux/mfd/menelaus.h>
+#include <freax/mfd/menelaus.h>
 
 void *n8x0_legacy_init(void);
 

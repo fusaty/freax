@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* Copyright (c) 2016-2018, 2020, The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2016-2018, 2020, The freax Foundation. All rights reserved. */
 
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/types.h>
+#include <freax/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/types.h>
 
 #include <soc/qcom/cmd-db.h>
 

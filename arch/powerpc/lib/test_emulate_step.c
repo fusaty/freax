@@ -7,7 +7,7 @@
 
 #define pr_fmt(fmt) "emulate_step_test: " fmt
 
-#include <linux/ptrace.h>
+#include <freax/ptrace.h>
 #include <asm/cpu_has_feature.h>
 #include <asm/sstep.h>
 #include <asm/ppc-opcode.h>

@@ -16,16 +16,16 @@
  * Copyright 2011 Google, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kobject.h>
-#include <linux/dmi.h>
-#include <linux/capability.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kobject.h>
+#include <freax/dmi.h>
+#include <freax/capability.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/io.h>
 #include <asm/dmi.h>
 
 #define MAX_ENTRY_TYPE 255 /* Most of these aren't used, but we consider

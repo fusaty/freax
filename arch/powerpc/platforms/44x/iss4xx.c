@@ -15,9 +15,9 @@
  *    Copyright 2007 David Gibson <dwg@au1.ibm.com>, IBM Corporation.
  */
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
-#include <linux/rtc.h>
+#include <freax/init.h>
+#include <freax/of_platform.h>
+#include <freax/rtc.h>
 
 #include <asm/machdep.h>
 #include <asm/prom.h>

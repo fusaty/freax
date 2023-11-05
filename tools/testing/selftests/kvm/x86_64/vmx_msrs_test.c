@@ -8,7 +8,7 @@
  * that KVM will set owned bits where appropriate, and will not if
  * KVM_X86_QUIRK_TWEAK_VMX_CTRL_MSRS is disabled.
  */
-#include <linux/bitmap.h>
+#include <freax/bitmap.h>
 #include "kvm_util.h"
 #include "vmx.h"
 

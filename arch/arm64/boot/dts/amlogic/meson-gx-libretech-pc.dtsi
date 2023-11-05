@@ -19,7 +19,7 @@
 
 		button-update {
 			label = "update";
-			linux,code = <KEY_VENDOR>;
+			freax,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <1300000>;
 		};
 	};
@@ -74,7 +74,7 @@
 
 		power-button {
 			label = "power";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			gpios = <&gpio_ao GPIOAO_2 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -108,14 +108,14 @@
 			color = <LED_COLOR_ID_GREEN>;
 			function = LED_FUNCTION_DISK_ACTIVITY;
 			gpios = <&gpio_ao GPIOAO_9 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "disk-activity";
+			freax,default-trigger = "disk-activity";
 		};
 
 		led-blue {
 			color = <LED_COLOR_ID_BLUE>;
 			function = LED_FUNCTION_STATUS;
 			gpios = <&gpio GPIODV_28 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			panic-indicator;
 		};
 	};

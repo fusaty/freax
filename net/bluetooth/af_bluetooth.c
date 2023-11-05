@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for freax
    Copyright (C) 2000-2001 Qualcomm Incorporated
 
    Written 2000,2001 by Maxim Krasnyansky <maxk@qualcomm.com>
@@ -24,15 +24,15 @@
 
 /* Bluetooth address family and sockets. */
 
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/stringify.h>
-#include <linux/sched/signal.h>
+#include <freax/module.h>
+#include <freax/debugfs.h>
+#include <freax/stringify.h>
+#include <freax/sched/signal.h>
 
 #include <asm/ioctls.h>
 
 #include <net/bluetooth/bluetooth.h>
-#include <linux/proc_fs.h>
+#include <freax/proc_fs.h>
 
 #include "leds.h"
 #include "selftest.h"

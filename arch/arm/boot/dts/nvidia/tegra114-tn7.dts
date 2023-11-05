@@ -12,8 +12,8 @@
 		/* TN7's bootloader's arguments need to be overridden */
 		bootargs = "console=ttyS0,115200n8 console=tty1 gpt fbcon=rotate:2";
 		/* TN7's bootloader will place initrd at this address */
-		linux,initrd-start = <0x82000000>;
-		linux,initrd-end = <0x82800000>;
+		freax,initrd-start = <0x82000000>;
+		freax,initrd-end = <0x82800000>;
 	};
 
 	aliases {
@@ -287,20 +287,20 @@
 		key-power {
 			label = "Power";
 			gpios = <&gpio TEGRA_GPIO(Q, 0) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			wakeup-source;
 		};
 
 		key-volume-down {
 			label = "Volume Down";
 			gpios = <&gpio TEGRA_GPIO(Q, 2) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 		};
 
 		key-volume-up {
 			label = "Volume Up";
 			gpios = <&gpio TEGRA_GPIO(R, 2) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 		};
 	};
 

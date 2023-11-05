@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -8,32 +8,32 @@
  *
  * Based on ipv4/udp.c code.
  *
- * Authors:	Vasiliy Kulikov / Openwall (for Linux 2.6),
- *		Pavel Kankovsky (for Linux 2.4.32)
+ * Authors:	Vasiliy Kulikov / Openwall (for freax 2.6),
+ *		Pavel Kankovsky (for freax 2.4.32)
  *
  * Pavel gave all rights to bugs to Vasiliy,
  * none of the bugs are Pavel's now.
  */
 
-#include <linux/uaccess.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/inet.h>
-#include <linux/netdevice.h>
+#include <freax/uaccess.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/in.h>
+#include <freax/errno.h>
+#include <freax/timer.h>
+#include <freax/mm.h>
+#include <freax/inet.h>
+#include <freax/netdevice.h>
 #include <net/snmp.h>
 #include <net/ip.h>
 #include <net/icmp.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
-#include <linux/proc_fs.h>
-#include <linux/export.h>
-#include <linux/bpf-cgroup.h>
+#include <freax/skbuff.h>
+#include <freax/proc_fs.h>
+#include <freax/export.h>
+#include <freax/bpf-cgroup.h>
 #include <net/sock.h>
 #include <net/ping.h>
 #include <net/udp.h>
@@ -42,8 +42,8 @@
 #include <net/checksum.h>
 
 #if IS_ENABLED(CONFIG_IPV6)
-#include <linux/in6.h>
-#include <linux/icmpv6.h>
+#include <freax/in6.h>
+#include <freax/icmpv6.h>
 #include <net/addrconf.h>
 #include <net/ipv6.h>
 #include <net/transp_v6.h>

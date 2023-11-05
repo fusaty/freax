@@ -5,20 +5,20 @@
 
 /* XXX TBD some includes may be extraneous */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/hash.h>
-#include <linux/rcupdate.h>
-#include <linux/rculist.h>
-#include <linux/kref.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/utsname.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/kthread.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/configfs.h>
+#include <freax/ctype.h>
+#include <freax/hash.h>
+#include <freax/rcupdate.h>
+#include <freax/rculist.h>
+#include <freax/kref.h>
 #include <asm/unaligned.h>
 #include <scsi/libfc.h>
 

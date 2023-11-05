@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <libgen.h>
 #include <string.h>
-#include <linux/version.h>
+#include <freax/version.h>
 #include <ctype.h>
 #include "utils.h"
 
@@ -68,7 +68,7 @@ main(int argc, char *argv[])
 	add_key("spk", 16, is_shift);
 	add_key("double", 32, is_shift);
 
-	open_input(dir_name, "include/linux/input.h");
+	open_input(dir_name, "include/freax/input.h");
 	while (get_define()) {
 		if (strncmp(def_name, "KEY_", 4))
 			continue;
@@ -77,7 +77,7 @@ main(int argc, char *argv[])
 			add_key(def_name, value, is_input);
 	}
 
-	open_input(dir_name, "include/uapi/linux/input-event-codes.h");
+	open_input(dir_name, "include/uapi/freax/input-event-codes.h");
 	while (get_define()) {
 		if (strncmp(def_name, "KEY_", 4))
 			continue;

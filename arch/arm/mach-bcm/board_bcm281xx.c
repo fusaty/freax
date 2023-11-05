@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (C) 2012-2014 Broadcom Corporation
 
-#include <linux/clocksource.h>
-#include <linux/of_address.h>
+#include <freax/clocksource.h>
+#include <freax/of_address.h>
 
 #include <asm/mach/arch.h>
 

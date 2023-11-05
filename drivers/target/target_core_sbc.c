@@ -7,11 +7,11 @@
  * Nicholas A. Bellinger <nab@kernel.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/ratelimit.h>
-#include <linux/crc-t10dif.h>
-#include <linux/t10-pi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/ratelimit.h>
+#include <freax/crc-t10dif.h>
+#include <freax/t10-pi.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi_proto.h>
 #include <scsi/scsi_tcq.h>

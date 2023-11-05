@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2019 Arm Ltd.
  */
-#ifndef _UAPI_LINUX_VIRTIO_IOMMU_H
-#define _UAPI_LINUX_VIRTIO_IOMMU_H
+#ifndef _UAPI_freax_VIRTIO_IOMMU_H
+#define _UAPI_freax_VIRTIO_IOMMU_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Feature bits */
 #define VIRTIO_IOMMU_F_INPUT_RANGE		0

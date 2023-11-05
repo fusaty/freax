@@ -4,9 +4,9 @@
  * details
  */
 
-#include <linux/time.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
+#include <freax/time.h>
+#include <freax/pagemap.h>
+#include <freax/buffer_head.h>
 #include "reiserfs.h"
 
 /*

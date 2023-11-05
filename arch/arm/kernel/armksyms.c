@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/armksyms.c
+ *  freax/arch/arm/kernel/armksyms.c
  *
  *  Copyright (C) 2000 Russell King
  */
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/in6.h>
-#include <linux/syscalls.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
-#include <linux/arm-smccc.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/in6.h>
+#include <freax/syscalls.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
+#include <freax/arm-smccc.h>
 
 #include <asm/checksum.h>
 #include <asm/ftrace.h>

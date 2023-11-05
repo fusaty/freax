@@ -3,18 +3,18 @@
  * Patrick McHardy (c) 2006-2012
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/skbuff.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/seq_file.h>
-#include <linux/rcupdate.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/proc_fs.h>
+#include <freax/skbuff.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netfilter_bridge.h>
+#include <freax/seq_file.h>
+#include <freax/rcupdate.h>
 #include <net/protocol.h>
 #include <net/netfilter/nf_queue.h>
 #include <net/dst.h>

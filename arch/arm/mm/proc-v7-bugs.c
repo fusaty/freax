@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/arm-smccc.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
+#include <freax/arm-smccc.h>
+#include <freax/kernel.h>
+#include <freax/smp.h>
 
 #include <asm/cp15.h>
 #include <asm/cputype.h>

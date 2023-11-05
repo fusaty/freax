@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  linux/include/linux/sunrpc/timer.h
+ *  freax/include/freax/sunrpc/timer.h
  *
  *  Declarations for the RPC transport timer.
  *
  *  Copyright (C) 2002 Trond Myklebust <trond.myklebust@fys.uio.no>
  */
 
-#ifndef _LINUX_SUNRPC_TIMER_H
-#define _LINUX_SUNRPC_TIMER_H
+#ifndef _freax_SUNRPC_TIMER_H
+#define _freax_SUNRPC_TIMER_H
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 struct rpc_rtt {
 	unsigned long timeo;	/* default timeout value */
@@ -47,4 +47,4 @@ static inline int rpc_ntimeo(struct rpc_rtt *rt, int timer)
 	return rt->ntimeouts[timer-1];
 }
 
-#endif /* _LINUX_SUNRPC_TIMER_H */
+#endif /* _freax_SUNRPC_TIMER_H */

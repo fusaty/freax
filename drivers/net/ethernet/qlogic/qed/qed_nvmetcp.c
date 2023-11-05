@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-3-Clause)
 /* Copyright 2021 Marvell. All rights reserved. */
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 #include <asm/param.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/qed/qed_nvmetcp_if.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/etherdevice.h>
+#include <freax/kernel.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/stddef.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/qed/qed_nvmetcp_if.h>
 #include "qed.h"
 #include "qed_cxt.h"
 #include "qed_dev_api.h"

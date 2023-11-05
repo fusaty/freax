@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/rwsem.h>
-#include <linux/xattr.h>
-#include <linux/security.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/iversion.h>
-#include <linux/fsverity.h>
-#include <linux/sched/mm.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/rwsem.h>
+#include <freax/xattr.h>
+#include <freax/security.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/iversion.h>
+#include <freax/fsverity.h>
+#include <freax/sched/mm.h>
 #include "messages.h"
 #include "ctree.h"
 #include "btrfs_inode.h"

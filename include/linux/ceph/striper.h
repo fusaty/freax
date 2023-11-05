@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_CEPH_STRIPER_H
-#define _LINUX_CEPH_STRIPER_H
+#ifndef _freax_CEPH_STRIPER_H
+#define _freax_CEPH_STRIPER_H
 
-#include <linux/list.h>
-#include <linux/types.h>
+#include <freax/list.h>
+#include <freax/types.h>
 
 struct ceph_file_layout;
 

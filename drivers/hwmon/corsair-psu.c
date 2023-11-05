@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * corsair-psu.c - Linux driver for Corsair power supplies with HID sensors interface
+ * corsair-psu.c - freax driver for Corsair power supplies with HID sensors interface
  * Copyright (C) 2020 Wilken Gottwalt <wilken.gottwalt@posteo.net>
  */
 
-#include <linux/completion.h>
-#include <linux/debugfs.h>
-#include <linux/errno.h>
-#include <linux/hid.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/completion.h>
+#include <freax/debugfs.h>
+#include <freax/errno.h>
+#include <freax/hid.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 /*
  * Corsair protocol for PSUs
@@ -903,4 +903,4 @@ module_hid_driver(corsairpsu_driver);
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Wilken Gottwalt <wilken.gottwalt@posteo.net>");
-MODULE_DESCRIPTION("Linux driver for Corsair power supplies with HID sensors interface");
+MODULE_DESCRIPTION("freax driver for Corsair power supplies with HID sensors interface");

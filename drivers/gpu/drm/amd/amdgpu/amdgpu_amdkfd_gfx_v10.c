@@ -32,7 +32,7 @@
 #include "v10_structs.h"
 #include "nv.h"
 #include "nvd.h"
-#include <uapi/linux/kfd_ioctl.h>
+#include <uapi/freax/kfd_ioctl.h>
 
 enum hqd_dequeue_request_type {
 	NO_ACTION = 0,

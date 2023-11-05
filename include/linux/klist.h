@@ -7,12 +7,12 @@
  *	Copyright (C) 2005 Patrick Mochel
  */
 
-#ifndef _LINUX_KLIST_H
-#define _LINUX_KLIST_H
+#ifndef _freax_KLIST_H
+#define _freax_KLIST_H
 
-#include <linux/spinlock.h>
-#include <linux/kref.h>
-#include <linux/list.h>
+#include <freax/spinlock.h>
+#include <freax/kref.h>
+#include <freax/list.h>
 
 struct klist_node;
 struct klist {

@@ -4,23 +4,23 @@
  * A FSI master controller, using a simple GPIO bit-banging interface
  */
 
-#include <linux/crc4.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/fsi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/irqflags.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/regmap.h>
-#include <linux/firmware.h>
-#include <linux/gpio/aspeed.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of_address.h>
-#include <linux/genalloc.h>
+#include <freax/crc4.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/fsi.h>
+#include <freax/gpio/consumer.h>
+#include <freax/io.h>
+#include <freax/irqflags.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/regmap.h>
+#include <freax/firmware.h>
+#include <freax/gpio/aspeed.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of_address.h>
+#include <freax/genalloc.h>
 
 #include "fsi-master.h"
 #include "cf-fsi-fw.h"

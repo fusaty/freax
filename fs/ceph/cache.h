@@ -9,10 +9,10 @@
 #ifndef _CEPH_CACHE_H
 #define _CEPH_CACHE_H
 
-#include <linux/netfs.h>
+#include <freax/netfs.h>
 
 #ifdef CONFIG_CEPH_FSCACHE
-#include <linux/fscache.h>
+#include <freax/fscache.h>
 
 int ceph_fscache_register_fs(struct ceph_fs_client* fsc, struct fs_context *fc);
 void ceph_fscache_unregister_fs(struct ceph_fs_client* fsc);

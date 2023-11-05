@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright (c) 2021 Intel Corporation
 
-#include <linux/auxiliary_bus.h>
-#include <linux/module.h>
-#include <linux/peci.h>
-#include <linux/peci-cpu.h>
-#include <linux/slab.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/module.h>
+#include <freax/peci.h>
+#include <freax/peci-cpu.h>
+#include <freax/slab.h>
 
 #include "internal.h"
 

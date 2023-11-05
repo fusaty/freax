@@ -8,8 +8,8 @@
  * Author: Pawel Laszczak <pawell@cadence.com>
  */
 
-#ifndef __LINUX_CDNS2_DEBUG
-#define __LINUX_CDNS2_DEBUG
+#ifndef __freax_CDNS2_DEBUG
+#define __freax_CDNS2_DEBUG
 
 static inline const char *cdns2_decode_usb_irq(char *str, size_t size,
 					       u8 usb_irq, u8 ext_irq)
@@ -200,4 +200,4 @@ static inline const char *cdns2_decode_trb(char *str, size_t size, u32 flags,
 	return str;
 }
 
-#endif /*__LINUX_CDNS2_DEBUG*/
+#endif /*__freax_CDNS2_DEBUG*/

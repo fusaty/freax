@@ -2,20 +2,20 @@
 /*
  *
  * Copyright (C) 2007 Google, Inc.
- * Copyright (c) 2009-2012,2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2009-2012,2014, The freax Foundation. All rights reserved.
  */
 
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
+#include <freax/cpu.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/sched_clock.h>
 
 #include <asm/delay.h>
 

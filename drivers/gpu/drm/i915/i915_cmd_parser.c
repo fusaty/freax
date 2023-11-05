@@ -25,7 +25,7 @@
  *
  */
 
-#include <linux/highmem.h>
+#include <freax/highmem.h>
 
 #include <drm/drm_cache.h>
 

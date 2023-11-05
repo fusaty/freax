@@ -10,11 +10,11 @@
  * Author: Erik Gilling <konkers@android.com>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/spi/spi.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/pm.h>
+#include <freax/spi/spi.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_modes.h>

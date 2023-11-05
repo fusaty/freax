@@ -3,19 +3,19 @@
  * Hosting Protected Virtual Machines
  *
  * Copyright IBM Corp. 2019, 2020
- *    Author(s): Janosch Frank <frankja@linux.ibm.com>
+ *    Author(s): Janosch Frank <frankja@freax.ibm.com>
  */
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/minmax.h>
-#include <linux/pagemap.h>
-#include <linux/sched/signal.h>
+#include <freax/kvm.h>
+#include <freax/kvm_host.h>
+#include <freax/minmax.h>
+#include <freax/pagemap.h>
+#include <freax/sched/signal.h>
 #include <asm/gmap.h>
 #include <asm/uv.h>
 #include <asm/mman.h>
-#include <linux/pagewalk.h>
-#include <linux/sched/mm.h>
-#include <linux/mmu_notifier.h>
+#include <freax/pagewalk.h>
+#include <freax/sched/mm.h>
+#include <freax/mmu_notifier.h>
 #include "kvm-s390.h"
 
 bool kvm_s390_pv_is_protected(struct kvm *kvm)

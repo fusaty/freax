@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0+
 // Copyright 2018 IBM Corporation
 
-#include <linux/clk.h>
-#include <linux/reset.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/reset.h>
+#include <freax/regmap.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_fb_dma_helper.h>

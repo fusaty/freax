@@ -2,8 +2,8 @@
 /*
  * Copyright 2017, Michael Ellerman, IBM Corporation.
  */
-#ifndef _LINUX_SET_MEMORY_H_
-#define _LINUX_SET_MEMORY_H_
+#ifndef _freax_SET_MEMORY_H_
+#define _freax_SET_MEMORY_H_
 
 #ifdef CONFIG_ARCH_HAS_SET_MEMORY
 #include <asm/set_memory.h>
@@ -78,4 +78,4 @@ static inline int set_memory_decrypted(unsigned long addr, int numpages)
 }
 #endif /* CONFIG_ARCH_HAS_MEM_ENCRYPT */
 
-#endif /* _LINUX_SET_MEMORY_H_ */
+#endif /* _freax_SET_MEMORY_H_ */

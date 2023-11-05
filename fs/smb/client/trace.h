@@ -10,9 +10,9 @@
 #if !defined(_CIFS_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _CIFS_TRACE_H
 
-#include <linux/tracepoint.h>
-#include <linux/net.h>
-#include <linux/inet.h>
+#include <freax/tracepoint.h>
+#include <freax/net.h>
+#include <freax/inet.h>
 
 /*
  * Please use this 3-part article as a reference for writing new tracepoints:

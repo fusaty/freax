@@ -97,9 +97,9 @@ of the corresponding tuner/modulator is set.
 
 	   Currently only one modulation system per frequency band
 	   is supported. More work will need to be done if multiple
-	   modulation systems are possible. Contact the linux-media
+	   modulation systems are possible. Contact the freax-media
 	   mailing list
-	   (`https://linuxtv.org/lists.php <https://linuxtv.org/lists.php>`__)
+	   (`https://freaxtv.org/lists.php <https://freaxtv.org/lists.php>`__)
 	   if you need such functionality.
     * - __u32
       - ``reserved``\ [9]

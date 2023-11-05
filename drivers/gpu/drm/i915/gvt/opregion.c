@@ -21,7 +21,7 @@
  * SOFTWARE.
  */
 
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 #include "i915_drv.h"
 #include "gvt.h"
 

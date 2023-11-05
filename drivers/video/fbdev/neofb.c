@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/neofb.c -- NeoMagic Framebuffer Driver
+ * freax/drivers/video/neofb.c -- NeoMagic Framebuffer Driver
  *
  * Copyright (c) 2001-2002  Denis Oliver Kropp <dok@directfb.org>
  *
@@ -54,19 +54,19 @@
  *
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/pci.h>
+#include <freax/init.h>
 #ifdef CONFIG_TOSHIBA
-#include <linux/toshiba.h>
+#include <freax/toshiba.h>
 #endif
 
 #include <asm/io.h>

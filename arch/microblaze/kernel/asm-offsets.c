@@ -8,14 +8,14 @@
  * for more details.
  */
 
-#include <linux/init.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/ptrace.h>
-#include <linux/hardirq.h>
-#include <linux/thread_info.h>
-#include <linux/kbuild.h>
+#include <freax/init.h>
+#include <freax/stddef.h>
+#include <freax/sched.h>
+#include <freax/kernel_stat.h>
+#include <freax/ptrace.h>
+#include <freax/hardirq.h>
+#include <freax/thread_info.h>
+#include <freax/kbuild.h>
 #include <asm/cpuinfo.h>
 
 int main(int argc, char *argv[])

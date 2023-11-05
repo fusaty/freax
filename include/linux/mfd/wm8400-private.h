@@ -5,13 +5,13 @@
  * Copyright 2008 Wolfson Microelectronics plc
  */
 
-#ifndef __LINUX_MFD_WM8400_PRIV_H
-#define __LINUX_MFD_WM8400_PRIV_H
+#ifndef __freax_MFD_WM8400_PRIV_H
+#define __freax_MFD_WM8400_PRIV_H
 
-#include <linux/mfd/wm8400.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/mfd/wm8400.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define WM8400_REGISTER_COUNT 0x55
 

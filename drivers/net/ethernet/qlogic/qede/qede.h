@@ -6,24 +6,24 @@
 
 #ifndef _QEDE_H_
 #define _QEDE_H_
-#include <linux/workqueue.h>
-#include <linux/netdevice.h>
-#include <linux/interrupt.h>
-#include <linux/bitmap.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/bpf.h>
+#include <freax/workqueue.h>
+#include <freax/netdevice.h>
+#include <freax/interrupt.h>
+#include <freax/bitmap.h>
+#include <freax/kernel.h>
+#include <freax/mutex.h>
+#include <freax/bpf.h>
 #include <net/xdp.h>
-#include <linux/qed/qede_rdma.h>
-#include <linux/io.h>
+#include <freax/qed/qede_rdma.h>
+#include <freax/io.h>
 #ifdef CONFIG_RFS_ACCEL
-#include <linux/cpu_rmap.h>
+#include <freax/cpu_rmap.h>
 #endif
-#include <linux/qed/common_hsi.h>
-#include <linux/qed/eth_common.h>
-#include <linux/qed/qed_if.h>
-#include <linux/qed/qed_chain.h>
-#include <linux/qed/qed_eth_if.h>
+#include <freax/qed/common_hsi.h>
+#include <freax/qed/eth_common.h>
+#include <freax/qed/qed_if.h>
+#include <freax/qed/qed_chain.h>
+#include <freax/qed/qed_eth_if.h>
 
 #include <net/pkt_cls.h>
 #include <net/tc_act/tc_gact.h>

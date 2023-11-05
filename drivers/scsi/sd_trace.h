@@ -11,7 +11,7 @@
 #if !defined(_SD_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_host.h>
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 TRACE_EVENT(scsi_prepare_zone_append,
 

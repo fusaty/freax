@@ -8,14 +8,14 @@
  * Author: Christoffer Dall <c.dall@virtualopensystems.com>
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/kvm_host.h>
+#include <freax/kvm.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 #include <kvm/arm_arch_timer.h>
 

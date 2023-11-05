@@ -6,9 +6,9 @@
  * Copyright (C) 1997 Michael A. Griffith (grif@acm.org)
  */
 
-#include <linux/kernel.h>
-#include <linux/sort.h>
-#include <linux/init.h>
+#include <freax/kernel.h>
+#include <freax/sort.h>
+#include <freax/init.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>
@@ -16,7 +16,7 @@
 
 static int __init prom_meminit_v0(void)
 {
-	struct linux_mlist_v0 *p;
+	struct freax_mlist_v0 *p;
 	int index;
 
 	index = 0;
@@ -31,13 +31,13 @@ static int __init prom_meminit_v0(void)
 
 static int __init prom_meminit_v2(void)
 {
-	struct linux_prom_registers reg[64];
+	struct freax_prom_registers reg[64];
 	phandle node;
 	int size, num_ents, i;
 
 	node = prom_searchsiblings(prom_getchild(prom_root_node), "memory");
 	size = prom_getproperty(node, "available", (char *) reg, sizeof(reg));
-	num_ents = size / sizeof(struct linux_prom_registers);
+	num_ents = size / sizeof(struct freax_prom_registers);
 
 	for (i = 0; i < num_ents; i++) {
 		sp_banks[i].base_addr = reg[i].phys_addr;

@@ -6,7 +6,7 @@
 #ifndef _I915_GSC_PROXY_MEI_INTERFACE_H_
 #define _I915_GSC_PROXY_MEI_INTERFACE_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device;
 struct module;

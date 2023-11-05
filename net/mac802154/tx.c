@@ -9,9 +9,9 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
 
-#include <linux/netdevice.h>
-#include <linux/if_arp.h>
-#include <linux/crc-ccitt.h>
+#include <freax/netdevice.h>
+#include <freax/if_arp.h>
+#include <freax/crc-ccitt.h>
 #include <asm/unaligned.h>
 
 #include <net/rtnetlink.h>

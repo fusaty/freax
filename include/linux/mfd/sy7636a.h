@@ -31,4 +31,4 @@
 
 #define FAULT_FLAG_SHIFT	1
 
-#endif /* __LINUX_MFD_SY7636A_H */
+#endif /* __freax_MFD_SY7636A_H */

@@ -9,27 +9,27 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/eventfd.h>
-#include <linux/file.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/uaccess.h>
-#include <linux/swap.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/seq_file.h>
-#include <linux/miscdevice.h>
-#include <linux/moduleparam.h>
-#include <linux/virtio_mmio.h>
+#include <freax/eventfd.h>
+#include <freax/file.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/workqueue.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/uaccess.h>
+#include <freax/swap.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
+#include <freax/seq_file.h>
+#include <freax/miscdevice.h>
+#include <freax/moduleparam.h>
+#include <freax/virtio_mmio.h>
 
 #include <asm/xen/hypervisor.h>
 #include <asm/xen/hypercall.h>

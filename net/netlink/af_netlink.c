@@ -18,51 +18,51 @@
  * 				   mandatory if CONFIG_NET=y these days
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/bpf.h>
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/filter.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/stat.h>
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/fcntl.h>
-#include <linux/termios.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/notifier.h>
-#include <linux/security.h>
-#include <linux/jhash.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/audit.h>
-#include <linux/mutex.h>
-#include <linux/vmalloc.h>
-#include <linux/if_arp.h>
-#include <linux/rhashtable.h>
+#include <freax/bpf.h>
+#include <freax/capability.h>
+#include <freax/kernel.h>
+#include <freax/filter.h>
+#include <freax/init.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/stat.h>
+#include <freax/socket.h>
+#include <freax/un.h>
+#include <freax/fcntl.h>
+#include <freax/termios.h>
+#include <freax/sockios.h>
+#include <freax/net.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/notifier.h>
+#include <freax/security.h>
+#include <freax/jhash.h>
+#include <freax/jiffies.h>
+#include <freax/random.h>
+#include <freax/bitops.h>
+#include <freax/mm.h>
+#include <freax/types.h>
+#include <freax/audit.h>
+#include <freax/mutex.h>
+#include <freax/vmalloc.h>
+#include <freax/if_arp.h>
+#include <freax/rhashtable.h>
 #include <asm/cacheflush.h>
-#include <linux/hash.h>
-#include <linux/genetlink.h>
-#include <linux/net_namespace.h>
-#include <linux/nospec.h>
-#include <linux/btf_ids.h>
+#include <freax/hash.h>
+#include <freax/genetlink.h>
+#include <freax/net_namespace.h>
+#include <freax/nospec.h>
+#include <freax/btf_ids.h>
 
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
@@ -102,7 +102,7 @@ static const char *const nlk_cb_mutex_key_strings[MAX_LINKS + 1] = {
 	"nlk_cb_mutex-SOCK_DIAG",
 	"nlk_cb_mutex-NFLOG",
 	"nlk_cb_mutex-XFRM",
-	"nlk_cb_mutex-SELINUX",
+	"nlk_cb_mutex-SEfreax",
 	"nlk_cb_mutex-ISCSI",
 	"nlk_cb_mutex-AUDIT",
 	"nlk_cb_mutex-FIB_LOOKUP",

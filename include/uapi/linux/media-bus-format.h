@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Media Bus API header
  *
@@ -9,8 +9,8 @@
  * published by the Free Software Foundation.
  */
 
-#ifndef __LINUX_MEDIA_BUS_FORMAT_H
-#define __LINUX_MEDIA_BUS_FORMAT_H
+#ifndef __freax_MEDIA_BUS_FORMAT_H
+#define __freax_MEDIA_BUS_FORMAT_H
 
 /*
  * These bus formats uniquely identify data formats on the data bus. Format 0
@@ -173,4 +173,4 @@
  */
 #define MEDIA_BUS_FMT_METADATA_FIXED		0x7001
 
-#endif /* __LINUX_MEDIA_BUS_FORMAT_H */
+#endif /* __freax_MEDIA_BUS_FORMAT_H */

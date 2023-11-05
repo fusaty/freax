@@ -9,13 +9,13 @@
  *  And anyone else who helped me on this.
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/mv643xx.h>
-#include <linux/pci.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/mv643xx.h>
+#include <freax/pci.h>
 
 #define PEGASOS2_MARVELL_REGBASE 		(0xf1000000)
 #define PEGASOS2_MARVELL_REGSIZE 		(0x00004000)

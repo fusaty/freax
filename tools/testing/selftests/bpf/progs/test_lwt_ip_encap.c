@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <stddef.h>
 #include <string.h>
-#include <linux/bpf.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/bpf.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_endian.h>
 

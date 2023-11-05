@@ -4,9 +4,9 @@
  * Author: Dmitry Safonov <dima@arista.com>
  * Based on code and translator idea by: Florian Westphal <fw@strlen.de>
  */
-#include <linux/compat.h>
-#include <linux/nospec.h>
-#include <linux/xfrm.h>
+#include <freax/compat.h>
+#include <freax/nospec.h>
+#include <freax/xfrm.h>
 #include <net/xfrm.h>
 
 struct compat_xfrm_lifetime_cfg {

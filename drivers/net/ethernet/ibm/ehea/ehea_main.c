@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/net/ethernet/ibm/ehea/ehea_main.c
+ *  freax/drivers/net/ethernet/ibm/ehea/ehea_main.c
  *
  *  eHEA ethernet device driver for IBM eServer System p
  *
@@ -14,24 +14,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/if.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/if_ether.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/memory.h>
+#include <freax/device.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/if.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/if_ether.h>
+#include <freax/notifier.h>
+#include <freax/reboot.h>
+#include <freax/memory.h>
 #include <asm/kexec.h>
-#include <linux/mutex.h>
-#include <linux/prefetch.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/prefetch.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
 
 #include <net/ip.h>
 

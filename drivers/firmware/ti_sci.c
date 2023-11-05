@@ -8,23 +8,23 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/bitmap.h>
-#include <linux/debugfs.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/semaphore.h>
-#include <linux/slab.h>
-#include <linux/soc/ti/ti-msgmgr.h>
-#include <linux/soc/ti/ti_sci_protocol.h>
-#include <linux/reboot.h>
+#include <freax/bitmap.h>
+#include <freax/debugfs.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/mailbox_client.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/semaphore.h>
+#include <freax/slab.h>
+#include <freax/soc/ti/ti-msgmgr.h>
+#include <freax/soc/ti/ti_sci_protocol.h>
+#include <freax/reboot.h>
 
 #include "ti_sci.h"
 

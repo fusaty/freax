@@ -6,11 +6,11 @@
  * Copyright (C) 2004, 2005 MIPS Technologies, Inc.  All rights reserved.
  * Copyright (C) 2013 Imagination Technologies Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 
 #include <asm/mipsregs.h>
 #include <asm/mipsmtregs.h>

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/spi/mxs-spi.h
+ * include/freax/spi/mxs-spi.h
  *
  * Freescale i.MX233/i.MX28 SPI controller register definition
  *
@@ -8,10 +8,10 @@
  * Copyright 2009-2011 Freescale Semiconductor, Inc.
  */
 
-#ifndef __LINUX_SPI_MXS_SPI_H__
-#define __LINUX_SPI_MXS_SPI_H__
+#ifndef __freax_SPI_MXS_SPI_H__
+#define __freax_SPI_MXS_SPI_H__
 
-#include <linux/dmaengine.h>
+#include <freax/dmaengine.h>
 
 #define ssp_is_old(host)	((host)->devid == IMX23_SSP)
 
@@ -132,4 +132,4 @@ struct mxs_ssp {
 
 void mxs_ssp_set_clk_rate(struct mxs_ssp *ssp, unsigned int rate);
 
-#endif	/* __LINUX_SPI_MXS_SPI_H__ */
+#endif	/* __freax_SPI_MXS_SPI_H__ */

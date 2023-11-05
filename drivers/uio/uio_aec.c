@@ -5,17 +5,17 @@
  * Copyright (C) 2008 Brandon Philips <brandon@ifup.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/uio_driver.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/cdev.h>
+#include <freax/fs.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
+#include <freax/uio_driver.h>
+#include <freax/slab.h>
 
 #define PCI_VENDOR_ID_AEC 0xaecb
 #define PCI_DEVICE_ID_AEC_VITCLTC 0x6250

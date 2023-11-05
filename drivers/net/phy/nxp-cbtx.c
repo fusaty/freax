@@ -4,10 +4,10 @@
  * Copyright 2022-2023 NXP
  */
 
-#include <linux/kernel.h>
-#include <linux/mii.h>
-#include <linux/module.h>
-#include <linux/phy.h>
+#include <freax/kernel.h>
+#include <freax/mii.h>
+#include <freax/module.h>
+#include <freax/phy.h>
 
 #define PHY_ID_CBTX_SJA1110			0x001bb020
 

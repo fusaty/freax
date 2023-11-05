@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_SWAB_H
-#define _UAPI_LINUX_SWAB_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_SWAB_H
+#define _UAPI_freax_SWAB_H
 
-#include <linux/types.h>
-#include <linux/stddef.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
 #include <asm/bitsperlong.h>
 #include <asm/swab.h>
 
@@ -302,4 +302,4 @@ static inline void __swahb32s(__u32 *p)
 }
 
 
-#endif /* _UAPI_LINUX_SWAB_H */
+#endif /* _UAPI_freax_SWAB_H */

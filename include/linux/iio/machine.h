@@ -5,8 +5,8 @@
  * Copyright (c) 2011 Jonathan Cameron
  */
 
-#ifndef __LINUX_IIO_MACHINE_H__
-#define __LINUX_IIO_MACHINE_H__
+#ifndef __freax_IIO_MACHINE_H__
+#define __freax_IIO_MACHINE_H__
 
 /**
  * struct iio_map - description of link between consumer and device channels

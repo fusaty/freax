@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: MIT */
 
-#ifndef _LINUX_APERTURE_H_
-#define _LINUX_APERTURE_H_
+#ifndef _freax_APERTURE_H_
+#define _freax_APERTURE_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct pci_dev;
 struct platform_device;

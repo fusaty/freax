@@ -10,33 +10,33 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/kernel_read_file.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/initrd.h>
-#include <linux/timer.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/highmem.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/file.h>
-#include <linux/list.h>
-#include <linux/fs.h>
-#include <linux/async.h>
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/syscore_ops.h>
-#include <linux/reboot.h>
-#include <linux/security.h>
-#include <linux/zstd.h>
-#include <linux/xz.h>
+#include <freax/capability.h>
+#include <freax/device.h>
+#include <freax/kernel_read_file.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/initrd.h>
+#include <freax/timer.h>
+#include <freax/vmalloc.h>
+#include <freax/interrupt.h>
+#include <freax/bitops.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
+#include <freax/highmem.h>
+#include <freax/firmware.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/file.h>
+#include <freax/list.h>
+#include <freax/fs.h>
+#include <freax/async.h>
+#include <freax/pm.h>
+#include <freax/suspend.h>
+#include <freax/syscore_ops.h>
+#include <freax/reboot.h>
+#include <freax/security.h>
+#include <freax/zstd.h>
+#include <freax/xz.h>
 
 #include <generated/utsrelease.h>
 

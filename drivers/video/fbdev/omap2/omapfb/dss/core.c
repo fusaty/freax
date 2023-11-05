@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/core.c
+ * freax/drivers/video/omap2/dss/core.c
  *
  * Copyright (C) 2009 Nokia Corporation
  * Author: Tomi Valkeinen <tomi.valkeinen@nokia.com>
@@ -11,18 +11,18 @@
 
 #define DSS_SUBSYS_NAME "CORE"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/suspend.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/io.h>
+#include <freax/device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/suspend.h>
+#include <freax/slab.h>
 
 #include <video/omapfb_dss.h>
 

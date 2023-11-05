@@ -7,11 +7,11 @@
  *     Author: Alex Williamson <alex.williamson@redhat.com>
  */
 
-#include <linux/vfio.h>
-#include <linux/eventfd.h>
-#include <linux/file.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/vfio.h>
+#include <freax/eventfd.h>
+#include <freax/file.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include "vfio.h"
 
 static struct workqueue_struct *vfio_irqfd_cleanup_wq;

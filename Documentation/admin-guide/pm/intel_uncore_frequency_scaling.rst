@@ -7,7 +7,7 @@ Intel Uncore Frequency Scaling
 
 :Copyright: |copy| 2022-2023 Intel Corporation
 
-:Author: Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>
+:Author: Srinivas Pandruvada <srinivas.pandruvada@freax.intel.com>
 
 Introduction
 ------------

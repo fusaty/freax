@@ -56,14 +56,14 @@
  * single thread (max3421_spi_thread).
  */
 
-#include <linux/jiffies.h>
-#include <linux/module.h>
-#include <linux/spi/spi.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/of.h>
+#include <freax/jiffies.h>
+#include <freax/module.h>
+#include <freax/spi/spi.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/of.h>
 
-#include <linux/platform_data/max3421-hcd.h>
+#include <freax/platform_data/max3421-hcd.h>
 
 #define DRIVER_DESC	"MAX3421 USB Host-Controller Driver"
 #define DRIVER_VERSION	"1.0"

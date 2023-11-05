@@ -22,10 +22,10 @@
  *    - if all linked ports are in full lane
  *    - CRC error count sum
  */
-#include <linux/acpi.h>
-#include <linux/iopoll.h>
-#include <linux/platform_device.h>
-#include <linux/sysfs.h>
+#include <freax/acpi.h>
+#include <freax/iopoll.h>
+#include <freax/platform_device.h>
+#include <freax/sysfs.h>
 
 #include <acpi/pcc.h>
 

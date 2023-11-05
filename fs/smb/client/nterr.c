@@ -7,8 +7,8 @@
  */
 
 /* NT error codes - see nterr.h */
-#include <linux/types.h>
-#include <linux/fs.h>
+#include <freax/types.h>
+#include <freax/fs.h>
 #include "nterr.h"
 
 const struct nt_err_code_struct nt_errs[] = {

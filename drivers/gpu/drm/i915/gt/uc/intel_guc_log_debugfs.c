@@ -3,7 +3,7 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 #include <drm/drm_print.h>
 
 #include "gt/intel_gt_debugfs.h"

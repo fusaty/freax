@@ -5,8 +5,8 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#ifndef __LINUX_DS1286_H
-#define __LINUX_DS1286_H
+#ifndef __freax_DS1286_H
+#define __freax_DS1286_H
 
 /**********************************************************************
  * register summary
@@ -49,4 +49,4 @@
 #define RTC_IPSW		0x40
 #define RTC_TE			0x80
 
-#endif /* __LINUX_DS1286_H */
+#endif /* __freax_DS1286_H */

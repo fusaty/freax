@@ -9,14 +9,14 @@
  *  Modified: 2004, Oct     Szabolcs Gyurko
  */
 
-#ifndef __LINUX_POWER_SUPPLY_H__
-#define __LINUX_POWER_SUPPLY_H__
+#ifndef __freax_POWER_SUPPLY_H__
+#define __freax_POWER_SUPPLY_H__
 
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/leds.h>
-#include <linux/spinlock.h>
-#include <linux/notifier.h>
+#include <freax/device.h>
+#include <freax/workqueue.h>
+#include <freax/leds.h>
+#include <freax/spinlock.h>
+#include <freax/notifier.h>
 
 /*
  * All voltages, currents, charges, energies, time and temperatures in uV,
@@ -629,7 +629,7 @@ struct power_supply_maintenance_charge_table {
  * 2. Next a small initial pre-charge current (precharge_current_ua)
  *    is applied if the voltage is below precharge_voltage_max_uv until we
  *    reach precharge_voltage_max_uv. CAUTION: in some texts this is referred
- *    to as "trickle charging" but the use in the Linux kernel is different
+ *    to as "trickle charging" but the use in the freax kernel is different
  *    see below!
  *
  * 3. Then the main charging current is applied, which is called the constant
@@ -988,4 +988,4 @@ static inline int power_supply_charge_behaviour_parse(unsigned int available_beh
 }
 #endif
 
-#endif /* __LINUX_POWER_SUPPLY_H__ */
+#endif /* __freax_POWER_SUPPLY_H__ */

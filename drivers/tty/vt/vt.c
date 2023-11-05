@@ -32,7 +32,7 @@
  * APM screenblank bug fixed Takashi Manabe <manabe@roy.dsl.tutics.tut.jp>
  *
  * Merge with the abstract console driver by Geert Uytterhoeven
- * <geert@linux-m68k.org>, Jan 1997.
+ * <geert@freax-m68k.org>, Jan 1997.
  *
  *   Original m68k console driver modifications by
  *
@@ -46,7 +46,7 @@
  *
  *   The interface to the hardware is specified using a special structure
  *   (struct consw) which contains function pointers to console operations
- *   (see <linux/console.h> for more information).
+ *   (see <freax/console.h> for more information).
  *
  * Support for changeable cursor shape
  * by Pavel Machek <pavel@atrey.karlin.mff.cuni.cz>, August 1997
@@ -71,41 +71,41 @@
  * by Adam Tla/lka <atlka@pg.gda.pl>, Aug 2006
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/sched/signal.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/kd.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/major.h>
-#include <linux/mm.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/vt_kern.h>
-#include <linux/selection.h>
-#include <linux/tiocl.h>
-#include <linux/kbd_kern.h>
-#include <linux/consolemap.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/pm.h>
-#include <linux/font.h>
-#include <linux/bitops.h>
-#include <linux/notifier.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/kdb.h>
-#include <linux/ctype.h>
-#include <linux/bsearch.h>
-#include <linux/gcd.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/sched/signal.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/kd.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/major.h>
+#include <freax/mm.h>
+#include <freax/console.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/vt_kern.h>
+#include <freax/selection.h>
+#include <freax/tiocl.h>
+#include <freax/kbd_kern.h>
+#include <freax/consolemap.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/pm.h>
+#include <freax/font.h>
+#include <freax/bitops.h>
+#include <freax/notifier.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
+#include <freax/kdb.h>
+#include <freax/ctype.h>
+#include <freax/bsearch.h>
+#include <freax/gcd.h>
 
 #define MAX_NR_CON_DRIVER 16
 
@@ -1826,7 +1826,7 @@ void mouse_report(struct tty_struct *tty, int butt, int mrx, int mry)
 	respond_string(buf, len, tty->port);
 }
 
-/* invoked via ioctl(TIOCLINUX) and through set_selection_user */
+/* invoked via ioctl(TIOCfreax) and through set_selection_user */
 int mouse_reporting(void)
 {
 	return vc_cons[fg_console].d->vc_report_mouse;
@@ -3126,7 +3126,7 @@ static struct console vt_console_driver = {
 #endif
 
 /*
- *	Handling of Linux-specific VC ioctls
+ *	Handling of freax-specific VC ioctls
  */
 
 /*
@@ -3140,7 +3140,7 @@ static struct console vt_console_driver = {
  * set_selection_user has locking, and definitely needs it
  */
 
-int tioclinux(struct tty_struct *tty, unsigned long arg)
+int tiocfreax(struct tty_struct *tty, unsigned long arg)
 {
 	char type, data;
 	char __user *p = (char __user *)arg;

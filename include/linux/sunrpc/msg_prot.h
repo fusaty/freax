@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/msg_prot.h
+ * freax/include/freax/sunrpc/msg_prot.h
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef _LINUX_SUNRPC_MSGPROT_H_
-#define _LINUX_SUNRPC_MSGPROT_H_
+#ifndef _freax_SUNRPC_MSGPROT_H_
+#define _freax_SUNRPC_MSGPROT_H_
 
 #define RPC_VERSION 2
 
@@ -96,7 +96,7 @@ enum rpc_auth_stat {
  *  highest-order bit of the header; the length is the 31 low-order bits.
  *  (Note that this record specification is NOT in XDR standard form!)"
  *
- * The Linux RPC client always sends its requests in a single record
+ * The freax RPC client always sends its requests in a single record
  * fragment, limiting the maximum payload size for stream transports to
  * 2GB.
  */
@@ -202,7 +202,7 @@ typedef __be32	rpc_fraghdr;
  * [RFC2373] are also acceptable.
  */
 
-#include <linux/inet.h>
+#include <freax/inet.h>
 
 /* Maximum size of the port number part of a universal address */
 #define RPCBIND_MAXUADDRPLEN	sizeof(".255.255")
@@ -218,4 +218,4 @@ typedef __be32	rpc_fraghdr;
 /* Assume INET6_ADDRSTRLEN will always be larger than INET_ADDRSTRLEN... */
 #define RPCBIND_MAXUADDRLEN	RPCBIND_MAXUADDR6LEN
 
-#endif /* _LINUX_SUNRPC_MSGPROT_H_ */
+#endif /* _freax_SUNRPC_MSGPROT_H_ */

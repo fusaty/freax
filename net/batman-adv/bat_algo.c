@@ -6,17 +6,17 @@
 
 #include "main.h"
 
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/moduleparam.h>
-#include <linux/netlink.h>
-#include <linux/printk.h>
-#include <linux/skbuff.h>
-#include <linux/stddef.h>
-#include <linux/string.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/moduleparam.h>
+#include <freax/netlink.h>
+#include <freax/printk.h>
+#include <freax/skbuff.h>
+#include <freax/stddef.h>
+#include <freax/string.h>
 #include <net/genetlink.h>
 #include <net/netlink.h>
-#include <uapi/linux/batman_adv.h>
+#include <uapi/freax/batman_adv.h>
 
 #include "bat_algo.h"
 #include "netlink.h"

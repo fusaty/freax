@@ -9,17 +9,17 @@
  * Authors: Yu Chen <chenyu56@huawei.com>
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/of_gpio.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/usb/role.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
+#include <freax/of_gpio.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/usb/role.h>
 
 #define DEVICE_DRIVER_NAME "hisi_hikey_usb"
 

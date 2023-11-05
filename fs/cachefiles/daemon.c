@@ -5,20 +5,20 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/namei.h>
-#include <linux/poll.h>
-#include <linux/mount.h>
-#include <linux/statfs.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/fs_struct.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/completion.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/namei.h>
+#include <freax/poll.h>
+#include <freax/mount.h>
+#include <freax/statfs.h>
+#include <freax/ctype.h>
+#include <freax/string.h>
+#include <freax/fs_struct.h>
 #include "internal.h"
 
 static int cachefiles_daemon_open(struct inode *, struct file *);

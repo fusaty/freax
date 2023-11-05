@@ -6,11 +6,11 @@
  * Copyright 2007 Sony Corp.
  */
 
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
+#include <freax/fs.h>
+#include <freax/miscdevice.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
 
 #include <asm/lv1call.h>
 #include <asm/ps3stor.h>

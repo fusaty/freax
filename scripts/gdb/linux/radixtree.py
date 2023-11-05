@@ -11,8 +11,8 @@
 
 import gdb
 
-from linux import utils
-from linux import constants
+from freax import utils
+from freax import constants
 
 radix_tree_root_type = utils.CachedType("struct xarray")
 radix_tree_node_type = utils.CachedType("struct xa_node")

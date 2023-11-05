@@ -8,7 +8,7 @@
  * Copyright 2007, 2008 Wolfson Microelectronics PLC.
  */
 
-#include <linux/mfd/wm8350/core.h>
+#include <freax/mfd/wm8350/core.h>
 
 /*
  * Access masks.

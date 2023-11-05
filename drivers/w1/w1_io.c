@@ -5,9 +5,9 @@
 
 #include <asm/io.h>
 
-#include <linux/delay.h>
-#include <linux/moduleparam.h>
-#include <linux/module.h>
+#include <freax/delay.h>
+#include <freax/moduleparam.h>
+#include <freax/module.h>
 
 #include "w1_internal.h"
 

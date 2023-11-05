@@ -14,8 +14,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/relay.h>
-#include <linux/random.h>
+#include <freax/relay.h>
+#include <freax/random.h>
 #include "ath9k.h"
 
 static s8 fix_rssi_inv_only(u8 rssi_val)

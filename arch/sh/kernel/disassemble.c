@@ -5,9 +5,9 @@
  * Copyright (C) 1999 kaz Kojima
  * Copyright (C) 2008 Paul Mundt
  */
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/uaccess.h>
 
 #include <asm/ptrace.h>
 

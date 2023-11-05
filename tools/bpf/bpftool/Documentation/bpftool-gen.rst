@@ -215,8 +215,8 @@ EXAMPLES
 ::
 
   #include <stdbool.h>
-  #include <linux/ptrace.h>
-  #include <linux/bpf.h>
+  #include <freax/ptrace.h>
+  #include <freax/bpf.h>
   #include <bpf/bpf_helpers.h>
 
   const volatile int param1 = 42;
@@ -238,8 +238,8 @@ EXAMPLES
 
 ::
 
-  #include <linux/ptrace.h>
-  #include <linux/bpf.h>
+  #include <freax/ptrace.h>
+  #include <freax/bpf.h>
   #include <bpf/bpf_helpers.h>
 
   struct {

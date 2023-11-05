@@ -1,8 +1,8 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
-#include <linux/dpll.h>
-#include <linux/mlx5/driver.h>
+#include <freax/dpll.h>
+#include <freax/mlx5/driver.h>
 
 /* This structure represents a reference to DPLL, one is created
  * per mdev instance.

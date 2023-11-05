@@ -3,8 +3,8 @@
 #ifndef __ASM_DMI_H
 #define __ASM_DMI_H
 
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
 #define dmi_early_remap(x, l)		memremap(x, l, MEMREMAP_WB)
 #define dmi_early_unmap(x, l)		memunmap(x)

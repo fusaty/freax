@@ -9,7 +9,7 @@
 #define _ASM_RISCV_THREAD_INFO_H
 
 #include <asm/page.h>
-#include <linux/const.h>
+#include <freax/const.h>
 
 /* thread information allocation */
 #define THREAD_SIZE_ORDER	CONFIG_THREAD_SIZE_ORDER

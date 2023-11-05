@@ -3,22 +3,22 @@
  * Copyright 2015 Robert Jarzmik <robert.jarzmik@free.fr>
  */
 
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/platform_data/mmp_dma.h>
-#include <linux/dmapool.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/wait.h>
-#include <linux/dma/pxa-dma.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/dmaengine.h>
+#include <freax/platform_device.h>
+#include <freax/device.h>
+#include <freax/platform_data/mmp_dma.h>
+#include <freax/dmapool.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/wait.h>
+#include <freax/dma/pxa-dma.h>
 
 #include "dmaengine.h"
 #include "virt-dma.h"
@@ -181,9 +181,9 @@ static bool pxad_filter_fn(struct dma_chan *chan, void *param);
  * Debug fs
  */
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/uaccess.h>
+#include <freax/seq_file.h>
 
 static int requester_chan_show(struct seq_file *s, void *p)
 {

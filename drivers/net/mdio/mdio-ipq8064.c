@@ -5,13 +5,13 @@
  * Copyright (C) 2020 Ansuel Smith <ansuelsmth@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_mdio.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_mdio.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 /* MII address register definitions */
 #define MII_ADDR_REG_ADDR			0x10

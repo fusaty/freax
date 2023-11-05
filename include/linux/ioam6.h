@@ -5,9 +5,9 @@
  *  Author:
  *  Justin Iurman <justin.iurman@uliege.be>
  */
-#ifndef _LINUX_IOAM6_H
-#define _LINUX_IOAM6_H
+#ifndef _freax_IOAM6_H
+#define _freax_IOAM6_H
 
-#include <uapi/linux/ioam6.h>
+#include <uapi/freax/ioam6.h>
 
-#endif /* _LINUX_IOAM6_H */
+#endif /* _freax_IOAM6_H */

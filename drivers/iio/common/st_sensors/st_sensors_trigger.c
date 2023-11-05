@@ -7,12 +7,12 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/iio/common/st_sensors.h>
+#include <freax/kernel.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/trigger.h>
+#include <freax/interrupt.h>
+#include <freax/regmap.h>
+#include <freax/iio/common/st_sensors.h>
 #include "st_sensors_core.h"
 
 /**

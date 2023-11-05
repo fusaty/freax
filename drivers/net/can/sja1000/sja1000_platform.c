@@ -4,19 +4,19 @@
  * Copyright (C) 2007 Wolfgang Grandegger <wg@grandegger.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/can/dev.h>
-#include <linux/can/platform/sja1000.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/irq.h>
+#include <freax/can/dev.h>
+#include <freax/can/platform/sja1000.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/of.h>
 
 #include "sja1000.h"
 

@@ -3,27 +3,27 @@
  * Copyright (c) 2016, Linaro Ltd
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/mailbox_client.h>
-#include <linux/mfd/syscon.h>
-#include <linux/slab.h>
-#include <linux/rpmsg.h>
-#include <linux/idr.h>
-#include <linux/circ_buf.h>
-#include <linux/soc/qcom/smem.h>
-#include <linux/sizes.h>
-#include <linux/delay.h>
-#include <linux/regmap.h>
-#include <linux/workqueue.h>
-#include <linux/list.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/mailbox_client.h>
+#include <freax/mfd/syscon.h>
+#include <freax/slab.h>
+#include <freax/rpmsg.h>
+#include <freax/idr.h>
+#include <freax/circ_buf.h>
+#include <freax/soc/qcom/smem.h>
+#include <freax/sizes.h>
+#include <freax/delay.h>
+#include <freax/regmap.h>
+#include <freax/workqueue.h>
+#include <freax/list.h>
 
-#include <linux/rpmsg/qcom_glink.h>
+#include <freax/rpmsg/qcom_glink.h>
 
 #include "qcom_glink_native.h"
 

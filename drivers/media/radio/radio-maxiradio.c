@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Guillemot Maxi Radio FM 2000 PCI radio card driver for Linux
+ * Guillemot Maxi Radio FM 2000 PCI radio card driver for freax
  * (C) 2001 Dimitromanolakis Apostolos <apdim@grecian.net>
  *
  * Based in the radio Maestro PCI driver. Actually it uses the same chip
@@ -34,15 +34,15 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/videodev2.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/videodev2.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 #include <media/drv-intf/tea575x.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>

@@ -2,7 +2,7 @@
 /*
  * OpenRISC ioremap.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * freax architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -11,13 +11,13 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/vmalloc.h>
-#include <linux/io.h>
-#include <linux/pgtable.h>
+#include <freax/vmalloc.h>
+#include <freax/io.h>
+#include <freax/pgtable.h>
 #include <asm/pgalloc.h>
 #include <asm/fixmap.h>
 #include <asm/bug.h>
-#include <linux/sched.h>
+#include <freax/sched.h>
 #include <asm/tlbflush.h>
 
 extern int mem_init_done;

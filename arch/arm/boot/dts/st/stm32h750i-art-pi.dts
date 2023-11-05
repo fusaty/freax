@@ -68,11 +68,11 @@
 		#size-cells = <1>;
 		ranges;
 
-		linux,cma {
+		freax,cma {
 			compatible = "shared-dma-pool";
 			no-map;
 			size = <0x100000>;
-			linux,dma-default;
+			freax,dma-default;
 		};
 	};
 
@@ -88,7 +88,7 @@
 		};
 		led-green {
 			gpios = <&gpioc 15 0>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

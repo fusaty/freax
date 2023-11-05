@@ -11,14 +11,14 @@
  */
 
 #include "cx231xx.h"
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bitmap.h>
-#include <linux/i2c.h>
-#include <linux/mm.h>
-#include <linux/mutex.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/bitmap.h>
+#include <freax/i2c.h>
+#include <freax/mm.h>
+#include <freax/mutex.h>
 #include <media/tuner.h>
 
 #include <media/v4l2-common.h>

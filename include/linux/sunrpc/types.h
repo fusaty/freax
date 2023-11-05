@@ -1,24 +1,24 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/types.h
+ * freax/include/freax/sunrpc/types.h
  *
  * Generic types and misc stuff for RPC.
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef _LINUX_SUNRPC_TYPES_H_
-#define _LINUX_SUNRPC_TYPES_H_
+#ifndef _freax_SUNRPC_TYPES_H_
+#define _freax_SUNRPC_TYPES_H_
 
-#include <linux/timer.h>
-#include <linux/sched/signal.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/debug.h>
-#include <linux/list.h>
+#include <freax/timer.h>
+#include <freax/sched/signal.h>
+#include <freax/workqueue.h>
+#include <freax/sunrpc/debug.h>
+#include <freax/list.h>
 
 /*
  * Shorthands
  */
 #define signalled()		(signal_pending(current))
 
-#endif /* _LINUX_SUNRPC_TYPES_H_ */
+#endif /* _freax_SUNRPC_TYPES_H_ */

@@ -3,7 +3,7 @@
 #ifndef DRM_KUNIT_HELPERS_H_
 #define DRM_KUNIT_HELPERS_H_
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 #include <kunit/test.h>
 

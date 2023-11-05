@@ -12,17 +12,17 @@
  * Copyright (C) 2014 Abylay Ospan <aospan@netup.ru>
   */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
-#include <linux/math64.h>
-#include <linux/log2.h>
-#include <linux/dynamic_debug.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
+#include <freax/math64.h>
+#include <freax/log2.h>
+#include <freax/dynamic_debug.h>
+#include <freax/kernel.h>
 
-#include <linux/int_log.h>
+#include <freax/int_log.h>
 #include <media/dvb_frontend.h>
 #include "cxd2841er.h"
 #include "cxd2841er_priv.h"

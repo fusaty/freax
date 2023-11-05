@@ -6,17 +6,17 @@
   (C) 2012  Michel Lespinasse <walken@google.com>
 
 
-  tools/linux/include/linux/rbtree_augmented.h
+  tools/freax/include/freax/rbtree_augmented.h
 
   Copied from:
-  linux/include/linux/rbtree_augmented.h
+  freax/include/freax/rbtree_augmented.h
 */
 
-#ifndef _TOOLS_LINUX_RBTREE_AUGMENTED_H
-#define _TOOLS_LINUX_RBTREE_AUGMENTED_H
+#ifndef _TOOLS_freax_RBTREE_AUGMENTED_H
+#define _TOOLS_freax_RBTREE_AUGMENTED_H
 
-#include <linux/compiler.h>
-#include <linux/rbtree.h>
+#include <freax/compiler.h>
+#include <freax/rbtree.h>
 
 /*
  * Please note - only struct rb_augment_callbacks and the prototypes for
@@ -305,4 +305,4 @@ rb_erase_augmented_cached(struct rb_node *node, struct rb_root_cached *root,
 	rb_erase_augmented(node, &root->rb_root, augment);
 }
 
-#endif /* _TOOLS_LINUX_RBTREE_AUGMENTED_H */
+#endif /* _TOOLS_freax_RBTREE_AUGMENTED_H */

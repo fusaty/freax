@@ -12,9 +12,9 @@
  *	     Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-/* Linux specific include files */
-#include <linux/device.h>
-#include <linux/slab.h>
+/* freax specific include files */
+#include <freax/device.h>
+#include <freax/slab.h>
 
 #include "isp.h"
 #include "isph3a.h"

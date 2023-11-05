@@ -9,7 +9,7 @@
 #include <assert.h>
 #include <sys/time.h>
 
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
 

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_RING_BUFFER_H
-#define _LINUX_RING_BUFFER_H
+#ifndef _freax_RING_BUFFER_H
+#define _freax_RING_BUFFER_H
 
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/poll.h>
+#include <freax/mm.h>
+#include <freax/seq_file.h>
+#include <freax/poll.h>
 
 struct trace_buffer;
 struct ring_buffer_iter;
@@ -211,4 +211,4 @@ int trace_rb_cpu_prepare(unsigned int cpu, struct hlist_node *node);
 #define trace_rb_cpu_prepare	NULL
 #endif
 
-#endif /* _LINUX_RING_BUFFER_H */
+#endif /* _freax_RING_BUFFER_H */

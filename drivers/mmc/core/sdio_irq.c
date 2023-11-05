@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/mmc/core/sdio_irq.c
+ * freax/drivers/mmc/core/sdio_irq.c
  *
  * Author:      Nicolas Pitre
  * Created:     June 18, 2007
@@ -9,19 +9,19 @@
  * Copyright 2008 Pierre Ossman
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <uapi/linux/sched/types.h>
-#include <linux/kthread.h>
-#include <linux/export.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <uapi/freax/sched/types.h>
+#include <freax/kthread.h>
+#include <freax/export.h>
+#include <freax/wait.h>
+#include <freax/delay.h>
 
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
+#include <freax/mmc/core.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/sdio.h>
+#include <freax/mmc/sdio_func.h>
 
 #include "sdio_ops.h"
 #include "core.h"

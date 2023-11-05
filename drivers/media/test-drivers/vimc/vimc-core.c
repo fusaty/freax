@@ -5,11 +5,11 @@
  * Copyright (C) 2015-2017 Helen Koike <helen.fornazier@gmail.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/font.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/font.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include <media/media-device.h>
 #include <media/tpg/v4l2-tpg.h>
 #include <media/v4l2-device.h>

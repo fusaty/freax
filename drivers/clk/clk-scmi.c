@@ -5,12 +5,12 @@
  * Copyright (C) 2018-2022 ARM Ltd.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/scmi_protocol.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/module.h>
+#include <freax/scmi_protocol.h>
 #include <asm/div64.h>
 
 #define NOT_ATOMIC	false

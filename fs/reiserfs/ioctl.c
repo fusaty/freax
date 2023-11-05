@@ -2,15 +2,15 @@
  * Copyright 2000 by Hans Reiser, licensing governed by reiserfs/README
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
+#include <freax/capability.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
 #include "reiserfs.h"
-#include <linux/time.h>
-#include <linux/uaccess.h>
-#include <linux/pagemap.h>
-#include <linux/compat.h>
-#include <linux/fileattr.h>
+#include <freax/time.h>
+#include <freax/uaccess.h>
+#include <freax/pagemap.h>
+#include <freax/compat.h>
+#include <freax/fileattr.h>
 
 int reiserfs_fileattr_get(struct dentry *dentry, struct fileattr *fa)
 {

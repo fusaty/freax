@@ -2,7 +2,7 @@
 /*
  * Qualcomm SC7180 interconnect IDs
  *
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The freax Foundation. All rights reserved.
  */
 
 #ifndef __DT_BINDINGS_INTERCONNECT_QCOM_SC7180_H

@@ -6,7 +6,7 @@
  * Author: Sylwester Nawrocki <s.nawrocki@samsung.com>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <media/drv-intf/exynos-fimc.h>
 #include "common.h"
 

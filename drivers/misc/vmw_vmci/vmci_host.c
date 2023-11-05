@@ -5,25 +5,25 @@
  * Copyright (C) 2012 VMware, Inc. All rights reserved.
  */
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/vmw_vmci_api.h>
-#include <linux/miscdevice.h>
-#include <linux/interrupt.h>
-#include <linux/highmem.h>
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/cred.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/init.h>
-#include <linux/poll.h>
-#include <linux/pci.h>
-#include <linux/smp.h>
-#include <linux/fs.h>
-#include <linux/io.h>
+#include <freax/vmw_vmci_defs.h>
+#include <freax/vmw_vmci_api.h>
+#include <freax/miscdevice.h>
+#include <freax/interrupt.h>
+#include <freax/highmem.h>
+#include <freax/atomic.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/sched.h>
+#include <freax/cred.h>
+#include <freax/slab.h>
+#include <freax/file.h>
+#include <freax/init.h>
+#include <freax/poll.h>
+#include <freax/pci.h>
+#include <freax/smp.h>
+#include <freax/fs.h>
+#include <freax/io.h>
 
 #include "vmci_handle_array.h"
 #include "vmci_queue_pair.h"

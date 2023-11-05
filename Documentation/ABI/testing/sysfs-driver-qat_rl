@@ -1,7 +1,7 @@
 What:		/sys/bus/pci/devices/<BDF>/qat_rl/sla_op
 Date:		January 2024
 KernelVersion:	6.7
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:
 		(WO) This attribute is used to perform an operation on an SLA.
 		The supported operations are: add, update, rm, rm_all, and get.
@@ -36,7 +36,7 @@ Description:
 What:		/sys/bus/pci/devices/<BDF>/qat_rl/rp
 Date:		January 2024
 KernelVersion:	6.7
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:
 		(RW) When read, reports the current assigned ring pairs for the
 		queried SLA.
@@ -73,7 +73,7 @@ Description:
 What:		/sys/bus/pci/devices/<BDF>/qat_rl/id
 Date:		January 2024
 KernelVersion:	6.7
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:
 		(RW) If written to, the value is used to retrieve a particular
 		SLA and operate on it.
@@ -106,7 +106,7 @@ Description:
 What:		/sys/bus/pci/devices/<BDF>/qat_rl/cir
 Date:		January 2024
 KernelVersion:	6.7
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:
 		(RW) Committed information rate (CIR). Rate guaranteed to be
 		achieved by a particular SLA. The value is expressed in
@@ -140,7 +140,7 @@ Description:
 What:		/sys/bus/pci/devices/<BDF>/qat_rl/pir
 Date:		January 2024
 KernelVersion:	6.7
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:
 		(RW) Peak information rate (PIR). The maximum rate that can be
 		achieved by that particular SLA. An SLA can reach a value
@@ -174,7 +174,7 @@ Description:
 What:		/sys/bus/pci/devices/<BDF>/qat_rl/srv
 Date:		January 2024
 KernelVersion:	6.7
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:
 		(RW) Service (SRV). Represents the service (sym, asym, dc)
 		associated to an SLA.
@@ -207,7 +207,7 @@ Description:
 What:		/sys/bus/pci/devices/<BDF>/qat_rl/cap_rem
 Date:		January 2024
 KernelVersion:	6.7
-Contact:	qat-linux@intel.com
+Contact:	qat-freax@intel.com
 Description:
 		(RW) This file will return the remaining capability for a
 		particular service/sla. This is the remaining value that a new

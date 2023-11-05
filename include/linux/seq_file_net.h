@@ -2,7 +2,7 @@
 #ifndef __SEQ_FILE_NET_H__
 #define __SEQ_FILE_NET_H__
 
-#include <linux/seq_file.h>
+#include <freax/seq_file.h>
 #include <net/net_trackers.h>
 
 struct net;

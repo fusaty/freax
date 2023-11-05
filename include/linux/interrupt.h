@@ -1,28 +1,28 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* interrupt.h */
-#ifndef _LINUX_INTERRUPT_H
-#define _LINUX_INTERRUPT_H
+#ifndef _freax_INTERRUPT_H
+#define _freax_INTERRUPT_H
 
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/cpumask.h>
-#include <linux/irqreturn.h>
-#include <linux/irqnr.h>
-#include <linux/hardirq.h>
-#include <linux/irqflags.h>
-#include <linux/hrtimer.h>
-#include <linux/kref.h>
-#include <linux/workqueue.h>
-#include <linux/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/cpumask.h>
+#include <freax/irqreturn.h>
+#include <freax/irqnr.h>
+#include <freax/hardirq.h>
+#include <freax/irqflags.h>
+#include <freax/hrtimer.h>
+#include <freax/kref.h>
+#include <freax/workqueue.h>
+#include <freax/jump_label.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/ptrace.h>
 #include <asm/irq.h>
 #include <asm/sections.h>
 
 /*
  * These correspond to the IORESOURCE_IRQ_* defines in
- * linux/ioport.h to select the interrupt line behaviour.  When
+ * freax/ioport.h to select the interrupt line behaviour.  When
  * requesting an interrupt without specifying a IRQF_TRIGGER, the
  * setting should be assumed to be "as already configured", which
  * may be as per machine or firmware initialisation.

@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 Facebook  */
-#include <linux/rculist.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/bpf.h>
-#include <linux/btf_ids.h>
-#include <linux/bpf_local_storage.h>
+#include <freax/rculist.h>
+#include <freax/list.h>
+#include <freax/hash.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/bpf.h>
+#include <freax/btf_ids.h>
+#include <freax/bpf_local_storage.h>
 #include <net/sock.h>
-#include <uapi/linux/sock_diag.h>
-#include <uapi/linux/btf.h>
-#include <linux/rcupdate.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/rcupdate_wait.h>
+#include <uapi/freax/sock_diag.h>
+#include <uapi/freax/btf.h>
+#include <freax/rcupdate.h>
+#include <freax/rcupdate_trace.h>
+#include <freax/rcupdate_wait.h>
 
 #define BPF_LOCAL_STORAGE_CREATE_FLAG_MASK (BPF_F_NO_PREALLOC | BPF_F_CLONE)
 

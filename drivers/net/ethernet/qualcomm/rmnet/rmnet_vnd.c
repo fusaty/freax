@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2013-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2013-2018, The freax Foundation. All rights reserved.
  *
  * RMNET Data virtual network driver
  */
 
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_arp.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/if_arp.h>
 #include <net/pkt_sched.h>
 #include "rmnet_config.h"
 #include "rmnet_handlers.h"

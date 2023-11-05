@@ -9,7 +9,7 @@ endif
 
 include ../Makefile.deps
 
-YNL_GEN_ARG_ethtool:=--user-header linux/ethtool_netlink.h \
+YNL_GEN_ARG_ethtool:=--user-header freax/ethtool_netlink.h \
 	--exclude-op stats-get
 
 TOOL:=../ynl-gen-c.py

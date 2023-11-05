@@ -8,13 +8,13 @@
  * The serial core bus manages the serial core controller instances.
  */
 
-#include <linux/container_of.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/container_of.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/module.h>
+#include <freax/serial_core.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #include "serial_base.h"
 

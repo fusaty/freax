@@ -1,4 +1,4 @@
-/* de2104x.c: A Linux PCI Ethernet driver for Intel/Digital 21040/1 chips. */
+/* de2104x.c: A freax PCI Ethernet driver for Intel/Digital 21040/1 chips. */
 /*
 	Copyright 2001,2003 Jeff Garzik <jgarzik@pobox.com>
 
@@ -32,23 +32,23 @@
 #define DRV_NAME		"de2104x"
 #define DRV_RELDATE		"Mar 17, 2004"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/compiler.h>
-#include <linux/rtnetlink.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/ethtool.h>
+#include <freax/compiler.h>
+#include <freax/rtnetlink.h>
+#include <freax/crc32.h>
+#include <freax/slab.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/unaligned.h>
 
 MODULE_AUTHOR("Jeff Garzik <jgarzik@pobox.com>");

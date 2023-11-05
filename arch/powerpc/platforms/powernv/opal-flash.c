@@ -7,16 +7,16 @@
 
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/reboot.h>
+#include <freax/init.h>
+#include <freax/kobject.h>
+#include <freax/sysfs.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/pagemap.h>
+#include <freax/delay.h>
 
 #include <asm/opal.h>
 

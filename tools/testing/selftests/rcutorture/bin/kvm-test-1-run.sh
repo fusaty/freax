@@ -24,7 +24,7 @@
 #
 # Copyright (C) IBM Corporation, 2011
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@freax.ibm.com>
 
 T="`mktemp -d ${TMPDIR-/tmp}/kvm-test-1-run.sh.XXXXXX`"
 trap 'rm -rf $T' 0
@@ -71,10 +71,10 @@ config_override_param "--kconfig argument" KcList "$TORTURE_KCONFIG_ARG"
 cp $T/KcList $resdir/ConfigFragment
 
 base_resdir=`echo $resdir | sed -e 's/\.[0-9]\+$//'`
-if test "$base_resdir" != "$resdir" && test -f $base_resdir/bzImage && test -f $base_resdir/vmlinux
+if test "$base_resdir" != "$resdir" && test -f $base_resdir/bzImage && test -f $base_resdir/vmfreax
 then
 	# Rerunning previous test, so use that test's kernel.
-	QEMU="`identify_qemu $base_resdir/vmlinux`"
+	QEMU="`identify_qemu $base_resdir/vmfreax`"
 	BOOT_IMAGE="`identify_boot_image $QEMU`"
 	KERNEL=$base_resdir/${BOOT_IMAGE##*/} # use the last component of ${BOOT_IMAGE}
 	ln -s $base_resdir/Make*.out $resdir  # for kvm-recheck.sh
@@ -95,9 +95,9 @@ then
 elif kvm-build.sh $T/KcList $resdir
 then
 	# Had to build a kernel for this test.
-	QEMU="`identify_qemu vmlinux`"
+	QEMU="`identify_qemu vmfreax`"
 	BOOT_IMAGE="`identify_boot_image $QEMU`"
-	cp vmlinux $resdir
+	cp vmfreax $resdir
 	cp .config $resdir
 	cp Module.symvers $resdir > /dev/null || :
 	cp System.map $resdir > /dev/null || :

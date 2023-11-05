@@ -8,19 +8,19 @@
  *  Nick Kossifidis <mick@ics.forth.gr>
  */
 
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
-#include <linux/sched.h>
-#include <linux/console.h>
-#include <linux/of_fdt.h>
-#include <linux/sched/task.h>
-#include <linux/smp.h>
-#include <linux/efi.h>
-#include <linux/crash_dump.h>
-#include <linux/panic_notifier.h>
+#include <freax/acpi.h>
+#include <freax/cpu.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/memblock.h>
+#include <freax/sched.h>
+#include <freax/console.h>
+#include <freax/of_fdt.h>
+#include <freax/sched/task.h>
+#include <freax/smp.h>
+#include <freax/efi.h>
+#include <freax/crash_dump.h>
+#include <freax/panic_notifier.h>
 
 #include <asm/acpi.h>
 #include <asm/alternative.h>

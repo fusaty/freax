@@ -13,7 +13,7 @@ kapi:	$(kapi-hdrs-y)
 hostprogs		    += gen_facilities
 hostprogs		    += gen_opcode_table
 
-HOSTCFLAGS_gen_facilities.o += $(LINUXINCLUDE)
+HOSTCFLAGS_gen_facilities.o += $(freaxINCLUDE)
 
 filechk_facility-defs.h = $(obj)/gen_facilities
 

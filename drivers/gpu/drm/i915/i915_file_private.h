@@ -6,9 +6,9 @@
 #ifndef __I915_FILE_PRIVATE_H__
 #define __I915_FILE_PRIVATE_H__
 
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/xarray.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
+#include <freax/xarray.h>
 
 struct drm_i915_private;
 struct drm_file;

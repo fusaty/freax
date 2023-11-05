@@ -112,14 +112,14 @@
 &led_diy {
 	color = <LED_COLOR_ID_RED>;
 	function = LED_FUNCTION_DISK_ACTIVITY;
-	linux,default-trigger = "disk-activity";
+	freax,default-trigger = "disk-activity";
 	status = "okay";
 };
 
 &led_work {
 	color = <LED_COLOR_ID_GREEN>;
 	function = LED_FUNCTION_STATUS;
-	linux,default-trigger = "heartbeat";
+	freax,default-trigger = "heartbeat";
 	status = "okay";
 };
 

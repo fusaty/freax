@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_KSM_H
-#define __LINUX_KSM_H
+#ifndef __freax_KSM_H
+#define __freax_KSM_H
 /*
  * Memory merging support.
  *
@@ -8,12 +8,12 @@
  * memory areas, even if they are not shared by fork().
  */
 
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/rmap.h>
-#include <linux/sched.h>
-#include <linux/sched/coredump.h>
+#include <freax/bitops.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/rmap.h>
+#include <freax/sched.h>
+#include <freax/sched/coredump.h>
 
 #ifdef CONFIG_KSM
 int ksm_madvise(struct vm_area_struct *vma, unsigned long start,
@@ -146,4 +146,4 @@ static inline void folio_migrate_ksm(struct folio *newfolio, struct folio *old)
 #endif /* CONFIG_MMU */
 #endif /* !CONFIG_KSM */
 
-#endif /* __LINUX_KSM_H */
+#endif /* __freax_KSM_H */

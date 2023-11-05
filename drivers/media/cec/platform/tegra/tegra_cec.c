@@ -11,20 +11,20 @@
  * Copyright 2016-2017 Cisco Systems, Inc. and/or its affiliates. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/clk/tegra.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/clk/tegra.h>
 
 #include <media/cec-notifier.h>
 

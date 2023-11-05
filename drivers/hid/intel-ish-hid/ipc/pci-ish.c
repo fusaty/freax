@@ -5,19 +5,19 @@
  * Copyright (c) 2014-2016, Intel Corporation.
  */
 
-#include <linux/acpi.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/suspend.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
+#include <freax/acpi.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/sched.h>
+#include <freax/suspend.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
 #define CREATE_TRACE_POINTS
 #include <trace/events/intel_ish.h>
 #include "ishtp-dev.h"
@@ -54,7 +54,7 @@ MODULE_DEVICE_TABLE(pci, ish_pci_tbl);
  * @dev:	ishtp device
  * @format:	printf style format
  *
- * Callback to direct log messages to Linux trace buffers
+ * Callback to direct log messages to freax trace buffers
  */
 static __printf(2, 3)
 void ish_event_tracer(struct ishtp_device *dev, const char *format, ...)
@@ -407,8 +407,8 @@ module_pci_driver(ish_driver);
 
 /* Original author */
 MODULE_AUTHOR("Daniel Drubin <daniel.drubin@intel.com>");
-/* Adoption to upstream Linux kernel */
-MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
+/* Adoption to upstream freax kernel */
+MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@freax.intel.com>");
 
 MODULE_DESCRIPTION("Intel(R) Integrated Sensor Hub PCI Device Driver");
 MODULE_LICENSE("GPL");

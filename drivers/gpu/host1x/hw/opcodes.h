@@ -8,7 +8,7 @@
 #ifndef __HOST1X_OPCODES_H
 #define __HOST1X_OPCODES_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 static inline u32 host1x_class_host_wait_syncpt(
 	unsigned indx, unsigned threshold)

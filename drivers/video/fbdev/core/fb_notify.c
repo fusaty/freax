@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/fb_notify.c
+ *  freax/drivers/video/fb_notify.c
  *
  *  Copyright (C) 2006 Antonino Daplas <adaplas@pol.net>
  *
@@ -10,9 +10,9 @@
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
-#include <linux/fb.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
+#include <freax/fb.h>
+#include <freax/notifier.h>
+#include <freax/export.h>
 
 static BLOCKING_NOTIFIER_HEAD(fb_notifier_list);
 

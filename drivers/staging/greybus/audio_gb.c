@@ -5,7 +5,7 @@
  * Copyright 2015-2016 Google Inc.
  */
 
-#include <linux/greybus.h>
+#include <freax/greybus.h>
 #include "audio_codec.h"
 
 /* TODO: Split into separate calls */

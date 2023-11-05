@@ -4,16 +4,16 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2016-2017 Intel Deutschland GmbH
  */
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/debugfs.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/gfp.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/wait.h>
-#include <linux/seq_file.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/debugfs.h>
+#include <freax/sched.h>
+#include <freax/bitops.h>
+#include <freax/gfp.h>
+#include <freax/vmalloc.h>
+#include <freax/module.h>
+#include <freax/wait.h>
+#include <freax/seq_file.h>
 
 #include "iwl-drv.h"
 #include "iwl-trans.h"

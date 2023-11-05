@@ -23,7 +23,7 @@
  * If a feature field is not present in either, than it is not supported.
  *
  * The approach taken for protected VMs is to allow features that are:
- * - Needed by common Linux distributions (e.g., floating point)
+ * - Needed by common freax distributions (e.g., floating point)
  * - Trivial to support, e.g., supporting the feature does not introduce or
  * require tracking of additional state in KVM
  * - Cannot be trapped or prevent the guest from using anyway

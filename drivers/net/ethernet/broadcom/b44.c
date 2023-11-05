@@ -13,26 +13,26 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/ssb/ssb.h>
-#include <linux/slab.h>
-#include <linux/phy.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/etherdevice.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/ssb/ssb.h>
+#include <freax/slab.h>
+#include <freax/phy.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 
@@ -377,7 +377,7 @@ static void b44_set_flow_ctrl(struct b44 *bp, u32 local, u32 remote)
 }
 
 #ifdef CONFIG_BCM47XX
-#include <linux/bcm47xx_nvram.h>
+#include <freax/bcm47xx_nvram.h>
 static void b44_wap54g10_workaround(struct b44 *bp)
 {
 	char buf[20];

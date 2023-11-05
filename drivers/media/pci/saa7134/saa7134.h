@@ -10,15 +10,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/videodev2.h>
-#include <linux/kdev_t.h>
-#include <linux/input.h>
-#include <linux/notifier.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/pm_qos.h>
+#include <freax/pci.h>
+#include <freax/i2c.h>
+#include <freax/videodev2.h>
+#include <freax/kdev_t.h>
+#include <freax/input.h>
+#include <freax/notifier.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/pm_qos.h>
 
 #include <asm/io.h>
 

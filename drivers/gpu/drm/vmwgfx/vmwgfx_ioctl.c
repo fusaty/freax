@@ -30,7 +30,7 @@
 #include "vmwgfx_kms.h"
 
 #include <drm/vmwgfx_drm.h>
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 int vmw_getparam_ioctl(struct drm_device *dev, void *data,
 		       struct drm_file *file_priv)

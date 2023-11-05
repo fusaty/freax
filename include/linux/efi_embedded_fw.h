@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_EFI_EMBEDDED_FW_H
-#define _LINUX_EFI_EMBEDDED_FW_H
+#ifndef _freax_EFI_EMBEDDED_FW_H
+#define _freax_EFI_EMBEDDED_FW_H
 
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
+#include <freax/list.h>
+#include <freax/mod_devicetable.h>
 
 #define EFI_EMBEDDED_FW_PREFIX_LEN		8
 

@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0+
 /* Copyright (C) 2011 Richard Cochran <richardcochran@gmail.com> */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/ptp_classify.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/pci.h>
+#include <freax/ptp_classify.h>
 
 #include "igb.h"
 

@@ -36,7 +36,7 @@ Examples
 
 A BPF program example with BPF_MAP_TYPE_CGRP_STORAGE::
 
-    #include <vmlinux.h>
+    #include <vmfreax.h>
     #include <bpf/bpf_helpers.h>
     #include <bpf/bpf_tracing.h>
 
@@ -63,8 +63,8 @@ A BPF program example with BPF_MAP_TYPE_CGRP_STORAGE::
 
 Userspace accessing map declared above::
 
-    #include <linux/bpf.h>
-    #include <linux/libbpf.h>
+    #include <freax/bpf.h>
+    #include <freax/libbpf.h>
 
     __u32 map_lookup(struct bpf_map *map, int cgrp_fd)
     {

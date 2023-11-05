@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
-#ifndef _LINUX_OF_PRIVATE_H
-#define _LINUX_OF_PRIVATE_H
+#ifndef _freax_OF_PRIVATE_H
+#define _freax_OF_PRIVATE_H
 /*
  * Private symbols used by OF support code
  *
@@ -179,4 +179,4 @@ void fdt_init_reserved_mem(void);
 void fdt_reserved_mem_save_node(unsigned long node, const char *uname,
 			       phys_addr_t base, phys_addr_t size);
 
-#endif /* _LINUX_OF_PRIVATE_H */
+#endif /* _freax_OF_PRIVATE_H */

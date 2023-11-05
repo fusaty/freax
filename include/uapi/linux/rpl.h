@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  *  IPv6 RPL-SR implementation
  *
@@ -6,12 +6,12 @@
  *  (C) 2020 Alexander Aring <alex.aring@gmail.com>
  */
 
-#ifndef _UAPI_LINUX_RPL_H
-#define _UAPI_LINUX_RPL_H
+#ifndef _UAPI_freax_RPL_H
+#define _UAPI_freax_RPL_H
 
 #include <asm/byteorder.h>
-#include <linux/types.h>
-#include <linux/in6.h>
+#include <freax/types.h>
+#include <freax/in6.h>
 
 /*
  * RPL SR Header

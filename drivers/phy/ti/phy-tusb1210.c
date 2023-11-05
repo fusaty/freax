@@ -4,18 +4,18 @@
  *
  * Copyright (C) 2015 Intel Corporation
  *
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@freax.intel.com>
  */
-#include <linux/module.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/ulpi/driver.h>
-#include <linux/ulpi/regs.h>
-#include <linux/gpio/consumer.h>
-#include <linux/phy/ulpi_phy.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
-#include <linux/workqueue.h>
+#include <freax/module.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/ulpi/driver.h>
+#include <freax/ulpi/regs.h>
+#include <freax/gpio/consumer.h>
+#include <freax/phy/ulpi_phy.h>
+#include <freax/power_supply.h>
+#include <freax/property.h>
+#include <freax/workqueue.h>
 
 #define TUSB1211_POWER_CONTROL				0x3d
 #define TUSB1211_POWER_CONTROL_SET			0x3e
@@ -431,7 +431,7 @@ static void tusb1210_probe_charger_detect(struct tusb1210 *tusb)
 	struct device *dev = &tusb->ulpi->dev;
 	int ret;
 
-	if (!device_property_read_bool(dev->parent, "linux,phy_charger_detect"))
+	if (!device_property_read_bool(dev->parent, "freax,phy_charger_detect"))
 		return;
 
 	if (tusb->ulpi->id.product != 0x1508) {

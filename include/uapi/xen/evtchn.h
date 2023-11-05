@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR MIT) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR MIT) */
 /******************************************************************************
  * evtchn.h
  *
@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the freax kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -31,8 +31,8 @@
  * IN THE SOFTWARE.
  */
 
-#ifndef __LINUX_PUBLIC_EVTCHN_H__
-#define __LINUX_PUBLIC_EVTCHN_H__
+#ifndef __freax_PUBLIC_EVTCHN_H__
+#define __freax_PUBLIC_EVTCHN_H__
 
 /*
  * Bind a fresh port to VIRQ @virq.
@@ -110,4 +110,4 @@ struct ioctl_evtchn_bind {
 	unsigned int port;
 };
 
-#endif /* __LINUX_PUBLIC_EVTCHN_H__ */
+#endif /* __freax_PUBLIC_EVTCHN_H__ */

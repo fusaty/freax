@@ -5,7 +5,7 @@
  */
 #ifndef CXL_PMU_H
 #define CXL_PMU_H
-#include <linux/device.h>
+#include <freax/device.h>
 
 enum cxl_pmu_type {
 	CXL_PMU_MEMDEV,

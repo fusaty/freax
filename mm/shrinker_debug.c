@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/shrinker.h>
-#include <linux/memcontrol.h>
+#include <freax/idr.h>
+#include <freax/slab.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/shrinker.h>
+#include <freax/memcontrol.h>
 
 #include "internal.h"
 

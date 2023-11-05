@@ -5,12 +5,12 @@
  * Copyright (C) 2017 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#ifndef __LINUX_MFD_LP87565_H
-#define __LINUX_MFD_LP87565_H
+#ifndef __freax_MFD_LP87565_H
+#define __freax_MFD_LP87565_H
 
-#include <linux/i2c.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <freax/i2c.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
 
 enum lp87565_device_type {
 	LP87565_DEVICE_TYPE_UNKNOWN	= 0,
@@ -254,4 +254,4 @@ struct lp87565 {
 	struct regmap *regmap;
 	struct gpio_desc *reset_gpio;
 };
-#endif /* __LINUX_MFD_LP87565_H */
+#endif /* __freax_MFD_LP87565_H */

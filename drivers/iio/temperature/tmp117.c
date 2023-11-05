@@ -9,16 +9,16 @@
  * Note: This driver assumes that the sensor has been calibrated beforehand.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/property.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/limits.h>
+#include <freax/property.h>
 
-#include <linux/iio/iio.h>
+#include <freax/iio/iio.h>
 
 #define TMP117_REG_TEMP			0x0
 #define TMP117_REG_CFGR			0x1

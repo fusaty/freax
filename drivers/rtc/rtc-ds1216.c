@@ -6,11 +6,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/rtc.h>
+#include <freax/platform_device.h>
+#include <freax/bcd.h>
+#include <freax/slab.h>
 
 struct ds1216_regs {
 	u8 tsec;

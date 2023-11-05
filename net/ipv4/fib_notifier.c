@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/rtnetlink.h>
-#include <linux/notifier.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
+#include <freax/rtnetlink.h>
+#include <freax/notifier.h>
+#include <freax/socket.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
 #include <net/net_namespace.h>
 #include <net/fib_notifier.h>
 #include <net/ip_fib.h>

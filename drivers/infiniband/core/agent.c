@@ -36,8 +36,8 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 #include "agent.h"
 #include "smi.h"

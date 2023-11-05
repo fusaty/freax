@@ -14,15 +14,15 @@
 
 #define pr_fmt(fmt) "IPMI poweroff: " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/proc_fs.h>
-#include <linux/string.h>
-#include <linux/completion.h>
-#include <linux/pm.h>
-#include <linux/kdev_t.h>
-#include <linux/ipmi.h>
-#include <linux/ipmi_smi.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/proc_fs.h>
+#include <freax/string.h>
+#include <freax/completion.h>
+#include <freax/pm.h>
+#include <freax/kdev_t.h>
+#include <freax/ipmi.h>
+#include <freax/ipmi_smi.h>
 
 static void ipmi_po_smi_gone(int if_num);
 static void ipmi_po_new_smi(int if_num, struct device *device);
@@ -648,7 +648,7 @@ static struct ipmi_smi_watcher smi_watcher = {
 
 
 #ifdef CONFIG_PROC_FS
-#include <linux/sysctl.h>
+#include <freax/sysctl.h>
 
 static struct ctl_table ipmi_table[] = {
 	{ .procname	= "poweroff_powercycle",

@@ -12,15 +12,15 @@
  */
 
 /* #define DEBUG */
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/mempool.h>
-#include <linux/mm.h>
-#include <linux/elf.h>
-#include <linux/ftrace.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/list.h>
+#include <freax/mempool.h>
+#include <freax/mm.h>
+#include <freax/elf.h>
+#include <freax/ftrace.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include <asm/dwarf.h>
 #include <asm/unwinder.h>
 #include <asm/sections.h>

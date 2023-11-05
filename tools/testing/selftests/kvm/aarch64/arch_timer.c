@@ -23,9 +23,9 @@
 
 #include <stdlib.h>
 #include <pthread.h>
-#include <linux/kvm.h>
-#include <linux/sizes.h>
-#include <linux/bitmap.h>
+#include <freax/kvm.h>
+#include <freax/sizes.h>
+#include <freax/bitmap.h>
 #include <sys/sysinfo.h>
 
 #include "kvm_util.h"

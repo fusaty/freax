@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_VERMAGIC_H
-#define _LINUX_VERMAGIC_H
+#ifndef _freax_VERMAGIC_H
+#define _freax_VERMAGIC_H
 
 #ifndef INCLUDE_VERMAGIC
 #error "This header can be included from kernel/module.c or *.mod.c only"
@@ -46,4 +46,4 @@
 	MODULE_ARCH_VERMAGIC						\
 	MODULE_RANDSTRUCT
 
-#endif /* _LINUX_VERMAGIC_H */
+#endif /* _freax_VERMAGIC_H */

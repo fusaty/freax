@@ -5,8 +5,8 @@
  * Gregory Clement <gregory.clement@free-electrons.com>
  */
 
-#ifndef __LINUX_XHCI_MVEBU_H
-#define __LINUX_XHCI_MVEBU_H
+#ifndef __freax_XHCI_MVEBU_H
+#define __freax_XHCI_MVEBU_H
 
 struct usb_hcd;
 
@@ -24,4 +24,4 @@ static inline int xhci_mvebu_a3700_init_quirk(struct usb_hcd *hcd)
 	return 0;
 }
 #endif
-#endif /* __LINUX_XHCI_MVEBU_H */
+#endif /* __freax_XHCI_MVEBU_H */

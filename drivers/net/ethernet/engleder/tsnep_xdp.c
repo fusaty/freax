@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2022 Gerhard Engleder <gerhard@engleder-embedded.com> */
 
-#include <linux/if_vlan.h>
+#include <freax/if_vlan.h>
 #include <net/xdp_sock_drv.h>
 
 #include "tsnep.h"

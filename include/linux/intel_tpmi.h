@@ -6,7 +6,7 @@
 #ifndef _INTEL_TPMI_H_
 #define _INTEL_TPMI_H_
 
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 #define TPMI_VERSION_INVALID	0xff
 #define TPMI_MINOR_VERSION(val)	FIELD_GET(GENMASK(4, 0), val)

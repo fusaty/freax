@@ -8,14 +8,14 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/compat.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/miscdevice.h>
-#include <linux/kernel_stat.h>
+#include <freax/slab.h>
+#include <freax/compat.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
+#include <freax/miscdevice.h>
+#include <freax/kernel_stat.h>
 
 #include <asm/cio.h>
 #include <asm/chsc.h>

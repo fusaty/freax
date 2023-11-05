@@ -8,12 +8,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/usb.h>
-#include <linux/fs.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/usb.h>
+#include <freax/fs.h>
+#include <freax/uaccess.h>
 
 #include "usb_mon.h"
 

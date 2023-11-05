@@ -8,17 +8,17 @@
  * Copyright (C) 2005 BULL SA.
  */
 
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/init.h>
-#include <linux/connector.h>
-#include <linux/gfp.h>
-#include <linux/ptrace.h>
-#include <linux/atomic.h>
-#include <linux/pid_namespace.h>
+#include <freax/kernel.h>
+#include <freax/ktime.h>
+#include <freax/init.h>
+#include <freax/connector.h>
+#include <freax/gfp.h>
+#include <freax/ptrace.h>
+#include <freax/atomic.h>
+#include <freax/pid_namespace.h>
 
-#include <linux/cn_proc.h>
-#include <linux/local_lock.h>
+#include <freax/cn_proc.h>
+#include <freax/local_lock.h>
 
 /*
  * Size of a cn_msg followed by a proc_event structure.  Since the

@@ -2839,7 +2839,7 @@ option, and these limitations will be eliminated in the future:
 You can put some comments on specific functions by using
 trace_printk() For example, if you want to put a comment inside
 the __might_sleep() function, you just have to include
-<linux/ftrace.h> and call trace_printk() inside __might_sleep()::
+<freax/ftrace.h> and call trace_printk() inside __might_sleep()::
 
 	trace_printk("I'm a comment!\n")
 

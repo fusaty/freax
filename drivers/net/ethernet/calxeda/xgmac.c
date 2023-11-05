@@ -2,19 +2,19 @@
 /*
  * Copyright 2010-2011 Calxeda, Inc.
  */
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/kernel.h>
-#include <linux/circ_buf.h>
-#include <linux/interrupt.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/skbuff.h>
-#include <linux/ethtool.h>
-#include <linux/if.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/kernel.h>
+#include <freax/circ_buf.h>
+#include <freax/interrupt.h>
+#include <freax/etherdevice.h>
+#include <freax/platform_device.h>
+#include <freax/skbuff.h>
+#include <freax/ethtool.h>
+#include <freax/if.h>
+#include <freax/crc32.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
 
 /* XGMAC Register definitions */
 #define XGMAC_CONTROL		0x00000000	/* MAC Configuration */
@@ -1007,7 +1007,7 @@ static int xgmac_open(struct net_device *dev)
 
 	/* Check that the MAC address is valid.  If its not, refuse
 	 * to bring the device up. The user must specify an
-	 * address using the following linux command:
+	 * address using the following freax command:
 	 *      ifconfig eth0 hw ether xx:xx:xx:xx:xx:xx  */
 	if (!is_valid_ether_addr(dev->dev_addr)) {
 		eth_hw_addr_random(dev);

@@ -9,17 +9,17 @@
 
 #define DISABLE_BRANCH_PROFILING
 
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/dma-direct.h>
-#include <linux/swiotlb.h>
-#include <linux/mem_encrypt.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/dma-mapping.h>
-#include <linux/cc_platform.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/dma-direct.h>
+#include <freax/swiotlb.h>
+#include <freax/mem_encrypt.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/dma-mapping.h>
+#include <freax/cc_platform.h>
 
 #include <asm/tlbflush.h>
 #include <asm/fixmap.h>

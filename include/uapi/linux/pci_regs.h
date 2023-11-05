@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  *	PCI standard defines
  *	Copyright 1994, Drew Eckhardt
@@ -18,8 +18,8 @@
  *	The HyperTransport I/O Link Specification
  */
 
-#ifndef LINUX_PCI_REGS_H
-#define LINUX_PCI_REGS_H
+#ifndef freax_PCI_REGS_H
+#define freax_PCI_REGS_H
 
 /*
  * Conventional PCI and PCI-X Mode 1 devices have 256 bytes of
@@ -1148,4 +1148,4 @@
 #define PCI_DOE_DATA_OBJECT_DISC_RSP_3_PROTOCOL		0x00ff0000
 #define PCI_DOE_DATA_OBJECT_DISC_RSP_3_NEXT_INDEX	0xff000000
 
-#endif /* LINUX_PCI_REGS_H */
+#endif /* freax_PCI_REGS_H */

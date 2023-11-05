@@ -6,11 +6,11 @@
 #ifndef __INTEL_BREADCRUMBS_TYPES__
 #define __INTEL_BREADCRUMBS_TYPES__
 
-#include <linux/irq_work.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/irq_work.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #include "intel_engine_types.h"
 

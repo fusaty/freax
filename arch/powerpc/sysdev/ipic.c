@@ -6,20 +6,20 @@
  *
  * Copyright 2005 Freescale Semiconductor, Inc.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/syscore_ops.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/fsl_devices.h>
-#include <linux/irqdomain.h>
-#include <linux/of_address.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
+#include <freax/stddef.h>
+#include <freax/sched.h>
+#include <freax/signal.h>
+#include <freax/syscore_ops.h>
+#include <freax/device.h>
+#include <freax/spinlock.h>
+#include <freax/fsl_devices.h>
+#include <freax/irqdomain.h>
+#include <freax/of_address.h>
 #include <asm/irq.h>
 #include <asm/io.h>
 #include <asm/ipic.h>

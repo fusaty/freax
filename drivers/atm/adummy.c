@@ -3,25 +3,25 @@
  * adummy.c: a dummy ATM driver
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
-#include <linux/atmdev.h>
-#include <linux/atm.h>
-#include <linux/sonet.h>
+#include <freax/atmdev.h>
+#include <freax/atm.h>
+#include <freax/sonet.h>
 
 /* version definition */
 

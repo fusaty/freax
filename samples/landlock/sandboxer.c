@@ -12,8 +12,8 @@
 #include <arpa/inet.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/landlock.h>
-#include <linux/prctl.h>
+#include <freax/landlock.h>
+#include <freax/prctl.h>
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>

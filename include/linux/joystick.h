@@ -6,10 +6,10 @@
  */
 /*
  */
-#ifndef _LINUX_JOYSTICK_H
-#define _LINUX_JOYSTICK_H
+#ifndef _freax_JOYSTICK_H
+#define _freax_JOYSTICK_H
 
-#include <uapi/linux/joystick.h>
+#include <uapi/freax/joystick.h>
 
 #if BITS_PER_LONG == 64
 #define JS_DATA_SAVE_TYPE JS_DATA_SAVE_TYPE_64
@@ -18,4 +18,4 @@
 #else
 #error Unexpected BITS_PER_LONG
 #endif
-#endif /* _LINUX_JOYSTICK_H */
+#endif /* _freax_JOYSTICK_H */

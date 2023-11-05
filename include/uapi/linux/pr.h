@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _UAPI_PR_H
 #define _UAPI_PR_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum pr_status {
 	PR_STS_SUCCESS			= 0x0,

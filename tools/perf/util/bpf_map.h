@@ -11,7 +11,7 @@ int bpf_map__fprintf(struct bpf_map *map, FILE *fp);
 
 #else
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 static inline int bpf_map__fprintf(struct bpf_map *map __maybe_unused, FILE *fp __maybe_unused)
 {

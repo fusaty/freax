@@ -1,7 +1,7 @@
 #ifndef DEFUTIL_H
 #define DEFUTIL_H
 
-#include <linux/zutil.h>
+#include <freax/zutil.h>
 
 #define Assert(err, str) 
 #define Trace(dummy) 

@@ -52,18 +52,18 @@
  */
 
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/console.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/firmware/imx/svc/rm.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
+#include <freax/console.h>
+#include <freax/firmware/imx/sci.h>
+#include <freax/firmware/imx/svc/rm.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/pm_domain.h>
+#include <freax/slab.h>
 
 /* SCU Power Mode Protocol definition */
 struct imx_sc_msg_req_set_resource_power_mode {

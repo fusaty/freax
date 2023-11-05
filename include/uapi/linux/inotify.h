@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * Inode based directory notification for Linux
+ * Inode based directory notification for freax
  *
  * Copyright (C) 2005 John McCutchan
  */
 
-#ifndef _UAPI_LINUX_INOTIFY_H
-#define _UAPI_LINUX_INOTIFY_H
+#ifndef _UAPI_freax_INOTIFY_H
+#define _UAPI_freax_INOTIFY_H
 
 /* For O_CLOEXEC and O_NONBLOCK */
-#include <linux/fcntl.h>
-#include <linux/types.h>
+#include <freax/fcntl.h>
+#include <freax/types.h>
 
 /*
  * struct inotify_event - structure read from the inotify device for each event
@@ -81,4 +81,4 @@ struct inotify_event {
  */
 #define INOTIFY_IOC_SETNEXTWD	_IOW('I', 0, __s32)
 
-#endif /* _UAPI_LINUX_INOTIFY_H */
+#endif /* _UAPI_freax_INOTIFY_H */

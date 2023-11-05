@@ -10,20 +10,20 @@
 
 #define DEBUG
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/consumer.h>
-#include <linux/leds.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/bitops.h>
+#include <freax/io.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/consumer.h>
+#include <freax/leds.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
 #include <plat/orion-gpio.h>
 
 /*
@@ -436,7 +436,7 @@ static void gpio_irq_handler(struct irq_desc *desc)
 }
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/seq_file.h>
+#include <freax/seq_file.h>
 
 static void orion_gpio_dbg_show(struct seq_file *s, struct gpio_chip *chip)
 {

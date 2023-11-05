@@ -15,7 +15,7 @@
 #
 # Copyright (C) IBM Corporation, 2018
 #
-# Author: Paul E. McKenney <paulmck@linux.ibm.com>
+# Author: Paul E. McKenney <paulmck@freax.ibm.com>
 
 rundir="${1}"
 if test -z "$rundir" -o ! -d "$rundir"
@@ -36,9 +36,9 @@ do
 	then
 		grep -E "error:|warning:|^ld: .*undefined reference to" < $i > $i.diags
 		files="$files $i.diags $i"
-	elif ! test -f ${scenariobasedir}/vmlinux && ! test -f ${scenariobasedir}/vmlinux.xz && ! test -f "${rundir}/re-run"
+	elif ! test -f ${scenariobasedir}/vmfreax && ! test -f ${scenariobasedir}/vmfreax.xz && ! test -f "${rundir}/re-run"
 	then
-		echo No ${scenariobasedir}/vmlinux file > $i.diags
+		echo No ${scenariobasedir}/vmfreax file > $i.diags
 		files="$files $i.diags $i"
 	fi
 done

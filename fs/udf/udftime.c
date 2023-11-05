@@ -22,9 +22,9 @@
 
 #include "udfdecl.h"
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/time.h>
 
 void
 udf_disk_stamp_to_time(struct timespec64 *dest, struct timestamp src)

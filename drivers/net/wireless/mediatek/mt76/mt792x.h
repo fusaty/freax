@@ -4,8 +4,8 @@
 #ifndef __MT792X_H
 #define __MT792X_H
 
-#include <linux/interrupt.h>
-#include <linux/ktime.h>
+#include <freax/interrupt.h>
+#include <freax/ktime.h>
 
 #include "mt76_connac_mcu.h"
 #include "mt792x_regs.h"

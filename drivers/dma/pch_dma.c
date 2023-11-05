@@ -5,14 +5,14 @@
  * Copyright (C) 2011 LAPIS Semiconductor Co., Ltd.
  */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/pch_dma.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/pch_dma.h>
 
 #include "dmaengine.h"
 

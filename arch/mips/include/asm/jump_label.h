@@ -12,7 +12,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/isa-rev.h>
 
 #define JUMP_LABEL_NOP_SIZE 4

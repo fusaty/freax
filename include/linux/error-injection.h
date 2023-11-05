@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ERROR_INJECTION_H
-#define _LINUX_ERROR_INJECTION_H
+#ifndef _freax_ERROR_INJECTION_H
+#define _freax_ERROR_INJECTION_H
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
+#include <freax/compiler.h>
+#include <freax/errno.h>
 #include <asm-generic/error-injection.h>
 
 #ifdef CONFIG_FUNCTION_ERROR_INJECTION
@@ -25,4 +25,4 @@ static inline int get_injectable_error_type(unsigned long addr)
 
 #endif
 
-#endif /* _LINUX_ERROR_INJECTION_H */
+#endif /* _freax_ERROR_INJECTION_H */

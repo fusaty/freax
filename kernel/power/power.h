@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/suspend.h>
-#include <linux/suspend_ioctls.h>
-#include <linux/utsname.h>
-#include <linux/freezer.h>
-#include <linux/compiler.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
+#include <freax/suspend.h>
+#include <freax/suspend_ioctls.h>
+#include <freax/utsname.h>
+#include <freax/freezer.h>
+#include <freax/compiler.h>
+#include <freax/cpu.h>
+#include <freax/cpuidle.h>
 
 struct swsusp_info {
 	struct new_utsname	uts;

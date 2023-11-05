@@ -7,7 +7,7 @@
 
 #ifndef __ASSEMBLY__
 
-#if __LINUX_ARM_ARCH__ == 6 || defined(CONFIG_ARM_ERRATA_754327)
+#if __freax_ARM_ARCH__ == 6 || defined(CONFIG_ARM_ERRATA_754327)
 #define cpu_relax()						\
 	do {							\
 		smp_mb();					\

@@ -5,20 +5,20 @@
  * Copyright (C) 2015 Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/power_supply.h>
-#include <linux/power/bq25890_charger.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/types.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/usb/phy.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/power_supply.h>
+#include <freax/power/bq25890_charger.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/types.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/usb/phy.h>
 
-#include <linux/acpi.h>
-#include <linux/of.h>
+#include <freax/acpi.h>
+#include <freax/of.h>
 
 #define BQ25890_MANUFACTURER		"Texas Instruments"
 #define BQ25890_IRQ_PIN			"bq25890_irq"
@@ -1396,7 +1396,7 @@ static int bq25890_fw_probe(struct bq25890_device *bq)
 	const char *str;
 	u32 val;
 
-	ret = device_property_read_string(bq->dev, "linux,secondary-charger-name", &str);
+	ret = device_property_read_string(bq->dev, "freax,secondary-charger-name", &str);
 	if (ret == 0) {
 		bq->secondary_chrg = power_supply_get_by_name(str);
 		if (!bq->secondary_chrg)
@@ -1404,13 +1404,13 @@ static int bq25890_fw_probe(struct bq25890_device *bq)
 	}
 
 	/* Optional, left at 0 if property is not present */
-	device_property_read_u32(bq->dev, "linux,pump-express-vbus-max",
+	device_property_read_u32(bq->dev, "freax,pump-express-vbus-max",
 				 &bq->pump_express_vbus_max);
 
-	ret = device_property_read_u32(bq->dev, "linux,iinlim-percentage", &val);
+	ret = device_property_read_u32(bq->dev, "freax,iinlim-percentage", &val);
 	if (ret == 0) {
 		if (val > 100) {
-			dev_err(bq->dev, "Error linux,iinlim-percentage %u > 100\n", val);
+			dev_err(bq->dev, "Error freax,iinlim-percentage %u > 100\n", val);
 			return -EINVAL;
 		}
 		bq->iinlim_percentage = val;
@@ -1418,9 +1418,9 @@ static int bq25890_fw_probe(struct bq25890_device *bq)
 		bq->iinlim_percentage = 100;
 	}
 
-	bq->skip_reset = device_property_read_bool(bq->dev, "linux,skip-reset");
+	bq->skip_reset = device_property_read_bool(bq->dev, "freax,skip-reset");
 	bq->read_back_init_data = device_property_read_bool(bq->dev,
-						"linux,read-back-settings");
+						"freax,read-back-settings");
 	if (bq->read_back_init_data)
 		return 0;
 

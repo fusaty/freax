@@ -9,12 +9,12 @@
 /*
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/usb.h>
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/usb.h>
 #include "usbhid/usbhid.h"
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include "hid-ids.h"
 

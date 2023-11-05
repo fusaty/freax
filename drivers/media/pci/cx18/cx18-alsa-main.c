@@ -8,12 +8,12 @@
  *  Portions of this work were sponsored by ONELAN Limited.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/spinlock.h>
 
 #include <media/v4l2-device.h>
 

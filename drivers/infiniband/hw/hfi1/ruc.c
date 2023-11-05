@@ -3,7 +3,7 @@
  * Copyright(c) 2015 - 2018 Intel Corporation.
  */
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
 #include "hfi.h"
 #include "mad.h"

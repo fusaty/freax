@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_PREEMPT_H
-#define __LINUX_PREEMPT_H
+#ifndef __freax_PREEMPT_H
+#define __freax_PREEMPT_H
 
 /*
- * include/linux/preempt.h - macros for accessing and manipulating
+ * include/freax/preempt.h - macros for accessing and manipulating
  * preempt_count (used for kernel preemption, interrupt count, etc.)
  */
 
-#include <linux/linkage.h>
-#include <linux/cleanup.h>
-#include <linux/list.h>
+#include <freax/linkage.h>
+#include <freax/cleanup.h>
+#include <freax/list.h>
 
 /*
  * We put the hardirq and softirq counter into the preemption
@@ -479,4 +479,4 @@ DEFINE_LOCK_GUARD_0(preempt, preempt_disable(), preempt_enable())
 DEFINE_LOCK_GUARD_0(preempt_notrace, preempt_disable_notrace(), preempt_enable_notrace())
 DEFINE_LOCK_GUARD_0(migrate, migrate_disable(), migrate_enable())
 
-#endif /* __LINUX_PREEMPT_H */
+#endif /* __freax_PREEMPT_H */

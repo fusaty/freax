@@ -8,12 +8,12 @@
  * Copyright (C) 2018 Paolo Pisati <p.pisati@gmail.com>
  */
 
-#include <linux/delay.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/spi/spi.h>
+#include <freax/delay.h>
+#include <freax/fpga/fpga-mgr.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/spi/spi.h>
 
 /* MachXO2 Programming Guide - sysCONFIG Programming Commands */
 #define IDCODE_PUB		{0xe0, 0x00, 0x00, 0x00}

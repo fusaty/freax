@@ -6,10 +6,10 @@
  *
  */
 
-#include <linux/completion.h>
+#include <freax/completion.h>
 #include <crypto/internal/rng.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
 #include "compat.h"
 #include "regs.h"
 #include "intern.h"

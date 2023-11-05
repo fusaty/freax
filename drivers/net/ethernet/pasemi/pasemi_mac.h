@@ -9,10 +9,10 @@
 #ifndef PASEMI_MAC_H
 #define PASEMI_MAC_H
 
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/phy.h>
+#include <freax/ethtool.h>
+#include <freax/netdevice.h>
+#include <freax/spinlock.h>
+#include <freax/phy.h>
 
 /* Must be a power of two */
 #define RX_RING_SIZE 2048

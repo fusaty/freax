@@ -17,20 +17,20 @@
 //    o Delayed power down of audio subsystem to reduce pops between a quick
 //      device reopen.
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/async.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/bitops.h>
-#include <linux/platform_device.h>
-#include <linux/jiffies.h>
-#include <linux/debugfs.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/async.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/bitops.h>
+#include <freax/platform_device.h>
+#include <freax/jiffies.h>
+#include <freax/debugfs.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/clk.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

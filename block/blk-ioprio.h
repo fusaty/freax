@@ -3,7 +3,7 @@
 #ifndef _BLK_IOPRIO_H_
 #define _BLK_IOPRIO_H_
 
-#include <linux/kconfig.h>
+#include <freax/kconfig.h>
 
 struct request_queue;
 struct bio;

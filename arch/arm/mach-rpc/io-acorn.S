@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/lib/io-acorn.S
+ *  freax/arch/arm/lib/io-acorn.S
  *
  *  Copyright (C) 1995, 1996 Russell King
  *
  * 27/03/03 Ian Molton Clean up CONFIG_CPU
  */
-#include <linux/linkage.h>
-#include <linux/kern_levels.h>
+#include <freax/linkage.h>
+#include <freax/kern_levels.h>
 #include <asm/assembler.h>
 
 		.text

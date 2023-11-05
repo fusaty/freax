@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*-
- * APM BIOS driver for Linux
+/* -*- freax-c -*-
+ * APM BIOS driver for freax
  * Copyright 1994-2001 Stephen Rothwell (sfr@canb.auug.org.au)
  *
  * Initial development of this driver was funded by NEC Australia P/L
@@ -34,26 +34,26 @@
  * Oct 2002, Version 1.16ac
  *
  * History:
- *    0.6b: first version in official kernel, Linux 1.3.46
- *    0.7: changed /proc/apm format, Linux 1.3.58
- *    0.8: fixed gcc 2.7.[12] compilation problems, Linux 1.3.59
- *    0.9: only call bios if bios is present, Linux 1.3.72
+ *    0.6b: first version in official kernel, freax 1.3.46
+ *    0.7: changed /proc/apm format, freax 1.3.58
+ *    0.8: fixed gcc 2.7.[12] compilation problems, freax 1.3.59
+ *    0.9: only call bios if bios is present, freax 1.3.72
  *    1.0: use fixed device number, consolidate /proc/apm into this file,
- *         Linux 1.3.85
+ *         freax 1.3.85
  *    1.1: support user-space standby and suspend, power off after system
- *         halted, Linux 1.3.98
+ *         halted, freax 1.3.98
  *    1.2: When resetting RTC after resume, take care so that the time
  *         is only incorrect by 30-60mS (vs. 1S previously) (Gabor J. Toth
  *         <jtoth@princeton.edu>); improve interaction between
- *         screen-blanking and gpm (Stephen Rothwell); Linux 1.99.4
+ *         screen-blanking and gpm (Stephen Rothwell); freax 1.99.4
  *    1.2a:Simple change to stop mysterious bug reports with SMP also added
  *	   levels to the printk calls. APM is not defined for SMP machines.
- *         The new replacement for it is, but Linux doesn't yet support this.
- *         Alan Cox Linux 2.1.55
+ *         The new replacement for it is, but freax doesn't yet support this.
+ *         Alan Cox freax 2.1.55
  *    1.3: Set up a valid data descriptor 0x40 for buggy BIOS's
  *    1.4: Upgraded to support APM 1.2. Integrated ThinkPad suspend patch by
  *         Dean Gaudet <dgaudet@arctic.org>.
- *         C. Scott Ananian <cananian@alumni.princeton.edu> Linux 2.1.87
+ *         C. Scott Ananian <cananian@alumni.princeton.edu> freax 2.1.87
  *    1.5: Fix segment register reloading (in case of bad segments saved
  *         across BIOS call).
  *         Stephen Rothwell
@@ -162,7 +162,7 @@
  *   1.16: Fix idle calling. (Andreas Steinmetz <ast@domdv.de> et al.)
  *         Notify listeners of standby or suspend events before notifying
  *         drivers. Return EBUSY to ioctl() if suspend is rejected.
- *         (Russell King <rmk@arm.linux.org.uk> and Thomas Hood)
+ *         (Russell King <rmk@arm.freax.org.uk> and Thomas Hood)
  *         Ignore first resume after we generate our own resume event
  *         after a suspend (Thomas Hood)
  *         Daemonize now gets rid of our controlling terminal (sfr).
@@ -194,39 +194,39 @@
 
 #define pr_fmt(fmt) "apm: " fmt
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/poll.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/timer.h>
-#include <linux/fcntl.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/miscdevice.h>
-#include <linux/apm_bios.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/cputime.h>
-#include <linux/pm.h>
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/freezer.h>
-#include <linux/smp.h>
-#include <linux/dmi.h>
-#include <linux/suspend.h>
-#include <linux/kthread.h>
-#include <linux/jiffies.h>
-#include <linux/acpi.h>
-#include <linux/syscore_ops.h>
-#include <linux/i8253.h>
-#include <linux/cpuidle.h>
+#include <freax/poll.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/timer.h>
+#include <freax/fcntl.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/miscdevice.h>
+#include <freax/apm_bios.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/cputime.h>
+#include <freax/pm.h>
+#include <freax/capability.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/freezer.h>
+#include <freax/smp.h>
+#include <freax/dmi.h>
+#include <freax/suspend.h>
+#include <freax/kthread.h>
+#include <freax/jiffies.h>
+#include <freax/acpi.h>
+#include <freax/syscore_ops.h>
+#include <freax/i8253.h>
+#include <freax/cpuidle.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/desc.h>
 #include <asm/olpc.h>
 #include <asm/paravirt.h>
@@ -300,9 +300,9 @@ extern int (*console_blank_hook)(int);
 #undef INIT_TIMER_AFTER_SUSPEND
 
 #ifdef INIT_TIMER_AFTER_SUSPEND
-#include <linux/timex.h>
+#include <freax/timex.h>
 #include <asm/io.h>
-#include <linux/delay.h>
+#include <freax/delay.h>
 #endif
 
 /*
@@ -497,7 +497,7 @@ static void apm_error(char *str, int err)
 	if (i < ERROR_COUNT)
 		pr_notice("%s: %s\n", str, error_table[i].msg);
 	else if (err < 0)
-		pr_notice("%s: linux error code %i\n", str, err);
+		pr_notice("%s: freax error code %i\n", str, err);
 	else
 		pr_notice("%s: unknown error code %#2.2x\n",
 		       str, err);
@@ -891,7 +891,7 @@ static void apm_do_busy(void)
 #define IDLE_LEAKY_MAX	16
 
 /**
- * apm_cpu_idle		-	cpu idling for APM capable Linux
+ * apm_cpu_idle		-	cpu idling for APM capable freax
  *
  * This is the idling function the kernel executes when APM is available. It
  * tries to do BIOS powermanagement based on the average system idle time.
@@ -1661,10 +1661,10 @@ static int proc_apm_show(struct seq_file *m, void *v)
 			}
 		}
 	}
-	/* Arguments, with symbols from linux/apm_bios.h.  Information is
+	/* Arguments, with symbols from freax/apm_bios.h.  Information is
 	   from the Get Power Status (0x0a) call unless otherwise noted.
 
-	   0) Linux driver version (this will change if format changes)
+	   0) freax driver version (this will change if format changes)
 	   1) APM BIOS Version.  Usually 1.0, 1.1 or 1.2.
 	   2) APM flags from APM Installation Check (0x00):
 	      bit 0: APM_16_BIT_SUPPORT
@@ -1929,7 +1929,7 @@ static int __init print_if_true(const struct dmi_system_id *d)
 
 /*
  * Some Bioses enable the PS/2 mouse (touchpad) at resume, even if it was
- * disabled before the suspend. Linux used to get terribly confused by that.
+ * disabled before the suspend. freax used to get terribly confused by that.
  */
 static int __init broken_ps2_resume(const struct dmi_system_id *d)
 {
@@ -2032,7 +2032,7 @@ static int __init swab_apm_power_in_minutes(const struct dmi_system_id *d)
 static const struct dmi_system_id apm_dmi_table[] __initconst = {
 	{
 		print_if_true,
-		KERN_WARNING "IBM T23 - BIOS 1.03b+ and controller firmware 1.02+ may be needed for Linux APM.",
+		KERN_WARNING "IBM T23 - BIOS 1.03b+ and controller firmware 1.02+ may be needed for freax APM.",
 		{	DMI_MATCH(DMI_SYS_VENDOR, "IBM"),
 			DMI_MATCH(DMI_BIOS_VERSION, "1AET38WW (1.01b)"), },
 	},

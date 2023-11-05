@@ -197,14 +197,14 @@
  *		from memory.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/sched/clock.h>
-#include <linux/kprobes.h>
-#include <linux/errno.h>
-#include <linux/stddef.h>
-#include <linux/bug.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/sched/clock.h>
+#include <freax/kprobes.h>
+#include <freax/errno.h>
+#include <freax/stddef.h>
+#include <freax/bug.h>
 #include <asm/opcodes.h>
 
 #include "core.h"
@@ -1631,7 +1631,7 @@ static int __init run_all_tests(void)
 		goto out;
 #endif
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 	/* We are able to run all test cases so coverage should be complete */
 	if (coverage_fail) {
 		pr_err("FAIL: Test coverage checks failed\n");

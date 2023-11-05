@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/parisc/kernel/time.c
+ *  freax/arch/parisc/kernel/time.c
  *
  *  Copyright (C) 1991, 1992, 1995  Linus Torvalds
  *  Modifications for ARM (C) 1994, 1995, 1996,1997 Russell King
@@ -11,26 +11,26 @@
  * 1998-12-20  Updated NTP code according to technical memorandum Jan '96
  *             "A Kernel Model for Precision Timekeeping" by Dave Mills
  */
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/sched_clock.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/profile.h>
-#include <linux/clocksource.h>
-#include <linux/platform_device.h>
-#include <linux/ftrace.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/rtc.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/sched_clock.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/time.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/profile.h>
+#include <freax/clocksource.h>
+#include <freax/platform_device.h>
+#include <freax/ftrace.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/page.h>
@@ -38,14 +38,14 @@
 #include <asm/pdc.h>
 #include <asm/led.h>
 
-#include <linux/timex.h>
+#include <freax/timex.h>
 
 int time_keeper_id __read_mostly;	/* CPU used for timekeeping. */
 
 static unsigned long clocktick __ro_after_init;	/* timer cycles per tick */
 
 /*
- * We keep time on PA-RISC Linux by using the Interval Timer which is
+ * We keep time on PA-RISC freax by using the Interval Timer which is
  * a pair of registers; one is read-only and one is write-only; both
  * accessed through CR16.  The read-only register is 32 or 64 bits wide,
  * and increments by 1 every CPU clock tick.  The architecture only

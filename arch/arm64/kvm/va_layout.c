@@ -4,9 +4,9 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/kvm_host.h>
-#include <linux/random.h>
-#include <linux/memblock.h>
+#include <freax/kvm_host.h>
+#include <freax/random.h>
+#include <freax/memblock.h>
 #include <asm/alternative.h>
 #include <asm/debug-monitors.h>
 #include <asm/insn.h>

@@ -3,13 +3,13 @@
  * Copyright (C) 2014 Linaro Ltd. <ard.biesheuvel@linaro.org>
  */
 
-#ifndef __LINUX_CPUFEATURE_H
-#define __LINUX_CPUFEATURE_H
+#ifndef __freax_CPUFEATURE_H
+#define __freax_CPUFEATURE_H
 
 #ifdef CONFIG_GENERIC_CPU_AUTOPROBE
 
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
+#include <freax/init.h>
+#include <freax/mod_devicetable.h>
 #include <asm/cpufeature.h>
 
 /*

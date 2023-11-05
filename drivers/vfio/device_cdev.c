@@ -2,8 +2,8 @@
 /*
  * Copyright (c) 2023 Intel Corporation.
  */
-#include <linux/vfio.h>
-#include <linux/iommufd.h>
+#include <freax/vfio.h>
+#include <freax/iommufd.h>
 
 #include "vfio.h"
 

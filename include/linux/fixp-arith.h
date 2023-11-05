@@ -2,8 +2,8 @@
 #ifndef _FIXP_ARITH_H
 #define _FIXP_ARITH_H
 
-#include <linux/bug.h>
-#include <linux/math64.h>
+#include <freax/bug.h>
+#include <freax/math64.h>
 
 /*
  * Simplistic fixed-point arithmetics.
@@ -18,7 +18,7 @@
  * e-mail - mail your message to <johann.deneux@gmail.com>
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 static const s32 sin_table[] = {
 	0x00000000, 0x023be165, 0x04779632, 0x06b2f1d2, 0x08edc7b6, 0x0b27eb5c,

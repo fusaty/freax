@@ -9,8 +9,8 @@
 #ifdef CONFIG_PPC64
 
 #include <asm/cputable.h>
-#include <linux/mm.h>
-#include <linux/pkeys.h>
+#include <freax/mm.h>
+#include <freax/pkeys.h>
 #include <asm/cpu_has_feature.h>
 #include <asm/firmware.h>
 

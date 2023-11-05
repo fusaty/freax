@@ -3,13 +3,13 @@
  * Copyright (C) 2020 InvenSense, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/property.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/property.h>
 
 #include "inv_icm42600.h"
 

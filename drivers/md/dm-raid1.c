@@ -8,17 +8,17 @@
 
 #include "dm-bio-record.h"
 
-#include <linux/init.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-io.h>
-#include <linux/dm-dirty-log.h>
-#include <linux/dm-kcopyd.h>
-#include <linux/dm-region-hash.h>
+#include <freax/init.h>
+#include <freax/mempool.h>
+#include <freax/module.h>
+#include <freax/pagemap.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/device-mapper.h>
+#include <freax/dm-io.h>
+#include <freax/dm-dirty-log.h>
+#include <freax/dm-kcopyd.h>
+#include <freax/dm-region-hash.h>
 
 static struct workqueue_struct *dm_raid1_wq;
 

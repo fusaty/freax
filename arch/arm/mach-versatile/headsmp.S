@@ -3,8 +3,8 @@
  *  Copyright (c) 2003 ARM Limited
  *  All Rights Reserved
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
 #include <asm/assembler.h>
 
 /*

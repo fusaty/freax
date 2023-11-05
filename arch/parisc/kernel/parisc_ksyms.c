@@ -2,24 +2,24 @@
 /*
  *    Architecture-specific kernel symbols
  *
- *    Copyright (C) 2000-2001 Richard Hirst <rhirst with parisc-linux.org>
+ *    Copyright (C) 2000-2001 Richard Hirst <rhirst with parisc-freax.org>
  *    Copyright (C) 2001 Dave Kennedy
- *    Copyright (C) 2001 Paul Bame <bame at parisc-linux.org>
- *    Copyright (C) 2001-2003 Grant Grundler <grundler with parisc-linux.org>
- *    Copyright (C) 2002-2003 Matthew Wilcox <willy at parisc-linux.org>
- *    Copyright (C) 2002 Randolph Chung <tausq at parisc-linux.org>
- *    Copyright (C) 2002-2007 Helge Deller <deller with parisc-linux.org>
+ *    Copyright (C) 2001 Paul Bame <bame at parisc-freax.org>
+ *    Copyright (C) 2001-2003 Grant Grundler <grundler with parisc-freax.org>
+ *    Copyright (C) 2002-2003 Matthew Wilcox <willy at parisc-freax.org>
+ *    Copyright (C) 2002 Randolph Chung <tausq at parisc-freax.org>
+ *    Copyright (C) 2002-2007 Helge Deller <deller with parisc-freax.org>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/libgcc.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/syscalls.h>
+#include <freax/libgcc.h>
 
-#include <linux/string.h>
+#include <freax/string.h>
 EXPORT_SYMBOL(memset);
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 EXPORT_SYMBOL(__xchg8);
 EXPORT_SYMBOL(__xchg32);
 EXPORT_SYMBOL(__cmpxchg_u32);
@@ -31,7 +31,7 @@ EXPORT_SYMBOL(__atomic_hash);
 EXPORT_SYMBOL(__xchg64);
 #endif
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 EXPORT_SYMBOL(lclear_user);
 
 #ifndef CONFIG_64BIT

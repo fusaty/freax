@@ -4,8 +4,8 @@
  * and place the sl811hs onto platform_bus named "sl811-hcd".
  */
 
-#ifndef __LINUX_USB_SL811_H
-#define __LINUX_USB_SL811_H
+#ifndef __freax_USB_SL811_H
+#define __freax_USB_SL811_H
 
 struct sl811_platform_data {
 	unsigned	can_wakeup:1;
@@ -27,4 +27,4 @@ struct sl811_platform_data {
 	/* void		(*clock_enable)(struct device *dev, int is_on); */
 };
 
-#endif /* __LINUX_USB_SL811_H */
+#endif /* __freax_USB_SL811_H */

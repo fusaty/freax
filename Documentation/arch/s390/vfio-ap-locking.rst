@@ -32,7 +32,7 @@ controls access to all fields contained within each matrix_mdev
 or using the data from a field contained within a matrix_mdev instance
 representing one of the vfio_ap device driver's mediated devices.
 
-The KVM Lock (include/linux/kvm_host.h)
+The KVM Lock (include/freax/kvm_host.h)
 ---------------------------------------
 
 .. code-block:: c

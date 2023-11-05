@@ -12,7 +12,7 @@
 #ifndef _NFP_NET_CTRL_H_
 #define _NFP_NET_CTRL_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* 64-bit per app capabilities */
 #define NFP_NET_APP_CAP_SP_INDIFF	BIT_ULL(0) /* indifferent to port speed */

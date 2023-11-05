@@ -5,15 +5,15 @@
  * Copyright (C) 2012 Vayavya Labs Pvt. Ltd.
  */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
 #include "dw_mmc.h"
 
 #define PCI_BAR_NO 2

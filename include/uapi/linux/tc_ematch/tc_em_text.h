@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_TC_EM_TEXT_H
-#define __LINUX_TC_EM_TEXT_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_TC_EM_TEXT_H
+#define __freax_TC_EM_TEXT_H
 
-#include <linux/types.h>
-#include <linux/pkt_cls.h>
+#include <freax/types.h>
+#include <freax/pkt_cls.h>
 
 #define TC_EM_TEXT_ALGOSIZ	16
 

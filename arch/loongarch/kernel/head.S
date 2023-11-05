@@ -2,8 +2,8 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/init.h>
-#include <linux/threads.h>
+#include <freax/init.h>
+#include <freax/threads.h>
 
 #include <asm/addrspace.h>
 #include <asm/asm.h>
@@ -26,7 +26,7 @@ _head:
 	.dword	_kernel_asize		/* Kernel image effective size */
 	.quad	PHYS_LINK_KADDR		/* Kernel image load offset from start of RAM */
 	.org	0x38			/* 0x20 ~ 0x37 reserved */
-	.long	LINUX_PE_MAGIC
+	.long	freax_PE_MAGIC
 	.long	pe_header - _head	/* Offset to the PE header */
 
 pe_header:

@@ -11,24 +11,24 @@
 #error only "main.h" can be included directly
 #endif
 
-#include <linux/average.h>
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
-#include <linux/sched.h> /* for linux/wait.h */
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <uapi/linux/batadv_packet.h>
-#include <uapi/linux/batman_adv.h>
+#include <freax/average.h>
+#include <freax/bitops.h>
+#include <freax/compiler.h>
+#include <freax/if.h>
+#include <freax/if_ether.h>
+#include <freax/kref.h>
+#include <freax/mutex.h>
+#include <freax/netdevice.h>
+#include <freax/netlink.h>
+#include <freax/sched.h> /* for freax/wait.h */
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <freax/types.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
+#include <uapi/freax/batadv_packet.h>
+#include <uapi/freax/batman_adv.h>
 
 #ifdef CONFIG_BATMAN_ADV_DAT
 

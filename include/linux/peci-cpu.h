@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /* Copyright (c) 2021 Intel Corporation */
 
-#ifndef __LINUX_PECI_CPU_H
-#define __LINUX_PECI_CPU_H
+#ifndef __freax_PECI_CPU_H
+#define __freax_PECI_CPU_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "../../arch/x86/include/asm/intel-family.h"
 
@@ -37,4 +37,4 @@ int peci_ep_pci_local_read(struct peci_device *device, u8 seg,
 int peci_mmio_read(struct peci_device *device, u8 bar, u8 seg,
 		   u8 bus, u8 dev, u8 func, u64 address, u32 *data);
 
-#endif /* __LINUX_PECI_CPU_H */
+#endif /* __freax_PECI_CPU_H */

@@ -3,7 +3,7 @@
  * Copyright (C) 2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_debugfs.h>

@@ -8,22 +8,22 @@
  *  Hotplug & misc device support: Jochen Roehrig (roehrig@de.ibm.com)
  *  Major cleanup & driver split: Martin Schwidefsky <schwidefsky@de.ibm.com>
  *				  Ralph Wuerthner <rwuerthn@de.ibm.com>
- *  MSGTYPE restruct:		  Holger Dengler <hd@linux.vnet.ibm.com>
+ *  MSGTYPE restruct:		  Holger Dengler <hd@freax.vnet.ibm.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/miscdevice.h>
-#include <linux/fs.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/compat.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
-#include <linux/uaccess.h>
-#include <linux/hw_random.h>
-#include <linux/debugfs.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/miscdevice.h>
+#include <freax/fs.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/compat.h>
+#include <freax/slab.h>
+#include <freax/atomic.h>
+#include <freax/uaccess.h>
+#include <freax/hw_random.h>
+#include <freax/debugfs.h>
 #include <asm/debug.h>
 
 #include "zcrypt_debug.h"

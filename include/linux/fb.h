@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_FB_H
-#define _LINUX_FB_H
+#ifndef _freax_FB_H
+#define _freax_FB_H
 
-#include <linux/refcount.h>
-#include <linux/kgdb.h>
-#include <uapi/linux/fb.h>
+#include <freax/refcount.h>
+#include <freax/kgdb.h>
+#include <uapi/freax/fb.h>
 
 #define FBIO_CURSOR            _IOWR('F', 0x08, struct fb_cursor_user)
 
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/workqueue.h>
-#include <linux/notifier.h>
-#include <linux/list.h>
-#include <linux/backlight.h>
-#include <linux/slab.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/workqueue.h>
+#include <freax/notifier.h>
+#include <freax/list.h>
+#include <freax/backlight.h>
+#include <freax/slab.h>
 
 #include <asm/fb.h>
 
@@ -860,4 +860,4 @@ static inline bool fb_modesetting_disabled(const char *drvname)
 #define fb_dbg(fb_info, fmt, ...)					\
 	pr_debug("fb%d: " fmt, (fb_info)->node, ##__VA_ARGS__)
 
-#endif /* _LINUX_FB_H */
+#endif /* _freax_FB_H */

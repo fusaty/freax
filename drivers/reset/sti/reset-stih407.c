@@ -3,10 +3,10 @@
  * Copyright (C) 2014 STMicroelectronics (R&D) Limited
  * Author: Giuseppe Cavallaro <peppe.cavallaro@st.com>
  */
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 #include <dt-bindings/reset/stih407-resets.h>
 #include "reset-syscfg.h"
 

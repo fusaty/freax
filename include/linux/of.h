@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0+ */
-#ifndef _LINUX_OF_H
-#define _LINUX_OF_H
+#ifndef _freax_OF_H
+#define _freax_OF_H
 /*
  * Definitions for talking to the Open Firmware PROM on
  * Power Macintosh and other computers.
@@ -11,13 +11,13 @@
  * Updates for SPARC64 by David S. Miller
  * Derived from PowerPC and Sparc prom.h files by Stephen Rothwell, IBM Corp.
  */
-#include <linux/types.h>
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/kobject.h>
-#include <linux/mod_devicetable.h>
-#include <linux/property.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/kobject.h>
+#include <freax/mod_devicetable.h>
+#include <freax/property.h>
+#include <freax/list.h>
 
 #include <asm/byteorder.h>
 
@@ -1704,4 +1704,4 @@ static inline int of_overlay_notifier_unregister(struct notifier_block *nb)
 
 #endif
 
-#endif /* _LINUX_OF_H */
+#endif /* _freax_OF_H */

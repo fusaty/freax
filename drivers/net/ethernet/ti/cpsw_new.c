@@ -5,29 +5,29 @@
  * Copyright (C) 2019 Texas Instruments
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/timer.h>
-#include <linux/module.h>
-#include <linux/irqreturn.h>
-#include <linux/interrupt.h>
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/phy.h>
-#include <linux/phy/phy.h>
-#include <linux/delay.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/of_platform.h>
-#include <linux/if_vlan.h>
-#include <linux/kmemleak.h>
-#include <linux/sys_soc.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/platform_device.h>
+#include <freax/timer.h>
+#include <freax/module.h>
+#include <freax/irqreturn.h>
+#include <freax/interrupt.h>
+#include <freax/if_ether.h>
+#include <freax/etherdevice.h>
+#include <freax/net_tstamp.h>
+#include <freax/phy.h>
+#include <freax/phy/phy.h>
+#include <freax/delay.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/of_platform.h>
+#include <freax/if_vlan.h>
+#include <freax/kmemleak.h>
+#include <freax/sys_soc.h>
 
 #include <net/switchdev.h>
 #include <net/page_pool/helpers.h>

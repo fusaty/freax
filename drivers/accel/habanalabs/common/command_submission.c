@@ -8,8 +8,8 @@
 #include <uapi/drm/habanalabs_accel.h>
 #include "habanalabs.h"
 
-#include <linux/uaccess.h>
-#include <linux/slab.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
 
 #define HL_CS_FLAGS_TYPE_MASK	(HL_CS_FLAGS_SIGNAL | HL_CS_FLAGS_WAIT | \
 			HL_CS_FLAGS_COLLECTIVE_WAIT | HL_CS_FLAGS_RESERVE_SIGNALS_ONLY | \

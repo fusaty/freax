@@ -9,11 +9,11 @@
  * work is done in the northbridge(s).
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/agp_backend.h>
-#include <linux/mmzone.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/agp_backend.h>
+#include <freax/mmzone.h>
 #include <asm/page.h>		/* PAGE_SIZE */
 #include <asm/e820/api.h>
 #include <asm/amd_nb.h>

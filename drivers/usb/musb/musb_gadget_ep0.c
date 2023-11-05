@@ -8,12 +8,12 @@
  * Copyright (C) 2008-2009 MontaVista Software, Inc. <source@mvista.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/timer.h>
+#include <freax/spinlock.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
 
 #include "musb_core.h"
 

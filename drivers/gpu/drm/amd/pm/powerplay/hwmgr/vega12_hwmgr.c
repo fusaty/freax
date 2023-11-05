@@ -21,9 +21,9 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include "hwmgr.h"
 #include "amd_powerplay.h"

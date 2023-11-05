@@ -4,7 +4,7 @@
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  */
 
-#include <linux/ethtool.h>
+#include <freax/ethtool.h>
 
 #include "sparx5_main_regs.h"
 #include "sparx5_main.h"

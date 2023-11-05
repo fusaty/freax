@@ -7,24 +7,24 @@
  *
  * Copyright (c) 2010 Cisco Systems, Inc.
  * Copyright (c) 2009,2010 Rising Tide, Inc.
- * Copyright (c) 2009,2010 Linux-iSCSI.org
+ * Copyright (c) 2009,2010 freax-iSCSI.org
  *
- * Copyright (c) 2009,2010 Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Copyright (c) 2009,2010 Nicholas A. Bellinger <nab@freax-iscsi.org>
  *
  ****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
 #include <generated/utsrelease.h>
-#include <linux/utsname.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kthread.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/kernel.h>
-#include <linux/ctype.h>
+#include <freax/utsname.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/kthread.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/configfs.h>
+#include <freax/kernel.h>
+#include <freax/ctype.h>
 #include <asm/unaligned.h>
 #include <scsi/libfc.h>
 

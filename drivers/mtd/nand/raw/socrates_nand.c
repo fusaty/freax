@@ -3,15 +3,15 @@
  *  Copyright © 2008 Ilya Yanok, Emcraft Systems
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
 
 #define FPGA_NAND_CMD_MASK		(0x7 << 28)
 #define FPGA_NAND_CMD_COMMAND		(0x0 << 28)

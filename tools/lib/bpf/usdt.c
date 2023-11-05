@@ -7,8 +7,8 @@
 #include <libelf.h>
 #include <gelf.h>
 #include <unistd.h>
-#include <linux/ptrace.h>
-#include <linux/kernel.h>
+#include <freax/ptrace.h>
+#include <freax/kernel.h>
 
 /* s8 will be marked as poison while it's a reg of riscv */
 #if defined(__riscv)
@@ -484,7 +484,7 @@ proceed:
 	 *
 	 * 7f5c6f5d1000-7f5c6f5d3000 rw-p 001c7000 08:04 21238613      /usr/lib64/libc-2.17.so
 	 * 7f5c6f5d3000-7f5c6f5d8000 rw-p 00000000 00:00 0
-	 * 7f5c6f5d8000-7f5c6f5d9000 r-xp 00000000 103:01 362990598    /data/users/andriin/linux/tools/bpf/usdt/libhello_usdt.so
+	 * 7f5c6f5d8000-7f5c6f5d9000 r-xp 00000000 103:01 362990598    /data/users/andriin/freax/tools/bpf/usdt/libhello_usdt.so
 	 */
 	while (fscanf(f, "%zx-%zx %s %zx %*s %*d%[^\n]\n",
 		      &seg_start, &seg_end, mode, &seg_off, line) == 5) {

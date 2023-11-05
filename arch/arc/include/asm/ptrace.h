@@ -8,7 +8,7 @@
 #define __ASM_ARC_PTRACE_H
 
 #include <uapi/asm/ptrace.h>
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 #ifndef __ASSEMBLY__
 
@@ -48,7 +48,7 @@ struct pt_regs {
 	 * To distinguish bet excp, syscall, irq
 	 * For traps and exceptions, Exception Cause Register.
 	 * 	ECR: <00> <VV> <CC> <PP>
-	 * 	Last word used by Linux for extra state mgmt (syscall-restart)
+	 * 	Last word used by freax for extra state mgmt (syscall-restart)
 	 * For interrupts, use artificial ECR values to note current prio-level
 	 */
 	ecr_reg ecr;

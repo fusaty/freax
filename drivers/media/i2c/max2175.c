@@ -9,17 +9,17 @@
  * Copyright (C) 2017 Renesas Electronics Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/max2175.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/max2175.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 

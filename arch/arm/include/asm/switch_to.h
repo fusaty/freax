@@ -2,7 +2,7 @@
 #ifndef __ASM_ARM_SWITCH_TO_H
 #define __ASM_ARM_SWITCH_TO_H
 
-#include <linux/thread_info.h>
+#include <freax/thread_info.h>
 #include <asm/smp_plat.h>
 
 /*

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/phy.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/otg-fsm.h>
-#include <linux/usb/chipidea.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/uaccess.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/phy.h>
+#include <freax/usb/otg.h>
+#include <freax/usb/otg-fsm.h>
+#include <freax/usb/chipidea.h>
 
 #include "ci.h"
 #include "udc.h"

@@ -10,24 +10,24 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/suspend.h>
-#include <linux/kthread.h>
-#include <linux/moduleparam.h>
-#include <linux/freezer.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
+#include <freax/suspend.h>
+#include <freax/kthread.h>
+#include <freax/moduleparam.h>
+#include <freax/freezer.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 
 #include <asm/machdep.h>
 #include <asm/io.h>

@@ -6,10 +6,10 @@
  * possible results for possible values of the operands.
  */
 
-#ifndef _LINUX_TNUM_H
-#define _LINUX_TNUM_H
+#ifndef _freax_TNUM_H
+#define _freax_TNUM_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct tnum {
 	u64 value;
@@ -114,4 +114,4 @@ static inline bool tnum_subreg_is_const(struct tnum a)
 	return !(tnum_subreg(a)).mask;
 }
 
-#endif /* _LINUX_TNUM_H */
+#endif /* _freax_TNUM_H */

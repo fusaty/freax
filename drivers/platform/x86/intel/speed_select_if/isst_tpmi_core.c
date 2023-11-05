@@ -17,14 +17,14 @@
  * the hardware mapping.
  */
 
-#include <linux/auxiliary_bus.h>
-#include <linux/delay.h>
-#include <linux/intel_tpmi.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <uapi/linux/isst_if.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/delay.h>
+#include <freax/intel_tpmi.h>
+#include <freax/fs.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <uapi/freax/isst_if.h>
 
 #include "isst_tpmi_core.h"
 #include "isst_if_common.h"

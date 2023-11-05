@@ -4,18 +4,18 @@
  *
  * Copyright (C) 2015, Intel Corporation
  *
- * Authors: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Andy Shevchenko <andriy.shevchenko@freax.intel.com>
+ *          Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/pxa2xx_ssp.h>
+#include <freax/acpi.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/pxa2xx_ssp.h>
 
 #include "intel-lpss.h"
 
@@ -220,7 +220,7 @@ static struct platform_driver intel_lpss_acpi_driver = {
 
 module_platform_driver(intel_lpss_acpi_driver);
 
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@freax.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@freax.intel.com>");
 MODULE_DESCRIPTION("Intel LPSS ACPI driver");
 MODULE_LICENSE("GPL v2");

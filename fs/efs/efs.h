@@ -14,8 +14,8 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/uaccess.h>
+#include <freax/fs.h>
+#include <freax/uaccess.h>
 
 #define EFS_VERSION "1.0a"
 
@@ -78,7 +78,7 @@ struct efs_inode_info {
 	struct inode	vfs_inode;
 };
 
-#include <linux/efs_fs_sb.h>
+#include <freax/efs_fs_sb.h>
 
 #define EFS_DIRBSIZE_BITS	EFS_BLOCKSIZE_BITS
 #define EFS_DIRBSIZE		(1 << EFS_DIRBSIZE_BITS)

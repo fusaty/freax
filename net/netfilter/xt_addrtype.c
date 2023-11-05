@@ -6,11 +6,11 @@
  *  (C) 2007 Laszlo Attila Toth <panther@balabit.hu>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/ip.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/ip.h>
 #include <net/route.h>
 
 #if IS_ENABLED(CONFIG_IP6_NF_IPTABLES)
@@ -19,9 +19,9 @@
 #include <net/ip6_fib.h>
 #endif
 
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter/xt_addrtype.h>
-#include <linux/netfilter/x_tables.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netfilter/xt_addrtype.h>
+#include <freax/netfilter/x_tables.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Patrick McHardy <kaber@trash.net>");

@@ -12,27 +12,27 @@
 
 #define pr_fmt(fmt)  "[nandsim]" fmt
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/vmalloc.h>
-#include <linux/math64.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/vmalloc.h>
+#include <freax/math64.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/delay.h>
+#include <freax/list.h>
+#include <freax/random.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/seq_file.h>
+#include <freax/debugfs.h>
 
 /* Default simulator parameters values */
 #if !defined(CONFIG_NANDSIM_FIRST_ID_BYTE)  || \

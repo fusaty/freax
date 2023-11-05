@@ -2,24 +2,24 @@
 /*
  *  Copyright (C) 2000-2003 Deep Blue Solutions Ltd
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/memblock.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/serial.h>
-#include <linux/io.h>
-#include <linux/stat.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pgtable.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/memblock.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/amba/bus.h>
+#include <freax/amba/serial.h>
+#include <freax/io.h>
+#include <freax/stat.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/pgtable.h>
 
 #include <asm/mach-types.h>
 #include <asm/mach/time.h>

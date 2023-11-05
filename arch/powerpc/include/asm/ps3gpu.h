@@ -8,7 +8,7 @@
 #ifndef _ASM_POWERPC_PS3GPU_H
 #define _ASM_POWERPC_PS3GPU_H
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 #include <asm/lv1call.h>
 

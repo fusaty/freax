@@ -5,14 +5,14 @@
  * some parts inspired by the cxacru driver
  */
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/usbnet.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/workqueue.h>
+#include <freax/mii.h>
+#include <freax/usb.h>
+#include <freax/usb/usbnet.h>
 
 enum cx82310_cmd {
 	CMD_START		= 0x84,	/* no effect? */

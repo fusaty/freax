@@ -4,8 +4,8 @@
 * Copyright (C) 2012 Texas Instruments
 */
 
-#ifndef __LINUX_LM3630A_H
-#define __LINUX_LM3630A_H
+#ifndef __freax_LM3630A_H
+#define __freax_LM3630A_H
 
 #define LM3630A_NAME "lm3630a_bl"
 
@@ -62,4 +62,4 @@ struct lm3630a_platform_data {
 	enum lm3630a_pwm_ctrl pwm_ctrl;
 };
 
-#endif /* __LINUX_LM3630A_H */
+#endif /* __freax_LM3630A_H */

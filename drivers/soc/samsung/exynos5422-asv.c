@@ -6,11 +6,11 @@
  * Samsung Exynos 5422 SoC Adaptive Supply Voltage support
  */
 
-#include <linux/bitrev.h>
-#include <linux/errno.h>
-#include <linux/regmap.h>
-#include <linux/soc/samsung/exynos-chipid.h>
-#include <linux/slab.h>
+#include <freax/bitrev.h>
+#include <freax/errno.h>
+#include <freax/regmap.h>
+#include <freax/soc/samsung/exynos-chipid.h>
+#include <freax/slab.h>
 
 #include "exynos-asv.h"
 #include "exynos5422-asv.h"

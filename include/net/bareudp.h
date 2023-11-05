@@ -3,8 +3,8 @@
 #ifndef __NET_BAREUDP_H
 #define __NET_BAREUDP_H
 
-#include <linux/netdevice.h>
-#include <linux/types.h>
+#include <freax/netdevice.h>
+#include <freax/types.h>
 #include <net/rtnetlink.h>
 
 static inline bool netif_is_bareudp(const struct net_device *dev)

@@ -13,18 +13,18 @@
  *    sub-devices.
  */
  
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/of_irq.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_device.h>
+#include <freax/of_platform.h>
+#include <freax/of_irq.h>
 
 #include <asm/machdep.h>
 #include <asm/macio.h>
@@ -449,7 +449,7 @@ static int macio_skip_device(struct device_node *np)
  * 
  * This function will do the job of extracting devices from the
  * Open Firmware device tree, build macio_dev structures and add
- * them to the Linux device tree.
+ * them to the freax device tree.
  * 
  * For now, childs of media-bay are added now as well. This will
  * change rsn though.

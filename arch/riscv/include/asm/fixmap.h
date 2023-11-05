@@ -6,9 +6,9 @@
 #ifndef _ASM_RISCV_FIXMAP_H
 #define _ASM_RISCV_FIXMAP_H
 
-#include <linux/kernel.h>
-#include <linux/sizes.h>
-#include <linux/pgtable.h>
+#include <freax/kernel.h>
+#include <freax/sizes.h>
+#include <freax/pgtable.h>
 #include <asm/page.h>
 
 #ifdef CONFIG_MMU

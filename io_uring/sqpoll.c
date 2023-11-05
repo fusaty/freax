@@ -3,16 +3,16 @@
  * Contains the core associated with submission side polling of the SQ
  * ring, offloading submissions from the application to a kernel thread.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/audit.h>
-#include <linux/security.h>
-#include <linux/io_uring.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/file.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/audit.h>
+#include <freax/security.h>
+#include <freax/io_uring.h>
 
-#include <uapi/linux/io_uring.h>
+#include <uapi/freax/io_uring.h>
 
 #include "io_uring.h"
 #include "sqpoll.h"

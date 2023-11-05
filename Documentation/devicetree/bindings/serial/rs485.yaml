@@ -42,7 +42,7 @@ properties:
       True indicates active high (default is low).
     $ref: /schemas/types.yaml#/definitions/flag
 
-  linux,rs485-enabled-at-boot-time:
+  freax,rs485-enabled-at-boot-time:
     description: enables the rs485 feature at boot time. It can be disabled
       later with proper ioctl.
     $ref: /schemas/types.yaml#/definitions/flag

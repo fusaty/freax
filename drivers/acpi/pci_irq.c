@@ -11,17 +11,17 @@
 
 #define pr_fmt(fmt) "ACPI: PCI: " fmt
 
-#include <linux/dmi.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/pm.h>
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
+#include <freax/dmi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/pm.h>
+#include <freax/pci.h>
+#include <freax/acpi.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
 
 struct acpi_prt_entry {
 	struct acpi_pci_id	id;

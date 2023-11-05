@@ -2,9 +2,9 @@
 #ifndef SCSI_TRANSPORT_SRP_H
 #define SCSI_TRANSPORT_SRP_H
 
-#include <linux/transport_class.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
+#include <freax/transport_class.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
 
 #define SRP_RPORT_ROLE_INITIATOR 0
 #define SRP_RPORT_ROLE_TARGET 1

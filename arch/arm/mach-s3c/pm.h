@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Copyright (c) 2004 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armfreax.simtec.co.uk/
  *	Written by Ben Dooks, <ben@simtec.co.uk>
  */
 

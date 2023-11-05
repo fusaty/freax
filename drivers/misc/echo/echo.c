@@ -90,9 +90,9 @@
    Mark, Pawel, and Pavel.
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include "echo.h"
 

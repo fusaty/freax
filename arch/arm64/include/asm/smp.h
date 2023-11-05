@@ -5,7 +5,7 @@
 #ifndef __ASM_SMP_H
 #define __ASM_SMP_H
 
-#include <linux/const.h>
+#include <freax/const.h>
 
 /* Values for secondary_data.status */
 #define CPU_STUCK_REASON_SHIFT		(8)
@@ -27,9 +27,9 @@
 
 #include <asm/percpu.h>
 
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/thread_info.h>
+#include <freax/threads.h>
+#include <freax/cpumask.h>
+#include <freax/thread_info.h>
 
 DECLARE_PER_CPU_READ_MOSTLY(int, cpu_number);
 

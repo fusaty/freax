@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * psr.h: This file holds the macros for masking off various parts of
  *        the processor status register on the Sparc. This is valid
@@ -9,8 +9,8 @@
  * Copyright (C) 1994 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#ifndef _UAPI__LINUX_SPARC_PSR_H
-#define _UAPI__LINUX_SPARC_PSR_H
+#ifndef _UAPI__freax_SPARC_PSR_H
+#define _UAPI__freax_SPARC_PSR_H
 
 /* The Sparc PSR fields are laid out as the following:
  *
@@ -45,4 +45,4 @@
 #define PSR_IMPL_LEON		0xf
 
 
-#endif /* _UAPI__LINUX_SPARC_PSR_H */
+#endif /* _UAPI__freax_SPARC_PSR_H */

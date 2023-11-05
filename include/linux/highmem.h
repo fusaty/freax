@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_HIGHMEM_H
-#define _LINUX_HIGHMEM_H
+#ifndef _freax_HIGHMEM_H
+#define _freax_HIGHMEM_H
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/cacheflush.h>
-#include <linux/kmsan.h>
-#include <linux/mm.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/bug.h>
+#include <freax/cacheflush.h>
+#include <freax/kmsan.h>
+#include <freax/mm.h>
+#include <freax/uaccess.h>
+#include <freax/hardirq.h>
 
 #include "highmem-internal.h"
 
@@ -571,4 +571,4 @@ static inline void unmap_and_put_page(struct page *page, void *addr)
 	folio_release_kmap(page_folio(page), addr);
 }
 
-#endif /* _LINUX_HIGHMEM_H */
+#endif /* _freax_HIGHMEM_H */

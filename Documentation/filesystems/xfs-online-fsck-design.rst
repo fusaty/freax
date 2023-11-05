@@ -80,7 +80,7 @@ cross-references different types of metadata records with each other to look
 for inconsistencies.
 People do not like losing data, so most fsck tools also contains some ability
 to correct any problems found.
-As a word of caution -- the primary goal of most Linux fsck tools is to restore
+As a word of caution -- the primary goal of most freax fsck tools is to restore
 the filesystem metadata to a consistent state, not to maximize the data
 recovered.
 That precedent will not be challenged here.
@@ -106,9 +106,9 @@ TLDR; Show Me the Code!
 -----------------------
 
 Code is posted to the kernel.org git trees as follows:
-`kernel changes <https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-symlink>`_,
-`userspace changes <https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-media-scan-service>`_, and
-`QA test changes <https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfstests-dev.git/log/?h=repair-dirs>`_.
+`kernel changes <https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-symlink>`_,
+`userspace changes <https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-media-scan-service>`_, and
+`QA test changes <https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfstests-dev.git/log/?h=repair-dirs>`_.
 Each kernel patchset adding an online repair function will use the same branch
 name across the kernel, xfsprogs, and fstests git repos.
 
@@ -116,7 +116,7 @@ Existing Tools
 --------------
 
 The online fsck tool described here will be the third tool in the history of
-XFS (on Linux) to check and repair filesystems.
+XFS (on freax) to check and repair filesystems.
 Two programs precede it:
 
 The first program, ``xfs_check``, was created as part of the XFS debugger
@@ -653,7 +653,7 @@ This improves code quality by enabling the authors of online fsck to find and
 fix bugs early, and helps developers of new features to find integration
 issues earlier in their development effort.
 
-The Linux filesystem community shares a common QA testing suite,
+The freax filesystem community shares a common QA testing suite,
 `fstests <https://git.kernel.org/pub/scm/fs/xfs/xfstests-dev.git/>`_, for
 functional and regression testing.
 Even before development work began on online fsck, fstests (when run on XFS)
@@ -765,11 +765,11 @@ and they enable XFS developers to find deficiencies in the code base.
 
 Proposed patchsets include
 `general fuzzer improvements
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfstests-dev.git/log/?h=fuzzer-improvements>`_,
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfstests-dev.git/log/?h=fuzzer-improvements>`_,
 `fuzzing baselines
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfstests-dev.git/log/?h=fuzz-baseline>`_,
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfstests-dev.git/log/?h=fuzz-baseline>`_,
 and `improvements in fuzz testing comprehensiveness
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfstests-dev.git/log/?h=more-fuzz-testing>`_.
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfstests-dev.git/log/?h=more-fuzz-testing>`_.
 
 Stress Testing
 --------------
@@ -802,9 +802,9 @@ any unexpected filesystem shutdowns due to corrupted metadata, kernel hang
 check warnings, or any other sort of mischief.
 
 Proposed patchsets include `general stress testing
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfstests-dev.git/log/?h=race-scrub-and-mount-state-changes>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfstests-dev.git/log/?h=race-scrub-and-mount-state-changes>`_
 and the `evolution of existing per-function stress testing
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfstests-dev.git/log/?h=refactor-scrub-stress>`_.
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfstests-dev.git/log/?h=refactor-scrub-stress>`_.
 
 4. User Interface
 =================
@@ -888,7 +888,7 @@ No such hardening has been performed for the cron job.
 
 Proposed patchset:
 `Enabling the xfs_scrub background service
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-media-scan-service>`_.
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-media-scan-service>`_.
 
 Health Reporting
 ----------------
@@ -914,10 +914,10 @@ conversation with early adopters and potential downstream users of XFS.
 
 Proposed patchsets include
 `wiring up health reports to correction returns
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=corruption-health-reports>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=corruption-health-reports>`_
 and
 `preservation of sickness info during memory reclaim
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=indirect-health-reporting>`_.
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=indirect-health-reporting>`_.
 
 5. Kernel Algorithms and Data Structures
 ========================================
@@ -1312,17 +1312,17 @@ Space allocation records are cross-referenced as follows:
 
 Proposed patchsets are the series to find gaps in
 `refcount btree
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=scrub-detect-refcount-gaps>`_,
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=scrub-detect-refcount-gaps>`_,
 `inode btree
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=scrub-detect-inobt-gaps>`_, and
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=scrub-detect-inobt-gaps>`_, and
 `rmap btree
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=scrub-detect-rmapbt-gaps>`_ records;
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=scrub-detect-rmapbt-gaps>`_ records;
 to find
 `mergeable records
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=scrub-detect-mergeable-records>`_;
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=scrub-detect-mergeable-records>`_;
 and to
 `improve cross referencing with rmap
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=scrub-strengthen-rmap-checking>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=scrub-strengthen-rmap-checking>`_
 before starting a repair.
 
 Checking Extended Attributes
@@ -1758,7 +1758,7 @@ be woken up whenever the intent count drops to zero.
 
 The proposed patchset is the
 `scrub intent drain series
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=scrub-drain-intents>`_.
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=scrub-drain-intents>`_.
 
 .. _jump_labels:
 
@@ -1870,7 +1870,7 @@ At any given time, online fsck does not need to keep the entire record set in
 memory, which means that individual records can be paged out if necessary.
 Continued development of online fsck demonstrated that the ability to perform
 indexed data storage would also be very useful.
-Fortunately, the Linux kernel already has a facility for byte-addressable and
+Fortunately, the freax kernel already has a facility for byte-addressable and
 pageable storage: tmpfs.
 In-kernel graphics drivers (most notably i915) take advantage of tmpfs files
 to store intermediate data that doesn't need to be in memory at all times, so
@@ -2045,7 +2045,7 @@ record from the bag.
 
 The proposed patchset is the
 `big in-memory array
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=big-array>`_.
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=big-array>`_.
 
 Iterating Array Elements
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -2098,7 +2098,7 @@ Case Study: Sorting xfarrays
 The sorting algorithm used in the xfarray is actually a combination of adaptive
 quicksort and a heapsort subalgorithm in the spirit of
 `Sedgewick <https://algs4.cs.princeton.edu/23quicksort/>`_ and
-`pdqsort <https://github.com/orlp/pdqsort>`_, with customizations for the Linux
+`pdqsort <https://github.com/orlp/pdqsort>`_, with customizations for the freax
 kernel.
 To sort records in a reasonably short amount of time, ``xfarray`` takes
 advantage of the binary subpartitioning offered by quicksort, but it also uses
@@ -2107,7 +2107,7 @@ are poor.
 Both algorithms are (in general) O(n * lg(n)), but there is a wide performance
 gulf between the two implementations.
 
-The Linux kernel already contains a reasonably fast implementation of heapsort.
+The freax kernel already contains a reasonably fast implementation of heapsort.
 It only operates on regular C arrays, which limits the scope of its usefulness.
 There are two key places where the xfarray uses it:
 
@@ -2181,7 +2181,7 @@ file, which is why compaction is not required.
 
 The proposed patchset is at the start of the
 `extended attribute repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-xattrs>`_ series.
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-xattrs>`_ series.
 
 .. _xfbtree:
 
@@ -2223,7 +2223,7 @@ The next few sections describe how they actually work.
 
 The proposed patchset is the
 `in-memory btree
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=in-memory-btrees>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=in-memory-btrees>`_
 series.
 
 Using xfiles as a Buffer Cache Target
@@ -2469,10 +2469,10 @@ next section and the section about :ref:`reaping<reaping>` for more details.
 
 Proposed patchsets are the
 `bitmap rework
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-bitmap-rework>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-bitmap-rework>`_
 and the
 `preparation for bulk loading btrees
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-prep-for-bulk-loading>`_.
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-prep-for-bulk-loading>`_.
 
 
 Writing the New Tree
@@ -2633,7 +2633,7 @@ records are stored in the xfarray.
 
 The proposed patchset is the
 `AG btree repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-ag-btrees>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-ag-btrees>`_
 series.
 
 Case Study: Rebuilding the Space Reference Counts
@@ -2726,7 +2726,7 @@ Bag members are examined through ``xfarray_iter`` loops.
 
 The proposed patchset is the
 `AG btree repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-ag-btrees>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-ag-btrees>`_
 series.
 
 Case Study: Rebuilding File Fork Mapping Indices
@@ -2767,7 +2767,7 @@ any delayed allocation extents.
 
 The proposed patchset is the
 `file mapping repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-file-mappings>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-file-mappings>`_
 series.
 
 .. _reaping:
@@ -2852,7 +2852,7 @@ minimize the chances of this occurring.
 
 The proposed patchset is the
 `preparation for bulk loading btrees
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-prep-for-bulk-loading>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-prep-for-bulk-loading>`_
 series.
 
 Case Study: Reaping After a Regular Btree Repair
@@ -2952,7 +2952,7 @@ These blocks can then be reaped using the methods outlined above.
 
 The proposed patchset is the
 `AG btree repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-ag-btrees>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-ag-btrees>`_
 series.
 
 .. _rmap_reap:
@@ -2981,7 +2981,7 @@ in a separate :ref:`case study<rmap_repair>`.
 
 The proposed patchset is the
 `AG btree repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-ag-btrees>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-ag-btrees>`_
 series.
 
 Case Study: Rebuilding the AGFL
@@ -3001,7 +3001,7 @@ The allocation group free block list (AGFL) is repaired as follows:
 
 5. The next operation to fix the freelist will right-size the list.
 
-See `fs/xfs/scrub/agheader_repair.c <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/fs/xfs/scrub/agheader_repair.c>`_ for more details.
+See `fs/xfs/scrub/agheader_repair.c <https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/fs/xfs/scrub/agheader_repair.c>`_ for more details.
 
 Inode Record Repairs
 --------------------
@@ -3033,7 +3033,7 @@ fsck functions to run.
 
 The proposed patchset is the
 `inode
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-inodes>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-inodes>`_
 repair series.
 
 Quota Record Repairs
@@ -3054,7 +3054,7 @@ section about :ref:`live quotacheck <quotacheck>`.
 
 The proposed patchset is the
 `quota
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-quota>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-quota>`_
 repair series.
 
 .. _fscounters:
@@ -3149,12 +3149,12 @@ long enough to check and correct the summary counters.
 |                                                                          |
 | - A bug in the VFS meant that freeze could complete even when            |
 |   sync_filesystem fails to flush the filesystem and returns an error.    |
-|   This bug was fixed in Linux 5.17.                                      |
+|   This bug was fixed in freax 5.17.                                      |
 +--------------------------------------------------------------------------+
 
 The proposed patchset is the
 `summary counter cleanup
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-fscounters>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-fscounters>`_
 series.
 
 Full Filesystem Scans
@@ -3286,11 +3286,11 @@ back into a loadable state.
 
 The proposed patches are the
 `inode scanner
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=scrub-iscan>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=scrub-iscan>`_
 series.
 The first user of the new functionality is the
 `online quotacheck
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-quotacheck>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-quotacheck>`_
 series.
 
 Inode Management
@@ -3390,9 +3390,9 @@ behavior.
 
 Proposed patchsets include fixing
 `scrub iget usage
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=scrub-iget-fixes>`_ and
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=scrub-iget-fixes>`_ and
 `dir iget usage
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=scrub-dir-iget-fixes>`_.
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=scrub-dir-iget-fixes>`_.
 
 .. _ilocking:
 
@@ -3452,7 +3452,7 @@ exit early.
 
 The proposed patchset is the
 `directory repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-dirs>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-dirs>`_
 series.
 
 .. _fshooks:
@@ -3464,13 +3464,13 @@ The second piece of support that online fsck functions need during a full
 filesystem scan is the ability to stay informed about updates being made by
 other threads in the filesystem, since comparisons against the past are useless
 in a dynamic environment.
-Two pieces of Linux kernel infrastructure enable online fsck to monitor regular
+Two pieces of freax kernel infrastructure enable online fsck to monitor regular
 filesystem operations: filesystem hooks and :ref:`static keys<jump_labels>`.
 
 Filesystem hooks convey information about an ongoing filesystem operation to
 a downstream consumer.
 In this case, the downstream consumer is always an online fsck function.
-Because multiple fsck functions can run in parallel, online fsck uses the Linux
+Because multiple fsck functions can run in parallel, online fsck uses the freax
 notifier call chain facility to dispatch updates to any number of interested
 fsck processes.
 Call chains are a dynamic list, which means that they can be configured at
@@ -3603,7 +3603,7 @@ The inode scan APIs are pretty simple:
 
 This functionality is also a part of the
 `inode scanner
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=scrub-iscan>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=scrub-iscan>`_
 series.
 
 .. _quotacheck:
@@ -3695,7 +3695,7 @@ resource counts are set to the values in the shadow dquot.
 
 The proposed patchset is the
 `online quotacheck
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-quotacheck>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-quotacheck>`_
 series.
 
 .. _nlinks:
@@ -3753,7 +3753,7 @@ orphanage to prevent the file from being lost forever.
 
 The proposed patchset is the
 `file link count repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=scrub-nlinks>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=scrub-nlinks>`_
 series.
 
 .. _rmap_repair:
@@ -3837,7 +3837,7 @@ scan for reverse mapping records.
 
 The proposed patchset is the
 `rmap repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-rmap-btree>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-rmap-btree>`_
 series.
 
 Staging Repairs with Temporary Files on Disk
@@ -3979,7 +3979,7 @@ section.
 
 The proposed patches are in the
 `repair temporary files
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-tempfiles>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-tempfiles>`_
 series.
 
 Atomic Extent Swapping
@@ -4029,7 +4029,7 @@ old kernels.
 
 The proposed patchset is the
 `atomic extent swap
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=atomic-file-updates>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=atomic-file-updates>`_
 series.
 
 +--------------------------------------------------------------------------+
@@ -4325,7 +4325,7 @@ The temporary file is then reaped.
 
 The proposed patchset is the
 `realtime summary repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-rtsummary>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-rtsummary>`_
 series.
 
 Case Study: Salvaging Extended Attributes
@@ -4371,7 +4371,7 @@ Salvaging extended attributes is done as follows:
 
 The proposed patchset is the
 `extended attribute repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-xattrs>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-xattrs>`_
 series.
 
 Fixing Directories
@@ -4449,7 +4449,7 @@ There is no known solution.
 
 The proposed patchset is the
 `directory repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-dirs>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-dirs>`_
 series.
 
 Parent Pointers
@@ -4486,7 +4486,7 @@ Both online and offline repair can use this strategy.
 | extended attribute in the child that could be used to identify the       |
 | parent directory.                                                        |
 | Unfortunately, this early implementation had major shortcomings and was  |
-| never merged into Linux XFS:                                             |
+| never merged into freax XFS:                                             |
 |                                                                          |
 | 1. The XFS codebase of the late 2000s did not have the infrastructure to |
 |    enforce strong referential integrity in the directory tree.           |
@@ -4565,7 +4565,7 @@ a :ref:`directory entry live update hook <liveupdate>` as follows:
 
 The proposed patchset is the
 `parent pointers directory repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=pptrs-online-dir-repair>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=pptrs-online-dir-repair>`_
 series.
 
 **Unresolved Question**: How will repair ensure that the ``dirent_pos`` fields
@@ -4602,7 +4602,7 @@ match in the reconstructed directory?
    Names shorter than 247 bytes could be stored directly.
 
 Discussion is ongoing under the `parent pointers patch deluge
-<https://www.spinics.net/lists/linux-xfs/msg69397.html>`_.
+<https://www.spinics.net/lists/freax-xfs/msg69397.html>`_.
 
 Case Study: Repairing Parent Pointers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -4648,7 +4648,7 @@ directory reconstruction:
 
 The proposed patchset is the
 `parent pointers repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=pptrs-online-parent-repair>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=pptrs-online-parent-repair>`_
 series.
 
 Digression: Offline Checking of Parent Pointers
@@ -4703,7 +4703,7 @@ connectivity checks:
 
 The proposed patchset is the
 `offline parent pointers repair
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfsprogs-dev.git/log/?h=pptrs-repair>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfsprogs-dev.git/log/?h=pptrs-repair>`_
 series.
 
 Rebuilding directories from parent pointers in offline repair is very
@@ -4788,7 +4788,7 @@ Orphaned files are adopted by the orphanage as follows:
 
 The proposed patches are in the
 `orphanage adoption
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=repair-orphanage>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=repair-orphanage>`_
 series.
 
 6. Userspace Algorithms and Data Structures
@@ -4906,10 +4906,10 @@ move on to more pressing issues.
 
 The proposed patchsets are the scrub
 `performance tweaks
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-performance-tweaks>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-performance-tweaks>`_
 and the
 `inode scan rebalance
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-iscan-rebalance>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-iscan-rebalance>`_
 series.
 
 .. _scrubrepair:
@@ -4994,16 +4994,16 @@ filesystem.
 
 The proposed patchsets are the
 `repair warning improvements
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-better-repair-warnings>`_,
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-better-repair-warnings>`_,
 refactoring of the
 `repair data dependency
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-repair-data-deps>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-repair-data-deps>`_
 and
 `object tracking
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-object-tracking>`_,
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-object-tracking>`_,
 and the
 `repair scheduling
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-repair-scheduling>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfsprogs-dev.git/log/?h=scrub-repair-scheduling>`_
 improvement series.
 
 Checking Names for Confusable Unicode Sequences
@@ -5030,7 +5030,7 @@ presented together -- all the names in a directory, or all the attributes of a
 file.
 
 Although the Unix naming constraints are very permissive, the reality of most
-modern-day Linux systems is that programs work with Unicode character code
+modern-day freax systems is that programs work with Unicode character code
 points to support international languages.
 These programs typically encode those code points in UTF-8 when interfacing
 with the C library because the kernel expects null-terminated names.
@@ -5207,10 +5207,10 @@ call to XFS.
 
 The relevant patchsets are the
 `kernel vectorized scrub
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=vectorized-scrub>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=vectorized-scrub>`_
 and
 `userspace vectorized scrub
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfsprogs-dev.git/log/?h=vectorized-scrub>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfsprogs-dev.git/log/?h=vectorized-scrub>`_
 series.
 
 Quality of Service Targets for Scrub
@@ -5299,10 +5299,10 @@ all.
 
 The relevant patchsets are the
 `kernel freespace defrag
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfs-linux.git/log/?h=defrag-freespace>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfs-freax.git/log/?h=defrag-freespace>`_
 and
 `userspace freespace defrag
-<https://git.kernel.org/pub/scm/linux/kernel/git/djwong/xfsprogs-dev.git/log/?h=defrag-freespace>`_
+<https://git.kernel.org/pub/scm/freax/kernel/git/djwong/xfsprogs-dev.git/log/?h=defrag-freespace>`_
 series.
 
 Shrinking Filesystems

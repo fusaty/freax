@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/drivers/acorn/scsi/acornscsi-io.S: Acorn SCSI card IO
+ *  freax/drivers/acorn/scsi/acornscsi-io.S: Acorn SCSI card IO
  */
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 #include <asm/assembler.h>
 #include <mach/hardware.h>

@@ -2,20 +2,20 @@
 //
 // Copyright (c) 2018 MediaTek Inc.
 
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox/mtk-cmdq-mailbox.h>
-#include <linux/of.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mailbox_controller.h>
+#include <freax/mailbox/mtk-cmdq-mailbox.h>
+#include <freax/of.h>
 
 #define CMDQ_OP_CODE_MASK		(0xff << CMDQ_OP_CODE_SHIFT)
 #define CMDQ_NUM_CMD(t)			(t->cmd_buf_size / CMDQ_INST_SIZE)

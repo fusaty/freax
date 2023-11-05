@@ -10,35 +10,35 @@
 //
 // Copyright 2004-2009 Freescale Semiconductor, Inc. All Rights Reserved.
 
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_dma.h>
-#include <linux/workqueue.h>
+#include <freax/init.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/semaphore.h>
+#include <freax/spinlock.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/firmware.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/dmaengine.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_dma.h>
+#include <freax/workqueue.h>
 
 #include <asm/irq.h>
-#include <linux/dma/imx-dma.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <freax/dma/imx-dma.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mfd/syscon/imx6q-iomuxc-gpr.h>
 
 #include "dmaengine.h"
 #include "virt-dma.h"

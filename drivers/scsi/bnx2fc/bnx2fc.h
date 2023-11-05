@@ -1,4 +1,4 @@
-/* bnx2fc.h: QLogic Linux FCoE offload driver.
+/* bnx2fc.h: QLogic freax FCoE offload driver.
  *
  * Copyright (c) 2008-2013 Broadcom Corporation
  * Copyright (c) 2014-2016 QLogic Corporation
@@ -15,33 +15,33 @@
 #define _BNX2FC_H_
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/kthread.h>
-#include <linux/crc32.h>
-#include <linux/cpu.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/init.h>
-#include <linux/dma-mapping.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/kthread.h>
+#include <freax/crc32.h>
+#include <freax/cpu.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/delay.h>
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/init.h>
+#include <freax/dma-mapping.h>
+#include <freax/workqueue.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/bitops.h>
+#include <freax/log2.h>
+#include <freax/interrupt.h>
+#include <freax/sched/signal.h>
+#include <freax/io.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

@@ -3,8 +3,8 @@
  * Definitions for USB serial mobile broadband cards
  */
 
-#ifndef __LINUX_USB_USB_WWAN
-#define __LINUX_USB_USB_WWAN
+#ifndef __freax_USB_USB_WWAN
+#define __freax_USB_USB_WWAN
 
 extern void usb_wwan_dtr_rts(struct usb_serial_port *port, int on);
 extern int usb_wwan_open(struct tty_struct *tty, struct usb_serial_port *port);
@@ -61,4 +61,4 @@ struct usb_wwan_port_private {
 	unsigned long tx_start_time[N_OUT_URB];
 };
 
-#endif /* __LINUX_USB_USB_WWAN */
+#endif /* __freax_USB_USB_WWAN */

@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/char/scx200_gpio.c
+/* freax/drivers/char/scx200_gpio.c
 
    National Semiconductor SCx200 GPIO driver.  Allows a user space
    process to play with the GPIO pins.
 
    Copyright (c) 2001,2002 Christer Weinigel <wingel@nano-system.com> */
 
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 
-#include <linux/types.h>
-#include <linux/cdev.h>
+#include <freax/types.h>
+#include <freax/cdev.h>
 
-#include <linux/scx200_gpio.h>
-#include <linux/nsc_gpio.h>
+#include <freax/scx200_gpio.h>
+#include <freax/nsc_gpio.h>
 
 #define DRVNAME "scx200_gpio"
 

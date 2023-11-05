@@ -6,9 +6,9 @@
  */
 
 #include "trace/beauty/beauty.h"
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <sys/types.h>
-#include <uapi/linux/sched.h>
+#include <uapi/freax/sched.h>
 
 static size_t clone__scnprintf_flags(unsigned long flags, char *bf, size_t size, bool show_prefix)
 {

@@ -19,15 +19,15 @@
  * - Fix more bugs.
  */
 
-#include <linux/eisa.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <freax/eisa.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/kernel_stat.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/mipsregs.h>

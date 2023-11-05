@@ -2,22 +2,22 @@
 /*
  * PPS core file
  *
- * Copyright (C) 2005-2009   Rodolfo Giometti <giometti@linux.it>
+ * Copyright (C) 2005-2009   Rodolfo Giometti <giometti@freax.it>
  */
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/uaccess.h>
-#include <linux/idr.h>
-#include <linux/mutex.h>
-#include <linux/cdev.h>
-#include <linux/poll.h>
-#include <linux/pps_kernel.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/uaccess.h>
+#include <freax/idr.h>
+#include <freax/mutex.h>
+#include <freax/cdev.h>
+#include <freax/poll.h>
+#include <freax/pps_kernel.h>
+#include <freax/slab.h>
 
 #include "kc.h"
 
@@ -469,9 +469,9 @@ static int __init pps_init(void)
 		goto remove_class;
 	}
 
-	pr_info("LinuxPPS API ver. %d registered\n", PPS_API_VERS);
+	pr_info("freaxPPS API ver. %d registered\n", PPS_API_VERS);
 	pr_info("Software ver. %s - Copyright 2005-2007 Rodolfo Giometti "
-		"<giometti@linux.it>\n", PPS_VERSION);
+		"<giometti@freax.it>\n", PPS_VERSION);
 
 	return 0;
 
@@ -484,6 +484,6 @@ remove_class:
 subsys_initcall(pps_init);
 module_exit(pps_exit);
 
-MODULE_AUTHOR("Rodolfo Giometti <giometti@linux.it>");
-MODULE_DESCRIPTION("LinuxPPS support (RFC 2783) - ver. " PPS_VERSION);
+MODULE_AUTHOR("Rodolfo Giometti <giometti@freax.it>");
+MODULE_DESCRIPTION("freaxPPS support (RFC 2783) - ver. " PPS_VERSION);
 MODULE_LICENSE("GPL");

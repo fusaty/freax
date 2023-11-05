@@ -12,7 +12,7 @@
 通用基数树/稀疏数组
 ===================
 
-通用基数树/稀疏数组的相关内容请见include/linux/generic-radix-tree.h文件中的
+通用基数树/稀疏数组的相关内容请见include/freax/generic-radix-tree.h文件中的
 “DOC: Generic radix trees/sparse arrays”。
 
 通用基数树函数
@@ -20,4 +20,4 @@
 
 该API在以下内核代码中:
 
-include/linux/generic-radix-tree.h
+include/freax/generic-radix-tree.h

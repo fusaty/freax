@@ -14,25 +14,25 @@
  * ----------------------------
  */
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/moduleparam.h>
-#include <linux/interrupt.h>
-#include <linux/param.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/jiffies.h>
-#include <linux/miscdevice.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/wait.h>
+#include <freax/mutex.h>
+#include <freax/device.h>
+#include <freax/cdev.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/moduleparam.h>
+#include <freax/interrupt.h>
+#include <freax/param.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
+#include <freax/jiffies.h>
+#include <freax/miscdevice.h>
 
 /* ----------------------------
  *       driver parameters

@@ -3,33 +3,33 @@
  * Driver for Broadcom MPI3 Storage Controllers
  *
  * Copyright (C) 2017-2023 Broadcom Inc.
- *  (mailto: mpi3mr-linuxdrv.pdl@broadcom.com)
+ *  (mailto: mpi3mr-freaxdrv.pdl@broadcom.com)
  *
  */
 
 #ifndef MPI3MR_H_INCLUDED
 #define MPI3MR_H_INCLUDED
 
-#include <linux/blkdev.h>
-#include <linux/blk-mq.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/delay.h>
-#include <linux/dmapool.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
-#include <linux/utsname.h>
-#include <linux/workqueue.h>
+#include <freax/blkdev.h>
+#include <freax/blk-mq.h>
+#include <freax/blk-mq-pci.h>
+#include <freax/delay.h>
+#include <freax/dmapool.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
+#include <freax/utsname.h>
+#include <freax/workqueue.h>
 #include <asm/unaligned.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -60,7 +60,7 @@ extern atomic64_t event_counter;
 
 #define MPI3MR_DRIVER_NAME	"mpi3mr"
 #define MPI3MR_DRIVER_LICENSE	"GPL"
-#define MPI3MR_DRIVER_AUTHOR	"Broadcom Inc. <mpi3mr-linuxdrv.pdl@broadcom.com>"
+#define MPI3MR_DRIVER_AUTHOR	"Broadcom Inc. <mpi3mr-freaxdrv.pdl@broadcom.com>"
 #define MPI3MR_DRIVER_DESC	"MPI3 Storage Controller Device Driver"
 
 #define MPI3MR_NAME_LENGTH	32

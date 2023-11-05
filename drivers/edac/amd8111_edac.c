@@ -9,12 +9,12 @@
  * 		Hu Yongqi <yongqi.hu@windriver.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/bitops.h>
-#include <linux/edac.h>
-#include <linux/pci_ids.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/bitops.h>
+#include <freax/edac.h>
+#include <freax/pci_ids.h>
 #include <asm/io.h>
 
 #include "edac_module.h"

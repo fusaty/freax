@@ -15,11 +15,11 @@
  * Send feedback to <scottm@somanetworks.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/string.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/string.h>
 #include "cpci_hotplug.h"
 
 #define DRIVER_VERSION	"0.1"

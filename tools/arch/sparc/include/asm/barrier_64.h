@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __TOOLS_LINUX_SPARC64_BARRIER_H
-#define __TOOLS_LINUX_SPARC64_BARRIER_H
+#ifndef __TOOLS_freax_SPARC64_BARRIER_H
+#define __TOOLS_freax_SPARC64_BARRIER_H
 
 /* Copied from the kernel sources to tools/:
  *
@@ -53,4 +53,4 @@ do {						\
 	___p1;					\
 })
 
-#endif /* !(__TOOLS_LINUX_SPARC64_BARRIER_H) */
+#endif /* !(__TOOLS_freax_SPARC64_BARRIER_H) */

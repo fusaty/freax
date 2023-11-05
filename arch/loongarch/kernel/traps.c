@@ -3,31 +3,31 @@
  * Author: Huacai Chen <chenhuacai@loongson.cn>
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/context_tracking.h>
-#include <linux/entry-common.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/kexec.h>
-#include <linux/module.h>
-#include <linux/extable.h>
-#include <linux/mm.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/debug.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/kallsyms.h>
-#include <linux/memblock.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/kgdb.h>
-#include <linux/kdebug.h>
-#include <linux/notifier.h>
-#include <linux/irq.h>
-#include <linux/perf_event.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/bug.h>
+#include <freax/compiler.h>
+#include <freax/context_tracking.h>
+#include <freax/entry-common.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/kexec.h>
+#include <freax/module.h>
+#include <freax/extable.h>
+#include <freax/mm.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/debug.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/kallsyms.h>
+#include <freax/memblock.h>
+#include <freax/interrupt.h>
+#include <freax/ptrace.h>
+#include <freax/kgdb.h>
+#include <freax/kdebug.h>
+#include <freax/notifier.h>
+#include <freax/irq.h>
+#include <freax/perf_event.h>
 
 #include <asm/addrspace.h>
 #include <asm/bootinfo.h>

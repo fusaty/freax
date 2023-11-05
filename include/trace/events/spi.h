@@ -5,8 +5,8 @@
 #if !defined(_TRACE_SPI_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SPI_H
 
-#include <linux/ktime.h>
-#include <linux/tracepoint.h>
+#include <freax/ktime.h>
+#include <freax/tracepoint.h>
 
 DECLARE_EVENT_CLASS(spi_controller,
 

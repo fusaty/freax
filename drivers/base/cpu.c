@@ -3,24 +3,24 @@
  * CPU subsystem support
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/cpu.h>
-#include <linux/topology.h>
-#include <linux/device.h>
-#include <linux/node.h>
-#include <linux/gfp.h>
-#include <linux/slab.h>
-#include <linux/percpu.h>
-#include <linux/acpi.h>
-#include <linux/of.h>
-#include <linux/cpufeature.h>
-#include <linux/tick.h>
-#include <linux/pm_qos.h>
-#include <linux/delay.h>
-#include <linux/sched/isolation.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/cpu.h>
+#include <freax/topology.h>
+#include <freax/device.h>
+#include <freax/node.h>
+#include <freax/gfp.h>
+#include <freax/slab.h>
+#include <freax/percpu.h>
+#include <freax/acpi.h>
+#include <freax/of.h>
+#include <freax/cpufeature.h>
+#include <freax/tick.h>
+#include <freax/pm_qos.h>
+#include <freax/delay.h>
+#include <freax/sched/isolation.h>
 
 #include "base.h"
 
@@ -145,7 +145,7 @@ static DEVICE_ATTR(release, S_IWUSR, NULL, cpu_release_store);
 #endif /* CONFIG_HOTPLUG_CPU */
 
 #ifdef CONFIG_KEXEC
-#include <linux/kexec.h>
+#include <freax/kexec.h>
 
 static ssize_t crash_notes_show(struct device *dev,
 				struct device_attribute *attr,
@@ -326,7 +326,7 @@ static void cpu_device_release(struct device *dev)
 	 * by the cpu device.
 	 *
 	 * Never copy this way of doing things, or you too will be made fun of
-	 * on the linux-kernel list, you have been warned.
+	 * on the freax-kernel list, you have been warned.
 	 */
 }
 

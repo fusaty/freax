@@ -6,12 +6,12 @@
  *	Andrew F. Davis <afd@ti.com>
  */
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
 #include <asm/unaligned.h>
 
-#include <linux/power/bq27xxx_battery.h>
+#include <freax/power/bq27xxx_battery.h>
 
 static DEFINE_IDR(battery_id);
 static DEFINE_MUTEX(battery_mutex);

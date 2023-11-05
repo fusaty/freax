@@ -6,7 +6,7 @@
 #if !defined(_TRACE_KVM_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_KVM_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 #include <asm/kvm_csr.h>
 
 #undef	TRACE_SYSTEM

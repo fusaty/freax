@@ -13,17 +13,17 @@
  *	The LEDs can be configured at runtime in /sys/class/leds/
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/utsname.h>
-#include <linux/capability.h>
-#include <linux/delay.h>
-#include <linux/reboot.h>
-#include <linux/uaccess.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/ioport.h>
+#include <freax/utsname.h>
+#include <freax/capability.h>
+#include <freax/delay.h>
+#include <freax/reboot.h>
+#include <freax/uaccess.h>
+#include <freax/leds.h>
+#include <freax/platform_device.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>
@@ -459,7 +459,7 @@ static int __init early_led_init(void)
 	int ret;
 
 	snprintf(lcd_text_default, sizeof(lcd_text_default),
-		"Linux %s", init_utsname()->release);
+		"freax %s", init_utsname()->release);
 	strcpy(lcd_text, lcd_text_default);
 	lcd_new_text = 1;
 

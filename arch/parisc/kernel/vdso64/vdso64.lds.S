@@ -5,7 +5,7 @@
 #include <asm/vdso.h>
 
 /* Default link addresses for the vDSOs */
-OUTPUT_FORMAT("elf64-hppa-linux")
+OUTPUT_FORMAT("elf64-hppa-freax")
 OUTPUT_ARCH(hppa:hppa2.0w)
 ENTRY(_start)
 

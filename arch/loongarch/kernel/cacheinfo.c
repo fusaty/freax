@@ -4,8 +4,8 @@
  *
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/cacheinfo.h>
-#include <linux/topology.h>
+#include <freax/cacheinfo.h>
+#include <freax/topology.h>
 #include <asm/bootinfo.h>
 #include <asm/cpu-info.h>
 

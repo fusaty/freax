@@ -8,8 +8,8 @@
 #ifndef _VIMC_COMMON_H_
 #define _VIMC_COMMON_H_
 
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 #include <media/media-device.h>
 #include <media/v4l2-device.h>
 

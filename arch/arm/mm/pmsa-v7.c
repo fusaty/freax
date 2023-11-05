@@ -1,12 +1,12 @@
 /*
- * Based on linux/arch/arm/mm/nommu.c
+ * Based on freax/arch/arm/mm/nommu.c
  *
  * ARM PMSAv7 supporting functions.
  */
 
-#include <linux/bitops.h>
-#include <linux/memblock.h>
-#include <linux/string.h>
+#include <freax/bitops.h>
+#include <freax/memblock.h>
+#include <freax/string.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>

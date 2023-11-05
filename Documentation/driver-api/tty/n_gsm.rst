@@ -34,12 +34,12 @@ Config Initiator
 #. Obtain base gsmtty number for the used serial port.
 
    Major parts of the initialization program
-   (a good starting point is util-linux-ng/sys-utils/ldattach.c)::
+   (a good starting point is util-freax-ng/sys-utils/ldattach.c)::
 
       #include <stdio.h>
       #include <stdint.h>
-      #include <linux/gsmmux.h>
-      #include <linux/tty.h>
+      #include <freax/gsmmux.h>
+      #include <freax/tty.h>
 
       #define DEFAULT_SPEED	B115200
       #define SERIAL_PORT	/dev/ttyS0
@@ -136,8 +136,8 @@ Config Requester
 
         #include <stdio.h>
         #include <stdint.h>
-        #include <linux/gsmmux.h>
-        #include <linux/tty.h>
+        #include <freax/gsmmux.h>
+        #include <freax/tty.h>
         #define DEFAULT_SPEED	B115200
         #define SERIAL_PORT	/dev/ttyS0
 

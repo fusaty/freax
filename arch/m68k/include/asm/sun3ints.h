@@ -1,5 +1,5 @@
 /*
- * sun3ints.h -- Linux/Sun3 interrupt handling code definitions
+ * sun3ints.h -- freax/Sun3 interrupt handling code definitions
  *
  * Erik Verbruggen (erik@bigmama.xtdnet.nl)
  *
@@ -11,8 +11,8 @@
 #ifndef SUN3INTS_H
 #define SUN3INTS_H
 
-#include <linux/types.h>
-#include <linux/interrupt.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
 #include <asm/intersil.h>
 #include <asm/oplib.h>
 #include <asm/traps.h>

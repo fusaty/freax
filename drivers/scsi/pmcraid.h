@@ -11,15 +11,15 @@
 #ifndef _PMCRAID_H
 #define _PMCRAID_H
 
-#include <linux/types.h>
-#include <linux/completion.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/completion.h>
+#include <freax/list.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
-#include <linux/cdev.h>
+#include <freax/cdev.h>
 #include <net/netlink.h>
 #include <net/genetlink.h>
-#include <linux/connector.h>
+#include <freax/connector.h>
 /*
  * Driver name   : string representing the driver name
  * Device file   : /dev file to be used for management interfaces

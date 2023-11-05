@@ -8,7 +8,7 @@
 #ifndef _CDX_H_
 #define _CDX_H_
 
-#include <linux/cdx/cdx_bus.h>
+#include <freax/cdx/cdx_bus.h>
 
 /**
  * struct cdx_dev_params - CDX device parameters
@@ -61,7 +61,7 @@ void cdx_unregister_controller(struct cdx_controller *cdx);
  * cdx_device_add - Add a CDX device. This function adds a CDX device
  *		on the CDX bus as per the device parameters provided
  *		by caller. It also creates and registers an associated
- *		Linux generic device.
+ *		freax generic device.
  * @dev_params: device parameters associated with the device to be created.
  *
  * Return: -errno on failure, 0 on success.
@@ -71,11 +71,11 @@ int cdx_device_add(struct cdx_dev_params *dev_params);
 /**
  * cdx_bus_add - Add a CDX bus. This function adds a bus on the CDX bus
  *		subsystem. It creates a CDX device for the corresponding bus and
- *		also registers an associated Linux generic device.
+ *		also registers an associated freax generic device.
  * @cdx: Associated CDX controller
  * @us_num: Bus number
  *
- * Return: associated Linux generic device pointer on success or NULL on failure.
+ * Return: associated freax generic device pointer on success or NULL on failure.
  */
 struct device *cdx_bus_add(struct cdx_controller *cdx, u8 bus_num);
 

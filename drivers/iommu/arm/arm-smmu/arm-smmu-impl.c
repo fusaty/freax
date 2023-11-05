@@ -4,8 +4,8 @@
 
 #define pr_fmt(fmt) "arm-smmu: " fmt
 
-#include <linux/bitfield.h>
-#include <linux/of.h>
+#include <freax/bitfield.h>
+#include <freax/of.h>
 
 #include "arm-smmu.h"
 

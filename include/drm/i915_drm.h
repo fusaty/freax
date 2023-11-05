@@ -26,7 +26,7 @@
 #ifndef _I915_DRM_H_
 #define _I915_DRM_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* For use by IPS driver */
 unsigned long i915_read_mch_val(void);

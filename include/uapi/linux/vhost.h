@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_VHOST_H
-#define _LINUX_VHOST_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_VHOST_H
+#define _freax_VHOST_H
 /* Userspace interface for in-kernel virtio accelerators. */
 
 /* vhost is used to reduce the number of system calls involved in virtio.
@@ -11,9 +11,9 @@
  * device configuration.
  */
 
-#include <linux/vhost_types.h>
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/vhost_types.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 #define VHOST_FILE_UNBIND -1
 

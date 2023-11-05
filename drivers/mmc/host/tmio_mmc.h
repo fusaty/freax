@@ -14,13 +14,13 @@
 #ifndef TMIO_MMC_H
 #define TMIO_MMC_H
 
-#include <linux/dmaengine.h>
-#include <linux/highmem.h>
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
-#include <linux/scatterlist.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
+#include <freax/dmaengine.h>
+#include <freax/highmem.h>
+#include <freax/mutex.h>
+#include <freax/pagemap.h>
+#include <freax/scatterlist.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
 
 #define CTL_SD_CMD 0x00
 #define CTL_ARG_REG 0x04

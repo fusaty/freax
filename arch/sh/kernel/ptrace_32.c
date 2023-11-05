@@ -7,23 +7,23 @@
  *
  * Audit support by Yuichi Nakamura <ynakam@hitachisoft.jp>
  */
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/security.h>
-#include <linux/signal.h>
-#include <linux/io.h>
-#include <linux/audit.h>
-#include <linux/seccomp.h>
-#include <linux/elf.h>
-#include <linux/regset.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
+#include <freax/user.h>
+#include <freax/security.h>
+#include <freax/signal.h>
+#include <freax/io.h>
+#include <freax/audit.h>
+#include <freax/seccomp.h>
+#include <freax/elf.h>
+#include <freax/regset.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/uaccess.h>
 #include <asm/processor.h>
 #include <asm/mmu_context.h>
 #include <asm/syscalls.h>

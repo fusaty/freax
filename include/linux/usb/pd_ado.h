@@ -5,8 +5,8 @@
  * Author: Adam Thomson <Adam.Thomson.Opensource@diasemi.com>
  */
 
-#ifndef __LINUX_USB_PD_ADO_H
-#define __LINUX_USB_PD_ADO_H
+#ifndef __freax_USB_PD_ADO_H
+#define __freax_USB_PD_ADO_H
 
 /* ADO : Alert Data Object */
 #define USB_PD_ADO_TYPE_SHIFT			24
@@ -39,4 +39,4 @@ static inline unsigned int usb_pd_ado_hot_swap_batt(u32 ado)
 	return (ado >> USB_PD_ADO_HOT_SWAP_BATT_SHIFT) &
 	       USB_PD_ADO_HOT_SWAP_BATT_MASK;
 }
-#endif /* __LINUX_USB_PD_ADO_H */
+#endif /* __freax_USB_PD_ADO_H */

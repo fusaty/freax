@@ -2,12 +2,12 @@
 /*
  * SDM845 OnePlus 6(T) (enchilada / fajita) common device tree source
  *
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The freax Foundation. All rights reserved.
  */
 
 /dts-v1/;
 
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include <dt-bindings/regulator/qcom,rpmh-regulator.h>
 #include <dt-bindings/sound/qcom,q6afe.h>
 #include <dt-bindings/sound/qcom,q6asm.h>
@@ -39,9 +39,9 @@
 		event-hall-sensor {
 			gpios = <&tlmm 124 GPIO_ACTIVE_LOW>;
 			label = "Hall Effect Sensor";
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
-			linux,can-disable;
+			freax,input-type = <EV_SW>;
+			freax,code = <SW_LID>;
+			freax,can-disable;
 			wakeup-source;
 		};
 	};
@@ -56,14 +56,14 @@
 
 		key-vol-down {
 			label = "Volume down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			gpios = <&pm8998_gpios 5 GPIO_ACTIVE_LOW>;
 			debounce-interval = <15>;
 		};
 
 		key-vol-up {
 			label = "Volume up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			gpios = <&pm8998_gpios 6 GPIO_ACTIVE_LOW>;
 			debounce-interval = <15>;
 		};

@@ -24,19 +24,19 @@
  *		stevel@mvista.com or source@mvista.com
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/timex.h>
-#include <linux/random.h>
-#include <linux/delay.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel_stat.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/timex.h>
+#include <freax/random.h>
+#include <freax/delay.h>
 
 #include <asm/bootinfo.h>
 #include <asm/time.h>

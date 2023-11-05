@@ -7,12 +7,12 @@
  * Copyright (C) 2006-2007 Nokia Corporation
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/timer.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/time.h>
+#include <freax/timer.h>
 
 #include <asm/unaligned.h>
 

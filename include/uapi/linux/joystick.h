@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  *  Copyright (C) 1996-2000 Vojtech Pavlik
  *
@@ -19,13 +19,13 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
  */
-#ifndef _UAPI_LINUX_JOYSTICK_H
-#define _UAPI_LINUX_JOYSTICK_H
+#ifndef _UAPI_freax_JOYSTICK_H
+#define _UAPI_freax_JOYSTICK_H
 
 
 
-#include <linux/types.h>
-#include <linux/input.h>
+#include <freax/types.h>
+#include <freax/input.h>
 
 /*
  * Version
@@ -130,4 +130,4 @@ struct JS_DATA_SAVE_TYPE_64 {
 };
 
 
-#endif /* _UAPI_LINUX_JOYSTICK_H */
+#endif /* _UAPI_freax_JOYSTICK_H */

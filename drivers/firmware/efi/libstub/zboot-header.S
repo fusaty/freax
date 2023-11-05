@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#include <linux/pe.h>
+#include <freax/pe.h>
 
 #ifdef CONFIG_64BIT
 	.set		.Lextra_characteristics, 0x0
@@ -21,7 +21,7 @@ __efistub_efi_zboot_header:
 	.long		0, 0					// reserved
 	.asciz		COMP_TYPE				// compression type
 	.org		.Ldoshdr + 0x38
-	.long		LINUX_PE_MAGIC
+	.long		freax_PE_MAGIC
 	.long		.Lpehdr - .Ldoshdr			// PE header offset
 
 .Lpehdr:
@@ -54,8 +54,8 @@ __efistub_efi_zboot_header:
 	.long		4096
 	.long		512
 	.short		0, 0
-	.short		LINUX_EFISTUB_MAJOR_VERSION	// MajorImageVersion
-	.short		LINUX_EFISTUB_MINOR_VERSION	// MinorImageVersion
+	.short		freax_EFISTUB_MAJOR_VERSION	// MajorImageVersion
+	.short		freax_EFISTUB_MINOR_VERSION	// MinorImageVersion
 	.short		0, 0
 	.long		0
 	.long		_end - .Ldoshdr

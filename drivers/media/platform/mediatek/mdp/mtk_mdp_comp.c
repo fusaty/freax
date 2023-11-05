@@ -4,9 +4,9 @@
  * Author: Ming Hsiu Tsai <minghsiu.tsai@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/of.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/of.h>
 
 #include "mtk_mdp_comp.h"
 

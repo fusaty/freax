@@ -8,12 +8,12 @@
  *	    Bartosz Folta <bfolta@cadence.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/etherdevice.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
 #include "macb.h"
 
 #define PCI_DRIVER_NAME "macb_pci"

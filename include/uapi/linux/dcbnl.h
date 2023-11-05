@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright (c) 2008-2011, Intel Corporation.
  *
@@ -18,10 +18,10 @@
  * Author: Lucy Liu <lucy.liu@intel.com>
  */
 
-#ifndef __LINUX_DCBNL_H__
-#define __LINUX_DCBNL_H__
+#ifndef __freax_DCBNL_H__
+#define __freax_DCBNL_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* IEEE 802.1Qaz std supported values */
 #define IEEE_8021QAZ_MAX_TCS	8
@@ -776,4 +776,4 @@ enum dcbnl_featcfg_attrs {
 	DCB_FEATCFG_ATTR_MAX = __DCB_FEATCFG_ATTR_ENUM_MAX - 1,
 };
 
-#endif /* __LINUX_DCBNL_H__ */
+#endif /* __freax_DCBNL_H__ */

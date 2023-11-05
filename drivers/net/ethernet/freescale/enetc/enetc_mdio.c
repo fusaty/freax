@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
 /* Copyright 2019 NXP */
 
-#include <linux/fsl/enetc_mdio.h>
-#include <linux/mdio.h>
-#include <linux/of_mdio.h>
-#include <linux/iopoll.h>
-#include <linux/of.h>
+#include <freax/fsl/enetc_mdio.h>
+#include <freax/mdio.h>
+#include <freax/of_mdio.h>
+#include <freax/iopoll.h>
+#include <freax/of.h>
 
 #include "enetc_pf.h"
 

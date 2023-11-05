@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_BTF_IDS_H
-#define _LINUX_BTF_IDS_H
+#ifndef _freax_BTF_IDS_H
+#define _freax_BTF_IDS_H
 
 struct btf_id_set {
 	u32 cnt;
@@ -10,7 +10,7 @@ struct btf_id_set {
 
 #ifdef CONFIG_DEBUG_INFO_BTF
 
-#include <linux/compiler.h> /* for __PASTE */
+#include <freax/compiler.h> /* for __PASTE */
 
 /*
  * Following macros help to define lists of BTF IDs placed

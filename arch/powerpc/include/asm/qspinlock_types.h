@@ -2,7 +2,7 @@
 #ifndef _ASM_POWERPC_QSPINLOCK_TYPES_H
 #define _ASM_POWERPC_QSPINLOCK_TYPES_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 
 typedef struct qspinlock {

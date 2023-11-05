@@ -6,7 +6,7 @@
  * Copyright (c) 2016 Akinobu Mita <akinobu.mita@gmail.com>
  */
 
-#include <linux/pm_runtime.h>
+#include <freax/pm_runtime.h>
 
 #ifndef _MPL115_H_
 #define _MPL115_H_

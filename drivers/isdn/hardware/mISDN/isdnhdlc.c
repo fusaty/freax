@@ -9,10 +9,10 @@
  *      2001	Kai Germaschewski	<kai.germaschewski@gmx.de>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/crc-ccitt.h>
-#include <linux/bitrev.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/crc-ccitt.h>
+#include <freax/bitrev.h>
 #include "isdnhdlc.h"
 
 /*-------------------------------------------------------------------*/

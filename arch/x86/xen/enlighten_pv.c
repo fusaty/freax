@@ -12,28 +12,28 @@
  * Jeremy Fitzhardinge <jeremy@xensource.com>, XenSource Inc, 2007
  */
 
-#include <linux/cpu.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/preempt.h>
-#include <linux/hardirq.h>
-#include <linux/percpu.h>
-#include <linux/delay.h>
-#include <linux/start_kernel.h>
-#include <linux/sched.h>
-#include <linux/kprobes.h>
-#include <linux/kstrtox.h>
-#include <linux/memblock.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/page-flags.h>
-#include <linux/pci.h>
-#include <linux/gfp.h>
-#include <linux/edd.h>
-#include <linux/reboot.h>
-#include <linux/virtio_anchor.h>
-#include <linux/stackprotector.h>
+#include <freax/cpu.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/preempt.h>
+#include <freax/hardirq.h>
+#include <freax/percpu.h>
+#include <freax/delay.h>
+#include <freax/start_kernel.h>
+#include <freax/sched.h>
+#include <freax/kprobes.h>
+#include <freax/kstrtox.h>
+#include <freax/memblock.h>
+#include <freax/export.h>
+#include <freax/mm.h>
+#include <freax/page-flags.h>
+#include <freax/pci.h>
+#include <freax/gfp.h>
+#include <freax/edd.h>
+#include <freax/reboot.h>
+#include <freax/virtio_anchor.h>
+#include <freax/stackprotector.h>
 
 #include <xen/xen.h>
 #include <xen/events.h>
@@ -77,7 +77,7 @@
 #endif
 
 #ifdef CONFIG_ACPI
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 #include <asm/acpi.h>
 #include <acpi/proc_cap_intel.h>
 #include <acpi/processor.h>

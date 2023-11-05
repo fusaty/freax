@@ -15,7 +15,7 @@
  *	Based on source code of the following authors:
  *	  Matt Domsch <Matt_Domsch@dell.com>,
  *	  Rob Radez <rob@osinvestor.com>,
- *	  Rusty Lynch <rusty@linux.co.intel.com>
+ *	  Rusty Lynch <rusty@freax.co.intel.com>
  *	  Satyam Sharma <satyam@infradead.org>
  *	  Randy Dunlap <randy.dunlap@oracle.com>
  *
@@ -24,8 +24,8 @@
  *	This material is provided "AS-IS" and at no charge.
  */
 
-#include <linux/hrtimer.h>
-#include <linux/kthread.h>
+#include <freax/hrtimer.h>
+#include <freax/kthread.h>
 
 #define MAX_DOGS	32	/* Maximum number of watchdog devices */
 

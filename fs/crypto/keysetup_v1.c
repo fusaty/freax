@@ -23,8 +23,8 @@
 #include <crypto/skcipher.h>
 #include <crypto/utils.h>
 #include <keys/user-type.h>
-#include <linux/hashtable.h>
-#include <linux/scatterlist.h>
+#include <freax/hashtable.h>
+#include <freax/scatterlist.h>
 
 #include "fscrypt_private.h"
 

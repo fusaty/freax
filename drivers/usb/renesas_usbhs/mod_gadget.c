@@ -6,14 +6,14 @@
  * Copyright (C) 2019 Renesas Electronics Corporation
  * Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/otg.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/otg.h>
 #include "common.h"
 
 /*
@@ -941,7 +941,7 @@ static void usbhs_mod_phy_mode(struct usbhs_priv *priv)
 
 /*
  *
- *		linux usb function
+ *		freax usb function
  *
  */
 static int usbhsg_gadget_start(struct usb_gadget *gadget,

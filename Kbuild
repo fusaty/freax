@@ -12,7 +12,7 @@ bounds-file := include/generated/bounds.h
 targets := kernel/bounds.s
 
 $(bounds-file): kernel/bounds.s FORCE
-	$(call filechk,offsets,__LINUX_BOUNDS_H__)
+	$(call filechk,offsets,__freax_BOUNDS_H__)
 
 # Generate timeconst.h
 
@@ -64,7 +64,7 @@ atomic-checks += $(addprefix $(obj)/.checked-, \
 	  atomic-long.h)
 
 targets += $(atomic-checks)
-$(atomic-checks): $(obj)/.checked-%: include/linux/atomic/%  FORCE
+$(atomic-checks): $(obj)/.checked-%: include/freax/atomic/%  FORCE
 	$(call if_changed,check_sha1)
 
 # A phony target that depends on all the preparation targets

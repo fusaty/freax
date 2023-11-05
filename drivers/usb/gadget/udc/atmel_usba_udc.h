@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2005-2007 Atmel Corporation
  */
-#ifndef __LINUX_USB_GADGET_USBA_UDC_H__
-#define __LINUX_USB_GADGET_USBA_UDC_H__
+#ifndef __freax_USB_GADGET_USBA_UDC_H__
+#define __freax_USB_GADGET_USBA_UDC_H__
 
-#include <linux/gpio/consumer.h>
+#include <freax/gpio/consumer.h>
 
 /* USB register offsets */
 #define USBA_CTRL				0x0000
@@ -378,4 +378,4 @@ static inline struct usba_udc *to_usba_udc(struct usb_gadget *gadget)
 #define ep_is_control(ep)	((ep)->index == 0)
 #define ep_is_idle(ep)		((ep)->state == EP_STATE_IDLE)
 
-#endif /* __LINUX_USB_GADGET_USBA_UDC_H */
+#endif /* __freax_USB_GADGET_USBA_UDC_H */

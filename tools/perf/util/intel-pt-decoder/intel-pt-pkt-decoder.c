@@ -8,8 +8,8 @@
 #include <string.h>
 #include <endian.h>
 #include <byteswap.h>
-#include <linux/kernel.h>
-#include <linux/compiler.h>
+#include <freax/kernel.h>
+#include <freax/compiler.h>
 #include <asm-generic/unaligned.h>
 
 #include "intel-pt-pkt-decoder.h"

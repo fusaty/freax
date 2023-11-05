@@ -7,32 +7,32 @@
  * Copyright(c) 1999 - 2005 Intel Corporation. All rights reserved.
  */
 
-#include <linux/atomic.h>
-#include <linux/crc32.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/hardirq.h>
-#include <linux/if_vlan.h>
-#include <linux/in.h>
-#include <linux/interrupt.h>
-#include <linux/ip.h>
-#include <linux/irqflags.h>
-#include <linux/irqreturn.h>
-#include <linux/mii.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/pm.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tcp.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/crc32.h>
+#include <freax/dma-mapping.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/hardirq.h>
+#include <freax/if_vlan.h>
+#include <freax/in.h>
+#include <freax/interrupt.h>
+#include <freax/ip.h>
+#include <freax/irqflags.h>
+#include <freax/irqreturn.h>
+#include <freax/mii.h>
+#include <freax/net.h>
+#include <freax/netdevice.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/pm.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/tcp.h>
+#include <freax/timer.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 #include "atl2.h"
 
@@ -1267,7 +1267,7 @@ static void atl2_setup_pcicmd(struct pci_dev *pdev)
 
 	/*
 	 * some motherboards BIOS(PXE/EFI) driver may set PME
-	 * while they transfer control to OS (Windows/Linux)
+	 * while they transfer control to OS (Windows/freax)
 	 * so we should clear this bit before NIC work normally
 	 */
 	pci_write_config_dword(pdev, REG_PM_CTRLSTAT, 0);

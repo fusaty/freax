@@ -21,11 +21,11 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 #include "kfd_priv.h"
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/idr.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/idr.h>
 
 /*
  * This extension supports a kernel level doorbells management for the

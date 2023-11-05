@@ -4,29 +4,29 @@
  *
  * Copyright (C) 2015, Intel Corporation
  *
- * Authors: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
- *          Heikki Krogerus <heikki.krogerus@linux.intel.com>
- *          Jarkko Nikula <jarkko.nikula@linux.intel.com>
+ * Authors: Andy Shevchenko <andriy.shevchenko@freax.intel.com>
+ *          Mika Westerberg <mika.westerberg@freax.intel.com>
+ *          Heikki Krogerus <heikki.krogerus@freax.intel.com>
+ *          Jarkko Nikula <jarkko.nikula@freax.intel.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/debugfs.h>
-#include <linux/idr.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mfd/core.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/seq_file.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/debugfs.h>
+#include <freax/idr.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mfd/core.h>
+#include <freax/pm_qos.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/seq_file.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 
-#include <linux/dma/idma64.h>
+#include <freax/dma/idma64.h>
 
 #include "intel-lpss.h"
 
@@ -531,10 +531,10 @@ static void __exit intel_lpss_exit(void)
 }
 module_exit(intel_lpss_exit);
 
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
-MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@linux.intel.com>");
-MODULE_AUTHOR("Jarkko Nikula <jarkko.nikula@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@freax.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@freax.intel.com>");
+MODULE_AUTHOR("Heikki Krogerus <heikki.krogerus@freax.intel.com>");
+MODULE_AUTHOR("Jarkko Nikula <jarkko.nikula@freax.intel.com>");
 MODULE_DESCRIPTION("Intel LPSS core driver");
 MODULE_LICENSE("GPL v2");
 /*

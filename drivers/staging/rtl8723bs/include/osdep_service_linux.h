@@ -4,39 +4,39 @@
  * Copyright(c) 2007 - 2013 Realtek Corporation. All rights reserved.
  *
  ******************************************************************************/
-#ifndef __OSDEP_LINUX_SERVICE_H_
-#define __OSDEP_LINUX_SERVICE_H_
+#ifndef __OSDEP_freax_SERVICE_H_
+#define __OSDEP_freax_SERVICE_H_
 
-	#include <linux/spinlock.h>
-	#include <linux/compiler.h>
-	#include <linux/kernel.h>
-	#include <linux/errno.h>
-	#include <linux/init.h>
-	#include <linux/slab.h>
-	#include <linux/module.h>
-	#include <linux/kref.h>
-	/* include <linux/smp_lock.h> */
-	#include <linux/netdevice.h>
-	#include <linux/skbuff.h>
-	#include <linux/uaccess.h>
+	#include <freax/spinlock.h>
+	#include <freax/compiler.h>
+	#include <freax/kernel.h>
+	#include <freax/errno.h>
+	#include <freax/init.h>
+	#include <freax/slab.h>
+	#include <freax/module.h>
+	#include <freax/kref.h>
+	/* include <freax/smp_lock.h> */
+	#include <freax/netdevice.h>
+	#include <freax/skbuff.h>
+	#include <freax/uaccess.h>
 	#include <asm/byteorder.h>
-	#include <linux/atomic.h>
-	#include <linux/io.h>
-	#include <linux/sem.h>
-	#include <linux/sched.h>
-	#include <linux/etherdevice.h>
-	#include <linux/wireless.h>
+	#include <freax/atomic.h>
+	#include <freax/io.h>
+	#include <freax/sem.h>
+	#include <freax/sched.h>
+	#include <freax/etherdevice.h>
+	#include <freax/wireless.h>
 	#include <net/iw_handler.h>
-	#include <linux/if_arp.h>
-	#include <linux/rtnetlink.h>
-	#include <linux/delay.h>
-	#include <linux/interrupt.h>	/*  for struct tasklet_struct */
-	#include <linux/ip.h>
-	#include <linux/kthread.h>
-	#include <linux/list.h>
-	#include <linux/vmalloc.h>
+	#include <freax/if_arp.h>
+	#include <freax/rtnetlink.h>
+	#include <freax/delay.h>
+	#include <freax/interrupt.h>	/*  for struct tasklet_struct */
+	#include <freax/ip.h>
+	#include <freax/kthread.h>
+	#include <freax/list.h>
+	#include <freax/vmalloc.h>
 
-/* 	#include <linux/ieee80211.h> */
+/* 	#include <freax/ieee80211.h> */
         #include <net/ieee80211_radiotap.h>
 	#include <net/cfg80211.h>
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/cpu.h>
 #include <asm/nospec-branch.h>
 
 static int __init nobp_setup_early(char *str)

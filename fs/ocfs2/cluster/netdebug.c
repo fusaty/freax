@@ -9,15 +9,15 @@
 
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/kref.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/idr.h>
+#include <freax/kref.h>
+#include <freax/seq_file.h>
+#include <freax/debugfs.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "tcp.h"
 #include "nodemanager.h"

@@ -5,13 +5,13 @@
  * Copyright 2005,2006 Hebert Valerio Riedel <hvr@gnu.org>
  */
 
-#include <linux/bcd.h>
-#include <linux/clk.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/rtc.h>
+#include <freax/bcd.h>
+#include <freax/clk.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/rtc.h>
 
 /* Register map */
 /* rtc section */

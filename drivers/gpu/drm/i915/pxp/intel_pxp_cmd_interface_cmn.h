@@ -6,7 +6,7 @@
 #ifndef __INTEL_PXP_FW_INTERFACE_CMN_H__
 #define __INTEL_PXP_FW_INTERFACE_CMN_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define PXP_APIVER(x, y) (((x) & 0xFFFF) << 16 | ((y) & 0xFFFF))
 

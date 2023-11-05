@@ -5,22 +5,22 @@
 
 #define pr_fmt(fmt) "xive: " fmt
 
-#include <linux/types.h>
-#include <linux/threads.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/debugfs.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/msi.h>
-#include <linux/vmalloc.h>
+#include <freax/types.h>
+#include <freax/threads.h>
+#include <freax/kernel.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/debugfs.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/seq_file.h>
+#include <freax/init.h>
+#include <freax/cpu.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/msi.h>
+#include <freax/vmalloc.h>
 
 #include <asm/io.h>
 #include <asm/smp.h>
@@ -383,7 +383,7 @@ static unsigned int xive_get_irq(void)
  * CPU.
  *
  * If we find that there is indeed more in there, we call
- * force_external_irq_replay() to make Linux synthetize an
+ * force_external_irq_replay() to make freax synthetize an
  * external interrupt on the next call to local_irq_restore().
  */
 static void xive_do_queue_eoi(struct xive_cpu *xc)
@@ -655,7 +655,7 @@ static unsigned int xive_irq_startup(struct irq_data *d)
 	xd->target = target;
 
 	/*
-	 * Configure the logical number to be the Linux IRQ number
+	 * Configure the logical number to be the freax IRQ number
 	 * and set the target queue
 	 */
 	rc = xive_ops->configure_irq(hw_irq,
@@ -804,7 +804,7 @@ static int xive_irq_set_type(struct irq_data *d, unsigned int flow_type)
 	 */
 	if ((flow_type == IRQ_TYPE_LEVEL_LOW) !=
 	    !!(xd->flags & XIVE_IRQ_FLAG_LSI)) {
-		pr_warn("Interrupt %d (HW 0x%x) type mismatch, Linux says %s, FW says %s\n",
+		pr_warn("Interrupt %d (HW 0x%x) type mismatch, freax says %s, FW says %s\n",
 			d->irq, (u32)irqd_to_hwirq(d),
 			(flow_type == IRQ_TYPE_LEVEL_LOW) ? "Level" : "Edge",
 			(xd->flags & XIVE_IRQ_FLAG_LSI) ? "Level" : "Edge");
@@ -1030,7 +1030,7 @@ static int xive_irq_alloc_data(unsigned int virq, irq_hw_number_t hw)
 	/*
 	 * Turn OFF by default the interrupt being mapped. A side
 	 * effect of this check is the mapping the ESB page of the
-	 * interrupt in the Linux address space. This prevents page
+	 * interrupt in the freax address space. This prevents page
 	 * fault issues in the crash handler which masks all
 	 * interrupts.
 	 */
@@ -1106,7 +1106,7 @@ static struct irq_chip xive_ipi_chip = {
 
 /*
  * IPIs are marked per-cpu. We use separate HW interrupts under the
- * hood but associated with the same "linux" interrupt
+ * hood but associated with the same "freax" interrupt
  */
 struct xive_ipi_alloc_info {
 	irq_hw_number_t hwirq;

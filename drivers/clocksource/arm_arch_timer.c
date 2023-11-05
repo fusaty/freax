@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/clocksource/arm_arch_timer.c
+ *  freax/drivers/clocksource/arm_arch_timer.c
  *
  *  Copyright (C) 2011 ARM Ltd.
  *  All Rights Reserved
@@ -8,26 +8,26 @@
 
 #define pr_fmt(fmt) 	"arch_timer: " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/clockchips.h>
-#include <linux/clocksource.h>
-#include <linux/clocksource_ids.h>
-#include <linux/interrupt.h>
-#include <linux/kstrtox.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/sched/clock.h>
-#include <linux/sched_clock.h>
-#include <linux/acpi.h>
-#include <linux/arm-smccc.h>
-#include <linux/ptp_kvm.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/smp.h>
+#include <freax/cpu.h>
+#include <freax/cpu_pm.h>
+#include <freax/clockchips.h>
+#include <freax/clocksource.h>
+#include <freax/clocksource_ids.h>
+#include <freax/interrupt.h>
+#include <freax/kstrtox.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/sched/clock.h>
+#include <freax/sched_clock.h>
+#include <freax/acpi.h>
+#include <freax/arm-smccc.h>
+#include <freax/ptp_kvm.h>
 
 #include <asm/arch_timer.h>
 #include <asm/virt.h>

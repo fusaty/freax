@@ -2,12 +2,12 @@
 #ifndef _ASM_X86_XEN_PAGE_H
 #define _ASM_X86_XEN_PAGE_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/pfn.h>
-#include <linux/mm.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/pfn.h>
+#include <freax/mm.h>
+#include <freax/device.h>
 
 #include <asm/extable.h>
 #include <asm/page.h>

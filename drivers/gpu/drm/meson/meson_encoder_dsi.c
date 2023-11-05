@@ -5,9 +5,9 @@
  * Copyright (C) 2015 Amlogic, Inc. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_graph.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_simple_kms_helper.h>

@@ -6,14 +6,14 @@
  *                         Cirrus Logic International Semiconductor Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/mfd/cs42l43-regs.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_registers.h>
-#include <linux/soundwire/sdw_type.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/mfd/cs42l43-regs.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_registers.h>
+#include <freax/soundwire/sdw_type.h>
 
 #include "cs42l43.h"
 

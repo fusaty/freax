@@ -10,14 +10,14 @@
  * 	   Alex deVries <alex@onefishtwo.ca>
  */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/types.h>
-#include <linux/reboot.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/pm.h>
+#include <freax/types.h>
+#include <freax/reboot.h>
 
 #include <asm/io.h>
 #include <asm/hardware.h>

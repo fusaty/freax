@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * DS1286 Real Time Clock interface for Linux
+ * DS1286 Real Time Clock interface for freax
  *
  * Copyright (C) 1998, 1999, 2000 Ralf Baechle
  * Copyright (C) 2008 Thomas Bogendoerfer
@@ -8,13 +8,13 @@
  * Based on code written by Paul Gortmaker.
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/bcd.h>
-#include <linux/rtc/ds1286.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/rtc.h>
+#include <freax/platform_device.h>
+#include <freax/bcd.h>
+#include <freax/rtc/ds1286.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
 struct ds1286_priv {
 	struct rtc_device *rtc;

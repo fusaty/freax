@@ -1,5 +1,5 @@
 /*
- * Linux driver for VMware's vmxnet3 ethernet NIC.
+ * freax driver for VMware's vmxnet3 ethernet NIC.
  *
  * Copyright (C) 2008-2022, VMware, Inc. All Rights Reserved.
  *
@@ -27,36 +27,36 @@
 #ifndef _VMXNET3_INT_H
 #define _VMXNET3_INT_H
 
-#include <linux/bitops.h>
-#include <linux/ethtool.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/pci.h>
-#include <linux/compiler.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/ioport.h>
-#include <linux/highmem.h>
-#include <linux/timer.h>
-#include <linux/skbuff.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/uaccess.h>
+#include <freax/bitops.h>
+#include <freax/ethtool.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/pci.h>
+#include <freax/compiler.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/ioport.h>
+#include <freax/highmem.h>
+#include <freax/timer.h>
+#include <freax/skbuff.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/uaccess.h>
 #include <asm/dma.h>
 #include <asm/page.h>
 
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/in.h>
-#include <linux/etherdevice.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/in.h>
+#include <freax/etherdevice.h>
 #include <asm/checksum.h>
-#include <linux/if_vlan.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/log2.h>
-#include <linux/bpf.h>
+#include <freax/if_vlan.h>
+#include <freax/if_arp.h>
+#include <freax/inetdevice.h>
+#include <freax/log2.h>
+#include <freax/bpf.h>
 #include <net/page_pool/helpers.h>
 #include <net/xdp.h>
 
@@ -334,9 +334,9 @@ struct vmxnet3_rx_queue {
 /* Should be less than UPT1_RSS_MAX_IND_TABLE_SIZE */
 #define VMXNET3_RSS_IND_TABLE_SIZE (VMXNET3_DEVICE_MAX_RX_QUEUES * 4)
 
-#define VMXNET3_LINUX_MAX_MSIX_VECT     (VMXNET3_DEVICE_MAX_TX_QUEUES + \
+#define VMXNET3_freax_MAX_MSIX_VECT     (VMXNET3_DEVICE_MAX_TX_QUEUES + \
 					 VMXNET3_DEVICE_MAX_RX_QUEUES + 1)
-#define VMXNET3_LINUX_MIN_MSIX_VECT     3 /* 1 for tx, 1 for rx pair and 1 for event */
+#define VMXNET3_freax_MIN_MSIX_VECT     3 /* 1 for tx, 1 for rx pair and 1 for event */
 
 
 struct vmxnet3_intr {
@@ -344,10 +344,10 @@ struct vmxnet3_intr {
 	enum vmxnet3_intr_type       type;	/* MSI-X, MSI, or INTx? */
 	u8  num_intrs;			/* # of intr vectors */
 	u8  event_intr_idx;		/* idx of the intr vector for event */
-	u8  mod_levels[VMXNET3_LINUX_MAX_MSIX_VECT]; /* moderation level */
+	u8  mod_levels[VMXNET3_freax_MAX_MSIX_VECT]; /* moderation level */
 	char	event_msi_vector_name[IFNAMSIZ+17];
 #ifdef CONFIG_PCI_MSI
-	struct msix_entry msix_entries[VMXNET3_LINUX_MAX_MSIX_VECT];
+	struct msix_entry msix_entries[VMXNET3_freax_MAX_MSIX_VECT];
 #endif
 };
 

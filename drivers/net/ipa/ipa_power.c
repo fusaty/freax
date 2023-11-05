@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2018-2022 Linaro Ltd.
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/interconnect.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/bitops.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/interconnect.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/bitops.h>
 
-#include "linux/soc/qcom/qcom_aoss.h"
+#include "freax/soc/qcom/qcom_aoss.h"
 
 #include "ipa.h"
 #include "ipa_power.h"

@@ -9,15 +9,15 @@
  * John Brooks <john.brooks@bluecherry.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/videodev2.h>
-#include <linux/delay.h>
-#include <linux/sysfs.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/videodev2.h>
+#include <freax/delay.h>
+#include <freax/sysfs.h>
+#include <freax/ktime.h>
+#include <freax/slab.h>
 
 #include "solo6x10.h"
 #include "solo6x10-tw28.h"

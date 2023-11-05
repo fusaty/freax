@@ -9,22 +9,22 @@
  * Based on dummy, team and ipvlan drivers
  */
 
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-#include <linux/netfilter.h>
-#include <linux/rtnetlink.h>
+#include <freax/ethtool.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ip.h>
+#include <freax/init.h>
+#include <freax/moduleparam.h>
+#include <freax/netfilter.h>
+#include <freax/rtnetlink.h>
 #include <net/rtnetlink.h>
-#include <linux/u64_stats_sync.h>
-#include <linux/hashtable.h>
-#include <linux/spinlock_types.h>
+#include <freax/u64_stats_sync.h>
+#include <freax/hashtable.h>
+#include <freax/spinlock_types.h>
 
-#include <linux/inetdevice.h>
+#include <freax/inetdevice.h>
 #include <net/arp.h>
 #include <net/ip.h>
 #include <net/ip_fib.h>

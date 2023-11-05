@@ -29,9 +29,9 @@
  *    Thomas Hellstrom <thomas-at-tungstengraphics-dot-com>
  *    Dave Airlie
  */
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/dma-buf.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/dma-buf.h>
 
 #include <drm/drm_drv.h>
 #include <drm/amdgpu_drm.h>

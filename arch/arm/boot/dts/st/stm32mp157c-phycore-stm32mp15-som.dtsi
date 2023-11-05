@@ -35,13 +35,13 @@
 		key-home {
 			label = "Home";
 			gpios = <&gpioa 13 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 		};
 
 		key-enter {
 			label = "Enter";
 			gpios = <&gpioa 14 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_ENTER>;
+			freax,code = <KEY_ENTER>;
 		};
 	};
 
@@ -220,7 +220,7 @@
 			color = <LED_COLOR_ID_BLUE>;
 			function = LED_FUNCTION_HEARTBEAT;
 			type = <PCA9532_TYPE_LED>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 };

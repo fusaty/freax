@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* 
- * linux/mtio.h header file for Linux. Written by H. Bergman
+ * freax/mtio.h header file for freax. Written by H. Bergman
  *
  * Modified for special ioctls provided by zftape in September 1997
  * by C.-J. Heine.
  */
 
-#ifndef _LINUX_MTIO_H
-#define _LINUX_MTIO_H
+#ifndef _freax_MTIO_H
+#define _freax_MTIO_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 /*
  * Structures and definitions for mag tape io control commands
@@ -206,4 +206,4 @@ struct	mtpos {
 /* The offset for the arguments for the special HP changer load command. */
 #define MT_ST_HPLOADER_OFFSET 10000
 
-#endif /* _LINUX_MTIO_H */
+#endif /* _freax_MTIO_H */

@@ -7,30 +7,30 @@
 
 #define pr_fmt(fmt) "ACPI: " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/sched.h>
-#include <linux/pm.h>
-#include <linux/device.h>
-#include <linux/proc_fs.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/regulator/machine.h>
-#include <linux/workqueue.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/sched.h>
+#include <freax/pm.h>
+#include <freax/device.h>
+#include <freax/proc_fs.h>
+#include <freax/acpi.h>
+#include <freax/slab.h>
+#include <freax/regulator/machine.h>
+#include <freax/workqueue.h>
+#include <freax/reboot.h>
+#include <freax/delay.h>
 #ifdef CONFIG_X86
 #include <asm/mpspec.h>
-#include <linux/dmi.h>
+#include <freax/dmi.h>
 #endif
-#include <linux/acpi_viot.h>
-#include <linux/pci.h>
+#include <freax/acpi_viot.h>
+#include <freax/pci.h>
 #include <acpi/apei.h>
-#include <linux/suspend.h>
-#include <linux/prmt.h>
+#include <freax/suspend.h>
+#include <freax/prmt.h>
 
 #include "internal.h"
 

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2020, The freax Foundation. All rights reserved.
  * Copyright (c) 2022, Linaro Ltd
  */
-#include <linux/auxiliary_bus.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/rpmsg.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/pdr.h>
-#include <linux/soc/qcom/pmic_glink.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/rpmsg.h>
+#include <freax/slab.h>
+#include <freax/soc/qcom/pdr.h>
+#include <freax/soc/qcom/pmic_glink.h>
 
 enum {
 	PMIC_GLINK_CLIENT_BATT = 0,

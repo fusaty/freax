@@ -42,7 +42,7 @@
 		led-0 {
 			gpios = <&gpio4 8 GPIO_ACTIVE_HIGH>;
 			default-state = "on";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 };

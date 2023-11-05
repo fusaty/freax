@@ -28,9 +28,9 @@
  *  such damages.
  */
 
-#include <linux/nfs_fs.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
+#include <freax/nfs_fs.h>
+#include <freax/vmalloc.h>
+#include <freax/module.h>
 
 #include "../internal.h"
 #include "../nfs4session.h"

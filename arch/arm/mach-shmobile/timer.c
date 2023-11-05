@@ -5,10 +5,10 @@
  * Copyright (C) 2010  Magnus Damm
  * Copyright (C) 2002 - 2009  Paul Mundt
  */
-#include <linux/platform_device.h>
-#include <linux/clocksource.h>
-#include <linux/delay.h>
-#include <linux/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/clocksource.h>
+#include <freax/delay.h>
+#include <freax/of_address.h>
 
 #include "common.h"
 

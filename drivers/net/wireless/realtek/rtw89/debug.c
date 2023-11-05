@@ -2,7 +2,7 @@
 /* Copyright(c) 2019-2020  Realtek Corporation
  */
 
-#include <linux/vmalloc.h>
+#include <freax/vmalloc.h>
 
 #include "coex.h"
 #include "debug.h"

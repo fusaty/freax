@@ -30,8 +30,8 @@
  * moved to there from here.  May be used independent of
  * CONFIG_NUMA.
  */
-#include <linux/numa.h>
-#include <linux/cpumask.h>
+#include <freax/numa.h>
+#include <freax/cpumask.h>
 
 #ifdef CONFIG_NUMA
 
@@ -136,7 +136,7 @@ static inline int topology_max_smt_threads(void)
 	return __max_smt_threads;
 }
 
-#include <linux/cpu_smt.h>
+#include <freax/cpu_smt.h>
 
 int topology_update_package_map(unsigned int apicid, unsigned int cpu);
 int topology_update_die_map(unsigned int dieid, unsigned int cpu);

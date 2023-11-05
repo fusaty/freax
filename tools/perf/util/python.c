@@ -3,7 +3,7 @@
 #include <structmember.h>
 #include <inttypes.h>
 #include <poll.h>
-#include <linux/err.h>
+#include <freax/err.h>
 #include <perf/cpumap.h>
 #ifdef HAVE_LIBTRACEEVENT
 #include <traceevent/event-parse.h>

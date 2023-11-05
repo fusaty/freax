@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_MTD_QINFO_H
-#define __LINUX_MTD_QINFO_H
+#ifndef __freax_MTD_QINFO_H
+#define __freax_MTD_QINFO_H
 
-#include <linux/mtd/map.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/flashchip.h>
-#include <linux/mtd/partitions.h>
+#include <freax/mtd/map.h>
+#include <freax/wait.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/flashchip.h>
+#include <freax/mtd/partitions.h>
 
 /* lpddr_private describes lpddr flash chip in memory map
  * @ManufactId - Chip Manufacture ID

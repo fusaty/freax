@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * Author: Hanlu Li <lihanlu@loongson.cn>
  *         Huacai Chen <chenhuacai@loongson.cn>
@@ -8,6 +8,6 @@
 #ifndef _ASM_BYTEORDER_H
 #define _ASM_BYTEORDER_H
 
-#include <linux/byteorder/little_endian.h>
+#include <freax/byteorder/little_endian.h>
 
 #endif /* _ASM_BYTEORDER_H */

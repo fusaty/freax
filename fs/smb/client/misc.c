@@ -6,10 +6,10 @@
  *
  */
 
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/mempool.h>
-#include <linux/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/ctype.h>
+#include <freax/mempool.h>
+#include <freax/vmalloc.h>
 #include "cifspdu.h"
 #include "cifsglob.h"
 #include "cifsproto.h"

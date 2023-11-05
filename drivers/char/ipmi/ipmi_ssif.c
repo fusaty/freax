@@ -26,27 +26,27 @@
 #define dev_fmt(fmt) "ipmi_ssif: " fmt
 
 #if defined(MODVERSIONS)
-#include <linux/modversions.h>
+#include <freax/modversions.h>
 #endif
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/timer.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/i2c.h>
-#include <linux/ipmi_smi.h>
-#include <linux/init.h>
-#include <linux/dmi.h>
-#include <linux/kthread.h>
-#include <linux/acpi.h>
-#include <linux/ctype.h>
-#include <linux/time64.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/sched.h>
+#include <freax/seq_file.h>
+#include <freax/timer.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/i2c.h>
+#include <freax/ipmi_smi.h>
+#include <freax/init.h>
+#include <freax/dmi.h>
+#include <freax/kthread.h>
+#include <freax/acpi.h>
+#include <freax/ctype.h>
+#include <freax/time64.h>
 #include "ipmi_dmi.h"
 
 #define DEVICE_NAME "ipmi_ssif"

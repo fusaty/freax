@@ -5,16 +5,16 @@
  * in flat device tree.
  */
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/fsl_devices.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/fsl_devices.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/dma-mapping.h>
 
 struct fsl_usb2_dev_data {
 	char *dr_mode;		/* controller mode */

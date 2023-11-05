@@ -10,8 +10,8 @@
  * 2 of the License, or (at your option) any later version.
  */
 
-#include <linux/kernel.h>
-#include <linux/iommu.h>
+#include <freax/kernel.h>
+#include <freax/iommu.h>
 
 #include <asm/iommu.h>
 #include <asm/tce.h>
@@ -343,7 +343,7 @@ long pnv_pci_ioda2_table_alloc_pages(int nid, __u64 bus_offset,
 			goto free_uas_exit;
 	}
 
-	/* Setup linux iommu table */
+	/* Setup freax iommu table */
 	pnv_pci_setup_iommu_table(tbl, addr, tce_table_size, bus_offset,
 			page_shift);
 	tbl->it_level_size = 1ULL << (level_shift - 3);

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/console.h>
-#include <linux/fb.h>
-#include <linux/module.h>
+#include <freax/console.h>
+#include <freax/fb.h>
+#include <freax/module.h>
 
 #include <asm/prom.h>
 

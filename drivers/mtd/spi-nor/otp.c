@@ -5,9 +5,9 @@
  * Copyright (C) 2021 Michael Walle <michael@walle.cc>
  */
 
-#include <linux/log2.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/spi-nor.h>
+#include <freax/log2.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/spi-nor.h>
 
 #include "core.h"
 

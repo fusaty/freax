@@ -5,8 +5,8 @@
 #define __LIMA_SCHED_H__
 
 #include <drm/gpu_scheduler.h>
-#include <linux/list.h>
-#include <linux/xarray.h>
+#include <freax/list.h>
+#include <freax/xarray.h>
 
 struct lima_device;
 struct lima_vm;

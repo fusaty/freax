@@ -6,15 +6,15 @@
  *  Copyright (C) 2012  Intel Corporation
  */
 
-#include <linux/acpi.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/serdev.h>
-#include <linux/skbuff.h>
+#include <freax/acpi.h>
+#include <freax/errno.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/of.h>
+#include <freax/pm_runtime.h>
+#include <freax/serdev.h>
+#include <freax/skbuff.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

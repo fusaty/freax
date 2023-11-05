@@ -3,11 +3,11 @@
  * Copyright (C) 2016 Thomas Gleixner.
  * Copyright (C) 2016-2017 Christoph Hellwig.
  */
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/group_cpus.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/cpu.h>
+#include <freax/group_cpus.h>
 
 static void default_calc_sets(struct irq_affinity *affd, unsigned int affvecs)
 {

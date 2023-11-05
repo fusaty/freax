@@ -13,9 +13,9 @@
 
 /* system dependent definitions */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
 
 #include <asm/desc.h>
 #include <asm/mmu_context.h>

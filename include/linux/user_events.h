@@ -3,17 +3,17 @@
  * Copyright (c) 2022, Microsoft Corporation.
  *
  * Authors:
- *   Beau Belgrave <beaub@linux.microsoft.com>
+ *   Beau Belgrave <beaub@freax.microsoft.com>
  */
 
-#ifndef _LINUX_USER_EVENTS_H
-#define _LINUX_USER_EVENTS_H
+#ifndef _freax_USER_EVENTS_H
+#define _freax_USER_EVENTS_H
 
-#include <linux/list.h>
-#include <linux/refcount.h>
-#include <linux/mm_types.h>
-#include <linux/workqueue.h>
-#include <uapi/linux/user_events.h>
+#include <freax/list.h>
+#include <freax/refcount.h>
+#include <freax/mm_types.h>
+#include <freax/workqueue.h>
+#include <uapi/freax/user_events.h>
 
 #ifdef CONFIG_USER_EVENTS
 struct user_event_mm {
@@ -81,4 +81,4 @@ static inline void user_events_exit(struct task_struct *t)
 }
 #endif /* CONFIG_USER_EVENTS */
 
-#endif /* _LINUX_USER_EVENTS_H */
+#endif /* _freax_USER_EVENTS_H */

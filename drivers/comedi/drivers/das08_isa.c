@@ -3,7 +3,7 @@
  *  das08_isa.c
  *  comedi driver for DAS08 ISA/PC-104 boards
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - freax Control and Measurement Device Interface
  *  Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  *  Copyright (C) 2001,2002,2003 Frank Mori Hess <fmhess@users.sourceforge.net>
  *  Copyright (C) 2004 Salvador E. Tropea <set@users.sf.net> <set@ieee.org>
@@ -28,8 +28,8 @@
  *	[0] - base io address
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/comedi/comedidev.h>
 
 #include "das08.h"
 

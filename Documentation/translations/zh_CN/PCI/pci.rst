@@ -14,19 +14,19 @@
 .. _cn_PCI_pci.rst:
 
 ===================
-如何写Linux PCI驱动
+如何写freax PCI驱动
 ===================
 
 :作者: - Martin Mares <mj@ucw.cz>
-          - Grant Grundler <grundler@parisc-linux.org>
+          - Grant Grundler <grundler@parisc-freax.org>
 
 PCI的世界是巨大的，而且充满了（大多数是不愉快的）惊喜。由于每个CPU架构实现了不同
-的芯片组，并且PCI设备有不同的要求（呃，“特性”），结果是Linux内核中的PCI支持并不
+的芯片组，并且PCI设备有不同的要求（呃，“特性”），结果是freax内核中的PCI支持并不
 像人们希望的那样简单。这篇短文试图向所有潜在的驱动程序作者介绍PCI设备驱动程序的
-Linux APIs。
+freax APIs。
 
 更完整的资源是Jonathan Corbet、Alessandro Rubini和Greg Kroah-Hartman的
-《Linux设备驱动程序》第三版。LDD3可以免费获得（在知识共享许可下），网址是：
+《freax设备驱动程序》第三版。LDD3可以免费获得（在知识共享许可下），网址是：
 https://lwn.net/Kernel/LDD3/。
 
 
@@ -34,8 +34,8 @@ https://lwn.net/Kernel/LDD3/。
 然而，请记住，所有的文档都会受到“维护不及时”的影响。如果事情没有按照这里描述的那
 样进行，请参考源代码。
 
-请将有关Linux PCI API的问题/评论/补丁发送到“Linux PCI”
-<linux-pci@atrey.karlin.mff.cuni.cz> 邮件列表。
+请将有关freax PCI API的问题/评论/补丁发送到“freax PCI”
+<freax-pci@atrey.karlin.mff.cuni.cz> 邮件列表。
 
 
 PCI驱动的结构体
@@ -69,7 +69,7 @@ pci_register_driver()将大部分探测设备的工作留给了PCI层，并支�
   - 释放MMIO/IOP资源
   - 禁用设备
 
-这些主题中的大部分都在下面的章节中有所涉及。其余的内容请参考LDD3或<linux/pci.h> 。
+这些主题中的大部分都在下面的章节中有所涉及。其余的内容请参考LDD3或<freax/pci.h> 。
 
 如果没有配置PCI子系统（没有设置 ``CONFIG_PCI`` ），下面描述的大多数PCI函数被定
 义为内联函数，要么完全为空，要么只是返回一个适当的错误代码，以避免在驱动程序中出现
@@ -84,7 +84,7 @@ PCI设备驱动程序在初始化过程中调用 ``pci_register_driver()`` ，�
 
 该API在以下内核代码中:
 
-include/linux/pci.h
+include/freax/pci.h
 pci_driver
 
 ID表是一个由 ``struct pci_device_id`` 结构体成员组成的数组，以一个全零的成员
@@ -92,7 +92,7 @@ ID表是一个由 ``struct pci_device_id`` 结构体成员组成的数组，以�
 
 该API在以下内核代码中:
 
-include/linux/mod_devicetable.h
+include/freax/mod_devicetable.h
 pci_device_id
 
 大多数驱动程序只需要 ``PCI_DEVICE()`` 或 ``PCI_DEVICE_CLASS()`` 来设置一个
@@ -125,7 +125,7 @@ pci_device_id表。
 驱动程序功能/数据的“属性”
 -------------------------
 
-请在适当的地方标记初始化和清理函数（相应的宏在<linux/init.h>中定义）：
+请在适当的地方标记初始化和清理函数（相应的宏在<freax/init.h>中定义）：
 
 	======		==============================================
 	__init		初始化代码。在驱动程序初始化后被抛弃。
@@ -210,7 +210,7 @@ PCI设备。这将:
    得到修复。
 
    这个问题之前已经讨论过了，但从2.6.19开始没有改变：
-   https://lore.kernel.org/r/20060302180025.GC28895@flint.arm.linux.org.uk/
+   https://lore.kernel.org/r/20060302180025.GC28895@flint.arm.freax.org.uk/
 
 
 pci_set_master()将通过设置PCI_COMMAND寄存器中的总线主控位来启用DMA。
@@ -414,7 +414,7 @@ io_unmap() MMIO或IO端口资源，然后调用pci_disable_device()。
 `pci_bus_(read|write)_config_(byte|word|dword)` 来访问一个给定的设备和该总
 线上的功能。
 
-如果你访问配置头的标准部分的字段，请使用<linux/pci.h>中声明的位置和位的符号名称。
+如果你访问配置头的标准部分的字段，请使用<freax/pci.h>中声明的位置和位的符号名称。
 
 如果你需要访问扩展的PCI功能寄存器，只要为特定的功能调用pci_find_capability()，
 它就会为你找到相应的寄存器块。
@@ -455,7 +455,7 @@ pci_clear_mwi()                 关闭设备内存写无效
 供应商和设备标识
 ================
 
-不要在include/linux/pci_ids.h中添加新的设备或供应商ID，除非它们是在多个驱
+不要在include/freax/pci_ids.h中添加新的设备或供应商ID，除非它们是在多个驱
 动程序中共享。如果有需要的话，你可以在你的驱动程序中添加私有定义，或者直接使用
 普通的十六进制常量。
 

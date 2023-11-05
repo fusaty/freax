@@ -7,16 +7,16 @@
  * Author: David Dajun Chen <dchen@diasemi.com>
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/mfd/core.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/of.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/input.h>
+#include <freax/mfd/core.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
+#include <freax/of.h>
 
-#include <linux/mfd/da9052/da9052.h>
-#include <linux/mfd/da9052/reg.h>
+#include <freax/mfd/da9052/da9052.h>
+#include <freax/mfd/da9052/reg.h>
 
 
 /* I2C safe register check */

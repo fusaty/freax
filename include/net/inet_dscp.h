@@ -22,7 +22,7 @@
 #ifndef _INET_DSCP_H
 #define _INET_DSCP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* Special type for storing DSCP values.
  *

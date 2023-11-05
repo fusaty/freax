@@ -20,15 +20,15 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/cacheinfo.h>
-#include <linux/ctype.h>
-#include <linux/interrupt.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/perf_event.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/cacheinfo.h>
+#include <freax/ctype.h>
+#include <freax/interrupt.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/perf_event.h>
+#include <freax/platform_device.h>
 
 #include "arm_cspmu.h"
 

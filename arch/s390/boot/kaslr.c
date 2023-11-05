@@ -2,7 +2,7 @@
 /*
  * Copyright IBM Corp. 2019
  */
-#include <linux/pgtable.h>
+#include <freax/pgtable.h>
 #include <asm/physmem_info.h>
 #include <asm/cpacf.h>
 #include <asm/timex.h>

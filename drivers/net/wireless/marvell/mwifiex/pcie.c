@@ -5,8 +5,8 @@
  * Copyright 2011-2020 NXP
  */
 
-#include <linux/iopoll.h>
-#include <linux/firmware.h>
+#include <freax/iopoll.h>
+#include <freax/firmware.h>
 
 #include "decl.h"
 #include "ioctl.h"

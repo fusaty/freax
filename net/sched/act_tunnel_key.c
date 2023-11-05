@@ -4,11 +4,11 @@
  * Copyright (c) 2016, Mellanox Technologies. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
 #include <net/geneve.h>
 #include <net/vxlan.h>
 #include <net/erspan.h>
@@ -18,7 +18,7 @@
 #include <net/pkt_cls.h>
 #include <net/tc_wrapper.h>
 
-#include <linux/tc_act/tc_tunnel_key.h>
+#include <freax/tc_act/tc_tunnel_key.h>
 #include <net/tc_act/tc_tunnel_key.h>
 
 static struct tc_action_ops act_tunnel_key_ops;

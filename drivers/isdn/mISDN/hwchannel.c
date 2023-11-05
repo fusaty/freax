@@ -6,9 +6,9 @@
  * Copyright 2008  by Karsten Keil <kkeil@novell.com>
  */
 
-#include <linux/gfp.h>
-#include <linux/module.h>
-#include <linux/mISDNhw.h>
+#include <freax/gfp.h>
+#include <freax/module.h>
+#include <freax/mISDNhw.h>
 
 static void
 dchannel_bh(struct work_struct *ws)

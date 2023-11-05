@@ -2,19 +2,19 @@
 /*
  * Common SMP CPU bringup/teardown functions
  */
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/smp.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/export.h>
-#include <linux/percpu.h>
-#include <linux/kthread.h>
-#include <linux/smpboot.h>
+#include <freax/cpu.h>
+#include <freax/err.h>
+#include <freax/smp.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/sched/task.h>
+#include <freax/export.h>
+#include <freax/percpu.h>
+#include <freax/kthread.h>
+#include <freax/smpboot.h>
 
 #include "smpboot.h"
 

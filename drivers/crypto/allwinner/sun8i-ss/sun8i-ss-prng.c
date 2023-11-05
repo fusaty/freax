@@ -10,10 +10,10 @@
  * You could find a link for the datasheet in Documentation/arch/arm/sunxi.rst
  */
 #include "sun8i-ss.h"
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/pm_runtime.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/pm_runtime.h>
 #include <crypto/internal/rng.h>
 
 int sun8i_ss_prng_seed(struct crypto_rng *tfm, const u8 *seed,
@@ -144,7 +144,7 @@ int sun8i_ss_prng_generate(struct crypto_rng *tfm, const u8 *src,
 		dev_err(ss->dev, "DMA timeout for PRNG (size=%u)\n", todo);
 		err = -EFAULT;
 	}
-	/* Since cipher and hash use the linux/cryptoengine and that we have
+	/* Since cipher and hash use the freax/cryptoengine and that we have
 	 * a cryptoengine per flow, we are sure that they will issue only one
 	 * request per flow.
 	 * Since the cryptoengine wait for completion before submitting a new

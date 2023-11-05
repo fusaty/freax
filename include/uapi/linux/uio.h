@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  *	Berkeley style UIO structures	-	Alan Cox 1994.
  *
@@ -7,11 +7,11 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  */
-#ifndef _UAPI__LINUX_UIO_H
-#define _UAPI__LINUX_UIO_H
+#ifndef _UAPI__freax_UIO_H
+#define _UAPI__freax_UIO_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 
 
 struct iovec
@@ -28,4 +28,4 @@ struct iovec
 #define UIO_MAXIOV	1024
 
 
-#endif /* _UAPI__LINUX_UIO_H */
+#endif /* _UAPI__freax_UIO_H */

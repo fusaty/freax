@@ -17,27 +17,27 @@
  * Major updates contributed by GlobalLogic
  */
 
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/mdio/mdio-regmap.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/pcs-lynx.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/skbuff.h>
+#include <freax/atomic.h>
+#include <freax/delay.h>
+#include <freax/etherdevice.h>
+#include <freax/if_vlan.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mii.h>
+#include <freax/mdio/mdio-regmap.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/pcs-lynx.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/skbuff.h>
 #include <asm/cacheflush.h>
 
 #include "altera_utils.h"

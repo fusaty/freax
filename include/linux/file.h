@@ -3,14 +3,14 @@
  * Wrapper functions for accessing the file_struct fd array.
  */
 
-#ifndef __LINUX_FILE_H
-#define __LINUX_FILE_H
+#ifndef __freax_FILE_H
+#define __freax_FILE_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/posix_types.h>
-#include <linux/errno.h>
-#include <linux/cleanup.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
+#include <freax/posix_types.h>
+#include <freax/errno.h>
+#include <freax/cleanup.h>
 
 struct file;
 
@@ -115,4 +115,4 @@ extern void __fput_sync(struct file *);
 
 extern unsigned int sysctl_nr_open_min, sysctl_nr_open_max;
 
-#endif /* __LINUX_FILE_H */
+#endif /* __freax_FILE_H */

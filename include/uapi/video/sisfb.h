@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * sisfb.h - definitions for the SiS framebuffer driver
  *
@@ -19,10 +19,10 @@
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA
  */
 
-#ifndef _UAPI_LINUX_SISFB_H_
-#define _UAPI_LINUX_SISFB_H_
+#ifndef _UAPI_freax_SISFB_H_
+#define _UAPI_freax_SISFB_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/ioctl.h>
 
 /**********************************************/
@@ -207,4 +207,4 @@ struct sis_memreq {
 /**********************************************/
 
 
-#endif /* _UAPI_LINUX_SISFB_H_ */
+#endif /* _UAPI_freax_SISFB_H_ */

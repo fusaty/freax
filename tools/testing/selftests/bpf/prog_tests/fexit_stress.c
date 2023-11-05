@@ -27,9 +27,9 @@ void serial_test_fexit_stress(void)
 
 	LIBBPF_OPTS(bpf_test_run_opts, topts);
 
-	err = libbpf_find_vmlinux_btf_id("bpf_fentry_test1",
+	err = libbpf_find_vmfreax_btf_id("bpf_fentry_test1",
 					 trace_opts.expected_attach_type);
-	if (!ASSERT_GT(err, 0, "find_vmlinux_btf_id"))
+	if (!ASSERT_GT(err, 0, "find_vmfreax_btf_id"))
 		goto out;
 	trace_opts.attach_btf_id = err;
 

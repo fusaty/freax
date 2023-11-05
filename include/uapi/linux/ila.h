@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* ila.h - ILA Interface */
 
-#ifndef _UAPI_LINUX_ILA_H
-#define _UAPI_LINUX_ILA_H
+#ifndef _UAPI_freax_ILA_H
+#define _UAPI_freax_ILA_H
 
 /* NETLINK_GENERIC related info */
 #define ILA_GENL_NAME		"ila"
@@ -65,4 +65,4 @@ enum {
 	ILA_HOOK_ROUTE_INPUT,
 };
 
-#endif /* _UAPI_LINUX_ILA_H */
+#endif /* _UAPI_freax_ILA_H */

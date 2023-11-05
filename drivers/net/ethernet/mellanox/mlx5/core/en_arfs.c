@@ -30,10 +30,10 @@
  * SOFTWARE.
  */
 
-#include <linux/hash.h>
-#include <linux/mlx5/fs.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/hash.h>
+#include <freax/mlx5/fs.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include "en.h"
 
 #define ARFS_HASH_SHIFT BITS_PER_BYTE

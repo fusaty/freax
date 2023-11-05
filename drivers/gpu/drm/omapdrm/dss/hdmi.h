@@ -8,10 +8,10 @@
 #ifndef _HDMI_H
 #define _HDMI_H
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/hdmi.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/hdmi.h>
 #include <sound/omap-hdmi-audio.h>
 #include <media/cec.h>
 #include <drm/drm_bridge.h>

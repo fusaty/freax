@@ -2,7 +2,7 @@
 #ifndef _I8042_ACPIPNPIO_H
 #define _I8042_ACPIPNPIO_H
 
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 
 #ifdef CONFIG_X86
 #include <asm/x86_init.h>
@@ -66,7 +66,7 @@ static inline void i8042_write_command(int val)
 
 #ifdef CONFIG_X86
 
-#include <linux/dmi.h>
+#include <freax/dmi.h>
 
 #define SERIO_QUIRK_NOKBD		BIT(0)
 #define SERIO_QUIRK_NOAUX		BIT(1)
@@ -1342,7 +1342,7 @@ static const struct dmi_system_id i8042_dmi_laptop_table[] __initconst = {
 #endif /* CONFIG_X86 */
 
 #ifdef CONFIG_PNP
-#include <linux/pnp.h>
+#include <freax/pnp.h>
 
 static bool i8042_pnp_kbd_registered;
 static unsigned int i8042_pnp_kbd_devices;

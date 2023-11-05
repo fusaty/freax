@@ -2,25 +2,25 @@
 /* drivers/mtd/maps/plat-ram.c
  *
  * (c) 2004-2005 Simtec Electronics
- *	http://www.simtec.co.uk/products/SWLINUX/
+ *	http://www.simtec.co.uk/products/SWfreax/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * Generic platform device based RAM map
 */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/ioport.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
 
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/map.h>
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/plat-ram.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/map.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/plat-ram.h>
 
 #include <asm/io.h>
 

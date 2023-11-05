@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/leds/leds-locomo.c
+ * freax/drivers/leds/leds-locomo.c
  *
  * Copyright (C) 2005 John Lenz <lenz@cs.wisc.edu>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/leds.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/leds.h>
 
 #include <asm/hardware/locomo.h>
 

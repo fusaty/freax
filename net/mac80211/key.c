@@ -10,13 +10,13 @@
  */
 
 #include <crypto/utils.h>
-#include <linux/if_ether.h>
-#include <linux/etherdevice.h>
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/if_ether.h>
+#include <freax/etherdevice.h>
+#include <freax/list.h>
+#include <freax/rcupdate.h>
+#include <freax/rtnetlink.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 #include <net/mac80211.h>
 #include <asm/unaligned.h>
 #include "ieee80211_i.h"

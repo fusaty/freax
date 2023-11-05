@@ -69,7 +69,7 @@
 		interrupts = <77 IRQ_TYPE_EDGE_FALLING>;
 		avdd-supply = <&vreg_l6a_1p8>;
 		vdd-supply = <&vdd_3v2_tp>;
-		linux,keycodes = <KEY_BACK KEY_MENU>;
+		freax,keycodes = <KEY_BACK KEY_MENU>;
 
 		pinctrl-names = "default", "sleep";
 		pinctrl-0 = <&touchkey_default>;

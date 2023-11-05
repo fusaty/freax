@@ -811,7 +811,7 @@
 		device_type = "pci";
 		reg = <0 0x1a143000 0 0x1000>;
 		reg-names = "port0";
-		linux,pci-domain = <0>;
+		freax,pci-domain = <0>;
 		#address-cells = <3>;
 		#size-cells = <2>;
 		interrupts = <GIC_SPI 228 IRQ_TYPE_LEVEL_LOW>;
@@ -848,7 +848,7 @@
 		device_type = "pci";
 		reg = <0 0x1a145000 0 0x1000>;
 		reg-names = "port1";
-		linux,pci-domain = <1>;
+		freax,pci-domain = <1>;
 		#address-cells = <3>;
 		#size-cells = <2>;
 		interrupts = <GIC_SPI 229 IRQ_TYPE_LEVEL_LOW>;

@@ -8,12 +8,12 @@
  *     Jasper St. Pierre <jstpierre@mecheye.net>
  */
 
-#include <linux/component.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/sys_soc.h>
-#include <linux/platform_device.h>
-#include <linux/soc/amlogic/meson-canvas.h>
+#include <freax/component.h>
+#include <freax/module.h>
+#include <freax/of_graph.h>
+#include <freax/sys_soc.h>
+#include <freax/platform_device.h>
+#include <freax/soc/amlogic/meson-canvas.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic_helper.h>

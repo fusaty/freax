@@ -3,8 +3,8 @@
 #ifndef __HISI_HPRE_H
 #define __HISI_HPRE_H
 
-#include <linux/list.h>
-#include <linux/hisi_acc_qm.h>
+#include <freax/list.h>
+#include <freax/hisi_acc_qm.h>
 
 #define HPRE_SQE_SIZE			sizeof(struct hpre_sqe)
 #define HPRE_PF_DEF_Q_NUM		64

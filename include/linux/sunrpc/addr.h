@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/addr.h
+ * freax/include/freax/sunrpc/addr.h
  *
  * Various routines for copying and comparing sockaddrs and for
  * converting them to and from presentation format.
  */
-#ifndef _LINUX_SUNRPC_ADDR_H
-#define _LINUX_SUNRPC_ADDR_H
+#ifndef _freax_SUNRPC_ADDR_H
+#define _freax_SUNRPC_ADDR_H
 
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <freax/socket.h>
+#include <freax/in.h>
+#include <freax/in6.h>
 #include <net/ipv6.h>
 
 size_t		rpc_ntop(const struct sockaddr *, char *, const size_t);
@@ -181,4 +181,4 @@ static inline u32 rpc_get_scope_id(const struct sockaddr *sa)
 	return ((struct sockaddr_in6 *) sa)->sin6_scope_id;
 }
 
-#endif /* _LINUX_SUNRPC_ADDR_H */
+#endif /* _freax_SUNRPC_ADDR_H */

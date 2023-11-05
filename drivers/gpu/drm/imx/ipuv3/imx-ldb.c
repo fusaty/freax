@@ -5,17 +5,17 @@
  * Copyright (C) 2012 Sascha Hauer, Pengutronix
  */
 
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/i2c.h>
-#include <linux/media-bus-format.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/regmap.h>
-#include <linux/videodev2.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/i2c.h>
+#include <freax/media-bus-format.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <freax/module.h>
+#include <freax/of_device.h>
+#include <freax/of_graph.h>
+#include <freax/regmap.h>
+#include <freax/videodev2.h>
 
 #include <video/of_display_timing.h>
 #include <video/of_videomode.h>

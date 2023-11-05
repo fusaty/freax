@@ -11,8 +11,8 @@
 #ifndef _ARM_KERNEL_PROBES_H
 #define  _ARM_KERNEL_PROBES_H
 
-#include <linux/types.h>
-#include <linux/stddef.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
 #include <asm/probes.h>
 #include <asm/ptrace.h>
 #include <asm/kprobes.h>
@@ -21,13 +21,13 @@ void __init arm_probes_decode_init(void);
 
 extern probes_check_cc * const probes_condition_checks[16];
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 
 /* str_pc_offset is architecturally defined from ARMv7 onwards */
 #define str_pc_offset 8
 #define find_str_pc_offset()
 
-#else /* __LINUX_ARM_ARCH__ < 7 */
+#else /* __freax_ARM_ARCH__ < 7 */
 
 /* We need a run-time check to determine str_pc_offset */
 extern int str_pc_offset;
@@ -51,13 +51,13 @@ static inline void __kprobes bx_write_pc(long pcv, struct pt_regs *regs)
 }
 
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 
 /* Kernels built for >= ARMv6 should never run on <= ARMv5 hardware, so... */
 #define load_write_pc_interworks true
 #define test_load_write_pc_interworking()
 
-#else /* __LINUX_ARM_ARCH__ < 6 */
+#else /* __freax_ARM_ARCH__ < 6 */
 
 /* We need run-time testing to determine if load_write_pc() should interwork. */
 extern bool load_write_pc_interworks;
@@ -74,24 +74,24 @@ static inline void __kprobes load_write_pc(long pcv, struct pt_regs *regs)
 }
 
 
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 
 #define alu_write_pc_interworks true
 #define test_alu_write_pc_interworking()
 
-#elif __LINUX_ARM_ARCH__ <= 5
+#elif __freax_ARM_ARCH__ <= 5
 
 /* Kernels built for <= ARMv5 should never run on >= ARMv6 hardware, so... */
 #define alu_write_pc_interworks false
 #define test_alu_write_pc_interworking()
 
-#else /* __LINUX_ARM_ARCH__ == 6 */
+#else /* __freax_ARM_ARCH__ == 6 */
 
 /* We could be an ARMv6 binary on ARMv7 hardware so we need a run-time check. */
 extern bool alu_write_pc_interworks;
 void __init test_alu_write_pc_interworking(void);
 
-#endif /* __LINUX_ARM_ARCH__ == 6 */
+#endif /* __freax_ARM_ARCH__ == 6 */
 
 static inline void __kprobes alu_write_pc(long pcv, struct pt_regs *regs)
 {

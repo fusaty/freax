@@ -13,7 +13,7 @@
  *	<rmthomas--a.t--sciolus.org>
  */
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 #include "stk1160.h"
 #include "stk1160-reg.h"

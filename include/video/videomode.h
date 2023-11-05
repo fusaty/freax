@@ -5,10 +5,10 @@
  * generic videomode description
  */
 
-#ifndef __LINUX_VIDEOMODE_H
-#define __LINUX_VIDEOMODE_H
+#ifndef __freax_VIDEOMODE_H
+#define __freax_VIDEOMODE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <video/display_timing.h>
 
 /*

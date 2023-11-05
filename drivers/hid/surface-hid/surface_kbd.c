@@ -8,13 +8,13 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/hid.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/types.h>
+#include <freax/hid.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/types.h>
 
-#include <linux/surface_aggregator/controller.h>
+#include <freax/surface_aggregator/controller.h>
 
 #include "surface_hid_core.h"
 

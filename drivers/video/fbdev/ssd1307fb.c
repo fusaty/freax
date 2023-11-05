@@ -5,17 +5,17 @@
  * Copyright 2012 Free Electrons
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/property.h>
-#include <linux/pwm.h>
-#include <linux/uaccess.h>
-#include <linux/regulator/consumer.h>
+#include <freax/backlight.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/property.h>
+#include <freax/pwm.h>
+#include <freax/uaccess.h>
+#include <freax/regulator/consumer.h>
 
 #define SSD1307FB_DATA			0x40
 #define SSD1307FB_COMMAND		0x80

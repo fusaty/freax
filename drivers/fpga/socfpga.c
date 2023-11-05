@@ -4,15 +4,15 @@
  *
  *  Copyright (C) 2013-2015 Altera Corporation
  */
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/pm.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/fpga/fpga-mgr.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/pm.h>
 
 /* Register offsets */
 #define SOCFPGA_FPGMGR_STAT_OFST				0x0

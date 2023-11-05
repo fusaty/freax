@@ -8,10 +8,10 @@
  *
  */
 
-#ifndef _LINUX_PREFETCH_H
-#define _LINUX_PREFETCH_H
+#ifndef _freax_PREFETCH_H
+#define _freax_PREFETCH_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/processor.h>
 #include <asm/cache.h>
 

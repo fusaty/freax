@@ -5,11 +5,11 @@
  * Copyright (c) 2010 Ira W. Snyder <iws@ovro.caltech.edu>
  */
 
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/pci.h>
-#include <linux/init.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
+#include <freax/pci.h>
+#include <freax/init.h>
 #include <asm/pci_x86.h>
 #include <asm/pci-direct.h>
 

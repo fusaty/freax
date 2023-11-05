@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-1.0+ WITH freax-syscall-note */
 /*
  * Bond several ethernet interfaces into a Cisco, running 'Etherchannel'.
  *
@@ -41,12 +41,12 @@
  *      - added definitions for various XOR hashing policies
  */
 
-#ifndef _LINUX_IF_BONDING_H
-#define _LINUX_IF_BONDING_H
+#ifndef _freax_IF_BONDING_H
+#define _freax_IF_BONDING_H
 
-#include <linux/if.h>
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <freax/if.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
 
 /* userland - kernel ABI version (2003/05/08) */
 #define BOND_ABI_VERSION 2
@@ -152,4 +152,4 @@ enum {
 };
 #define BOND_3AD_STAT_MAX (__BOND_3AD_STAT_MAX - 1)
 
-#endif /* _LINUX_IF_BONDING_H */
+#endif /* _freax_IF_BONDING_H */

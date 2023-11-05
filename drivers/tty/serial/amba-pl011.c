@@ -16,31 +16,31 @@
  * and hooked into this driver.
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/platform_device.h>
-#include <linux/sysrq.h>
-#include <linux/device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/amba/bus.h>
-#include <linux/amba/serial.h>
-#include <linux/clk.h>
-#include <linux/slab.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/scatterlist.h>
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/sizes.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/platform_device.h>
+#include <freax/sysrq.h>
+#include <freax/device.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/serial_core.h>
+#include <freax/serial.h>
+#include <freax/amba/bus.h>
+#include <freax/amba/serial.h>
+#include <freax/clk.h>
+#include <freax/slab.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/scatterlist.h>
+#include <freax/delay.h>
+#include <freax/types.h>
+#include <freax/of.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/sizes.h>
+#include <freax/io.h>
+#include <freax/acpi.h>
 
 #define UART_NR			14
 

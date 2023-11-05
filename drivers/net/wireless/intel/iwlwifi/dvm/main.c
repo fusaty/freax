@@ -10,16 +10,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/if_arp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/if_arp.h>
 
 #include <net/mac80211.h>
 
@@ -45,7 +45,7 @@
  *
  ******************************************************************************/
 
-#define DRV_DESCRIPTION	"Intel(R) Wireless WiFi Link AGN driver for Linux"
+#define DRV_DESCRIPTION	"Intel(R) Wireless WiFi Link AGN driver for freax"
 MODULE_DESCRIPTION(DRV_DESCRIPTION);
 MODULE_LICENSE("GPL");
 MODULE_IMPORT_NS(IWLWIFI);

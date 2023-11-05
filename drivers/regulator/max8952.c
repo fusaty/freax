@@ -6,18 +6,18 @@
  * MyungJoo Ham <myungjoo.ham@samsung.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/max8952.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/max8952.h>
+#include <freax/gpio/consumer.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/slab.h>
 
 /* Registers */
 enum {

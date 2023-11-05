@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0
  *
- * linux/sound/cs35l41.h -- Platform data for CS35L41
+ * freax/sound/cs35l41.h -- Platform data for CS35L41
  *
  * Copyright (c) 2017-2021 Cirrus Logic Inc.
  *
@@ -10,8 +10,8 @@
 #ifndef __CS35L41_H
 #define __CS35L41_H
 
-#include <linux/regmap.h>
-#include <linux/firmware/cirrus/cs_dsp.h>
+#include <freax/regmap.h>
+#include <freax/firmware/cirrus/cs_dsp.h>
 
 #define CS35L41_FIRSTREG		0x00000000
 #define CS35L41_LASTREG			0x03804FE8

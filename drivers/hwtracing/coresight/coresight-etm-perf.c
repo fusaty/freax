@@ -4,20 +4,20 @@
  * Author: Mathieu Poirier <mathieu.poirier@linaro.org>
  */
 
-#include <linux/bitfield.h>
-#include <linux/coresight.h>
-#include <linux/coresight-pmu.h>
-#include <linux/cpumask.h>
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/perf_event.h>
-#include <linux/percpu-defs.h>
-#include <linux/slab.h>
-#include <linux/stringhash.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/bitfield.h>
+#include <freax/coresight.h>
+#include <freax/coresight-pmu.h>
+#include <freax/cpumask.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/perf_event.h>
+#include <freax/percpu-defs.h>
+#include <freax/slab.h>
+#include <freax/stringhash.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 #include "coresight-config.h"
 #include "coresight-etm-perf.h"

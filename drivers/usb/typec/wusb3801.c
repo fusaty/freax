@@ -5,11 +5,11 @@
  * Copyright (C) 2022 Samuel Holland <samuel@sholland.org>
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/usb/typec.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/usb/typec.h>
 
 #define WUSB3801_REG_DEVICE_ID		0x01
 #define WUSB3801_REG_CTRL0		0x02

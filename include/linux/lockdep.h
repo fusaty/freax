@@ -7,21 +7,21 @@
  *
  * see Documentation/locking/lockdep-design.rst for more details.
  */
-#ifndef __LINUX_LOCKDEP_H
-#define __LINUX_LOCKDEP_H
+#ifndef __freax_LOCKDEP_H
+#define __freax_LOCKDEP_H
 
-#include <linux/lockdep_types.h>
-#include <linux/smp.h>
+#include <freax/lockdep_types.h>
+#include <freax/smp.h>
 #include <asm/percpu.h>
 
 struct task_struct;
 
 #ifdef CONFIG_LOCKDEP
 
-#include <linux/linkage.h>
-#include <linux/list.h>
-#include <linux/debug_locks.h>
-#include <linux/stacktrace.h>
+#include <freax/linkage.h>
+#include <freax/list.h>
+#include <freax/debug_locks.h>
+#include <freax/stacktrace.h>
 
 static inline void lockdep_copy_map(struct lockdep_map *to,
 				    struct lockdep_map *from)
@@ -696,4 +696,4 @@ lockdep_rcu_suspicious(const char *file, const int line, const char *s)
 }
 #endif
 
-#endif /* __LINUX_LOCKDEP_H */
+#endif /* __freax_LOCKDEP_H */

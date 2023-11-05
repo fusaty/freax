@@ -4,17 +4,17 @@
  *  Copyright (C) 2012 John Crispin <john@phrozen.org>
  */
 
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/of.h>
-#include <linux/mutex.h>
-#include <linux/gpio/driver.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/of.h>
+#include <freax/mutex.h>
+#include <freax/gpio/driver.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/err.h>
 
 /*
  * The Serial To Parallel (STP) is found on MIPS based Lantiq socs. It is a

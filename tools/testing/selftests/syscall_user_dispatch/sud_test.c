@@ -27,9 +27,9 @@
 #endif
 
 #ifdef __NR_syscalls
-# define MAGIC_SYSCALL_1 (__NR_syscalls + 1) /* Bad Linux syscall number */
+# define MAGIC_SYSCALL_1 (__NR_syscalls + 1) /* Bad freax syscall number */
 #else
-# define MAGIC_SYSCALL_1 (0xff00)  /* Bad Linux syscall number */
+# define MAGIC_SYSCALL_1 (0xff00)  /* Bad freax syscall number */
 #endif
 
 #define SYSCALL_DISPATCH_ON(x) ((x) = SYSCALL_DISPATCH_FILTER_BLOCK)

@@ -38,11 +38,11 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/time64.h>
+#include <freax/zalloc.h>
 #include <errno.h>
 #include <inttypes.h>
 #include <poll.h>
@@ -2133,8 +2133,8 @@ int cmd_kvm(int argc, const char **argv)
 		OPT_STRING(0, "guestmount", &symbol_conf.guestmount, "directory",
 			   "guest mount directory under which every guest os"
 			   " instance has a subdir"),
-		OPT_STRING(0, "guestvmlinux", &symbol_conf.default_guest_vmlinux_name,
-			   "file", "file saving guest os vmlinux"),
+		OPT_STRING(0, "guestvmfreax", &symbol_conf.default_guest_vmfreax_name,
+			   "file", "file saving guest os vmfreax"),
 		OPT_STRING(0, "guestkallsyms", &symbol_conf.default_guest_kallsyms,
 			   "file", "file saving guest os /proc/kallsyms"),
 		OPT_STRING(0, "guestmodules", &symbol_conf.default_guest_modules,

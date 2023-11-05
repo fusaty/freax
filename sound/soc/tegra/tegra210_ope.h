@@ -9,7 +9,7 @@
 #ifndef __TEGRA210_OPE_H__
 #define __TEGRA210_OPE_H__
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 #include <sound/soc.h>
 
 #include "tegra210_peq.h"

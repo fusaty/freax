@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_BCMA_DRIVER_GMAC_CMN_H_
-#define LINUX_BCMA_DRIVER_GMAC_CMN_H_
+#ifndef freax_BCMA_DRIVER_GMAC_CMN_H_
+#define freax_BCMA_DRIVER_GMAC_CMN_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define BCMA_GMAC_CMN_STAG0		0x000
 #define BCMA_GMAC_CMN_STAG1		0x004
@@ -92,4 +92,4 @@ struct bcma_drv_gmac_cmn {
 #define gmac_cmn_write16(gc, offset, val)	bcma_write16((gc)->core, offset, val)
 #define gmac_cmn_write32(gc, offset, val)	bcma_write32((gc)->core, offset, val)
 
-#endif /* LINUX_BCMA_DRIVER_GMAC_CMN_H_ */
+#endif /* freax_BCMA_DRIVER_GMAC_CMN_H_ */

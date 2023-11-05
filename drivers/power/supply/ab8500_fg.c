@@ -15,26 +15,26 @@
  *	Arun R Murthy <arun.murthy@stericsson.com>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/component.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/time64.h>
-#include <linux/of.h>
-#include <linux/completion.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/iio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/fixp-arith.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/component.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/kobject.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/time.h>
+#include <freax/time64.h>
+#include <freax/of.h>
+#include <freax/completion.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/abx500.h>
+#include <freax/mfd/abx500/ab8500.h>
+#include <freax/iio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/fixp-arith.h>
 
 #include "ab8500-bm.h"
 

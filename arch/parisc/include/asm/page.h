@@ -2,7 +2,7 @@
 #ifndef _PARISC_PAGE_H
 #define _PARISC_PAGE_H
 
-#include <linux/const.h>
+#include <freax/const.h>
 
 #if defined(CONFIG_PARISC_PAGE_SIZE_4KB)
 # define PAGE_SHIFT	12
@@ -120,7 +120,7 @@ extern int npmem_ranges;
 #define PMD_ENTRY_SIZE	(1UL << BITS_PER_PMD_ENTRY)
 #define PTE_ENTRY_SIZE	(1UL << BITS_PER_PTE_ENTRY)
 
-#define LINUX_GATEWAY_SPACE     0
+#define freax_GATEWAY_SPACE     0
 
 /* This governs the relationship between virtual and physical addresses.
  * If you alter it, make sure to take care of our various fixed mapping
@@ -142,7 +142,7 @@ extern int npmem_ranges;
 /* The size of the gateway page (we leave lots of room for expansion) */
 #define GATEWAY_PAGE_SIZE	0x4000
 
-/* The start of the actual kernel binary---used in vmlinux.lds.S
+/* The start of the actual kernel binary---used in vmfreax.lds.S
  * Leave some space after __PAGE_OFFSET for detecting kernel null
  * ptr derefs */
 #define KERNEL_BINARY_TEXT_START	(__PAGE_OFFSET + 0x100000)

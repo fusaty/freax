@@ -6,14 +6,14 @@
  *    Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com)
  */
 
-#include <linux/types.h>
-#include <linux/export.h>
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
-#include <linux/init.h>
-#include <linux/smp.h>
-#include <linux/percpu.h>
-#include <linux/io.h>
+#include <freax/types.h>
+#include <freax/export.h>
+#include <freax/spinlock.h>
+#include <freax/jiffies.h>
+#include <freax/init.h>
+#include <freax/smp.h>
+#include <freax/percpu.h>
+#include <freax/io.h>
 #include <asm/alternative.h>
 
 int spin_retry = -1;

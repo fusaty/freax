@@ -9,11 +9,11 @@
 #ifndef __CONNECTION_H
 #define __CONNECTION_H
 
-#include <linux/bits.h>
-#include <linux/list.h>
-#include <linux/kfifo.h>
-#include <linux/kref.h>
-#include <linux/workqueue.h>
+#include <freax/bits.h>
+#include <freax/list.h>
+#include <freax/kfifo.h>
+#include <freax/kref.h>
+#include <freax/workqueue.h>
 
 #define GB_CONNECTION_FLAG_CSD		BIT(0)
 #define GB_CONNECTION_FLAG_NO_FLOWCTRL	BIT(1)

@@ -2,13 +2,13 @@
 /*
  * Copyright (c) 2023, Intel Corporation. All rights reserved.
  */
-#ifndef _LINUX_USB_LJCA_H_
-#define _LINUX_USB_LJCA_H_
+#ifndef _freax_USB_LJCA_H_
+#define _freax_USB_LJCA_H_
 
-#include <linux/auxiliary_bus.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #define LJCA_MAX_GPIO_NUM 64
 

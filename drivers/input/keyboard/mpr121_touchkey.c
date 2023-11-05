@@ -8,16 +8,16 @@
  * Based on mcs_touchkey.c
  */
 
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
 
 /* Register definitions */
 #define ELE_TOUCH_STATUS_0_ADDR	0x0
@@ -257,18 +257,18 @@ static int mpr_touchkey_probe(struct i2c_client *client)
 
 	mpr121->client = client;
 	mpr121->input_dev = input_dev;
-	mpr121->keycount = device_property_count_u32(dev, "linux,keycodes");
+	mpr121->keycount = device_property_count_u32(dev, "freax,keycodes");
 	if (mpr121->keycount > MPR121_MAX_KEY_COUNT) {
 		dev_err(dev, "too many keys defined (%d)\n", mpr121->keycount);
 		return -EINVAL;
 	}
 
-	error = device_property_read_u32_array(dev, "linux,keycodes",
+	error = device_property_read_u32_array(dev, "freax,keycodes",
 					       mpr121->keycodes,
 					       mpr121->keycount);
 	if (error) {
 		dev_err(dev,
-			"failed to read linux,keycode property: %d\n", error);
+			"failed to read freax,keycode property: %d\n", error);
 		return error;
 	}
 

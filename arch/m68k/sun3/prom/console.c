@@ -6,12 +6,12 @@
  * Copyright (C) 1995 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
 #include <asm/openprom.h>
 #include <asm/oplib.h>
-#include <linux/string.h>
+#include <freax/string.h>
 
 /* Non blocking get character from console input device, returns -1
  * if no input was taken.  This can be used for polling.

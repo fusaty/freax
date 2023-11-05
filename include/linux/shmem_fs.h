@@ -2,14 +2,14 @@
 #ifndef __SHMEM_FS_H
 #define __SHMEM_FS_H
 
-#include <linux/file.h>
-#include <linux/swap.h>
-#include <linux/mempolicy.h>
-#include <linux/pagemap.h>
-#include <linux/percpu_counter.h>
-#include <linux/xattr.h>
-#include <linux/fs_parser.h>
-#include <linux/userfaultfd_k.h>
+#include <freax/file.h>
+#include <freax/swap.h>
+#include <freax/mempolicy.h>
+#include <freax/pagemap.h>
+#include <freax/percpu_counter.h>
+#include <freax/xattr.h>
+#include <freax/fs_parser.h>
+#include <freax/userfaultfd_k.h>
 
 /* inode in-kernel data */
 

@@ -6,14 +6,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/syscalls.h>
-#include <linux/skbuff.h>
-#include <linux/filter.h>
-#include <linux/bpf.h>
+#include <freax/module.h>
+#include <freax/syscalls.h>
+#include <freax/skbuff.h>
+#include <freax/filter.h>
+#include <freax/bpf.h>
 
-#include <linux/netfilter/xt_bpf.h>
-#include <linux/netfilter/x_tables.h>
+#include <freax/netfilter/xt_bpf.h>
+#include <freax/netfilter/x_tables.h>
 
 MODULE_AUTHOR("Willem de Bruijn <willemb@google.com>");
 MODULE_DESCRIPTION("Xtables: BPF filter match");

@@ -7,13 +7,13 @@
  * Denis Ciocca <denis.ciocca@st.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/triggered_buffer.h>
+#include <freax/kernel.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/triggered_buffer.h>
 
-#include <linux/iio/common/st_sensors.h>
+#include <freax/iio/common/st_sensors.h>
 #include "st_gyro.h"
 
 int st_gyro_trig_set_state(struct iio_trigger *trig, bool state)

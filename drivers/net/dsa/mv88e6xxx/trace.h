@@ -8,9 +8,9 @@
 #if !defined(_MV88E6XXX_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _MV88E6XXX_TRACE_H
 
-#include <linux/device.h>
-#include <linux/if_ether.h>
-#include <linux/tracepoint.h>
+#include <freax/device.h>
+#include <freax/if_ether.h>
+#include <freax/tracepoint.h>
 
 DECLARE_EVENT_CLASS(mv88e6xxx_atu_violation,
 

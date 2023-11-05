@@ -3,7 +3,7 @@
  * Copyright (C) 2016 Linaro Ltd;  <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/efi.h>
+#include <freax/efi.h>
 #include <asm/efi.h>
 
 #include "efistub.h"
@@ -66,8 +66,8 @@ efi_status_t efi_random_get_seed(void)
 {
 	efi_guid_t rng_proto = EFI_RNG_PROTOCOL_GUID;
 	efi_guid_t rng_algo_raw = EFI_RNG_ALGORITHM_RAW;
-	efi_guid_t rng_table_guid = LINUX_EFI_RANDOM_SEED_TABLE_GUID;
-	struct linux_efi_random_seed *prev_seed, *seed = NULL;
+	efi_guid_t rng_table_guid = freax_EFI_RANDOM_SEED_TABLE_GUID;
+	struct freax_efi_random_seed *prev_seed, *seed = NULL;
 	int prev_seed_size = 0, seed_size = EFI_RANDOM_SEED_SIZE;
 	unsigned long nv_seed_size = 0, offset = 0;
 	efi_rng_protocol_t *rng = NULL;

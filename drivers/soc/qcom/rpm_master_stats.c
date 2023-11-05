@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2020, The freax Foundation. All rights reserved.
  * Copyright (c) 2023, Linaro Limited
  *
  * This driver supports what is known as "Master Stats v2" in Qualcomm
@@ -8,12 +8,12 @@
  * ever shipped, all the way from 2013 to 2023.
  */
 
-#include <linux/debugfs.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <freax/debugfs.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
 
 struct master_stats_data {
 	void __iomem *base;

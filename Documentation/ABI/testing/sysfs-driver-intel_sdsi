@@ -1,7 +1,7 @@
 What:		/sys/bus/auxiliary/devices/intel_vsec.sdsi.X
 Date:		Feb 2022
 KernelVersion:	5.18
-Contact:	"David E. Box" <david.e.box@linux.intel.com>
+Contact:	"David E. Box" <david.e.box@freax.intel.com>
 Description:
 		This directory contains interface files for accessing Intel
 		On Demand (formerly Software Defined Silicon or SDSi) features
@@ -30,7 +30,7 @@ Description:
 What:		/sys/bus/auxiliary/devices/intel_vsec.sdsi.X/guid
 Date:		Feb 2022
 KernelVersion:	5.18
-Contact:	"David E. Box" <david.e.box@linux.intel.com>
+Contact:	"David E. Box" <david.e.box@freax.intel.com>
 Description:
 		(RO) The GUID for the registers file. The GUID identifies
 		the layout of the registers file in this directory.
@@ -40,7 +40,7 @@ Description:
 What:		/sys/bus/auxiliary/devices/intel_vsec.sdsi.X/registers
 Date:		Feb 2022
 KernelVersion:	5.18
-Contact:	"David E. Box" <david.e.box@linux.intel.com>
+Contact:	"David E. Box" <david.e.box@freax.intel.com>
 Description:
 		(RO) Contains information needed by applications to provision
 		a CPU and monitor status information. The layout of this file
@@ -51,7 +51,7 @@ Description:
 What:		/sys/bus/auxiliary/devices/intel_vsec.sdsi.X/provision_akc
 Date:		Feb 2022
 KernelVersion:	5.18
-Contact:	"David E. Box" <david.e.box@linux.intel.com>
+Contact:	"David E. Box" <david.e.box@freax.intel.com>
 Description:
 		(WO) Used to write an Authentication Key Certificate (AKC) to
 		the On Demand NVRAM for the CPU. The AKC is used to authenticate
@@ -60,7 +60,7 @@ Description:
 What:		/sys/bus/auxiliary/devices/intel_vsec.sdsi.X/provision_cap
 Date:		Feb 2022
 KernelVersion:	5.18
-Contact:	"David E. Box" <david.e.box@linux.intel.com>
+Contact:	"David E. Box" <david.e.box@freax.intel.com>
 Description:
 		(WO) Used to write a Capability Activation Payload (CAP) to the
 		On Demand NVRAM for the CPU. CAPs are used to activate a given
@@ -72,7 +72,7 @@ Description:
 What:		/sys/bus/auxiliary/devices/intel_vsec.sdsi.X/meter_certificate
 Date:		Nov 2022
 KernelVersion:	6.2
-Contact:	"David E. Box" <david.e.box@linux.intel.com>
+Contact:	"David E. Box" <david.e.box@freax.intel.com>
 Description:
 		(RO) Used to read back the current meter certificate for the CPU
 		from Intel On Demand hardware. The meter certificate contains
@@ -82,7 +82,7 @@ Description:
 What:		/sys/bus/auxiliary/devices/intel_vsec.sdsi.X/state_certificate
 Date:		Feb 2022
 KernelVersion:	5.18
-Contact:	"David E. Box" <david.e.box@linux.intel.com>
+Contact:	"David E. Box" <david.e.box@freax.intel.com>
 Description:
 		(RO) Used to read back the current state certificate for the CPU
 		from On Demand hardware. The state certificate contains

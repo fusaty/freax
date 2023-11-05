@@ -6,11 +6,11 @@
  * LED driver for the DAC124S085 SPI DAC
  */
 
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
 
 struct dac124s085_led {
 	struct led_classdev	ldev;

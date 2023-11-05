@@ -87,9 +87,9 @@ void bch2_quota_to_text(struct printbuf *out, struct bch_fs *c,
 
 #ifdef CONFIG_BCACHEFS_QUOTA
 
-#include <linux/cred.h>
-#include <linux/fs.h>
-#include <linux/quota.h>
+#include <freax/cred.h>
+#include <freax/fs.h>
+#include <freax/quota.h>
 
 static void qc_info_to_text(struct printbuf *out, struct qc_info *i)
 {

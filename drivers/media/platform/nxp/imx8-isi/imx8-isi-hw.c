@@ -3,10 +3,10 @@
  * Copyright 2019-2020 NXP
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/types.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/types.h>
 
 #include "imx8-isi-core.h"
 #include "imx8-isi-regs.h"

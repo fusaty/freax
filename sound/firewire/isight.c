@@ -6,14 +6,14 @@
  */
 
 #include <asm/byteorder.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/firewire.h>
+#include <freax/firewire-constants.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mutex.h>
+#include <freax/string.h>
 #include <sound/control.h>
 #include <sound/core.h>
 #include <sound/initval.h>

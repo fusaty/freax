@@ -4,22 +4,22 @@
  *
  *  Copyright (C) 2009 Conexant Systems Inc.
  *  Authors  <shu.lin@conexant.com>, <hiep.huynh@conexant.com>
- *  Based on Steven Toth <stoth@linuxtv.org> cx23885 driver
+ *  Based on Steven Toth <stoth@freaxtv.org> cx23885 driver
  */
 
 #ifndef CX25821_VIDEO_H_
 #define CX25821_VIDEO_H_
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kmod.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kmod.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/kthread.h>
 #include <asm/div64.h>
 
 #include "cx25821.h"

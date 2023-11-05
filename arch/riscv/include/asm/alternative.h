@@ -12,10 +12,10 @@
 
 #ifdef CONFIG_RISCV_ALTERNATIVE
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
 #include <asm/hwcap.h>
 
 #define PATCH_ID_CPUFEATURE_ID(p)		lower_16_bits(p)

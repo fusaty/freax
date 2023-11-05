@@ -13,12 +13,12 @@
 #ifndef MAC80211_H
 #define MAC80211_H
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/if_ether.h>
-#include <linux/skbuff.h>
-#include <linux/ieee80211.h>
-#include <linux/lockdep.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/if_ether.h>
+#include <freax/skbuff.h>
+#include <freax/ieee80211.h>
+#include <freax/lockdep.h>
 #include <net/cfg80211.h>
 #include <net/codel.h>
 #include <net/ieee80211_radiotap.h>
@@ -27,7 +27,7 @@
 /**
  * DOC: Introduction
  *
- * mac80211 is the Linux stack for 802.11 hardware that implements
+ * mac80211 is the freax stack for 802.11 hardware that implements
  * only partial functionality in hard- or firmware. This document
  * defines the interface between mac80211 and low-level hardware
  * drivers.

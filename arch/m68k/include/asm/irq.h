@@ -2,8 +2,8 @@
 #ifndef _M68K_IRQ_H_
 #define _M68K_IRQ_H_
 
-#include <linux/atomic.h>
-#include <linux/linkage.h>
+#include <freax/atomic.h>
+#include <freax/linkage.h>
 
 /*
  * This should be the same as the max(NUM_X_SOURCES) for all the

@@ -1,5 +1,5 @@
-#ifndef _LINUX_MM_H
-#define _LINUX_MM_H
+#ifndef _freax_MM_H
+#define _freax_MM_H
 
 #include <assert.h>
 #include <string.h>

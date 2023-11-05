@@ -6,7 +6,7 @@
 #ifndef __QCOM_GLINK_NATIVE_H__
 #define __QCOM_GLINK_NATIVE_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define GLINK_FEATURE_INTENT_REUSE	BIT(0)
 #define GLINK_FEATURE_MIGRATION		BIT(1)

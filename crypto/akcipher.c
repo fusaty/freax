@@ -6,14 +6,14 @@
  * Authors: Tadeusz Struk <tadeusz.struk@intel.com>
  */
 #include <crypto/internal/akcipher.h>
-#include <linux/cryptouser.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/cryptouser.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/scatterlist.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include <net/netlink.h>
 
 #include "internal.h"

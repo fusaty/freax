@@ -5,7 +5,7 @@
  * Copyright (C) 2022 StarFive Technology Co., Ltd.
  */
 
-#include <linux/auxiliary_bus.h>
+#include <freax/auxiliary_bus.h>
 
 #include <soc/starfive/reset-starfive-jh71x0.h>
 

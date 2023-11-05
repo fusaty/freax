@@ -9,24 +9,24 @@
  * Copyright (C) 1997 Theodore Ts'o
  */
 
-#include <linux/cache.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/proc_fs.h>
-#include <linux/stat.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/namei.h>
-#include <linux/slab.h>
-#include <linux/printk.h>
-#include <linux/mount.h>
-#include <linux/init.h>
-#include <linux/idr.h>
-#include <linux/bitops.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/uaccess.h>
-#include <linux/seq_file.h>
+#include <freax/cache.h>
+#include <freax/errno.h>
+#include <freax/time.h>
+#include <freax/proc_fs.h>
+#include <freax/stat.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/namei.h>
+#include <freax/slab.h>
+#include <freax/printk.h>
+#include <freax/mount.h>
+#include <freax/init.h>
+#include <freax/idr.h>
+#include <freax/bitops.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/uaccess.h>
+#include <freax/seq_file.h>
 
 #include "internal.h"
 

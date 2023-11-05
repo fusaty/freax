@@ -12,11 +12,11 @@
  * protocol.
  */
 
-#include <linux/kernel.h>
-#include <linux/tty.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
+#include <freax/kernel.h>
+#include <freax/tty.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
 
 /* NOTE: for now, only use this driver for devices that provide a CDC-ACM port
  * for normal AT commands, but also provide secondary USB interfaces for the

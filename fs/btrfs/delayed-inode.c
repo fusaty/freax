@@ -4,8 +4,8 @@
  * Written by Miao Xie <miaox@cn.fujitsu.com>
  */
 
-#include <linux/slab.h>
-#include <linux/iversion.h>
+#include <freax/slab.h>
+#include <freax/iversion.h>
 #include "ctree.h"
 #include "fs.h"
 #include "messages.h"

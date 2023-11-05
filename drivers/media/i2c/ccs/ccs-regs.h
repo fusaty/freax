@@ -8,7 +8,7 @@
 #ifndef __CCS_REGS_H__
 #define __CCS_REGS_H__
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 #define CCS_FL_BASE		16
 #define CCS_FL_16BIT		BIT(CCS_FL_BASE)

@@ -9,7 +9,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the freax kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -33,17 +33,17 @@
 
 #define pr_fmt(fmt) "xen-pvscsi: " fmt
 
-#include <linux/module.h>
-#include <linux/utsname.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/gfp.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/configfs.h>
+#include <freax/module.h>
+#include <freax/utsname.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
+#include <freax/list.h>
+#include <freax/gfp.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/configfs.h>
 
 #include <generated/utsrelease.h>
 

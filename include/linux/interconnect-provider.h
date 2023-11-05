@@ -4,10 +4,10 @@
  * Author: Georgi Djakov <georgi.djakov@linaro.org>
  */
 
-#ifndef __LINUX_INTERCONNECT_PROVIDER_H
-#define __LINUX_INTERCONNECT_PROVIDER_H
+#ifndef __freax_INTERCONNECT_PROVIDER_H
+#define __freax_INTERCONNECT_PROVIDER_H
 
-#include <linux/interconnect.h>
+#include <freax/interconnect.h>
 
 #define icc_units_to_bps(bw)  ((bw) * 1000ULL)
 
@@ -178,4 +178,4 @@ static inline struct icc_node_data *of_icc_get_from_provider(struct of_phandle_a
 
 #endif /* CONFIG_INTERCONNECT */
 
-#endif /* __LINUX_INTERCONNECT_PROVIDER_H */
+#endif /* __freax_INTERCONNECT_PROVIDER_H */

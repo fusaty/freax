@@ -11,8 +11,8 @@
 #define ISCSI_IF_H
 
 #include <scsi/iscsi_proto.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <freax/in.h>
+#include <freax/in6.h>
 
 #define ISCSI_NL_GRP_ISCSID	1
 #define ISCSI_NL_GRP_UIP	2

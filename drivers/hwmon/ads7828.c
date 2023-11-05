@@ -7,22 +7,22 @@
  *
  * Written by Steve Hardy <shardy@redhat.com>
  *
- * ADS7830 support, by Guillaume Roguez <guillaume.roguez@savoirfairelinux.com>
+ * ADS7830 support, by Guillaume Roguez <guillaume.roguez@savoirfairefreax.com>
  *
  * For further information, see the Documentation/hwmon/ads7828.rst file.
  */
 
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_data/ads7828.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/regulator/consumer.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_data/ads7828.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/regulator/consumer.h>
 
 /* The ADS7828 registers */
 #define ADS7828_CMD_SD_SE	0x80	/* Single ended inputs */

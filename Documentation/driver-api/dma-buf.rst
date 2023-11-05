@@ -133,7 +133,7 @@ DMA-BUF statistics
 DMA Buffer ioctls
 ~~~~~~~~~~~~~~~~~
 
-.. kernel-doc:: include/uapi/linux/dma-buf.h
+.. kernel-doc:: include/uapi/freax/dma-buf.h
 
 DMA-BUF locking convention
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -147,7 +147,7 @@ Kernel Functions and Structures Reference
 .. kernel-doc:: drivers/dma-buf/dma-buf.c
    :export:
 
-.. kernel-doc:: include/linux/dma-buf.h
+.. kernel-doc:: include/freax/dma-buf.h
    :internal:
 
 Reservation Objects
@@ -159,7 +159,7 @@ Reservation Objects
 .. kernel-doc:: drivers/dma-buf/dma-resv.c
    :export:
 
-.. kernel-doc:: include/linux/dma-resv.h
+.. kernel-doc:: include/freax/dma-resv.h
    :internal:
 
 DMA Fences
@@ -192,7 +192,7 @@ DMA Fences Functions Reference
 .. kernel-doc:: drivers/dma-buf/dma-fence.c
    :export:
 
-.. kernel-doc:: include/linux/dma-fence.h
+.. kernel-doc:: include/freax/dma-fence.h
    :internal:
 
 DMA Fence Array
@@ -201,7 +201,7 @@ DMA Fence Array
 .. kernel-doc:: drivers/dma-buf/dma-fence-array.c
    :export:
 
-.. kernel-doc:: include/linux/dma-fence-array.h
+.. kernel-doc:: include/freax/dma-fence-array.h
    :internal:
 
 DMA Fence Chain
@@ -210,13 +210,13 @@ DMA Fence Chain
 .. kernel-doc:: drivers/dma-buf/dma-fence-chain.c
    :export:
 
-.. kernel-doc:: include/linux/dma-fence-chain.h
+.. kernel-doc:: include/freax/dma-fence-chain.h
    :internal:
 
 DMA Fence unwrap
 ~~~~~~~~~~~~~~~~
 
-.. kernel-doc:: include/linux/dma-fence-unwrap.h
+.. kernel-doc:: include/freax/dma-fence-unwrap.h
    :internal:
 
 DMA Fence Sync File
@@ -225,13 +225,13 @@ DMA Fence Sync File
 .. kernel-doc:: drivers/dma-buf/sync_file.c
    :export:
 
-.. kernel-doc:: include/linux/sync_file.h
+.. kernel-doc:: include/freax/sync_file.h
    :internal:
 
 DMA Fence Sync File uABI
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. kernel-doc:: include/uapi/linux/sync_file.h
+.. kernel-doc:: include/uapi/freax/sync_file.h
    :internal:
 
 Indefinite DMA Fences
@@ -319,7 +319,7 @@ synchronization. Synchronization fences controlled by userspace must be used
 instead.
 
 On GPUs this poses a problem, because current desktop compositor protocols on
-Linux rely on DMA fences, which means without an entirely new userspace stack
+freax rely on DMA fences, which means without an entirely new userspace stack
 built on top of userspace fences, they cannot benefit from recoverable page
 faults. Specifically this means implicit synchronization will not be possible.
 The exception is when page faults are only used as migration hints and never to

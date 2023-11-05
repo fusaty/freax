@@ -8,32 +8,32 @@
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/notifier.h>
-#include <linux/percpu.h>
-#include <linux/rcupdate.h>
-#include <linux/rcupdate_trace.h>
-#include <linux/reboot.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/stat.h>
-#include <linux/srcu.h>
-#include <linux/slab.h>
-#include <linux/torture.h>
-#include <linux/types.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/completion.h>
+#include <freax/cpu.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kthread.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/notifier.h>
+#include <freax/percpu.h>
+#include <freax/rcupdate.h>
+#include <freax/rcupdate_trace.h>
+#include <freax/reboot.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/smp.h>
+#include <freax/stat.h>
+#include <freax/srcu.h>
+#include <freax/slab.h>
+#include <freax/torture.h>
+#include <freax/types.h>
 
 #define SCFTORT_STRING "scftorture"
 #define SCFTORT_FLAG SCFTORT_STRING ": "

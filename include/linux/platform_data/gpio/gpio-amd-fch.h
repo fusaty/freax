@@ -8,8 +8,8 @@
  *
  */
 
-#ifndef __LINUX_PLATFORM_DATA_GPIO_AMD_FCH_H
-#define __LINUX_PLATFORM_DATA_GPIO_AMD_FCH_H
+#ifndef __freax_PLATFORM_DATA_GPIO_AMD_FCH_H
+#define __freax_PLATFORM_DATA_GPIO_AMD_FCH_H
 
 #define AMD_FCH_GPIO_DRIVER_NAME "gpio_amd_fch"
 
@@ -43,4 +43,4 @@ struct amd_fch_gpio_pdata {
 	const char * const	*gpio_names;
 };
 
-#endif /* __LINUX_PLATFORM_DATA_GPIO_AMD_FCH_H */
+#endif /* __freax_PLATFORM_DATA_GPIO_AMD_FCH_H */

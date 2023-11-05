@@ -4,12 +4,12 @@
 /*
  * User space memory access functions
  */
-#include <linux/compiler.h>
-#include <linux/instrumented.h>
-#include <linux/kasan-checks.h>
-#include <linux/mm_types.h>
-#include <linux/string.h>
-#include <linux/mmap_lock.h>
+#include <freax/compiler.h>
+#include <freax/instrumented.h>
+#include <freax/kasan-checks.h>
+#include <freax/mm_types.h>
+#include <freax/string.h>
+#include <freax/mmap_lock.h>
 #include <asm/asm.h>
 #include <asm/page.h>
 #include <asm/smap.h>

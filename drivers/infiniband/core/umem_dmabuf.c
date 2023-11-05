@@ -3,10 +3,10 @@
  * Copyright (c) 2020 Intel Corporation. All rights reserved.
  */
 
-#include <linux/dma-buf.h>
-#include <linux/dma-resv.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
+#include <freax/dma-buf.h>
+#include <freax/dma-resv.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
 
 #include "uverbs.h"
 

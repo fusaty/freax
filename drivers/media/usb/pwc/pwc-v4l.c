@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* Linux driver for Philips webcam
-   USB and Video4Linux interface part.
+/* freax driver for Philips webcam
+   USB and Video4freax interface part.
    (C) 1999-2004 Nemosoft Unv.
    (C) 2004-2006 Luc Saillard (luc@saillard.org)
    (C) 2011 Hans de Goede <hdegoede@redhat.com>
@@ -14,13 +14,13 @@
 
 */
 
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/vmalloc.h>
-#include <linux/jiffies.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/poll.h>
+#include <freax/vmalloc.h>
+#include <freax/jiffies.h>
 #include <asm/io.h>
 
 #include "pwc.h"

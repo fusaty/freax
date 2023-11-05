@@ -7,18 +7,18 @@
  *  Copyright (C) 2001 Russell King, All Rights Reserved.
  */
 #undef DEBUG
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/math.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/tty.h>
-#include <linux/serial_reg.h>
-#include <linux/serial_core.h>
-#include <linux/8250_pci.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/math.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/tty.h>
+#include <freax/serial_reg.h>
+#include <freax/serial_core.h>
+#include <freax/8250_pci.h>
+#include <freax/bitops.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -100,7 +100,7 @@
 #define PCI_DEVICE_ID_MOXA_CP138E_A	0x1381
 #define PCI_DEVICE_ID_MOXA_CP168EL_A	0x1683
 
-/* Unknown vendors/cards - this should not be in linux/pci_ids.h */
+/* Unknown vendors/cards - this should not be in freax/pci_ids.h */
 #define PCI_SUBDEVICE_ID_UNKNOWN_0x1584	0x1584
 #define PCI_SUBDEVICE_ID_UNKNOWN_0x1588	0x1588
 
@@ -161,7 +161,7 @@ static void moan_device(const char *str, struct pci_dev *dev)
 	       "Please send the output of lspci -vv, this\n"
 	       "message (0x%04x,0x%04x,0x%04x,0x%04x), the\n"
 	       "manufacturer and name of serial board or\n"
-	       "modem board to <linux-serial@vger.kernel.org>.\n",
+	       "modem board to <freax-serial@vger.kernel.org>.\n",
 	       str, dev->vendor, dev->device,
 	       dev->subsystem_vendor, dev->subsystem_device);
 }
@@ -3062,7 +3062,7 @@ enum pci_board_num_t {
  *               to PCI memory by the card.
  * For example IER register on SBS, Inc. PMC-OctPro is located at
  * offset 0x10 from the UART base, while UART_IER is defined as 1
- * in include/linux/serial_reg.h,
+ * in include/freax/serial_reg.h,
  * see first lines of serial_in() and serial_out() in 8250.c
 */
 
@@ -4531,7 +4531,7 @@ static const struct pci_device_id serial_pci_tbl[] = {
 		/*
 		 * The below card is a little controversial since it is the
 		 * subject of a PCI vendor/device ID clash.  (See
-		 * www.ussg.iu.edu/hypermail/linux/kernel/0303.1/0516.html).
+		 * www.ussg.iu.edu/hypermail/freax/kernel/0303.1/0516.html).
 		 * For now just used the hex ID 0x950a.
 		 */
 	{	PCI_VENDOR_ID_OXSEMI, 0x950a,

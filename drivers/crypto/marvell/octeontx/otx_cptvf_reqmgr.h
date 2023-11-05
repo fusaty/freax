@@ -11,9 +11,9 @@
 #ifndef __OTX_CPTVF_REQUEST_MANAGER_H
 #define __OTX_CPTVF_REQUEST_MANAGER_H
 
-#include <linux/types.h>
-#include <linux/crypto.h>
-#include <linux/pci.h>
+#include <freax/types.h>
+#include <freax/crypto.h>
+#include <freax/pci.h>
 #include "otx_cpt_hw_types.h"
 
 /*

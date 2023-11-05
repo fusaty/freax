@@ -5,9 +5,9 @@
  *  Copyright (C) 2008  Magnus Damm
  */
 
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/io.h>
 #include <asm/platform_early.h>
 
 /* All SH3 devices are equipped with IRQ0->5 (except sh7708) */

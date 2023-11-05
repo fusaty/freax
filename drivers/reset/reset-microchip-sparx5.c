@@ -6,13 +6,13 @@
  * The Sparx5 Chip Register Model can be browsed at this location:
  * https://github.com/microchip-ung/sparx-5_reginfo
  */
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/reset-controller.h>
 
 struct reset_props {
 	u32 protect_reg;

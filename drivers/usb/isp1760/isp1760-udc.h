@@ -13,11 +13,11 @@
 #ifndef _ISP1760_UDC_H_
 #define _ISP1760_UDC_H_
 
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/usb/gadget.h>
+#include <freax/ioport.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <freax/usb/gadget.h>
 
 #include "isp1760-regs.h"
 

@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the Linux/Xtensa kernel.
+# Makefile for the freax/Xtensa kernel.
 #
 
-extra-y := vmlinux.lds
+extra-y := vmfreax.lds
 
 obj-y := head.o align.o coprocessor.o entry.o irq.o platform.o process.o \
 	 ptrace.o setup.o signal.o stacktrace.o syscall.o time.o traps.o \
@@ -26,7 +26,7 @@ obj-$(CONFIG_HIBERNATION) += hibernate.o
 # Therefore, the .text and .literal section must be combined in parenthesis
 # in the linker script, such as: *(.literal .text).
 #
-# We need to post-process the generated vmlinux.lds scripts to convert
+# We need to post-process the generated vmfreax.lds scripts to convert
 # *(xxx.text) to  *(xxx.literal xxx.text) for the following text sections:
 #   .text .ref.text .*init.text .*exit.text .text.*
 #
@@ -42,5 +42,5 @@ quiet_cmd__cpp_lds_S = LDS     $@
 cmd__cpp_lds_S = $(CPP) $(cpp_flags) -P -C -Uxtensa -D__ASSEMBLY__ \
 		 -DLINKER_SCRIPT $< | sed $(sed-y) >$@
 
-$(obj)/vmlinux.lds: $(src)/vmlinux.lds.S FORCE
+$(obj)/vmfreax.lds: $(src)/vmfreax.lds.S FORCE
 	$(call if_changed_dep,_cpp_lds_S)

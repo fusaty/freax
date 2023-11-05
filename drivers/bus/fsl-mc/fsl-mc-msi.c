@@ -7,11 +7,11 @@
  *
  */
 
-#include <linux/of_irq.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/msi.h>
-#include <linux/acpi_iort.h>
+#include <freax/of_irq.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/msi.h>
+#include <freax/acpi_iort.h>
 
 #include "fsl-mc-private.h"
 

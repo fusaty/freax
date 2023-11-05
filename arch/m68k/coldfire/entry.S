@@ -10,20 +10,20 @@
  *
  * Based on:
  *
- *  linux/arch/m68k/kernel/entry.S
+ *  freax/arch/m68k/kernel/entry.S
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
- * Linux/m68k support by Hamish Macdonald
+ * freax/m68k support by Hamish Macdonald
  *
  * 68060 fixes by Jesper Skov
  * ColdFire support by Greg Ungerer (gerg@snapgear.com)
  * 5307 fixes by David W. Miller
- * linux 2.4 support David McCullough <davidm@snapgear.com>
+ * freax 2.4 support David McCullough <davidm@snapgear.com>
  * Bug, speed and maintainability fixes by Philippe De Muyter <phdm@macqel.be>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/unistd.h>
 #include <asm/thread_info.h>
 #include <asm/errno.h>

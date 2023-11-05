@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/leds-pwm.c
+ * freax/drivers/leds-pwm.c
  *
  * simple PWM based LED control
  *
@@ -9,14 +9,14 @@
  * based on leds-gpio.c by Raphael Assenat <raph@8d.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/leds.h>
-#include <linux/err.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/leds.h>
+#include <freax/err.h>
+#include <freax/pwm.h>
+#include <freax/slab.h>
 #include "leds.h"
 
 struct led_pwm {

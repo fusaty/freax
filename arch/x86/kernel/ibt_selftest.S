@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/linkage.h>
-#include <linux/objtool.h>
+#include <freax/linkage.h>
+#include <freax/objtool.h>
 #include <asm/nospec-branch.h>
 
 SYM_CODE_START(ibt_selftest_noendbr)

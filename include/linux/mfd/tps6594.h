@@ -5,11 +5,11 @@
  * Copyright (C) 2023 BayLibre Incorporated - https://www.baylibre.com/
  */
 
-#ifndef __LINUX_MFD_TPS6594_H
-#define __LINUX_MFD_TPS6594_H
+#ifndef __freax_MFD_TPS6594_H
+#define __freax_MFD_TPS6594_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
 
 struct regmap_irq_chip_data;
 
@@ -1017,4 +1017,4 @@ struct tps6594 {
 bool tps6594_is_volatile_reg(struct device *dev, unsigned int reg);
 int tps6594_device_init(struct tps6594 *tps, bool enable_crc);
 
-#endif /*  __LINUX_MFD_TPS6594_H */
+#endif /*  __freax_MFD_TPS6594_H */

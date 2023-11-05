@@ -16,7 +16,7 @@
 #include <sched.h>
 
 #include <sys/uio.h>
-#include <linux/io_uring.h>
+#include <freax/io_uring.h>
 #include "../kselftest.h"
 
 #ifndef __x86_64__

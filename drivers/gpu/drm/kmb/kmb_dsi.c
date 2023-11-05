@@ -3,13 +3,13 @@
  * Copyright © 2019-2020 Intel Corporation
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/mfd/syscon.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_bridge.h>

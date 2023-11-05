@@ -23,14 +23,14 @@
  * which is the same for all PHYs in a port.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/jiffies.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/blkdev.h>
-#include <linux/bsg.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/jiffies.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/blkdev.h>
+#include <freax/bsg.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

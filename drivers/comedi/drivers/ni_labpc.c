@@ -47,8 +47,8 @@
  * 320502b (lab-pc+)
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/comedi/comedidev.h>
 
 #include "ni_labpc.h"
 #include "ni_labpc_isadma.h"

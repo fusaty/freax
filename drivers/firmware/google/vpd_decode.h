@@ -10,7 +10,7 @@
 #ifndef __VPD_DECODE_H
 #define __VPD_DECODE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum {
 	VPD_OK = 0,

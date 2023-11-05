@@ -3,12 +3,12 @@
  * Copyright (C) 2015 Cogent Embedded, Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/triggered_event.h>
-#include <linux/iio/trigger_consumer.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/module.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/triggered_event.h>
+#include <freax/iio/trigger_consumer.h>
 
 /**
  * iio_triggered_event_setup() - Setup pollfunc_event for triggered event

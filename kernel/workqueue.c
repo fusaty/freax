@@ -12,7 +12,7 @@
  *
  * Made to use alloc_percpu by Christoph Lameter.
  *
- * Copyright (C) 2010		SUSE Linux Products GmbH
+ * Copyright (C) 2010		SUSE freax Products GmbH
  * Copyright (C) 2010		Tejun Heo <tj@kernel.org>
  *
  * This is the generic async execution mechanism.  Work items as are
@@ -25,34 +25,34 @@
  * Please read Documentation/core-api/workqueue.rst for details.
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/notifier.h>
-#include <linux/kthread.h>
-#include <linux/hardirq.h>
-#include <linux/mempolicy.h>
-#include <linux/freezer.h>
-#include <linux/debug_locks.h>
-#include <linux/lockdep.h>
-#include <linux/idr.h>
-#include <linux/jhash.h>
-#include <linux/hashtable.h>
-#include <linux/rculist.h>
-#include <linux/nodemask.h>
-#include <linux/moduleparam.h>
-#include <linux/uaccess.h>
-#include <linux/sched/isolation.h>
-#include <linux/sched/debug.h>
-#include <linux/nmi.h>
-#include <linux/kvm_para.h>
-#include <linux/delay.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/signal.h>
+#include <freax/completion.h>
+#include <freax/workqueue.h>
+#include <freax/slab.h>
+#include <freax/cpu.h>
+#include <freax/notifier.h>
+#include <freax/kthread.h>
+#include <freax/hardirq.h>
+#include <freax/mempolicy.h>
+#include <freax/freezer.h>
+#include <freax/debug_locks.h>
+#include <freax/lockdep.h>
+#include <freax/idr.h>
+#include <freax/jhash.h>
+#include <freax/hashtable.h>
+#include <freax/rculist.h>
+#include <freax/nodemask.h>
+#include <freax/moduleparam.h>
+#include <freax/uaccess.h>
+#include <freax/sched/isolation.h>
+#include <freax/sched/debug.h>
+#include <freax/nmi.h>
+#include <freax/kvm_para.h>
+#include <freax/delay.h>
 
 #include "workqueue_internal.h"
 

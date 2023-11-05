@@ -21,9 +21,9 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 #include "pp_psm.h"
 
 int psm_init_power_state_table(struct pp_hwmgr *hwmgr)

@@ -2,9 +2,9 @@
 #if !defined(_DRM_TRACE_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define _DRM_TRACE_H_
 
-#include <linux/stringify.h>
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <freax/stringify.h>
+#include <freax/types.h>
+#include <freax/tracepoint.h>
 
 struct drm_file;
 

@@ -3,23 +3,23 @@
  * Copyright (C) 2008 Oracle.  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/bio.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/highmem.h>
-#include <linux/kthread.h>
-#include <linux/time.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/backing-dev.h>
-#include <linux/writeback.h>
-#include <linux/psi.h>
-#include <linux/slab.h>
-#include <linux/sched/mm.h>
-#include <linux/log2.h>
+#include <freax/kernel.h>
+#include <freax/bio.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/pagevec.h>
+#include <freax/highmem.h>
+#include <freax/kthread.h>
+#include <freax/time.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/backing-dev.h>
+#include <freax/writeback.h>
+#include <freax/psi.h>
+#include <freax/slab.h>
+#include <freax/sched/mm.h>
+#include <freax/log2.h>
 #include <crypto/hash.h>
 #include "misc.h"
 #include "ctree.h"

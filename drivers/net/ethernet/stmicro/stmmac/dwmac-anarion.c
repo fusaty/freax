@@ -6,10 +6,10 @@
  * (Written by Alexandru Gagniuc <alex.g at adaptrum.com> for Adaptrum, Inc.)
  */
 
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/stmmac.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/stmmac.h>
 
 #include "stmmac.h"
 #include "stmmac_platform.h"

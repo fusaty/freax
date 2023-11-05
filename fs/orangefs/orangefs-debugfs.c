@@ -35,10 +35,10 @@
  * 			"none" and "all" are similar settings for kernel-debug
  * 			no need for a "verbose".
  */
-#include <linux/debugfs.h>
-#include <linux/slab.h>
+#include <freax/debugfs.h>
+#include <freax/slab.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "orangefs-debugfs.h"
 #include "protocol.h"

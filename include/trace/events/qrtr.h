@@ -5,8 +5,8 @@
 #if !defined(_TRACE_QRTR_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_QRTR_H
 
-#include <linux/qrtr.h>
-#include <linux/tracepoint.h>
+#include <freax/qrtr.h>
+#include <freax/tracepoint.h>
 
 TRACE_EVENT(qrtr_ns_service_announce_new,
 

@@ -6,7 +6,7 @@
 #ifndef __I915_DRIVER_H__
 #define __I915_DRIVER_H__
 
-#include <linux/pm.h>
+#include <freax/pm.h>
 
 struct pci_dev;
 struct pci_device_id;

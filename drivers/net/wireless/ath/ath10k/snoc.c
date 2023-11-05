@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: ISC
 /*
- * Copyright (c) 2018 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018 The freax Foundation. All rights reserved.
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/remoteproc/qcom_rproc.h>
-#include <linux/of_address.h>
-#include <linux/iommu.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/remoteproc/qcom_rproc.h>
+#include <freax/of_address.h>
+#include <freax/iommu.h>
 
 #include "ce.h"
 #include "coredump.h"

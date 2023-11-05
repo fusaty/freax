@@ -2,7 +2,7 @@
 #ifndef _NET_AH_H
 #define _NET_AH_H
 
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 
 struct crypto_ahash;
 

@@ -6,9 +6,9 @@
 //
 // Split from fsl_ssi.c
 
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
 
 #include "fsl_ssi.h"
 

@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2019 Mellanox Technologies. */
 
 #ifndef __MLX5_ECPF_H__
 #define __MLX5_ECPF_H__
 
-#include <linux/mlx5/driver.h>
+#include <freax/mlx5/driver.h>
 #include "mlx5_core.h"
 
 #ifdef CONFIG_MLX5_ESWITCH

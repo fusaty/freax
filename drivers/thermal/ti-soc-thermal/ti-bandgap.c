@@ -9,29 +9,29 @@
  *   Eduardo Valentin <eduardo.valentin@ti.com>
  */
 
-#include <linux/clk.h>
-#include <linux/cpu_pm.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/reboot.h>
-#include <linux/spinlock.h>
-#include <linux/sys_soc.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/cpu_pm.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/reboot.h>
+#include <freax/spinlock.h>
+#include <freax/sys_soc.h>
+#include <freax/types.h>
 
 #include "ti-bandgap.h"
 

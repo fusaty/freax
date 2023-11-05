@@ -2,9 +2,9 @@
 #ifndef TARGET_CORE_IBLOCK_H
 #define TARGET_CORE_IBLOCK_H
 
-#include <linux/atomic.h>
-#include <linux/refcount.h>
-#include <linux/blkdev.h>
+#include <freax/atomic.h>
+#include <freax/refcount.h>
+#include <freax/blkdev.h>
 #include <target/target_core_base.h>
 
 #define IBLOCK_VERSION		"4.0"

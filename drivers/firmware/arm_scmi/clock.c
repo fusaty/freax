@@ -5,9 +5,9 @@
  * Copyright (C) 2018-2022 ARM Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/limits.h>
-#include <linux/sort.h>
+#include <freax/module.h>
+#include <freax/limits.h>
+#include <freax/sort.h>
 
 #include "protocols.h"
 #include "notify.h"

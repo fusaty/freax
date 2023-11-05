@@ -30,9 +30,9 @@
 
 #define pr_fmt(fmt) "amdgpu: [powerplay] " fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 
 #define PP_ASSERT_WITH_CODE(cond, msg, code)	\
 	do {					\

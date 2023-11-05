@@ -12,13 +12,13 @@
 
 #define pr_fmt(fmt) "PM: " fmt
 
-#include <linux/acpi.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/suspend.h>
+#include <freax/acpi.h>
+#include <freax/export.h>
+#include <freax/mutex.h>
+#include <freax/pm_qos.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
+#include <freax/suspend.h>
 
 #include "fan.h"
 #include "internal.h"

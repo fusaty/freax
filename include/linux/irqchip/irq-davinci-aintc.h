@@ -3,10 +3,10 @@
  * Copyright (C) 2019 Texas Instruments
  */
 
-#ifndef _LINUX_IRQ_DAVINCI_AINTC_
-#define _LINUX_IRQ_DAVINCI_AINTC_
+#ifndef _freax_IRQ_DAVINCI_AINTC_
+#define _freax_IRQ_DAVINCI_AINTC_
 
-#include <linux/ioport.h>
+#include <freax/ioport.h>
 
 /**
  * struct davinci_aintc_config - configuration data for davinci-aintc driver.
@@ -24,4 +24,4 @@ struct davinci_aintc_config {
 
 void davinci_aintc_init(const struct davinci_aintc_config *config);
 
-#endif /* _LINUX_IRQ_DAVINCI_AINTC_ */
+#endif /* _freax_IRQ_DAVINCI_AINTC_ */

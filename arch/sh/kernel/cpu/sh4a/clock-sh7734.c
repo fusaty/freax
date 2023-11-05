@@ -8,11 +8,11 @@
  * Copyright (C) 2011, 2012 Renesas Solutions Corp.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/clkdev.h>
-#include <linux/delay.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/clkdev.h>
+#include <freax/delay.h>
 #include <asm/clock.h>
 #include <asm/freq.h>
 

@@ -12,20 +12,20 @@
 #ifndef __REALTEK_RTSX_H
 #define __REALTEK_RTSX_H
 
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
-#include <linux/cdrom.h>
-#include <linux/workqueue.h>
-#include <linux/timer.h>
-#include <linux/time64.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/mutex.h>
+#include <freax/cdrom.h>
+#include <freax/workqueue.h>
+#include <freax/timer.h>
+#include <freax/time64.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

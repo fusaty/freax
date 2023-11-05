@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 
-#ifndef _UAPI_LINUX_F2FS_H
-#define _UAPI_LINUX_F2FS_H
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#ifndef _UAPI_freax_F2FS_H
+#define _UAPI_freax_F2FS_H
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 /*
  * f2fs-specific ioctl commands
@@ -96,4 +96,4 @@ struct f2fs_comp_option {
 	__u8 log_cluster_size;
 };
 
-#endif /* _UAPI_LINUX_F2FS_H */
+#endif /* _UAPI_freax_F2FS_H */

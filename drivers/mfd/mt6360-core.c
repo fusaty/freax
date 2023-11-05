@@ -5,15 +5,15 @@
  * Author: Gene Chen <gene_chen@richtek.com>
  */
 
-#include <linux/crc8.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/crc8.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 enum {
 	MT6360_SLAVE_TCPC = 0,

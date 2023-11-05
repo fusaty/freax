@@ -7,7 +7,7 @@
 #ifndef __TIDSS_DRV_H__
 #define __TIDSS_DRV_H__
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
 #define TIDSS_MAX_PORTS 4
 #define TIDSS_MAX_PLANES 4

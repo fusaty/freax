@@ -7,7 +7,7 @@
  *   Author(s): Steve French (sfrench@us.ibm.com)
  *
  */
-#include <linux/errno.h>
+#include <freax/errno.h>
 #include "cifsglob.h"
 #include "cifs_debug.h"
 #include "smb2pdu.h"
@@ -2435,7 +2435,7 @@ smb2_print_status(__le32 status)
 }
 
 int
-map_smb2_to_linux_error(char *buf, bool log_err)
+map_smb2_to_freax_error(char *buf, bool log_err)
 {
 	struct smb2_hdr *shdr = (struct smb2_hdr *)buf;
 	unsigned int i;

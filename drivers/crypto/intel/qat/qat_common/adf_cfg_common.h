@@ -3,8 +3,8 @@
 #ifndef ADF_CFG_COMMON_H_
 #define ADF_CFG_COMMON_H_
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 #define ADF_CFG_MAX_STR_LEN 64
 #define ADF_CFG_MAX_KEY_LEN_IN_BYTES ADF_CFG_MAX_STR_LEN

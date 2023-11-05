@@ -7,8 +7,8 @@
 
 /* File aq_pci_func.c: Definition of PCI functions. */
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
 
 #include "aq_main.h"
 #include "aq_nic.h"

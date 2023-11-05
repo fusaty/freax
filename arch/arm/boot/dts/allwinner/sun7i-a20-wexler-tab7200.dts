@@ -125,14 +125,14 @@
 
 	button-571 {
 		label = "Volume Up";
-		linux,code = <KEY_VOLUMEUP>;
+		freax,code = <KEY_VOLUMEUP>;
 		channel = <0>;
 		voltage = <571428>;
 	};
 
 	button-761 {
 		label = "Volume Down";
-		linux,code = <KEY_VOLUMEDOWN>;
+		freax,code = <KEY_VOLUMEDOWN>;
 		channel = <0>;
 		voltage = <761904>;
 	};

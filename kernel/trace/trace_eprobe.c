@@ -9,9 +9,9 @@
  * Copyright (C) 2021, VMware Inc, Tzvetomir Stoyanov tz.stoyanov@gmail.com>
  *
  */
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/ftrace.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/ftrace.h>
 
 #include "trace_dynevent.h"
 #include "trace_probe.h"

@@ -4,14 +4,14 @@
  * Copyright (C) 2021 Marvell.
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/perf_event.h>
-#include <linux/hrtimer.h>
-#include <linux/acpi.h>
-#include <linux/platform_device.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/perf_event.h>
+#include <freax/hrtimer.h>
+#include <freax/acpi.h>
+#include <freax/platform_device.h>
 
 /* Performance Counters Operating Mode Control Registers */
 #define DDRC_PERF_CNT_OP_MODE_CTRL	0x8020

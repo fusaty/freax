@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_PREEMPT_H
-#define __LINUX_PREEMPT_H
+#ifndef __freax_PREEMPT_H
+#define __freax_PREEMPT_H
 
 extern int preempt_count;
 
@@ -12,4 +12,4 @@ static inline int in_interrupt(void)
 	return 0;
 }
 
-#endif /* __LINUX_PREEMPT_H */
+#endif /* __freax_PREEMPT_H */

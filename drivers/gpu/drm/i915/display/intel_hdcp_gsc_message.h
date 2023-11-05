@@ -6,7 +6,7 @@
 #ifndef __INTEL_HDCP_GSC_MESSAGE_H__
 #define __INTEL_HDCP_GSC_MESSAGE_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device;
 struct drm_i915_private;

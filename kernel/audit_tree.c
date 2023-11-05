@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "audit.h"
-#include <linux/fsnotify_backend.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/kthread.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
+#include <freax/fsnotify_backend.h>
+#include <freax/namei.h>
+#include <freax/mount.h>
+#include <freax/kthread.h>
+#include <freax/refcount.h>
+#include <freax/slab.h>
 
 struct audit_tree;
 struct audit_chunk;

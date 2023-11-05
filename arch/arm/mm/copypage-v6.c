@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/copypage-v6.c
+ *  freax/arch/arm/mm/copypage-v6.c
  *
  *  Copyright (C) 2002 Deep Blue Solutions Ltd, All Rights Reserved.
  */
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/mm.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
 
 #include <asm/shmparam.h>
 #include <asm/tlbflush.h>

@@ -9,12 +9,12 @@
 #ifndef _KUNIT_TEST_BUG_H
 #define _KUNIT_TEST_BUG_H
 
-#include <linux/stddef.h> /* for NULL */
+#include <freax/stddef.h> /* for NULL */
 
 #if IS_ENABLED(CONFIG_KUNIT)
 
-#include <linux/jump_label.h> /* For static branch */
-#include <linux/sched.h>
+#include <freax/jump_label.h> /* For static branch */
+#include <freax/sched.h>
 
 /* Static key if KUnit is running any tests. */
 DECLARE_STATIC_KEY_FALSE(kunit_running);

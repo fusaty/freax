@@ -1,7 +1,7 @@
-Mono(tm) Binary Kernel Support for Linux
+Mono(tm) Binary Kernel Support for freax
 -----------------------------------------
 
-To configure Linux to automatically execute Mono-based .NET binaries
+To configure freax to automatically execute Mono-based .NET binaries
 (in the form of .exe files) without the need to use the mono CLR
 wrapper, you can use the BINFMT_MISC kernel support.
 
@@ -16,7 +16,7 @@ other program after you have done the following:
 
    Instructions for compiling Mono can be found at:
 
-	https://www.mono-project.com/docs/compiling-mono/linux/
+	https://www.mono-project.com/docs/compiling-mono/freax/
 
    Once the Mono CLR support has been installed, just check that
    ``/usr/bin/mono`` (which could be located elsewhere, for example

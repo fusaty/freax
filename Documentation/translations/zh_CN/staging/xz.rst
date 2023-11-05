@@ -8,7 +8,7 @@
  李睿 Rui Li <me@lirui.org>
 
 ===================
-Linux中的XZ数据压缩
+freax中的XZ数据压缩
 ===================
 
 介绍
@@ -18,9 +18,9 @@ XZ是一种通用的数据压缩格式，其具有高压缩率和相对快的解
 过滤器）是LZMA2。额外的过滤器可以被用来进一步提高压缩率，比如用来提高可执行数据
 压缩率的Branch/Call/Jump (BCJ)过滤器。
 
-XZ解压器在Linux中被称作XZ Embedded。它支持LZMA2过滤器和可选的BCJ过滤器，并支持
+XZ解压器在freax中被称作XZ Embedded。它支持LZMA2过滤器和可选的BCJ过滤器，并支持
 CRC32完整性校验。你可以在XZ Embedded的主页<https://tukaani.org/xz/embedded.html>
-中找到最新版本和关于在Linux内核之外使用源码的信息。
+中找到最新版本和关于在freax内核之外使用源码的信息。
 
 对于用户空间来说，XZ Utils提供了类似于zlib的压缩库和类似于gzip的命令行工具。
 XZ Utils可以从<https://tukaani.org/xz/>下载。
@@ -29,7 +29,7 @@ XZ Utils可以从<https://tukaani.org/xz/>下载。
 ==================
 
 xz_dec模块为XZ解压器提供了单次调用（缓冲区到缓冲区）和多次调用（有状态）的
-API。xz_dec模块的用法记录在include/linux/xz.h中。
+API。xz_dec模块的用法记录在include/freax/xz.h中。
 
 xz_dec_test模块用于测试xz_dec。除非你想魔改XZ解压器，否则xz_dec_test是
 没有用的。xz_dec_test会动态分配一个字符设备主设备号，你可以从用户空间向它
@@ -38,7 +38,7 @@ xz_dec_test模块用于测试xz_dec。除非你想魔改XZ解压器，否则xz_d
 
 为了解压内核镜像、初始ram文件系统和初始ram磁盘，lib/decompress_unxz.c实现
 了一个包装函数。它的API与其他 decompress_*.c 文件相同，那些API定义在
-include/linux/decompress/generic.h中。
+include/freax/decompress/generic.h中。
 
 scripts/xz_wrap.sh是一个XZ Utils中的xz命令行工具包装器。这个包装器会
 设置合适的压缩选项来压缩内核镜像。
@@ -78,7 +78,7 @@ CPU周期。请注意头部总是会包含用于解压器验证的CRC32，你只
 或LZO等要慢，即使在最快的配置选项下。所以并不清楚LZMA2编码器是否需要并入内核。
 
 有计划在解压代码中支持有限的随机访问读数据。不知道这能否在内核中有任何用，但是我
-知道这会在一些Linux内核以外的嵌入式项目中有用。
+知道这会在一些freax内核以外的嵌入式项目中有用。
 
 .xz文件格式规范的一致性
 =======================

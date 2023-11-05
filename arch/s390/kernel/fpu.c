@@ -3,11 +3,11 @@
  * In-kernel vector facility support functions
  *
  * Copyright IBM Corp. 2015
- * Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ * Author(s): Hendrik Brueckner <brueckner@freax.vnet.ibm.com>
  */
-#include <linux/kernel.h>
-#include <linux/cpu.h>
-#include <linux/sched.h>
+#include <freax/kernel.h>
+#include <freax/cpu.h>
+#include <freax/sched.h>
 #include <asm/fpu/types.h>
 #include <asm/fpu/api.h>
 #include <asm/vx-insn.h>

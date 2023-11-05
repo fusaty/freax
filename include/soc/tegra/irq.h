@@ -6,7 +6,7 @@
 #ifndef __SOC_TEGRA_IRQ_H
 #define __SOC_TEGRA_IRQ_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #if defined(CONFIG_ARM) && defined(CONFIG_ARCH_TEGRA)
 bool tegra_pending_sgi(void);

@@ -7,10 +7,10 @@
  *
  */
 
-#include <linux/fb.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/vgaarb.h>
+#include <freax/fb.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/vgaarb.h>
 #include <asm/fb.h>
 
 pgprot_t pgprot_framebuffer(pgprot_t prot,

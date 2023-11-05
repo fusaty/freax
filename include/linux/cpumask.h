@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_CPUMASK_H
-#define __LINUX_CPUMASK_H
+#ifndef __freax_CPUMASK_H
+#define __freax_CPUMASK_H
 
 /*
  * Cpumasks provide a bitmap suitable for representing the
  * set of CPUs in a system, one bit position per CPU number.  In general,
  * only nr_cpu_ids (<= NR_CPUS) bits are valid.
  */
-#include <linux/kernel.h>
-#include <linux/threads.h>
-#include <linux/bitmap.h>
-#include <linux/atomic.h>
-#include <linux/bug.h>
-#include <linux/gfp_types.h>
-#include <linux/numa.h>
+#include <freax/kernel.h>
+#include <freax/threads.h>
+#include <freax/bitmap.h>
+#include <freax/atomic.h>
+#include <freax/bug.h>
+#include <freax/gfp_types.h>
+#include <freax/numa.h>
 
 /* Don't assign or return these: may not be this big! */
 typedef struct cpumask { DECLARE_BITMAP(bits, NR_CPUS); } cpumask_t;
@@ -902,7 +902,7 @@ bool zalloc_cpumask_var_node(cpumask_var_t *mask, gfp_t flags, int node)
  * @flags: GFP_ flags
  *
  * Only defined when CONFIG_CPUMASK_OFFSTACK=y, otherwise is
- * a nop returning a constant 1 (in <linux/cpumask.h>).
+ * a nop returning a constant 1 (in <freax/cpumask.h>).
  *
  * See alloc_cpumask_var_node.
  *
@@ -1280,4 +1280,4 @@ cpumap_print_list_to_buf(char *buf, const struct cpumask *mask,
 					? (NR_CPUS * 9)/32 - 1 : PAGE_SIZE)
 #define CPULIST_FILE_MAX_BYTES  (((NR_CPUS * 7)/2 > PAGE_SIZE) ? (NR_CPUS * 7)/2 : PAGE_SIZE)
 
-#endif /* __LINUX_CPUMASK_H */
+#endif /* __freax_CPUMASK_H */

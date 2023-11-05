@@ -5,11 +5,11 @@
  * Copyright (C) 2012 John Crispin <john@phrozen.org>
  */
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/pm.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/pm.h>
 #include <asm/reboot.h>
-#include <linux/export.h>
+#include <freax/export.h>
 
 #include <lantiq_soc.h>
 

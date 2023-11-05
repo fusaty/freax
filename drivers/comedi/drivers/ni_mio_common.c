@@ -2,7 +2,7 @@
 /*
  * Hardware driver for DAQ-STC based boards
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2001 David A. Schleef <ds@schleef.org>
  * Copyright (C) 2002-2006 Frank Mori Hess <fmhess@users.sourceforge.net>
  */
@@ -40,10 +40,10 @@
  * fully tested as yet. Terry Barnaby, BEAM Ltd.
  */
 
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/comedi/comedi_8255.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
+#include <freax/comedi/comedi_8255.h>
 #include "mite.h"
 
 #ifdef PCIDMA

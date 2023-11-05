@@ -8,32 +8,32 @@
  *    Copyright (C) 1995  Linus Torvalds
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/swiotlb.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/memory.h>
-#include <linux/pfn.h>
-#include <linux/poison.h>
-#include <linux/initrd.h>
-#include <linux/export.h>
-#include <linux/cma.h>
-#include <linux/gfp.h>
-#include <linux/dma-direct.h>
-#include <linux/percpu.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/ptrace.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/swiotlb.h>
+#include <freax/smp.h>
+#include <freax/init.h>
+#include <freax/pagemap.h>
+#include <freax/memblock.h>
+#include <freax/memory.h>
+#include <freax/pfn.h>
+#include <freax/poison.h>
+#include <freax/initrd.h>
+#include <freax/export.h>
+#include <freax/cma.h>
+#include <freax/gfp.h>
+#include <freax/dma-direct.h>
+#include <freax/percpu.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/pgalloc.h>
 #include <asm/ctlreg.h>
 #include <asm/kfence.h>
@@ -48,8 +48,8 @@
 #include <asm/kasan.h>
 #include <asm/dma-mapping.h>
 #include <asm/uv.h>
-#include <linux/virtio_anchor.h>
-#include <linux/virtio_config.h>
+#include <freax/virtio_anchor.h>
+#include <freax/virtio_config.h>
 
 pgd_t swapper_pg_dir[PTRS_PER_PGD] __section(".bss..swapper_pg_dir");
 pgd_t invalid_pg_dir[PTRS_PER_PGD] __section(".bss..invalid_pg_dir");

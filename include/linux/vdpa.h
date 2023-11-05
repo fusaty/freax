@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_VDPA_H
-#define _LINUX_VDPA_H
+#ifndef _freax_VDPA_H
+#define _freax_VDPA_H
 
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/vhost_iotlb.h>
-#include <linux/virtio_net.h>
-#include <linux/if_ether.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/vhost_iotlb.h>
+#include <freax/virtio_net.h>
+#include <freax/if_ether.h>
 
 /**
  * struct vdpa_callback - vDPA callback definition.
@@ -570,4 +570,4 @@ struct vdpa_mgmt_dev {
 int vdpa_mgmtdev_register(struct vdpa_mgmt_dev *mdev);
 void vdpa_mgmtdev_unregister(struct vdpa_mgmt_dev *mdev);
 
-#endif /* _LINUX_VDPA_H */
+#endif /* _freax_VDPA_H */

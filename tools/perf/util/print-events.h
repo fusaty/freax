@@ -2,8 +2,8 @@
 #ifndef __PERF_PRINT_EVENTS_H
 #define __PERF_PRINT_EVENTS_H
 
-#include <linux/perf_event.h>
-#include <linux/types.h>
+#include <freax/perf_event.h>
+#include <freax/types.h>
 #include <stdbool.h>
 
 struct event_symbol;

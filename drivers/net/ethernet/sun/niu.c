@@ -6,32 +6,32 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/mii.h>
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/log2.h>
-#include <linux/jiffies.h>
-#include <linux/crc32.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/etherdevice.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/bitops.h>
+#include <freax/mii.h>
+#include <freax/if.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/ip.h>
+#include <freax/in.h>
+#include <freax/ipv6.h>
+#include <freax/log2.h>
+#include <freax/jiffies.h>
+#include <freax/crc32.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 
-#include <linux/io.h>
-#include <linux/of.h>
+#include <freax/io.h>
+#include <freax/of.h>
 
 #include "niu.h"
 

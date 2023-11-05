@@ -10,7 +10,7 @@
 #define __QI_H__
 
 #include <crypto/algapi.h>
-#include <linux/compiler_attributes.h>
+#include <freax/compiler_attributes.h>
 #include <soc/fsl/qman.h>
 #include "compat.h"
 #include "desc.h"

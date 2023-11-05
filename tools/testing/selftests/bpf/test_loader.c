@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2022 Meta Platforms, Inc. and affiliates. */
-#include <linux/capability.h>
+#include <freax/capability.h>
 #include <stdlib.h>
 #include <test_progs.h>
 #include <bpf/btf.h>

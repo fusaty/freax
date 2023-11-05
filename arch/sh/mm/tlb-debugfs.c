@@ -9,10 +9,10 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 #include <asm/processor.h>
 #include <asm/mmu_context.h>
 #include <asm/tlbflush.h>

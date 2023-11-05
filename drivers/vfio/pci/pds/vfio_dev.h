@@ -4,8 +4,8 @@
 #ifndef _VFIO_DEV_H_
 #define _VFIO_DEV_H_
 
-#include <linux/pci.h>
-#include <linux/vfio_pci_core.h>
+#include <freax/pci.h>
+#include <freax/vfio_pci_core.h>
 
 #include "dirty.h"
 #include "lm.h"

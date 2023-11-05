@@ -8,8 +8,8 @@
 #ifndef _MS_SENSORS_I2C_H
 #define _MS_SENSORS_I2C_H
 
-#include <linux/i2c.h>
-#include <linux/mutex.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
 
 #define MS_SENSORS_TP_PROM_WORDS_NB		8
 

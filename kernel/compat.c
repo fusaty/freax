@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/compat.c
+ *  freax/kernel/compat.c
  *
  *  Kernel compatibililty routines for e.g. 32 bit syscall support
  *  on 64 bit kernels.
@@ -8,23 +8,23 @@
  *  Copyright (C) 2002-2003 Stephen Rothwell, IBM Corporation
  */
 
-#include <linux/linkage.h>
-#include <linux/compat.h>
-#include <linux/errno.h>
-#include <linux/time.h>
-#include <linux/signal.h>
-#include <linux/sched.h>	/* for MAX_SCHEDULE_TIMEOUT */
-#include <linux/syscalls.h>
-#include <linux/unistd.h>
-#include <linux/security.h>
-#include <linux/export.h>
-#include <linux/migrate.h>
-#include <linux/posix-timers.h>
-#include <linux/times.h>
-#include <linux/ptrace.h>
-#include <linux/gfp.h>
+#include <freax/linkage.h>
+#include <freax/compat.h>
+#include <freax/errno.h>
+#include <freax/time.h>
+#include <freax/signal.h>
+#include <freax/sched.h>	/* for MAX_SCHEDULE_TIMEOUT */
+#include <freax/syscalls.h>
+#include <freax/unistd.h>
+#include <freax/security.h>
+#include <freax/export.h>
+#include <freax/migrate.h>
+#include <freax/posix-timers.h>
+#include <freax/times.h>
+#include <freax/ptrace.h>
+#include <freax/gfp.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #ifdef __ARCH_WANT_SYS_SIGPROCMASK
 

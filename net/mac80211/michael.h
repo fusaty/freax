@@ -7,8 +7,8 @@
 #ifndef MICHAEL_H
 #define MICHAEL_H
 
-#include <linux/types.h>
-#include <linux/ieee80211.h>
+#include <freax/types.h>
+#include <freax/ieee80211.h>
 
 #define MICHAEL_MIC_LEN 8
 

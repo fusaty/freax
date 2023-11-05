@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /*
  *
  * This file is provided under a dual BSD/GPLv2 license.  When using or
@@ -54,10 +54,10 @@
  * to communicate between kernel and user code.
  */
 
-#ifndef _LINUX__HFI1_USER_H
-#define _LINUX__HFI1_USER_H
+#ifndef _freax__HFI1_USER_H
+#define _freax__HFI1_USER_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <rdma/rdma_user_ioctl.h>
 
 /*

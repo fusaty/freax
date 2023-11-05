@@ -7,14 +7,14 @@
  * Copyright (C) 2006, 2008 Oracle.  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/crc32.h>
-#include <linux/buffer_head.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/fs.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/crc32.h>
+#include <freax/buffer_head.h>
+#include <freax/bitops.h>
+#include <freax/debugfs.h>
+#include <freax/module.h>
+#include <freax/fs.h>
 #include <asm/byteorder.h>
 
 #include <cluster/masklog.h>

@@ -7,21 +7,21 @@
 /*
  */
 
-#include <linux/atomic.h>
-#include <linux/compat.h>
-#include <linux/cred.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/hid.h>
-#include <linux/input.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/uhid.h>
-#include <linux/wait.h>
+#include <freax/atomic.h>
+#include <freax/compat.h>
+#include <freax/cred.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/hid.h>
+#include <freax/input.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/uhid.h>
+#include <freax/wait.h>
 
 #define UHID_NAME	"uhid"
 #define UHID_BUFSIZE	32

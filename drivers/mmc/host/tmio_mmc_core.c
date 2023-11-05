@@ -24,29 +24,29 @@
  *
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/mfd/tmio.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/platform_device.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_runtime.h>
-#include <linux/regulator/consumer.h>
-#include <linux/mmc/sdio.h>
-#include <linux/scatterlist.h>
-#include <linux/sizes.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/highmem.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/mfd/tmio.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/slot-gpio.h>
+#include <freax/module.h>
+#include <freax/pagemap.h>
+#include <freax/platform_device.h>
+#include <freax/pm_qos.h>
+#include <freax/pm_runtime.h>
+#include <freax/regulator/consumer.h>
+#include <freax/mmc/sdio.h>
+#include <freax/scatterlist.h>
+#include <freax/sizes.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
 
 #include "tmio_mmc.h"
 

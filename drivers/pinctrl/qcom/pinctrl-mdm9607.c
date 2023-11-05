@@ -5,9 +5,9 @@
  * based on pinctrl-msm8916.c
  */
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include "pinctrl-msm.h"
 

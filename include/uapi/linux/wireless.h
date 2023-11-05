@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * This file define a set of standard wireless extensions
  *
@@ -8,8 +8,8 @@
  * Copyright (c) 1997-2007 Jean Tourrilhes, All Rights Reserved.
  */
 
-#ifndef _UAPI_LINUX_WIRELESS_H
-#define _UAPI_LINUX_WIRELESS_H
+#ifndef _UAPI_freax_WIRELESS_H
+#define _UAPI_freax_WIRELESS_H
 
 /************************** DOCUMENTATION **************************/
 /*
@@ -38,8 +38,8 @@
  * We have a structure for data passed from the driver to /proc/net/wireless
  * Too add this, I've modified :
  *	# net/core/dev.c (two other places)
- *	# include/linux/netdevice.h (one place)
- *	# include/linux/proc_fs.h (one place)
+ *	# include/freax/netdevice.h (one place)
+ *	# include/freax/proc_fs.h (one place)
  *
  * New driver API (2002 -> onward) :
  * -------------------------------
@@ -70,12 +70,12 @@
 
 /***************************** INCLUDES *****************************/
 
-#include <linux/types.h>		/* for __u* and __s* typedefs */
-#include <linux/socket.h>		/* for "struct sockaddr" et al	*/
-#include <linux/if.h>			/* for IFNAMSIZ and co... */
+#include <freax/types.h>		/* for __u* and __s* typedefs */
+#include <freax/socket.h>		/* for "struct sockaddr" et al	*/
+#include <freax/if.h>			/* for IFNAMSIZ and co... */
 
 #ifdef __KERNEL__
-#	include <linux/stddef.h>	/* for offsetof */
+#	include <freax/stddef.h>	/* for offsetof */
 #else
 #	include <stddef.h>		/* for offsetof */
 #endif
@@ -1112,4 +1112,4 @@ struct iw_event {
 #define IW_EV_QUAL_PK_LEN	(IW_EV_LCP_PK_LEN + sizeof(struct iw_quality))
 #define IW_EV_POINT_PK_LEN	(IW_EV_LCP_PK_LEN + 4)
 
-#endif /* _UAPI_LINUX_WIRELESS_H */
+#endif /* _UAPI_freax_WIRELESS_H */

@@ -10,21 +10,21 @@
  *  Rajan Vaja <rajanv@xilinx.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/compiler.h>
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/hashtable.h>
+#include <freax/arm-smccc.h>
+#include <freax/compiler.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/hashtable.h>
 
-#include <linux/firmware/xlnx-zynqmp.h>
-#include <linux/firmware/xlnx-event-manager.h>
+#include <freax/firmware/xlnx-zynqmp.h>
+#include <freax/firmware/xlnx-event-manager.h>
 #include "zynqmp-debug.h"
 
 /* Max HashMap Order for PM API feature check (1<<7 = 128) */
@@ -79,10 +79,10 @@ static const struct mfd_cell firmware_devs[] = {
 };
 
 /**
- * zynqmp_pm_ret_code() - Convert PMU-FW error codes to Linux error codes
+ * zynqmp_pm_ret_code() - Convert PMU-FW error codes to freax error codes
  * @ret_status:		PMUFW return code
  *
- * Return: corresponding Linux error code
+ * Return: corresponding freax error code
  */
 static int zynqmp_pm_ret_code(u32 ret_status)
 {
@@ -1398,7 +1398,7 @@ EXPORT_SYMBOL_GPL(zynqmp_pm_set_requirement);
  * @src:       Source device where PDI is located
  * @address:   PDI src address
  *
- * This function provides support to load PDI from linux
+ * This function provides support to load PDI from freax
  *
  * Return: Returns status, either success or error+reason
  */

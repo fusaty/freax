@@ -2,7 +2,7 @@
 #ifndef _NET_CORE_DEV_H
 #define _NET_CORE_DEV_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct net;
 struct net_device;

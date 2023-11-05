@@ -17,20 +17,20 @@
  * Czech Technical University        (http://www.cvut.cz/)
  ******************************************************************************/
 
-#include <linux/clk.h>
-#include <linux/errno.h>
-#include <linux/ethtool.h>
-#include <linux/init.h>
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/can/error.h>
-#include <linux/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/errno.h>
+#include <freax/ethtool.h>
+#include <freax/init.h>
+#include <freax/bitfield.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/can/error.h>
+#include <freax/pm_runtime.h>
 
 #include "ctucanfd.h"
 #include "ctucanfd_kregs.h"

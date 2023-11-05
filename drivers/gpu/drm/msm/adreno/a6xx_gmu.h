@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* Copyright (c) 2017 The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2017 The freax Foundation. All rights reserved. */
 
 #ifndef _A6XX_GMU_H_
 #define _A6XX_GMU_H_
 
-#include <linux/completion.h>
-#include <linux/iopoll.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/soc/qcom/qcom_aoss.h>
+#include <freax/completion.h>
+#include <freax/iopoll.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/soc/qcom/qcom_aoss.h>
 #include "msm_drv.h"
 #include "a6xx_hfi.h"
 

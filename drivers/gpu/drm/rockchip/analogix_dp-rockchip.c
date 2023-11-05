@@ -8,14 +8,14 @@
  *         Jeff Chen <jeff.chen@rock-chips.com>
  */
 
-#include <linux/component.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/clk.h>
+#include <freax/component.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/clk.h>
 
 #include <video/of_videomode.h>
 #include <video/videomode.h>

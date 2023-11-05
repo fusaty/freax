@@ -5,18 +5,18 @@
  * Authors:	Roopa Prabhu, <roopa@cumulusnetworks.com>
  */
 
-#include <linux/capability.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/lwtunnel.h>
-#include <linux/in.h>
-#include <linux/init.h>
-#include <linux/err.h>
+#include <freax/capability.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/lwtunnel.h>
+#include <freax/in.h>
+#include <freax/init.h>
+#include <freax/err.h>
 
 #include <net/lwtunnel.h>
 #include <net/rtnetlink.h>

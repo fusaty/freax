@@ -9,12 +9,12 @@
  * David Wu <david.wu@rock-chips.com>
  */
 
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
+#include <freax/ethtool.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mii.h>
+#include <freax/netdevice.h>
+#include <freax/phy.h>
 
 #define INTERNAL_EPHY_ID			0x1234d400
 

@@ -10,7 +10,7 @@
 /* No __ro_after_init data in the .rodata section - which will always be ro */
 #define RO_AFTER_INIT_DATA
 
-#include <asm/vmlinux.lds.h>
+#include <asm/vmfreax.lds.h>
 #include <asm/page.h>
 #include <asm/cache.h>
 #include <asm/thread_info.h>

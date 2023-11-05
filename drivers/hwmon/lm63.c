@@ -24,18 +24,18 @@
  * in width.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/hwmon.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
 
 /*
  * Addresses to scan

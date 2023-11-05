@@ -6,22 +6,22 @@
  */
 #define pr_fmt(fmt) "PM: " fmt
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_qos.h>
-#include <linux/pm_clock.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/suspend.h>
-#include <linux/export.h>
-#include <linux/cpu.h>
-#include <linux/debugfs.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/pm_opp.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_qos.h>
+#include <freax/pm_clock.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/sched.h>
+#include <freax/suspend.h>
+#include <freax/export.h>
+#include <freax/cpu.h>
+#include <freax/debugfs.h>
 
 #include "power.h"
 

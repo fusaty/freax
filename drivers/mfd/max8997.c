@@ -7,18 +7,18 @@
 //
 // This driver is based on max8998.c
 
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/interrupt.h>
-#include <linux/pm_runtime.h>
-#include <linux/init.h>
-#include <linux/mutex.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max8997.h>
-#include <linux/mfd/max8997-private.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/interrupt.h>
+#include <freax/pm_runtime.h>
+#include <freax/init.h>
+#include <freax/mutex.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/max8997.h>
+#include <freax/mfd/max8997-private.h>
 
 #define I2C_ADDR_PMIC	(0xCC >> 1)
 #define I2C_ADDR_MUIC	(0x4A >> 1)

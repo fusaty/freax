@@ -28,7 +28,7 @@
 #include "vmwgfx_bo.h"
 #include "vmwgfx_drv.h"
 
-#include <linux/highmem.h>
+#include <freax/highmem.h>
 
 #ifdef CONFIG_64BIT
 #define VMW_PPN_SIZE 8

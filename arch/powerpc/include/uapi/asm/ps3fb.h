@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Copyright (C) 2006 Sony Computer Entertainment Inc.
  * Copyright 2006, 2007 Sony Corporation
@@ -20,8 +20,8 @@
 #ifndef _ASM_POWERPC_PS3FB_H_
 #define _ASM_POWERPC_PS3FB_H_
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
+#include <freax/types.h>
+#include <freax/ioctl.h>
 
 /* ioctl */
 #define PS3FB_IOCTL_SETMODE       _IOW('r',  1, int) /* set video mode */

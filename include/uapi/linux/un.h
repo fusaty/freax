@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_UN_H
-#define _LINUX_UN_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_UN_H
+#define _freax_UN_H
 
-#include <linux/socket.h>
+#include <freax/socket.h>
 
 #define UNIX_PATH_MAX	108
 
@@ -13,4 +13,4 @@ struct sockaddr_un {
 
 #define SIOCUNIXFILE (SIOCPROTOPRIVATE + 0) /* open a socket file with O_PATH */
 
-#endif /* _LINUX_UN_H */
+#endif /* _freax_UN_H */

@@ -8,11 +8,11 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#ifndef __LINUX_GPIO_LEGACY_OF_MM_GPIO_CHIP_H
-#define __LINUX_GPIO_LEGACY_OF_MM_GPIO_CHIP_H
+#ifndef __freax_GPIO_LEGACY_OF_MM_GPIO_CHIP_H
+#define __freax_GPIO_LEGACY_OF_MM_GPIO_CHIP_H
 
-#include <linux/gpio/driver.h>
-#include <linux/of.h>
+#include <freax/gpio/driver.h>
+#include <freax/of.h>
 
 /*
  * OF GPIO chip for memory mapped banks
@@ -33,4 +33,4 @@ extern int of_mm_gpiochip_add_data(struct device_node *np,
 				   void *data);
 extern void of_mm_gpiochip_remove(struct of_mm_gpio_chip *mm_gc);
 
-#endif /* __LINUX_GPIO_LEGACY_OF_MM_GPIO_CHIP_H */
+#endif /* __freax_GPIO_LEGACY_OF_MM_GPIO_CHIP_H */

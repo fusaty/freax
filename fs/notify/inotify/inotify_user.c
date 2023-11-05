@@ -13,24 +13,24 @@
  * inotify was largely rewriten to make use of the fsnotify infrastructure
  */
 
-#include <linux/file.h>
-#include <linux/fs.h> /* struct inode */
-#include <linux/fsnotify_backend.h>
-#include <linux/idr.h>
-#include <linux/init.h> /* fs_initcall */
-#include <linux/inotify.h>
-#include <linux/kernel.h> /* roundup() */
-#include <linux/namei.h> /* LOOKUP_FOLLOW */
-#include <linux/sched/signal.h>
-#include <linux/slab.h> /* struct kmem_cache */
-#include <linux/syscalls.h>
-#include <linux/types.h>
-#include <linux/anon_inodes.h>
-#include <linux/uaccess.h>
-#include <linux/poll.h>
-#include <linux/wait.h>
-#include <linux/memcontrol.h>
-#include <linux/security.h>
+#include <freax/file.h>
+#include <freax/fs.h> /* struct inode */
+#include <freax/fsnotify_backend.h>
+#include <freax/idr.h>
+#include <freax/init.h> /* fs_initcall */
+#include <freax/inotify.h>
+#include <freax/kernel.h> /* roundup() */
+#include <freax/namei.h> /* LOOKUP_FOLLOW */
+#include <freax/sched/signal.h>
+#include <freax/slab.h> /* struct kmem_cache */
+#include <freax/syscalls.h>
+#include <freax/types.h>
+#include <freax/anon_inodes.h>
+#include <freax/uaccess.h>
+#include <freax/poll.h>
+#include <freax/wait.h>
+#include <freax/memcontrol.h>
+#include <freax/security.h>
 
 #include "inotify.h"
 #include "../fdinfo.h"
@@ -53,7 +53,7 @@ struct kmem_cache *inotify_inode_mark_cachep __ro_after_init;
 
 #ifdef CONFIG_SYSCTL
 
-#include <linux/sysctl.h>
+#include <freax/sysctl.h>
 
 static long it_zero = 0;
 static long it_int_max = INT_MAX;

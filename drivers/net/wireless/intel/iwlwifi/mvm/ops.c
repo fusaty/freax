@@ -4,9 +4,9 @@
  * Copyright (C) 2013-2015 Intel Mobile Communications GmbH
  * Copyright (C) 2016-2017 Intel Deutschland GmbH
  */
-#include <linux/module.h>
-#include <linux/rtnetlink.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/rtnetlink.h>
+#include <freax/vmalloc.h>
 #include <net/mac80211.h>
 
 #include "fw/notif-wait.h"
@@ -31,7 +31,7 @@
 #include "fw/uefi.h"
 #include "time-sync.h"
 
-#define DRV_DESCRIPTION	"The new Intel(R) wireless AGN driver for Linux"
+#define DRV_DESCRIPTION	"The new Intel(R) wireless AGN driver for freax"
 MODULE_DESCRIPTION(DRV_DESCRIPTION);
 MODULE_LICENSE("GPL");
 MODULE_IMPORT_NS(IWLWIFI);

@@ -5,8 +5,8 @@
  * Copyright (C) IBM Corporation 2017
  */
 
-#ifndef LINUX_FSI_SBEFIFO_H
-#define LINUX_FSI_SBEFIFO_H
+#ifndef freax_FSI_SBEFIFO_H
+#define freax_FSI_SBEFIFO_H
 
 #define SBEFIFO_CMD_PUT_OCC_SRAM	0xa404
 #define SBEFIFO_CMD_GET_OCC_SRAM	0xa403
@@ -22,4 +22,4 @@ int sbefifo_submit(struct device *dev, const __be32 *command, size_t cmd_len,
 int sbefifo_parse_status(struct device *dev, u16 cmd, __be32 *response,
 			 size_t resp_len, size_t *data_len);
 
-#endif /* LINUX_FSI_SBEFIFO_H */
+#endif /* freax_FSI_SBEFIFO_H */

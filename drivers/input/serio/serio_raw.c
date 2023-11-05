@@ -6,17 +6,17 @@
  * Copyright (c) 2004 Dmitry Torokhov
  */
 
-#include <linux/kref.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/module.h>
-#include <linux/serio.h>
-#include <linux/major.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/wait.h>
-#include <linux/mutex.h>
+#include <freax/kref.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/module.h>
+#include <freax/serio.h>
+#include <freax/major.h>
+#include <freax/device.h>
+#include <freax/miscdevice.h>
+#include <freax/wait.h>
+#include <freax/mutex.h>
 
 #define DRIVER_DESC	"Raw serio driver"
 

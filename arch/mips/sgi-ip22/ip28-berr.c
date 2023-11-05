@@ -2,17 +2,17 @@
 /*
  * ip28-berr.c: Bus error handling.
  *
- * Copyright (C) 2002, 2003 Ladislav Michl (ladis@linux-mips.org)
+ * Copyright (C) 2002, 2003 Ladislav Michl (ladis@freax-mips.org)
  * Copyright (C) 2005 Peter Fuerst (pf@net.alphadv.de) - IP28
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/signal.h>
-#include <linux/seq_file.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/signal.h>
+#include <freax/seq_file.h>
 
 #include <asm/addrspace.h>
 #include <asm/traps.h>
@@ -23,7 +23,7 @@
 #include <asm/sgi/ioc.h>
 #include <asm/sgi/ip22.h>
 #include <asm/r4kcache.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/bootinfo.h>
 
 static unsigned int count_be_is_fixup;

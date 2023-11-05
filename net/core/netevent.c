@@ -9,9 +9,9 @@
  *	Fixes:
  */
 
-#include <linux/rtnetlink.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
+#include <freax/rtnetlink.h>
+#include <freax/notifier.h>
+#include <freax/export.h>
 #include <net/netevent.h>
 
 static ATOMIC_NOTIFIER_HEAD(netevent_notif_chain);

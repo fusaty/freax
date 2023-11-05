@@ -4,7 +4,7 @@
  * Copyright (C) 2015 Jakub Kicinski <kubakici@wp.pl>
  */
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 #include "mt7601u.h"
 #include "eeprom.h"

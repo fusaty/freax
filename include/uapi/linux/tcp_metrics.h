@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /* tcp_metrics.h - TCP Metrics Interface */
 
-#ifndef _LINUX_TCP_METRICS_H
-#define _LINUX_TCP_METRICS_H
+#ifndef _freax_TCP_METRICS_H
+#define _freax_TCP_METRICS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* NETLINK_GENERIC related info
  */
@@ -58,4 +58,4 @@ enum {
 
 #define TCP_METRICS_CMD_MAX	(__TCP_METRICS_CMD_MAX - 1)
 
-#endif /* _LINUX_TCP_METRICS_H */
+#endif /* _freax_TCP_METRICS_H */

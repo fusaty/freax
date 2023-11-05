@@ -29,12 +29,12 @@
  *  such damages.
  */
 
-#include <linux/nfs_fs.h>
-#include <linux/nfs_page.h>
-#include <linux/module.h>
-#include <linux/backing-dev.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_page.h>
+#include <freax/module.h>
+#include <freax/backing-dev.h>
 
-#include <linux/sunrpc/metrics.h>
+#include <freax/sunrpc/metrics.h>
 
 #include "../nfs4session.h"
 #include "../internal.h"

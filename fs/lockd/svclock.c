@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/lockd/svclock.c
+ * freax/fs/lockd/svclock.c
  *
  * Handling of server-side locks, mostly of the blocked variety.
  * This is the ugliest part of lockd because we tread on very thin ice.
@@ -21,16 +21,16 @@
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/lockd/nlm.h>
-#include <linux/lockd/lockd.h>
-#include <linux/exportfs.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/svc_xprt.h>
+#include <freax/lockd/nlm.h>
+#include <freax/lockd/lockd.h>
+#include <freax/exportfs.h>
 
 #define NLMDBG_FACILITY		NLMDBG_SVCLOCK
 

@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2021, Linaro Limited
 
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/delay.h>
-#include <linux/of_platform.h>
-#include <linux/jiffies.h>
-#include <linux/soc/qcom/apr.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/delay.h>
+#include <freax/of_platform.h>
+#include <freax/jiffies.h>
+#include <freax/soc/qcom/apr.h>
 #include <dt-bindings/soc/qcom,gpr.h>
 #include <dt-bindings/sound/qcom,q6dsp-lpass-ports.h>
 #include "q6apm.h"

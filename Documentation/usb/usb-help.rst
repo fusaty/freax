@@ -7,11 +7,11 @@ USB references
 For USB help other than the readme files that are located in
 `Documentation/usb/*`, see the following:
 
-- Linux-USB project:  http://www.linux-usb.org
-  mirrors at          http://usb.in.tum.de/linux-usb/
-  and                 http://it.linux-usb.org
-- Linux USB Guide:    http://linux-usb.sourceforge.net
-- Linux-USB device overview (working devices and drivers):
+- freax-USB project:  http://www.freax-usb.org
+  mirrors at          http://usb.in.tum.de/freax-usb/
+  and                 http://it.freax-usb.org
+- freax USB Guide:    http://freax-usb.sourceforge.net
+- freax-USB device overview (working devices and drivers):
   http://www.qbik.ch/usb/devices/
 
-The Linux-USB mailing list is at linux-usb@vger.kernel.org
+The freax-USB mailing list is at freax-usb@vger.kernel.org

@@ -4,13 +4,13 @@
  *
  * Authors:
  *	Eric Anholt <eric@anholt.net>
- *	Dave Airlie <airlied@linux.ie>
+ *	Dave Airlie <airlied@freax.ie>
  *	Jesse Barnes <jesse.barnes@intel.com>
  */
 
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/pm_runtime.h>
+#include <freax/dmi.h>
+#include <freax/i2c.h>
+#include <freax/pm_runtime.h>
 
 #include <drm/drm_crtc_helper.h>
 #include <drm/drm_modeset_helper_vtables.h>

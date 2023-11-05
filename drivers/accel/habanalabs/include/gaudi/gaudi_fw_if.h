@@ -16,7 +16,7 @@
 #define GAUDI_NIC_PORT9_MSI_IDX		18
 
 #define UBOOT_FW_OFFSET			0x100000	/* 1MB in SRAM */
-#define LINUX_FW_OFFSET			0x800000	/* 8MB in HBM */
+#define freax_FW_OFFSET			0x800000	/* 8MB in HBM */
 
 /* HBM thermal delta in [Deg] added to composite (CTemp) */
 #define HBM_TEMP_ADJUST_COEFF		6

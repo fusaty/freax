@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2023 Yafang Shao <laoar.shao@gmail.com> */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include <bpf/bpf_tracing.h>
 
 char tp_name[128];

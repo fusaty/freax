@@ -5,8 +5,8 @@
  * Copyright (C) 2018 Western Digital Corporation
  */
 
-#include <linux/bsg-lib.h>
-#include <linux/dma-mapping.h>
+#include <freax/bsg-lib.h>
+#include <freax/dma-mapping.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include "ufs_bsg.h"

@@ -7,26 +7,26 @@
  *    Xavier Duret
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/gcd.h>
-#include <linux/genalloc.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kfifo.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/ratelimit.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/gcd.h>
+#include <freax/genalloc.h>
+#include <freax/idr.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/kfifo.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
+#include <freax/ratelimit.h>
+#include <freax/reset.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

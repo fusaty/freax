@@ -3,9 +3,9 @@
  * Copyright 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
  */
 
-#ifndef _LINUX_NITRO_ENCLAVES_H_
-#define _LINUX_NITRO_ENCLAVES_H_
+#ifndef _freax_NITRO_ENCLAVES_H_
+#define _freax_NITRO_ENCLAVES_H_
 
-#include <uapi/linux/nitro_enclaves.h>
+#include <uapi/freax/nitro_enclaves.h>
 
-#endif /* _LINUX_NITRO_ENCLAVES_H_ */
+#endif /* _freax_NITRO_ENCLAVES_H_ */

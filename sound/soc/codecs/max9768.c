@@ -5,12 +5,12 @@
  * Copyright (C) 2011, 2012 by Wolfram Sang, Pengutronix e.K.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regmap.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regmap.h>
 
 #include <sound/core.h>
 #include <sound/soc.h>

@@ -5,11 +5,11 @@
  * Copyright (c) 2010, NVIDIA Corporation.
  */
 
-#ifndef __LINUX_POWER_SBS_BATTERY_H_
-#define __LINUX_POWER_SBS_BATTERY_H_
+#ifndef __freax_POWER_SBS_BATTERY_H_
+#define __freax_POWER_SBS_BATTERY_H_
 
-#include <linux/power_supply.h>
-#include <linux/types.h>
+#include <freax/power_supply.h>
+#include <freax/types.h>
 
 /**
  * struct sbs_platform_data - platform data for sbs devices

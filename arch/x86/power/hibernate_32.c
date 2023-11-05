@@ -5,10 +5,10 @@
  * Copyright (c) 2006 Rafael J. Wysocki <rjw@sisk.pl>
  */
 
-#include <linux/gfp.h>
-#include <linux/suspend.h>
-#include <linux/memblock.h>
-#include <linux/pgtable.h>
+#include <freax/gfp.h>
+#include <freax/suspend.h>
+#include <freax/memblock.h>
+#include <freax/pgtable.h>
 
 #include <asm/page.h>
 #include <asm/mmzone.h>

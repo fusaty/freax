@@ -6,18 +6,18 @@
  * Copyright (C) 2007-2008 Marvell Ltd.
  */
 
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/spi/spi.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/clk.h>
-#include <linux/sizes.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/spi/spi.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/clk.h>
+#include <freax/sizes.h>
 #include <asm/unaligned.h>
 
 #define DRIVER_NAME			"orion_spi"

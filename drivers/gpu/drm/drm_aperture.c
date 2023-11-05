@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 
-#include <linux/aperture.h>
-#include <linux/platform_device.h>
+#include <freax/aperture.h>
+#include <freax/platform_device.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_drv.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/efi.h>
+#include <freax/efi.h>
 #include <asm/efi.h>
 #include "efistub.h"
 
@@ -9,7 +9,7 @@ struct efi_unaccepted_memory *unaccepted_table;
 efi_status_t allocate_unaccepted_bitmap(__u32 nr_desc,
 					struct efi_boot_memmap *map)
 {
-	efi_guid_t unaccepted_table_guid = LINUX_EFI_UNACCEPTED_MEM_TABLE_GUID;
+	efi_guid_t unaccepted_table_guid = freax_EFI_UNACCEPTED_MEM_TABLE_GUID;
 	u64 unaccepted_start = ULLONG_MAX, unaccepted_end = 0, bitmap_size;
 	efi_status_t status;
 	int i;

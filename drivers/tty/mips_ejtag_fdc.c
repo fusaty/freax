@@ -5,28 +5,28 @@
  * Copyright (C) 2007-2015 Imagination Technologies Ltd
  */
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/kgdb.h>
-#include <linux/kthread.h>
-#include <linux/sched.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/uaccess.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/completion.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/kgdb.h>
+#include <freax/kthread.h>
+#include <freax/sched.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/uaccess.h>
 
 #include <asm/cdmm.h>
 #include <asm/irq.h>

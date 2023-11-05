@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * ethtool.h: Defines for Linux ethtool.
+ * ethtool.h: Defines for freax ethtool.
  *
  * Copyright (C) 1998 David S. Miller (davem@redhat.com)
  * Copyright 2001 Jeff Garzik <jgarzik@pobox.com>
@@ -10,14 +10,14 @@
  *                                scott.feldman@intel.com)
  * Portions Copyright (C) Sun Microsystems 2008
  */
-#ifndef _LINUX_ETHTOOL_H
-#define _LINUX_ETHTOOL_H
+#ifndef _freax_ETHTOOL_H
+#define _freax_ETHTOOL_H
 
-#include <linux/bitmap.h>
-#include <linux/compat.h>
-#include <linux/if_ether.h>
-#include <linux/netlink.h>
-#include <uapi/linux/ethtool.h>
+#include <freax/bitmap.h>
+#include <freax/compat.h>
+#include <freax/if_ether.h>
+#include <freax/netlink.h>
+#include <uapi/freax/ethtool.h>
 
 struct compat_ethtool_rx_flow_spec {
 	u32		flow_type;
@@ -38,7 +38,7 @@ struct compat_ethtool_rxnfc {
 	u32				rule_locs[];
 };
 
-#include <linux/rculist.h>
+#include <freax/rculist.h>
 
 /**
  * enum ethtool_phys_id_state - indicator state for physical identification
@@ -132,7 +132,7 @@ struct ethtool_link_ext_state_info {
 };
 
 struct ethtool_link_ext_stats {
-	/* Custom Linux statistic for PHY level link down events.
+	/* Custom freax statistic for PHY level link down events.
 	 * In a simpler world it should be equal to netdev->carrier_down_count
 	 * unfortunately netdev also counts local reconfigurations which don't
 	 * actually take the physical link down, not to mention NC-SI which,
@@ -1071,4 +1071,4 @@ struct ethtool_forced_speed_map {
 
 void
 ethtool_forced_speed_maps_init(struct ethtool_forced_speed_map *maps, u32 size);
-#endif /* _LINUX_ETHTOOL_H */
+#endif /* _freax_ETHTOOL_H */

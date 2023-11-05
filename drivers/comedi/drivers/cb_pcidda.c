@@ -6,7 +6,7 @@
  * Copyright (C) 2001 Ivan Martinez <ivanmr@altavista.com>
  * Copyright (C) 2001 Frank Mori Hess <fmhess@users.sourceforge.net>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-8 David A. Schleef <ds@schleef.org>
  */
 
@@ -26,9 +26,9 @@
  * Only simple analog output writing is supported.
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedi_pci.h>
-#include <linux/comedi/comedi_8255.h>
+#include <freax/module.h>
+#include <freax/comedi/comedi_pci.h>
+#include <freax/comedi/comedi_8255.h>
 
 #define EEPROM_SIZE	128	/*  number of entries in eeprom */
 /* maximum number of ao channels for supported boards */

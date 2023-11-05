@@ -6,15 +6,15 @@
  *     Author: Alex Williamson <alex.williamson@redhat.com>
  */
 
-#include <linux/errno.h>
-#include <linux/file.h>
-#include <linux/kvm_host.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
+#include <freax/errno.h>
+#include <freax/file.h>
+#include <freax/kvm_host.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/vfio.h>
 #include "vfio.h"
 
 #ifdef CONFIG_SPAPR_TCE_IOMMU

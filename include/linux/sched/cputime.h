@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_CPUTIME_H
-#define _LINUX_SCHED_CPUTIME_H
+#ifndef _freax_SCHED_CPUTIME_H
+#define _freax_SCHED_CPUTIME_H
 
-#include <linux/sched/signal.h>
+#include <freax/sched/signal.h>
 
 /*
  * cputime accounting APIs:
@@ -180,4 +180,4 @@ static inline void prev_cputime_init(struct prev_cputime *prev)
 extern unsigned long long
 task_sched_runtime(struct task_struct *task);
 
-#endif /* _LINUX_SCHED_CPUTIME_H */
+#endif /* _freax_SCHED_CPUTIME_H */

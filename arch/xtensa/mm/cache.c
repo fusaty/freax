@@ -13,18 +13,18 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/memblock.h>
-#include <linux/swap.h>
-#include <linux/pagemap.h>
-#include <linux/pgtable.h>
+#include <freax/init.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/ptrace.h>
+#include <freax/memblock.h>
+#include <freax/swap.h>
+#include <freax/pagemap.h>
+#include <freax/pgtable.h>
 
 #include <asm/bootparam.h>
 #include <asm/mmu_context.h>

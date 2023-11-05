@@ -1,7 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 ====================================
-HOWTO for the linux packet generator
+HOWTO for the freax packet generator
 ====================================
 
 Enable CONFIG_NET_PKTGEN to compile and build pktgen either in-kernel
@@ -407,11 +407,11 @@ Current commands and configuration options
 
 References:
 
-- ftp://robur.slu.se/pub/Linux/net-development/pktgen-testing/
-- ftp://robur.slu.se/pub/Linux/net-development/pktgen-testing/examples/
+- ftp://robur.slu.se/pub/freax/net-development/pktgen-testing/
+- ftp://robur.slu.se/pub/freax/net-development/pktgen-testing/examples/
 
-Paper from Linux-Kongress in Erlangen 2004.
-- ftp://robur.slu.se/pub/Linux/net-development/pktgen-testing/pktgen_paper.pdf
+Paper from freax-Kongress in Erlangen 2004.
+- ftp://robur.slu.se/pub/freax/net-development/pktgen-testing/pktgen_paper.pdf
 
 Thanks to:
 
@@ -419,4 +419,4 @@ Grant Grundler for testing on IA-64 and parisc, Harald Welte,  Lennert Buytenhek
 Stephen Hemminger, Andi Kleen, Dave Miller and many others.
 
 
-Good luck with the linux net-development.
+Good luck with the freax net-development.

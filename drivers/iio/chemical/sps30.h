@@ -2,7 +2,7 @@
 #ifndef _SPS30_H
 #define _SPS30_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct sps30_state;
 struct sps30_ops {

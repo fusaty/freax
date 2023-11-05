@@ -40,7 +40,7 @@ struct kvm_vcpu_sbi_extension {
 
 	/**
 	 * SBI extension handler. It can be defined for a given extension or group of
-	 * extension. But it should always return linux error codes rather than SBI
+	 * extension. But it should always return freax error codes rather than SBI
 	 * specific error codes.
 	 */
 	int (*handler)(struct kvm_vcpu *vcpu, struct kvm_run *run,

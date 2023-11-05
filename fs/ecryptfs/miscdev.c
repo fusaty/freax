@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * eCryptfs: Linux filesystem encryption layer
+ * eCryptfs: freax filesystem encryption layer
  *
  * Copyright (C) 2008 International Business Machines Corp.
  *   Author(s): Michael A. Halcrow <mhalcrow@us.ibm.com>
  */
 
-#include <linux/fs.h>
-#include <linux/hash.h>
-#include <linux/random.h>
-#include <linux/miscdevice.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <freax/fs.h>
+#include <freax/hash.h>
+#include <freax/random.h>
+#include <freax/miscdevice.h>
+#include <freax/poll.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/module.h>
 #include "ecryptfs_kernel.h"
 
 static atomic_t ecryptfs_num_miscdev_opens;

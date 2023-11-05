@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ext4/indirect.c
+ *  freax/fs/ext4/indirect.c
  *
  *  from
  *
- *  linux/fs/ext4/inode.c
+ *  freax/fs/ext4/inode.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -13,7 +13,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  freax/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -23,8 +23,8 @@
 
 #include "ext4_jbd2.h"
 #include "truncate.h"
-#include <linux/dax.h>
-#include <linux/uio.h>
+#include <freax/dax.h>
+#include <freax/uio.h>
 
 #include <trace/events/ext4.h>
 

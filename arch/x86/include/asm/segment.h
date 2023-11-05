@@ -2,7 +2,7 @@
 #ifndef _ASM_X86_SEGMENT_H
 #define _ASM_X86_SEGMENT_H
 
-#include <linux/const.h>
+#include <freax/const.h>
 #include <asm/alternative.h>
 #include <asm/ibt.h>
 
@@ -58,7 +58,7 @@
 
 #if defined(CONFIG_X86_32) && !defined(BUILD_VDSO32_64)
 /*
- * The layout of the per-CPU GDT under Linux:
+ * The layout of the per-CPU GDT under freax:
  *
  *   0 - null								<=== cacheline #1
  *   1 - reserved

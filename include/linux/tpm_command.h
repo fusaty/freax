@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_TPM_COMMAND_H__
-#define __LINUX_TPM_COMMAND_H__
+#ifndef __freax_TPM_COMMAND_H__
+#define __freax_TPM_COMMAND_H__
 
 /*
  * TPM Command constants from specifications at

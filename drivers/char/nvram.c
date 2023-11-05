@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * CMOS/NV-RAM driver for Linux
+ * CMOS/NV-RAM driver for freax
  *
  * Copyright (C) 1997 Roman Hodek <Roman.Hodek@informatik.uni-erlangen.de>
  * idea by and with help from Richard Jelinek <rj@suse.de>
@@ -31,23 +31,23 @@
 
 #define NVRAM_VERSION	"1.3"
 
-#include <linux/module.h>
-#include <linux/nvram.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/ioport.h>
-#include <linux/fcntl.h>
-#include <linux/mc146818rtc.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
-#include <linux/mutex.h>
-#include <linux/pagemap.h>
+#include <freax/module.h>
+#include <freax/nvram.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/miscdevice.h>
+#include <freax/ioport.h>
+#include <freax/fcntl.h>
+#include <freax/mc146818rtc.h>
+#include <freax/init.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
+#include <freax/mutex.h>
+#include <freax/pagemap.h>
 
 #ifdef CONFIG_PPC
 #include <asm/nvram.h>

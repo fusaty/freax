@@ -2,14 +2,14 @@
 /*
  * Copyright (C) 2016 - Marcin Malagowski <mrc@bourne.st>
  */
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/iio/iio.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/iio/iio.h>
 
 #define ABP060MG_ERROR_MASK   0xC000
 #define ABP060MG_RESP_TIME_MS 40

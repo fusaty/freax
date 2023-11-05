@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  */
 
 #include <stdio.h>
@@ -13,7 +13,7 @@
 #include <sys/stat.h>
 #include <sys/mman.h>
 #include <sys/vfs.h>
-#include <linux/magic.h>
+#include <freax/magic.h>
 #include <init.h>
 #include <os.h>
 

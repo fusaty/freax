@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/reiserfs/xattr.c
+ * freax/fs/reiserfs/xattr.c
  *
  * Copyright (c) 2002 by Jeff Mahoney, <jeffm@suse.com>
  *
@@ -35,24 +35,24 @@
  */
 
 #include "reiserfs.h"
-#include <linux/capability.h>
-#include <linux/dcache.h>
-#include <linux/namei.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/xattr.h>
+#include <freax/capability.h>
+#include <freax/dcache.h>
+#include <freax/namei.h>
+#include <freax/errno.h>
+#include <freax/gfp.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/pagemap.h>
+#include <freax/xattr.h>
 #include "xattr.h"
 #include "acl.h"
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <net/checksum.h>
-#include <linux/stat.h>
-#include <linux/quotaops.h>
-#include <linux/security.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/xattr.h>
+#include <freax/stat.h>
+#include <freax/quotaops.h>
+#include <freax/security.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/xattr.h>
 
 #define PRIVROOT_NAME ".reiserfs_priv"
 #define XAROOT_NAME   "xattrs"

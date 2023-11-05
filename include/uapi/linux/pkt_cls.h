@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_PKT_CLS_H
-#define __LINUX_PKT_CLS_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_PKT_CLS_H
+#define __freax_PKT_CLS_H
 
-#include <linux/types.h>
-#include <linux/pkt_sched.h>
+#include <freax/types.h>
+#include <freax/pkt_sched.h>
 
 #define TC_COOKIE_MAX_SIZE 16
 

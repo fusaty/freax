@@ -7,11 +7,11 @@
  *				Takashi Iwai <tiwai@suse.de>
  */
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/module.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/tlv.h>

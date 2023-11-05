@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /*
  * Copyright (c) 2018, Mellanox Technologies inc.  All rights reserved.
  */
@@ -12,10 +12,10 @@
 #include <rdma/mlx5_user_ioctl_verbs.h>
 #include <rdma/ib_hdrs.h>
 #include <rdma/ib_umem.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/fs.h>
-#include <linux/mlx5/fs_helpers.h>
-#include <linux/mlx5/eswitch.h>
+#include <freax/mlx5/driver.h>
+#include <freax/mlx5/fs.h>
+#include <freax/mlx5/fs_helpers.h>
+#include <freax/mlx5/eswitch.h>
 #include <net/inet_ecn.h>
 #include "mlx5_ib.h"
 #include "counters.h"

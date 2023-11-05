@@ -8,19 +8,19 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/gpio/driver.h>
-#include <linux/mfd/core.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/gpio/driver.h>
+#include <freax/mfd/core.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/regmap.h>
 
-#include <linux/mfd/wm8994/core.h>
-#include <linux/mfd/wm8994/pdata.h>
-#include <linux/mfd/wm8994/gpio.h>
-#include <linux/mfd/wm8994/registers.h>
+#include <freax/mfd/wm8994/core.h>
+#include <freax/mfd/wm8994/pdata.h>
+#include <freax/mfd/wm8994/gpio.h>
+#include <freax/mfd/wm8994/registers.h>
 
 struct wm8994_gpio {
 	struct wm8994 *wm8994;

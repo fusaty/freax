@@ -1,4 +1,4 @@
-/* i915_drv.c -- i830,i845,i855,i865,i915 driver -*- linux-c -*-
+/* i915_drv.c -- i830,i845,i855,i865,i915 driver -*- freax-c -*-
  */
 /*
  *
@@ -27,17 +27,17 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/oom.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
-#include <linux/vga_switcheroo.h>
-#include <linux/vt.h>
+#include <freax/acpi.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/oom.h>
+#include <freax/pci.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/string_helpers.h>
+#include <freax/vga_switcheroo.h>
+#include <freax/vt.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic_helper.h>

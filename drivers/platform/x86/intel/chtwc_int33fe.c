@@ -17,15 +17,15 @@
  * for these chips can bind to the them.
  */
 
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/usb/pd.h>
+#include <freax/dmi.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/usb/pd.h>
 
 struct cht_int33fe_data {
 	struct i2c_client *battery_fg;
@@ -81,7 +81,7 @@ static struct software_node_ref_args fusb302_mux_refs[] = {
 };
 
 static const struct property_entry fusb302_properties[] = {
-	PROPERTY_ENTRY_STRING("linux,extcon-name", "cht_wcove_pwrsrc"),
+	PROPERTY_ENTRY_STRING("freax,extcon-name", "cht_wcove_pwrsrc"),
 	PROPERTY_ENTRY_REF_ARRAY("usb-role-switch", fusb302_mux_refs),
 	{ }
 };
@@ -284,7 +284,7 @@ static const struct dmi_system_id cht_int33fe_typec_ids[] = {
 		 * GPD win / GPD pocket mini laptops
 		 *
 		 * This DMI match may not seem unique, but it is. In the 67000+
-		 * DMI decode dumps from linux-hardware.org only 116 have
+		 * DMI decode dumps from freax-hardware.org only 116 have
 		 * board_vendor set to "AMI Corporation" and of those 116 only
 		 * the GPD win's and pocket's board_name is "Default string".
 		 */

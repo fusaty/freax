@@ -5,7 +5,7 @@
  *
  * Author: Anton Blanchard <anton@au.ibm.com>
  */
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/processor.h>
 #include <asm/ppc_asm.h>
 #include <asm/feature-fixups.h>

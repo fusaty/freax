@@ -16,12 +16,12 @@
 #include <video/display_timing.h>
 #include <video/mipi_display.h>
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/media-bus-format.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regulator/consumer.h>
 
 /* Manufacturer specific Commands send via DSI */
 #define XPP055C272_CMD_ALL_PIXEL_OFF	0x22

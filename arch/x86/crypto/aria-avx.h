@@ -2,7 +2,7 @@
 #ifndef ASM_X86_ARIA_AVX_H
 #define ASM_X86_ARIA_AVX_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define ARIA_AESNI_PARALLEL_BLOCKS 16
 #define ARIA_AESNI_PARALLEL_BLOCK_SIZE  (ARIA_BLOCK_SIZE * ARIA_AESNI_PARALLEL_BLOCKS)

@@ -15,9 +15,9 @@
  * Software Developer Manual June 2016, volume 3, section 17.17.
  */
 
-#include <linux/module.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/resctrl.h>

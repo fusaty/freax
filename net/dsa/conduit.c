@@ -2,13 +2,13 @@
 /*
  * Handling of a conduit device, switching frames via its switch fabric CPU port
  *
- * Copyright (c) 2017 Savoir-faire Linux Inc.
- *	Vivien Didelot <vivien.didelot@savoirfairelinux.com>
+ * Copyright (c) 2017 Savoir-faire freax Inc.
+ *	Vivien Didelot <vivien.didelot@savoirfairefreax.com>
  */
 
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/netlink.h>
+#include <freax/ethtool.h>
+#include <freax/netdevice.h>
+#include <freax/netlink.h>
 #include <net/dsa.h>
 
 #include "conduit.h"

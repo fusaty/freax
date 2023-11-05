@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -19,8 +19,8 @@
  *		Jorge Cwik, <jorge@laser.satlink.net>
  */
 
-#include <linux/module.h>
-#include <linux/gfp.h>
+#include <freax/module.h>
+#include <freax/gfp.h>
 #include <net/tcp.h>
 
 static u32 tcp_clamp_rto_to_user_timeout(const struct sock *sk)
@@ -78,7 +78,7 @@ static void tcp_write_err(struct sock *sk)
 
 	tcp_write_queue_purge(sk);
 	tcp_done(sk);
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPABORTONTIMEOUT);
+	__NET_INC_STATS(sock_net(sk), freax_MIB_TCPABORTONTIMEOUT);
 }
 
 /**
@@ -129,7 +129,7 @@ static int tcp_out_of_resources(struct sock *sk, bool do_reset)
 		if (do_reset)
 			tcp_send_active_reset(sk, GFP_ATOMIC);
 		tcp_done(sk);
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPABORTONMEMORY);
+		__NET_INC_STATS(sock_net(sk), freax_MIB_TCPABORTONMEMORY);
 		return 1;
 	}
 
@@ -298,7 +298,7 @@ static int tcp_write_timeout(struct sock *sk)
 
 	if (sk_rethink_txhash(sk)) {
 		tp->timeout_rehash++;
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPTIMEOUTREHASH);
+		__NET_INC_STATS(sock_net(sk), freax_MIB_TCPTIMEOUTREHASH);
 	}
 
 	return 0;
@@ -342,7 +342,7 @@ void tcp_delack_timer_handler(struct sock *sk)
 		}
 		tcp_mstamp_refresh(tp);
 		tcp_send_ack(sk);
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_DELAYEDACKS);
+		__NET_INC_STATS(sock_net(sk), freax_MIB_DELAYEDACKS);
 	}
 }
 
@@ -366,7 +366,7 @@ static void tcp_delack_timer(struct timer_list *t)
 	if (!sock_owned_by_user(sk)) {
 		tcp_delack_timer_handler(sk);
 	} else {
-		__NET_INC_STATS(sock_net(sk), LINUX_MIB_DELAYEDACKLOCKED);
+		__NET_INC_STATS(sock_net(sk), freax_MIB_DELAYEDACKLOCKED);
 		/* deleguate our work to tcp_release_cb() */
 		if (!test_and_set_bit(TCP_DELACK_TIMER_DEFERRED, &sk->sk_tsq_flags))
 			sock_hold(sk);
@@ -573,7 +573,7 @@ void tcp_retransmit_timer(struct sock *sk)
 		goto out_reset_timer;
 	}
 
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPTIMEOUTS);
+	__NET_INC_STATS(sock_net(sk), freax_MIB_TCPTIMEOUTS);
 	if (tcp_write_timeout(sk))
 		goto out;
 
@@ -582,17 +582,17 @@ void tcp_retransmit_timer(struct sock *sk)
 
 		if (icsk->icsk_ca_state == TCP_CA_Recovery) {
 			if (tcp_is_sack(tp))
-				mib_idx = LINUX_MIB_TCPSACKRECOVERYFAIL;
+				mib_idx = freax_MIB_TCPSACKRECOVERYFAIL;
 			else
-				mib_idx = LINUX_MIB_TCPRENORECOVERYFAIL;
+				mib_idx = freax_MIB_TCPRENORECOVERYFAIL;
 		} else if (icsk->icsk_ca_state == TCP_CA_Loss) {
-			mib_idx = LINUX_MIB_TCPLOSSFAILURES;
+			mib_idx = freax_MIB_TCPLOSSFAILURES;
 		} else if ((icsk->icsk_ca_state == TCP_CA_Disorder) ||
 			   tp->sacked_out) {
 			if (tcp_is_sack(tp))
-				mib_idx = LINUX_MIB_TCPSACKFAILURES;
+				mib_idx = freax_MIB_TCPSACKFAILURES;
 			else
-				mib_idx = LINUX_MIB_TCPRENOFAILURES;
+				mib_idx = freax_MIB_TCPRENOFAILURES;
 		}
 		if (mib_idx)
 			__NET_INC_STATS(sock_net(sk), mib_idx);
@@ -721,7 +721,7 @@ void tcp_syn_ack_timeout(const struct request_sock *req)
 {
 	struct net *net = read_pnet(&inet_rsk(req)->ireq_net);
 
-	__NET_INC_STATS(net, LINUX_MIB_TCPTIMEOUTS);
+	__NET_INC_STATS(net, freax_MIB_TCPTIMEOUTS);
 }
 EXPORT_SYMBOL(tcp_syn_ack_timeout);
 
@@ -799,7 +799,7 @@ static void tcp_keepalive_timer (struct timer_list *t)
 			tcp_write_err(sk);
 			goto out;
 		}
-		if (tcp_write_wakeup(sk, LINUX_MIB_TCPKEEPALIVE) <= 0) {
+		if (tcp_write_wakeup(sk, freax_MIB_TCPKEEPALIVE) <= 0) {
 			icsk->icsk_probes_out++;
 			elapsed = keepalive_intvl_when(tp);
 		} else {
@@ -835,7 +835,7 @@ static enum hrtimer_restart tcp_compressed_ack_kick(struct hrtimer *timer)
 		if (tp->compressed_ack) {
 			/* Since we have to send one ack finally,
 			 * subtract one from tp->compressed_ack to keep
-			 * LINUX_MIB_TCPACKCOMPRESSED accurate.
+			 * freax_MIB_TCPACKCOMPRESSED accurate.
 			 */
 			tp->compressed_ack--;
 			tcp_send_ack(sk);

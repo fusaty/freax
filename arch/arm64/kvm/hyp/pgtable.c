@@ -7,7 +7,7 @@
  * Author: Will Deacon <will@kernel.org>
  */
 
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 #include <asm/kvm_pgtable.h>
 #include <asm/stage2_pgtable.h>
 

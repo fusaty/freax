@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/m68k/hp300/time.c
+ *  freax/arch/m68k/hp300/time.c
  *
  *  Copyright (C) 1998 Philip Blundell <philb@gnu.org>
  *
@@ -8,12 +8,12 @@
  */
 
 #include <asm/ptrace.h>
-#include <linux/clocksource.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/kernel_stat.h>
-#include <linux/interrupt.h>
+#include <freax/clocksource.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/kernel_stat.h>
+#include <freax/interrupt.h>
 #include <asm/machdep.h>
 #include <asm/irq.h>
 #include <asm/io.h>

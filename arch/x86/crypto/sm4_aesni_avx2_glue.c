@@ -5,12 +5,12 @@
  * https://tools.ietf.org/id/draft-ribose-cfrg-sm4-10.html
  *
  * Copyright (c) 2021, Alibaba Group.
- * Copyright (c) 2021 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (c) 2021 Tianjia Zhang <tianjia.zhang@freax.alibaba.com>
  */
 
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/crypto.h>
+#include <freax/kernel.h>
 #include <asm/simd.h>
 #include <crypto/internal/simd.h>
 #include <crypto/internal/skcipher.h>
@@ -163,7 +163,7 @@ module_init(sm4_init);
 module_exit(sm4_exit);
 
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Tianjia Zhang <tianjia.zhang@linux.alibaba.com>");
+MODULE_AUTHOR("Tianjia Zhang <tianjia.zhang@freax.alibaba.com>");
 MODULE_DESCRIPTION("SM4 Cipher Algorithm, AES-NI/AVX2 optimized");
 MODULE_ALIAS_CRYPTO("sm4");
 MODULE_ALIAS_CRYPTO("sm4-aesni-avx2");

@@ -3,7 +3,7 @@
 #ifndef __ASM_CSKY_BITOPS_H
 #define __ASM_CSKY_BITOPS_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include <asm/barrier.h>
 
 /*
@@ -60,8 +60,8 @@ static __always_inline unsigned long __fls(unsigned long x)
 #include <asm-generic/bitops/ffz.h>
 #include <asm-generic/bitops/fls64.h>
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _freax_BITOPS_H
+#error only <freax/bitops.h> can be included directly
 #endif
 
 #include <asm-generic/bitops/sched.h>

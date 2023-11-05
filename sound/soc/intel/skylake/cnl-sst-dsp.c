@@ -12,7 +12,7 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-#include <linux/device.h>
+#include <freax/device.h>
 #include "../common/sst-dsp.h"
 #include "../common/sst-ipc.h"
 #include "../common/sst-dsp-priv.h"

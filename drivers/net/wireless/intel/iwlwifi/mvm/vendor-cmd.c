@@ -3,7 +3,7 @@
  * Copyright (C) 2021 Intel Corporation
  */
 #include "mvm.h"
-#include <linux/nl80211-vnd-intel.h>
+#include <freax/nl80211-vnd-intel.h>
 #include <net/netlink.h>
 
 static const struct nla_policy

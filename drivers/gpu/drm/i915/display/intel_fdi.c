@@ -3,7 +3,7 @@
  * Copyright © 2020 Intel Corporation
  */
 
-#include <linux/string_helpers.h>
+#include <freax/string_helpers.h>
 
 #include "i915_reg.h"
 #include "intel_atomic.h"

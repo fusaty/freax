@@ -33,11 +33,11 @@
 #ifndef XILINX_HWICAP_H_	/* prevent circular inclusions */
 #define XILINX_HWICAP_H_	/* by using protection macros */
 
-#include <linux/types.h>
-#include <linux/cdev.h>
-#include <linux/platform_device.h>
+#include <freax/types.h>
+#include <freax/cdev.h>
+#include <freax/platform_device.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 struct hwicap_drvdata {
 	u32 write_buffer_in_use;  /* Always in [0,3] */

@@ -21,33 +21,33 @@
 #define KMSG_COMPONENT "ctcm"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/timer.h>
-#include <linux/sched.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/timer.h>
+#include <freax/sched.h>
 
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/proc_fs.h>
+#include <freax/signal.h>
+#include <freax/string.h>
+#include <freax/proc_fs.h>
 
-#include <linux/ip.h>
-#include <linux/if_arp.h>
-#include <linux/tcp.h>
-#include <linux/skbuff.h>
-#include <linux/ctype.h>
-#include <linux/netdevice.h>
+#include <freax/ip.h>
+#include <freax/if_arp.h>
+#include <freax/tcp.h>
+#include <freax/skbuff.h>
+#include <freax/ctype.h>
+#include <freax/netdevice.h>
 #include <net/dst.h>
 
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
-#include <linux/moduleparam.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
+#include <freax/uaccess.h>
+#include <freax/wait.h>
+#include <freax/moduleparam.h>
 #include <asm/ccwdev.h>
 #include <asm/ccwgroup.h>
 #include <asm/idals.h>

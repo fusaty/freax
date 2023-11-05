@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 /* Copyright (C) 2015-2018 Netronome Systems, Inc. */
 
-#include <linux/bitfield.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
+#include <freax/bitfield.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/workqueue.h>
 #include <net/dst_metadata.h>
 
 #include "main.h"

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_NETDEV_RX_QUEUE_H
-#define _LINUX_NETDEV_RX_QUEUE_H
+#ifndef _freax_NETDEV_RX_QUEUE_H
+#define _freax_NETDEV_RX_QUEUE_H
 
-#include <linux/kobject.h>
-#include <linux/netdevice.h>
-#include <linux/sysfs.h>
+#include <freax/kobject.h>
+#include <freax/netdevice.h>
+#include <freax/sysfs.h>
 #include <net/xdp.h>
 
 /* This structure contains an instance of an RX queue. */

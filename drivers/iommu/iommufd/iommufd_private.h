@@ -4,13 +4,13 @@
 #ifndef __IOMMUFD_PRIVATE_H
 #define __IOMMUFD_PRIVATE_H
 
-#include <linux/rwsem.h>
-#include <linux/xarray.h>
-#include <linux/refcount.h>
-#include <linux/uaccess.h>
-#include <linux/iommu.h>
-#include <linux/iova_bitmap.h>
-#include <uapi/linux/iommufd.h>
+#include <freax/rwsem.h>
+#include <freax/xarray.h>
+#include <freax/refcount.h>
+#include <freax/uaccess.h>
+#include <freax/iommu.h>
+#include <freax/iova_bitmap.h>
+#include <uapi/freax/iommufd.h>
 
 struct iommu_domain;
 struct iommu_group;

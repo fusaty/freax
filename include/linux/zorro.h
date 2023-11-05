@@ -1,5 +1,5 @@
 /*
- *  linux/zorro.h -- Amiga AutoConfig (Zorro) Bus Definitions
+ *  freax/zorro.h -- Amiga AutoConfig (Zorro) Bus Definitions
  *
  *  Copyright (C) 1995--2003 Geert Uytterhoeven
  *
@@ -8,16 +8,16 @@
  *  for more details.
  */
 
-#ifndef _LINUX_ZORRO_H
-#define _LINUX_ZORRO_H
+#ifndef _freax_ZORRO_H
+#define _freax_ZORRO_H
 
 
-#include <uapi/linux/zorro.h>
+#include <uapi/freax/zorro.h>
 
-#include <linux/device.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/mod_devicetable.h>
+#include <freax/device.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/mod_devicetable.h>
 
 #include <asm/zorro.h>
 
@@ -135,4 +135,4 @@ extern DECLARE_BITMAP(zorro_unused_z2ram, 128);
 #define Z2RAM_CHUNKSHIFT	(16)
 
 
-#endif /* _LINUX_ZORRO_H */
+#endif /* _freax_ZORRO_H */

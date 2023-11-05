@@ -20,9 +20,9 @@
 #include "vdso.h"
 #include "debug.h"
 #include "util/copyfile.h"
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/zalloc.h>
+#include <freax/ctype.h>
+#include <freax/kernel.h>
+#include <freax/zalloc.h>
 #include <symbol/kallsyms.h>
 #include <internal/lib.h>
 
@@ -1217,7 +1217,7 @@ void symsrc__destroy(struct symsrc *ss)
 bool elf__needs_adjust_symbols(GElf_Ehdr ehdr)
 {
 	/*
-	 * Usually vmlinux is an ELF file with type ET_EXEC for most
+	 * Usually vmfreax is an ELF file with type ET_EXEC for most
 	 * architectures; except Arm64 kernel is linked with option
 	 * '-share', so need to check type ET_DYN.
 	 */
@@ -1265,7 +1265,7 @@ int symsrc__init(struct symsrc *ss, struct dso *dso, const char *name,
 	}
 
 	/* Always reject images with a mismatched build-id: */
-	if (dso->has_build_id && !symbol_conf.ignore_vmlinux_buildid) {
+	if (dso->has_build_id && !symbol_conf.ignore_vmfreax_buildid) {
 		u8 build_id[BUILD_ID_SIZE];
 		struct build_id bid;
 		int size;
@@ -1763,8 +1763,8 @@ int dso__load_sym(struct dso *dso, struct map *map, struct symsrc *syms_ss,
 
 	if (!syms_ss->symtab) {
 		/*
-		 * If the vmlinux is stripped, fail so we will fall back
-		 * to using kallsyms. The vmlinux runtime symbols aren't
+		 * If the vmfreax is stripped, fail so we will fall back
+		 * to using kallsyms. The vmfreax runtime symbols aren't
 		 * of much use.
 		 */
 		if (dso->kernel)

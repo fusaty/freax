@@ -10,10 +10,10 @@
  *
  ******************************************************************************/
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/export.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/export.h>
 
 #include <target/target_core_base.h>
 #include <target/target_core_backend.h>

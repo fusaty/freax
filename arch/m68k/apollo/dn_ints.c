@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/interrupt.h>
-#include <linux/irq.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
 
 #include <asm/traps.h>
 #include <asm/apollohw.h>

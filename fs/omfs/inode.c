@@ -3,22 +3,22 @@
  * Optimized MPEG FS - inode and super operations.
  * Copyright (C) 2006 Bob Copeland <me@bobcopeland.com>
  */
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/vfs.h>
-#include <linux/cred.h>
-#include <linux/parser.h>
-#include <linux/buffer_head.h>
-#include <linux/vmalloc.h>
-#include <linux/writeback.h>
-#include <linux/seq_file.h>
-#include <linux/crc-itu-t.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/vfs.h>
+#include <freax/cred.h>
+#include <freax/parser.h>
+#include <freax/buffer_head.h>
+#include <freax/vmalloc.h>
+#include <freax/writeback.h>
+#include <freax/seq_file.h>
+#include <freax/crc-itu-t.h>
 #include "omfs.h"
 
 MODULE_AUTHOR("Bob Copeland <me@bobcopeland.com>");
-MODULE_DESCRIPTION("OMFS (ReplayTV/Karma) Filesystem for Linux");
+MODULE_DESCRIPTION("OMFS (ReplayTV/Karma) Filesystem for freax");
 MODULE_LICENSE("GPL");
 
 struct buffer_head *omfs_bread(struct super_block *sb, sector_t block)

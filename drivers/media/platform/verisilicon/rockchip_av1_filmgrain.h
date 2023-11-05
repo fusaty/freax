@@ -3,7 +3,7 @@
 #ifndef _ROCKCHIP_AV1_FILMGRAIN_H_
 #define _ROCKCHIP_AV1_FILMGRAIN_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 void rockchip_av1_generate_luma_grain_block(s32 (*luma_grain_block)[73][82],
 					    s32 bitdepth,

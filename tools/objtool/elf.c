@@ -16,7 +16,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <errno.h>
-#include <linux/interval_tree_generic.h>
+#include <freax/interval_tree_generic.h>
 #include <objtool/builtin.h>
 
 #include <objtool/elf.h>

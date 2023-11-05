@@ -3,13 +3,13 @@
  * Software nodes for the firmware node framework.
  *
  * Copyright (C) 2018, Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@freax.intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/property.h>
+#include <freax/slab.h>
 
 #include "base.h"
 

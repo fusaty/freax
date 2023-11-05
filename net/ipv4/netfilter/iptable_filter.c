@@ -6,10 +6,10 @@
  * Copyright (C) 2000-2004 Netfilter Core Team <coreteam@netfilter.org>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/netfilter_ipv4/ip_tables.h>
+#include <freax/slab.h>
 #include <net/ip.h>
 
 MODULE_LICENSE("GPL");

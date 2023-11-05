@@ -55,18 +55,18 @@
  * device tree binding documentation.
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/linear_range.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/linear_range.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/power_supply.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
 
 #include "bd99954-charger.h"
 

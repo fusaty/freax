@@ -1,25 +1,25 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *	Forwarding database
- *	Linux ethernet bridge
+ *	freax ethernet bridge
  *
  *	Authors:
  *	Lennert Buytenhek		<buytenh@gnu.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/rculist.h>
-#include <linux/spinlock.h>
-#include <linux/times.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/jhash.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/atomic.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/rculist.h>
+#include <freax/spinlock.h>
+#include <freax/times.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/jhash.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/atomic.h>
 #include <asm/unaligned.h>
-#include <linux/if_vlan.h>
+#include <freax/if_vlan.h>
 #include <net/switchdev.h>
 #include <trace/events/bridge.h>
 #include "br_private.h"

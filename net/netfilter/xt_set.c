@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@linux.nu>
+/* Copyright (C) 2000-2002 Joakim Axelsson <gozem@freax.nu>
  *                         Patrick Schaaf <bof@bof.de>
  *                         Martin Josefsson <gandalf@wlug.westbo.se>
  * Copyright (C) 2003-2013 Jozsef Kadlecsik <kadlec@netfilter.org>
@@ -9,12 +9,12 @@
  * for netfilter/iptables.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/ipset/ip_set.h>
-#include <uapi/linux/netfilter/xt_set.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/ipset/ip_set.h>
+#include <uapi/freax/netfilter/xt_set.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Jozsef Kadlecsik <kadlec@netfilter.org>");

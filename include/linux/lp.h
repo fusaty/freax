@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * usr/include/linux/lp.h c.1991-1992 James Wiegand
+ * usr/include/freax/lp.h c.1991-1992 James Wiegand
  * many modifications copyright (C) 1992 Michael K. Johnson
  * Interrupt support added 1993 Nigel Gamble
  * Removed 8255 status defines from inside __KERNEL__ Marcelo Tosatti 
  */
-#ifndef _LINUX_LP_H
-#define _LINUX_LP_H
+#ifndef _freax_LP_H
+#define _freax_LP_H
 
 
-#include <linux/wait.h>
-#include <linux/mutex.h>
-#include <uapi/linux/lp.h>
+#include <freax/wait.h>
+#include <freax/mutex.h>
+#include <uapi/freax/lp.h>
 
 /* Magic numbers for defining port-device mappings */
 #define LP_PARPORT_UNSPEC -4

@@ -4,11 +4,11 @@
  * All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/spi/spi.h>
-#include <linux/crc7.h>
-#include <linux/crc-itu-t.h>
-#include <linux/gpio/consumer.h>
+#include <freax/clk.h>
+#include <freax/spi/spi.h>
+#include <freax/crc7.h>
+#include <freax/crc-itu-t.h>
+#include <freax/gpio/consumer.h>
 
 #include "netdev.h"
 #include "cfg80211.h"

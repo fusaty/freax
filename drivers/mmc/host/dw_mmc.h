@@ -10,13 +10,13 @@
 #ifndef _DW_MMC_H_
 #define _DW_MMC_H_
 
-#include <linux/scatterlist.h>
-#include <linux/mmc/core.h>
-#include <linux/dmaengine.h>
-#include <linux/reset.h>
-#include <linux/fault-inject.h>
-#include <linux/hrtimer.h>
-#include <linux/interrupt.h>
+#include <freax/scatterlist.h>
+#include <freax/mmc/core.h>
+#include <freax/dmaengine.h>
+#include <freax/reset.h>
+#include <freax/fault-inject.h>
+#include <freax/hrtimer.h>
+#include <freax/interrupt.h>
 
 enum dw_mci_state {
 	STATE_IDLE = 0,

@@ -7,7 +7,7 @@
 #define _TRACE_SYNC_H
 
 #include "sync_debug.h"
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
 TRACE_EVENT(sync_timeline,
 	TP_PROTO(struct sync_timeline *timeline),

@@ -6,14 +6,14 @@
  * Punit Agrawal <punit.agrawal@arm.com>
  */
 
-#include <linux/hwmon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/scpi_protocol.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/thermal.h>
+#include <freax/hwmon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/scpi_protocol.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/thermal.h>
 
 struct sensor_data {
 	unsigned int scale;

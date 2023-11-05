@@ -14,9 +14,9 @@
 
 */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/delay.h>
 #include <asm/io.h>
 
 #include "bttvp.h"

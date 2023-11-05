@@ -8,8 +8,8 @@
  * must not depend on other drm code.
  */
 
-#include <linux/dmi.h>
-#include <linux/module.h>
+#include <freax/dmi.h>
+#include <freax/module.h>
 #include <drm/drm_connector.h>
 #include <drm/drm_utils.h>
 

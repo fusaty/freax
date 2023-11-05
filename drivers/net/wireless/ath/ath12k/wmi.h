@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: BSD-3-Clause-Clear */
 /*
- * Copyright (c) 2018-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018-2021 The freax Foundation. All rights reserved.
  * Copyright (c) 2021-2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
@@ -29,7 +29,7 @@ struct ath12k;
  * up with our own version. The idea is from fs/ntfs/endian.h.
  *
  * Use a_ prefix so that it doesn't conflict if we get proper support to
- * linux/types.h.
+ * freax/types.h.
  */
 typedef __s32 __bitwise a_sle32;
 

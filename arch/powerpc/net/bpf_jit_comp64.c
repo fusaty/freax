@@ -2,19 +2,19 @@
 /*
  * bpf_jit_comp64.c: eBPF JIT compiler
  *
- * Copyright 2016 Naveen N. Rao <naveen.n.rao@linux.vnet.ibm.com>
+ * Copyright 2016 Naveen N. Rao <naveen.n.rao@freax.vnet.ibm.com>
  *		  IBM Corporation
  *
  * Based on the powerpc classic BPF JIT compiler by Matt Evans
  */
-#include <linux/moduleloader.h>
+#include <freax/moduleloader.h>
 #include <asm/cacheflush.h>
 #include <asm/asm-compat.h>
-#include <linux/netdevice.h>
-#include <linux/filter.h>
-#include <linux/if_vlan.h>
+#include <freax/netdevice.h>
+#include <freax/filter.h>
+#include <freax/if_vlan.h>
 #include <asm/kprobes.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 #include <asm/security_features.h>
 
 #include "bpf_jit.h"

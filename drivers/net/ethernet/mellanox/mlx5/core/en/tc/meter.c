@@ -1,7 +1,7 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 // Copyright (c) 2021, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
 
-#include <linux/math64.h>
+#include <freax/math64.h>
 #include "lib/aso.h"
 #include "en/tc/post_act.h"
 #include "meter.h"

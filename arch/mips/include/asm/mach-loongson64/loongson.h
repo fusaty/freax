@@ -7,9 +7,9 @@
 #ifndef __ASM_MACH_LOONGSON64_LOONGSON_H
 #define __ASM_MACH_LOONGSON64_LOONGSON_H
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/irq.h>
 #include <boot_param.h>
 
 enum loongson_fw_interface {

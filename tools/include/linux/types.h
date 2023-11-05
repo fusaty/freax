@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_TYPES_H_
-#define _TOOLS_LINUX_TYPES_H_
+#ifndef _TOOLS_freax_TYPES_H_
+#define _TOOLS_freax_TYPES_H_
 
 #include <stdbool.h>
 #include <stddef.h>
@@ -49,7 +49,7 @@ typedef __s8  s8;
 #endif
 
 #define __force
-/* This is defined in linux/compiler_types.h and is left for backward
+/* This is defined in freax/compiler_types.h and is left for backward
  * compatibility.
  */
 #ifndef __user
@@ -98,4 +98,4 @@ struct hlist_node {
 	struct hlist_node *next, **pprev;
 };
 
-#endif /* _TOOLS_LINUX_TYPES_H_ */
+#endif /* _TOOLS_freax_TYPES_H_ */

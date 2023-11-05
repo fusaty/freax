@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-1.0+
-/* smc-ultra.c: A SMC Ultra ethernet driver for linux. */
+/* smc-ultra.c: A SMC Ultra ethernet driver for freax. */
 /*
 	This is a driver for the SMC Ultra and SMC EtherEZ ISA ethercards.
 
@@ -55,15 +55,15 @@
 static const char version[] =
 	"smc-ultra.c:v2.02 2/3/98 Donald Becker (becker@cesdis.gsfc.nasa.gov)\n";
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/isapnp.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/isapnp.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
 #include <net/Space.h>
 
 #include <asm/io.h>
@@ -566,7 +566,7 @@ module_param_hw_array(irq, int, irq, NULL, 0);
 module_param_named(msg_enable, ultra_msg_enable, uint, 0444);
 MODULE_PARM_DESC(io, "I/O base address(es)");
 MODULE_PARM_DESC(irq, "IRQ number(s) (assigned)");
-MODULE_PARM_DESC(msg_enable, "Debug message level (see linux/netdevice.h for bitmap)");
+MODULE_PARM_DESC(msg_enable, "Debug message level (see freax/netdevice.h for bitmap)");
 MODULE_DESCRIPTION("SMC Ultra/EtherEZ ISA/PnP Ethernet driver");
 MODULE_LICENSE("GPL");
 

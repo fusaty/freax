@@ -13,10 +13,10 @@
 #include <media/v4l2-fh.h>
 #include <media/v4l2-event.h>
 
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/export.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/export.h>
 
 static unsigned int sev_pos(const struct v4l2_subscribed_event *sev, unsigned int idx)
 {

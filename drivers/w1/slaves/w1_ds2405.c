@@ -6,15 +6,15 @@
  * Based on w1_therm.c copyright (c) 2004 Evgeniy Polyakov <zbr@ioremap.net>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mutex.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/mutex.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
-#include <linux/w1.h>
+#include <freax/w1.h>
 
 #define W1_FAMILY_DS2405	0x05
 

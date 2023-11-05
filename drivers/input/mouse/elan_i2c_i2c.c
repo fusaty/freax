@@ -13,14 +13,14 @@
  * Trademarks are the property of their respective owners.
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
 #include <asm/unaligned.h>
 
 #include "elan_i2c.h"

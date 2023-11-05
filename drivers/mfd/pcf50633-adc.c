@@ -12,15 +12,15 @@
  *  you can do only one measurement per read request.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/completion.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/completion.h>
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/mfd/pcf50633/adc.h>
+#include <freax/mfd/pcf50633/core.h>
+#include <freax/mfd/pcf50633/adc.h>
 
 struct pcf50633_adc_request {
 	int mux;

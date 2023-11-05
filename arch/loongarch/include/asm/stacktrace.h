@@ -8,7 +8,7 @@
 #include <asm/asm.h>
 #include <asm/ptrace.h>
 #include <asm/loongarch.h>
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 
 enum stack_type {
 	STACK_TYPE_UNKNOWN,

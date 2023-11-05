@@ -8,12 +8,12 @@
 #ifndef _NFS_FSCACHE_H
 #define _NFS_FSCACHE_H
 
-#include <linux/swap.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_mount.h>
-#include <linux/nfs4_mount.h>
-#include <linux/fscache.h>
-#include <linux/iversion.h>
+#include <freax/swap.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_mount.h>
+#include <freax/nfs4_mount.h>
+#include <freax/fscache.h>
+#include <freax/iversion.h>
 
 #ifdef CONFIG_NFS_FSCACHE
 

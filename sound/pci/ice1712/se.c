@@ -8,10 +8,10 @@
  *                                        (at) -> @
  */      
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 #include <sound/tlv.h>
 

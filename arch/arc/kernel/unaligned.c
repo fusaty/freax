@@ -7,10 +7,10 @@
  *  -original contribution by Tim.yao@amlogic.com
  */
 
-#include <linux/types.h>
-#include <linux/perf_event.h>
-#include <linux/ptrace.h>
-#include <linux/uaccess.h>
+#include <freax/types.h>
+#include <freax/perf_event.h>
+#include <freax/ptrace.h>
+#include <freax/uaccess.h>
 #include <asm/disasm.h>
 
 #ifdef CONFIG_CPU_BIG_ENDIAN

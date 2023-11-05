@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_HUGE_MM_H
-#define _LINUX_HUGE_MM_H
+#ifndef _freax_HUGE_MM_H
+#define _freax_HUGE_MM_H
 
-#include <linux/sched/coredump.h>
-#include <linux/mm_types.h>
+#include <freax/sched/coredump.h>
+#include <freax/mm_types.h>
 
-#include <linux/fs.h> /* only for vma_is_dax() */
+#include <freax/fs.h> /* only for vma_is_dax() */
 
 vm_fault_t do_huge_pmd_anonymous_page(struct vm_fault *vmf);
 int copy_huge_pmd(struct mm_struct *dst_mm, struct mm_struct *src_mm,
@@ -412,4 +412,4 @@ static inline bool arch_thp_swp_supported(void)
 }
 #endif
 
-#endif /* _LINUX_HUGE_MM_H */
+#endif /* _freax_HUGE_MM_H */

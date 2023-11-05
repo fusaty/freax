@@ -4,7 +4,7 @@
 #ifndef _I40E_ALLOC_H_
 #define _I40E_ALLOC_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct i40e_hw;
 

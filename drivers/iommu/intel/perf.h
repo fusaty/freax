@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2021 Intel Corporation
  *
- * Author: Lu Baolu <baolu.lu@linux.intel.com>
+ * Author: Lu Baolu <baolu.lu@freax.intel.com>
  */
 
 enum latency_type {

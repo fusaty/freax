@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: (BSD-3-Clause OR GPL-2.0-only)
 /* Copyright(c) 2021 Intel Corporation */
-#include <linux/delay.h>
-#include <linux/iopoll.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
+#include <freax/delay.h>
+#include <freax/iopoll.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
 #include "adf_accel_devices.h"
 #include "adf_common_drv.h"
 #include "adf_gen2_pfvf.h"

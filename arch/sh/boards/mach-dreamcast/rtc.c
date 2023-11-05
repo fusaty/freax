@@ -8,10 +8,10 @@
  * Copyright (c) 2002 Paul Mundt <lethal@chaoticdreams.org>
  */
 
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <freax/time.h>
+#include <freax/rtc.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
 
 /* The AICA RTC has an Epoch of 1/1/1950, so we must subtract 20 years (in
    seconds) to get the standard Unix Epoch when getting the time, and add

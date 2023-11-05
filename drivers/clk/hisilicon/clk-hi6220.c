@@ -7,11 +7,11 @@
  * Author: Bintian Wang <bintian.wang@huawei.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
 #include <dt-bindings/clock/hi6220-clock.h>
 

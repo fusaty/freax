@@ -1,15 +1,15 @@
-#ifndef __LINUX_SPINLOCK_TYPES_RAW_H
-#define __LINUX_SPINLOCK_TYPES_RAW_H
+#ifndef __freax_SPINLOCK_TYPES_RAW_H
+#define __freax_SPINLOCK_TYPES_RAW_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #if defined(CONFIG_SMP)
 # include <asm/spinlock_types.h>
 #else
-# include <linux/spinlock_types_up.h>
+# include <freax/spinlock_types_up.h>
 #endif
 
-#include <linux/lockdep_types.h>
+#include <freax/lockdep_types.h>
 
 typedef struct raw_spinlock {
 	arch_spinlock_t raw_lock;
@@ -70,4 +70,4 @@ typedef struct raw_spinlock {
 
 #define DEFINE_RAW_SPINLOCK(x)  raw_spinlock_t x = __RAW_SPIN_LOCK_UNLOCKED(x)
 
-#endif /* __LINUX_SPINLOCK_TYPES_RAW_H */
+#endif /* __freax_SPINLOCK_TYPES_RAW_H */

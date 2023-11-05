@@ -13,12 +13,12 @@
 #include "../include/gaudi/gaudi_reg_map.h"
 #include "../include/gaudi/gaudi_async_ids_map_extended.h"
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/hwmon.h>
-#include <linux/iommu.h>
-#include <linux/seq_file.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/firmware.h>
+#include <freax/hwmon.h>
+#include <freax/iommu.h>
+#include <freax/seq_file.h>
 
 /*
  * Gaudi security scheme:
@@ -60,11 +60,11 @@
  */
 
 #define GAUDI_BOOT_FIT_FILE	"habanalabs/gaudi/gaudi-boot-fit.itb"
-#define GAUDI_LINUX_FW_FILE	"habanalabs/gaudi/gaudi-fit.itb"
+#define GAUDI_freax_FW_FILE	"habanalabs/gaudi/gaudi-fit.itb"
 #define GAUDI_TPC_FW_FILE	"habanalabs/gaudi/gaudi_tpc.bin"
 
 MODULE_FIRMWARE(GAUDI_BOOT_FIT_FILE);
-MODULE_FIRMWARE(GAUDI_LINUX_FW_FILE);
+MODULE_FIRMWARE(GAUDI_freax_FW_FILE);
 MODULE_FIRMWARE(GAUDI_TPC_FW_FILE);
 
 #define GAUDI_DMA_POOL_BLK_SIZE		0x100 /* 256 bytes */
@@ -913,7 +913,7 @@ static int gaudi_fetch_psoc_frequency(struct hl_device *hdev)
 	u16 pll_freq_arr[HL_PLL_NUM_OUTPUTS], freq;
 	int rc;
 
-	if ((hdev->fw_components & FW_TYPE_LINUX) &&
+	if ((hdev->fw_components & FW_TYPE_freax) &&
 			(prop->fw_app_cpu_boot_dev_sts0 & CPU_BOOT_DEV_STS0_PLL_INFO_EN)) {
 		struct gaudi_device *gaudi = hdev->asic_specific;
 
@@ -3693,9 +3693,9 @@ static int gaudi_load_firmware_to_device(struct hl_device *hdev)
 {
 	void __iomem *dst;
 
-	dst = hdev->pcie_bar[HBM_BAR_ID] + LINUX_FW_OFFSET;
+	dst = hdev->pcie_bar[HBM_BAR_ID] + freax_FW_OFFSET;
 
-	return hl_fw_load_fw_to_device(hdev, GAUDI_LINUX_FW_FILE, dst, 0, 0);
+	return hl_fw_load_fw_to_device(hdev, GAUDI_freax_FW_FILE, dst, 0, 0);
 }
 
 static int gaudi_load_boot_fit_to_device(struct hl_device *hdev)
@@ -3773,7 +3773,7 @@ static void gaudi_init_firmware_loader(struct hl_device *hdev)
 	/* fill common fields */
 	fw_loader->fw_comp_loaded = FW_TYPE_NONE;
 	fw_loader->boot_fit_img.image_name = GAUDI_BOOT_FIT_FILE;
-	fw_loader->linux_img.image_name = GAUDI_LINUX_FW_FILE;
+	fw_loader->freax_img.image_name = GAUDI_freax_FW_FILE;
 	fw_loader->cpu_timeout = GAUDI_CPU_TIMEOUT_USEC;
 	fw_loader->boot_fit_timeout = GAUDI_BOOT_FIT_REQ_TIMEOUT_USEC;
 	fw_loader->skip_bmc = !hdev->bmc_enable;
@@ -3893,7 +3893,7 @@ static void gaudi_pre_hw_init(struct hl_device *hdev)
 	RREG32(mmHW_STATE);
 
 	if (!hdev->asic_prop.fw_security_enabled) {
-		/* Set the access through PCI bars (Linux driver only) as
+		/* Set the access through PCI bars (freax driver only) as
 		 * secured
 		 */
 		WREG32(mmPCIE_WRAP_LBW_PROT_OVR,
@@ -3930,7 +3930,7 @@ static int gaudi_hw_init(struct hl_device *hdev)
 		gaudi->hbm_bar_cur_addr = DRAM_PHYS_BASE;
 
 	/*
-	 * Before pushing u-boot/linux to device, need to set the hbm bar to
+	 * Before pushing u-boot/freax to device, need to set the hbm bar to
 	 * base address of dram
 	 */
 	if (gaudi_set_hbm_bar_base(hdev, DRAM_PHYS_BASE) == U64_MAX) {
@@ -4042,11 +4042,11 @@ static int gaudi_hw_fini(struct hl_device *hdev, bool hard_reset, bool fw_reset)
 		WREG32(mmPCIE_AUX_FLR_CTRL, (PCIE_AUX_FLR_CTRL_HW_CTRL_MASK |
 					PCIE_AUX_FLR_CTRL_INT_MASK_MASK));
 
-	/* If linux is loaded in the device CPU we need to communicate with it
+	/* If freax is loaded in the device CPU we need to communicate with it
 	 * via the GIC. Otherwise, we need to use COMMS or the MSG_TO_CPU
 	 * registers in case of old F/Ws
 	 */
-	if (hdev->fw_loader.fw_comp_loaded & FW_TYPE_LINUX) {
+	if (hdev->fw_loader.fw_comp_loaded & FW_TYPE_freax) {
 		irq_handler_offset = hdev->asic_prop.gic_interrupts_enable ?
 				mmGIC_DISTRIBUTOR__5_GICD_SETSPI_NSR :
 				le32_to_cpu(dyn_regs->gic_host_halt_irq);
@@ -4057,7 +4057,7 @@ static int gaudi_hw_fini(struct hl_device *hdev, bool hard_reset, bool fw_reset)
 		/* This is a hail-mary attempt to revive the card in the small chance that the
 		 * f/w has experienced a watchdog event, which caused it to return back to preboot.
 		 * In that case, triggering reset through GIC won't help. We need to trigger the
-		 * reset as if Linux wasn't loaded.
+		 * reset as if freax wasn't loaded.
 		 *
 		 * We do it only if the reset cause was HB, because that would be the indication
 		 * of such an event.
@@ -4067,15 +4067,15 @@ static int gaudi_hw_fini(struct hl_device *hdev, bool hard_reset, bool fw_reset)
 		 */
 		if (hdev->reset_info.curr_reset_cause == HL_RESET_CAUSE_HEARTBEAT) {
 			if (hdev->asic_prop.hard_reset_done_by_fw)
-				hl_fw_ask_hard_reset_without_linux(hdev);
+				hl_fw_ask_hard_reset_without_freax(hdev);
 			else
-				hl_fw_ask_halt_machine_without_linux(hdev);
+				hl_fw_ask_halt_machine_without_freax(hdev);
 		}
 	} else {
 		if (hdev->asic_prop.hard_reset_done_by_fw)
-			hl_fw_ask_hard_reset_without_linux(hdev);
+			hl_fw_ask_hard_reset_without_freax(hdev);
 		else
-			hl_fw_ask_halt_machine_without_linux(hdev);
+			hl_fw_ask_halt_machine_without_freax(hdev);
 	}
 
 	if (driver_performs_reset) {

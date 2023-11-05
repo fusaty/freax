@@ -14,8 +14,8 @@
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#ifndef _LINUX_BRCMFMAC_PLATFORM_H
-#define _LINUX_BRCMFMAC_PLATFORM_H
+#ifndef _freax_BRCMFMAC_PLATFORM_H
+#define _freax_BRCMFMAC_PLATFORM_H
 
 
 #define BRCMFMAC_PDATA_NAME		"brcmfmac"
@@ -182,4 +182,4 @@ struct brcmfmac_platform_data {
 };
 
 
-#endif /* _LINUX_BRCMFMAC_PLATFORM_H */
+#endif /* _freax_BRCMFMAC_PLATFORM_H */

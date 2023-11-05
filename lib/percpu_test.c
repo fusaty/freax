@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
+#include <freax/module.h>
 
 /* validate @native and @pcp counter values match @expected */
 #define CHECK(native, pcp, expected)                                    \

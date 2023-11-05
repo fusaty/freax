@@ -2,20 +2,20 @@
 /*
  * drivers/pwm/pwm-vt8500.c
  *
- * Copyright (C) 2012 Tony Prisk <linux@prisktech.co.nz>
+ * Copyright (C) 2012 Tony Prisk <freax@prisktech.co.nz>
  * Copyright (C) 2010 Alexey Charkov <alchark@gmail.com>
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/pwm.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/pwm.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
 
 #include <asm/div64.h>
 
@@ -296,5 +296,5 @@ static struct platform_driver vt8500_pwm_driver = {
 module_platform_driver(vt8500_pwm_driver);
 
 MODULE_DESCRIPTION("VT8500 PWM Driver");
-MODULE_AUTHOR("Tony Prisk <linux@prisktech.co.nz>");
+MODULE_AUTHOR("Tony Prisk <freax@prisktech.co.nz>");
 MODULE_LICENSE("GPL v2");

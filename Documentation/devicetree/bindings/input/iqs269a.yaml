@@ -397,7 +397,7 @@ patternProperties:
             default: 10
             description: Specifies the threshold for the event.
 
-          linux,code: true
+          freax,code: true
 
         additionalProperties: false
 
@@ -421,7 +421,7 @@ patternProperties:
             default: 4
             description: Specifies the hysteresis for the event.
 
-          linux,code: true
+          freax,code: true
 
         additionalProperties: false
 
@@ -445,7 +445,7 @@ patternProperties:
             default: 0
             description: Specifies the hysteresis for the event.
 
-          linux,code: true
+          freax,code: true
 
         additionalProperties: false
 
@@ -488,7 +488,7 @@ examples:
                             reg = <0x0>;
 
                             event-prox {
-                                    linux,code = <KEY_POWER>;
+                                    freax,code = <KEY_POWER>;
                             };
                     };
 
@@ -543,7 +543,7 @@ examples:
                             azoteq,ati-target = <320>;
 
                             event-touch {
-                                    linux,code = <SW_LID>;
+                                    freax,code = <SW_LID>;
                             };
                     };
             };

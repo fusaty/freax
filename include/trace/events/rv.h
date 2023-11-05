@@ -5,8 +5,8 @@
 #if !defined(_TRACE_RV_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_RV_H
 
-#include <linux/rv.h>
-#include <linux/tracepoint.h>
+#include <freax/rv.h>
+#include <freax/tracepoint.h>
 
 #ifdef CONFIG_DA_MON_EVENTS_IMPLICIT
 DECLARE_EVENT_CLASS(event_da_monitor,

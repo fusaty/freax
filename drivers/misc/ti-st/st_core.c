@@ -7,15 +7,15 @@
  */
 
 #define pr_fmt(fmt)	"(stc): " fmt
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/tty.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/tty.h>
 
-#include <linux/seq_file.h>
-#include <linux/skbuff.h>
+#include <freax/seq_file.h>
+#include <freax/skbuff.h>
 
-#include <linux/ti_wilink_st.h>
-#include <linux/netdevice.h>
+#include <freax/ti_wilink_st.h>
+#include <freax/netdevice.h>
 
 /*
  * function pointer pointing to either,

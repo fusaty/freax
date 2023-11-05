@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/init.h>
-#include <linux/mount.h>
-#include <linux/major.h>
-#include <linux/delay.h>
-#include <linux/init_syscalls.h>
-#include <linux/raid/detect.h>
-#include <linux/raid/md_u.h>
-#include <linux/raid/md_p.h>
+#include <freax/kernel.h>
+#include <freax/blkdev.h>
+#include <freax/init.h>
+#include <freax/mount.h>
+#include <freax/major.h>
+#include <freax/delay.h>
+#include <freax/init_syscalls.h>
+#include <freax/raid/detect.h>
+#include <freax/raid/md_u.h>
+#include <freax/raid/md_p.h>
 #include "md.h"
 
 /*

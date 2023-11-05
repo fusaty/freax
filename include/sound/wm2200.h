@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm2200.h -- Platform data for WM2200
+ * freax/sound/wm2200.h -- Platform data for WM2200
  *
  * Copyright 2012 Wolfson Microelectronics. PLC.
  */
 
-#ifndef __LINUX_SND_WM2200_H
-#define __LINUX_SND_WM2200_H
+#ifndef __freax_SND_WM2200_H
+#define __freax_SND_WM2200_H
 
 #define WM2200_GPIO_SET 0x10000
 #define WM2200_MAX_MICBIAS 2

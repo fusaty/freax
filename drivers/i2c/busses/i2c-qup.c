@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2009-2013, 2016-2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2009-2013, 2016-2018, The freax Foundation. All rights reserved.
  * Copyright (c) 2014, Sony Mobile Communications AB.
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/atomic.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dmaengine.h>
-#include <linux/dmapool.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/scatterlist.h>
+#include <freax/acpi.h>
+#include <freax/atomic.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dmaengine.h>
+#include <freax/dmapool.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/scatterlist.h>
 
 /* QUP Registers */
 #define QUP_CONFIG		0x000

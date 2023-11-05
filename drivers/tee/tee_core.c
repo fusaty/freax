@@ -5,14 +5,14 @@
 
 #define pr_fmt(fmt) "%s: " fmt, __func__
 
-#include <linux/cdev.h>
-#include <linux/cred.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/uaccess.h>
+#include <freax/cdev.h>
+#include <freax/cred.h>
+#include <freax/fs.h>
+#include <freax/idr.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/tee_drv.h>
+#include <freax/uaccess.h>
 #include <crypto/hash.h>
 #include <crypto/sha1.h>
 #include "tee_private.h"
@@ -215,7 +215,7 @@ int tee_session_calc_client_uuid(uuid_t *uuid, u32 connection_method,
 	}
 
 	/*
-	 * In Linux environment client UUID is based on UUIDv5.
+	 * In freax environment client UUID is based on UUIDv5.
 	 *
 	 * Determine client UUID with following semantics for 'name':
 	 *

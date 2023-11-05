@@ -3,8 +3,8 @@
  * Parts of this file are
  * Copyright (C) 2022-2023 Intel Corporation
  */
-#include <linux/ieee80211.h>
-#include <linux/export.h>
+#include <freax/ieee80211.h>
+#include <freax/export.h>
 #include <net/cfg80211.h>
 #include "nl80211.h"
 #include "core.h"

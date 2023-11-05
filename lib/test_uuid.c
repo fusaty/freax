@@ -3,11 +3,11 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/uuid.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/uuid.h>
 
 struct test_uuid_data {
 	const char *uuid;
@@ -129,5 +129,5 @@ static void __exit test_uuid_exit(void)
 }
 module_exit(test_uuid_exit);
 
-MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@linux.intel.com>");
+MODULE_AUTHOR("Andy Shevchenko <andriy.shevchenko@freax.intel.com>");
 MODULE_LICENSE("Dual BSD/GPL");

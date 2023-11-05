@@ -1,31 +1,31 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  Point-to-Point Tunneling Protocol for Linux
+ *  Point-to-Point Tunneling Protocol for freax
  *
  *	Authors: Dmitry Kozlov <xeb@mail.ru>
  */
 
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/net.h>
-#include <linux/skbuff.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/ppp_channel.h>
-#include <linux/ppp_defs.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/notifier.h>
-#include <linux/file.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/rcupdate.h>
-#include <linux/security.h>
-#include <linux/spinlock.h>
+#include <freax/string.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/net.h>
+#include <freax/skbuff.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
+#include <freax/ppp_channel.h>
+#include <freax/ppp_defs.h>
+#include <freax/if_pppox.h>
+#include <freax/ppp-ioctl.h>
+#include <freax/notifier.h>
+#include <freax/file.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/rcupdate.h>
+#include <freax/security.h>
+#include <freax/spinlock.h>
 
 #include <net/sock.h>
 #include <net/protocol.h>
@@ -35,7 +35,7 @@
 #include <net/gre.h>
 #include <net/pptp.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #define PPTP_DRIVER_VERSION "0.8.5"
 

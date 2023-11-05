@@ -1,12 +1,12 @@
 /*
  * crc32.h
- * See linux/lib/crc32.c for license and changes
+ * See freax/lib/crc32.c for license and changes
  */
-#ifndef _LINUX_CRC32_H
-#define _LINUX_CRC32_H
+#ifndef _freax_CRC32_H
+#define _freax_CRC32_H
 
-#include <linux/types.h>
-#include <linux/bitrev.h>
+#include <freax/types.h>
+#include <freax/bitrev.h>
 
 u32 __pure crc32_le(u32 crc, unsigned char const *p, size_t len);
 u32 __pure crc32_be(u32 crc, unsigned char const *p, size_t len);
@@ -76,4 +76,4 @@ static inline u32 __crc32c_le_combine(u32 crc1, u32 crc2, size_t len2)
 #define ether_crc(length, data)    bitrev32(crc32_le(~0, data, length))
 #define ether_crc_le(length, data) crc32_le(~0, data, length)
 
-#endif /* _LINUX_CRC32_H */
+#endif /* _freax_CRC32_H */

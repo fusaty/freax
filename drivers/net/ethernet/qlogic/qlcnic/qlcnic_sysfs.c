@@ -4,18 +4,18 @@
  * Copyright (c) 2009-2013 QLogic Corporation
  */
 
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/swab.h>
-#include <linux/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/swab.h>
+#include <freax/dma-mapping.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/sysfs.h>
-#include <linux/log2.h>
+#include <freax/ipv6.h>
+#include <freax/inetdevice.h>
+#include <freax/sysfs.h>
+#include <freax/log2.h>
 #ifdef CONFIG_QLCNIC_HWMON
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
 #endif
 
 #include "qlcnic.h"

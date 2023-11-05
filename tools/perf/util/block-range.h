@@ -3,8 +3,8 @@
 #define __PERF_BLOCK_RANGE_H
 
 #include <stdbool.h>
-#include <linux/rbtree.h>
-#include <linux/types.h>
+#include <freax/rbtree.h>
+#include <freax/types.h>
 
 struct symbol;
 

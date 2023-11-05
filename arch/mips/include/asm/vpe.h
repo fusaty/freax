@@ -9,10 +9,10 @@
 #ifndef _ASM_VPE_H
 #define _ASM_VPE_H
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
 
 #define VPE_MODULE_NAME "vpe"
 #define VPE_MODULE_MINOR 1

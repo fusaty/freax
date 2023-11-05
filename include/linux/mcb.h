@@ -5,12 +5,12 @@
  * Copyright (C) 2014 MEN Mikroelektronik GmbH (www.men.de)
  * Author: Johannes Thumshirn <johannes.thumshirn@men.de>
  */
-#ifndef _LINUX_MCB_H
-#define _LINUX_MCB_H
+#ifndef _freax_MCB_H
+#define _freax_MCB_H
 
-#include <linux/mod_devicetable.h>
-#include <linux/device.h>
-#include <linux/irqreturn.h>
+#include <freax/mod_devicetable.h>
+#include <freax/device.h>
+#include <freax/irqreturn.h>
 
 #define CHAMELEON_FILENAME_LEN 12
 
@@ -132,4 +132,4 @@ extern int mcb_get_irq(struct mcb_device *dev);
 extern struct resource *mcb_get_resource(struct mcb_device *dev,
 					 unsigned int type);
 
-#endif /* _LINUX_MCB_H */
+#endif /* _freax_MCB_H */

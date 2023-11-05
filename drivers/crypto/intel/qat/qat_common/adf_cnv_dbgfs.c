@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2023 Intel Corporation */
 
-#include <linux/bitfield.h>
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
+#include <freax/bitfield.h>
+#include <freax/debugfs.h>
+#include <freax/kernel.h>
 
 #include "adf_accel_devices.h"
 #include "adf_admin.h"

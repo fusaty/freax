@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
  * Common LSM logging functions
- * Heavily borrowed from selinux/avc.h
+ * Heavily borrowed from sefreax/avc.h
  *
  * Author : Etienne BASSET  <etienne.basset@ensta.org>
  *
@@ -11,17 +11,17 @@
 #ifndef _LSM_COMMON_LOGGING_
 #define _LSM_COMMON_LOGGING_
 
-#include <linux/stddef.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kdev_t.h>
-#include <linux/spinlock.h>
-#include <linux/init.h>
-#include <linux/audit.h>
-#include <linux/in6.h>
-#include <linux/path.h>
-#include <linux/key.h>
-#include <linux/skbuff.h>
+#include <freax/stddef.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/kdev_t.h>
+#include <freax/spinlock.h>
+#include <freax/init.h>
+#include <freax/audit.h>
+#include <freax/in6.h>
+#include <freax/path.h>
+#include <freax/key.h>
+#include <freax/skbuff.h>
 #include <rdma/ib_verbs.h>
 
 struct lsm_network_audit {
@@ -104,8 +104,8 @@ struct common_audit_data {
 #ifdef CONFIG_SECURITY_SMACK
 		struct smack_audit_data *smack_audit_data;
 #endif
-#ifdef CONFIG_SECURITY_SELINUX
-		struct selinux_audit_data *selinux_audit_data;
+#ifdef CONFIG_SECURITY_SEfreax
+		struct sefreax_audit_data *sefreax_audit_data;
 #endif
 #ifdef CONFIG_SECURITY_APPARMOR
 		struct apparmor_audit_data *apparmor_audit_data;

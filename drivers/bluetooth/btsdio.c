@@ -7,18 +7,18 @@
  *  Copyright (C) 2007  Marcel Holtmann <marcel@holtmann.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/skbuff.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/sdio_ids.h>
+#include <freax/mmc/sdio_func.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

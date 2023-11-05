@@ -18,26 +18,26 @@
 #undef DEBUG
 #undef VERBOSE_DEBUG
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
-#include <linux/tty.h>
-#include <linux/serial.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/tty_ldisc.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/log2.h>
+#include <freax/tty.h>
+#include <freax/serial.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/tty_ldisc.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/usb.h>
+#include <freax/usb/cdc.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
-#include <linux/idr.h>
-#include <linux/list.h>
+#include <freax/idr.h>
+#include <freax/list.h>
 
 #include "cdc-acm.h"
 
@@ -1849,7 +1849,7 @@ static const struct usb_device_id acm_ids[] = {
 	 * a modem and is picked up by the standard AT-command
 	 * information below. The second is 'vendor-specific' but
 	 * is treated as a serial device at the S60 end, so we want
-	 * to expose it on Linux too. */
+	 * to expose it on freax too. */
 	{ NOKIA_PCSUITE_ACM_INFO(0x042D), }, /* Nokia 3250 */
 	{ NOKIA_PCSUITE_ACM_INFO(0x04D8), }, /* Nokia 5500 Sport */
 	{ NOKIA_PCSUITE_ACM_INFO(0x04C9), }, /* Nokia E50 */

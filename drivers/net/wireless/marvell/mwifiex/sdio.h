@@ -9,12 +9,12 @@
 #define	_MWIFIEX_SDIO_H
 
 
-#include <linux/completion.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
+#include <freax/completion.h>
+#include <freax/mmc/sdio.h>
+#include <freax/mmc/sdio_ids.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/host.h>
 
 #include "main.h"
 

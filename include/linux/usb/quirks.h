@@ -5,8 +5,8 @@
  * belong here.
  */
 
-#ifndef __LINUX_USB_QUIRKS_H
-#define __LINUX_USB_QUIRKS_H
+#ifndef __freax_USB_QUIRKS_H
+#define __freax_USB_QUIRKS_H
 
 /* string descriptors must not be fetched using a 255-byte read */
 #define USB_QUIRK_STRING_FETCH_255		BIT(0)
@@ -72,4 +72,4 @@
 /* device has endpoints that should be ignored */
 #define USB_QUIRK_ENDPOINT_IGNORE		BIT(15)
 
-#endif /* __LINUX_USB_QUIRKS_H */
+#endif /* __freax_USB_QUIRKS_H */

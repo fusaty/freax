@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
 /*
- * Linux device driver for USB based Prism54
+ * freax device driver for USB based Prism54
  *
  * Copyright (c) 2006, Michael Wu <flamingice@sourmilk.net>
  *
@@ -9,14 +9,14 @@
  * Copyright 2004-2006 Jean-Baptiste Note <jbnote@gmail.com>, et al.
  */
 
-#include <linux/usb.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/firmware.h>
-#include <linux/etherdevice.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/module.h>
+#include <freax/usb.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/firmware.h>
+#include <freax/etherdevice.h>
+#include <freax/delay.h>
+#include <freax/crc32.h>
+#include <freax/module.h>
 #include <net/mac80211.h>
 
 #include "p54.h"

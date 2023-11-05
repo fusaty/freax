@@ -8,10 +8,10 @@
  * Copyright (C) 2014 Ricardo Ribalda - Qtechnology/AS
  */
 
-#ifndef __LINUX_USB_USB338X_H
-#define __LINUX_USB_USB338X_H
+#ifndef __freax_USB_USB338X_H
+#define __freax_USB_USB338X_H
 
-#include <linux/usb/net2280.h>
+#include <freax/usb/net2280.h>
 
 /*
  * Extra defined bits for net2280 registers
@@ -205,4 +205,4 @@ struct usb338x_pl_regs {
 #define     NON_CTRL_IN_TOLERATE_BAD_DIR                6
 } __packed;
 
-#endif /* __LINUX_USB_USB338X_H */
+#endif /* __freax_USB_USB338X_H */

@@ -11,8 +11,8 @@
 #include "error.h"
 #include "trace.h"
 
-#include <linux/prefetch.h>
-#include <linux/sched/mm.h>
+#include <freax/prefetch.h>
+#include <freax/sched/mm.h>
 
 const char * const bch2_btree_node_flags[] = {
 #define x(f)	#f,

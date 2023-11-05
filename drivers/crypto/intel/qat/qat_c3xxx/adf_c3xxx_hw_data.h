@@ -3,7 +3,7 @@
 #ifndef ADF_C3XXX_HW_DATA_H_
 #define ADF_C3XXX_HW_DATA_H_
 
-#include <linux/units.h>
+#include <freax/units.h>
 
 /* PCIe configuration space */
 #define ADF_C3XXX_PMISC_BAR 0

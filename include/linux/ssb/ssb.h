@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_SSB_H_
-#define LINUX_SSB_H_
+#ifndef freax_SSB_H_
+#define freax_SSB_H_
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/pci.h>
-#include <linux/gpio/driver.h>
-#include <linux/mod_devicetable.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/pci.h>
+#include <freax/gpio/driver.h>
+#include <freax/mod_devicetable.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
 
-#include <linux/ssb/ssb_regs.h>
+#include <freax/ssb/ssb_regs.h>
 
 
 struct pcmcia_device;
@@ -408,10 +408,10 @@ enum ssb_bustype {
 #define SSB_CHIPPACK_BCM4712M	2	/* Medium 225pin 4712 */
 #define SSB_CHIPPACK_BCM4712L	0	/* Large 340pin 4712 */
 
-#include <linux/ssb/ssb_driver_chipcommon.h>
-#include <linux/ssb/ssb_driver_mips.h>
-#include <linux/ssb/ssb_driver_extif.h>
-#include <linux/ssb/ssb_driver_pci.h>
+#include <freax/ssb/ssb_driver_chipcommon.h>
+#include <freax/ssb/ssb_driver_mips.h>
+#include <freax/ssb/ssb_driver_extif.h>
+#include <freax/ssb/ssb_driver_pci.h>
 
 struct ssb_bus {
 	/* The MMIO area. */
@@ -679,4 +679,4 @@ int ssb_pcibios_plat_dev_init(struct pci_dev *dev);
 int ssb_pcibios_map_irq(const struct pci_dev *dev, u8 slot, u8 pin);
 #endif /* CONFIG_SSB_EMBEDDED */
 
-#endif /* LINUX_SSB_H_ */
+#endif /* freax_SSB_H_ */

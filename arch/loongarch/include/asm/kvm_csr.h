@@ -6,8 +6,8 @@
 #ifndef __ASM_LOONGARCH_KVM_CSR_H__
 #define __ASM_LOONGARCH_KVM_CSR_H__
 
-#include <linux/uaccess.h>
-#include <linux/kvm_host.h>
+#include <freax/uaccess.h>
+#include <freax/kvm_host.h>
 #include <asm/loongarch.h>
 #include <asm/kvm_vcpu.h>
 

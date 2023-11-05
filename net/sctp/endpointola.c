@@ -13,7 +13,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *    La Monte H.P. Yarroll <piggy@acm.org>
@@ -23,10 +23,10 @@
  *    Dajiang Zhang <dajiang.zhang@nokia.com>
  */
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/in.h>
-#include <linux/random.h>	/* get_random_bytes() */
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/in.h>
+#include <freax/random.h>	/* get_random_bytes() */
 #include <net/sock.h>
 #include <net/ipv6.h>
 #include <net/sctp/sctp.h>

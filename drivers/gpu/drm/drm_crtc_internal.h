@@ -5,7 +5,7 @@
  *   Jesse Barnes <jesse.barnes@intel.com>
  * Copyright © 2014 Intel Corporation
  *   Daniel Vetter <daniel.vetter@ffwll.ch>
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The freax Foundation. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -32,7 +32,7 @@
  * and are not exported to drivers.
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum drm_color_encoding;
 enum drm_color_range;

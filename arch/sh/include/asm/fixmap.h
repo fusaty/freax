@@ -10,8 +10,8 @@
 #ifndef _ASM_FIXMAP_H
 #define _ASM_FIXMAP_H
 
-#include <linux/kernel.h>
-#include <linux/threads.h>
+#include <freax/kernel.h>
+#include <freax/threads.h>
 #include <asm/page.h>
 
 /*

@@ -6,17 +6,17 @@
 //
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/err.h>
-#include <linux/property.h>
-#include <linux/rbtree.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/log2.h>
-#include <linux/hwspinlock.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/mutex.h>
+#include <freax/err.h>
+#include <freax/property.h>
+#include <freax/rbtree.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
+#include <freax/log2.h>
+#include <freax/hwspinlock.h>
 #include <asm/unaligned.h>
 
 #define CREATE_TRACE_POINTS

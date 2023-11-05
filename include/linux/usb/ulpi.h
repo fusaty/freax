@@ -5,11 +5,11 @@
  * Copyright (C) 2010 Nokia Corporation
  */
 
-#ifndef __LINUX_USB_ULPI_H
-#define __LINUX_USB_ULPI_H
+#ifndef __freax_USB_ULPI_H
+#define __freax_USB_ULPI_H
 
-#include <linux/usb/otg.h>
-#include <linux/ulpi/regs.h>
+#include <freax/usb/otg.h>
+#include <freax/ulpi/regs.h>
 
 /*-------------------------------------------------------------------------*/
 
@@ -75,4 +75,4 @@ static inline struct usb_phy *devm_otg_ulpi_create(struct device *dev,
 extern struct usb_phy_io_ops ulpi_viewport_access_ops;
 #endif
 
-#endif /* __LINUX_USB_ULPI_H */
+#endif /* __freax_USB_ULPI_H */

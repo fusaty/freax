@@ -5,14 +5,14 @@
  *
  * Copyright (C) 2005-2007 Cavium Networks
  */
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
-#include <linux/cpu.h>
-#include <linux/io.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/mm.h>
+#include <freax/bitops.h>
+#include <freax/cpu.h>
+#include <freax/io.h>
 
 #include <asm/bcache.h>
 #include <asm/bootinfo.h>
@@ -31,7 +31,7 @@ EXPORT_SYMBOL_GPL(cache_err_dcache);
 
 /*
  * Octeon automatically flushes the dcache on tlb changes, so
- * from Linux's viewpoint it acts much like a physically
+ * from freax's viewpoint it acts much like a physically
  * tagged cache. No flushing is needed
  *
  */

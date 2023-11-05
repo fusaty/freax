@@ -20,12 +20,12 @@
 #include "debugfs.h"
 #include "xmit.h"
 
-#include <linux/dma-mapping.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/skbuff.h>
+#include <freax/etherdevice.h>
+#include <freax/slab.h>
 #include <asm/div64.h>
 
 

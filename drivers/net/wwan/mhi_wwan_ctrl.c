@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2021, Linaro Ltd <loic.poulain@linaro.org> */
-#include <linux/kernel.h>
-#include <linux/mhi.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/wwan.h>
+#include <freax/kernel.h>
+#include <freax/mhi.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/wwan.h>
 
 /* MHI wwan flags */
 enum mhi_wwan_flags {

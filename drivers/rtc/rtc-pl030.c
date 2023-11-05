@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/rtc/rtc-pl030.c
+ *  freax/drivers/rtc/rtc-pl030.c
  *
  *  Copyright (C) 2000-2001 Deep Blue Solutions Ltd.
  */
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/amba/bus.h>
-#include <linux/io.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/rtc.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/amba/bus.h>
+#include <freax/io.h>
+#include <freax/slab.h>
 
 #define RTC_DR		(0)
 #define RTC_MR		(4)
@@ -169,6 +169,6 @@ static struct amba_driver pl030_driver = {
 
 module_amba_driver(pl030_driver);
 
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.freax.org.uk>");
 MODULE_DESCRIPTION("ARM AMBA PL030 RTC Driver");
 MODULE_LICENSE("GPL");

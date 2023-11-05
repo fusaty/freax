@@ -3,25 +3,25 @@
 
 #include <crypto/aead.h>
 #include <crypto/authenc.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <freax/err.h>
+#include <freax/module.h>
 #include <net/ip.h>
 #include <net/xfrm.h>
 #include <net/esp.h>
-#include <linux/scatterlist.h>
-#include <linux/kernel.h>
-#include <linux/pfkeyv2.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/in6.h>
+#include <freax/scatterlist.h>
+#include <freax/kernel.h>
+#include <freax/pfkeyv2.h>
+#include <freax/rtnetlink.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/in6.h>
 #include <net/icmp.h>
 #include <net/protocol.h>
 #include <net/udp.h>
 #include <net/tcp.h>
 #include <net/espintcp.h>
 
-#include <linux/highmem.h>
+#include <freax/highmem.h>
 
 struct esp_skb_cb {
 	struct xfrm_skb_cb xfrm;
@@ -265,7 +265,7 @@ static void esp_output_done(void *data, int err)
 
 	if (xo && (xo->flags & XFRM_DEV_RESUME)) {
 		if (err) {
-			XFRM_INC_STATS(xs_net(x), LINUX_MIB_XFRMOUTSTATEPROTOERROR);
+			XFRM_INC_STATS(xs_net(x), freax_MIB_XFRMOUTSTATEPROTOERROR);
 			kfree_skb(skb);
 			return;
 		}

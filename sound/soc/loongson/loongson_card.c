@@ -6,11 +6,11 @@
 // Author: Yingkun Meng <mengyingkun@loongson.cn>
 //
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>
-#include <linux/acpi.h>
-#include <linux/pci.h>
+#include <freax/acpi.h>
+#include <freax/pci.h>
 #include <sound/pcm_params.h>
 
 static char codec_name[SND_ACPI_I2C_ID_LEN];

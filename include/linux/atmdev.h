@@ -1,28 +1,28 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* atmdev.h - ATM device driver declarations and various related items */
-#ifndef LINUX_ATMDEV_H
-#define LINUX_ATMDEV_H
+#ifndef freax_ATMDEV_H
+#define freax_ATMDEV_H
 
 
-#include <linux/wait.h> /* wait_queue_head_t */
-#include <linux/time.h> /* struct timeval */
-#include <linux/net.h>
-#include <linux/bug.h>
-#include <linux/skbuff.h> /* struct sk_buff */
-#include <linux/uio.h>
+#include <freax/wait.h> /* wait_queue_head_t */
+#include <freax/time.h> /* struct timeval */
+#include <freax/net.h>
+#include <freax/bug.h>
+#include <freax/skbuff.h> /* struct sk_buff */
+#include <freax/uio.h>
 #include <net/sock.h>
-#include <linux/atomic.h>
-#include <linux/refcount.h>
-#include <uapi/linux/atmdev.h>
+#include <freax/atomic.h>
+#include <freax/refcount.h>
+#include <uapi/freax/atmdev.h>
 
 #ifdef CONFIG_PROC_FS
-#include <linux/proc_fs.h>
+#include <freax/proc_fs.h>
 
 extern struct proc_dir_entry *atm_proc_root;
 #endif
 
 #ifdef CONFIG_COMPAT
-#include <linux/compat.h>
+#include <freax/compat.h>
 struct compat_atm_iobuf {
 	int length;
 	compat_uptr_t buffer;

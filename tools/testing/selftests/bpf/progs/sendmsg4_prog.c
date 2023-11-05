@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (c) 2018 Facebook
 
-#include <linux/stddef.h>
-#include <linux/bpf.h>
+#include <freax/stddef.h>
+#include <freax/bpf.h>
 #include <sys/socket.h>
 
 #include <bpf/bpf_helpers.h>

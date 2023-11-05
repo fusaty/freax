@@ -5,13 +5,13 @@
  * Copyright (C) 2017 ARM Ltd.
  */
 
-#include <linux/acpi.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/irqdesc.h>
-#include <linux/percpu.h>
-#include <linux/perf/arm_pmu.h>
+#include <freax/acpi.h>
+#include <freax/cpumask.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/irqdesc.h>
+#include <freax/percpu.h>
+#include <freax/perf/arm_pmu.h>
 
 #include <asm/cpu.h>
 #include <asm/cputype.h>

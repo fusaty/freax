@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MMIOTRACE_H
-#define _LINUX_MMIOTRACE_H
+#ifndef _freax_MMIOTRACE_H
+#define _freax_MMIOTRACE_H
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/list.h>
 
 struct kmmio_probe;
 struct pt_regs;
@@ -109,4 +109,4 @@ extern void mmio_trace_rw(struct mmiotrace_rw *rw);
 extern void mmio_trace_mapping(struct mmiotrace_map *map);
 extern __printf(1, 0) int mmio_trace_printk(const char *fmt, va_list args);
 
-#endif /* _LINUX_MMIOTRACE_H */
+#endif /* _freax_MMIOTRACE_H */

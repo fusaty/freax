@@ -7,14 +7,14 @@
 #define DRVNAME "vexpress-hwmon"
 #define pr_fmt(fmt) DRVNAME ": " fmt
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/vexpress.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/vexpress.h>
 
 struct vexpress_hwmon_data {
 	struct device *hwmon_dev;

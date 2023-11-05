@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/namei.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/seq_file.h>
-#include <linux/xattr.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/namei.h>
+#include <freax/fs_context.h>
+#include <freax/fs_parser.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/seq_file.h>
+#include <freax/xattr.h>
 #include "overlayfs.h"
 #include "params.h"
 

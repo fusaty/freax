@@ -8,17 +8,17 @@
 #ifndef _SURFACE_AGGREGATOR_SSH_PACKET_LAYER_H
 #define _SURFACE_AGGREGATOR_SSH_PACKET_LAYER_H
 
-#include <linux/atomic.h>
-#include <linux/kfifo.h>
-#include <linux/ktime.h>
-#include <linux/list.h>
-#include <linux/serdev.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/kfifo.h>
+#include <freax/ktime.h>
+#include <freax/list.h>
+#include <freax/serdev.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 
-#include <linux/surface_aggregator/serial_hub.h>
+#include <freax/surface_aggregator/serial_hub.h>
 #include "ssh_parser.h"
 
 /**

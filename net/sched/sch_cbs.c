@@ -50,13 +50,13 @@
  *	locredit = max_frame_size * (sendslope / port_transmit_rate)
  */
 
-#include <linux/ethtool.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
+#include <freax/ethtool.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/skbuff.h>
 #include <net/netevent.h>
 #include <net/netlink.h>
 #include <net/sch_generic.h>

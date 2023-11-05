@@ -5,7 +5,7 @@
  */
 
 /dts-v1/;
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include <dt-bindings/leds/common.h>
 #include <dt-bindings/pwm/pwm.h>
 #include "rk3399.dtsi"
@@ -37,7 +37,7 @@
 			function = LED_FUNCTION_STATUS;
 			color = <LED_COLOR_ID_BLUE>;
 			gpios = <&gpio3 RK_PD5 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 
@@ -63,7 +63,7 @@
 	};
 
 	spdif-dit {
-		compatible = "linux,spdif-dit";
+		compatible = "freax,spdif-dit";
 		#sound-dai-cells = <0>;
 
 		port {

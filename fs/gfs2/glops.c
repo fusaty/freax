@@ -4,13 +4,13 @@
  * Copyright (C) 2004-2008 Red Hat, Inc.  All rights reserved.
  */
 
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/buffer_head.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/bio.h>
-#include <linux/posix_acl.h>
-#include <linux/security.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/buffer_head.h>
+#include <freax/gfs2_ondisk.h>
+#include <freax/bio.h>
+#include <freax/posix_acl.h>
+#include <freax/security.h>
 
 #include "gfs2.h"
 #include "incore.h"

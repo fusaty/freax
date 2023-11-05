@@ -5,17 +5,17 @@
  *  Copyright (C) 2012-2016 Alexander Shiyan <shc_work@mail.ru>
  */
 
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/clps711x.h>
-#include <linux/spi/spi.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mfd/syscon/clps711x.h>
+#include <freax/spi/spi.h>
 
 #define DRIVER_NAME		"clps711x-spi"
 

@@ -42,7 +42,7 @@
  *   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  *   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
- * PCIe NTB Perf Linux driver
+ * PCIe NTB Perf freax driver
  */
 
 /*
@@ -67,22 +67,22 @@
  * root@self# cat $DBG_DIR/run
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/pci.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/sizes.h>
-#include <linux/workqueue.h>
-#include <linux/debugfs.h>
-#include <linux/random.h>
-#include <linux/ntb.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/pci.h>
+#include <freax/ktime.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/sizes.h>
+#include <freax/workqueue.h>
+#include <freax/debugfs.h>
+#include <freax/random.h>
+#include <freax/ntb.h>
 
 #define DRIVER_NAME		"ntb_perf"
 #define DRIVER_VERSION		"2.0"

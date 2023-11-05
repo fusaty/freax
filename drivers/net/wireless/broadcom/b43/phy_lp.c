@@ -10,8 +10,8 @@
 
 */
 
-#include <linux/cordic.h>
-#include <linux/slab.h>
+#include <freax/cordic.h>
+#include <freax/slab.h>
 
 #include "b43.h"
 #include "main.h"

@@ -6,79 +6,79 @@
  *
  *  Copyright (C) 1991-2002  Linus Torvalds
  */
-#include <linux/highmem.h>
-#include <linux/hrtimer_api.h>
-#include <linux/ktime_api.h>
-#include <linux/sched/signal.h>
-#include <linux/syscalls_api.h>
-#include <linux/debug_locks.h>
-#include <linux/prefetch.h>
-#include <linux/capability.h>
-#include <linux/pgtable_api.h>
-#include <linux/wait_bit.h>
-#include <linux/jiffies.h>
-#include <linux/spinlock_api.h>
-#include <linux/cpumask_api.h>
-#include <linux/lockdep_api.h>
-#include <linux/hardirq.h>
-#include <linux/softirq.h>
-#include <linux/refcount_api.h>
-#include <linux/topology.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/cond_resched.h>
-#include <linux/sched/cputime.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/hotplug.h>
-#include <linux/sched/init.h>
-#include <linux/sched/isolation.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/nohz.h>
-#include <linux/sched/rseq_api.h>
-#include <linux/sched/rt.h>
+#include <freax/highmem.h>
+#include <freax/hrtimer_api.h>
+#include <freax/ktime_api.h>
+#include <freax/sched/signal.h>
+#include <freax/syscalls_api.h>
+#include <freax/debug_locks.h>
+#include <freax/prefetch.h>
+#include <freax/capability.h>
+#include <freax/pgtable_api.h>
+#include <freax/wait_bit.h>
+#include <freax/jiffies.h>
+#include <freax/spinlock_api.h>
+#include <freax/cpumask_api.h>
+#include <freax/lockdep_api.h>
+#include <freax/hardirq.h>
+#include <freax/softirq.h>
+#include <freax/refcount_api.h>
+#include <freax/topology.h>
+#include <freax/sched/clock.h>
+#include <freax/sched/cond_resched.h>
+#include <freax/sched/cputime.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/hotplug.h>
+#include <freax/sched/init.h>
+#include <freax/sched/isolation.h>
+#include <freax/sched/loadavg.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/nohz.h>
+#include <freax/sched/rseq_api.h>
+#include <freax/sched/rt.h>
 
-#include <linux/blkdev.h>
-#include <linux/context_tracking.h>
-#include <linux/cpuset.h>
-#include <linux/delayacct.h>
-#include <linux/init_task.h>
-#include <linux/interrupt.h>
-#include <linux/ioprio.h>
-#include <linux/kallsyms.h>
-#include <linux/kcov.h>
-#include <linux/kprobes.h>
-#include <linux/llist_api.h>
-#include <linux/mmu_context.h>
-#include <linux/mmzone.h>
-#include <linux/mutex_api.h>
-#include <linux/nmi.h>
-#include <linux/nospec.h>
-#include <linux/perf_event_api.h>
-#include <linux/profile.h>
-#include <linux/psi.h>
-#include <linux/rcuwait_api.h>
-#include <linux/sched/wake_q.h>
-#include <linux/scs.h>
-#include <linux/slab.h>
-#include <linux/syscalls.h>
-#include <linux/vtime.h>
-#include <linux/wait_api.h>
-#include <linux/workqueue_api.h>
+#include <freax/blkdev.h>
+#include <freax/context_tracking.h>
+#include <freax/cpuset.h>
+#include <freax/delayacct.h>
+#include <freax/init_task.h>
+#include <freax/interrupt.h>
+#include <freax/ioprio.h>
+#include <freax/kallsyms.h>
+#include <freax/kcov.h>
+#include <freax/kprobes.h>
+#include <freax/llist_api.h>
+#include <freax/mmu_context.h>
+#include <freax/mmzone.h>
+#include <freax/mutex_api.h>
+#include <freax/nmi.h>
+#include <freax/nospec.h>
+#include <freax/perf_event_api.h>
+#include <freax/profile.h>
+#include <freax/psi.h>
+#include <freax/rcuwait_api.h>
+#include <freax/sched/wake_q.h>
+#include <freax/scs.h>
+#include <freax/slab.h>
+#include <freax/syscalls.h>
+#include <freax/vtime.h>
+#include <freax/wait_api.h>
+#include <freax/workqueue_api.h>
 
 #ifdef CONFIG_PREEMPT_DYNAMIC
 # ifdef CONFIG_GENERIC_ENTRY
-#  include <linux/entry-common.h>
+#  include <freax/entry-common.h>
 # endif
 #endif
 
-#include <uapi/linux/sched/types.h>
+#include <uapi/freax/sched/types.h>
 
 #include <asm/irq_regs.h>
 #include <asm/switch_to.h>
 #include <asm/tlb.h>
 
 #define CREATE_TRACE_POINTS
-#include <linux/sched/rseq_api.h>
+#include <freax/sched/rseq_api.h>
 #include <trace/events/sched.h>
 #include <trace/events/ipi.h>
 #undef CREATE_TRACE_POINTS
@@ -8661,7 +8661,7 @@ EXPORT_SYMBOL(__cond_resched_rwlock_write);
 #ifdef CONFIG_PREEMPT_DYNAMIC
 
 #ifdef CONFIG_GENERIC_ENTRY
-#include <linux/entry-common.h>
+#include <freax/entry-common.h>
 #endif
 
 /*

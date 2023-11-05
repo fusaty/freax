@@ -13,8 +13,8 @@
 #ifndef _ASM_MIPSREGS_H
 #define _ASM_MIPSREGS_H
 
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <freax/linkage.h>
+#include <freax/types.h>
 #include <asm/hazards.h>
 #include <asm/isa-rev.h>
 
@@ -99,7 +99,7 @@
 /*
  * R4640/R4650 cp0 register names.  These registers are listed
  * here only for completeness; without MMU these CPUs are not useable
- * by Linux.  A future ELKS port might take make Linux run on them
+ * by freax.  A future ELKS port might take make freax run on them
  * though ...
  */
 #define CP0_IBASE $0

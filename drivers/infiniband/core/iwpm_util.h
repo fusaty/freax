@@ -33,19 +33,19 @@
 #ifndef _IWPM_UTIL_H
 #define _IWPM_UTIL_H
 
-#include <linux/io.h>
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/jhash.h>
-#include <linux/kref.h>
+#include <freax/io.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/delay.h>
+#include <freax/workqueue.h>
+#include <freax/mutex.h>
+#include <freax/jhash.h>
+#include <freax/kref.h>
 #include <net/netlink.h>
-#include <linux/errno.h>
+#include <freax/errno.h>
 #include <rdma/iw_portmap.h>
 #include <rdma/rdma_netlink.h>
 

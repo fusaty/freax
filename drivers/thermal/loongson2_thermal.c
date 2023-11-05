@@ -5,14 +5,14 @@
  * Copyright (C) 2022-2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/thermal.h>
-#include <linux/units.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/minmax.h>
+#include <freax/module.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/thermal.h>
+#include <freax/units.h>
 #include "thermal_hwmon.h"
 
 #define LOONGSON2_MAX_SENSOR_SEL_NUM			3

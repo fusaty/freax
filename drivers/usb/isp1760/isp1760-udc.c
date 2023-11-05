@@ -10,14 +10,14 @@
  *	Rui Miguel Silva <rui.silva@linaro.org>
  */
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/usb.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
+#include <freax/usb.h>
 
 #include "isp1760-core.h"
 #include "isp1760-regs.h"

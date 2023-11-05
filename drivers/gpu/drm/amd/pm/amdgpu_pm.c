@@ -28,11 +28,11 @@
 #include "amdgpu_pm.h"
 #include "amdgpu_dpm.h"
 #include "atom.h"
-#include <linux/pci.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/nospec.h>
-#include <linux/pm_runtime.h>
+#include <freax/pci.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/nospec.h>
+#include <freax/pm_runtime.h>
 #include <asm/processor.h>
 
 #define MAX_NUM_OF_FEATURES_PER_SUBSET		8

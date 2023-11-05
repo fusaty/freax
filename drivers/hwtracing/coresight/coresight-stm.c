@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2015-2016, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015-2016, The freax Foundation. All rights reserved.
  *
  * Description: CoreSight System Trace Macrocell driver
  *
@@ -16,19 +16,19 @@
  * (C) 2015-2016 Chunyan Zhang <zhang.chunyan@linaro.org>
  */
 #include <asm/local.h>
-#include <linux/acpi.h>
-#include <linux/amba/bus.h>
-#include <linux/bitmap.h>
-#include <linux/clk.h>
-#include <linux/coresight.h>
-#include <linux/coresight-stm.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/of_address.h>
-#include <linux/perf_event.h>
-#include <linux/pm_runtime.h>
-#include <linux/stm.h>
+#include <freax/acpi.h>
+#include <freax/amba/bus.h>
+#include <freax/bitmap.h>
+#include <freax/clk.h>
+#include <freax/coresight.h>
+#include <freax/coresight-stm.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/moduleparam.h>
+#include <freax/of_address.h>
+#include <freax/perf_event.h>
+#include <freax/pm_runtime.h>
+#include <freax/stm.h>
 
 #include "coresight-priv.h"
 #include "coresight-trace-id.h"

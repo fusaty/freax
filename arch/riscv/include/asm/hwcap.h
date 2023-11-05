@@ -10,7 +10,7 @@
 
 #include <asm/alternative-macros.h>
 #include <asm/errno.h>
-#include <linux/bits.h>
+#include <freax/bits.h>
 #include <uapi/asm/hwcap.h>
 
 #define RISCV_ISA_EXT_a		('a' - 'a')
@@ -71,7 +71,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/jump_label.h>
+#include <freax/jump_label.h>
 
 unsigned long riscv_get_elf_hwcap(void);
 

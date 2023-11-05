@@ -9,29 +9,29 @@
  * Copyright (c) 2002, Trond Myklebust <trond.myklebust@fys.uio.no>
  *
  */
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/pagemap.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/namei.h>
-#include <linux/fsnotify.h>
-#include <linux/kernel.h>
-#include <linux/rcupdate.h>
-#include <linux/utsname.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/pagemap.h>
+#include <freax/mount.h>
+#include <freax/fs_context.h>
+#include <freax/namei.h>
+#include <freax/fsnotify.h>
+#include <freax/kernel.h>
+#include <freax/rcupdate.h>
+#include <freax/utsname.h>
 
 #include <asm/ioctls.h>
-#include <linux/poll.h>
-#include <linux/wait.h>
-#include <linux/seq_file.h>
+#include <freax/poll.h>
+#include <freax/wait.h>
+#include <freax/seq_file.h>
 
-#include <linux/sunrpc/clnt.h>
-#include <linux/workqueue.h>
-#include <linux/sunrpc/rpc_pipe_fs.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/nsproxy.h>
-#include <linux/notifier.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/workqueue.h>
+#include <freax/sunrpc/rpc_pipe_fs.h>
+#include <freax/sunrpc/cache.h>
+#include <freax/nsproxy.h>
+#include <freax/notifier.h>
 
 #include "netns.h"
 #include "sunrpc.h"

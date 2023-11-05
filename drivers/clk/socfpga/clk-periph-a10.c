@@ -2,10 +2,10 @@
 /*
  * Copyright (C) 2015 Altera Corporation. All rights reserved
  */
-#include <linux/slab.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <freax/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/of.h>
 
 #include "clk.h"
 

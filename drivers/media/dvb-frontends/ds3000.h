@@ -10,7 +10,7 @@
 #ifndef DS3000_H
 #define DS3000_H
 
-#include <linux/dvb/frontend.h>
+#include <freax/dvb/frontend.h>
 
 struct ds3000_config {
 	/* the demodulator's i2c address */

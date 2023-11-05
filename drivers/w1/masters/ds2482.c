@@ -10,13 +10,13 @@
  *   http://www.maxim-ic.com/quick_view2.cfm/qv_pk/4382
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
 
-#include <linux/w1.h>
+#include <freax/w1.h>
 
 /*
  * Allow the active pullup to be disabled, default is enabled.

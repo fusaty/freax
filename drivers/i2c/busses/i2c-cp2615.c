@@ -5,12 +5,12 @@
  * (c) 2021, Bence Csókás <bence98@sch.bme.hu>
  */
 
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/usb.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/usb.h>
 
 /** CP2615 I/O Protocol implementation */
 
@@ -98,7 +98,7 @@ static int cp2615_init_i2c_msg(struct cp2615_iop_msg *ret, const struct cp2615_i
 	return cp2615_init_iop_msg(ret, iop_DoI2cTransfer, data, 4 + data->write_len);
 }
 
-/* Translates status codes to Linux errno's */
+/* Translates status codes to freax errno's */
 static int cp2615_check_status(enum cp2615_i2c_status status)
 {
 	switch (status) {

@@ -47,9 +47,9 @@ perf_script_samples() {
 	events="(ld1-miss|ld1-access|llc-miss|lld-access|tlb-miss|tlb-access|branch-miss|remote-access|memory)"
 
 	# Below is an example of the samples dumping:
-	#	dd  3048 [002]          1    l1d-access:      ffffaa64999c __GI___libc_write+0x3c (/lib/aarch64-linux-gnu/libc-2.27.so)
-	#	dd  3048 [002]          1    tlb-access:      ffffaa64999c __GI___libc_write+0x3c (/lib/aarch64-linux-gnu/libc-2.27.so)
-	#	dd  3048 [002]          1        memory:      ffffaa64999c __GI___libc_write+0x3c (/lib/aarch64-linux-gnu/libc-2.27.so)
+	#	dd  3048 [002]          1    l1d-access:      ffffaa64999c __GI___libc_write+0x3c (/lib/aarch64-freax-gnu/libc-2.27.so)
+	#	dd  3048 [002]          1    tlb-access:      ffffaa64999c __GI___libc_write+0x3c (/lib/aarch64-freax-gnu/libc-2.27.so)
+	#	dd  3048 [002]          1        memory:      ffffaa64999c __GI___libc_write+0x3c (/lib/aarch64-freax-gnu/libc-2.27.so)
 	perf script -F,-time -i ${perfdata} 2>&1 | \
 		grep -E " +$1 +[0-9]+ .* +${events}:(.*:)? +" > /dev/null 2>&1
 }

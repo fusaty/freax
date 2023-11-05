@@ -4,8 +4,8 @@
 #ifndef _VDPA_DEV_H_
 #define _VDPA_DEV_H_
 
-#include <linux/pci.h>
-#include <linux/vdpa.h>
+#include <freax/pci.h>
+#include <freax/vdpa.h>
 
 struct pds_vdpa_vq_info {
 	bool ready;

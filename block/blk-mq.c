@@ -5,34 +5,34 @@
  * Copyright (C) 2013-2014 Jens Axboe
  * Copyright (C) 2013-2014 Christoph Hellwig
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/backing-dev.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/blk-integrity.h>
-#include <linux/kmemleak.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/llist.h>
-#include <linux/cpu.h>
-#include <linux/cache.h>
-#include <linux/sched/sysctl.h>
-#include <linux/sched/topology.h>
-#include <linux/sched/signal.h>
-#include <linux/delay.h>
-#include <linux/crash_dump.h>
-#include <linux/prefetch.h>
-#include <linux/blk-crypto.h>
-#include <linux/part_stat.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/backing-dev.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/blk-integrity.h>
+#include <freax/kmemleak.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/llist.h>
+#include <freax/cpu.h>
+#include <freax/cache.h>
+#include <freax/sched/sysctl.h>
+#include <freax/sched/topology.h>
+#include <freax/sched/signal.h>
+#include <freax/delay.h>
+#include <freax/crash_dump.h>
+#include <freax/prefetch.h>
+#include <freax/blk-crypto.h>
+#include <freax/part_stat.h>
 
 #include <trace/events/block.h>
 
-#include <linux/t10-pi.h>
+#include <freax/t10-pi.h>
 #include "blk.h"
 #include "blk-mq.h"
 #include "blk-mq-debugfs.h"

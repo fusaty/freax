@@ -5,20 +5,20 @@
  * Copyright (c) 2015 ROCKCHIP, Co. Ltd.
  */
 
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_domain.h>
-#include <linux/property.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_clk.h>
-#include <linux/clk.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/pm_clock.h>
+#include <freax/pm_domain.h>
+#include <freax/property.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_clk.h>
+#include <freax/clk.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
 #include <soc/rockchip/pm_domains.h>
 #include <dt-bindings/power/px30-power.h>
 #include <dt-bindings/power/rockchip,rv1126-power.h>

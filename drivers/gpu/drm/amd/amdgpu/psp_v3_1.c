@@ -23,9 +23,9 @@
  *
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "amdgpu.h"
 #include "amdgpu_psp.h"

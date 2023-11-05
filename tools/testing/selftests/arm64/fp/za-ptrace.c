@@ -20,7 +20,7 @@
 
 #include "../../kselftest.h"
 
-/* <linux/elf.h> and <sys/auxv.h> don't like each other, so: */
+/* <freax/elf.h> and <sys/auxv.h> don't like each other, so: */
 #ifndef NT_ARM_ZA
 #define NT_ARM_ZA 0x40c
 #endif

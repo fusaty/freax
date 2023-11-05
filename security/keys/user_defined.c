@@ -5,13 +5,13 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/err.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/seq_file.h>
+#include <freax/err.h>
 #include <keys/user-type.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include "internal.h"
 
 static int logon_vet_description(const char *desc);

@@ -4,34 +4,34 @@
  * Author: Chaotian.Jing <chaotian.jing@mediatek.com>
  */
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/reset.h>
+#include <freax/module.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/iopoll.h>
+#include <freax/ioport.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/reset.h>
 
-#include <linux/mmc/card.h>
-#include <linux/mmc/core.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/slot-gpio.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/core.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/sd.h>
+#include <freax/mmc/sdio.h>
+#include <freax/mmc/slot-gpio.h>
 
 #include "cqhci.h"
 

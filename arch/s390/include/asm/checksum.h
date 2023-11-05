@@ -12,8 +12,8 @@
 #ifndef _S390_CHECKSUM_H
 #define _S390_CHECKSUM_H
 
-#include <linux/kasan-checks.h>
-#include <linux/in6.h>
+#include <freax/kasan-checks.h>
+#include <freax/in6.h>
 
 /*
  * Computes the checksum of a memory block at buff, length len,

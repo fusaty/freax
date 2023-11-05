@@ -6,10 +6,10 @@
  *     Atish Patra <atish.patra@wdc.com>
  */
 
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/kvm_host.h>
-#include <linux/uaccess.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/kvm_host.h>
+#include <freax/uaccess.h>
 #include <clocksource/timer-riscv.h>
 #include <asm/csr.h>
 #include <asm/delay.h>

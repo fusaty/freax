@@ -3,12 +3,12 @@
  * Copyright 2015-2017 Google, Inc
  */
 
-#ifndef __LINUX_USB_PD_H
-#define __LINUX_USB_PD_H
+#ifndef __freax_USB_PD_H
+#define __freax_USB_PD_H
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/usb/typec.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/usb/typec.h>
 
 /* USB PD Messages */
 enum pd_ctrl_msg_type {
@@ -534,4 +534,4 @@ void usb_power_delivery_unlink_device(struct usb_power_delivery *pd, struct devi
 
 #endif /* CONFIG_TYPEC */
 
-#endif /* __LINUX_USB_PD_H */
+#endif /* __freax_USB_PD_H */

@@ -7,12 +7,12 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_ASSOC_ARRAY_PRIV_H
-#define _LINUX_ASSOC_ARRAY_PRIV_H
+#ifndef _freax_ASSOC_ARRAY_PRIV_H
+#define _freax_ASSOC_ARRAY_PRIV_H
 
 #ifdef CONFIG_ASSOCIATIVE_ARRAY
 
-#include <linux/assoc_array.h>
+#include <freax/assoc_array.h>
 
 #define ASSOC_ARRAY_FAN_OUT		16	/* Number of slots per node */
 #define ASSOC_ARRAY_FAN_MASK		(ASSOC_ARRAY_FAN_OUT - 1)
@@ -175,4 +175,4 @@ struct assoc_array_ptr *assoc_array_shortcut_to_ptr(const struct assoc_array_sho
 }
 
 #endif /* CONFIG_ASSOCIATIVE_ARRAY */
-#endif /* _LINUX_ASSOC_ARRAY_PRIV_H */
+#endif /* _freax_ASSOC_ARRAY_PRIV_H */

@@ -7,7 +7,7 @@
 #ifndef __SOC_RENESAS_RCAR_GEN4_SYSC_H__
 #define __SOC_RENESAS_RCAR_GEN4_SYSC_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Power Domain flags

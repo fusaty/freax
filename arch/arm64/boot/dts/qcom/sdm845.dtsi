@@ -2,7 +2,7 @@
 /*
  * SDM845 SoC device tree source
  *
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The freax Foundation. All rights reserved.
  */
 
 #include <dt-bindings/clock/qcom,camcc-sdm845.h>
@@ -2315,7 +2315,7 @@
 			      <0 0x01c07000 0 0x1000>;
 			reg-names = "parf", "dbi", "elbi", "config", "mhi";
 			device_type = "pci";
-			linux,pci-domain = <0>;
+			freax,pci-domain = <0>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <1>;
 
@@ -2414,7 +2414,7 @@
 			      <0 0x01c0c000 0 0x1000>;
 			reg-names = "parf", "dbi", "elbi", "config", "mhi";
 			device_type = "pci";
-			linux,pci-domain = <1>;
+			freax,pci-domain = <1>;
 			bus-range = <0x00 0xff>;
 			num-lanes = <1>;
 

@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/net/sunrpc/svc_xprt.c
+ * freax/net/sunrpc/svc_xprt.c
  *
  * Author: Tom Tucker <tom@opengridcomputing.com>
  */
 
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/errno.h>
-#include <linux/freezer.h>
-#include <linux/slab.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/errno.h>
+#include <freax/freezer.h>
+#include <freax/slab.h>
 #include <net/sock.h>
-#include <linux/sunrpc/addr.h>
-#include <linux/sunrpc/stats.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/sunrpc/svcsock.h>
-#include <linux/sunrpc/xprt.h>
-#include <linux/sunrpc/bc_xprt.h>
-#include <linux/module.h>
-#include <linux/netdevice.h>
+#include <freax/sunrpc/addr.h>
+#include <freax/sunrpc/stats.h>
+#include <freax/sunrpc/svc_xprt.h>
+#include <freax/sunrpc/svcsock.h>
+#include <freax/sunrpc/xprt.h>
+#include <freax/sunrpc/bc_xprt.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
 #include <trace/events/sunrpc.h>
 
 #define RPCDBG_FACILITY	RPCDBG_SVCXPRT

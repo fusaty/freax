@@ -15,19 +15,19 @@
  *
  *
  */
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/slab.h>
 
 #include "../include/media/lm3554.h"
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
-#include <linux/acpi.h>
-#include "../include/linux/atomisp_gmin_platform.h"
-#include "../include/linux/atomisp.h"
+#include <freax/acpi.h>
+#include "../include/freax/atomisp_gmin_platform.h"
+#include "../include/freax/atomisp.h"
 
 /* Registers */
 

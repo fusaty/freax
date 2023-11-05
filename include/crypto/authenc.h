@@ -7,7 +7,7 @@
 #ifndef _CRYPTO_AUTHENC_H
 #define _CRYPTO_AUTHENC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum {
 	CRYPTO_AUTHENC_KEYA_UNSPEC,

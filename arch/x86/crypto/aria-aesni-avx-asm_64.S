@@ -6,8 +6,8 @@
  *
  */
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <freax/linkage.h>
+#include <freax/cfi_types.h>
 #include <asm/asm-offsets.h>
 #include <asm/frame.h>
 

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include <net/sock.h>
-#include <linux/netlink.h>
-#include <linux/sock_diag.h>
-#include <linux/netlink_diag.h>
-#include <linux/rhashtable.h>
+#include <freax/netlink.h>
+#include <freax/sock_diag.h>
+#include <freax/netlink_diag.h>
+#include <freax/rhashtable.h>
 
 #include "af_netlink.h"
 

@@ -5,16 +5,16 @@
  * Author:	Jamal Hadi Salim
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/err.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/kmod.h>
+#include <freax/err.h>
+#include <freax/module.h>
 #include <net/net_namespace.h>
 #include <net/sock.h>
 #include <net/sch_generic.h>

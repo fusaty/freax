@@ -7,8 +7,8 @@
  * Author: Felipe Balbi <balbi@ti.com>
  */
 
-#ifndef __INCLUDE_LINUX_IRQCHIP_IRQ_OMAP_INTC_H
-#define __INCLUDE_LINUX_IRQCHIP_IRQ_OMAP_INTC_H
+#ifndef __INCLUDE_freax_IRQCHIP_IRQ_OMAP_INTC_H
+#define __INCLUDE_freax_IRQCHIP_IRQ_OMAP_INTC_H
 
 int omap_irq_pending(void);
 void omap_intc_save_context(void);
@@ -17,4 +17,4 @@ void omap3_intc_suspend(void);
 void omap3_intc_prepare_idle(void);
 void omap3_intc_resume_idle(void);
 
-#endif /* __INCLUDE_LINUX_IRQCHIP_IRQ_OMAP_INTC_H */
+#endif /* __INCLUDE_freax_IRQCHIP_IRQ_OMAP_INTC_H */

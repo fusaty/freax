@@ -10,13 +10,13 @@
  * to via a matching function.
  */
 
-#include <linux/attribute_container.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <freax/attribute_container.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
 
 #include "base.h"
 

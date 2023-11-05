@@ -10,8 +10,8 @@
 #include "opts.h"
 #include "super_types.h"
 
-#include <linux/llist.h>
-#include <linux/workqueue.h>
+#include <freax/llist.h>
+#include <freax/workqueue.h>
 
 struct bch_write_bio {
 	struct_group(wbio,

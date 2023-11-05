@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_NET_AFUNIX_H
-#define __LINUX_NET_AFUNIX_H
+#ifndef __freax_NET_AFUNIX_H
+#define __freax_NET_AFUNIX_H
 
-#include <linux/socket.h>
-#include <linux/un.h>
-#include <linux/mutex.h>
-#include <linux/refcount.h>
+#include <freax/socket.h>
+#include <freax/un.h>
+#include <freax/mutex.h>
+#include <freax/refcount.h>
 #include <net/sock.h>
 
 void unix_inflight(struct user_struct *user, struct file *fp);

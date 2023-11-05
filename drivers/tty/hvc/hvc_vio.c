@@ -23,12 +23,12 @@
 
 #undef DEBUG
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/console.h>
-#include <linux/of.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/console.h>
+#include <freax/of.h>
 
 #include <asm/hvconsole.h>
 #include <asm/vio.h>

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_EFI_BGRT_H
-#define _LINUX_EFI_BGRT_H
+#ifndef _freax_EFI_BGRT_H
+#define _freax_EFI_BGRT_H
 
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 
 #ifdef CONFIG_ACPI_BGRT
 
@@ -23,4 +23,4 @@ static inline int __init acpi_parse_bgrt(struct acpi_table_header *table)
 
 #endif /* !CONFIG_ACPI_BGRT */
 
-#endif /* _LINUX_EFI_BGRT_H */
+#endif /* _freax_EFI_BGRT_H */

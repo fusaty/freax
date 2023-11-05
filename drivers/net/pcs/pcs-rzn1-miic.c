@@ -5,15 +5,15 @@
  * Clément Léger <clement.leger@bootlin.com>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/mdio.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/pcs-rzn1-miic.h>
-#include <linux/phylink.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/mdio.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/pcs-rzn1-miic.h>
+#include <freax/phylink.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 #include <dt-bindings/net/pcs-rzn1-miic.h>
 
 #define MIIC_PRCMD			0x0

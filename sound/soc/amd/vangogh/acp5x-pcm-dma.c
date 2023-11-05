@@ -4,11 +4,11 @@
 //
 // Copyright (C) 2021 Advanced Micro Devices, Inc. All rights reserved.
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

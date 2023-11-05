@@ -5,16 +5,16 @@
  * Copyright (C) 2021-2022 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/sys_soc.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/sys_soc.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
 
 /* Registers */
 #define REG_K3RTC_S_CNT_LSW		0x08
@@ -190,7 +190,7 @@ static int k3rtc_unlock_rtc(struct ti_k3_rtc *priv)
  * This is the list of SoCs affected by TI's i2327 errata causing the RTC
  * state-machine to break if not unlocked fast enough during boot. These
  * SoCs must have the bootloader unlock this device very early in the
- * boot-flow before we (Linux) can use this device.
+ * boot-flow before we (freax) can use this device.
  */
 static const struct soc_device_attribute has_erratum_i2327[] = {
 	{ .family = "AM62X", .revision = "SR1.0" },
@@ -205,7 +205,7 @@ static int k3rtc_configure(struct device *dev)
 	/*
 	 * HWBUG: The compare state machine is broken if the RTC module
 	 * is NOT unlocked in under one second of boot - which is pretty long
-	 * time from the perspective of Linux driver (module load, u-boot
+	 * time from the perspective of freax driver (module load, u-boot
 	 * shell all can take much longer than this.
 	 *
 	 * In such occurrence, it is assumed that the RTC module is unusable

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /******************************************************************************
  *
  * atm_nicstar.h
@@ -12,15 +12,15 @@
  ******************************************************************************/
 
 
-#ifndef LINUX_ATM_NICSTAR_H
-#define LINUX_ATM_NICSTAR_H
+#ifndef freax_ATM_NICSTAR_H
+#define freax_ATM_NICSTAR_H
 
 /* Note: non-kernel programs including this file must also include
  * sys/types.h for struct timeval
  */
 
-#include <linux/atmapi.h>
-#include <linux/atmioc.h>
+#include <freax/atmapi.h>
+#include <freax/atmioc.h>
 
 #define NS_GETPSTAT	_IOWR('a',ATMIOC_SARPRV+1,struct atmif_sioc)
 						/* get pool statistics */
@@ -51,4 +51,4 @@ typedef struct pool_levels
 #define NS_BUFTYPE_IOVEC 4
 
 
-#endif /* LINUX_ATM_NICSTAR_H */
+#endif /* freax_ATM_NICSTAR_H */

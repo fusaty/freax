@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _IP6_TUNNEL_H
 #define _IP6_TUNNEL_H
 
-#include <linux/types.h>
-#include <linux/if.h>		/* For IFNAMSIZ. */
-#include <linux/in6.h>		/* For struct in6_addr. */
+#include <freax/types.h>
+#include <freax/if.h>		/* For IFNAMSIZ. */
+#include <freax/in6.h>		/* For struct in6_addr. */
 
 #define IPV6_TLV_TNL_ENCAP_LIMIT 4
 #define IPV6_DEFAULT_TNL_ENCAP_LIMIT 4

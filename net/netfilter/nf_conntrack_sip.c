@@ -9,23 +9,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/skbuff.h>
-#include <linux/inet.h>
-#include <linux/in.h>
-#include <linux/udp.h>
-#include <linux/tcp.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
+#include <freax/module.h>
+#include <freax/ctype.h>
+#include <freax/skbuff.h>
+#include <freax/inet.h>
+#include <freax/in.h>
+#include <freax/udp.h>
+#include <freax/tcp.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/netfilter_ipv6.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_core.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_zones.h>
-#include <linux/netfilter/nf_conntrack_sip.h>
+#include <freax/netfilter/nf_conntrack_sip.h>
 
 #define HELPER_NAME "sip"
 

@@ -5,10 +5,10 @@
  * Copyright (C) 2013, Carlo Caione <carlo@caione.org>
  */
 
-#ifndef __LINUX_MFD_AXP20X_H
-#define __LINUX_MFD_AXP20X_H
+#ifndef __freax_MFD_AXP20X_H
+#define __freax_MFD_AXP20X_H
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 
 enum axp20x_variants {
 	AXP152_ID = 0,
@@ -904,4 +904,4 @@ int axp20x_device_probe(struct axp20x_dev *axp20x);
  */
 void axp20x_device_remove(struct axp20x_dev *axp20x);
 
-#endif /* __LINUX_MFD_AXP20X_H */
+#endif /* __freax_MFD_AXP20X_H */

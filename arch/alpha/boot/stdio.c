@@ -2,8 +2,8 @@
 /*
  * Copyright (C) Paul Mackerras 1997.
  */
-#include <linux/string.h>
-#include <linux/stdarg.h>
+#include <freax/string.h>
+#include <freax/stdarg.h>
 
 size_t strnlen(const char * s, size_t count)
 {

@@ -3,8 +3,8 @@
 #ifndef BTRFS_LRU_CACHE_H
 #define BTRFS_LRU_CACHE_H
 
-#include <linux/maple_tree.h>
-#include <linux/list.h>
+#include <freax/maple_tree.h>
+#include <freax/list.h>
 
 /*
  * A cache entry. This is meant to be embedded in a structure of a user of

@@ -1,39 +1,39 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_FCNTL_H
-#define _UAPI_LINUX_FCNTL_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_FCNTL_H
+#define _UAPI_freax_FCNTL_H
 
 #include <asm/fcntl.h>
-#include <linux/openat2.h>
+#include <freax/openat2.h>
 
-#define F_SETLEASE	(F_LINUX_SPECIFIC_BASE + 0)
-#define F_GETLEASE	(F_LINUX_SPECIFIC_BASE + 1)
+#define F_SETLEASE	(F_freax_SPECIFIC_BASE + 0)
+#define F_GETLEASE	(F_freax_SPECIFIC_BASE + 1)
 
 /*
  * Cancel a blocking posix lock; internal use only until we expose an
  * asynchronous lock api to userspace:
  */
-#define F_CANCELLK	(F_LINUX_SPECIFIC_BASE + 5)
+#define F_CANCELLK	(F_freax_SPECIFIC_BASE + 5)
 
 /* Create a file descriptor with FD_CLOEXEC set. */
-#define F_DUPFD_CLOEXEC	(F_LINUX_SPECIFIC_BASE + 6)
+#define F_DUPFD_CLOEXEC	(F_freax_SPECIFIC_BASE + 6)
 
 /*
  * Request nofications on a directory.
  * See below for events that may be notified.
  */
-#define F_NOTIFY	(F_LINUX_SPECIFIC_BASE+2)
+#define F_NOTIFY	(F_freax_SPECIFIC_BASE+2)
 
 /*
  * Set and get of pipe page size array
  */
-#define F_SETPIPE_SZ	(F_LINUX_SPECIFIC_BASE + 7)
-#define F_GETPIPE_SZ	(F_LINUX_SPECIFIC_BASE + 8)
+#define F_SETPIPE_SZ	(F_freax_SPECIFIC_BASE + 7)
+#define F_GETPIPE_SZ	(F_freax_SPECIFIC_BASE + 8)
 
 /*
  * Set/Get seals
  */
-#define F_ADD_SEALS	(F_LINUX_SPECIFIC_BASE + 9)
-#define F_GET_SEALS	(F_LINUX_SPECIFIC_BASE + 10)
+#define F_ADD_SEALS	(F_freax_SPECIFIC_BASE + 9)
+#define F_GET_SEALS	(F_freax_SPECIFIC_BASE + 10)
 
 /*
  * Types of seals
@@ -51,10 +51,10 @@
  * underlying inode, while {GET,SET}_FILE_RW_HINT operate only on
  * the specific file.
  */
-#define F_GET_RW_HINT		(F_LINUX_SPECIFIC_BASE + 11)
-#define F_SET_RW_HINT		(F_LINUX_SPECIFIC_BASE + 12)
-#define F_GET_FILE_RW_HINT	(F_LINUX_SPECIFIC_BASE + 13)
-#define F_SET_FILE_RW_HINT	(F_LINUX_SPECIFIC_BASE + 14)
+#define F_GET_RW_HINT		(F_freax_SPECIFIC_BASE + 11)
+#define F_SET_RW_HINT		(F_freax_SPECIFIC_BASE + 12)
+#define F_GET_FILE_RW_HINT	(F_freax_SPECIFIC_BASE + 13)
+#define F_SET_FILE_RW_HINT	(F_freax_SPECIFIC_BASE + 14)
 
 /*
  * Valid hint values for F_{GET,SET}_RW_HINT. 0 is "not set", or can be
@@ -117,4 +117,4 @@
 					compare object identity and may not
 					be usable to open_by_handle_at(2) */
 
-#endif /* _UAPI_LINUX_FCNTL_H */
+#endif /* _UAPI_freax_FCNTL_H */

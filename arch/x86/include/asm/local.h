@@ -2,9 +2,9 @@
 #ifndef _ASM_X86_LOCAL_H
 #define _ASM_X86_LOCAL_H
 
-#include <linux/percpu.h>
+#include <freax/percpu.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/asm.h>
 
 typedef struct {

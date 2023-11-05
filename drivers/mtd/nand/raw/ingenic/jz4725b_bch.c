@@ -7,14 +7,14 @@
  * Based on jz4780_bch.c
  */
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 
 #include "ingenic_ecc.h"
 

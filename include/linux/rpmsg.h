@@ -7,18 +7,18 @@
  * All rights reserved.
  */
 
-#ifndef _LINUX_RPMSG_H
-#define _LINUX_RPMSG_H
+#ifndef _freax_RPMSG_H
+#define _freax_RPMSG_H
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/mod_devicetable.h>
-#include <linux/kref.h>
-#include <linux/mutex.h>
-#include <linux/poll.h>
-#include <linux/rpmsg/byteorder.h>
-#include <uapi/linux/rpmsg.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/mod_devicetable.h>
+#include <freax/kref.h>
+#include <freax/mutex.h>
+#include <freax/poll.h>
+#include <freax/rpmsg/byteorder.h>
+#include <uapi/freax/rpmsg.h>
 
 struct rpmsg_device;
 struct rpmsg_endpoint;
@@ -349,4 +349,4 @@ static inline int rpmsg_set_flow_control(struct rpmsg_endpoint *ept, bool pause,
 	module_driver(__rpmsg_driver, register_rpmsg_driver, \
 			unregister_rpmsg_driver)
 
-#endif /* _LINUX_RPMSG_H */
+#endif /* _freax_RPMSG_H */

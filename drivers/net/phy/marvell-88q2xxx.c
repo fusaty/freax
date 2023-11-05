@@ -2,9 +2,9 @@
 /*
  * Marvell 88Q2XXX automotive 100BASE-T1/1000BASE-T1 PHY driver
  */
-#include <linux/ethtool_netlink.h>
-#include <linux/marvell_phy.h>
-#include <linux/phy.h>
+#include <freax/ethtool_netlink.h>
+#include <freax/marvell_phy.h>
+#include <freax/phy.h>
 
 #define MDIO_MMD_AN_MV_STAT			32769
 #define MDIO_MMD_AN_MV_STAT_ANEG		0x0100

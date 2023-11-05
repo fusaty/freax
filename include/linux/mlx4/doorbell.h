@@ -35,8 +35,8 @@
 #ifndef MLX4_DOORBELL_H
 #define MLX4_DOORBELL_H
 
-#include <linux/types.h>
-#include <linux/io.h>
+#include <freax/types.h>
+#include <freax/io.h>
 
 #define MLX4_SEND_DOORBELL    0x14
 #define MLX4_CQ_DOORBELL      0x20

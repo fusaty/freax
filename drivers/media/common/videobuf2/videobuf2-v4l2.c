@@ -14,16 +14,16 @@
  * the Free Software Foundation.
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/freezer.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-dev.h>
@@ -1327,6 +1327,6 @@ void vb2_request_queue(struct media_request *req)
 }
 EXPORT_SYMBOL_GPL(vb2_request_queue);
 
-MODULE_DESCRIPTION("Driver helper framework for Video for Linux 2");
+MODULE_DESCRIPTION("Driver helper framework for Video for freax 2");
 MODULE_AUTHOR("Pawel Osciak <pawel@osciak.com>, Marek Szyprowski");
 MODULE_LICENSE("GPL");

@@ -1,4 +1,4 @@
-/* via-rhine.c: A Linux Ethernet device driver for VIA Rhine family chips. */
+/* via-rhine.c: A freax Ethernet device driver for VIA Rhine family chips. */
 /*
 	Written 1998-2001 by Donald Becker.
 
@@ -33,7 +33,7 @@
 
 #define DRV_NAME	"via-rhine"
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* A few user-configurable values.
    These may be modified when a driver module is loaded. */
@@ -85,35 +85,35 @@ static const int multicast_filter_limit = 32;
 
 #define PKT_BUF_SZ	1536	/* Size of each temporary Rx buffer.*/
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/crc32.h>
-#include <linux/if_vlan.h>
-#include <linux/bitops.h>
-#include <linux/workqueue.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/crc32.h>
+#include <freax/if_vlan.h>
+#include <freax/bitops.h>
+#include <freax/workqueue.h>
 #include <asm/processor.h>	/* Processor type for cache alignment. */
 #include <asm/io.h>
 #include <asm/irq.h>
-#include <linux/uaccess.h>
-#include <linux/dmi.h>
+#include <freax/uaccess.h>
+#include <freax/dmi.h>
 
 MODULE_AUTHOR("Donald Becker <becker@scyld.com>");
 MODULE_DESCRIPTION("VIA Rhine PCI Fast Ethernet driver");

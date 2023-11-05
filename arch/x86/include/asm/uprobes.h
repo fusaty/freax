@@ -10,7 +10,7 @@
  *	Jim Keniston
  */
 
-#include <linux/notifier.h>
+#include <freax/notifier.h>
 
 typedef u8 uprobe_opcode_t;
 

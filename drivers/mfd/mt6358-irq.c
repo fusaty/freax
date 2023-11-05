@@ -2,19 +2,19 @@
 //
 // Copyright (c) 2020 MediaTek Inc.
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/mt6357/core.h>
-#include <linux/mfd/mt6357/registers.h>
-#include <linux/mfd/mt6358/core.h>
-#include <linux/mfd/mt6358/registers.h>
-#include <linux/mfd/mt6359/core.h>
-#include <linux/mfd/mt6359/registers.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/mfd/mt6357/core.h>
+#include <freax/mfd/mt6357/registers.h>
+#include <freax/mfd/mt6358/core.h>
+#include <freax/mfd/mt6358/registers.h>
+#include <freax/mfd/mt6359/core.h>
+#include <freax/mfd/mt6359/registers.h>
+#include <freax/mfd/mt6397/core.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define MTK_PMIC_REG_WIDTH 16
 

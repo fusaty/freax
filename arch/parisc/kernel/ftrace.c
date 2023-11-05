@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Code for tracing calls in Linux kernel.
+ * Code for tracing calls in freax kernel.
  * Copyright (C) 2009-2016 Helge Deller <deller@gmx.de>
  *
  * based on code for x86 which is:
@@ -10,12 +10,12 @@
  *	- add CONFIG_STACK_TRACER
  */
 
-#include <linux/init.h>
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
-#include <linux/kprobes.h>
-#include <linux/ptrace.h>
-#include <linux/jump_label.h>
+#include <freax/init.h>
+#include <freax/ftrace.h>
+#include <freax/uaccess.h>
+#include <freax/kprobes.h>
+#include <freax/ptrace.h>
+#include <freax/jump_label.h>
 
 #include <asm/assembly.h>
 #include <asm/sections.h>

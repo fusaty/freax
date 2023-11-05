@@ -21,8 +21,8 @@
  * IN THE SOFTWARE.
  */
 
-#include <linux/prime_numbers.h>
-#include <linux/random.h>
+#include <freax/prime_numbers.h>
+#include <freax/random.h>
 
 #include "i915_selftest.h"
 #include "i915_utils.h"

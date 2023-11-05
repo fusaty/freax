@@ -8,7 +8,7 @@
  * This software may be used and distributed according to the terms
  * of the GNU General Public License, incorporated herein by reference.
  *
- * Usage: modpost vmlinux module1.o module2.o ...
+ * Usage: modpost vmfreax module1.o module2.o ...
  */
 
 #define _GNU_SOURCE
@@ -21,7 +21,7 @@
 #include <stdbool.h>
 #include <errno.h>
 #include "modpost.h"
-#include "../../include/linux/license.h"
+#include "../../include/freax/license.h"
 
 static bool module_enabled;
 /* Are we using CONFIG_MODVERSIONS? */
@@ -49,12 +49,12 @@ static bool extra_warn;
 
 /*
  * Cut off the warnings when there are too many. This typically occurs when
- * vmlinux is missing. ('make modules' without building vmlinux.)
+ * vmfreax is missing. ('make modules' without building vmfreax.)
  */
 #define MAX_UNRESOLVED_REPORTS	10
 static unsigned int nr_unresolved;
 
-/* In kernel, this size is defined in linux/module.h;
+/* In kernel, this size is defined in freax/module.h;
  * here we use Elf_Addr instead of long for covering cross-compile
  */
 
@@ -193,7 +193,7 @@ static struct module *new_module(const char *name, size_t namelen)
 
 	memcpy(mod->name, name, namelen);
 	mod->name[namelen] = '\0';
-	mod->is_vmlinux = (strcmp(mod->name, "vmlinux") == 0);
+	mod->is_vmfreax = (strcmp(mod->name, "vmfreax") == 0);
 
 	/*
 	 * Set mod->is_gpl_compatible to true by default. If MODULE_LICENSE()
@@ -371,10 +371,10 @@ static struct symbol *sym_add_exported(const char *name, struct module *mod,
 {
 	struct symbol *s = find_symbol(name);
 
-	if (s && (!external_module || s->module->is_vmlinux || s->module == mod)) {
+	if (s && (!external_module || s->module->is_vmfreax || s->module == mod)) {
 		error("%s: '%s' exported twice. Previous export was in %s%s\n",
 		      mod->name, name, s->module->name,
-		      s->module->is_vmlinux ? "" : ".ko");
+		      s->module->is_vmfreax ? "" : ".ko");
 	}
 
 	s = alloc_symbol(name);
@@ -783,7 +783,7 @@ static void check_section(const char *modname, struct elf_info *elf,
 	    !match(sec, section_white_list)) {
 		warn("%s (%s): unexpected non-allocatable section.\n"
 		     "Did you forget to use \"ax\"/\"aw\" in a .S file?\n"
-		     "Note that for example <linux/init.h> contains\n"
+		     "Note that for example <freax/init.h> contains\n"
 		     "section definitions for use in .S files.\n\n",
 		     modname, sec);
 	}
@@ -1581,8 +1581,8 @@ static void mod_set_crcs(struct module *mod)
 	char *buf, *p, *obj;
 	int ret;
 
-	if (mod->is_vmlinux) {
-		strcpy(objlist, ".vmlinux.objs");
+	if (mod->is_vmfreax) {
+		strcpy(objlist, ".vmfreax.objs");
 	} else {
 		/* objects for a module are listed in the *.mod file. */
 		ret = snprintf(objlist, sizeof(objlist), "%s.mod", mod->name);
@@ -1622,7 +1622,7 @@ static void read_symbols(const char *modname)
 	/* strip trailing .o */
 	mod = new_module(modname, strlen(modname) - strlen(".o"));
 
-	if (!mod->is_vmlinux) {
+	if (!mod->is_vmfreax) {
 		license = get_modinfo(&info, "license");
 		if (!license)
 			error("missing MODULE_LICENSE() in %s\n", modname);
@@ -1653,7 +1653,7 @@ static void read_symbols(const char *modname)
 
 	check_sec_ref(mod, &info);
 
-	if (!mod->is_vmlinux) {
+	if (!mod->is_vmfreax) {
 		version = get_modinfo(&info, "version");
 		if (version || all_versions)
 			get_src_version(mod->name, mod->srcversion,
@@ -1801,17 +1801,17 @@ static void check_modname_len(struct module *mod)
  **/
 static void add_header(struct buffer *b, struct module *mod)
 {
-	buf_printf(b, "#include <linux/module.h>\n");
+	buf_printf(b, "#include <freax/module.h>\n");
 	/*
 	 * Include build-salt.h after module.h in order to
 	 * inherit the definitions.
 	 */
 	buf_printf(b, "#define INCLUDE_VERMAGIC\n");
-	buf_printf(b, "#include <linux/build-salt.h>\n");
-	buf_printf(b, "#include <linux/elfnote-lto.h>\n");
-	buf_printf(b, "#include <linux/export-internal.h>\n");
-	buf_printf(b, "#include <linux/vermagic.h>\n");
-	buf_printf(b, "#include <linux/compiler.h>\n");
+	buf_printf(b, "#include <freax/build-salt.h>\n");
+	buf_printf(b, "#include <freax/elfnote-lto.h>\n");
+	buf_printf(b, "#include <freax/export-internal.h>\n");
+	buf_printf(b, "#include <freax/vermagic.h>\n");
+	buf_printf(b, "#include <freax/compiler.h>\n");
 	buf_printf(b, "\n");
 	buf_printf(b, "#ifdef CONFIG_UNWINDER_ORC\n");
 	buf_printf(b, "#include <asm/orc_header.h>\n");
@@ -1879,7 +1879,7 @@ static void add_exported_symbols(struct buffer *buf, struct module *mod)
 		if (!sym->crc_valid)
 			warn("EXPORT symbol \"%s\" [%s%s] version generation failed, symbol will not be versioned.\n"
 			     "Is \"%s\" prototyped in <asm/asm-prototypes.h>?\n",
-			     sym->name, mod->name, mod->is_vmlinux ? "" : ".ko",
+			     sym->name, mod->name, mod->is_vmfreax ? "" : ".ko",
 			     sym->name);
 
 		buf_printf(buf, "SYMBOL_CRC(%s, 0x%08x, \"%s\");\n",
@@ -1929,7 +1929,7 @@ static void add_depends(struct buffer *b, struct module *mod)
 	/* Clear ->seen flag of modules that own symbols needed by this. */
 	list_for_each_entry(s, &mod->unresolved_symbols, list) {
 		if (s->module)
-			s->module->seen = s->module->is_vmlinux;
+			s->module->seen = s->module->is_vmfreax;
 	}
 
 	buf_printf(b, "\n");
@@ -2020,15 +2020,15 @@ static void write_if_changed(struct buffer *b, const char *fname)
 	write_buf(b, fname);
 }
 
-static void write_vmlinux_export_c_file(struct module *mod)
+static void write_vmfreax_export_c_file(struct module *mod)
 {
 	struct buffer buf = { };
 
 	buf_printf(&buf,
-		   "#include <linux/export-internal.h>\n");
+		   "#include <freax/export-internal.h>\n");
 
 	add_exported_symbols(&buf, mod);
-	write_if_changed(&buf, ".vmlinux.export.c");
+	write_if_changed(&buf, ".vmfreax.export.c");
 	free(buf.p);
 }
 
@@ -2248,7 +2248,7 @@ int main(int argc, char **argv)
 		read_symbols_from_files(files_source);
 
 	list_for_each_entry(mod, &modules, list) {
-		if (mod->from_dump || mod->is_vmlinux)
+		if (mod->from_dump || mod->is_vmfreax)
 			continue;
 
 		check_modname_len(mod);
@@ -2262,8 +2262,8 @@ int main(int argc, char **argv)
 		if (mod->from_dump)
 			continue;
 
-		if (mod->is_vmlinux)
-			write_vmlinux_export_c_file(mod);
+		if (mod->is_vmfreax)
+			write_vmfreax_export_c_file(mod);
 		else
 			write_mod_c_file(mod);
 	}

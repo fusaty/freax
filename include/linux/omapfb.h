@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * File: include/linux/omapfb.h
+ * File: include/freax/omapfb.h
  *
  * Framebuffer driver for TI OMAP boards
  *
  * Copyright (C) 2004 Nokia Corporation
  * Author: Imre Deak <imre.deak@nokia.com>
  */
-#ifndef __LINUX_OMAPFB_H__
-#define __LINUX_OMAPFB_H__
+#ifndef __freax_OMAPFB_H__
+#define __freax_OMAPFB_H__
 
-#include <uapi/linux/omapfb.h>
+#include <uapi/freax/omapfb.h>
 
 
 struct omap_lcd_config {

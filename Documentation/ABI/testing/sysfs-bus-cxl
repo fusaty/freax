@@ -1,7 +1,7 @@
 What:		/sys/bus/cxl/flush
 Date:		Januarry, 2022
 KernelVersion:	v5.18
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(WO) If userspace manually unbinds a port the kernel schedules
 		all descendant memdevs for unbind. Writing '1' to this attribute
@@ -11,7 +11,7 @@ Description:
 What:		/sys/bus/cxl/devices/memX/firmware_version
 Date:		December, 2020
 KernelVersion:	v5.12
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) "FW Revision" string as reported by the Identify
 		Memory Device Output Payload in the CXL-2.0
@@ -21,7 +21,7 @@ Description:
 What:		/sys/bus/cxl/devices/memX/ram/size
 Date:		December, 2020
 KernelVersion:	v5.12
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) "Volatile Only Capacity" as bytes. Represents the
 		identically named field in the Identify Memory Device Output
@@ -31,7 +31,7 @@ Description:
 What:		/sys/bus/cxl/devices/memX/pmem/size
 Date:		December, 2020
 KernelVersion:	v5.12
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) "Persistent Only Capacity" as bytes. Represents the
 		identically named field in the Identify Memory Device Output
@@ -41,7 +41,7 @@ Description:
 What:		/sys/bus/cxl/devices/memX/serial
 Date:		January, 2022
 KernelVersion:	v5.18
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) 64-bit serial number per the PCIe Device Serial Number
 		capability. Mandatory for CXL devices, see CXL 2.0 8.1.12.2
@@ -51,7 +51,7 @@ Description:
 What:		/sys/bus/cxl/devices/memX/numa_node
 Date:		January, 2022
 KernelVersion:	v5.18
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) If NUMA is enabled and the platform has affinitized the
 		host PCI device for this memory device, emit the CPU node
@@ -61,7 +61,7 @@ Description:
 What:		/sys/bus/cxl/devices/memX/security/state
 Date:		June, 2023
 KernelVersion:	v6.5
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) Reading this file will display the CXL security state for
 		that device. Such states can be: 'disabled', 'sanitize', when
@@ -74,7 +74,7 @@ Description:
 What:           /sys/bus/cxl/devices/memX/security/sanitize
 Date:           June, 2023
 KernelVersion:  v6.5
-Contact:        linux-cxl@vger.kernel.org
+Contact:        freax-cxl@vger.kernel.org
 Description:
 		(WO) Write a boolean 'true' string value to this attribute to
 		sanitize the device to securely re-purpose or decommission it.
@@ -93,7 +93,7 @@ Description:
 What            /sys/bus/cxl/devices/memX/security/erase
 Date:           June, 2023
 KernelVersion:  v6.5
-Contact:        linux-cxl@vger.kernel.org
+Contact:        freax-cxl@vger.kernel.org
 Description:
 		(WO) Write a boolean 'true' string value to this attribute to
 		secure erase user data by changing the media encryption keys for
@@ -109,7 +109,7 @@ Description:
 What:		/sys/bus/cxl/devices/memX/firmware/
 Date:		April, 2023
 KernelVersion:	v6.5
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RW) Firmware uploader mechanism. The different files under
 		this directory can be used to upload and activate new
@@ -120,7 +120,7 @@ Description:
 What:		/sys/bus/cxl/devices/*/devtype
 Date:		June, 2021
 KernelVersion:	v5.14
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) CXL device objects export the devtype attribute which
 		mirrors the same value communicated in the DEVTYPE environment
@@ -130,7 +130,7 @@ Description:
 What:		/sys/bus/cxl/devices/*/modalias
 Date:		December, 2021
 KernelVersion:	v5.18
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) CXL device objects export the modalias attribute which
 		mirrors the same value communicated in the MODALIAS environment
@@ -140,7 +140,7 @@ Description:
 What:		/sys/bus/cxl/devices/portX/uport
 Date:		June, 2021
 KernelVersion:	v5.14
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) CXL port objects are enumerated from either a platform
 		firmware device (ACPI0017 and ACPI0016) or PCIe switch upstream
@@ -152,7 +152,7 @@ Description:
 What:		/sys/bus/cxl/devices/{port,endpoint}X/parent_dport
 Date:		January, 2023
 KernelVersion:	v6.3
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) CXL port objects are instantiated for each upstream port in
 		a CXL/PCIe switch, and for each endpoint to map the
@@ -167,7 +167,7 @@ Description:
 What:		/sys/bus/cxl/devices/portX/dportY
 Date:		June, 2021
 KernelVersion:	v5.14
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) CXL port objects are enumerated from either a platform
 		firmware device (ACPI0017 and ACPI0016) or PCIe switch upstream
@@ -181,7 +181,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y
 Date:		June, 2021
 KernelVersion:	v5.14
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) CXL decoder objects are enumerated from either a platform
 		firmware description, or a CXL HDM decoder register set in a
@@ -194,7 +194,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y/{start,size}
 Date:		June, 2021
 KernelVersion:	v5.14
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) The 'start' and 'size' attributes together convey the
 		physical address base and number of bytes mapped in the
@@ -209,7 +209,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y/locked
 Date:		June, 2021
 KernelVersion:	v5.14
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) CXL HDM decoders have the capability to lock the
 		configuration until the next device reset. For decoders of
@@ -222,7 +222,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y/target_list
 Date:		June, 2021
 KernelVersion:	v5.14
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) Display a comma separated list of the current decoder
 		target configuration. The list is ordered by the current
@@ -233,7 +233,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y/cap_{pmem,ram,type2,type3}
 Date:		June, 2021
 KernelVersion:	v5.14
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) When a CXL decoder is of devtype "cxl_decoder_root", it
 		represents a fixed memory window identified by platform
@@ -246,7 +246,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y/target_type
 Date:		June, 2021
 KernelVersion:	v5.14
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) When a CXL decoder is of devtype "cxl_decoder_switch", it
 		can optionally decode either accelerator memory (type-2) or
@@ -258,7 +258,7 @@ Description:
 What:		/sys/bus/cxl/devices/endpointX/CDAT
 Date:		July, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) If this sysfs entry is not present no DOE mailbox was
 		found to support CDAT data.  If it is present and the length of
@@ -269,7 +269,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y/mode
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RW) When a CXL decoder is of devtype "cxl_decoder_endpoint" it
 		translates from a host physical address range, to a device local
@@ -289,7 +289,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y/dpa_resource
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) When a CXL decoder is of devtype "cxl_decoder_endpoint",
 		and its 'dpa_size' attribute is non-zero, this attribute
@@ -300,7 +300,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y/dpa_size
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RW) When a CXL decoder is of devtype "cxl_decoder_endpoint" it
 		translates from a host physical address range, to a device local
@@ -320,7 +320,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y/interleave_ways
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) The number of targets across which this decoder's host
 		physical address (HPA) memory range is interleaved. The device
@@ -335,7 +335,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y/interleave_granularity
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) The number of consecutive bytes of host physical address
 		space this decoder claims at address N before the decode rotates
@@ -347,7 +347,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y/create_{pmem,ram}_region
 Date:		May, 2022, January, 2023
 KernelVersion:	v6.0 (pmem), v6.3 (ram)
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RW) Write a string in the form 'regionZ' to start the process
 		of defining a new persistent, or volatile memory region
@@ -363,7 +363,7 @@ Description:
 What:		/sys/bus/cxl/devices/decoderX.Y/delete_region
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(WO) Write a string in the form 'regionZ' to delete that region,
 		provided it is currently idle / not bound to a driver.
@@ -372,7 +372,7 @@ Description:
 What:		/sys/bus/cxl/devices/regionZ/uuid
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RW) Write a unique identifier for the region. This field must
 		be set for persistent regions and it must not conflict with the
@@ -383,7 +383,7 @@ Description:
 What:		/sys/bus/cxl/devices/regionZ/interleave_granularity
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RW) Set the number of consecutive bytes each device in the
 		interleave set will claim. The possible interleave granularity
@@ -394,7 +394,7 @@ Description:
 What:		/sys/bus/cxl/devices/regionZ/interleave_ways
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RW) Configures the number of devices participating in the
 		region is set by writing this value. Each device will provide
@@ -404,7 +404,7 @@ Description:
 What:		/sys/bus/cxl/devices/regionZ/size
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RW) System physical address space to be consumed by the region.
 		When written trigger the driver to allocate space out of the
@@ -421,7 +421,7 @@ Description:
 What:		/sys/bus/cxl/devices/regionZ/mode
 Date:		January, 2023
 KernelVersion:	v6.3
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) The mode of a region is established at region creation time
 		and dictates the mode of the endpoint decoder that comprise the
@@ -432,7 +432,7 @@ Description:
 What:		/sys/bus/cxl/devices/regionZ/resource
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RO) A region is a contiguous partition of a CXL root decoder
 		address space. Region capacity is allocated by writing to the
@@ -444,7 +444,7 @@ Description:
 What:		/sys/bus/cxl/devices/regionZ/target[0..N]
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RW) Write an endpoint decoder object name to 'targetX' where X
 		is the intended position of the endpoint device in the region
@@ -463,7 +463,7 @@ Description:
 What:		/sys/bus/cxl/devices/regionZ/commit
 Date:		May, 2022
 KernelVersion:	v6.0
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(RW) Write a boolean 'true' string value to this attribute to
 		trigger the region to transition from the software programmed
@@ -479,7 +479,7 @@ Description:
 What:		/sys/bus/cxl/devices/memX/trigger_poison_list
 Date:		April, 2023
 KernelVersion:	v6.4
-Contact:	linux-cxl@vger.kernel.org
+Contact:	freax-cxl@vger.kernel.org
 Description:
 		(WO) When a boolean 'true' is written to this attribute the
 		memdev driver retrieves the poison list from the device. The

@@ -7,15 +7,15 @@
 #ifndef INTEL_WAKEREF_H
 #define INTEL_WAKEREF_H
 
-#include <linux/atomic.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/lockdep.h>
-#include <linux/mutex.h>
-#include <linux/refcount.h>
-#include <linux/stackdepot.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/lockdep.h>
+#include <freax/mutex.h>
+#include <freax/refcount.h>
+#include <freax/stackdepot.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
 
 #if IS_ENABLED(CONFIG_DRM_I915_DEBUG)
 #define INTEL_WAKEREF_BUG_ON(expr) BUG_ON(expr)

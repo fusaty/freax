@@ -5,15 +5,15 @@
  * Copyright (c) 2016-2017 Erik Stromdahl <erik.stromdahl@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/mmc/sdio_ids.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sd.h>
-#include <linux/bitfield.h>
+#include <freax/module.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/mmc/sdio_ids.h>
+#include <freax/mmc/sdio.h>
+#include <freax/mmc/sd.h>
+#include <freax/bitfield.h>
 #include "core.h"
 #include "bmi.h"
 #include "debug.h"

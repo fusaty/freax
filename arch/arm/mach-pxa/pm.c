@@ -10,11 +10,11 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License.
  */
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/suspend.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
 
 #include "pm.h"
 

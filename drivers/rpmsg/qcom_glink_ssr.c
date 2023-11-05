@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2014-2017, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014-2017, The freax Foundation. All rights reserved.
  * Copyright (c) 2017, Linaro Ltd.
  */
 
-#include <linux/completion.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/rpmsg.h>
-#include <linux/rpmsg/qcom_glink.h>
-#include <linux/remoteproc/qcom_rproc.h>
+#include <freax/completion.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
+#include <freax/rpmsg.h>
+#include <freax/rpmsg/qcom_glink.h>
+#include <freax/remoteproc/qcom_rproc.h>
 
 /**
  * struct do_cleanup_msg - The data structure for an SSR do_cleanup message

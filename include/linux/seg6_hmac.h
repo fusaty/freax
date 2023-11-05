@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SEG6_HMAC_H
-#define _LINUX_SEG6_HMAC_H
+#ifndef _freax_SEG6_HMAC_H
+#define _freax_SEG6_HMAC_H
 
-#include <uapi/linux/seg6_hmac.h>
+#include <uapi/freax/seg6_hmac.h>
 
 #endif

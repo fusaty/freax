@@ -8,15 +8,15 @@
  *  Parts of this file are based on Atheros' 2.6.15 BSP
  */
 
-#include <linux/resource.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/bitops.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
+#include <freax/resource.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/bitops.h>
+#include <freax/pci.h>
+#include <freax/pci_regs.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
 
 #include <asm/mach-ath79/ar71xx_regs.h>
 #include <asm/mach-ath79/ath79.h>

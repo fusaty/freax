@@ -4,12 +4,12 @@
  * Copyright 2019 NXP
  */
 
-#include <linux/vfio.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/eventfd.h>
+#include <freax/vfio.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/eventfd.h>
 
-#include "linux/fsl/mc.h"
+#include "freax/fsl/mc.h"
 #include "vfio_fsl_mc_private.h"
 
 static int vfio_fsl_mc_irqs_allocate(struct vfio_fsl_mc_device *vdev)

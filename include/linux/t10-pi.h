@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_T10_PI_H
-#define _LINUX_T10_PI_H
+#ifndef _freax_T10_PI_H
+#define _freax_T10_PI_H
 
-#include <linux/types.h>
-#include <linux/blk-mq.h>
+#include <freax/types.h>
+#include <freax/blk-mq.h>
 
 /*
  * A T10 PI-capable target device can be formatted with different

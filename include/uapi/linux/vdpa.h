@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * vdpa device management interface
  * Copyright (c) 2020 Mellanox Technologies Ltd. All rights reserved.
  */
 
-#ifndef _UAPI_LINUX_VDPA_H_
-#define _UAPI_LINUX_VDPA_H_
+#ifndef _UAPI_freax_VDPA_H_
+#define _UAPI_freax_VDPA_H_
 
 #define VDPA_GENL_NAME "vdpa"
 #define VDPA_GENL_VERSION 0x1

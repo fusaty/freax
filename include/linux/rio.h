@@ -7,18 +7,18 @@
  * Matt Porter <mporter@kernel.crashing.org>
  */
 
-#ifndef LINUX_RIO_H
-#define LINUX_RIO_H
+#ifndef freax_RIO_H
+#define freax_RIO_H
 
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/rio_regs.h>
-#include <linux/mod_devicetable.h>
+#include <freax/types.h>
+#include <freax/ioport.h>
+#include <freax/list.h>
+#include <freax/errno.h>
+#include <freax/device.h>
+#include <freax/rio_regs.h>
+#include <freax/mod_devicetable.h>
 #ifdef CONFIG_RAPIDIO_DMA_ENGINE
-#include <linux/dmaengine.h>
+#include <freax/dmaengine.h>
 #endif
 
 #define RIO_NO_HOPCOUNT		-1
@@ -555,4 +555,4 @@ extern void rio_close_outb_mbox(struct rio_mport *, int);
 extern int rio_query_mport(struct rio_mport *port,
 			   struct rio_mport_attr *mport_attr);
 
-#endif				/* LINUX_RIO_H */
+#endif				/* freax_RIO_H */

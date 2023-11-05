@@ -5,9 +5,9 @@
  * All rights reserved.
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/blkdev.h>
-#include <linux/random.h>
-#include <linux/nvme-auth.h>
+#include <freax/blkdev.h>
+#include <freax/random.h>
+#include <freax/nvme-auth.h>
 #include <crypto/hash.h>
 #include <crypto/kpp.h>
 #include "nvmet.h"

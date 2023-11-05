@@ -11,10 +11,10 @@
 #ifndef _GNTDEV_COMMON_H
 #define _GNTDEV_COMMON_H
 
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/mmu_notifier.h>
-#include <linux/types.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/mmu_notifier.h>
+#include <freax/types.h>
 #include <xen/interface/event_channel.h>
 #include <xen/grant_table.h>
 

@@ -120,7 +120,7 @@ address prefixes:
 
 .. code-block:: c
 
-    #include <linux/bpf.h>
+    #include <freax/bpf.h>
     #include <bpf/bpf_helpers.h>
 
     struct ipv4_lpm_key {

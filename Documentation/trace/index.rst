@@ -1,5 +1,5 @@
 ==========================
-Linux Tracing Technologies
+freax Tracing Technologies
 ==========================
 
 .. toctree::

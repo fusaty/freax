@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
-#include <uapi/linux/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
+#include <freax/string.h>
+#include <freax/zalloc.h>
+#include <uapi/freax/mman.h> /* To get things like MAP_HUGETLB even on older libc headers */
 #include "debug.h"
 #include "dso.h"
 #include "map.h"
@@ -215,7 +215,7 @@ out_delete:
 
 /*
  * Constructor variant for modules (where we know from /proc/modules where
- * they are loaded) and for vmlinux, where only after we load all the
+ * they are loaded) and for vmfreax, where only after we load all the
  * symbols we'll know where it starts and ends.
  */
 struct map *map__new2(u64 start, struct dso *dso)
@@ -532,7 +532,7 @@ u64 map__rip_2objdump(struct map *map, u64 rip)
 	const struct dso *dso = map__dso(map);
 
 	/*
-	 * vmlinux does not have program headers for PTI entry trampolines and
+	 * vmfreax does not have program headers for PTI entry trampolines and
 	 * kcore may not either. However the trampoline object code is on the
 	 * main kernel map, so just use that instead.
 	 */

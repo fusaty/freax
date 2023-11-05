@@ -1,8 +1,8 @@
-#ifndef _TOOLS_LINUX_RING_BUFFER_H_
-#define _TOOLS_LINUX_RING_BUFFER_H_
+#ifndef _TOOLS_freax_RING_BUFFER_H_
+#define _TOOLS_freax_RING_BUFFER_H_
 
 #include <asm/barrier.h>
-#include <linux/perf_event.h>
+#include <freax/perf_event.h>
 
 /*
  * Contract with kernel for walking the perf ring buffer from
@@ -71,4 +71,4 @@ static inline void ring_buffer_write_tail(struct perf_event_mmap_page *base,
 	smp_store_release(&base->data_tail, tail);
 }
 
-#endif /* _TOOLS_LINUX_RING_BUFFER_H_ */
+#endif /* _TOOLS_freax_RING_BUFFER_H_ */

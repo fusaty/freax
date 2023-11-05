@@ -3,8 +3,8 @@
  * Copyright (c) 2018, Sensor-Technik Wiedemann GmbH
  * Copyright (c) 2018-2019, Vladimir Oltean <olteanv@gmail.com>
  */
-#include <linux/spi/spi.h>
-#include <linux/packing.h>
+#include <freax/spi/spi.h>
+#include <freax/packing.h>
 #include "sja1105.h"
 
 struct sja1105_chunk {

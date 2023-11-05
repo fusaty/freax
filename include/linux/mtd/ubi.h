@@ -5,12 +5,12 @@
  * Author: Artem Bityutskiy (Битюцкий Артём)
  */
 
-#ifndef __LINUX_UBI_H__
-#define __LINUX_UBI_H__
+#ifndef __freax_UBI_H__
+#define __freax_UBI_H__
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
-#include <linux/scatterlist.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
+#include <freax/scatterlist.h>
 #include <mtd/ubi-user.h>
 
 /* All voumes/LEBs */
@@ -269,4 +269,4 @@ static inline int ubi_read_sg(struct ubi_volume_desc *desc, int lnum,
 {
 	return ubi_leb_read_sg(desc, lnum, sgl, offset, len, 0);
 }
-#endif /* !__LINUX_UBI_H__ */
+#endif /* !__freax_UBI_H__ */

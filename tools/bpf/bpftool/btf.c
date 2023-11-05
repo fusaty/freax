@@ -3,12 +3,12 @@
 
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/err.h>
+#include <freax/err.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include <linux/btf.h>
+#include <freax/btf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 
@@ -470,8 +470,8 @@ static int dump_btf_c(const struct btf *btf,
 	if (!d)
 		return -errno;
 
-	printf("#ifndef __VMLINUX_H__\n");
-	printf("#define __VMLINUX_H__\n");
+	printf("#ifndef __VMfreax_H__\n");
+	printf("#define __VMfreax_H__\n");
 	printf("\n");
 	printf("#ifndef BPF_NO_PRESERVE_ACCESS_INDEX\n");
 	printf("#pragma clang attribute push (__attribute__((preserve_access_index)), apply_to = record)\n");
@@ -497,23 +497,23 @@ static int dump_btf_c(const struct btf *btf,
 	printf("#pragma clang attribute pop\n");
 	printf("#endif\n");
 	printf("\n");
-	printf("#endif /* __VMLINUX_H__ */\n");
+	printf("#endif /* __VMfreax_H__ */\n");
 
 done:
 	btf_dump__free(d);
 	return err;
 }
 
-static const char sysfs_vmlinux[] = "/sys/kernel/btf/vmlinux";
+static const char sysfs_vmfreax[] = "/sys/kernel/btf/vmfreax";
 
-static struct btf *get_vmlinux_btf_from_sysfs(void)
+static struct btf *get_vmfreax_btf_from_sysfs(void)
 {
 	struct btf *base;
 
-	base = btf__parse(sysfs_vmlinux, NULL);
+	base = btf__parse(sysfs_vmfreax, NULL);
 	if (!base)
-		p_err("failed to parse vmlinux BTF at '%s': %d\n",
-		      sysfs_vmlinux, -errno);
+		p_err("failed to parse vmfreax BTF at '%s': %d\n",
+		      sysfs_vmfreax, -errno);
 
 	return base;
 }
@@ -544,7 +544,7 @@ static bool btf_is_kernel_module(__u32 btf_id)
 		return false;
 	}
 
-	return btf_info.kernel_btf && strncmp(btf_name, "vmlinux", sizeof(btf_name)) != 0;
+	return btf_info.kernel_btf && strncmp(btf_name, "vmfreax", sizeof(btf_name)) != 0;
 }
 
 static int do_dump(int argc, char **argv)
@@ -627,8 +627,8 @@ static int do_dump(int argc, char **argv)
 
 		if (!base_btf &&
 		    strncmp(*argv, sysfs_prefix, sizeof(sysfs_prefix) - 1) == 0 &&
-		    strcmp(*argv, sysfs_vmlinux) != 0)
-			base = get_vmlinux_btf_from_sysfs();
+		    strcmp(*argv, sysfs_vmfreax) != 0)
+			base = get_vmfreax_btf_from_sysfs();
 
 		btf = btf__parse_split(*argv, base ?: base_btf);
 		if (!btf) {
@@ -673,8 +673,8 @@ static int do_dump(int argc, char **argv)
 	if (!btf) {
 		if (!base_btf && btf_is_kernel_module(btf_id)) {
 			p_info("Warning: valid base BTF was not specified with -B option, falling back to standard base BTF (%s)",
-			       sysfs_vmlinux);
-			base_btf = get_vmlinux_btf_from_sysfs();
+			       sysfs_vmfreax);
+			base_btf = get_vmfreax_btf_from_sysfs();
 		}
 
 		btf = btf__load_from_kernel_by_id_split(btf_id, base_btf);

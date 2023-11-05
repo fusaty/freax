@@ -8,7 +8,7 @@
 #include <string.h>
 #include <inttypes.h>
 
-#include <linux/string.h>
+#include <freax/string.h>
 #include "../../arch/x86/include/asm/amd-ibs.h"
 
 #include "debug.h"

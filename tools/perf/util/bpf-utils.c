@@ -6,8 +6,8 @@
 
 #include <errno.h>
 #include <stdlib.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
 #include <bpf/bpf.h>
 #include "bpf-utils.h"
 #include "debug.h"

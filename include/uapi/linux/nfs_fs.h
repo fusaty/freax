@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- *  linux/include/linux/nfs_fs.h
+ *  freax/include/freax/nfs_fs.h
  *
  *  Copyright (C) 1992  Rick Sladkey
  *
  *  OS-specific nfs filesystem definitions and declarations
  */
 
-#ifndef _UAPI_LINUX_NFS_FS_H
-#define _UAPI_LINUX_NFS_FS_H
+#ifndef _UAPI_freax_NFS_FS_H
+#define _UAPI_freax_NFS_FS_H
 
-#include <linux/magic.h>
+#include <freax/magic.h>
 
 /* Default timeout values */
 #define NFS_DEF_UDP_TIMEO	(11)
@@ -60,4 +60,4 @@
 #define NFSDBG_ALL		0xFFFF
 
 
-#endif /* _UAPI_LINUX_NFS_FS_H */
+#endif /* _UAPI_freax_NFS_FS_H */

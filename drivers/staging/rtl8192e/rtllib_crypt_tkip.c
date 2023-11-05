@@ -7,18 +7,18 @@
 
 #include <crypto/arc4.h>
 #include <crypto/hash.h>
-#include <linux/fips.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/string.h>
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
+#include <freax/fips.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/random.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/if_ether.h>
+#include <freax/if_arp.h>
+#include <freax/string.h>
+#include <freax/crc32.h>
+#include <freax/etherdevice.h>
 
 #include "rtllib.h"
 

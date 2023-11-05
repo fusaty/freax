@@ -5,10 +5,10 @@
  */
 #ifdef CONFIG_DEBUG_FS
 
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
+#include <freax/uaccess.h>
+#include <freax/debugfs.h>
+#include <freax/module.h>
+#include <freax/vmalloc.h>
 
 #include "qedf.h"
 #include "qedf_dbg.h"

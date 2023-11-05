@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- freax-c -*- ------------------------------------------------------- *
  *
  *   Copyright (C) 1991, 1992 Linus Torvalds
  *   Copyright 2007 rPath, Inc. - All Rights Reserved
@@ -21,7 +21,7 @@
 #ifdef _SETUP
 # include "boot.h"
 #endif
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/intel-family.h>
 #include <asm/processor-flags.h>
 #include <asm/required-features.h>

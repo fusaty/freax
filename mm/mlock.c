@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/mm/mlock.c
+ *	freax/mm/mlock.c
  *
  *  (C) Copyright 1995 Linus Torvalds
  *  (C) Copyright 2002 Christoph Hellwig
  */
 
-#include <linux/capability.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/sched/user.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/pagewalk.h>
-#include <linux/mempolicy.h>
-#include <linux/syscalls.h>
-#include <linux/sched.h>
-#include <linux/export.h>
-#include <linux/rmap.h>
-#include <linux/mmzone.h>
-#include <linux/hugetlb.h>
-#include <linux/memcontrol.h>
-#include <linux/mm_inline.h>
-#include <linux/secretmem.h>
+#include <freax/capability.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/sched/user.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/pagemap.h>
+#include <freax/pagevec.h>
+#include <freax/pagewalk.h>
+#include <freax/mempolicy.h>
+#include <freax/syscalls.h>
+#include <freax/sched.h>
+#include <freax/export.h>
+#include <freax/rmap.h>
+#include <freax/mmzone.h>
+#include <freax/hugetlb.h>
+#include <freax/memcontrol.h>
+#include <freax/mm_inline.h>
+#include <freax/secretmem.h>
 
 #include "internal.h"
 

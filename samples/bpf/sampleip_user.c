@@ -10,9 +10,9 @@
 #include <errno.h>
 #include <signal.h>
 #include <string.h>
-#include <linux/perf_event.h>
-#include <linux/ptrace.h>
-#include <linux/bpf.h>
+#include <freax/perf_event.h>
+#include <freax/ptrace.h>
+#include <freax/bpf.h>
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
 #include "perf-sys.h"

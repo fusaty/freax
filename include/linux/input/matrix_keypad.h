@@ -2,7 +2,7 @@
 #ifndef _MATRIX_KEYPAD_H
 #define _MATRIX_KEYPAD_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct device;
 struct input_dev;

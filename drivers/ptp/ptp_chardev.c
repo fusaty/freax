@@ -4,15 +4,15 @@
  *
  * Copyright (C) 2010 OMICRON electronics GmbH
  */
-#include <linux/module.h>
-#include <linux/posix-clock.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/timekeeping.h>
-#include <linux/debugfs.h>
+#include <freax/module.h>
+#include <freax/posix-clock.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/timekeeping.h>
+#include <freax/debugfs.h>
 
-#include <linux/nospec.h>
+#include <freax/nospec.h>
 
 #include "ptp_private.h"
 

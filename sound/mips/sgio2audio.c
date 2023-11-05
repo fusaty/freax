@@ -2,21 +2,21 @@
 /*
  *   Sound driver for Silicon Graphics O2 Workstations A/V board audio.
  *
- *   Copyright 2003 Vivien Chappelier <vivien.chappelier@linux-mips.org>
+ *   Copyright 2003 Vivien Chappelier <vivien.chappelier@freax-mips.org>
  *   Copyright 2008 Thomas Bogendoerfer <tsbogend@alpha.franken.de>
  *   Mxier part taken from mace_audio.c:
  *   Copyright 2007 Thorben Jändling <tj.trevelyan@gmail.com>
  */
 
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 #include <asm/ip32/ip32_ints.h>
 #include <asm/ip32/mace.h>
@@ -29,7 +29,7 @@
 #include <sound/ad1843.h>
 
 
-MODULE_AUTHOR("Vivien Chappelier <vivien.chappelier@linux-mips.org>");
+MODULE_AUTHOR("Vivien Chappelier <vivien.chappelier@freax-mips.org>");
 MODULE_DESCRIPTION("SGI O2 Audio");
 MODULE_LICENSE("GPL");
 

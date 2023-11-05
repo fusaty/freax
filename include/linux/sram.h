@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /* Generic SRAM Driver Interface */
-#ifndef __LINUX_SRAM_H__
-#define __LINUX_SRAM_H__
+#ifndef __freax_SRAM_H__
+#define __freax_SRAM_H__
 
 struct gen_pool;
 
@@ -14,4 +14,4 @@ static inline void *sram_exec_copy(struct gen_pool *pool, void *dst, void *src,
 	return NULL;
 }
 #endif /* CONFIG_SRAM_EXEC */
-#endif /* __LINUX_SRAM_H__ */
+#endif /* __freax_SRAM_H__ */

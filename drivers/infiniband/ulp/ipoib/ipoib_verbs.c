@@ -31,7 +31,7 @@
  * SOFTWARE.
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 #include "ipoib.h"
 

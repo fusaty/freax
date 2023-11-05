@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2006-2008 Intel Corporation
- * Copyright (c) 2007 Dave Airlie <airlied@linux.ie>
+ * Copyright (c) 2007 Dave Airlie <airlied@freax.ie>
  *
  * DRM core CRTC related functions
  *
@@ -25,14 +25,14 @@
  * Authors:
  *      Keith Packard
  *	Eric Anholt <eric@anholt.net>
- *      Dave Airlie <airlied@linux.ie>
+ *      Dave Airlie <airlied@freax.ie>
  *      Jesse Barnes <jesse.barnes@intel.com>
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/dynamic_debug.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/moduleparam.h>
+#include <freax/dynamic_debug.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

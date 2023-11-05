@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_encoder_slave.h>

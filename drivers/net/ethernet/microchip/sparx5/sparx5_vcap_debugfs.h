@@ -7,7 +7,7 @@
 #ifndef __SPARX5_VCAP_DEBUGFS_H__
 #define __SPARX5_VCAP_DEBUGFS_H__
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 #include <vcap_api.h>
 #include <vcap_api_client.h>

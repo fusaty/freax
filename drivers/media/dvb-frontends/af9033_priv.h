@@ -11,10 +11,10 @@
 
 #include <media/dvb_frontend.h>
 #include "af9033.h"
-#include <linux/math64.h>
-#include <linux/regmap.h>
-#include <linux/kernel.h>
-#include <linux/int_log.h>
+#include <freax/math64.h>
+#include <freax/regmap.h>
+#include <freax/kernel.h>
+#include <freax/int_log.h>
 
 struct reg_val {
 	u32 reg;

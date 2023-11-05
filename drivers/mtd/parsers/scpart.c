@@ -6,11 +6,11 @@
  *    Copyright (C) 2022 Mikhail Zhilkin
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/module.h>
 
 #define	MOD_NAME	"scpart"
 

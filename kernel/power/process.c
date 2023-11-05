@@ -6,19 +6,19 @@
  * Originally from swsusp.
  */
 
-#include <linux/interrupt.h>
-#include <linux/oom.h>
-#include <linux/suspend.h>
-#include <linux/module.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/syscalls.h>
-#include <linux/freezer.h>
-#include <linux/delay.h>
-#include <linux/workqueue.h>
-#include <linux/kmod.h>
+#include <freax/interrupt.h>
+#include <freax/oom.h>
+#include <freax/suspend.h>
+#include <freax/module.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/syscalls.h>
+#include <freax/freezer.h>
+#include <freax/delay.h>
+#include <freax/workqueue.h>
+#include <freax/kmod.h>
 #include <trace/events/power.h>
-#include <linux/cpuset.h>
+#include <freax/cpuset.h>
 
 /*
  * Timeout for stopping processes

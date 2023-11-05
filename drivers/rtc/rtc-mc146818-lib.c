@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/bcd.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/mc146818rtc.h>
+#include <freax/bcd.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/mc146818rtc.h>
 
 #ifdef CONFIG_ACPI
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 #endif
 
 /*

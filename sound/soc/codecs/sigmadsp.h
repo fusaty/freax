@@ -8,9 +8,9 @@
 #ifndef __SIGMA_FIRMWARE_H__
 #define __SIGMA_FIRMWARE_H__
 
-#include <linux/device.h>
-#include <linux/regmap.h>
-#include <linux/list.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
+#include <freax/list.h>
 
 #include <sound/pcm.h>
 

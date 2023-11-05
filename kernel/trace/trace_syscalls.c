@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <trace/syscall.h>
 #include <trace/events/syscalls.h>
-#include <linux/syscalls.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>	/* for MODULE_NAME_LEN via KSYM_SYMBOL_LEN */
-#include <linux/ftrace.h>
-#include <linux/perf_event.h>
-#include <linux/xarray.h>
+#include <freax/syscalls.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>	/* for MODULE_NAME_LEN via KSYM_SYMBOL_LEN */
+#include <freax/ftrace.h>
+#include <freax/perf_event.h>
+#include <freax/xarray.h>
 #include <asm/syscall.h>
 
 #include "trace_output.h"

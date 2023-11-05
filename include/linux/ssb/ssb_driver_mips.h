@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_SSB_MIPSCORE_H_
-#define LINUX_SSB_MIPSCORE_H_
+#ifndef freax_SSB_MIPSCORE_H_
+#define freax_SSB_MIPSCORE_H_
 
 #ifdef CONFIG_SSB_DRIVER_MIPS
 
@@ -68,4 +68,4 @@ static inline unsigned int ssb_mips_irq(struct ssb_device *dev)
 
 #endif /* CONFIG_SSB_DRIVER_MIPS */
 
-#endif /* LINUX_SSB_MIPSCORE_H_ */
+#endif /* freax_SSB_MIPSCORE_H_ */

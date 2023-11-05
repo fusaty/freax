@@ -5,11 +5,11 @@
  * Copyright (c) 2022 9elements GmbH
  */
 
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/pmbus.h>
-#include <linux/regulator/driver.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/pmbus.h>
+#include <freax/regulator/driver.h>
 #include "pmbus.h"
 
 /*

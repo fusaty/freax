@@ -3,7 +3,7 @@
  * pcmuio.c
  * Comedi driver for Winsystems PC-104 based 48/96-channel DIO boards.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2006 Calin A. Culianu <calin@ajvar.org>
  */
 
@@ -63,9 +63,9 @@
  *             can be the same as first irq!)
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/comedi/comedidev.h>
 
 /*
  * Register I/O map

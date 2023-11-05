@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include "ubifs.h"
 
 /* Normal UBIFS messages */

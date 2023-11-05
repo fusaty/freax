@@ -7,10 +7,10 @@
  * Note: Quantum tunneling is not supported.
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
 #include <net/pkt_sched.h>
 
 static int blackhole_enqueue(struct sk_buff *skb, struct Qdisc *sch,

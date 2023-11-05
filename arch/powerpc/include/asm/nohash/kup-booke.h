@@ -14,7 +14,7 @@
 
 #else
 
-#include <linux/sched.h>
+#include <freax/sched.h>
 
 #include <asm/reg.h>
 

@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/nfsd.yaml */
 /* YNL-GEN uapi header */
 
-#ifndef _UAPI_LINUX_NFSD_H
-#define _UAPI_LINUX_NFSD_H
+#ifndef _UAPI_freax_NFSD_H
+#define _UAPI_freax_NFSD_H
 
 #define NFSD_FAMILY_NAME	"nfsd"
 #define NFSD_FAMILY_VERSION	1
@@ -36,4 +36,4 @@ enum {
 	NFSD_CMD_MAX = (__NFSD_CMD_MAX - 1)
 };
 
-#endif /* _UAPI_LINUX_NFSD_H */
+#endif /* _UAPI_freax_NFSD_H */

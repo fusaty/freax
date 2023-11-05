@@ -5,15 +5,15 @@
 #if !defined(_TRACE_GFS2_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_GFS2_H
 
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 
-#include <linux/fs.h>
-#include <linux/buffer_head.h>
-#include <linux/dlmconstants.h>
-#include <linux/gfs2_ondisk.h>
-#include <linux/writeback.h>
-#include <linux/ktime.h>
-#include <linux/iomap.h>
+#include <freax/fs.h>
+#include <freax/buffer_head.h>
+#include <freax/dlmconstants.h>
+#include <freax/gfs2_ondisk.h>
+#include <freax/writeback.h>
+#include <freax/ktime.h>
+#include <freax/iomap.h>
 #include "incore.h"
 #include "glock.h"
 #include "rgrp.h"

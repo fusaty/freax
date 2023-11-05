@@ -3,10 +3,10 @@
  * Copyright(c) 2015 - 2020 Intel Corporation.
  */
 
-#include <linux/topology.h>
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/numa.h>
+#include <freax/topology.h>
+#include <freax/cpumask.h>
+#include <freax/interrupt.h>
+#include <freax/numa.h>
 
 #include "hfi.h"
 #include "affinity.h"

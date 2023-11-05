@@ -4,20 +4,20 @@
 //
 // Copyright (C) 2015 Freescale Semiconductor, Inc.
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/gpio/consumer.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/log2.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/gpio/consumer.h>
+#include <freax/input.h>
+#include <freax/slab.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/log2.h>
 
 /* ADC configuration registers field define */
 #define ADC_AIEN		(0x1 << 7)

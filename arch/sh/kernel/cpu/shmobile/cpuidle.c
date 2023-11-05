@@ -6,14 +6,14 @@
  *
  *  Copyright (C) 2009 Magnus Damm
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/suspend.h>
-#include <linux/cpuidle.h>
-#include <linux/export.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/suspend.h>
+#include <freax/cpuidle.h>
+#include <freax/export.h>
 #include <asm/suspend.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 static unsigned long cpuidle_mode[] = {
 	SUSP_SH_SLEEP, /* regular sleep mode */

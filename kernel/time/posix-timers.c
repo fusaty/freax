@@ -9,28 +9,28 @@
  *
  * These are all the functions necessary to implement POSIX clocks & timers
  */
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/mutex.h>
-#include <linux/sched/task.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/mutex.h>
+#include <freax/sched/task.h>
 
-#include <linux/uaccess.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/compiler.h>
-#include <linux/hash.h>
-#include <linux/posix-clock.h>
-#include <linux/posix-timers.h>
-#include <linux/syscalls.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
-#include <linux/hashtable.h>
-#include <linux/compat.h>
-#include <linux/nospec.h>
-#include <linux/time_namespace.h>
+#include <freax/uaccess.h>
+#include <freax/list.h>
+#include <freax/init.h>
+#include <freax/compiler.h>
+#include <freax/hash.h>
+#include <freax/posix-clock.h>
+#include <freax/posix-timers.h>
+#include <freax/syscalls.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
+#include <freax/export.h>
+#include <freax/hashtable.h>
+#include <freax/compat.h>
+#include <freax/nospec.h>
+#include <freax/time_namespace.h>
 
 #include "timekeeping.h"
 #include "posix-timers.h"

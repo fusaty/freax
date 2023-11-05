@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_NSPROXY_H
-#define _LINUX_NSPROXY_H
+#ifndef _freax_NSPROXY_H
+#define _freax_NSPROXY_H
 
-#include <linux/spinlock.h>
-#include <linux/sched.h>
+#include <freax/spinlock.h>
+#include <freax/sched.h>
 
 struct mnt_namespace;
 struct uts_namespace;

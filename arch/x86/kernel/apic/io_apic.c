@@ -31,24 +31,24 @@
  *	workaround has been removed.
  */
 
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/pci.h>
-#include <linux/mc146818rtc.h>
-#include <linux/compiler.h>
-#include <linux/acpi.h>
-#include <linux/export.h>
-#include <linux/syscore_ops.h>
-#include <linux/freezer.h>
-#include <linux/kthread.h>
-#include <linux/jiffies.h>	/* time_after() */
-#include <linux/slab.h>
-#include <linux/memblock.h>
-#include <linux/msi.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/pci.h>
+#include <freax/mc146818rtc.h>
+#include <freax/compiler.h>
+#include <freax/acpi.h>
+#include <freax/export.h>
+#include <freax/syscore_ops.h>
+#include <freax/freezer.h>
+#include <freax/kthread.h>
+#include <freax/jiffies.h>	/* time_after() */
+#include <freax/slab.h>
+#include <freax/memblock.h>
+#include <freax/msi.h>
 
 #include <asm/irqdomain.h>
 #include <asm/io.h>

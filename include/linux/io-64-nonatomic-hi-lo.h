@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IO_64_NONATOMIC_HI_LO_H_
-#define _LINUX_IO_64_NONATOMIC_HI_LO_H_
+#ifndef _freax_IO_64_NONATOMIC_HI_LO_H_
+#define _freax_IO_64_NONATOMIC_HI_LO_H_
 
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm-generic/int-ll64.h>
 
 static inline __u64 hi_lo_readq(const volatile void __iomem *addr)
@@ -119,4 +119,4 @@ static inline void iowrite64be_hi_lo(u64 val, void __iomem *addr)
 #define iowrite64be iowrite64be_hi_lo
 #endif
 
-#endif	/* _LINUX_IO_64_NONATOMIC_HI_LO_H_ */
+#endif	/* _freax_IO_64_NONATOMIC_HI_LO_H_ */

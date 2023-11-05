@@ -3,11 +3,11 @@
  *
  * Copyright (C) 2008 David S. Miller <davem@davemloft.net>
  */
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/export.h>
-#include <linux/pm.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/reboot.h>
+#include <freax/export.h>
+#include <freax/pm.h>
+#include <freax/of.h>
 
 #include <asm/oplib.h>
 #include <asm/prom.h>

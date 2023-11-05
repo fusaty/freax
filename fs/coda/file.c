@@ -2,32 +2,32 @@
 /*
  * File operations for Coda.
  * Original version: (C) 1996 Peter Braam 
- * Rewritten for Linux 2.1: (C) 1997 Carnegie Mellon University
+ * Rewritten for freax 2.1: (C) 1997 Carnegie Mellon University
  *
  * Carnegie Mellon encourages users of this code to contribute improvements
  * to the Coda project. Contact Peter Braam <coda@cs.cmu.edu>.
  */
 
-#include <linux/refcount.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/stat.h>
-#include <linux/cred.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/uio.h>
-#include <linux/splice.h>
+#include <freax/refcount.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/time.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/pagemap.h>
+#include <freax/stat.h>
+#include <freax/cred.h>
+#include <freax/errno.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/uio.h>
+#include <freax/splice.h>
 
-#include <linux/coda.h>
+#include <freax/coda.h>
 #include "coda_psdev.h"
-#include "coda_linux.h"
+#include "coda_freax.h"
 #include "coda_int.h"
 
 struct coda_vm_ops {

@@ -12,17 +12,17 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/platform_device.h>
-#include <linux/rwsem.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
+#include <freax/platform_device.h>
+#include <freax/rwsem.h>
 
-#include <linux/surface_aggregator/controller.h>
-#include <linux/surface_acpi_notify.h>
+#include <freax/surface_aggregator/controller.h>
+#include <freax/surface_acpi_notify.h>
 
 struct san_data {
 	struct device *dev;

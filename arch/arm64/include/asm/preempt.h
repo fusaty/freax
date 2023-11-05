@@ -2,8 +2,8 @@
 #ifndef __ASM_PREEMPT_H
 #define __ASM_PREEMPT_H
 
-#include <linux/jump_label.h>
-#include <linux/thread_info.h>
+#include <freax/jump_label.h>
+#include <freax/thread_info.h>
 
 #define PREEMPT_NEED_RESCHED	BIT(32)
 #define PREEMPT_ENABLED	(PREEMPT_NEED_RESCHED)

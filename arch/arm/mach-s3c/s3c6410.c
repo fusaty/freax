@@ -3,25 +3,25 @@
 // Copyright 2008 Simtec Electronics
 // Copyright 2008 Simtec Electronics
 //	Ben Dooks <ben@simtec.co.uk>
-//	http://armlinux.simtec.co.uk/
+//	http://armfreax.simtec.co.uk/
 
 /*
  * NOTE: Code in this file is not used when booting with Device Tree support.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/timer.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/device.h>
-#include <linux/serial_core.h>
-#include <linux/serial_s3c.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/timer.h>
+#include <freax/init.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/device.h>
+#include <freax/serial_core.h>
+#include <freax/serial_s3c.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
@@ -29,7 +29,7 @@
 
 #include <asm/irq.h>
 
-#include <linux/soc/samsung/s3c-pm.h>
+#include <freax/soc/samsung/s3c-pm.h>
 #include "regs-clock.h"
 
 #include "cpu.h"

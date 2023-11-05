@@ -3,7 +3,7 @@
 #ifndef __DSA_PORT_H
 #define __DSA_PORT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <net/dsa.h>
 
 struct ifreq;

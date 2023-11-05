@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/irq.c
+ * freax/arch/arm/mach-omap1/irq.c
  *
  * Interrupt handler for all OMAP boards
  *
@@ -35,13 +35,13 @@
  * with this program; if not, write  to the Free Software Foundation, Inc.,
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irqdomain.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irqdomain.h>
 
 #include <asm/irq.h>
 #include <asm/exception.h>
@@ -94,7 +94,7 @@ static void omap_mask_ack_irq(struct irq_data *d)
 /*
  * Allows tuning the IRQ type and priority
  *
- * NOTE: There is currently no OMAP fiq handler for Linux. Read the
+ * NOTE: There is currently no OMAP fiq handler for freax. Read the
  *	 mailing list threads on FIQ handlers if you are planning to
  *	 add a FIQ handler for OMAP.
  */

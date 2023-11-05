@@ -7,7 +7,7 @@
 #ifndef __MTK_ADSP_HELPER_H__
 #define __MTK_ADSP_HELPER_H__
 
-#include <linux/firmware/mediatek/mtk-adsp-ipc.h>
+#include <freax/firmware/mediatek/mtk-adsp-ipc.h>
 
 /*
  * Global important adsp data structure.

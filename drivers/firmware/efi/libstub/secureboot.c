@@ -7,7 +7,7 @@
  * Copyright (C) 2013 Red Hat, Inc.
  *     Mark Salter <msalter@redhat.com>
  */
-#include <linux/efi.h>
+#include <freax/efi.h>
 #include <asm/efi.h>
 
 #include "efistub.h"

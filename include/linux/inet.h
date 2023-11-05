@@ -7,7 +7,7 @@
  * 		Fred N. van Kempen, <waltje@uWalt.NL.Mugnet.ORG>
  *
  *		This work was derived from Ross Biro's inspirational work
- *		for the LINUX operating system.  His version numbers were:
+ *		for the freax operating system.  His version numbers were:
  *
  *		$Id: Space.c,v     0.8.4.5  1992/12/12 19:25:04 bir7 Exp $
  *		$Id: arp.c,v       0.8.4.6  1993/01/28 22:30:00 bir7 Exp $
@@ -35,12 +35,12 @@
  *		$Id: we.c,v        0.8.4.10 1993/01/23 18:00:11 bir7 Exp $
  *		$Id: wereg.h,v     0.8.4.1  1992/11/10 00:17:18 bir7 Exp $
  */
-#ifndef _LINUX_INET_H
-#define _LINUX_INET_H
+#ifndef _freax_INET_H
+#define _freax_INET_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <net/net_namespace.h>
-#include <linux/socket.h>
+#include <freax/socket.h>
 
 /*
  * These mimic similar macros defined in user-space for inet_ntop(3).
@@ -57,4 +57,4 @@ extern int inet_pton_with_scope(struct net *net, unsigned short af,
 		const char *src, const char *port, struct sockaddr_storage *addr);
 extern bool inet_addr_is_any(struct sockaddr *addr);
 
-#endif	/* _LINUX_INET_H */
+#endif	/* _freax_INET_H */

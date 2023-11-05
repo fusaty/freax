@@ -5,12 +5,12 @@
  * Author: Anil S Keshavamurthy <anil.s.keshavamurthy@intel.com>
  */
 
-#include <linux/iova.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/bitops.h>
-#include <linux/cpu.h>
+#include <freax/iova.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/smp.h>
+#include <freax/bitops.h>
+#include <freax/cpu.h>
 
 /* The anchor node sits above the top of the usable address space */
 #define IOVA_ANCHOR	~0UL

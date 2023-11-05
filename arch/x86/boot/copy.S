@@ -6,7 +6,7 @@
  *
  * ----------------------------------------------------------------------- */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 /*
  * Memory copy routines

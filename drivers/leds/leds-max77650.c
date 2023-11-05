@@ -5,12 +5,12 @@
 //
 // LED driver for MAXIM 77650/77651 charger/power-supply.
 
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/mfd/max77650.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/leds.h>
+#include <freax/mfd/max77650.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define MAX77650_LED_NUM_LEDS		3
 

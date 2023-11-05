@@ -2,31 +2,31 @@
 /* By Ross Biro 1/23/92 */
 /*
  * Pentium III FXSR, SSE support
- *	Gareth Hughes <gareth@valinux.com>, May 2000
+ *	Gareth Hughes <gareth@vafreax.com>, May 2000
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/elf.h>
-#include <linux/security.h>
-#include <linux/audit.h>
-#include <linux/seccomp.h>
-#include <linux/signal.h>
-#include <linux/perf_event.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/rcupdate.h>
-#include <linux/export.h>
-#include <linux/context_tracking.h>
-#include <linux/nospec.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/ptrace.h>
+#include <freax/user.h>
+#include <freax/elf.h>
+#include <freax/security.h>
+#include <freax/audit.h>
+#include <freax/seccomp.h>
+#include <freax/signal.h>
+#include <freax/perf_event.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/rcupdate.h>
+#include <freax/export.h>
+#include <freax/context_tracking.h>
+#include <freax/nospec.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/processor.h>
 #include <asm/fpu/signal.h>
 #include <asm/fpu/regset.h>
@@ -854,8 +854,8 @@ long arch_ptrace(struct task_struct *child, long request,
 
 #ifdef CONFIG_IA32_EMULATION
 
-#include <linux/compat.h>
-#include <linux/syscalls.h>
+#include <freax/compat.h>
+#include <freax/syscalls.h>
 #include <asm/ia32.h>
 #include <asm/user32.h>
 

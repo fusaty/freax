@@ -2,8 +2,8 @@
 #ifndef _X86_MICROCODE_INTERNAL_H
 #define _X86_MICROCODE_INTERNAL_H
 
-#include <linux/earlycpio.h>
-#include <linux/initrd.h>
+#include <freax/earlycpio.h>
+#include <freax/initrd.h>
 
 #include <asm/cpu.h>
 #include <asm/microcode.h>

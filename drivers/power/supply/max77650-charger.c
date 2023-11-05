@@ -5,13 +5,13 @@
 //
 // Battery charger driver for MAXIM 77650/77651 charger/power-supply.
 
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/max77650.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/max77650.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
 
 #define MAX77650_CHARGER_ENABLED		BIT(0)
 #define MAX77650_CHARGER_DISABLED		0x00

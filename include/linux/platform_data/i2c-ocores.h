@@ -5,8 +5,8 @@
  * Peter Korsgaard <peter@korsgaard.com>
  */
 
-#ifndef _LINUX_I2C_OCORES_H
-#define _LINUX_I2C_OCORES_H
+#ifndef _freax_I2C_OCORES_H
+#define _freax_I2C_OCORES_H
 
 struct ocores_i2c_platform_data {
 	u32 reg_shift; /* register offset shift value */
@@ -18,4 +18,4 @@ struct ocores_i2c_platform_data {
 	struct i2c_board_info const *devices; /* devices connected to the bus */
 };
 
-#endif /* _LINUX_I2C_OCORES_H */
+#endif /* _freax_I2C_OCORES_H */

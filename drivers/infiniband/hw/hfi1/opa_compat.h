@@ -3,11 +3,11 @@
  * Copyright(c) 2015, 2016 Intel Corporation.
  */
 
-#ifndef _LINUX_H
-#define _LINUX_H
+#ifndef _freax_H
+#define _freax_H
 /*
  * This header file is for OPA-specific definitions which are
- * required by the HFI driver, and which aren't yet in the Linux
+ * required by the HFI driver, and which aren't yet in the freax
  * IB core. We'll collect these all here, then merge them into
  * the kernel when that's convenient.
  */
@@ -83,4 +83,4 @@ enum opa_port_phys_state {
 	/* values 12-15 are reserved/ignored */
 };
 
-#endif /* _LINUX_H */
+#endif /* _freax_H */

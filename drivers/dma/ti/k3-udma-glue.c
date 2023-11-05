@@ -6,17 +6,17 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/atomic.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/soc/ti/k3-ringacc.h>
-#include <linux/dma/ti-cppi5.h>
-#include <linux/dma/k3-udma-glue.h>
+#include <freax/module.h>
+#include <freax/atomic.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/soc/ti/k3-ringacc.h>
+#include <freax/dma/ti-cppi5.h>
+#include <freax/dma/k3-udma-glue.h>
 
 #include "k3-udma.h"
 #include "k3-psil-priv.h"
@@ -1015,7 +1015,7 @@ k3_udma_glue_request_remote_rx_chn(struct device *dev, const char *name,
 
 	/*
 	 * Remote RX channel is under control of Remote CPU core, so
-	 * Linux can only request and manipulate by dedicated RX flows
+	 * freax can only request and manipulate by dedicated RX flows
 	 */
 
 	rx_chn = devm_kzalloc(dev, sizeof(*rx_chn), GFP_KERNEL);

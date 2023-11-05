@@ -4,35 +4,35 @@
  *
  * Copyright (C) 2005-2007 Atmel Corporation
  */
-#include <linux/clk.h>
-#include <linux/clk/at91_pmc.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/list.h>
-#include <linux/mfd/syscon.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/ctype.h>
-#include <linux/usb.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/irq.h>
-#include <linux/gpio/consumer.h>
+#include <freax/clk.h>
+#include <freax/clk/at91_pmc.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/list.h>
+#include <freax/mfd/syscon.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/ctype.h>
+#include <freax/usb.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/irq.h>
+#include <freax/gpio/consumer.h>
 
 #include "atmel_usba_udc.h"
 #define USBA_VBUS_IRQFLAGS (IRQF_ONESHOT \
 			   | IRQF_TRIGGER_FALLING | IRQF_TRIGGER_RISING)
 
 #ifdef CONFIG_USB_GADGET_DEBUG_FS
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
+#include <freax/debugfs.h>
+#include <freax/uaccess.h>
 
 static int queue_dbg_open(struct inode *inode, struct file *file)
 {

@@ -6,16 +6,16 @@
  *  Copyright (C) 2002 by Ron Minnich <rminnich@lanl.gov>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/file.h>
-#include <linux/pagemap.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/namei.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/file.h>
+#include <freax/pagemap.h>
+#include <freax/stat.h>
+#include <freax/string.h>
+#include <freax/namei.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
 #include <net/9p/9p.h>
 #include <net/9p/client.h>
 

@@ -7,31 +7,31 @@
  * Based upon code written by Ross Biro, Linus Torvalds, Bob Manson,
  * and David Mosberger.
  *
- * Added Linux support -miguel (weird, eh?, the original code was meant
+ * Added freax support -miguel (weird, eh?, the original code was meant
  * to emulate SunOS).
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/smp.h>
-#include <linux/security.h>
-#include <linux/seccomp.h>
-#include <linux/audit.h>
-#include <linux/signal.h>
-#include <linux/regset.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/mm.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/ptrace.h>
+#include <freax/user.h>
+#include <freax/smp.h>
+#include <freax/security.h>
+#include <freax/seccomp.h>
+#include <freax/audit.h>
+#include <freax/signal.h>
+#include <freax/regset.h>
 #include <trace/syscall.h>
-#include <linux/compat.h>
-#include <linux/elf.h>
-#include <linux/context_tracking.h>
+#include <freax/compat.h>
+#include <freax/elf.h>
+#include <freax/context_tracking.h>
 
 #include <asm/asi.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/psrcompat.h>
 #include <asm/visasm.h>
 #include <asm/spitfire.h>

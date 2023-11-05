@@ -76,7 +76,7 @@
 
 		button-reset {
 			label = "Factory Reset Button";
-			linux,code = <KEY_SETUP>;
+			freax,code = <KEY_SETUP>;
 			gpios = <&gpio1 1 GPIO_ACTIVE_LOW>;
 		};
 	};

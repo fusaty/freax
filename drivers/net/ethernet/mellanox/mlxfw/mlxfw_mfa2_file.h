@@ -4,8 +4,8 @@
 #ifndef _MLXFW_MFA2_FILE_H
 #define _MLXFW_MFA2_FILE_H
 
-#include <linux/firmware.h>
-#include <linux/kernel.h>
+#include <freax/firmware.h>
+#include <freax/kernel.h>
 
 struct mlxfw_mfa2_file {
 	const struct firmware *fw;

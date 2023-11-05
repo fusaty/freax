@@ -140,9 +140,9 @@
  *   to Off and power-cycling the device
  */
 
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/moduleparam.h>
 
 #include <sound/control.h>
 #include <sound/tlv.h>

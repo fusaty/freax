@@ -6,7 +6,7 @@
 #ifndef _INTEL_PCH_DISPLAY_H_
 #define _INTEL_PCH_DISPLAY_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum pipe;
 struct drm_i915_private;

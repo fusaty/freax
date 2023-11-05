@@ -136,7 +136,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/add_random
 Date:		June 2010
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] This file allows to turn off the disk entropy contribution.
 		Default value of this file is '1'(on).
@@ -157,7 +157,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/crypto/
 Date:		February 2022
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		The presence of this subdirectory of /sys/block/<disk>/queue/
 		indicates that the device supports inline encryption.  This
@@ -168,7 +168,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/crypto/max_dun_bits
 Date:		February 2022
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] This file shows the maximum length, in bits, of data unit
 		numbers accepted by the device in inline encryption requests.
@@ -176,7 +176,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/crypto/modes/<mode>
 Date:		February 2022
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] For each crypto mode (i.e., encryption/decryption
 		algorithm) the device supports with inline encryption, a file
@@ -198,7 +198,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/crypto/num_keyslots
 Date:		February 2022
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] This file shows the number of keyslots the device has for
 		use with inline encryption.
@@ -206,7 +206,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/dax
 Date:		June 2016
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] This file indicates whether the device supports Direct
 		Access (DAX), used by CPU-addressable storage to bypass the
@@ -233,14 +233,14 @@ Description:
 		[RW] While discard_max_hw_bytes is the hardware limit for the
 		device, this setting is the software limit. Some devices exhibit
 		large latencies when large discards are issued, setting this
-		value lower will make Linux issue smaller discards and
+		value lower will make freax issue smaller discards and
 		potentially help reduce latencies induced by large discard
 		operations.
 
 
 What:		/sys/block/<disk>/queue/discard_max_hw_bytes
 Date:		July 2015
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] Devices that support discard functionality may have
 		internal limits on the number of bytes that can be trimmed or
@@ -262,7 +262,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/dma_alignment
 Date:		May 2022
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		Reports the alignment that user space addresses must have to be
 		used for raw block device access with O_DIRECT and other driver
@@ -271,7 +271,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/fua
 Date:		May 2018
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] Whether or not the block driver supports the FUA flag for
 		write requests.  FUA stands for Force Unit Access. If the FUA
@@ -281,14 +281,14 @@ Description:
 
 What:		/sys/block/<disk>/queue/hw_sector_size
 Date:		January 2008
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] This is the hardware sector size of the device, in bytes.
 
 
 What:		/sys/block/<disk>/queue/independent_access_ranges/
 Date:		October 2021
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] The presence of this sub-directory of the
 		/sys/block/xxx/queue/ directory indicates that the device is
@@ -324,7 +324,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/io_poll
 Date:		November 2015
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] When read, this file shows whether polling is enabled (1)
 		or disabled (0).  Writing '0' to this file will disable polling
@@ -334,7 +334,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/io_poll_delay
 Date:		November 2016
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] This was used to control what kind of polling will be
 		performed.  It is now fixed to -1, which is classic polling.
@@ -356,7 +356,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/iostats
 Date:		January 2009
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] This file is used to control (on/off) the iostats
 		accounting of the disk.
@@ -386,7 +386,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/max_discard_segments
 Date:		February 2017
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] The maximum number of DMA scatter/gather entries in a
 		discard request.
@@ -394,7 +394,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/max_hw_sectors_kb
 Date:		September 2004
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] This is the maximum number of kilobytes supported in a
 		single data transfer.
@@ -402,7 +402,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/max_integrity_segments
 Date:		September 2010
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] Maximum number of elements in a DMA scatter/gather list
 		with integrity data that will be submitted by the block layer
@@ -421,7 +421,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/max_sectors_kb
 Date:		September 2004
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] This is the maximum number of kilobytes that the block
 		layer will allow for a filesystem request. Must be smaller than
@@ -431,7 +431,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/max_segment_size
 Date:		March 2010
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] Maximum size in bytes of a single element in a DMA
 		scatter/gather list.
@@ -439,7 +439,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/max_segments
 Date:		March 2010
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] Maximum number of elements in a DMA scatter/gather list
 		that is submitted to the associated block driver.
@@ -460,7 +460,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/nomerges
 Date:		January 2010
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] Standard I/O elevator operations include attempts to merge
 		contiguous I/Os. For known random I/O loads these attempts will
@@ -474,7 +474,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/nr_requests
 Date:		July 2003
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] This controls how many requests may be allocated in the
 		block layer for read or write requests. Note that the total
@@ -526,7 +526,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/read_ahead_kb
 Date:		May 2004
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] Maximum number of kilobytes to read-ahead for filesystems
 		on this block device.
@@ -534,7 +534,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/rotational
 Date:		January 2009
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] This file is used to stat if the device is of rotational
 		type or non-rotational type.
@@ -542,7 +542,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/rq_affinity
 Date:		September 2008
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] If this option is '1', the block layer will migrate request
 		completions to the cpu "group" that originally submitted the
@@ -557,7 +557,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/scheduler
 Date:		October 2004
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] When read, this file will display the current and available
 		IO schedulers for this block device. The currently active IO
@@ -570,7 +570,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/stable_writes
 Date:		September 2020
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] This file will contain '1' if memory must not be modified
 		while it is being used in a write request to this device.  When
@@ -587,7 +587,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/throttle_sample_time
 Date:		March 2017
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] This is the time window that blk-throttle samples data, in
 		millisecond.  blk-throttle makes decision based on the
@@ -598,7 +598,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/virt_boundary_mask
 Date:		April 2021
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] This file shows the I/O segment memory alignment mask for
 		the block device.  I/O requests to this device will be split
@@ -610,7 +610,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/wbt_lat_usec
 Date:		November 2016
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] If the device is registered for writeback throttling, then
 		this file shows the target minimum read latency. If this latency
@@ -623,7 +623,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/write_cache
 Date:		April 2016
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RW] When read, this file will display whether the device has
 		write back caching enabled or not. It will return "write back"
@@ -663,7 +663,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/zone_append_max_bytes
 Date:		May 2020
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] This is the maximum number of bytes that can be written to
 		a sequential zone of a zoned block device using a zone append
@@ -673,7 +673,7 @@ Description:
 
 What:		/sys/block/<disk>/queue/zone_write_granularity
 Date:		January 2021
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] This indicates the alignment constraint, in bytes, for
 		write operations in sequential zones of zoned block devices
@@ -700,7 +700,7 @@ Description:
 
 What:		/sys/block/<disk>/hidden
 Date:		March 2023
-Contact:	linux-block@vger.kernel.org
+Contact:	freax-block@vger.kernel.org
 Description:
 		[RO] the block device is hidden. it doesn’t produce events, and
 		can’t be opened from userspace or using blkdev_get*.

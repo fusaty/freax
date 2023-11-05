@@ -14,9 +14,9 @@
  */
 
 #include <asm/xilinx_mb_manager.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 /* TMR Manager Register offsets */
 #define XTMR_MANAGER_CR_OFFSET		0x0

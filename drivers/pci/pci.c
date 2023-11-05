@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * PCI Bus Services, see include/linux/pci.h for further explanation.
+ * PCI Bus Services, see include/freax/pci.h for further explanation.
  *
  * Copyright 1993 -- 1997 Drew Eckhardt, Frederic Potter,
  * David Mosberger-Tang
@@ -8,30 +8,30 @@
  * Copyright 1997 -- 2000 Martin Mares <mj@ucw.cz>
  */
 
-#include <linux/acpi.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
-#include <linux/init.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/pci.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/log2.h>
-#include <linux/logic_pio.h>
-#include <linux/pm_wakeup.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/pm_runtime.h>
-#include <linux/pci_hotplug.h>
-#include <linux/vmalloc.h>
+#include <freax/acpi.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
+#include <freax/init.h>
+#include <freax/msi.h>
+#include <freax/of.h>
+#include <freax/pci.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/log2.h>
+#include <freax/logic_pio.h>
+#include <freax/pm_wakeup.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
+#include <freax/pm_runtime.h>
+#include <freax/pci_hotplug.h>
+#include <freax/vmalloc.h>
 #include <asm/dma.h>
-#include <linux/aer.h>
-#include <linux/bitfield.h>
+#include <freax/aer.h>
+#include <freax/bitfield.h>
 #include "pci.h"
 
 DEFINE_MUTEX(pci_slot_mutex);
@@ -2978,7 +2978,7 @@ static const struct dmi_system_id bridge_d3_blacklist[] = {
 	{
 		/*
 		 * Gigabyte X299 root port is not marked as hotplug capable
-		 * which allows Linux to power manage it.  However, this
+		 * which allows freax to power manage it.  However, this
 		 * confuses the BIOS SMI handler so don't power manage root
 		 * ports on that system.
 		 */

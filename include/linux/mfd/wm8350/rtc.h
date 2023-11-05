@@ -5,10 +5,10 @@
  * Copyright 2007 Wolfson Microelectronics PLC
  */
 
-#ifndef __LINUX_MFD_WM8350_RTC_H
-#define __LINUX_MFD_WM8350_RTC_H
+#ifndef __freax_MFD_WM8350_RTC_H
+#define __freax_MFD_WM8350_RTC_H
 
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 
 /*
  * Register values.

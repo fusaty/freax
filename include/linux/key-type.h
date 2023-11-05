@@ -5,11 +5,11 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#ifndef _LINUX_KEY_TYPE_H
-#define _LINUX_KEY_TYPE_H
+#ifndef _freax_KEY_TYPE_H
+#define _freax_KEY_TYPE_H
 
-#include <linux/key.h>
-#include <linux/errno.h>
+#include <freax/key.h>
+#include <freax/errno.h>
 
 #ifdef CONFIG_KEYS
 
@@ -190,4 +190,4 @@ static inline int key_negate_and_link(struct key *key,
 extern int generic_key_instantiate(struct key *key, struct key_preparsed_payload *prep);
 
 #endif /* CONFIG_KEYS */
-#endif /* _LINUX_KEY_TYPE_H */
+#endif /* _freax_KEY_TYPE_H */

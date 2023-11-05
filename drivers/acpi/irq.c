@@ -5,10 +5,10 @@
  * Copyright (C) 2015 ARM Ltd.
  * Author: Lorenzo Pieralisi <lorenzo.pieralisi@arm.com>
  */
-#include <linux/acpi.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
+#include <freax/acpi.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/of.h>
 
 enum acpi_irq_model_id acpi_irq_model;
 
@@ -16,9 +16,9 @@ static struct fwnode_handle *(*acpi_get_gsi_domain_id)(u32 gsi);
 static u32 (*acpi_gsi_to_irq_fallback)(u32 gsi);
 
 /**
- * acpi_gsi_to_irq() - Retrieve the linux irq number for a given GSI
+ * acpi_gsi_to_irq() - Retrieve the freax irq number for a given GSI
  * @gsi: GSI IRQ number to map
- * @irq: pointer where linux IRQ number is stored
+ * @irq: pointer where freax IRQ number is stored
  *
  * irq location updated with irq value [>0 on success, 0 on failure]
  *
@@ -44,13 +44,13 @@ int acpi_gsi_to_irq(u32 gsi, unsigned int *irq)
 EXPORT_SYMBOL_GPL(acpi_gsi_to_irq);
 
 /**
- * acpi_register_gsi() - Map a GSI to a linux IRQ number
+ * acpi_register_gsi() - Map a GSI to a freax IRQ number
  * @dev: device for which IRQ has to be mapped
  * @gsi: GSI IRQ number
  * @trigger: trigger type of the GSI number to be mapped
  * @polarity: polarity of the GSI to be mapped
  *
- * Returns: a valid linux IRQ number on success
+ * Returns: a valid freax IRQ number on success
  *          -EINVAL on failure
  */
 int acpi_register_gsi(struct device *dev, u32 gsi, int trigger,
@@ -78,7 +78,7 @@ int acpi_register_gsi(struct device *dev, u32 gsi, int trigger,
 EXPORT_SYMBOL_GPL(acpi_register_gsi);
 
 /**
- * acpi_unregister_gsi() - Free a GSI<->linux IRQ number mapping
+ * acpi_unregister_gsi() - Free a GSI<->freax IRQ number mapping
  * @gsi: GSI IRQ number
  */
 void acpi_unregister_gsi(u32 gsi)
@@ -262,11 +262,11 @@ static int acpi_irq_parse_one(acpi_handle handle, unsigned int index,
  * acpi_irq_get - Lookup an ACPI IRQ resource and use it to initialize resource.
  * @handle: ACPI device handle
  * @index:  ACPI IRQ resource index to lookup
- * @res:    Linux IRQ resource to initialize
+ * @res:    freax IRQ resource to initialize
  *
  * Description:
  * Look for the ACPI IRQ resource with the given index and use it to initialize
- * the given Linux IRQ resource.
+ * the given freax IRQ resource.
  *
  * Return:
  * 0 on success

@@ -4,12 +4,12 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#include <linux/acpi_iort.h>
-#include <linux/pci.h>
-#include <linux/msi.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
+#include <freax/acpi_iort.h>
+#include <freax/pci.h>
+#include <freax/msi.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_pci.h>
 
 static void its_mask_msi_irq(struct irq_data *d)
 {

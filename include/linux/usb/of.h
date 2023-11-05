@@ -3,12 +3,12 @@
  * OF helpers for usb devices.
  */
 
-#ifndef __LINUX_USB_OF_H
-#define __LINUX_USB_OF_H
+#ifndef __freax_USB_OF_H
+#define __freax_USB_OF_H
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/otg.h>
-#include <linux/usb/phy.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/otg.h>
+#include <freax/usb/phy.h>
 
 struct usb_device;
 
@@ -67,4 +67,4 @@ static inline enum usb_phy_interface of_usb_get_phy_mode(struct device_node *np)
 
 #endif
 
-#endif /* __LINUX_USB_OF_H */
+#endif /* __freax_USB_OF_H */

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_TTY_H
-#define _UAPI_LINUX_TTY_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_TTY_H
+#define _UAPI_freax_TTY_H
 
 /*
  * 'tty.h' defines some structures used by tty_io.c and some defines.
@@ -18,7 +18,7 @@
 #define N_MASC		8	/* Reserved for Mobitex module <kaz@cafe.net> */
 #define N_R3964		9	/* Reserved for Simatic R3964 module */
 #define N_PROFIBUS_FDL	10	/* Reserved for Profibus */
-#define N_IRDA		11	/* Linux IrDa - http://irda.sourceforge.net/ */
+#define N_IRDA		11	/* freax IrDa - http://irda.sourceforge.net/ */
 #define N_SMSBLOCK	12	/* SMS block mode - for talking to GSM data */
 				/* cards about SMS messages */
 #define N_HDLC		13	/* synchronous HDLC */
@@ -43,4 +43,4 @@
 /* Always the newest line discipline + 1 */
 #define NR_LDISCS	31
 
-#endif /* _UAPI_LINUX_TTY_H */
+#endif /* _UAPI_freax_TTY_H */

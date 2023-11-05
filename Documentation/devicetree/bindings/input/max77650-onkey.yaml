@@ -23,7 +23,7 @@ properties:
   compatible:
     const: maxim,max77650-onkey
 
-  linux,code:
+  freax,code:
     default: 116  # KEY_POWER
 
   maxim,onkey-slide:

@@ -6,11 +6,11 @@
  *		Byron Bradley <byron.bbradley@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/timex.h>
-#include <linux/serial_reg.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/mv643xx_eth.h>
+#include <freax/timex.h>
+#include <freax/serial_reg.h>
 #include "orion5x.h"
 #include "tsx09-common.h"
 #include "common.h"

@@ -1,7 +1,7 @@
 #ifndef __BPF_EXPERIMENTAL__
 #define __BPF_EXPERIMENTAL__
 
-#include <vmlinux.h>
+#include <vmfreax.h>
 #include <bpf/bpf_tracing.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_core_read.h>

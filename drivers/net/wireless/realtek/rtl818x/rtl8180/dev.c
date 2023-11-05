@@ -1,5 +1,5 @@
 
-/* Linux device driver for RTL8180 / RTL8185 / RTL8187SE
+/* freax device driver for RTL8180 / RTL8185 / RTL8187SE
  *
  * Copyright 2007 Michael Wu <flamingice@sourmilk.net>
  * Copyright 2007,2014 Andrea Merello <andrea.merello@gmail.com>
@@ -15,9 +15,9 @@
  * Andrea Merello <andrea.merello@gmail.com>
  *
  * based also on:
- *  - portions of rtl8187se Linux staging driver, Copyright Realtek corp.
- *    (available in drivers/staging/rtl8187se directory of Linux 3.14)
- *  - other GPL, unpublished (until now), Linux driver code,
+ *  - portions of rtl8187se freax staging driver, Copyright Realtek corp.
+ *    (available in drivers/staging/rtl8187se directory of freax 3.14)
+ *  - other GPL, unpublished (until now), freax driver code,
  *    Copyright Larry Finger <Larry.Finger@lwfinger.net>
  *
  * A huge thanks goes to Sara V. Nari who forgives me when I'm
@@ -43,13 +43,13 @@
  * published by the Free Software Foundation.
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/etherdevice.h>
-#include <linux/eeprom_93cx6.h>
-#include <linux/module.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/etherdevice.h>
+#include <freax/eeprom_93cx6.h>
+#include <freax/module.h>
 #include <net/mac80211.h>
 
 #include "rtl8180.h"

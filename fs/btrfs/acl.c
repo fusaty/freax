@@ -3,14 +3,14 @@
  * Copyright (C) 2007 Red Hat.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/xattr.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/posix_acl.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
+#include <freax/fs.h>
+#include <freax/string.h>
+#include <freax/xattr.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/posix_acl.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/slab.h>
 #include "ctree.h"
 #include "btrfs_inode.h"
 #include "xattr.h"

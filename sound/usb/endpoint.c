@@ -2,12 +2,12 @@
 /*
  */
 
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/ratelimit.h>
-#include <linux/usb.h>
-#include <linux/usb/audio.h>
-#include <linux/slab.h>
+#include <freax/gfp.h>
+#include <freax/init.h>
+#include <freax/ratelimit.h>
+#include <freax/usb.h>
+#include <freax/usb/audio.h>
+#include <freax/slab.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

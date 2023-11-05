@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux I2C core ACPI support code
+ * freax I2C core ACPI support code
  *
  * Copyright (C) 2014 Intel Corp, Author: Lan Tianyu <tianyu.lan@intel.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include "i2c-core.h"
 
@@ -314,7 +314,7 @@ static acpi_status i2c_acpi_add_device(acpi_handle handle, u32 level,
  * @adap: pointer to adapter
  *
  * Enumerate all I2C slave devices behind this adapter by walking the ACPI
- * namespace. When a device is found it will be added to the Linux device
+ * namespace. When a device is found it will be added to the freax device
  * model and bound to the corresponding ACPI handle.
  */
 void i2c_acpi_register_devices(struct i2c_adapter *adap)

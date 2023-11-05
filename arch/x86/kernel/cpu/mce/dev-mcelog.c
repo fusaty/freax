@@ -9,10 +9,10 @@
  * Author: Andi Kleen
  */
 
-#include <linux/miscdevice.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/poll.h>
+#include <freax/miscdevice.h>
+#include <freax/slab.h>
+#include <freax/kmod.h>
+#include <freax/poll.h>
 
 #include "internal.h"
 

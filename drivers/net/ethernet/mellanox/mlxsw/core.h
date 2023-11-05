@@ -4,15 +4,15 @@
 #ifndef _MLXSW_CORE_H
 #define _MLXSW_CORE_H
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/skbuff.h>
-#include <linux/workqueue.h>
-#include <linux/net_namespace.h>
-#include <linux/auxiliary_bus.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/gfp.h>
+#include <freax/types.h>
+#include <freax/skbuff.h>
+#include <freax/workqueue.h>
+#include <freax/net_namespace.h>
+#include <freax/auxiliary_bus.h>
 #include <net/devlink.h>
 
 #include "trap.h"

@@ -9,24 +9,24 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/dmi.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/delay.h>
-#include <linux/wait.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/freezer.h>
-#include <linux/uaccess.h>
-#include <linux/miscdevice.h>
-#include <linux/pm_runtime.h>
-#include <linux/atomic.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/dmi.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
+#include <freax/delay.h>
+#include <freax/wait.h>
+#include <freax/poll.h>
+#include <freax/slab.h>
+#include <freax/freezer.h>
+#include <freax/uaccess.h>
+#include <freax/miscdevice.h>
+#include <freax/pm_runtime.h>
+#include <freax/atomic.h>
+#include <freax/of.h>
 #include "lis3lv02d.h"
 
 #define DRIVER_NAME     "lis3lv02d"

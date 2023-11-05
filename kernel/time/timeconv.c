@@ -29,9 +29,9 @@
  *   Reimplemented by Cassio Neri <cassio.neri@gmail.com>
  */
 
-#include <linux/time.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <freax/time.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
 
 #define SECS_PER_HOUR	(60 * 60)
 #define SECS_PER_DAY	(SECS_PER_HOUR * 24)

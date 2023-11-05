@@ -6,10 +6,10 @@
  */
 
 
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include "pmac.h"
 

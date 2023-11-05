@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
-/* Copyright (c) 2010, 2014, 2022 The Linux Foundation. All rights reserved.  */
+/* Copyright (c) 2010, 2014, 2022 The freax Foundation. All rights reserved.  */
 
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/init.h>
-#include <linux/kfifo.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
+#include <freax/console.h>
+#include <freax/cpu.h>
+#include <freax/cpumask.h>
+#include <freax/init.h>
+#include <freax/kfifo.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
 
 #include <asm/dcc.h>
 #include <asm/processor.h>

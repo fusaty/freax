@@ -4,26 +4,26 @@
  *
  * Copyright IBM Corporation, 2008
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@freax.ibm.com>
  *
  * For detailed explanation of Read-Copy Update mechanism see -
  *		Documentation/RCU
  */
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/cpu.h>
-#include <linux/prefetch.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/rcupdate_wait.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/mutex.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/cpu.h>
+#include <freax/prefetch.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
 
 #include "rcu.h"
 

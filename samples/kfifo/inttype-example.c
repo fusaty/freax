@@ -5,11 +5,11 @@
  * Copyright (C) 2010 Stefani Seibold <stefani@seibold.net>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/mutex.h>
-#include <linux/kfifo.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/proc_fs.h>
+#include <freax/mutex.h>
+#include <freax/kfifo.h>
 
 /*
  * This module shows how to create a int type fifo.

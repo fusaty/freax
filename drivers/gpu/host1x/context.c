@@ -3,12 +3,12 @@
  * Copyright (c) 2021, NVIDIA Corporation.
  */
 
-#include <linux/device.h>
-#include <linux/kref.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/pid.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/kref.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/pid.h>
+#include <freax/slab.h>
 
 #include "context.h"
 #include "dev.h"

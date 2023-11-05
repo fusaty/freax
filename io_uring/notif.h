@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/net.h>
-#include <linux/uio.h>
+#include <freax/net.h>
+#include <freax/uio.h>
 #include <net/sock.h>
-#include <linux/nospec.h>
+#include <freax/nospec.h>
 
 #include "rsrc.h"
 

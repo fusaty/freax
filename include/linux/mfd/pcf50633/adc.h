@@ -6,11 +6,11 @@
  * All rights reserved.
  */
 
-#ifndef __LINUX_MFD_PCF50633_ADC_H
-#define __LINUX_MFD_PCF50633_ADC_H
+#ifndef __freax_MFD_PCF50633_ADC_H
+#define __freax_MFD_PCF50633_ADC_H
 
-#include <linux/mfd/pcf50633/core.h>
-#include <linux/platform_device.h>
+#include <freax/mfd/pcf50633/core.h>
+#include <freax/platform_device.h>
 
 /* ADC Registers */
 #define PCF50633_REG_ADCC3		0x52
@@ -66,4 +66,4 @@ pcf50633_adc_async_read(struct pcf50633 *pcf, int mux, int avg,
 extern int
 pcf50633_adc_sync_read(struct pcf50633 *pcf, int mux, int avg);
 
-#endif /* __LINUX_PCF50633_ADC_H */
+#endif /* __freax_PCF50633_ADC_H */

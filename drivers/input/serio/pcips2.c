@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/input/serio/pcips2.c
+ * freax/drivers/input/serio/pcips2.c
  *
  *  Copyright (C) 2003 Russell King, All Rights Reserved.
  *
  *  I'm not sure if this is a generic PS/2 PCI interface or specific to
  *  the Mobility Electronics docking station.
  */
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/input.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/serio.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/input.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/serio.h>
+#include <freax/delay.h>
 #include <asm/io.h>
 
 #define PS2_CTRL		(0)
@@ -213,5 +213,5 @@ static struct pci_driver pcips2_driver = {
 module_pci_driver(pcips2_driver);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Russell King <rmk@arm.linux.org.uk>");
+MODULE_AUTHOR("Russell King <rmk@arm.freax.org.uk>");
 MODULE_DESCRIPTION("PCI PS/2 keyboard/mouse driver");

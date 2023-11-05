@@ -2,11 +2,11 @@
 #ifndef __ASM_SPINLOCK_H
 #define __ASM_SPINLOCK_H
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 #error SMP not supported on pre-ARMv6 CPUs
 #endif
 
-#include <linux/prefetch.h>
+#include <freax/prefetch.h>
 #include <asm/barrier.h>
 #include <asm/processor.h>
 

@@ -5,16 +5,16 @@
  *	   Sean Wang <sean.wang@mediatek.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
 #include "clk-cpumux.h"
 #include "clk-gate.h"
 #include "clk-mtk.h"
 
 #include <dt-bindings/clock/mt7622-clk.h>
-#include <linux/clk.h> /* for consumer */
+#include <freax/clk.h> /* for consumer */
 
 #define GATE_TOP0(_id, _name, _parent, _shift)				\
 	GATE_MTK(_id, _name, _parent, &top0_cg_regs, _shift, &mtk_clk_gate_ops_no_setclr)

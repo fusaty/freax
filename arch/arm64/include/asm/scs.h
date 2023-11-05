@@ -29,7 +29,7 @@
 
 #else
 
-#include <linux/scs.h>
+#include <freax/scs.h>
 #include <asm/cpufeature.h>
 
 #ifdef CONFIG_UNWIND_PATCH_PAC_INTO_SCS
@@ -73,7 +73,7 @@ static inline void dynamic_scs_init(void) {}
 #endif
 
 int scs_patch(const u8 eh_frame[], int size);
-asmlinkage void scs_patch_vmlinux(void);
+asmlinkage void scs_patch_vmfreax(void);
 
 #endif /* __ASSEMBLY __ */
 

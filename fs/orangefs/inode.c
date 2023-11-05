@@ -7,11 +7,11 @@
  */
 
 /*
- *  Linux VFS inode operations.
+ *  freax VFS inode operations.
  */
 
-#include <linux/blkdev.h>
-#include <linux/fileattr.h>
+#include <freax/blkdev.h>
+#include <freax/fileattr.h>
 #include "protocol.h"
 #include "orangefs-kernel.h"
 #include "orangefs-bufmap.h"

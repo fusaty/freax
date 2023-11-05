@@ -9,10 +9,10 @@
 
 #define pr_fmt(fmt) "SIG: "fmt
 #include <keys/asymmetric-subtype.h>
-#include <linux/export.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/keyctl.h>
+#include <freax/export.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/keyctl.h>
 #include <crypto/public_key.h>
 #include <keys/user-type.h>
 #include "asymmetric_keys.h"

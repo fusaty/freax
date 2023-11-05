@@ -4,12 +4,12 @@
 //
 // Copyright 2013 Freescale Semiconductor, Inc.
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/pinctrl/pinctrl.h>
 
 #include "pinctrl-imx.h"
 

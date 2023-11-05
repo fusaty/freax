@@ -3,12 +3,12 @@
  * Support for generic time stamping devices on MII buses.
  * Copyright (C) 2018 Richard Cochran <richardcochran@gmail.com>
  */
-#ifndef _LINUX_MII_TIMESTAMPER_H
-#define _LINUX_MII_TIMESTAMPER_H
+#ifndef _freax_MII_TIMESTAMPER_H
+#define _freax_MII_TIMESTAMPER_H
 
-#include <linux/device.h>
-#include <linux/ethtool.h>
-#include <linux/skbuff.h>
+#include <freax/device.h>
+#include <freax/ethtool.h>
+#include <freax/skbuff.h>
 
 struct phy_device;
 

@@ -5,13 +5,13 @@
  * Copyright (C) 2013 John Crispin <john@phrozen.org>
  */
 
-#include <linux/io.h>
-#include <linux/bitops.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
+#include <freax/io.h>
+#include <freax/bitops.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/interrupt.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/mipsregs.h>

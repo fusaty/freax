@@ -11,10 +11,10 @@
  * Copyright (c) 2002 ARM Limited.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/smp.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/smp.h>
+#include <freax/io.h>
 
 #include "omap-wakeupgen.h"
 #include "common.h"

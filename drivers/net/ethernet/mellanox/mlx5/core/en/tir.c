@@ -1,9 +1,9 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2021, Mellanox Technologies inc. All rights reserved. */
 
 #include "tir.h"
 #include "params.h"
-#include <linux/mlx5/transobj.h>
+#include <freax/mlx5/transobj.h>
 
 #define MLX5E_PARAMS_DEFAULT_LRO_WQE_SZ (64 * 1024)
 

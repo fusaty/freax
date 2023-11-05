@@ -3,9 +3,9 @@
 #ifndef __ASM_CSKY_SMP_H
 #define __ASM_CSKY_SMP_H
 
-#include <linux/cpumask.h>
-#include <linux/irqreturn.h>
-#include <linux/threads.h>
+#include <freax/cpumask.h>
+#include <freax/irqreturn.h>
+#include <freax/threads.h>
 
 #ifdef CONFIG_SMP
 

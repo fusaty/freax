@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2023 Intel Corporation */
 
-#include <linux/container_of.h>
-#include <linux/dev_printk.h>
-#include <linux/export.h>
-#include <linux/jiffies.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/container_of.h>
+#include <freax/dev_printk.h>
+#include <freax/export.h>
+#include <freax/jiffies.h>
+#include <freax/ktime.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 #include "adf_admin.h"
 #include "adf_accel_devices.h"

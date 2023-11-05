@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/ext2/super.c
+ *  freax/fs/ext2/super.c
  *
  * Copyright (C) 1992, 1993, 1994, 1995
  * Remy Card (card@masi.ibp.fr)
@@ -9,7 +9,7 @@
  *
  *  from
  *
- *  linux/fs/minix/inode.c
+ *  freax/fs/minix/inode.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -17,24 +17,24 @@
  *        David S. Miller (davem@caip.rutgers.edu), 1995
  */
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/parser.h>
-#include <linux/random.h>
-#include <linux/buffer_head.h>
-#include <linux/exportfs.h>
-#include <linux/vfs.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/log2.h>
-#include <linux/quotaops.h>
-#include <linux/uaccess.h>
-#include <linux/dax.h>
-#include <linux/iversion.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/blkdev.h>
+#include <freax/parser.h>
+#include <freax/random.h>
+#include <freax/buffer_head.h>
+#include <freax/exportfs.h>
+#include <freax/vfs.h>
+#include <freax/seq_file.h>
+#include <freax/mount.h>
+#include <freax/log2.h>
+#include <freax/quotaops.h>
+#include <freax/uaccess.h>
+#include <freax/dax.h>
+#include <freax/iversion.h>
 #include "ext2.h"
 #include "xattr.h"
 #include "acl.h"

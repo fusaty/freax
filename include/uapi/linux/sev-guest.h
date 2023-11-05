@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-only WITH freax-syscall-note */
 /*
  * Userspace interface for AMD SEV and SNP guest driver.
  *
@@ -9,10 +9,10 @@
  * SEV API specification is available at: https://developer.amd.com/sev/
  */
 
-#ifndef __UAPI_LINUX_SEV_GUEST_H_
-#define __UAPI_LINUX_SEV_GUEST_H_
+#ifndef __UAPI_freax_SEV_GUEST_H_
+#define __UAPI_freax_SEV_GUEST_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct snp_report_req {
 	/* user data that should be included in the report */
@@ -91,4 +91,4 @@ struct snp_ext_report_req {
 #define SNP_GUEST_VMM_ERR_INVALID_LEN	1
 #define SNP_GUEST_VMM_ERR_BUSY		2
 
-#endif /* __UAPI_LINUX_SEV_GUEST_H_ */
+#endif /* __UAPI_freax_SEV_GUEST_H_ */

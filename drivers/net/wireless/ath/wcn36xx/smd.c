@@ -16,11 +16,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitfield.h>
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
-#include <linux/bitops.h>
-#include <linux/rpmsg.h>
+#include <freax/bitfield.h>
+#include <freax/etherdevice.h>
+#include <freax/firmware.h>
+#include <freax/bitops.h>
+#include <freax/rpmsg.h>
 #include "smd.h"
 #include "firmware.h"
 

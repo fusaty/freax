@@ -7,9 +7,9 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/module.h>
+#include <freax/gfp.h>
+#include <freax/mm.h>
+#include <freax/module.h>
 
 static void test_free_pages(gfp_t gfp)
 {

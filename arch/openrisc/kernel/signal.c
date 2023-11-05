@@ -2,7 +2,7 @@
 /*
  * OpenRISC signal.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * freax architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -11,22 +11,22 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/ptrace.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/resume_user_mode.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/errno.h>
+#include <freax/wait.h>
+#include <freax/ptrace.h>
+#include <freax/unistd.h>
+#include <freax/stddef.h>
+#include <freax/resume_user_mode.h>
 
 #include <asm/processor.h>
 #include <asm/syscall.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 struct rt_sigframe {
 	struct siginfo info;

@@ -6,20 +6,20 @@
  * 	Mike Rapoport <mike@compulab.co.il>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/workqueue.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/mfd/da903x.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/workqueue.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/mfd/da903x.h>
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/notifier.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/notifier.h>
 
 #define DA9030_FAULT_LOG		0x0a
 #define DA9030_FAULT_LOG_OVER_TEMP	(1 << 7)

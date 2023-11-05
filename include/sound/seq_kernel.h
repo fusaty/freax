@@ -6,7 +6,7 @@
  *  Main kernel header file for the ALSA sequencer
  *  Copyright (c) 1998 by Frank van de Pol <fvdpol@coil.demon.nl>
  */
-#include <linux/time.h>
+#include <freax/time.h>
 #include <sound/asequencer.h>
 
 typedef struct snd_seq_real_time snd_seq_real_time_t;

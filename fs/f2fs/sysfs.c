@@ -6,13 +6,13 @@
  *             http://www.samsung.com/
  * Copyright (c) 2017 Chao Yu <chao@kernel.org>
  */
-#include <linux/compiler.h>
-#include <linux/proc_fs.h>
-#include <linux/f2fs_fs.h>
-#include <linux/seq_file.h>
-#include <linux/unicode.h>
-#include <linux/ioprio.h>
-#include <linux/sysfs.h>
+#include <freax/compiler.h>
+#include <freax/proc_fs.h>
+#include <freax/f2fs_fs.h>
+#include <freax/seq_file.h>
+#include <freax/unicode.h>
+#include <freax/ioprio.h>
+#include <freax/sysfs.h>
 
 #include "f2fs.h"
 #include "segment.h"

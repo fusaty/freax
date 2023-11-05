@@ -31,7 +31,7 @@
  *
  */
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 #include "usnic.h"
 #include "usnic_log.h"

@@ -18,16 +18,16 @@
 #include "tsnep.h"
 #include "tsnep_hw.h"
 
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_net.h>
-#include <linux/of_mdio.h>
-#include <linux/interrupt.h>
-#include <linux/etherdevice.h>
-#include <linux/phy.h>
-#include <linux/iopoll.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_net.h>
+#include <freax/of_mdio.h>
+#include <freax/interrupt.h>
+#include <freax/etherdevice.h>
+#include <freax/phy.h>
+#include <freax/iopoll.h>
+#include <freax/bpf.h>
+#include <freax/bpf_trace.h>
 #include <net/page_pool/helpers.h>
 #include <net/xdp_sock_drv.h>
 

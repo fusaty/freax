@@ -7,22 +7,22 @@
  * Michel Pollet <michel.pollet@bp.renesas.com>, <buserror@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/math64.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_clock.h>
-#include <linux/pm_domain.h>
-#include <linux/slab.h>
-#include <linux/soc/renesas/r9a06g032-sysctrl.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/math64.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_clock.h>
+#include <freax/pm_domain.h>
+#include <freax/slab.h>
+#include <freax/soc/renesas/r9a06g032-sysctrl.h>
+#include <freax/spinlock.h>
 #include <dt-bindings/clock/r9a06g032-sysctrl.h>
 
 #define R9A06G032_SYSCTRL_USB    0x00
@@ -899,7 +899,7 @@ r9a06g032_register_gate(struct r9a06g032_priv *clocks,
 
 	/*
 	 * important here, some clocks are already in use by the CM3, we
-	 * have to assume they are not Linux's to play with and try to disable
+	 * have to assume they are not freax's to play with and try to disable
 	 * at the end of the boot!
 	 */
 	if (r9a06g032_clk_gate_is_enabled(&g->hw)) {
@@ -1249,7 +1249,7 @@ r9a06g032_register_dualgate(struct r9a06g032_priv *clocks,
 	g->hw.init = &init;
 	/*
 	 * important here, some clocks are already in use by the CM3, we
-	 * have to assume they are not Linux's to play with and try to disable
+	 * have to assume they are not freax's to play with and try to disable
 	 * at the end of the boot!
 	 */
 	if (r9a06g032_clk_dualgate_is_enabled(&g->hw)) {

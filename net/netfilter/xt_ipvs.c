@@ -7,17 +7,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/spinlock.h>
+#include <freax/skbuff.h>
 #ifdef CONFIG_IP_VS_IPV6
 #include <net/ipv6.h>
 #endif
-#include <linux/ip_vs.h>
-#include <linux/types.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_ipvs.h>
+#include <freax/ip_vs.h>
+#include <freax/types.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_ipvs.h>
 #include <net/netfilter/nf_conntrack.h>
 
 #include <net/ip_vs.h>

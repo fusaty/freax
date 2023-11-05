@@ -6,7 +6,7 @@
 #ifndef PLFXLC_MAC_H
 #define PLFXLC_MAC_H
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <net/mac80211.h>
 
 #include "chip.h"

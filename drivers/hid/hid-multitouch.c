@@ -31,14 +31,14 @@
  * [1] https://gitlab.freedesktop.org/libevdev/hid-tools
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input/mt.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/timer.h>
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/input/mt.h>
+#include <freax/jiffies.h>
+#include <freax/string.h>
+#include <freax/timer.h>
 
 
 MODULE_AUTHOR("Stephane Chatty <chatty@enac.fr>");

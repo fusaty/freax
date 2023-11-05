@@ -3,19 +3,19 @@
  *
  * Copyright (c) 2011 Jonathan Cameron
  */
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/minmax.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/minmax.h>
+#include <freax/mutex.h>
+#include <freax/property.h>
+#include <freax/slab.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/iio-opaque.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/iio-opaque.h>
 #include "iio_core.h"
-#include <linux/iio/machine.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/consumer.h>
+#include <freax/iio/machine.h>
+#include <freax/iio/driver.h>
+#include <freax/iio/consumer.h>
 
 struct iio_map_internal {
 	struct iio_dev *indio_dev;

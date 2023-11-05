@@ -8,9 +8,9 @@
 
 #define pr_fmt(fmt) "alternatives: " fmt
 
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/elf.h>
+#include <freax/init.h>
+#include <freax/cpu.h>
+#include <freax/elf.h>
 #include <asm/cacheflush.h>
 #include <asm/alternative.h>
 #include <asm/cpufeature.h>
@@ -18,7 +18,7 @@
 #include <asm/module.h>
 #include <asm/sections.h>
 #include <asm/vdso.h>
-#include <linux/stop_machine.h>
+#include <freax/stop_machine.h>
 
 #define __ALT_PTR(a, f)		((void *)&(a)->f + (a)->f)
 #define ALT_ORIG_PTR(a)		__ALT_PTR(a, orig_offset)

@@ -22,11 +22,11 @@
  *
  */
 
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/printk.h>
+#include <freax/sched.h>
 #include "kfd_kernel_queue.h"
 #include "kfd_priv.h"
 #include "kfd_device_queue_manager.h"

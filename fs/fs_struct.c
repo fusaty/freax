@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/export.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/task.h>
-#include <linux/fs.h>
-#include <linux/path.h>
-#include <linux/slab.h>
-#include <linux/fs_struct.h>
+#include <freax/export.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/task.h>
+#include <freax/fs.h>
+#include <freax/path.h>
+#include <freax/slab.h>
+#include <freax/fs_struct.h>
 #include "internal.h"
 
 /*

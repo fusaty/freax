@@ -5,11 +5,11 @@
  *
  */
 
-#include <linux/bitfield.h>
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/memory.h>
-#include <linux/stop_machine.h>
+#include <freax/bitfield.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
+#include <freax/memory.h>
+#include <freax/stop_machine.h>
 #include <asm/patch.h>
 #include "bpf_jit.h"
 

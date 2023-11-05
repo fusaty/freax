@@ -6,10 +6,10 @@
 */
 
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "tda8261.h"

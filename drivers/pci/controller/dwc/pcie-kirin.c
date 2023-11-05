@@ -8,24 +8,24 @@
  * Author: Xiaowei Song <songxiaowei@huawei.com>
  */
 
-#include <linux/clk.h>
-#include <linux/compiler.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_gpio.h>
-#include <linux/of_pci.h>
-#include <linux/phy/phy.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/resource.h>
-#include <linux/types.h>
+#include <freax/clk.h>
+#include <freax/compiler.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_gpio.h>
+#include <freax/of_pci.h>
+#include <freax/phy/phy.h>
+#include <freax/pci.h>
+#include <freax/pci_regs.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/resource.h>
+#include <freax/types.h>
 #include "pcie-designware.h"
 
 #define to_kirin_pcie(x) dev_get_drvdata((x)->dev)

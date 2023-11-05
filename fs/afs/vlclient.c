@@ -5,9 +5,9 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/gfp.h>
-#include <linux/init.h>
-#include <linux/sched.h>
+#include <freax/gfp.h>
+#include <freax/init.h>
+#include <freax/sched.h>
 #include "afs_fs.h"
 #include "internal.h"
 

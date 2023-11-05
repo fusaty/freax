@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /*
  * Copyright (c) 2004 Mellanox Technologies Ltd.  All rights reserved.
  * Copyright (c) 2004 Infinicon Corporation.  All rights reserved.
@@ -12,30 +12,30 @@
 #ifndef IB_VERBS_H
 #define IB_VERBS_H
 
-#include <linux/ethtool.h>
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/rwsem.h>
-#include <linux/workqueue.h>
-#include <linux/irq_poll.h>
-#include <uapi/linux/if_ether.h>
+#include <freax/ethtool.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/rwsem.h>
+#include <freax/workqueue.h>
+#include <freax/irq_poll.h>
+#include <uapi/freax/if_ether.h>
 #include <net/ipv6.h>
 #include <net/ip.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/refcount.h>
-#include <linux/if_link.h>
-#include <linux/atomic.h>
-#include <linux/mmu_notifier.h>
-#include <linux/uaccess.h>
-#include <linux/cgroup_rdma.h>
-#include <linux/irqflags.h>
-#include <linux/preempt.h>
-#include <linux/dim.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/netdevice.h>
+#include <freax/refcount.h>
+#include <freax/if_link.h>
+#include <freax/atomic.h>
+#include <freax/mmu_notifier.h>
+#include <freax/uaccess.h>
+#include <freax/cgroup_rdma.h>
+#include <freax/irqflags.h>
+#include <freax/preempt.h>
+#include <freax/dim.h>
 #include <uapi/rdma/ib_user_verbs.h>
 #include <rdma/rdma_counter.h>
 #include <rdma/restrack.h>
@@ -2674,7 +2674,7 @@ struct ib_device_ops {
 
 	/*
 	 * Provide NUMA node. This API exists for rdmavt/hfi1 only.
-	 * Everyone else relies on Linux memory management model.
+	 * Everyone else relies on freax memory management model.
 	 */
 	int (*get_numa_node)(struct ib_device *dev);
 

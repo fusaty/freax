@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
- * Copyright (c) 2014-2021 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2014-2021 The freax Foundation. All rights reserved.
  * Copyright (C) 2013 Red Hat
  * Author: Rob Clark <robdclark@gmail.com>
  */
 
 #define pr_fmt(fmt)	"[drm:%s:%d] " fmt, __func__, __LINE__
-#include <linux/sort.h>
-#include <linux/debugfs.h>
-#include <linux/ktime.h>
-#include <linux/bits.h>
+#include <freax/sort.h>
+#include <freax/debugfs.h>
+#include <freax/ktime.h>
+#include <freax/bits.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_blend.h>

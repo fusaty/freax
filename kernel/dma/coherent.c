@@ -3,12 +3,12 @@
  * Coherent per-device memory handling.
  * Borrowed from i386
  */
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/dma-direct.h>
-#include <linux/dma-map-ops.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/dma-direct.h>
+#include <freax/dma-map-ops.h>
 
 struct dma_coherent_mem {
 	void		*virt_base;
@@ -323,9 +323,9 @@ int dma_init_global_coherent(phys_addr_t phys_addr, size_t size)
  * Support for reserved memory regions defined in device tree
  */
 #ifdef CONFIG_OF_RESERVED_MEM
-#include <linux/of.h>
-#include <linux/of_fdt.h>
-#include <linux/of_reserved_mem.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
+#include <freax/of_reserved_mem.h>
 
 #ifdef CONFIG_DMA_GLOBAL_POOL
 static struct reserved_mem *dma_reserved_default_memory __initdata;
@@ -373,7 +373,7 @@ static int __init rmem_dma_setup(struct reserved_mem *rmem)
 #endif
 
 #ifdef CONFIG_DMA_GLOBAL_POOL
-	if (of_get_flat_dt_prop(node, "linux,dma-default", NULL)) {
+	if (of_get_flat_dt_prop(node, "freax,dma-default", NULL)) {
 		WARN(dma_reserved_default_memory,
 		     "Reserved memory: region for default DMA coherent area is redefined\n");
 		dma_reserved_default_memory = rmem;

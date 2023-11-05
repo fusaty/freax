@@ -6,10 +6,10 @@
  * Author: Kishon Vijay Abraham I <kishon@ti.com>
  */
 
-#ifndef __LINUX_PCI_EP_CFS_H
-#define __LINUX_PCI_EP_CFS_H
+#ifndef __freax_PCI_EP_CFS_H
+#define __freax_PCI_EP_CFS_H
 
-#include <linux/configfs.h>
+#include <freax/configfs.h>
 
 #ifdef CONFIG_PCI_ENDPOINT_CONFIGFS
 struct config_group *pci_ep_cfs_add_epc_group(const char *name);
@@ -35,4 +35,4 @@ static inline void pci_ep_cfs_remove_epf_group(struct config_group *group)
 {
 }
 #endif
-#endif /* __LINUX_PCI_EP_CFS_H */
+#endif /* __freax_PCI_EP_CFS_H */

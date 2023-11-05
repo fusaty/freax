@@ -76,7 +76,7 @@
  *   PID params     : From SMU sdb partition
  *   linear-factors : offset = 0xfb50 scale  = 0x1000
  *
- * CPU Slew control loop. Not implemented. The cpufreq driver in linux is
+ * CPU Slew control loop. Not implemented. The cpufreq driver in freax is
  * completely separate for now, though we could find a way to link it, either
  * as a client reacting to overtemp notifications, or directling monitoring
  * the CPU temperature
@@ -91,18 +91,18 @@
  * communicate with the CPU freq driver;
  */
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/kmod.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
+#include <freax/kmod.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
 
 #include <asm/machdep.h>
 #include <asm/io.h>

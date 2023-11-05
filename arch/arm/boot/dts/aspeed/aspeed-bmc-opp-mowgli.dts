@@ -49,31 +49,31 @@
 		event-air-water {
 			label = "air-water";
 			gpios = <&gpio ASPEED_GPIO(F, 6) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(F, 6)>;
+			freax,code = <ASPEED_GPIO(F, 6)>;
 		};
 
 		event-checkstop {
 			label = "checkstop";
 			gpios = <&gpio ASPEED_GPIO(J, 2) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(J, 2)>;
+			freax,code = <ASPEED_GPIO(J, 2)>;
 		};
 
 		event-ps0-presence {
 			label = "ps0-presence";
 			gpios = <&gpio ASPEED_GPIO(Z, 2) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(Z, 2)>;
+			freax,code = <ASPEED_GPIO(Z, 2)>;
 		};
 
 		event-ps1-presence {
 			label = "ps1-presence";
 			gpios = <&gpio ASPEED_GPIO(Z, 0) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(Z, 0)>;
+			freax,code = <ASPEED_GPIO(Z, 0)>;
 		};
 
 		button-id {
 			label = "id-button";
 			gpios = <&gpio ASPEED_GPIO(F, 1) GPIO_ACTIVE_LOW>;
-			linux,code = <ASPEED_GPIO(F, 1)>;
+			freax,code = <ASPEED_GPIO(F, 1)>;
 		};
 	};
 
@@ -84,31 +84,31 @@
 		event-fan0-presence {
 			label = "fan0-presence";
 			gpios = <&pca9552 9 GPIO_ACTIVE_LOW>;
-			linux,code = <9>;
+			freax,code = <9>;
 		};
 
 		event-fan1-presence {
 			label = "fan1-presence";
 			gpios = <&pca9552 10 GPIO_ACTIVE_LOW>;
-			linux,code = <10>;
+			freax,code = <10>;
 		};
 
 		event-fan2-presence {
 			label = "fan2-presence";
 			gpios = <&pca9552 11 GPIO_ACTIVE_LOW>;
-			linux,code = <11>;
+			freax,code = <11>;
 		};
 
 		event-fan3-presence {
 			label = "fan3-presence";
 			gpios = <&pca9552 12 GPIO_ACTIVE_LOW>;
-			linux,code = <12>;
+			freax,code = <12>;
 		};
 
 		event-fan4-presence {
 			label = "fan4-presence";
 			gpios = <&pca9552 13 GPIO_ACTIVE_LOW>;
-			linux,code = <13>;
+			freax,code = <13>;
 		};
 	};
 

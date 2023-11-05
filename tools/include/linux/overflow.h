@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 OR MIT */
-#ifndef __LINUX_OVERFLOW_H
-#define __LINUX_OVERFLOW_H
+#ifndef __freax_OVERFLOW_H
+#define __freax_OVERFLOW_H
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 /*
  * We need to compute the minimum and maximum values representable in a given
@@ -141,4 +141,4 @@ static inline __must_check size_t __ab_c_size(size_t n, size_t size, size_t c)
 		    sizeof(*(p)->member) + __must_be_array((p)->member),\
 		    sizeof(*(p)))
 
-#endif /* __LINUX_OVERFLOW_H */
+#endif /* __freax_OVERFLOW_H */

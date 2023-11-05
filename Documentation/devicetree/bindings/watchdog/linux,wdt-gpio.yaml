@@ -1,18 +1,18 @@
 # SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 %YAML 1.2
 ---
-$id: http://devicetree.org/schemas/watchdog/linux,wdt-gpio.yaml#
+$id: http://devicetree.org/schemas/watchdog/freax,wdt-gpio.yaml#
 $schema: http://devicetree.org/meta-schemas/core.yaml#
 
 title: GPIO-controlled Watchdog
 
 maintainers:
-  - Guenter Roeck <linux@roeck-us.net>
+  - Guenter Roeck <freax@roeck-us.net>
   - Robert Marko <robert.marko@sartura.hr>
 
 properties:
   compatible:
-    const: linux,wdt-gpio
+    const: freax,wdt-gpio
 
   gpios:
     description: gpio connection to WDT reset pin
@@ -61,7 +61,7 @@ examples:
   - |
     #include <dt-bindings/gpio/gpio.h>
     watchdog {
-        compatible = "linux,wdt-gpio";
+        compatible = "freax,wdt-gpio";
         gpios = <&gpio3 9 GPIO_ACTIVE_LOW>;
         hw_algo = "toggle";
         hw_margin_ms = <1600>;

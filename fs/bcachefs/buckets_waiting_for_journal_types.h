@@ -2,7 +2,7 @@
 #ifndef _BUCKETS_WAITING_FOR_JOURNAL_TYPES_H
 #define _BUCKETS_WAITING_FOR_JOURNAL_TYPES_H
 
-#include <linux/siphash.h>
+#include <freax/siphash.h>
 
 struct bucket_hashed {
 	u64			dev_bucket;

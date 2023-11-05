@@ -1,10 +1,10 @@
-#include <linux/device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmapool.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/module.h>
+#include <freax/device.h>
+#include <freax/dma-map-ops.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmapool.h>
+#include <freax/kernel.h>
+#include <freax/ktime.h>
+#include <freax/module.h>
 
 #define NR_TESTS (100)
 

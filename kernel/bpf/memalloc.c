@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2022 Meta Platforms, Inc. and affiliates. */
-#include <linux/mm.h>
-#include <linux/llist.h>
-#include <linux/bpf.h>
-#include <linux/irq_work.h>
-#include <linux/bpf_mem_alloc.h>
-#include <linux/memcontrol.h>
+#include <freax/mm.h>
+#include <freax/llist.h>
+#include <freax/bpf.h>
+#include <freax/irq_work.h>
+#include <freax/bpf_mem_alloc.h>
+#include <freax/memcontrol.h>
 #include <asm/local.h>
 
 /* Any context (including NMI) BPF specific memory allocator.

@@ -33,8 +33,8 @@
 
 #include <drm/drm_gem.h>
 
-#include <linux/kref.h>
-#include <linux/list.h>
+#include <freax/kref.h>
+#include <freax/list.h>
 
 #include "ttm_device.h"
 

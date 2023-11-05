@@ -5,18 +5,18 @@
  * Copyright (C) 2004-2006 Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bug.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/bug.h>
+#include <freax/errno.h>
+#include <freax/firewire.h>
+#include <freax/firewire-constants.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

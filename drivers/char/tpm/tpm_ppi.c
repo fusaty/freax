@@ -4,8 +4,8 @@
  *
  * Authors:
  * Xiaoyan Zhang <xiaoyan.zhang@intel.com>
- * Jiang Liu <jiang.liu@linux.intel.com>
- * Jarkko Sakkinen <jarkko.sakkinen@linux.intel.com>
+ * Jiang Liu <jiang.liu@freax.intel.com>
+ * Jarkko Sakkinen <jarkko.sakkinen@freax.intel.com>
  *
  * Maintained by: <tpmdd-devel@lists.sourceforge.net>
  *
@@ -13,7 +13,7 @@
  */
 
 
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 #include "tpm.h"
 
 #define TPM_PPI_REVISION_ID_1	1

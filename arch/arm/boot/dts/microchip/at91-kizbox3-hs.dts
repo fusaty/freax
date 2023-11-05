@@ -71,35 +71,35 @@
 		switch-1 {
 			label = "SW1";
 			gpios = <&pioA PIN_PA29 GPIO_ACTIVE_LOW>;
-			linux,code = <0x101>;
+			freax,code = <0x101>;
 			wakeup-source;
 		};
 
 		switch-2 {
 			label = "SW2";
 			gpios = <&pioA PIN_PA18 GPIO_ACTIVE_LOW>;
-			linux,code = <0x102>;
+			freax,code = <0x102>;
 			wakeup-source;
 		};
 
 		switch-3 {
 			label = "SW3";
 			gpios = <&pioA PIN_PA22 GPIO_ACTIVE_LOW>;
-			linux,code = <0x103>;
+			freax,code = <0x103>;
 			wakeup-source;
 		};
 
 		switch-7 {
 			label = "SW7";
 			gpios = <&pioA PIN_PA26 GPIO_ACTIVE_LOW>;
-			linux,code = <0x107>;
+			freax,code = <0x107>;
 			wakeup-source;
 		};
 
 		switch-8 {
 			label = "SW8";
 			gpios = <&pioA PIN_PA24 GPIO_ACTIVE_LOW>;
-			linux,code = <0x108>;
+			freax,code = <0x108>;
 			wakeup-source;
 		};
 	};

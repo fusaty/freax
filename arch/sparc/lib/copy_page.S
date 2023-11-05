@@ -5,11 +5,11 @@
  * Copyright (C) 1997 Jakub Jelinek (jakub@redhat.com)
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/visasm.h>
 #include <asm/thread_info.h>
 #include <asm/page.h>
-#include <linux/pgtable.h>
+#include <freax/pgtable.h>
 #include <asm/spitfire.h>
 #include <asm/head.h>
 

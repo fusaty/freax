@@ -6,18 +6,18 @@
  *
  * Author: Miguel Aguilar <miguel.aguilar@ridgerun.com>
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/mfd/davinci_voicecodec.h>
-#include <linux/spi/spi.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/platform_device.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/mfd/davinci_voicecodec.h>
+#include <freax/spi/spi.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

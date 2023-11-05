@@ -6,8 +6,8 @@
  * Author: Jyri Sarha <jsarha@ti.com>
  */
 
-#include <linux/io.h>
-#include <linux/platform_device.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
 
 #include "cdns-mhdp8546-j721e.h"
 

@@ -4,44 +4,44 @@
  *
  * Copyright (C) IBM Corporation, 2014
  *
- * Author: Paul E. McKenney <paulmck@linux.ibm.com>
+ * Author: Paul E. McKenney <paulmck@freax.ibm.com>
  *	Based on kernel/rcu/torture.c.
  */
 
 #define pr_fmt(fmt) fmt
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/err.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/moduleparam.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/freezer.h>
-#include <linux/cpu.h>
-#include <linux/delay.h>
-#include <linux/stat.h>
-#include <linux/slab.h>
-#include <linux/trace_clock.h>
-#include <linux/ktime.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kthread.h>
+#include <freax/err.h>
+#include <freax/spinlock.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/completion.h>
+#include <freax/moduleparam.h>
+#include <freax/percpu.h>
+#include <freax/notifier.h>
+#include <freax/reboot.h>
+#include <freax/freezer.h>
+#include <freax/cpu.h>
+#include <freax/delay.h>
+#include <freax/stat.h>
+#include <freax/slab.h>
+#include <freax/trace_clock.h>
+#include <freax/ktime.h>
 #include <asm/byteorder.h>
-#include <linux/torture.h>
-#include <linux/sched/rt.h>
+#include <freax/torture.h>
+#include <freax/sched/rt.h>
 #include "rcu/rcu.h"
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Paul E. McKenney <paulmck@linux.ibm.com>");
+MODULE_AUTHOR("Paul E. McKenney <paulmck@freax.ibm.com>");
 
 static bool disable_onoff_at_boot;
 module_param(disable_onoff_at_boot, bool, 0444);

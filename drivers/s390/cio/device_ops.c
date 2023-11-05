@@ -5,14 +5,14 @@
  * Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com)
  *	      Cornelia Huck (cornelia.huck@de.ibm.com)
  */
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/device.h>
+#include <freax/delay.h>
+#include <freax/completion.h>
 
 #include <asm/ccwdev.h>
 #include <asm/idals.h>

@@ -5,21 +5,21 @@
 
 #define pr_fmt(fmt) "xive: " fmt
 
-#include <linux/types.h>
-#include <linux/irq.h>
-#include <linux/debugfs.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/seq_file.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/delay.h>
-#include <linux/cpumask.h>
-#include <linux/mm.h>
-#include <linux/kmemleak.h>
+#include <freax/types.h>
+#include <freax/irq.h>
+#include <freax/debugfs.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/seq_file.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/delay.h>
+#include <freax/cpumask.h>
+#include <freax/mm.h>
+#include <freax/kmemleak.h>
 
 #include <asm/machdep.h>
 #include <asm/io.h>

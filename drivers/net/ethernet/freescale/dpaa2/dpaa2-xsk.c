@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
 /* Copyright 2022 NXP
  */
-#include <linux/filter.h>
-#include <linux/compiler.h>
-#include <linux/bpf_trace.h>
+#include <freax/filter.h>
+#include <freax/compiler.h>
+#include <freax/bpf_trace.h>
 #include <net/xdp.h>
 #include <net/xdp_sock_drv.h>
 
@@ -139,7 +139,7 @@ static void dpaa2_xsk_rx(struct dpaa2_eth_priv *priv,
 		 */
 		goto err_alloc_skb;
 
-	/* Send the skb to the Linux networking stack */
+	/* Send the skb to the freax networking stack */
 	dpaa2_eth_receive_skb(priv, ch, fd, vaddr, fq, percpu_stats, skb);
 
 	return;

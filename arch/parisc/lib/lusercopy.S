@@ -3,9 +3,9 @@
  *    User Space Access Routines
  *
  *    Copyright (C) 2000-2002 Hewlett-Packard (John Marvin)
- *    Copyright (C) 2000 Richard Hirst <rhirst with parisc-linux.org>
+ *    Copyright (C) 2000 Richard Hirst <rhirst with parisc-freax.org>
  *    Copyright (C) 2001 Matthieu Delahaye <delahaym at esiee.fr>
- *    Copyright (C) 2003 Randolph Chung <tausq with parisc-linux.org>
+ *    Copyright (C) 2003 Randolph Chung <tausq with parisc-freax.org>
  *    Copyright (C) 2017 Helge Deller <deller@gmx.de>
  *    Copyright (C) 2017 John David Anglin <dave.anglin@bell.net>
  */
@@ -25,7 +25,7 @@
 	
 #include <asm/assembly.h>
 #include <asm/errno.h>
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 	/*
 	 * unsigned long lclear_user(void *to, unsigned long n)

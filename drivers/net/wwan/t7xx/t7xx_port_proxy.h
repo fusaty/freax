@@ -7,7 +7,7 @@
  *  Amir Hanania <amir.hanania@intel.com>
  *  Haijun Liu <haijun.liu@mediatek.com>
  *  Moises Veleta <moises.veleta@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *
  * Contributors:
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
@@ -18,10 +18,10 @@
 #ifndef __T7XX_PORT_PROXY_H__
 #define __T7XX_PORT_PROXY_H__
 
-#include <linux/bits.h>
-#include <linux/device.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/device.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
 
 #include "t7xx_hif_cldma.h"
 #include "t7xx_modem_ops.h"

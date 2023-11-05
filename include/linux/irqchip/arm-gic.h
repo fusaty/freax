@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  include/linux/irqchip/arm-gic.h
+ *  include/freax/irqchip/arm-gic.h
  *
  *  Copyright (C) 2002 ARM Limited, All Rights Reserved.
  */
-#ifndef __LINUX_IRQCHIP_ARM_GIC_H
-#define __LINUX_IRQCHIP_ARM_GIC_H
+#ifndef __freax_IRQCHIP_ARM_GIC_H
+#define __freax_IRQCHIP_ARM_GIC_H
 
 #define GIC_CPU_CTRL			0x00
 #define GIC_CPU_PRIMASK			0x04
@@ -127,7 +127,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/irqdomain.h>
+#include <freax/irqdomain.h>
 
 struct device_node;
 struct gic_chip_data;

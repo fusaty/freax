@@ -23,14 +23,14 @@
 /*
  */
 
-#include <linux/dmi.h>
-#include <linux/hid.h>
-#include <linux/module.h>
-#include <linux/platform_data/x86/asus-wmi.h>
-#include <linux/input/mt.h>
-#include <linux/usb.h> /* For to_usb_interface for T100 touchpad intf check */
-#include <linux/power_supply.h>
-#include <linux/leds.h>
+#include <freax/dmi.h>
+#include <freax/hid.h>
+#include <freax/module.h>
+#include <freax/platform_data/x86/asus-wmi.h>
+#include <freax/input/mt.h>
+#include <freax/usb.h> /* For to_usb_interface for T100 touchpad intf check */
+#include <freax/power_supply.h>
+#include <freax/leds.h>
 
 #include "hid-ids.h"
 

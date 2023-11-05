@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_LIST_BL_H
-#define _LINUX_LIST_BL_H
+#ifndef _freax_LIST_BL_H
+#define _freax_LIST_BL_H
 
-#include <linux/list.h>
-#include <linux/bit_spinlock.h>
+#include <freax/list.h>
+#include <freax/bit_spinlock.h>
 
 /*
  * Special version of lists, where head of the list has a lock in the lowest

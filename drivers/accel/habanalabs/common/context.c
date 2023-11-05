@@ -7,7 +7,7 @@
 
 #include "habanalabs.h"
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 static void encaps_handle_do_release(struct hl_cs_encaps_sig_handle *handle, bool put_hw_sob,
 					bool put_ctx)

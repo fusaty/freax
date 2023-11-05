@@ -8,21 +8,21 @@
  */
 
 
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/extable.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/extable.h>
 #include <asm/asi.h>
 #include <asm/ptrace.h>
 #include <asm/pstate.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
-#include <linux/smp.h>
-#include <linux/bitops.h>
-#include <linux/perf_event.h>
-#include <linux/ratelimit.h>
-#include <linux/context_tracking.h>
+#include <freax/uaccess.h>
+#include <freax/smp.h>
+#include <freax/bitops.h>
+#include <freax/perf_event.h>
+#include <freax/ratelimit.h>
+#include <freax/context_tracking.h>
 #include <asm/fpumacro.h>
 #include <asm/cacheflush.h>
 #include <asm/setup.h>

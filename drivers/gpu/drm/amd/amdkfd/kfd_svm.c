@@ -21,9 +21,9 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/types.h>
-#include <linux/sched/task.h>
-#include <linux/dynamic_debug.h>
+#include <freax/types.h>
+#include <freax/sched/task.h>
+#include <freax/dynamic_debug.h>
 #include <drm/ttm/ttm_tt.h>
 #include <drm/drm_exec.h>
 

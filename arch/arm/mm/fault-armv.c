@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/fault-armv.c
+ *  freax/arch/arm/mm/fault-armv.c
  *
  *  Copyright (C) 1995  Linus Torvalds
  *  Modifications for ARM processor (c) 1995-2002 Russell King
  */
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/bitops.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/gfp.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/bitops.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
+#include <freax/pagemap.h>
+#include <freax/gfp.h>
 
 #include <asm/bugs.h>
 #include <asm/cacheflush.h>
@@ -23,7 +23,7 @@
 
 static pteval_t shared_pte_mask = L_PTE_MT_BUFFERABLE;
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 /*
  * We take the easy way out of this problem - we make the
  * PTE uncacheable.  However, we leave the write buffer on.
@@ -208,7 +208,7 @@ void update_mmu_cache_range(struct vm_fault *vmf, struct vm_area_struct *vma,
 			__flush_icache_all();
 	}
 }
-#endif	/* __LINUX_ARM_ARCH__ < 6 */
+#endif	/* __freax_ARM_ARCH__ < 6 */
 
 /*
  * Check whether the write buffer has physical address aliasing

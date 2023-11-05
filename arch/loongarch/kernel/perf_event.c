@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Linux performance counter support for LoongArch.
+ * freax performance counter support for LoongArch.
  *
  * Copyright (C) 2022 Loongson Technology Corporation Limited
  *
@@ -10,13 +10,13 @@
  * Author: Deng-Cheng Zhu
  */
 
-#include <linux/cpumask.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/perf_event.h>
-#include <linux/uaccess.h>
-#include <linux/sched/task_stack.h>
+#include <freax/cpumask.h>
+#include <freax/interrupt.h>
+#include <freax/smp.h>
+#include <freax/kernel.h>
+#include <freax/perf_event.h>
+#include <freax/uaccess.h>
+#include <freax/sched/task_stack.h>
 
 #include <asm/irq.h>
 #include <asm/irq_regs.h>

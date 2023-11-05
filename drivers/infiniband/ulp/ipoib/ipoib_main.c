@@ -34,22 +34,22 @@
 
 #include "ipoib.h"
 
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/vmalloc.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/vmalloc.h>
 
-#include <linux/if_arp.h>	/* For ARPHRD_xxx */
+#include <freax/if_arp.h>	/* For ARPHRD_xxx */
 
-#include <linux/ip.h>
-#include <linux/in.h>
+#include <freax/ip.h>
+#include <freax/in.h>
 
-#include <linux/jhash.h>
+#include <freax/jhash.h>
 #include <net/arp.h>
 #include <net/addrconf.h>
-#include <linux/inetdevice.h>
+#include <freax/inetdevice.h>
 #include <rdma/ib_cache.h>
 
 MODULE_AUTHOR("Roland Dreier");

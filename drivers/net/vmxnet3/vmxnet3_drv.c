@@ -1,5 +1,5 @@
 /*
- * Linux driver for VMware's vmxnet3 ethernet NIC.
+ * freax driver for VMware's vmxnet3 ethernet NIC.
  *
  * Copyright (C) 2008-2022, VMware, Inc. All Rights Reserved.
  *
@@ -24,7 +24,7 @@
  *
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <net/ip6_checksum.h>
 
 #include "vmxnet3_int.h"
@@ -2769,7 +2769,7 @@ vmxnet3_setup_driver_shared(struct vmxnet3_adapter *adapter)
 						VMXNET3_DRIVER_VERSION_NUM);
 	devRead->misc.driverInfo.gos.gosBits = (sizeof(void *) == 4 ?
 				VMXNET3_GOS_BITS_32 : VMXNET3_GOS_BITS_64);
-	devRead->misc.driverInfo.gos.gosType = VMXNET3_GOS_TYPE_LINUX;
+	devRead->misc.driverInfo.gos.gosType = VMXNET3_GOS_TYPE_freax;
 	*((u32 *)&devRead->misc.driverInfo.gos) = cpu_to_le32(
 				*((u32 *)&devRead->misc.driverInfo.gos));
 	devRead->misc.driverInfo.vmxnet3RevSpt = cpu_to_le32(1);
@@ -3593,10 +3593,10 @@ vmxnet3_read_mac_addr(struct vmxnet3_adapter *adapter, u8 *mac)
 /*
  * Enable MSIx vectors.
  * Returns :
- *	VMXNET3_LINUX_MIN_MSIX_VECT when only minimum number of vectors required
+ *	VMXNET3_freax_MIN_MSIX_VECT when only minimum number of vectors required
  *	 were enabled.
  *	number of vectors which were enabled otherwise (this number is greater
- *	 than VMXNET3_LINUX_MIN_MSIX_VECT)
+ *	 than VMXNET3_freax_MIN_MSIX_VECT)
  */
 
 static int
@@ -3605,15 +3605,15 @@ vmxnet3_acquire_msix_vectors(struct vmxnet3_adapter *adapter, int nvec)
 	int ret = pci_enable_msix_range(adapter->pdev,
 					adapter->intr.msix_entries, nvec, nvec);
 
-	if (ret == -ENOSPC && nvec > VMXNET3_LINUX_MIN_MSIX_VECT) {
+	if (ret == -ENOSPC && nvec > VMXNET3_freax_MIN_MSIX_VECT) {
 		dev_err(&adapter->netdev->dev,
 			"Failed to enable %d MSI-X, trying %d\n",
-			nvec, VMXNET3_LINUX_MIN_MSIX_VECT);
+			nvec, VMXNET3_freax_MIN_MSIX_VECT);
 
 		ret = pci_enable_msix_range(adapter->pdev,
 					    adapter->intr.msix_entries,
-					    VMXNET3_LINUX_MIN_MSIX_VECT,
-					    VMXNET3_LINUX_MIN_MSIX_VECT);
+					    VMXNET3_freax_MIN_MSIX_VECT,
+					    VMXNET3_freax_MIN_MSIX_VECT);
 	}
 
 	if (ret < 0) {
@@ -3655,8 +3655,8 @@ vmxnet3_alloc_intr_resources(struct vmxnet3_adapter *adapter)
 		nvec += adapter->share_intr == VMXNET3_INTR_BUDDYSHARE ?
 			0 : adapter->num_rx_queues;
 		nvec += 1;	/* for link event */
-		nvec = nvec > VMXNET3_LINUX_MIN_MSIX_VECT ?
-		       nvec : VMXNET3_LINUX_MIN_MSIX_VECT;
+		nvec = nvec > VMXNET3_freax_MIN_MSIX_VECT ?
+		       nvec : VMXNET3_freax_MIN_MSIX_VECT;
 
 		for (i = 0; i < nvec; i++)
 			adapter->intr.msix_entries[i].entry = i;
@@ -3668,8 +3668,8 @@ vmxnet3_alloc_intr_resources(struct vmxnet3_adapter *adapter)
 		/* If we cannot allocate one MSIx vector per queue
 		 * then limit the number of rx queues to 1
 		 */
-		if (nvec_allocated == VMXNET3_LINUX_MIN_MSIX_VECT &&
-		    nvec != VMXNET3_LINUX_MIN_MSIX_VECT) {
+		if (nvec_allocated == VMXNET3_freax_MIN_MSIX_VECT &&
+		    nvec != VMXNET3_freax_MIN_MSIX_VECT) {
 			if (adapter->share_intr != VMXNET3_INTR_BUDDYSHARE
 			    || adapter->num_rx_queues != 1) {
 				adapter->share_intr = VMXNET3_INTR_TXSHARE;

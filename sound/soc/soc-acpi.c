@@ -4,8 +4,8 @@
 //
 // Copyright (c) 2013-15, Intel Corporation.
 
-#include <linux/export.h>
-#include <linux/module.h>
+#include <freax/export.h>
+#include <freax/module.h>
 #include <sound/soc-acpi.h>
 
 static bool snd_soc_acpi_id_present(struct snd_soc_acpi_mach *machine)

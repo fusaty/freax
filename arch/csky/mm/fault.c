@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright (C) 2018 Hangzhou C-SKY Microsystems co.,ltd.
 
-#include <linux/extable.h>
-#include <linux/kprobes.h>
-#include <linux/mmu_context.h>
-#include <linux/perf_event.h>
+#include <freax/extable.h>
+#include <freax/kprobes.h>
+#include <freax/mmu_context.h>
+#include <freax/perf_event.h>
 
 int fixup_exception(struct pt_regs *regs)
 {

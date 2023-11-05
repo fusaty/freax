@@ -81,11 +81,11 @@
  * queueing support and devices which fail to provide sense data on
  * contingent allegiance conditions)
  *
- * Many thanks to Richard Hirst <rhirst@linuxcare.com> for patiently
+ * Many thanks to Richard Hirst <rhirst@freaxcare.com> for patiently
  * debugging this driver on the parisc architecture and suggesting
  * many improvements and bug fixes.
  *
- * Thanks also go to Linuxcare Inc. for providing several PARISC
+ * Thanks also go to freaxcare Inc. for providing several PARISC
  * machines for me to debug the driver on.
  *
  * Version 2.2
@@ -101,21 +101,21 @@
  * */
 #define NCR_700_VERSION "2.8"
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/proc_fs.h>
-#include <linux/blkdev.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/device.h>
-#include <linux/pgtable.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/ioport.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/init.h>
+#include <freax/proc_fs.h>
+#include <freax/blkdev.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/device.h>
+#include <freax/pgtable.h>
 #include <asm/dma.h>
 #include <asm/io.h>
 #include <asm/byteorder.h>

@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_GFP_H
-#define __LINUX_GFP_H
+#ifndef __freax_GFP_H
+#define __freax_GFP_H
 
-#include <linux/gfp_types.h>
+#include <freax/gfp_types.h>
 
-#include <linux/mmzone.h>
-#include <linux/topology.h>
+#include <freax/mmzone.h>
+#include <freax/topology.h>
 
 struct vm_area_struct;
 struct mempolicy;
@@ -364,4 +364,4 @@ extern struct page *alloc_contig_pages(unsigned long nr_pages, gfp_t gfp_mask,
 #endif
 void free_contig_range(unsigned long pfn, unsigned long nr_pages);
 
-#endif /* __LINUX_GFP_H */
+#endif /* __freax_GFP_H */

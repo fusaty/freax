@@ -7,14 +7,14 @@
  *   Copyright (C) 2015 NextThing Co
  */
 
-#include <linux/component.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <freax/component.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_crtc.h>

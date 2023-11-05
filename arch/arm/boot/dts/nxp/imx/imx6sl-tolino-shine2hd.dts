@@ -45,27 +45,27 @@
 		key-cover {
 			label = "Cover";
 			gpios = <&gpio5 12 GPIO_ACTIVE_LOW>;
-			linux,code = <SW_LID>;
-			linux,input-type = <EV_SW>;
+			freax,code = <SW_LID>;
+			freax,input-type = <EV_SW>;
 			wakeup-source;
 		};
 
 		key-fl {
 			label = "Frontlight";
 			gpios = <&gpio3 26 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_BRIGHTNESS_CYCLE>;
+			freax,code = <KEY_BRIGHTNESS_CYCLE>;
 		};
 
 		key-home {
 			label = "Home";
 			gpios = <&gpio3 25 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 		};
 
 		key-power {
 			label = "Power";
 			gpios = <&gpio5 8 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};
@@ -78,13 +78,13 @@
 		led-0 {
 			label = "tolinoshine2hd:white:on";
 			gpios = <&gpio5 13 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "timer";
+			freax,default-trigger = "timer";
 		};
 
 		led-1 {
 			label = "tolinoshine2hd:white:backlightboost";
 			gpios = <&gpio1 29 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "off";
+			freax,default-trigger = "off";
 		};
 	};
 

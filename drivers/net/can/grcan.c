@@ -22,20 +22,20 @@
  * Contributors: Andreas Larsson <andreas@gaisler.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/io.h>
-#include <linux/can/dev.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/delay.h>
+#include <freax/ethtool.h>
+#include <freax/io.h>
+#include <freax/can/dev.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
 
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 
 #define DRV_NAME	"grcan"
 

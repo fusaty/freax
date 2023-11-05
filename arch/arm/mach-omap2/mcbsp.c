@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap2/mcbsp.c
+ * freax/arch/arm/mach-omap2/mcbsp.c
  *
  * Copyright (C) 2008 Instituto Nokia de Tecnologia
  * Contact: Eduardo Valentin <eduardo.valentin@indt.org.br>
  *
  * Multichannel mode not supported.
  */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/platform_data/asoc-ti-mcbsp.h>
-#include <linux/pm_runtime.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/platform_data/asoc-ti-mcbsp.h>
+#include <freax/pm_runtime.h>
 
-#include <linux/omap-dma.h>
+#include <freax/omap-dma.h>
 
 #include "soc.h"
 #include "omap_device.h"

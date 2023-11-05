@@ -1,5 +1,5 @@
 ========================================
-NetLabel Linux Security Module Interface
+NetLabel freax Security Module Interface
 ========================================
 
 Paul Moore, paul.moore@hp.com

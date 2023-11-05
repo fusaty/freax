@@ -13,19 +13,19 @@
  * by Hollis Blanchard <hollisb@us.ibm.com>.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/kvm.h>
-#include <linux/kvm_host.h>
-#include <linux/highmem.h>
-#include <linux/log2.h>
-#include <linux/uaccess.h>
-#include <linux/sched.h>
-#include <linux/rwsem.h>
-#include <linux/vmalloc.h>
-#include <linux/hugetlb.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/kvm.h>
+#include <freax/kvm_host.h>
+#include <freax/highmem.h>
+#include <freax/log2.h>
+#include <freax/uaccess.h>
+#include <freax/sched.h>
+#include <freax/rwsem.h>
+#include <freax/vmalloc.h>
+#include <freax/hugetlb.h>
 #include <asm/kvm_ppc.h>
 
 #include "e500.h"

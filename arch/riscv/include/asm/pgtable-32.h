@@ -7,8 +7,8 @@
 #define _ASM_RISCV_PGTABLE_32_H
 
 #include <asm-generic/pgtable-nopmd.h>
-#include <linux/bits.h>
-#include <linux/const.h>
+#include <freax/bits.h>
+#include <freax/const.h>
 
 /* Size of region mapped by a page global directory */
 #define PGDIR_SHIFT     22

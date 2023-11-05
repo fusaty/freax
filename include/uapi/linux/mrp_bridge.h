@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 
-#ifndef _UAPI_LINUX_MRP_BRIDGE_H_
-#define _UAPI_LINUX_MRP_BRIDGE_H_
+#ifndef _UAPI_freax_MRP_BRIDGE_H_
+#define _UAPI_freax_MRP_BRIDGE_H_
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
 
 #define MRP_MAX_FRAME_LENGTH		200
 #define MRP_DEFAULT_PRIO		0x8000

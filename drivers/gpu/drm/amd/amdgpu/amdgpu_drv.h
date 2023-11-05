@@ -1,7 +1,7 @@
-/* amdgpu_drv.h -- Private header for amdgpu driver -*- linux-c -*-
+/* amdgpu_drv.h -- Private header for amdgpu driver -*- freax-c -*-
  *
  * Copyright 1999 Precision Insight, Inc., Cedar Park, Texas.
- * Copyright 2000 VA Linux Systems, Inc., Fremont, California.
+ * Copyright 2000 VA freax Systems, Inc., Fremont, California.
  * All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -28,15 +28,15 @@
 #ifndef __AMDGPU_DRV_H__
 #define __AMDGPU_DRV_H__
 
-#include <linux/firmware.h>
-#include <linux/platform_device.h>
+#include <freax/firmware.h>
+#include <freax/platform_device.h>
 
 #include "amd_shared.h"
 
 /* General customization:
  */
 
-#define DRIVER_AUTHOR		"AMD linux driver team"
+#define DRIVER_AUTHOR		"AMD freax driver team"
 
 #define DRIVER_NAME		"amdgpu"
 #define DRIVER_DESC		"AMD GPU"

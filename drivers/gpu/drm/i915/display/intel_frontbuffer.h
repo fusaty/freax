@@ -24,9 +24,9 @@
 #ifndef __INTEL_FRONTBUFFER_H__
 #define __INTEL_FRONTBUFFER_H__
 
-#include <linux/atomic.h>
-#include <linux/bits.h>
-#include <linux/kref.h>
+#include <freax/atomic.h>
+#include <freax/bits.h>
+#include <freax/kref.h>
 
 #include "i915_active_types.h"
 

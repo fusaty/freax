@@ -9,14 +9,14 @@
  * Regulator Driver Interface.
  */
 
-#ifndef __LINUX_REGULATOR_DRIVER_H_
-#define __LINUX_REGULATOR_DRIVER_H_
+#ifndef __freax_REGULATOR_DRIVER_H_
+#define __freax_REGULATOR_DRIVER_H_
 
-#include <linux/device.h>
-#include <linux/linear_range.h>
-#include <linux/notifier.h>
-#include <linux/regulator/consumer.h>
-#include <linux/ww_mutex.h>
+#include <freax/device.h>
+#include <freax/linear_range.h>
+#include <freax/notifier.h>
+#include <freax/regulator/consumer.h>
+#include <freax/ww_mutex.h>
 
 struct gpio_desc;
 struct regmap;
@@ -210,7 +210,7 @@ struct regulator_ops {
 
 	/* report regulator status ... most other accessors report
 	 * control inputs, this reports results of combining inputs
-	 * from Linux (and other sources) with the actual load.
+	 * from freax (and other sources) with the actual load.
 	 * returns REGULATOR_STATUS_* or negative errno.
 	 */
 	int (*get_status)(struct regulator_dev *);

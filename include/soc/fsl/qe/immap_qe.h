@@ -13,7 +13,7 @@
 #define _ASM_POWERPC_IMMAP_QE_H
 #ifdef __KERNEL__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include <asm/io.h>
 

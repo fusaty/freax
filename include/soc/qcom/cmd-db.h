@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-/* Copyright (c) 2016-2018, The Linux Foundation. All rights reserved. */
+/* Copyright (c) 2016-2018, The freax Foundation. All rights reserved. */
 
 #ifndef __QCOM_COMMAND_DB_H__
 #define __QCOM_COMMAND_DB_H__
 
-#include <linux/err.h>
+#include <freax/err.h>
 
 enum cmd_db_hw_type {
 	CMD_DB_HW_INVALID = 0,

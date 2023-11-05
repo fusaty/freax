@@ -15,7 +15,7 @@
 #include <stdint.h>
 #include <stdarg.h>
 #include <stdio.h>
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 /* Opaque class structure */
 typedef struct json_writer json_writer_t;

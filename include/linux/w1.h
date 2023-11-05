@@ -3,10 +3,10 @@
  * Copyright (c) 2004 Evgeniy Polyakov <zbr@ioremap.net>
  */
 
-#ifndef __LINUX_W1_H
-#define __LINUX_W1_H
+#ifndef __freax_W1_H
+#define __freax_W1_H
 
-#include <linux/device.h>
+#include <freax/device.h>
 
 /**
  * struct w1_reg_num - broken out slave device id
@@ -321,4 +321,4 @@ static inline struct w1_master* dev_to_w1_master(struct device *dev)
 
 #endif /* __KERNEL__ */
 
-#endif /* __LINUX_W1_H */
+#endif /* __freax_W1_H */

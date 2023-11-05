@@ -25,7 +25,7 @@
 			abs-flat = <10>;
 			abs-fuzz = <10>;
 			abs-range = <172 772>;
-			linux,code = <ABS_X>;
+			freax,code = <ABS_X>;
 		};
 
 		axis@1 {
@@ -33,7 +33,7 @@
 			abs-flat = <10>;
 			abs-fuzz = <10>;
 			abs-range = <278 815>;
-			linux,code = <ABS_Y>;
+			freax,code = <ABS_Y>;
 		};
 	};
 

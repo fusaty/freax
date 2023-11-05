@@ -3,7 +3,7 @@
  * Driver core for Samsung SoC onboard UARTs.
  *
  * Ben Dooks, Copyright (c) 2003-2008 Simtec Electronics
- *	http://armlinux.simtec.co.uk/
+ *	http://armfreax.simtec.co.uk/
  */
 
 /* Note on 2410 error handling
@@ -21,26 +21,26 @@
  * BJD, 04-Nov-2004
  */
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/math.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/sysrq.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/serial.h>
-#include <linux/serial_s3c.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/cpufreq.h>
-#include <linux/of.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/math.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/init.h>
+#include <freax/sysrq.h>
+#include <freax/console.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/serial_core.h>
+#include <freax/serial.h>
+#include <freax/serial_s3c.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
+#include <freax/cpufreq.h>
+#include <freax/of.h>
 #include <asm/irq.h>
 
 /* UART name and device definitions */

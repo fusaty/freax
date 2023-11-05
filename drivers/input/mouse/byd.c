@@ -9,11 +9,11 @@
  * Copyright (C) 2015 Jay Kuri
  */
 
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/libps2.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/input.h>
+#include <freax/libps2.h>
+#include <freax/serio.h>
+#include <freax/slab.h>
 
 #include "psmouse.h"
 #include "byd.h"

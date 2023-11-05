@@ -7,8 +7,8 @@
  *
  * Author: Pawel Laszczak <pawell@cadence.com>
  */
-#ifndef __LINUX_CDNS3_DEBUG
-#define __LINUX_CDNS3_DEBUG
+#ifndef __freax_CDNS3_DEBUG
+#define __freax_CDNS3_DEBUG
 
 #include "core.h"
 
@@ -154,4 +154,4 @@ static inline char *cdns3_dbg_ring(struct cdns3_endpoint *priv_ep, char *str)
 	return str;
 }
 
-#endif /*__LINUX_CDNS3_DEBUG*/
+#endif /*__freax_CDNS3_DEBUG*/

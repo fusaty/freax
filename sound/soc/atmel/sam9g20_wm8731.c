@@ -16,16 +16,16 @@
  * Copyright 2005 Openedhand Ltd.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/clk.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/clk.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
 
-#include <linux/atmel-ssc.h>
+#include <freax/atmel-ssc.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

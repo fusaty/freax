@@ -6,8 +6,8 @@
  */
 
 #include "common.h"
-#include <linux/magic.h>
-#include <linux/proc_fs.h>
+#include <freax/magic.h>
+#include <freax/proc_fs.h>
 
 /**
  * tomoyo_encode2 - Encode binary string to ascii string.

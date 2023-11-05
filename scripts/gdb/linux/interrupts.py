@@ -4,10 +4,10 @@
 
 import gdb
 
-from linux import constants
-from linux import cpus
-from linux import utils
-from linux import radixtree
+from freax import constants
+from freax import cpus
+from freax import utils
+from freax import radixtree
 
 irq_desc_type = utils.CachedType("struct irq_desc")
 

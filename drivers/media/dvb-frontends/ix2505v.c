@@ -5,10 +5,10 @@
  * Copyright (C) 2010 Malcolm Priestley
  */
 
-#include <linux/module.h>
-#include <linux/dvb/frontend.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/module.h>
+#include <freax/dvb/frontend.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #include "ix2505v.h"
 

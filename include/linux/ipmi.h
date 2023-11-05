@@ -11,14 +11,14 @@
  * Copyright 2002 MontaVista Software Inc.
  *
  */
-#ifndef __LINUX_IPMI_H
-#define __LINUX_IPMI_H
+#ifndef __freax_IPMI_H
+#define __freax_IPMI_H
 
-#include <uapi/linux/ipmi.h>
+#include <uapi/freax/ipmi.h>
 
-#include <linux/list.h>
-#include <linux/proc_fs.h>
-#include <linux/acpi.h> /* For acpi_handle */
+#include <freax/list.h>
+#include <freax/proc_fs.h>
+#include <freax/acpi.h> /* For acpi_handle */
 
 struct module;
 struct device;
@@ -343,4 +343,4 @@ extern int ipmi_get_smi_info(int if_num, struct ipmi_smi_info *data);
 /* Helper function for computing the IPMB checksum of some data. */
 unsigned char ipmb_checksum(unsigned char *data, int size);
 
-#endif /* __LINUX_IPMI_H */
+#endif /* __freax_IPMI_H */

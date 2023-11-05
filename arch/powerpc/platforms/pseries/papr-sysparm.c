@@ -2,11 +2,11 @@
 
 #define pr_fmt(fmt)	"papr-sysparm: " fmt
 
-#include <linux/bug.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
+#include <freax/bug.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
 #include <asm/rtas.h>
 #include <asm/papr-sysparm.h>
 #include <asm/rtas-work-area.h>

@@ -4,14 +4,14 @@
  *
  * Copyright (C) 2015, Intel Corporation
  *
- * Authors: Andy Shevchenko <andriy.shevchenko@linux.intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Authors: Andy Shevchenko <andriy.shevchenko@freax.intel.com>
+ *          Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
 #ifndef __MFD_INTEL_LPSS_H
 #define __MFD_INTEL_LPSS_H
 
-#include <linux/pm.h>
+#include <freax/pm.h>
 
 struct device;
 struct resource;

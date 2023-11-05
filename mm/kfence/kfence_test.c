@@ -12,15 +12,15 @@
  */
 
 #include <kunit/test.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kfence.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/tracepoint.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/kfence.h>
+#include <freax/mm.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/tracepoint.h>
 #include <trace/events/printk.h>
 
 #include <asm/kfence.h>

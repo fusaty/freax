@@ -6,9 +6,9 @@
 #ifndef _FFA_COMMON_H
 #define _FFA_COMMON_H
 
-#include <linux/arm_ffa.h>
-#include <linux/arm-smccc.h>
-#include <linux/err.h>
+#include <freax/arm_ffa.h>
+#include <freax/arm-smccc.h>
+#include <freax/err.h>
 
 typedef struct arm_smccc_1_2_regs ffa_value_t;
 

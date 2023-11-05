@@ -7,15 +7,15 @@
  *	based on an inital version by Cliff Cai <cliff.cai@analog.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regulator/consumer.h>
+#include <freax/regmap.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

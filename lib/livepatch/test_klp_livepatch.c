@@ -3,11 +3,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/livepatch.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/livepatch.h>
 
-#include <linux/seq_file.h>
+#include <freax/seq_file.h>
 static int livepatch_cmdline_proc_show(struct seq_file *m, void *v)
 {
 	seq_printf(m, "%s: %s\n", THIS_MODULE->name,
@@ -24,7 +24,7 @@ static struct klp_func funcs[] = {
 
 static struct klp_object objs[] = {
 	{
-		/* name being NULL means vmlinux */
+		/* name being NULL means vmfreax */
 		.funcs = funcs,
 	}, { }
 };

@@ -48,9 +48,9 @@
 		};
 
 		partition@20000 {
-			/* 3.875 MB for Linux Kernel Image */
+			/* 3.875 MB for freax Kernel Image */
 			reg = <0x00020000 0x003e0000>;
-			label = "NOR Linux Kernel Image";
+			label = "NOR freax Kernel Image";
 		};
 
 		partition@400000 {

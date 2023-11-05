@@ -3,7 +3,7 @@
  * Copyright 2023 Rivos, Inc
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <vdso/datapage.h>
 #include <vdso/helpers.h>
 

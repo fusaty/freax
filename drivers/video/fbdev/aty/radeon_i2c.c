@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "radeonfb.h"
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/fb.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/fb.h>
 
 
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
 
 #include <asm/io.h>
 

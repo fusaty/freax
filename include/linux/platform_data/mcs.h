@@ -5,8 +5,8 @@
  * Author: HeungJun Kim <riverful.kim@samsung.com>
  */
 
-#ifndef __LINUX_MCS_H
-#define __LINUX_MCS_H
+#ifndef __freax_MCS_H
+#define __freax_MCS_H
 
 #define MCS_KEY_MAP(v, c)	((((v) & 0xff) << 16) | ((c) & 0xffff))
 #define MCS_KEY_VAL(v)		(((v) >> 16) & 0xff)
@@ -27,4 +27,4 @@ struct mcs_platform_data {
 	bool no_autorepeat;
 };
 
-#endif	/* __LINUX_MCS_H */
+#endif	/* __freax_MCS_H */

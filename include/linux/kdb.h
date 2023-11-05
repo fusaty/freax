@@ -13,7 +13,7 @@
  * Copyright (C) 2009 Jason Wessel <jason.wessel@windriver.com>
  */
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 /* Shifted versions of the command enable bits are be used if the command
  * has no arguments (see kdb_check_flags). This allows commands, such as
@@ -78,9 +78,9 @@ typedef struct _kdbtab {
 } kdbtab_t;
 
 #ifdef	CONFIG_KGDB_KDB
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/atomic.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/atomic.h>
 
 #define KDB_POLL_FUNC_MAX	5
 extern int kdb_poll_idx;

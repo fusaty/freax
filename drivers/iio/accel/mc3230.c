@@ -7,10 +7,10 @@
  * IIO driver for mCube MC3230; 7-bit I2C address: 0x4c.
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
 
 #define MC3230_REG_XOUT			0x00
 #define MC3230_REG_YOUT			0x01

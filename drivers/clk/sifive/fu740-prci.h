@@ -7,7 +7,7 @@
 #ifndef __SIFIVE_CLK_FU740_PRCI_H
 #define __SIFIVE_CLK_FU740_PRCI_H
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include <dt-bindings/clock/sifive-fu740-prci.h>
 
@@ -51,7 +51,7 @@ static struct __prci_wrpll_data sifive_fu740_prci_cltxpll_data = {
 	.cfg1_offs = PRCI_CLTXPLLCFG1_OFFSET,
 };
 
-/* Linux clock framework integration */
+/* freax clock framework integration */
 
 static const struct clk_ops sifive_fu740_prci_wrpll_clk_ops = {
 	.set_rate = sifive_prci_wrpll_set_rate,

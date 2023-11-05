@@ -10,12 +10,12 @@
  *  Modified: 2004, Oct     Szabolcs Gyurko
  */
 
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/stat.h>
-#include <linux/string_helpers.h>
+#include <freax/ctype.h>
+#include <freax/device.h>
+#include <freax/power_supply.h>
+#include <freax/slab.h>
+#include <freax/stat.h>
+#include <freax/string_helpers.h>
 
 #include "power_supply.h"
 

@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  *  Convert a logo in ASCII PNM format to C source suitable for inclusion in
- *  the Linux kernel
+ *  the freax kernel
  *
- *  (C) Copyright 2001-2003 by Geert Uytterhoeven <geert@linux-m68k.org>
+ *  (C) Copyright 2001-2003 by Geert Uytterhoeven <geert@freax-m68k.org>
  */
 
 #include <ctype.h>
@@ -17,24 +17,24 @@
 
 static const char *programname;
 static const char *filename;
-static const char *logoname = "linux_logo";
+static const char *logoname = "freax_logo";
 static const char *outputname;
 static FILE *out;
 
 
-#define LINUX_LOGO_MONO		1	/* monochrome black/white */
-#define LINUX_LOGO_VGA16	2	/* 16 colors VGA text palette */
-#define LINUX_LOGO_CLUT224	3	/* 224 colors */
-#define LINUX_LOGO_GRAY256	4	/* 256 levels grayscale */
+#define freax_LOGO_MONO		1	/* monochrome black/white */
+#define freax_LOGO_VGA16	2	/* 16 colors VGA text palette */
+#define freax_LOGO_CLUT224	3	/* 224 colors */
+#define freax_LOGO_GRAY256	4	/* 256 levels grayscale */
 
-static const char *logo_types[LINUX_LOGO_GRAY256+1] = {
-	[LINUX_LOGO_MONO] = "LINUX_LOGO_MONO",
-	[LINUX_LOGO_VGA16] = "LINUX_LOGO_VGA16",
-	[LINUX_LOGO_CLUT224] = "LINUX_LOGO_CLUT224",
-	[LINUX_LOGO_GRAY256] = "LINUX_LOGO_GRAY256"
+static const char *logo_types[freax_LOGO_GRAY256+1] = {
+	[freax_LOGO_MONO] = "freax_LOGO_MONO",
+	[freax_LOGO_VGA16] = "freax_LOGO_VGA16",
+	[freax_LOGO_CLUT224] = "freax_LOGO_CLUT224",
+	[freax_LOGO_GRAY256] = "freax_LOGO_GRAY256"
 };
 
-#define MAX_LINUX_LOGO_COLORS	224
+#define MAX_freax_LOGO_COLORS	224
 
 struct color {
 	unsigned char red;
@@ -62,11 +62,11 @@ static const struct color clut_vga16[16] = {
 };
 
 
-static int logo_type = LINUX_LOGO_CLUT224;
+static int logo_type = freax_LOGO_CLUT224;
 static unsigned int logo_width;
 static unsigned int logo_height;
 static struct color **logo_data;
-static struct color logo_clut[MAX_LINUX_LOGO_COLORS];
+static struct color logo_clut[MAX_freax_LOGO_COLORS];
 static unsigned int logo_clutsize;
 static int is_plain_pbm = 0;
 
@@ -237,9 +237,9 @@ static void write_header(void)
 	fputs(" *\n", out);
 	fprintf(out, " *  It was automatically generated from %s\n", filename);
 	fputs(" *\n", out);
-	fprintf(out, " *  Linux logo %s\n", logoname);
+	fprintf(out, " *  freax logo %s\n", logoname);
 	fputs(" */\n\n", out);
-	fputs("#include <linux/linux_logo.h>\n\n", out);
+	fputs("#include <freax/freax_logo.h>\n\n", out);
 	fprintf(out, "static unsigned char %s_data[] __initdata = {\n",
 		logoname);
 }
@@ -247,11 +247,11 @@ static void write_header(void)
 static void write_footer(void)
 {
 	fputs("\n};\n\n", out);
-	fprintf(out, "const struct linux_logo %s __initconst = {\n", logoname);
+	fprintf(out, "const struct freax_logo %s __initconst = {\n", logoname);
 	fprintf(out, "\t.type\t\t= %s,\n", logo_types[logo_type]);
 	fprintf(out, "\t.width\t\t= %d,\n", logo_width);
 	fprintf(out, "\t.height\t\t= %d,\n", logo_height);
-	if (logo_type == LINUX_LOGO_CLUT224) {
+	if (logo_type == freax_LOGO_CLUT224) {
 		fprintf(out, "\t.clutsize\t= %d,\n", logo_clutsize);
 		fprintf(out, "\t.clut\t\t= %s_clut,\n", logoname);
 	}
@@ -355,10 +355,10 @@ static void write_logo_clut224(void)
 				if (is_equal(logo_data[i][j], logo_clut[k]))
 					break;
 			if (k == logo_clutsize) {
-				if (logo_clutsize == MAX_LINUX_LOGO_COLORS)
+				if (logo_clutsize == MAX_freax_LOGO_COLORS)
 					die("Image has more than %d colors\n"
 					    "Use ppmquant(1) to reduce the number of colors\n",
-					    MAX_LINUX_LOGO_COLORS);
+					    MAX_freax_LOGO_COLORS);
 				logo_clut[logo_clutsize++] = logo_data[i][j];
 			}
 		}
@@ -430,7 +430,7 @@ static void usage(void)
 	"\n"
 	"Valid options:\n"
 	"	-h		  : display this usage information\n"
-	"	-n <name>   : specify logo name (default: linux_logo)\n"
+	"	-n <name>   : specify logo name (default: freax_logo)\n"
 	"	-o <output> : output to file <output> instead of stdout\n"
 	"	-t <type>   : specify logo type, one of\n"
 	"					  mono	: monochrome black/white\n"
@@ -467,13 +467,13 @@ int main(int argc, char *argv[])
 
 		case 't':
 			if (!strcmp(optarg, "mono"))
-				logo_type = LINUX_LOGO_MONO;
+				logo_type = freax_LOGO_MONO;
 			else if (!strcmp(optarg, "vga16"))
-				logo_type = LINUX_LOGO_VGA16;
+				logo_type = freax_LOGO_VGA16;
 			else if (!strcmp(optarg, "clut224"))
-				logo_type = LINUX_LOGO_CLUT224;
+				logo_type = freax_LOGO_CLUT224;
 			else if (!strcmp(optarg, "gray256"))
-				logo_type = LINUX_LOGO_GRAY256;
+				logo_type = freax_LOGO_GRAY256;
 			else
 				usage();
 			break;
@@ -490,19 +490,19 @@ int main(int argc, char *argv[])
 
 	read_image();
 	switch (logo_type) {
-	case LINUX_LOGO_MONO:
+	case freax_LOGO_MONO:
 		write_logo_mono();
 		break;
 
-	case LINUX_LOGO_VGA16:
+	case freax_LOGO_VGA16:
 		write_logo_vga16();
 		break;
 
-	case LINUX_LOGO_CLUT224:
+	case freax_LOGO_CLUT224:
 		write_logo_clut224();
 		break;
 
-	case LINUX_LOGO_GRAY256:
+	case freax_LOGO_GRAY256:
 		write_logo_gray256();
 		break;
 	}

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IRQDESC_H
-#define _LINUX_IRQDESC_H
+#ifndef _freax_IRQDESC_H
+#define _freax_IRQDESC_H
 
-#include <linux/rcupdate.h>
-#include <linux/kobject.h>
-#include <linux/mutex.h>
+#include <freax/rcupdate.h>
+#include <freax/kobject.h>
+#include <freax/mutex.h>
 
 /*
  * Core internal functions to deal with irq descriptors

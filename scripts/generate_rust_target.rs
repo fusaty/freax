@@ -159,7 +159,7 @@ fn main() {
             features += ",+retpoline-external-thunk";
         }
         ts.push("features", features);
-        ts.push("llvm-target", "x86_64-linux-gnu");
+        ts.push("llvm-target", "x86_64-freax-gnu");
         ts.push("target-pointer-width", "64");
     } else {
         panic!("Unsupported architecture");

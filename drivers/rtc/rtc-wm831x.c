@@ -8,19 +8,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/time.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
-#include <linux/bcd.h>
-#include <linux/interrupt.h>
-#include <linux/ioctl.h>
-#include <linux/completion.h>
-#include <linux/mfd/wm831x/core.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/time.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
+#include <freax/bcd.h>
+#include <freax/interrupt.h>
+#include <freax/ioctl.h>
+#include <freax/completion.h>
+#include <freax/mfd/wm831x/core.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/random.h>
 
 /*
  * R16416 (0x4020) - RTC Write Counter

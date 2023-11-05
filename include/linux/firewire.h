@@ -1,21 +1,21 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_FIREWIRE_H
-#define _LINUX_FIREWIRE_H
+#ifndef _freax_FIREWIRE_H
+#define _freax_FIREWIRE_H
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/sysfs.h>
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/sysfs.h>
+#include <freax/timer.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/byteorder.h>
 
 #define CSR_REGISTER_BASE		0xfffff0000000ULL
@@ -538,4 +538,4 @@ void fw_iso_resource_manage(struct fw_card *card, int generation,
 
 extern struct workqueue_struct *fw_workqueue;
 
-#endif /* _LINUX_FIREWIRE_H */
+#endif /* _freax_FIREWIRE_H */

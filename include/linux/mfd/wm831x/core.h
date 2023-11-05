@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * include/linux/mfd/wm831x/core.h -- Core interface for WM831x
+ * include/freax/mfd/wm831x/core.h -- Core interface for WM831x
  *
  * Copyright 2009 Wolfson Microelectronics PLC.
  *
@@ -10,14 +10,14 @@
 #ifndef __MFD_WM831X_CORE_H__
 #define __MFD_WM831X_CORE_H__
 
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/list.h>
-#include <linux/regmap.h>
-#include <linux/mfd/wm831x/auxadc.h>
-#include <linux/mfd/wm831x/pdata.h>
-#include <linux/of.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/list.h>
+#include <freax/regmap.h>
+#include <freax/mfd/wm831x/auxadc.h>
+#include <freax/mfd/wm831x/pdata.h>
+#include <freax/of.h>
 
 /*
  * Register values.

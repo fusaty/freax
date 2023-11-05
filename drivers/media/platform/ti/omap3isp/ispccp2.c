@@ -11,13 +11,13 @@
  *	     Sakari Ailus <sakari.ailus@iki.fi>
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/regulator/consumer.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/regulator/consumer.h>
 
 #include "isp.h"
 #include "ispreg.h"

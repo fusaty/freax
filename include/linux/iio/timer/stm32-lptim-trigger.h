@@ -8,8 +8,8 @@
 #ifndef _STM32_LPTIM_TRIGGER_H_
 #define _STM32_LPTIM_TRIGGER_H_
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/trigger.h>
 
 #define LPTIM1_OUT	"lptim1_out"
 #define LPTIM2_OUT	"lptim2_out"

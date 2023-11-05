@@ -7,9 +7,9 @@
  *		Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
+#include <freax/arm-smccc.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
 
 #include <asm/alternative.h>
 #include <asm/assembler.h>
@@ -899,7 +899,7 @@ NOKPROBE(call_on_irq_stack)
 #ifdef CONFIG_ARM_SDE_INTERFACE
 
 #include <asm/sdei.h>
-#include <uapi/linux/arm_sdei.h>
+#include <uapi/freax/arm_sdei.h>
 
 .macro sdei_handler_exit exit_mode
 	/* On success, this call never returns... */

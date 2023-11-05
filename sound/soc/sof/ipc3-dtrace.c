@@ -2,10 +2,10 @@
 //
 // Copyright(c) 2022 Intel Corporation. All rights reserved.
 //
-// Author: Liam Girdwood <liam.r.girdwood@linux.intel.com>
+// Author: Liam Girdwood <liam.r.girdwood@freax.intel.com>
 
-#include <linux/debugfs.h>
-#include <linux/sched/signal.h>
+#include <freax/debugfs.h>
+#include <freax/sched/signal.h>
 #include "sof-priv.h"
 #include "sof-audio.h"
 #include "ops.h"

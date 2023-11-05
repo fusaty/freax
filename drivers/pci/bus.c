@@ -6,14 +6,14 @@
  *	David Miller (davem@redhat.com)
  *	Ivan Kokshaysky (ink@jurassic.park.msu.ru)
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/proc_fs.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/of.h>
+#include <freax/proc_fs.h>
+#include <freax/slab.h>
 
 #include "pci.h"
 

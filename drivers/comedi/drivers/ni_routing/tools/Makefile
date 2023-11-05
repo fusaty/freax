@@ -3,7 +3,7 @@
 # 	ni_route_values.h
 #	ni_device_routes.h
 # in order to do this, we are also generating a python representation (using
-# ctypesgen) of ../../../../../include/uapi/linux/comedi.h.
+# ctypesgen) of ../../../../../include/uapi/freax/comedi.h.
 # This allows us to sort NI signal/terminal names numerically to use a binary
 # search through the device_routes tables to find valid routes.
 
@@ -33,17 +33,17 @@ everything : csv-files c-files csv-blank
 CPPFLAGS = -D__user=
 INC_UAPI = ../../../../../include/uapi
 
-comedi_h.py: $(INC_UAPI)/linux/comedi.h
+comedi_h.py: $(INC_UAPI)/freax/comedi.h
 	ctypesgen $< --include "sys/ioctl.h" --cpp 'gcc -E $(CPPFLAGS)' -o $@
 
-convert_c_to_py: all_cfiles.c linux/comedi.h
+convert_c_to_py: all_cfiles.c freax/comedi.h
 	gcc -g -I. convert_c_to_py.c -o convert_c_to_py -std=c99
 
-# Create a local 'linux/comedi.h' for use when compiling 'convert_c_to_py.c'
+# Create a local 'freax/comedi.h' for use when compiling 'convert_c_to_py.c'
 # with the '-I.' option.  (Cannot specify '-I../../../../../include/uapi'
 # because that interferes with inclusion of other system headers.)
-linux/comedi.h: $(INC_UAPI)/linux/comedi.h
-	mkdir -p linux
+freax/comedi.h: $(INC_UAPI)/freax/comedi.h
+	mkdir -p freax
 	ln -snf ../$< $@
 
 ni_values.py: convert_c_to_py
@@ -71,15 +71,15 @@ clean-partial :
 		__pycache__/
 
 clean : clean-partial
-	$(RM) -rf c/ csv/ linux/
+	$(RM) -rf c/ csv/ freax/
 
 # Note:  One could also use ctypeslib in order to generate these files.  The
 # caveat is that ctypeslib does not do a great job at handling macro functions.
 # The make rules are as follows:
-# comedi.h.xml : $(INC_UAPI)/linux/comedi.h
+# comedi.h.xml : $(INC_UAPI)/freax/comedi.h
 # 	# note that we have to use PWD here to avoid h2xml finding a system
 # 	# installed version of the comedilib/comedi.h file
-# 	h2xml ${PWD}/$(INC_UAPI)/linux/comedi.h -c D__user="" -o comedi.h.xml
+# 	h2xml ${PWD}/$(INC_UAPI)/freax/comedi.h -c D__user="" -o comedi.h.xml
 #
 # comedi_h.py : comedi.h.xml
 # 	xml2py ./comedi.h.xml -o comedi_h.py

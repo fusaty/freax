@@ -7,12 +7,12 @@
  *  Copyright (c) 2008,2009 Ilya Petrov <ilya.muromec@gmail.com>
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/mfd/ezx-pcap.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/input.h>
+#include <freax/mfd/ezx-pcap.h>
+#include <freax/slab.h>
 
 struct pcap_keys {
 	struct pcap_chip *pcap;

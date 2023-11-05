@@ -4,19 +4,19 @@
  * Author: Neil Armstrong <narmstrong@baylibre.com>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/reset.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/timer.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/bitfield.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/reset.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/timer.h>
+#include <freax/regmap.h>
 
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-ioctl.h>

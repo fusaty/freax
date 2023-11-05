@@ -4,24 +4,24 @@
  * Author: Lin Huang <hl@rock-chips.com>
  */
 
-#include <linux/clk.h>
-#include <linux/devfreq-event.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/seqlock.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/perf_event.h>
+#include <freax/clk.h>
+#include <freax/devfreq-event.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/seqlock.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/perf_event.h>
 
 #include <soc/rockchip/rockchip_grf.h>
 #include <soc/rockchip/rk3399_grf.h>

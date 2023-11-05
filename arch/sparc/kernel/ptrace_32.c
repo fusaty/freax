@@ -6,23 +6,23 @@
  * Based upon code written by Ross Biro, Linus Torvalds, Bob Manson,
  * and David Mosberger.
  *
- * Added Linux support -miguel (weird, eh?, the original code was meant
+ * Added freax support -miguel (weird, eh?, the original code was meant
  * to emulate SunOS).
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/user.h>
-#include <linux/smp.h>
-#include <linux/security.h>
-#include <linux/signal.h>
-#include <linux/regset.h>
-#include <linux/elf.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
+#include <freax/user.h>
+#include <freax/smp.h>
+#include <freax/security.h>
+#include <freax/signal.h>
+#include <freax/regset.h>
+#include <freax/elf.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/cacheflush.h>
 
 #include "kernel.h"

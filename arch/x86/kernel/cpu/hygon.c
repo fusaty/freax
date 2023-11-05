@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Hygon Processor Support for Linux
+ * Hygon Processor Support for freax
  *
  * Copyright (C) 2018 Chengdu Haiguang IC Design Co., Ltd.
  *
  * Author: Pu Wen <puwen@hygon.cn>
  */
-#include <linux/io.h>
+#include <freax/io.h>
 
 #include <asm/apic.h>
 #include <asm/cpu.h>

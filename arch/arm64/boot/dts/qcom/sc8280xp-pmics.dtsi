@@ -66,7 +66,7 @@
 			pmk8280_pon_pwrkey: pwrkey {
 				compatible = "qcom,pmk8350-pwrkey";
 				interrupts-extended = <&spmi_bus 0x0 0x13 0x7 IRQ_TYPE_EDGE_BOTH>;
-				linux,code = <KEY_POWER>;
+				freax,code = <KEY_POWER>;
 				status = "disabled";
 			};
 

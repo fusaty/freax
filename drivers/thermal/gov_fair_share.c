@@ -10,7 +10,7 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/thermal.h>
+#include <freax/thermal.h>
 #include "thermal_trace.h"
 
 #include "thermal_core.h"

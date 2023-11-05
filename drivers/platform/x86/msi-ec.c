@@ -19,13 +19,13 @@
 #include "msi-ec.h"
 
 #include <acpi/battery.h>
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/string.h>
+#include <freax/acpi.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/string.h>
 
 #define SM_ECO_NAME		"eco"
 #define SM_COMFORT_NAME		"comfort"

@@ -6,7 +6,7 @@
  *		      Janne Jalkanen <jalkanen@cs.hut.fi>
  *		      Eric Bunn <ebu@cs.hut.fi>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
@@ -26,11 +26,11 @@
  *   [1] - IRQ, optional
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8254.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/comedi/comedidev.h>
+#include <freax/comedi/comedi_8254.h>
 
 /*
  * I/O port register map

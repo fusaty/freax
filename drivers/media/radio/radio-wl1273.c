@@ -6,12 +6,12 @@
  * Author: Matti J. Aaltonen <matti.j.aaltonen@nokia.com>
  */
 
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/wl1273-core.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/wl1273-core.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <media/v4l2-common.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

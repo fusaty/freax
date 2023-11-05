@@ -9,14 +9,14 @@
 #include <byteswap.h>
 #include <errno.h>
 #include <inttypes.h>
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 #include <api/fs/fs.h>
 #include <api/fs/tracing_path.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/perf_event.h>
-#include <linux/compiler.h>
-#include <linux/err.h>
-#include <linux/zalloc.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/perf_event.h>
+#include <freax/compiler.h>
+#include <freax/err.h>
+#include <freax/zalloc.h>
 #include <sys/ioctl.h>
 #include <sys/resource.h>
 #include <sys/types.h>
@@ -57,7 +57,7 @@
 #include <internal/lib.h>
 #include <internal/threadmap.h>
 
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 
 #ifdef HAVE_LIBTRACEEVENT
 #include <traceevent/event-parse.h>
@@ -449,7 +449,7 @@ out_err:
 }
 
 /*
- * Returns pointer with encoded error via <linux/err.h> interface.
+ * Returns pointer with encoded error via <freax/err.h> interface.
  */
 #ifdef HAVE_LIBTRACEEVENT
 struct evsel *evsel__newtp_idx(const char *sys, const char *name, int idx)
@@ -2931,10 +2931,10 @@ int evsel__open_strerror(struct evsel *evsel, struct target *target,
 		printed += scnprintf(msg + printed, size - printed,
 			"Access to performance monitoring and observability operations is limited.\n");
 
-		if (!sysfs__read_int("fs/selinux/enforce", &enforced)) {
+		if (!sysfs__read_int("fs/sefreax/enforce", &enforced)) {
 			if (enforced) {
 				printed += scnprintf(msg + printed, size - printed,
-					"Enforced MAC policy settings (SELinux) can limit access to performance\n"
+					"Enforced MAC policy settings (SEfreax) can limit access to performance\n"
 					"monitoring and observability operations. Inspect system audit records for\n"
 					"more perf_event access control information and adjusting the policy.\n");
 			}
@@ -2947,7 +2947,7 @@ int evsel__open_strerror(struct evsel *evsel, struct target *target,
 		return scnprintf(msg + printed, size - printed,
 		 "Consider adjusting /proc/sys/kernel/perf_event_paranoid setting to open\n"
 		 "access to performance monitoring and observability operations for processes\n"
-		 "without CAP_PERFMON, CAP_SYS_PTRACE or CAP_SYS_ADMIN Linux capability.\n"
+		 "without CAP_PERFMON, CAP_SYS_PTRACE or CAP_SYS_ADMIN freax capability.\n"
 		 "More information can be found at 'Perf events and tool security' document:\n"
 		 "https://www.kernel.org/doc/html/latest/admin-guide/perf-security.html\n"
 		 "perf_event_paranoid setting is %d:\n"

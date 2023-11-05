@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2012-2015, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2015, The freax Foundation. All rights reserved.
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/idr.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
-#include <linux/spmi.h>
-#include <linux/pm_runtime.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/idr.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
+#include <freax/spmi.h>
+#include <freax/pm_runtime.h>
 
 #include <dt-bindings/spmi/spmi.h>
 #define CREATE_TRACE_POINTS

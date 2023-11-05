@@ -2,23 +2,23 @@
 /*
  * Copyright (C) 2001 Jens Axboe <axboe@kernel.dk>
  */
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/uio.h>
-#include <linux/iocontext.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mempool.h>
-#include <linux/workqueue.h>
-#include <linux/cgroup.h>
-#include <linux/highmem.h>
-#include <linux/sched/sysctl.h>
-#include <linux/blk-crypto.h>
-#include <linux/xarray.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/uio.h>
+#include <freax/iocontext.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/mempool.h>
+#include <freax/workqueue.h>
+#include <freax/cgroup.h>
+#include <freax/highmem.h>
+#include <freax/sched/sysctl.h>
+#include <freax/blk-crypto.h>
+#include <freax/xarray.h>
 
 #include <trace/events/block.h>
 #include "blk.h"

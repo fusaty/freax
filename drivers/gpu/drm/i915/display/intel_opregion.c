@@ -25,9 +25,9 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/firmware.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
+#include <freax/firmware.h>
 #include <acpi/video.h>
 
 #include <drm/drm_edid.h>
@@ -645,7 +645,7 @@ void intel_opregion_asle_intr(struct drm_i915_private *dev_priv)
 
 /*
  * The only video events relevant to opregion are 0x80. These indicate either a
- * docking event, lid switch or display switch request. In Linux, these are
+ * docking event, lid switch or display switch request. In freax, these are
  * handled by the dock, button and video drivers.
  */
 static int intel_opregion_video_event(struct notifier_block *nb,

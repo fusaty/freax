@@ -9,9 +9,9 @@
 #ifndef __MEDIA_VSP1_H__
 #define __MEDIA_VSP1_H__
 
-#include <linux/scatterlist.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
+#include <freax/scatterlist.h>
+#include <freax/types.h>
+#include <freax/videodev2.h>
 
 struct device;
 

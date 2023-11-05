@@ -4,9 +4,9 @@
  *
  * This driver is heavily based upon:
  *
- * linux/drivers/ide/pci/hpt366.c		Version 0.36	April 25, 2003
+ * freax/drivers/ide/pci/hpt366.c		Version 0.36	April 25, 2003
  *
- * Copyright (C) 1999-2003		Andre Hedrick <andre@linux-ide.org>
+ * Copyright (C) 1999-2003		Andre Hedrick <andre@freax-ide.org>
  * Portions Copyright (C) 2001	        Sun Microsystems, Inc.
  * Portions Copyright (C) 2003		Red Hat Inc
  *
@@ -14,13 +14,13 @@
  * TODO
  *	Look into engine reset on timeout errors. Should not be required.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
+#include <freax/libata.h>
 
 #define DRV_NAME	"pata_hpt366"
 #define DRV_VERSION	"0.6.13"

@@ -3,20 +3,20 @@
     Copyright (C) 2008 Glauber de Oliveira Costa, Red Hat Inc.
 */
 
-#include <linux/clocksource.h>
-#include <linux/kvm_para.h>
+#include <freax/clocksource.h>
+#include <freax/kvm_para.h>
 #include <asm/pvclock.h>
 #include <asm/msr.h>
 #include <asm/apic.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/cpuhotplug.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/set_memory.h>
-#include <linux/cc_platform.h>
+#include <freax/percpu.h>
+#include <freax/hardirq.h>
+#include <freax/cpuhotplug.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/set_memory.h>
+#include <freax/cc_platform.h>
 
 #include <asm/hypervisor.h>
 #include <asm/x86_init.h>

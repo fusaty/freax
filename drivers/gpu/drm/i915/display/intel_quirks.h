@@ -6,7 +6,7 @@
 #ifndef __INTEL_QUIRKS_H__
 #define __INTEL_QUIRKS_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_i915_private;
 

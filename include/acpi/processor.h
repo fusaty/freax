@@ -2,15 +2,15 @@
 #ifndef __ACPI_PROCESSOR_H
 #define __ACPI_PROCESSOR_H
 
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/pm_qos.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/thermal.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/cpu.h>
+#include <freax/cpufreq.h>
+#include <freax/pm_qos.h>
+#include <freax/printk.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/thermal.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 #include <asm/acpi.h>
 

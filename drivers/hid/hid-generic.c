@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  HID support for Linux
+ *  HID support for freax
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -13,13 +13,13 @@
 /*
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
 #include <asm/unaligned.h>
 #include <asm/byteorder.h>
 
-#include <linux/hid.h>
+#include <freax/hid.h>
 
 static struct hid_driver hid_generic;
 

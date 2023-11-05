@@ -10,16 +10,16 @@
  *	Andrew F. Davis <afd@ti.com>
  */
 
-#include <linux/dma-buf.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma-heap.h>
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/dma-buf.h>
+#include <freax/dma-mapping.h>
+#include <freax/dma-heap.h>
+#include <freax/err.h>
+#include <freax/highmem.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 
 static struct dma_heap *sys_heap;
 

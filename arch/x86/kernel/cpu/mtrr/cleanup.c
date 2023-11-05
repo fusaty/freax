@@ -17,14 +17,14 @@
  * License along with this library; if not, write to the Free
  * Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/kvm_para.h>
-#include <linux/range.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/smp.h>
+#include <freax/cpu.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/kvm_para.h>
+#include <freax/range.h>
 
 #include <asm/processor.h>
 #include <asm/e820/api.h>

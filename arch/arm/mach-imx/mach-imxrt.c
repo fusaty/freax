@@ -4,7 +4,7 @@
  * Author(s): Giulio Benetti <giulio.benetti@benettiengineering.com>
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <asm/mach/arch.h>
 #include <asm/v7m.h>
 

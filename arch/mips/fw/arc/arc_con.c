@@ -7,11 +7,11 @@
  * Copyright (c) 2001 Ralf Baechle
  * Copyright (c) 2002 Thiemo Seufer
  */
-#include <linux/tty.h>
-#include <linux/major.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/fs.h>
+#include <freax/tty.h>
+#include <freax/major.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/fs.h>
 #include <asm/setup.h>
 #include <asm/sgialib.h>
 

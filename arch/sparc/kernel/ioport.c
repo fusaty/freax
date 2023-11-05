@@ -26,20 +26,20 @@
  * <zaitcev> Sounds reasonable
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/pci.h>		/* struct pci_dev */
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-map-ops.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/ioport.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/pci.h>		/* struct pci_dev */
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/scatterlist.h>
+#include <freax/dma-map-ops.h>
+#include <freax/of.h>
 
 #include <asm/io.h>
 #include <asm/vaddrs.h>

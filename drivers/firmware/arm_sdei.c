@@ -3,34 +3,34 @@
 #define pr_fmt(fmt) "sdei: " fmt
 
 #include <acpi/ghes.h>
-#include <linux/acpi.h>
-#include <linux/arm_sdei.h>
-#include <linux/arm-smccc.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpu.h>
-#include <linux/cpu_pm.h>
-#include <linux/errno.h>
-#include <linux/hardirq.h>
-#include <linux/kernel.h>
-#include <linux/kprobes.h>
-#include <linux/kvm_host.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/percpu.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/ptrace.h>
-#include <linux/preempt.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
+#include <freax/acpi.h>
+#include <freax/arm_sdei.h>
+#include <freax/arm-smccc.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/compiler.h>
+#include <freax/cpuhotplug.h>
+#include <freax/cpu.h>
+#include <freax/cpu_pm.h>
+#include <freax/errno.h>
+#include <freax/hardirq.h>
+#include <freax/kernel.h>
+#include <freax/kprobes.h>
+#include <freax/kvm_host.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/percpu.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/ptrace.h>
+#include <freax/preempt.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
 
 /*
  * The call to use to reach the firmware.
@@ -115,7 +115,7 @@ sdei_cross_call_return(struct sdei_crosscall_args *arg, int err)
 		arg->first_error = err;
 }
 
-static int sdei_to_linux_errno(unsigned long sdei_err)
+static int sdei_to_freax_errno(unsigned long sdei_err)
 {
 	switch (sdei_err) {
 	case SDEI_NOT_SUPPORTED:
@@ -144,12 +144,12 @@ static int invoke_sdei_fn(unsigned long function_id, unsigned long arg0,
 	if (sdei_firmware_call) {
 		sdei_firmware_call(function_id, arg0, arg1, arg2, arg3, arg4,
 				   &res);
-		err = sdei_to_linux_errno(res.a0);
+		err = sdei_to_freax_errno(res.a0);
 	} else {
 		/*
 		 * !sdei_firmware_call means we failed to probe or called
 		 * sdei_mark_interface_broken(). -EIO is not an error returned
-		 * by sdei_to_linux_errno() and is used to suppress messages
+		 * by sdei_to_freax_errno() and is used to suppress messages
 		 * from this driver.
 		 */
 		err = -EIO;

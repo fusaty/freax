@@ -18,8 +18,8 @@
  * the mutex locked.
  */
 
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <freax/crc32.h>
+#include <freax/slab.h>
 #include "ubifs.h"
 
 static int try_read_node(const struct ubifs_info *c, void *buf, int type,

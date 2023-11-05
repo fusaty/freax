@@ -4,20 +4,20 @@
  * Copyright 2020 Google LLC.
  */
 
-#include <linux/rculist.h>
-#include <linux/list.h>
-#include <linux/hash.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/bpf.h>
-#include <linux/bpf_local_storage.h>
+#include <freax/rculist.h>
+#include <freax/list.h>
+#include <freax/hash.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/bpf.h>
+#include <freax/bpf_local_storage.h>
 #include <net/sock.h>
-#include <uapi/linux/sock_diag.h>
-#include <uapi/linux/btf.h>
-#include <linux/bpf_lsm.h>
-#include <linux/btf_ids.h>
-#include <linux/fdtable.h>
-#include <linux/rcupdate_trace.h>
+#include <uapi/freax/sock_diag.h>
+#include <uapi/freax/btf.h>
+#include <freax/bpf_lsm.h>
+#include <freax/btf_ids.h>
+#include <freax/fdtable.h>
+#include <freax/rcupdate_trace.h>
 
 DEFINE_BPF_STORAGE_CACHE(inode_cache);
 

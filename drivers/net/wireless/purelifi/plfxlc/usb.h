@@ -6,11 +6,11 @@
 #ifndef PLFXLC_USB_H
 #define PLFXLC_USB_H
 
-#include <linux/completion.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/skbuff.h>
-#include <linux/usb.h>
+#include <freax/completion.h>
+#include <freax/netdevice.h>
+#include <freax/spinlock.h>
+#include <freax/skbuff.h>
+#include <freax/usb.h>
 
 #include "intf.h"
 

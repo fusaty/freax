@@ -7,7 +7,7 @@
  * Author: Andrzej Pietrasiewicz <andrzej.p@collabora.com>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include <media/v4l2-vp9.h>
 

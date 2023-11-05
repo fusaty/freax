@@ -1,2 +1,2 @@
-#ifndef LINUX_DEVICE_H
+#ifndef freax_DEVICE_H
 #endif

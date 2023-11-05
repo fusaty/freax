@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) IBM Corporation 2023 */
 
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/fsi.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
+#include <freax/cdev.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/fsi.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
 
 #include "fsi-master-i2cr.h"
 #include "fsi-slave.h"
@@ -149,6 +149,6 @@ static struct fsi_driver i2cr_scom_driver = {
 
 module_fsi_driver(i2cr_scom_driver);
 
-MODULE_AUTHOR("Eddie James <eajames@linux.ibm.com>");
+MODULE_AUTHOR("Eddie James <eajames@freax.ibm.com>");
 MODULE_DESCRIPTION("IBM I2C Responder SCOM driver");
 MODULE_LICENSE("GPL");

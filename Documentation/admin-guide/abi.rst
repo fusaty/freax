@@ -1,5 +1,5 @@
 =====================
-Linux ABI description
+freax ABI description
 =====================
 
 .. toctree::

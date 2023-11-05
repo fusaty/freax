@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/export.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/if_vlan.h>
-#include <linux/filter.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/export.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/if_vlan.h>
+#include <freax/filter.h>
 #include <net/dsa.h>
 #include <net/dst_metadata.h>
 #include <net/ip.h>
@@ -13,29 +13,29 @@
 #include <net/gre.h>
 #include <net/pptp.h>
 #include <net/tipc.h>
-#include <linux/igmp.h>
-#include <linux/icmp.h>
-#include <linux/sctp.h>
-#include <linux/dccp.h>
-#include <linux/if_tunnel.h>
-#include <linux/if_pppox.h>
-#include <linux/ppp_defs.h>
-#include <linux/stddef.h>
-#include <linux/if_ether.h>
-#include <linux/if_hsr.h>
-#include <linux/mpls.h>
-#include <linux/tcp.h>
-#include <linux/ptp_classify.h>
+#include <freax/igmp.h>
+#include <freax/icmp.h>
+#include <freax/sctp.h>
+#include <freax/dccp.h>
+#include <freax/if_tunnel.h>
+#include <freax/if_pppox.h>
+#include <freax/ppp_defs.h>
+#include <freax/stddef.h>
+#include <freax/if_ether.h>
+#include <freax/if_hsr.h>
+#include <freax/mpls.h>
+#include <freax/tcp.h>
+#include <freax/ptp_classify.h>
 #include <net/flow_dissector.h>
 #include <net/pkt_cls.h>
 #include <scsi/fc/fc_fcoe.h>
-#include <uapi/linux/batadv_packet.h>
-#include <linux/bpf.h>
+#include <uapi/freax/batadv_packet.h>
+#include <freax/bpf.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #include <net/netfilter/nf_conntrack_core.h>
 #include <net/netfilter/nf_conntrack_labels.h>
 #endif
-#include <linux/bpf-netns.h>
+#include <freax/bpf-netns.h>
 
 static void dissector_set_key(struct flow_dissector *flow_dissector,
 			      enum flow_dissector_key_id key_id)

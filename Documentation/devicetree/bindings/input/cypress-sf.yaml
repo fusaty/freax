@@ -28,7 +28,7 @@ properties:
   vdd-supply:
     description: Regulator for VDD digital voltage
 
-  linux,keycodes:
+  freax,keycodes:
     minItems: 1
     maxItems: 8
 
@@ -56,6 +56,6 @@ examples:
                 interrupts = <77 IRQ_TYPE_EDGE_FALLING>;
                 avdd-supply = <&vreg_l6a_1p8>;
                 vdd-supply = <&vdd_3v2_tp>;
-                linux,keycodes = <KEY_BACK KEY_MENU>;
+                freax,keycodes = <KEY_BACK KEY_MENU>;
         };
     };

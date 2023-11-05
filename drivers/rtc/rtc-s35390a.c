@@ -5,13 +5,13 @@
  * Copyright (c) 2007 Byron Bradley
  */
 
-#include <linux/module.h>
-#include <linux/rtc.h>
-#include <linux/i2c.h>
-#include <linux/bitrev.h>
-#include <linux/bcd.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/rtc.h>
+#include <freax/i2c.h>
+#include <freax/bitrev.h>
+#include <freax/bcd.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
 
 #define S35390A_CMD_STATUS1	0
 #define S35390A_CMD_STATUS2	1

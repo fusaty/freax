@@ -4,15 +4,15 @@
  * specified in: https://datatracker.ietf.org/doc/html/draft-sca-cfrg-sm3-02
  *
  * Copyright (C) 2021 Jussi Kivilinna <jussi.kivilinna@iki.fi>
- * Copyright (C) 2021 Tianjia Zhang <tianjia.zhang@linux.alibaba.com>
+ * Copyright (C) 2021 Tianjia Zhang <tianjia.zhang@freax.alibaba.com>
  */
 
 /* Based on SM3 AES/BMI2 accelerated work by libgcrypt at:
  *  https://gnupg.org/software/libgcrypt/index.html
  */
 
-#include <linux/linkage.h>
-#include <linux/cfi_types.h>
+#include <freax/linkage.h>
+#include <freax/cfi_types.h>
 #include <asm/frame.h>
 
 /* Context structure */

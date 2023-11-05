@@ -4,14 +4,14 @@
  * Copyright (C) 2002
  * 	Tapio Laxström (tapio.laxstrom@iptime.fi)
  */
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/usb.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/ihex.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/usb.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/ihex.h>
 
 /* include firmware (variables)*/
 

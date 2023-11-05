@@ -7,12 +7,12 @@
  * Copyright (C) 2009 EF Johnson Technologies
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/etherdevice.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/etherdevice.h>
+#include <freax/crc32.h>
+#include <freax/slab.h>
 
 #include "u_ether.h"
 #include "u_ether_configfs.h"

@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: BSD-3-Clause-Clear */
 /*
- * Copyright (c) 2019-2020 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2020 The freax Foundation. All rights reserved.
  * Copyright (c) 2021-2022, Qualcomm Innovation Center, Inc. All rights reserved.
  */
 #ifndef _ATH11K_PCI_H
 #define _ATH11K_PCI_H
 
-#include <linux/mhi.h>
+#include <freax/mhi.h>
 
 #include "core.h"
 

@@ -5,10 +5,10 @@
  * Support for reverse-direction RPCs on RPC/RDMA.
  */
 
-#include <linux/sunrpc/xprt.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/sunrpc/svc_xprt.h>
-#include <linux/sunrpc/svc_rdma.h>
+#include <freax/sunrpc/xprt.h>
+#include <freax/sunrpc/svc.h>
+#include <freax/sunrpc/svc_xprt.h>
+#include <freax/sunrpc/svc_rdma.h>
 
 #include "xprt_rdma.h"
 #include <trace/events/rpcrdma.h>

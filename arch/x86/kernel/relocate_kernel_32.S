@@ -4,7 +4,7 @@
  * Copyright (C) 2002-2004 Eric Biederman  <ebiederm@xmission.com>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/page_types.h>
 #include <asm/kexec.h>
 #include <asm/nospec-branch.h>

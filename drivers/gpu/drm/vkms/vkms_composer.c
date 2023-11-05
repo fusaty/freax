@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/crc32.h>
+#include <freax/crc32.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>
@@ -9,7 +9,7 @@
 #include <drm/drm_fixed.h>
 #include <drm/drm_gem_framebuffer_helper.h>
 #include <drm/drm_vblank.h>
-#include <linux/minmax.h>
+#include <freax/minmax.h>
 
 #include "vkms_drv.h"
 

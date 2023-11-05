@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_NVRAM_H
-#define _UAPI_LINUX_NVRAM_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_NVRAM_H
+#define _UAPI_freax_NVRAM_H
 
-#include <linux/ioctl.h>
+#include <freax/ioctl.h>
 
 /* /dev/nvram ioctls */
 #define NVRAM_INIT	_IO('p', 0x40) /* initialize NVRAM and set checksum */
@@ -14,4 +14,4 @@
 #define NVRAM_OFFSET(x)   ((x)-NVRAM_FIRST_BYTE)
 
 
-#endif /* _UAPI_LINUX_NVRAM_H */
+#endif /* _UAPI_freax_NVRAM_H */

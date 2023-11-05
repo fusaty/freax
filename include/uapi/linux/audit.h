@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /* audit.h -- Auditing support
  *
  * Copyright 2003-2004 Red Hat Inc., Durham, North Carolina.
@@ -22,18 +22,18 @@
  *
  */
 
-#ifndef _UAPI_LINUX_AUDIT_H_
-#define _UAPI_LINUX_AUDIT_H_
+#ifndef _UAPI_freax_AUDIT_H_
+#define _UAPI_freax_AUDIT_H_
 
-#include <linux/types.h>
-#include <linux/elf-em.h>
+#include <freax/types.h>
+#include <freax/elf-em.h>
 
 /* The netlink messages for the audit system is divided into blocks:
  * 1000 - 1099 are for commanding the audit system
  * 1100 - 1199 user space trusted application messages
  * 1200 - 1299 messages internal to the audit daemon
  * 1300 - 1399 audit event messages
- * 1400 - 1499 SE Linux use
+ * 1400 - 1499 SE freax use
  * 1500 - 1599 kernel LSPP events
  * 1600 - 1699 kernel crypto events
  * 1700 - 1799 kernel anomaly records
@@ -123,8 +123,8 @@
 #define AUDIT_DM_CTRL		1338	/* Device Mapper target control */
 #define AUDIT_DM_EVENT		1339	/* Device Mapper events */
 
-#define AUDIT_AVC		1400	/* SE Linux avc denial or grant */
-#define AUDIT_SELINUX_ERR	1401	/* Internal SE Linux Errors */
+#define AUDIT_AVC		1400	/* SE freax avc denial or grant */
+#define AUDIT_SEfreax_ERR	1401	/* Internal SE freax Errors */
 #define AUDIT_AVC_PATH		1402	/* dentry, vfsmount pair from avc */
 #define AUDIT_MAC_POLICY_LOAD	1403	/* Policy file load */
 #define AUDIT_MAC_STATUS	1404	/* Changed enforcing,permissive,off */
@@ -519,4 +519,4 @@ struct audit_rule_data {
 	char		buf[];	/* string fields buffer */
 };
 
-#endif /* _UAPI_LINUX_AUDIT_H_ */
+#endif /* _UAPI_freax_AUDIT_H_ */

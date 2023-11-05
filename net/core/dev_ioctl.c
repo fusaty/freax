@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kmod.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/net_tstamp.h>
-#include <linux/phylib_stubs.h>
-#include <linux/wireless.h>
-#include <linux/if_bridge.h>
+#include <freax/kmod.h>
+#include <freax/netdevice.h>
+#include <freax/inetdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/net_tstamp.h>
+#include <freax/phylib_stubs.h>
+#include <freax/wireless.h>
+#include <freax/if_bridge.h>
 #include <net/dsa_stubs.h>
 #include <net/wext.h>
 

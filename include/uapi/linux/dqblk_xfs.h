@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.1+ WITH freax-syscall-note */
 /*
  * Copyright (c) 1995-2001,2004 Silicon Graphics, Inc.  All Rights Reserved.
  *
@@ -15,10 +15,10 @@
  * along with this program; if not, write to the Free Software Foundation,
  * Inc.,  51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
-#ifndef _LINUX_DQBLK_XFS_H
-#define _LINUX_DQBLK_XFS_H
+#ifndef _freax_DQBLK_XFS_H
+#define _freax_DQBLK_XFS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Disk quota - quotactl(2) commands for the XFS Quota Manager (XQM).
@@ -225,4 +225,4 @@ struct fs_quota_statv {
 	__u64			qs_pad2[7];	/* for future proofing */
 };
 
-#endif	/* _LINUX_DQBLK_XFS_H */
+#endif	/* _freax_DQBLK_XFS_H */

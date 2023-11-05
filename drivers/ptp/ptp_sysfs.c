@@ -5,8 +5,8 @@
  * Copyright (C) 2010 OMICRON electronics GmbH
  * Copyright 2021 NXP
  */
-#include <linux/capability.h>
-#include <linux/slab.h>
+#include <freax/capability.h>
+#include <freax/slab.h>
 
 #include "ptp_private.h"
 

@@ -2,24 +2,24 @@
 /*
  *
  *  Copyright (C) 2001 Rusty Russell.
- *  Copyright (C) 2003, 2004 Ralf Baechle (ralf@linux-mips.org)
+ *  Copyright (C) 2003, 2004 Ralf Baechle (ralf@freax-mips.org)
  *  Copyright (C) 2005 Thiemo Seufer
  */
 
 #undef DEBUG
 
-#include <linux/extable.h>
-#include <linux/moduleloader.h>
-#include <linux/elf.h>
-#include <linux/mm.h>
-#include <linux/numa.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/jump_label.h>
+#include <freax/extable.h>
+#include <freax/moduleloader.h>
+#include <freax/elf.h>
+#include <freax/mm.h>
+#include <freax/numa.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/jump_label.h>
 
 extern void jump_label_apply_nops(struct module *mod);
 

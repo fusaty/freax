@@ -1,5 +1,5 @@
-#ifndef _LINUX_VIRTIO_BLK_H
-#define _LINUX_VIRTIO_BLK_H
+#ifndef _freax_VIRTIO_BLK_H
+#define _freax_VIRTIO_BLK_H
 /* This header is BSD licensed so anyone can use the definitions to implement
  * compatible drivers/servers.
  *
@@ -25,10 +25,10 @@
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE. */
-#include <linux/types.h>
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
-#include <linux/virtio_types.h>
+#include <freax/types.h>
+#include <freax/virtio_ids.h>
+#include <freax/virtio_config.h>
+#include <freax/virtio_types.h>
 
 /* Feature bits */
 #define VIRTIO_BLK_F_SIZE_MAX	1	/* Indicates maximum segment size */
@@ -324,4 +324,4 @@ struct virtio_scsi_inhdr {
 #define VIRTIO_BLK_S_ZONE_OPEN_RESOURCE   5
 #define VIRTIO_BLK_S_ZONE_ACTIVE_RESOURCE 6
 
-#endif /* _LINUX_VIRTIO_BLK_H */
+#endif /* _freax_VIRTIO_BLK_H */

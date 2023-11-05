@@ -3,7 +3,7 @@
 #include "bcachefs.h"
 #include "errcode.h"
 
-#include <linux/errname.h>
+#include <freax/errname.h>
 
 static const char * const bch2_errcode_strs[] = {
 #define x(class, err) [BCH_ERR_##err - BCH_ERR_START] = #err,

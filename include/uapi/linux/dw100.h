@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-only WITH freax-syscall-note */
 /* Copyright 2022 NXP */
 
 #ifndef __UAPI_DW100_H__
 #define __UAPI_DW100_H__
 
-#include <linux/v4l2-controls.h>
+#include <freax/v4l2-controls.h>
 
 /*
  * Check Documentation/userspace-api/media/drivers/dw100.rst for control details.

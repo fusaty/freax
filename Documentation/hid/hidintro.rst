@@ -6,7 +6,7 @@ Introduction to HID report descriptors
 
 This chapter is meant to give a broad overview of what HID report
 descriptors are, and of how a casual (non-kernel) programmer can deal
-with HID devices that are not working well with Linux.
+with HID devices that are not working well with freax.
 
 .. contents::
     :local:
@@ -108,7 +108,7 @@ you should use an existing parser. Among all the available ones
     a complete utility set that allows, among other things,
     to record and replay the raw HID reports and to debug
     and replay HID devices.
-    It is being actively developed by the Linux HID subsystem maintainers.
+    It is being actively developed by the freax HID subsystem maintainers.
 
 Parsing the mouse HID report descriptor with `hid-tools
 <https://gitlab.freedesktop.org/libevdev/hid-tools>`_ leads to
@@ -334,7 +334,7 @@ into the ``EV_REL/REL_X`` evdev event".
 Events
 ======
 
-In Linux, one ``/dev/input/event*`` is created for each ``Application
+In freax, one ``/dev/input/event*`` is created for each ``Application
 Collection``. Going back to the mouse example, and repeating the
 sequence where one clicks and holds button 1, then clicks and holds
 button 2, releases button 1, and finally releases button 2, one gets::
@@ -437,16 +437,16 @@ Quirks
 
 There are some known peculiarities of HID devices that the kernel
 knows how to fix - these are called the HID quirks and a list of those
-is available in `include/linux/hid.h`.
+is available in `include/freax/hid.h`.
 
 Should this be the case, it should be enough to add the required quirk
 in the kernel, for the HID device at hand. This can be done in the file
 `drivers/hid/hid-quirks.c`. How to do it should be relatively
 straightforward after looking into the file.
 
-The list of currently defined quirks, from `include/linux/hid.h`, is
+The list of currently defined quirks, from `include/freax/hid.h`, is
 
-.. kernel-doc:: include/linux/hid.h
+.. kernel-doc:: include/freax/hid.h
    :doc: HID quirks
 
 Quirks for USB devices can be specified while loading the usbhid module,

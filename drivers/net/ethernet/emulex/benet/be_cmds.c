@@ -4,14 +4,14 @@
  * All rights reserved.
  *
  * Contact Information:
- * linux-drivers@emulex.com
+ * freax-drivers@emulex.com
  *
  * Emulex
  * 3333 Susan Street
  * Costa Mesa, CA 92626
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include "be.h"
 #include "be_cmds.h"
 

@@ -2,27 +2,27 @@
 /*
  * Copyright (C) 2021 Microsoft Corporation
  *
- * Author: Lakshmi Ramasubramanian (nramas@linux.microsoft.com)
+ * Author: Lakshmi Ramasubramanian (nramas@freax.microsoft.com)
  *
- * Measure critical data structures maintained by SELinux
+ * Measure critical data structures maintained by SEfreax
  * using IMA subsystem.
  */
 
-#ifndef _SELINUX_IMA_H_
-#define _SELINUX_IMA_H_
+#ifndef _SEfreax_IMA_H_
+#define _SEfreax_IMA_H_
 
 #include "security.h"
 
 #ifdef CONFIG_IMA
-extern void selinux_ima_measure_state(void);
-extern void selinux_ima_measure_state_locked(void);
+extern void sefreax_ima_measure_state(void);
+extern void sefreax_ima_measure_state_locked(void);
 #else
-static inline void selinux_ima_measure_state(void)
+static inline void sefreax_ima_measure_state(void)
 {
 }
-static inline void selinux_ima_measure_state_locked(void)
+static inline void sefreax_ima_measure_state_locked(void)
 {
 }
 #endif
 
-#endif	/* _SELINUX_IMA_H_ */
+#endif	/* _SEfreax_IMA_H_ */

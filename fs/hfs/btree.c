@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/hfs/btree.c
+ *  freax/fs/hfs/btree.c
  *
  * Copyright (C) 2001
  * Brad Boyer (flar@allandria.com)
@@ -9,9 +9,9 @@
  * Handle opening/closing btree
  */
 
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/log2.h>
+#include <freax/pagemap.h>
+#include <freax/slab.h>
+#include <freax/log2.h>
 
 #include "btree.h"
 

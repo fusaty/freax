@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * Broadcom Cable Modem firmware format
  */
@@ -6,7 +6,7 @@
 #ifndef __BCM933XX_HCS_H
 #define __BCM933XX_HCS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct bcm_hcs {
 	__u16 magic;

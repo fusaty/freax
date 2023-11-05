@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright 2021 NXP
  */
-#include <linux/pcs/pcs-xpcs.h>
+#include <freax/pcs/pcs-xpcs.h>
 #include "pcs-xpcs.h"
 
 /* LANE_DRIVER1_0 register */

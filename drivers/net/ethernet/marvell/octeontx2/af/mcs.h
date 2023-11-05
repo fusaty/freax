@@ -7,7 +7,7 @@
 #ifndef MCS_H
 #define MCS_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 #include "rvu.h"
 
 #define PCI_DEVID_CN10K_MCS		0xA096

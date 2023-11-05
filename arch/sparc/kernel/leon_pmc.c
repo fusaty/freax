@@ -4,8 +4,8 @@
  * Copyright (C) 2011 Daniel Hellstrom (daniel@gaisler.com) Aeroflex Gaisler AB
  */
 
-#include <linux/init.h>
-#include <linux/pm.h>
+#include <freax/init.h>
+#include <freax/pm.h>
 
 #include <asm/leon_amba.h>
 #include <asm/cpu_type.h>

@@ -5,13 +5,13 @@
  * Copyright (C) 2018-2021 ARM Ltd.
  */
 
-#ifndef _LINUX_SCMI_PROTOCOL_H
-#define _LINUX_SCMI_PROTOCOL_H
+#ifndef _freax_SCMI_PROTOCOL_H
+#define _freax_SCMI_PROTOCOL_H
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/notifier.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/notifier.h>
+#include <freax/types.h>
 
 #define SCMI_MAX_STR_SIZE		64
 #define SCMI_SHORT_NAME_MAX_SIZE	16
@@ -1006,4 +1006,4 @@ struct scmi_powercap_meas_changed_report {
 	unsigned int	domain_id;
 	unsigned int	power;
 };
-#endif /* _LINUX_SCMI_PROTOCOL_H */
+#endif /* _freax_SCMI_PROTOCOL_H */

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Generic PPP layer for Linux.
+ * Generic PPP layer for freax.
  *
  * Copyright 1999-2002 Paul Mackerras.
  *
  * The generic PPP layer handles the PPP network interfaces, the
  * /dev/ppp device, packet and VJ compression, and multilink.
  * It talks to PPP `channels' via the interface defined in
- * include/linux/ppp_channel.h.  Channels provide the basic means for
+ * include/freax/ppp_channel.h.  Channels provide the basic means for
  * sending and receiving PPP frames on some kind of communications
  * channel.
  *
@@ -18,38 +18,38 @@
  * ==FILEVERSION 20041108==
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/kmod.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/idr.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/ppp_defs.h>
-#include <linux/filter.h>
-#include <linux/ppp-ioctl.h>
-#include <linux/ppp_channel.h>
-#include <linux/ppp-comp.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_arp.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/spinlock.h>
-#include <linux/rwsem.h>
-#include <linux/stddef.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/file.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/kmod.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/idr.h>
+#include <freax/netdevice.h>
+#include <freax/poll.h>
+#include <freax/ppp_defs.h>
+#include <freax/filter.h>
+#include <freax/ppp-ioctl.h>
+#include <freax/ppp_channel.h>
+#include <freax/ppp-comp.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
+#include <freax/if_arp.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/spinlock.h>
+#include <freax/rwsem.h>
+#include <freax/stddef.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/file.h>
 #include <asm/unaligned.h>
 #include <net/slhc_vj.h>
-#include <linux/atomic.h>
-#include <linux/refcount.h>
+#include <freax/atomic.h>
+#include <freax/refcount.h>
 
-#include <linux/nsproxy.h>
+#include <freax/nsproxy.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 

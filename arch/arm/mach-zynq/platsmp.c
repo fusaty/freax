@@ -5,19 +5,19 @@
  *
  * Copyright (C) 2011-2013 Xilinx
  *
- * based on linux/arch/arm/mach-realview/platsmp.c
+ * based on freax/arch/arm/mach-realview/platsmp.c
  *
  * Copyright (C) 2002 ARM Ltd.
  */
 
-#include <linux/export.h>
-#include <linux/jiffies.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <freax/export.h>
+#include <freax/jiffies.h>
+#include <freax/init.h>
+#include <freax/io.h>
 #include <asm/cacheflush.h>
 #include <asm/smp_plat.h>
 #include <asm/smp_scu.h>
-#include <linux/irqchip/arm-gic.h>
+#include <freax/irqchip/arm-gic.h>
 #include "common.h"
 
 /*

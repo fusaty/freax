@@ -5,11 +5,11 @@
  *      (c) 2005 Patrick McHardy <kaber@trash.net>
  */
 
-#include <linux/module.h>
-#include <linux/ip.h>
+#include <freax/module.h>
+#include <freax/ip.h>
 #include <net/route.h>
-#include <linux/inetdevice.h>
-#include <linux/skbuff.h>
+#include <freax/inetdevice.h>
+#include <freax/skbuff.h>
 
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_helper.h>

@@ -7,17 +7,17 @@
  * Author: Kamil Debski <k.debski@samsung.com>
  */
 
-#include <linux/hwmon.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/regulator/consumer.h>
-#include <linux/sysfs.h>
-#include <linux/thermal.h>
-#include <linux/timer.h>
+#include <freax/hwmon.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/regulator/consumer.h>
+#include <freax/sysfs.h>
+#include <freax/thermal.h>
+#include <freax/timer.h>
 
 #define MAX_PWM 255
 

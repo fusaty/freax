@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_EXTABLE_H
-#define _LINUX_EXTABLE_H
+#ifndef _freax_EXTABLE_H
+#define _freax_EXTABLE_H
 
-#include <linux/stddef.h>	/* for NULL */
-#include <linux/types.h>
+#include <freax/stddef.h>	/* for NULL */
+#include <freax/types.h>
 
 struct module;
 struct exception_table_entry;
@@ -43,4 +43,4 @@ search_bpf_extables(unsigned long addr)
 }
 #endif
 
-#endif /* _LINUX_EXTABLE_H */
+#endif /* _freax_EXTABLE_H */

@@ -2,7 +2,7 @@
 #ifndef __ASM_SH_LANDISK_GIO_H
 #define __ASM_SH_LANDISK_GIO_H
 
-#include <linux/ioctl.h>
+#include <freax/ioctl.h>
 
 /* version */
 #define VERSION_STR	"1.00"

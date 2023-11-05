@@ -1,7 +1,7 @@
 .. include:: <isonum.txt>
 
 ################################
-Linux Input Subsystem kernel API
+freax Input Subsystem kernel API
 ################################
 
 .. class:: toc-title

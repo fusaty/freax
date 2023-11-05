@@ -4,13 +4,13 @@
 //
 // Copyright 2013 Linaro Ltd.  All rights reserved.
 
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #include <sound/ac97_codec.h>
 

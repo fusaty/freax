@@ -2,8 +2,8 @@
 /*
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/acpi.h>
-#include <linux/dma-direct.h>
+#include <freax/acpi.h>
+#include <freax/dma-direct.h>
 
 void acpi_arch_dma_setup(struct device *dev)
 {

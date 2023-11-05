@@ -2,7 +2,7 @@
 #ifndef __PERF_VDSO__
 #define __PERF_VDSO__
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <string.h>
 #include <stdbool.h>
 

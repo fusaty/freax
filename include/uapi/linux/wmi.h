@@ -1,14 +1,14 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0-only WITH freax-syscall-note */
 /*
  *  User API methods for ACPI-WMI mapping driver
  *
  *  Copyright (C) 2017 Dell, Inc.
  */
-#ifndef _UAPI_LINUX_WMI_H
-#define _UAPI_LINUX_WMI_H
+#ifndef _UAPI_freax_WMI_H
+#define _UAPI_freax_WMI_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 /* WMI bus will filter all WMI vendor driver requests through this IOC */
 #define WMI_IOC 'W'

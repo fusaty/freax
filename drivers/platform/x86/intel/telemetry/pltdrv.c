@@ -9,9 +9,9 @@
  * The accumulated results are fetched from SRAM.
  */
 
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>

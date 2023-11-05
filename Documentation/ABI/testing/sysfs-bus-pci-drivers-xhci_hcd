@@ -1,6 +1,6 @@
 What:		/sys/bus/pci/drivers/xhci_hcd/.../dbc
 Date:		June 2017
-Contact:	Lu Baolu <baolu.lu@linux.intel.com>
+Contact:	Lu Baolu <baolu.lu@freax.intel.com>
 Description:
 		xHCI compatible USB host controllers (i.e. super-speed
 		USB3 controllers) are often implemented with the Debug
@@ -26,7 +26,7 @@ Description:
 
 What:		/sys/bus/pci/drivers/xhci_hcd/.../dbc_idVendor
 Date:		March 2023
-Contact:	Mathias Nyman <mathias.nyman@linux.intel.com>
+Contact:	Mathias Nyman <mathias.nyman@freax.intel.com>
 Description:
 		This dbc_idVendor attribute lets us change the idVendor field
 		presented in the USB device descriptor by this xhci debug
@@ -34,12 +34,12 @@ Description:
 		Value can only be changed while debug capability (DbC) is in
 		disabled state to prevent USB device descriptor change while
 		connected to a USB host.
-		The default value is 0x1d6b (Linux Foundation).
+		The default value is 0x1d6b (freax Foundation).
 		It can be any 16-bit integer.
 
 What:		/sys/bus/pci/drivers/xhci_hcd/.../dbc_idProduct
 Date:		March 2023
-Contact:	Mathias Nyman <mathias.nyman@linux.intel.com>
+Contact:	Mathias Nyman <mathias.nyman@freax.intel.com>
 Description:
 		This dbc_idProduct attribute lets us change the idProduct field
 		presented in the USB device descriptor by this xhci debug
@@ -51,7 +51,7 @@ Description:
 
 What:		/sys/bus/pci/drivers/xhci_hcd/.../dbc_bcdDevice
 Date:		March 2023
-Contact:	Mathias Nyman <mathias.nyman@linux.intel.com>
+Contact:	Mathias Nyman <mathias.nyman@freax.intel.com>
 Description:
 		This dbc_bcdDevice attribute lets us change the bcdDevice field
 		presented in the USB device descriptor by this xhci debug
@@ -64,7 +64,7 @@ Description:
 
 What:		/sys/bus/pci/drivers/xhci_hcd/.../dbc_bInterfaceProtocol
 Date:		March 2023
-Contact:	Mathias Nyman <mathias.nyman@linux.intel.com>
+Contact:	Mathias Nyman <mathias.nyman@freax.intel.com>
 Description:
 		This attribute lets us change the bInterfaceProtocol field
 		presented in the USB Interface descriptor by the xhci debug

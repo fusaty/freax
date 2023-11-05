@@ -13,19 +13,19 @@
  * kind, whether express or implied.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/delay.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/param.h>
+#include <freax/string.h>
+#include <freax/ioport.h>
+#include <freax/device.h>
+#include <freax/delay.h>
 
-#include <linux/fsl_devices.h>
-#include <linux/mii.h>
-#include <linux/of_address.h>
-#include <linux/of_fdt.h>
-#include <linux/of_platform.h>
+#include <freax/fsl_devices.h>
+#include <freax/mii.h>
+#include <freax/of_address.h>
+#include <freax/of_fdt.h>
+#include <freax/of_platform.h>
 
 #include <asm/delay.h>
 #include <asm/io.h>

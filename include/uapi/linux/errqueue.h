@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_ERRQUEUE_H
-#define _UAPI_LINUX_ERRQUEUE_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_ERRQUEUE_H
+#define _UAPI_freax_ERRQUEUE_H
 
-#include <linux/types.h>
-#include <linux/time_types.h>
+#include <freax/types.h>
+#include <freax/time_types.h>
 
 /* RFC 4884: return offset to extension struct + validation */
 struct sock_ee_data_rfc4884 {
@@ -75,4 +75,4 @@ enum {
 	SCM_TSTAMP_ACK,		/* data acknowledged by peer */
 };
 
-#endif /* _UAPI_LINUX_ERRQUEUE_H */
+#endif /* _UAPI_freax_ERRQUEUE_H */

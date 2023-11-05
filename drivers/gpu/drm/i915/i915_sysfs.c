@@ -25,10 +25,10 @@
  *
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/stat.h>
-#include <linux/sysfs.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/stat.h>
+#include <freax/sysfs.h>
 
 #include "gt/intel_gt_regs.h"
 #include "gt/intel_rc6.h"

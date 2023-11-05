@@ -6,11 +6,11 @@
  * Author: Johannes Thumshirn <johannes.thumshirn@men.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mcb.h>
-#include <linux/io.h>
-#include <linux/iio/iio.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mcb.h>
+#include <freax/io.h>
+#include <freax/iio/iio.h>
 
 #define Z188_ADC_MAX_CHAN	8
 #define Z188_ADC_GAIN		0x0700000

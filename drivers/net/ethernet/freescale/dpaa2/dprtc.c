@@ -4,7 +4,7 @@
  * Copyright 2016-2018 NXP
  */
 
-#include <linux/fsl/mc.h>
+#include <freax/fsl/mc.h>
 
 #include "dprtc.h"
 #include "dprtc-cmd.h"

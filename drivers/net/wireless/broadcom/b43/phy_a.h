@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_B43_PHY_A_H_
-#define LINUX_B43_PHY_A_H_
+#ifndef freax_B43_PHY_A_H_
+#define freax_B43_PHY_A_H_
 
 #include "phy_common.h"
 
@@ -102,4 +102,4 @@ u32 b43_ofdmtab_read32(struct b43_wldev *dev, u16 table, u16 offset);
 void b43_ofdmtab_write32(struct b43_wldev *dev, u16 table,
 			 u16 offset, u32 value);
 
-#endif /* LINUX_B43_PHY_A_H_ */
+#endif /* freax_B43_PHY_A_H_ */

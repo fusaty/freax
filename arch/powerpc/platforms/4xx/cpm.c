@@ -17,11 +17,11 @@
  * project.
  */
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/sysfs.h>
-#include <linux/cpu.h>
-#include <linux/suspend.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/sysfs.h>
+#include <freax/cpu.h>
+#include <freax/suspend.h>
 #include <asm/dcr.h>
 #include <asm/dcr-native.h>
 #include <asm/machdep.h>

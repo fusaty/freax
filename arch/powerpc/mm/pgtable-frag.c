@@ -5,12 +5,12 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/gfp.h>
-#include <linux/mm.h>
-#include <linux/percpu.h>
-#include <linux/hardirq.h>
-#include <linux/hugetlb.h>
+#include <freax/kernel.h>
+#include <freax/gfp.h>
+#include <freax/mm.h>
+#include <freax/percpu.h>
+#include <freax/hardirq.h>
+#include <freax/hugetlb.h>
 #include <asm/pgalloc.h>
 #include <asm/tlbflush.h>
 #include <asm/tlb.h>

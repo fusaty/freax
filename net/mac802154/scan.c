@@ -8,8 +8,8 @@
  *   - Miquel Raynal <miquel.raynal@bootlin.com>
  */
 
-#include <linux/module.h>
-#include <linux/rtnetlink.h>
+#include <freax/module.h>
+#include <freax/rtnetlink.h>
 #include <net/mac802154.h>
 
 #include "ieee802154_i.h"

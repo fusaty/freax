@@ -6,18 +6,18 @@
 
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/mfd/tps65090.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/gpio/consumer.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/mfd/tps65090.h>
 
 #define MAX_CTRL_READ_TRIES	5
 #define MAX_FET_ENABLE_TRIES	1000

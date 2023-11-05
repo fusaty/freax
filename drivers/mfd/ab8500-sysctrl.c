@@ -6,17 +6,17 @@
  * Author: Mattias Nilsson <mattias.i.nilsson@stericsson.com> for ST Ericsson.
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/export.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/reboot.h>
-#include <linux/signal.h>
-#include <linux/power_supply.h>
-#include <linux/mfd/abx500.h>
-#include <linux/mfd/abx500/ab8500.h>
-#include <linux/mfd/abx500/ab8500-sysctrl.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/export.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/reboot.h>
+#include <freax/signal.h>
+#include <freax/power_supply.h>
+#include <freax/mfd/abx500.h>
+#include <freax/mfd/abx500/ab8500.h>
+#include <freax/mfd/abx500/ab8500-sysctrl.h>
 
 /* RtcCtrl bits */
 #define AB8500_ALARM_MIN_LOW  0x08

@@ -7,8 +7,8 @@
 #ifndef _STI_HDMI_H_
 #define _STI_HDMI_H_
 
-#include <linux/hdmi.h>
-#include <linux/platform_device.h>
+#include <freax/hdmi.h>
+#include <freax/platform_device.h>
 
 #include <media/cec-notifier.h>
 

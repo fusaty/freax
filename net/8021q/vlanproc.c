@@ -3,7 +3,7 @@
  * vlanproc.c	VLAN Module. /proc filesystem interface.
  *
  *		This module is completely hardware-independent and provides
- *		access to the router using Linux /proc filesystem.
+ *		access to the router using freax /proc filesystem.
  *
  * Author:	Ben Greear, <greearb@candelatech.com> coppied from wanproc.c
  *               by: Gene Kozin	<genek@compuserve.com>
@@ -16,15 +16,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/fs.h>
-#include <linux/netdevice.h>
-#include <linux/if_vlan.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/fs.h>
+#include <freax/netdevice.h>
+#include <freax/if_vlan.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include "vlanproc.h"

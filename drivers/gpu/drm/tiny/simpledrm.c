@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/clk.h>
-#include <linux/of_clk.h>
-#include <linux/minmax.h>
-#include <linux/of_address.h>
-#include <linux/platform_data/simplefb.h>
-#include <linux/platform_device.h>
-#include <linux/pm_domain.h>
-#include <linux/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/of_clk.h>
+#include <freax/minmax.h>
+#include <freax/of_address.h>
+#include <freax/platform_data/simplefb.h>
+#include <freax/platform_device.h>
+#include <freax/pm_domain.h>
+#include <freax/regulator/consumer.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic.h>

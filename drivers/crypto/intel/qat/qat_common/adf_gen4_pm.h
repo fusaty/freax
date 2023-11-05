@@ -3,7 +3,7 @@
 #ifndef ADF_GEN4_PM_H
 #define ADF_GEN4_PM_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 struct adf_accel_dev;
 

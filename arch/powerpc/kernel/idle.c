@@ -15,12 +15,12 @@
  * 32-bit and 64-bit versions merged by Paul Mackerras <paulus@samba.org>
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/cpu.h>
-#include <linux/sysctl.h>
-#include <linux/tick.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/smp.h>
+#include <freax/cpu.h>
+#include <freax/sysctl.h>
+#include <freax/tick.h>
 
 #include <asm/processor.h>
 #include <asm/cputable.h>

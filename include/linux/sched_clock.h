@@ -2,10 +2,10 @@
 /*
  * sched_clock.h: support for extending counters to full 64-bit ns counter
  */
-#ifndef LINUX_SCHED_CLOCK
-#define LINUX_SCHED_CLOCK
+#ifndef freax_SCHED_CLOCK
+#define freax_SCHED_CLOCK
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifdef CONFIG_GENERIC_SCHED_CLOCK
 /**

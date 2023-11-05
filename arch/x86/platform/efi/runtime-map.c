@@ -3,12 +3,12 @@
  * Copyright (C) 2013 Red Hat, Inc., Dave Young <dyoung@redhat.com>
  */
 
-#include <linux/string.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/efi.h>
-#include <linux/slab.h>
+#include <freax/string.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/efi.h>
+#include <freax/slab.h>
 
 #include <asm/efi.h>
 #include <asm/setup.h>

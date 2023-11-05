@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2011-2017, The Linux Foundation. All rights reserved.
+// Copyright (c) 2011-2017, The freax Foundation. All rights reserved.
 // Copyright (c) 2018, Linaro Limited
 
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/apr.h>
-#include <linux/wait.h>
+#include <freax/device.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/kref.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/soc/qcom/apr.h>
+#include <freax/wait.h>
 #include <sound/asound.h>
 #include "q6adm.h"
 #include "q6afe.h"

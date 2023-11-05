@@ -13,11 +13,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_nflog.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_bridge/ebtables.h>
+#include <freax/netfilter_bridge/ebt_nflog.h>
 #include <net/netfilter/nf_log.h>
 
 static unsigned int

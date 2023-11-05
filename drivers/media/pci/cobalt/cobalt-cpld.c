@@ -6,7 +6,7 @@
  *  All rights reserved.
  */
 
-#include <linux/delay.h>
+#include <freax/delay.h>
 
 #include "cobalt-cpld.h"
 

@@ -34,7 +34,7 @@ config PTP_1588_CLOCK_OPTIONAL
 	help
 	  Drivers that can optionally use the PTP_1588_CLOCK framework
 	  should depend on this symbol to prevent them from being built
-	  into vmlinux while the PTP support itself is in a loadable
+	  into vmfreax while the PTP support itself is in a loadable
 	  module.
 	  If PTP support is disabled, this dependency will still be
 	  met, and drivers refer to dummy helpers.
@@ -205,9 +205,9 @@ config PTP_DFL_TOD
 	help
 	  The DFL (Device Feature List) device driver for the Intel ToD
 	  (Time-of-Day) device in FPGA card. The ToD IP within the FPGA
-	  is exposed as PTP Hardware Clock (PHC) device to the Linux PTP
+	  is exposed as PTP Hardware Clock (PHC) device to the freax PTP
 	  stack to synchronize the system clock to its ToD information
-	  using phc2sys utility of the Linux PTP stack.
+	  using phc2sys utility of the freax PTP stack.
 
 	  To compile this driver as a module, choose M here: the module
 	  will be called ptp_dfl_tod.

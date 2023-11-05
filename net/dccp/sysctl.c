@@ -6,8 +6,8 @@
  *  Arnaldo Carvalho de Melo <acme@mandriva.com>
  */
 
-#include <linux/mm.h>
-#include <linux/sysctl.h>
+#include <freax/mm.h>
+#include <freax/sysctl.h>
 #include "dccp.h"
 #include "feat.h"
 

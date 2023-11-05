@@ -9,8 +9,8 @@
 #ifndef _KS_HOSTIF_H_
 #define _KS_HOSTIF_H_
 
-#include <linux/compiler.h>
-#include <linux/ieee80211.h>
+#include <freax/compiler.h>
+#include <freax/ieee80211.h>
 
 /*
  * HOST-MAC I/F events

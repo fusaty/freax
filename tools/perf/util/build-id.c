@@ -21,7 +21,7 @@
 #include "map.h"
 #include "symbol.h"
 #include "thread.h"
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include "debug.h"
 #include "session.h"
 #include "tool.h"
@@ -35,9 +35,9 @@
 #include <elfutils/debuginfod.h>
 #endif
 
-#include <linux/ctype.h>
-#include <linux/zalloc.h>
-#include <linux/string.h>
+#include <freax/ctype.h>
+#include <freax/zalloc.h>
+#include <freax/string.h>
 #include <asm/bug.h>
 
 static bool no_buildid_cache;

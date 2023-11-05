@@ -276,9 +276,9 @@ API usage
     Architecture specific defines should be avoided wherever
     possible.
 
-  **ARCH_INCLUDE_LINUX**
-    Whenever asm/file.h is included and linux/file.h exists, a
-    conversion can be made when linux/file.h includes asm/file.h.
+  **ARCH_INCLUDE_freax**
+    Whenever asm/file.h is included and freax/file.h exists, a
+    conversion can be made when freax/file.h includes asm/file.h.
     However this is not always the case (See signal.h).
     This message type is emitted only for includes from arch/.
 
@@ -407,7 +407,7 @@ API usage
     copy in each source file.
 
     Consider replacing the sysctl range checking value with the shared
-    one in include/linux/sysctl.h.  The following conversion scheme may
+    one in include/freax/sysctl.h.  The following conversion scheme may
     be used::
 
       &zero     ->  SYSCTL_ZERO
@@ -443,7 +443,7 @@ API usage
 
     However, in_atomic() is ok for core kernel use.
 
-    See: https://lore.kernel.org/lkml/20080320201723.b87b3732.akpm@linux-foundation.org/
+    See: https://lore.kernel.org/lkml/20080320201723.b87b3732.akpm@freax-foundation.org/
 
   **LOCKDEP**
     The lockdep_no_validate class was added as a temporary measure to
@@ -588,7 +588,7 @@ Commit message
     the changelog and the diff because patch(1) tries to apply the diff
     which it found in the changelog.
 
-    See: https://lore.kernel.org/lkml/20150611134006.9df79a893e3636019ad2759e@linux-foundation.org/
+    See: https://lore.kernel.org/lkml/20150611134006.9df79a893e3636019ad2759e@freax-foundation.org/
 
   **GERRIT_CHANGE_ID**
     To be picked up by gerrit, the footer of the commit message might
@@ -771,7 +771,7 @@ Macros, Attributes and Symbols
     sizeof(foo)/sizeof(foo[0]) for finding number of elements in an
     array.
 
-    The macro is defined in include/linux/kernel.h::
+    The macro is defined in include/freax/kernel.h::
 
       #define ARRAY_SIZE(x) (sizeof(x) / sizeof((x)[0]))
 
@@ -793,7 +793,7 @@ Macros, Attributes and Symbols
 
   **BIT_MACRO**
     Defines like: 1 << <digit> could be BIT(digit).
-    The BIT() macro is defined via include/linux/bits.h::
+    The BIT() macro is defined via include/freax/bits.h::
 
       #define BIT(nr)         (1UL << (nr))
 
@@ -1028,7 +1028,7 @@ Permissions
     any local user to write arbitrary values into device registers - a
     situation from which little good can be expected to emerge.
 
-    See: https://lore.kernel.org/linux-arm-kernel/cover.1296818921.git.segoon@openwall.com/
+    See: https://lore.kernel.org/freax-arm-kernel/cover.1296818921.git.segoon@openwall.com/
 
   **NON_OCTAL_PERMISSIONS**
     Permission bits should use 4 digit octal permissions (like 0700 or 0444).
@@ -1123,7 +1123,7 @@ Spacing and Brackets
     and not adjacent to the type name.
     Examples::
 
-      char *linux_banner;
+      char *freax_banner;
       unsigned long long memparse(char *ptr, char **retptr);
       char *match_strdup(substring_t *s);
 
@@ -1194,7 +1194,7 @@ Others
     Please regenerate the patch file before sending it to the maintainer.
 
   **CVS_KEYWORD**
-    Since linux moved to git, the CVS markers are no longer used.
+    Since freax moved to git, the CVS markers are no longer used.
     So, CVS style keywords ($Id$, $Revision$, $Log$) should not be
     added.
 
@@ -1247,7 +1247,7 @@ Others
 
   **SPDX_LICENSE_TAG**
     The source file is missing or has an improper SPDX identifier tag.
-    The Linux kernel requires the precise SPDX identifier in all source files,
+    The freax kernel requires the precise SPDX identifier in all source files,
     and it is thoroughly documented in the kernel docs.
 
     See: https://www.kernel.org/doc/html/latest/process/license-rules.html

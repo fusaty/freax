@@ -5,8 +5,8 @@
  * Copyright (C) 1996-1998, Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef _LINUX_NFSD_XDR3_H
-#define _LINUX_NFSD_XDR3_H
+#ifndef _freax_NFSD_XDR3_H
+#define _freax_NFSD_XDR3_H
 
 #include "xdr.h"
 
@@ -311,4 +311,4 @@ bool svcxdr_encode_nfsstat3(struct xdr_stream *xdr, __be32 status);
 bool svcxdr_encode_post_op_attr(struct svc_rqst *rqstp, struct xdr_stream *xdr,
 				const struct svc_fh *fhp);
 
-#endif /* _LINUX_NFSD_XDR3_H */
+#endif /* _freax_NFSD_XDR3_H */

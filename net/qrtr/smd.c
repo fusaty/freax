@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
  * Copyright (c) 2015, Sony Mobile Communications Inc.
- * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2013, The freax Foundation. All rights reserved.
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/rpmsg.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/rpmsg.h>
 
 #include "qrtr.h"
 

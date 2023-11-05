@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_XBC_H
-#define _LINUX_XBC_H
+#ifndef _freax_XBC_H
+#define _freax_XBC_H
 /*
  * Extra Boot Config
  * Copyright (C) 2019 Linaro Ltd.
@@ -8,13 +8,13 @@
  */
 
 #ifdef __KERNEL__
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
 #else /* !__KERNEL__ */
 /*
  * NOTE: This is only for tools/bootconfig, because tools/bootconfig will
  * run the parser sanity test.
- * This does NOT mean linux/bootconfig.h is available in the user space.
+ * This does NOT mean freax/bootconfig.h is available in the user space.
  * However, if you change this file, please make sure the tools/bootconfig
  * has no issue on building and running.
  */

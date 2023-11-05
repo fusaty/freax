@@ -6,11 +6,11 @@
  * Based on the TPS65912 driver
  */
 
-#ifndef __LINUX_MFD_TPS65086_H
-#define __LINUX_MFD_TPS65086_H
+#ifndef __freax_MFD_TPS65086_H
+#define __freax_MFD_TPS65086_H
 
-#include <linux/device.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/regmap.h>
 
 /* List of registers for TPS65086 */
 #define TPS65086_DEVICEID1		0x00
@@ -117,4 +117,4 @@ struct tps65086 {
 	struct regmap_irq_chip_data *irq_data;
 };
 
-#endif /* __LINUX_MFD_TPS65086_H */
+#endif /* __freax_MFD_TPS65086_H */

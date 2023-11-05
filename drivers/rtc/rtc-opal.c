@@ -8,13 +8,13 @@
 
 #define DRVNAME		"rtc-opal"
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
-#include <linux/bcd.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/rtc.h>
+#include <freax/delay.h>
+#include <freax/bcd.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
 #include <asm/opal.h>
 #include <asm/firmware.h>
 
@@ -293,7 +293,7 @@ static void __exit opal_rtc_exit(void)
 	platform_driver_unregister(&opal_rtc_driver);
 }
 
-MODULE_AUTHOR("Neelesh Gupta <neelegup@linux.vnet.ibm.com>");
+MODULE_AUTHOR("Neelesh Gupta <neelegup@freax.vnet.ibm.com>");
 MODULE_DESCRIPTION("IBM OPAL RTC driver");
 MODULE_LICENSE("GPL");
 

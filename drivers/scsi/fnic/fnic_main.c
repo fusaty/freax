@@ -3,18 +3,18 @@
  * Copyright 2008 Cisco Systems, Inc.  All rights reserved.
  * Copyright 2007 Nuova Systems, Inc.  All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/mempool.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/if_ether.h>
+#include <freax/module.h>
+#include <freax/mempool.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/skbuff.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
+#include <freax/if_ether.h>
 #include <scsi/fc/fc_fip.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport.h>

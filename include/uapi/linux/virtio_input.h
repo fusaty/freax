@@ -1,5 +1,5 @@
-#ifndef _LINUX_VIRTIO_INPUT_H
-#define _LINUX_VIRTIO_INPUT_H
+#ifndef _freax_VIRTIO_INPUT_H
+#define _freax_VIRTIO_INPUT_H
 /* This header is BSD licensed so anyone can use the definitions to implement
  * compatible drivers/servers.
  *
@@ -27,7 +27,7 @@
  * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE. */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum virtio_input_config_select {
 	VIRTIO_INPUT_CFG_UNSET      = 0x00,
@@ -73,4 +73,4 @@ struct virtio_input_event {
 	__le32 value;
 };
 
-#endif /* _LINUX_VIRTIO_INPUT_H */
+#endif /* _freax_VIRTIO_INPUT_H */

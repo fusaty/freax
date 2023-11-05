@@ -8,10 +8,10 @@
 
 #define pr_fmt(fmt) "clk-vco-pll: " fmt
 
-#include <linux/clk-provider.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
+#include <freax/clk-provider.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/err.h>
 #include "clk.h"
 
 /*

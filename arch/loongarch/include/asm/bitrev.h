@@ -5,7 +5,7 @@
 #ifndef __LOONGARCH_ASM_BITREV_H__
 #define __LOONGARCH_ASM_BITREV_H__
 
-#include <linux/swab.h>
+#include <freax/swab.h>
 
 static __always_inline __attribute_const__ u32 __arch_bitrev32(u32 x)
 {

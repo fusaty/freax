@@ -23,8 +23,8 @@
  *
  * Authors: Christian König
  */
-#include <linux/hdmi.h>
-#include <linux/gcd.h>
+#include <freax/hdmi.h>
+#include <freax/gcd.h>
 
 #include <drm/radeon_drm.h>
 #include "radeon.h"

@@ -7,19 +7,19 @@
  * Copyright (C) 2011 - 2014 Intel Corporation. All rights reserved.
  */
 
-#include <linux/acpi.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/intel_soc_pmic.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power/bq24190_charger.h>
-#include <linux/power/bq25890_charger.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqdomain.h>
+#include <freax/mfd/intel_soc_pmic.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/power/bq24190_charger.h>
+#include <freax/power/bq25890_charger.h>
+#include <freax/slab.h>
 
 #define CHT_WC_I2C_CTRL			0x5e24
 #define CHT_WC_I2C_CTRL_WR		BIT(0)
@@ -326,8 +326,8 @@ static struct bq25890_platform_data bq2589x_pdata = {
 };
 
 static const struct property_entry xiaomi_mipad2_props[] = {
-	PROPERTY_ENTRY_BOOL("linux,skip-reset"),
-	PROPERTY_ENTRY_BOOL("linux,read-back-settings"),
+	PROPERTY_ENTRY_BOOL("freax,skip-reset"),
+	PROPERTY_ENTRY_BOOL("freax,read-back-settings"),
 	{ }
 };
 
@@ -349,13 +349,13 @@ static const char * const lenovo_yb1_bq25892_suppliers[] = { "cht_wcove_pwrsrc" 
 static const struct property_entry lenovo_yb1_bq25892_props[] = {
 	PROPERTY_ENTRY_STRING_ARRAY("supplied-from",
 				    lenovo_yb1_bq25892_suppliers),
-	PROPERTY_ENTRY_U32("linux,pump-express-vbus-max", 12000000),
-	PROPERTY_ENTRY_BOOL("linux,skip-reset"),
+	PROPERTY_ENTRY_U32("freax,pump-express-vbus-max", 12000000),
+	PROPERTY_ENTRY_BOOL("freax,skip-reset"),
 	/*
 	 * The firmware sets everything to the defaults, which leads to a
 	 * somewhat low charge-current of 2048mA and worse to a battery-voltage
 	 * of 4.2V instead of 4.35V (when booted without a charger connected).
-	 * Use our own values instead of "linux,read-back-settings" to fix this.
+	 * Use our own values instead of "freax,read-back-settings" to fix this.
 	 */
 	PROPERTY_ENTRY_U32("ti,charge-current", 4224000),
 	PROPERTY_ENTRY_U32("ti,battery-regulation-voltage", 4352000),
@@ -389,14 +389,14 @@ static const char * const lenovo_yt3_bq25892_1_suppliers[] = { "cht_wcove_pwrsrc
  */
 static const struct property_entry lenovo_yt3_bq25892_1_props[] = {
 	PROPERTY_ENTRY_STRING_ARRAY("supplied-from", lenovo_yt3_bq25892_1_suppliers),
-	PROPERTY_ENTRY_STRING("linux,secondary-charger-name", "bq25890-charger-0"),
-	PROPERTY_ENTRY_U32("linux,iinlim-percentage", 60),
-	PROPERTY_ENTRY_U32("linux,pump-express-vbus-max", 12000000),
-	PROPERTY_ENTRY_BOOL("linux,skip-reset"),
+	PROPERTY_ENTRY_STRING("freax,secondary-charger-name", "bq25890-charger-0"),
+	PROPERTY_ENTRY_U32("freax,iinlim-percentage", 60),
+	PROPERTY_ENTRY_U32("freax,pump-express-vbus-max", 12000000),
+	PROPERTY_ENTRY_BOOL("freax,skip-reset"),
 	/*
 	 * The firmware sets everything to the defaults, leading to a low(ish)
 	 * charge-current and battery-voltage of 2048mA resp 4.2V. Use the
-	 * Android values instead of "linux,read-back-settings" to fix this.
+	 * Android values instead of "freax,read-back-settings" to fix this.
 	 */
 	PROPERTY_ENTRY_U32("ti,charge-current", 3072000),
 	PROPERTY_ENTRY_U32("ti,battery-regulation-voltage", 4352000),

@@ -5,12 +5,12 @@
  * Copyright 2009 Jonathan Corbet <corbet@lwn.net>
  */
 
-#include <linux/spinlock.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/platform_device.h>
-#include <linux/via-core.h>
-#include <linux/export.h>
+#include <freax/spinlock.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/machine.h>
+#include <freax/platform_device.h>
+#include <freax/via-core.h>
+#include <freax/export.h>
 #include "via-gpio.h"
 
 /*

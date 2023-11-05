@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * Surface System Aggregator Module (SSAM) user-space EC interface.
  *
@@ -9,11 +9,11 @@
  * Copyright (C) 2020-2021 Maximilian Luz <luzmaximilian@gmail.com>
  */
 
-#ifndef _UAPI_LINUX_SURFACE_AGGREGATOR_CDEV_H
-#define _UAPI_LINUX_SURFACE_AGGREGATOR_CDEV_H
+#ifndef _UAPI_freax_SURFACE_AGGREGATOR_CDEV_H
+#define _UAPI_freax_SURFACE_AGGREGATOR_CDEV_H
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 /**
  * enum ssam_cdev_request_flags - Request flags for SSAM cdev request IOCTL.
@@ -144,4 +144,4 @@ struct ssam_cdev_event {
 #define SSAM_CDEV_EVENT_ENABLE		_IOW(0xA5, 4, struct ssam_cdev_event_desc)
 #define SSAM_CDEV_EVENT_DISABLE		_IOW(0xA5, 5, struct ssam_cdev_event_desc)
 
-#endif /* _UAPI_LINUX_SURFACE_AGGREGATOR_CDEV_H */
+#endif /* _UAPI_freax_SURFACE_AGGREGATOR_CDEV_H */

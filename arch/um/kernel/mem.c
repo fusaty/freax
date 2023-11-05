@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  */
 
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/memblock.h>
-#include <linux/highmem.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/slab.h>
+#include <freax/stddef.h>
+#include <freax/module.h>
+#include <freax/memblock.h>
+#include <freax/highmem.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/slab.h>
 #include <asm/fixmap.h>
 #include <asm/page.h>
 #include <as-layout.h>
@@ -18,7 +18,7 @@
 #include <kern_util.h>
 #include <mem_user.h>
 #include <os.h>
-#include <linux/sched/task.h>
+#include <freax/sched/task.h>
 
 #ifdef CONFIG_KASAN
 int kasan_um_is_ready;

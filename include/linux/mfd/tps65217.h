@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/mfd/tps65217.h
+ * freax/mfd/tps65217.h
  *
  * Functions to access TPS65217 power management chip.
  *
  * Copyright (C) 2011 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#ifndef __LINUX_MFD_TPS65217_H
-#define __LINUX_MFD_TPS65217_H
+#ifndef __freax_MFD_TPS65217_H
+#define __freax_MFD_TPS65217_H
 
-#include <linux/i2c.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <freax/i2c.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
 
 /* TPS chip id list */
 #define TPS65217			0xF0
@@ -278,4 +278,4 @@ int tps65217_set_bits(struct tps65217 *tps, unsigned int reg,
 int tps65217_clear_bits(struct tps65217 *tps, unsigned int reg,
 		unsigned int mask, unsigned int level);
 
-#endif /*  __LINUX_MFD_TPS65217_H */
+#endif /*  __freax_MFD_TPS65217_H */

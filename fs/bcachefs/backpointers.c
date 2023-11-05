@@ -8,7 +8,7 @@
 #include "btree_write_buffer.h"
 #include "error.h"
 
-#include <linux/mm.h>
+#include <freax/mm.h>
 
 static bool extent_matches_bp(struct bch_fs *c,
 			      enum btree_id btree_id, unsigned level,

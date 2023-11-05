@@ -7,8 +7,8 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/inet_diag.h>
+#include <freax/module.h>
+#include <freax/inet_diag.h>
 
 #include "ccid.h"
 #include "dccp.h"

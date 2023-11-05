@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * QNX6 file system, Linux implementation.
+ * QNX6 file system, freax implementation.
  *
  * Version : 1.0.0
  *
@@ -10,9 +10,9 @@
  *
  */
 
-#include <linux/buffer_head.h>
-#include <linux/slab.h>
-#include <linux/crc32.h>
+#include <freax/buffer_head.h>
+#include <freax/slab.h>
+#include <freax/crc32.h>
 #include "qnx6.h"
 
 static void qnx6_mmi_copy_sb(struct qnx6_super_block *qsb,

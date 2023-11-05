@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_UTS_H
-#define _LINUX_UTS_H
+#ifndef _freax_UTS_H
+#define _freax_UTS_H
 
 /*
  * Defines for what uname() should return 
  */
 #ifndef UTS_SYSNAME
-#define UTS_SYSNAME "Linux"
+#define UTS_SYSNAME "freax"
 #endif
 
 #ifndef UTS_NODENAME

@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2018-2023 Linaro Ltd.
  */
 #ifndef _GSI_REG_H_
@@ -8,7 +8,7 @@
 
 /* === Only "gsi.c" and "gsi_reg.c" should include this file === */
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 struct platform_device;
 

@@ -35,8 +35,8 @@
  * refuses to mount.
  */
 
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <freax/crc32.h>
+#include <freax/slab.h>
 #include "ubifs.h"
 
 /**

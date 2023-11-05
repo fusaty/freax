@@ -19,8 +19,8 @@
 #include "trace.h"
 #include "vstructs.h"
 
-#include <linux/backing-dev.h>
-#include <linux/sort.h>
+#include <freax/backing-dev.h>
+#include <freax/sort.h>
 
 static const struct blk_holder_ops bch2_sb_handle_bdev_ops = {
 };

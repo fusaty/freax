@@ -5,7 +5,7 @@
  * Copyright (C) 2021 Collabora Ltd.
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <media/v4l2-mem2mem.h>
 
 #include "hantro.h"

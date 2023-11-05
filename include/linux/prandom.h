@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/prandom.h
+ * include/freax/prandom.h
  *
  * Include file for the fast pseudo-random 32-bit
  * generation.
  */
-#ifndef _LINUX_PRANDOM_H
-#define _LINUX_PRANDOM_H
+#ifndef _freax_PRANDOM_H
+#define _freax_PRANDOM_H
 
-#include <linux/types.h>
-#include <linux/once.h>
-#include <linux/percpu.h>
-#include <linux/random.h>
+#include <freax/types.h>
+#include <freax/once.h>
+#include <freax/percpu.h>
+#include <freax/random.h>
 
 struct rnd_state {
 	__u32 s1, s2, s3, s4;

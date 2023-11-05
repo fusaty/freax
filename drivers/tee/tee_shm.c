@@ -2,16 +2,16 @@
 /*
  * Copyright (c) 2015-2017, 2019-2021 Linaro Limited
  */
-#include <linux/anon_inodes.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/tee_drv.h>
-#include <linux/uaccess.h>
-#include <linux/uio.h>
-#include <linux/highmem.h>
+#include <freax/anon_inodes.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/tee_drv.h>
+#include <freax/uaccess.h>
+#include <freax/uio.h>
+#include <freax/highmem.h>
 #include "tee_private.h"
 
 static void shm_put_kernel_pages(struct page **pages, size_t page_count)

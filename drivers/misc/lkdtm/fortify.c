@@ -5,8 +5,8 @@
  * Add tests related to fortified functions in this file.
  */
 #include "lkdtm.h"
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 
 static volatile int fortify_scratch_space;
 

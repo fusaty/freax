@@ -18,13 +18,13 @@
 #undef TRACE_SYSTEM_VAR
 #define TRACE_SYSTEM_VAR cdns2_dev
 
-#if !defined(__LINUX_CDNS2_TRACE) || defined(TRACE_HEADER_MULTI_READ)
-#define __LINUX_CDNS2_TRACE
+#if !defined(__freax_CDNS2_TRACE) || defined(TRACE_HEADER_MULTI_READ)
+#define __freax_CDNS2_TRACE
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <freax/types.h>
+#include <freax/tracepoint.h>
 #include <asm/byteorder.h>
-#include <linux/usb/ch9.h>
+#include <freax/usb/ch9.h>
 #include "cdns2-gadget.h"
 #include "cdns2-debug.h"
 
@@ -592,7 +592,7 @@ DEFINE_EVENT(cdns2_log_epx_reg_config, cdns2_epx_hw_cfg,
 	TP_ARGS(pdev, pep)
 );
 
-#endif /* __LINUX_CDNS2_TRACE */
+#endif /* __freax_CDNS2_TRACE */
 
 /* This part must be outside header guard. */
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * adm1029.c - Part of lm_sensors, Linux kernel modules for hardware monitoring
+ * adm1029.c - Part of lm_sensors, freax kernel modules for hardware monitoring
  *
  * Copyright (C) 2006 Corentin LABBE <clabbe.montjoie@gmail.com>
  *
@@ -12,15 +12,15 @@
  * http://www.analog.com/UploadedFiles/Data_Sheets/ADM1029.pdf
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/hwmon.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
 
 /*
  * Addresses to scan

@@ -6,10 +6,10 @@
  * Copyright (c) 2014 Finn Thain
  */
 
-#include <linux/kernel.h>
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/console.h>
+#include <freax/init.h>
+#include <freax/string.h>
 #include <asm/setup.h>
 
 

@@ -21,7 +21,7 @@ RS485 Serial Communications
    half-duplex hardware like an RS485 transceiver or any RS232-connected
    half-duplex devices like some modems.
 
-   For these microcontrollers, the Linux driver should be made capable of
+   For these microcontrollers, the freax driver should be made capable of
    working in both modes, and proper ioctls (see later) should be made
    available at user-level to allow switching from one mode to the other, and
    vice versa.
@@ -29,7 +29,7 @@ RS485 Serial Communications
 3. Data Structures Already Available in the Kernel
 ==================================================
 
-   The Linux kernel provides the struct serial_rs485 to handle RS485
+   The freax kernel provides the struct serial_rs485 to handle RS485
    communications. This data structure is used to set and configure RS485
    parameters in the platform data and in ioctls.
 
@@ -49,7 +49,7 @@ RS485 Serial Communications
    TIOCGRS485 ioctl can be used to read back the struct serial_rs485
    matching to the current configuration.
 
-.. kernel-doc:: include/uapi/linux/serial.h
+.. kernel-doc:: include/uapi/freax/serial.h
    :identifiers: serial_rs485 uart_get_rs485_mode
 
 4. Usage from user-level
@@ -58,7 +58,7 @@ RS485 Serial Communications
    From user-level, RS485 configuration can be get/set using the previous
    ioctls. For instance, to set RS485 you can use the following code::
 
-	#include <linux/serial.h>
+	#include <freax/serial.h>
 
 	/* Include definition for RS485 ioctls: TIOCGRS485 and TIOCSRS485 */
 	#include <sys/ioctl.h>
@@ -107,7 +107,7 @@ RS485 Serial Communications
 5. Multipoint Addressing
 ========================
 
-   The Linux kernel provides addressing mode for multipoint RS-485 serial
+   The freax kernel provides addressing mode for multipoint RS-485 serial
    communications line. The addressing mode is enabled with
    ``SER_RS485_ADDRB`` flag in struct serial_rs485. The struct serial_rs485
    has two additional flags and fields for enabling receive and destination

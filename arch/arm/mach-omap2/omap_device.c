@@ -15,24 +15,24 @@
  * devices.
  *
  * In the medium- to long-term, this code should be implemented as a
- * proper omap_bus/omap_device in Linux, no more platform_data func
+ * proper omap_bus/omap_device in freax, no more platform_data func
  * pointers
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/clkdev.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/notifier.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/clkdev.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/notifier.h>
 
 #include "common.h"
 #include "soc.h"

@@ -8,9 +8,9 @@
  * MPC5121 ADS board setup
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
+#include <freax/of.h>
 
 #include <asm/machdep.h>
 #include <asm/ipic.h>

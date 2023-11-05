@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for freax
 
    Copyright (C) 2014 Intel Corporation
 
@@ -21,7 +21,7 @@
    SOFTWARE IS DISCLAIMED.
 */
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

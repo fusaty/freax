@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/efi.h>
+#include <freax/efi.h>
 #include <asm/efi.h>
 
 #include "efistub.h"
@@ -22,7 +22,7 @@ efi_status_t efi_get_memory_map(struct efi_boot_memmap **map,
 {
 	int memtype = install_cfg_tbl ? EFI_ACPI_RECLAIM_MEMORY
 				      : EFI_LOADER_DATA;
-	efi_guid_t tbl_guid = LINUX_EFI_BOOT_MEMMAP_GUID;
+	efi_guid_t tbl_guid = freax_EFI_BOOT_MEMMAP_GUID;
 	struct efi_boot_memmap *m, tmp;
 	efi_status_t status;
 	unsigned long size;

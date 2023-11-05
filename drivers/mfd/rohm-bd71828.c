@@ -4,20 +4,20 @@
 //
 // ROHM BD71828/BD71815 PMIC driver
 
-#include <linux/gpio_keys.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/rohm-bd71815.h>
-#include <linux/mfd/rohm-bd71828.h>
-#include <linux/mfd/rohm-generic.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <freax/gpio_keys.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/irq.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/rohm-bd71815.h>
+#include <freax/mfd/rohm-bd71828.h>
+#include <freax/mfd/rohm-generic.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
 
 static struct gpio_keys_button button = {
 	.code = KEY_POWER,

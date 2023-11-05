@@ -6,31 +6,31 @@
  * Authors:
  *  Chandrashekar Devegowda <chandrashekar.devegowda@intel.com>
  *  Haijun Liu <haijun.liu@mediatek.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  *
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
- *  Andy Shevchenko <andriy.shevchenko@linux.intel.com>
+ *  Andy Shevchenko <andriy.shevchenko@freax.intel.com>
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
  *  Eliot Lee <eliot.lee@intel.com>
  *  Moises Veleta <moises.veleta@intel.com>
  *  Sreehari Kancharla <sreehari.kancharla@intel.com>
  */
 
-#include <linux/atomic.h>
-#include <linux/device.h>
-#include <linux/gfp.h>
-#include <linux/if_arp.h>
-#include <linux/if_ether.h>
-#include <linux/ip.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/netdev_features.h>
-#include <linux/netdevice.h>
-#include <linux/pm_runtime.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <linux/wwan.h>
+#include <freax/atomic.h>
+#include <freax/device.h>
+#include <freax/gfp.h>
+#include <freax/if_arp.h>
+#include <freax/if_ether.h>
+#include <freax/ip.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/netdev_features.h>
+#include <freax/netdevice.h>
+#include <freax/pm_runtime.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
+#include <freax/wwan.h>
 #include <net/ipv6.h>
 #include <net/pkt_sched.h>
 

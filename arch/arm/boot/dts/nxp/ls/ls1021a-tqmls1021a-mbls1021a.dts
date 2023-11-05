@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: (GPL-2.0-or-later OR X11)
 /*
  * Copyright 2013-2014 Freescale Semiconductor, Inc.
- * Copyright 2018-2023 TQ-Systems GmbH <linux@ew.tq-group.com>,
+ * Copyright 2018-2023 TQ-Systems GmbH <freax@ew.tq-group.com>,
  * D-82229 Seefeld, Germany.
  * Author: Alexander Stein
  */
@@ -9,7 +9,7 @@
 /dts-v1/;
 
 #include <dt-bindings/gpio/gpio.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include <dt-bindings/leds/common.h>
 #include <dt-bindings/leds/leds-pca9532.h>
 #include <dt-bindings/net/ti-dp83867.h>
@@ -38,19 +38,19 @@
 
 		switch-1 {
 			label = "S6";
-			linux,code = <BTN_0>;
+			freax,code = <BTN_0>;
 			gpios = <&pca9554_0 0 GPIO_ACTIVE_LOW>;
 		};
 
 		btn2: switch-2 {
 			label = "S7";
-			linux,code = <BTN_1>;
+			freax,code = <BTN_1>;
 			gpios = <&pca9554_0 1 GPIO_ACTIVE_LOW>;
 		};
 
 		switch-3 {
 			label = "S8";
-			linux,code = <BTN_2>;
+			freax,code = <BTN_2>;
 			gpios = <&pca9554_0 2 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -63,7 +63,7 @@
 			function = LED_FUNCTION_STATUS;
 			function-enumerator = <0>;
 			gpios = <&pca9554_2 4 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led-1 {
@@ -71,7 +71,7 @@
 			function = LED_FUNCTION_STATUS;
 			function-enumerator = <1>;
 			gpios = <&pca9554_2 5 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led-2 {
@@ -79,7 +79,7 @@
 			function = LED_FUNCTION_STATUS;
 			function-enumerator = <2>;
 			gpios = <&pca9554_2 6 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led-3 {
@@ -87,7 +87,7 @@
 			function = LED_FUNCTION_HEARTBEAT;
 			function-enumerator = <0>;
 			gpios = <&pca9554_2 7 GPIO_ACTIVE_LOW>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 
@@ -339,7 +339,7 @@
 };
 
 &lpuart0 {
-	linux,rs485-enabled-at-boot-time;
+	freax,rs485-enabled-at-boot-time;
 	status = "okay";
 };
 

@@ -8,15 +8,15 @@
  * configfs Copyright (C) 2005 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/mount.h>
-#include <linux/fs_context.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/mount.h>
+#include <freax/fs_context.h>
+#include <freax/pagemap.h>
+#include <freax/init.h>
+#include <freax/slab.h>
 
-#include <linux/configfs.h>
+#include <freax/configfs.h>
 #include "configfs_internal.h"
 
 /* Random magic number */

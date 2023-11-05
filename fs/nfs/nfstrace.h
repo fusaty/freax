@@ -8,8 +8,8 @@
 #if !defined(_TRACE_NFS_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_NFS_H
 
-#include <linux/tracepoint.h>
-#include <linux/iversion.h>
+#include <freax/tracepoint.h>
+#include <freax/iversion.h>
 
 #include <trace/misc/fs.h>
 #include <trace/misc/nfs.h>

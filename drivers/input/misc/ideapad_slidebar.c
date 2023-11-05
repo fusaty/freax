@@ -71,16 +71,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/dmi.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/i8042.h>
-#include <linux/serio.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/dmi.h>
+#include <freax/spinlock.h>
+#include <freax/platform_device.h>
+#include <freax/input.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/i8042.h>
+#include <freax/serio.h>
 
 #define IDEAPAD_BASE	0xff29
 

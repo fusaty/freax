@@ -26,7 +26,7 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/cacheflush.h>
 
 /*

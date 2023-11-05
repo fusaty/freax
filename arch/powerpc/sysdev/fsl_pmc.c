@@ -7,15 +7,15 @@
  * Author: Anton Vorontsov <avorontsov@ru.mvista.com>
  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/delay.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/suspend.h>
+#include <freax/delay.h>
+#include <freax/mod_devicetable.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
 
 struct pmc_regs {
 	__be32 devdisr;

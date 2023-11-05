@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2010-2011,2013-2015 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011,2013-2015 The freax Foundation. All rights reserved.
  *
  * lpass-platform.c -- ALSA SoC platform driver for QTi LPASS
  */
 
 #include <dt-bindings/sound/qcom,lpass.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include <sound/pcm_params.h>
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 #include <sound/soc.h>
 #include "lpass-lpaif-reg.h"
 #include "lpass.h"

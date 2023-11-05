@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/mach-omap2/clock.h
+ *  freax/arch/arm/mach-omap2/clock.h
  *
  *  Copyright (C) 2005-2009 Texas Instruments, Inc.
  *  Copyright (C) 2004-2011 Nokia Corporation
@@ -13,12 +13,12 @@
 #ifndef __ARCH_ARM_MACH_OMAP2_CLOCK_H
 #define __ARCH_ARM_MACH_OMAP2_CLOCK_H
 
-#include <linux/kernel.h>
-#include <linux/list.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
 
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/clk/ti.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/clk/ti.h>
 
 /* struct clksel_rate.flags possibilities */
 #define RATE_IN_242X		(1 << 0)

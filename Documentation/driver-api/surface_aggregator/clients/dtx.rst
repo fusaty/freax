@@ -709,10 +709,10 @@ type is reserved for future use.
 Structures and Enums
 --------------------
 
-.. kernel-doc:: include/uapi/linux/surface_aggregator/dtx.h
+.. kernel-doc:: include/uapi/freax/surface_aggregator/dtx.h
 
 API Users
 =========
 
 A user-space daemon utilizing this API can be found at
-https://github.com/linux-surface/surface-dtx-daemon.
+https://github.com/freax-surface/surface-dtx-daemon.

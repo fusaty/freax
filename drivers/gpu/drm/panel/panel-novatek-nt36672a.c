@@ -12,14 +12,14 @@
  * use this driver.
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/regulator/consumer.h>
 
 #include <drm/drm_device.h>
 #include <drm/drm_mipi_dsi.h>

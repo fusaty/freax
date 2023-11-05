@@ -10,14 +10,14 @@
  * the Free Software Foundation.
  */
 
-#include <linux/dma-buf.h>
-#include <linux/module.h>
-#include <linux/refcount.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/highmem.h>
+#include <freax/dma-buf.h>
+#include <freax/module.h>
+#include <freax/refcount.h>
+#include <freax/scatterlist.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/highmem.h>
 
 #include <media/videobuf2-v4l2.h>
 #include <media/videobuf2-dma-contig.h>

@@ -7,8 +7,8 @@
 
 #include "syscalltbl.h"
 #include <stdlib.h>
-#include <linux/compiler.h>
-#include <linux/zalloc.h>
+#include <freax/compiler.h>
+#include <freax/zalloc.h>
 
 #ifdef HAVE_SYSCALL_TABLE_SUPPORT
 #include <string.h>

@@ -5,15 +5,15 @@
  *  Copyright (c) 2012, Jeff Layton <jlayton@redhat.com>
  */
 
-#include <linux/pagemap.h>
-#include <linux/vfs.h>
-#include <linux/falloc.h>
-#include <linux/scatterlist.h>
-#include <linux/uuid.h>
-#include <linux/sort.h>
+#include <freax/pagemap.h>
+#include <freax/vfs.h>
+#include <freax/falloc.h>
+#include <freax/scatterlist.h>
+#include <freax/uuid.h>
+#include <freax/sort.h>
 #include <crypto/aead.h>
-#include <linux/fiemap.h>
-#include <uapi/linux/magic.h>
+#include <freax/fiemap.h>
+#include <uapi/freax/magic.h>
 #include "cifsfs.h"
 #include "cifsglob.h"
 #include "smb2pdu.h"
@@ -1919,7 +1919,7 @@ smb2_set_file_size(const unsigned int xid, struct cifs_tcon *tcon,
 	struct inode *inode;
 
 	/*
-	 * If extending file more than one page make sparse. Many Linux fs
+	 * If extending file more than one page make sparse. Many freax fs
 	 * make files sparse by default when extending via ftruncate
 	 */
 	inode = d_inode(cfile->dentry);
@@ -5168,7 +5168,7 @@ struct smb_version_operations smb20_operations = {
 	.revert_current_mid = smb2_revert_current_mid,
 	.read_data_offset = smb2_read_data_offset,
 	.read_data_length = smb2_read_data_length,
-	.map_error = map_smb2_to_linux_error,
+	.map_error = map_smb2_to_freax_error,
 	.find_mid = smb2_find_mid,
 	.check_message = smb2_check_message,
 	.dump_detail = smb2_dump_detail,
@@ -5270,7 +5270,7 @@ struct smb_version_operations smb21_operations = {
 	.revert_current_mid = smb2_revert_current_mid,
 	.read_data_offset = smb2_read_data_offset,
 	.read_data_length = smb2_read_data_length,
-	.map_error = map_smb2_to_linux_error,
+	.map_error = map_smb2_to_freax_error,
 	.find_mid = smb2_find_mid,
 	.check_message = smb2_check_message,
 	.dump_detail = smb2_dump_detail,
@@ -5373,7 +5373,7 @@ struct smb_version_operations smb30_operations = {
 	.revert_current_mid = smb2_revert_current_mid,
 	.read_data_offset = smb2_read_data_offset,
 	.read_data_length = smb2_read_data_length,
-	.map_error = map_smb2_to_linux_error,
+	.map_error = map_smb2_to_freax_error,
 	.find_mid = smb2_find_mid,
 	.check_message = smb2_check_message,
 	.dump_detail = smb2_dump_detail,
@@ -5487,7 +5487,7 @@ struct smb_version_operations smb311_operations = {
 	.revert_current_mid = smb2_revert_current_mid,
 	.read_data_offset = smb2_read_data_offset,
 	.read_data_length = smb2_read_data_length,
-	.map_error = map_smb2_to_linux_error,
+	.map_error = map_smb2_to_freax_error,
 	.find_mid = smb2_find_mid,
 	.check_message = smb2_check_message,
 	.dump_detail = smb2_dump_detail,

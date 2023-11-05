@@ -4,7 +4,7 @@
  *
  * Added ORC unwind tables sort support and other updates:
  * Copyright (C) 1999-2019 Alibaba Group Holding Limited. by:
- * Shile Zhang <shile.zhang@linux.alibaba.com>
+ * Shile Zhang <shile.zhang@freax.alibaba.com>
  *
  * Copyright 2011 - 2012 Cavium, Inc.
  *
@@ -208,7 +208,7 @@ struct elf_mcount_loc {
 	uint_t stop_mcount_loc;
 };
 
-/* Sort the addresses stored between __start_mcount_loc to __stop_mcount_loc in vmlinux */
+/* Sort the addresses stored between __start_mcount_loc to __stop_mcount_loc in vmfreax */
 static void *sort_mcount_loc(void *arg)
 {
 	struct elf_mcount_loc *emloc = (struct elf_mcount_loc *)arg;
@@ -325,7 +325,7 @@ static int do_sort(Elf_Ehdr *ehdr,
 						      _r(&s->sh_offset));
 
 #ifdef MCOUNT_SORT_ENABLED
-		/* locate the .init.data section in vmlinux */
+		/* locate the .init.data section in vmfreax */
 		if (!strcmp(secstrings + idx, ".init.data")) {
 			get_mcount_loc(&_start_mcount_loc, &_stop_mcount_loc);
 			mstruct.ehdr = ehdr;

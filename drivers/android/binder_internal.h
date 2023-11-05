@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_BINDER_INTERNAL_H
-#define _LINUX_BINDER_INTERNAL_H
+#ifndef _freax_BINDER_INTERNAL_H
+#define _freax_BINDER_INTERNAL_H
 
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/list.h>
-#include <linux/miscdevice.h>
-#include <linux/mutex.h>
-#include <linux/refcount.h>
-#include <linux/stddef.h>
-#include <linux/types.h>
-#include <linux/uidgid.h>
-#include <uapi/linux/android/binderfs.h>
+#include <freax/export.h>
+#include <freax/fs.h>
+#include <freax/list.h>
+#include <freax/miscdevice.h>
+#include <freax/mutex.h>
+#include <freax/refcount.h>
+#include <freax/stddef.h>
+#include <freax/types.h>
+#include <freax/uidgid.h>
+#include <uapi/freax/android/binderfs.h>
 #include "binder_alloc.h"
 
 struct binder_context {
@@ -562,4 +562,4 @@ struct binder_object {
 	};
 };
 
-#endif /* _LINUX_BINDER_INTERNAL_H */
+#endif /* _freax_BINDER_INTERNAL_H */

@@ -6,11 +6,11 @@
  *
  * Copyright (C) 1998 Paul Mackerras.
  */
-#ifndef _LINUX_PMU_H
-#define _LINUX_PMU_H
+#ifndef _freax_PMU_H
+#define _freax_PMU_H
 
-#include <linux/rtc.h>
-#include <uapi/linux/pmu.h>
+#include <freax/rtc.h>
+#include <uapi/freax/pmu.h>
 
 
 extern int __init find_via_pmu(void);
@@ -87,4 +87,4 @@ extern int pmu_sys_suspended;
 #define pmu_sys_suspended	0
 #endif
 
-#endif /* _LINUX_PMU_H */
+#endif /* _freax_PMU_H */

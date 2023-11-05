@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // NXP Wireless LAN device driver: PCIE and platform specific quirks
 
-#include <linux/dmi.h>
+#include <freax/dmi.h>
 
 #include "pcie_quirks.h"
 

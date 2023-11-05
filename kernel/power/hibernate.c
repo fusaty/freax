@@ -11,27 +11,27 @@
 
 #define pr_fmt(fmt) "PM: hibernation: " fmt
 
-#include <linux/blkdev.h>
-#include <linux/export.h>
-#include <linux/suspend.h>
-#include <linux/reboot.h>
-#include <linux/string.h>
-#include <linux/device.h>
-#include <linux/async.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/pm.h>
-#include <linux/nmi.h>
-#include <linux/console.h>
-#include <linux/cpu.h>
-#include <linux/freezer.h>
-#include <linux/gfp.h>
-#include <linux/syscore_ops.h>
-#include <linux/ctype.h>
-#include <linux/ktime.h>
-#include <linux/security.h>
-#include <linux/secretmem.h>
+#include <freax/blkdev.h>
+#include <freax/export.h>
+#include <freax/suspend.h>
+#include <freax/reboot.h>
+#include <freax/string.h>
+#include <freax/device.h>
+#include <freax/async.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
+#include <freax/pm.h>
+#include <freax/nmi.h>
+#include <freax/console.h>
+#include <freax/cpu.h>
+#include <freax/freezer.h>
+#include <freax/gfp.h>
+#include <freax/syscore_ops.h>
+#include <freax/ctype.h>
+#include <freax/ktime.h>
+#include <freax/security.h>
+#include <freax/secretmem.h>
 #include <trace/events/power.h>
 
 #include "power.h"

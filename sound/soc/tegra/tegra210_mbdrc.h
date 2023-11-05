@@ -9,7 +9,7 @@
 #ifndef __TEGRA210_MBDRC_H__
 #define __TEGRA210_MBDRC_H__
 
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 #include <sound/soc.h>
 
 /* Register offsets from TEGRA210_MBDRC*_BASE */

@@ -5,12 +5,12 @@
  * Copyright (C) 2012 Linaro Ltd.
  */
 
-#ifndef __LINUX_MFD_ALTERA_SYSMGR_H__
-#define __LINUX_MFD_ALTERA_SYSMGR_H__
+#ifndef __freax_MFD_ALTERA_SYSMGR_H__
+#define __freax_MFD_ALTERA_SYSMGR_H__
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/firmware/intel/stratix10-smc.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/firmware/intel/stratix10-smc.h>
 
 struct device_node;
 
@@ -26,4 +26,4 @@ altr_sysmgr_regmap_lookup_by_phandle(struct device_node *np,
 }
 #endif
 
-#endif /* __LINUX_MFD_ALTERA_SYSMGR_H__ */
+#endif /* __freax_MFD_ALTERA_SYSMGR_H__ */

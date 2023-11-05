@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2011-2014, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2014, The freax Foundation. All rights reserved.
  * Copyright (c) 2014,2015, Linaro Ltd.
  *
  * SAW power controller driver
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
 #include <soc/qcom/spm.h>
 
 #define SPM_CTL_INDEX		0x7f

@@ -7,12 +7,12 @@
  */
 
 #include <kunit/test.h>
-#include <linux/errname.h>
-#include <linux/slab.h>
-#include <linux/refcount.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/workqueue.h>
+#include <freax/errname.h>
+#include <freax/slab.h>
+#include <freax/refcount.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
+#include <freax/workqueue.h>
 
 /* `bindgen` gets confused at certain things. */
 const size_t BINDINGS_ARCH_SLAB_MINALIGN = ARCH_SLAB_MINALIGN;

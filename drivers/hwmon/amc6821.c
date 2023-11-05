@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * amc6821.c - Part of lm_sensors, Linux kernel modules for hardware
+ * amc6821.c - Part of lm_sensors, freax kernel modules for hardware
  *	       monitoring
  * Copyright (C) 2009 T. Mertelj <tomaz.mertelj@guest.arnes.si>
  *
@@ -8,16 +8,16 @@
  * Copyright (C) 2007 Hans J. Koch <hjk@hansjkoch.de>
  */
 
-#include <linux/kernel.h>	/* Needed for KERN_INFO */
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>	/* Needed for KERN_INFO */
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
 
 /*
  * Addresses to scan.

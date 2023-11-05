@@ -21,22 +21,22 @@
  * device/bus interface rather than a group interface.
  */
 
-#include <linux/compat.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/highmem.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/kthread.h>
-#include <linux/rbtree.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/vfio.h>
-#include <linux/workqueue.h>
-#include <linux/notifier.h>
+#include <freax/compat.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/highmem.h>
+#include <freax/iommu.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/kthread.h>
+#include <freax/rbtree.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/mm.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/vfio.h>
+#include <freax/workqueue.h>
+#include <freax/notifier.h>
 #include "vfio.h"
 
 #define DRIVER_VERSION  "0.2"

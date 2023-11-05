@@ -3,12 +3,12 @@
  *
  *  Copyright (C) 2006-2009 Red Hat, Inc., Ingo Molnar <mingo@redhat.com>
  */
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/stacktrace.h>
-#include <linux/export.h>
-#include <linux/uaccess.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task_stack.h>
+#include <freax/stacktrace.h>
+#include <freax/export.h>
+#include <freax/uaccess.h>
 #include <asm/stacktrace.h>
 #include <asm/unwind.h>
 

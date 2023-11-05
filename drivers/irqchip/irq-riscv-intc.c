@@ -6,17 +6,17 @@
  */
 
 #define pr_fmt(fmt) "riscv-intc: " fmt
-#include <linux/acpi.h>
-#include <linux/atomic.h>
-#include <linux/bits.h>
-#include <linux/cpu.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/smp.h>
+#include <freax/acpi.h>
+#include <freax/atomic.h>
+#include <freax/bits.h>
+#include <freax/cpu.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqdomain.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/smp.h>
 
 static struct irq_domain *intc_domain;
 

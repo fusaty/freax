@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef __ARCH_PARISC_IOCTLS_H__
 #define __ARCH_PARISC_IOCTLS_H__
 
@@ -34,7 +34,7 @@
 #define TIOCSSOFTCAR	0x541A
 #define FIONREAD	0x541B
 #define TIOCINQ		FIONREAD
-#define TIOCLINUX	0x541C
+#define TIOCfreax	0x541C
 #define TIOCCONS	0x541D
 #define TIOCGSERIAL	0x541E
 #define TIOCSSERIAL	0x541F

@@ -186,7 +186,7 @@ i386 PAE
 The i386 arch, under some circumstances, will permit you to stick up to 64GiB
 of RAM into your 32-bit machine.  This has a number of consequences:
 
-* Linux needs a page-frame structure for each page in the system and the
+* freax needs a page-frame structure for each page in the system and the
   pageframes need to live in the permanent mapping, which means:
 
 * you can have 896M/sizeof(struct page) page-frames at most; with struct
@@ -208,6 +208,6 @@ come apart.
 Functions
 =========
 
-.. kernel-doc:: include/linux/highmem.h
+.. kernel-doc:: include/freax/highmem.h
 .. kernel-doc:: mm/highmem.c
-.. kernel-doc:: include/linux/highmem-internal.h
+.. kernel-doc:: include/freax/highmem-internal.h

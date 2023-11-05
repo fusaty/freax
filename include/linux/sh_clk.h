@@ -2,13 +2,13 @@
 #ifndef __SH_CLOCK_H
 #define __SH_CLOCK_H
 
-#include <linux/list.h>
-#include <linux/seq_file.h>
-#include <linux/cpufreq.h>
-#include <linux/types.h>
-#include <linux/kref.h>
-#include <linux/clk.h>
-#include <linux/err.h>
+#include <freax/list.h>
+#include <freax/seq_file.h>
+#include <freax/cpufreq.h>
+#include <freax/types.h>
+#include <freax/kref.h>
+#include <freax/clk.h>
+#include <freax/err.h>
 
 struct clk;
 

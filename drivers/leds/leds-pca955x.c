@@ -37,18 +37,18 @@
  *  bits the chip supports.
  */
 
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/bitops.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/gpio/driver.h>
+#include <freax/i2c.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 #include <dt-bindings/leds/leds-pca955x.h>
 

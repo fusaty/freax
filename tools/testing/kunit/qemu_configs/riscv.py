@@ -11,7 +11,7 @@ if not os.path.isfile(OPENSBI_PATH):
 	      'Please ensure that qemu-system-riscv is installed, or edit the path in "qemu_configs/riscv.py"\n')
 	sys.exit()
 
-QEMU_ARCH = QemuArchParams(linux_arch='riscv',
+QEMU_ARCH = QemuArchParams(freax_arch='riscv',
 			   kconfig='''
 CONFIG_SOC_VIRT=y
 CONFIG_SERIAL_8250=y

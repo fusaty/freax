@@ -1,31 +1,31 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *  PowerPC version 
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *
  *  Derived from "arch/i386/kernel/signal.c"
  *    Copyright (C) 1991, 1992 Linus Torvalds
  *    1997-11-28  Modified for POSIX.1b signals by Richard Henderson
  */
 
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/wait.h>
-#include <linux/unistd.h>
-#include <linux/stddef.h>
-#include <linux/elf.h>
-#include <linux/ptrace.h>
-#include <linux/ratelimit.h>
-#include <linux/syscalls.h>
-#include <linux/pagemap.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/errno.h>
+#include <freax/wait.h>
+#include <freax/unistd.h>
+#include <freax/stddef.h>
+#include <freax/elf.h>
+#include <freax/ptrace.h>
+#include <freax/ratelimit.h>
+#include <freax/syscalls.h>
+#include <freax/pagemap.h>
 
 #include <asm/sigcontext.h>
 #include <asm/ucontext.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/unistd.h>
 #include <asm/cacheflush.h>
 #include <asm/syscalls.h>

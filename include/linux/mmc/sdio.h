@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *  include/linux/mmc/sdio.h
+ *  include/freax/mmc/sdio.h
  *
  *  Copyright 2006-2007 Pierre Ossman
  */
 
-#ifndef LINUX_MMC_SDIO_H
-#define LINUX_MMC_SDIO_H
+#ifndef freax_MMC_SDIO_H
+#define freax_MMC_SDIO_H
 
 /* SDIO commands                         type  argument     response */
 #define SD_IO_SEND_OP_COND          5 /* bcr  [23:0] OCR         R4  */
@@ -191,4 +191,4 @@
 
 #define SDIO_FBR_BLKSIZE	0x10	/* block size (2 bytes) */
 
-#endif /* LINUX_MMC_SDIO_H */
+#endif /* freax_MMC_SDIO_H */

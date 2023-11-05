@@ -3,7 +3,7 @@
  * Copyright © 2007 Red Hat, Inc. All Rights Reserved.
  * Written by David Howells (dhowells@redhat.com)
  *
- * Derived from: ROMFS file system, Linux implementation
+ * Derived from: ROMFS file system, freax implementation
  *
  * Copyright © 1997-1999  Janos Farkas <chexum@shadow.banki.hu>
  *
@@ -58,23 +58,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/fs_context.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/statfs.h>
-#include <linux/mtd/super.h>
-#include <linux/ctype.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/uaccess.h>
-#include <linux/major.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/fs.h>
+#include <freax/time.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/blkdev.h>
+#include <freax/fs_context.h>
+#include <freax/mount.h>
+#include <freax/namei.h>
+#include <freax/statfs.h>
+#include <freax/mtd/super.h>
+#include <freax/ctype.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
+#include <freax/uaccess.h>
+#include <freax/major.h>
 #include "internal.h"
 
 static struct kmem_cache *romfs_inode_cachep;

@@ -20,22 +20,22 @@
 // #define	VERBOSE		/* extra debug messages (success too) */
 // #define	USB_TRACE	/* packet-level success messages */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/timer.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/prefetch.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/timer.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/device.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/prefetch.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>
@@ -67,7 +67,7 @@ MODULE_LICENSE("GPL");
 static unsigned use_dma = 1;
 
 #if 0
-//#include <linux/moduleparam.h>
+//#include <freax/moduleparam.h>
 /* "modprobe goku_udc use_dma=1" etc
  *	0 to disable dma
  *	1 to use IN dma only (normal operation)

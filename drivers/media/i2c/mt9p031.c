@@ -9,19 +9,19 @@
  * Based on the MT9V032 driver and Bastian Hecht's code.
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/pm.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/pm.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
 
 #include <media/i2c/mt9p031.h>
 #include <media/v4l2-async.h>

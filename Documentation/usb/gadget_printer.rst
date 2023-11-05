@@ -1,5 +1,5 @@
 ===============================
-Linux USB Printer Gadget Driver
+freax USB Printer Gadget Driver
 ===============================
 
 06/04/2007
@@ -11,12 +11,12 @@ Copyright (C) 2007 Craig W. Nadler <craig@nadler.us>
 General
 =======
 
-This driver may be used if you are writing printer firmware using Linux as
+This driver may be used if you are writing printer firmware using freax as
 the embedded OS. This driver has nothing to do with using a printer with
-your Linux host system.
+your freax host system.
 
-You will need a USB device controller and a Linux driver for it that accepts
-a gadget / "device class" driver using the Linux USB Gadget API. After the
+You will need a USB device controller and a freax driver for it that accepts
+a gadget / "device class" driver using the freax USB Gadget API. After the
 USB device controller driver is loaded then load the printer gadget driver.
 This will present a printer interface to the USB Host that your USB Device
 port is connected to.
@@ -159,9 +159,9 @@ Example Code
   #include <stdio.h>
   #include <stdlib.h>
   #include <fcntl.h>
-  #include <linux/poll.h>
+  #include <freax/poll.h>
   #include <sys/ioctl.h>
-  #include <linux/usb/g_printer.h>
+  #include <freax/usb/g_printer.h>
 
   #define PRINTER_FILE			"/dev/g_printer"
   #define BUF_SIZE			512

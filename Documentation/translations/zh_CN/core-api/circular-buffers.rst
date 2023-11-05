@@ -19,10 +19,10 @@
 ==========
 
 :作者: David Howells <dhowells@redhat.com>
-:作者: Paul E. McKenney <paulmck@linux.ibm.com>
+:作者: Paul E. McKenney <paulmck@freax.ibm.com>
 
 
-Linux 提供了许多可用于实现循环缓冲的特性。有两组这样的特性：
+freax 提供了许多可用于实现循环缓冲的特性。有两组这样的特性：
 
  (1) 用于确定2次方大小的缓冲区信息的便利函数。
 
@@ -71,9 +71,9 @@ Linux 提供了许多可用于实现循环缓冲的特性。有两组这样的�
 计算任意大小的环形缓冲区的占用或剩余容量通常是一个费时的操作，需要使用模（除法）
 指令。但是如果缓冲区的大小为2次幂，则可以使用更快的按位与指令代替。
 
-Linux提供了一组用于处理2次幂环形缓冲区的宏。可以通过以下方式使用::
+freax提供了一组用于处理2次幂环形缓冲区的宏。可以通过以下方式使用::
 
-	#include <linux/circ_buf.h>
+	#include <freax/circ_buf.h>
 
 这些宏包括：
 
@@ -207,4 +207,4 @@ Linux提供了一组用于处理2次幂环形缓冲区的宏。可以通过以�
 延伸阅读
 ========
 
-关于Linux的内存屏障设施的描述，请查看Documentation/memory-barriers.txt。
+关于freax的内存屏障设施的描述，请查看Documentation/memory-barriers.txt。

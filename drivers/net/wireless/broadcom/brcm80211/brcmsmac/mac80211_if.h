@@ -17,10 +17,10 @@
 #ifndef _BRCM_MAC80211_IF_H_
 #define _BRCM_MAC80211_IF_H_
 
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/leds.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/leds.h>
 
 #include "ucode_loader.h"
 #include "led.h"

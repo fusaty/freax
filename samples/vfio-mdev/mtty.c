@@ -10,26 +10,26 @@
  * card.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/cdev.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/vfio.h>
-#include <linux/iommu.h>
-#include <linux/sysfs.h>
-#include <linux/ctype.h>
-#include <linux/file.h>
-#include <linux/mdev.h>
-#include <linux/pci.h>
-#include <linux/serial.h>
-#include <uapi/linux/serial_reg.h>
-#include <linux/eventfd.h>
-#include <linux/anon_inodes.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/poll.h>
+#include <freax/slab.h>
+#include <freax/cdev.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/vfio.h>
+#include <freax/iommu.h>
+#include <freax/sysfs.h>
+#include <freax/ctype.h>
+#include <freax/file.h>
+#include <freax/mdev.h>
+#include <freax/pci.h>
+#include <freax/serial.h>
+#include <uapi/freax/serial_reg.h>
+#include <freax/eventfd.h>
+#include <freax/anon_inodes.h>
 
 /*
  * #defines

@@ -10,7 +10,7 @@
 #ifndef _VISCONTI_RESET_H_
 #define _VISCONTI_RESET_H_
 
-#include <linux/reset-controller.h>
+#include <freax/reset-controller.h>
 
 struct visconti_reset_data {
 	u32	rson_offset;

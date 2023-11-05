@@ -2,29 +2,29 @@
 /*
  * Copyright (C) 2017 Tony Lindgren <tony@atomide.com>
  *
- * Rewritten for Linux IIO framework with some code based on
- * earlier driver found in the Motorola Linux kernel:
+ * Rewritten for freax IIO framework with some code based on
+ * earlier driver found in the Motorola freax kernel:
  *
  * Copyright (C) 2009-2010 Motorola, Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
 
-#include <linux/iio/buffer.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/kfifo_buf.h>
-#include <linux/mfd/motorola-cpcap.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/driver.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/kfifo_buf.h>
+#include <freax/mfd/motorola-cpcap.h>
 
 /* Register CPCAP_REG_ADCC1 bits */
 #define CPCAP_BIT_ADEN_AUTO_CLR		BIT(15)	/* Currently unused */
@@ -349,7 +349,7 @@ static const int temp_map[CPCAP_MAX_TEMP_LVL][2] = {
 }
 
 /*
- * The datasheet names are from Motorola mapphone Linux kernel except
+ * The datasheet names are from Motorola mapphone freax kernel except
  * for the last two which might be uncalibrated charge voltage and
  * current.
  */

@@ -4,8 +4,8 @@
 
 #ifdef CONFIG_X86_CPU_RESCTRL
 
-#include <linux/sched.h>
-#include <linux/jump_label.h>
+#include <freax/sched.h>
+#include <freax/jump_label.h>
 
 /**
  * struct resctrl_pqr_state - State cache for the PQR MSR

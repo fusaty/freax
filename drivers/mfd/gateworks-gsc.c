@@ -9,16 +9,16 @@
  * Copyright (C) 2020 Gateworks Corporation
  */
 
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/gsc.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/gsc.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #include <asm/unaligned.h>
 

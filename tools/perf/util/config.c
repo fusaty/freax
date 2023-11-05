@@ -26,9 +26,9 @@
 #include <sys/stat.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
-#include <linux/ctype.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
+#include <freax/ctype.h>
 
 #define MAXNAME (256)
 

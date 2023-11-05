@@ -5,16 +5,16 @@
  * Copyright (C) 2008-2009 Nokia Corporation
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
-#include <linux/irq.h>
-#include <linux/crc32.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/firmware.h>
+#include <freax/delay.h>
+#include <freax/irq.h>
+#include <freax/crc32.h>
+#include <freax/etherdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/netdevice.h>
 
 #include "wl1251.h"
 #include "wl12xx_80211.h"

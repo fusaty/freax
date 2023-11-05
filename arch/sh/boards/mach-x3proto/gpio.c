@@ -8,14 +8,14 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/gpio/driver.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/irqdomain.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/gpio/driver.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/irqdomain.h>
+#include <freax/io.h>
 #include <mach/ilsel.h>
 #include <mach/hardware.h>
 

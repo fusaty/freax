@@ -12,14 +12,14 @@
  *	Rui Miguel Silva <rui.silva@linaro.org>
  */
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
 
 #include "isp1760-core.h"
 #include "isp1760-hcd.h"
@@ -603,5 +603,5 @@ void isp1760_unregister(struct device *dev)
 }
 
 MODULE_DESCRIPTION("Driver for the ISP1760 USB-controller from NXP");
-MODULE_AUTHOR("Sebastian Siewior <bigeasy@linuxtronix.de>");
+MODULE_AUTHOR("Sebastian Siewior <bigeasy@freaxtronix.de>");
 MODULE_LICENSE("GPL v2");

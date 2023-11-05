@@ -14,8 +14,8 @@
 #ifndef _MXL5XX_H_
 #define _MXL5XX_H_
 
-#include <linux/types.h>
-#include <linux/i2c.h>
+#include <freax/types.h>
+#include <freax/i2c.h>
 
 #include <media/dvb_frontend.h>
 

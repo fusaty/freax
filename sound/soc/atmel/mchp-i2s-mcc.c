@@ -6,17 +6,17 @@
 //
 // Author: Codrin Ciubotariu <codrin.ciubotariu@microchip.com>
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/slab.h>
 
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/mfd/syscon.h>
-#include <linux/lcm.h>
-#include <linux/of.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/mfd/syscon.h>
+#include <freax/lcm.h>
+#include <freax/of.h>
 
 #include <sound/core.h>
 #include <sound/pcm.h>

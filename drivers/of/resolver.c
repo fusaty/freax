@@ -8,14 +8,14 @@
 
 #define pr_fmt(fmt)	"OF: resolver: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
 
 #include "of_private.h"
 
@@ -52,7 +52,7 @@ static void adjust_overlay_phandles(struct device_node *overlay,
 	for_each_property_of_node(overlay, prop) {
 
 		if (of_prop_cmp(prop->name, "phandle") &&
-		    of_prop_cmp(prop->name, "linux,phandle"))
+		    of_prop_cmp(prop->name, "freax,phandle"))
 			continue;
 
 		if (prop->length < 4)
@@ -172,7 +172,7 @@ static int adjust_local_phandle_references(struct device_node *local_fixups,
 		/* skip properties added automatically */
 		if (!of_prop_cmp(prop_fix->name, "name") ||
 		    !of_prop_cmp(prop_fix->name, "phandle") ||
-		    !of_prop_cmp(prop_fix->name, "linux,phandle"))
+		    !of_prop_cmp(prop_fix->name, "freax,phandle"))
 			continue;
 
 		if ((prop_fix->length % 4) != 0 || prop_fix->length == 0)

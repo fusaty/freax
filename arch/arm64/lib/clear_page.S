@@ -3,8 +3,8 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/linkage.h>
-#include <linux/const.h>
+#include <freax/linkage.h>
+#include <freax/const.h>
 #include <asm/assembler.h>
 #include <asm/page.h>
 

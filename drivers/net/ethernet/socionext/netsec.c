@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0+
 
-#include <linux/types.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/acpi.h>
-#include <linux/of_mdio.h>
-#include <linux/of_net.h>
-#include <linux/etherdevice.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/netlink.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
+#include <freax/types.h>
+#include <freax/clk.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/acpi.h>
+#include <freax/of_mdio.h>
+#include <freax/of_net.h>
+#include <freax/etherdevice.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/netlink.h>
+#include <freax/bpf.h>
+#include <freax/bpf_trace.h>
 
 #include <net/tcp.h>
 #include <net/page_pool/helpers.h>

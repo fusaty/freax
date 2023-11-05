@@ -8,15 +8,15 @@
  * Author: Mike Lockwood <lockwood@android.com>
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/acpi.h>
 
 struct goldfish_battery_data {
 	void __iomem *reg_base;

@@ -2,8 +2,8 @@
 #ifndef __RDC321X_MFD_H
 #define __RDC321X_MFD_H
 
-#include <linux/types.h>
-#include <linux/pci.h>
+#include <freax/types.h>
+#include <freax/pci.h>
 
 /* Offsets to be accessed in the southbridge PCI
  * device configuration register */

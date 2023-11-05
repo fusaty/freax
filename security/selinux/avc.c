@@ -10,22 +10,22 @@
  *
  * Copyright (C) 2003 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/dcache.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/percpu.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/dcache.h>
+#include <freax/init.h>
+#include <freax/skbuff.h>
+#include <freax/percpu.h>
+#include <freax/list.h>
 #include <net/sock.h>
-#include <linux/un.h>
+#include <freax/un.h>
 #include <net/af_unix.h>
-#include <linux/ip.h>
-#include <linux/audit.h>
-#include <linux/ipv6.h>
+#include <freax/ip.h>
+#include <freax/audit.h>
+#include <freax/ipv6.h>
 #include <net/ipv6.h>
 #include "avc.h"
 #include "avc_ss.h"
@@ -38,7 +38,7 @@
 #define AVC_DEF_CACHE_THRESHOLD		512
 #define AVC_CACHE_RECLAIM		16
 
-#ifdef CONFIG_SECURITY_SELINUX_AVC_STATS
+#ifdef CONFIG_SECURITY_SEfreax_AVC_STATS
 #define avc_cache_stats_incr(field)	this_cpu_inc(avc_cache_stats.field)
 #else
 #define avc_cache_stats_incr(field)	do {} while (0)
@@ -82,38 +82,38 @@ struct avc_callback_node {
 	struct avc_callback_node *next;
 };
 
-#ifdef CONFIG_SECURITY_SELINUX_AVC_STATS
+#ifdef CONFIG_SECURITY_SEfreax_AVC_STATS
 DEFINE_PER_CPU(struct avc_cache_stats, avc_cache_stats) = { 0 };
 #endif
 
-struct selinux_avc {
+struct sefreax_avc {
 	unsigned int avc_cache_threshold;
 	struct avc_cache avc_cache;
 };
 
-static struct selinux_avc selinux_avc;
+static struct sefreax_avc sefreax_avc;
 
-void selinux_avc_init(void)
+void sefreax_avc_init(void)
 {
 	int i;
 
-	selinux_avc.avc_cache_threshold = AVC_DEF_CACHE_THRESHOLD;
+	sefreax_avc.avc_cache_threshold = AVC_DEF_CACHE_THRESHOLD;
 	for (i = 0; i < AVC_CACHE_SLOTS; i++) {
-		INIT_HLIST_HEAD(&selinux_avc.avc_cache.slots[i]);
-		spin_lock_init(&selinux_avc.avc_cache.slots_lock[i]);
+		INIT_HLIST_HEAD(&sefreax_avc.avc_cache.slots[i]);
+		spin_lock_init(&sefreax_avc.avc_cache.slots_lock[i]);
 	}
-	atomic_set(&selinux_avc.avc_cache.active_nodes, 0);
-	atomic_set(&selinux_avc.avc_cache.lru_hint, 0);
+	atomic_set(&sefreax_avc.avc_cache.active_nodes, 0);
+	atomic_set(&sefreax_avc.avc_cache.lru_hint, 0);
 }
 
 unsigned int avc_get_cache_threshold(void)
 {
-	return selinux_avc.avc_cache_threshold;
+	return sefreax_avc.avc_cache_threshold;
 }
 
 void avc_set_cache_threshold(unsigned int cache_threshold)
 {
-	selinux_avc.avc_cache_threshold = cache_threshold;
+	sefreax_avc.avc_cache_threshold = cache_threshold;
 }
 
 static struct avc_callback_node *avc_callbacks __ro_after_init;
@@ -159,7 +159,7 @@ int avc_get_hash_stats(char *page)
 	slots_used = 0;
 	max_chain_len = 0;
 	for (i = 0; i < AVC_CACHE_SLOTS; i++) {
-		head = &selinux_avc.avc_cache.slots[i];
+		head = &sefreax_avc.avc_cache.slots[i];
 		if (!hlist_empty(head)) {
 			slots_used++;
 			chain_len = 0;
@@ -174,7 +174,7 @@ int avc_get_hash_stats(char *page)
 
 	return scnprintf(page, PAGE_SIZE, "entries: %d\nbuckets used: %d/%d\n"
 			 "longest chain: %d\n",
-			 atomic_read(&selinux_avc.avc_cache.active_nodes),
+			 atomic_read(&sefreax_avc.avc_cache.active_nodes),
 			 slots_used, AVC_CACHE_SLOTS, max_chain_len);
 }
 
@@ -440,7 +440,7 @@ static void avc_node_delete(struct avc_node *node)
 {
 	hlist_del_rcu(&node->list);
 	call_rcu(&node->rhead, avc_node_free);
-	atomic_dec(&selinux_avc.avc_cache.active_nodes);
+	atomic_dec(&sefreax_avc.avc_cache.active_nodes);
 }
 
 static void avc_node_kill(struct avc_node *node)
@@ -448,14 +448,14 @@ static void avc_node_kill(struct avc_node *node)
 	avc_xperms_free(node->ae.xp_node);
 	kmem_cache_free(avc_node_cachep, node);
 	avc_cache_stats_incr(frees);
-	atomic_dec(&selinux_avc.avc_cache.active_nodes);
+	atomic_dec(&sefreax_avc.avc_cache.active_nodes);
 }
 
 static void avc_node_replace(struct avc_node *new, struct avc_node *old)
 {
 	hlist_replace_rcu(&old->list, &new->list);
 	call_rcu(&old->rhead, avc_node_free);
-	atomic_dec(&selinux_avc.avc_cache.active_nodes);
+	atomic_dec(&sefreax_avc.avc_cache.active_nodes);
 }
 
 static inline int avc_reclaim_node(void)
@@ -467,10 +467,10 @@ static inline int avc_reclaim_node(void)
 	spinlock_t *lock;
 
 	for (try = 0, ecx = 0; try < AVC_CACHE_SLOTS; try++) {
-		hvalue = atomic_inc_return(&selinux_avc.avc_cache.lru_hint) &
+		hvalue = atomic_inc_return(&sefreax_avc.avc_cache.lru_hint) &
 			(AVC_CACHE_SLOTS - 1);
-		head = &selinux_avc.avc_cache.slots[hvalue];
-		lock = &selinux_avc.avc_cache.slots_lock[hvalue];
+		head = &sefreax_avc.avc_cache.slots[hvalue];
+		lock = &sefreax_avc.avc_cache.slots_lock[hvalue];
 
 		if (!spin_trylock_irqsave(lock, flags))
 			continue;
@@ -504,8 +504,8 @@ static struct avc_node *avc_alloc_node(void)
 	INIT_HLIST_NODE(&node->list);
 	avc_cache_stats_incr(allocations);
 
-	if (atomic_inc_return(&selinux_avc.avc_cache.active_nodes) >
-	    selinux_avc.avc_cache_threshold)
+	if (atomic_inc_return(&sefreax_avc.avc_cache.active_nodes) >
+	    sefreax_avc.avc_cache_threshold)
 		avc_reclaim_node();
 
 out:
@@ -527,7 +527,7 @@ static inline struct avc_node *avc_search_node(u32 ssid, u32 tsid, u16 tclass)
 	struct hlist_head *head;
 
 	hvalue = avc_hash(ssid, tsid, tclass);
-	head = &selinux_avc.avc_cache.slots[hvalue];
+	head = &sefreax_avc.avc_cache.slots[hvalue];
 	hlist_for_each_entry_rcu(node, head, list) {
 		if (ssid == node->ae.ssid &&
 		    tclass == node->ae.tclass &&
@@ -574,14 +574,14 @@ static int avc_latest_notif_update(u32 seqno, int is_insert)
 
 	spin_lock_irqsave(&notif_lock, flag);
 	if (is_insert) {
-		if (seqno < selinux_avc.avc_cache.latest_notif) {
-			pr_warn("SELinux: avc:  seqno %d < latest_notif %d\n",
-			       seqno, selinux_avc.avc_cache.latest_notif);
+		if (seqno < sefreax_avc.avc_cache.latest_notif) {
+			pr_warn("SEfreax: avc:  seqno %d < latest_notif %d\n",
+			       seqno, sefreax_avc.avc_cache.latest_notif);
 			ret = -EAGAIN;
 		}
 	} else {
-		if (seqno > selinux_avc.avc_cache.latest_notif)
-			selinux_avc.avc_cache.latest_notif = seqno;
+		if (seqno > sefreax_avc.avc_cache.latest_notif)
+			sefreax_avc.avc_cache.latest_notif = seqno;
 	}
 	spin_unlock_irqrestore(&notif_lock, flag);
 
@@ -628,8 +628,8 @@ static void avc_insert(u32 ssid, u32 tsid, u16 tclass,
 	}
 
 	hvalue = avc_hash(ssid, tsid, tclass);
-	head = &selinux_avc.avc_cache.slots[hvalue];
-	lock = &selinux_avc.avc_cache.slots_lock[hvalue];
+	head = &sefreax_avc.avc_cache.slots[hvalue];
+	lock = &sefreax_avc.avc_cache.slots_lock[hvalue];
 	spin_lock_irqsave(lock, flag);
 	hlist_for_each_entry(pos, head, list) {
 		if (pos->ae.ssid == ssid &&
@@ -645,7 +645,7 @@ found:
 }
 
 /**
- * avc_audit_pre_callback - SELinux specific information
+ * avc_audit_pre_callback - SEfreax specific information
  * will be called by generic audit code
  * @ab: the audit buffer
  * @a: audit_data
@@ -653,7 +653,7 @@ found:
 static void avc_audit_pre_callback(struct audit_buffer *ab, void *a)
 {
 	struct common_audit_data *ad = a;
-	struct selinux_audit_data *sad = ad->selinux_audit_data;
+	struct sefreax_audit_data *sad = ad->sefreax_audit_data;
 	u32 av = sad->audited, perm;
 	const char *const *perms;
 	u32 i;
@@ -686,7 +686,7 @@ static void avc_audit_pre_callback(struct audit_buffer *ab, void *a)
 }
 
 /**
- * avc_audit_post_callback - SELinux specific information
+ * avc_audit_post_callback - SEfreax specific information
  * will be called by generic audit code
  * @ab: the audit buffer
  * @a: audit_data
@@ -694,7 +694,7 @@ static void avc_audit_pre_callback(struct audit_buffer *ab, void *a)
 static void avc_audit_post_callback(struct audit_buffer *ab, void *a)
 {
 	struct common_audit_data *ad = a;
-	struct selinux_audit_data *sad = ad->selinux_audit_data;
+	struct sefreax_audit_data *sad = ad->sefreax_audit_data;
 	char *scontext = NULL;
 	char *tcontext = NULL;
 	const char *tclass = NULL;
@@ -722,7 +722,7 @@ static void avc_audit_post_callback(struct audit_buffer *ab, void *a)
 	if (sad->denied)
 		audit_log_format(ab, " permissive=%u", sad->result ? 0 : 1);
 
-	trace_selinux_audited(sad, scontext, tcontext, tclass);
+	trace_sefreax_audited(sad, scontext, tcontext, tclass);
 	kfree(tcontext);
 	kfree(scontext);
 
@@ -758,7 +758,7 @@ noinline int slow_avc_audit(u32 ssid, u32 tsid, u16 tclass,
 			    struct common_audit_data *a)
 {
 	struct common_audit_data stack_data;
-	struct selinux_audit_data sad;
+	struct sefreax_audit_data sad;
 
 	if (WARN_ON(!tclass || tclass >= ARRAY_SIZE(secclass_map)))
 		return -EINVAL;
@@ -776,7 +776,7 @@ noinline int slow_avc_audit(u32 ssid, u32 tsid, u16 tclass,
 	sad.denied = denied;
 	sad.result = result;
 
-	a->selinux_audit_data = &sad;
+	a->sefreax_audit_data = &sad;
 
 	common_lsm_audit(a, avc_audit_pre_callback, avc_audit_post_callback);
 	return 0;
@@ -849,8 +849,8 @@ static int avc_update_node(u32 event, u32 perms, u8 driver, u8 xperm, u32 ssid,
 	/* Lock the target slot */
 	hvalue = avc_hash(ssid, tsid, tclass);
 
-	head = &selinux_avc.avc_cache.slots[hvalue];
-	lock = &selinux_avc.avc_cache.slots_lock[hvalue];
+	head = &sefreax_avc.avc_cache.slots[hvalue];
+	lock = &sefreax_avc.avc_cache.slots_lock[hvalue];
 
 	spin_lock_irqsave(lock, flag);
 
@@ -929,8 +929,8 @@ static void avc_flush(void)
 	int i;
 
 	for (i = 0; i < AVC_CACHE_SLOTS; i++) {
-		head = &selinux_avc.avc_cache.slots[i];
-		lock = &selinux_avc.avc_cache.slots_lock[i];
+		head = &sefreax_avc.avc_cache.slots[i];
+		lock = &sefreax_avc.avc_cache.slots_lock[i];
 
 		spin_lock_irqsave(lock, flag);
 		/*
@@ -1201,5 +1201,5 @@ int avc_has_perm(u32 ssid, u32 tsid, u16 tclass,
 
 u32 avc_policy_seqno(void)
 {
-	return selinux_avc.avc_cache.latest_notif;
+	return sefreax_avc.avc_cache.latest_notif;
 }

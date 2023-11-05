@@ -1,16 +1,16 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- *  include/linux/userfaultfd.h
+ *  include/freax/userfaultfd.h
  *
  *  Copyright (C) 2007  Davide Libenzi <davidel@xmailserver.org>
  *  Copyright (C) 2015  Red Hat, Inc.
  *
  */
 
-#ifndef _LINUX_USERFAULTFD_H
-#define _LINUX_USERFAULTFD_H
+#ifndef _freax_USERFAULTFD_H
+#define _freax_USERFAULTFD_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* ioctls for /dev/userfaultfd */
 #define USERFAULTFD_IOC 0xAA
@@ -356,4 +356,4 @@ struct uffdio_poison {
  */
 #define UFFD_USER_MODE_ONLY 1
 
-#endif /* _LINUX_USERFAULTFD_H */
+#endif /* _freax_USERFAULTFD_H */

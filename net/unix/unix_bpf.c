@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2021 Cong Wang <cong.wang@bytedance.com> */
 
-#include <linux/skmsg.h>
-#include <linux/bpf.h>
+#include <freax/skmsg.h>
+#include <freax/bpf.h>
 #include <net/sock.h>
 #include <net/af_unix.h>
 

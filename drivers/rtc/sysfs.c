@@ -6,9 +6,9 @@
  * Author: Alessandro Zummo <a.zummo@towertech.it>
  */
 
-#include <linux/kstrtox.h>
-#include <linux/module.h>
-#include <linux/rtc.h>
+#include <freax/kstrtox.h>
+#include <freax/module.h>
+#include <freax/rtc.h>
 
 #include "rtc-core.h"
 
@@ -203,7 +203,7 @@ wakealarm_store(struct device *dev, struct device_attribute *attr,
 	} else {
 		alm.enabled = 0;
 
-		/* Provide a valid future alarm time.  Linux isn't EFI,
+		/* Provide a valid future alarm time.  freax isn't EFI,
 		 * this time won't be ignored when disabling the alarm.
 		 */
 		alarm = now + 300;

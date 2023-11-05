@@ -6,14 +6,14 @@
  *  Copyright (C) 2010 Rafael J. Wysocki, Novell Inc.
  */
 
-#ifndef _LINUX_PM_WAKEUP_H
-#define _LINUX_PM_WAKEUP_H
+#ifndef _freax_PM_WAKEUP_H
+#define _freax_PM_WAKEUP_H
 
 #ifndef _DEVICE_H_
 # error "please don't include this file directly"
 #endif
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct wake_irq;
 
@@ -242,4 +242,4 @@ static inline int device_init_wakeup(struct device *dev, bool enable)
 	}
 }
 
-#endif /* _LINUX_PM_WAKEUP_H */
+#endif /* _freax_PM_WAKEUP_H */

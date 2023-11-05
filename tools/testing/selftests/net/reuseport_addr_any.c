@@ -9,9 +9,9 @@
 #include <arpa/inet.h>
 #include <errno.h>
 #include <error.h>
-#include <linux/dccp.h>
-#include <linux/in.h>
-#include <linux/unistd.h>
+#include <freax/dccp.h>
+#include <freax/in.h>
+#include <freax/unistd.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>

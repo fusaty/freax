@@ -5,8 +5,8 @@
  * Tests for KVM paravirtual feature disablement
  */
 #include <asm/kvm_para.h>
-#include <linux/kvm_para.h>
-#include <linux/stringify.h>
+#include <freax/kvm_para.h>
+#include <freax/stringify.h>
 #include <stdint.h>
 
 #include "apic.h"

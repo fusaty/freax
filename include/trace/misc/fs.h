@@ -7,7 +7,7 @@
  * Copyright (c) 2020, Oracle and/or its affiliates.
  */
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 
 #define show_fs_dirent_type(x) \
 	__print_symbolic(x, \

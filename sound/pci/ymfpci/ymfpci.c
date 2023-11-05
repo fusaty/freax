@@ -4,10 +4,10 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/time.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include "ymfpci.h"
 #include <sound/mpu401.h>

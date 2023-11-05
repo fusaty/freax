@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 // Copyright(c) 2015-17 Intel Corporation.
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/pm_domain.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/pm_domain.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_type.h>
 #include "bus.h"
 #include "irq.h"
 #include "sysfs_local.h"

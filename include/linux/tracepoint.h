@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#ifndef _LINUX_TRACEPOINT_H
-#define _LINUX_TRACEPOINT_H
+#ifndef _freax_TRACEPOINT_H
+#define _freax_TRACEPOINT_H
 
 /*
  * Kernel Tracepoint API.
@@ -9,17 +9,17 @@
  *
  * Copyright (C) 2008-2014 Mathieu Desnoyers <mathieu.desnoyers@efficios.com>
  *
- * Heavily inspired from the Linux Kernel Markers.
+ * Heavily inspired from the freax Kernel Markers.
  */
 
-#include <linux/smp.h>
-#include <linux/srcu.h>
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/cpumask.h>
-#include <linux/rcupdate.h>
-#include <linux/tracepoint-defs.h>
-#include <linux/static_call.h>
+#include <freax/smp.h>
+#include <freax/srcu.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/cpumask.h>
+#include <freax/rcupdate.h>
+#include <freax/tracepoint-defs.h>
+#include <freax/static_call.h>
 
 struct module;
 struct tracepoint;
@@ -132,7 +132,7 @@ static inline struct tracepoint *tracepoint_ptr_deref(tracepoint_ptr_t *p)
 	__section("__tracepoints_ptrs") = &__tracepoint_##name
 #endif
 
-#endif /* _LINUX_TRACEPOINT_H */
+#endif /* _freax_TRACEPOINT_H */
 
 /*
  * Note: we keep the TRACE_EVENT and DECLARE_TRACE outside the include

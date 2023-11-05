@@ -7,9 +7,9 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
 #include <asm/sram.h>
 
 /*

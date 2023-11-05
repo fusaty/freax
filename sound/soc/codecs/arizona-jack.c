@@ -5,24 +5,24 @@
  *  Copyright (C) 2012-2014 Wolfson Microelectronics plc
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio.h>
-#include <linux/input.h>
-#include <linux/pm_runtime.h>
-#include <linux/property.h>
-#include <linux/regulator/consumer.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/err.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio.h>
+#include <freax/input.h>
+#include <freax/pm_runtime.h>
+#include <freax/property.h>
+#include <freax/regulator/consumer.h>
 
 #include <sound/jack.h>
 #include <sound/soc.h>
 
-#include <linux/mfd/arizona/core.h>
-#include <linux/mfd/arizona/pdata.h>
-#include <linux/mfd/arizona/registers.h>
+#include <freax/mfd/arizona/core.h>
+#include <freax/mfd/arizona/pdata.h>
+#include <freax/mfd/arizona/registers.h>
 #include <dt-bindings/mfd/arizona.h>
 
 #include "arizona.h"

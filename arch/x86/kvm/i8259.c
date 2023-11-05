@@ -28,12 +28,12 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/bitops.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/bitops.h>
 #include "irq.h"
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 #include "trace.h"
 
 #define pr_pic_unimpl(fmt, ...)	\

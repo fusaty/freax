@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SPI_DS1305_H
-#define __LINUX_SPI_DS1305_H
+#ifndef __freax_SPI_DS1305_H
+#define __freax_SPI_DS1305_H
 
 /*
  * One-time configuration for ds1305 and ds1306 RTC chips.
  *
  * Put a pointer to this in spi_board_info.platform_data if you want to
- * be sure that Linux (re)initializes this as needed ... after losing
+ * be sure that freax (re)initializes this as needed ... after losing
  * backup power, and potentially on the first boot.
  */
 struct ds1305_platform_data {
@@ -33,4 +33,4 @@ struct ds1305_platform_data {
 	 */
 };
 
-#endif /* __LINUX_SPI_DS1305_H */
+#endif /* __freax_SPI_DS1305_H */

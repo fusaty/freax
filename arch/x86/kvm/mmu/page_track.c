@@ -8,13 +8,13 @@
  * Copyright(C) 2015 Intel Corporation.
  *
  * Author:
- *   Xiao Guangrong <guangrong.xiao@linux.intel.com>
+ *   Xiao Guangrong <guangrong.xiao@freax.intel.com>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/lockdep.h>
-#include <linux/kvm_host.h>
-#include <linux/rculist.h>
+#include <freax/lockdep.h>
+#include <freax/kvm_host.h>
+#include <freax/rculist.h>
 
 #include "mmu.h"
 #include "mmu_internal.h"

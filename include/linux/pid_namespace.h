@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PID_NS_H
-#define _LINUX_PID_NS_H
+#ifndef _freax_PID_NS_H
+#define _freax_PID_NS_H
 
-#include <linux/sched.h>
-#include <linux/bug.h>
-#include <linux/mm.h>
-#include <linux/workqueue.h>
-#include <linux/threads.h>
-#include <linux/nsproxy.h>
-#include <linux/ns_common.h>
-#include <linux/idr.h>
+#include <freax/sched.h>
+#include <freax/bug.h>
+#include <freax/mm.h>
+#include <freax/workqueue.h>
+#include <freax/threads.h>
+#include <freax/nsproxy.h>
+#include <freax/ns_common.h>
+#include <freax/idr.h>
 
 /* MAX_PID_NS_LEVEL is needed for limiting size of 'struct pid' */
 #define MAX_PID_NS_LEVEL 32
@@ -79,7 +79,7 @@ extern int reboot_pid_ns(struct pid_namespace *pid_ns, int cmd);
 extern void put_pid_ns(struct pid_namespace *ns);
 
 #else /* !CONFIG_PID_NS */
-#include <linux/err.h>
+#include <freax/err.h>
 
 static inline struct pid_namespace *get_pid_ns(struct pid_namespace *ns)
 {
@@ -123,4 +123,4 @@ static inline bool task_is_in_init_pid_ns(struct task_struct *tsk)
 	return task_active_pid_ns(tsk) == &init_pid_ns;
 }
 
-#endif /* _LINUX_PID_NS_H */
+#endif /* _freax_PID_NS_H */

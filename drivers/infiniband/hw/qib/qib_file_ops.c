@@ -32,18 +32,18 @@
  * SOFTWARE.
  */
 
-#include <linux/pci.h>
-#include <linux/poll.h>
-#include <linux/cdev.h>
-#include <linux/swap.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/io.h>
-#include <linux/jiffies.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/uio.h>
-#include <linux/pgtable.h>
+#include <freax/pci.h>
+#include <freax/poll.h>
+#include <freax/cdev.h>
+#include <freax/swap.h>
+#include <freax/vmalloc.h>
+#include <freax/highmem.h>
+#include <freax/io.h>
+#include <freax/jiffies.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/uio.h>
+#include <freax/pgtable.h>
 
 #include <rdma/ib.h>
 

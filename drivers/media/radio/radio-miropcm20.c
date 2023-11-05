@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Miro PCM20 radio driver for Linux radio support
+ * Miro PCM20 radio driver for freax radio support
  * (c) 1998 Ruurd Reitsma <R.A.Reitsma@wbmt.tudelft.nl>
  * Thanks to Norberto Pellici for the ACI device interface specification
  * The API part is based on the radiotrack driver by M. Kirkwood
@@ -26,12 +26,12 @@
  * Hans Verkuil <hans.verkuil@cisco.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/videodev2.h>
-#include <linux/kthread.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/videodev2.h>
+#include <freax/kthread.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>

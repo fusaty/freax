@@ -11,12 +11,12 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/parport.h>
-#include <linux/ks0108.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/parport.h>
+#include <freax/ks0108.h>
 
 #define KS0108_NAME "ks0108"
 

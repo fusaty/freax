@@ -4,7 +4,7 @@
 #ifndef _MLXSW_CORE_ENV_H
 #define _MLXSW_CORE_ENV_H
 
-#include <linux/ethtool.h>
+#include <freax/ethtool.h>
 
 struct ethtool_modinfo;
 struct ethtool_eeprom;

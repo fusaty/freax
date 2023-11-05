@@ -31,18 +31,18 @@
 #ifndef _CXGB_COMMON_H_
 #define _CXGB_COMMON_H_
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/mdio.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/ethtool.h>
+#include <freax/if_vlan.h>
+#include <freax/mdio.h>
+#include <freax/crc32.h>
+#include <freax/slab.h>
 #include <asm/io.h>
-#include <linux/pci_ids.h>
+#include <freax/pci_ids.h>
 
 #define DRV_DESCRIPTION "Chelsio 10Gb Ethernet Driver"
 #define DRV_NAME "cxgb"

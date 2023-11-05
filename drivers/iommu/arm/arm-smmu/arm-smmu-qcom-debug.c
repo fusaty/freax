@@ -3,9 +3,9 @@
  * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/ratelimit.h>
+#include <freax/device.h>
+#include <freax/firmware/qcom/qcom_scm.h>
+#include <freax/ratelimit.h>
 
 #include "arm-smmu.h"
 #include "arm-smmu-qcom.h"

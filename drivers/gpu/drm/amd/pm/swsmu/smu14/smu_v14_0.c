@@ -20,10 +20,10 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/reboot.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/reboot.h>
 
 #define SWSMU_CODE_LAYER_L3
 

@@ -2,10 +2,10 @@
 #ifndef __NET_NETLINK_H
 #define __NET_NETLINK_H
 
-#include <linux/types.h>
-#include <linux/netlink.h>
-#include <linux/jiffies.h>
-#include <linux/in6.h>
+#include <freax/types.h>
+#include <freax/netlink.h>
+#include <freax/jiffies.h>
+#include <freax/in6.h>
 
 /* ========================================================================
  *         Netlink Messages and Attributes Interface (As Seen On TV)

@@ -13,26 +13,26 @@
  * most of a2025 and sunlance with the aim of merging them, so the
  * common code was pretty obvious.
  */
-#include <linux/crc32.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/route.h>
-#include <linux/string.h>
-#include <linux/skbuff.h>
-#include <linux/pgtable.h>
+#include <freax/crc32.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/in.h>
+#include <freax/route.h>
+#include <freax/string.h>
+#include <freax/skbuff.h>
+#include <freax/pgtable.h>
 #include <asm/irq.h>
 /* Used for the temporal inet entries and routing */
-#include <linux/socket.h>
-#include <linux/bitops.h>
+#include <freax/socket.h>
+#include <freax/bitops.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

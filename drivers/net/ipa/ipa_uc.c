@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2018-2022 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/pm_runtime.h>
+#include <freax/types.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/pm_runtime.h>
 
 #include "ipa.h"
 #include "ipa_uc.h"

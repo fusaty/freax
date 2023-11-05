@@ -6,7 +6,7 @@
  * Author: Ard Biesheuvel <ard.biesheuvel@linaro.org>
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 #include <asm/cache.h>
 
@@ -24,7 +24,7 @@
 	t2		.req	r3
 
 	.macro		__select, out, in, idx
-	.if		__LINUX_ARM_ARCH__ < 7
+	.if		__freax_ARM_ARCH__ < 7
 	and		\out, \in, #0xff << (8 * \idx)
 	.else
 	ubfx		\out, \in, #(8 * \idx), #8
@@ -32,7 +32,7 @@
 	.endm
 
 	.macro		__load, out, in, idx, sz, op
-	.if		__LINUX_ARM_ARCH__ < 7 && \idx > 0
+	.if		__freax_ARM_ARCH__ < 7 && \idx > 0
 	ldr\op		\out, [ttab, \in, lsr #(8 * \idx) - \sz]
 	.else
 	ldr\op		\out, [ttab, \in, lsl #\sz]

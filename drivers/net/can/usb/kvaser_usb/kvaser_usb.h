@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Parts of this driver are based on the following:
- *  - Kvaser linux leaf driver (version 4.78)
+ *  - Kvaser freax leaf driver (version 4.78)
  *  - CAN driver for esd CAN-USB/2
- *  - Kvaser linux usbcanII driver (version 5.3)
- *  - Kvaser linux mhydra driver (version 5.24)
+ *  - Kvaser freax usbcanII driver (version 5.3)
+ *  - Kvaser freax mhydra driver (version 5.24)
  *
  * Copyright (C) 2002-2018 KVASER AB, Sweden. All rights reserved.
  * Copyright (C) 2010 Matthias Fuchs <matthias.fuchs@esd.eu>, esd gmbh
@@ -21,13 +21,13 @@
  * - UsbcanII: Based on Renesas M16C, running firmware labeled as 'helios'
  */
 
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/usb.h>
+#include <freax/completion.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/usb.h>
 
-#include <linux/can.h>
-#include <linux/can/dev.h>
+#include <freax/can.h>
+#include <freax/can/dev.h>
 
 #define KVASER_USB_MAX_RX_URBS			4
 #define KVASER_USB_MAX_TX_URBS			128

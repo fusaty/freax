@@ -7,11 +7,11 @@
 
 #include "bcma_private.h"
 #include "scan.h"
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/bcma/bcma.h>
-#include <linux/bcma/bcma_soc.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/bcma/bcma.h>
+#include <freax/bcma/bcma_soc.h>
 
 static u8 bcma_host_soc_read8(struct bcma_device *core, u16 offset)
 {

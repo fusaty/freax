@@ -16,18 +16,18 @@
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
- * VA LINUX SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ * VA freax SYSTEMS AND/OR ITS SUPPLIERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
  * OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 /*
- * Authors: Dave Airlied <airlied@linux.ie>
+ * Authors: Dave Airlied <airlied@freax.ie>
  *	    Ben Skeggs   <darktama@iinet.net.au>
  *	    Jeremy Kolb  <jkolb@brandeis.edu>
  */
 
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 #include <drm/ttm/ttm_tt.h>
 
 #include "nouveau_drv.h"

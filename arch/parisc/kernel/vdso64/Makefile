@@ -9,7 +9,7 @@ obj-vdso64 := $(addprefix $(obj)/, $(obj-vdso64))
 
 
 ccflags-y := -shared -fno-common -fno-builtin
-ccflags-y += -nostdlib -Wl,-soname=linux-vdso64.so.1 \
+ccflags-y += -nostdlib -Wl,-soname=freax-vdso64.so.1 \
 		$(call ld-option, -Wl$(comma)--hash-style=sysv)
 asflags-y := -D__VDSO64__ -s
 

@@ -244,7 +244,7 @@
 		led-3 {
 			label = "ds3";
 			gpios = <&pioD 14 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 
@@ -254,14 +254,14 @@
 		button-right-click {
 			label = "right_click";
 			gpios = <&pioB 0 GPIO_ACTIVE_LOW>;
-			linux,code = <273>;
+			freax,code = <273>;
 			wakeup-source;
 		};
 
 		button-left-click {
 			label = "left_click";
 			gpios = <&pioB 1 GPIO_ACTIVE_LOW>;
-			linux,code = <272>;
+			freax,code = <272>;
 			wakeup-source;
 		};
 	};

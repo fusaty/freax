@@ -6,8 +6,8 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/ftrace.h>
+#include <freax/module.h>
+#include <freax/ftrace.h>
 
 #include "trace.h"
 

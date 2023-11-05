@@ -8,13 +8,13 @@
  *
  * Author: Linus Walleij <linus.walleij@linaro.org>
  */
-#ifndef __LINUX_PINCTRL_CONSUMER_H
-#define __LINUX_PINCTRL_CONSUMER_H
+#ifndef __freax_PINCTRL_CONSUMER_H
+#define __freax_PINCTRL_CONSUMER_H
 
-#include <linux/err.h>
-#include <linux/types.h>
+#include <freax/err.h>
+#include <freax/types.h>
 
-#include <linux/pinctrl/pinctrl-state.h>
+#include <freax/pinctrl/pinctrl-state.h>
 
 struct device;
 
@@ -206,4 +206,4 @@ static inline struct pinctrl * __must_check devm_pinctrl_get_select_default(stru
 	return devm_pinctrl_get_select(dev, PINCTRL_STATE_DEFAULT);
 }
 
-#endif /* __LINUX_PINCTRL_CONSUMER_H */
+#endif /* __freax_PINCTRL_CONSUMER_H */

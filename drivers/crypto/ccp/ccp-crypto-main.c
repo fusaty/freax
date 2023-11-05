@@ -7,12 +7,12 @@
  * Author: Tom Lendacky <thomas.lendacky@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/ccp.h>
-#include <linux/scatterlist.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/ccp.h>
+#include <freax/scatterlist.h>
 #include <crypto/internal/hash.h>
 #include <crypto/internal/akcipher.h>
 

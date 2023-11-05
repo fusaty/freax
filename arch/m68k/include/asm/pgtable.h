@@ -2,7 +2,7 @@
 #ifndef __M68K_PGTABLE_H
 #define __M68K_PGTABLE_H
 
-#ifdef __uClinux__
+#ifdef __uCfreax__
 #include <asm/pgtable_no.h>
 #else
 #include <asm/pgtable_mm.h>

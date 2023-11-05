@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/wm8996.h -- Platform data for WM8996
+ * freax/sound/wm8996.h -- Platform data for WM8996
  *
  * Copyright 2011 Wolfson Microelectronics. PLC.
  */
 
-#ifndef __LINUX_SND_WM8996_H
-#define __LINUX_SND_WM8996_H
+#ifndef __freax_SND_WM8996_H
+#define __freax_SND_WM8996_H
 
 enum wm8996_inmode {
 	WM8996_DIFFERRENTIAL_1 = 0,   /* IN1xP - IN1xN */

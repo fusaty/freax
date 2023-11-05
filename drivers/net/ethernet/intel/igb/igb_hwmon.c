@@ -5,14 +5,14 @@
 #include "e1000_82575.h"
 #include "e1000_hw.h"
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/device.h>
-#include <linux/netdevice.h>
-#include <linux/hwmon.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/sysfs.h>
+#include <freax/kobject.h>
+#include <freax/device.h>
+#include <freax/netdevice.h>
+#include <freax/hwmon.h>
+#include <freax/pci.h>
 
 #ifdef CONFIG_IGB_HWMON
 static struct i2c_board_info i350_sensor_info = {

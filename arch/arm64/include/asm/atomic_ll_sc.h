@@ -10,7 +10,7 @@
 #ifndef __ASM_ATOMIC_LL_SC_H
 #define __ASM_ATOMIC_LL_SC_H
 
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 
 #ifndef CONFIG_CC_HAS_K_CONSTRAINT
 #define K

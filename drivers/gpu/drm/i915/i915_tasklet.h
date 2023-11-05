@@ -6,7 +6,7 @@
 #ifndef __I915_TASKLET_H__
 #define __I915_TASKLET_H__
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
 static inline void tasklet_lock(struct tasklet_struct *t)
 {

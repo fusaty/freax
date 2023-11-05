@@ -9,12 +9,12 @@
 #include <crypto/akcipher.h>
 #include <crypto/internal/akcipher.h>
 #include <crypto/internal/rsa.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/scatterlist.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/scatterlist.h>
 
 /*
  * Hash algorithm OIDs plus ASN.1 DER wrappings [RFC4880 sec 5.2.2].

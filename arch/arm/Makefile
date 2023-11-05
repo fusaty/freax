@@ -10,9 +10,9 @@
 #
 # Copyright (C) 1995-2001 by Russell King
 
-LDFLAGS_vmlinux	:= --no-undefined -X --pic-veneer -z norelro
+LDFLAGS_vmfreax	:= --no-undefined -X --pic-veneer -z norelro
 ifeq ($(CONFIG_CPU_ENDIAN_BE8),y)
-LDFLAGS_vmlinux	+= --be8
+LDFLAGS_vmfreax	+= --be8
 KBUILD_LDFLAGS_MODULE	+= --be8
 endif
 
@@ -76,18 +76,18 @@ arch-$(CONFIG_CPU_32v3)		:=-march=armv3m
 # Note that GCC does not numerically define an architecture version
 # macro, but instead defines a whole series of macros which makes
 # testing for a specific architecture or later rather impossible.
-cpp-$(CONFIG_CPU_32v7M)		:=-D__LINUX_ARM_ARCH__=7
-cpp-$(CONFIG_CPU_32v7)		:=-D__LINUX_ARM_ARCH__=7
-cpp-$(CONFIG_CPU_32v6)		:=-D__LINUX_ARM_ARCH__=6
+cpp-$(CONFIG_CPU_32v7M)		:=-D__freax_ARM_ARCH__=7
+cpp-$(CONFIG_CPU_32v7)		:=-D__freax_ARM_ARCH__=7
+cpp-$(CONFIG_CPU_32v6)		:=-D__freax_ARM_ARCH__=6
 # Only override the compiler option if ARMv6. The ARMv6K extensions are
 # always available in ARMv7
 ifeq ($(CONFIG_CPU_32v6),y)
-cpp-$(CONFIG_CPU_32v6K)		:=-D__LINUX_ARM_ARCH__=6
+cpp-$(CONFIG_CPU_32v6K)		:=-D__freax_ARM_ARCH__=6
 endif
-cpp-$(CONFIG_CPU_32v5)		:=-D__LINUX_ARM_ARCH__=5
-cpp-$(CONFIG_CPU_32v4T)		:=-D__LINUX_ARM_ARCH__=4
-cpp-$(CONFIG_CPU_32v4)		:=-D__LINUX_ARM_ARCH__=4
-cpp-$(CONFIG_CPU_32v3)		:=-D__LINUX_ARM_ARCH__=3
+cpp-$(CONFIG_CPU_32v5)		:=-D__freax_ARM_ARCH__=5
+cpp-$(CONFIG_CPU_32v4T)		:=-D__freax_ARM_ARCH__=4
+cpp-$(CONFIG_CPU_32v4)		:=-D__freax_ARM_ARCH__=4
+cpp-$(CONFIG_CPU_32v3)		:=-D__freax_ARM_ARCH__=3
 
 # This selects how we optimise for the processor.
 tune-$(CONFIG_CPU_ARM7TDMI)	:=-mtune=arm7tdmi
@@ -110,7 +110,7 @@ tune-$(CONFIG_CPU_V6)		:=-mtune=arm1136j-s
 tune-$(CONFIG_CPU_V6K)		:=-mtune=arm1136j-s
 
 ifeq ($(CONFIG_AEABI),y)
-CFLAGS_ABI	:=-mabi=aapcs-linux -mfpu=vfp
+CFLAGS_ABI	:=-mabi=aapcs-freax -mfpu=vfp
 else
 CFLAGS_ABI	:=$(call cc-option,-mapcs-32,-mabi=apcs-gnu) $(call cc-option,-mno-thumb-interwork,)
 endif
@@ -296,7 +296,7 @@ PHONY += bzImage $(BOOT_TARGETS) $(INSTALL_TARGETS)
 bootpImage uImage: zImage
 zImage: Image
 
-$(BOOT_TARGETS): vmlinux
+$(BOOT_TARGETS): vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@
 	@$(kecho) '  Kernel: $(boot)/$@ is ready'
 

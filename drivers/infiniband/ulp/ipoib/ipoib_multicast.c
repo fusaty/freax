@@ -32,16 +32,16 @@
  * SOFTWARE.
  */
 
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/moduleparam.h>
-#include <linux/ip.h>
-#include <linux/in.h>
-#include <linux/igmp.h>
-#include <linux/inetdevice.h>
-#include <linux/delay.h>
-#include <linux/completion.h>
-#include <linux/slab.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
+#include <freax/moduleparam.h>
+#include <freax/ip.h>
+#include <freax/in.h>
+#include <freax/igmp.h>
+#include <freax/inetdevice.h>
+#include <freax/delay.h>
+#include <freax/completion.h>
+#include <freax/slab.h>
 
 #include <net/dst.h>
 

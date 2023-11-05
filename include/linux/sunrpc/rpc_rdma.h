@@ -39,11 +39,11 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef _LINUX_SUNRPC_RPC_RDMA_H
-#define _LINUX_SUNRPC_RPC_RDMA_H
+#ifndef _freax_SUNRPC_RPC_RDMA_H
+#define _freax_SUNRPC_RPC_RDMA_H
 
-#include <linux/types.h>
-#include <linux/bitops.h>
+#include <freax/types.h>
+#include <freax/bitops.h>
 
 #define RPCRDMA_VERSION		1
 #define rpcrdma_version		cpu_to_be32(RPCRDMA_VERSION)
@@ -198,4 +198,4 @@ static inline __be32 *xdr_decode_read_segment(__be32 *p, u32 *position,
 	return xdr_decode_rdma_segment(p, handle, length, offset);
 }
 
-#endif				/* _LINUX_SUNRPC_RPC_RDMA_H */
+#endif				/* _freax_SUNRPC_RPC_RDMA_H */

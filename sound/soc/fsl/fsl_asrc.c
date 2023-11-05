@@ -6,13 +6,13 @@
 //
 // Author: Nicolin Chen <nicoleotsuka@gmail.com>
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/dma/imx-dma.h>
-#include <linux/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/dma/imx-dma.h>
+#include <freax/pm_runtime.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>
 

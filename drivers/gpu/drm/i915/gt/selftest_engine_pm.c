@@ -3,7 +3,7 @@
  * Copyright © 2018 Intel Corporation
  */
 
-#include <linux/sort.h>
+#include <freax/sort.h>
 
 #include "gt/intel_gt_print.h"
 #include "i915_selftest.h"

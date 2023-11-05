@@ -3,11 +3,11 @@
 
 #ifndef __HCLGE_MAIN_H
 #define __HCLGE_MAIN_H
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/phy.h>
-#include <linux/if_vlan.h>
-#include <linux/kfifo.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/phy.h>
+#include <freax/if_vlan.h>
+#include <freax/kfifo.h>
 #include <net/devlink.h>
 
 #include "hclge_cmd.h"

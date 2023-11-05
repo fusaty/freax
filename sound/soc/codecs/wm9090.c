@@ -7,13 +7,13 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/device.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 #include <sound/initval.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>

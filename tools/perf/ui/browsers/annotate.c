@@ -13,9 +13,9 @@
 #include "../../util/evsel.h"
 #include "../../util/evlist.h"
 #include <inttypes.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
 #include <sys/ttydefaults.h>
 #include <asm/bug.h>
 
@@ -869,7 +869,7 @@ show_help:
 			struct disasm_line *dl = disasm_line(browser->selection);
 
 			if (browser->selection == NULL)
-				ui_helpline__puts("Huh? No selection. Report to linux-kernel@vger.kernel.org");
+				ui_helpline__puts("Huh? No selection. Report to freax-kernel@vger.kernel.org");
 			else if (browser->selection->offset == -1)
 				ui_helpline__puts("Actions are only available for assembly lines.");
 			else if (!dl->ins.ops)

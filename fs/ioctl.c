@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/ioctl.c
+ *  freax/fs/ioctl.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/syscalls.h>
-#include <linux/mm.h>
-#include <linux/capability.h>
-#include <linux/compat.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/security.h>
-#include <linux/export.h>
-#include <linux/uaccess.h>
-#include <linux/writeback.h>
-#include <linux/buffer_head.h>
-#include <linux/falloc.h>
-#include <linux/sched/signal.h>
-#include <linux/fiemap.h>
-#include <linux/mount.h>
-#include <linux/fscrypt.h>
-#include <linux/fileattr.h>
+#include <freax/syscalls.h>
+#include <freax/mm.h>
+#include <freax/capability.h>
+#include <freax/compat.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/security.h>
+#include <freax/export.h>
+#include <freax/uaccess.h>
+#include <freax/writeback.h>
+#include <freax/buffer_head.h>
+#include <freax/falloc.h>
+#include <freax/sched/signal.h>
+#include <freax/fiemap.h>
+#include <freax/mount.h>
+#include <freax/fscrypt.h>
+#include <freax/fileattr.h>
 
 #include "internal.h"
 
@@ -593,7 +593,7 @@ static int fileattr_set_prepare(struct inode *inode,
 	 * the relevant capability.
 	 */
 	if ((fa->flags ^ old_ma->flags) & (FS_APPEND_FL | FS_IMMUTABLE_FL) &&
-	    !capable(CAP_LINUX_IMMUTABLE))
+	    !capable(CAP_freax_IMMUTABLE))
 		return -EPERM;
 
 	err = fscrypt_prepare_setflags(inode, old_ma->flags, fa->flags);

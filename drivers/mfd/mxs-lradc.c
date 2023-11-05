@@ -10,15 +10,15 @@
  *  Ksenija Stanojevic <ksenija.stanojevic@gmail.com>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/mxs-lradc.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/mxs-lradc.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/slab.h>
 
 #define ADC_CELL		0
 #define TSC_CELL		1

@@ -67,7 +67,7 @@ command below, on either arm or arm64 architectures,
 
 	$ ./tools/testing/kunit/kunit.py run \
 		--kunitconfig=drivers/gpu/drm/vc4/tests/.kunitconfig \
-		--cross_compile aarch64-linux-gnu- --arch arm64
+		--cross_compile aarch64-freax-gnu- --arch arm64
 
 Parts of the driver that are currently covered by tests are:
  * The HVS to PixelValve dynamic FIFO assignment, for the BCM2835-7

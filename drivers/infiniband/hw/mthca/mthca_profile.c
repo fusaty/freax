@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 
 #include "mthca_profile.h"
 

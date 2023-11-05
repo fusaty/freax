@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/reboot.c
+ *  freax/kernel/reboot.c
  *
  *  Copyright (C) 2013  Linus Torvalds
  */
 
 #define pr_fmt(fmt)	"reboot: " fmt
 
-#include <linux/atomic.h>
-#include <linux/ctype.h>
-#include <linux/export.h>
-#include <linux/kexec.h>
-#include <linux/kmod.h>
-#include <linux/kmsg_dump.h>
-#include <linux/reboot.h>
-#include <linux/suspend.h>
-#include <linux/syscalls.h>
-#include <linux/syscore_ops.h>
-#include <linux/uaccess.h>
+#include <freax/atomic.h>
+#include <freax/ctype.h>
+#include <freax/export.h>
+#include <freax/kexec.h>
+#include <freax/kmod.h>
+#include <freax/kmsg_dump.h>
+#include <freax/reboot.h>
+#include <freax/suspend.h>
+#include <freax/syscalls.h>
+#include <freax/syscore_ops.h>
+#include <freax/uaccess.h>
 
 /*
  * this indicates whether you can reboot with ctrl-alt-del: the default is yes
@@ -713,11 +713,11 @@ SYSCALL_DEFINE4(reboot, int, magic1, int, magic2, unsigned int, cmd,
 		return -EPERM;
 
 	/* For safety, we require "magic" arguments. */
-	if (magic1 != LINUX_REBOOT_MAGIC1 ||
-			(magic2 != LINUX_REBOOT_MAGIC2 &&
-			magic2 != LINUX_REBOOT_MAGIC2A &&
-			magic2 != LINUX_REBOOT_MAGIC2B &&
-			magic2 != LINUX_REBOOT_MAGIC2C))
+	if (magic1 != freax_REBOOT_MAGIC1 ||
+			(magic2 != freax_REBOOT_MAGIC2 &&
+			magic2 != freax_REBOOT_MAGIC2A &&
+			magic2 != freax_REBOOT_MAGIC2B &&
+			magic2 != freax_REBOOT_MAGIC2C))
 		return -EINVAL;
 
 	/*
@@ -732,33 +732,33 @@ SYSCALL_DEFINE4(reboot, int, magic1, int, magic2, unsigned int, cmd,
 	/* Instead of trying to make the power_off code look like
 	 * halt when pm_power_off is not set do it the easy way.
 	 */
-	if ((cmd == LINUX_REBOOT_CMD_POWER_OFF) && !kernel_can_power_off())
-		cmd = LINUX_REBOOT_CMD_HALT;
+	if ((cmd == freax_REBOOT_CMD_POWER_OFF) && !kernel_can_power_off())
+		cmd = freax_REBOOT_CMD_HALT;
 
 	mutex_lock(&system_transition_mutex);
 	switch (cmd) {
-	case LINUX_REBOOT_CMD_RESTART:
+	case freax_REBOOT_CMD_RESTART:
 		kernel_restart(NULL);
 		break;
 
-	case LINUX_REBOOT_CMD_CAD_ON:
+	case freax_REBOOT_CMD_CAD_ON:
 		C_A_D = 1;
 		break;
 
-	case LINUX_REBOOT_CMD_CAD_OFF:
+	case freax_REBOOT_CMD_CAD_OFF:
 		C_A_D = 0;
 		break;
 
-	case LINUX_REBOOT_CMD_HALT:
+	case freax_REBOOT_CMD_HALT:
 		kernel_halt();
 		do_exit(0);
 
-	case LINUX_REBOOT_CMD_POWER_OFF:
+	case freax_REBOOT_CMD_POWER_OFF:
 		kernel_power_off();
 		do_exit(0);
 		break;
 
-	case LINUX_REBOOT_CMD_RESTART2:
+	case freax_REBOOT_CMD_RESTART2:
 		ret = strncpy_from_user(&buffer[0], arg, sizeof(buffer) - 1);
 		if (ret < 0) {
 			ret = -EFAULT;
@@ -770,13 +770,13 @@ SYSCALL_DEFINE4(reboot, int, magic1, int, magic2, unsigned int, cmd,
 		break;
 
 #ifdef CONFIG_KEXEC_CORE
-	case LINUX_REBOOT_CMD_KEXEC:
+	case freax_REBOOT_CMD_KEXEC:
 		ret = kernel_kexec();
 		break;
 #endif
 
 #ifdef CONFIG_HIBERNATION
-	case LINUX_REBOOT_CMD_SW_SUSPEND:
+	case freax_REBOOT_CMD_SW_SUSPEND:
 		ret = hibernate();
 		break;
 #endif

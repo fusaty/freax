@@ -15,7 +15,7 @@
 
 #include <asm/ptrace.h>
 #include <asm/coprocessor.h>
-#include <linux/elf-em.h>
+#include <freax/elf-em.h>
 
 /* Xtensa processor ELF architecture-magic number */
 
@@ -191,6 +191,6 @@ typedef struct {
 } elf_xtregs_t;
 
 #define SET_PERSONALITY(ex) \
-	set_personality(PER_LINUX_32BIT | (current->personality & (~PER_MASK)))
+	set_personality(PER_freax_32BIT | (current->personality & (~PER_MASK)))
 
 #endif	/* _XTENSA_ELF_H */

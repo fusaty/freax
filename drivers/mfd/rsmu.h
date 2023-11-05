@@ -8,7 +8,7 @@
 #ifndef __RSMU_MFD_H
 #define __RSMU_MFD_H
 
-#include <linux/mfd/rsmu.h>
+#include <freax/mfd/rsmu.h>
 
 #define RSMU_CM_SCSR_BASE		0x20100000
 

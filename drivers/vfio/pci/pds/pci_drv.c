@@ -3,14 +3,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/types.h>
-#include <linux/vfio.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/types.h>
+#include <freax/vfio.h>
 
-#include <linux/pds/pds_common.h>
-#include <linux/pds/pds_core_if.h>
-#include <linux/pds/pds_adminq.h>
+#include <freax/pds/pds_common.h>
+#include <freax/pds/pds_core_if.h>
+#include <freax/pds/pds_adminq.h>
 
 #include "vfio_dev.h"
 #include "pci_drv.h"

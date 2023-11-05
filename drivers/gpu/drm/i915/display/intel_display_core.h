@@ -6,12 +6,12 @@
 #ifndef __INTEL_DISPLAY_CORE_H__
 #define __INTEL_DISPLAY_CORE_H__
 
-#include <linux/list.h>
-#include <linux/llist.h>
-#include <linux/mutex.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/list.h>
+#include <freax/llist.h>
+#include <freax/mutex.h>
+#include <freax/types.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_modeset_lock.h>

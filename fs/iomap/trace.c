@@ -2,8 +2,8 @@
 /*
  * Copyright (c) 2019 Christoph Hellwig
  */
-#include <linux/iomap.h>
-#include <linux/uio.h>
+#include <freax/iomap.h>
+#include <freax/uio.h>
 
 /*
  * We include this last to have the helpers above available for the trace

@@ -9,12 +9,12 @@
 #ifndef _UVC_GADGET_H_
 #define _UVC_GADGET_H_
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/usb/composite.h>
-#include <linux/videodev2.h>
-#include <linux/wait.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/usb/composite.h>
+#include <freax/videodev2.h>
+#include <freax/wait.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-dev.h>

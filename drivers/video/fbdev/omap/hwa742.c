@@ -7,12 +7,12 @@
  *	        Imre Deak     <imre.deak@nokia.com>
  * YUV support: Jussi Laako   <jussi.laako@nokia.com>
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/fb.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
 
 #include "omapfb.h"
 

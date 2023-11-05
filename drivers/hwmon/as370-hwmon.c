@@ -6,13 +6,13 @@
  * Author: Jisheng Zhang <jszhang@kernel.org>
  */
 
-#include <linux/bitops.h>
-#include <linux/hwmon.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/bitops.h>
+#include <freax/hwmon.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
 #define CTRL		0x0
 #define  PD		BIT(0)

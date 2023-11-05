@@ -13,13 +13,13 @@
 #include <drm/drm_print.h>
 #include <drm/drm_mipi_dsi.h>
 
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/media-bus-format.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/media-bus-format.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
 
 enum cmd_registers {
 	WR_INPUT_SOURCE		= 0x05,	/* Write Input Source Select */

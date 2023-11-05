@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/fs/nfs/delegation.c
+ * freax/fs/nfs/delegation.c
  *
  * Copyright (C) 2004 Trond Myklebust
  *
  * NFS file delegation management
  *
  */
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/iversion.h>
+#include <freax/completion.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/iversion.h>
 
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
-#include <linux/nfs_xdr.h>
+#include <freax/nfs4.h>
+#include <freax/nfs_fs.h>
+#include <freax/nfs_xdr.h>
 
 #include "nfs4_fs.h"
 #include "nfs4session.h"

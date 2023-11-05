@@ -75,7 +75,7 @@ typedef void hpi_handler_func(struct hpi_message *, struct hpi_response *);
 
 /* If the assert fails, compiler complains
    something like size of array `msg' is negative.
-   Unlike linux BUILD_BUG_ON, this works outside function scope.
+   Unlike freax BUILD_BUG_ON, this works outside function scope.
 */
 #define compile_time_assert(cond, msg) \
     typedef char ASSERT_##msg[(cond) ? 1 : -1]
@@ -331,7 +331,7 @@ enum HPI_BUFFER_CMDS {
 
 #define HPI_USB_VENDOR_ID_AUDIOSCIENCE  0x1257
 #define HPI_USB_W2K_TAG                 0x57495341	/* "ASIW"       */
-#define HPI_USB_LINUX_TAG               0x4C495341	/* "ASIL"       */
+#define HPI_USB_freax_TAG               0x4C495341	/* "ASIL"       */
 
 /** Invalid Adapter index
 Used in HPI messages that are not addressed to a specific adapter

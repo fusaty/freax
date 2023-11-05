@@ -7,16 +7,16 @@
  *
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/module.h>
 
 #include <asm/clock.h>
 #include <asm/i2c-sh7760.h>
@@ -559,4 +559,4 @@ module_platform_driver(sh7760_i2c_drv);
 
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("SH7760 I2C bus driver");
-MODULE_AUTHOR("Manuel Lauss <mano@roarinelk.homelinux.net>");
+MODULE_AUTHOR("Manuel Lauss <mano@roarinelk.homefreax.net>");

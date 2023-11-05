@@ -23,8 +23,8 @@
  *          Alon Levy
  */
 
-#include <linux/io-mapping.h>
-#include <linux/pci.h>
+#include <freax/io-mapping.h>
+#include <freax/pci.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_managed.h>

@@ -38,28 +38,28 @@
 		button-0 {
 			gpios = <&gpio5 0 GPIO_ACTIVE_LOW>; /* GPIO A */
 			label = "TA1-GPIO-A";
-			linux,code = <KEY_A>;
+			freax,code = <KEY_A>;
 			wakeup-source;
 		};
 
 		button-1 {
 			gpios = <&gpio5 1 GPIO_ACTIVE_LOW>; /* GPIO B */
 			label = "TA2-GPIO-B";
-			linux,code = <KEY_B>;
+			freax,code = <KEY_B>;
 			wakeup-source;
 		};
 
 		button-2 {
 			gpios = <&gpio5 2 GPIO_ACTIVE_LOW>; /* GPIO C */
 			label = "TA3-GPIO-C";
-			linux,code = <KEY_C>;
+			freax,code = <KEY_C>;
 			wakeup-source;
 		};
 
 		button-3 {
 			gpios = <&gpio5 3 GPIO_ACTIVE_LOW>; /* GPIO D */
 			label = "TA4-GPIO-D";
-			linux,code = <KEY_D>;
+			freax,code = <KEY_D>;
 			wakeup-source;
 		};
 	};

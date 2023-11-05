@@ -4,8 +4,8 @@
  * Author: Paul Kocialkowski <paul.kocialkowski@bootlin.com>
  */
 
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-fwnode.h>
 

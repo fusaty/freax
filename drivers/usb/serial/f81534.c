@@ -21,14 +21,14 @@
  * 128x1,2,3,4 bytes.
  *
  */
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
+#include <freax/serial_reg.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
 
 /* Serial Port register Address */
 #define F81534_UART_BASE_ADDRESS	0x1200

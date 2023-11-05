@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/cpumask.h>
-#include <linux/delay.h>
-#include <linux/smp.h>
+#include <freax/cpumask.h>
+#include <freax/delay.h>
+#include <freax/smp.h>
 
 #include <asm/io_apic.h>
 

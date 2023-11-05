@@ -6,7 +6,7 @@
 #ifndef __INTEL_SPRITE_H__
 #define __INTEL_SPRITE_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_device;
 struct drm_display_mode;

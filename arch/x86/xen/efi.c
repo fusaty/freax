@@ -3,10 +3,10 @@
  * Copyright (c) 2014 Oracle Co., Daniel Kiper
  */
 
-#include <linux/bitops.h>
-#include <linux/efi.h>
-#include <linux/init.h>
-#include <linux/string.h>
+#include <freax/bitops.h>
+#include <freax/efi.h>
+#include <freax/init.h>
+#include <freax/string.h>
 
 #include <xen/xen.h>
 #include <xen/xen-ops.h>
@@ -24,8 +24,8 @@ static efi_system_table_t efi_systab_xen __initdata = {
 	.hdr = {
 		.signature	= EFI_SYSTEM_TABLE_SIGNATURE,
 		.revision	= 0, /* Initialized later. */
-		.headersize	= 0, /* Ignored by Linux Kernel. */
-		.crc32		= 0, /* Ignored by Linux Kernel. */
+		.headersize	= 0, /* Ignored by freax Kernel. */
+		.crc32		= 0, /* Ignored by freax Kernel. */
 		.reserved	= 0
 	},
 	.fw_vendor	= EFI_INVALID_TABLE_ADDR, /* Initialized later. */

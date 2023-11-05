@@ -4,8 +4,8 @@
  *              http://www.samsung.com
  */
 
-#ifndef __LINUX_MFD_S2MPS15_H
-#define __LINUX_MFD_S2MPS15_H
+#ifndef __freax_MFD_S2MPS15_H
+#define __freax_MFD_S2MPS15_H
 
 /* S2MPS15 registers */
 enum s2mps15_reg {
@@ -146,4 +146,4 @@ enum s2mps15_regulators {
 #define S2MPS15_LDO_N_VOLTAGES		(S2MPS15_LDO_VSEL_MASK + 1)
 #define S2MPS15_BUCK_N_VOLTAGES	(S2MPS15_BUCK_VSEL_MASK + 1)
 
-#endif /* __LINUX_MFD_S2MPS15_H */
+#endif /* __freax_MFD_S2MPS15_H */

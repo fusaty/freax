@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_DAX_H
-#define _LINUX_DAX_H
+#ifndef _freax_DAX_H
+#define _freax_DAX_H
 
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/radix-tree.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/radix-tree.h>
 
 typedef unsigned long dax_entry_t;
 

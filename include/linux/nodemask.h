@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_NODEMASK_H
-#define __LINUX_NODEMASK_H
+#ifndef __freax_NODEMASK_H
+#define __freax_NODEMASK_H
 
 /*
  * Nodemasks provide a bitmap suitable for representing the
  * set of Node's in a system, one bit position per Node number.
  *
- * See detailed comments in the file linux/bitmap.h describing the
+ * See detailed comments in the file freax/bitmap.h describing the
  * data type on which these nodemasks are based.
  *
  * For details of nodemask_parse_user(), see bitmap_parse_user() in
@@ -90,11 +90,11 @@
  * for such situations. See below and CPUMASK_ALLOC also.
  */
 
-#include <linux/threads.h>
-#include <linux/bitmap.h>
-#include <linux/minmax.h>
-#include <linux/numa.h>
-#include <linux/random.h>
+#include <freax/threads.h>
+#include <freax/bitmap.h>
+#include <freax/minmax.h>
+#include <freax/numa.h>
+#include <freax/random.h>
 
 typedef struct { DECLARE_BITMAP(bits, MAX_NUMNODES); } nodemask_t;
 extern nodemask_t _unused_nodemask_arg_;
@@ -562,4 +562,4 @@ struct nodemask_scratch {
 #define NODEMASK_SCRATCH_FREE(x)	NODEMASK_FREE(x)
 
 
-#endif /* __LINUX_NODEMASK_H */
+#endif /* __freax_NODEMASK_H */

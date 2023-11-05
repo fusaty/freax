@@ -4,11 +4,11 @@
 #if !defined(_TRACE_QDISC_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_QDISC_H
 
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/tracepoint.h>
-#include <linux/ftrace.h>
-#include <linux/pkt_sched.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/tracepoint.h>
+#include <freax/ftrace.h>
+#include <freax/pkt_sched.h>
 #include <net/sch_generic.h>
 
 TRACE_EVENT(qdisc_dequeue,

@@ -11,7 +11,7 @@
  * the privacy-screen.
  */
 
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 #include <drm/drm_privacy_screen_driver.h>
 
 /*

@@ -5,7 +5,7 @@
  * Copyright (C) 2020 Álvaro Fernández Rojas <noltari@gmail.com>
  * Copyright (C) 2015 Simon Arlott
  *
- * Derived from bcm963xx_4.12L.06B_consumer/kernel/linux/arch/mips/bcm963xx/setup.c:
+ * Derived from bcm963xx_4.12L.06B_consumer/kernel/freax/arch/mips/bcm963xx/setup.c:
  * Copyright (C) 2002 Broadcom Corporation
  *
  * Derived from OpenWrt patches:
@@ -14,13 +14,13 @@
  * Copyright (C) 2008 Maxime Bizon <mbizon@freebox.fr>
  */
 
-#include <linux/clk.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
 
 /* USBH control register offsets */
 enum usbh_regs {

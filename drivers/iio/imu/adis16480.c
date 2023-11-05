@@ -5,27 +5,27 @@
  * Copyright 2012 Analog Devices Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/bitfield.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/math.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/spi/spi.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/lcm.h>
-#include <linux/property.h>
-#include <linux/swab.h>
-#include <linux/crc32.h>
+#include <freax/clk.h>
+#include <freax/bitfield.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/math.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/spi/spi.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/lcm.h>
+#include <freax/property.h>
+#include <freax/swab.h>
+#include <freax/crc32.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/imu/adis.h>
-#include <linux/iio/trigger_consumer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/imu/adis.h>
+#include <freax/iio/trigger_consumer.h>
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 #define ADIS16480_PAGE_SIZE 0x80
 

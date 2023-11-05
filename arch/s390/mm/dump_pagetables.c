@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/set_memory.h>
-#include <linux/ptdump.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/mm.h>
-#include <linux/kfence.h>
-#include <linux/kasan.h>
+#include <freax/set_memory.h>
+#include <freax/ptdump.h>
+#include <freax/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/mm.h>
+#include <freax/kfence.h>
+#include <freax/kasan.h>
 #include <asm/ptdump.h>
 #include <asm/kasan.h>
 #include <asm/abs_lowcore.h>

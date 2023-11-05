@@ -7,10 +7,10 @@
  *
  * Copyright (C) 2011, 2012 Cavium, Inc.
  */
-#ifndef __LINUX_MDIO_MUX_H
-#define __LINUX_MDIO_MUX_H
-#include <linux/device.h>
-#include <linux/phy.h>
+#ifndef __freax_MDIO_MUX_H
+#define __freax_MDIO_MUX_H
+#include <freax/device.h>
+#include <freax/phy.h>
 
 /* mdio_mux_init() - Initialize a MDIO mux
  * @dev		The device owning the MDIO mux
@@ -29,4 +29,4 @@ int mdio_mux_init(struct device *dev,
 
 void mdio_mux_uninit(void *mux_handle);
 
-#endif /* __LINUX_MDIO_MUX_H */
+#endif /* __freax_MDIO_MUX_H */

@@ -4,9 +4,9 @@
  *
  *  Copyright (C) 2009 - 2010  Paul Mundt
  */
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/init.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/init.h>
 
 #define INTACK		0xfe4100b8
 #define INTACKCLR	0xfe4100bc

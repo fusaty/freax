@@ -2,9 +2,9 @@
 /*
  */
 
-#include <linux/kernel.h>
-#include <linux/printk.h>
-#include <linux/ptrace.h>
+#include <freax/kernel.h>
+#include <freax/printk.h>
+#include <freax/ptrace.h>
 
 #include <asm/reg.h>
 

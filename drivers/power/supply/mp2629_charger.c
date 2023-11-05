@@ -7,16 +7,16 @@
  * Author: Saravanan Sekar <sravanhome@gmail.com>
  */
 
-#include <linux/bits.h>
-#include <linux/iio/consumer.h>
-#include <linux/iio/types.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/mp2629.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
+#include <freax/bits.h>
+#include <freax/iio/consumer.h>
+#include <freax/iio/types.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/mp2629.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
 
 #define MP2629_REG_INPUT_ILIM		0x00
 #define MP2629_REG_INPUT_VLIM		0x01

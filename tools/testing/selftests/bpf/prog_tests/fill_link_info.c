@@ -2,8 +2,8 @@
 /* Copyright (C) 2023 Yafang Shao <laoar.shao@gmail.com> */
 
 #include <string.h>
-#include <linux/bpf.h>
-#include <linux/limits.h>
+#include <freax/bpf.h>
+#include <freax/limits.h>
 #include <test_progs.h>
 #include "trace_helpers.h"
 #include "test_fill_link_info.skel.h"

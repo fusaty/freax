@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_NS_COMMON_H
-#define _LINUX_NS_COMMON_H
+#ifndef _freax_NS_COMMON_H
+#define _freax_NS_COMMON_H
 
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 
 struct proc_ns_operations;
 

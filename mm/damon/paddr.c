@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) "damon-pa: " fmt
 
-#include <linux/mmu_notifier.h>
-#include <linux/page_idle.h>
-#include <linux/pagemap.h>
-#include <linux/rmap.h>
-#include <linux/swap.h>
+#include <freax/mmu_notifier.h>
+#include <freax/page_idle.h>
+#include <freax/pagemap.h>
+#include <freax/rmap.h>
+#include <freax/swap.h>
 
 #include "../internal.h"
 #include "ops-common.h"

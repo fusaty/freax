@@ -2,14 +2,14 @@
 /*
  * comedi_buf.c
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  * Copyright (C) 2002 Frank Mori Hess <fmhess@users.sourceforge.net>
  */
 
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/comedi/comedidev.h>
 #include "comedi_internal.h"
 
 #ifdef PAGE_KERNEL_NOCACHE

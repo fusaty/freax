@@ -9,16 +9,16 @@
  * (originally switch class is supported)
  */
 
-#include <linux/devm-helpers.h>
-#include <linux/extcon-provider.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/devm-helpers.h>
+#include <freax/extcon-provider.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 /**
  * struct gpio_extcon_data - A simple GPIO-controlled extcon device state container.

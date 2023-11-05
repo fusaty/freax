@@ -5,13 +5,13 @@
  * Copyright (c) 2014-2017 Mentor Graphics Inc.
  * Copyright (C) 2017 Pengutronix, Philipp Zabel <kernel@pengutronix.de>
  */
-#include <linux/delay.h>
-#include <linux/gcd.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of_graph.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
+#include <freax/delay.h>
+#include <freax/gcd.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of_graph.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>

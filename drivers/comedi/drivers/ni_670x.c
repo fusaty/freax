@@ -2,7 +2,7 @@
 /*
  * Comedi driver for NI 670x devices
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2001 David A. Schleef <ds@schleef.org>
  */
 
@@ -21,10 +21,10 @@
  *   322110b.pdf	PCI/PXI-6703/6704 User Manual
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/comedi/comedi_pci.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/comedi/comedi_pci.h>
 
 #define AO_VALUE_OFFSET			0x00
 #define	AO_CHAN_OFFSET			0x0c

@@ -3,7 +3,7 @@
  * Copyright (C) 2012 Red Hat
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #include <drm/drm_drv.h>
 #include <drm/drm_fbdev_generic.h>

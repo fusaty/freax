@@ -9,7 +9,7 @@
  *
  * Please send any bug reports or fixes you make to the
  * email address(es):
- *    lksctp developers <linux-sctp@vger.kernel.org>
+ *    lksctp developers <freax-sctp@vger.kernel.org>
  *
  * Written or modified by:
  *   La Monte H.P. Yarroll <piggy@acm.org>
@@ -25,8 +25,8 @@
 #ifndef __sctp_constants_h__
 #define __sctp_constants_h__
 
-#include <linux/sctp.h>
-#include <linux/ipv6.h> /* For ipv6hdr. */
+#include <freax/sctp.h>
+#include <freax/ipv6.h> /* For ipv6hdr. */
 #include <net/tcp_states.h>  /* For TCP states used in enum sctp_sock_state */
 
 /* Value used for stream negotiation. */

@@ -1,26 +1,26 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* Copyright (c) 2010,2015,2019 The Linux Foundation. All rights reserved.
+/* Copyright (c) 2010,2015,2019 The freax Foundation. All rights reserved.
  * Copyright (C) 2015 Linaro Ltd.
  */
 
-#include <linux/arm-smccc.h>
-#include <linux/clk.h>
-#include <linux/completion.h>
-#include <linux/cpumask.h>
-#include <linux/dma-mapping.h>
-#include <linux/export.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/init.h>
-#include <linux/interconnect.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/reset-controller.h>
-#include <linux/types.h>
+#include <freax/arm-smccc.h>
+#include <freax/clk.h>
+#include <freax/completion.h>
+#include <freax/cpumask.h>
+#include <freax/dma-mapping.h>
+#include <freax/export.h>
+#include <freax/firmware/qcom/qcom_scm.h>
+#include <freax/init.h>
+#include <freax/interconnect.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/reset-controller.h>
+#include <freax/types.h>
 
 #include "qcom_scm.h"
 
@@ -392,7 +392,7 @@ static int qcom_scm_set_boot_addr_mc(void *entry, unsigned int flags)
  * qcom_scm_set_warm_boot_addr() - Set the warm boot address for all cpus
  * @entry: Entry point function for the cpus
  *
- * Set the Linux entry point for the SCM to transfer control to when coming
+ * Set the freax entry point for the SCM to transfer control to when coming
  * out of a power down. CPU power down may be executed on cpuidle or hotplug.
  */
 int qcom_scm_set_warm_boot_addr(void *entry)

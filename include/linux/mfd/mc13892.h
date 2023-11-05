@@ -3,10 +3,10 @@
  * Copyright 2010 Yong Shen <yong.shen@linaro.org>
  */
 
-#ifndef __LINUX_MFD_MC13892_H
-#define __LINUX_MFD_MC13892_H
+#ifndef __freax_MFD_MC13892_H
+#define __freax_MFD_MC13892_H
 
-#include <linux/mfd/mc13xxx.h>
+#include <freax/mfd/mc13xxx.h>
 
 #define MC13892_SW1		0
 #define MC13892_SW2		1

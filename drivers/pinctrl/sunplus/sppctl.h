@@ -7,12 +7,12 @@
 #ifndef __SPPCTL_H__
 #define __SPPCTL_H__
 
-#include <linux/bits.h>
-#include <linux/gpio/driver.h>
-#include <linux/kernel.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/gpio/driver.h>
+#include <freax/kernel.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #define SPPCTL_MODULE_NAME		"sppctl_sp7021"
 

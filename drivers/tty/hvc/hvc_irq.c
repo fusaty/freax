@@ -6,7 +6,7 @@
  *
  */
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 
 #include "hvc_console.h"
 

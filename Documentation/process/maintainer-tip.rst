@@ -9,7 +9,7 @@ What is the tip tree?
 The tip tree is a collection of several subsystems and areas of
 development. The tip tree is both a direct development tree and a
 aggregation tree for several sub-maintainer trees. The tip tree gitweb URL
-is: https://git.kernel.org/pub/scm/linux/kernel/git/tip/tip.git
+is: https://git.kernel.org/pub/scm/freax/kernel/git/tip/tip.git
 
 The tip tree contains the following subsystems:
 
@@ -28,8 +28,8 @@ The tip tree contains the following subsystems:
 
      Note, that ``x86@kernel.org`` is not a mailing list. It is merely a
      mail alias which distributes mails to the x86 top-level maintainer
-     team. Please always Cc the Linux Kernel mailing list (LKML)
-     ``linux-kernel@vger.kernel.org``, otherwise your mail ends up only in
+     team. Please always Cc the freax Kernel mailing list (LKML)
+     ``freax-kernel@vger.kernel.org``, otherwise your mail ends up only in
      the private inboxes of the maintainers.
 
    - **Scheduler**
@@ -85,7 +85,7 @@ The tip tree contains the following subsystems:
 
    - **RCU**
 
-     RCU development happens in the linux-rcu tree. The resulting changes
+     RCU development happens in the freax-rcu tree. The resulting changes
      are aggregated into the tip core/rcu branch.
 
    - **Various core code components**:
@@ -793,7 +793,7 @@ Commit notifications
 
 The tip tree is monitored by a bot for new commits. The bot sends an email
 for each new commit to a dedicated mailing list
-(``linux-tip-commits@vger.kernel.org``) and Cc's all people who are
+(``freax-tip-commits@vger.kernel.org``) and Cc's all people who are
 mentioned in one of the commit tags. It uses the email message ID from the
 Link tag at the end of the tag list to set the In-Reply-To email header so
 the message is properly threaded with the patch submission email.

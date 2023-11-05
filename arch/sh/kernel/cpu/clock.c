@@ -11,9 +11,9 @@
  *
  *  Modified for omap shared clock framework by Tony Lindgren <tony@atomide.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/clk.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/clk.h>
 #include <asm/clock.h>
 #include <asm/machvec.h>
 

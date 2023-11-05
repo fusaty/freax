@@ -11,10 +11,10 @@
  *  http://www.sata-io.org/
  */
 
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/export.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/blkdev.h>
+#include <freax/export.h>
+#include <freax/pci.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_eh.h>
@@ -23,7 +23,7 @@
 #include <scsi/scsi_dbg.h>
 #include "../scsi/scsi_transport_api.h"
 
-#include <linux/libata.h>
+#include <freax/libata.h>
 
 #include <trace/events/libata.h>
 #include "libata.h"

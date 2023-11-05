@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/nmi.h>
-#include <linux/swap.h>
-#include <linux/smp.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/spinlock.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/nmi.h>
+#include <freax/swap.h>
+#include <freax/smp.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
+#include <freax/spinlock.h>
 
 #include <asm/cpu_entry_area.h>
 #include <asm/fixmap.h>
@@ -16,7 +16,7 @@
 #include <asm/tlb.h>
 #include <asm/tlbflush.h>
 #include <asm/io.h>
-#include <linux/vmalloc.h>
+#include <freax/vmalloc.h>
 
 unsigned int __VMALLOC_RESERVE = 128 << 20;
 

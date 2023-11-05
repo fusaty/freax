@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex freax Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2023 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.     *
@@ -21,12 +21,12 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/blkdev.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/lockdep.h>
+#include <freax/blkdev.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/lockdep.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -34,7 +34,7 @@
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_transport_fc.h>
 #include <scsi/fc/fc_fs.h>
-#include <linux/crash_dump.h>
+#include <freax/crash_dump.h>
 #ifdef CONFIG_X86
 #include <asm/set_memory.h>
 #endif
@@ -7753,7 +7753,7 @@ lpfc_set_host_data(struct lpfc_hba *phba, LPFC_MBOXQ_t *mbox)
 					LPFC_HOST_OS_DRIVER_VERSION_SIZE;
 	snprintf(mbox->u.mqe.un.set_host_data.un.data,
 		 LPFC_HOST_OS_DRIVER_VERSION_SIZE,
-		 "Linux %s v"LPFC_DRIVER_VERSION,
+		 "freax %s v"LPFC_DRIVER_VERSION,
 		 (phba->hba_flag & HBA_FCOE_MODE) ? "FCoE" : "FC");
 }
 
@@ -20732,10 +20732,10 @@ lpfc_sli_read_link_ste(struct lpfc_hba *phba)
 			break;
 		/*
 		 * If the TLV is not driver specific TLV or driver id is
-		 * not linux driver id, skip the record.
+		 * not freax driver id, skip the record.
 		 */
 		if ((rgn23_data[offset] != DRIVER_SPECIFIC_TYPE) ||
-		    (rgn23_data[offset + 2] != LINUX_DRIVER_ID) ||
+		    (rgn23_data[offset + 2] != freax_DRIVER_ID) ||
 		    (rgn23_data[offset + 3] != 0)) {
 			offset += rgn23_data[offset + 1] * 4 + 4;
 			continue;

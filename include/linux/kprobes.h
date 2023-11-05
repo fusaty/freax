@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-#ifndef _LINUX_KPROBES_H
-#define _LINUX_KPROBES_H
+#ifndef _freax_KPROBES_H
+#define _freax_KPROBES_H
 /*
  *  Kernel Probes (KProbes)
  *
@@ -15,19 +15,19 @@
  *		<jkenisto@us.ibm.com>  and Prasanna S Panchamukhi
  *		<prasanna@in.ibm.com> added function-return probes.
  */
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/smp.h>
-#include <linux/bug.h>
-#include <linux/percpu.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/mutex.h>
-#include <linux/ftrace.h>
-#include <linux/objpool.h>
-#include <linux/rethook.h>
+#include <freax/compiler.h>
+#include <freax/linkage.h>
+#include <freax/list.h>
+#include <freax/notifier.h>
+#include <freax/smp.h>
+#include <freax/bug.h>
+#include <freax/percpu.h>
+#include <freax/spinlock.h>
+#include <freax/rcupdate.h>
+#include <freax/mutex.h>
+#include <freax/ftrace.h>
+#include <freax/objpool.h>
+#include <freax/rethook.h>
 #include <asm/kprobes.h>
 
 #ifdef CONFIG_KPROBES
@@ -594,4 +594,4 @@ static nokprobe_inline bool kprobe_page_fault(struct pt_regs *regs,
 	return kprobe_fault_handler(regs, trap);
 }
 
-#endif /* _LINUX_KPROBES_H */
+#endif /* _freax_KPROBES_H */

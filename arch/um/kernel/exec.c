@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2000 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  */
 
-#include <linux/stddef.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/ptrace.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/slab.h>
+#include <freax/stddef.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/ptrace.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/slab.h>
 #include <asm/current.h>
 #include <asm/processor.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <as-layout.h>
 #include <mem_user.h>
 #include <registers.h>

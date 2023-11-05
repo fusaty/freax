@@ -6,7 +6,7 @@
 #ifndef __I9XX_WM_H__
 #define __I9XX_WM_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_i915_private;
 struct intel_crtc_state;

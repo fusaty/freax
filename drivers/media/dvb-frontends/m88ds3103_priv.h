@@ -10,11 +10,11 @@
 
 #include <media/dvb_frontend.h>
 #include "m88ds3103.h"
-#include <linux/int_log.h>
-#include <linux/firmware.h>
-#include <linux/i2c-mux.h>
-#include <linux/regmap.h>
-#include <linux/math64.h>
+#include <freax/int_log.h>
+#include <freax/firmware.h>
+#include <freax/i2c-mux.h>
+#include <freax/regmap.h>
+#include <freax/math64.h>
 
 #define M88DS3103B_FIRMWARE "dvb-demod-m88ds3103b.fw"
 #define M88DS3103_FIRMWARE  "dvb-demod-m88ds3103.fw"

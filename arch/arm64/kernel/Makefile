@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the linux kernel.
+# Makefile for the freax kernel.
 #
 
 CFLAGS_armv8_deprecated.o := -I$(src)
@@ -81,10 +81,10 @@ $(obj)/vdso32-wrap.o: $(obj)/vdso32/vdso.so
 
 obj-y					+= probes/
 obj-y					+= head.o
-extra-y					+= vmlinux.lds
+extra-y					+= vmfreax.lds
 
 ifeq ($(CONFIG_DEBUG_EFI),y)
-AFLAGS_head.o += -DVMLINUX_PATH="\"$(realpath $(objtree)/vmlinux)\""
+AFLAGS_head.o += -DVMfreax_PATH="\"$(realpath $(objtree)/vmfreax)\""
 endif
 
 # for cleaning

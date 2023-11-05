@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: LGPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: LGPL-2.0+ WITH freax-syscall-note */
 /*
  * Copyright (C) 2006-2009 Red Hat, Inc.
  *
@@ -8,8 +8,8 @@
 #ifndef __DM_LOG_USERSPACE_H__
 #define __DM_LOG_USERSPACE_H__
 
-#include <linux/types.h>
-#include <linux/dm-ioctl.h> /* For DM_UUID_LEN */
+#include <freax/types.h>
+#include <freax/dm-ioctl.h> /* For DM_UUID_LEN */
 
 /*
  * The device-mapper userspace log module consists of a kernel component and

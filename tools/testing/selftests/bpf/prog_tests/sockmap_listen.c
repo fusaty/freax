@@ -8,7 +8,7 @@
  *  3. BPF reuseport helper - bpf_sk_select_reuseport
  */
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 #include <errno.h>
 #include <error.h>
 #include <limits.h>
@@ -18,7 +18,7 @@
 #include <string.h>
 #include <sys/select.h>
 #include <unistd.h>
-#include <linux/vm_sockets.h>
+#include <freax/vm_sockets.h>
 
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>

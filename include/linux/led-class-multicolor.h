@@ -3,10 +3,10 @@
  * Copyright (C) 2019-20 Texas Instruments Incorporated - http://www.ti.com/
  */
 
-#ifndef _LINUX_MULTICOLOR_LEDS_H_INCLUDED
-#define _LINUX_MULTICOLOR_LEDS_H_INCLUDED
+#ifndef _freax_MULTICOLOR_LEDS_H_INCLUDED
+#define _freax_MULTICOLOR_LEDS_H_INCLUDED
 
-#include <linux/leds.h>
+#include <freax/leds.h>
 #include <dt-bindings/leds/common.h>
 
 struct mc_subled {
@@ -106,4 +106,4 @@ static inline int devm_led_classdev_multicolor_register(struct device *parent,
 							 NULL);
 }
 
-#endif	/* _LINUX_MULTICOLOR_LEDS_H_INCLUDED */
+#endif	/* _freax_MULTICOLOR_LEDS_H_INCLUDED */

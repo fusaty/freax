@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/fork.c
+ *  freax/kernel/fork.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -12,96 +12,96 @@
  * management can be a bitch. See 'mm/memory.c': 'copy_page_range()'
  */
 
-#include <linux/anon_inodes.h>
-#include <linux/slab.h>
-#include <linux/sched/autogroup.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/user.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/stat.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/cputime.h>
-#include <linux/seq_file.h>
-#include <linux/rtmutex.h>
-#include <linux/init.h>
-#include <linux/unistd.h>
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/completion.h>
-#include <linux/personality.h>
-#include <linux/mempolicy.h>
-#include <linux/sem.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/iocontext.h>
-#include <linux/key.h>
-#include <linux/kmsan.h>
-#include <linux/binfmts.h>
-#include <linux/mman.h>
-#include <linux/mmu_notifier.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/mm_inline.h>
-#include <linux/nsproxy.h>
-#include <linux/capability.h>
-#include <linux/cpu.h>
-#include <linux/cgroup.h>
-#include <linux/security.h>
-#include <linux/hugetlb.h>
-#include <linux/seccomp.h>
-#include <linux/swap.h>
-#include <linux/syscalls.h>
-#include <linux/jiffies.h>
-#include <linux/futex.h>
-#include <linux/compat.h>
-#include <linux/kthread.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/rcupdate.h>
-#include <linux/ptrace.h>
-#include <linux/mount.h>
-#include <linux/audit.h>
-#include <linux/memcontrol.h>
-#include <linux/ftrace.h>
-#include <linux/proc_fs.h>
-#include <linux/profile.h>
-#include <linux/rmap.h>
-#include <linux/ksm.h>
-#include <linux/acct.h>
-#include <linux/userfaultfd_k.h>
-#include <linux/tsacct_kern.h>
-#include <linux/cn_proc.h>
-#include <linux/freezer.h>
-#include <linux/delayacct.h>
-#include <linux/taskstats_kern.h>
-#include <linux/tty.h>
-#include <linux/fs_struct.h>
-#include <linux/magic.h>
-#include <linux/perf_event.h>
-#include <linux/posix-timers.h>
-#include <linux/user-return-notifier.h>
-#include <linux/oom.h>
-#include <linux/khugepaged.h>
-#include <linux/signalfd.h>
-#include <linux/uprobes.h>
-#include <linux/aio.h>
-#include <linux/compiler.h>
-#include <linux/sysctl.h>
-#include <linux/kcov.h>
-#include <linux/livepatch.h>
-#include <linux/thread_info.h>
-#include <linux/stackleak.h>
-#include <linux/kasan.h>
-#include <linux/scs.h>
-#include <linux/io_uring.h>
-#include <linux/bpf.h>
-#include <linux/stackprotector.h>
-#include <linux/user_events.h>
-#include <linux/iommu.h>
+#include <freax/anon_inodes.h>
+#include <freax/slab.h>
+#include <freax/sched/autogroup.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/coredump.h>
+#include <freax/sched/user.h>
+#include <freax/sched/numa_balancing.h>
+#include <freax/sched/stat.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/sched/cputime.h>
+#include <freax/seq_file.h>
+#include <freax/rtmutex.h>
+#include <freax/init.h>
+#include <freax/unistd.h>
+#include <freax/module.h>
+#include <freax/vmalloc.h>
+#include <freax/completion.h>
+#include <freax/personality.h>
+#include <freax/mempolicy.h>
+#include <freax/sem.h>
+#include <freax/file.h>
+#include <freax/fdtable.h>
+#include <freax/iocontext.h>
+#include <freax/key.h>
+#include <freax/kmsan.h>
+#include <freax/binfmts.h>
+#include <freax/mman.h>
+#include <freax/mmu_notifier.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/mm_inline.h>
+#include <freax/nsproxy.h>
+#include <freax/capability.h>
+#include <freax/cpu.h>
+#include <freax/cgroup.h>
+#include <freax/security.h>
+#include <freax/hugetlb.h>
+#include <freax/seccomp.h>
+#include <freax/swap.h>
+#include <freax/syscalls.h>
+#include <freax/jiffies.h>
+#include <freax/futex.h>
+#include <freax/compat.h>
+#include <freax/kthread.h>
+#include <freax/task_io_accounting_ops.h>
+#include <freax/rcupdate.h>
+#include <freax/ptrace.h>
+#include <freax/mount.h>
+#include <freax/audit.h>
+#include <freax/memcontrol.h>
+#include <freax/ftrace.h>
+#include <freax/proc_fs.h>
+#include <freax/profile.h>
+#include <freax/rmap.h>
+#include <freax/ksm.h>
+#include <freax/acct.h>
+#include <freax/userfaultfd_k.h>
+#include <freax/tsacct_kern.h>
+#include <freax/cn_proc.h>
+#include <freax/freezer.h>
+#include <freax/delayacct.h>
+#include <freax/taskstats_kern.h>
+#include <freax/tty.h>
+#include <freax/fs_struct.h>
+#include <freax/magic.h>
+#include <freax/perf_event.h>
+#include <freax/posix-timers.h>
+#include <freax/user-return-notifier.h>
+#include <freax/oom.h>
+#include <freax/khugepaged.h>
+#include <freax/signalfd.h>
+#include <freax/uprobes.h>
+#include <freax/aio.h>
+#include <freax/compiler.h>
+#include <freax/sysctl.h>
+#include <freax/kcov.h>
+#include <freax/livepatch.h>
+#include <freax/thread_info.h>
+#include <freax/stackleak.h>
+#include <freax/kasan.h>
+#include <freax/scs.h>
+#include <freax/io_uring.h>
+#include <freax/bpf.h>
+#include <freax/stackprotector.h>
+#include <freax/user_events.h>
+#include <freax/iommu.h>
 
 #include <asm/pgalloc.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>
@@ -124,7 +124,7 @@
 /*
  * Protected counters by write_lock_irq(&tasklist_lock)
  */
-unsigned long total_forks;	/* Handle normal Linux uptimes. */
+unsigned long total_forks;	/* Handle normal freax uptimes. */
 int nr_threads;			/* The idle threads do not count.. */
 
 static int max_threads;		/* tunable limit on nr_threads */
@@ -1221,7 +1221,7 @@ static int __init coredump_filter_setup(char *s)
 
 __setup("coredump_filter=", coredump_filter_setup);
 
-#include <linux/init_task.h>
+#include <freax/init_task.h>
 
 static void mm_init_aio(struct mm_struct *mm)
 {

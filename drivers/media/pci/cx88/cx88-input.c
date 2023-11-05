@@ -11,11 +11,11 @@
 
 #include "cx88.h"
 
-#include <linux/init.h>
-#include <linux/hrtimer.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/hrtimer.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 #include <media/rc-core.h>
 

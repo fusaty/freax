@@ -1,35 +1,35 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2015 - 2021 Intel Corporation */
 #ifndef IRDMA_MAIN_H
 #define IRDMA_MAIN_H
 
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/if_vlan.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/if_vlan.h>
 #include <net/addrconf.h>
 #include <net/netevent.h>
 #include <net/tcp.h>
 #include <net/ip6_route.h>
 #include <net/flow.h>
 #include <net/secure_seq.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/crc32c.h>
-#include <linux/kthread.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/inetdevice.h>
+#include <freax/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/workqueue.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/crc32c.h>
+#include <freax/kthread.h>
 #ifndef CONFIG_64BIT
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 #endif
-#include <linux/auxiliary_bus.h>
-#include <linux/net/intel/iidc.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/net/intel/iidc.h>
 #include <crypto/hash.h>
 #include <rdma/ib_smi.h>
 #include <rdma/ib_verbs.h>

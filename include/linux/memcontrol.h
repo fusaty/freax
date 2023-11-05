@@ -2,26 +2,26 @@
 /* memcontrol.h - Memory Controller
  *
  * Copyright IBM Corporation, 2007
- * Author Balbir Singh <balbir@linux.vnet.ibm.com>
+ * Author Balbir Singh <balbir@freax.vnet.ibm.com>
  *
  * Copyright 2007 OpenVZ SWsoft Inc
  * Author: Pavel Emelianov <xemul@openvz.org>
  */
 
-#ifndef _LINUX_MEMCONTROL_H
-#define _LINUX_MEMCONTROL_H
-#include <linux/cgroup.h>
-#include <linux/vm_event_item.h>
-#include <linux/hardirq.h>
-#include <linux/jump_label.h>
-#include <linux/page_counter.h>
-#include <linux/vmpressure.h>
-#include <linux/eventfd.h>
-#include <linux/mm.h>
-#include <linux/vmstat.h>
-#include <linux/writeback.h>
-#include <linux/page-flags.h>
-#include <linux/shrinker.h>
+#ifndef _freax_MEMCONTROL_H
+#define _freax_MEMCONTROL_H
+#include <freax/cgroup.h>
+#include <freax/vm_event_item.h>
+#include <freax/hardirq.h>
+#include <freax/jump_label.h>
+#include <freax/page_counter.h>
+#include <freax/vmpressure.h>
+#include <freax/eventfd.h>
+#include <freax/mm.h>
+#include <freax/vmstat.h>
+#include <freax/writeback.h>
+#include <freax/page-flags.h>
+#include <freax/shrinker.h>
 
 struct mem_cgroup;
 struct obj_cgroup;
@@ -1941,4 +1941,4 @@ static inline void obj_cgroup_uncharge_zswap(struct obj_cgroup *objcg,
 }
 #endif
 
-#endif /* _LINUX_MEMCONTROL_H */
+#endif /* _freax_MEMCONTROL_H */

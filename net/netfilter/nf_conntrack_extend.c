@@ -2,15 +2,15 @@
 /* Structure dynamic extension infrastructure
  * Copyright (C) 2004 Rusty Russell IBM Corporation
  * Copyright (C) 2007 Netfilter Core Team <coreteam@netfilter.org>
- * Copyright (C) 2007 USAGI/WIDE Project <http://www.linux-ipv6.org>
+ * Copyright (C) 2007 USAGI/WIDE Project <http://www.freax-ipv6.org>
  */
-#include <linux/kernel.h>
-#include <linux/kmemleak.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/rcupdate.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
+#include <freax/kernel.h>
+#include <freax/kmemleak.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/rcupdate.h>
+#include <freax/slab.h>
+#include <freax/skbuff.h>
 #include <net/netfilter/nf_conntrack_extend.h>
 
 #include <net/netfilter/nf_conntrack_helper.h>

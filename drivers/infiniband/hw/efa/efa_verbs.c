@@ -1,12 +1,12 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /*
  * Copyright 2018-2023 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
 
-#include <linux/dma-buf.h>
-#include <linux/dma-resv.h>
-#include <linux/vmalloc.h>
-#include <linux/log2.h>
+#include <freax/dma-buf.h>
+#include <freax/dma-resv.h>
+#include <freax/vmalloc.h>
+#include <freax/log2.h>
 
 #include <rdma/ib_addr.h>
 #include <rdma/ib_umem.h>

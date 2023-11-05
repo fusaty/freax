@@ -10,7 +10,7 @@
 #include <asm/kvm.h>
 #include <asm/kvm_para.h>
 #include <sys/eventfd.h>
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 
 #include "processor.h"
 #include "test_util.h"

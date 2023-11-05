@@ -6,14 +6,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/hash.h>
-#include <linux/l2tp.h>
-#include <linux/in.h>
-#include <linux/etherdevice.h>
-#include <linux/spinlock.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/socket.h>
+#include <freax/hash.h>
+#include <freax/l2tp.h>
+#include <freax/in.h>
+#include <freax/etherdevice.h>
+#include <freax/spinlock.h>
 #include <net/sock.h>
 #include <net/ip.h>
 #include <net/icmp.h>
@@ -25,9 +25,9 @@
 #include <net/xfrm.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/udp.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/udp.h>
 
 #include "l2tp_core.h"
 

@@ -7,15 +7,15 @@
  * Author: Mark Brown <broonie@kernel.org>
  */
 
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/of.h>
-#include <linux/platform_data/isl9305.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/of.h>
+#include <freax/platform_data/isl9305.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/slab.h>
 
 /*
  * Registers

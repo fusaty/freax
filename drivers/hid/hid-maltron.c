@@ -15,9 +15,9 @@
  * Copyright (c) 2018 William Whistler <wtbw@wtbw.co.uk>
  */
 
-#include <linux/device.h>
-#include <linux/hid.h>
-#include <linux/module.h>
+#include <freax/device.h>
+#include <freax/hid.h>
+#include <freax/module.h>
 
 #include "hid-ids.h"
 

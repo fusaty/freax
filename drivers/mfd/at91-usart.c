@@ -10,10 +10,10 @@
 
 #include <dt-bindings/mfd/at91-usart.h>
 
-#include <linux/module.h>
-#include <linux/mfd/core.h>
-#include <linux/of.h>
-#include <linux/property.h>
+#include <freax/module.h>
+#include <freax/mfd/core.h>
+#include <freax/of.h>
+#include <freax/property.h>
 
 static const struct mfd_cell at91_usart_spi_subdev =
 	MFD_CELL_NAME("at91_usart_spi");

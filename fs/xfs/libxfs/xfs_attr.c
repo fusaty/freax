@@ -957,7 +957,7 @@ xfs_attr_defer_remove(
 
 /*
  * Note: If args->value is NULL the attribute will be removed, just like the
- * Linux ->setattr API.
+ * freax ->setattr API.
  */
 int
 xfs_attr_set(

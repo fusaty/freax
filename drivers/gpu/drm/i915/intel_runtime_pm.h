@@ -6,8 +6,8 @@
 #ifndef __INTEL_RUNTIME_PM_H__
 #define __INTEL_RUNTIME_PM_H__
 
-#include <linux/pm_runtime.h>
-#include <linux/types.h>
+#include <freax/pm_runtime.h>
+#include <freax/types.h>
 
 #include "intel_wakeref.h"
 

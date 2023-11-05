@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#ifndef LINUX_KALLSYMS_INTERNAL_H_
-#define LINUX_KALLSYMS_INTERNAL_H_
+#ifndef freax_KALLSYMS_INTERNAL_H_
+#define freax_KALLSYMS_INTERNAL_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * These will be re-linked against their real values
@@ -28,4 +28,4 @@ extern const u16 kallsyms_token_index[] __weak;
 extern const unsigned int kallsyms_markers[] __weak;
 extern const u8 kallsyms_seqs_of_names[] __weak;
 
-#endif // LINUX_KALLSYMS_INTERNAL_H_
+#endif // freax_KALLSYMS_INTERNAL_H_

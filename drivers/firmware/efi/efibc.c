@@ -6,11 +6,11 @@
 
 #define pr_fmt(fmt) "efibc: " fmt
 
-#include <linux/efi.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/ucs2_string.h>
+#include <freax/efi.h>
+#include <freax/module.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
+#include <freax/ucs2_string.h>
 
 #define MAX_DATA_LEN	512
 
@@ -19,7 +19,7 @@ static int efibc_set_variable(efi_char16_t *name, efi_char16_t *value,
 {
 	efi_status_t status;
 
-	status = efi.set_variable(name, &LINUX_EFI_LOADER_ENTRY_GUID,
+	status = efi.set_variable(name, &freax_EFI_LOADER_ENTRY_GUID,
 				  EFI_VARIABLE_NON_VOLATILE
 				  | EFI_VARIABLE_BOOTSERVICE_ACCESS
 				  | EFI_VARIABLE_RUNTIME_ACCESS,

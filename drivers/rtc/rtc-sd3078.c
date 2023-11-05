@@ -4,12 +4,12 @@
  * Copyright (C) 2018 Zoro Li
  */
 
-#include <linux/bcd.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <freax/bcd.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
 
 #define SD3078_REG_SC			0x00
 #define SD3078_REG_MN			0x01

@@ -9,12 +9,12 @@
  * Rajendra Nayak <rnayak@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/of_irq.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/of_irq.h>
 
 #include "soc.h"
 #include "common.h"

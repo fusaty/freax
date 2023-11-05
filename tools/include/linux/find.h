@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_FIND_H_
-#define _TOOLS_LINUX_FIND_H_
+#ifndef _TOOLS_freax_FIND_H_
+#define _TOOLS_freax_FIND_H_
 
-#ifndef _TOOLS_LINUX_BITMAP_H
-#error tools: only <linux/bitmap.h> can be included directly
+#ifndef _TOOLS_freax_BITMAP_H
+#error tools: only <freax/bitmap.h> can be included directly
 #endif
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 unsigned long _find_next_bit(const unsigned long *addr1, unsigned long nbits,
 				unsigned long start);
@@ -174,4 +174,4 @@ unsigned long find_first_zero_bit(const unsigned long *addr, unsigned long size)
 }
 #endif
 
-#endif /*__LINUX_FIND_H_ */
+#endif /*__freax_FIND_H_ */

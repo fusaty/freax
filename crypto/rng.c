@@ -9,16 +9,16 @@
  */
 
 #include <crypto/internal/rng.h>
-#include <linux/atomic.h>
-#include <linux/cryptouser.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/atomic.h>
+#include <freax/cryptouser.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/random.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 #include <net/netlink.h>
 
 #include "internal.h"

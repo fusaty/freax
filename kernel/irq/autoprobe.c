@@ -5,11 +5,11 @@
  * This file contains the interrupt probing code and driver APIs.
  */
 
-#include <linux/irq.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/async.h>
+#include <freax/irq.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/async.h>
 
 #include "internals.h"
 

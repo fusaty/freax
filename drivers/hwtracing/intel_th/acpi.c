@@ -7,12 +7,12 @@
 
 #define pr_fmt(fmt)	KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/sysfs.h>
+#include <freax/platform_device.h>
+#include <freax/acpi.h>
 
 #include "intel_th.h"
 

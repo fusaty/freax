@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/buffer.c
+ *  freax/fs/buffer.c
  *
  *  Copyright (C) 1991, 1992, 2002  Linus Torvalds
  */
@@ -19,37 +19,37 @@
  * async buffer flushing, 1999 Andrea Arcangeli <andrea@suse.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/syscalls.h>
-#include <linux/fs.h>
-#include <linux/iomap.h>
-#include <linux/mm.h>
-#include <linux/percpu.h>
-#include <linux/slab.h>
-#include <linux/capability.h>
-#include <linux/blkdev.h>
-#include <linux/file.h>
-#include <linux/quotaops.h>
-#include <linux/highmem.h>
-#include <linux/export.h>
-#include <linux/backing-dev.h>
-#include <linux/writeback.h>
-#include <linux/hash.h>
-#include <linux/suspend.h>
-#include <linux/buffer_head.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/bio.h>
-#include <linux/cpu.h>
-#include <linux/bitops.h>
-#include <linux/mpage.h>
-#include <linux/bit_spinlock.h>
-#include <linux/pagevec.h>
-#include <linux/sched/mm.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/syscalls.h>
+#include <freax/fs.h>
+#include <freax/iomap.h>
+#include <freax/mm.h>
+#include <freax/percpu.h>
+#include <freax/slab.h>
+#include <freax/capability.h>
+#include <freax/blkdev.h>
+#include <freax/file.h>
+#include <freax/quotaops.h>
+#include <freax/highmem.h>
+#include <freax/export.h>
+#include <freax/backing-dev.h>
+#include <freax/writeback.h>
+#include <freax/hash.h>
+#include <freax/suspend.h>
+#include <freax/buffer_head.h>
+#include <freax/task_io_accounting_ops.h>
+#include <freax/bio.h>
+#include <freax/cpu.h>
+#include <freax/bitops.h>
+#include <freax/mpage.h>
+#include <freax/bit_spinlock.h>
+#include <freax/pagevec.h>
+#include <freax/sched/mm.h>
 #include <trace/events/block.h>
-#include <linux/fscrypt.h>
-#include <linux/fsverity.h>
-#include <linux/sched/isolation.h>
+#include <freax/fscrypt.h>
+#include <freax/fsverity.h>
+#include <freax/sched/isolation.h>
 
 #include "internal.h"
 

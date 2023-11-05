@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * File: linux/nfsacl.h
+ * File: freax/nfsacl.h
  *
  * (C) 2003 Andreas Gruenbacher <agruen@suse.de>
  */
-#ifndef _UAPI__LINUX_NFSACL_H
-#define _UAPI__LINUX_NFSACL_H
+#ifndef _UAPI__freax_NFSACL_H
+#define _UAPI__freax_NFSACL_H
 
 #define NFS_ACL_PROGRAM	100227
 
@@ -30,4 +30,4 @@
 /* Flag for Default ACL entries */
 #define NFS_ACL_DEFAULT		0x1000
 
-#endif /* _UAPI__LINUX_NFSACL_H */
+#endif /* _UAPI__freax_NFSACL_H */

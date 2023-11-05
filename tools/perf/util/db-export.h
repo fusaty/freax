@@ -7,8 +7,8 @@
 #ifndef __PERF_DB_EXPORT_H
 #define __PERF_DB_EXPORT_H
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/list.h>
 
 struct evsel;
 struct machine;

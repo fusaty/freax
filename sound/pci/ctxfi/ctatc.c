@@ -19,8 +19,8 @@
 #include "ctamixer.h"
 #include "ctdaio.h"
 #include "cttimer.h"
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
 #include <sound/pcm.h>
 #include <sound/control.h>
 #include <sound/asoundef.h>

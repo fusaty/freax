@@ -3,13 +3,13 @@
  * Copyright (c) 2021 MediaTek Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/soc/mediatek/mtk-cmdq.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/soc/mediatek/mtk-cmdq.h>
 
 #include "mtk_disp_drv.h"
 #include "mtk_drm_crtc.h"

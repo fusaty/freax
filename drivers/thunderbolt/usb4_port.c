@@ -3,12 +3,12 @@
  * USB4 port device
  *
  * Copyright (C) 2021, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/pm_runtime.h>
-#include <linux/component.h>
-#include <linux/property.h>
+#include <freax/pm_runtime.h>
+#include <freax/component.h>
+#include <freax/property.h>
 
 #include "tb.h"
 

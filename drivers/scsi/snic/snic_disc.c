@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2014 Cisco Systems, Inc.  All rights reserved.
 
-#include <linux/errno.h>
-#include <linux/mempool.h>
+#include <freax/errno.h>
+#include <freax/mempool.h>
 
 #include <scsi/scsi_tcq.h>
 

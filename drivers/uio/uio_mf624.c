@@ -5,14 +5,14 @@
  *                    Czech Technical University in Prague
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/uio_driver.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/uio_driver.h>
 
 #define PCI_VENDOR_ID_HUMUSOFT		0x186c
 #define PCI_DEVICE_ID_MF624		0x0624

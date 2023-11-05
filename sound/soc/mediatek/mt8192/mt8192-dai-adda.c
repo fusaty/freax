@@ -6,8 +6,8 @@
 // Author: Shane Chien <shane.chien@mediatek.com>
 //
 
-#include <linux/delay.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/regmap.h>
 
 #include "mt8192-afe-clk.h"
 #include "mt8192-afe-common.h"

@@ -12,16 +12,16 @@
  * In the future leds-net5501.c should be migrated over to platform
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/string.h>
-#include <linux/leds.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/gpio_keys.h>
-#include <linux/gpio/machine.h>
-#include <linux/dmi.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/string.h>
+#include <freax/leds.h>
+#include <freax/platform_device.h>
+#include <freax/input.h>
+#include <freax/gpio_keys.h>
+#include <freax/gpio/machine.h>
+#include <freax/dmi.h>
 
 #include <asm/geode.h>
 

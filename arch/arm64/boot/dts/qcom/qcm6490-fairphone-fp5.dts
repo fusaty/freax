@@ -55,16 +55,16 @@
 		key-volume-up {
 			label = "Volume up";
 			gpios = <&pm7325_gpios 6 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 		};
 
 		/* Powered by the always-on vreg_l8c */
 		event-hall-sensor {
 			label = "Hall Effect Sensor";
 			gpios = <&tlmm 155 GPIO_ACTIVE_LOW>;
-			linux,input-type = <EV_SW>;
-			linux,code = <SW_LID>;
-			linux,can-disable;
+			freax,input-type = <EV_SW>;
+			freax,code = <SW_LID>;
+			freax,can-disable;
 			wakeup-source;
 		};
 	};
@@ -457,7 +457,7 @@
 };
 
 &pon_resin {
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 	status = "okay";
 };
 

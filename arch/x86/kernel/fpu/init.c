@@ -6,9 +6,9 @@
 #include <asm/tlbflush.h>
 #include <asm/setup.h>
 
-#include <linux/sched.h>
-#include <linux/sched/task.h>
-#include <linux/init.h>
+#include <freax/sched.h>
+#include <freax/sched/task.h>
+#include <freax/init.h>
 
 #include "internal.h"
 #include "legacy.h"

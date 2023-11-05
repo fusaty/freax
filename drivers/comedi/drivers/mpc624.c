@@ -3,7 +3,7 @@
  * mpc624.c
  * Hardware driver for a Micro/sys inc. MPC-624 PC/104 board
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -43,9 +43,9 @@
  *	   1	-10.1V .. +10.1V
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/delay.h>
+#include <freax/module.h>
+#include <freax/comedi/comedidev.h>
+#include <freax/delay.h>
 
 /* Offsets of different ports */
 #define MPC624_MASTER_CONTROL	0 /* not used */

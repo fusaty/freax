@@ -11,13 +11,13 @@
  * this driver does not currently support them.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/driver.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regulator/driver.h>
 #include "pmbus.h"
 
 #if IS_ENABLED(CONFIG_SENSORS_IR38064_REGULATOR)

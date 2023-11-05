@@ -7,13 +7,13 @@
  * Copyright (C) 2007 Oracle.  All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/crc32.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/crc32.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
 /* Needed for AOP_TRUNCATED_PAGE in mlog_errno() */
-#include <linux/fs.h>
+#include <freax/fs.h>
 
 #include "cluster/masklog.h"
 #include "cluster/nodemanager.h"

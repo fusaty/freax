@@ -1,8 +1,8 @@
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
 
 /* Allocate an array of spinlocks to be accessed by a hash. Two arguments
  * indicate the number of elements to allocate in the array. max_size

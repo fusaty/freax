@@ -27,14 +27,14 @@
  *
  */
 
-#include <linux/ascii85.h>
-#include <linux/highmem.h>
-#include <linux/nmi.h>
-#include <linux/pagevec.h>
-#include <linux/scatterlist.h>
-#include <linux/string_helpers.h>
-#include <linux/utsname.h>
-#include <linux/zlib.h>
+#include <freax/ascii85.h>
+#include <freax/highmem.h>
+#include <freax/nmi.h>
+#include <freax/pagevec.h>
+#include <freax/scatterlist.h>
+#include <freax/string_helpers.h>
+#include <freax/utsname.h>
+#include <freax/zlib.h>
 
 #include <drm/drm_cache.h>
 #include <drm/drm_print.h>

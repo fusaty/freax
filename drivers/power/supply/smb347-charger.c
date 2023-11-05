@@ -5,20 +5,20 @@
  * Copyright (C) 2011, Intel Corporation
  *
  * Authors: Bruce E. Robertson <bruce.e.robertson@intel.com>
- *          Mika Westerberg <mika.westerberg@linux.intel.com>
+ *          Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/power_supply.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/power_supply.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
 
 #include <dt-bindings/power/summit,smb347-charger.h>
 
@@ -1637,6 +1637,6 @@ static struct i2c_driver smb347_driver = {
 module_i2c_driver(smb347_driver);
 
 MODULE_AUTHOR("Bruce E. Robertson <bruce.e.robertson@intel.com>");
-MODULE_AUTHOR("Mika Westerberg <mika.westerberg@linux.intel.com>");
+MODULE_AUTHOR("Mika Westerberg <mika.westerberg@freax.intel.com>");
 MODULE_DESCRIPTION("SMB347 battery charger driver");
 MODULE_LICENSE("GPL");

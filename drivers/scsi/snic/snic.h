@@ -4,11 +4,11 @@
 #ifndef _SNIC_H_
 #define _SNIC_H_
 
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
-#include <linux/mempool.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/workqueue.h>
+#include <freax/bitops.h>
+#include <freax/mempool.h>
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>

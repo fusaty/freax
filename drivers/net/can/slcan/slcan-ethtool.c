@@ -3,11 +3,11 @@
  *
  */
 
-#include <linux/can/dev.h>
-#include <linux/ethtool.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/platform_device.h>
+#include <freax/can/dev.h>
+#include <freax/ethtool.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/platform_device.h>
 
 #include "slcan.h"
 

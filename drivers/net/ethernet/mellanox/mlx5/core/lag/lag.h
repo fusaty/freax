@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2019 Mellanox Technologies. */
 
 #ifndef __MLX5_LAG_H__
 #define __MLX5_LAG_H__
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 #define MLX5_LAG_MAX_HASH_BUCKETS 16
 #include "mlx5_core.h"

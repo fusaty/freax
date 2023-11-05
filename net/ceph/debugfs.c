@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
+#include <freax/ceph/ceph_debug.h>
 
-#include <linux/device.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/device.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/ctype.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 
-#include <linux/ceph/libceph.h>
-#include <linux/ceph/mon_client.h>
-#include <linux/ceph/auth.h>
-#include <linux/ceph/debugfs.h>
+#include <freax/ceph/libceph.h>
+#include <freax/ceph/mon_client.h>
+#include <freax/ceph/auth.h>
+#include <freax/ceph/debugfs.h>
 
 #ifdef CONFIG_DEBUG_FS
 

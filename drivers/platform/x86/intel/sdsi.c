@@ -5,21 +5,21 @@
  * Copyright (c) 2022, Intel Corporation.
  * All Rights Reserved.
  *
- * Author: "David E. Box" <david.e.box@linux.intel.com>
+ * Author: "David E. Box" <david.e.box@freax.intel.com>
  */
 
-#include <linux/auxiliary_bus.h>
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/types.h>
-#include <linux/uaccess.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/types.h>
+#include <freax/uaccess.h>
 
 #include "vsec.h"
 
@@ -667,6 +667,6 @@ static struct auxiliary_driver sdsi_aux_driver = {
 };
 module_auxiliary_driver(sdsi_aux_driver);
 
-MODULE_AUTHOR("David E. Box <david.e.box@linux.intel.com>");
+MODULE_AUTHOR("David E. Box <david.e.box@freax.intel.com>");
 MODULE_DESCRIPTION("Intel On Demand (SDSi) driver");
 MODULE_LICENSE("GPL");

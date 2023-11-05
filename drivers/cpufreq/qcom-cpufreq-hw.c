@@ -1,22 +1,22 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, The freax Foundation. All rights reserved.
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk-provider.h>
-#include <linux/cpufreq.h>
-#include <linux/init.h>
-#include <linux/interconnect.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/units.h>
+#include <freax/bitfield.h>
+#include <freax/clk-provider.h>
+#include <freax/cpufreq.h>
+#include <freax/init.h>
+#include <freax/interconnect.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_opp.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/units.h>
 
 #define LUT_MAX_ENTRIES			40U
 #define LUT_SRC				GENMASK(31, 30)

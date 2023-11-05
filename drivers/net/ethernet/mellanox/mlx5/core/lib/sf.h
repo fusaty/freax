@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2021 Mellanox Technologies Ltd */
 
 #ifndef __LIB_MLX5_SF_H__
 #define __LIB_MLX5_SF_H__
 
-#include <linux/mlx5/driver.h>
+#include <freax/mlx5/driver.h>
 
 static inline u16 mlx5_sf_start_function_id(const struct mlx5_core_dev *dev)
 {

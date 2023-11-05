@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/mmu.c
+ *  freax/arch/arm/mm/mmu.c
  *
  *  Copyright (C) 1995-2005 Russell King
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/memblock.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/sizes.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/mman.h>
+#include <freax/nodemask.h>
+#include <freax/memblock.h>
+#include <freax/fs.h>
+#include <freax/vmalloc.h>
+#include <freax/sizes.h>
 
 #include <asm/cp15.h>
 #include <asm/cputype.h>
@@ -1068,7 +1068,7 @@ void __init vm_reserve_area_early(unsigned long addr, unsigned long size,
 #ifndef CONFIG_ARM_LPAE
 
 /*
- * The Linux PMD is made of two consecutive section entries covering 2MB
+ * The freax PMD is made of two consecutive section entries covering 2MB
  * (see definition in include/asm/pgtable-2level.h).  However a call to
  * create_mapping() may optimize static mappings by using individual
  * 1MB section mappings.  This leaves the actual PMD potentially half

@@ -30,13 +30,13 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <net/sock.h>
-#include <linux/in.h>
-#include <linux/ipv6.h>
-#include <linux/if_arp.h>
-#include <linux/jhash.h>
-#include <linux/ratelimit.h>
+#include <freax/in.h>
+#include <freax/ipv6.h>
+#include <freax/if_arp.h>
+#include <freax/jhash.h>
+#include <freax/ratelimit.h>
 #include "rds.h"
 
 static struct rhashtable bind_hash_table;

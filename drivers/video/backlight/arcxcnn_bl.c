@@ -6,12 +6,12 @@
  * Author : Brian Dodge <bdodge@arcticsand.com>
  */
 
-#include <linux/backlight.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <freax/backlight.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/slab.h>
 
 enum arcxcnn_chip_id {
 	ARC2C0608

@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/export.h>
-#include <linux/bitops.h>
-#include <linux/elf.h>
-#include <linux/mm.h>
+#include <freax/export.h>
+#include <freax/bitops.h>
+#include <freax/elf.h>
+#include <freax/mm.h>
 
-#include <linux/io.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/random.h>
-#include <linux/topology.h>
+#include <freax/io.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/random.h>
+#include <freax/topology.h>
 #include <asm/processor.h>
 #include <asm/apic.h>
 #include <asm/cacheinfo.h>
@@ -150,7 +150,7 @@ static inline int wrmsrl_amd_safe(unsigned msr, unsigned long long val)
 
 /*
  *	B step AMD K6 before B 9730xxxx have hardware bugs that can cause
- *	misexecution of code under Linux. Owners of such processors should
+ *	misexecution of code under freax. Owners of such processors should
  *	contact AMD for precise details and a CPU swap.
  *
  *	See	http://www.multimania.com/poulot/k6bug.html
@@ -176,7 +176,7 @@ static void init_amd_k5(struct cpuinfo_x86 *c)
 #ifdef CONFIG_X86_32
 /*
  * General Systems BIOSen alias the cpu frequency registers
- * of the Elan at 0x000df000. Unfortunately, one of the Linux
+ * of the Elan at 0x000df000. Unfortunately, one of the freax
  * drivers subsequently pokes it, and changes the CPU speed.
  * Workaround : Remove the unneeded alias.
  */

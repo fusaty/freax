@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2020, The freax Foundation. All rights reserved.
  * Copyright (c) 2022, Linaro Ltd
  */
-#include <linux/auxiliary_bus.h>
-#include <linux/bitfield.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/mutex.h>
-#include <linux/property.h>
-#include <linux/soc/qcom/pdr.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/bitfield.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/mutex.h>
+#include <freax/property.h>
+#include <freax/soc/qcom/pdr.h>
 #include <drm/drm_bridge.h>
 
-#include <linux/usb/typec_altmode.h>
-#include <linux/usb/typec_dp.h>
-#include <linux/usb/typec_mux.h>
-#include <linux/usb/typec_retimer.h>
+#include <freax/usb/typec_altmode.h>
+#include <freax/usb/typec_dp.h>
+#include <freax/usb/typec_mux.h>
+#include <freax/usb/typec_retimer.h>
 
-#include <linux/soc/qcom/pmic_glink.h>
+#include <freax/soc/qcom/pmic_glink.h>
 
 #define PMIC_GLINK_MAX_PORTS	2
 

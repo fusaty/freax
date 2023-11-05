@@ -12,7 +12,7 @@
 #ifndef __PSP_SEV_H__
 #define __PSP_SEV_H__
 
-#include <uapi/linux/psp-sev.h>
+#include <uapi/freax/psp-sev.h>
 
 #define SEV_FW_BLOB_MAX_SIZE	0x4000	/* 16KB */
 

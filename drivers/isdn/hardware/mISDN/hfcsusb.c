@@ -16,11 +16,11 @@
  * Revision: 0.3.3 (socket), 2008-11-05
  */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/usb.h>
-#include <linux/mISDNhw.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/usb.h>
+#include <freax/mISDNhw.h>
+#include <freax/slab.h>
 #include "hfcsusb.h"
 
 static unsigned int debug;

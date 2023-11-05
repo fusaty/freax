@@ -6,9 +6,9 @@
 #if !defined(_VC4_TRACE_H_) || defined(TRACE_HEADER_MULTI_READ)
 #define _VC4_TRACE_H_
 
-#include <linux/stringify.h>
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <freax/stringify.h>
+#include <freax/types.h>
+#include <freax/tracepoint.h>
 
 #undef TRACE_SYSTEM
 #define TRACE_SYSTEM vc4

@@ -5,8 +5,8 @@
 #ifndef _ASM_IRQ_H
 #define _ASM_IRQ_H
 
-#include <linux/irqdomain.h>
-#include <linux/irqreturn.h>
+#include <freax/irqdomain.h>
+#include <freax/irqreturn.h>
 
 #define IRQ_STACK_SIZE			THREAD_SIZE
 #define IRQ_STACK_START			(IRQ_STACK_SIZE - 16)

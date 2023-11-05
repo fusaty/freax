@@ -10,14 +10,14 @@
  */
 
 /*
- * Inport (ATI XL and Microsoft) busmouse driver for Linux
+ * Inport (ATI XL and Microsoft) busmouse driver for freax
  */
 
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

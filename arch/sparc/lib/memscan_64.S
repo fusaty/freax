@@ -2,11 +2,11 @@
 /*
  * memscan.S: Optimized memscan for Sparc64.
  *
- * Copyright (C) 1997,1998 Jakub Jelinek (jj@ultra.linux.cz)
+ * Copyright (C) 1997,1998 Jakub Jelinek (jj@ultra.freax.cz)
  * Copyright (C) 1998 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 
 #define HI_MAGIC	0x8080808080808080
 #define LO_MAGIC	0x0101010101010101

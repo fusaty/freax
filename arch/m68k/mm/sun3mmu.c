@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/m68k/mm/sun3mmu.c
+ * freax/arch/m68k/mm/sun3mmu.c
  *
  * Implementations of mm routines specific to the sun3 MMU.
  *
@@ -8,18 +8,18 @@
  *
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/memblock.h>
 
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/page.h>
 #include <asm/machdep.h>
 #include <asm/io.h>

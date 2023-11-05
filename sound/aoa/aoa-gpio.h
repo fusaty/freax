@@ -7,8 +7,8 @@
 
 #ifndef __AOA_GPIO_H
 #define __AOA_GPIO_H
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
+#include <freax/workqueue.h>
+#include <freax/mutex.h>
 
 typedef void (*notify_func_t)(void *data);
 

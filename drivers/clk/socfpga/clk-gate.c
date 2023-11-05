@@ -5,12 +5,12 @@
  *
  * Based from clk-highbank.c
  */
-#include <linux/slab.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 
 #include "clk.h"
 

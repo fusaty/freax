@@ -7,10 +7,10 @@
  *  Kyungmin Park <kyungmin.park@samsung.com>
  *
  *  Copyright © 2000-2005
- *  Thomas Gleixner <tglx@linuxtronix.de>
+ *  Thomas Gleixner <tglx@freaxtronix.de>
  */
-#ifndef __LINUX_MTD_BBM_H
-#define __LINUX_MTD_BBM_H
+#ifndef __freax_MTD_BBM_H
+#define __freax_MTD_BBM_H
 
 /* The maximum number of NAND chips in an array */
 #define NAND_MAX_CHIPS		8
@@ -140,4 +140,4 @@ struct bbm_info {
 /* OneNAND BBT interface */
 extern int onenand_default_bbt(struct mtd_info *mtd);
 
-#endif	/* __LINUX_MTD_BBM_H */
+#endif	/* __freax_MTD_BBM_H */

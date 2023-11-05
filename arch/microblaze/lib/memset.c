@@ -24,11 +24,11 @@
  * not any responsibility to update it.
  */
 
-#include <linux/export.h>
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/compiler.h>
-#include <linux/string.h>
+#include <freax/export.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/compiler.h>
+#include <freax/string.h>
 
 #ifdef CONFIG_OPT_LIB_FUNCTION
 void *memset(void *v_src, int c, __kernel_size_t n)

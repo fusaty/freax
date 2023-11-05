@@ -4,11 +4,11 @@
  *
  * Copyright (C) 2013 Texas Instruments, Inc.
  */
-#ifndef __LINUX_CLK_TI_H__
-#define __LINUX_CLK_TI_H__
+#ifndef __freax_CLK_TI_H__
+#define __freax_CLK_TI_H__
 
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
 
 /**
  * struct clk_omap_reg - OMAP register declaration

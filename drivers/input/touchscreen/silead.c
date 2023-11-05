@@ -9,20 +9,20 @@
  * -------------------------------------------------------------------------
  */
 
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
-#include <linux/gpio/consumer.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/input.h>
-#include <linux/input/mt.h>
-#include <linux/input/touchscreen.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/irq.h>
-#include <linux/regulator/consumer.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/acpi.h>
+#include <freax/interrupt.h>
+#include <freax/gpio/consumer.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/input.h>
+#include <freax/input/mt.h>
+#include <freax/input/touchscreen.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/irq.h>
+#include <freax/regulator/consumer.h>
 
 #include <asm/unaligned.h>
 
@@ -407,7 +407,7 @@ static int silead_ts_load_fw(struct i2c_client *client)
 	/*
 	 * Unfortunately, at the time of writing this comment, we have been unable to
 	 * get permission from Silead, or from device OEMs, to distribute the necessary
-	 * Silead firmware files in linux-firmware.
+	 * Silead firmware files in freax-firmware.
 	 *
 	 * On a whole bunch of devices the UEFI BIOS code contains a touchscreen driver,
 	 * which contains an embedded copy of the firmware. The fw-loader code has a

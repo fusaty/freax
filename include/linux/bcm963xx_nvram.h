@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_BCM963XX_NVRAM_H__
-#define __LINUX_BCM963XX_NVRAM_H__
+#ifndef __freax_BCM963XX_NVRAM_H__
+#define __freax_BCM963XX_NVRAM_H__
 
-#include <linux/crc32.h>
-#include <linux/if_ether.h>
-#include <linux/sizes.h>
-#include <linux/types.h>
+#include <freax/crc32.h>
+#include <freax/if_ether.h>
+#include <freax/sizes.h>
+#include <freax/types.h>
 
 /*
  * Broadcom BCM963xx SoC board nvram data structure.
@@ -110,4 +110,4 @@ static int __maybe_unused bcm963xx_nvram_checksum(
 	return expected == actual ? 0 : -EINVAL;
 };
 
-#endif /* __LINUX_BCM963XX_NVRAM_H__ */
+#endif /* __freax_BCM963XX_NVRAM_H__ */

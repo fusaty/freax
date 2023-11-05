@@ -28,8 +28,8 @@
  *  such damages.
  */
 
-#include <linux/export.h>
-#include <linux/nfs_fs.h>
+#include <freax/export.h>
+#include <freax/nfs_fs.h>
 #include "nfs4session.h"
 #include "internal.h"
 #include "pnfs.h"

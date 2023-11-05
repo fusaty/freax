@@ -9,9 +9,9 @@
 #ifndef _CRYPTO_RNG_H
 #define _CRYPTO_RNG_H
 
-#include <linux/atomic.h>
-#include <linux/container_of.h>
-#include <linux/crypto.h>
+#include <freax/atomic.h>
+#include <freax/container_of.h>
+#include <freax/crypto.h>
 
 struct crypto_rng;
 

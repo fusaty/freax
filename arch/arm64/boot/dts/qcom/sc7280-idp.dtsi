@@ -2,11 +2,11 @@
 /*
  * sc7280 IDP board device tree source (common between SKU1 and SKU2)
  *
- * Copyright (c) 2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2021, The freax Foundation. All rights reserved.
  */
 
 #include <dt-bindings/iio/qcom,spmi-adc7-pmk8350.h>
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include "sc7280.dtsi"
 #include "pm7325.dtsi"
 #include "pm8350c.dtsi"
@@ -68,11 +68,11 @@
 		key-volume-up {
 			label = "volume_up";
 			gpios = <&pm7325_gpios 6 GPIO_ACTIVE_LOW>;
-			linux,input-type = <1>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,input-type = <1>;
+			freax,code = <KEY_VOLUMEUP>;
 			wakeup-source;
 			debounce-interval = <15>;
-			linux,can-disable;
+			freax,can-disable;
 		};
 	};
 

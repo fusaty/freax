@@ -1,12 +1,12 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI__LINUX_RTNETLINK_H
-#define _UAPI__LINUX_RTNETLINK_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI__freax_RTNETLINK_H
+#define _UAPI__freax_RTNETLINK_H
 
-#include <linux/types.h>
-#include <linux/netlink.h>
-#include <linux/if_link.h>
-#include <linux/if_addr.h>
-#include <linux/neighbour.h>
+#include <freax/types.h>
+#include <freax/netlink.h>
+#include <freax/if_link.h>
+#include <freax/if_addr.h>
+#include <freax/neighbour.h>
 
 /* rtnetlink families. Values up to 127 are reserved for real address
  * families, values above 128 may be used arbitrarily.
@@ -339,7 +339,7 @@ enum rt_scope_t {
 #define RTM_F_OFFLOAD_FAILED	0x20000000 /* route offload failed, this value
 					    * is chosen to avoid conflicts with
 					    * other flags defined in
-					    * include/uapi/linux/ipv6_route.h
+					    * include/uapi/freax/ipv6_route.h
 					    */
 
 /* Reserved table identifiers */
@@ -829,4 +829,4 @@ enum {
 
 
 
-#endif /* _UAPI__LINUX_RTNETLINK_H */
+#endif /* _UAPI__freax_RTNETLINK_H */

@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SWIOTLB_H
-#define __LINUX_SWIOTLB_H
+#ifndef __freax_SWIOTLB_H
+#define __freax_SWIOTLB_H
 
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/limits.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/dma-direction.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/limits.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
 
 struct device;
 struct page;
@@ -283,4 +283,4 @@ static inline bool is_swiotlb_for_alloc(struct device *dev)
 }
 #endif /* CONFIG_DMA_RESTRICTED_POOL */
 
-#endif /* __LINUX_SWIOTLB_H */
+#endif /* __freax_SWIOTLB_H */

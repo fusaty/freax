@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-1.0+ WITH freax-syscall-note */
 /*
- * include/linux/serial_reg.h
+ * include/freax/serial_reg.h
  *
  * Copyright (C) 1992, 1994 by Theodore Ts'o.
  * 
@@ -12,8 +12,8 @@
  * a 8250, 16450, or 16550(A).
  */
 
-#ifndef _LINUX_SERIAL_REG_H
-#define _LINUX_SERIAL_REG_H
+#ifndef _freax_SERIAL_REG_H
+#define _freax_SERIAL_REG_H
 
 /*
  * DLAB=0
@@ -383,5 +383,5 @@
 #define UART_ALTR_EN_TXFIFO_LW	0x01	/* Enable the TX FIFO Low Watermark */
 #define UART_ALTR_TX_LOW	0x41	/* Tx FIFO Low Watermark */
 
-#endif /* _LINUX_SERIAL_REG_H */
+#endif /* _freax_SERIAL_REG_H */
 

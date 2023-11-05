@@ -8,10 +8,10 @@
  * Based on wm8400.h
  */
 
-#ifndef __LINUX_REGULATOR_LP3971_H
-#define __LINUX_REGULATOR_LP3971_H
+#ifndef __freax_REGULATOR_LP3971_H
+#define __freax_REGULATOR_LP3971_H
 
-#include <linux/regulator/machine.h>
+#include <freax/regulator/machine.h>
 
 #define LP3971_LDO1  0
 #define LP3971_LDO2  1

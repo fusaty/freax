@@ -7,14 +7,14 @@
  * Copyright (C) 2007 Jean Delvare <jdelvare@suse.de>
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
+#include <freax/serio.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
 
 #define TAOS_BUFFER_SIZE	63
 

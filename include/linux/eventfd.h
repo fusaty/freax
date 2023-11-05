@@ -1,20 +1,20 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  include/linux/eventfd.h
+ *  include/freax/eventfd.h
  *
  *  Copyright (C) 2007  Davide Libenzi <davidel@xmailserver.org>
  *
  */
 
-#ifndef _LINUX_EVENTFD_H
-#define _LINUX_EVENTFD_H
+#ifndef _freax_EVENTFD_H
+#define _freax_EVENTFD_H
 
-#include <linux/wait.h>
-#include <linux/err.h>
-#include <linux/percpu-defs.h>
-#include <linux/percpu.h>
-#include <linux/sched.h>
-#include <uapi/linux/eventfd.h>
+#include <freax/wait.h>
+#include <freax/err.h>
+#include <freax/percpu-defs.h>
+#include <freax/percpu.h>
+#include <freax/sched.h>
+#include <uapi/freax/eventfd.h>
 
 /*
  * CAREFUL: Check include/uapi/asm-generic/fcntl.h when defining
@@ -92,5 +92,5 @@ static inline void eventfd_ctx_do_read(struct eventfd_ctx *ctx, __u64 *cnt)
 
 #endif
 
-#endif /* _LINUX_EVENTFD_H */
+#endif /* _freax_EVENTFD_H */
 

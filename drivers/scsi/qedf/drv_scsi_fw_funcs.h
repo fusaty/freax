@@ -4,9 +4,9 @@
  */
 #ifndef _SCSI_FW_FUNCS_H
 #define _SCSI_FW_FUNCS_H
-#include <linux/qed/common_hsi.h>
-#include <linux/qed/storage_common.h>
-#include <linux/qed/fcoe_common.h>
+#include <freax/qed/common_hsi.h>
+#include <freax/qed/storage_common.h>
+#include <freax/qed/fcoe_common.h>
 
 struct scsi_sgl_task_params {
 	struct scsi_sge *sgl;

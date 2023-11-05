@@ -5,7 +5,7 @@
 #
 # Author: Tom Roeder <tmroeder@google.com>
 #
-"""A tool for generating compile_commands.json in the Linux kernel."""
+"""A tool for generating compile_commands.json in the freax kernel."""
 
 import argparse
 import json
@@ -197,7 +197,7 @@ def main():
     for path in paths:
         # If 'path' is a directory, handle all .cmd files under it.
         # Otherwise, handle .cmd files associated with the file.
-        # built-in objects are linked via vmlinux.a
+        # built-in objects are linked via vmfreax.a
         # Modules are listed in modules.order.
         if os.path.isdir(path):
             cmdfiles = cmdfiles_in_dir(path)

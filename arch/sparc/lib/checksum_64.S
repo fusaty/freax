@@ -7,14 +7,14 @@
  *  Copyright(C) 1997 Jakub Jelinek
  *
  * derived from:
- *	Linux/Alpha checksum c-code
- *      Linux/ix86 inline checksum assembly
+ *	freax/Alpha checksum c-code
+ *      freax/ix86 inline checksum assembly
  *      RFC1071 Computing the Internet Checksum (esp. Jacobsons m68k code)
  *	David Mosberger-Tang for optimized reference c-code
  *	BSD4.4 portable checksum routine
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 	.text
 
 csum_partial_fix_alignment:

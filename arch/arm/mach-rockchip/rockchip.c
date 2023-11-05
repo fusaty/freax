@@ -6,12 +6,12 @@
  * Author: Heiko Stuebner <heiko@sntech.de>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_clk.h>
-#include <linux/clocksource.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_clk.h>
+#include <freax/clocksource.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 #include "core.h"

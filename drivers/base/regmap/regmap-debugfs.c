@@ -6,12 +6,12 @@
 //
 // Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/debugfs.h>
-#include <linux/uaccess.h>
-#include <linux/device.h>
-#include <linux/list.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/debugfs.h>
+#include <freax/uaccess.h>
+#include <freax/device.h>
+#include <freax/list.h>
 
 #include "internal.h"
 

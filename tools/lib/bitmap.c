@@ -3,7 +3,7 @@
  * From lib/bitmap.c
  * Helper functions for bitmap.h.
  */
-#include <linux/bitmap.h>
+#include <freax/bitmap.h>
 
 unsigned int __bitmap_weight(const unsigned long *bitmap, int bits)
 {

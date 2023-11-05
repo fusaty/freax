@@ -9,31 +9,31 @@
 
 /* #define VERBOSE_DEBUG */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/pagemap.h>
-#include <linux/uts.h>
-#include <linux/wait.h>
-#include <linux/compiler.h>
-#include <linux/uaccess.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/kthread.h>
-#include <linux/aio.h>
-#include <linux/uio.h>
-#include <linux/refcount.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/moduleparam.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/fs_context.h>
+#include <freax/pagemap.h>
+#include <freax/uts.h>
+#include <freax/wait.h>
+#include <freax/compiler.h>
+#include <freax/uaccess.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/kthread.h>
+#include <freax/aio.h>
+#include <freax/uio.h>
+#include <freax/refcount.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/moduleparam.h>
 
-#include <linux/usb/gadgetfs.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/composite.h> /* for USB_GADGET_DELAYED_STATUS */
+#include <freax/usb/gadgetfs.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/composite.h> /* for USB_GADGET_DELAYED_STATUS */
 
-/* Undef helpers from linux/usb/composite.h as gadgetfs redefines them */
+/* Undef helpers from freax/usb/composite.h as gadgetfs redefines them */
 #undef DBG
 #undef ERROR
 #undef INFO

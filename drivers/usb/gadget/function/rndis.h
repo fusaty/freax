@@ -9,10 +9,10 @@
  *		Microsoft's Remote NDIS Specification License Agreement.
  */
 
-#ifndef _LINUX_RNDIS_H
-#define _LINUX_RNDIS_H
+#ifndef _freax_RNDIS_H
+#define _freax_RNDIS_H
 
-#include <linux/rndis.h>
+#include <freax/rndis.h>
 #include "u_ether.h"
 #include "ndis.h"
 
@@ -199,4 +199,4 @@ int  rndis_signal_disconnect(struct rndis_params *params);
 int  rndis_state(struct rndis_params *params);
 extern void rndis_set_host_mac(struct rndis_params *params, const u8 *addr);
 
-#endif  /* _LINUX_RNDIS_H */
+#endif  /* _freax_RNDIS_H */

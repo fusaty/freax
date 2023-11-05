@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_FIRMWARE_H
-#define _LINUX_FIRMWARE_H
+#ifndef _freax_FIRMWARE_H
+#define _freax_FIRMWARE_H
 
-#include <linux/types.h>
-#include <linux/compiler.h>
-#include <linux/gfp.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
+#include <freax/gfp.h>
 
 #define FW_ACTION_NOUEVENT 0
 #define FW_ACTION_UEVENT 1

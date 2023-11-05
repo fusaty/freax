@@ -3,15 +3,15 @@
  * 8250_mid.c - Driver for UART on Intel Penwell and various other Intel SOCs
  *
  * Copyright (C) 2015 Intel Corporation
- * Author: Heikki Krogerus <heikki.krogerus@linux.intel.com>
+ * Author: Heikki Krogerus <heikki.krogerus@freax.intel.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/rational.h>
+#include <freax/bitops.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/rational.h>
 
-#include <linux/dma/hsu.h>
+#include <freax/dma/hsu.h>
 
 #include "8250.h"
 

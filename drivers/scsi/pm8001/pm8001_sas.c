@@ -38,7 +38,7 @@
  *
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include "pm8001_sas.h"
 #include "pm80xx_tracepoints.h"
 

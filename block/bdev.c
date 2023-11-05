@@ -5,28 +5,28 @@
  *  Copyright (C) 2016 - 2020 Christoph Hellwig
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/major.h>
-#include <linux/device_cgroup.h>
-#include <linux/blkdev.h>
-#include <linux/blk-integrity.h>
-#include <linux/backing-dev.h>
-#include <linux/module.h>
-#include <linux/blkpg.h>
-#include <linux/magic.h>
-#include <linux/buffer_head.h>
-#include <linux/swap.h>
-#include <linux/writeback.h>
-#include <linux/mount.h>
-#include <linux/pseudo_fs.h>
-#include <linux/uio.h>
-#include <linux/namei.h>
-#include <linux/part_stat.h>
-#include <linux/uaccess.h>
-#include <linux/stat.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/kmod.h>
+#include <freax/major.h>
+#include <freax/device_cgroup.h>
+#include <freax/blkdev.h>
+#include <freax/blk-integrity.h>
+#include <freax/backing-dev.h>
+#include <freax/module.h>
+#include <freax/blkpg.h>
+#include <freax/magic.h>
+#include <freax/buffer_head.h>
+#include <freax/swap.h>
+#include <freax/writeback.h>
+#include <freax/mount.h>
+#include <freax/pseudo_fs.h>
+#include <freax/uio.h>
+#include <freax/namei.h>
+#include <freax/part_stat.h>
+#include <freax/uaccess.h>
+#include <freax/stat.h>
 #include "../fs/internal.h"
 #include "blk.h"
 

@@ -3,7 +3,7 @@
 #define _NET_NF_TABLES_CORE_H
 
 #include <net/netfilter/nf_tables.h>
-#include <linux/indirect_call_wrapper.h>
+#include <freax/indirect_call_wrapper.h>
 
 extern struct nft_expr_type nft_imm_type;
 extern struct nft_expr_type nft_cmp_type;

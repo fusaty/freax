@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Author: Dan Scally <djrscally@gmail.com> */
 
-#include <linux/acpi.h>
-#include <linux/clkdev.h>
-#include <linux/clk-provider.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/driver.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/device.h>
+#include <freax/dmi.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regulator/driver.h>
+#include <freax/slab.h>
 
 #include "common.h"
 

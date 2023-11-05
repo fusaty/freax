@@ -4,18 +4,18 @@
  *
  * Copyright (C) 2010 OMICRON electronics GmbH
  */
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/platform_device.h>
-#include <linux/soc/ixp4xx/cpu.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/platform_device.h>
+#include <freax/soc/ixp4xx/cpu.h>
 
 #include "ixp46x_ts.h"
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/acorn/scsi/acornscsi.c
+ *  freax/drivers/acorn/scsi/acornscsi.c
  *
  *  Acorn SCSI 3 driver
  *  By R.M.King.
@@ -21,7 +21,7 @@
  *			reconnect race condition causing a warning message.
  *  12-Oct-1997	RMK	Added catch for re-entering interrupt routine.
  *  15-Oct-1997	RMK	Improved handling of commands.
- *  27-Jun-1998	RMK	Changed asm/delay.h to linux/delay.h.
+ *  27-Jun-1998	RMK	Changed asm/delay.h to freax/delay.h.
  *  13-Dec-1998	RMK	Better abort code and command handling.  Extra state
  *			transitions added to allow dodgy devices to work.
  */
@@ -109,20 +109,20 @@
 #define DBG(cmd,xxx...) xxx
 #endif
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/signal.h>
-#include <linux/errno.h>
-#include <linux/proc_fs.h>
-#include <linux/ioport.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/stringify.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/signal.h>
+#include <freax/errno.h>
+#include <freax/proc_fs.h>
+#include <freax/ioport.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/stringify.h>
+#include <freax/io.h>
 
 #include <asm/ecard.h>
 

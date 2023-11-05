@@ -8,8 +8,8 @@
 #include "clk-mux.h"
 
 #include <dt-bindings/clock/mt8195-clk.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 
 static DEFINE_SPINLOCK(mt8195_clk_lock);
 
@@ -858,7 +858,7 @@ static const char * const mfg_fast_parents[] = {
 static const struct mtk_mux top_mtk_muxes[] = {
 	/*
 	 * CLK_CFG_0
-	 * top_axi and top_bus_aximem are bus clocks, should not be closed by Linux.
+	 * top_axi and top_bus_aximem are bus clocks, should not be closed by freax.
 	 * top_spm and top_scp are main clocks in always-on co-processor.
 	 */
 	MUX_GATE_CLR_SET_UPD_FLAGS(CLK_TOP_AXI, "top_axi",
@@ -948,7 +948,7 @@ static const struct mtk_mux top_mtk_muxes[] = {
 	/*
 	 * CLK_CFG_9
 	 * top_pwrmcu is main clock in other co-processor, should not be
-	 * handled by Linux.
+	 * handled by freax.
 	 */
 	MUX_GATE_CLR_SET_UPD(CLK_TOP_PWRAP_ULPOSC, "top_pwrap_ulposc",
 		pwrap_ulposc_parents, 0x08C, 0x090, 0x094, 0, 3, 7, 0x08, 4),
@@ -1016,7 +1016,7 @@ static const struct mtk_mux top_mtk_muxes[] = {
 	/*
 	 * CLK_CFG_16
 	 * top_mcupm is main clock in other co-processor, should not be
-	 * handled by Linux.
+	 * handled by freax.
 	 */
 	MUX_GATE_CLR_SET_UPD(CLK_TOP_VENC, "top_venc",
 		venc_parents, 0x0E0, 0x0E4, 0x0E8, 0, 4, 7, 0x0C, 0),
@@ -1029,7 +1029,7 @@ static const struct mtk_mux top_mtk_muxes[] = {
 		CLK_IS_CRITICAL | CLK_SET_RATE_PARENT),
 	/*
 	 * CLK_CFG_17
-	 * top_dvfsrc is for internal DVFS usage, should not be handled by Linux.
+	 * top_dvfsrc is for internal DVFS usage, should not be handled by freax.
 	 */
 	MUX_GATE_CLR_SET_UPD(CLK_TOP_SPMI_P_MST, "top_spmi_p_mst",
 		spmi_parents, 0x0EC, 0x0F0, 0x0F4, 0, 4, 7, 0x0C, 4),
@@ -1143,7 +1143,7 @@ static const struct mtk_mux top_mtk_muxes[] = {
 	/*
 	 * CLK_CFG_29
 	 * top_ulposc/top_ulposc_core/top_srck are clock source of always on co-processor,
-	 * should not be closed by Linux.
+	 * should not be closed by freax.
 	 */
 	MUX_GATE_CLR_SET_UPD(CLK_TOP_DVIO_DGI_REF, "top_dvio_dgi_ref",
 		dvio_dgi_ref_parents, 0x017C, 0x0180, 0x0184, 0, 3, 7, 0x010, 20),
@@ -1158,7 +1158,7 @@ static const struct mtk_mux top_mtk_muxes[] = {
 		CLK_IS_CRITICAL | CLK_SET_RATE_PARENT),
 	/*
 	 * the clocks in CLK_CFG_30 ~ 37 are backup clock source, no need to handled
-	 * by Linux.
+	 * by freax.
 	 */
 };
 

@@ -2,14 +2,14 @@
 /*
  * Copyright 2011 IBM Corporation.
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/cpu.h>
-#include <linux/of.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/irq.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/cpu.h>
+#include <freax/of.h>
 
 #include <asm/smp.h>
 #include <asm/irq.h>
@@ -116,7 +116,7 @@ static unsigned int icp_hv_get_irq(void)
 		return irq;
 	}
 
-	/* We don't have a linux mapping, so have rtas mask it. */
+	/* We don't have a freax mapping, so have rtas mask it. */
 	xics_mask_unknown_vec(vec);
 
 	/* We might learn about it later, so EOI it */

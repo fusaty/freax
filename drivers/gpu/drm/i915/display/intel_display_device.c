@@ -5,7 +5,7 @@
 
 #include <drm/i915_pciids.h>
 #include <drm/drm_color_mgmt.h>
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include "i915_drv.h"
 #include "i915_reg.h"

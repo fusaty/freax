@@ -6,7 +6,7 @@
  * Public action API for classifiers/qdiscs
 */
 
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 #include <net/flow_offload.h>
 #include <net/sch_generic.h>
 #include <net/pkt_sched.h>

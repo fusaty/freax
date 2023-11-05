@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SHM_H_
-#define _LINUX_SHM_H_
+#ifndef _freax_SHM_H_
+#define _freax_SHM_H_
 
-#include <linux/list.h>
+#include <freax/list.h>
 #include <asm/page.h>
-#include <uapi/linux/shm.h>
+#include <uapi/freax/shm.h>
 #include <asm/shmparam.h>
 
 struct file;
@@ -42,4 +42,4 @@ static inline void shm_init_task(struct task_struct *task)
 }
 #endif
 
-#endif /* _LINUX_SHM_H_ */
+#endif /* _freax_SHM_H_ */

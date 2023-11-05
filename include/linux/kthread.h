@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_KTHREAD_H
-#define _LINUX_KTHREAD_H
+#ifndef _freax_KTHREAD_H
+#define _freax_KTHREAD_H
 /* Simple interface for creating and stopping kernel threads without mess. */
-#include <linux/err.h>
-#include <linux/sched.h>
+#include <freax/err.h>
+#include <freax/sched.h>
 
 struct mm_struct;
 
@@ -224,4 +224,4 @@ struct cgroup_subsys_state *kthread_blkcg(void);
 #else
 static inline void kthread_associate_blkcg(struct cgroup_subsys_state *css) { }
 #endif
-#endif /* _LINUX_KTHREAD_H */
+#endif /* _freax_KTHREAD_H */

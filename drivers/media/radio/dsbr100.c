@@ -21,13 +21,13 @@
  * Copyright (c) 2000 Markus Demleitner <msdemlei@cl.uni-heidelberg.de>
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/videodev2.h>
-#include <linux/usb.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/videodev2.h>
+#include <freax/usb.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-ctrls.h>

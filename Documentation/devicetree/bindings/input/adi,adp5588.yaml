@@ -71,7 +71,7 @@ required:
   - interrupts
   - keypad,num-rows
   - keypad,num-columns
-  - linux,keymap
+  - freax,keymap
 
 unevaluatedProperties: false
 
@@ -95,7 +95,7 @@ examples:
 
             keypad,num-rows = <1>;
             keypad,num-columns = <9>;
-            linux,keymap = <
+            freax,keymap = <
                 MATRIX_KEY(0x00, 0x00, KEY_1)
                 MATRIX_KEY(0x00, 0x01, KEY_2)
                 MATRIX_KEY(0x00, 0x02, KEY_3)

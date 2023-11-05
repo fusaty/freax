@@ -2,8 +2,8 @@
 #ifndef __nosy_user_h
 #define __nosy_user_h
 
-#include <linux/ioctl.h>
-#include <linux/types.h>
+#include <freax/ioctl.h>
+#include <freax/types.h>
 
 #define NOSY_IOC_GET_STATS _IOR('&', 0, struct nosy_stats)
 #define NOSY_IOC_START     _IO('&', 1)

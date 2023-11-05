@@ -7,9 +7,9 @@
  * Authors: Felipe Balbi <balbi@ti.com>,
  */
 
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include "core.h"
 

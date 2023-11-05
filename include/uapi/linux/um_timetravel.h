@@ -13,16 +13,16 @@
  *
  * Copyright (C) 2019 Intel Corporation
  */
-#ifndef _UAPI_LINUX_UM_TIMETRAVEL_H
-#define _UAPI_LINUX_UM_TIMETRAVEL_H
-#include <linux/types.h>
+#ifndef _UAPI_freax_UM_TIMETRAVEL_H
+#define _UAPI_freax_UM_TIMETRAVEL_H
+#include <freax/types.h>
 
 /**
  * struct um_timetravel_msg - UM time travel message
  *
  * This is the basic message type, going in both directions.
  *
- * This is the message passed between the host (user-mode Linux instance)
+ * This is the message passed between the host (user-mode freax instance)
  * and the calendar (the application on the other side of the socket) in
  * order to implement common scheduling.
  *
@@ -125,4 +125,4 @@ enum um_timetravel_ops {
 	UM_TIMETRAVEL_GET_TOD		= 8,
 };
 
-#endif /* _UAPI_LINUX_UM_TIMETRAVEL_H */
+#endif /* _UAPI_freax_UM_TIMETRAVEL_H */

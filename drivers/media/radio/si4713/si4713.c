@@ -8,14 +8,14 @@
  * Contact: Eduardo Valentin <eduardo.valentin@nokia.com>
  */
 
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-ioctl.h>
 #include <media/v4l2-common.h>

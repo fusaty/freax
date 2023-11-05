@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_DS620_H
-#define _LINUX_DS620_H
+#ifndef _freax_DS620_H
+#define _freax_DS620_H
 
-#include <linux/types.h>
-#include <linux/i2c.h>
+#include <freax/types.h>
+#include <freax/i2c.h>
 
 /* platform data for the DS620 temperature sensor and thermostat */
 
@@ -19,4 +19,4 @@ struct ds620_platform_data {
 	int pomode;
 };
 
-#endif /* _LINUX_DS620_H */
+#endif /* _freax_DS620_H */

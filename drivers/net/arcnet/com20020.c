@@ -1,5 +1,5 @@
 /*
- * Linux ARCnet driver - COM20020 chipset support
+ * freax ARCnet driver - COM20020 chipset support
  *
  * Written 1997 by David Woodhouse.
  * Written 1994-1999 by Avery Pennarun.
@@ -28,16 +28,16 @@
 
 #define pr_fmt(fmt) "arcnet:" KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/ioport.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/netdevice.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/ioport.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/netdevice.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
 
 #include "arcdevice.h"
 #include "com20020.h"

@@ -12,8 +12,8 @@
  * See the GNU General Public License for more details.
  */
 
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/slab.h>
 #include <net/llc.h>
 #include <net/llc_c_ac.h>
 #include <net/llc_c_ev.h>

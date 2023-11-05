@@ -3,12 +3,12 @@
  * Copyright 2015 IBM Corp.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
 
 #include "cxl.h"
 

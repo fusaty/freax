@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
  * logfile.h - Defines for NTFS kernel journal ($LogFile) handling.  Part of
- *	       the Linux-NTFS project.
+ *	       the freax-NTFS project.
  *
  * Copyright (c) 2000-2005 Anton Altaparmakov
  */
 
-#ifndef _LINUX_NTFS_LOGFILE_H
-#define _LINUX_NTFS_LOGFILE_H
+#ifndef _freax_NTFS_LOGFILE_H
+#define _freax_NTFS_LOGFILE_H
 
 #ifdef NTFS_RW
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 
 #include "types.h"
 #include "endian.h"
@@ -292,4 +292,4 @@ extern bool ntfs_empty_logfile(struct inode *log_vi);
 
 #endif /* NTFS_RW */
 
-#endif /* _LINUX_NTFS_LOGFILE_H */
+#endif /* _freax_NTFS_LOGFILE_H */

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/offb.c -- Open Firmware based frame buffer device
+ *  freax/drivers/video/offb.c -- Open Firmware based frame buffer device
  *
  *	Copyright (C) 1997 Geert Uytterhoeven
  *
@@ -12,22 +12,22 @@
  *  more details.
  */
 
-#include <linux/aperture.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
+#include <freax/aperture.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/interrupt.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
 #include <asm/io.h>
 
 #ifdef CONFIG_PPC32
@@ -554,25 +554,25 @@ static void offb_init_nodriver(struct platform_device *parent, struct device_nod
 		foreign_endian = FBINFO_FOREIGN_ENDIAN;
 #endif
 
-	pp = of_get_property(dp, "linux,bootx-depth", &len);
+	pp = of_get_property(dp, "freax,bootx-depth", &len);
 	if (pp == NULL)
 		pp = of_get_property(dp, "depth", &len);
 	if (pp && len == sizeof(u32))
 		depth = be32_to_cpup(pp);
 
-	pp = of_get_property(dp, "linux,bootx-width", &len);
+	pp = of_get_property(dp, "freax,bootx-width", &len);
 	if (pp == NULL)
 		pp = of_get_property(dp, "width", &len);
 	if (pp && len == sizeof(u32))
 		width = be32_to_cpup(pp);
 
-	pp = of_get_property(dp, "linux,bootx-height", &len);
+	pp = of_get_property(dp, "freax,bootx-height", &len);
 	if (pp == NULL)
 		pp = of_get_property(dp, "height", &len);
 	if (pp && len == sizeof(u32))
 		height = be32_to_cpup(pp);
 
-	pp = of_get_property(dp, "linux,bootx-linebytes", &len);
+	pp = of_get_property(dp, "freax,bootx-linebytes", &len);
 	if (pp == NULL)
 		pp = of_get_property(dp, "linebytes", &len);
 	if (pp && len == sizeof(u32) && (*pp != 0xffffffffu))
@@ -592,7 +592,7 @@ static void offb_init_nodriver(struct platform_device *parent, struct device_nod
 	 * ranges and pick one that is both big enough and if possible encloses
 	 * the "address" property. If none match, we pick the biggest
 	 */
-	up = of_get_property(dp, "linux,bootx-addr", &len);
+	up = of_get_property(dp, "freax,bootx-addr", &len);
 	if (up == NULL)
 		up = of_get_property(dp, "address", &len);
 	if (up && len == sizeof(u32))

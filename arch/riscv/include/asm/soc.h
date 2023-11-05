@@ -7,9 +7,9 @@
 #ifndef _ASM_RISCV_SOC_H
 #define _ASM_RISCV_SOC_H
 
-#include <linux/of.h>
-#include <linux/linkage.h>
-#include <linux/types.h>
+#include <freax/of.h>
+#include <freax/linkage.h>
+#include <freax/types.h>
 
 #define SOC_EARLY_INIT_DECLARE(name, compat, fn)			\
 	static const struct of_device_id __soc_early_init__##name	\

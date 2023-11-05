@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_WAKE_Q_H
-#define _LINUX_SCHED_WAKE_Q_H
+#ifndef _freax_SCHED_WAKE_Q_H
+#define _freax_SCHED_WAKE_Q_H
 
 /*
  * Wake-queues are lists of tasks with a pending wakeup, whose
@@ -33,7 +33,7 @@
  * location of the wake_q_add().
  */
 
-#include <linux/sched.h>
+#include <freax/sched.h>
 
 struct wake_q_head {
 	struct wake_q_node *first;
@@ -63,4 +63,4 @@ extern void wake_q_add(struct wake_q_head *head, struct task_struct *task);
 extern void wake_q_add_safe(struct wake_q_head *head, struct task_struct *task);
 extern void wake_up_q(struct wake_q_head *head);
 
-#endif /* _LINUX_SCHED_WAKE_Q_H */
+#endif /* _freax_SCHED_WAKE_Q_H */

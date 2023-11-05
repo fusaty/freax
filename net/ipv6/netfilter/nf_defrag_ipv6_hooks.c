@@ -3,19 +3,19 @@
  * (C) 2002-2004 Netfilter Core Team <coreteam@netfilter.org>
  */
 
-#include <linux/types.h>
-#include <linux/ipv6.h>
-#include <linux/in6.h>
-#include <linux/netfilter.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/icmp.h>
-#include <linux/rcupdate.h>
-#include <linux/sysctl.h>
+#include <freax/types.h>
+#include <freax/ipv6.h>
+#include <freax/in6.h>
+#include <freax/netfilter.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/icmp.h>
+#include <freax/rcupdate.h>
+#include <freax/sysctl.h>
 #include <net/ipv6_frag.h>
 
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_bridge.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netfilter_bridge.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_helper.h>

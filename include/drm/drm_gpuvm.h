@@ -25,9 +25,9 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/types.h>
+#include <freax/list.h>
+#include <freax/rbtree.h>
+#include <freax/types.h>
 
 #include <drm/drm_gem.h>
 

@@ -17,15 +17,15 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/err.h>
-#include <linux/regulator/consumer.h>
-#include <linux/soc/pxa/cpu.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/cpufreq.h>
+#include <freax/err.h>
+#include <freax/regulator/consumer.h>
+#include <freax/soc/pxa/cpu.h>
+#include <freax/io.h>
 
 #ifdef DEBUG
 static unsigned int freq_debug;

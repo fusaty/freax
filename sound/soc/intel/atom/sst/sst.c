@@ -11,17 +11,17 @@
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/firmware.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_qos.h>
-#include <linux/async.h>
-#include <linux/acpi.h>
-#include <linux/sysfs.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/firmware.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_qos.h>
+#include <freax/async.h>
+#include <freax/acpi.h>
+#include <freax/sysfs.h>
 #include <sound/core.h>
 #include <sound/soc.h>
 #include <asm/platform_sst_audio.h>

@@ -30,8 +30,8 @@
 #include "subvolume.h"
 #include "super-io.h"
 
-#include <linux/sort.h>
-#include <linux/stat.h>
+#include <freax/sort.h>
+#include <freax/stat.h>
 
 #define QSTR(n) { { { .len = strlen(n) } }, .name = n }
 

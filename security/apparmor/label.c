@@ -7,9 +7,9 @@
  * Copyright 2017 Canonical Ltd.
  */
 
-#include <linux/audit.h>
-#include <linux/seq_file.h>
-#include <linux/sort.h>
+#include <freax/audit.h>
+#include <freax/seq_file.h>
+#include <freax/sort.h>
 
 #include "include/apparmor.h"
 #include "include/cred.h"

@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
-# Makefile for linux kernel module support
+# Makefile for freax kernel module support
 #
 
 # These are called from save_stack_trace() on slub debug path,

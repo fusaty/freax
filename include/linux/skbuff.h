@@ -7,33 +7,33 @@
  *		Florian La Roche, <rzsfl@rz.uni-sb.de>
  */
 
-#ifndef _LINUX_SKBUFF_H
-#define _LINUX_SKBUFF_H
+#ifndef _freax_SKBUFF_H
+#define _freax_SKBUFF_H
 
-#include <linux/kernel.h>
-#include <linux/compiler.h>
-#include <linux/time.h>
-#include <linux/bug.h>
-#include <linux/bvec.h>
-#include <linux/cache.h>
-#include <linux/rbtree.h>
-#include <linux/socket.h>
-#include <linux/refcount.h>
+#include <freax/kernel.h>
+#include <freax/compiler.h>
+#include <freax/time.h>
+#include <freax/bug.h>
+#include <freax/bvec.h>
+#include <freax/cache.h>
+#include <freax/rbtree.h>
+#include <freax/socket.h>
+#include <freax/refcount.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/types.h>
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 #include <net/checksum.h>
-#include <linux/rcupdate.h>
-#include <linux/dma-mapping.h>
-#include <linux/netdev_features.h>
+#include <freax/rcupdate.h>
+#include <freax/dma-mapping.h>
+#include <freax/netdev_features.h>
 #include <net/flow_dissector.h>
-#include <linux/in6.h>
-#include <linux/if_packet.h>
-#include <linux/llist.h>
+#include <freax/in6.h>
+#include <freax/if_packet.h>
+#include <freax/llist.h>
 #include <net/flow.h>
 #if IS_ENABLED(CONFIG_NF_CONNTRACK)
-#include <linux/netfilter/nf_conntrack_common.h>
+#include <freax/netfilter/nf_conntrack_common.h>
 #endif
 #include <net/net_debug.h>
 #include <net/dropreason-core.h>
@@ -147,7 +147,7 @@
  *
  *   A checksum is set up to be offloaded to a device as described in the
  *   output description for CHECKSUM_PARTIAL. This may occur on a packet
- *   received directly from another Linux OS, e.g., a virtualized Linux kernel
+ *   received directly from another freax OS, e.g., a virtualized freax kernel
  *   on the same host, or it may be set in the input path in GRO or remote
  *   checksum offload. For the purposes of checksum verification, the checksum
  *   referred to by skb->csum_start + skb->csum_offset and any preceding
@@ -5067,4 +5067,4 @@ ssize_t skb_splice_from_iter(struct sk_buff *skb, struct iov_iter *iter,
 			     ssize_t maxsize, gfp_t gfp);
 
 #endif	/* __KERNEL__ */
-#endif	/* _LINUX_SKBUFF_H */
+#endif	/* _freax_SKBUFF_H */

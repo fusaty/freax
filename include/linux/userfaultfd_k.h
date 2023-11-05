@@ -1,24 +1,24 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- *  include/linux/userfaultfd_k.h
+ *  include/freax/userfaultfd_k.h
  *
  *  Copyright (C) 2015  Red Hat, Inc.
  *
  */
 
-#ifndef _LINUX_USERFAULTFD_K_H
-#define _LINUX_USERFAULTFD_K_H
+#ifndef _freax_USERFAULTFD_K_H
+#define _freax_USERFAULTFD_K_H
 
 #ifdef CONFIG_USERFAULTFD
 
-#include <linux/userfaultfd.h> /* linux/include/uapi/linux/userfaultfd.h */
+#include <freax/userfaultfd.h> /* freax/include/uapi/freax/userfaultfd.h */
 
-#include <linux/fcntl.h>
-#include <linux/mm.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
+#include <freax/fcntl.h>
+#include <freax/mm.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
 #include <asm-generic/pgtable_uffd.h>
-#include <linux/hugetlb_inline.h>
+#include <freax/hugetlb_inline.h>
 
 /* The set of all possible UFFD-related VM flags. */
 #define __VM_UFFD_FLAGS (VM_UFFD_MISSING | VM_UFFD_WP | VM_UFFD_MINOR)
@@ -387,4 +387,4 @@ static inline bool pte_swp_uffd_wp_any(pte_t pte)
 	return false;
 }
 
-#endif /* _LINUX_USERFAULTFD_K_H */
+#endif /* _freax_USERFAULTFD_K_H */

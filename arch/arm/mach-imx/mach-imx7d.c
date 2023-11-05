@@ -2,12 +2,12 @@
 /*
  * Copyright (C) 2015 Freescale Semiconductor, Inc.
  */
-#include <linux/irqchip.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx7-iomuxc-gpr.h>
-#include <linux/platform_device.h>
-#include <linux/phy.h>
-#include <linux/regmap.h>
+#include <freax/irqchip.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mfd/syscon/imx7-iomuxc-gpr.h>
+#include <freax/platform_device.h>
+#include <freax/phy.h>
+#include <freax/regmap.h>
 
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>

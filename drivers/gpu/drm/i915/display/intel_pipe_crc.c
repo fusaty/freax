@@ -24,9 +24,9 @@
  *
  */
 
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
+#include <freax/ctype.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
 
 #include "i915_irq.h"
 #include "i915_reg.h"

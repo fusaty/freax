@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 #include "arch-tests.h"
-#include "linux/perf_event.h"
+#include "freax/perf_event.h"
 #include "tests/tests.h"
 #include "pmu.h"
 #include "pmus.h"

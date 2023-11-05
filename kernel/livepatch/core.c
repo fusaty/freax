@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/kallsyms.h>
-#include <linux/livepatch.h>
-#include <linux/elf.h>
-#include <linux/moduleloader.h>
-#include <linux/completion.h>
-#include <linux/memory.h>
-#include <linux/rcupdate.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/kallsyms.h>
+#include <freax/livepatch.h>
+#include <freax/elf.h>
+#include <freax/moduleloader.h>
+#include <freax/completion.h>
+#include <freax/memory.h>
+#include <freax/rcupdate.h>
 #include <asm/cacheflush.h>
 #include "core.h"
 #include "patch.h"
@@ -51,7 +51,7 @@ static bool klp_is_module(struct klp_object *obj)
 	return obj->name;
 }
 
-/* sets obj->mod if object is not vmlinux and module is found */
+/* sets obj->mod if object is not vmfreax and module is found */
 static void klp_find_object_module(struct klp_object *obj)
 {
 	struct module *mod;
@@ -179,7 +179,7 @@ static int klp_find_object_symbol(const char *objname, const char *name,
 		       name, objname);
 	} else if (sympos != args.count && sympos > 0) {
 		pr_err("symbol position %lu for symbol '%s' in object '%s' not found\n",
-		       sympos, name, objname ? objname : "vmlinux");
+		       sympos, name, objname ? objname : "vmfreax");
 	} else {
 		*addr = args.addr;
 		return 0;
@@ -199,8 +199,8 @@ static int klp_resolve_symbols(Elf_Shdr *sechdrs, const char *strtab,
 	Elf_Rela *relas;
 	Elf_Sym *sym;
 	unsigned long sympos, addr;
-	bool sym_vmlinux;
-	bool sec_vmlinux = !strcmp(sec_objname, "vmlinux");
+	bool sym_vmfreax;
+	bool sec_vmfreax = !strcmp(sec_objname, "vmfreax");
 
 	/*
 	 * Since the field widths for sym_objname and sym_name in the sscanf()
@@ -234,22 +234,22 @@ static int klp_resolve_symbols(Elf_Shdr *sechdrs, const char *strtab,
 			return -EINVAL;
 		}
 
-		sym_vmlinux = !strcmp(sym_objname, "vmlinux");
+		sym_vmfreax = !strcmp(sym_objname, "vmfreax");
 
 		/*
 		 * Prevent module-specific KLP rela sections from referencing
-		 * vmlinux symbols.  This helps prevent ordering issues with
+		 * vmfreax symbols.  This helps prevent ordering issues with
 		 * module special section initializations.  Presumably such
 		 * symbols are exported and normal relas can be used instead.
 		 */
-		if (!sec_vmlinux && sym_vmlinux) {
-			pr_err("invalid access to vmlinux symbol '%s' from module-specific livepatch relocation section\n",
+		if (!sec_vmfreax && sym_vmfreax) {
+			pr_err("invalid access to vmfreax symbol '%s' from module-specific livepatch relocation section\n",
 			       sym_name);
 			return -EINVAL;
 		}
 
-		/* klp_find_object_symbol() treats a NULL objname as vmlinux */
-		ret = klp_find_object_symbol(sym_vmlinux ? NULL : sym_objname,
+		/* klp_find_object_symbol() treats a NULL objname as vmfreax */
+		ret = klp_find_object_symbol(sym_vmfreax ? NULL : sym_objname,
 					     sym_name, sympos, &addr);
 		if (ret)
 			return ret;
@@ -270,15 +270,15 @@ void __weak clear_relocate_add(Elf_Shdr *sechdrs,
 
 /*
  * At a high-level, there are two types of klp relocation sections: those which
- * reference symbols which live in vmlinux; and those which reference symbols
+ * reference symbols which live in vmfreax; and those which reference symbols
  * which live in other modules.  This function is called for both types:
  *
  * 1) When a klp module itself loads, the module code calls this function to
- *    write vmlinux-specific klp relocations (.klp.rela.vmlinux.* sections).
+ *    write vmfreax-specific klp relocations (.klp.rela.vmfreax.* sections).
  *    These relocations are written to the klp module text to allow the patched
- *    code/data to reference unexported vmlinux symbols.  They're written as
+ *    code/data to reference unexported vmfreax symbols.  They're written as
  *    early as possible to ensure that other module init code (.e.g.,
- *    jump_label_apply_nops) can access any unexported vmlinux symbols which
+ *    jump_label_apply_nops) can access any unexported vmfreax symbols which
  *    might be referenced by the klp module's special sections.
  *
  * 2) When a to-be-patched module loads -- or is already loaded when a
@@ -313,7 +313,7 @@ static int klp_write_section_relocs(struct module *pmod, Elf_Shdr *sechdrs,
 		return -EINVAL;
 	}
 
-	if (strcmp(objname ? objname : "vmlinux", sec_objname))
+	if (strcmp(objname ? objname : "vmfreax", sec_objname))
 		return 0;
 
 	if (apply) {
@@ -830,7 +830,7 @@ static int klp_init_object_loaded(struct klp_patch *patch,
 	if (klp_is_module(obj)) {
 		/*
 		 * Only write module-specific relocations here
-		 * (.klp.rela.{module}.*).  vmlinux-specific relocations were
+		 * (.klp.rela.{module}.*).  vmfreax-specific relocations were
 		 * written earlier during the initialization of the klp module
 		 * itself.
 		 */
@@ -883,7 +883,7 @@ static int klp_init_object(struct klp_patch *patch, struct klp_object *obj)
 
 	klp_find_object_module(obj);
 
-	name = klp_is_module(obj) ? obj->name : "vmlinux";
+	name = klp_is_module(obj) ? obj->name : "vmfreax";
 	ret = kobject_add(&obj->kobj, &patch->kobj, "%s", name);
 	if (ret)
 		return ret;
@@ -1026,14 +1026,14 @@ static int __klp_enable_patch(struct klp_patch *patch)
 		ret = klp_pre_patch_callback(obj);
 		if (ret) {
 			pr_warn("pre-patch callback failed for object '%s'\n",
-				klp_is_module(obj) ? obj->name : "vmlinux");
+				klp_is_module(obj) ? obj->name : "vmfreax");
 			goto err;
 		}
 
 		ret = klp_patch_object(obj);
 		if (ret) {
 			pr_warn("failed to patch object '%s'\n",
-				klp_is_module(obj) ? obj->name : "vmlinux");
+				klp_is_module(obj) ? obj->name : "vmfreax");
 			goto err;
 		}
 	}
@@ -1223,8 +1223,8 @@ int klp_module_coming(struct module *mod)
 	if (WARN_ON(mod->state != MODULE_STATE_COMING))
 		return -EINVAL;
 
-	if (!strcmp(mod->name, "vmlinux")) {
-		pr_err("vmlinux.ko: invalid module name\n");
+	if (!strcmp(mod->name, "vmfreax")) {
+		pr_err("vmfreax.ko: invalid module name\n");
 		return -EINVAL;
 	}
 

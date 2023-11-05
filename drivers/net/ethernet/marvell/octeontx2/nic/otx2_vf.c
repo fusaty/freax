@@ -5,10 +5,10 @@
  *
  */
 
-#include <linux/etherdevice.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/net_tstamp.h>
+#include <freax/etherdevice.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/net_tstamp.h>
 
 #include "otx2_common.h"
 #include "otx2_reg.h"

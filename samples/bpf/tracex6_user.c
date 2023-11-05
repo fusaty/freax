@@ -3,7 +3,7 @@
 
 #include <assert.h>
 #include <fcntl.h>
-#include <linux/perf_event.h>
+#include <freax/perf_event.h>
 #include <sched.h>
 #include <stdio.h>
 #include <stdlib.h>

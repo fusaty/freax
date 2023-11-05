@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2019 Hangzhou C-SKY Microsystems co.,ltd. */
 
-#include <linux/perf_event.h>
-#include <linux/uaccess.h>
+#include <freax/perf_event.h>
+#include <freax/uaccess.h>
 
 #include <asm/stacktrace.h>
 

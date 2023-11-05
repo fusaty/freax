@@ -7,17 +7,17 @@
 */
 
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/i2c.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/poll.h>
-#include <linux/wait.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/i2c.h>
+#include <freax/types.h>
+#include <freax/videodev2.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/poll.h>
+#include <freax/wait.h>
+#include <freax/uaccess.h>
 
 #include <media/i2c/saa6588.h>
 #include <media/v4l2-device.h>
@@ -297,7 +297,7 @@ static void saa6588_i2c_poll(struct saa6588 *s)
 	/* And if are not in mmbs mode, then 'Block E' is also mapped
 	   to 'Invalid Block'. As far as I can tell MMBS is discontinued,
 	   and if there is ever a need to support E blocks, then please
-	   contact the linux-media mailinglist. */
+	   contact the freax-media mailinglist. */
 	else if (!mmbs && blocknum == 5)
 		blocknum = V4L2_RDS_BLOCK_INVALID;
 	tmp = blocknum;

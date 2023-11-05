@@ -2,18 +2,18 @@
 //
 // Copyright (C) 2021-2022 Samuel Holland <samuel@sholland.org>
 
-#include <linux/crc8.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/types.h>
+#include <freax/crc8.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/input/matrix_keypad.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/of.h>
+#include <freax/regulator/consumer.h>
+#include <freax/types.h>
 
 #define DRV_NAME			"pinephone-keyboard"
 

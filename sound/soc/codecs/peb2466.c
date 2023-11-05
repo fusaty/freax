@@ -7,14 +7,14 @@
 // Author: Herve Codina <herve.codina@bootlin.com>
 
 #include <asm/unaligned.h>
-#include <linux/clk.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <freax/clk.h>
+#include <freax/firmware.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/driver.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>

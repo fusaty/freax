@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_INSTRUMENTATION_H
-#define __LINUX_INSTRUMENTATION_H
+#ifndef __freax_INSTRUMENTATION_H
+#define __freax_INSTRUMENTATION_H
 
 #ifdef CONFIG_NOINSTR_VALIDATION
 
-#include <linux/stringify.h>
+#include <freax/stringify.h>
 
 /* Begin/end of an instrumentation safe region */
 #define __instrumentation_begin(c) ({					\
@@ -58,4 +58,4 @@
 # define instrumentation_end()		do { } while(0)
 #endif /* CONFIG_NOINSTR_VALIDATION */
 
-#endif /* __LINUX_INSTRUMENTATION_H */
+#endif /* __freax_INSTRUMENTATION_H */

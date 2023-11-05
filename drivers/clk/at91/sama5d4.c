@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/clk-provider.h>
-#include <linux/mfd/syscon.h>
-#include <linux/slab.h>
+#include <freax/clk-provider.h>
+#include <freax/mfd/syscon.h>
+#include <freax/slab.h>
 
 #include <dt-bindings/clock/at91.h>
 
@@ -44,7 +44,7 @@ static const struct {
 } sama5d4_systemck[] = {
 	/*
 	 * ddrck feeds DDR controller and is enabled by bootloader thus we need
-	 * to keep it enabled in case there is no Linux consumer for it.
+	 * to keep it enabled in case there is no freax consumer for it.
 	 */
 	{ .n = "ddrck", .p = "masterck_div", .id = 2, .flags = CLK_IS_CRITICAL },
 	{ .n = "lcdck", .p = "masterck_div", .id = 3 },
@@ -116,7 +116,7 @@ static const struct {
 	{ .n = "aesb_clk", .id = 13 },
 	/*
 	 * mpddr_clk feeds DDR controller and is enabled by bootloader thus we
-	 * need to keep it enabled in case there is no Linux consumer for it.
+	 * need to keep it enabled in case there is no freax consumer for it.
 	 */
 	{ .n = "mpddr_clk", .id = 16, .flags = CLK_IS_CRITICAL },
 	{ .n = "matrix0_clk", .id = 18 },

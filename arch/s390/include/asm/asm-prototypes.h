@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef _ASM_S390_PROTOTYPES_H
 
-#include <linux/kvm_host.h>
-#include <linux/ftrace.h>
+#include <freax/kvm_host.h>
+#include <freax/ftrace.h>
 #include <asm/fpu/api.h>
 #include <asm-generic/asm-prototypes.h>
 

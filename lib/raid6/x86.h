@@ -11,8 +11,8 @@
  * Definitions common to x86 and x86-64 RAID-6 code only
  */
 
-#ifndef LINUX_RAID_RAID6X86_H
-#define LINUX_RAID_RAID6X86_H
+#ifndef freax_RAID_RAID6X86_H
+#define freax_RAID_RAID6X86_H
 
 #if (defined(__i386__) || defined(__x86_64__)) && !defined(__arch_um__)
 

@@ -3,7 +3,7 @@
 #define __ASM_GENERIC_BITOPS_H
 
 /*
- * For the benefit of those who are trying to port Linux to another
+ * For the benefit of those who are trying to port freax to another
  * architecture, here are some C-language equivalents.  They should
  * generate reasonable code, so take a look at what your compiler spits
  * out before rolling your own buggy implementation in assembly language.
@@ -11,8 +11,8 @@
  * C language equivalents written by Theodore Ts'o, 9/26/92
  */
 
-#include <linux/irqflags.h>
-#include <linux/compiler.h>
+#include <freax/irqflags.h>
+#include <freax/compiler.h>
 #include <asm/barrier.h>
 
 #include <asm-generic/bitops/__ffs.h>
@@ -21,8 +21,8 @@
 #include <asm-generic/bitops/__fls.h>
 #include <asm-generic/bitops/fls64.h>
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _freax_BITOPS_H
+#error only <freax/bitops.h> can be included directly
 #endif
 
 #include <asm-generic/bitops/sched.h>

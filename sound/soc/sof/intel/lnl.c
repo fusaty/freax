@@ -6,7 +6,7 @@
  * Hardware interface for audio DSP on LunarLake.
  */
 
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 #include <sound/hda_register.h>
 #include <sound/sof/ipc4/header.h>
 #include <trace/events/sof_intel.h>

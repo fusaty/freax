@@ -10,15 +10,15 @@
 #ifndef O2CLUSTER_TCP_H
 #define O2CLUSTER_TCP_H
 
-#include <linux/socket.h>
+#include <freax/socket.h>
 #ifdef __KERNEL__
 #include <net/sock.h>
-#include <linux/tcp.h>
+#include <freax/tcp.h>
 #else
 #include <sys/socket.h>
 #endif
-#include <linux/inet.h>
-#include <linux/in.h>
+#include <freax/inet.h>
+#include <freax/in.h>
 
 struct o2net_msg
 {

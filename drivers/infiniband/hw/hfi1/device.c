@@ -3,9 +3,9 @@
  * Copyright(c) 2015, 2016 Intel Corporation.
  */
 
-#include <linux/cdev.h>
-#include <linux/device.h>
-#include <linux/fs.h>
+#include <freax/cdev.h>
+#include <freax/device.h>
+#include <freax/fs.h>
 
 #include "hfi.h"
 #include "device.h"

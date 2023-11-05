@@ -1,37 +1,37 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-/*  D-Link DL2000-based Gigabit Ethernet Adapter Linux driver */
+/*  D-Link DL2000-based Gigabit Ethernet Adapter freax driver */
 /*
     Copyright (c) 2001, 2002 by D-Link Corporation
     Written by Edward Peng.<edward_peng@dlink.com.tw>
-    Created 03-May-2001, base on Linux' sundance.c.
+    Created 03-May-2001, base on freax' sundance.c.
 
 */
 
 #ifndef __DL2K_H__
 #define __DL2K_H__
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/crc32.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/bitops.h>
 #include <asm/processor.h>	/* Processor type for cache alignment. */
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/delay.h>
-#include <linux/spinlock.h>
-#include <linux/time.h>
+#include <freax/uaccess.h>
+#include <freax/delay.h>
+#include <freax/spinlock.h>
+#include <freax/time.h>
 #define TX_RING_SIZE	256
 #define TX_QUEUE_LEN	(TX_RING_SIZE - 1) /* Limit ring entries actually used.*/
 #define RX_RING_SIZE 	256

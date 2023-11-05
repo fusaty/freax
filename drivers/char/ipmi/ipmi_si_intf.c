@@ -21,28 +21,28 @@
 
 #define pr_fmt(fmt) "ipmi_si: " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/sched.h>
-#include <linux/seq_file.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/list.h>
-#include <linux/notifier.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/sched.h>
+#include <freax/seq_file.h>
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/list.h>
+#include <freax/notifier.h>
+#include <freax/mutex.h>
+#include <freax/kthread.h>
 #include <asm/irq.h>
-#include <linux/interrupt.h>
-#include <linux/rcupdate.h>
-#include <linux/ipmi.h>
-#include <linux/ipmi_smi.h>
+#include <freax/interrupt.h>
+#include <freax/rcupdate.h>
+#include <freax/ipmi.h>
+#include <freax/ipmi_smi.h>
 #include "ipmi_si.h"
 #include "ipmi_si_sm.h"
-#include <linux/string.h>
-#include <linux/ctype.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
 
 /* Measure times between events in the driver. */
 #undef DEBUG_TIMING

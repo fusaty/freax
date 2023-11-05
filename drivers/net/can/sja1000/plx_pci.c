@@ -8,15 +8,15 @@
  *	Copyright (C) 2008 Sebastian Haas <haas@ems-wuensche.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/can/dev.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/can/dev.h>
+#include <freax/io.h>
 
 #include "sja1000.h"
 

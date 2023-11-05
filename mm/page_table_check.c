@@ -4,9 +4,9 @@
  * Copyright (c) 2021, Google LLC.
  * Pasha Tatashin <pasha.tatashin@soleen.com>
  */
-#include <linux/kstrtox.h>
-#include <linux/mm.h>
-#include <linux/page_table_check.h>
+#include <freax/kstrtox.h>
+#include <freax/mm.h>
+#include <freax/page_table_check.h>
 
 #undef pr_fmt
 #define pr_fmt(fmt)	"page_table_check: " fmt

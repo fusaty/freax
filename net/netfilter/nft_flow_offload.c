@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/netfilter/nf_conntrack_common.h>
-#include <linux/netfilter/nf_tables.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/netlink.h>
+#include <freax/netfilter.h>
+#include <freax/workqueue.h>
+#include <freax/spinlock.h>
+#include <freax/netfilter/nf_conntrack_common.h>
+#include <freax/netfilter/nf_tables.h>
 #include <net/ip.h> /* for ipv4 options. */
 #include <net/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_core.h>

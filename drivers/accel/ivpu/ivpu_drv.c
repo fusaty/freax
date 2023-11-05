@@ -3,9 +3,9 @@
  * Copyright (C) 2020-2023 Intel Corporation
  */
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include <drm/drm_accel.h>
 #include <drm/drm_file.h>

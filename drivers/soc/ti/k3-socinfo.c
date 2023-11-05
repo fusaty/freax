@@ -5,14 +5,14 @@
  * Copyright (C) 2020 Texas Instruments Incorporated - http://www.ti.com
  */
 
-#include <linux/mfd/syscon.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/regmap.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/sys_soc.h>
+#include <freax/mfd/syscon.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/regmap.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/sys_soc.h>
 
 #define CTRLMMR_WKUP_JTAGID_REG		0
 /*

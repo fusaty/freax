@@ -4,19 +4,19 @@
  * Copyright (C) 2007, 2008 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/blk-mq.h>
-#include <linux/hdreg.h>
-#include <linux/cdrom.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/scatterlist.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/blk-mq.h>
+#include <freax/hdreg.h>
+#include <freax/cdrom.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/scatterlist.h>
 
 #include <asm/vio.h>
 #include <asm/ldc.h>

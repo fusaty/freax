@@ -5,7 +5,7 @@
 /*
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 #define M4IF_MCR0_OFFSET			(0x008C)
 #define M4IF_MCR0_FDVFS				(0x1 << 11)

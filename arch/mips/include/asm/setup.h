@@ -2,7 +2,7 @@
 #ifndef _MIPS_SETUP_H
 #define _MIPS_SETUP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <uapi/asm/setup.h>
 
 extern void prom_putchar(char);

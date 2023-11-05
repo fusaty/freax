@@ -9,9 +9,9 @@
  *		Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/pgtable.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
+#include <freax/pgtable.h>
 
 #include <asm/asm_pointer_auth.h>
 #include <asm/assembler.h>
@@ -55,7 +55,7 @@
  */
 	__HEAD
 	/*
-	 * DO NOT MODIFY. Image header expected by Linux boot-loaders.
+	 * DO NOT MODIFY. Image header expected by freax boot-loaders.
 	 */
 	efi_signature_nop			// special NOP to identity as PE/COFF executable
 	b	primary_entry			// branch to kernel start, magic
@@ -515,7 +515,7 @@ SYM_FUNC_START_LOCAL(__primary_switched)
 	mov	x0, x20				// pass the full boot status
 	bl	init_feature_override		// Parse cpu feature overrides
 #ifdef CONFIG_UNWIND_PATCH_PAC_INTO_SCS
-	bl	scs_patch_vmlinux
+	bl	scs_patch_vmfreax
 #endif
 	mov	x0, x20
 	bl	finalise_el2			// Prefer VHE if possible

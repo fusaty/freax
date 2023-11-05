@@ -14,13 +14,13 @@
 #ifndef _CPUFREQ_GOVERNOR_H
 #define _CPUFREQ_GOVERNOR_H
 
-#include <linux/atomic.h>
-#include <linux/irq_work.h>
-#include <linux/cpufreq.h>
-#include <linux/sched/cpufreq.h>
-#include <linux/kernel_stat.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <freax/atomic.h>
+#include <freax/irq_work.h>
+#include <freax/cpufreq.h>
+#include <freax/sched/cpufreq.h>
+#include <freax/kernel_stat.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
 
 /* Ondemand Sampling types */
 enum {OD_NORMAL_SAMPLE, OD_SUB_SAMPLE};

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
- * <linux/patchkey.h> -- definition of _PATCHKEY macro
+ * <freax/patchkey.h> -- definition of _PATCHKEY macro
  *
  * Copyright (C) 2005 Stuart Brady
  *
@@ -8,15 +8,15 @@
  * clear whether removing this would break anything in userspace.
  *
  * Do not include this file directly.  Please use <sys/soundcard.h> instead.
- * For kernel code, use <linux/soundcard.h>
+ * For kernel code, use <freax/soundcard.h>
  */
 
-#ifndef _LINUX_PATCHKEY_H_INDIRECT
+#ifndef _freax_PATCHKEY_H_INDIRECT
 #error "patchkey.h included directly"
 #endif
 
-#ifndef _UAPI_LINUX_PATCHKEY_H
-#define _UAPI_LINUX_PATCHKEY_H
+#ifndef _UAPI_freax_PATCHKEY_H
+#define _UAPI_freax_PATCHKEY_H
 
 /* Endian macros. */
 #ifndef __KERNEL__
@@ -35,4 +35,4 @@
 #endif
 #endif
 
-#endif /* _UAPI_LINUX_PATCHKEY_H */
+#endif /* _UAPI_freax_PATCHKEY_H */

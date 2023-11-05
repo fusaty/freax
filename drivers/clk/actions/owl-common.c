@@ -8,8 +8,8 @@
 // Copyright (c) 2018 Linaro Ltd.
 // Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
 
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #include "owl-common.h"
 

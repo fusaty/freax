@@ -10,8 +10,8 @@
  * above-listed licenses.
  */
 
-#ifndef LINUX_ZSTD_H
-#define LINUX_ZSTD_H
+#ifndef freax_ZSTD_H
+#define freax_ZSTD_H
 
 /**
  * This is a kernel-style API that wraps the upstream zstd API, which cannot be
@@ -21,9 +21,9 @@
  */
 
 /* ======   Dependency   ====== */
-#include <linux/types.h>
-#include <linux/zstd_errors.h>
-#include <linux/zstd_lib.h>
+#include <freax/types.h>
+#include <freax/zstd_errors.h>
+#include <freax/zstd_lib.h>
 
 /* ======   Helper Functions   ====== */
 /**
@@ -444,4 +444,4 @@ typedef ZSTD_frameHeader zstd_frame_header;
 size_t zstd_get_frame_header(zstd_frame_header *params, const void *src,
 	size_t src_size);
 
-#endif  /* LINUX_ZSTD_H */
+#endif  /* freax_ZSTD_H */

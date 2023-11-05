@@ -3,7 +3,7 @@
  *  comedi/drivers/ni_routes.c
  *  Route information for NI boards.
  *
- *  COMEDI - Linux Control and Measurement Device Interface
+ *  COMEDI - freax Control and Measurement Device Interface
  *  Copyright (C) 2016 Spencer E. Olson <olsonse@umich.edu>
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -17,11 +17,11 @@
  *  GNU General Public License for more details.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/bsearch.h>
-#include <linux/sort.h>
-#include <linux/comedi.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/bsearch.h>
+#include <freax/sort.h>
+#include <freax/comedi.h>
 
 #include "ni_routes.h"
 #include "ni_routing/ni_route_values.h"

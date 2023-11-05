@@ -2,10 +2,10 @@
 #ifndef __BCMASP_H
 #define __BCMASP_H
 
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/io-64-nonatomic-hi-lo.h>
-#include <uapi/linux/ethtool.h>
+#include <freax/netdevice.h>
+#include <freax/phy.h>
+#include <freax/io-64-nonatomic-hi-lo.h>
+#include <uapi/freax/ethtool.h>
 
 #define ASP_INTR2_OFFSET			0x1000
 #define  ASP_INTR2_STATUS			0x0

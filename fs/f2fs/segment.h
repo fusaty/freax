@@ -5,8 +5,8 @@
  * Copyright (c) 2012 Samsung Electronics Co., Ltd.
  *             http://www.samsung.com/
  */
-#include <linux/blkdev.h>
-#include <linux/backing-dev.h>
+#include <freax/blkdev.h>
+#include <freax/backing-dev.h>
 
 /* constant macro */
 #define NULL_SEGNO			((unsigned int)(~0))

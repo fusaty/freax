@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * OpenRISC Linux
+ * OpenRISC freax
  *
- * Linux architectural port borrowing liberally from similar works of
+ * freax architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -20,7 +20,7 @@
  * for everything.
  */
 
-#include <linux/pagemap.h>
+#include <freax/pagemap.h>
 #include <asm-generic/tlb.h>
 
 #endif /* __ASM_OPENRISC_TLB_H__ */

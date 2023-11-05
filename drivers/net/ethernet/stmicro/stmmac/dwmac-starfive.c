@@ -7,11 +7,11 @@
  *
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
 #include "stmmac_platform.h"
 

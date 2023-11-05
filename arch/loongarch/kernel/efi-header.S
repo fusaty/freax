@@ -3,8 +3,8 @@
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
 
-#include <linux/pe.h>
-#include <linux/sizes.h>
+#include <freax/pe.h>
+#include <freax/sizes.h>
 
 	.macro	__EFI_PE_HEADER
 	.long	PE_MAGIC
@@ -35,8 +35,8 @@
 	.long	PECOFF_FILE_ALIGN			/* FileAlignment */
 	.short	0					/* MajorOperatingSystemVersion */
 	.short	0					/* MinorOperatingSystemVersion */
-	.short	LINUX_EFISTUB_MAJOR_VERSION		/* MajorImageVersion */
-	.short	LINUX_EFISTUB_MINOR_VERSION		/* MinorImageVersion */
+	.short	freax_EFISTUB_MAJOR_VERSION		/* MajorImageVersion */
+	.short	freax_EFISTUB_MINOR_VERSION		/* MinorImageVersion */
 	.short	0					/* MajorSubsystemVersion */
 	.short	0					/* MinorSubsystemVersion */
 	.long	0					/* Win32VersionValue */

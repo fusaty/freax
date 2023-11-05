@@ -5,17 +5,17 @@
  * Richtek RT1711H Type-C Chip Driver
  */
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/gpio/consumer.h>
-#include <linux/usb/tcpci.h>
-#include <linux/usb/tcpm.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
+#include <freax/bits.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/gpio/consumer.h>
+#include <freax/usb/tcpci.h>
+#include <freax/usb/tcpm.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
 
 #define RT1711H_VID		0x29CF
 #define RT1711H_PID		0x1711

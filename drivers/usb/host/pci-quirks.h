@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_USB_PCI_QUIRKS_H
-#define __LINUX_USB_PCI_QUIRKS_H
+#ifndef __freax_USB_PCI_QUIRKS_H
+#define __freax_USB_PCI_QUIRKS_H
 
 #ifdef CONFIG_USB_PCI_AMD
 int usb_hcd_amd_remote_wakeup_quirk(struct pci_dev *pdev);
@@ -47,4 +47,4 @@ static inline void usb_asmedia_modifyflowcontrol(struct pci_dev *pdev) {}
 static inline void usb_disable_xhci_ports(struct pci_dev *xhci_pdev) {}
 #endif  /* CONFIG_USB_PCI */
 
-#endif  /*  __LINUX_USB_PCI_QUIRKS_H  */
+#endif  /*  __freax_USB_PCI_QUIRKS_H  */

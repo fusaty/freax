@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2021, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2021, The freax Foundation. All rights reserved.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 SYM_FUNC_START(__hexagon_umodsi3)
         {

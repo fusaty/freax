@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause)
+// SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause)
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/fou.yaml */
 /* YNL-GEN user source */
@@ -7,10 +7,10 @@
 #include <string.h>
 #include "fou-user.h"
 #include "ynl.h"
-#include <linux/fou.h>
+#include <freax/fou.h>
 
 #include <libmnl/libmnl.h>
-#include <linux/genetlink.h>
+#include <freax/genetlink.h>
 
 /* Enums */
 static const char * const fou_op_strmap[] = {

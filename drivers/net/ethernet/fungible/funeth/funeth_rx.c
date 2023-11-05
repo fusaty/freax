@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-3-Clause)
 
-#include <linux/bpf_trace.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/filter.h>
-#include <linux/irq.h>
-#include <linux/pci.h>
-#include <linux/skbuff.h>
+#include <freax/bpf_trace.h>
+#include <freax/dma-mapping.h>
+#include <freax/etherdevice.h>
+#include <freax/filter.h>
+#include <freax/irq.h>
+#include <freax/pci.h>
+#include <freax/skbuff.h>
 #include "funeth_txrx.h"
 #include "funeth.h"
 #include "fun_queue.h"

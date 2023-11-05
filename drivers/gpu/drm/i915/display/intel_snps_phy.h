@@ -6,7 +6,7 @@
 #ifndef __INTEL_SNPS_PHY_H__
 #define __INTEL_SNPS_PHY_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct drm_i915_private;
 struct intel_atomic_state;

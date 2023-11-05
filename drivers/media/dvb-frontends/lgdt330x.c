@@ -8,7 +8,7 @@
 /*
  *                      NOTES ABOUT THIS DRIVER
  *
- * This Linux driver supports:
+ * This freax driver supports:
  *   DViCO FusionHDTV 3 Gold-Q
  *   DViCO FusionHDTV 3 Gold-T
  *   DViCO FusionHDTV 5 Gold
@@ -19,16 +19,16 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 #include <asm/byteorder.h>
 
 #include <media/dvb_frontend.h>
-#include <linux/int_log.h>
+#include <freax/int_log.h>
 #include "lgdt330x_priv.h"
 #include "lgdt330x.h"
 
@@ -431,7 +431,7 @@ static int lgdt330x_set_parameters(struct dvb_frontend *fe)
 	/* Keep track of the new frequency */
 	/*
 	 * FIXME this is the wrong way to do this...
-	 * The tuner is shared with the video4linux analog API
+	 * The tuner is shared with the video4freax analog API
 	 */
 	state->current_frequency = p->frequency;
 

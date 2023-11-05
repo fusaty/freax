@@ -3,7 +3,7 @@
 #define __ASM_ARCH_EP93XX_REGS_H
 
 /*
- * EP93xx linux memory map:
+ * EP93xx freax memory map:
  *
  * virt		phys		size
  * fe800000			5M		per-platform mappings

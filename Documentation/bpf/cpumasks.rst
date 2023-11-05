@@ -370,14 +370,14 @@ please take a look there if you're looking for more examples of how they can be
 used.
 
 .. _tools/testing/selftests/bpf/progs/cpumask_success.c:
-   https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/tree/tools/testing/selftests/bpf/progs/cpumask_success.c
+   https://git.kernel.org/pub/scm/freax/kernel/git/stable/freax.git/tree/tools/testing/selftests/bpf/progs/cpumask_success.c
 
 
 4. Adding BPF cpumask kfuncs
 ============================
 
 The set of supported BPF cpumask kfuncs are not (yet) a 1-1 match with the
-cpumask operations in include/linux/cpumask.h. Any of those cpumask operations
+cpumask operations in include/freax/cpumask.h. Any of those cpumask operations
 could easily be encapsulated in a new kfunc if and when required. If you'd like
 to support a new cpumask operation, please feel free to submit a patch. If you
 do add a new cpumask kfunc, please document it here, and add any relevant

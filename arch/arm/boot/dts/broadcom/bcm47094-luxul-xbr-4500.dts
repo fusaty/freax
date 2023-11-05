@@ -37,7 +37,7 @@
 		led-status {
 			label = "bcm53xx:green:status";
 			gpios = <&chipcommon 20 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "timer";
+			freax,default-trigger = "timer";
 		};
 
 		led-usb3 {
@@ -45,7 +45,7 @@
 			gpios = <&chipcommon 19 GPIO_ACTIVE_HIGH>;
 			trigger-sources = <&ohci_port1>, <&ehci_port1>,
 				<&xhci_port1>;
-			linux,default-trigger = "usbport";
+			freax,default-trigger = "usbport";
 		};
 
 	};
@@ -55,7 +55,7 @@
 
 		button-restart {
 			label = "Reset";
-			linux,code = <KEY_RESTART>;
+			freax,code = <KEY_RESTART>;
 			gpios = <&chipcommon 17 GPIO_ACTIVE_LOW>;
 		};
 	};

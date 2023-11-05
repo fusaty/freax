@@ -6,15 +6,15 @@
  * This code is licenced under the GPL.
  */
 
-#include <linux/kernel.h>
-#include <linux/cpuidle.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/completion.h>
-#include <linux/capability.h>
-#include <linux/device.h>
-#include <linux/kobject.h>
+#include <freax/kernel.h>
+#include <freax/cpuidle.h>
+#include <freax/sysfs.h>
+#include <freax/slab.h>
+#include <freax/cpu.h>
+#include <freax/completion.h>
+#include <freax/capability.h>
+#include <freax/device.h>
+#include <freax/kobject.h>
 
 #include "cpuidle.h"
 

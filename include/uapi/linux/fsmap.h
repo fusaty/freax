@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * FS_IOC_GETFSMAP ioctl infrastructure.
  *
@@ -6,10 +6,10 @@
  *
  * Author: Darrick J. Wong <darrick.wong@oracle.com>
  */
-#ifndef _LINUX_FSMAP_H
-#define _LINUX_FSMAP_H
+#ifndef _freax_FSMAP_H
+#define _freax_FSMAP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  *	Structure for FS_IOC_GETFSMAP.
@@ -110,4 +110,4 @@ fsmap_advance(
 
 #define FS_IOC_GETFSMAP		_IOWR('X', 59, struct fsmap_head)
 
-#endif /* _LINUX_FSMAP_H */
+#endif /* _freax_FSMAP_H */

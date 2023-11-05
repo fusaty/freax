@@ -1,10 +1,10 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2021, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
 #include "selq.h"
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/rcupdate.h>
+#include <freax/slab.h>
+#include <freax/netdevice.h>
+#include <freax/rcupdate.h>
 #include "en.h"
 #include "en/ptp.h"
 #include "en/htb.h"

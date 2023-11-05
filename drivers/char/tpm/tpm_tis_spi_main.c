@@ -20,17 +20,17 @@
  * Dorn and Kyleen Hall and Jarko Sakkinnen.
  */
 
-#include <linux/acpi.h>
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/completion.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
-#include <linux/of.h>
-#include <linux/spi/spi.h>
-#include <linux/tpm.h>
+#include <freax/of.h>
+#include <freax/spi/spi.h>
+#include <freax/tpm.h>
 
 #include "tpm.h"
 #include "tpm_tis_core.h"

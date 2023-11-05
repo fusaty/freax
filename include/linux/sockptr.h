@@ -5,11 +5,11 @@
  * Support for "universal" pointers that can point to either kernel or userspace
  * memory.
  */
-#ifndef _LINUX_SOCKPTR_H
-#define _LINUX_SOCKPTR_H
+#ifndef _freax_SOCKPTR_H
+#define _freax_SOCKPTR_H
 
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
 typedef struct {
 	union {
@@ -138,4 +138,4 @@ static inline int check_zeroed_sockptr(sockptr_t src, size_t offset,
 	return memchr_inv(src.kernel + offset, 0, size) == NULL;
 }
 
-#endif /* _LINUX_SOCKPTR_H */
+#endif /* _freax_SOCKPTR_H */

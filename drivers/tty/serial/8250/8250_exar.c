@@ -6,19 +6,19 @@
  *
  *  Copyright (C) 2017 Sudip Mukherjee, All Rights Reserved.
  */
-#include <linux/acpi.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/property.h>
-#include <linux/serial_core.h>
-#include <linux/serial_reg.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tty.h>
-#include <linux/delay.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/property.h>
+#include <freax/serial_core.h>
+#include <freax/serial_reg.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/tty.h>
+#include <freax/delay.h>
 
 #include <asm/byteorder.h>
 

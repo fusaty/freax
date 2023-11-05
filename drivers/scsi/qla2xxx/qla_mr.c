@@ -4,13 +4,13 @@
  * Copyright (c)  2003-2014 QLogic Corporation
  */
 #include "qla_def.h"
-#include <linux/delay.h>
-#include <linux/ktime.h>
-#include <linux/pci.h>
-#include <linux/ratelimit.h>
-#include <linux/vmalloc.h>
+#include <freax/delay.h>
+#include <freax/ktime.h>
+#include <freax/pci.h>
+#include <freax/ratelimit.h>
+#include <freax/vmalloc.h>
 #include <scsi/scsi_tcq.h>
-#include <linux/utsname.h>
+#include <freax/utsname.h>
 
 
 /* QLAFX00 specific Mailbox implementation functions */
@@ -1849,7 +1849,7 @@ qlafx00_fx_disc(scsi_qla_host_t *vha, fc_port_t *fcport, uint16_t fx_type)
 				fdisc->u.fxiocb.req_addr;
 			phost_info = &preg_hsi->hsi;
 			memset(preg_hsi, 0, sizeof(struct register_host_info));
-			phost_info->os_type = OS_TYPE_LINUX;
+			phost_info->os_type = OS_TYPE_freax;
 			strscpy(phost_info->sysname, p_sysid->sysname,
 				sizeof(phost_info->sysname));
 			strscpy(phost_info->nodename, p_sysid->nodename,
@@ -2337,7 +2337,7 @@ qlafx00_status_entry(scsi_qla_host_t *vha, struct rsp_que *rsp, void *pkt)
 		comp_status = cpu_to_le16((uint16_t)CS_DATA_OVERRUN);
 
 	/*
-	 * Based on Host and scsi status generate status code for Linux
+	 * Based on Host and scsi status generate status code for freax
 	 */
 	switch (le16_to_cpu(comp_status)) {
 	case CS_COMPLETE:

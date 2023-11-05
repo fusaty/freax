@@ -52,25 +52,25 @@
 
 /*****************************************************************************/
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/hdlcdrv.h>
-#include <linux/baycom.h>
-#include <linux/parport.h>
-#include <linux/bitops.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/in.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/hdlcdrv.h>
+#include <freax/baycom.h>
+#include <freax/parport.h>
+#include <freax/bitops.h>
+#include <freax/jiffies.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /* --------------------------------------------------------------------- */
 

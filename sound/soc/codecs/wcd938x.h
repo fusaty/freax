@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 #ifndef __WCD938X_H__
 #define __WCD938X_H__
-#include <linux/soundwire/sdw.h>
-#include <linux/soundwire/sdw_type.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/soundwire/sdw_type.h>
 
 #define WCD938X_BASE_ADDRESS			(0x3000)
 #define WCD938X_ANA_PAGE_REGISTER               (0x3000)

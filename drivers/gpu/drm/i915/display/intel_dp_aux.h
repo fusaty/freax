@@ -6,7 +6,7 @@
 #ifndef __INTEL_DP_AUX_H__
 #define __INTEL_DP_AUX_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum aux_ch;
 struct drm_i915_private;

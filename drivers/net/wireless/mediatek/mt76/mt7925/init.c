@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: ISC
 /* Copyright (C) 2023 MediaTek Inc. */
 
-#include <linux/etherdevice.h>
-#include <linux/firmware.h>
+#include <freax/etherdevice.h>
+#include <freax/firmware.h>
 #include "mt7925.h"
 #include "mac.h"
 #include "mcu.h"

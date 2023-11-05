@@ -34,8 +34,8 @@
 #ifndef USNIC_UIOM_H_
 #define USNIC_UIOM_H_
 
-#include <linux/list.h>
-#include <linux/scatterlist.h>
+#include <freax/list.h>
+#include <freax/scatterlist.h>
 
 #include "usnic_uiom_interval_tree.h"
 

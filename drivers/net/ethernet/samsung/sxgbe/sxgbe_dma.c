@@ -6,11 +6,11 @@
  *
  * Author: Siva Reddy Kallam <siva.kallam@samsung.com>
  */
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/netdevice.h>
+#include <freax/phy.h>
 
 #include "sxgbe_common.h"
 #include "sxgbe_dma.h"

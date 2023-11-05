@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* linux/include/linux/mtd/plat-ram.h
+/* freax/include/freax/mtd/plat-ram.h
  *
  * (c) 2004 Simtec Electronics
- *	http://www.simtec.co.uk/products/SWLINUX/
+ *	http://www.simtec.co.uk/products/SWfreax/
  *	Ben Dooks <ben@simtec.co.uk>
  *
  * Generic platform device based RAM map
  */
 
-#ifndef __LINUX_MTD_PLATRAM_H
-#define __LINUX_MTD_PLATRAM_H __FILE__
+#ifndef __freax_MTD_PLATRAM_H
+#define __freax_MTD_PLATRAM_H __FILE__
 
 #define PLATRAM_RO (0)
 #define PLATRAM_RW (1)
@@ -27,4 +27,4 @@ struct platdata_mtd_ram {
 	void	(*set_rw)(struct device *dev, int to);
 };
 
-#endif /* __LINUX_MTD_PLATRAM_H */
+#endif /* __freax_MTD_PLATRAM_H */

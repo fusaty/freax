@@ -3,8 +3,8 @@
  * Copyright (C) 2015 Freescale Semiconductor, Inc.
  */
 
-#ifndef __LINUX_IMX7_IOMUXC_GPR_H
-#define __LINUX_IMX7_IOMUXC_GPR_H
+#ifndef __freax_IMX7_IOMUXC_GPR_H
+#define __freax_IMX7_IOMUXC_GPR_H
 
 #define IOMUXC_GPR0	0x00
 #define IOMUXC_GPR1	0x04
@@ -45,4 +45,4 @@
 
 #define IMX7D_GPR22_PCIE_PHY_PLL_LOCKED		BIT(31)
 
-#endif /* __LINUX_IMX7_IOMUXC_GPR_H */
+#endif /* __freax_IMX7_IOMUXC_GPR_H */

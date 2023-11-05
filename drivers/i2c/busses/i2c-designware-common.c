@@ -8,23 +8,23 @@
  * Copyright (C) 2007 MontaVista Software Inc.
  * Copyright (C) 2009 Provigent Ltd.
  */
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/swab.h>
-#include <linux/types.h>
-#include <linux/units.h>
+#include <freax/acpi.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/swab.h>
+#include <freax/types.h>
+#include <freax/units.h>
 
 #include "i2c-designware-core.h"
 
@@ -212,7 +212,7 @@ EXPORT_SYMBOL_GPL(i2c_dw_validate_speed);
 
 #ifdef CONFIG_ACPI
 
-#include <linux/dmi.h>
+#include <freax/dmi.h>
 
 /*
  * The HCNT/LCNT information coming from ACPI should be the most accurate

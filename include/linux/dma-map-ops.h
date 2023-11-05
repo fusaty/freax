@@ -3,12 +3,12 @@
  * This header is for implementations of dma_map_ops and related code.
  * It should not be included in drivers just using the DMA API.
  */
-#ifndef _LINUX_DMA_MAP_OPS_H
-#define _LINUX_DMA_MAP_OPS_H
+#ifndef _freax_DMA_MAP_OPS_H
+#define _freax_DMA_MAP_OPS_H
 
-#include <linux/dma-mapping.h>
-#include <linux/pgtable.h>
-#include <linux/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/pgtable.h>
+#include <freax/slab.h>
 
 struct cma;
 
@@ -509,4 +509,4 @@ pci_p2pdma_map_segment(struct pci_p2pdma_map_state *state, struct device *dev,
 }
 #endif /* CONFIG_PCI_P2PDMA */
 
-#endif /* _LINUX_DMA_MAP_OPS_H */
+#endif /* _freax_DMA_MAP_OPS_H */

@@ -4,17 +4,17 @@
  *
  * Maintainer: Sylver Bruneau <sylver.bruneau@googlemail.com>
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/i2c.h>
-#include <linux/serial_reg.h>
+#include <freax/gpio.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/pci.h>
+#include <freax/irq.h>
+#include <freax/delay.h>
+#include <freax/mtd/physmap.h>
+#include <freax/mv643xx_eth.h>
+#include <freax/i2c.h>
+#include <freax/serial_reg.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/pci.h>

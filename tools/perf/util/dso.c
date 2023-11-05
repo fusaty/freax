@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0
 #include <asm/bug.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/zalloc.h>
 #include <sys/time.h>
 #include <sys/resource.h>
 #include <sys/types.h>
@@ -43,7 +43,7 @@ char dso__symtab_origin(const struct dso *dso)
 {
 	static const char origin[] = {
 		[DSO_BINARY_TYPE__KALLSYMS]			= 'k',
-		[DSO_BINARY_TYPE__VMLINUX]			= 'v',
+		[DSO_BINARY_TYPE__VMfreax]			= 'v',
 		[DSO_BINARY_TYPE__JAVA_JIT]			= 'j',
 		[DSO_BINARY_TYPE__DEBUGLINK]			= 'l',
 		[DSO_BINARY_TYPE__BUILD_ID_CACHE]		= 'B',
@@ -59,7 +59,7 @@ char dso__symtab_origin(const struct dso *dso)
 		[DSO_BINARY_TYPE__GUEST_KALLSYMS]		= 'g',
 		[DSO_BINARY_TYPE__GUEST_KMODULE]		= 'G',
 		[DSO_BINARY_TYPE__GUEST_KMODULE_COMP]		= 'M',
-		[DSO_BINARY_TYPE__GUEST_VMLINUX]		= 'V',
+		[DSO_BINARY_TYPE__GUEST_VMfreax]		= 'V',
 	};
 
 	if (dso == NULL || dso->symtab_type == DSO_BINARY_TYPE__NOT_FOUND)
@@ -77,8 +77,8 @@ bool dso__is_object_file(const struct dso *dso)
 	case DSO_BINARY_TYPE__BPF_IMAGE:
 	case DSO_BINARY_TYPE__OOL:
 		return false;
-	case DSO_BINARY_TYPE__VMLINUX:
-	case DSO_BINARY_TYPE__GUEST_VMLINUX:
+	case DSO_BINARY_TYPE__VMfreax:
+	case DSO_BINARY_TYPE__GUEST_VMfreax:
 	case DSO_BINARY_TYPE__DEBUGLINK:
 	case DSO_BINARY_TYPE__BUILD_ID_CACHE:
 	case DSO_BINARY_TYPE__BUILD_ID_CACHE_DEBUGINFO:
@@ -214,8 +214,8 @@ int dso__read_binary_type_filename(const struct dso *dso,
 			 build_id_hex, build_id_hex + 2);
 		break;
 
-	case DSO_BINARY_TYPE__VMLINUX:
-	case DSO_BINARY_TYPE__GUEST_VMLINUX:
+	case DSO_BINARY_TYPE__VMfreax:
+	case DSO_BINARY_TYPE__GUEST_VMfreax:
 	case DSO_BINARY_TYPE__SYSTEM_PATH_DSO:
 		__symbol__join_symfs(filename, size, dso->long_name);
 		break;

@@ -8,20 +8,20 @@
  * Copyright (c) 2021-2023, Oracle and/or its affiliates.
  */
 
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/key.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/key.h>
 
 #include <net/sock.h>
 #include <net/handshake.h>
 #include <net/genetlink.h>
 #include <net/tls_prot.h>
 
-#include <uapi/linux/keyctl.h>
-#include <uapi/linux/handshake.h>
+#include <uapi/freax/keyctl.h>
+#include <uapi/freax/handshake.h>
 #include "handshake.h"
 
 struct tls_handshake_req {

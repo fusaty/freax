@@ -12,13 +12,13 @@
  * Copyright (C) 2021 Emmanuel Gil Peyrot <linkmauve@linkmauve.fr>
  */
 
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of_device.h>
-#include <linux/platform_device.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/nvmem-provider.h>
+#include <freax/of_device.h>
+#include <freax/platform_device.h>
 
 #define HW_OTPCMD  0
 #define HW_OTPDATA 4

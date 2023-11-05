@@ -34,18 +34,18 @@ User Interface
 
 The index of printk formats are split in into separate files. The files are
 named according to the binaries where the printk formats are built-in. There
-is always "vmlinux" and optionally also modules, for example::
+is always "vmfreax" and optionally also modules, for example::
 
-   /sys/kernel/debug/printk/index/vmlinux
+   /sys/kernel/debug/printk/index/vmfreax
    /sys/kernel/debug/printk/index/ext4
    /sys/kernel/debug/printk/index/scsi_mod
 
 Note that only loaded modules are shown. Also printk formats from a module
-might appear in "vmlinux" when the module is built-in.
+might appear in "vmfreax" when the module is built-in.
 
 The content is inspired by the dynamic debug interface and looks like::
 
-   $> head -1 /sys/kernel/debug/printk/index/vmlinux; shuf -n 5 vmlinux
+   $> head -1 /sys/kernel/debug/printk/index/vmfreax; shuf -n 5 vmfreax
    # <level[,flags]> filename:line function "format"
    <5> block/blk-settings.c:661 disk_stack_limits "%s: Warning: Device %s is misaligned\n"
    <4> kernel/trace/trace.c:8296 trace_create_file "Could not create tracefs '%s' entry\n"

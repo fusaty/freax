@@ -5,16 +5,16 @@
  * Author: Fabian Vogt <fabian@ritter-vogt.de>
  */
 
-#include <linux/bitops.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/bitops.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
-#include <linux/gpio/driver.h>
+#include <freax/gpio/driver.h>
 
 /*
  * Memory layout:

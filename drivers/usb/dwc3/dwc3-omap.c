@@ -8,22 +8,22 @@
  *	    Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-mapping.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/extcon.h>
-#include <linux/regulator/consumer.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/dma-mapping.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/extcon.h>
+#include <freax/regulator/consumer.h>
 
-#include <linux/usb/otg.h>
+#include <freax/usb/otg.h>
 
 /*
  * All these registers belong to OMAP's Wrapper around the

@@ -7,7 +7,7 @@
  *              Pavel Shilovsky (pshilovsky@samba.org) 2012
  *
  */
-#include <linux/ctype.h>
+#include <freax/ctype.h>
 #include "cifsglob.h"
 #include "cifsproto.h"
 #include "smb2proto.h"

@@ -11,16 +11,16 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/timer.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/dmi.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/timer.h>
+#include <freax/miscdevice.h>
+#include <freax/watchdog.h>
+#include <freax/dmi.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 
 
 enum {

@@ -7,19 +7,19 @@
  * Copyright (C) 2008  Sylver Bruneau <sylver.bruneau@gmail.com>
  * Copyright (C) 2008  Martin Michlmayr <tbm@cyrius.com>
  */
-#include <linux/gpio.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/irq.h>
-#include <linux/mtd/physmap.h>
-#include <linux/mv643xx_eth.h>
-#include <linux/leds.h>
-#include <linux/gpio_keys.h>
-#include <linux/input.h>
-#include <linux/i2c.h>
-#include <linux/serial_reg.h>
+#include <freax/gpio.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/pci.h>
+#include <freax/irq.h>
+#include <freax/mtd/physmap.h>
+#include <freax/mv643xx_eth.h>
+#include <freax/leds.h>
+#include <freax/gpio_keys.h>
+#include <freax/input.h>
+#include <freax/i2c.h>
+#include <freax/serial_reg.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/pci.h>

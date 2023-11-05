@@ -6,16 +6,16 @@
 
 #define pr_fmt(fmt) "htvec: " fmt
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/syscore_ops.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqdomain.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/syscore_ops.h>
 
 /* Registers */
 #define HTVEC_EN_OFF		0x20

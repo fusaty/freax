@@ -9,7 +9,7 @@
  *
  * SH-Mobile SolutionEngine 7343 support
  */
-#include <linux/sh_intc.h>
+#include <freax/sh_intc.h>
 
 /* Box specific addresses.  */
 

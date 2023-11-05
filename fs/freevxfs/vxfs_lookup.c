@@ -7,12 +7,12 @@
 /*
  * Veritas filesystem driver - lookup and other directory related code.
  */
-#include <linux/fs.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/kernel.h>
-#include <linux/pagemap.h>
+#include <freax/fs.h>
+#include <freax/time.h>
+#include <freax/mm.h>
+#include <freax/highmem.h>
+#include <freax/kernel.h>
+#include <freax/pagemap.h>
 
 #include "vxfs.h"
 #include "vxfs_dir.h"

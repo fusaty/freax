@@ -2,14 +2,14 @@
 #ifndef __ASM_COMPAT_SIGNAL_H
 #define __ASM_COMPAT_SIGNAL_H
 
-#include <linux/bug.h>
-#include <linux/compat.h>
-#include <linux/compiler.h>
+#include <freax/bug.h>
+#include <freax/compat.h>
+#include <freax/compiler.h>
 
 #include <asm/signal.h>
 #include <asm/siginfo.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 static inline int __copy_conv_sigset_to_user(compat_sigset_t __user *d,
 	const sigset_t *s)

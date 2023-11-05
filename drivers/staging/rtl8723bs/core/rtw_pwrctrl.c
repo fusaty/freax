@@ -7,7 +7,7 @@
 #include <drv_types.h>
 #include <rtw_debug.h>
 #include <hal_data.h>
-#include <linux/jiffies.h>
+#include <freax/jiffies.h>
 
 
 void _ips_enter(struct adapter *padapter)

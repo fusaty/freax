@@ -17,7 +17,7 @@
 #include <asm/bootparam.h>
 #include <asm/initialize_mmu.h>
 #include <asm/vectors.h>
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 	.section	.ResetVector.text, "ax"
 	.global         _ResetVector
@@ -54,14 +54,14 @@ _SetupMMU:
 	wsr	a0, ps
 	rsync
 
-#ifndef CONFIG_INITIALIZE_XTENSA_MMU_INSIDE_VMLINUX
+#ifndef CONFIG_INITIALIZE_XTENSA_MMU_INSIDE_VMfreax
 	initialize_mmu
 #endif
 
 	rsil    a0, XCHAL_DEBUGLEVEL-1
 	rsync
 reset:
-#if defined(CONFIG_INITIALIZE_XTENSA_MMU_INSIDE_VMLINUX) && \
+#if defined(CONFIG_INITIALIZE_XTENSA_MMU_INSIDE_VMfreax) && \
 	XCHAL_HAVE_PTP_MMU && XCHAL_HAVE_SPANNING_WAY
 	movi	a0, CONFIG_KERNEL_LOAD_ADDRESS
 #else

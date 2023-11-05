@@ -619,7 +619,7 @@
 		#size-cells = <0x2>;
 		bus-range = <0x0 0xff>;
 		interrupt-map-mask = <0x0 0x0 0x0 0x7>;
-		linux,pci-domain = <0x0>;
+		freax,pci-domain = <0x0>;
 
 		interrupt-parent = <&periph_intc>;
 		interrupts = <39>, <39>;

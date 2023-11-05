@@ -2,13 +2,13 @@
 #ifndef FS_ENET_H
 #define FS_ENET_H
 
-#include <linux/clk.h>
-#include <linux/mii.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/phy.h>
-#include <linux/dma-mapping.h>
+#include <freax/clk.h>
+#include <freax/mii.h>
+#include <freax/netdevice.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/phy.h>
+#include <freax/dma-mapping.h>
 
 #ifdef CONFIG_CPM1
 #include <asm/cpm1.h>

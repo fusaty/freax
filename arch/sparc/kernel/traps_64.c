@@ -9,21 +9,21 @@
  * I like traps on v9, :))))
  */
 
-#include <linux/extable.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/debug.h>
-#include <linux/linkage.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/kallsyms.h>
-#include <linux/kdebug.h>
-#include <linux/ftrace.h>
-#include <linux/reboot.h>
-#include <linux/gfp.h>
-#include <linux/context_tracking.h>
+#include <freax/extable.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/debug.h>
+#include <freax/linkage.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/smp.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/kallsyms.h>
+#include <freax/kdebug.h>
+#include <freax/ftrace.h>
+#include <freax/reboot.h>
+#include <freax/gfp.h>
+#include <freax/context_tracking.h>
 
 #include <asm/smp.h>
 #include <asm/delay.h>
@@ -31,7 +31,7 @@
 #include <asm/oplib.h>
 #include <asm/page.h>
 #include <asm/unistd.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/fpumacro.h>
 #include <asm/lsu.h>
 #include <asm/dcu.h>

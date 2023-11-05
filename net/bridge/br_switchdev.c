@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/netdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/skbuff.h>
 #include <net/ip.h>
 #include <net/switchdev.h>
 

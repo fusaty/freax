@@ -5,12 +5,12 @@
 // Copyright (C) 2016 Ondřej Jirman <megous@megous.com>
 // Copyright (c) 2017-2018 Icenowy Zheng <icenowy@aosc.io>
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/of_regulator.h>
 
 #define SY8106A_REG_VOUT1_SEL		0x01
 #define SY8106A_REG_VOUT_COM		0x02

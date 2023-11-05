@@ -13,16 +13,16 @@
 #include <sound/pcm.h>
 #include "awacs.h"
 
-#include <linux/adb.h>
+#include <freax/adb.h>
 #ifdef CONFIG_ADB_CUDA
-#include <linux/cuda.h>
+#include <freax/cuda.h>
 #endif
 #ifdef CONFIG_ADB_PMU
-#include <linux/pmu.h>
+#include <freax/pmu.h>
 #endif
-#include <linux/nvram.h>
-#include <linux/tty.h>
-#include <linux/vt_kern.h>
+#include <freax/nvram.h>
+#include <freax/tty.h>
+#include <freax/vt_kern.h>
 #include <asm/dbdma.h>
 #include <asm/prom.h>
 #include <asm/machdep.h>

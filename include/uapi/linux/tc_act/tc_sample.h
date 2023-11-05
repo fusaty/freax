@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_TC_SAMPLE_H
-#define __LINUX_TC_SAMPLE_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef __freax_TC_SAMPLE_H
+#define __freax_TC_SAMPLE_H
 
-#include <linux/types.h>
-#include <linux/pkt_cls.h>
-#include <linux/if_ether.h>
+#include <freax/types.h>
+#include <freax/pkt_cls.h>
+#include <freax/if_ether.h>
 
 struct tc_sample {
 	tc_gen;

@@ -7,14 +7,14 @@
  *  Yonglong Wu <yonglong.wu@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/usb/role.h>
-#include <linux/usb/usb_phy_generic.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/usb/role.h>
+#include <freax/usb/usb_phy_generic.h>
 #include "musb_core.h"
 #include "musb_dma.h"
 

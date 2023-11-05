@@ -6,8 +6,8 @@
  * Author: Paul Kocialkowski <paul.kocialkowski@bootlin.com>
  */
 
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 #include <media/v4l2-device.h>
 #include <media/v4l2-event.h>
 #include <media/v4l2-ioctl.h>

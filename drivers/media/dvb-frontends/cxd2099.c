@@ -5,15 +5,15 @@
  * Copyright (C) 2010-2013 Digital Devices GmbH
  */
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/regmap.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/regmap.h>
+#include <freax/wait.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/io.h>
 
 #include "cxd2099.h"
 

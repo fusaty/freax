@@ -21,18 +21,18 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-#include <linux/mutex.h>
-#include <linux/log2.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/mmu_context.h>
-#include <linux/slab.h>
-#include <linux/notifier.h>
-#include <linux/compat.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/pm_runtime.h>
+#include <freax/mutex.h>
+#include <freax/log2.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/task.h>
+#include <freax/mmu_context.h>
+#include <freax/slab.h>
+#include <freax/notifier.h>
+#include <freax/compat.h>
+#include <freax/mman.h>
+#include <freax/file.h>
+#include <freax/pm_runtime.h>
 #include "amdgpu_amdkfd.h"
 #include "amdgpu.h"
 

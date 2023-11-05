@@ -2,17 +2,17 @@
 /*
  * Watchdog driver for TS-4800 based boards
  *
- * Copyright (c) 2015 - Savoir-faire Linux
+ * Copyright (c) 2015 - Savoir-faire freax
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/watchdog.h>
+#include <freax/kernel.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/watchdog.h>
 
 static bool nowayout = WATCHDOG_NOWAYOUT;
 module_param(nowayout, bool, 0);
@@ -199,6 +199,6 @@ static struct platform_driver ts4800_wdt_driver = {
 
 module_platform_driver(ts4800_wdt_driver);
 
-MODULE_AUTHOR("Damien Riegel <damien.riegel@savoirfairelinux.com>");
+MODULE_AUTHOR("Damien Riegel <damien.riegel@savoirfairefreax.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:ts4800_wdt");

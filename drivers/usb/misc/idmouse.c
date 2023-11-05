@@ -12,16 +12,16 @@
 
 */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/completion.h>
+#include <freax/mutex.h>
+#include <freax/uaccess.h>
+#include <freax/usb.h>
 
 /* image constants */
 #define WIDTH 225

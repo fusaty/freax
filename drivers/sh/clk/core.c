@@ -16,18 +16,18 @@
  */
 #define pr_fmt(fmt) "clock: " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/syscore_ops.h>
-#include <linux/seq_file.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/cpufreq.h>
-#include <linux/clk.h>
-#include <linux/sh_clk.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/syscore_ops.h>
+#include <freax/seq_file.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/cpufreq.h>
+#include <freax/clk.h>
+#include <freax/sh_clk.h>
 
 static LIST_HEAD(clock_list);
 static DEFINE_SPINLOCK(clock_lock);

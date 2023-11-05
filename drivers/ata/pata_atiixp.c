@@ -6,21 +6,21 @@
  *
  * Based on
  *
- *  linux/drivers/ide/pci/atiixp.c	Version 0.01-bart2	Feb. 26, 2004
+ *  freax/drivers/ide/pci/atiixp.c	Version 0.01-bart2	Feb. 26, 2004
  *
  *  Copyright (C) 2003 ATI Inc. <hyu@ati.com>
  *  Copyright (C) 2004 Bartlomiej Zolnierkiewicz
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
 #include <scsi/scsi_host.h>
-#include <linux/libata.h>
-#include <linux/dmi.h>
+#include <freax/libata.h>
+#include <freax/dmi.h>
 
 #define DRV_NAME "pata_atiixp"
 #define DRV_VERSION "0.4.6"

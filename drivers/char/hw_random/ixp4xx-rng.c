@@ -11,16 +11,16 @@
  * Fixes by Michael Buesch
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/bitops.h>
-#include <linux/hw_random.h>
-#include <linux/of.h>
-#include <linux/soc/ixp4xx/cpu.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/platform_device.h>
+#include <freax/init.h>
+#include <freax/bitops.h>
+#include <freax/hw_random.h>
+#include <freax/of.h>
+#include <freax/soc/ixp4xx/cpu.h>
 
 #include <asm/io.h>
 

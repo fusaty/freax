@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/device.h>
-#include <linux/types.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/ioremap.h>
+#include <freax/device.h>
+#include <freax/types.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/ioremap.h>
 
 #ifndef arch_memremap_wb
 static void *arch_memremap_wb(resource_size_t offset, unsigned long size)

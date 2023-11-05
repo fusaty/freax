@@ -31,7 +31,7 @@
 #ifndef _TTM_EXECBUF_UTIL_H_
 #define _TTM_EXECBUF_UTIL_H_
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 struct ww_acquire_ctx;
 struct dma_fence;

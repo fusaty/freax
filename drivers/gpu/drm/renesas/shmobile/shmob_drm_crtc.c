@@ -7,8 +7,8 @@
  * Laurent Pinchart (laurent.pinchart@ideasonboard.com)
  */
 
-#include <linux/backlight.h>
-#include <linux/clk.h>
+#include <freax/backlight.h>
+#include <freax/clk.h>
 
 #include <drm/drm_crtc.h>
 #include <drm/drm_crtc_helper.h>

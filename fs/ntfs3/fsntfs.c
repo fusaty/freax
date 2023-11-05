@@ -5,11 +5,11 @@
  *
  */
 
-#include <linux/blkdev.h>
-#include <linux/buffer_head.h>
-#include <linux/fs.h>
-#include <linux/kernel.h>
-#include <linux/nls.h>
+#include <freax/blkdev.h>
+#include <freax/buffer_head.h>
+#include <freax/fs.h>
+#include <freax/kernel.h>
+#include <freax/nls.h>
 
 #include "debug.h"
 #include "ntfs.h"

@@ -5,7 +5,7 @@
  * Copyright (C) 2011 Google, Inc.
  */
 
-#include <linux/pstore_ram.h>
+#include <freax/pstore_ram.h>
 
 /*
  * Choose whether access to the RAM zone requires locking or not.  If a zone

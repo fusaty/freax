@@ -7,9 +7,9 @@
 
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/bug.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/bug.h>
 #include "nonstdio.h"
 #include "ppc.h"
 

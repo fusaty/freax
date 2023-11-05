@@ -4,8 +4,8 @@
 #ifndef _QTN_FMAC_QLINK_UTIL_H_
 #define _QTN_FMAC_QLINK_UTIL_H_
 
-#include <linux/types.h>
-#include <linux/skbuff.h>
+#include <freax/types.h>
+#include <freax/skbuff.h>
 #include <net/cfg80211.h>
 
 #include "qlink.h"

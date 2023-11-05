@@ -9,7 +9,7 @@
  *	any of this software. This material is provided "AS-IS" in
  *      the hope that it may be useful for others.
  *
- *	(c) Copyright 2001    Scott Jennings <linuxdrivers@oro.net>
+ *	(c) Copyright 2001    Scott Jennings <freaxdrivers@oro.net>
  *
  *           4/19 - 2001      [Initial revision]
  *           9/27 - 2001      Added spinlocking
@@ -31,7 +31,7 @@
  *			      module_param
  *                            made the keepalive ping an internal subroutine
  *
- *  This WDT driver is different from most other Linux WDT
+ *  This WDT driver is different from most other freax WDT
  *  drivers in that the driver will ping the watchdog by itself,
  *  because this particular WDT has a very short timeout (1.6
  *  seconds) and it would be insane to count on any userspace
@@ -40,20 +40,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/timer.h>
-#include <linux/jiffies.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/ioport.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/timer.h>
+#include <freax/jiffies.h>
+#include <freax/miscdevice.h>
+#include <freax/watchdog.h>
+#include <freax/fs.h>
+#include <freax/ioport.h>
+#include <freax/notifier.h>
+#include <freax/reboot.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 
 #define OUR_NAME "w83877f_wdt"
 

@@ -11,7 +11,7 @@
  *	Cisco 5500
  *	Sun Trunking (Solaris)
  *	Alteon AceDirector Trunks
- *	Linux Bonding
+ *	freax Bonding
  *	and probably many L2 switches ...
  *
  * How it works:
@@ -32,55 +32,55 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/filter.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/in.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/filter.h>
+#include <freax/interrupt.h>
+#include <freax/ptrace.h>
+#include <freax/ioport.h>
+#include <freax/in.h>
 #include <net/ip.h>
-#include <linux/ip.h>
-#include <linux/icmp.h>
-#include <linux/icmpv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/timer.h>
-#include <linux/socket.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
-#include <linux/bitops.h>
-#include <linux/io.h>
+#include <freax/ip.h>
+#include <freax/icmp.h>
+#include <freax/icmpv6.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/timer.h>
+#include <freax/socket.h>
+#include <freax/ctype.h>
+#include <freax/inet.h>
+#include <freax/bitops.h>
+#include <freax/io.h>
 #include <asm/dma.h>
-#include <linux/uaccess.h>
-#include <linux/errno.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
-#include <linux/igmp.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
+#include <freax/uaccess.h>
+#include <freax/errno.h>
+#include <freax/netdevice.h>
+#include <freax/inetdevice.h>
+#include <freax/igmp.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
 #include <net/sock.h>
-#include <linux/rtnetlink.h>
-#include <linux/smp.h>
-#include <linux/if_ether.h>
+#include <freax/rtnetlink.h>
+#include <freax/smp.h>
+#include <freax/if_ether.h>
 #include <net/arp.h>
-#include <linux/mii.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bonding.h>
-#include <linux/phy.h>
-#include <linux/jiffies.h>
-#include <linux/preempt.h>
+#include <freax/mii.h>
+#include <freax/ethtool.h>
+#include <freax/if_vlan.h>
+#include <freax/if_bonding.h>
+#include <freax/phy.h>
+#include <freax/jiffies.h>
+#include <freax/preempt.h>
 #include <net/route.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/pkt_sched.h>
-#include <linux/rculist.h>
+#include <freax/rculist.h>
 #include <net/flow_dissector.h>
 #include <net/xfrm.h>
 #include <net/bonding.h>

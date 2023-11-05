@@ -4,18 +4,18 @@
  *
  *  Copyright (C) 2009 Conexant Systems Inc.
  *  Authors  <shu.lin@conexant.com>, <hiep.huynh@conexant.com>
- *  Based on Steven Toth <stoth@linuxtv.org> cx23885 driver
+ *  Based on Steven Toth <stoth@freaxtv.org> cx23885 driver
  */
 
 #ifndef CX25821_H_
 #define CX25821_H_
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/sched.h>
-#include <linux/kdev_t.h>
+#include <freax/pci.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/sched.h>
+#include <freax/kdev_t.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
@@ -28,7 +28,7 @@
 #include "cx25821-sram.h"
 #include "cx25821-audio.h"
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 
 #define UNSET (-1U)
 #define NO_SYNC_LINE (-1U)

@@ -3,8 +3,8 @@
  * Copyright (C) 2013, 2014 ARM Limited, All Rights Reserved.
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
-#ifndef __LINUX_IRQCHIP_ARM_GIC_V3_H
-#define __LINUX_IRQCHIP_ARM_GIC_V3_H
+#ifndef __freax_IRQCHIP_ARM_GIC_V3_H
+#define __freax_IRQCHIP_ARM_GIC_V3_H
 
 /*
  * Distributor registers. We assume we're running non-secure, with ARE

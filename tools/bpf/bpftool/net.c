@@ -13,9 +13,9 @@
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
 #include <net/if.h>
-#include <linux/rtnetlink.h>
-#include <linux/socket.h>
-#include <linux/tc_act/tc_bpf.h>
+#include <freax/rtnetlink.h>
+#include <freax/socket.h>
+#include <freax/tc_act/tc_bpf.h>
 #include <sys/socket.h>
 #include <sys/stat.h>
 #include <sys/types.h>

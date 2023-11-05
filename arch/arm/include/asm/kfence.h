@@ -3,7 +3,7 @@
 #ifndef __ASM_ARM_KFENCE_H
 #define __ASM_ARM_KFENCE_H
 
-#include <linux/kfence.h>
+#include <freax/kfence.h>
 
 #include <asm/pgalloc.h>
 #include <asm/set_memory.h>

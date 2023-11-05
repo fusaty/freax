@@ -10,15 +10,15 @@
  * Contributors:
  *  Amir Hanania <amir.hanania@intel.com>
  *  Chiranjeevi Rapolu <chiranjeevi.rapolu@intel.com>
- *  Ricardo Martinez <ricardo.martinez@linux.intel.com>
+ *  Ricardo Martinez <ricardo.martinez@freax.intel.com>
  */
 
 #ifndef __T7XX_NETDEV_H__
 #define __T7XX_NETDEV_H__
 
-#include <linux/bits.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/netdevice.h>
+#include <freax/types.h>
 
 #include "t7xx_hif_dpmaif.h"
 #include "t7xx_pci.h"

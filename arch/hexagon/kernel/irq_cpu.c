@@ -2,10 +2,10 @@
 /*
  * First-level interrupt controller model for Hexagon.
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The freax Foundation. All rights reserved.
  */
 
-#include <linux/interrupt.h>
+#include <freax/interrupt.h>
 #include <asm/irq.h>
 #include <asm/hexagon_vm.h>
 

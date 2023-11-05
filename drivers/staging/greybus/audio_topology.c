@@ -5,7 +5,7 @@
  * Copyright 2015-2016 Linaro Ltd.
  */
 
-#include <linux/greybus.h>
+#include <freax/greybus.h>
 #include "audio_codec.h"
 
 #define GBAUDIO_INVALID_ID	0xFF

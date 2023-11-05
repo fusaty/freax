@@ -6,14 +6,14 @@
  *
  * Implements PM domains using the generic PM domain for ux500.
  */
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/printk.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/pm_domain.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/printk.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/pm_domain.h>
 
 #include <dt-bindings/arm/ux500_pm_domains.h>
 

@@ -1,33 +1,33 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/traps.c
+ *  freax/arch/arm/kernel/traps.c
  *
  *  Copyright (C) 1995-2009 Russell King
- *  Fragments that appear the same as linux/arch/i386/kernel/traps.c (C) Linus Torvalds
+ *  Fragments that appear the same as freax/arch/i386/kernel/traps.c (C) Linus Torvalds
  *
  *  'traps.c' handles hardware exceptions after we have saved some state in
- *  'linux/arch/arm/lib/traps.S'.  Mostly a debugging aid, but will probably
+ *  'freax/arch/arm/lib/traps.S'.  Mostly a debugging aid, but will probably
  *  kill the offending process.
  */
-#include <linux/signal.h>
-#include <linux/personality.h>
-#include <linux/kallsyms.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/hardirq.h>
-#include <linux/kdebug.h>
-#include <linux/kprobes.h>
-#include <linux/module.h>
-#include <linux/kexec.h>
-#include <linux/bug.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task_stack.h>
-#include <linux/irq.h>
+#include <freax/signal.h>
+#include <freax/personality.h>
+#include <freax/kallsyms.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
+#include <freax/hardirq.h>
+#include <freax/kdebug.h>
+#include <freax/kprobes.h>
+#include <freax/module.h>
+#include <freax/kexec.h>
+#include <freax/bug.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task_stack.h>
+#include <freax/irq.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/cacheflush.h>
 #include <asm/exception.h>
 #include <asm/spectre.h>
@@ -545,7 +545,7 @@ asmlinkage void bad_mode(struct pt_regs *regs, int reason)
 
 static int bad_syscall(int n, struct pt_regs *regs)
 {
-	if ((current->personality & PER_MASK) != PER_LINUX) {
+	if ((current->personality & PER_MASK) != PER_freax) {
 		send_sig(SIGSEGV, current, 1);
 		return regs->ARM_r0;
 	}

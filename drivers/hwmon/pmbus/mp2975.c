@@ -5,12 +5,12 @@
  * Copyright (C) 2020 Nvidia Technologies Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of_device.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of_device.h>
 #include "pmbus.h"
 
 /* Vendor specific registers. */

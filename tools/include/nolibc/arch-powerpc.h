@@ -191,7 +191,7 @@ void __attribute__((weak, noreturn, optimize("Os", "omit-frame-pointer"))) __no_
 	/* with -mabi=elfv2, save TOC/GOT pointer to r2
 	 * r12 is global entry pointer, we use it to compute TOC from r12
 	 * https://www.llvm.org/devmtg/2014-04/PDFs/Talks/Euro-LLVM-2014-Weigand.pdf
-	 * https://refspecs.linuxfoundation.org/ELF/ppc64/PPC-elf64abi.pdf
+	 * https://refspecs.freaxfoundation.org/ELF/ppc64/PPC-elf64abi.pdf
 	 */
 	__asm__ volatile (
 		"addis  2, 12, .TOC. - _start@ha\n"

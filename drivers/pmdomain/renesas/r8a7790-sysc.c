@@ -5,7 +5,7 @@
  * Copyright (C) 2016 Glider bvba
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include <dt-bindings/power/r8a7790-sysc.h>
 

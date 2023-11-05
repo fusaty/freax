@@ -5,8 +5,8 @@
  * Copyright (C) 2005-2011  NTT DATA CORPORATION
  */
 
-#include <linux/hash.h>
-#include <linux/slab.h>
+#include <freax/hash.h>
+#include <freax/slab.h>
 #include "common.h"
 
 /**

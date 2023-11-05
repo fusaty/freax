@@ -4,11 +4,11 @@
 #ifndef __CXL_H__
 #define __CXL_H__
 
-#include <linux/libnvdimm.h>
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/log2.h>
-#include <linux/io.h>
+#include <freax/libnvdimm.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/log2.h>
+#include <freax/io.h>
 
 /**
  * DOC: cxl objects

@@ -3,7 +3,7 @@
 #define _ASM_X86_SHSTK_H
 
 #ifndef __ASSEMBLY__
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct task_struct;
 struct ksignal;

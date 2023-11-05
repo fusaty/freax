@@ -7,11 +7,11 @@
  * Generic XTALK initialization code
  */
 
-#include <linux/kernel.h>
-#include <linux/smp.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/sgi-w1.h>
-#include <linux/platform_data/xtalk-bridge.h>
+#include <freax/kernel.h>
+#include <freax/smp.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/sgi-w1.h>
+#include <freax/platform_data/xtalk-bridge.h>
 #include <asm/sn/addrs.h>
 #include <asm/sn/types.h>
 #include <asm/sn/klconfig.h>

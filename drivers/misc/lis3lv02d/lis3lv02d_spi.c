@@ -5,17 +5,17 @@
  * Copyright (c) 2009 Daniel Mack <daniel@caiaq.de>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/spi/spi.h>
-#include <linux/pm.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/of_device.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/spi/spi.h>
+#include <freax/pm.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/of_device.h>
 
 #include "lis3lv02d.h"
 

@@ -3,8 +3,8 @@
  * Copyright (C) 2022-2023 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#ifndef LINUX_TEGRA_ICC_H
-#define LINUX_TEGRA_ICC_H
+#ifndef freax_TEGRA_ICC_H
+#define freax_TEGRA_ICC_H
 
 enum tegra_icc_client_type {
 	TEGRA_ICC_NONE,
@@ -62,4 +62,4 @@ enum tegra_icc_client_type {
 #define TEGRA_ICC_BPMP_RCE		44
 #define TEGRA_ICC_BPMP_PVA		45
 
-#endif /* LINUX_TEGRA_ICC_H */
+#endif /* freax_TEGRA_ICC_H */

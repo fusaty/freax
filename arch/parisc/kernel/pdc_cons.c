@@ -5,10 +5,10 @@
  *    Copyright (C) 2001-2022 Helge Deller <deller@gmx.de>
  */
 
-#include <linux/console.h>
-#include <linux/init.h>
-#include <linux/serial_core.h>
-#include <linux/kgdb.h>
+#include <freax/console.h>
+#include <freax/init.h>
+#include <freax/serial_core.h>
+#include <freax/kgdb.h>
 #include <asm/page.h>		/* for PAGE0 */
 #include <asm/pdc.h>		/* for iodc_call() proto and friends */
 

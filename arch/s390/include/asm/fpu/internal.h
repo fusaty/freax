@@ -3,13 +3,13 @@
  * FPU state and register content conversion primitives
  *
  * Copyright IBM Corp. 2015
- * Author(s): Hendrik Brueckner <brueckner@linux.vnet.ibm.com>
+ * Author(s): Hendrik Brueckner <brueckner@freax.vnet.ibm.com>
  */
 
 #ifndef _ASM_S390_FPU_INTERNAL_H
 #define _ASM_S390_FPU_INTERNAL_H
 
-#include <linux/string.h>
+#include <freax/string.h>
 #include <asm/fpu/types.h>
 
 static inline void save_vx_regs(__vector128 *vxrs)

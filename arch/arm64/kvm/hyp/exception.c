@@ -11,7 +11,7 @@
  */
 
 #include <hyp/adjust_pc.h>
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 #include <asm/kvm_emulate.h>
 #include <asm/kvm_mmu.h>
 #include <asm/kvm_nested.h>

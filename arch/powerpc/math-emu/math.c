@@ -3,10 +3,10 @@
  * Copyright (C) 1999  Eddie C. Dost  (ecd@atecom.com)
  */
 
-#include <linux/types.h>
-#include <linux/sched.h>
+#include <freax/types.h>
+#include <freax/sched.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/reg.h>
 #include <asm/switch_to.h>
 

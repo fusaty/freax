@@ -7,8 +7,8 @@
  * Copyright (C) 2013  Cogent Embedded, Inc.
  */
 
-#include <linux/io.h>
-#include <linux/irqchip.h>
+#include <freax/io.h>
+#include <freax/irqchip.h>
 
 #include <asm/mach/arch.h>
 

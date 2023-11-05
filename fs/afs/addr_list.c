@@ -5,10 +5,10 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/slab.h>
-#include <linux/ctype.h>
-#include <linux/dns_resolver.h>
-#include <linux/inet.h>
+#include <freax/slab.h>
+#include <freax/ctype.h>
+#include <freax/dns_resolver.h>
+#include <freax/inet.h>
 #include <keys/rxrpc-type.h>
 #include "internal.h"
 #include "afs_fs.h"

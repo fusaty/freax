@@ -14,13 +14,13 @@
  * and delete this driver.
  */
 
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi_gpio.h>
-#include <linux/eeprom_93xx46.h>
+#include <freax/gpio.h>
+#include <freax/gpio/machine.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi_gpio.h>
+#include <freax/eeprom_93xx46.h>
 
 #define GPIO_EEPROM_CLK		216
 #define GPIO_EEPROM_CS		210

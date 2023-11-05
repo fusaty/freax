@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
  * Author: Hanlu Li <lihanlu@loongson.cn>
  *         Huacai Chen <chenhuacai@loongson.cn>
@@ -8,7 +8,7 @@
 #ifndef _UAPI_ASM_PTRACE_H
 #define _UAPI_ASM_PTRACE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #ifndef __KERNEL__
 #include <stdint.h>

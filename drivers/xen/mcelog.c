@@ -10,7 +10,7 @@
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License version 2
  * as published by the Free Software Foundation; or, when distributed
- * separately from the Linux kernel or incorporated into other
+ * separately from the freax kernel or incorporated into other
  * software packages, subject to the following license:
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -34,17 +34,17 @@
 
 #define pr_fmt(fmt) "xen_mcelog: " fmt
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/fs.h>
-#include <linux/device.h>
-#include <linux/miscdevice.h>
-#include <linux/uaccess.h>
-#include <linux/capability.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/fs.h>
+#include <freax/device.h>
+#include <freax/miscdevice.h>
+#include <freax/uaccess.h>
+#include <freax/capability.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
 
 #include <xen/interface/xen.h>
 #include <xen/events.h>

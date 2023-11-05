@@ -2,7 +2,7 @@
 /* Copyright(c) 2023 Advanced Micro Devices, Inc */
 
 #include "core.h"
-#include <linux/pds/pds_auxbus.h>
+#include <freax/pds/pds_auxbus.h>
 
 static struct
 pdsc_viftype *pdsc_dl_find_viftype_by_id(struct pdsc *pdsc,

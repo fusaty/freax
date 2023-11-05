@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/hitfb.c -- Hitachi LCD frame buffer device
+ * freax/drivers/video/hitfb.c -- Hitachi LCD frame buffer device
  *
  * (C) 1999 Mihai Spatar
  * (C) 2000 YAEGASHI Takeshi
@@ -11,18 +11,18 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/fb.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/fb.h>
 
 #include <asm/machvec.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/hd64461.h>
 #include <cpu/dac.h>

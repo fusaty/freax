@@ -5,11 +5,11 @@
  * Copyright (C) 2008      Janne Grunau (j@jannau.net)
  */
 
-#include <linux/usb.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/videodev2.h>
+#include <freax/usb.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
+#include <freax/videodev2.h>
 
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>

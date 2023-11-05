@@ -7,13 +7,13 @@
  * Author: Kent Yoder <yoder1@us.ibm.com>
  */
 
-#include <linux/device.h>
-#include <linux/kobject.h>
-#include <linux/string.h>
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/crypto.h>
+#include <freax/device.h>
+#include <freax/kobject.h>
+#include <freax/string.h>
+#include <freax/debugfs.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/crypto.h>
 #include <crypto/hash.h>
 #include <asm/vio.h>
 

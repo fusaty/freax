@@ -7,11 +7,11 @@
 //
 // Author: Cezary Rojewski <cezary.rojewski@intel.com>
 // Converted to SOF client:
-//  Ranjani Sridharan <ranjani.sridharan@linux.intel.com>
-//  Peter Ujfalusi <peter.ujfalusi@linux.intel.com>
+//  Ranjani Sridharan <ranjani.sridharan@freax.intel.com>
+//  Peter Ujfalusi <peter.ujfalusi@freax.intel.com>
 //
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <sound/hdaudio_ext.h>
 #include <sound/soc.h>
 #include "../sof-priv.h"

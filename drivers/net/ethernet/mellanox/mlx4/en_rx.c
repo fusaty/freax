@@ -31,17 +31,17 @@
  *
  */
 
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
-#include <linux/mlx4/cq.h>
-#include <linux/slab.h>
-#include <linux/mlx4/qp.h>
-#include <linux/skbuff.h>
-#include <linux/rculist.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/vmalloc.h>
-#include <linux/irq.h>
+#include <freax/bpf.h>
+#include <freax/bpf_trace.h>
+#include <freax/mlx4/cq.h>
+#include <freax/slab.h>
+#include <freax/mlx4/qp.h>
+#include <freax/skbuff.h>
+#include <freax/rculist.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/vmalloc.h>
+#include <freax/irq.h>
 
 #include <net/ip.h>
 #if IS_ENABLED(CONFIG_IPV6)

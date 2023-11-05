@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IF_HSR_H_
-#define _LINUX_IF_HSR_H_
+#ifndef _freax_IF_HSR_H_
+#define _freax_IF_HSR_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct net_device;
 
@@ -44,4 +44,4 @@ static inline int hsr_get_version(struct net_device *dev,
 }
 #endif /* CONFIG_HSR */
 
-#endif /*_LINUX_IF_HSR_H_*/
+#endif /*_freax_IF_HSR_H_*/

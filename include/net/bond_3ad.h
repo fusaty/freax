@@ -7,9 +7,9 @@
 #define _NET_BOND_3AD_H
 
 #include <asm/byteorder.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/if_ether.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/if_ether.h>
 
 /* General definitions */
 #define PKT_TYPE_LACPDU         cpu_to_be16(ETH_P_SLOW)

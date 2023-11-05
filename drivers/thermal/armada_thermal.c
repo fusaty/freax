@@ -4,20 +4,20 @@
  *
  * Copyright (C) 2013 Marvell
  */
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/of_device.h>
-#include <linux/thermal.h>
-#include <linux/iopoll.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/interrupt.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/of_device.h>
+#include <freax/thermal.h>
+#include <freax/iopoll.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/interrupt.h>
 
 /* Thermal Manager Control and Status Register */
 #define PMU_TDC0_SW_RST_MASK		(0x1 << 1)

@@ -8,17 +8,17 @@
  */
 
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/highmem.h>
-#include <linux/init.h>
-#include <linux/sysctl.h>
-#include <linux/random.h>
-#include <linux/blkdev.h>
-#include <linux/socket.h>
-#include <linux/inet.h>
-#include <linux/spinlock.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/highmem.h>
+#include <freax/init.h>
+#include <freax/sysctl.h>
+#include <freax/random.h>
+#include <freax/blkdev.h>
+#include <freax/socket.h>
+#include <freax/inet.h>
+#include <freax/spinlock.h>
 
 
 #include "../cluster/heartbeat.h"

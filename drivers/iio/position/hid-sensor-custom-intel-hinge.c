@@ -3,12 +3,12 @@
  * HID Sensors Driver
  * Copyright (c) 2020, Intel Corporation.
  */
-#include <linux/hid-sensor-hub.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
+#include <freax/hid-sensor-hub.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
 
 #include "../common/hid-sensors/hid-sensor-trigger.h"
 

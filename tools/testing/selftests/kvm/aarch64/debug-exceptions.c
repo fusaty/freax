@@ -2,7 +2,7 @@
 #include <test_util.h>
 #include <kvm_util.h>
 #include <processor.h>
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 #define MDSCR_KDE	(1 << 13)
 #define MDSCR_MDE	(1 << 15)

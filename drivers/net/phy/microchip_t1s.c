@@ -7,9 +7,9 @@
  *  lan8650/1 Rev.B0 Internal PHYs
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/phy.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/phy.h>
 
 #define PHY_ID_LAN867X_REVB1 0x0007C162
 #define PHY_ID_LAN865X_REVB0 0x0007C1B3

@@ -12,21 +12,21 @@
  */
 #define pr_fmt(fmt) "pinctrl core: " fmt
 
-#include <linux/array_size.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/kref.h>
-#include <linux/list.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/array_size.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/kref.h>
+#include <freax/list.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/devinfo.h>
-#include <linux/pinctrl/machine.h>
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pinctrl/devinfo.h>
+#include <freax/pinctrl/machine.h>
+#include <freax/pinctrl/pinctrl.h>
 
 #ifdef CONFIG_GPIOLIB
 #include "../gpio/gpiolib.h"

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/irq.c
+ *	freax/arch/alpha/kernel/irq.c
  *
  *	Copyright (C) 1995 Linus Torvalds
  *
@@ -11,23 +11,23 @@
  * should be easier.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel_stat.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/ptrace.h>
-#include <linux/interrupt.h>
-#include <linux/random.h>
-#include <linux/irq.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/profile.h>
-#include <linux/bitops.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel_stat.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/ptrace.h>
+#include <freax/interrupt.h>
+#include <freax/random.h>
+#include <freax/irq.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/profile.h>
+#include <freax/bitops.h>
 
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 volatile unsigned long irq_err_count;
 DEFINE_PER_CPU(unsigned long, irq_pmi_count);

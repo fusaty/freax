@@ -8,10 +8,10 @@
 
 #define pr_fmt(fmt) "NUMA: " fmt
 
-#include <linux/acpi.h>
-#include <linux/memblock.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/acpi.h>
+#include <freax/memblock.h>
+#include <freax/module.h>
+#include <freax/of.h>
 
 #include <asm/sections.h>
 

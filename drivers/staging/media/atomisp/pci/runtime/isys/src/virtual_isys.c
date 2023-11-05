@@ -13,7 +13,7 @@
  * more details.
  */
 
-#include <linux/string.h> /* for memcpy() */
+#include <freax/string.h> /* for memcpy() */
 
 #include "system_global.h"
 

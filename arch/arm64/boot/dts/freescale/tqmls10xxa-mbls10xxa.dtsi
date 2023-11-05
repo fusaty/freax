@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: (GPL-2.0-or-later OR MIT)
 /*
- * Copyright (c) 2018-2023 TQ-Systems GmbH <linux@ew.tq-group.com>,
+ * Copyright (c) 2018-2023 TQ-Systems GmbH <freax@ew.tq-group.com>,
  * D-82229 Seefeld, Germany.
  * Author: Gregor Herburger, Timo Herbrecher
  *
@@ -20,13 +20,13 @@
 		button-0 {
 			label = "button0";
 			gpios = <&gpioexp3 5 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_F1>;
+			freax,code = <KEY_F1>;
 		};
 
 		button-1 {
 			label = "button1";
 			gpios = <&gpioexp3 6 GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_F2>;
+			freax,code = <KEY_F2>;
 		};
 	};
 
@@ -37,7 +37,7 @@
 			gpios = <&gpioexp3 13 GPIO_ACTIVE_LOW>;
 			color = <LED_COLOR_ID_GREEN>;
 			function = LED_FUNCTION_HEARTBEAT;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

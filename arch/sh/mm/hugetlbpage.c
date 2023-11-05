@@ -9,12 +9,12 @@
  * Copyright (C) 2002, 2003 David S. Miller (davem@redhat.com)
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/sysctl.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/hugetlb.h>
+#include <freax/pagemap.h>
+#include <freax/sysctl.h>
 
 #include <asm/mman.h>
 #include <asm/tlb.h>

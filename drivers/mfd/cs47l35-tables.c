@@ -5,12 +5,12 @@
  * Copyright (C) 2015-2017 Cirrus Logic
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
 
-#include <linux/mfd/madera/core.h>
-#include <linux/mfd/madera/registers.h>
+#include <freax/mfd/madera/core.h>
+#include <freax/mfd/madera/registers.h>
 
 #include "madera.h"
 

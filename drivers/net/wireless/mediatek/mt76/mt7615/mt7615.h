@@ -4,10 +4,10 @@
 #ifndef __MT7615_H
 #define __MT7615_H
 
-#include <linux/completion.h>
-#include <linux/interrupt.h>
-#include <linux/ktime.h>
-#include <linux/regmap.h>
+#include <freax/completion.h>
+#include <freax/interrupt.h>
+#include <freax/ktime.h>
+#include <freax/regmap.h>
 #include "../mt76_connac_mcu.h"
 #include "regs.h"
 

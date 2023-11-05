@@ -43,40 +43,40 @@
 /*#define DBGRBUF(info) dump_rbufs(info)*/
 
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
-#include <linux/mm.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ioctl.h>
-#include <linux/termios.h>
-#include <linux/bitops.h>
-#include <linux/workqueue.h>
-#include <linux/hdlc.h>
-#include <linux/synclink.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/serial.h>
+#include <freax/major.h>
+#include <freax/string.h>
+#include <freax/fcntl.h>
+#include <freax/ptrace.h>
+#include <freax/ioport.h>
+#include <freax/mm.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/netdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/ioctl.h>
+#include <freax/termios.h>
+#include <freax/bitops.h>
+#include <freax/workqueue.h>
+#include <freax/hdlc.h>
+#include <freax/synclink.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/dma.h>
 #include <asm/types.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #if defined(CONFIG_HDLC) || (defined(CONFIG_HDLC_MODULE) && defined(CONFIG_SYNCLINK_GT_MODULE))
 #define SYNCLINK_GENERIC_HDLC 1

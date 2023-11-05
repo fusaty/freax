@@ -5,8 +5,8 @@
  *  sof_sdw_rt715_sdca - Helpers to handle RT715-SDCA from generic machine driver
  */
 
-#include <linux/device.h>
-#include <linux/errno.h>
+#include <freax/device.h>
+#include <freax/errno.h>
 #include <sound/soc.h>
 #include <sound/soc-acpi.h>
 #include "sof_sdw_common.h"

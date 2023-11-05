@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_STAT_H
-#define _LINUX_SCHED_STAT_H
+#ifndef _freax_SCHED_STAT_H
+#define _freax_SCHED_STAT_H
 
-#include <linux/percpu.h>
-#include <linux/kconfig.h>
+#include <freax/percpu.h>
+#include <freax/kconfig.h>
 
 /*
  * Various counters maintained by the scheduler and fork(),
@@ -31,4 +31,4 @@ static inline int sched_info_on(void)
 void force_schedstat_enabled(void);
 #endif
 
-#endif /* _LINUX_SCHED_STAT_H */
+#endif /* _freax_SCHED_STAT_H */

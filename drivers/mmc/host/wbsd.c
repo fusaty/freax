@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/mmc/host/wbsd.c - Winbond W83L51xD SD/MMC driver
+ *  freax/drivers/mmc/host/wbsd.c - Winbond W83L51xD SD/MMC driver
  *
  *  Copyright (C) 2004-2007 Pierre Ossman, All Rights Reserved.
  *
@@ -17,21 +17,21 @@
  * - On APIC systems the FIFO empty interrupt is sometimes lost.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/pnp.h>
-#include <linux/highmem.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/pnp.h>
+#include <freax/highmem.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/sd.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
 
 #include <asm/io.h>
 #include <asm/dma.h>

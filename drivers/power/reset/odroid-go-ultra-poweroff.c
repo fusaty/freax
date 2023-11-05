@@ -2,15 +2,15 @@
 /*
  * Copyright (c) 2023 Neil Armstrong <neil.armstrong@linaro.org>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/rk808.h>
-#include <linux/regmap.h>
-#include <linux/module.h>
-#include <linux/reboot.h>
-#include <linux/i2c.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/rk808.h>
+#include <freax/regmap.h>
+#include <freax/module.h>
+#include <freax/reboot.h>
+#include <freax/i2c.h>
 
 /*
  * The Odroid Go Ultra has 2 PMICs:

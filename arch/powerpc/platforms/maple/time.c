@@ -6,20 +6,20 @@
 
 #undef DEBUG
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/param.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/time.h>
-#include <linux/adb.h>
-#include <linux/pmu.h>
-#include <linux/interrupt.h>
-#include <linux/mc146818rtc.h>
-#include <linux/bcd.h>
-#include <linux/of_address.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/param.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/time.h>
+#include <freax/adb.h>
+#include <freax/pmu.h>
+#include <freax/interrupt.h>
+#include <freax/mc146818rtc.h>
+#include <freax/bcd.h>
+#include <freax/of_address.h>
 
 #include <asm/sections.h>
 #include <asm/io.h>

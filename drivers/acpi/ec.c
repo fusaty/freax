@@ -16,18 +16,18 @@
 /* #define DEBUG */
 #define pr_fmt(fmt) "ACPI: EC: " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/acpi.h>
-#include <linux/dmi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
+#include <freax/acpi.h>
+#include <freax/dmi.h>
 #include <asm/io.h>
 
 #include "internal.h"

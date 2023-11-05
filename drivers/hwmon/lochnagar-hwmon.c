@@ -8,16 +8,16 @@
  * Author: Lucas Tanure <tanureal@opensource.cirrus.com>
  */
 
-#include <linux/delay.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/math64.h>
-#include <linux/mfd/lochnagar.h>
-#include <linux/mfd/lochnagar2_regs.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/math64.h>
+#include <freax/mfd/lochnagar.h>
+#include <freax/mfd/lochnagar2_regs.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define LN2_MAX_NSAMPLE 1023
 #define LN2_SAMPLE_US   1670

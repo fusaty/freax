@@ -16,10 +16,10 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/module.h>
-#include <linux/nl80211.h>
-#include <linux/platform_device.h>
-#include <linux/etherdevice.h>
+#include <freax/module.h>
+#include <freax/nl80211.h>
+#include <freax/platform_device.h>
+#include <freax/etherdevice.h>
 #include <ath25_platform.h>
 #include "ath5k.h"
 #include "debug.h"

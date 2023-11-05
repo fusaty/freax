@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for freax
    Copyright (C) 2011 Nokia Corporation and/or its subsidiary(-ies).
 
    This program is free software; you can redistribute it and/or modify
@@ -20,8 +20,8 @@
    SOFTWARE IS DISCLAIMED.
 */
 
-#include <linux/debugfs.h>
-#include <linux/scatterlist.h>
+#include <freax/debugfs.h>
+#include <freax/scatterlist.h>
 #include <crypto/aes.h>
 #include <crypto/hash.h>
 #include <crypto/kpp.h>

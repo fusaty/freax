@@ -11,7 +11,7 @@
 #ifndef __DRIVERS_PINCTRL_IMX_H
 #define __DRIVERS_PINCTRL_IMX_H
 
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinmux.h>
 
 struct platform_device;
 

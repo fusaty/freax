@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Atomic operations usable in machine independent code */
-#ifndef _LINUX_ATOMIC_H
-#define _LINUX_ATOMIC_H
-#include <linux/types.h>
+#ifndef _freax_ATOMIC_H
+#define _freax_ATOMIC_H
+#include <freax/types.h>
 
 #include <asm/atomic.h>
 #include <asm/barrier.h>
@@ -77,8 +77,8 @@
 	__ret;								\
 })
 
-#include <linux/atomic/atomic-arch-fallback.h>
-#include <linux/atomic/atomic-long.h>
-#include <linux/atomic/atomic-instrumented.h>
+#include <freax/atomic/atomic-arch-fallback.h>
+#include <freax/atomic/atomic-long.h>
+#include <freax/atomic/atomic-instrumented.h>
 
-#endif /* _LINUX_ATOMIC_H */
+#endif /* _freax_ATOMIC_H */

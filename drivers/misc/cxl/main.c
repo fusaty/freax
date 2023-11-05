@@ -3,20 +3,20 @@
  * Copyright 2014 IBM Corp.
  */
 
-#include <linux/spinlock.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/idr.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/sched/task.h>
+#include <freax/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/mm.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/idr.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/sched/task.h>
 
 #include <asm/cputable.h>
 #include <asm/mmu.h>

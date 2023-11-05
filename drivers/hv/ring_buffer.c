@@ -10,14 +10,14 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/hyperv.h>
-#include <linux/uio.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/prefetch.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/hyperv.h>
+#include <freax/uio.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/prefetch.h>
+#include <freax/io.h>
 #include <asm/mshyperv.h>
 
 #include "hyperv_vmbus.h"

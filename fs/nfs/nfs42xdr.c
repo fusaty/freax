@@ -2,8 +2,8 @@
 /*
  * Copyright (c) 2014 Anna Schumaker <Anna.Schumaker@Netapp.com>
  */
-#ifndef __LINUX_FS_NFS_NFS4_2XDR_H
-#define __LINUX_FS_NFS_NFS4_2XDR_H
+#ifndef __freax_FS_NFS_NFS4_2XDR_H
+#define __freax_FS_NFS_NFS4_2XDR_H
 
 #include "nfs42.h"
 
@@ -1669,4 +1669,4 @@ static int nfs4_xdr_dec_removexattr(struct rpc_rqst *req,
 out:
 	return status;
 }
-#endif /* __LINUX_FS_NFS_NFS4_2XDR_H */
+#endif /* __freax_FS_NFS_NFS4_2XDR_H */

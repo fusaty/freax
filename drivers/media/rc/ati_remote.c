@@ -72,15 +72,15 @@
  * parameter are unused.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/usb/input.h>
-#include <linux/wait.h>
-#include <linux/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/usb/input.h>
+#include <freax/wait.h>
+#include <freax/jiffies.h>
 #include <media/rc-core.h>
 
 /*

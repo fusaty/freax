@@ -8,19 +8,19 @@
  * Copyright (C) 2017 Zodiac Inflight Innovations
  */
 
-#include <linux/atomic.h>
-#include <linux/crc-ccitt.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/mfd/rave-sp.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/sched.h>
-#include <linux/serdev.h>
+#include <freax/atomic.h>
+#include <freax/crc-ccitt.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/mfd/rave-sp.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/sched.h>
+#include <freax/serdev.h>
 #include <asm/unaligned.h>
 
 /*

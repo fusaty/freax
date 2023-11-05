@@ -2,9 +2,9 @@
 /*
  * Copyright Altera Corporation (C) 2016. All rights reserved.
  */
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 #include "core.h"
 

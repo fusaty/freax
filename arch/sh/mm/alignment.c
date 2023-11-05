@@ -8,12 +8,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/seq_file.h>
-#include <linux/proc_fs.h>
-#include <linux/uaccess.h>
-#include <linux/ratelimit.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/seq_file.h>
+#include <freax/proc_fs.h>
+#include <freax/uaccess.h>
+#include <freax/ratelimit.h>
 #include <asm/alignment.h>
 #include <asm/processor.h>
 

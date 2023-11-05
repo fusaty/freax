@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Squashfs - a compressed read only filesystem for Linux
+ * Squashfs - a compressed read only filesystem for freax
  *
  * Copyright (c) 2002, 2003, 2004, 2005, 2006, 2007, 2008
  * Phillip Lougher <phillip@squashfs.org.uk>
@@ -31,14 +31,14 @@
  * near future access without requiring an additional read and decompress.
  */
 
-#include <linux/fs.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/pagemap.h>
+#include <freax/fs.h>
+#include <freax/vfs.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
+#include <freax/pagemap.h>
 
 #include "squashfs_fs.h"
 #include "squashfs_fs_sb.h"

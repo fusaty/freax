@@ -3,9 +3,9 @@
  * (c) 2017 Stefano Stabellini <stefano@aporeto.com>
  */
 
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/socket.h>
+#include <freax/module.h>
+#include <freax/net.h>
+#include <freax/socket.h>
 
 #include <net/sock.h>
 

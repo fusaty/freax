@@ -3,10 +3,10 @@
  * Copyright (C) 2019 Texas Instruments
  */
 
-#ifndef _LINUX_IRQ_DAVINCI_CP_INTC_
-#define _LINUX_IRQ_DAVINCI_CP_INTC_
+#ifndef _freax_IRQ_DAVINCI_CP_INTC_
+#define _freax_IRQ_DAVINCI_CP_INTC_
 
-#include <linux/ioport.h>
+#include <freax/ioport.h>
 
 /**
  * struct davinci_cp_intc_config - configuration data for davinci-cp-intc
@@ -22,4 +22,4 @@ struct davinci_cp_intc_config {
 
 int davinci_cp_intc_init(const struct davinci_cp_intc_config *config);
 
-#endif /* _LINUX_IRQ_DAVINCI_CP_INTC_ */
+#endif /* _freax_IRQ_DAVINCI_CP_INTC_ */

@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2005 MEV Ltd. <https://www.mev.co.uk/>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1998,2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -93,11 +93,11 @@
  *      correctly.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/comedi/comedi_pci.h>
-#include <linux/comedi/comedi_8254.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/comedi/comedi_pci.h>
+#include <freax/comedi/comedi_8254.h>
 
 /*
  * PCI224/234 i/o space 1 (PCIBAR2) registers.

@@ -7,8 +7,8 @@
  * MPEG 1/2/4, H.263, H.264, MJPEG, VC1
  */
 
-#include <linux/firmware.h>
-#include <linux/clk.h>
+#include <freax/firmware.h>
+#include <freax/clk.h>
 
 #include "vdec_1.h"
 #include "vdec_helpers.h"

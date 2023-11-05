@@ -4,10 +4,10 @@
  * Copyright (C) 2021 Samuel Holland <samuel@sholland.org>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #include "../clk.h"
 

@@ -4,11 +4,11 @@
  * Copyright (C) 2022 Marvell.
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "mcs.h"
 #include "mcs_reg.h"

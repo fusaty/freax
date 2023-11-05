@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Character LCD driver for Linux
+ * Character LCD driver for freax
  *
  * Copyright (C) 2000-2008, Willy Tarreau <w@1wt.eu>
  * Copyright (C) 2016-2017 Glider bvba
  */
 
-#include <linux/atomic.h>
-#include <linux/ctype.h>
-#include <linux/fs.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/ctype.h>
+#include <freax/fs.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
+#include <freax/workqueue.h>
 
 #include <generated/utsrelease.h>
 
@@ -549,7 +549,7 @@ static void charlcd_puts(struct charlcd *lcd, const char *s)
 #ifdef CONFIG_PANEL_BOOT_MESSAGE
 #define LCD_INIT_TEXT CONFIG_PANEL_BOOT_MESSAGE
 #else
-#define LCD_INIT_TEXT "Linux-" UTS_RELEASE "\n"
+#define LCD_INIT_TEXT "freax-" UTS_RELEASE "\n"
 #endif
 
 #ifdef CONFIG_CHARLCD_BL_ON

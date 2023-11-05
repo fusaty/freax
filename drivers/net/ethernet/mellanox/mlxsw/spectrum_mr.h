@@ -4,8 +4,8 @@
 #ifndef _MLXSW_SPECTRUM_MCROUTER_H
 #define _MLXSW_SPECTRUM_MCROUTER_H
 
-#include <linux/mroute.h>
-#include <linux/mroute6.h>
+#include <freax/mroute.h>
+#include <freax/mroute6.h>
 #include "spectrum_router.h"
 #include "spectrum.h"
 

@@ -8,27 +8,27 @@
  * Contact: Andras Domokos <andras.domokos@nokia.com>
  */
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/kmemleak.h>
-#include <linux/ioctl.h>
-#include <linux/wait.h>
-#include <linux/fs.h>
-#include <linux/sched.h>
-#include <linux/device.h>
-#include <linux/cdev.h>
-#include <linux/uaccess.h>
-#include <linux/scatterlist.h>
-#include <linux/stat.h>
-#include <linux/hsi/hsi.h>
-#include <linux/hsi/hsi_char.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/atomic.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/kmemleak.h>
+#include <freax/ioctl.h>
+#include <freax/wait.h>
+#include <freax/fs.h>
+#include <freax/sched.h>
+#include <freax/device.h>
+#include <freax/cdev.h>
+#include <freax/uaccess.h>
+#include <freax/scatterlist.h>
+#include <freax/stat.h>
+#include <freax/hsi/hsi.h>
+#include <freax/hsi/hsi_char.h>
 
 #define HSC_DEVS		16 /* Num of channels */
 #define HSC_MSGS		4

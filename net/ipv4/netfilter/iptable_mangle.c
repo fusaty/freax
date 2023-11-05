@@ -5,14 +5,14 @@
  * Copyright (C) 1999 Paul `Rusty' Russell & Michael J. Neuling
  * Copyright (C) 2000-2004 Netfilter Core Team <coreteam@netfilter.org>
  */
-#include <linux/module.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/netfilter_ipv4/ip_tables.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/slab.h>
 #include <net/sock.h>
 #include <net/route.h>
-#include <linux/ip.h>
+#include <freax/ip.h>
 #include <net/ip.h>
 
 MODULE_LICENSE("GPL");

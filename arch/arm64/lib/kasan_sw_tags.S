@@ -3,7 +3,7 @@
  * Copyright (C) 2020 Google LLC
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 
 /*

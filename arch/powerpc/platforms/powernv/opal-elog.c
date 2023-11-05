@@ -4,17 +4,17 @@
  *
  * Copyright 2013,2014 IBM Corp.
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
-#include <linux/fs.h>
-#include <linux/vmalloc.h>
-#include <linux/fcntl.h>
-#include <linux/kobject.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
+#include <freax/fs.h>
+#include <freax/vmalloc.h>
+#include <freax/fcntl.h>
+#include <freax/kobject.h>
+#include <freax/uaccess.h>
 #include <asm/opal.h>
 
 struct elog_obj {

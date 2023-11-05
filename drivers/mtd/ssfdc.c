@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Linux driver for SSFDC Flash Translation Layer (Read only)
+ * freax driver for SSFDC Flash Translation Layer (Read only)
  * © 2005 Eptar srl
  * Author: Claudio Lanconelli <lanconelli.claudio@eptar.com>
  *
  * Based on NTFL and MTDBLOCK_RO drivers
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/hdreg.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/blktrans.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/hdreg.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/blktrans.h>
 
 struct ssfdcr_record {
 	struct mtd_blktrans_dev mbd;

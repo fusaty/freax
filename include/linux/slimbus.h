@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2017, The Linux Foundation
+ * Copyright (c) 2011-2017, The freax Foundation
  */
 
-#ifndef _LINUX_SLIMBUS_H
-#define _LINUX_SLIMBUS_H
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/completion.h>
-#include <linux/mod_devicetable.h>
+#ifndef _freax_SLIMBUS_H
+#define _freax_SLIMBUS_H
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/completion.h>
+#include <freax/mod_devicetable.h>
 
 extern struct bus_type slimbus_bus;
 
@@ -209,4 +209,4 @@ int slim_stream_disable(struct slim_stream_runtime *stream);
 int slim_stream_unprepare(struct slim_stream_runtime *stream);
 int slim_stream_free(struct slim_stream_runtime *stream);
 
-#endif /* _LINUX_SLIMBUS_H */
+#endif /* _freax_SLIMBUS_H */

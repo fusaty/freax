@@ -10,9 +10,9 @@
  * Alexander Smirnov <alex.bluesman.smirnov@gmail.com>
  */
 
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/ieee802154.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/ieee802154.h>
 
 #include <net/ieee802154_netdev.h>
 #include <net/cfg802154.h>

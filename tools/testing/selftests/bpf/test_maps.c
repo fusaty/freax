@@ -17,7 +17,7 @@
 #include <sys/wait.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <linux/bpf.h>
+#include <freax/bpf.h>
 
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
@@ -651,7 +651,7 @@ static void test_stackmap(unsigned int task, void *data)
 #include <sys/ioctl.h>
 #include <arpa/inet.h>
 #include <sys/select.h>
-#include <linux/err.h>
+#include <freax/err.h>
 #define SOCKMAP_PARSE_PROG "./sockmap_parse_prog.bpf.o"
 #define SOCKMAP_VERDICT_PROG "./sockmap_verdict_prog.bpf.o"
 #define SOCKMAP_TCP_MSG_PROG "./sockmap_tcp_msg_prog.bpf.o"

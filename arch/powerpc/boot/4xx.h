@@ -3,7 +3,7 @@
  * PowerPC 4xx related functions
  *
  * Copyright 2007 IBM Corporation.
- * Josh Boyer <jwboyer@linux.vnet.ibm.com>
+ * Josh Boyer <jwboyer@freax.vnet.ibm.com>
  */
 #ifndef _POWERPC_BOOT_4XX_H_
 #define _POWERPC_BOOT_4XX_H_

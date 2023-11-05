@@ -4,7 +4,7 @@
 %{
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/perf_event.h>
+#include <freax/perf_event.h>
 
 #include "bpf-filter.h"
 #include "bpf-filter-bison.h"

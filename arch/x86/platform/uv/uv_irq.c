@@ -8,10 +8,10 @@
  * Copyright (C) 2008 Silicon Graphics, Inc. All rights reserved.
  */
 
-#include <linux/export.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <freax/export.h>
+#include <freax/rbtree.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
 
 #include <asm/irqdomain.h>
 #include <asm/apic.h>

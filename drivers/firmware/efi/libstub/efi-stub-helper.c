@@ -7,10 +7,10 @@
  * Copyright 2011 Intel Corporation; author Matt Fleming
  */
 
-#include <linux/stdarg.h>
+#include <freax/stdarg.h>
 
-#include <linux/efi.h>
-#include <linux/kernel.h>
+#include <freax/efi.h>
+#include <freax/kernel.h>
 #include <asm/efi.h>
 #include <asm/setup.h>
 
@@ -210,7 +210,7 @@ static const struct {
 	[EFISTUB_EVT_INITRD] = {
 		9,
 		INITRD_EVENT_TAG_ID,
-		STR_WITH_SIZE("Linux initrd")
+		STR_WITH_SIZE("freax initrd")
 	},
 	[EFISTUB_EVT_LOAD_OPTIONS] = {
 		9,
@@ -456,10 +456,10 @@ void *get_efi_config_table(efi_guid_t guid)
 }
 
 /*
- * The LINUX_EFI_INITRD_MEDIA_GUID vendor media device path below provides a way
+ * The freax_EFI_INITRD_MEDIA_GUID vendor media device path below provides a way
  * for the firmware or bootloader to expose the initrd data directly to the stub
  * via the trivial LoadFile2 protocol, which is defined in the UEFI spec, and is
- * very easy to implement. It is a simple Linux initrd specific conduit between
+ * very easy to implement. It is a simple freax initrd specific conduit between
  * kernel and firmware, allowing us to put the EFI stub (being part of the
  * kernel) in charge of where and when to load the initrd, while leaving it up
  * to the firmware to decide whether it needs to expose its filesystem hierarchy
@@ -475,7 +475,7 @@ static const struct {
 			EFI_DEV_MEDIA_VENDOR,
 			sizeof(struct efi_vendor_dev_path),
 		},
-		LINUX_EFI_INITRD_MEDIA_GUID
+		freax_EFI_INITRD_MEDIA_GUID
 	}, {
 		EFI_DEV_END_PATH,
 		EFI_DEV_END_ENTIRE,
@@ -484,7 +484,7 @@ static const struct {
 };
 
 /**
- * efi_load_initrd_dev_path() - load the initrd from the Linux initrd device path
+ * efi_load_initrd_dev_path() - load the initrd from the freax initrd device path
  * @initrd:	pointer of struct to store the address where the initrd was loaded
  *		and the size of the loaded initrd
  * @max:	upper limit for the initrd memory allocation
@@ -497,7 +497,7 @@ static const struct {
  * * %EFI_LOAD_ERROR in all other cases
  */
 static
-efi_status_t efi_load_initrd_dev_path(struct linux_efi_initrd *initrd,
+efi_status_t efi_load_initrd_dev_path(struct freax_efi_initrd *initrd,
 				      unsigned long max)
 {
 	efi_guid_t lf2_proto_guid = EFI_LOAD_FILE2_PROTOCOL_GUID;
@@ -536,7 +536,7 @@ efi_status_t efi_load_initrd_dev_path(struct linux_efi_initrd *initrd,
 
 static
 efi_status_t efi_load_initrd_cmdline(efi_loaded_image_t *image,
-				     struct linux_efi_initrd *initrd,
+				     struct freax_efi_initrd *initrd,
 				     unsigned long soft_limit,
 				     unsigned long hard_limit)
 {
@@ -559,18 +559,18 @@ efi_status_t efi_load_initrd_cmdline(efi_loaded_image_t *image,
 efi_status_t efi_load_initrd(efi_loaded_image_t *image,
 			     unsigned long soft_limit,
 			     unsigned long hard_limit,
-			     const struct linux_efi_initrd **out)
+			     const struct freax_efi_initrd **out)
 {
-	efi_guid_t tbl_guid = LINUX_EFI_INITRD_MEDIA_GUID;
+	efi_guid_t tbl_guid = freax_EFI_INITRD_MEDIA_GUID;
 	efi_status_t status = EFI_SUCCESS;
-	struct linux_efi_initrd initrd, *tbl;
+	struct freax_efi_initrd initrd, *tbl;
 
 	if (!IS_ENABLED(CONFIG_BLK_DEV_INITRD) || efi_noinitrd)
 		return EFI_SUCCESS;
 
 	status = efi_load_initrd_dev_path(&initrd, hard_limit);
 	if (status == EFI_SUCCESS) {
-		efi_info("Loaded initrd from LINUX_EFI_INITRD_MEDIA_GUID device path\n");
+		efi_info("Loaded initrd from freax_EFI_INITRD_MEDIA_GUID device path\n");
 		if (initrd.size > 0 &&
 		    efi_measure_tagged_event(initrd.base, initrd.size,
 					     EFISTUB_EVT_INITRD) == EFI_SUCCESS)

@@ -6,20 +6,20 @@
  * Copyright (C) 1999 - 2002 Greg Kroah-Hartman (greg@kroah.com)
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/usb.h>
-#include <linux/usb/serial.h>
-#include <linux/uaccess.h>
-#include <linux/kfifo.h>
-#include <linux/serial.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/sysrq.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/usb.h>
+#include <freax/usb/serial.h>
+#include <freax/uaccess.h>
+#include <freax/kfifo.h>
+#include <freax/serial.h>
 
 #ifdef CONFIG_USB_SERIAL_GENERIC
 
@@ -40,7 +40,7 @@ static int usb_serial_generic_probe(struct usb_serial *serial,
 	struct device *dev = &serial->interface->dev;
 
 	dev_info(dev, "The \"generic\" usb-serial driver is only for testing and one-off prototypes.\n");
-	dev_info(dev, "Tell linux-usb@vger.kernel.org to add your device to a proper driver.\n");
+	dev_info(dev, "Tell freax-usb@vger.kernel.org to add your device to a proper driver.\n");
 
 	return 0;
 }

@@ -16,21 +16,21 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/device.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include "../include/linux/atomisp_gmin_platform.h"
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/kmod.h>
+#include <freax/device.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/acpi.h>
+#include "../include/freax/atomisp_gmin_platform.h"
 #include <media/v4l2-device.h>
 
 #include "mt9m114.h"

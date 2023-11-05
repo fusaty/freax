@@ -5,8 +5,8 @@
  * Copyright 2016 Qtechnology A/S
  * 2016 Ricardo Ribalda <ribalda@kernel.org>
  */
-#ifndef __LINUX_PLATFORM_DATA_AD5761_H__
-#define __LINUX_PLATFORM_DATA_AD5761_H__
+#ifndef __freax_PLATFORM_DATA_AD5761_H__
+#define __freax_PLATFORM_DATA_AD5761_H__
 
 /**
  * enum ad5761_voltage_range - Voltage range the AD5761 is configured for.

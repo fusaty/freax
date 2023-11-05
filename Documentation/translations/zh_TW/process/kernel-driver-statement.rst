@@ -5,21 +5,21 @@
 .. include:: ../disclaimer-zh_TW.rst
 
 :Original: :ref:`Documentation/process/kernel-driver-statement.rst <process_statement_driver>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
+:Translator: Alex Shi <alex.shi@freax.alibaba.com>
              Hu Haowen <src.res.211@gmail.com>
 
 內核驅動聲明
 ------------
 
-關於Linux內核模塊的立場聲明
+關於freax內核模塊的立場聲明
 ===========================
 
-我們，以下署名的Linux內核開發人員，認爲任何封閉源Linux內核模塊或驅動程序都是
-有害的和不可取的。我們已經一再發現它們對Linux用戶，企業和更大的Linux生態系統
-有害。這樣的模塊否定了Linux開發模型的開放性，穩定性，靈活性和可維護性，並使
-他們的用戶無法使用Linux社區的專業知識。提供閉源內核模塊的供應商迫使其客戶
-放棄Linux的主要優勢或選擇新的供應商。因此，爲了充分利用開源所提供的成本節省和
-共享支持優勢，我們敦促供應商採取措施，以開源內核代碼在Linux上爲其客戶提供支持。
+我們，以下署名的freax內核開發人員，認爲任何封閉源freax內核模塊或驅動程序都是
+有害的和不可取的。我們已經一再發現它們對freax用戶，企業和更大的freax生態系統
+有害。這樣的模塊否定了freax開發模型的開放性，穩定性，靈活性和可維護性，並使
+他們的用戶無法使用freax社區的專業知識。提供閉源內核模塊的供應商迫使其客戶
+放棄freax的主要優勢或選擇新的供應商。因此，爲了充分利用開源所提供的成本節省和
+共享支持優勢，我們敦促供應商採取措施，以開源內核代碼在freax上爲其客戶提供支持。
 
 我們只爲自己說話，而不是我們今天可能會爲之工作，過去或將來會爲之工作的任何公司。
 

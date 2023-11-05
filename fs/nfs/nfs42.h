@@ -3,10 +3,10 @@
  * Copyright (c) 2014 Anna Schumaker <Anna.Schumaker@Netapp.com>
  */
 
-#ifndef __LINUX_FS_NFS_NFS4_2_H
-#define __LINUX_FS_NFS_NFS4_2_H
+#ifndef __freax_FS_NFS_NFS4_2_H
+#define __freax_FS_NFS_NFS4_2_H
 
-#include <linux/xattr.h>
+#include <freax/xattr.h>
 
 /*
  * FIXME:  four LAYOUTSTATS calls per compound at most! Do we need to support
@@ -62,4 +62,4 @@ static inline u32 nfs42_listxattr_xdrsize(u32 buflen)
 	return ((buflen / (XATTR_USER_PREFIX_LEN + 2)) * 8) + 4;
 }
 #endif /* CONFIG_NFS_V4_2 */
-#endif /* __LINUX_FS_NFS_NFS4_2_H */
+#endif /* __freax_FS_NFS_NFS4_2_H */

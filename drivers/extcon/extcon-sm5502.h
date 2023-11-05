@@ -5,8 +5,8 @@
  * Copyright (c) 2014 Samsung Electronics Co., Ltd
  */
 
-#ifndef __LINUX_EXTCON_SM5502_H
-#define __LINUX_EXTCON_SM5502_H
+#ifndef __freax_EXTCON_SM5502_H
+#define __freax_EXTCON_SM5502_H
 
 /* SM5502 registers */
 enum sm5502_reg {
@@ -351,4 +351,4 @@ enum sm5504_irq {
 #define SM5504_IRQ_INT2_OCP_EVENT_MASK		BIT(6)
 #define SM5504_IRQ_INT2_OVP_OCP_EVENT_MASK	BIT(7)
 
-#endif /*  __LINUX_EXTCON_SM5502_H */
+#endif /*  __freax_EXTCON_SM5502_H */

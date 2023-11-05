@@ -27,8 +27,8 @@ struct platform_ops {
 	void	(*free)(void *ptr);
 	void *	(*realloc)(void *ptr, unsigned long size);
 	void	(*exit)(void);
-	void *	(*vmlinux_alloc)(unsigned long size);
-	void  	(*kentry)(unsigned long fdt_addr, void *vmlinux_addr);
+	void *	(*vmfreax_alloc)(unsigned long size);
+	void  	(*kentry)(unsigned long fdt_addr, void *vmfreax_addr);
 };
 extern struct platform_ops platform_ops;
 
@@ -236,8 +236,8 @@ void udelay(long delay);
 extern char _start[];
 extern char __bss_start[];
 extern char _end[];
-extern char _vmlinux_start[];
-extern char _vmlinux_end[];
+extern char _vmfreax_start[];
+extern char _vmfreax_end[];
 extern char _initrd_start[];
 extern char _initrd_end[];
 extern char _dtb_start[];

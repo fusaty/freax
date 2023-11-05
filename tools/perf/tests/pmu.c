@@ -5,9 +5,9 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <stdio.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/zalloc.h>
+#include <freax/kernel.h>
+#include <freax/limits.h>
+#include <freax/zalloc.h>
 
 /* Simulated format definitions. */
 static struct test_format {

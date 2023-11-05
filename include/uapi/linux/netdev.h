@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/netdev.yaml */
 /* YNL-GEN uapi header */
 
-#ifndef _UAPI_LINUX_NETDEV_H
-#define _UAPI_LINUX_NETDEV_H
+#ifndef _UAPI_freax_NETDEV_H
+#define _UAPI_freax_NETDEV_H
 
 #define NETDEV_FAMILY_NAME	"netdev"
 #define NETDEV_FAMILY_VERSION	1
@@ -76,4 +76,4 @@ enum {
 
 #define NETDEV_MCGRP_MGMT	"mgmt"
 
-#endif /* _UAPI_LINUX_NETDEV_H */
+#endif /* _UAPI_freax_NETDEV_H */

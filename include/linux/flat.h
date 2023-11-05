@@ -5,10 +5,10 @@
  *                          The Silver Hammer Group, Ltd.
  *
  * This file provides the definitions and structures needed to
- * support uClinux flat-format executables.
+ * support uCfreax flat-format executables.
  */
-#ifndef _LINUX_FLAT_H
-#define _LINUX_FLAT_H
+#ifndef _freax_FLAT_H
+#define _freax_FLAT_H
 
 #define	FLAT_VERSION			0x00000004L
 
@@ -76,4 +76,4 @@ typedef union {
 	} reloc;
 } flat_v2_reloc_t;
 
-#endif /* _LINUX_FLAT_H */
+#endif /* _freax_FLAT_H */

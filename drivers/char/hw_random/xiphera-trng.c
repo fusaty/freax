@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (C) 2020 Xiphera Ltd. */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/hw_random.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/hw_random.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
 
 #define CONTROL_REG			0x00000000
 #define STATUS_REG			0x00000004

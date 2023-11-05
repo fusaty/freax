@@ -2,7 +2,7 @@
 
 /* Copyright (C) 2023 Linaro Ltd. */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include "../gsi.h"
 #include "../reg.h"

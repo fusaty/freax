@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the PowerPC 82xx linux kernel.
+# Makefile for the PowerPC 82xx freax kernel.
 #
 obj-$(CONFIG_CPM2) += pq2.o
 obj-$(CONFIG_EP8248E) += ep8248e.o

@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 Facebook  */
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/bpf_verifier.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/filter.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/bpf_verifier.h>
+#include <freax/bpf.h>
+#include <freax/btf.h>
+#include <freax/btf_ids.h>
+#include <freax/filter.h>
 #include <net/tcp.h>
 #include <net/bpf_sk_storage.h>
 

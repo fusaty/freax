@@ -9,15 +9,15 @@
 #define KMSG_COMPONENT "sclp_ocf"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/stat.h>
-#include <linux/device.h>
-#include <linux/string.h>
-#include <linux/ctype.h>
-#include <linux/kmod.h>
-#include <linux/timer.h>
-#include <linux/err.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/stat.h>
+#include <freax/device.h>
+#include <freax/string.h>
+#include <freax/ctype.h>
+#include <freax/kmod.h>
+#include <freax/timer.h>
+#include <freax/err.h>
 #include <asm/ebcdic.h>
 #include <asm/sclp.h>
 

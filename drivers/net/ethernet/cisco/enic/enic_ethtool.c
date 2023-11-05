@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0-only
 // Copyright 2013 Cisco Systems, Inc.  All rights reserved.
 
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/net_tstamp.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/net_tstamp.h>
 
 #include "enic_res.h"
 #include "enic.h"

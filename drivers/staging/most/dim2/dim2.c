@@ -7,20 +7,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched.h>
-#include <linux/kthread.h>
-#include <linux/most.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/printk.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/sched.h>
+#include <freax/kthread.h>
+#include <freax/most.h>
+#include <freax/of.h>
 #include "hal.h"
 #include "errors.h"
 #include "sysfs.h"

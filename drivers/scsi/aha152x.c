@@ -224,25 +224,25 @@
 
  **************************************************************************/
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <asm/irq.h>
-#include <linux/io.h>
-#include <linux/blkdev.h>
-#include <linux/completion.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/wait.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/proc_fs.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/isapnp.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/io.h>
+#include <freax/blkdev.h>
+#include <freax/completion.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/wait.h>
+#include <freax/ioport.h>
+#include <freax/delay.h>
+#include <freax/proc_fs.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/isapnp.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>

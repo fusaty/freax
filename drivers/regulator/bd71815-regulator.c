@@ -8,19 +8,19 @@
 // Partially rewritten at 2021 by
 // Matti Vaittinen <matti.vaitinen@fi.rohmeurope.com>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/gpio/consumer.h>
-#include <linux/regulator/driver.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/mfd/rohm-generic.h>
-#include <linux/mfd/rohm-bd71815.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/gpio/consumer.h>
+#include <freax/regulator/driver.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/mfd/rohm-generic.h>
+#include <freax/mfd/rohm-bd71815.h>
+#include <freax/regulator/of_regulator.h>
 
 struct bd71815_regulator {
 	struct regulator_desc desc;

@@ -7,7 +7,7 @@
 #ifndef __OMAPDRM_OVERLAY_H__
 #define __OMAPDRM_OVERLAY_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum drm_plane_type;
 

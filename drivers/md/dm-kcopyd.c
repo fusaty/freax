@@ -10,22 +10,22 @@
  * completion notification.
  */
 
-#include <linux/types.h>
-#include <linux/atomic.h>
-#include <linux/blkdev.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/mempool.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/device-mapper.h>
-#include <linux/dm-kcopyd.h>
+#include <freax/types.h>
+#include <freax/atomic.h>
+#include <freax/blkdev.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/mempool.h>
+#include <freax/module.h>
+#include <freax/pagemap.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/workqueue.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/device-mapper.h>
+#include <freax/dm-kcopyd.h>
 
 #include "dm-core.h"
 

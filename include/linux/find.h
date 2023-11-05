@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_FIND_H_
-#define __LINUX_FIND_H_
+#ifndef __freax_FIND_H_
+#define __freax_FIND_H_
 
-#ifndef __LINUX_BITMAP_H
-#error only <linux/bitmap.h> can be included directly
+#ifndef __freax_BITMAP_H
+#error only <freax/bitmap.h> can be included directly
 #endif
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 unsigned long _find_next_bit(const unsigned long *addr1, unsigned long nbits,
 				unsigned long start);
@@ -667,4 +667,4 @@ unsigned long find_next_bit_le(const void *addr, unsigned
 	     (start) < (size); \
 	     (start) = find_next_clump8(&(clump), (bits), (size), (start) + 8))
 
-#endif /*__LINUX_FIND_H_ */
+#endif /*__freax_FIND_H_ */

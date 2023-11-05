@@ -6,8 +6,8 @@
  * Copyright (C) 2016 Red Hat, Inc.
  * Author: Michael S. Tsirkin <mst@redhat.com>
  */
-#include <linux/bits.h>
-#include <linux/compiler.h>
+#include <freax/bits.h>
+#include <freax/compiler.h>
 #include <asm/byteorder.h>
 
 /*

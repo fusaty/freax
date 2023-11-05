@@ -5,9 +5,9 @@
  * Copyright 2006 Johannes Berg <johannes@sipsolutions.net>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/list.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/list.h>
 #include "../aoa.h"
 #include "alsa.h"
 

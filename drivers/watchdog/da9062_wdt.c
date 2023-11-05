@@ -5,20 +5,20 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/watchdog.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/mfd/da9062/registers.h>
-#include <linux/mfd/da9062/core.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/watchdog.h>
+#include <freax/platform_device.h>
+#include <freax/uaccess.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
+#include <freax/mfd/da9062/registers.h>
+#include <freax/mfd/da9062/core.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/of.h>
 
 static const unsigned int wdt_timeout[] = { 0, 2, 4, 8, 16, 32, 65, 131 };
 #define DA9062_TWDSCALE_DISABLE		0

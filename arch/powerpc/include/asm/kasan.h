@@ -15,7 +15,7 @@
 #ifndef __ASSEMBLY__
 
 #include <asm/page.h>
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 
 #define KASAN_SHADOW_SCALE_SHIFT	3
 

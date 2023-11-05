@@ -8,10 +8,10 @@
  *   Rework to support virtual processors
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/export.h>
-#include <linux/smp.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/export.h>
+#include <freax/smp.h>
 
 /* waiting for a spinlock... */
 #if defined(CONFIG_PPC_SPLPAR)

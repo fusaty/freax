@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_U64_STATS_SYNC_H
-#define _LINUX_U64_STATS_SYNC_H
+#ifndef _freax_U64_STATS_SYNC_H
+#define _freax_U64_STATS_SYNC_H
 
 /*
  * Protect against 64-bit values tearing on 32-bit architectures. This is
@@ -59,7 +59,7 @@
  * Example of use in drivers/net/loopback.c, using per_cpu containers,
  * in BH disabled context.
  */
-#include <linux/seqlock.h>
+#include <freax/seqlock.h>
 
 struct u64_stats_sync {
 #if BITS_PER_LONG == 32
@@ -213,4 +213,4 @@ static inline bool u64_stats_fetch_retry(const struct u64_stats_sync *syncp,
 	return __u64_stats_fetch_retry(syncp, start);
 }
 
-#endif /* _LINUX_U64_STATS_SYNC_H */
+#endif /* _freax_U64_STATS_SYNC_H */

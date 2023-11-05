@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_STRING_CHOICES_H_
-#define _LINUX_STRING_CHOICES_H_
+#ifndef _freax_STRING_CHOICES_H_
+#define _freax_STRING_CHOICES_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 static inline const char *str_enable_disable(bool v)
 {

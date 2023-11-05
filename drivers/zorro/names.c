@@ -10,10 +10,10 @@
  *	David Mosberger-Tang, Martin Mares
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/zorro.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/zorro.h>
 
 #include "zorro.h"
 

@@ -33,14 +33,14 @@
  * SOFTWARE.
  */
 
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/mm.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/count_zeros.h>
+#include <freax/mm.h>
+#include <freax/dma-mapping.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/mm.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/pagemap.h>
+#include <freax/count_zeros.h>
 #include <rdma/ib_umem_odp.h>
 
 #include "uverbs.h"

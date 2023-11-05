@@ -7,23 +7,23 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/skbuff.h>
-#include <linux/cgroup.h>
-#include <linux/rcupdate.h>
-#include <linux/atomic.h>
-#include <linux/sched/task.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/skbuff.h>
+#include <freax/cgroup.h>
+#include <freax/rcupdate.h>
+#include <freax/atomic.h>
+#include <freax/sched/task.h>
 
 #include <net/rtnetlink.h>
 #include <net/pkt_cls.h>
 #include <net/sock.h>
 #include <net/netprio_cgroup.h>
 
-#include <linux/fdtable.h>
+#include <freax/fdtable.h>
 
 /*
  * netprio allocates per-net_device priomap array which is indexed by

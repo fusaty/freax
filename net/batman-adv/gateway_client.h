@@ -9,11 +9,11 @@
 
 #include "main.h"
 
-#include <linux/kref.h>
-#include <linux/netlink.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
-#include <uapi/linux/batadv_packet.h>
+#include <freax/kref.h>
+#include <freax/netlink.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
+#include <uapi/freax/batadv_packet.h>
 
 void batadv_gw_check_client_stop(struct batadv_priv *bat_priv);
 void batadv_gw_reselect(struct batadv_priv *bat_priv);

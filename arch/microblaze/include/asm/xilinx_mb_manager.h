@@ -7,7 +7,7 @@
 
 # ifndef __ASSEMBLY__
 
-#include <linux/of_address.h>
+#include <freax/of_address.h>
 
 /*
  * When the break vector gets asserted because of error injection, the break

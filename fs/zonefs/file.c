@@ -4,21 +4,21 @@
  *
  * Copyright (C) 2022 Western Digital Corporation or its affiliates.
  */
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/iomap.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
-#include <linux/statfs.h>
-#include <linux/writeback.h>
-#include <linux/quotaops.h>
-#include <linux/seq_file.h>
-#include <linux/parser.h>
-#include <linux/uio.h>
-#include <linux/mman.h>
-#include <linux/sched/mm.h>
-#include <linux/task_io_accounting_ops.h>
+#include <freax/module.h>
+#include <freax/pagemap.h>
+#include <freax/iomap.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
+#include <freax/statfs.h>
+#include <freax/writeback.h>
+#include <freax/quotaops.h>
+#include <freax/seq_file.h>
+#include <freax/parser.h>
+#include <freax/uio.h>
+#include <freax/mman.h>
+#include <freax/sched/mm.h>
+#include <freax/task_io_accounting_ops.h>
 
 #include "zonefs.h"
 

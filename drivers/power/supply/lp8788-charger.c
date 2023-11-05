@@ -7,16 +7,16 @@
  * Author: Milo(Woogyom) Kim <milo.kim@ti.com>
  */
 
-#include <linux/err.h>
-#include <linux/iio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/mfd/lp8788.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
+#include <freax/err.h>
+#include <freax/iio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/mfd/lp8788.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
 
 /* register address */
 #define LP8788_CHG_STATUS		0x07
@@ -80,7 +80,7 @@ enum lp8788_charger_input_state {
 /*
  * struct lp8788_chg_irq
  * @which        : lp8788 interrupt id
- * @virq         : Linux IRQ number from irq_domain
+ * @virq         : freax IRQ number from irq_domain
  */
 struct lp8788_chg_irq {
 	enum lp8788_int_id which;

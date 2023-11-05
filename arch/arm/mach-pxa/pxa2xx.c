@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-pxa/pxa2xx.c
+ * freax/arch/arm/mach-pxa/pxa2xx.c
  *
  * code specific to pxa2xx
  *
  * Copyright (C) 2008 Dmitry Baryshkov
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/io.h>
 
 #include "pxa2xx-regs.h"
 #include "mfp-pxa25x.h"
 #include "generic.h"
 #include "reset.h"
 #include "smemc.h"
-#include <linux/soc/pxa/smemc.h>
+#include <freax/soc/pxa/smemc.h>
 
 void pxa2xx_clear_reset_status(unsigned int mask)
 {

@@ -6,9 +6,9 @@
 
 #include <asm/bcache.h>
 #include <asm/debug.h>
-#include <linux/uaccess.h>
-#include <linux/debugfs.h>
-#include <linux/init.h>
+#include <freax/uaccess.h>
+#include <freax/debugfs.h>
+#include <freax/init.h>
 
 static ssize_t sc_prefetch_read(struct file *file, char __user *user_buf,
 				size_t count, loff_t *ppos)

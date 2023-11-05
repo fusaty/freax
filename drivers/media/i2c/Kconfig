@@ -44,7 +44,7 @@ config VIDEO_CCS_PLL
 config VIDEO_AR0521
 	tristate "ON Semiconductor AR0521 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the ON Semiconductor
+	  This is a Video4freax2 sensor driver for the ON Semiconductor
 	  AR0521 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -53,7 +53,7 @@ config VIDEO_AR0521
 config VIDEO_HI556
 	tristate "Hynix Hi-556 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the Hynix
+	  This is a Video4freax2 sensor driver for the Hynix
 	  Hi-556 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -62,7 +62,7 @@ config VIDEO_HI556
 config VIDEO_HI846
 	tristate "Hynix Hi-846 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the Hynix
+	  This is a Video4freax2 sensor driver for the Hynix
 	  Hi-846 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -71,7 +71,7 @@ config VIDEO_HI846
 config VIDEO_HI847
         tristate "Hynix Hi-847 sensor support"
         help
-          This is a Video4Linux2 sensor driver for the Hynix
+          This is a Video4freax2 sensor driver for the Hynix
           Hi-847 camera.
 
           To compile this driver as a module, choose M here: the
@@ -80,7 +80,7 @@ config VIDEO_HI847
 config VIDEO_IMX208
 	tristate "Sony IMX208 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the Sony
+	  This is a Video4freax2 sensor driver for the Sony
 	  IMX208 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -91,7 +91,7 @@ config VIDEO_IMX214
 	depends on GPIOLIB
 	select REGMAP_I2C
 	help
-	  This is a Video4Linux2 sensor driver for the Sony
+	  This is a Video4freax2 sensor driver for the Sony
 	  IMX214 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -100,7 +100,7 @@ config VIDEO_IMX214
 config VIDEO_IMX219
 	tristate "Sony IMX219 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the Sony
+	  This is a Video4freax2 sensor driver for the Sony
 	  IMX219 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -109,7 +109,7 @@ config VIDEO_IMX219
 config VIDEO_IMX258
 	tristate "Sony IMX258 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the Sony
+	  This is a Video4freax2 sensor driver for the Sony
 	  IMX258 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -127,7 +127,7 @@ config VIDEO_IMX290
 	select REGMAP_I2C
 	select V4L2_CCI_I2C
 	help
-	  This is a Video4Linux2 sensor driver for the Sony
+	  This is a Video4freax2 sensor driver for the Sony
 	  IMX290 camera sensor.
 
 	  To compile this driver as a module, choose M here: the
@@ -136,7 +136,7 @@ config VIDEO_IMX290
 config VIDEO_IMX296
 	tristate "Sony IMX296 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the Sony
+	  This is a Video4freax2 sensor driver for the Sony
 	  IMX296 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -145,7 +145,7 @@ config VIDEO_IMX296
 config VIDEO_IMX319
 	tristate "Sony IMX319 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the Sony
+	  This is a Video4freax2 sensor driver for the Sony
 	  IMX319 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -155,7 +155,7 @@ config VIDEO_IMX334
 	tristate "Sony IMX334 sensor support"
 	depends on OF_GPIO
 	help
-	  This is a Video4Linux2 sensor driver for the Sony
+	  This is a Video4freax2 sensor driver for the Sony
 	  IMX334 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -165,7 +165,7 @@ config VIDEO_IMX335
 	tristate "Sony IMX335 sensor support"
 	depends on OF_GPIO
 	help
-	  This is a Video4Linux2 sensor driver for the Sony
+	  This is a Video4freax2 sensor driver for the Sony
 	  IMX335 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -174,7 +174,7 @@ config VIDEO_IMX335
 config VIDEO_IMX355
 	tristate "Sony IMX355 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the Sony
+	  This is a Video4freax2 sensor driver for the Sony
 	  IMX355 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -184,7 +184,7 @@ config VIDEO_IMX412
 	tristate "Sony IMX412 sensor support"
 	depends on OF_GPIO
 	help
-	  This is a Video4Linux2 sensor driver for the Sony
+	  This is a Video4freax2 sensor driver for the Sony
 	  IMX412 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -194,7 +194,7 @@ config VIDEO_IMX415
 	tristate "Sony IMX415 sensor support"
 	depends on OF_GPIO
 	help
-	  This is a Video4Linux2 sensor driver for the Sony
+	  This is a Video4freax2 sensor driver for the Sony
 	  IMX415 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -219,13 +219,13 @@ config VIDEO_MT9P031
 	tristate "Aptina MT9P031 support"
 	select VIDEO_APTINA_PLL
 	help
-	  This is a Video4Linux2 sensor driver for the Aptina
+	  This is a Video4freax2 sensor driver for the Aptina
 	  (Micron) mt9p031 5 Mpixel camera.
 
 config VIDEO_MT9T112
 	tristate "Aptina MT9T111/MT9T112 support"
 	help
-	  This is a Video4Linux2 sensor driver for the Aptina
+	  This is a Video4freax2 sensor driver for the Aptina
 	  (Micron) MT9T111 and MT9T112 3 Mpixel camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -234,7 +234,7 @@ config VIDEO_MT9T112
 config VIDEO_MT9V011
 	tristate "Micron mt9v011 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the Micron
+	  This is a Video4freax2 sensor driver for the Micron
 	  mt0v011 1.3 Mpixel camera.  It currently only works with the
 	  em28xx driver.
 
@@ -242,13 +242,13 @@ config VIDEO_MT9V032
 	tristate "Micron MT9V032 sensor support"
 	select REGMAP_I2C
 	help
-	  This is a Video4Linux2 sensor driver for the Micron
+	  This is a Video4freax2 sensor driver for the Micron
 	  MT9V032 752x480 CMOS sensor.
 
 config VIDEO_MT9V111
 	tristate "Aptina MT9V111 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the Aptina/Micron
+	  This is a Video4freax2 sensor driver for the Aptina/Micron
 	  MT9V111 sensor.
 
 	  To compile this driver as a module, choose M here: the
@@ -257,7 +257,7 @@ config VIDEO_MT9V111
 config VIDEO_OG01A1B
 	tristate "OmniVision OG01A1B sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OG01A1B camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -266,7 +266,7 @@ config VIDEO_OG01A1B
 config VIDEO_OV01A10
 	tristate "OmniVision OV01A10 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV01A10 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -275,7 +275,7 @@ config VIDEO_OV01A10
 config VIDEO_OV02A10
 	tristate "OmniVision OV02A10 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV02A10 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -284,7 +284,7 @@ config VIDEO_OV02A10
 config VIDEO_OV08D10
         tristate "OmniVision OV08D10 sensor support"
         help
-          This is a Video4Linux2 sensor driver for the OmniVision
+          This is a Video4freax2 sensor driver for the OmniVision
           OV08D10 camera sensor.
 
           To compile this driver as a module, choose M here: the
@@ -293,7 +293,7 @@ config VIDEO_OV08D10
 config VIDEO_OV08X40
 	tristate "OmniVision OV08X40 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV08X40 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -302,19 +302,19 @@ config VIDEO_OV08X40
 config VIDEO_OV13858
 	tristate "OmniVision OV13858 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV13858 camera.
 
 config VIDEO_OV13B10
 	tristate "OmniVision OV13B10 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV13B10 camera.
 
 config VIDEO_OV2640
 	tristate "OmniVision OV2640 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV2640 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -324,7 +324,7 @@ config VIDEO_OV2659
 	tristate "OmniVision OV2659 sensor support"
 	depends on GPIOLIB
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV2659 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -334,7 +334,7 @@ config VIDEO_OV2680
 	tristate "OmniVision OV2680 sensor support"
 	select V4L2_CCI_I2C
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV2680 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -343,7 +343,7 @@ config VIDEO_OV2680
 config VIDEO_OV2685
 	tristate "OmniVision OV2685 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV2685 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -354,7 +354,7 @@ config VIDEO_OV2740
 	depends on ACPI || COMPILE_TEST
 	select REGMAP_I2C
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV2740 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -364,7 +364,7 @@ config VIDEO_OV4689
 	tristate "OmniVision OV4689 sensor support"
 	depends on GPIOLIB
 	help
-	  This is a Video4Linux2 sensor-level driver for the OmniVision
+	  This is a Video4freax2 sensor-level driver for the OmniVision
 	  OV4689 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -375,14 +375,14 @@ config VIDEO_OV5640
 	depends on OF
 	depends on GPIOLIB
 	help
-	  This is a Video4Linux2 sensor driver for the Omnivision
+	  This is a Video4freax2 sensor driver for the Omnivision
 	  OV5640 camera sensor with a MIPI CSI-2 interface.
 
 config VIDEO_OV5645
 	tristate "OmniVision OV5645 sensor support"
 	depends on OF
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV5645 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -391,7 +391,7 @@ config VIDEO_OV5645
 config VIDEO_OV5647
 	tristate "OmniVision OV5647 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV5647 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -401,7 +401,7 @@ config VIDEO_OV5648
 	tristate "OmniVision OV5648 sensor support"
 	depends on PM
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV5648 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -410,7 +410,7 @@ config VIDEO_OV5648
 config VIDEO_OV5670
 	tristate "OmniVision OV5670 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV5670 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -419,7 +419,7 @@ config VIDEO_OV5670
 config VIDEO_OV5675
 	tristate "OmniVision OV5675 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV5675 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -429,7 +429,7 @@ config VIDEO_OV5693
 	tristate "OmniVision OV5693 sensor support"
 	select V4L2_CCI_I2C
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV5693 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -438,7 +438,7 @@ config VIDEO_OV5693
 config VIDEO_OV5695
 	tristate "OmniVision OV5695 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV5695 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -447,7 +447,7 @@ config VIDEO_OV5695
 config VIDEO_OV6650
 	tristate "OmniVision OV6650 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV6650 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -456,7 +456,7 @@ config VIDEO_OV6650
 config VIDEO_OV7251
 	tristate "OmniVision OV7251 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV7251 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -465,7 +465,7 @@ config VIDEO_OV7251
 config VIDEO_OV7640
 	tristate "OmniVision OV7640 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV7640 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -474,7 +474,7 @@ config VIDEO_OV7640
 config VIDEO_OV7670
 	tristate "OmniVision OV7670 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV7670 VGA camera.  It currently only works with the M88ALP01
 	  controller.
 
@@ -482,7 +482,7 @@ config VIDEO_OV772X
 	tristate "OmniVision OV772x sensor support"
 	select REGMAP_SCCB
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV772x camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -492,13 +492,13 @@ config VIDEO_OV7740
 	tristate "OmniVision OV7740 sensor support"
 	select REGMAP_SCCB
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV7740 VGA camera sensor.
 
 config VIDEO_OV8856
 	tristate "OmniVision OV8856 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV8856 camera sensor.
 
 	  To compile this driver as a module, choose M here: the
@@ -508,7 +508,7 @@ config VIDEO_OV8858
 	tristate "OmniVision OV8858 sensor support"
 	depends on PM
 	help
-	  This is a Video4Linux2 sensor driver for OmniVision
+	  This is a Video4freax2 sensor driver for OmniVision
 	  OV8858 camera sensor.
 
 	  To compile this driver as a module, choose M here: the
@@ -518,7 +518,7 @@ config VIDEO_OV8865
 	tristate "OmniVision OV8865 sensor support"
 	depends on PM
 	help
-	  This is a Video4Linux2 sensor driver for OmniVision
+	  This is a Video4freax2 sensor driver for OmniVision
 	  OV8865 camera sensor.
 
 	  To compile this driver as a module, choose M here: the
@@ -528,7 +528,7 @@ config VIDEO_OV9282
 	tristate "OmniVision OV9282 sensor support"
 	depends on OF_GPIO
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV9282 camera sensor.
 
 	  To compile this driver as a module, choose M here: the
@@ -537,7 +537,7 @@ config VIDEO_OV9282
 config VIDEO_OV9640
 	tristate "OmniVision OV9640 sensor support"
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV9640 camera sensor.
 
 config VIDEO_OV9650
@@ -551,7 +551,7 @@ config VIDEO_OV9734
 	tristate "OmniVision OV9734 sensor support"
 	depends on ACPI || COMPILE_TEST
 	help
-	  This is a Video4Linux2 sensor driver for the OmniVision
+	  This is a Video4freax2 sensor driver for the OmniVision
 	  OV9734 camera.
 
 	  To compile this driver as a module, choose M here: the
@@ -609,7 +609,7 @@ config VIDEO_ST_VGXY61
 	tristate "ST VGXY61 sensor support"
 	depends on OF && GPIOLIB
 	help
-	  This is a Video4Linux2 sensor driver for the ST VGXY61
+	  This is a Video4freax2 sensor driver for the ST VGXY61
 	  camera sensor.
 
 source "drivers/media/i2c/ccs/Kconfig"
@@ -1138,7 +1138,7 @@ config VIDEO_TVP514X
 	depends on VIDEO_DEV && I2C
 	select V4L2_FWNODE
 	help
-	  This is a Video4Linux2 sensor driver for the TI TVP5146/47
+	  This is a Video4freax2 sensor driver for the TI TVP5146/47
 	  decoder. It is currently working with the TI OMAP3 camera
 	  controller.
 

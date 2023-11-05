@@ -3,12 +3,12 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 2007 Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 2007 Ralf Baechle (ralf@freax-mips.org)
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/serial_8250.h>
-#include <linux/rtc/ds1685.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/serial_8250.h>
+#include <freax/rtc/ds1685.h>
 
 #include <asm/ip32/mace.h>
 #include <asm/ip32/ip32_ints.h>

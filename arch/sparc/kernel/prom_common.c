@@ -10,13 +10,13 @@
  *  Adapted for sparc by David S. Miller davem@davemloft.net
  */
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/errno.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_pdt.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/errno.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_pdt.h>
 #include <asm/prom.h>
 #include <asm/oplib.h>
 

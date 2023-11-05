@@ -7,7 +7,7 @@
 
 #ifdef __KERNEL__
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 #include <asm/cpu.h>
 #include <asm/cpu-features.h>

@@ -21,10 +21,10 @@
 #ifndef	__HMM_H__
 #define	__HMM_H__
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
 
 #include "hmm_common.h"
 #include "hmm/hmm_bo.h"

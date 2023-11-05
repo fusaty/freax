@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * helper functions for vmalloc video4linux capture buffers
+ * helper functions for vmalloc video4freax capture buffers
  *
  * The functions expect the hardware being able to scatter gather
  * (i.e. the buffers are not linear in physical memory, but fragmented
@@ -10,16 +10,16 @@
  * (c) 2007 Mauro Carvalho Chehab <mchehab@kernel.org>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/pgtable.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/pgtable.h>
 
-#include <linux/pci.h>
-#include <linux/vmalloc.h>
-#include <linux/pagemap.h>
+#include <freax/pci.h>
+#include <freax/vmalloc.h>
+#include <freax/pagemap.h>
 #include <asm/page.h>
 
 #include <media/videobuf-vmalloc.h>
@@ -37,7 +37,7 @@
 static int debug;
 module_param(debug, int, 0644);
 
-MODULE_DESCRIPTION("helper module to manage video4linux vmalloc buffers");
+MODULE_DESCRIPTION("helper module to manage video4freax vmalloc buffers");
 MODULE_AUTHOR("Mauro Carvalho Chehab <mchehab@kernel.org>");
 MODULE_LICENSE("GPL");
 

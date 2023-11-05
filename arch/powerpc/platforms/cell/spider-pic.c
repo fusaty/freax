@@ -7,12 +7,12 @@
  * Author: Arnd Bergmann <arndb@de.ibm.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/ioport.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/pgtable.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/ioport.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/pgtable.h>
 
 #include <asm/io.h>
 

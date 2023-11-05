@@ -3,12 +3,12 @@
  * Copyright (C) 2020-2023 Loongson Technology Corporation Limited
  */
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/kvm_host.h>
-#include <linux/module.h>
-#include <linux/preempt.h>
-#include <linux/vmalloc.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/kvm_host.h>
+#include <freax/module.h>
+#include <freax/preempt.h>
+#include <freax/vmalloc.h>
 #include <asm/fpu.h>
 #include <asm/inst.h>
 #include <asm/loongarch.h>

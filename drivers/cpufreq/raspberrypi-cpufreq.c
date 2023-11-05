@@ -5,12 +5,12 @@
  * Copyright (C) 2019, Nicolas Saenz Julienne <nsaenzjulienne@suse.de>
  */
 
-#include <linux/clk.h>
-#include <linux/cpu.h>
-#include <linux/cpufreq.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
+#include <freax/clk.h>
+#include <freax/cpu.h>
+#include <freax/cpufreq.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_opp.h>
 
 #define RASPBERRYPI_FREQ_INTERVAL	100000000
 

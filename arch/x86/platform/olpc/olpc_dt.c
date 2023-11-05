@@ -12,10 +12,10 @@
  *  Adapted for x86/OLPC by Andres Salomon <dilinger@queued.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
-#include <linux/of_pdt.h>
+#include <freax/kernel.h>
+#include <freax/memblock.h>
+#include <freax/of.h>
+#include <freax/of_pdt.h>
 #include <asm/olpc.h>
 #include <asm/olpc_ofw.h>
 

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef _LINUX_OBJPOOL_H
-#define _LINUX_OBJPOOL_H
+#ifndef _freax_OBJPOOL_H
+#define _freax_OBJPOOL_H
 
-#include <linux/types.h>
-#include <linux/refcount.h>
+#include <freax/types.h>
+#include <freax/refcount.h>
 
 /*
  * objpool: ring-array based lockless MPMC queue
@@ -178,4 +178,4 @@ void objpool_free(struct objpool_head *pool);
  */
 void objpool_fini(struct objpool_head *pool);
 
-#endif /* _LINUX_OBJPOOL_H */
+#endif /* _freax_OBJPOOL_H */

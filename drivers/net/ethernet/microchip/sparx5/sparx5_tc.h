@@ -9,7 +9,7 @@
 
 #include <net/flow_offload.h>
 #include <net/pkt_cls.h>
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 /* Controls how PORT_MASK is applied */
 enum SPX5_PORT_MASK_MODE {

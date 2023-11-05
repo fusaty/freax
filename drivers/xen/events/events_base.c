@@ -24,20 +24,20 @@
 
 #define pr_fmt(fmt) "xen:" KBUILD_MODNAME ": " fmt
 
-#include <linux/linkage.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/moduleparam.h>
-#include <linux/string.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/irqnr.h>
-#include <linux/pci.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
-#include <linux/cpuhotplug.h>
-#include <linux/atomic.h>
-#include <linux/ktime.h>
+#include <freax/linkage.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/moduleparam.h>
+#include <freax/string.h>
+#include <freax/memblock.h>
+#include <freax/slab.h>
+#include <freax/irqnr.h>
+#include <freax/pci.h>
+#include <freax/rcupdate.h>
+#include <freax/spinlock.h>
+#include <freax/cpuhotplug.h>
+#include <freax/atomic.h>
+#include <freax/ktime.h>
 
 #ifdef CONFIG_X86
 #include <asm/desc.h>
@@ -1798,7 +1798,7 @@ static int xen_rebind_evtchn_to_cpu(struct irq_info *info, unsigned int tcpu)
 	/*
 	 * If this fails, it usually just indicates that we're dealing with a
 	 * virq or IPI channel, which don't actually need to be rebound. Ignore
-	 * it, but don't do the xenlinux-level rebind in that case.
+	 * it, but don't do the xenfreax-level rebind in that case.
 	 */
 	if (HYPERVISOR_event_channel_op(EVTCHNOP_bind_vcpu, &bind_vcpu) >= 0)
 		bind_evtchn_to_cpu(evtchn, tcpu, false);

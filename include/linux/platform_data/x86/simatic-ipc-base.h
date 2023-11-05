@@ -12,7 +12,7 @@
 #ifndef __PLATFORM_DATA_X86_SIMATIC_IPC_BASE_H
 #define __PLATFORM_DATA_X86_SIMATIC_IPC_BASE_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define SIMATIC_IPC_DEVICE_NONE 0
 #define SIMATIC_IPC_DEVICE_227D 1

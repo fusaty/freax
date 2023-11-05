@@ -21,9 +21,9 @@
 * Platform specific includes and functionality.
 */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
 
 #define UINT16_MAX USHRT_MAX
 #define UINT32_MAX UINT_MAX

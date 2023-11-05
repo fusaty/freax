@@ -3,7 +3,7 @@
 #include <asm/page.h>
 #include <asm/fpu.h>
 #include <asm-generic/asm-prototypes.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/ftrace.h>
 #include <asm/mmu_context.h>
 

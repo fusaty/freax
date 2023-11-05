@@ -8,8 +8,8 @@
 #ifndef __ASM_TLB_H
 #define __ASM_TLB_H
 
-#include <linux/pagemap.h>
-#include <linux/swap.h>
+#include <freax/pagemap.h>
+#include <freax/swap.h>
 
 static inline void __tlb_remove_table(void *_table)
 {

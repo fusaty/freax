@@ -8,9 +8,9 @@
 #ifndef __NET_MPTCP_H
 #define __NET_MPTCP_H
 
-#include <linux/skbuff.h>
-#include <linux/tcp.h>
-#include <linux/types.h>
+#include <freax/skbuff.h>
+#include <freax/tcp.h>
+#include <freax/types.h>
 
 struct mptcp_info;
 struct mptcp_sock;

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SWAP_CGROUP_H
-#define __LINUX_SWAP_CGROUP_H
+#ifndef __freax_SWAP_CGROUP_H
+#define __freax_SWAP_CGROUP_H
 
-#include <linux/swap.h>
+#include <freax/swap.h>
 
 #if defined(CONFIG_MEMCG) && defined(CONFIG_SWAP)
 
@@ -42,4 +42,4 @@ static inline void swap_cgroup_swapoff(int type)
 
 #endif
 
-#endif /* __LINUX_SWAP_CGROUP_H */
+#endif /* __freax_SWAP_CGROUP_H */

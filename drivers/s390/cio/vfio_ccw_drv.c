@@ -5,15 +5,15 @@
  * Copyright IBM Corp. 2017
  * Copyright Red Hat, Inc. 2019
  *
- * Author(s): Dong Jia Shi <bjsdjshi@linux.vnet.ibm.com>
- *            Xiao Feng Ren <renxiaof@linux.vnet.ibm.com>
+ * Author(s): Dong Jia Shi <bjsdjshi@freax.vnet.ibm.com>
+ *            Xiao Feng Ren <renxiaof@freax.vnet.ibm.com>
  *            Cornelia Huck <cohuck@redhat.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/mdev.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/mdev.h>
 
 #include <asm/isc.h>
 

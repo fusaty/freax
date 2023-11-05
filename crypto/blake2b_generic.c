@@ -16,9 +16,9 @@
  */
 
 #include <asm/unaligned.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
 #include <crypto/internal/blake2b.h>
 #include <crypto/internal/hash.h>
 

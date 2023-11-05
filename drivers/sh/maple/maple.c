@@ -10,17 +10,17 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/maple.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/maple.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/module.h>
 #include <asm/cacheflush.h>
 #include <asm/dma.h>
 #include <asm/io.h>

@@ -2,7 +2,7 @@
 #ifndef __PERF_CPUTOPO_H
 #define __PERF_CPUTOPO_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct cpu_topology {
 	/* The number of unique package_cpus_lists below. */

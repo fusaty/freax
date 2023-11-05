@@ -7,12 +7,12 @@
  * Contains all platform NAND related definitions.
  */
 
-#ifndef __LINUX_MTD_PLATNAND_H
-#define __LINUX_MTD_PLATNAND_H
+#ifndef __freax_MTD_PLATNAND_H
+#define __freax_MTD_PLATNAND_H
 
-#include <linux/mtd/partitions.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/platform_device.h>
+#include <freax/mtd/partitions.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/platform_device.h>
 
 /**
  * struct platform_nand_chip - chip level device structure
@@ -71,4 +71,4 @@ struct platform_nand_data {
 	struct platform_nand_ctrl ctrl;
 };
 
-#endif /* __LINUX_MTD_PLATNAND_H */
+#endif /* __freax_MTD_PLATNAND_H */

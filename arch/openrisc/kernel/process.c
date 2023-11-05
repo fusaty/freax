@@ -2,7 +2,7 @@
 /*
  * OpenRISC process.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * freax architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -14,34 +14,34 @@
  */
 
 #define __KERNEL_SYSCALLS__
-#include <linux/cpu.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/elfcore.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init_task.h>
-#include <linux/mqueue.h>
-#include <linux/fs.h>
-#include <linux/reboot.h>
+#include <freax/cpu.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/mm.h>
+#include <freax/stddef.h>
+#include <freax/unistd.h>
+#include <freax/ptrace.h>
+#include <freax/slab.h>
+#include <freax/elfcore.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/init_task.h>
+#include <freax/mqueue.h>
+#include <freax/fs.h>
+#include <freax/reboot.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/processor.h>
 #include <asm/spr_defs.h>
 #include <asm/switch_to.h>
 
-#include <linux/smp.h>
+#include <freax/smp.h>
 
 /*
  * Pointer to Current thread info structure.

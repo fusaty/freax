@@ -31,7 +31,7 @@
 
 		key-volume-up {
 			label = "volume_up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			gpios = <&tlmm 85 GPIO_ACTIVE_LOW>;
 		};
 	};
@@ -82,7 +82,7 @@
 
 &pm8953_resin {
 	status = "okay";
-	linux,code = <KEY_VOLUMEDOWN>;
+	freax,code = <KEY_VOLUMEDOWN>;
 };
 
 &pmi632_lpg {

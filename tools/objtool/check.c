@@ -16,10 +16,10 @@
 #include <objtool/warn.h>
 #include <objtool/endianness.h>
 
-#include <linux/objtool_types.h>
-#include <linux/hashtable.h>
-#include <linux/kernel.h>
-#include <linux/static_call_types.h>
+#include <freax/objtool_types.h>
+#include <freax/hashtable.h>
+#include <freax/kernel.h>
+#include <freax/static_call_types.h>
 
 struct alternative {
 	struct alternative *next;
@@ -281,7 +281,7 @@ static void init_insn_state(struct objtool_file *file, struct insn_state *state,
 	init_cfi_state(&state->cfi);
 
 	/*
-	 * We need the full vmlinux for noinstr validation, otherwise we can
+	 * We need the full vmfreax for noinstr validation, otherwise we can
 	 * not correctly determine insn_call_dest(insn)->sec (external symbols
 	 * do not have a section).
 	 */
@@ -624,7 +624,7 @@ static int add_dead_ends(struct objtool_file *file)
 reachable:
 	/*
 	 * These manually annotated reachable checks are needed for GCC 4.4,
-	 * where the Linux unreachable() macro isn't supported.  In that case
+	 * where the freax unreachable() macro isn't supported.  In that case
 	 * GCC doesn't know the "ud2" is fatal, so it generates code as if it's
 	 * not a dead end.
 	 */

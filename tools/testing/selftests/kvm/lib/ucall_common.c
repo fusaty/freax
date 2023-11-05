@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 #include "kvm_util.h"
-#include "linux/types.h"
-#include "linux/bitmap.h"
-#include "linux/atomic.h"
+#include "freax/types.h"
+#include "freax/bitmap.h"
+#include "freax/atomic.h"
 
 #define GUEST_UCALL_FAILED -1
 

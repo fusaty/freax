@@ -73,9 +73,9 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 struct pt_regs;
 

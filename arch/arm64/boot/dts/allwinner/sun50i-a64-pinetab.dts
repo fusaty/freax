@@ -210,14 +210,14 @@
 
 	button-200 {
 		label = "Volume Up";
-		linux,code = <KEY_VOLUMEUP>;
+		freax,code = <KEY_VOLUMEUP>;
 		channel = <0>;
 		voltage = <200000>;
 	};
 
 	button-400 {
 		label = "Volume Down";
-		linux,code = <KEY_VOLUMEDOWN>;
+		freax,code = <KEY_VOLUMEDOWN>;
 		channel = <0>;
 		voltage = <400000>;
 	};

@@ -5,16 +5,16 @@
 // Copyright (C) 2014-2015 Freescale Semiconductor, Inc.
 // Copyright 2019 NXP
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/mfd/syscon.h>
-#include <linux/mfd/syscon/imx6q-iomuxc-gpr.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/mfd/syscon.h>
+#include <freax/mfd/syscon/imx6q-iomuxc-gpr.h>
+#include <freax/of.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/pm.h>
+#include <freax/slab.h>
 #include <sound/soc.h>
 #include <sound/pcm.h>
 #include <sound/initval.h>

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-2-Clause)
 // Copyright (c) 2023 Red Hat
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include <bpf/bpf_tracing.h>
 
 unsigned int nr_uprobes;

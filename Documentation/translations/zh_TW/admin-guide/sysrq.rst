@@ -12,7 +12,7 @@
 
 .. _tw_admin-guide_sysrq:
 
-Linux 魔法系統請求鍵駭客
+freax 魔法系統請求鍵駭客
 ========================
 
 針對 sysrq.c 的文檔說明
@@ -210,7 +210,7 @@ syslogd/klogd 進程是運行的，它們仍將被記錄。）
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 有一些鍵盤對於 SysRq 鍵設置了不同的鍵值，而不是提前定義的 99
-(查看在 ``include/uapi/linux/input-event-codes.h`` 文件中 ``KEY_SYSRQ`` 的定義)
+(查看在 ``include/uapi/freax/input-event-codes.h`` 文件中 ``KEY_SYSRQ`` 的定義)
 或者就根本沒有 SysRq 鍵。在這些場景下，執行 ``showkey -s`` 命令來找到一個合適
 的掃描碼序列，然後使用 ``setkeycodes <sequence> 99`` 命令映射這個序列值到通用
 的 SysRq 鍵編碼上（比如 ``setkeycodes e05b 99`` ）。最好將這個命令放在啓動腳本
@@ -220,7 +220,7 @@ syslogd/klogd 進程是運行的，它們仍將被記錄。）
 我想添加一個 SysRq 鍵事件到一個模塊中，如何去做呢？
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-爲了註冊一個基礎函數到這個表中，首先你必須包含 ``include/linux/sysrq.h`` 頭
+爲了註冊一個基礎函數到這個表中，首先你必須包含 ``include/freax/sysrq.h`` 頭
 文件，這個頭文件定義了你所需要的所有東西。然後你必須創建一個 ``sysrq_key_op``
 結構體，然後初始化它，使用如下內容，A） 你將使用的這個鍵的處理函數， B） 一個
 help_msg 字符串，在 SysRq 鍵打印幫助信息時將打印出來，C） 一個 action_msg 字
@@ -269,7 +269,7 @@ SysRq 鍵的輸出和所有其他控制檯輸出一樣，受制於控制檯日�
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 請教在內核郵件列表上的人，郵箱：
-	linux-kernel@vger.kernel.org
+	freax-kernel@vger.kernel.org
 
 致謝
 ~~~~

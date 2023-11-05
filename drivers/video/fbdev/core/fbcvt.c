@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/fbcvt.c - VESA(TM) Coordinated Video Timings
+ * freax/drivers/video/fbcvt.c - VESA(TM) Coordinated Video Timings
  *
  * Copyright (C) 2005 Antonino Daplas <adaplas@pol.net>
  *
@@ -12,8 +12,8 @@
  * for more details.
  *
  */
-#include <linux/fb.h>
-#include <linux/slab.h>
+#include <freax/fb.h>
+#include <freax/slab.h>
 
 #define FB_CVT_CELLSIZE               8
 #define FB_CVT_GTF_C                 40

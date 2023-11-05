@@ -4,7 +4,7 @@
 #ifndef _VIRTCHNL2_LAN_DESC_H_
 #define _VIRTCHNL2_LAN_DESC_H_
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /* This is an interface definition file where existing enums and their values
  * must remain unchanged over time, so we specify explicit values for all enums.

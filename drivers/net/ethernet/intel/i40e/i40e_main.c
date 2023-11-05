@@ -2,10 +2,10 @@
 /* Copyright(c) 2013 - 2021 Intel Corporation. */
 
 #include <generated/utsrelease.h>
-#include <linux/crash_dump.h>
-#include <linux/if_bridge.h>
-#include <linux/if_macvlan.h>
-#include <linux/module.h>
+#include <freax/crash_dump.h>
+#include <freax/if_bridge.h>
+#include <freax/if_macvlan.h>
+#include <freax/module.h>
 #include <net/pkt_cls.h>
 #include <net/xdp_sock_drv.h>
 

@@ -9,7 +9,7 @@
 
 #ifdef CONFIG_COMPAT
 
-#include <linux/time.h>
+#include <freax/time.h>
 #include <asm/compat.h>
 
 /*

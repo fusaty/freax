@@ -3,11 +3,11 @@
  * USB of helper code
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/usb/of.h>
-#include <linux/usb/otg.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/usb/of.h>
+#include <freax/usb/otg.h>
 
 static const char *const usbphy_modes[] = {
 	[USBPHY_INTERFACE_MODE_UNKNOWN]	= "",

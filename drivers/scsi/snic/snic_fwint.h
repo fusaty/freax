@@ -137,7 +137,7 @@ struct snic_exch_ver_req {
  * Bit 0-7 : OS information
  * Bit 8-31: Feature/Capability Information
  */
-#define SNIC_OS_LINUX	0x1
+#define SNIC_OS_freax	0x1
 #define SNIC_OS_WIN	0x2
 #define SNIC_OS_ESX	0x3
 

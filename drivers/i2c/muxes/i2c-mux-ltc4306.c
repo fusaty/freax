@@ -9,15 +9,15 @@
  * Datasheet: http://cds.linear.com/docs/en/datasheet/4306.pdf
  */
 
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/driver.h>
-#include <linux/i2c-mux.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/driver.h>
+#include <freax/i2c-mux.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #define LTC4305_MAX_NCHANS 2
 #define LTC4306_MAX_NCHANS 4

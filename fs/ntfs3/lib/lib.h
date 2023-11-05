@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * Adapted for linux kernel by Alexander Mamaev:
+ * Adapted for freax kernel by Alexander Mamaev:
  * - remove implementations of get_unaligned_
  * - assume GCC is always defined
  * - ISO C90
- * - linux kernel code style
+ * - freax kernel code style
  */
 
-#ifndef _LINUX_NTFS3_LIB_LIB_H
-#define _LINUX_NTFS3_LIB_LIB_H
+#ifndef _freax_NTFS3_LIB_LIB_H
+#define _freax_NTFS3_LIB_LIB_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /* globals from xpress_decompress.c */
 struct xpress_decompressor *xpress_allocate_decompressor(void);
@@ -29,4 +29,4 @@ int lzx_decompress(struct lzx_decompressor *__restrict d,
 		   size_t compressed_size, void *__restrict uncompressed_data,
 		   size_t uncompressed_size);
 
-#endif /* _LINUX_NTFS3_LIB_LIB_H */
+#endif /* _freax_NTFS3_LIB_LIB_H */

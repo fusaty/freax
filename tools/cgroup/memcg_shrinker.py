@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# Copyright (C) 2022 Roman Gushchin <roman.gushchin@linux.dev>
+# Copyright (C) 2022 Roman Gushchin <roman.gushchin@freax.dev>
 # Copyright (C) 2022 Meta
 
 import os

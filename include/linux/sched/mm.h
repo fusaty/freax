@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_MM_H
-#define _LINUX_SCHED_MM_H
+#ifndef _freax_SCHED_MM_H
+#define _freax_SCHED_MM_H
 
-#include <linux/kernel.h>
-#include <linux/atomic.h>
-#include <linux/sched.h>
-#include <linux/mm_types.h>
-#include <linux/gfp.h>
-#include <linux/sync_core.h>
+#include <freax/kernel.h>
+#include <freax/atomic.h>
+#include <freax/sched.h>
+#include <freax/mm_types.h>
+#include <freax/gfp.h>
+#include <freax/sync_core.h>
 
 /*
  * Routines for handling mm_structs
@@ -487,4 +487,4 @@ static inline void membarrier_update_current_mm(struct mm_struct *next_mm)
 }
 #endif
 
-#endif /* _LINUX_SCHED_MM_H */
+#endif /* _freax_SCHED_MM_H */

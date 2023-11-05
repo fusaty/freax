@@ -10,8 +10,8 @@
 
 #ifndef MODULE
 
-#include <linux/bug.h>
-#include <linux/kfence.h>
+#include <freax/bug.h>
+#include <freax/kfence.h>
 
 #include <asm/pgalloc.h>
 #include <asm/pgtable.h>

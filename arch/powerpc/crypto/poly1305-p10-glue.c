@@ -6,14 +6,14 @@
  */
 
 #include <crypto/algapi.h>
-#include <linux/crypto.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/jump_label.h>
+#include <freax/crypto.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/jump_label.h>
 #include <crypto/internal/hash.h>
 #include <crypto/internal/poly1305.h>
 #include <crypto/internal/simd.h>
-#include <linux/cpufeature.h>
+#include <freax/cpufeature.h>
 #include <asm/unaligned.h>
 #include <asm/simd.h>
 #include <asm/switch_to.h>
@@ -180,7 +180,7 @@ module_cpu_feature_match(PPC_MODULE_FEATURE_P10, poly1305_p10_init);
 module_exit(poly1305_p10_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Danny Tsen <dtsen@linux.ibm.com>");
+MODULE_AUTHOR("Danny Tsen <dtsen@freax.ibm.com>");
 MODULE_DESCRIPTION("Optimized Poly1305 for P10");
 MODULE_ALIAS_CRYPTO("poly1305");
 MODULE_ALIAS_CRYPTO("poly1305-p10");

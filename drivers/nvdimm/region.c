@@ -2,11 +2,11 @@
 /*
  * Copyright(c) 2013-2015 Intel Corporation. All rights reserved.
  */
-#include <linux/memregion.h>
-#include <linux/cpumask.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/nd.h>
+#include <freax/memregion.h>
+#include <freax/cpumask.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/nd.h>
 #include "nd-core.h"
 #include "nd.h"
 

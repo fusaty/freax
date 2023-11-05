@@ -36,12 +36,12 @@
  *	Glenn Judd <glenn.judd@morganstanley.com>
  */
 
-#include <linux/btf.h>
-#include <linux/btf_ids.h>
-#include <linux/module.h>
-#include <linux/mm.h>
+#include <freax/btf.h>
+#include <freax/btf_ids.h>
+#include <freax/module.h>
+#include <freax/mm.h>
 #include <net/tcp.h>
-#include <linux/inet_diag.h>
+#include <freax/inet_diag.h>
 #include "tcp_dctcp.h"
 
 #define DCTCP_MAX_ALPHA	1024U

@@ -73,7 +73,7 @@ properties:
       - keep
     default: off
 
-  linux,default-trigger:
+  freax,default-trigger:
     description:
       This parameter, if present, is a string defining the trigger assigned to
       the LED.
@@ -223,7 +223,7 @@ examples:
 
         led-0 {
             function = LED_FUNCTION_STATUS;
-            linux,default-trigger = "heartbeat";
+            freax,default-trigger = "heartbeat";
             gpios = <&gpio0 0 GPIO_ACTIVE_HIGH>;
         };
 
@@ -265,7 +265,7 @@ examples:
 
             led@1 {
                 reg = <1>;
-                linux,default-trigger = "heartbeat";
+                freax,default-trigger = "heartbeat";
                 function = LED_FUNCTION_INDICATOR;
                 function-enumerator = <1>;
             };

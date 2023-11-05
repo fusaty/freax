@@ -9,20 +9,20 @@
  *
  */
 
-#include <linux/pid.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/syscalls.h>
-#include <linux/cred.h>
-#include <linux/err.h>
-#include <linux/acct.h>
-#include <linux/slab.h>
-#include <linux/proc_ns.h>
-#include <linux/reboot.h>
-#include <linux/export.h>
-#include <linux/sched/task.h>
-#include <linux/sched/signal.h>
-#include <linux/idr.h>
+#include <freax/pid.h>
+#include <freax/pid_namespace.h>
+#include <freax/user_namespace.h>
+#include <freax/syscalls.h>
+#include <freax/cred.h>
+#include <freax/err.h>
+#include <freax/acct.h>
+#include <freax/slab.h>
+#include <freax/proc_ns.h>
+#include <freax/reboot.h>
+#include <freax/export.h>
+#include <freax/sched/task.h>
+#include <freax/sched/signal.h>
+#include <freax/idr.h>
 #include "pid_sysctl.h"
 
 static DEFINE_MUTEX(pid_caches_mutex);
@@ -316,13 +316,13 @@ int reboot_pid_ns(struct pid_namespace *pid_ns, int cmd)
 		return 0;
 
 	switch (cmd) {
-	case LINUX_REBOOT_CMD_RESTART2:
-	case LINUX_REBOOT_CMD_RESTART:
+	case freax_REBOOT_CMD_RESTART2:
+	case freax_REBOOT_CMD_RESTART:
 		pid_ns->reboot = SIGHUP;
 		break;
 
-	case LINUX_REBOOT_CMD_POWER_OFF:
-	case LINUX_REBOOT_CMD_HALT:
+	case freax_REBOOT_CMD_POWER_OFF:
+	case freax_REBOOT_CMD_HALT:
 		pid_ns->reboot = SIGINT;
 		break;
 	default:

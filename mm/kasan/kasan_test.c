@@ -8,22 +8,22 @@
 #define pr_fmt(fmt) "kasan: test: " fmt
 
 #include <kunit/test.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/kasan.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/module.h>
-#include <linux/printk.h>
-#include <linux/random.h>
-#include <linux/set_memory.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/tracepoint.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/kasan.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/module.h>
+#include <freax/printk.h>
+#include <freax/random.h>
+#include <freax/set_memory.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/tracepoint.h>
+#include <freax/uaccess.h>
+#include <freax/vmalloc.h>
 #include <trace/events/printk.h>
 
 #include <asm/page.h>

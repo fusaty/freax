@@ -15,15 +15,15 @@
  * Simplifications of the original code by
  * Oleg Nesterov <oleg@tv-sign.ru>
  *
- * Based on simple lists (include/linux/list.h).
+ * Based on simple lists (include/freax/list.h).
  *
  * This file contains the add / del functions which are considered to
- * be too large to inline. See include/linux/plist.h for further
+ * be too large to inline. See include/freax/plist.h for further
  * information.
  */
 
-#include <linux/bug.h>
-#include <linux/plist.h>
+#include <freax/bug.h>
+#include <freax/plist.h>
 
 #ifdef CONFIG_DEBUG_PLIST
 
@@ -173,10 +173,10 @@ void plist_requeue(struct plist_node *node, struct plist_head *head)
 }
 
 #ifdef CONFIG_DEBUG_PLIST
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/module.h>
+#include <freax/init.h>
 
 static struct plist_node __initdata test_node[241];
 

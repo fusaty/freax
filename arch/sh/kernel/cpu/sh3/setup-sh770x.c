@@ -9,14 +9,14 @@
  *
  *  Copyright (C) 2006  Paul Mundt
  */
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_device.h>
-#include <linux/serial.h>
-#include <linux/serial_sci.h>
-#include <linux/sh_timer.h>
-#include <linux/sh_intc.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/platform_device.h>
+#include <freax/serial.h>
+#include <freax/serial_sci.h>
+#include <freax/sh_timer.h>
+#include <freax/sh_intc.h>
 #include <cpu/serial.h>
 #include <asm/platform_early.h>
 

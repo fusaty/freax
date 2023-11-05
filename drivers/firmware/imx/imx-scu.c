@@ -7,18 +7,18 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/firmware/imx/ipc.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/err.h>
+#include <freax/firmware/imx/ipc.h>
+#include <freax/firmware/imx/sci.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/mailbox_client.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 
 #define SCU_MU_CHAN_NUM		8
 #define MAX_RX_TIMEOUT		(msecs_to_jiffies(3000))
@@ -65,7 +65,7 @@ enum imx_sc_error_codes {
 	IMX_SC_ERR_LAST
 };
 
-static int imx_sc_linux_errmap[IMX_SC_ERR_LAST] = {
+static int imx_sc_freax_errmap[IMX_SC_ERR_LAST] = {
 	0,	 /* IMX_SC_ERR_NONE */
 	-EINVAL, /* IMX_SC_ERR_VERSION */
 	-EINVAL, /* IMX_SC_ERR_CONFIG */
@@ -82,10 +82,10 @@ static int imx_sc_linux_errmap[IMX_SC_ERR_LAST] = {
 
 static struct imx_sc_ipc *imx_sc_ipc_handle;
 
-static inline int imx_sc_to_linux_errno(int errno)
+static inline int imx_sc_to_freax_errno(int errno)
 {
 	if (errno >= IMX_SC_ERR_NONE && errno < IMX_SC_ERR_LAST)
-		return imx_sc_linux_errmap[errno];
+		return imx_sc_freax_errmap[errno];
 	return -EIO;
 }
 
@@ -178,7 +178,7 @@ static int imx_scu_ipc_write(struct imx_sc_ipc *sc_ipc, void *msg)
 
 		/*
 		 * SCU requires that all messages words are written
-		 * sequentially but linux MU driver implements multiple
+		 * sequentially but freax MU driver implements multiple
 		 * independent channels for each register so ordering between
 		 * different channels must be ensured by SCU API interface.
 		 *
@@ -254,7 +254,7 @@ out:
 
 	dev_dbg(sc_ipc->dev, "RPC SVC done\n");
 
-	return imx_sc_to_linux_errno(ret);
+	return imx_sc_to_freax_errno(ret);
 }
 EXPORT_SYMBOL(imx_scu_call_rpc);
 

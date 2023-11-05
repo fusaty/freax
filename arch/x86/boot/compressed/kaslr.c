@@ -12,8 +12,8 @@
  */
 
 /*
- * isspace() in linux/ctype.h is expected by next_args() to filter
- * out "space/lf/tab". While boot/ctype.h conflicts with linux/ctype.h,
+ * isspace() in freax/ctype.h is expected by next_args() to filter
+ * out "space/lf/tab". While boot/ctype.h conflicts with freax/ctype.h,
  * since isdigit() is implemented in both of them. Hence disable it
  * here.
  */
@@ -25,10 +25,10 @@
 #include "efi.h"
 
 #include <generated/compile.h>
-#include <linux/module.h>
-#include <linux/uts.h>
-#include <linux/utsname.h>
-#include <linux/ctype.h>
+#include <freax/module.h>
+#include <freax/uts.h>
+#include <freax/utsname.h>
+#include <freax/ctype.h>
 #include <generated/utsversion.h>
 #include <generated/utsrelease.h>
 
@@ -39,8 +39,8 @@
 extern unsigned long get_cmd_line_ptr(void);
 
 /* Simplified build-specific string for starting entropy. */
-static const char build_str[] = UTS_RELEASE " (" LINUX_COMPILE_BY "@"
-		LINUX_COMPILE_HOST ") (" LINUX_COMPILER ") " UTS_VERSION;
+static const char build_str[] = UTS_RELEASE " (" freax_COMPILE_BY "@"
+		freax_COMPILE_HOST ") (" freax_COMPILER ") " UTS_VERSION;
 
 static unsigned long rotate_xor(unsigned long hash, const void *area,
 				size_t size)

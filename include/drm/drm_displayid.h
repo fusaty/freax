@@ -22,8 +22,8 @@
 #ifndef DRM_DISPLAYID_H
 #define DRM_DISPLAYID_H
 
-#include <linux/types.h>
-#include <linux/bits.h>
+#include <freax/types.h>
+#include <freax/bits.h>
 
 struct drm_edid;
 

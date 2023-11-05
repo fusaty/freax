@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-1.0+
 /*
- *    Hypervisor filesystem for Linux on s390.
+ *    Hypervisor filesystem for freax on s390.
  *
  *    Copyright IBM Corp. 2006, 2008
  *    Author(s): Michael Holzheu <holzheu@de.ibm.com>
@@ -9,21 +9,21 @@
 #define KMSG_COMPONENT "hypfs"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/namei.h>
-#include <linux/vfs.h>
-#include <linux/slab.h>
-#include <linux/pagemap.h>
-#include <linux/time.h>
-#include <linux/sysfs.h>
-#include <linux/init.h>
-#include <linux/kobject.h>
-#include <linux/seq_file.h>
-#include <linux/uio.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/fs.h>
+#include <freax/fs_context.h>
+#include <freax/fs_parser.h>
+#include <freax/namei.h>
+#include <freax/vfs.h>
+#include <freax/slab.h>
+#include <freax/pagemap.h>
+#include <freax/time.h>
+#include <freax/sysfs.h>
+#include <freax/init.h>
+#include <freax/kobject.h>
+#include <freax/seq_file.h>
+#include <freax/uio.h>
 #include <asm/ebcdic.h>
 #include "hypfs.h"
 

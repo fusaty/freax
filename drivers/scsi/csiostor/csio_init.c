@@ -1,5 +1,5 @@
 /*
- * This file is part of the Chelsio FCoE driver for Linux.
+ * This file is part of the Chelsio FCoE driver for freax.
  *
  * Copyright (c) 2008-2012 Chelsio Communications, Inc. All rights reserved.
  *
@@ -34,17 +34,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/mm.h>
-#include <linux/notifier.h>
-#include <linux/kdebug.h>
-#include <linux/seq_file.h>
-#include <linux/debugfs.h>
-#include <linux/string.h>
-#include <linux/export.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/mm.h>
+#include <freax/notifier.h>
+#include <freax/kdebug.h>
+#include <freax/seq_file.h>
+#include <freax/debugfs.h>
+#include <freax/string.h>
+#include <freax/export.h>
 
 #include "csio_init.h"
 #include "csio_defs.h"

@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- freax-c -*- ------------------------------------------------------- *
  *   
  *   Copyright 2001 H. Peter Anvin - All Rights Reserved
  *
  * ----------------------------------------------------------------------- */
 
 /*
- * linux/fs/isofs/compress.c
+ * freax/fs/isofs/compress.c
  *
  * Transparent decompression of files on an iso9660 filesystem
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/bio.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/bio.h>
 
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/zlib.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/zlib.h>
 
 #include "isofs.h"
 #include "zisofs.h"

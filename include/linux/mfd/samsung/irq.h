@@ -4,8 +4,8 @@
  *              http://www.samsung.com
  */
 
-#ifndef __LINUX_MFD_SEC_IRQ_H
-#define __LINUX_MFD_SEC_IRQ_H
+#ifndef __freax_MFD_SEC_IRQ_H
+#define __freax_MFD_SEC_IRQ_H
 
 enum s2mpa01_irq {
 	S2MPA01_IRQ_PWRONF,
@@ -194,4 +194,4 @@ enum s5m8767_irq {
 #define S5M8767_IRQ_RTC1S_MASK		(1 << 4)
 #define S5M8767_IRQ_WTSR_MASK		(1 << 5)
 
-#endif /*  __LINUX_MFD_SEC_IRQ_H */
+#endif /*  __freax_MFD_SEC_IRQ_H */

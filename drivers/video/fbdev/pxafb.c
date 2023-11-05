@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/pxafb.c
+ *  freax/drivers/video/pxafb.c
  *
  *  Copyright (C) 1999 Eric A. Thomas.
  *  Copyright (C) 2004 Jean-Frederic Clere.
@@ -18,7 +18,7 @@
  * Please direct your questions and comments on this driver to the following
  * email address:
  *
- *	linux-arm-kernel@lists.arm.linux.org.uk
+ *	freax-arm-kernel@lists.arm.freax.org.uk
  *
  * Add support for overlay1 and overlay2 based on pxafb_overlay.c:
  *
@@ -32,39 +32,39 @@
  *   All Rights Reserved
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/cpufreq.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/completion.h>
-#include <linux/mutex.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/console.h>
-#include <linux/of_graph.h>
-#include <linux/regulator/consumer.h>
-#include <linux/soc/pxa/cpu.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/fb.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/cpufreq.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/completion.h>
+#include <freax/mutex.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/console.h>
+#include <freax/of_graph.h>
+#include <freax/regulator/consumer.h>
+#include <freax/soc/pxa/cpu.h>
 #include <video/of_display_timing.h>
 #include <video/videomode.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/div64.h>
-#include <linux/platform_data/video-pxafb.h>
+#include <freax/platform_data/video-pxafb.h>
 
 /*
  * Complain if VAR is out of range.

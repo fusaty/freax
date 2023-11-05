@@ -5,13 +5,13 @@
  * USB-C module to reduce wakeups due to contaminants.
  */
 
-#include <linux/device.h>
-#include <linux/irqreturn.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/usb/tcpci.h>
-#include <linux/usb/tcpm.h>
-#include <linux/usb/typec.h>
+#include <freax/device.h>
+#include <freax/irqreturn.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/usb/tcpci.h>
+#include <freax/usb/tcpm.h>
+#include <freax/usb/typec.h>
 
 #include "tcpci_maxim.h"
 

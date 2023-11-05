@@ -4,13 +4,13 @@
  */
 
 #include <drm/drm_file.h>
-#include <linux/dma-fence-array.h>
-#include <linux/file.h>
-#include <linux/pm_runtime.h>
-#include <linux/dma-resv.h>
-#include <linux/sync_file.h>
-#include <linux/uaccess.h>
-#include <linux/vmalloc.h>
+#include <freax/dma-fence-array.h>
+#include <freax/file.h>
+#include <freax/pm_runtime.h>
+#include <freax/dma-resv.h>
+#include <freax/sync_file.h>
+#include <freax/uaccess.h>
+#include <freax/vmalloc.h>
 
 #include "etnaviv_cmdbuf.h"
 #include "etnaviv_drv.h"

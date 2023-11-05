@@ -9,27 +9,27 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/irq.h>
-#include <linux/gpio.h>
-#include <linux/gpio/machine.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/mtd/partitions.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/pca953x.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/flash.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/mmc/host.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/irq.h>
+#include <freax/gpio.h>
+#include <freax/gpio/machine.h>
+#include <freax/fb.h>
+#include <freax/io.h>
+#include <freax/mtd/partitions.h>
+#include <freax/i2c.h>
+#include <freax/platform_data/pca953x.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/flash.h>
+#include <freax/spi/mmc_spi.h>
+#include <freax/mmc/host.h>
 
 #include <sound/cs4271.h>
 
 #include "hardware.h"
-#include <linux/platform_data/video-ep93xx.h>
-#include <linux/platform_data/spi-ep93xx.h>
+#include <freax/platform_data/video-ep93xx.h>
+#include <freax/platform_data/spi-ep93xx.h>
 #include "gpio-ep93xx.h"
 
 #include <asm/mach-types.h>

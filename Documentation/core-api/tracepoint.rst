@@ -1,5 +1,5 @@
 ===============================
-The Linux Kernel Tracepoint API
+The freax Kernel Tracepoint API
 ===============================
 
 :Author: Jason Baron

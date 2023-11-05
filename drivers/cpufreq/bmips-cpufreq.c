@@ -13,10 +13,10 @@
  * GNU General Public License for more details.
  */
 
-#include <linux/cpufreq.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/slab.h>
+#include <freax/cpufreq.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/slab.h>
 
 /* for mips_hpt_frequency */
 #include <asm/time.h>

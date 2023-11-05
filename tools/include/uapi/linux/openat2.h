@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_OPENAT2_H
-#define _UAPI_LINUX_OPENAT2_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_OPENAT2_H
+#define _UAPI_freax_OPENAT2_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * Arguments for how openat2(2) should open the target path. If only @flags and
@@ -40,4 +40,4 @@ struct open_how {
 					return -EAGAIN if that's not
 					possible. */
 
-#endif /* _UAPI_LINUX_OPENAT2_H */
+#endif /* _UAPI_freax_OPENAT2_H */

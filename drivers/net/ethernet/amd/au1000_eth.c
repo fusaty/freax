@@ -11,36 +11,36 @@
  * or riemer@riemer-nt.de: fixed the link beat detection with
  * ioctls (SIOCGMIIPHY)
  * Copyright 2006 Herbert Valerio Riedel <hvr@gnu.org>
- *  converted to use linux-2.6.x's PHY framework
+ *  converted to use freax-2.6.x's PHY framework
  *
  * Author: MontaVista Software, Inc.
  *		ppopov@mvista.com or source@mvista.com
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/in.h>
-#include <linux/ioport.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/skbuff.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/phy.h>
-#include <linux/platform_device.h>
-#include <linux/cpu.h>
-#include <linux/io.h>
+#include <freax/capability.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/in.h>
+#include <freax/ioport.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/skbuff.h>
+#include <freax/delay.h>
+#include <freax/crc32.h>
+#include <freax/phy.h>
+#include <freax/platform_device.h>
+#include <freax/cpu.h>
+#include <freax/io.h>
 
 #include <asm/mipsregs.h>
 #include <asm/irq.h>

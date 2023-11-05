@@ -2,16 +2,16 @@
 /*
  *  Driver for the Auvitek AU0828 USB bridge
  *
- *  Copyright (c) 2008 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2008 Steven Toth <stoth@freaxtv.org>
  */
 
 #include "au0828.h"
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/io.h>
 
 #include "media/tuner.h"
 #include <media/v4l2-common.h>

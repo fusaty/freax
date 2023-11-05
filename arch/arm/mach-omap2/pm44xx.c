@@ -7,12 +7,12 @@
  * Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
 
-#include <linux/pm.h>
-#include <linux/suspend.h>
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <freax/pm.h>
+#include <freax/suspend.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/err.h>
+#include <freax/slab.h>
 #include <asm/system_misc.h>
 
 #include "soc.h"

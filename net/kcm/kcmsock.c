@@ -5,29 +5,29 @@
  * Copyright (c) 2016 Tom Herbert <tom@herbertland.com>
  */
 
-#include <linux/bpf.h>
-#include <linux/errno.h>
-#include <linux/errqueue.h>
-#include <linux/file.h>
-#include <linux/filter.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/poll.h>
-#include <linux/rculist.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/uaccess.h>
-#include <linux/workqueue.h>
-#include <linux/syscalls.h>
-#include <linux/sched/signal.h>
+#include <freax/bpf.h>
+#include <freax/errno.h>
+#include <freax/errqueue.h>
+#include <freax/file.h>
+#include <freax/filter.h>
+#include <freax/in.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/net.h>
+#include <freax/netdevice.h>
+#include <freax/poll.h>
+#include <freax/rculist.h>
+#include <freax/skbuff.h>
+#include <freax/socket.h>
+#include <freax/uaccess.h>
+#include <freax/workqueue.h>
+#include <freax/syscalls.h>
+#include <freax/sched/signal.h>
 
 #include <net/kcm.h>
 #include <net/netns/generic.h>
 #include <net/sock.h>
-#include <uapi/linux/kcm.h>
+#include <uapi/freax/kcm.h>
 #include <trace/events/sock.h>
 
 unsigned int kcm_net_id;

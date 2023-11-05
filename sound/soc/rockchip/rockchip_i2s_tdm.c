@@ -5,16 +5,16 @@
 // Author: Sugar Zhang <sugar.zhang@rock-chips.com>
 // Author: Nicolas Frattaroli <frattaroli.nicolas@gmail.com>
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/mfd/syscon.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/mfd/syscon.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
+#include <freax/reset.h>
+#include <freax/spinlock.h>
 #include <sound/dmaengine_pcm.h>
 #include <sound/pcm_params.h>
 

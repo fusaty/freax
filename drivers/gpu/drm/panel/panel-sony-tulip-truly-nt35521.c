@@ -2,16 +2,16 @@
 /*
  * Copyright (c) 2021, Linaro Limited
  *
- * Generated with linux-mdss-dsi-panel-driver-generator from vendor device tree:
- *   Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ * Generated with freax-mdss-dsi-panel-driver-generator from vendor device tree:
+ *   Copyright (c) 2013, The freax Foundation. All rights reserved.
  */
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
+#include <freax/backlight.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regulator/consumer.h>
 
 #include <drm/drm_mipi_dsi.h>
 #include <drm/drm_modes.h>

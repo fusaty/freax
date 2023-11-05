@@ -3,13 +3,13 @@
  * Intel PCH/PCU SPI flash driver.
  *
  * Copyright (C) 2016 - 2022, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
 #ifndef SPI_INTEL_H
 #define SPI_INTEL_H
 
-#include <linux/platform_data/x86/spi-intel.h>
+#include <freax/platform_data/x86/spi-intel.h>
 
 struct resource;
 

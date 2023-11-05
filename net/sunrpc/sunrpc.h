@@ -13,7 +13,7 @@
 #ifndef _NET_SUNRPC_SUNRPC_H
 #define _NET_SUNRPC_SUNRPC_H
 
-#include <linux/net.h>
+#include <freax/net.h>
 
 /*
  * Header for dynamically allocated rpc buffers.

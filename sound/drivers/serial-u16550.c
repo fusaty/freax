@@ -17,20 +17,20 @@
  *      More documentation can be found in serial-u16550.txt.
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/ioport.h>
+#include <freax/module.h>
+#include <freax/io.h>
 #include <sound/core.h>
 #include <sound/rawmidi.h>
 #include <sound/initval.h>
 
-#include <linux/serial_reg.h>
-#include <linux/jiffies.h>
+#include <freax/serial_reg.h>
+#include <freax/jiffies.h>
 
 MODULE_DESCRIPTION("MIDI serial u16550");
 MODULE_LICENSE("GPL");

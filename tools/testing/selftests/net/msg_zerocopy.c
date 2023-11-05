@@ -31,11 +31,11 @@
 #include <error.h>
 #include <errno.h>
 #include <limits.h>
-#include <linux/errqueue.h>
-#include <linux/if_packet.h>
-#include <linux/ipv6.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
+#include <freax/errqueue.h>
+#include <freax/if_packet.h>
+#include <freax/ipv6.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
 #include <net/ethernet.h>
 #include <net/if.h>
 #include <netinet/ip.h>
@@ -56,7 +56,7 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
-#include <linux/rds.h>
+#include <freax/rds.h>
 
 #ifndef SO_EE_ORIGIN_ZEROCOPY
 #define SO_EE_ORIGIN_ZEROCOPY		5

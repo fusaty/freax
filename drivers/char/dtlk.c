@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/*                                              -*- linux-c -*-
- * dtlk.c - DoubleTalk PC driver for Linux
+/*                                              -*- freax-c -*-
+ * dtlk.c - DoubleTalk PC driver for freax
  *
  * Original author: Chris Pallotta <chris@allmedia.com>
  * Current maintainer: Jim Van Zandt <jrv@vanzandt.mv.com>
@@ -48,23 +48,23 @@
 
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #define KERNEL
-#include <linux/types.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/errno.h>	/* for -EBUSY */
-#include <linux/ioport.h>	/* for request_region */
-#include <linux/delay.h>	/* for loops_per_jiffy */
-#include <linux/sched.h>
-#include <linux/mutex.h>
+#include <freax/types.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/errno.h>	/* for -EBUSY */
+#include <freax/ioport.h>	/* for request_region */
+#include <freax/delay.h>	/* for loops_per_jiffy */
+#include <freax/sched.h>
+#include <freax/mutex.h>
 #include <asm/io.h>		/* for inb_p, outb_p, inb, outb, etc. */
-#include <linux/uaccess.h>	/* for get_user, etc. */
-#include <linux/wait.h>		/* for wait_queue */
-#include <linux/init.h>		/* for __init, module_{init,exit} */
-#include <linux/poll.h>		/* for EPOLLIN, etc. */
-#include <linux/dtlk.h>		/* local header file for DoubleTalk values */
+#include <freax/uaccess.h>	/* for get_user, etc. */
+#include <freax/wait.h>		/* for wait_queue */
+#include <freax/init.h>		/* for __init, module_{init,exit} */
+#include <freax/poll.h>		/* for EPOLLIN, etc. */
+#include <freax/dtlk.h>		/* local header file for DoubleTalk values */
 
 #ifdef TRACING
 #define TRACE_TEXT(str) printk(str);

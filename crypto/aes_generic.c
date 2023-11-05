@@ -5,7 +5,7 @@
  *
  * Based on Brian Gladman's code.
  *
- * Linux developers:
+ * freax developers:
  *  Alexander Kjeldaas <astor@fast.no>
  *  Herbert Valerio Riedel <hvr@hvrlab.org>
  *  Kyle McMartin <kyle@debian.org>
@@ -49,10 +49,10 @@
 
 #include <crypto/aes.h>
 #include <crypto/algapi.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/errno.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/errno.h>
 #include <asm/byteorder.h>
 #include <asm/unaligned.h>
 

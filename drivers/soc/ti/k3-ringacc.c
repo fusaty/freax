@@ -5,18 +5,18 @@
  * Copyright (C) 2019 Texas Instruments Incorporated - http://www.ti.com
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/sys_soc.h>
-#include <linux/dma/ti-cppi5.h>
-#include <linux/soc/ti/k3-ringacc.h>
-#include <linux/soc/ti/ti_sci_protocol.h>
-#include <linux/soc/ti/ti_sci_inta_msi.h>
-#include <linux/of_irq.h>
-#include <linux/irqdomain.h>
+#include <freax/dma-mapping.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/sys_soc.h>
+#include <freax/dma/ti-cppi5.h>
+#include <freax/soc/ti/k3-ringacc.h>
+#include <freax/soc/ti/ti_sci_protocol.h>
+#include <freax/soc/ti/ti_sci_inta_msi.h>
+#include <freax/of_irq.h>
+#include <freax/irqdomain.h>
 
 static LIST_HEAD(k3_ringacc_list);
 static DEFINE_MUTEX(k3_ringacc_list_lock);

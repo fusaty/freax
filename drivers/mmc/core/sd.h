@@ -2,7 +2,7 @@
 #ifndef _MMC_CORE_SD_H
 #define _MMC_CORE_SD_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 extern struct device_type sd_type;
 

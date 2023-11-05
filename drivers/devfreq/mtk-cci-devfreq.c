@@ -3,14 +3,14 @@
  * Copyright (C) 2022 MediaTek Inc.
  */
 
-#include <linux/clk.h>
-#include <linux/devfreq.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_opp.h>
-#include <linux/regulator/consumer.h>
+#include <freax/clk.h>
+#include <freax/devfreq.h>
+#include <freax/minmax.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_opp.h>
+#include <freax/regulator/consumer.h>
 
 struct mtk_ccifreq_platform_data {
 	int min_volt_shift;

@@ -4,14 +4,14 @@
 #ifndef _INTEL_SKL_INT3472_H
 #define _INTEL_SKL_INT3472_H
 
-#include <linux/clk-provider.h>
-#include <linux/gpio/machine.h>
-#include <linux/leds.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/types.h>
+#include <freax/clk-provider.h>
+#include <freax/gpio/machine.h>
+#include <freax/leds.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/types.h>
 
-/* FIXME drop this once the I2C_DEV_NAME_FORMAT macro has been added to include/linux/i2c.h */
+/* FIXME drop this once the I2C_DEV_NAME_FORMAT macro has been added to include/freax/i2c.h */
 #ifndef I2C_DEV_NAME_FORMAT
 #define I2C_DEV_NAME_FORMAT					"i2c-%s"
 #endif

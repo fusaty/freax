@@ -4,19 +4,19 @@
  *	together in the faint hope we can take the out in five years time.
  */
 
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/notifier.h>
-#include <linux/reboot.h>
-#include <linux/prctl.h>
-#include <linux/capability.h>
-#include <linux/init.h>
-#include <linux/highuid.h>
-#include <linux/security.h>
-#include <linux/cred.h>
-#include <linux/syscalls.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/notifier.h>
+#include <freax/reboot.h>
+#include <freax/prctl.h>
+#include <freax/capability.h>
+#include <freax/init.h>
+#include <freax/highuid.h>
+#include <freax/security.h>
+#include <freax/cred.h>
+#include <freax/syscalls.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "uid16.h"
 

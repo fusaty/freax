@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/quotaops.h>
-#include <linux/uuid.h>
+#include <freax/quotaops.h>
+#include <freax/uuid.h>
 
 #include "ext4.h"
 #include "xattr.h"

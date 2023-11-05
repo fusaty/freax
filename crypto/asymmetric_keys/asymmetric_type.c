@@ -9,10 +9,10 @@
 #include <keys/asymmetric-subtype.h>
 #include <keys/asymmetric-parser.h>
 #include <crypto/public_key.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ctype.h>
+#include <freax/seq_file.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/ctype.h>
 #include <keys/system_keyring.h>
 #include <keys/user-type.h>
 #include "asymmetric_keys.h"

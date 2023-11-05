@@ -8,9 +8,9 @@
 #ifndef __NET_TI_ICSS_IEP_H
 #define __NET_TI_ICSS_IEP_H
 
-#include <linux/mutex.h>
-#include <linux/ptp_clock_kernel.h>
-#include <linux/regmap.h>
+#include <freax/mutex.h>
+#include <freax/ptp_clock_kernel.h>
+#include <freax/regmap.h>
 
 struct icss_iep;
 extern const struct icss_iep_clockops prueth_iep_clockops;

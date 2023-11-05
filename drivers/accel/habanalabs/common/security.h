@@ -8,7 +8,7 @@
 #ifndef SECURITY_H_
 #define SECURITY_H_
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 
 struct hl_device;
 

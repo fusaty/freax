@@ -6,12 +6,12 @@
  *  Machine specific IO port address definition for generic.
  *  Written by Osamu Tomita <tomita@cinet.co.jp>
  */
-#ifndef __LINUX_I8253_H
-#define __LINUX_I8253_H
+#ifndef __freax_I8253_H
+#define __freax_I8253_H
 
-#include <linux/param.h>
-#include <linux/spinlock.h>
-#include <linux/timex.h>
+#include <freax/param.h>
+#include <freax/spinlock.h>
+#include <freax/timex.h>
 
 /* i8253A PIT registers */
 #define PIT_MODE	0x43
@@ -27,4 +27,4 @@ extern void clockevent_i8253_init(bool oneshot);
 
 extern void setup_pit_timer(void);
 
-#endif /* __LINUX_I8253_H */
+#endif /* __freax_I8253_H */

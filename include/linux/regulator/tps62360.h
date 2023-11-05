@@ -9,8 +9,8 @@
  * Author: Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#ifndef __LINUX_REGULATOR_TPS62360_H
-#define __LINUX_REGULATOR_TPS62360_H
+#ifndef __freax_REGULATOR_TPS62360_H
+#define __freax_REGULATOR_TPS62360_H
 
 /*
  * struct tps62360_regulator_platform_data - tps62360 regulator platform data.
@@ -30,4 +30,4 @@ struct tps62360_regulator_platform_data {
 	int vsel1_def_state;
 };
 
-#endif /* __LINUX_REGULATOR_TPS62360_H */
+#endif /* __freax_REGULATOR_TPS62360_H */

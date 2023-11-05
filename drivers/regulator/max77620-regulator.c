@@ -8,15 +8,15 @@
  *	Laxman Dewangan <ldewangan@nvidia.com>
  */
 
-#include <linux/init.h>
-#include <linux/mfd/max77620.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
+#include <freax/init.h>
+#include <freax/mfd/max77620.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/of_regulator.h>
 
 #define max77620_rails(_name)	"max77620-"#_name
 

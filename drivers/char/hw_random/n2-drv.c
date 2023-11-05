@@ -4,18 +4,18 @@
  * Copyright (C) 2008, 2011 David S. Miller <davem@davemloft.net>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/workqueue.h>
-#include <linux/preempt.h>
-#include <linux/hw_random.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/workqueue.h>
+#include <freax/preempt.h>
+#include <freax/hw_random.h>
 
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
 
 #include <asm/hypervisor.h>
 

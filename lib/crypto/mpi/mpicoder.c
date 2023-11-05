@@ -18,11 +18,11 @@
  * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
  */
 
-#include <linux/bitops.h>
-#include <linux/count_zeros.h>
-#include <linux/byteorder/generic.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
+#include <freax/bitops.h>
+#include <freax/count_zeros.h>
+#include <freax/byteorder/generic.h>
+#include <freax/scatterlist.h>
+#include <freax/string.h>
 #include "mpi-internal.h"
 
 #define MAX_EXTERN_SCAN_BYTES (16*1024*1024)

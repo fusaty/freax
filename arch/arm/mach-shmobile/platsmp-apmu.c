@@ -5,16 +5,16 @@
  * Copyright (C) 2014  Renesas Electronics Corporation
  * Copyright (C) 2013  Magnus Damm
  */
-#include <linux/cpu_pm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/smp.h>
-#include <linux/suspend.h>
-#include <linux/threads.h>
+#include <freax/cpu_pm.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/smp.h>
+#include <freax/suspend.h>
+#include <freax/threads.h>
 #include <asm/cacheflush.h>
 #include <asm/cp15.h>
 #include <asm/proc-fns.h>

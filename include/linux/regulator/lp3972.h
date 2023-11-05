@@ -5,10 +5,10 @@
  * Based on lp3971.h
  */
 
-#ifndef __LINUX_REGULATOR_LP3972_H
-#define __LINUX_REGULATOR_LP3972_H
+#ifndef __freax_REGULATOR_LP3972_H
+#define __freax_REGULATOR_LP3972_H
 
-#include <linux/regulator/machine.h>
+#include <freax/regulator/machine.h>
 
 #define LP3972_LDO1  0
 #define LP3972_LDO2  1

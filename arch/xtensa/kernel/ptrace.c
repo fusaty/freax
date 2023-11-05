@@ -12,21 +12,21 @@
  * Marc Gauthier<marc@tensilica.com> <marc@alumni.uwaterloo.ca>
  */
 
-#include <linux/audit.h>
-#include <linux/errno.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/perf_event.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/seccomp.h>
-#include <linux/security.h>
-#include <linux/signal.h>
-#include <linux/smp.h>
-#include <linux/uaccess.h>
+#include <freax/audit.h>
+#include <freax/errno.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/perf_event.h>
+#include <freax/ptrace.h>
+#include <freax/regset.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/seccomp.h>
+#include <freax/security.h>
+#include <freax/signal.h>
+#include <freax/smp.h>
+#include <freax/uaccess.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/syscalls.h>

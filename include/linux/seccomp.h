@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SECCOMP_H
-#define _LINUX_SECCOMP_H
+#ifndef _freax_SECCOMP_H
+#define _freax_SECCOMP_H
 
-#include <uapi/linux/seccomp.h>
+#include <uapi/freax/seccomp.h>
 
 #define SECCOMP_FILTER_FLAG_MASK	(SECCOMP_FILTER_FLAG_TSYNC | \
 					 SECCOMP_FILTER_FLAG_LOG | \
@@ -17,8 +17,8 @@
 
 #ifdef CONFIG_SECCOMP
 
-#include <linux/thread_info.h>
-#include <linux/atomic.h>
+#include <freax/thread_info.h>
+#include <freax/atomic.h>
 #include <asm/seccomp.h>
 
 struct seccomp_filter;
@@ -62,7 +62,7 @@ static inline int seccomp_mode(struct seccomp *s)
 
 #else /* CONFIG_SECCOMP */
 
-#include <linux/errno.h>
+#include <freax/errno.h>
 
 struct seccomp { };
 struct seccomp_filter { };
@@ -130,4 +130,4 @@ struct seq_file;
 int proc_pid_seccomp_cache(struct seq_file *m, struct pid_namespace *ns,
 			   struct pid *pid, struct task_struct *task);
 #endif
-#endif /* _LINUX_SECCOMP_H */
+#endif /* _freax_SECCOMP_H */

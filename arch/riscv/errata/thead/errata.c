@@ -3,12 +3,12 @@
  * Copyright (C) 2021 Heiko Stuebner <heiko@sntech.de>
  */
 
-#include <linux/bug.h>
-#include <linux/kernel.h>
-#include <linux/memory.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/uaccess.h>
+#include <freax/bug.h>
+#include <freax/kernel.h>
+#include <freax/memory.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/uaccess.h>
 #include <asm/alternative.h>
 #include <asm/cacheflush.h>
 #include <asm/cpufeature.h>

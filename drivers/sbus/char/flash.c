@@ -4,19 +4,19 @@
  * Copyright (C) 1997  Eddie C. Dost  (ecd@skynet.be)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/miscdevice.h>
-#include <linux/fcntl.h>
-#include <linux/poll.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/miscdevice.h>
+#include <freax/fcntl.h>
+#include <freax/poll.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/mm.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/upa.h>
 

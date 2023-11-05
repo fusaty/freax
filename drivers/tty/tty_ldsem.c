@@ -25,13 +25,13 @@
  * Copyright (C) 2013 Peter Hurley <peter@hurleysoftware.com>
  */
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/atomic.h>
-#include <linux/tty.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/atomic.h>
+#include <freax/tty.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
 
 
 #if BITS_PER_LONG == 64

@@ -14,8 +14,8 @@
 #ifndef __TEE_DEV_H__
 #define __TEE_DEV_H__
 
-#include <linux/device.h>
-#include <linux/mutex.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
 
 #define TEE_DEFAULT_CMD_TIMEOUT		(10 * MSEC_PER_SEC)
 #define TEE_DEFAULT_RING_TIMEOUT	10

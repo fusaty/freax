@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/errno.h>
-#include <linux/numa.h>
-#include <linux/slab.h>
-#include <linux/rculist.h>
-#include <linux/threads.h>
-#include <linux/preempt.h>
-#include <linux/irqflags.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/device-mapper.h>
+#include <freax/errno.h>
+#include <freax/numa.h>
+#include <freax/slab.h>
+#include <freax/rculist.h>
+#include <freax/threads.h>
+#include <freax/preempt.h>
+#include <freax/irqflags.h>
+#include <freax/vmalloc.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/device-mapper.h>
 
 #include "dm-core.h"
 #include "dm-stats.h"

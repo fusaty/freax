@@ -6,18 +6,18 @@
  * Author: Jassi Brar <jassisinghbrar@gmail.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/bitops.h>
-#include <linux/mailbox_client.h>
-#include <linux/mailbox_controller.h>
-#include <linux/of.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/bitops.h>
+#include <freax/mailbox_client.h>
+#include <freax/mailbox_controller.h>
+#include <freax/of.h>
 
 #include "mailbox.h"
 

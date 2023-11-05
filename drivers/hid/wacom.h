@@ -79,16 +79,16 @@
 #ifndef WACOM_H
 #define WACOM_H
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/hid.h>
-#include <linux/kfifo.h>
-#include <linux/leds.h>
-#include <linux/usb/input.h>
-#include <linux/power_supply.h>
-#include <linux/timer.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/hid.h>
+#include <freax/kfifo.h>
+#include <freax/leds.h>
+#include <freax/usb/input.h>
+#include <freax/power_supply.h>
+#include <freax/timer.h>
 #include <asm/unaligned.h>
 
 /*

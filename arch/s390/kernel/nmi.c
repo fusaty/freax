@@ -8,19 +8,19 @@
  *		 Cornelia Huck <cornelia.huck@de.ibm.com>,
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/entry-common.h>
-#include <linux/hardirq.h>
-#include <linux/log2.h>
-#include <linux/kprobes.h>
-#include <linux/kmemleak.h>
-#include <linux/time.h>
-#include <linux/module.h>
-#include <linux/sched/signal.h>
-#include <linux/kvm_host.h>
-#include <linux/export.h>
+#include <freax/kernel_stat.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/entry-common.h>
+#include <freax/hardirq.h>
+#include <freax/log2.h>
+#include <freax/kprobes.h>
+#include <freax/kmemleak.h>
+#include <freax/time.h>
+#include <freax/module.h>
+#include <freax/sched/signal.h>
+#include <freax/kvm_host.h>
+#include <freax/export.h>
 #include <asm/lowcore.h>
 #include <asm/ctlreg.h>
 #include <asm/smp.h>

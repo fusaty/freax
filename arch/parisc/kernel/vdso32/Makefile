@@ -9,7 +9,7 @@ obj-vdso32 := $(addprefix $(obj)/, $(obj-vdso32))
 
 ccflags-y := -shared -fno-common -fbuiltin -mno-fast-indirect-calls -O2 -mno-long-calls
 #  -march=1.1 -mschedule=7100LC
-ccflags-y += -nostdlib -Wl,-soname=linux-vdso32.so.1 \
+ccflags-y += -nostdlib -Wl,-soname=freax-vdso32.so.1 \
 		$(call ld-option, -Wl$(comma)--hash-style=sysv)
 asflags-y := -D__VDSO32__ -s
 

@@ -1,5 +1,5 @@
 /*
- *      linux/drivers/video/maxinefb.c
+ *      freax/drivers/video/maxinefb.c
  *
  *	DECstation 5000/xx onboard framebuffer support ... derived from:
  *	"HP300 Topcat framebuffer support (derived from macfb of all things)
@@ -8,7 +8,7 @@
  *
  *      DECstation related code Copyright (C) 1999,2000,2001 by
  *      Michael Engel <engel@unix-ag.org> and
- *      Karsten Merker <merker@linuxtag.org>.
+ *      Karsten Merker <merker@freaxtag.org>.
  *      This file is subject to the terms and conditions of the GNU General
  *      Public License.  See the file COPYING in the main directory of this
  *      archive for more details.
@@ -23,14 +23,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/fb.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/fb.h>
 #include <video/maxinefb.h>
 
 /* bootinfo.h defines the machine type values, needed when checking */

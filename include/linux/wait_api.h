@@ -1,1 +1,1 @@
-#include <linux/wait.h>
+#include <freax/wait.h>

@@ -11,14 +11,14 @@
  *
  *    Initial PA-RISC Version: 04-23-1999 by Helge Deller
  */
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/random.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/seq_file.h>
+#include <freax/random.h>
+#include <freax/slab.h>
+#include <freax/cpu.h>
 #include <asm/topology.h>
 #include <asm/param.h>
 #include <asm/cache.h>

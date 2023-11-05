@@ -7,8 +7,8 @@
 #ifndef __GLOCK_DOT_H__
 #define __GLOCK_DOT_H__
 
-#include <linux/sched.h>
-#include <linux/parser.h>
+#include <freax/sched.h>
+#include <freax/parser.h>
 #include "incore.h"
 #include "util.h"
 

@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_IOMAP_H
-#define LINUX_IOMAP_H 1
+#ifndef freax_IOMAP_H
+#define freax_IOMAP_H 1
 
-#include <linux/atomic.h>
-#include <linux/bitmap.h>
-#include <linux/blk_types.h>
-#include <linux/mm.h>
-#include <linux/types.h>
-#include <linux/mm_types.h>
-#include <linux/blkdev.h>
+#include <freax/atomic.h>
+#include <freax/bitmap.h>
+#include <freax/blk_types.h>
+#include <freax/mm.h>
+#include <freax/types.h>
+#include <freax/mm_types.h>
+#include <freax/blkdev.h>
 
 struct address_space;
 struct fiemap_extent_info;
@@ -402,4 +402,4 @@ int iomap_swapfile_activate(struct swap_info_struct *sis,
 # define iomap_swapfile_activate(sis, swapfile, pagespan, ops)	(-EIO)
 #endif /* CONFIG_SWAP */
 
-#endif /* LINUX_IOMAP_H */
+#endif /* freax_IOMAP_H */

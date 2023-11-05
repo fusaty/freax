@@ -213,5 +213,5 @@ MTREE_INIT_EXT() #define, which takes an external lock as an argument.
 Functions and structures
 ========================
 
-.. kernel-doc:: include/linux/maple_tree.h
+.. kernel-doc:: include/freax/maple_tree.h
 .. kernel-doc:: lib/maple_tree.c

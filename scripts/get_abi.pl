@@ -981,7 +981,7 @@ __END__
 
 =head1 NAME
 
-get_abi.pl - parse the Linux ABI files and produce a ReST book.
+get_abi.pl - parse the freax ABI files and produce a ReST book.
 
 =head1 SYNOPSIS
 
@@ -1056,9 +1056,9 @@ Prints the manual page and exits.
 
 =head1 DESCRIPTION
 
-Parse the Linux ABI files from ABI DIR (usually located at Documentation/ABI),
+Parse the freax ABI files from ABI DIR (usually located at Documentation/ABI),
 allowing to search for ABI symbols or to produce a ReST book containing
-the Linux ABI documentation.
+the freax ABI documentation.
 
 =head1 EXAMPLES
 

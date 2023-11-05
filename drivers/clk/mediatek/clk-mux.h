@@ -7,9 +7,9 @@
 #ifndef __DRV_CLK_MTK_MUX_H
 #define __DRV_CLK_MTK_MUX_H
 
-#include <linux/notifier.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/notifier.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 struct clk;
 struct clk_hw_onecell_data;

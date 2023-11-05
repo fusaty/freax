@@ -3,18 +3,18 @@
 // Copyright 2009 Wolfson Microelectronics
 //      Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/dma-mapping.h>
-#include <linux/gpio.h>
-#include <linux/export.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/platform_device.h>
+#include <freax/dma-mapping.h>
+#include <freax/gpio.h>
+#include <freax/export.h>
 
 #include "irqs.h"
 #include "map.h"
 
 #include "devs.h"
-#include <linux/platform_data/asoc-s3c.h>
+#include <freax/platform_data/asoc-s3c.h>
 #include "gpio-cfg.h"
 #include "gpio-samsung.h"
 

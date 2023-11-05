@@ -10,18 +10,18 @@
  * (c) 1999,2000 Gerd Knorr <kraxel@goldbach.in-berlin.de>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pgtable.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/pgtable.h>
 #include <asm/io.h>
-#include <linux/ioport.h>
+#include <freax/ioport.h>
 #include <asm/page.h>
-#include <linux/types.h>
-#include <linux/interrupt.h>
-#include <linux/kmod.h>
-#include <linux/vmalloc.h>
-#include <linux/init.h>
+#include <freax/types.h>
+#include <freax/interrupt.h>
+#include <freax/kmod.h>
+#include <freax/vmalloc.h>
+#include <freax/init.h>
 
 #include <media/dmxdev.h>
 #include <media/dvbdev.h>

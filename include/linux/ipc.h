@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IPC_H
-#define _LINUX_IPC_H
+#ifndef _freax_IPC_H
+#define _freax_IPC_H
 
-#include <linux/spinlock.h>
-#include <linux/uidgid.h>
-#include <linux/rhashtable-types.h>
-#include <uapi/linux/ipc.h>
-#include <linux/refcount.h>
+#include <freax/spinlock.h>
+#include <freax/uidgid.h>
+#include <freax/rhashtable-types.h>
+#include <uapi/freax/ipc.h>
+#include <freax/refcount.h>
 
 /* used by in-kernel data structures */
 struct kern_ipc_perm {
@@ -28,4 +28,4 @@ struct kern_ipc_perm {
 	refcount_t refcount;
 } ____cacheline_aligned_in_smp __randomize_layout;
 
-#endif /* _LINUX_IPC_H */
+#endif /* _freax_IPC_H */

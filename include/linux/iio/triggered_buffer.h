@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_IIO_TRIGGERED_BUFFER_H_
-#define _LINUX_IIO_TRIGGERED_BUFFER_H_
+#ifndef _freax_IIO_TRIGGERED_BUFFER_H_
+#define _freax_IIO_TRIGGERED_BUFFER_H_
 
-#include <linux/iio/buffer.h>
-#include <linux/interrupt.h>
+#include <freax/iio/buffer.h>
+#include <freax/interrupt.h>
 
 struct iio_dev;
 struct iio_dev_attr;

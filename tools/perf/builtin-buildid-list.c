@@ -20,7 +20,7 @@
 #include "util/util.h"
 #include <errno.h>
 #include <inttypes.h>
-#include <linux/err.h>
+#include <freax/err.h>
 
 static int buildid__map_cb(struct map *map, void *arg __maybe_unused)
 {

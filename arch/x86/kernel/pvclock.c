@@ -3,14 +3,14 @@
 
 */
 
-#include <linux/clocksource.h>
-#include <linux/kernel.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/sched.h>
-#include <linux/gfp.h>
-#include <linux/memblock.h>
-#include <linux/nmi.h>
+#include <freax/clocksource.h>
+#include <freax/kernel.h>
+#include <freax/percpu.h>
+#include <freax/notifier.h>
+#include <freax/sched.h>
+#include <freax/gfp.h>
+#include <freax/memblock.h>
+#include <freax/nmi.h>
 
 #include <asm/fixmap.h>
 #include <asm/pvclock.h>

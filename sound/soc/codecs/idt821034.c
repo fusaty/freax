@@ -6,11 +6,11 @@
 //
 // Author: Herve Codina <herve.codina@bootlin.com>
 
-#include <linux/bitrev.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
+#include <freax/bitrev.h>
+#include <freax/gpio/driver.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/tlv.h>

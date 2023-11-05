@@ -5,16 +5,16 @@
  * Copyright (c) 2011 Unixphere
  */
 
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/kconfig.h>
-#include <linux/lockdep.h>
-#include <linux/module.h>
-#include <linux/pm.h>
-#include <linux/rmi.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/kconfig.h>
+#include <freax/lockdep.h>
+#include <freax/module.h>
+#include <freax/pm.h>
+#include <freax/rmi.h>
+#include <freax/slab.h>
 #include "rmi_driver.h"
 
 #define SMB_PROTOCOL_VERSION_ADDRESS	0xfd

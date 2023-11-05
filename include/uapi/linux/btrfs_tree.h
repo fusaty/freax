@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _BTRFS_CTREE_H_
 #define _BTRFS_CTREE_H_
 
-#include <linux/btrfs.h>
-#include <linux/types.h>
+#include <freax/btrfs.h>
+#include <freax/types.h>
 #ifdef __KERNEL__
-#include <linux/stddef.h>
+#include <freax/stddef.h>
 #else
 #include <stddef.h>
 #endif
@@ -17,7 +17,7 @@
 
 /*
  * We can actually store much bigger names, but lets not confuse the rest of
- * linux.
+ * freax.
  */
 #define BTRFS_NAME_LEN 255
 

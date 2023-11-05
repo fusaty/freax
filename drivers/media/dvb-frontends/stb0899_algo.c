@@ -7,7 +7,7 @@
 
 */
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 #include "stb0899_drv.h"
 #include "stb0899_priv.h"
 #include "stb0899_reg.h"

@@ -7,10 +7,10 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/bug.h>
-#include <linux/io-pgtable.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
+#include <freax/bug.h>
+#include <freax/io-pgtable.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
 
 static const struct io_pgtable_init_fns *
 io_pgtable_init_table[IO_PGTABLE_NUM_FMTS] = {

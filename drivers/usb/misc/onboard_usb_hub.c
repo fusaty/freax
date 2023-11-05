@@ -5,25 +5,25 @@
  * Copyright (c) 2022, Google LLC
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/gpio/consumer.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/slab.h>
-#include <linux/suspend.h>
-#include <linux/sysfs.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
-#include <linux/usb/onboard_hub.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/gpio/consumer.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/slab.h>
+#include <freax/suspend.h>
+#include <freax/sysfs.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
+#include <freax/usb/onboard_hub.h>
+#include <freax/workqueue.h>
 
 #include "onboard_usb_hub.h"
 

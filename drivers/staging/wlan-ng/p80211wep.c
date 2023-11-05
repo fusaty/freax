@@ -6,16 +6,16 @@
  * Copyright (C) 2002 AbsoluteValue Systems, Inc.  All Rights Reserved.
  * --------------------------------------------------------------------
  *
- * linux-wlan
+ * freax-wlan
  *
  * --------------------------------------------------------------------
  *
- * Inquiries regarding the linux-wlan Open Source project can be
+ * Inquiries regarding the freax-wlan Open Source project can be
  * made directly to:
  *
  * AbsoluteValue Systems Inc.
- * info@linux-wlan.com
- * http://www.linux-wlan.com
+ * info@freax-wlan.com
+ * http://www.freax-wlan.com
  *
  * --------------------------------------------------------------------
  *
@@ -28,11 +28,11 @@
 /*================================================================*/
 /* System Includes */
 
-#include <linux/crc32.h>
-#include <linux/netdevice.h>
-#include <linux/wireless.h>
-#include <linux/random.h>
-#include <linux/kernel.h>
+#include <freax/crc32.h>
+#include <freax/netdevice.h>
+#include <freax/wireless.h>
+#include <freax/random.h>
+#include <freax/kernel.h>
 #include "p80211hdr.h"
 #include "p80211types.h"
 #include "p80211msg.h"

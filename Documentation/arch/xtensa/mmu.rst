@@ -4,7 +4,7 @@ MMUv3 initialization sequence
 
 The code in the initialize_mmu macro sets up MMUv3 memory mapping
 identically to MMUv2 fixed memory mapping. Depending on
-CONFIG_INITIALIZE_XTENSA_MMU_INSIDE_VMLINUX symbol this code is
+CONFIG_INITIALIZE_XTENSA_MMU_INSIDE_VMfreax symbol this code is
 located in addresses it was linked for (symbol undefined), or not
 (symbol defined), so it needs to be position-independent.
 

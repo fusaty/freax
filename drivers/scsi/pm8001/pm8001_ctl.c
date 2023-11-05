@@ -37,8 +37,8 @@
  * POSSIBILITY OF SUCH DAMAGES.
  *
  */
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <freax/firmware.h>
+#include <freax/slab.h>
 #include "pm8001_sas.h"
 #include "pm8001_ctl.h"
 #include "pm8001_chips.h"

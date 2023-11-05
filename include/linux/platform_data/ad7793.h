@@ -4,8 +4,8 @@
  *
  * Copyright 2011 Analog Devices Inc.
  */
-#ifndef __LINUX_PLATFORM_DATA_AD7793_H__
-#define __LINUX_PLATFORM_DATA_AD7793_H__
+#ifndef __freax_PLATFORM_DATA_AD7793_H__
+#define __freax_PLATFORM_DATA_AD7793_H__
 
 /**
  * enum ad7793_clock_source - AD7793 clock source selection

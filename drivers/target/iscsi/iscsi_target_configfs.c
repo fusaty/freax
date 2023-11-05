@@ -5,15 +5,15 @@
  *
  * (c) Copyright 2007-2013 Datera, Inc.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@freax-iscsi.org>
  *
  ****************************************************************************/
 
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/export.h>
-#include <linux/inet.h>
-#include <linux/module.h>
+#include <freax/configfs.h>
+#include <freax/ctype.h>
+#include <freax/export.h>
+#include <freax/inet.h>
+#include <freax/module.h>
 #include <net/ipv6.h>
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>

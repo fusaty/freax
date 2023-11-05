@@ -74,13 +74,13 @@
  * code is detected.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/crc32.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/crc32.h>
 #include <asm/unaligned.h>
 
-#include <linux/sw842.h>
+#include <freax/sw842.h>
 
 /* special templates */
 #define OP_REPEAT	(0x1B)

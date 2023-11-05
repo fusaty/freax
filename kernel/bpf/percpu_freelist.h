@@ -3,8 +3,8 @@
  */
 #ifndef __PERCPU_FREELIST_H__
 #define __PERCPU_FREELIST_H__
-#include <linux/spinlock.h>
-#include <linux/percpu.h>
+#include <freax/spinlock.h>
+#include <freax/percpu.h>
 
 struct pcpu_freelist_head {
 	struct pcpu_freelist_node *first;

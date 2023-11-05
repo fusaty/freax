@@ -3,17 +3,17 @@
  * Host Side support for RNDIS Networking Links
  * Copyright (C) 2005 by David Brownell
  */
-#include <linux/module.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
-#include <linux/mii.h>
-#include <linux/usb.h>
-#include <linux/usb/cdc.h>
-#include <linux/usb/usbnet.h>
-#include <linux/usb/rndis_host.h>
+#include <freax/module.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/workqueue.h>
+#include <freax/slab.h>
+#include <freax/mii.h>
+#include <freax/usb.h>
+#include <freax/usb/cdc.h>
+#include <freax/usb/usbnet.h>
+#include <freax/usb/rndis_host.h>
 
 
 /*
@@ -328,7 +328,7 @@ generic_rndis_bind(struct usbnet *dev, struct usb_interface *intf, int flags)
 	 * NOTE: there still seems to be weirdness here, as if we need
 	 * to do some more things to make sure WinCE targets accept this.
 	 * They default to jumbograms of 8KB or 16KB, which is absurd
-	 * for such low data rates and which is also more than Linux
+	 * for such low data rates and which is also more than freax
 	 * can usually expect to allocate for SKB data...
 	 */
 	net->hard_header_len += sizeof (struct rndis_data_hdr);
@@ -582,7 +582,7 @@ rndis_tx_fixup(struct usbnet *dev, struct sk_buff *skb, gfp_t flags)
 	skb = skb2;
 
 	/* fill out the RNDIS header.  we won't bother trying to batch
-	 * packets; Linux minimizes wasted bandwidth through tx queues.
+	 * packets; freax minimizes wasted bandwidth through tx queues.
 	 */
 fill:
 	hdr = __skb_push(skb, sizeof *hdr);

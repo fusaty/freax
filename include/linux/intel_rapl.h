@@ -10,9 +10,9 @@
 #ifndef __INTEL_RAPL_H__
 #define __INTEL_RAPL_H__
 
-#include <linux/types.h>
-#include <linux/powercap.h>
-#include <linux/cpuhotplug.h>
+#include <freax/types.h>
+#include <freax/powercap.h>
+#include <freax/cpuhotplug.h>
 
 enum rapl_if_type {
 	RAPL_IF_MSR,	/* RAPL I/F using MSR registers */

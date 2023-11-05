@@ -15,10 +15,10 @@
  * of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE, TITLE, or
  * NONINFRINGEMENT.  See the GNU General Public License for more details.
  ***********************************************************************/
-#include <linux/ethtool.h>
-#include <linux/netdevice.h>
-#include <linux/net_tstamp.h>
-#include <linux/pci.h>
+#include <freax/ethtool.h>
+#include <freax/netdevice.h>
+#include <freax/net_tstamp.h>
+#include <freax/pci.h>
 #include "liquidio_common.h"
 #include "octeon_droq.h"
 #include "octeon_iq.h"

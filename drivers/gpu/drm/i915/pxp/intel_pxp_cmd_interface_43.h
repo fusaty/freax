@@ -6,7 +6,7 @@
 #ifndef __INTEL_PXP_FW_INTERFACE_43_H__
 #define __INTEL_PXP_FW_INTERFACE_43_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include "intel_pxp_cmd_interface_cmn.h"
 
 /* PXP-Cmd-Op definitions */

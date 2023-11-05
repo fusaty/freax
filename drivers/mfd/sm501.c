@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-only
-/* linux/drivers/mfd/sm501.c
+/* freax/drivers/mfd/sm501.c
  *
  * Copyright (C) 2006 Simtec Electronics
  *	Ben Dooks <ben@simtec.co.uk>
@@ -8,24 +8,24 @@
  * SM501 MFD driver
 */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/platform_data/i2c-gpio.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/pci.h>
+#include <freax/platform_data/i2c-gpio.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/machine.h>
+#include <freax/slab.h>
 
-#include <linux/sm501.h>
-#include <linux/sm501-regs.h>
-#include <linux/serial_8250.h>
+#include <freax/sm501.h>
+#include <freax/sm501-regs.h>
+#include <freax/serial_8250.h>
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 struct sm501_device {
 	struct list_head		list;
@@ -35,7 +35,7 @@ struct sm501_device {
 struct sm501_gpio;
 
 #ifdef CONFIG_MFD_SM501_GPIO
-#include <linux/gpio.h>
+#include <freax/gpio.h>
 
 struct sm501_gpio_chip {
 	struct gpio_chip	gpio;

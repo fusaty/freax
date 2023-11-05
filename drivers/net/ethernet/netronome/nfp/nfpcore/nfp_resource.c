@@ -6,9 +6,9 @@
  * Author: Jakub Kicinski <jakub.kicinski@netronome.com>
  *         Jason McMullan <jason.mcmullan@netronome.com>
  */
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 
 #include "crc32.h"
 #include "nfp.h"

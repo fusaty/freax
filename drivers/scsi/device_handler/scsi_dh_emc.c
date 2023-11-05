@@ -7,8 +7,8 @@
  * Copyright (C) 2006 Red Hat, Inc.  All rights reserved.
  * Copyright (C) 2006 Mike Christie
  */
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_eh.h>
 #include <scsi/scsi_dh.h>
@@ -160,7 +160,7 @@ static int parse_sp_info_reply(struct scsi_device *sdev,
 			    CLARIION_NAME);
 		break;
 	case 4:
-		/* Linux failover */
+		/* freax failover */
 		break;
 	default:
 		sdev_printk(KERN_WARNING, sdev,

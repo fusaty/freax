@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/gfp.h>
-#include <linux/types.h>
-#include <linux/radix-tree.h>
-#include <linux/rcupdate.h>
+#include <freax/gfp.h>
+#include <freax/types.h>
+#include <freax/radix-tree.h>
+#include <freax/rcupdate.h>
 
 struct item {
 	struct rcu_head	rcu_head;

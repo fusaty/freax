@@ -5,10 +5,10 @@
  * Copyright 2007 Wolfson Microelectronics PLC
  */
 
-#ifndef __LINUX_MFD_WM8350_GPIO_H_
-#define __LINUX_MFD_WM8350_GPIO_H_
+#ifndef __freax_MFD_WM8350_GPIO_H_
+#define __freax_MFD_WM8350_GPIO_H_
 
-#include <linux/platform_device.h>
+#include <freax/platform_device.h>
 
 /*
  * GPIO Registers.

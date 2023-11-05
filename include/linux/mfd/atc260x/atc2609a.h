@@ -5,8 +5,8 @@
  * Copyright (C) 2019 Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
  */
 
-#ifndef __LINUX_MFD_ATC260X_ATC2609A_H
-#define __LINUX_MFD_ATC260X_ATC2609A_H
+#ifndef __freax_MFD_ATC260X_ATC2609A_H
+#define __freax_MFD_ATC260X_ATC2609A_H
 
 enum atc2609a_irq_def {
 	ATC2609A_IRQ_AUDIO = 0,
@@ -305,4 +305,4 @@ enum atc2609a_irq_def {
 /* PAD_EN Register Mask Bits */
 #define ATC2609A_PAD_EN_EXTIRQ				BIT(0)
 
-#endif /* __LINUX_MFD_ATC260X_ATC2609A_H */
+#endif /* __freax_MFD_ATC260X_ATC2609A_H */

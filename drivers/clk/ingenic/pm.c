@@ -6,8 +6,8 @@
 #include "cgu.h"
 #include "pm.h"
 
-#include <linux/io.h>
-#include <linux/syscore_ops.h>
+#include <freax/io.h>
+#include <freax/syscore_ops.h>
 
 #define CGU_REG_LCR		0x04
 

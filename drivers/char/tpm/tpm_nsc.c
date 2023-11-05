@@ -14,8 +14,8 @@
  * Specifications at www.trustedcomputinggroup.org	 
  */
 
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 #include "tpm.h"
 
 /* National definitions */

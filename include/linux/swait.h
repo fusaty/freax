@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SWAIT_H
-#define _LINUX_SWAIT_H
+#ifndef _freax_SWAIT_H
+#define _freax_SWAIT_H
 
-#include <linux/list.h>
-#include <linux/stddef.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
+#include <freax/list.h>
+#include <freax/stddef.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
 #include <asm/current.h>
 
 /*
@@ -284,4 +284,4 @@ do {									\
 	__ret;								\
 })
 
-#endif /* _LINUX_SWAIT_H */
+#endif /* _freax_SWAIT_H */

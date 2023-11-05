@@ -8,13 +8,13 @@
  *	Daniel Lezcano <daniel.lezcano@linaro.org>
 */
 
-#include <linux/cpuidle.h>
-#include <linux/cpu_pm.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/platform_data/cpuidle-exynos.h>
+#include <freax/cpuidle.h>
+#include <freax/cpu_pm.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/platform_data/cpuidle-exynos.h>
 
 #include <asm/suspend.h>
 #include <asm/cpuidle.h>

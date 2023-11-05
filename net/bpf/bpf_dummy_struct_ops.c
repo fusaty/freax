@@ -2,10 +2,10 @@
 /*
  * Copyright (C) 2021. Huawei Technologies Co., Ltd
  */
-#include <linux/kernel.h>
-#include <linux/bpf_verifier.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
+#include <freax/kernel.h>
+#include <freax/bpf_verifier.h>
+#include <freax/bpf.h>
+#include <freax/btf.h>
 
 extern struct bpf_struct_ops bpf_bpf_dummy_ops;
 

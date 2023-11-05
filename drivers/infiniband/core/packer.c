@@ -31,8 +31,8 @@
  * SOFTWARE.
  */
 
-#include <linux/export.h>
-#include <linux/string.h>
+#include <freax/export.h>
+#include <freax/string.h>
 
 #include <rdma/ib_pack.h>
 

@@ -7,18 +7,18 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/slab.h>
-#include <linux/dma-map-ops.h>
-#include <linux/vringh.h>
-#include <linux/vdpa.h>
-#include <linux/vhost_iotlb.h>
-#include <uapi/linux/vdpa.h>
-#include <uapi/linux/vhost_types.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/slab.h>
+#include <freax/dma-map-ops.h>
+#include <freax/vringh.h>
+#include <freax/vdpa.h>
+#include <freax/vhost_iotlb.h>
+#include <uapi/freax/vdpa.h>
+#include <uapi/freax/vhost_types.h>
 
 #include "vdpa_sim.h"
 

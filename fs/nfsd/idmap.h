@@ -32,12 +32,12 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#ifndef LINUX_NFSD_IDMAP_H
-#define LINUX_NFSD_IDMAP_H
+#ifndef freax_NFSD_IDMAP_H
+#define freax_NFSD_IDMAP_H
 
-#include <linux/in.h>
-#include <linux/sunrpc/svc.h>
-#include <linux/nfs_idmap.h>
+#include <freax/in.h>
+#include <freax/sunrpc/svc.h>
+#include <freax/nfs_idmap.h>
 
 #ifdef CONFIG_NFSD_V4
 int nfsd_idmap_init(struct net *);
@@ -57,4 +57,4 @@ __be32 nfsd_map_name_to_gid(struct svc_rqst *, const char *, size_t, kgid_t *);
 __be32 nfsd4_encode_user(struct xdr_stream *, struct svc_rqst *, kuid_t);
 __be32 nfsd4_encode_group(struct xdr_stream *, struct svc_rqst *, kgid_t);
 
-#endif /* LINUX_NFSD_IDMAP_H */
+#endif /* freax_NFSD_IDMAP_H */

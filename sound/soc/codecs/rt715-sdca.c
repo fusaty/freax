@@ -7,16 +7,16 @@
 //
 //
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm.h>
-#include <linux/soundwire/sdw.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm.h>
+#include <freax/soundwire/sdw.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
@@ -25,7 +25,7 @@
 #include <sound/soc-dapm.h>
 #include <sound/initval.h>
 #include <sound/tlv.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <freax/soundwire/sdw_registers.h>
 
 #include "rt715-sdca.h"
 

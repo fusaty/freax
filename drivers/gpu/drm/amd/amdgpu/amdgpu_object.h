@@ -33,7 +33,7 @@
 #include "amdgpu_res_cursor.h"
 
 #ifdef CONFIG_MMU_NOTIFIER
-#include <linux/mmu_notifier.h>
+#include <freax/mmu_notifier.h>
 #endif
 
 #define AMDGPU_BO_INVALID_OFFSET	LONG_MAX

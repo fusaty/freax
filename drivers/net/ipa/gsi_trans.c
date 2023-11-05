@@ -1,15 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2019-2022 Linaro Ltd.
  */
 
-#include <linux/types.h>
-#include <linux/bits.h>
-#include <linux/bitfield.h>
-#include <linux/refcount.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-direction.h>
+#include <freax/types.h>
+#include <freax/bits.h>
+#include <freax/bitfield.h>
+#include <freax/refcount.h>
+#include <freax/scatterlist.h>
+#include <freax/dma-direction.h>
 
 #include "gsi.h"
 #include "gsi_private.h"
@@ -39,7 +39,7 @@
  * transaction are also allocated when the transaction is allocated.
  *
  * Operations performed as part of a transaction are represented in an array
- * of Linux scatterlist structures, allocated with the transaction.  These
+ * of freax scatterlist structures, allocated with the transaction.  These
  * scatterlist structures are initialized by "adding" operations to the
  * transaction.  If a buffer in an operation must be mapped for DMA, this is
  * done at the time it is added to the transaction.  It is possible for a

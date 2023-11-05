@@ -15,9 +15,9 @@
  * ==FILEVERSION 20000322==
  */
 
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/poll.h>
+#include <freax/list.h>
+#include <freax/skbuff.h>
+#include <freax/poll.h>
 #include <net/net_namespace.h>
 
 struct net_device_path;

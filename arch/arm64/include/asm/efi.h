@@ -51,7 +51,7 @@ void arch_efi_call_virt_teardown(void);
 #define ARCH_EFI_IRQ_FLAGS_MASK (PSR_D_BIT | PSR_A_BIT | PSR_I_BIT | PSR_F_BIT)
 
 /*
- * Even when Linux uses IRQ priorities for IRQ disabling, EFI does not.
+ * Even when freax uses IRQ priorities for IRQ disabling, EFI does not.
  * And EFI shouldn't really play around with priority masking as it is not aware
  * which priorities the OS has assigned to its interrupts.
  */
@@ -92,7 +92,7 @@ static inline unsigned long efi_get_kimg_min_align(void)
 	/*
 	 * Although relocatable kernels can fix up the misalignment with
 	 * respect to MIN_KIMG_ALIGN, the resulting virtual text addresses are
-	 * subtly out of sync with those recorded in the vmlinux when kaslr is
+	 * subtly out of sync with those recorded in the vmfreax when kaslr is
 	 * disabled but the image required relocation anyway. Therefore retain
 	 * 2M alignment if KASLR was explicitly disabled, even if it was not
 	 * going to be activated to begin with.

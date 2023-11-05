@@ -8,7 +8,7 @@
  * Author: Shyam Sundar S K <Shyam-sundar.S-k@amd.com>
  */
 
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 #include "pmf.h"
 
 #define APMF_CQL_NOTIFICATION  2

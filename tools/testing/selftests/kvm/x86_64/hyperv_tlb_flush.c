@@ -79,7 +79,7 @@ static void worker_guest_code(vm_vaddr_t test_data)
 	u64 expected, val;
 
 	x2apic_enable();
-	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_LINUX_OS_ID);
+	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_freax_OS_ID);
 
 	for (;;) {
 		cpu_relax();
@@ -206,7 +206,7 @@ static void sender_guest_code(vm_vaddr_t test_data)
 	vm_paddr_t hcall_gpa = data->hcall_gpa;
 	int i, stage = 1;
 
-	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_LINUX_OS_ID);
+	wrmsr(HV_X64_MSR_GUEST_OS_ID, HYPERV_freax_OS_ID);
 	wrmsr(HV_X64_MSR_HYPERCALL, data->hcall_gpa);
 
 	/* "Slow" hypercalls */

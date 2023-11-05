@@ -111,8 +111,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/stringify.h>
-#include <linux/kernel.h>
+#include <freax/stringify.h>
+#include <freax/kernel.h>
 
 extern unsigned int processor_id;
 struct proc_info_list *lookup_processor(u32 midr);

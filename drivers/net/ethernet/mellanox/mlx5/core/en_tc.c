@@ -34,11 +34,11 @@
 #include <net/flow_offload.h>
 #include <net/sch_generic.h>
 #include <net/pkt_cls.h>
-#include <linux/mlx5/fs.h>
-#include <linux/mlx5/device.h>
-#include <linux/rhashtable.h>
-#include <linux/refcount.h>
-#include <linux/completion.h>
+#include <freax/mlx5/fs.h>
+#include <freax/mlx5/device.h>
+#include <freax/rhashtable.h>
+#include <freax/refcount.h>
+#include <freax/completion.h>
 #include <net/arp.h>
 #include <net/ipv6_stubs.h>
 #include <net/bareudp.h>
@@ -3151,7 +3151,7 @@ static struct mlx5_fields fields[] = {
 
 	OFFLOAD(TCP_SPORT, 16, U16_MAX, tcp.source,  0, tcp_sport),
 	OFFLOAD(TCP_DPORT, 16, U16_MAX, tcp.dest,    0, tcp_dport),
-	/* in linux iphdr tcp_flags is 8 bits long */
+	/* in freax iphdr tcp_flags is 8 bits long */
 	OFFLOAD(TCP_FLAGS,  8,  U8_MAX, tcp.ack_seq, 5, tcp_flags),
 
 	OFFLOAD(UDP_SPORT, 16, U16_MAX, udp.source, 0, udp_sport),

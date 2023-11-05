@@ -7,21 +7,21 @@
  *   Wei WANG <wei_wang@realsil.com.cn>
  */
 
-#include <linux/pci.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/idr.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/core.h>
-#include <linux/rtsx_pci.h>
-#include <linux/mmc/card.h>
+#include <freax/pci.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/highmem.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/idr.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/core.h>
+#include <freax/rtsx_pci.h>
+#include <freax/mmc/card.h>
 #include <asm/unaligned.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
 
 #include "rtsx_pcr.h"
 #include "rts5261.h"

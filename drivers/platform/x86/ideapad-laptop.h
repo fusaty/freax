@@ -9,9 +9,9 @@
 #ifndef _IDEAPAD_LAPTOP_H_
 #define _IDEAPAD_LAPTOP_H_
 
-#include <linux/acpi.h>
-#include <linux/jiffies.h>
-#include <linux/errno.h>
+#include <freax/acpi.h>
+#include <freax/jiffies.h>
+#include <freax/errno.h>
 
 enum {
 	VPCCMD_R_VPC1 = 0x10,

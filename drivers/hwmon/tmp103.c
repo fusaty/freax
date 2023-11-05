@@ -9,17 +9,17 @@
  * Copyright (C) 2010 Steven King <sfking@fdwdc.com>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/device.h>
-#include <linux/jiffies.h>
-#include <linux/regmap.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/device.h>
+#include <freax/jiffies.h>
+#include <freax/regmap.h>
 
 #define TMP103_TEMP_REG		0x00
 #define TMP103_CONF_REG		0x01

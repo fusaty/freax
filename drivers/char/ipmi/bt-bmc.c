@@ -3,18 +3,18 @@
  * Copyright (c) 2015-2016, IBM Corporation.
  */
 
-#include <linux/atomic.h>
-#include <linux/bt-bmc.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/miscdevice.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/poll.h>
-#include <linux/sched.h>
-#include <linux/timer.h>
+#include <freax/atomic.h>
+#include <freax/bt-bmc.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/miscdevice.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/poll.h>
+#include <freax/sched.h>
+#include <freax/timer.h>
 
 /*
  * This is a BMC device used to communicate to the host
@@ -490,4 +490,4 @@ module_platform_driver(bt_bmc_driver);
 MODULE_DEVICE_TABLE(of, bt_bmc_match);
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Alistair Popple <alistair@popple.id.au>");
-MODULE_DESCRIPTION("Linux device interface to the IPMI BT interface");
+MODULE_DESCRIPTION("freax device interface to the IPMI BT interface");

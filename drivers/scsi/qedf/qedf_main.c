@@ -3,26 +3,26 @@
  *  QLogic FCoE Offload Driver
  *  Copyright (c) 2016-2018 Cavium Inc.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/device.h>
-#include <linux/highmem.h>
-#include <linux/crc32.h>
-#include <linux/interrupt.h>
-#include <linux/list.h>
-#include <linux/kthread.h>
-#include <linux/phylink.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/device.h>
+#include <freax/highmem.h>
+#include <freax/crc32.h>
+#include <freax/interrupt.h>
+#include <freax/list.h>
+#include <freax/kthread.h>
+#include <freax/phylink.h>
 #include <scsi/libfc.h>
 #include <scsi/scsi_host.h>
 #include <scsi/fc_frame.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/cpu.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/cpu.h>
 #include "qedf.h"
 #include "qedf_dbg.h"
-#include <uapi/linux/pci_regs.h>
+#include <uapi/freax/pci_regs.h>
 
 const struct qed_fcoe_ops *qed_ops;
 

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include <drm/gpu_scheduler.h>
 #include <drm/drm_syncobj.h>
 

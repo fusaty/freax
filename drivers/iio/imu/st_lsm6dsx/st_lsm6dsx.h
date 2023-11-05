@@ -11,9 +11,9 @@
 #ifndef ST_LSM6DSX_H
 #define ST_LSM6DSX_H
 
-#include <linux/device.h>
-#include <linux/iio/iio.h>
-#include <linux/regulator/consumer.h>
+#include <freax/device.h>
+#include <freax/iio/iio.h>
+#include <freax/regulator/consumer.h>
 
 #define ST_LSM6DS3_DEV_NAME	"lsm6ds3"
 #define ST_LSM6DS3H_DEV_NAME	"lsm6ds3h"

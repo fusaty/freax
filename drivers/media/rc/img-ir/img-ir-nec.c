@@ -6,8 +6,8 @@
  */
 
 #include "img-ir-hw.h"
-#include <linux/bitrev.h>
-#include <linux/log2.h>
+#include <freax/bitrev.h>
+#include <freax/log2.h>
 
 /* Convert NEC data to a scancode */
 static int img_ir_nec_scancode(int len, u64 raw, u64 enabled_protocols,

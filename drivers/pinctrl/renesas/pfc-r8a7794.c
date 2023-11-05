@@ -7,9 +7,9 @@
  * Copyright (C) 2015-2017 Cogent Embedded, Inc. <source@cogentembedded.com>
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/sys_soc.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/sys_soc.h>
 
 #include "core.h"
 #include "sh_pfc.h"

@@ -10,7 +10,7 @@
  *
  * Also uses information and code from:
  *
- * The original macfb.c from Linux/mac68k 2.0, by Alan Cox, Juergen
+ * The original macfb.c from freax/mac68k 2.0, by Alan Cox, Juergen
  * Mellinger, Mikael Forselius, Michael Schmitz, and others.
  *
  * valkyriefb.c, by Martin Costabel, Kevin Schoedel, Barry Nathan, Dan
@@ -20,15 +20,15 @@
  * http://rajsky.psych.nyu.edu/Tips/VideoBugs.html
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/nubus.h>
-#include <linux/init.h>
-#include <linux/fb.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/nubus.h>
+#include <freax/init.h>
+#include <freax/fb.h>
 
 #include <asm/setup.h>
 #include <asm/macintosh.h>
@@ -409,7 +409,7 @@ static int civic_setpalette(unsigned int regno, unsigned int red,
 /*
  * The CSC is the framebuffer on the PowerBook 190 series
  * (and the 5300 too, but that's a PowerMac). This function
- * brought to you in part by the ECSC driver for MkLinux.
+ * brought to you in part by the ECSC driver for Mkfreax.
  */
 static int csc_setpalette(unsigned int regno, unsigned int red,
 			  unsigned int green, unsigned int blue,
@@ -419,7 +419,7 @@ static int csc_setpalette(unsigned int regno, unsigned int red,
 
 	local_irq_save(flags);
 
-	udelay(1); /* mklinux on PB 5300 waits for 260 ns */
+	udelay(1); /* mkfreax on PB 5300 waits for 260 ns */
 	nubus_writeb(regno, &csc_cmap_regs->clut_waddr);
 	nubus_writeb(red, &csc_cmap_regs->clut_data);
 	nubus_writeb(green, &csc_cmap_regs->clut_data);

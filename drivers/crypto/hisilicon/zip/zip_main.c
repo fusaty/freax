@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 HiSilicon Limited. */
-#include <linux/acpi.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/pm_runtime.h>
-#include <linux/seq_file.h>
-#include <linux/topology.h>
-#include <linux/uacce.h>
+#include <freax/acpi.h>
+#include <freax/bitops.h>
+#include <freax/debugfs.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/pm_runtime.h>
+#include <freax/seq_file.h>
+#include <freax/topology.h>
+#include <freax/uacce.h>
 #include "zip.h"
 
 #define PCI_DEVICE_ID_HUAWEI_ZIP_PF	0xa250

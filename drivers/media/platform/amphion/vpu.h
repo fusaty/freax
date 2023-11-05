@@ -9,9 +9,9 @@
 #include <media/v4l2-device.h>
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-mem2mem.h>
-#include <linux/mailbox_client.h>
-#include <linux/mailbox_controller.h>
-#include <linux/kfifo.h>
+#include <freax/mailbox_client.h>
+#include <freax/mailbox_controller.h>
+#include <freax/kfifo.h>
 
 #define VPU_TIMEOUT_WAKEUP	msecs_to_jiffies(200)
 #define VPU_TIMEOUT		msecs_to_jiffies(1000)

@@ -6,15 +6,15 @@
  * Copyright © CC Computer Consultants GmbH, 2007
  */
 
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/tcp.h>
 #include <net/ipv6.h>
 #include <net/tcp.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_TCPOPTSTRIP.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_TCPOPTSTRIP.h>
 
 static inline unsigned int optlen(const u_int8_t *opt, unsigned int offset)
 {

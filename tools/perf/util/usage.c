@@ -10,7 +10,7 @@
 #include "util.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 const char perf_usage_string[] =
 	"perf [--version] [--help] [OPTIONS] COMMAND [ARGS]";

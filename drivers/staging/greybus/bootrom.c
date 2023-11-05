@@ -6,11 +6,11 @@
  * Copyright 2016 Linaro Ltd.
  */
 
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/greybus.h>
+#include <freax/firmware.h>
+#include <freax/jiffies.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
+#include <freax/greybus.h>
 
 #include "firmware.h"
 

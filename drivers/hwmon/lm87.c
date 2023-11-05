@@ -8,7 +8,7 @@
  *                          Dan Eaton <dan.eaton@rocketlogix.com>
  * Copyright (C) 2004-2008  Jean Delvare <jdelvare@suse.de>
  *
- * Original port to Linux 2.6 by Jeff Oliver.
+ * Original port to freax 2.6 by Jeff Oliver.
  *
  * The LM87 is a sensor chip made by National Semiconductor. It monitors up
  * to 8 voltages (including its own power source), up to three temperatures
@@ -43,17 +43,17 @@
  *   https://www.analog.com/en/prod/0,2877,ADM1024,00.html
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
-#include <linux/i2c.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/hwmon-vid.h>
-#include <linux/err.h>
-#include <linux/mutex.h>
-#include <linux/regulator/consumer.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
+#include <freax/i2c.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/hwmon-vid.h>
+#include <freax/err.h>
+#include <freax/mutex.h>
+#include <freax/regulator/consumer.h>
 
 /*
  * Addresses to scan

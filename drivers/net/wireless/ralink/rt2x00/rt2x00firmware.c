@@ -11,8 +11,8 @@
 	Abstract: rt2x00 firmware loading routines.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 
 #include "rt2x00.h"
 #include "rt2x00lib.h"

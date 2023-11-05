@@ -6,25 +6,25 @@
  * Copyright (C) 2012 ARM Ltd.
  */
 
-#include <linux/cache.h>
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/kexec.h>
-#include <linux/libfdt.h>
-#include <linux/mman.h>
-#include <linux/nodemask.h>
-#include <linux/memblock.h>
-#include <linux/memremap.h>
-#include <linux/memory.h>
-#include <linux/fs.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/vmalloc.h>
-#include <linux/set_memory.h>
-#include <linux/kfence.h>
+#include <freax/cache.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/kexec.h>
+#include <freax/libfdt.h>
+#include <freax/mman.h>
+#include <freax/nodemask.h>
+#include <freax/memblock.h>
+#include <freax/memremap.h>
+#include <freax/memory.h>
+#include <freax/fs.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/vmalloc.h>
+#include <freax/set_memory.h>
+#include <freax/kfence.h>
 
 #include <asm/barrier.h>
 #include <asm/cputype.h>
@@ -33,7 +33,7 @@
 #include <asm/kernel-pgtable.h>
 #include <asm/sections.h>
 #include <asm/setup.h>
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 #include <asm/tlb.h>
 #include <asm/mmu_context.h>
 #include <asm/ptdump.h>
@@ -721,8 +721,8 @@ static bool arm64_early_this_cpu_has_bti(void)
  */
 static void __init map_kernel(pgd_t *pgdp)
 {
-	static struct vm_struct vmlinux_text, vmlinux_rodata, vmlinux_inittext,
-				vmlinux_initdata, vmlinux_data;
+	static struct vm_struct vmfreax_text, vmfreax_rodata, vmfreax_inittext,
+				vmfreax_initdata, vmfreax_data;
 
 	/*
 	 * External debuggers may need to write directly to the text
@@ -743,15 +743,15 @@ static void __init map_kernel(pgd_t *pgdp)
 	 * Only rodata will be remapped with different permissions later on,
 	 * all other segments are allowed to use contiguous mappings.
 	 */
-	map_kernel_segment(pgdp, _stext, _etext, text_prot, &vmlinux_text, 0,
+	map_kernel_segment(pgdp, _stext, _etext, text_prot, &vmfreax_text, 0,
 			   VM_NO_GUARD);
 	map_kernel_segment(pgdp, __start_rodata, __inittext_begin, PAGE_KERNEL,
-			   &vmlinux_rodata, NO_CONT_MAPPINGS, VM_NO_GUARD);
+			   &vmfreax_rodata, NO_CONT_MAPPINGS, VM_NO_GUARD);
 	map_kernel_segment(pgdp, __inittext_begin, __inittext_end, text_prot,
-			   &vmlinux_inittext, 0, VM_NO_GUARD);
+			   &vmfreax_inittext, 0, VM_NO_GUARD);
 	map_kernel_segment(pgdp, __initdata_begin, __initdata_end, PAGE_KERNEL,
-			   &vmlinux_initdata, 0, VM_NO_GUARD);
-	map_kernel_segment(pgdp, _data, _end, PAGE_KERNEL, &vmlinux_data, 0, 0);
+			   &vmfreax_initdata, 0, VM_NO_GUARD);
+	map_kernel_segment(pgdp, _data, _end, PAGE_KERNEL, &vmfreax_data, 0, 0);
 
 	fixmap_copy(pgdp);
 	kasan_copy_shadow(pgdp);

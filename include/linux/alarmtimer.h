@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_ALARMTIMER_H
-#define _LINUX_ALARMTIMER_H
+#ifndef _freax_ALARMTIMER_H
+#define _freax_ALARMTIMER_H
 
-#include <linux/time.h>
-#include <linux/hrtimer.h>
-#include <linux/timerqueue.h>
+#include <freax/time.h>
+#include <freax/hrtimer.h>
+#include <freax/timerqueue.h>
 
 struct rtc_device;
 

@@ -9,8 +9,8 @@
 #ifndef _ASM_S390_DIAG_H
 #define _ASM_S390_DIAG_H
 
-#include <linux/if_ether.h>
-#include <linux/percpu.h>
+#include <freax/if_ether.h>
+#include <freax/percpu.h>
 #include <asm/asm-extable.h>
 #include <asm/cio.h>
 
@@ -310,7 +310,7 @@ struct diag26c_mac_resp {
 	u8	res[2];
 } __aligned(8);
 
-#define CPNC_LINUX		0x4
+#define CPNC_freax		0x4
 union diag318_info {
 	unsigned long val;
 	struct {

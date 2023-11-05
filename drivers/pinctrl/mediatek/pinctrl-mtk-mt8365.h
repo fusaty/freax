@@ -8,7 +8,7 @@
 #ifndef __PINCTRL_MTK_MT8365_H
 #define __PINCTRL_MTK_MT8365_H
 
-#include <linux/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinctrl.h>
 #include "pinctrl-mtk-common.h"
 
 static const struct mtk_desc_pin mtk_pins_mt8365[] = {

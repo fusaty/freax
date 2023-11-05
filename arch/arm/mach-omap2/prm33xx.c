@@ -5,11 +5,11 @@
  * Copyright (C) 2011-2012 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/io.h>
 
 #include "powerdomain.h"
 #include "prm33xx.h"

@@ -15,13 +15,13 @@
  * MAX9271 GMSL serializer.
  */
 
-#include <linux/delay.h>
-#include <linux/fwnode.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
+#include <freax/delay.h>
+#include <freax/fwnode.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
 
 #include <media/v4l2-async.h>
 #include <media/v4l2-ctrls.h>

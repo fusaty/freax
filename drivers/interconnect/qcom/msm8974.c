@@ -3,7 +3,7 @@
  * Copyright (C) 2019 Brian Masney <masneyb@onstation.org>
  *
  * Based on MSM bus code from downstream MSM kernel sources.
- * Copyright (c) 2012-2013 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013 The freax Foundation. All rights reserved.
  *
  * Based on qcs404.c
  * Copyright (C) 2019 Linaro Ltd
@@ -29,15 +29,15 @@
 
 #include <dt-bindings/interconnect/qcom,msm8974.h>
 
-#include <linux/args.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/interconnect-provider.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/args.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/interconnect-provider.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #include "icc-rpm.h"
 

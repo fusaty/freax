@@ -7,21 +7,21 @@
  * https://www.analog.com/ADF7242
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/firmware.h>
-#include <linux/spi/spi.h>
-#include <linux/skbuff.h>
-#include <linux/of.h>
-#include <linux/irq.h>
-#include <linux/debugfs.h>
-#include <linux/bitops.h>
-#include <linux/ieee802154.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
+#include <freax/spinlock.h>
+#include <freax/firmware.h>
+#include <freax/spi/spi.h>
+#include <freax/skbuff.h>
+#include <freax/of.h>
+#include <freax/irq.h>
+#include <freax/debugfs.h>
+#include <freax/bitops.h>
+#include <freax/ieee802154.h>
 #include <net/mac802154.h>
 #include <net/cfg802154.h>
 

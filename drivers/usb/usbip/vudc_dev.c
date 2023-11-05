@@ -6,16 +6,16 @@
  *               Krzysztof Opasiak <k.opasiak@samsung.com>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/platform_device.h>
-#include <linux/usb.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/hcd.h>
-#include <linux/kthread.h>
-#include <linux/file.h>
-#include <linux/byteorder/generic.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/platform_device.h>
+#include <freax/usb.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/hcd.h>
+#include <freax/kthread.h>
+#include <freax/file.h>
+#include <freax/byteorder/generic.h>
 
 #include "usbip_common.h"
 #include "vudc.h"

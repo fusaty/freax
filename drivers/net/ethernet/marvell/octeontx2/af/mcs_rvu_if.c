@@ -4,10 +4,10 @@
  * Copyright (C) 2022 Marvell.
  */
 
-#include <linux/types.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/types.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "mcs.h"
 #include "rvu.h"

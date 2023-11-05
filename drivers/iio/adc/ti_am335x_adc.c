@@ -5,25 +5,25 @@
  * Copyright (C) 2012 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/iio/iio.h>
-#include <linux/of.h>
-#include <linux/iio/machine.h>
-#include <linux/iio/driver.h>
-#include <linux/iopoll.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/iio/iio.h>
+#include <freax/of.h>
+#include <freax/iio/machine.h>
+#include <freax/iio/driver.h>
+#include <freax/iopoll.h>
 
-#include <linux/mfd/ti_am335x_tscadc.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/kfifo_buf.h>
+#include <freax/mfd/ti_am335x_tscadc.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/kfifo_buf.h>
 
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
 
 #define DMA_BUFFER_SIZE		SZ_2K
 

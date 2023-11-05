@@ -28,10 +28,10 @@
 #include "wndw.h"
 #include "handles.h"
 
-#include <linux/dma-mapping.h>
-#include <linux/hdmi.h>
-#include <linux/component.h>
-#include <linux/iopoll.h>
+#include <freax/dma-mapping.h>
+#include <freax/hdmi.h>
+#include <freax/component.h>
+#include <freax/iopoll.h>
 
 #include <drm/display/drm_dp_helper.h>
 #include <drm/display/drm_scdc_helper.h>

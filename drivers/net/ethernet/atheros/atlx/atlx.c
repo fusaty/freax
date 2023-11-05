@@ -14,17 +14,17 @@
 #ifndef ATLX_C
 #define ATLX_C
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/socket.h>
-#include <linux/sockios.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/etherdevice.h>
+#include <freax/if.h>
+#include <freax/netdevice.h>
+#include <freax/socket.h>
+#include <freax/sockios.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 #include "atlx.h"
 

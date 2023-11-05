@@ -35,7 +35,7 @@
 
 		button-maskrom {
 			label = "Mask Rom";
-			linux,code = <KEY_SETUP>;
+			freax,code = <KEY_SETUP>;
 			press-threshold-microvolt = <393>;
 		};
 	};
@@ -49,25 +49,25 @@
 
 		button-volume-up {
 			label = "V+/REC";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <17821>;
 		};
 
 		button-volume-down {
 			label = "V-";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <415384>;
 		};
 
 		button-menu {
 			label = "MENU";
-			linux,code = <KEY_MENU>;
+			freax,code = <KEY_MENU>;
 			press-threshold-microvolt = <890909>;
 		};
 
 		button-esc {
 			label = "ESC";
-			linux,code = <KEY_ESC>;
+			freax,code = <KEY_ESC>;
 			press-threshold-microvolt = <1233962>;
 		};
 	};

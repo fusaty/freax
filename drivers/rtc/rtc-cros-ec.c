@@ -4,13 +4,13 @@
 // Copyright (C) 2017 Google, Inc.
 // Author: Stephen Barber <smbarber@chromium.org>
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
+#include <freax/slab.h>
 
 #define DRV_NAME	"cros-ec-rtc"
 

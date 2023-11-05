@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/kernel/signal.c
+ *  freax/kernel/signal.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *
@@ -11,48 +11,48 @@
  *		to allow signals to be sent reliably.
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/user.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/sched/cputime.h>
-#include <linux/file.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/proc_fs.h>
-#include <linux/tty.h>
-#include <linux/binfmts.h>
-#include <linux/coredump.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/ptrace.h>
-#include <linux/signal.h>
-#include <linux/signalfd.h>
-#include <linux/ratelimit.h>
-#include <linux/task_work.h>
-#include <linux/capability.h>
-#include <linux/freezer.h>
-#include <linux/pid_namespace.h>
-#include <linux/nsproxy.h>
-#include <linux/user_namespace.h>
-#include <linux/uprobes.h>
-#include <linux/compat.h>
-#include <linux/cn_proc.h>
-#include <linux/compiler.h>
-#include <linux/posix-timers.h>
-#include <linux/cgroup.h>
-#include <linux/audit.h>
-#include <linux/sysctl.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/user.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/sched/cputime.h>
+#include <freax/file.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/proc_fs.h>
+#include <freax/tty.h>
+#include <freax/binfmts.h>
+#include <freax/coredump.h>
+#include <freax/security.h>
+#include <freax/syscalls.h>
+#include <freax/ptrace.h>
+#include <freax/signal.h>
+#include <freax/signalfd.h>
+#include <freax/ratelimit.h>
+#include <freax/task_work.h>
+#include <freax/capability.h>
+#include <freax/freezer.h>
+#include <freax/pid_namespace.h>
+#include <freax/nsproxy.h>
+#include <freax/user_namespace.h>
+#include <freax/uprobes.h>
+#include <freax/compat.h>
+#include <freax/cn_proc.h>
+#include <freax/compiler.h>
+#include <freax/posix-timers.h>
+#include <freax/cgroup.h>
+#include <freax/audit.h>
+#include <freax/sysctl.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/signal.h>
 
 #include <asm/param.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/unistd.h>
 #include <asm/siginfo.h>
 #include <asm/cacheflush.h>
@@ -4831,7 +4831,7 @@ void __init signals_init(void)
 }
 
 #ifdef CONFIG_KGDB_KDB
-#include <linux/kdb.h>
+#include <freax/kdb.h>
 /*
  * kdb_send_sig - Allows kdb to send signals without exposing
  * signal internals.  This function checks if the required locks are

@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/capability.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
-#include <linux/proc_fs.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/init.h>
+#include <freax/capability.h>
+#include <freax/seq_file.h>
+#include <freax/uaccess.h>
+#include <freax/proc_fs.h>
+#include <freax/ctype.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/init.h>
 
 #define LINE_SIZE 80
 

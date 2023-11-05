@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: GPL-2.0
 %YAML 1.2
 ---
-$id: http://devicetree.org/schemas/sound/linux,bt-sco.yaml#
+$id: http://devicetree.org/schemas/sound/freax,bt-sco.yaml#
 $schema: http://devicetree.org/meta-schemas/core.yaml#
 
 title: Bluetooth SCO Audio Codec
@@ -23,7 +23,7 @@ properties:
   compatible:
     enum:
       - delta,dfbmcs320
-      - linux,bt-sco
+      - freax,bt-sco
 
 required:
   - '#sound-dai-cells'
@@ -35,7 +35,7 @@ examples:
   - |
     codec {
         #sound-dai-cells = <0>;
-        compatible = "linux,bt-sco";
+        compatible = "freax,bt-sco";
     };
 
 ...

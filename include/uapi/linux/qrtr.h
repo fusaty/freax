@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_QRTR_H
-#define _LINUX_QRTR_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _freax_QRTR_H
+#define _freax_QRTR_H
 
-#include <linux/socket.h>
-#include <linux/types.h>
+#include <freax/socket.h>
+#include <freax/types.h>
 
 #define QRTR_NODE_BCAST	0xffffffffu
 #define QRTR_PORT_CTRL	0xfffffffeu
@@ -46,4 +46,4 @@ struct qrtr_ctrl_pkt {
 	};
 } __packed;
 
-#endif /* _LINUX_QRTR_H */
+#endif /* _freax_QRTR_H */

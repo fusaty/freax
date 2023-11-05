@@ -8,15 +8,15 @@
  * Copyright (C) 2007, 2009 Oracle.  All rights reserved.
  */
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/kmod.h>
-#include <linux/fs.h>
-#include <linux/kobject.h>
-#include <linux/sysfs.h>
-#include <linux/sysctl.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/kmod.h>
+#include <freax/fs.h>
+#include <freax/kobject.h>
+#include <freax/sysfs.h>
+#include <freax/sysctl.h>
 
 #include "ocfs2_fs.h"
 

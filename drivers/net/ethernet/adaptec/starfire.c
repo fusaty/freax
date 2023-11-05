@@ -1,4 +1,4 @@
-/* starfire.c: Linux device driver for the Adaptec Starfire network adapter. */
+/* starfire.c: freax device driver for the Adaptec Starfire network adapter. */
 /*
 	Written 1998-2000 by Donald Becker.
 
@@ -28,22 +28,22 @@
 
 #define DRV_NAME	"starfire"
 
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/crc32.h>
-#include <linux/ethtool.h>
-#include <linux/mii.h>
-#include <linux/if_vlan.h>
-#include <linux/mm.h>
-#include <linux/firmware.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/crc32.h>
+#include <freax/ethtool.h>
+#include <freax/mii.h>
+#include <freax/if_vlan.h>
+#include <freax/mm.h>
+#include <freax/firmware.h>
 #include <asm/processor.h>		/* Processor type for cache alignment. */
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 
 /*

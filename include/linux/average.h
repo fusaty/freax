@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_AVERAGE_H
-#define _LINUX_AVERAGE_H
+#ifndef _freax_AVERAGE_H
+#define _freax_AVERAGE_H
 
-#include <linux/bug.h>
-#include <linux/compiler.h>
-#include <linux/log2.h>
+#include <freax/bug.h>
+#include <freax/compiler.h>
+#include <freax/log2.h>
 
 /*
  * Exponentially weighted moving average (EWMA)
@@ -68,4 +68,4 @@
 			(val << precision));				\
 	}
 
-#endif /* _LINUX_AVERAGE_H */
+#endif /* _freax_AVERAGE_H */

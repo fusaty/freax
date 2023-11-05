@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/string.h>
 
 #define OPSIZ (BITS_PER_LONG/8)

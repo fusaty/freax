@@ -5,17 +5,17 @@
  * Copyright (C) 2007 Atmel Corporation
  */
 
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/mutex.h>
-#include <linux/atmel-ssc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/platform_device.h>
+#include <freax/list.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/mutex.h>
+#include <freax/atmel-ssc.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 
-#include <linux/of.h>
+#include <freax/of.h>
 
 #include "../../sound/soc/atmel/atmel_ssc_dai.h"
 

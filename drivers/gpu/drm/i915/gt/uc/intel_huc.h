@@ -11,8 +11,8 @@
 #include "intel_uc_fw.h"
 #include "intel_huc_fw.h"
 
-#include <linux/notifier.h>
-#include <linux/hrtimer.h>
+#include <freax/notifier.h>
+#include <freax/hrtimer.h>
 
 struct bus_type;
 struct i915_vma;

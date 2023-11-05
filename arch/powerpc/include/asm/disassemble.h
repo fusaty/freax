@@ -9,7 +9,7 @@
 #ifndef __ASM_PPC_DISASSEMBLE_H__
 #define __ASM_PPC_DISASSEMBLE_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 static inline unsigned int get_op(u32 inst)
 {

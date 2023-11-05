@@ -14,8 +14,8 @@
 #include <sound/hda_register.h>
 #include <sound/hda-mlink.h>
 
-#include <linux/bitfield.h>
-#include <linux/module.h>
+#include <freax/bitfield.h>
+#include <freax/module.h>
 
 #if IS_ENABLED(CONFIG_SND_SOC_SOF_HDA_MLINK)
 

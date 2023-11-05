@@ -18,13 +18,13 @@
 #ifndef __ATOMISP_CSI2_H__
 #define __ATOMISP_CSI2_H__
 
-#include <linux/gpio/consumer.h>
-#include <linux/property.h>
+#include <freax/gpio/consumer.h>
+#include <freax/property.h>
 
 #include <media/v4l2-subdev.h>
 #include <media/v4l2-ctrls.h>
 
-#include "../../include/linux/atomisp.h"
+#include "../../include/freax/atomisp.h"
 
 #define CSI2_PAD_SINK		0
 #define CSI2_PAD_SOURCE		1

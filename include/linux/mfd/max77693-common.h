@@ -5,8 +5,8 @@
  * Copyright (C) 2015 Samsung Electronics
  */
 
-#ifndef __LINUX_MFD_MAX77693_COMMON_H
-#define __LINUX_MFD_MAX77693_COMMON_H
+#ifndef __freax_MFD_MAX77693_COMMON_H
+#define __freax_MFD_MAX77693_COMMON_H
 
 enum max77693_types {
 	TYPE_MAX77693_UNKNOWN,
@@ -42,4 +42,4 @@ struct max77693_dev {
 };
 
 
-#endif /*  __LINUX_MFD_MAX77693_COMMON_H */
+#endif /*  __freax_MFD_MAX77693_COMMON_H */

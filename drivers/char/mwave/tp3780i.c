@@ -46,10 +46,10 @@
 *	First release to the public
 */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/ptrace.h>
-#include <linux/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/ptrace.h>
+#include <freax/ioport.h>
 #include <asm/io.h>
 #include "smapi.h"
 #include "mwavedd.h"

@@ -30,8 +30,8 @@
  * SOFTWARE.
  */
 
-#include <linux/tcp.h>
-#include <linux/if_vlan.h>
+#include <freax/tcp.h>
+#include <freax/if_vlan.h>
 #include <net/geneve.h>
 #include <net/dsfield.h>
 #include "en.h"

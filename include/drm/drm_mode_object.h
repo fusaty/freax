@@ -23,7 +23,7 @@
 #ifndef __DRM_MODESET_H__
 #define __DRM_MODESET_H__
 
-#include <linux/kref.h>
+#include <freax/kref.h>
 #include <drm/drm_lease.h>
 struct drm_object_properties;
 struct drm_property;

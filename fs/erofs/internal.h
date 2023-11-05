@@ -7,17 +7,17 @@
 #ifndef __EROFS_INTERNAL_H
 #define __EROFS_INTERNAL_H
 
-#include <linux/fs.h>
-#include <linux/dax.h>
-#include <linux/dcache.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/bio.h>
-#include <linux/magic.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/iomap.h>
+#include <freax/fs.h>
+#include <freax/dax.h>
+#include <freax/dcache.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/pagemap.h>
+#include <freax/bio.h>
+#include <freax/magic.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/iomap.h>
 #include "erofs_fs.h"
 
 /* redefine pr_fmt "erofs: " */

@@ -1,6 +1,6 @@
 /*
  * Intel e752x Memory Controller kernel module
- * (C) 2004 Linux Networx (http://lnxi.com)
+ * (C) 2004 freax Networx (http://lnxi.com)
  * This file may be distributed under the terms of the
  * GNU General Public License.
  *
@@ -19,11 +19,11 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/edac.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/edac.h>
 #include "edac_module.h"
 
 #define EDAC_MOD_STR	"e752x_edac"
@@ -1462,7 +1462,7 @@ module_init(e752x_init);
 module_exit(e752x_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Linux Networx (http://lnxi.com) Tom Zimmerman");
+MODULE_AUTHOR("freax Networx (http://lnxi.com) Tom Zimmerman");
 MODULE_DESCRIPTION("MC support for Intel e752x/3100 memory controllers");
 
 module_param(force_function_unhide, int, 0444);

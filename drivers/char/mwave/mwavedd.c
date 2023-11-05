@@ -46,20 +46,20 @@
 *	First release to the public
 */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/miscdevice.h>
-#include <linux/device.h>
-#include <linux/serial.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/serial_8250.h>
-#include <linux/nospec.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/major.h>
+#include <freax/miscdevice.h>
+#include <freax/device.h>
+#include <freax/serial.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/serial_8250.h>
+#include <freax/nospec.h>
 #include "smapi.h"
 #include "mwavedd.h"
 #include "3780i.h"

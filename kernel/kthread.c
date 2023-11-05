@@ -7,27 +7,27 @@
  * even if we're invoked from userspace (think modprobe, hotplug cpu,
  * etc.).
  */
-#include <uapi/linux/sched/types.h>
-#include <linux/mm.h>
-#include <linux/mmu_context.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/kthread.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/cgroup.h>
-#include <linux/cpuset.h>
-#include <linux/unistd.h>
-#include <linux/file.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/freezer.h>
-#include <linux/ptrace.h>
-#include <linux/uaccess.h>
-#include <linux/numa.h>
-#include <linux/sched/isolation.h>
+#include <uapi/freax/sched/types.h>
+#include <freax/mm.h>
+#include <freax/mmu_context.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/task.h>
+#include <freax/kthread.h>
+#include <freax/completion.h>
+#include <freax/err.h>
+#include <freax/cgroup.h>
+#include <freax/cpuset.h>
+#include <freax/unistd.h>
+#include <freax/file.h>
+#include <freax/export.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/freezer.h>
+#include <freax/ptrace.h>
+#include <freax/uaccess.h>
+#include <freax/numa.h>
+#include <freax/sched/isolation.h>
 #include <trace/events/sched.h>
 
 

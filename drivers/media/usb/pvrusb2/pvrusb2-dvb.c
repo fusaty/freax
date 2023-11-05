@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  pvrusb2-dvb.c - linux-dvb api interface to the pvrusb2 driver.
+ *  pvrusb2-dvb.c - freax-dvb api interface to the pvrusb2 driver.
  *
- *  Copyright (C) 2007, 2008 Michael Krufky <mkrufky@linuxtv.org>
+ *  Copyright (C) 2007, 2008 Michael Krufky <mkrufky@freaxtv.org>
  */
 
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
 #include <media/dvbdev.h>
 #include "pvrusb2-debug.h"
 #include "pvrusb2-hdw-internal.h"

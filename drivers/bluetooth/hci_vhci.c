@@ -8,20 +8,20 @@
  *  Copyright (C) 2004-2006  Marcel Holtmann <marcel@holtmann.org>
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 #include <asm/unaligned.h>
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/poll.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/poll.h>
 
-#include <linux/skbuff.h>
-#include <linux/miscdevice.h>
-#include <linux/debugfs.h>
+#include <freax/skbuff.h>
+#include <freax/miscdevice.h>
+#include <freax/debugfs.h>
 
 #include <net/bluetooth/bluetooth.h>
 #include <net/bluetooth/hci_core.h>

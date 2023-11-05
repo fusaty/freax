@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_SPINLOCK_H_
-#define __LINUX_SPINLOCK_H_
+#ifndef __freax_SPINLOCK_H_
+#define __freax_SPINLOCK_H_
 
 #include <pthread.h>
 #include <stdbool.h>

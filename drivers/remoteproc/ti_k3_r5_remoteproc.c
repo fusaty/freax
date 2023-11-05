@@ -6,22 +6,22 @@
  *	Suman Anna <s-anna@ti.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_client.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/of_platform.h>
-#include <linux/omap-mailbox.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/remoteproc.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mailbox_client.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/of_platform.h>
+#include <freax/omap-mailbox.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/remoteproc.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
 
 #include "omap_remoteproc.h"
 #include "remoteproc_internal.h"

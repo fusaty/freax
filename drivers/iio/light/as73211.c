@@ -12,19 +12,19 @@
  * Datasheet: https://ams.com/documents/20143/36005/AS73211_DS000556_3-01.pdf
  */
 
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pm.h>
-#include <linux/units.h>
+#include <freax/bitfield.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/pm.h>
+#include <freax/units.h>
 
 #define AS73211_DRV_NAME "as73211"
 

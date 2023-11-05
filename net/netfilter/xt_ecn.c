@@ -6,17 +6,17 @@
  * (C) 2011 Patrick McHardy <kaber@trash.net>
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/in.h>
-#include <linux/ip.h>
+#include <freax/in.h>
+#include <freax/ip.h>
 #include <net/ip.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/tcp.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/tcp.h>
 
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter/xt_ecn.h>
-#include <linux/netfilter_ipv4/ip_tables.h>
-#include <linux/netfilter_ipv6/ip6_tables.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter/xt_ecn.h>
+#include <freax/netfilter_ipv4/ip_tables.h>
+#include <freax/netfilter_ipv6/ip6_tables.h>
 
 MODULE_AUTHOR("Harald Welte <laforge@netfilter.org>");
 MODULE_DESCRIPTION("Xtables: Explicit Congestion Notification (ECN) flag match");

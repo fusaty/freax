@@ -9,7 +9,7 @@
 # Adapted from code in arch/i386/boot/Makefile by H. Peter Anvin
 # Adapted from code in arch/i386/boot/install.sh by Russell King
 #
-# "make install" script for the RISC-V Linux port
+# "make install" script for the RISC-V freax port
 #
 # Arguments:
 #   $1 - kernel version
@@ -24,7 +24,7 @@ if [ "$(basename $2)" = "Image.gz" ]; then
 else
 # Normal install
   echo "Installing normal kernel"
-  base=vmlinux
+  base=vmfreax
 fi
 
 if [ -f $4/$base-$1 ]; then

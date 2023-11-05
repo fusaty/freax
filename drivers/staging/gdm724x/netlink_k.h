@@ -4,7 +4,7 @@
 #ifndef _NETLINK_K_H
 #define _NETLINK_K_H
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 #include <net/sock.h>
 
 struct sock *netlink_init(int unit,

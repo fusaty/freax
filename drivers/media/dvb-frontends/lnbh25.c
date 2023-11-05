@@ -9,10 +9,10 @@
  * Copyright (C) 2014 Abylay Ospan <aospan@netup.ru>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 
 #include <media/dvb_frontend.h>
 #include "lnbh25.h"

@@ -5,10 +5,10 @@
  * Copyright 2006-2013 Solarflare Communications Inc.
  */
 
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/slab.h>
-#include <linux/rtnetlink.h>
+#include <freax/module.h>
+#include <freax/mtd/mtd.h>
+#include <freax/slab.h>
+#include <freax/rtnetlink.h>
 
 #include "net_driver.h"
 #include "efx.h"

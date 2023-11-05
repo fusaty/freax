@@ -335,11 +335,11 @@ config MTD_PCMCIA_ANONYMOUS
 
 	  If unsure, say N.
 
-config MTD_UCLINUX
-	bool "Generic uClinux RAM/ROM filesystem support"
+config MTD_UCfreax
+	bool "Generic uCfreax RAM/ROM filesystem support"
 	depends on (MTD_RAM=y || MTD_ROM=y) && (!MMU || COLDFIRE)
 	help
-	  Map driver to support image based filesystems for uClinux.
+	  Map driver to support image based filesystems for uCfreax.
 
 config MTD_INTEL_VR_NOR
 	tristate "NOR flash on Intel Vermilion Range Expansion Bus CS0"

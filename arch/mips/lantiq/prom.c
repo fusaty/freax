@@ -4,10 +4,10 @@
  * Copyright (C) 2010 John Crispin <john@phrozen.org>
  */
 
-#include <linux/export.h>
-#include <linux/clk.h>
-#include <linux/memblock.h>
-#include <linux/of_fdt.h>
+#include <freax/export.h>
+#include <freax/clk.h>
+#include <freax/memblock.h>
+#include <freax/of_fdt.h>
 
 #include <asm/bootinfo.h>
 #include <asm/time.h>

@@ -33,19 +33,19 @@
  *    Zhi Wang <zhi.a.wang@intel.com>
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/kthread.h>
-#include <linux/sched/mm.h>
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/spinlock.h>
-#include <linux/eventfd.h>
-#include <linux/mdev.h>
-#include <linux/debugfs.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/kthread.h>
+#include <freax/sched/mm.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/rbtree.h>
+#include <freax/spinlock.h>
+#include <freax/eventfd.h>
+#include <freax/mdev.h>
+#include <freax/debugfs.h>
 
-#include <linux/nospec.h>
+#include <freax/nospec.h>
 
 #include <drm/drm_edid.h>
 

@@ -3,9 +3,9 @@
  *   Copyright (C) 2018 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
-#include <linux/xarray.h>
+#include <freax/list.h>
+#include <freax/slab.h>
+#include <freax/xarray.h>
 
 #include "../transport_ipc.h"
 #include "../connection.h"

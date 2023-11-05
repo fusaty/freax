@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/include/net/ethoc.h
+ * freax/include/net/ethoc.h
  *
  * Copyright (C) 2008-2009 Avionic Design GmbH
  *
  * Written by Thierry Reding <thierry.reding@avionic-design.de>
  */
 
-#ifndef LINUX_NET_ETHOC_H
-#define LINUX_NET_ETHOC_H 1
+#ifndef freax_NET_ETHOC_H
+#define freax_NET_ETHOC_H 1
 
-#include <linux/if.h>
-#include <linux/types.h>
+#include <freax/if.h>
+#include <freax/types.h>
 
 struct ethoc_platform_data {
 	u8 hwaddr[IFHWADDRLEN];
@@ -20,4 +20,4 @@ struct ethoc_platform_data {
 	bool big_endian;
 };
 
-#endif /* !LINUX_NET_ETHOC_H */
+#endif /* !freax_NET_ETHOC_H */

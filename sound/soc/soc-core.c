@@ -17,21 +17,21 @@
 //   o Add more codecs and platforms to ensure good API coverage.
 //   o Support TDM on PCM and I2S
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/pm.h>
-#include <linux/bitops.h>
-#include <linux/debugfs.h>
-#include <linux/platform_device.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/ctype.h>
-#include <linux/slab.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/dmi.h>
-#include <linux/acpi.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/pm.h>
+#include <freax/bitops.h>
+#include <freax/debugfs.h>
+#include <freax/platform_device.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/ctype.h>
+#include <freax/slab.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/dmi.h>
+#include <freax/acpi.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

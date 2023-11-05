@@ -4,11 +4,11 @@
  * Copyright 2012 Linaro Ltd.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/err.h>
+#include <freax/clk-provider.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/err.h>
 #include "clk.h"
 
 /**

@@ -4,12 +4,12 @@
  *
  *   Lowlevel functions for Philips PSC724 Ultimate Edge
  *
- *	Copyright (c) 2012 Ondrej Zary <linux@rainbow-software.org>
+ *	Copyright (c) 2012 Ondrej Zary <freax@rainbow-software.org>
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/slab.h>
 #include <sound/core.h>
 
 #include "ice1712.h"

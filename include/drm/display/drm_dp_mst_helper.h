@@ -22,13 +22,13 @@
 #ifndef _DRM_DP_MST_HELPER_H_
 #define _DRM_DP_MST_HELPER_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <drm/display/drm_dp_helper.h>
 #include <drm/drm_atomic.h>
 
 #if IS_ENABLED(CONFIG_DRM_DEBUG_DP_MST_TOPOLOGY_REFS)
-#include <linux/stackdepot.h>
-#include <linux/timekeeping.h>
+#include <freax/stackdepot.h>
+#include <freax/timekeeping.h>
 
 enum drm_dp_mst_topology_ref_type {
 	DRM_DP_MST_TOPOLOGY_REF_GET,

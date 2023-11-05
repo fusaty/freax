@@ -3,8 +3,8 @@
  * Copyright (c) 2015 Mellanox Technologies. All rights reserved.
  */
 
-#ifndef _LINUX_NVME_RDMA_H
-#define _LINUX_NVME_RDMA_H
+#ifndef _freax_NVME_RDMA_H
+#define _freax_NVME_RDMA_H
 
 #define NVME_RDMA_MAX_QUEUE_SIZE	128
 
@@ -86,4 +86,4 @@ struct nvme_rdma_cm_rej {
 	__le16		sts;
 };
 
-#endif /* _LINUX_NVME_RDMA_H */
+#endif /* _freax_NVME_RDMA_H */

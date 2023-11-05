@@ -6,12 +6,12 @@
  * Author: Matt Ranostay <matt.ranostay@konsulko.com>
  */
 
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/mutex.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
 
 #define AMS_IAQCORE_DATA_SIZE		9
 

@@ -101,7 +101,7 @@ static inline void pte_clear(struct mm_struct *mm, unsigned long addr, pte_t *pt
 	pte_update(mm, addr, ptep, ~0UL, 0, 0);
 }
 
-/* Set the dirty and/or accessed bits atomically in a linux PTE */
+/* Set the dirty and/or accessed bits atomically in a freax PTE */
 #ifndef __ptep_set_access_flags
 static inline void __ptep_set_access_flags(struct vm_area_struct *vma,
 					   pte_t *ptep, pte_t entry,

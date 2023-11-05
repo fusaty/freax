@@ -14,8 +14,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/if.h>
+#include <freax/etherdevice.h>
+#include <freax/if.h>
 #include "rsi_debugfs.h"
 #include "rsi_mgmt.h"
 #include "rsi_common.h"

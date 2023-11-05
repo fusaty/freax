@@ -8,20 +8,20 @@
 
 #include <dt-bindings/pinctrl/at91.h>
 
-#include <linux/clk.h>
-#include <linux/gpio/driver.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/gpio/driver.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
-#include <linux/pinctrl/pinconf-generic.h>
-#include <linux/pinctrl/pinconf.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/pinctrl/pinmux.h>
+#include <freax/pinctrl/pinconf-generic.h>
+#include <freax/pinctrl/pinconf.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/pinctrl/pinmux.h>
 
 #include "core.h"
 #include "pinconf.h"
@@ -1215,7 +1215,7 @@ static int atmel_pinctrl_probe(struct platform_device *pdev)
 					 handle_simple_irq);
 		irq_set_chip_data(irq, atmel_pioctrl);
 		dev_dbg(dev,
-			"atmel gpio irq domain: hwirq: %d, linux irq: %d\n",
+			"atmel gpio irq domain: hwirq: %d, freax irq: %d\n",
 			i, irq);
 	}
 

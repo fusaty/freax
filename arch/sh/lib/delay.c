@@ -5,8 +5,8 @@
  *	Copyright (C) 1999 Niibe Yutaka & Kaz Kojima
  */
 
-#include <linux/sched.h>
-#include <linux/delay.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
 
 void __delay(unsigned long loops)
 {

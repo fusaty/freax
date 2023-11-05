@@ -5,7 +5,7 @@
  */
 
 /dts-v1/;
-#include <dt-bindings/input/linux-event-codes.h>
+#include <dt-bindings/input/freax-event-codes.h>
 #include <dt-bindings/interrupt-controller/irq.h>
 #include <dt-bindings/pwm/pwm.h>
 #include "rk3399.dtsi"
@@ -125,7 +125,7 @@
 
 		button-recovery {
 			label = "Recovery";
-			linux,code = <KEY_VENDOR>;
+			freax,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <18000>;
 		};
 	};
@@ -140,7 +140,7 @@
 			debounce-interval = <100>;
 			gpios = <&gpio0 RK_PA5 GPIO_ACTIVE_LOW>;
 			label = "GPIO Key Power";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			wakeup-source;
 		};
 	};
@@ -148,7 +148,7 @@
 	ir-receiver {
 		compatible = "gpio-ir-receiver";
 		gpios = <&gpio1 RK_PB6 GPIO_ACTIVE_LOW>;
-		linux,rc-map-name = "rc-khadas";
+		freax,rc-map-name = "rc-khadas";
 		pinctrl-names = "default";
 		pinctrl-0 = <&ir_rx>;
 	};
@@ -160,7 +160,7 @@
 
 		sys_led: led-0 {
 			label = "sys_led";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 			gpios = <&gpio0 RK_PA6 GPIO_ACTIVE_HIGH>;
 		};
 

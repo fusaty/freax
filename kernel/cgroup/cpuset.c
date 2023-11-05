@@ -18,31 +18,31 @@
  *       by Max Krasnyansky
  *
  *  This file is subject to the terms and conditions of the GNU General Public
- *  License.  See the file COPYING in the main directory of the Linux
+ *  License.  See the file COPYING in the main directory of the freax
  *  distribution for more details.
  */
 
-#include <linux/cpu.h>
-#include <linux/cpumask.h>
-#include <linux/cpuset.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mempolicy.h>
-#include <linux/mm.h>
-#include <linux/memory.h>
-#include <linux/export.h>
-#include <linux/rcupdate.h>
-#include <linux/sched.h>
-#include <linux/sched/deadline.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/task.h>
-#include <linux/security.h>
-#include <linux/spinlock.h>
-#include <linux/oom.h>
-#include <linux/sched/isolation.h>
-#include <linux/cgroup.h>
-#include <linux/wait.h>
+#include <freax/cpu.h>
+#include <freax/cpumask.h>
+#include <freax/cpuset.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mempolicy.h>
+#include <freax/mm.h>
+#include <freax/memory.h>
+#include <freax/export.h>
+#include <freax/rcupdate.h>
+#include <freax/sched.h>
+#include <freax/sched/deadline.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/task.h>
+#include <freax/security.h>
+#include <freax/spinlock.h>
+#include <freax/oom.h>
+#include <freax/sched/isolation.h>
+#include <freax/cgroup.h>
+#include <freax/wait.h>
 
 DEFINE_STATIC_KEY_FALSE(cpusets_pre_enable_key);
 DEFINE_STATIC_KEY_FALSE(cpusets_enabled_key);

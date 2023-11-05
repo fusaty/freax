@@ -8,11 +8,11 @@
  * Copyright (C) 2021-2023 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/gpio/machine.h>
-#include <linux/platform_device.h>
-#include <linux/power/bq24190_charger.h>
-#include <linux/property.h>
-#include <linux/regulator/machine.h>
+#include <freax/gpio/machine.h>
+#include <freax/platform_device.h>
+#include <freax/power/bq24190_charger.h>
+#include <freax/property.h>
+#include <freax/regulator/machine.h>
 
 #include "shared-psy-info.h"
 

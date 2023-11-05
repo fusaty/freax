@@ -4,9 +4,9 @@
  *
  * Copyright (c) 2023, Ampere Computing LLC
  */
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/topology.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/topology.h>
 
 #include "arm_cspmu.h"
 

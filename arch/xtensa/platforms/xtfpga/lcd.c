@@ -10,9 +10,9 @@
  * Copyright (C) 2015 Cadence Design Systems Inc.
  */
 
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/io.h>
 
 #include <platform/hardware.h>
 #include <platform/lcd.h>
@@ -59,7 +59,7 @@ static int __init lcd_init(void)
 	udelay(50);
 	lcd_put_byte(LCD_INSTR_ADDR, LCD_CLEAR);
 	mdelay(10);
-	lcd_disp_at_pos("XTENSA LINUX", 0);
+	lcd_disp_at_pos("XTENSA freax", 0);
 	return 0;
 }
 

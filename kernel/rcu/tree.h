@@ -6,18 +6,18 @@
  * Copyright IBM Corporation, 2008
  *
  * Author: Ingo Molnar <mingo@elte.hu>
- *	   Paul E. McKenney <paulmck@linux.ibm.com>
+ *	   Paul E. McKenney <paulmck@freax.ibm.com>
  */
 
-#include <linux/cache.h>
-#include <linux/kthread.h>
-#include <linux/spinlock.h>
-#include <linux/rtmutex.h>
-#include <linux/threads.h>
-#include <linux/cpumask.h>
-#include <linux/seqlock.h>
-#include <linux/swait.h>
-#include <linux/rcu_node_tree.h>
+#include <freax/cache.h>
+#include <freax/kthread.h>
+#include <freax/spinlock.h>
+#include <freax/rtmutex.h>
+#include <freax/threads.h>
+#include <freax/cpumask.h>
+#include <freax/seqlock.h>
+#include <freax/swait.h>
+#include <freax/rcu_node_tree.h>
 
 #include "rcu_segcblist.h"
 

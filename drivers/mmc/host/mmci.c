@@ -1,43 +1,43 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/drivers/mmc/host/mmci.c - ARM PrimeCell MMCI PL180/1 driver
+ *  freax/drivers/mmc/host/mmci.c - ARM PrimeCell MMCI PL180/1 driver
  *
  *  Copyright (C) 2003 Deep Blue Solutions, Ltd, All Rights Reserved.
  *  Copyright (C) 2010 ST-Ericsson SA
  */
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/highmem.h>
-#include <linux/log2.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/pm.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/slot-gpio.h>
-#include <linux/amba/bus.h>
-#include <linux/clk.h>
-#include <linux/scatterlist.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/dmaengine.h>
-#include <linux/dma-mapping.h>
-#include <linux/amba/mmci.h>
-#include <linux/pm_runtime.h>
-#include <linux/types.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/reset.h>
-#include <linux/gpio/consumer.h>
-#include <linux/workqueue.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/highmem.h>
+#include <freax/log2.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/pm.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/sd.h>
+#include <freax/mmc/slot-gpio.h>
+#include <freax/amba/bus.h>
+#include <freax/clk.h>
+#include <freax/scatterlist.h>
+#include <freax/of.h>
+#include <freax/regulator/consumer.h>
+#include <freax/dmaengine.h>
+#include <freax/dma-mapping.h>
+#include <freax/amba/mmci.h>
+#include <freax/pm_runtime.h>
+#include <freax/types.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/reset.h>
+#include <freax/gpio/consumer.h>
+#include <freax/workqueue.h>
 
 #include <asm/div64.h>
 #include <asm/io.h>

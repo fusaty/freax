@@ -12,7 +12,7 @@
 #define ZSTD_CLEVELS_H
 
 #define ZSTD_STATIC_LINKING_ONLY  /* ZSTD_compressionParameters  */
-#include <linux/zstd.h>
+#include <freax/zstd.h>
 
 /*-=====  Pre-defined compression levels  =====-*/
 

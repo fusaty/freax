@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
 #ifndef __MLX5_EN_ACCEL_MACSEC_H__
@@ -6,7 +6,7 @@
 
 #ifdef CONFIG_MLX5_MACSEC
 
-#include <linux/mlx5/driver.h>
+#include <freax/mlx5/driver.h>
 #include <net/macsec.h>
 #include <net/dst_metadata.h>
 #include "lib/macsec_fs.h"

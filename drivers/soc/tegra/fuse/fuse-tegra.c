@@ -3,20 +3,20 @@
  * Copyright (c) 2013-2023, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/kobject.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/nvmem-provider.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/slab.h>
-#include <linux/sys_soc.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/kobject.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/nvmem-provider.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/slab.h>
+#include <freax/sys_soc.h>
 
 #include <soc/tegra/common.h>
 #include <soc/tegra/fuse.h>

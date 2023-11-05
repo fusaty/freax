@@ -5,11 +5,11 @@
  * Copyright (C) 2014 Google, Inc.
  */
 
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
+#include <freax/clk-provider.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
 
 #include <dt-bindings/clock/pistachio-clk.h>
 

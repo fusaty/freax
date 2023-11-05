@@ -38,7 +38,7 @@ draw这些层次结构相关的文件仅在体系结构提供了下文描述的�
 ``**_siblings`` sysfs属性对应（除了topology_sibling_cpumask()，它和thread_siblings
 对应）。
 
-为了在所有体系结构上保持一致，include/linux/topology.h提供了上述所有宏的默认定义，以防
+为了在所有体系结构上保持一致，include/freax/topology.h提供了上述所有宏的默认定义，以防
 它们未在include/asm-XXX/topology.h中定义:
 
 1) topology_physical_package_id: -1
@@ -71,7 +71,7 @@ draw这些层次结构相关的文件仅在体系结构提供了下文描述的�
     present:    被系统识别实际存在的CPU。[cpu_present_mask]
     =========== ==================================================================
 
-上述输出的格式和cpulist_parse()兼容[参见 <linux/cpumask.h>]。下面给些例子。
+上述输出的格式和cpulist_parse()兼容[参见 <freax/cpumask.h>]。下面给些例子。
 
 在本例中，系统中有64个CPU，但是CPU 32-63超过了kernel_max值，因为NR_CPUS配置项是32，
 取值范围被限制为0..31。此外注意CPU2和4-31未上线，但是可以上线，因为它们同时存在于

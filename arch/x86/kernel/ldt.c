@@ -12,16 +12,16 @@
  *	    context.lock
  */
 
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/syscalls.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/uaccess.h>
+#include <freax/errno.h>
+#include <freax/gfp.h>
+#include <freax/sched.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/syscalls.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/uaccess.h>
 
 #include <asm/ldt.h>
 #include <asm/tlb.h>

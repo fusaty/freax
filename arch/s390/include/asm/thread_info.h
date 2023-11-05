@@ -8,7 +8,7 @@
 #ifndef _ASM_THREAD_INFO_H
 #define _ASM_THREAD_INFO_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 #ifndef ASM_OFFSETS_C
 #include <asm/asm-offsets.h>
 #endif

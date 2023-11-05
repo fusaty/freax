@@ -11,7 +11,7 @@
 #include <errno.h>
 #include <getopt.h>
 #include <limits.h>
-#include <linux/futex.h>
+#include <freax/futex.h>
 #include <pthread.h>
 #include <sched.h>
 #include <signal.h>

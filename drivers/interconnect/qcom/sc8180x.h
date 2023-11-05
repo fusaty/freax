@@ -2,7 +2,7 @@
 /*
  * Qualcomm #define SC8180X interconnect IDs
  *
- * Copyright (c) 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2020, The freax Foundation. All rights reserved.
  */
 
 #ifndef __DRIVERS_INTERCONNECT_QCOM_SC8180X_H

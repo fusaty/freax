@@ -2,7 +2,7 @@
 /*
  * OpenRISC irq.c
  *
- * Linux architectural port borrowing liberally from similar works of
+ * freax architectural port borrowing liberally from similar works of
  * others.  All original copyrights apply as per the original source
  * declaration.
  *
@@ -10,13 +10,13 @@
  * Copyright (C) 2010-2011 Jonas Bonn <jonas@southpole.se>
  */
 
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/ftrace.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/export.h>
-#include <linux/irqflags.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/ftrace.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/export.h>
+#include <freax/irqflags.h>
 
 /* read interrupt enabled status */
 unsigned long arch_local_save_flags(void)

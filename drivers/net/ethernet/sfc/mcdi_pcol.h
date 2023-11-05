@@ -236,7 +236,7 @@
 #define MC_CMD_ERR_ARG_OFST 4
 
 /* MC_CMD_ERR enum: Public MCDI error codes. Error codes that correspond to
- * POSIX errnos should use the same numeric values that linux does. Error codes
+ * POSIX errnos should use the same numeric values that freax does. Error codes
  * specific to Solarflare firmware should use values in the range 0x1000 -
  * 0x10ff. The range 0x2000 - 0x20ff is reserved for private error codes (see
  * MC_CMD_ERR_PRIV below).

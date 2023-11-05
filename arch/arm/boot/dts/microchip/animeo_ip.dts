@@ -56,13 +56,13 @@
 
 			usart0: serial@fffb0000 {
 				pinctrl-0 = <&pinctrl_usart0 &pinctrl_usart0_rts>;
-				linux,rs485-enabled-at-boot-time;
+				freax,rs485-enabled-at-boot-time;
 				status = "okay";
 			};
 
 			usart1: serial@fffb4000 {
 				pinctrl-0 = <&pinctrl_usart1 &pinctrl_usart1_rts>;
-				linux,rs485-enabled-at-boot-time;
+				freax,rs485-enabled-at-boot-time;
 				status = "okay";
 			};
 
@@ -149,7 +149,7 @@
 		power_green {
 			label = "power_green";
 			gpios = <&pioC 17 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		power_red {
@@ -174,21 +174,21 @@
 		key-switch-in {
 			label = "keyswitch_in";
 			gpios = <&pioB 1 GPIO_ACTIVE_HIGH>;
-			linux,code = <28>;
+			freax,code = <28>;
 			wakeup-source;
 		};
 
 		key-error-in {
 			label = "error_in";
 			gpios = <&pioB 2 GPIO_ACTIVE_HIGH>;
-			linux,code = <29>;
+			freax,code = <29>;
 			wakeup-source;
 		};
 
 		key-s {
 			label = "btn";
 			gpios = <&pioC 23 GPIO_ACTIVE_HIGH>;
-			linux,code = <31>;
+			freax,code = <31>;
 			wakeup-source;
 		};
 	};

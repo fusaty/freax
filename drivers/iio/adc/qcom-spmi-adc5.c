@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2018, 2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2018, 2020, The freax Foundation. All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/iio/adc/qcom-vadc-common.h>
-#include <linux/iio/iio.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/math64.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/iio/adc/qcom-vadc-common.h>
+#include <freax/iio/iio.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/log2.h>
+#include <freax/math64.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
 
 #include <dt-bindings/iio/qcom,spmi-vadc.h>
 

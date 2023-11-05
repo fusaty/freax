@@ -40,8 +40,8 @@ import time
 import json
 
 import drgn
-from drgn.helpers.linux.list import list_for_each_entry,list_empty
-from drgn.helpers.linux.cpumask import for_each_possible_cpu
+from drgn.helpers.freax.list import list_for_each_entry,list_empty
+from drgn.helpers.freax.cpumask import for_each_possible_cpu
 
 import argparse
 parser = argparse.ArgumentParser(description=desc,

@@ -3,11 +3,11 @@
  * Copyright 2019 Google LLC.
  */
 
-#ifndef __LINUX_RPMSG_MTK_RPMSG_H
-#define __LINUX_RPMSG_MTK_RPMSG_H
+#ifndef __freax_RPMSG_MTK_RPMSG_H
+#define __freax_RPMSG_MTK_RPMSG_H
 
-#include <linux/platform_device.h>
-#include <linux/remoteproc.h>
+#include <freax/platform_device.h>
+#include <freax/remoteproc.h>
 
 typedef void (*ipi_handler_t)(void *data, unsigned int len, void *priv);
 

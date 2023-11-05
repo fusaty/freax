@@ -6,9 +6,9 @@
 //                    Cirrus Logic International Semiconductor Ltd.
 
 #include <kunit/test.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/gpio/driver.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
 #include "cirrus_scodec.h"
 

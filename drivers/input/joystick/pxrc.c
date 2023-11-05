@@ -5,15 +5,15 @@
  * Copyright (C) 2018 Marcus Folkesson <marcus.folkesson@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/uaccess.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
-#include <linux/mutex.h>
-#include <linux/input.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/uaccess.h>
+#include <freax/usb.h>
+#include <freax/usb/input.h>
+#include <freax/mutex.h>
+#include <freax/input.h>
 
 #define PXRC_VENDOR_ID		0x1781
 #define PXRC_PRODUCT_ID		0x0898

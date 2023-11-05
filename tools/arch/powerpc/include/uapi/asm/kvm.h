@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2, as
@@ -18,12 +18,12 @@
  * Authors: Hollis Blanchard <hollisb@us.ibm.com>
  */
 
-#ifndef __LINUX_KVM_POWERPC_H
-#define __LINUX_KVM_POWERPC_H
+#ifndef __freax_KVM_POWERPC_H
+#define __freax_KVM_POWERPC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
-/* Select powerpc specific features in <linux/kvm.h> */
+/* Select powerpc specific features in <freax/kvm.h> */
 #define __KVM_HAVE_SPAPR_TCE
 #define __KVM_HAVE_PPC_SMT
 #define __KVM_HAVE_IRQCHIP
@@ -733,4 +733,4 @@ struct kvm_ppc_xive_eq {
 #define KVM_XIVE_TIMA_PAGE_OFFSET	0
 #define KVM_XIVE_ESB_PAGE_OFFSET	4
 
-#endif /* __LINUX_KVM_POWERPC_H */
+#endif /* __freax_KVM_POWERPC_H */

@@ -5,8 +5,8 @@
  * Copyright (C) 2011 Renesas Solutions Corp.
  * Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
-#include <linux/delay.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
 #include "common.h"
 #include "pipe.h"
 

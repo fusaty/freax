@@ -1,12 +1,12 @@
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
 #include <net/net_namespace.h>
 #include <net/netfilter/nf_tables.h>
-#include <linux/netfilter_ipv4.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/netfilter_bridge.h>
-#include <linux/netfilter_arp.h>
+#include <freax/netfilter_ipv4.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/netfilter_bridge.h>
+#include <freax/netfilter_arp.h>
 #include <net/netfilter/nf_tables_ipv4.h>
 #include <net/netfilter/nf_tables_ipv6.h>
 

@@ -9,12 +9,12 @@
  * Copyright 2017 Samuel Holland <samuel@sholland.org>
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/platform_data/simplefb.h>
-#include <linux/platform_device.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/platform_data/simplefb.h>
+#include <freax/platform_device.h>
 
 #include "coreboot_table.h"
 

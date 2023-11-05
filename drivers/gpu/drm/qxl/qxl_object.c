@@ -23,8 +23,8 @@
  *          Alon Levy
  */
 
-#include <linux/iosys-map.h>
-#include <linux/io-mapping.h>
+#include <freax/iosys-map.h>
+#include <freax/io-mapping.h>
 
 #include "qxl_drv.h"
 #include "qxl_object.h"

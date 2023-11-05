@@ -7,9 +7,9 @@
  * the Free Software Foundation.
  */
 
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/vmalloc.h>
 #include <net/devlink.h>
 #include "bnxt_hsi.h"
 #include "bnxt.h"

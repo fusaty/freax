@@ -10,9 +10,9 @@
  * Copyright 2010,2011 Intel Corp.
  *   Author: Huang Ying <ying.huang@intel.com>
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/llist.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/llist.h>
 
 
 /**

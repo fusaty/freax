@@ -7,9 +7,9 @@
 
 #include <asm/io.h>
 #include <asm/opal.h>
-#include <linux/debugfs.h>
-#include <linux/of.h>
-#include <linux/types.h>
+#include <freax/debugfs.h>
+#include <freax/of.h>
+#include <freax/types.h>
 #include <asm/barrier.h>
 
 #include "powernv.h"

@@ -114,13 +114,13 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/io.h>
-#include <linux/notifier.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/spinlock.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/io.h>
+#include <freax/notifier.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

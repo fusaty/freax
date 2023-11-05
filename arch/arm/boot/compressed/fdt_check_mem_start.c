@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
 
-#include <linux/kernel.h>
-#include <linux/libfdt.h>
-#include <linux/sizes.h>
+#include <freax/kernel.h>
+#include <freax/libfdt.h>
+#include <freax/sizes.h>
 #include "misc.h"
 
 static const void *get_prop(const void *fdt, const char *node_path,
@@ -50,13 +50,13 @@ static uint64_t get_val(const fdt32_t *cells, uint32_t ncells)
  *
  * Traditionally, the start address of physical memory is obtained by masking
  * the program counter.  However, this does require that this address is a
- * multiple of 128 MiB, precluding booting Linux on platforms where this
+ * multiple of 128 MiB, precluding booting freax on platforms where this
  * requirement is not fulfilled.
  * Hence validate the calculated address against the memory information in the
  * DTB, and, if out-of-range, replace it by the real start address.
  * To preserve backwards compatibility (systems reserving a block of memory
  * at the start of physical memory, kdump, ...), the traditional method is
- * used if it yields a valid address, unless the "linux,usable-memory-range"
+ * used if it yields a valid address, unless the "freax,usable-memory-range"
  * property is present.
  *
  * Return value: start address of physical memory to use
@@ -87,7 +87,7 @@ uint32_t fdt_check_mem_start(uint32_t mem_start, const void *fdt)
 	 * This property describes a limitation: memory within this range is
 	 * only valid when also described through another mechanism
 	 */
-	usable = get_prop(fdt, "/chosen", "linux,usable-memory-range",
+	usable = get_prop(fdt, "/chosen", "freax,usable-memory-range",
 			  (addr_cells + size_cells) * sizeof(fdt32_t));
 	if (usable) {
 		size = get_val(usable + addr_cells, size_cells);
@@ -110,7 +110,7 @@ uint32_t fdt_check_mem_start(uint32_t mem_start, const void *fdt)
 		if (!type || strcmp(type, "memory"))
 			continue;
 
-		reg = fdt_getprop(fdt, offset, "linux,usable-memory", &len);
+		reg = fdt_getprop(fdt, offset, "freax,usable-memory", &len);
 		if (!reg)
 			reg = fdt_getprop(fdt, offset, "reg", &len);
 		if (!reg)
@@ -160,7 +160,7 @@ uint32_t fdt_check_mem_start(uint32_t mem_start, const void *fdt)
 
 	/*
 	 * The calculated address is not usable, or was overridden by the
-	 * "linux,usable-memory-range" property.
+	 * "freax,usable-memory-range" property.
 	 * Use the lowest usable physical memory address from the DTB instead,
 	 * and make sure this is a multiple of 2 MiB for phys/virt patching.
 	 */

@@ -4,18 +4,18 @@
  * Copyright (C) 2008-2009 PetaLogix
  */
 
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/delay.h>
-#include <linux/in6.h>
-#include <linux/syscalls.h>
+#include <freax/export.h>
+#include <freax/string.h>
+#include <freax/delay.h>
+#include <freax/in6.h>
+#include <freax/syscalls.h>
 
 #include <asm/checksum.h>
 #include <asm/cacheflush.h>
-#include <linux/io.h>
+#include <freax/io.h>
 #include <asm/page.h>
-#include <linux/ftrace.h>
-#include <linux/uaccess.h>
+#include <freax/ftrace.h>
+#include <freax/uaccess.h>
 
 #ifdef CONFIG_FUNCTION_TRACER
 extern void _mcount(void);

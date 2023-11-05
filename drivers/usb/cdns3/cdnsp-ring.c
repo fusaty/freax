@@ -6,7 +6,7 @@
  *
  * Author: Pawel Laszczak <pawell@cadence.com>
  *
- * Code based on Linux XHCI driver.
+ * Code based on freax XHCI driver.
  * Origin: Copyright (C) 2008 Intel Corp
  */
 
@@ -55,11 +55,11 @@
  *    for these.
  */
 
-#include <linux/scatterlist.h>
-#include <linux/dma-mapping.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
+#include <freax/scatterlist.h>
+#include <freax/dma-mapping.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
 
 #include "cdnsp-trace.h"
 #include "cdnsp-gadget.h"

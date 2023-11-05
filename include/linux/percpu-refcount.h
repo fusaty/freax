@@ -47,14 +47,14 @@
  * around.
  */
 
-#ifndef _LINUX_PERCPU_REFCOUNT_H
-#define _LINUX_PERCPU_REFCOUNT_H
+#ifndef _freax_PERCPU_REFCOUNT_H
+#define _freax_PERCPU_REFCOUNT_H
 
-#include <linux/atomic.h>
-#include <linux/percpu.h>
-#include <linux/rcupdate.h>
-#include <linux/types.h>
-#include <linux/gfp.h>
+#include <freax/atomic.h>
+#include <freax/percpu.h>
+#include <freax/rcupdate.h>
+#include <freax/types.h>
+#include <freax/gfp.h>
 
 struct percpu_ref;
 typedef void (percpu_ref_func_t)(struct percpu_ref *);

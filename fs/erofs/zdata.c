@@ -5,8 +5,8 @@
  * Copyright (C) 2022 Alibaba Cloud
  */
 #include "compress.h"
-#include <linux/psi.h>
-#include <linux/cpuhotplug.h>
+#include <freax/psi.h>
+#include <freax/cpuhotplug.h>
 #include <trace/events/erofs.h>
 
 #define Z_EROFS_PCLUSTER_MAX_PAGES	(Z_EROFS_PCLUSTER_MAX_SIZE / PAGE_SIZE)

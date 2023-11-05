@@ -3,7 +3,7 @@
 // Copyright(c) 2021-2022 Intel Corporation. All rights reserved.
 //
 // Authors: Cezary Rojewski <cezary.rojewski@intel.com>
-//          Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+//          Amadeusz Slawinski <amadeuszx.slawinski@freax.intel.com>
 //
 // Special thanks to:
 //    Krzysztof Hejmowski <krzysztof.hejmowski@intel.com>
@@ -14,8 +14,8 @@
 // foundation of this driver
 //
 
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 #include <sound/hda_codec.h>
 #include <sound/hda_i915.h>
 #include <sound/hda_register.h>
@@ -780,6 +780,6 @@ static struct pci_driver avs_pci_driver = {
 module_pci_driver(avs_pci_driver);
 
 MODULE_AUTHOR("Cezary Rojewski <cezary.rojewski@intel.com>");
-MODULE_AUTHOR("Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>");
+MODULE_AUTHOR("Amadeusz Slawinski <amadeuszx.slawinski@freax.intel.com>");
 MODULE_DESCRIPTION("Intel cAVS sound driver");
 MODULE_LICENSE("GPL");

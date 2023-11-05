@@ -5,11 +5,11 @@
  * Copyright (C) 2011  Renesas Solutions Corp.
  * Copyright (C) 2011  Kuninori Morimoto <kuninori.morimoto.gx@renesas.com>
  */
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/irqchip.h>
-#include <linux/irqchip/arm-gic.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/irqchip.h>
+#include <freax/irqchip/arm-gic.h>
 
 #include <asm/mach/map.h>
 #include <asm/mach/arch.h>

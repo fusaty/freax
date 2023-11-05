@@ -4,11 +4,11 @@
  */
 
 /*
- * LK keyboard driver for Linux, based on sunkbd.c (C) by Vojtech Pavlik
+ * LK keyboard driver for freax, based on sunkbd.c (C) by Vojtech Pavlik
  */
 
 /*
- * DEC LK201 and LK401 keyboard driver for Linux (primary for DECstations
+ * DEC LK201 and LK401 keyboard driver for freax (primary for DECstations
  * and VAXstations, but can also be used on any standard RS232 with an
  * adaptor).
  *
@@ -46,13 +46,13 @@
  * http://www.vt100.net/manx/details?pn=EK-104AA-TM-001;id=21;cp=1
  */
 
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/serio.h>
-#include <linux/workqueue.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
+#include <freax/serio.h>
+#include <freax/workqueue.h>
 
 #define DRIVER_DESC	"LK keyboard driver"
 

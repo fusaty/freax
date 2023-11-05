@@ -9,33 +9,33 @@
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/sysctl.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/completion.h>
-#include <linux/hyperv.h>
-#include <linux/kernel_stat.h>
-#include <linux/of_address.h>
-#include <linux/clockchips.h>
-#include <linux/cpu.h>
-#include <linux/sched/isolation.h>
-#include <linux/sched/task_stack.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/sysctl.h>
+#include <freax/slab.h>
+#include <freax/acpi.h>
+#include <freax/completion.h>
+#include <freax/hyperv.h>
+#include <freax/kernel_stat.h>
+#include <freax/of_address.h>
+#include <freax/clockchips.h>
+#include <freax/cpu.h>
+#include <freax/sched/isolation.h>
+#include <freax/sched/task_stack.h>
 
-#include <linux/delay.h>
-#include <linux/panic_notifier.h>
-#include <linux/ptrace.h>
-#include <linux/screen_info.h>
-#include <linux/efi.h>
-#include <linux/random.h>
-#include <linux/kernel.h>
-#include <linux/syscore_ops.h>
-#include <linux/dma-map-ops.h>
-#include <linux/pci.h>
+#include <freax/delay.h>
+#include <freax/panic_notifier.h>
+#include <freax/ptrace.h>
+#include <freax/screen_info.h>
+#include <freax/efi.h>
+#include <freax/random.h>
+#include <freax/kernel.h>
+#include <freax/syscore_ops.h>
+#include <freax/dma-map-ops.h>
+#include <freax/pci.h>
 #include <clocksource/hyperv_timer.h>
 #include <asm/mshyperv.h>
 #include "hyperv_vmbus.h"
@@ -1183,13 +1183,13 @@ static void vmbus_force_channel_rescinded(struct vmbus_channel *channel)
 		      GFP_KERNEL | __GFP_NOFAIL);
 
 	/*
-	 * So far, these are not really used by Linux. Just set them to the
+	 * So far, these are not really used by freax. Just set them to the
 	 * reasonable values conforming to the definitions of the fields.
 	 */
 	ctx->msg.header.message_type = 1;
 	ctx->msg.header.payload_size = sizeof(*rescind);
 
-	/* These values are actually used by Linux. */
+	/* These values are actually used by freax. */
 	rescind = (struct vmbus_channel_rescind_offer *)ctx->msg.payload;
 	rescind->header.msgtype = CHANNELMSG_RESCIND_CHANNELOFFER;
 	rescind->child_relid = channel->offermsg.child_relid;
@@ -1341,7 +1341,7 @@ static int vmbus_bus_init(void)
 	/*
 	 * VMbus interrupts are best modeled as per-cpu interrupts. If
 	 * on an architecture with support for per-cpu IRQs (e.g. ARM64),
-	 * allocate a per-cpu IRQ using standard Linux kernel functionality.
+	 * allocate a per-cpu IRQ using standard freax kernel functionality.
 	 * If not on such an architecture (e.g., x86/x64), then rely on
 	 * code in the arch-specific portion of the code tree to connect
 	 * the VMbus interrupt handler.
@@ -1411,7 +1411,7 @@ err_setup:
  * @owner: owner module of the drv
  * @mod_name: module name string
  *
- * Registers the given driver with Linux through the 'driver_register()' call
+ * Registers the given driver with freax through the 'driver_register()' call
  * and sets up the hyper-v vmbus handling for this driver.
  * It will return the state of the 'driver_register()' call.
  *
@@ -1998,7 +1998,7 @@ static acpi_status vmbus_walk_resources(struct acpi_resource *res, void *ctx)
 	 * The IRQ information is needed only on ARM64, which Hyper-V
 	 * sets up in the extended format. IRQ information is present
 	 * on x86/x64 in the non-extended format but it is not used by
-	 * Linux. So don't bother checking for the non-extended format.
+	 * freax. So don't bother checking for the non-extended format.
 	 */
 	case ACPI_RESOURCE_TYPE_EXTENDED_IRQ:
 		if (!acpi_dev_resource_interrupt(res, 0, &r)) {
@@ -2007,7 +2007,7 @@ static acpi_status vmbus_walk_resources(struct acpi_resource *res, void *ctx)
 		}
 		/* ARM64 INTID for VMbus */
 		vmbus_interrupt = res->data.extended_irq.interrupts[0];
-		/* Linux IRQ number */
+		/* freax IRQ number */
 		vmbus_irq = r.start;
 		return AE_OK;
 
@@ -2646,7 +2646,7 @@ static int __init hv_acpi_init(void)
 	 * If we're on an architecture with a hardcoded hypervisor
 	 * vector (i.e. x86/x64), override the VMbus interrupt found
 	 * in the ACPI tables. Ensure vmbus_irq is not set since the
-	 * normal Linux IRQ mechanism is not used in this case.
+	 * normal freax IRQ mechanism is not used in this case.
 	 */
 #ifdef HYPERVISOR_CALLBACK_VECTOR
 	vmbus_interrupt = HYPERVISOR_CALLBACK_VECTOR;

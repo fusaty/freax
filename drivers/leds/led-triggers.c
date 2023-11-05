@@ -7,16 +7,16 @@
  * Author: Richard Purdie <rpurdie@openedhand.com>
  */
 
-#include <linux/export.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/timer.h>
-#include <linux/rwsem.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <freax/export.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/device.h>
+#include <freax/timer.h>
+#include <freax/rwsem.h>
+#include <freax/leds.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
 #include "leds.h"
 
 /*

@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/of_address.h>
-#include <linux/of_iommu.h>
-#include <linux/of_reserved_mem.h>
-#include <linux/dma-direct.h> /* for bus_dma_region */
-#include <linux/dma-map-ops.h>
-#include <linux/init.h>
-#include <linux/mod_devicetable.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/of_address.h>
+#include <freax/of_iommu.h>
+#include <freax/of_reserved_mem.h>
+#include <freax/dma-direct.h> /* for bus_dma_region */
+#include <freax/dma-map-ops.h>
+#include <freax/init.h>
+#include <freax/mod_devicetable.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
 
 #include <asm/errno.h>
 #include "of_private.h"

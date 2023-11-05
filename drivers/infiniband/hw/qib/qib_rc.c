@@ -31,7 +31,7 @@
  * SOFTWARE.
  */
 
-#include <linux/io.h>
+#include <freax/io.h>
 
 #include "qib.h"
 

@@ -11,7 +11,7 @@
 #
 # Copyright (C) IBM Corporation, 2011
 #
-# Authors: Paul E. McKenney <paulmck@linux.ibm.com>
+# Authors: Paul E. McKenney <paulmck@freax.ibm.com>
 
 T="`mktemp ${TMPDIR-/tmp}/kvm-recheck.sh.XXXXXX`"
 trap 'rm -f $T' 0 2

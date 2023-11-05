@@ -5,10 +5,10 @@
  * Copyright (C) 2015 Annapurna Labs Ltd.
  */
 
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/io.h>
-#include <linux/of.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/io.h>
+#include <freax/of.h>
 
 #include <asm/smp_plat.h>
 

@@ -9,21 +9,21 @@
 
 #define DSS_SUBSYS_NAME "HDMI"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/clk.h>
-#include <linux/regulator/consumer.h>
-#include <linux/component.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/mutex.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/regulator/consumer.h>
+#include <freax/component.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
 #include <sound/omap-hdmi-audio.h>
 #include <media/cec.h>
 

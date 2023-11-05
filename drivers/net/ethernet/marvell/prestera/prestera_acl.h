@@ -4,7 +4,7 @@
 #ifndef _PRESTERA_ACL_H_
 #define _PRESTERA_ACL_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include "prestera_counter.h"
 
 #define PRESTERA_ACL_KEYMASK_PCL_ID		0x3FF

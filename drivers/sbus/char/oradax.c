@@ -21,12 +21,12 @@
  * See Documentation/arch/sparc/oradax/oracle-dax.rst for more details.
  */
 
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/cdev.h>
-#include <linux/slab.h>
-#include <linux/mm.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/cdev.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
 
 #include <asm/hypervisor.h>
 #include <asm/mdesc.h>

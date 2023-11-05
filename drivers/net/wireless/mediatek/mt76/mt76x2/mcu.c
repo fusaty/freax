@@ -4,9 +4,9 @@
  * Copyright (C) 2018 Lorenzo Bianconi <lorenzo.bianconi83@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/firmware.h>
-#include <linux/delay.h>
+#include <freax/kernel.h>
+#include <freax/firmware.h>
+#include <freax/delay.h>
 
 #include "mt76x2.h"
 #include "mcu.h"

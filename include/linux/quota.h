@@ -29,24 +29,24 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  */
-#ifndef _LINUX_QUOTA_
-#define _LINUX_QUOTA_
+#ifndef _freax_QUOTA_
+#define _freax_QUOTA_
 
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/rwsem.h>
-#include <linux/spinlock.h>
-#include <linux/wait.h>
-#include <linux/percpu_counter.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/rwsem.h>
+#include <freax/spinlock.h>
+#include <freax/wait.h>
+#include <freax/percpu_counter.h>
 
-#include <linux/dqblk_xfs.h>
-#include <linux/dqblk_v1.h>
-#include <linux/dqblk_v2.h>
+#include <freax/dqblk_xfs.h>
+#include <freax/dqblk_v1.h>
+#include <freax/dqblk_v2.h>
 
-#include <linux/atomic.h>
-#include <linux/uidgid.h>
-#include <linux/projid.h>
-#include <uapi/linux/quota.h>
+#include <freax/atomic.h>
+#include <freax/uidgid.h>
+#include <freax/projid.h>
+#include <uapi/freax/quota.h>
 
 #undef USRQUOTA
 #undef GRPQUOTA

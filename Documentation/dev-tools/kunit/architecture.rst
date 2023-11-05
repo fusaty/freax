@@ -78,7 +78,7 @@ The KUnit executor can list and run built-in KUnit tests on boot.
 The Test suites are stored in a linker section
 called ``.kunit_test_suites``. For the code, see ``KUNIT_TABLE()`` macro
 definition in
-`include/asm-generic/vmlinux.lds.h <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/asm-generic/vmlinux.lds.h?h=v6.0#n950>`_.
+`include/asm-generic/vmfreax.lds.h <https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/include/asm-generic/vmfreax.lds.h?h=v6.0#n950>`_.
 The linker section consists of an array of pointers to
 ``struct kunit_suite``, and is populated by the ``kunit_test_suites()``
 macro. The KUnit executor iterates over the linker section array in order to
@@ -92,7 +92,7 @@ run all the tests that are compiled into the kernel.
 On the kernel boot, the KUnit executor uses the start and end addresses
 of this section to iterate over and run all tests. For the implementation of the
 executor, see
-`lib/kunit/executor.c <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/lib/kunit/executor.c>`_.
+`lib/kunit/executor.c <https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/lib/kunit/executor.c>`_.
 When built as a module, the ``kunit_test_suites()`` macro defines a
 ``module_init()`` function, which runs all the tests in the compilation
 unit instead of utilizing the executor.
@@ -100,7 +100,7 @@ unit instead of utilizing the executor.
 In KUnit tests, some error classes do not affect other tests
 or parts of the kernel, each KUnit case executes in a separate thread
 context. See the ``kunit_try_catch_run()`` function in
-`lib/kunit/try-catch.c <https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/lib/kunit/try-catch.c?h=v5.15#n58>`_.
+`lib/kunit/try-catch.c <https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/lib/kunit/try-catch.c?h=v5.15#n58>`_.
 
 Assertion Macros
 ----------------
@@ -185,7 +185,7 @@ Documentation/dev-tools/kunit/run_manual.rst) or use ``kunit_tool``
   To build a KUnit kernel from the current ``.config``, you can use the
   ``build`` argument: ``./tools/testing/kunit/kunit.py build``.
 - ``exec`` command executes kernel results either directly (using
-  User-mode Linux configuration), or through an emulator such
+  User-mode freax configuration), or through an emulator such
   as QEMU. It reads results from the log using standard
   output (stdout), and passes them to ``parse`` to be parsed.
   If you already have built a kernel with built-in KUnit tests,

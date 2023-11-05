@@ -8,8 +8,8 @@
  * Author: Shyam Sundar S K <Shyam-sundar.S-k@amd.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/workqueue.h>
+#include <freax/acpi.h>
+#include <freax/workqueue.h>
 #include "pmf.h"
 
 static struct auto_mode_mode_config config_store;

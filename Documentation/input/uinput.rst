@@ -16,7 +16,7 @@ Interface
 
 ::
 
-  linux/uinput.h
+  freax/uinput.h
 
 The uinput header defines ioctls to create, set up, and destroy virtual
 devices.
@@ -43,7 +43,7 @@ the sake of simplicity.
 
 .. code-block:: c
 
-   #include <linux/uinput.h>
+   #include <freax/uinput.h>
 
    void emit(int fd, int type, int code, int val)
    {
@@ -117,7 +117,7 @@ mouse.
 
 .. code-block:: c
 
-   #include <linux/uinput.h>
+   #include <freax/uinput.h>
 
    /* emit function is identical to of the first example */
 
@@ -186,7 +186,7 @@ but interact with uinput via ioctl calls, or use libevdev.
 
 .. code-block:: c
 
-   #include <linux/uinput.h>
+   #include <freax/uinput.h>
 
    /* emit function is identical to of the first example */
 

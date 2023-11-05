@@ -7,14 +7,14 @@
  * Copyright (C) 2002, 2004 Oracle.  All rights reserved.
  */
 
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/swap.h>
-#include <linux/quotaops.h>
-#include <linux/blkdev.h>
-#include <linux/sched/signal.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/highmem.h>
+#include <freax/swap.h>
+#include <freax/quotaops.h>
+#include <freax/blkdev.h>
+#include <freax/sched/signal.h>
 
 #include <cluster/masklog.h>
 

@@ -7,15 +7,15 @@
  *  Based on corgi_bl.c by Richard Purdie and kb3886 driver by Robert Woerle
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/mutex.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/dmi.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/mutex.h>
+#include <freax/fb.h>
+#include <freax/backlight.h>
+#include <freax/delay.h>
+#include <freax/dmi.h>
 
 #define KB3886_PARENT 0x64
 #define KB3886_IO 0x60

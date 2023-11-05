@@ -2,7 +2,7 @@
 #ifndef __ASM_S390_MACCESS_H
 #define __ASM_S390_MACCESS_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define MEMCPY_REAL_SIZE	PAGE_SIZE
 #define MEMCPY_REAL_MASK	PAGE_MASK

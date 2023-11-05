@@ -7,14 +7,14 @@
  * Copyright (C) 2020 Lubomir Rintel <lkundrak@v3.sk>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/of_address.h>
-#include <linux/clk.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/of_address.h>
+#include <freax/clk.h>
 
 #include <dt-bindings/clock/marvell,mmp2.h>
 #include <dt-bindings/power/marvell,mmp2.h>

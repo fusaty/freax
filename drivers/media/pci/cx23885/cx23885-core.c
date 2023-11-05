@@ -2,23 +2,23 @@
 /*
  *  Driver for the Conexant CX23885 PCIe bridge
  *
- *  Copyright (c) 2006 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2006 Steven Toth <stoth@freaxtv.org>
  */
 
 #include "cx23885.h"
 
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kmod.h>
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kmod.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
 #include <asm/div64.h>
-#include <linux/firmware.h>
+#include <freax/firmware.h>
 
 #include "cimax2.h"
 #include "altera-ci.h"
@@ -28,7 +28,7 @@
 #include "cx23885-input.h"
 
 MODULE_DESCRIPTION("Driver for cx23885 based TV cards");
-MODULE_AUTHOR("Steven Toth <stoth@linuxtv.org>");
+MODULE_AUTHOR("Steven Toth <stoth@freaxtv.org>");
 MODULE_LICENSE("GPL");
 MODULE_VERSION(CX23885_VERSION);
 

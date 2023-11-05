@@ -2,13 +2,13 @@
 #ifndef __ASM_SH_SMP_H
 #define __ASM_SH_SMP_H
 
-#include <linux/bitops.h>
-#include <linux/cpumask.h>
+#include <freax/bitops.h>
+#include <freax/cpumask.h>
 #include <asm/smp-ops.h>
 
 #ifdef CONFIG_SMP
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/current.h>
 #include <asm/percpu.h>
 

@@ -478,7 +478,7 @@
 			label = "Power";
 			interrupt-parent = <&pmic>;
 			interrupts = <2 0>;
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			debounce-interval = <100>;
 			wakeup-source;
 		};
@@ -486,14 +486,14 @@
 		key-volume-down {
 			label = "Volume Down";
 			gpios = <&gpio TEGRA_GPIO(R, 0) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			debounce-interval = <10>;
 		};
 
 		key-volume-up {
 			label = "Volume Up";
 			gpios = <&gpio TEGRA_GPIO(R, 1) GPIO_ACTIVE_LOW>;
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			debounce-interval = <10>;
 		};
 	};

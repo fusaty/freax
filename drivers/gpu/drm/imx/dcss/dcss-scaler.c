@@ -5,8 +5,8 @@
  * Scaling algorithms were contributed by Dzung Hoang <dzung.hoang@nxp.com>
  */
 
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/slab.h>
 
 #include "dcss-dev.h"
 

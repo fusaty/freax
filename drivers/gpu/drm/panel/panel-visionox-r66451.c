@@ -1,12 +1,12 @@
 //SPDX-License-Identifier: GPL-2.0-only
 //Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
 
-#include <linux/backlight.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
+#include <freax/backlight.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regulator/consumer.h>
 
 #include <drm/drm_mipi_dsi.h>
 #include <drm/drm_probe_helper.h>

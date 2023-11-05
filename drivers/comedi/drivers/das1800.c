@@ -3,7 +3,7 @@
  * Comedi driver for Keithley DAS-1700/DAS-1800 series boards
  * Copyright (C) 2000 Frank Mori Hess <fmhess@users.sourceforge.net>
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 2000 David A. Schleef <ds@schleef.org>
  */
 
@@ -69,13 +69,13 @@
  * If you need it, send me (Frank Hess) an email.
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/comedi/comedidev.h>
-#include <linux/comedi/comedi_8254.h>
-#include <linux/comedi/comedi_isadma.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/comedi/comedidev.h>
+#include <freax/comedi/comedi_8254.h>
+#include <freax/comedi/comedi_isadma.h>
 
 /* misc. defines */
 #define DAS1800_SIZE           16	/* uses 16 io addresses */

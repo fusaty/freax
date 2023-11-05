@@ -3,8 +3,8 @@
  * Copyright (c) 2021 MediaTek Inc.
  */
 
-#ifndef __LINUX_REGULATOR_MT6315_H
-#define __LINUX_REGULATOR_MT6315_H
+#ifndef __freax_REGULATOR_MT6315_H
+#define __freax_REGULATOR_MT6315_H
 
 #define MT6315_RP	3
 #define MT6315_PP	6
@@ -41,4 +41,4 @@ enum {
 #define PROTECTION_KEY_H			0x9C
 #define PROTECTION_KEY				0xEA
 
-#endif /* __LINUX_REGULATOR_MT6315_H */
+#endif /* __freax_REGULATOR_MT6315_H */

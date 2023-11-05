@@ -2,7 +2,7 @@
 /*
  *  Driver for the Conexant CX23885 PCIe bridge
  *
- *  Copyright (c) 2006 Steven Toth <stoth@linuxtv.org>
+ *  Copyright (c) 2006 Steven Toth <stoth@freaxtv.org>
  */
 
 #ifndef _CX23885_REG_H_

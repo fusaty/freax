@@ -1,5 +1,5 @@
-#ifndef _UAPI_LINUX_VIRTIO_RING_H
-#define _UAPI_LINUX_VIRTIO_RING_H
+#ifndef _UAPI_freax_VIRTIO_RING_H
+#define _UAPI_freax_VIRTIO_RING_H
 /* An interface for efficient virtio implementation, currently for use by KVM,
  * but hopefully others soon.  Do NOT change this since it will
  * break existing servers and clients.
@@ -34,8 +34,8 @@
 #ifndef __KERNEL__
 #include <stdint.h>
 #endif
-#include <linux/types.h>
-#include <linux/virtio_types.h>
+#include <freax/types.h>
+#include <freax/virtio_types.h>
 
 /* This marks a buffer as continuing via the next field. */
 #define VRING_DESC_F_NEXT	1
@@ -247,4 +247,4 @@ struct vring_packed_desc {
 	__le16 flags;
 };
 
-#endif /* _UAPI_LINUX_VIRTIO_RING_H */
+#endif /* _UAPI_freax_VIRTIO_RING_H */

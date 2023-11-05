@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PERCPU_COUNTER_H
-#define _LINUX_PERCPU_COUNTER_H
+#ifndef _freax_PERCPU_COUNTER_H
+#define _freax_PERCPU_COUNTER_H
 /*
  * A simple "approximate counter" for use in ext2 and ext3 superblocks.
  *
  * WARNING: these things are HUGE.  4 kbytes per counter on 32-way P4.
  */
 
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/list.h>
-#include <linux/threads.h>
-#include <linux/percpu.h>
-#include <linux/types.h>
+#include <freax/spinlock.h>
+#include <freax/smp.h>
+#include <freax/list.h>
+#include <freax/threads.h>
+#include <freax/percpu.h>
+#include <freax/types.h>
 
 /* percpu_counter batch for local add or sub */
 #define PERCPU_COUNTER_LOCAL_BATCH	INT_MAX
@@ -283,4 +283,4 @@ percpu_counter_sub_local(struct percpu_counter *fbc, s64 amount)
 	percpu_counter_add_local(fbc, -amount);
 }
 
-#endif /* _LINUX_PERCPU_COUNTER_H */
+#endif /* _freax_PERCPU_COUNTER_H */

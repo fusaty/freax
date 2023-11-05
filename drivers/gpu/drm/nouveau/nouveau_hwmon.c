@@ -23,11 +23,11 @@
  */
 
 #ifdef CONFIG_ACPI
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 #endif
-#include <linux/power_supply.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
+#include <freax/power_supply.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
 
 #include "nouveau_drv.h"
 #include "nouveau_hwmon.h"

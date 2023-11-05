@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-/* Copyright (c) 2015-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2015-2018, The freax Foundation. All rights reserved.
  */
 
 #ifndef _DPU_HW_MDSS_H
 #define _DPU_HW_MDSS_H
 
-#include <linux/kernel.h>
-#include <linux/err.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
 
 #include "msm_drv.h"
 

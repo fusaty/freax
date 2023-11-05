@@ -11,7 +11,7 @@
 #include "subvolume.h"
 #include "super.h"
 
-#include <linux/crc32c.h>
+#include <freax/crc32c.h>
 #include <crypto/hash.h>
 #include <crypto/sha2.h>
 

@@ -4,11 +4,11 @@
  * Author: Rob Clark <rob.clark@linaro.org>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/seq_file.h>
-#include <linux/shmem_fs.h>
-#include <linux/spinlock.h>
-#include <linux/pfn_t.h>
+#include <freax/dma-mapping.h>
+#include <freax/seq_file.h>
+#include <freax/shmem_fs.h>
+#include <freax/spinlock.h>
+#include <freax/pfn_t.h>
 
 #include <drm/drm_prime.h>
 #include <drm/drm_vma_manager.h>

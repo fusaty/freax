@@ -10,15 +10,15 @@
 
 #define pr_fmt(fmt)	"ACPI: IORT: " fmt
 
-#include <linux/acpi_iort.h>
-#include <linux/bitfield.h>
-#include <linux/iommu.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/dma-map-ops.h>
+#include <freax/acpi_iort.h>
+#include <freax/bitfield.h>
+#include <freax/iommu.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/dma-map-ops.h>
 #include "init.h"
 
 #define IORT_TYPE_MASK(type)	(1 << (type))

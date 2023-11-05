@@ -15,16 +15,16 @@
 
   ======================================================================*/
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/init.h>
-#include <linux/cpufreq.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/soc/pxa/cpu.h>
-#include <linux/soc/pxa/smemc.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/init.h>
+#include <freax/cpufreq.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/platform_device.h>
+#include <freax/soc/pxa/cpu.h>
+#include <freax/soc/pxa/smemc.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -359,6 +359,6 @@ fs_initcall(pxa2xx_pcmcia_init);
 module_exit(pxa2xx_pcmcia_exit);
 
 MODULE_AUTHOR("Stefan Eletzhofer <stefan.eletzhofer@inquant.de> and Ian Molton <spyro@f2s.com>");
-MODULE_DESCRIPTION("Linux PCMCIA Card Services: PXA2xx core socket driver");
+MODULE_DESCRIPTION("freax PCMCIA Card Services: PXA2xx core socket driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS("platform:pxa2xx-pcmcia");

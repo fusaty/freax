@@ -32,7 +32,7 @@
 #ifndef _VMWGFX_REG_H_
 #define _VMWGFX_REG_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct svga_guest_mem_descriptor {
 	u32 ppn;

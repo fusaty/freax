@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/arch/arm/kernel/entry-armv.S
+ *  freax/arch/arm/kernel/entry-armv.S
  *
  *  Copyright (C) 1996,1997,1998 Russell King.
- *  ARM700 fix by Matthew Godbolt (linux-user@willothewisp.demon.co.uk)
+ *  ARM700 fix by Matthew Godbolt (freax-user@willothewisp.demon.co.uk)
  *  nommu support by Hyok S. Choi (hyok.choi@samsung.com)
  *
  *  Low-level vector interface routines
@@ -12,7 +12,7 @@
  *  that causes it to save wrong values...  Be aware!
  */
 
-#include <linux/init.h>
+#include <freax/init.h>
 
 #include <asm/assembler.h>
 #include <asm/page.h>
@@ -145,7 +145,7 @@ ENDPROC(__und_invalid)
  * SVC mode handlers
  */
 
-#if defined(CONFIG_AEABI) && (__LINUX_ARM_ARCH__ >= 5)
+#if defined(CONFIG_AEABI) && (__freax_ARM_ARCH__ >= 5)
 #define SPFIX(code...) code
 #else
 #define SPFIX(code...)
@@ -346,7 +346,7 @@ ENDPROC(__fiq_abt)
  * EABI note: sp_svc is always 64-bit aligned here, so should PT_REGS_SIZE
  */
 
-#if defined(CONFIG_AEABI) && (__LINUX_ARM_ARCH__ >= 5) && (PT_REGS_SIZE & 7)
+#if defined(CONFIG_AEABI) && (__freax_ARM_ARCH__ >= 5) && (PT_REGS_SIZE & 7)
 #error "sizeof(struct pt_regs) must be a multiple of 8"
 #endif
 
@@ -727,7 +727,7 @@ kuser_cmpxchg64_fixup:
 	subs	r8, r4, r7
 	rsbscs	r8, r8, #(2b - 1b)
 	strcs	r7, [sp, #S_PC]
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 	bcc	kuser_cmpxchg32_fixup
 #endif
 	ret	lr
@@ -754,7 +754,7 @@ __kuser_memory_barrier:				@ 0xffff0fa0
 
 __kuser_cmpxchg:				@ 0xffff0fc0
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 
 #ifdef CONFIG_MMU
 

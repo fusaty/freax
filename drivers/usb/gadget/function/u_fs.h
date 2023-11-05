@@ -13,11 +13,11 @@
 #ifndef U_FFS_H
 #define U_FFS_H
 
-#include <linux/usb/composite.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/refcount.h>
+#include <freax/usb/composite.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
+#include <freax/refcount.h>
 
 #ifdef VERBOSE_DEBUG
 #ifndef pr_vdebug

@@ -6,37 +6,37 @@
  *
  * Author: dmitry pervushin <dimka@embeddedalley.com>
  *
- * Copyright 2014 Oleksij Rempel <linux@rempel-privat.de>
+ * Copyright 2014 Oleksij Rempel <freax@rempel-privat.de>
  *	Provide Alphascale ASM9260 support.
  * Copyright 2008-2010 Freescale Semiconductor, Inc.
  * Copyright 2008 Embedded Alley Solutions, Inc All Rights Reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/tty.h>
-#include <linux/tty_driver.h>
-#include <linux/tty_flip.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/device.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/tty.h>
+#include <freax/tty_driver.h>
+#include <freax/tty_flip.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/platform_device.h>
+#include <freax/device.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/err.h>
-#include <linux/irq.h>
+#include <freax/gpio/consumer.h>
+#include <freax/err.h>
+#include <freax/irq.h>
 #include "serial_mctrl_gpio.h"
 
 #define MXS_AUART_PORTS 5

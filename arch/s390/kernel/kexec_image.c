@@ -4,12 +4,12 @@
  *
  * Copyright IBM Corp. 2018
  *
- * Author(s): Philipp Rudo <prudo@linux.vnet.ibm.com>
+ * Author(s): Philipp Rudo <prudo@freax.vnet.ibm.com>
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/kexec.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/kexec.h>
 #include <asm/ipl.h>
 #include <asm/setup.h>
 

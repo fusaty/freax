@@ -2,13 +2,13 @@
 /*
  * Header File for Altera SPI Driver.
  */
-#ifndef __LINUX_SPI_ALTERA_H
-#define __LINUX_SPI_ALTERA_H
+#ifndef __freax_SPI_ALTERA_H
+#define __freax_SPI_ALTERA_H
 
-#include <linux/interrupt.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
-#include <linux/types.h>
+#include <freax/interrupt.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
+#include <freax/types.h>
 
 #define ALTERA_SPI_MAX_CS		32
 
@@ -47,4 +47,4 @@ struct altera_spi {
 
 extern irqreturn_t altera_spi_irq(int irq, void *dev);
 extern void altera_spi_init_host(struct spi_controller *host);
-#endif /* __LINUX_SPI_ALTERA_H */
+#endif /* __freax_SPI_ALTERA_H */

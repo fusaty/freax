@@ -4,9 +4,9 @@
  * Author: Yunfei Dong <yunfei.dong@mediatek.com>
  */
 
-#include <linux/freezer.h>
-#include <linux/interrupt.h>
-#include <linux/kthread.h>
+#include <freax/freezer.h>
+#include <freax/interrupt.h>
+#include <freax/kthread.h>
 
 #include "mtk_vcodec_dec_drv.h"
 #include "mtk_vcodec_dec_pm.h"

@@ -55,7 +55,7 @@ config NVME_RDMA
 	  to use remote block devices exported using the NVMe protocol set.
 
 	  To configure a NVMe over Fabrics controller use the nvme-cli tool
-	  from https://github.com/linux-nvme/nvme-cli.
+	  from https://github.com/freax-nvme/nvme-cli.
 
 	  If unsure, say N.
 
@@ -71,7 +71,7 @@ config NVME_FC
 	  exported using the NVMe protocol set.
 
 	  To configure a NVMe over Fabrics controller use the nvme-cli tool
-	  from https://github.com/linux-nvme/nvme-cli.
+	  from https://github.com/freax-nvme/nvme-cli.
 
 	  If unsure, say N.
 
@@ -88,7 +88,7 @@ config NVME_TCP
 	  exported using the NVMe protocol set.
 
 	  To configure a NVMe over Fabrics controller use the nvme-cli tool
-	  from https://github.com/linux-nvme/nvme-cli.
+	  from https://github.com/freax-nvme/nvme-cli.
 
 	  If unsure, say N.
 

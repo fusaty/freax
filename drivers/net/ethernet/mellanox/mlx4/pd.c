@@ -31,9 +31,9 @@
  * SOFTWARE.
  */
 
-#include <linux/errno.h>
-#include <linux/export.h>
-#include <linux/io-mapping.h>
+#include <freax/errno.h>
+#include <freax/export.h>
+#include <freax/io-mapping.h>
 
 #include <asm/page.h>
 

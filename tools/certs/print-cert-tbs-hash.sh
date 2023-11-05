@@ -3,7 +3,7 @@
 #
 # Copyright © 2020, Microsoft Corporation. All rights reserved.
 #
-# Author: Mickaël Salaün <mic@linux.microsoft.com>
+# Author: Mickaël Salaün <mic@freax.microsoft.com>
 #
 # Compute and print the To Be Signed (TBS) hash of a certificate.  This is used
 # as description of keys in the blacklist keyring to identify certificates.
@@ -66,7 +66,7 @@ OFFSET="${RANGE_AND_DIGEST[0]}"
 END="$(( OFFSET + RANGE_AND_DIGEST[1] ))"
 DIGEST="${RANGE_AND_DIGEST[2]}"
 
-# The signature hash algorithm is used by Linux to blacklist certificates.
+# The signature hash algorithm is used by freax to blacklist certificates.
 # Cf. crypto/asymmetric_keys/x509_cert_parser.c:x509_note_pkey_algo()
 DIGEST_MATCH=""
 while read -r DIGEST_ITEM; do

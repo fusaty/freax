@@ -6,7 +6,7 @@
 #ifndef __INTEL_PXP_SESSION_H__
 #define __INTEL_PXP_SESSION_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct intel_pxp;
 

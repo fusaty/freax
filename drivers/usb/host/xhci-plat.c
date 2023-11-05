@@ -5,20 +5,20 @@
  * Copyright (C) 2012 Texas Instruments Incorporated - https://www.ti.com
  * Author: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  *
- * A lot of code borrowed from the Linux xHCI driver.
+ * A lot of code borrowed from the freax xHCI driver.
  */
 
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/usb/phy.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
-#include <linux/usb/of.h>
-#include <linux/reset.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/usb/phy.h>
+#include <freax/slab.h>
+#include <freax/acpi.h>
+#include <freax/usb/of.h>
+#include <freax/reset.h>
 
 #include "xhci.h"
 #include "xhci-plat.h"

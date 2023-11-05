@@ -5,18 +5,18 @@
 // Copyright 2011 Wolfson Microelectronics plc
 //	Mark Brown <broonie@opensource.wolfsonmicro.com>
 
-#include <linux/export.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio/machine.h>
+#include <freax/export.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/spi/spi.h>
+#include <freax/gpio/machine.h>
 
-#include <linux/mfd/wm831x/irq.h>
-#include <linux/mfd/wm831x/gpio.h>
-#include <linux/mfd/wm8994/pdata.h>
-#include <linux/mfd/arizona/pdata.h>
+#include <freax/mfd/wm831x/irq.h>
+#include <freax/mfd/wm831x/gpio.h>
+#include <freax/mfd/wm8994/pdata.h>
+#include <freax/mfd/arizona/pdata.h>
 
-#include <linux/regulator/machine.h>
+#include <freax/regulator/machine.h>
 
 #include <sound/wm0010.h>
 #include <sound/wm2200.h>
@@ -25,7 +25,7 @@
 #include <sound/wm8962.h>
 #include <sound/wm9081.h>
 
-#include <linux/platform_data/spi-s3c64xx.h>
+#include <freax/platform_data/spi-s3c64xx.h>
 
 #include "cpu.h"
 #include "irqs.h"

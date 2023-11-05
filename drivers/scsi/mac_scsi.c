@@ -14,14 +14,14 @@
  * Copyright 1995, Russell King
  */
 
-#include <linux/delay.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/ioport.h>
-#include <linux/init.h>
-#include <linux/blkdev.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <freax/delay.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/ioport.h>
+#include <freax/init.h>
+#include <freax/blkdev.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
 
 #include <asm/hwtest.h>
 #include <asm/io.h>
@@ -99,7 +99,7 @@ __setup("mac5380=", mac_scsi_setup);
  * specify the number of bytes between the delays expected from a SCSI target.
  * This allows the operating system to "prevent bus errors when a target fails
  * to deliver the next byte within the processor bus error timeout period."
- * Linux SCSI drivers lack knowledge of the timing behaviour of SCSI targets
+ * freax SCSI drivers lack knowledge of the timing behaviour of SCSI targets
  * so bus errors are unavoidable.
  *
  * If a MOVE.B instruction faults, we assume that zero bytes were transferred

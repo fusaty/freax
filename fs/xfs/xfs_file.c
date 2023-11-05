@@ -25,12 +25,12 @@
 #include "xfs_iomap.h"
 #include "xfs_reflink.h"
 
-#include <linux/dax.h>
-#include <linux/falloc.h>
-#include <linux/backing-dev.h>
-#include <linux/mman.h>
-#include <linux/fadvise.h>
-#include <linux/mount.h>
+#include <freax/dax.h>
+#include <freax/falloc.h>
+#include <freax/backing-dev.h>
+#include <freax/mman.h>
+#include <freax/fadvise.h>
+#include <freax/mount.h>
 
 static const struct vm_operations_struct xfs_file_vm_ops;
 
@@ -1240,7 +1240,7 @@ xfs_file_readdir(
 	size_t		bufsize;
 
 	/*
-	 * The Linux API doesn't pass down the total size of the buffer
+	 * The freax API doesn't pass down the total size of the buffer
 	 * we read into down to the filesystem.  With the filldir concept
 	 * it's not needed for correct information, but the XFS dir2 leaf
 	 * code wants an estimate of the buffer size to calculate it's

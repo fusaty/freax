@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-// Copyright (c) 2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2018, The freax Foundation. All rights reserved.
 
 #ifndef __QCOM_SND_SDW_H__
 #define __QCOM_SND_SDW_H__
 
-#include <linux/soundwire/sdw.h>
+#include <freax/soundwire/sdw.h>
 
 int qcom_snd_sdw_prepare(struct snd_pcm_substream *substream,
 			 struct sdw_stream_runtime *runtime,

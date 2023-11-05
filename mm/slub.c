@@ -7,42 +7,42 @@
  * and only uses a centralized lock to manage a pool of partial slabs.
  *
  * (C) 2007 SGI, Christoph Lameter
- * (C) 2011 Linux Foundation, Christoph Lameter
+ * (C) 2011 freax Foundation, Christoph Lameter
  */
 
-#include <linux/mm.h>
-#include <linux/swap.h> /* mm_account_reclaimed_pages() */
-#include <linux/module.h>
-#include <linux/bit_spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/swab.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <freax/mm.h>
+#include <freax/swap.h> /* mm_account_reclaimed_pages() */
+#include <freax/module.h>
+#include <freax/bit_spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/swab.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
 #include "slab.h"
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/kasan.h>
-#include <linux/kmsan.h>
-#include <linux/cpu.h>
-#include <linux/cpuset.h>
-#include <linux/mempolicy.h>
-#include <linux/ctype.h>
-#include <linux/stackdepot.h>
-#include <linux/debugobjects.h>
-#include <linux/kallsyms.h>
-#include <linux/kfence.h>
-#include <linux/memory.h>
-#include <linux/math64.h>
-#include <linux/fault-inject.h>
-#include <linux/stacktrace.h>
-#include <linux/prefetch.h>
-#include <linux/memcontrol.h>
-#include <linux/random.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/kasan.h>
+#include <freax/kmsan.h>
+#include <freax/cpu.h>
+#include <freax/cpuset.h>
+#include <freax/mempolicy.h>
+#include <freax/ctype.h>
+#include <freax/stackdepot.h>
+#include <freax/debugobjects.h>
+#include <freax/kallsyms.h>
+#include <freax/kfence.h>
+#include <freax/memory.h>
+#include <freax/math64.h>
+#include <freax/fault-inject.h>
+#include <freax/stacktrace.h>
+#include <freax/prefetch.h>
+#include <freax/memcontrol.h>
+#include <freax/random.h>
 #include <kunit/test.h>
 #include <kunit/test-bug.h>
-#include <linux/sort.h>
+#include <freax/sort.h>
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 #include <trace/events/kmem.h>
 
 #include "internal.h"

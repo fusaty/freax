@@ -3,9 +3,9 @@
  *   Copyright (C) Tino Reichardt, 2012
  */
 
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/blkdev.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/blkdev.h>
 
 #include "jfs_incore.h"
 #include "jfs_superblock.h"

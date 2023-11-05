@@ -31,25 +31,25 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/syscalls.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/signal.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/highmem.h>
-#include <linux/ptrace.h>
-#include <linux/audit.h>
-#include <linux/stddef.h>
-#include <linux/slab.h>
-#include <linux/security.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/syscalls.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/kernel.h>
+#include <freax/signal.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/highmem.h>
+#include <freax/ptrace.h>
+#include <freax/audit.h>
+#include <freax/stddef.h>
+#include <freax/slab.h>
+#include <freax/security.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/io.h>
 #include <asm/tlbflush.h>
 #include <asm/irq.h>

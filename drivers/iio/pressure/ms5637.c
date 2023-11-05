@@ -17,16 +17,16 @@
  *  http://www.meas-spec.com/downloads/MS8607-02BA01.pdf
  */
 
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/stat.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/i2c.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/mutex.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/stat.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/i2c.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/mutex.h>
 
 #include "../common/ms_sensors/ms_sensors_i2c.h"
 

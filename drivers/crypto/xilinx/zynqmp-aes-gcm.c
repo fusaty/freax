@@ -9,14 +9,14 @@
 #include <crypto/gcm.h>
 #include <crypto/internal/aead.h>
 #include <crypto/scatterwalk.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/firmware/xlnx-zynqmp.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/firmware/xlnx-zynqmp.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/string.h>
 
 #define ZYNQMP_DMA_BIT_MASK	32U
 

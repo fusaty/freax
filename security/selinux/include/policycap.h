@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _SELINUX_POLICYCAP_H_
-#define _SELINUX_POLICYCAP_H_
+#ifndef _SEfreax_POLICYCAP_H_
+#define _SEfreax_POLICYCAP_H_
 
 /* Policy capabilities */
 enum {
@@ -16,6 +16,6 @@ enum {
 };
 #define POLICYDB_CAP_MAX (__POLICYDB_CAP_MAX - 1)
 
-extern const char *const selinux_policycap_names[__POLICYDB_CAP_MAX];
+extern const char *const sefreax_policycap_names[__POLICYDB_CAP_MAX];
 
-#endif /* _SELINUX_POLICYCAP_H_ */
+#endif /* _SEfreax_POLICYCAP_H_ */

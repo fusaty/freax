@@ -11,11 +11,11 @@
 #define _ASM_POWERPC_VIO_H
 #ifdef __KERNEL__
 
-#include <linux/errno.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/mod_devicetable.h>
-#include <linux/scatterlist.h>
+#include <freax/errno.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/mod_devicetable.h>
+#include <freax/scatterlist.h>
 
 #include <asm/hvcall.h>
 

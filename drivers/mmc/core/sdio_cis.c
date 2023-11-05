@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * linux/drivers/mmc/core/sdio_cis.c
+ * freax/drivers/mmc/core/sdio_cis.c
  *
  * Author:	Nicolas Pitre
  * Created:	June 11, 2007
@@ -9,13 +9,13 @@
  * Copyright 2007 Pierre Ossman
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 
-#include <linux/mmc/host.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/sdio.h>
-#include <linux/mmc/sdio_func.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/sdio.h>
+#include <freax/mmc/sdio_func.h>
 
 #include "sdio_cis.h"
 #include "sdio_ops.h"

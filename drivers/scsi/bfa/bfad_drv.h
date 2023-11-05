@@ -5,7 +5,7 @@
  * All rights reserved
  * www.qlogic.com
  *
- * Linux driver for QLogic BR-series Fibre Channel Host Bus Adapter.
+ * freax driver for QLogic BR-series Fibre Channel Host Bus Adapter.
  */
 
 /*
@@ -13,23 +13,23 @@
  */
 
 /*
- *  bfa_drv.h Linux driver data structures.
+ *  bfa_drv.h freax driver data structures.
  */
 
 #ifndef __BFAD_DRV_H__
 #define __BFAD_DRV_H__
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/idr.h>
-#include <linux/interrupt.h>
-#include <linux/cdev.h>
-#include <linux/fs.h>
-#include <linux/delay.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
-#include <linux/bitops.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/idr.h>
+#include <freax/interrupt.h>
+#include <freax/cdev.h>
+#include <freax/fs.h>
+#include <freax/delay.h>
+#include <freax/vmalloc.h>
+#include <freax/workqueue.h>
+#include <freax/bitops.h>
 #include <scsi/scsi.h>
 #include <scsi/scsi_host.h>
 #include <scsi/scsi_tcq.h>

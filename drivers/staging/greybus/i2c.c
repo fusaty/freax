@@ -6,11 +6,11 @@
  * Copyright 2014 Linaro Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/greybus.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/greybus.h>
 
 #include "gbphy.h"
 
@@ -24,7 +24,7 @@ struct gb_i2c_device {
 };
 
 /*
- * Map Greybus i2c functionality bits into Linux ones
+ * Map Greybus i2c functionality bits into freax ones
  */
 static u32 gb_i2c_functionality_map(u32 gb_i2c_functionality)
 {
@@ -57,7 +57,7 @@ static int gb_i2c_device_setup(struct gb_i2c_device *gb_i2c_dev)
 }
 
 /*
- * Map Linux i2c_msg flags into Greybus i2c transfer op flags.
+ * Map freax i2c_msg flags into Greybus i2c transfer op flags.
  */
 static u16 gb_i2c_transfer_op_flags_map(u16 flags)
 {

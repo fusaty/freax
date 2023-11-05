@@ -5,9 +5,9 @@
  * Authors: Tadeusz Struk <tadeusz.struk@intel.com>
  */
 
-#include <linux/fips.h>
-#include <linux/module.h>
-#include <linux/mpi.h>
+#include <freax/fips.h>
+#include <freax/module.h>
+#include <freax/mpi.h>
 #include <crypto/internal/rsa.h>
 #include <crypto/internal/akcipher.h>
 #include <crypto/akcipher.h>

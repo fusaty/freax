@@ -4,8 +4,8 @@
  * Copyright © 2016 Intel Corporation
  */
 
-#include <linux/highmem.h>
-#include <linux/prime_numbers.h>
+#include <freax/highmem.h>
+#include <freax/prime_numbers.h>
 
 #include "gem/i915_gem_internal.h"
 #include "gem/i915_gem_lmem.h"

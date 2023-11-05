@@ -7,17 +7,17 @@
  * Author:	Minda Chen <minda.chen@starfivetech.com>
  */
 
-#include <linux/bits.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/mfd/syscon.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/of_platform.h>
-#include <linux/reset.h>
-#include <linux/regmap.h>
-#include <linux/usb/otg.h>
+#include <freax/bits.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/mfd/syscon.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/of_platform.h>
+#include <freax/reset.h>
+#include <freax/regmap.h>
+#include <freax/usb/otg.h>
 #include "core.h"
 
 #define USB_STRAP_HOST			BIT(17)

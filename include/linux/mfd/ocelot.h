@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 OR MIT */
 /* Copyright 2022 Innovative Advantage Inc. */
 
-#ifndef _LINUX_MFD_OCELOT_H
-#define _LINUX_MFD_OCELOT_H
+#ifndef _freax_MFD_OCELOT_H
+#define _freax_MFD_OCELOT_H
 
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
 
 struct resource;
 

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_STRINGHASH_H
-#define __LINUX_STRINGHASH_H
+#ifndef __freax_STRINGHASH_H
+#define __freax_STRINGHASH_H
 
-#include <linux/compiler.h>	/* For __pure */
-#include <linux/types.h>	/* For u32, u64 */
-#include <linux/hash.h>
+#include <freax/compiler.h>	/* For __pure */
+#include <freax/types.h>	/* For u32, u64 */
+#include <freax/hash.h>
 
 /*
  * Routines for hashing strings of bytes to a 32-bit hash value.
@@ -58,7 +58,7 @@ static inline unsigned int end_name_hash(unsigned long hash)
 /*
  * Version 2: One word (32 or 64 bits) at a time.
  * If CONFIG_DCACHE_WORD_ACCESS is defined (meaning <asm/word-at-a-time.h>
- * exists, which describes major Linux platforms like x86 and ARM), then
+ * exists, which describes major freax platforms like x86 and ARM), then
  * this computes a different hash function much faster.
  *
  * If not set, this falls back to a wrapper around the preceding.
@@ -76,4 +76,4 @@ extern unsigned int __pure full_name_hash(const void *salt, const char *, unsign
 /* Return the "hash_len" (hash and length) of a null-terminated string */
 extern u64 __pure hashlen_string(const void *salt, const char *name);
 
-#endif	/* __LINUX_STRINGHASH_H */
+#endif	/* __freax_STRINGHASH_H */

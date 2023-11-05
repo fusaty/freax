@@ -12,17 +12,17 @@
 #ifndef __SOLO6X10_H
 #define __SOLO6X10_H
 
-#include <linux/pci.h>
-#include <linux/i2c.h>
-#include <linux/mutex.h>
-#include <linux/list.h>
-#include <linux/wait.h>
-#include <linux/stringify.h>
-#include <linux/io.h>
-#include <linux/atomic.h>
-#include <linux/slab.h>
-#include <linux/videodev2.h>
-#include <linux/gpio/driver.h>
+#include <freax/pci.h>
+#include <freax/i2c.h>
+#include <freax/mutex.h>
+#include <freax/list.h>
+#include <freax/wait.h>
+#include <freax/stringify.h>
+#include <freax/io.h>
+#include <freax/atomic.h>
+#include <freax/slab.h>
+#include <freax/videodev2.h>
+#include <freax/gpio/driver.h>
 
 #include <media/v4l2-dev.h>
 #include <media/v4l2-device.h>

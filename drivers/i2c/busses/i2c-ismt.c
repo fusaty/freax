@@ -57,17 +57,17 @@
  *  Slave mode                       no
  */
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/completion.h>
-#include <linux/dma-mapping.h>
-#include <linux/i2c.h>
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/completion.h>
+#include <freax/dma-mapping.h>
+#include <freax/i2c.h>
+#include <freax/acpi.h>
+#include <freax/interrupt.h>
 
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 
 /* PCI Address Constants */
 #define SMBBAR		0

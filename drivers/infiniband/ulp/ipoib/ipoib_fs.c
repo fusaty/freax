@@ -30,14 +30,14 @@
  * SOFTWARE.
  */
 
-#include <linux/err.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
+#include <freax/err.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
 
 struct file_operations;
 
-#include <linux/debugfs.h>
-#include <linux/export.h>
+#include <freax/debugfs.h>
+#include <freax/export.h>
 
 #include "ipoib.h"
 

@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/macmodes.c -- Standard MacOS video modes
+ *  freax/drivers/video/macmodes.c -- Standard MacOS video modes
  *
  *	Copyright (C) 1998 Geert Uytterhoeven
  *
@@ -15,10 +15,10 @@
  *  more details.
  */
 
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/string.h>
-#include <linux/module.h>
+#include <freax/errno.h>
+#include <freax/fb.h>
+#include <freax/string.h>
+#include <freax/module.h>
 
 #include "macmodes.h"
 

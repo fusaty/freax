@@ -11,12 +11,12 @@
 
 #include "em28xx.h"
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/usb.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/usb.h>
 #include <media/tuner.h>
 #include <media/drv-intf/msp3400.h>
 #include <media/i2c/saa7115.h>
@@ -3085,7 +3085,7 @@ static int em28xx_hint_board(struct em28xx *dev)
 				"A hint were successfully done, based on eeprom hash.\n"
 				"This method is not 100%% failproof.\n"
 				"If the board were misdetected, please email this log to:\n"
-				"\tV4L Mailing List  <linux-media@vger.kernel.org>\n"
+				"\tV4L Mailing List  <freax-media@vger.kernel.org>\n"
 				"Board detected as %s\n",
 			       em28xx_boards[dev->model].name);
 
@@ -3116,7 +3116,7 @@ static int em28xx_hint_board(struct em28xx *dev)
 				"A hint were successfully done, based on i2c devicelist hash.\n"
 				"This method is not 100%% failproof.\n"
 				"If the board were misdetected, please email this log to:\n"
-				"\tV4L Mailing List  <linux-media@vger.kernel.org>\n"
+				"\tV4L Mailing List  <freax-media@vger.kernel.org>\n"
 				"Board detected as %s\n",
 				em28xx_boards[dev->model].name);
 
@@ -3128,7 +3128,7 @@ static int em28xx_hint_board(struct em28xx *dev)
 		"Your board has no unique USB ID and thus need a hint to be detected.\n"
 		"You may try to use card=<n> insmod option to workaround that.\n"
 		"Please send an email with this log to:\n"
-		"\tV4L Mailing List <linux-media@vger.kernel.org>\n"
+		"\tV4L Mailing List <freax-media@vger.kernel.org>\n"
 		"Board eeprom hash is 0x%08lx\n"
 		"Board i2c devicelist hash is 0x%08lx\n",
 		dev->hash, dev->i2c_hash);
@@ -3952,7 +3952,7 @@ static int em28xx_usb_probe(struct usb_interface *intf,
 			if (has_vendor_audio)
 				dev_err(&intf->dev,
 					"em28xx: device seems to have vendor AND usb audio class interfaces !\n"
-					"\t\tThe vendor interface will be ignored. Please contact the developers <linux-media@vger.kernel.org>\n");
+					"\t\tThe vendor interface will be ignored. Please contact the developers <freax-media@vger.kernel.org>\n");
 			dev->usb_audio_type = EM28XX_USB_AUDIO_CLASS;
 			break;
 		}

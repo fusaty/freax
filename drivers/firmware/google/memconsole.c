@@ -7,9 +7,9 @@
  * Copyright 2017 Google Inc.
  */
 
-#include <linux/sysfs.h>
-#include <linux/kobject.h>
-#include <linux/module.h>
+#include <freax/sysfs.h>
+#include <freax/kobject.h>
+#include <freax/module.h>
 
 #include "memconsole.h"
 

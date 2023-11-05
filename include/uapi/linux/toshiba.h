@@ -1,5 +1,5 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
-/* toshiba.h -- Linux driver for accessing the SMM on Toshiba laptops 
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
+/* toshiba.h -- freax driver for accessing the SMM on Toshiba laptops 
  *
  * Copyright (c) 1996-2000  Jonathan A. Buzzard (jonathan@buzzard.org.uk)
  * Copyright (c) 2015  Azael Avalos <coproscefalo@gmail.com>
@@ -19,8 +19,8 @@
  *
  */
 
-#ifndef _UAPI_LINUX_TOSHIBA_H
-#define _UAPI_LINUX_TOSHIBA_H
+#ifndef _UAPI_freax_TOSHIBA_H
+#define _UAPI_freax_TOSHIBA_H
 
 /*
  * Toshiba modules paths
@@ -61,4 +61,4 @@ typedef struct {
 #define TOSHIBA_ACPI_SCI	_IOWR('t', 0x91, SMMRegisters)
 
 
-#endif /* _UAPI_LINUX_TOSHIBA_H */
+#endif /* _UAPI_freax_TOSHIBA_H */

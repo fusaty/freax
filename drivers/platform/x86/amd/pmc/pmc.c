@@ -11,22 +11,22 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <asm/amd_nb.h>
-#include <linux/acpi.h>
-#include <linux/bitfield.h>
-#include <linux/bits.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/limits.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/rtc.h>
-#include <linux/serio.h>
-#include <linux/suspend.h>
-#include <linux/seq_file.h>
-#include <linux/uaccess.h>
+#include <freax/acpi.h>
+#include <freax/bitfield.h>
+#include <freax/bits.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/limits.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/rtc.h>
+#include <freax/serio.h>
+#include <freax/suspend.h>
+#include <freax/seq_file.h>
+#include <freax/uaccess.h>
 
 #include "pmc.h"
 

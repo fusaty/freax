@@ -5,10 +5,10 @@
 // Author: Daniel Baluta <daniel.baluta@nxp.com>
 //
 
-#include <linux/firmware.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pm_runtime.h>
+#include <freax/firmware.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/pm_runtime.h>
 #include <sound/sof.h>
 
 #include "sof-of-dev.h"

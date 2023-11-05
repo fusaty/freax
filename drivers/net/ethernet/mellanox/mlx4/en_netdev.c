@@ -31,22 +31,22 @@
  *
  */
 
-#include <linux/bpf.h>
-#include <linux/etherdevice.h>
-#include <linux/filter.h>
-#include <linux/tcp.h>
-#include <linux/if_vlan.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/hash.h>
+#include <freax/bpf.h>
+#include <freax/etherdevice.h>
+#include <freax/filter.h>
+#include <freax/tcp.h>
+#include <freax/if_vlan.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/hash.h>
 #include <net/ip.h>
 #include <net/vxlan.h>
 #include <net/devlink.h>
 
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/cmd.h>
-#include <linux/mlx4/cq.h>
+#include <freax/mlx4/driver.h>
+#include <freax/mlx4/device.h>
+#include <freax/mlx4/cmd.h>
+#include <freax/mlx4/cq.h>
 
 #include "mlx4_en.h"
 #include "en_port.h"

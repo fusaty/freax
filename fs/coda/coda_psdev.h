@@ -2,9 +2,9 @@
 #ifndef __CODA_PSDEV_H
 #define __CODA_PSDEV_H
 
-#include <linux/backing-dev.h>
-#include <linux/magic.h>
-#include <linux/mutex.h>
+#include <freax/backing-dev.h>
+#include <freax/magic.h>
+#include <freax/mutex.h>
 
 #define CODA_PSDEV_MAJOR 67
 #define MAX_CODADEVS  5	   /* how many do we allow */

@@ -1,14 +1,14 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_JIFFIES_H
-#define _LINUX_JIFFIES_H
+#ifndef _freax_JIFFIES_H
+#define _freax_JIFFIES_H
 
-#include <linux/cache.h>
-#include <linux/limits.h>
-#include <linux/math64.h>
-#include <linux/minmax.h>
-#include <linux/types.h>
-#include <linux/time.h>
-#include <linux/timex.h>
+#include <freax/cache.h>
+#include <freax/limits.h>
+#include <freax/math64.h>
+#include <freax/minmax.h>
+#include <freax/types.h>
+#include <freax/time.h>
+#include <freax/timex.h>
 #include <vdso/jiffies.h>
 #include <asm/param.h>			/* for HZ */
 #include <generated/timeconst.h>
@@ -80,7 +80,7 @@ extern int register_refined_jiffies(long clock_tick_rate);
  * and for 64-bit big-endian systems.
  * On 32-bit big-endian systems, jiffies is the lower 32 bits of jiffies_64
  * (i.e., at address @jiffies_64 + 4).
- * See arch/ARCH/kernel/vmlinux.lds.S
+ * See arch/ARCH/kernel/vmfreax.lds.S
  */
 extern u64 __cacheline_aligned_in_smp jiffies_64;
 extern unsigned long volatile __cacheline_aligned_in_smp __jiffy_arch_data jiffies;

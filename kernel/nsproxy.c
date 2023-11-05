@@ -9,23 +9,23 @@
  *             Pavel Emelianov <xemul@openvz.org>
  */
 
-#include <linux/slab.h>
-#include <linux/export.h>
-#include <linux/nsproxy.h>
-#include <linux/init_task.h>
-#include <linux/mnt_namespace.h>
-#include <linux/utsname.h>
-#include <linux/pid_namespace.h>
+#include <freax/slab.h>
+#include <freax/export.h>
+#include <freax/nsproxy.h>
+#include <freax/init_task.h>
+#include <freax/mnt_namespace.h>
+#include <freax/utsname.h>
+#include <freax/pid_namespace.h>
 #include <net/net_namespace.h>
-#include <linux/ipc_namespace.h>
-#include <linux/time_namespace.h>
-#include <linux/fs_struct.h>
-#include <linux/proc_fs.h>
-#include <linux/proc_ns.h>
-#include <linux/file.h>
-#include <linux/syscalls.h>
-#include <linux/cgroup.h>
-#include <linux/perf_event.h>
+#include <freax/ipc_namespace.h>
+#include <freax/time_namespace.h>
+#include <freax/fs_struct.h>
+#include <freax/proc_fs.h>
+#include <freax/proc_ns.h>
+#include <freax/file.h>
+#include <freax/syscalls.h>
+#include <freax/cgroup.h>
+#include <freax/perf_event.h>
 
 static struct kmem_cache *nsproxy_cachep;
 

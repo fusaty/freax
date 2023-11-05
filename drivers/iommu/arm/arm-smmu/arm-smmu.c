@@ -17,25 +17,25 @@
 
 #define pr_fmt(fmt) "arm-smmu: " fmt
 
-#include <linux/acpi.h>
-#include <linux/acpi_iort.h>
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/acpi_iort.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/ratelimit.h>
+#include <freax/slab.h>
 
-#include <linux/fsl/mc.h>
+#include <freax/fsl/mc.h>
 
 #include "arm-smmu.h"
 #include "../../dma-iommu.h"

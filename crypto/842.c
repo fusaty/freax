@@ -4,8 +4,8 @@
  *
  * Copyright (C) IBM Corporation, 2011-2015
  *
- * Original Authors: Robert Jennings <rcj@linux.vnet.ibm.com>
- *                   Seth Jennings <sjenning@linux.vnet.ibm.com>
+ * Original Authors: Robert Jennings <rcj@freax.vnet.ibm.com>
+ *                   Seth Jennings <sjenning@freax.vnet.ibm.com>
  *
  * Rewrite: Dan Streetman <ddstreet@ieee.org>
  *
@@ -18,10 +18,10 @@
  * drivers/crypto/nx/nx-842-crypto.c
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/crypto.h>
-#include <linux/sw842.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/crypto.h>
+#include <freax/sw842.h>
 #include <crypto/internal/scompress.h>
 
 struct crypto842_ctx {

@@ -5,20 +5,20 @@
  * Copyright 2005-2013 Solarflare Communications Inc.
  */
 
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/slab.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
-#include <linux/prefetch.h>
-#include <linux/moduleparam.h>
-#include <linux/iommu.h>
+#include <freax/socket.h>
+#include <freax/in.h>
+#include <freax/slab.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
+#include <freax/prefetch.h>
+#include <freax/moduleparam.h>
+#include <freax/iommu.h>
 #include <net/ip.h>
 #include <net/checksum.h>
 #include <net/xdp.h>
-#include <linux/bpf_trace.h>
+#include <freax/bpf_trace.h>
 #include "net_driver.h"
 #include "efx.h"
 #include "rx_common.h"

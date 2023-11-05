@@ -14,9 +14,9 @@
 
 #include "cx88.h"
 
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/module.h>
 
 #include <media/v4l2-common.h>
 

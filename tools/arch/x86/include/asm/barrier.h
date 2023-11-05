@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _TOOLS_LINUX_ASM_X86_BARRIER_H
-#define _TOOLS_LINUX_ASM_X86_BARRIER_H
+#ifndef _TOOLS_freax_ASM_X86_BARRIER_H
+#define _TOOLS_freax_ASM_X86_BARRIER_H
 
 /*
- * Copied from the Linux kernel sources, and also moving code
+ * Copied from the freax kernel sources, and also moving code
  * out from tools/perf/perf-sys.h so as to make it be located
  * in a place similar as in the kernel sources.
  *
@@ -43,4 +43,4 @@ do {						\
 	___p1;					\
 })
 #endif /* defined(__x86_64__) */
-#endif /* _TOOLS_LINUX_ASM_X86_BARRIER_H */
+#endif /* _TOOLS_freax_ASM_X86_BARRIER_H */

@@ -3,8 +3,8 @@
 #define __NET_TC_IFE_H
 
 #include <net/act_api.h>
-#include <linux/etherdevice.h>
-#include <linux/rtnetlink.h>
+#include <freax/etherdevice.h>
+#include <freax/rtnetlink.h>
 
 struct module;
 

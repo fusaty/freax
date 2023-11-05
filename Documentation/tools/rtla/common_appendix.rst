@@ -1,7 +1,7 @@
 REPORTING BUGS
 ==============
-Report bugs to <linux-kernel@vger.kernel.org>
-and <linux-trace-devel@vger.kernel.org>
+Report bugs to <freax-kernel@vger.kernel.org>
+and <freax-trace-devel@vger.kernel.org>
 
 LICENSE
 =======

@@ -7,20 +7,20 @@
  * Author: Brijesh Singh <brijesh.singh@amd.com>
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/mutex.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/miscdevice.h>
-#include <linux/set_memory.h>
-#include <linux/fs.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/mutex.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/miscdevice.h>
+#include <freax/set_memory.h>
+#include <freax/fs.h>
 #include <crypto/aead.h>
-#include <linux/scatterlist.h>
-#include <linux/psp-sev.h>
-#include <uapi/linux/sev-guest.h>
-#include <uapi/linux/psp-sev.h>
+#include <freax/scatterlist.h>
+#include <freax/psp-sev.h>
+#include <uapi/freax/sev-guest.h>
+#include <uapi/freax/psp-sev.h>
 
 #include <asm/svm.h>
 #include <asm/sev.h>

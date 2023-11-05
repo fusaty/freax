@@ -7,7 +7,7 @@
 
 #define ARCH_HAS_OWN_IRQ_REGS
 
-#include <linux/thread_info.h>
+#include <freax/thread_info.h>
 
 static inline struct pt_regs *get_irq_regs(void)
 {

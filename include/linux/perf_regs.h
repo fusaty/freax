@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_PERF_REGS_H
-#define _LINUX_PERF_REGS_H
+#ifndef _freax_PERF_REGS_H
+#define _freax_PERF_REGS_H
 
-#include <linux/sched/task_stack.h>
+#include <freax/sched/task_stack.h>
 
 struct perf_regs {
 	__u64		abi;
@@ -47,4 +47,4 @@ static inline void perf_get_regs_user(struct perf_regs *regs_user,
 	regs_user->abi = perf_reg_abi(current);
 }
 #endif /* CONFIG_HAVE_PERF_REGS */
-#endif /* _LINUX_PERF_REGS_H */
+#endif /* _freax_PERF_REGS_H */

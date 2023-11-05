@@ -4,7 +4,7 @@
 
 #include "../util/mutex.h"
 #include <stdbool.h>
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 extern struct mutex ui__lock;
 extern void *perf_gtk_handle;

@@ -9,8 +9,8 @@
 #ifndef __OMAPDRM_GEM_H__
 #define __OMAPDRM_GEM_H__
 
-#include <linux/types.h>
-#include <linux/mm_types.h>
+#include <freax/types.h>
+#include <freax/mm_types.h>
 
 enum dma_data_direction;
 

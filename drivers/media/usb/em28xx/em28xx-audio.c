@@ -13,14 +13,14 @@
 
 #include "em28xx.h"
 
-#include <linux/kernel.h>
-#include <linux/usb.h>
-#include <linux/init.h>
-#include <linux/sound.h>
-#include <linux/spinlock.h>
-#include <linux/soundcard.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/usb.h>
+#include <freax/init.h>
+#include <freax/sound.h>
+#include <freax/spinlock.h>
+#include <freax/soundcard.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>

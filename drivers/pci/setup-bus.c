@@ -14,15 +14,15 @@
  *	     tighter packing. Prefetchable range support.
  */
 
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/cache.h>
-#include <linux/slab.h>
-#include <linux/acpi.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/cache.h>
+#include <freax/slab.h>
+#include <freax/acpi.h>
 #include "pci.h"
 
 unsigned int pci_flags;

@@ -2,7 +2,7 @@
 #ifndef _NET_PPTP_H
 #define _NET_PPTP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <net/gre.h>
 
 #define PPP_LCP_ECHOREQ 0x09

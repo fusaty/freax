@@ -3,11 +3,11 @@
  *  Copyright (c) 2010-2011 Jeremy Kerr <jeremy.kerr@canonical.com>
  *  Copyright (C) 2011-2012 Linaro Ltd <mturquette@linaro.org>
  */
-#ifndef __LINUX_CLK_PROVIDER_H
-#define __LINUX_CLK_PROVIDER_H
+#ifndef __freax_CLK_PROVIDER_H
+#define __freax_CLK_PROVIDER_H
 
-#include <linux/of.h>
-#include <linux/of_clk.h>
+#include <freax/of.h>
+#include <freax/of_clk.h>
 
 /*
  * flags used across common struct clk.  these flags should only affect the

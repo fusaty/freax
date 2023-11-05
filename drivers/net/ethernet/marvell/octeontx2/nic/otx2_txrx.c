@@ -5,11 +5,11 @@
  *
  */
 
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 #include <net/ip.h>
 #include <net/tso.h>
-#include <linux/bpf.h>
-#include <linux/bpf_trace.h>
+#include <freax/bpf.h>
+#include <freax/bpf_trace.h>
 #include <net/ip6_checksum.h>
 
 #include "otx2_reg.h"

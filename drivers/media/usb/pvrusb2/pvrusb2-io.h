@@ -6,8 +6,8 @@
 #ifndef __PVRUSB2_IO_H
 #define __PVRUSB2_IO_H
 
-#include <linux/usb.h>
-#include <linux/list.h>
+#include <freax/usb.h>
+#include <freax/list.h>
 
 typedef void (*pvr2_stream_callback)(void *);
 

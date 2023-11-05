@@ -12,20 +12,20 @@
  * for more details.
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/pagemap.h>
-#include <linux/memblock.h>
-#include <linux/slab.h>
-#include <linux/binfmts.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/ptrace.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/pagemap.h>
+#include <freax/memblock.h>
+#include <freax/slab.h>
+#include <freax/binfmts.h>
 
 #include <asm/setup.h>
 #include <asm/page.h>
@@ -102,7 +102,7 @@ static int alloc_kuser_page(void)
 }
 arch_initcall(alloc_kuser_page);
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct freax_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	int ret;

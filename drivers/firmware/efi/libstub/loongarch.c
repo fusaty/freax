@@ -39,7 +39,7 @@ static efi_status_t exit_boot_func(struct efi_boot_memmap *map, void *priv)
 
 unsigned long __weak kernel_entry_address(void)
 {
-	return *(unsigned long *)(PHYSADDR(VMLINUX_LOAD_ADDRESS) + 8);
+	return *(unsigned long *)(PHYSADDR(VMfreax_LOAD_ADDRESS) + 8);
 }
 
 efi_status_t efi_boot_kernel(void *handle, efi_loaded_image_t *image,

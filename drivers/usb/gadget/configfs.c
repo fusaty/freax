@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/configfs.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/kstrtox.h>
-#include <linux/nls.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/gadget_configfs.h>
-#include <linux/usb/webusb.h>
+#include <freax/configfs.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/kstrtox.h>
+#include <freax/nls.h>
+#include <freax/usb/composite.h>
+#include <freax/usb/gadget_configfs.h>
+#include <freax/usb/webusb.h>
 #include "configfs.h"
 #include "u_f.h"
 #include "u_os_desc.h"

@@ -5,15 +5,15 @@
  * Copyright (C) 2013 Philipp Zabel, Pengutronix
  */
 
-#include <linux/clk-provider.h>
-#include <linux/clk.h>
-#include <linux/component.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/videodev2.h>
+#include <freax/clk-provider.h>
+#include <freax/clk.h>
+#include <freax/component.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/videodev2.h>
 
 #include <video/imx-ipu-v3.h>
 

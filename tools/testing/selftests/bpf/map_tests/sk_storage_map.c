@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright (c) 2019 Facebook  */
-#include <linux/compiler.h>
-#include <linux/err.h>
+#include <freax/compiler.h>
+#include <freax/err.h>
 
 #include <sys/resource.h>
 #include <sys/socket.h>
 #include <sys/types.h>
-#include <linux/btf.h>
+#include <freax/btf.h>
 #include <unistd.h>
 #include <signal.h>
 #include <errno.h>

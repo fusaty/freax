@@ -18,14 +18,14 @@
  * the Machine Specific Registers to configure the device.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/blkdev.h>
-#include <linux/delay.h>
-#include <linux/libata.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/blkdev.h>
+#include <freax/delay.h>
+#include <freax/libata.h>
 #include <scsi/scsi_host.h>
-#include <linux/dmi.h>
+#include <freax/dmi.h>
 
 #ifdef CONFIG_X86_32
 #include <asm/msr.h>

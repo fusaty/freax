@@ -5,13 +5,13 @@
  * Copyright 2019 Google LLC
  */
 
-#ifndef __LINUX_PLATFORM_DATA_CROS_EC_SENSORHUB_H
-#define __LINUX_PLATFORM_DATA_CROS_EC_SENSORHUB_H
+#ifndef __freax_PLATFORM_DATA_CROS_EC_SENSORHUB_H
+#define __freax_PLATFORM_DATA_CROS_EC_SENSORHUB_H
 
-#include <linux/ktime.h>
-#include <linux/mutex.h>
-#include <linux/notifier.h>
-#include <linux/platform_data/cros_ec_commands.h>
+#include <freax/ktime.h>
+#include <freax/mutex.h>
+#include <freax/notifier.h>
+#include <freax/platform_data/cros_ec_commands.h>
 
 struct iio_dev;
 
@@ -191,4 +191,4 @@ void cros_ec_sensorhub_ring_remove(void *arg);
 int cros_ec_sensorhub_ring_fifo_enable(struct cros_ec_sensorhub *sensorhub,
 				       bool on);
 
-#endif   /* __LINUX_PLATFORM_DATA_CROS_EC_SENSORHUB_H */
+#endif   /* __freax_PLATFORM_DATA_CROS_EC_SENSORHUB_H */

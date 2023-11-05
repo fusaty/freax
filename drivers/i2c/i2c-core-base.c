@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux I2C core
+ * freax I2C core
  *
  * Copyright (C) 1995-99 Simon G. Vogl
  *   With some changes from Kyösti Mälkki <kmalkki@cc.hut.fi>
@@ -13,34 +13,34 @@
 #define pr_fmt(fmt) "i2c-core: " fmt
 
 #include <dt-bindings/i2c/i2c.h>
-#include <linux/acpi.h>
-#include <linux/clk/clk-conf.h>
-#include <linux/completion.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/i2c-smbus.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/irqflags.h>
-#include <linux/jump_label.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_device.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pinctrl/devinfo.h>
-#include <linux/pm_domain.h>
-#include <linux/pm_runtime.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/property.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
+#include <freax/acpi.h>
+#include <freax/clk/clk-conf.h>
+#include <freax/completion.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/i2c-smbus.h>
+#include <freax/idr.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/irqflags.h>
+#include <freax/jump_label.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of_device.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pinctrl/devinfo.h>
+#include <freax/pm_domain.h>
+#include <freax/pm_runtime.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/property.h>
+#include <freax/rwsem.h>
+#include <freax/slab.h>
 
 #include "i2c-core.h"
 

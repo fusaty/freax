@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/kernel/process.c
+ *  freax/arch/arm/kernel/process.c
  *
  *  Copyright (C) 1996-2000 Russell King - Converted to ARM.
  *  Original Copyright (C) 1995  Linus Torvalds
  */
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/sched/debug.h>
-#include <linux/sched/task.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/user.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/elfcore.h>
-#include <linux/pm.h>
-#include <linux/tick.h>
-#include <linux/utsname.h>
-#include <linux/uaccess.h>
-#include <linux/random.h>
-#include <linux/hw_breakpoint.h>
-#include <linux/leds.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/sched/debug.h>
+#include <freax/sched/task.h>
+#include <freax/sched/task_stack.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/stddef.h>
+#include <freax/unistd.h>
+#include <freax/user.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/elfcore.h>
+#include <freax/pm.h>
+#include <freax/tick.h>
+#include <freax/utsname.h>
+#include <freax/uaccess.h>
+#include <freax/random.h>
+#include <freax/hw_breakpoint.h>
+#include <freax/leds.h>
 
 #include <asm/processor.h>
 #include <asm/thread_notify.h>
@@ -41,7 +41,7 @@ DEFINE_PER_CPU(struct task_struct *, __entry_task);
 #endif
 
 #if defined(CONFIG_STACKPROTECTOR) && !defined(CONFIG_STACKPROTECTOR_PER_TASK)
-#include <linux/stackprotector.h>
+#include <freax/stackprotector.h>
 unsigned long __stack_chk_guard __read_mostly;
 EXPORT_SYMBOL(__stack_chk_guard);
 #endif
@@ -392,7 +392,7 @@ static const struct vm_special_mapping sigpage_mapping = {
 	.mremap = sigpage_mremap,
 };
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct freax_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	struct vm_area_struct *vma;

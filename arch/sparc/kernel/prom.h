@@ -2,7 +2,7 @@
 #ifndef __PROM_H
 #define __PROM_H
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 #include <asm/prom.h>
 
 void of_console_init(void);

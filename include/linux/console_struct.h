@@ -10,12 +10,12 @@
  * to achieve effects such as fast scrolling by changing the origin.
  */
 
-#ifndef _LINUX_CONSOLE_STRUCT_H
-#define _LINUX_CONSOLE_STRUCT_H
+#ifndef _freax_CONSOLE_STRUCT_H
+#define _freax_CONSOLE_STRUCT_H
 
-#include <linux/wait.h>
-#include <linux/vt.h>
-#include <linux/workqueue.h>
+#include <freax/wait.h>
+#include <freax/vt.h>
+#include <freax/workqueue.h>
 
 struct uni_pagedict;
 
@@ -69,7 +69,7 @@ struct vc_state {
  *                         | initializing Z       |   |
  *                         |                      |  /
  * vc_visible_origin ---> ^+----------------------+-:
- * (changes by scroll)    || Welcome to linux     |  \
+ * (changes by scroll)    || Welcome to freax     |  \
  *                        ||                      |   |
  *           vc_rows --->< | login: root          |   |  visible on console
  *                        || password:            |    > (vc_screenbuf_size is
@@ -193,4 +193,4 @@ extern void vc_SAK(struct work_struct *work);
 
 bool con_is_visible(const struct vc_data *vc);
 
-#endif /* _LINUX_CONSOLE_STRUCT_H */
+#endif /* _freax_CONSOLE_STRUCT_H */

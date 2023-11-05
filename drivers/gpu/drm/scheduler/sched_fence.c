@@ -21,11 +21,11 @@
  *
  */
 
-#include <linux/kthread.h>
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
+#include <freax/kthread.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
 
 #include <drm/gpu_scheduler.h>
 

@@ -37,7 +37,7 @@
 			color = <LED_COLOR_ID_RED>;
 			gpios = <&gpx1 0 GPIO_ACTIVE_HIGH>;
 			default-state = "off";
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 
 		led3 {
@@ -53,31 +53,31 @@
 
 		key-home {
 			label = "GPIO Key Home";
-			linux,code = <KEY_HOME>;
+			freax,code = <KEY_HOME>;
 			gpios = <&gpx1 1 GPIO_ACTIVE_LOW>;
 		};
 
 		key-back {
 			label = "GPIO Key Back";
-			linux,code = <KEY_BACK>;
+			freax,code = <KEY_BACK>;
 			gpios = <&gpx1 2 GPIO_ACTIVE_LOW>;
 		};
 
 		key-sleep {
 			label = "GPIO Key Sleep";
-			linux,code = <KEY_POWER>;
+			freax,code = <KEY_POWER>;
 			gpios = <&gpx3 3 GPIO_ACTIVE_LOW>;
 		};
 
 		key-vol-up {
 			label = "GPIO Key Vol+";
-			linux,code = <KEY_UP>;
+			freax,code = <KEY_UP>;
 			gpios = <&gpx2 1 GPIO_ACTIVE_LOW>;
 		};
 
 		key-vol-down {
 			label = "GPIO Key Vol-";
-			linux,code = <KEY_DOWN>;
+			freax,code = <KEY_DOWN>;
 			gpios = <&gpx2 0 GPIO_ACTIVE_LOW>;
 		};
 	};

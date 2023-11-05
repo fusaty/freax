@@ -2,7 +2,7 @@
 /*
  * Copyright © 2020 Intel Corporation
  */
-#include <linux/dma-resv.h>
+#include <freax/dma-resv.h>
 #include "i915_gem_ww.h"
 #include "gem/i915_gem_object.h"
 

@@ -12,20 +12,20 @@
  *   (C) CC Computer Consultants GmbH, 2007
  */
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
-#include <linux/in.h>
-#include <linux/in6.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/rbtree.h>
-#include <linux/module.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/spinlock.h>
-#include <linux/netfilter/nf_conntrack_tcp.h>
-#include <linux/netfilter/x_tables.h>
+#include <freax/in.h>
+#include <freax/in6.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/jhash.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/rbtree.h>
+#include <freax/module.h>
+#include <freax/random.h>
+#include <freax/skbuff.h>
+#include <freax/spinlock.h>
+#include <freax/netfilter/nf_conntrack_tcp.h>
+#include <freax/netfilter/x_tables.h>
 #include <net/netfilter/nf_conntrack.h>
 #include <net/netfilter/nf_conntrack_count.h>
 #include <net/netfilter/nf_conntrack_core.h>

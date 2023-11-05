@@ -4,26 +4,26 @@
  * Copyright (c) 2019-2020 Marvell International Ltd.
  */
 
-#include <linux/stddef.h>
-#include <linux/pci.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
+#include <freax/stddef.h>
+#include <freax/pci.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
 #include <asm/byteorder.h>
-#include <linux/dma-mapping.h>
-#include <linux/string.h>
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/ethtool.h>
-#include <linux/etherdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/crash_dump.h>
-#include <linux/crc32.h>
-#include <linux/qed/qed_if.h>
-#include <linux/qed/qed_ll2_if.h>
+#include <freax/dma-mapping.h>
+#include <freax/string.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/ethtool.h>
+#include <freax/etherdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/crash_dump.h>
+#include <freax/crc32.h>
+#include <freax/qed/qed_if.h>
+#include <freax/qed/qed_ll2_if.h>
 #include <net/devlink.h>
-#include <linux/phylink.h>
+#include <freax/phylink.h>
 
 #include "qed.h"
 #include "qed_sriov.h"
@@ -492,7 +492,7 @@ static struct qed_dev *qed_probe(struct pci_dev *pdev,
 	if (!cdev)
 		goto err0;
 
-	cdev->drv_type = DRV_ID_DRV_TYPE_LINUX;
+	cdev->drv_type = DRV_ID_DRV_TYPE_freax;
 	cdev->protocol = params->protocol;
 
 	if (params->is_vf)

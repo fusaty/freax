@@ -7,13 +7,13 @@
  */
 
 #include <dt-bindings/firmware/imx/rsrc.h>
-#include <linux/firmware/imx/ipc.h>
-#include <linux/firmware/imx/sci.h>
-#include <linux/kobject.h>
-#include <linux/mailbox_client.h>
-#include <linux/of.h>
-#include <linux/suspend.h>
-#include <linux/sysfs.h>
+#include <freax/firmware/imx/ipc.h>
+#include <freax/firmware/imx/sci.h>
+#include <freax/kobject.h>
+#include <freax/mailbox_client.h>
+#include <freax/of.h>
+#include <freax/suspend.h>
+#include <freax/sysfs.h>
 
 #define IMX_SC_IRQ_FUNC_ENABLE	1
 #define IMX_SC_IRQ_FUNC_STATUS	2

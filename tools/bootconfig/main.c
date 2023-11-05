@@ -12,7 +12,7 @@
 #include <errno.h>
 #include <endian.h>
 
-#include <linux/bootconfig.h>
+#include <freax/bootconfig.h>
 
 #define pr_err(fmt, ...) fprintf(stderr, fmt, ##__VA_ARGS__)
 

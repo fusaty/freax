@@ -18,12 +18,12 @@
  *    Application Note 90, Using the Multiplex Bus RTC Extended Features.
  */
 
-#ifndef _LINUX_RTC_DS1685_H_
-#define _LINUX_RTC_DS1685_H_
+#ifndef _freax_RTC_DS1685_H_
+#define _freax_RTC_DS1685_H_
 
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
+#include <freax/rtc.h>
+#include <freax/platform_device.h>
+#include <freax/workqueue.h>
 
 /**
  * struct ds1685_priv - DS1685 private data structure.
@@ -364,4 +364,4 @@ struct ds1685_rtc_platform_data {
 extern void __noreturn
 ds1685_rtc_poweroff(struct platform_device *pdev);
 
-#endif /* _LINUX_RTC_DS1685_H_ */
+#endif /* _freax_RTC_DS1685_H_ */

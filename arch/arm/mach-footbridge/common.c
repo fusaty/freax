@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-footbridge/common.c
+ *  freax/arch/arm/mach-footbridge/common.c
  *
  *  Copyright (C) 1998-2000 Russell King, Dave Gilbert.
  */
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/ioport.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/spinlock.h>
-#include <linux/dma-direct.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/ioport.h>
+#include <freax/list.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/spinlock.h>
+#include <freax/dma-direct.h>
 #include <video/vga.h>
 
 #include <asm/page.h>

@@ -48,12 +48,12 @@
  * through the jobs entity pointer.
  */
 
-#include <linux/kthread.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/completion.h>
-#include <linux/dma-resv.h>
-#include <uapi/linux/sched/types.h>
+#include <freax/kthread.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
+#include <freax/completion.h>
+#include <freax/dma-resv.h>
+#include <uapi/freax/sched/types.h>
 
 #include <drm/drm_print.h>
 #include <drm/drm_gem.h>

@@ -9,20 +9,20 @@
  *	Erik Gilling <konkers@google.com>
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/irq.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
-#include <linux/irqdomain.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/pm.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/irq.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/gpio/driver.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/seq_file.h>
+#include <freax/irqdomain.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/pm.h>
 
 #define GPIO_BANK(x)		((x) >> 5)
 #define GPIO_PORT(x)		(((x) >> 3) & 0x3)
@@ -640,7 +640,7 @@ static const struct irq_chip tegra210_gpio_irq_chip = {
 
 #ifdef	CONFIG_DEBUG_FS
 
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 
 static int tegra_dbg_gpio_show(struct seq_file *s, void *unused)
 {

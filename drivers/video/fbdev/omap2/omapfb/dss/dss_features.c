@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/drivers/video/omap2/dss/dss_features.c
+ * freax/drivers/video/omap2/dss/dss_features.c
  *
  * Copyright (C) 2010 Texas Instruments
  * Author: Archit Taneja <archit@ti.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/err.h>
+#include <freax/slab.h>
 
 #include <video/omapfb_dss.h>
 

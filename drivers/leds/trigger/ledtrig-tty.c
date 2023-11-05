@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/delay.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <uapi/linux/serial.h>
+#include <freax/delay.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <uapi/freax/serial.h>
 
 #define LEDTRIG_TTY_INTERVAL	50
 

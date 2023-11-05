@@ -4,12 +4,12 @@
  *             https://www.huawei.com/
  * Copyright (C) 2021, Alibaba Cloud
  */
-#include <linux/statfs.h>
-#include <linux/seq_file.h>
-#include <linux/crc32c.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
-#include <linux/exportfs.h>
+#include <freax/statfs.h>
+#include <freax/seq_file.h>
+#include <freax/crc32c.h>
+#include <freax/fs_context.h>
+#include <freax/fs_parser.h>
+#include <freax/exportfs.h>
 #include "xattr.h"
 
 #define CREATE_TRACE_POINTS

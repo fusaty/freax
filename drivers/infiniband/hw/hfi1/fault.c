@@ -3,11 +3,11 @@
  * Copyright(c) 2018 Intel Corporation.
  */
 
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/bitmap.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/bitmap.h>
 
 #include "debugfs.h"
 #include "fault.h"

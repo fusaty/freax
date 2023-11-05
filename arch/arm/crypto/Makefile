@@ -59,6 +59,6 @@ AFLAGS_sha256-core.o += $(aflags-thumb2-y)
 AFLAGS_sha512-core.o += $(aflags-thumb2-y)
 
 # massage the perlasm code a bit so we only get the NEON routine if we need it
-poly1305-aflags-$(CONFIG_CPU_V7) := -U__LINUX_ARM_ARCH__ -D__LINUX_ARM_ARCH__=5
-poly1305-aflags-$(CONFIG_KERNEL_MODE_NEON) := -U__LINUX_ARM_ARCH__ -D__LINUX_ARM_ARCH__=7
+poly1305-aflags-$(CONFIG_CPU_V7) := -U__freax_ARM_ARCH__ -D__freax_ARM_ARCH__=5
+poly1305-aflags-$(CONFIG_KERNEL_MODE_NEON) := -U__freax_ARM_ARCH__ -D__freax_ARM_ARCH__=7
 AFLAGS_poly1305-core.o += $(poly1305-aflags-y) $(aflags-thumb2-y)

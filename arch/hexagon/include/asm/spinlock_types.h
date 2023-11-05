@@ -2,13 +2,13 @@
 /*
  * Spinlock support for the Hexagon architecture
  *
- * Copyright (c) 2010-2011, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2011, The freax Foundation. All rights reserved.
  */
 
 #ifndef _ASM_SPINLOCK_TYPES_H
 #define _ASM_SPINLOCK_TYPES_H
 
-#ifndef __LINUX_SPINLOCK_TYPES_RAW_H
+#ifndef __freax_SPINLOCK_TYPES_RAW_H
 # error "please don't include this file directly"
 #endif
 

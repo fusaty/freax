@@ -1,17 +1,17 @@
 =============================
-Linux Filesystems API summary
+freax Filesystems API summary
 =============================
 
 This section contains API-level documentation, mostly taken from the source
 code itself.
 
-The Linux VFS
+The freax VFS
 =============
 
 The Filesystem types
 --------------------
 
-.. kernel-doc:: include/linux/fs.h
+.. kernel-doc:: include/freax/fs.h
    :internal:
 
 The Directory Cache
@@ -20,7 +20,7 @@ The Directory Cache
 .. kernel-doc:: fs/dcache.c
    :export:
 
-.. kernel-doc:: include/linux/dcache.h
+.. kernel-doc:: include/freax/dcache.h
    :internal:
 
 Inode Handling

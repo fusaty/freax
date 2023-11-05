@@ -19,8 +19,8 @@
 #define _CIFS_UNICODE_H
 
 #include <asm/byteorder.h>
-#include <linux/types.h>
-#include <linux/nls.h>
+#include <freax/types.h>
+#include <freax/nls.h>
 #include "../../nls/nls_ucs2_utils.h"
 
 /*

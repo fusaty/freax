@@ -3,9 +3,9 @@
 #ifndef _DRM_MANAGED_H_
 #define _DRM_MANAGED_H_
 
-#include <linux/gfp.h>
-#include <linux/overflow.h>
-#include <linux/types.h>
+#include <freax/gfp.h>
+#include <freax/overflow.h>
+#include <freax/types.h>
 
 struct drm_device;
 struct mutex;

@@ -27,8 +27,8 @@
  * under either the MPL or the GPL.
  */
 
-#ifndef _LINUX_CIRRUS_H
-#define _LINUX_CIRRUS_H
+#ifndef _freax_CIRRUS_H
+#define _freax_CIRRUS_H
 
 #define PD67_MISC_CTL_1		0x16	/* Misc control 1 */
 #define PD67_FIFO_CTL		0x17	/* FIFO control */
@@ -144,4 +144,4 @@
 /* Socket Number Register */
 #define PD6832_SOCKET_NUMBER		0x004c	/* 8 bit */
 
-#endif /* _LINUX_CIRRUS_H */
+#endif /* _freax_CIRRUS_H */

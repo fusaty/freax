@@ -4,7 +4,7 @@
 #ifndef __VENUS_DBGFS_H__
 #define __VENUS_DBGFS_H__
 
-#include <linux/fault-inject.h>
+#include <freax/fault-inject.h>
 
 struct venus_core;
 

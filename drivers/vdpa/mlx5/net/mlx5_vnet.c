@@ -1,22 +1,22 @@
-// SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB
+// SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB
 /* Copyright (c) 2020 Mellanox Technologies Ltd. */
 
-#include <linux/module.h>
-#include <linux/vdpa.h>
-#include <linux/vringh.h>
-#include <uapi/linux/virtio_net.h>
-#include <uapi/linux/virtio_ids.h>
-#include <uapi/linux/vdpa.h>
-#include <linux/virtio_config.h>
-#include <linux/auxiliary_bus.h>
-#include <linux/mlx5/cq.h>
-#include <linux/mlx5/qp.h>
-#include <linux/mlx5/device.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/fs.h>
-#include <linux/mlx5/mlx5_ifc_vdpa.h>
-#include <linux/mlx5/mpfs.h>
+#include <freax/module.h>
+#include <freax/vdpa.h>
+#include <freax/vringh.h>
+#include <uapi/freax/virtio_net.h>
+#include <uapi/freax/virtio_ids.h>
+#include <uapi/freax/vdpa.h>
+#include <freax/virtio_config.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/mlx5/cq.h>
+#include <freax/mlx5/qp.h>
+#include <freax/mlx5/device.h>
+#include <freax/mlx5/driver.h>
+#include <freax/mlx5/vport.h>
+#include <freax/mlx5/fs.h>
+#include <freax/mlx5/mlx5_ifc_vdpa.h>
+#include <freax/mlx5/mpfs.h>
 #include "mlx5_vdpa.h"
 #include "mlx5_vnet.h"
 

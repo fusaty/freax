@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_REBOOT_H
-#define _LINUX_REBOOT_H
+#ifndef _freax_REBOOT_H
+#define _freax_REBOOT_H
 
 
-#include <linux/notifier.h>
-#include <uapi/linux/reboot.h>
+#include <freax/notifier.h>
+#include <uapi/freax/reboot.h>
 
 struct device;
 struct sys_off_handler;
@@ -186,4 +186,4 @@ void hw_protection_shutdown(const char *reason, int ms_until_forced);
 extern void emergency_restart(void);
 #include <asm/emergency-restart.h>
 
-#endif /* _LINUX_REBOOT_H */
+#endif /* _freax_REBOOT_H */

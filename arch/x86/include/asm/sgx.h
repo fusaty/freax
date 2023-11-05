@@ -7,11 +7,11 @@
 #ifndef _ASM_X86_SGX_H
 #define _ASM_X86_SGX_H
 
-#include <linux/bits.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/types.h>
 
 /*
- * This file contains both data structures defined by SGX architecture and Linux
+ * This file contains both data structures defined by SGX architecture and freax
  * defined software data structures and functions.  The two should not be mixed
  * together for better readability.  The architectural definitions come first.
  */

@@ -5,15 +5,15 @@
  *  Author: Eric Biederman <ebiederm@xmision.com>
  */
 
-#include <linux/module.h>
-#include <linux/ipc.h>
-#include <linux/nsproxy.h>
-#include <linux/sysctl.h>
-#include <linux/uaccess.h>
-#include <linux/capability.h>
-#include <linux/ipc_namespace.h>
-#include <linux/msg.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/ipc.h>
+#include <freax/nsproxy.h>
+#include <freax/sysctl.h>
+#include <freax/uaccess.h>
+#include <freax/capability.h>
+#include <freax/ipc_namespace.h>
+#include <freax/msg.h>
+#include <freax/slab.h>
 #include "util.h"
 
 static int proc_ipc_dointvec_minmax_orphans(struct ctl_table *table, int write,

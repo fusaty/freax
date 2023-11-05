@@ -21,7 +21,7 @@
  *
  */
 
-#include <linux/pci.h>
+#include <freax/pci.h>
 
 #include "amdgpu.h"
 #include "amdgpu_ih.h"

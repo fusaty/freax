@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: ISC
 /* Copyright (C) 2020 MediaTek Inc. */
 
-#include <linux/fs.h>
-#include <linux/firmware.h>
+#include <freax/fs.h>
+#include <freax/firmware.h>
 #include "mt7921.h"
 #include "mcu.h"
 #include "../mt76_connac2_mac.h"

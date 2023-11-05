@@ -12,11 +12,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/types.h>
-#include <linux/bits.h>
-#include <linux/limits.h>
-#include <linux/slab.h>
-#include <linux/device.h>
+#include <freax/types.h>
+#include <freax/bits.h>
+#include <freax/limits.h>
+#include <freax/slab.h>
+#include <freax/device.h>
 
 #include <asm/perf_event.h>
 #include <asm/insn.h>

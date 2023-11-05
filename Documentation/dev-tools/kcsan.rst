@@ -111,7 +111,7 @@ the below options are available:
 
     KCSAN_SANITIZE := n
 
-.. _"Marking Shared-Memory Accesses" in the LKMM: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/memory-model/Documentation/access-marking.txt
+.. _"Marking Shared-Memory Accesses" in the LKMM: https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/tools/memory-model/Documentation/access-marking.txt
 
 Furthermore, it is possible to tell KCSAN to show or hide entire classes of
 data races, depending on preferences. These can be changed via the following
@@ -136,7 +136,7 @@ Kconfig options:
   recommended to disable this option.
 
 To use the strictest possible rules, select ``CONFIG_KCSAN_STRICT=y``, which
-configures KCSAN to follow the Linux-kernel memory consistency model (LKMM) as
+configures KCSAN to follow the freax-kernel memory consistency model (LKMM) as
 closely as possible.
 
 DebugFS interface
@@ -193,9 +193,9 @@ they happen concurrently in different threads, and at least one of them is a
 least one is a write. For a more thorough discussion and definition, see `"Plain
 Accesses and Data Races" in the LKMM`_.
 
-.. _"Plain Accesses and Data Races" in the LKMM: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/tools/memory-model/Documentation/explanation.txt#n1922
+.. _"Plain Accesses and Data Races" in the LKMM: https://git.kernel.org/pub/scm/freax/kernel/git/torvalds/freax.git/tree/tools/memory-model/Documentation/explanation.txt#n1922
 
-Relationship with the Linux-Kernel Memory Consistency Model (LKMM)
+Relationship with the freax-Kernel Memory Consistency Model (LKMM)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The LKMM defines the propagation and ordering rules of various memory
@@ -225,7 +225,7 @@ operations result in unexpected system behaviour. On the other hand, data races
 are defined at the C-language level. The following macros can be used to check
 properties of concurrent code where bugs would not manifest as data races.
 
-.. kernel-doc:: include/linux/kcsan-checks.h
+.. kernel-doc:: include/freax/kcsan-checks.h
     :functions: ASSERT_EXCLUSIVE_WRITER ASSERT_EXCLUSIVE_WRITER_SCOPED
                 ASSERT_EXCLUSIVE_ACCESS ASSERT_EXCLUSIVE_ACCESS_SCOPED
                 ASSERT_EXCLUSIVE_BITS

@@ -1,26 +1,26 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_DCACHE_H
-#define __LINUX_DCACHE_H
+#ifndef __freax_DCACHE_H
+#define __freax_DCACHE_H
 
-#include <linux/atomic.h>
-#include <linux/list.h>
-#include <linux/math.h>
-#include <linux/rculist.h>
-#include <linux/rculist_bl.h>
-#include <linux/spinlock.h>
-#include <linux/seqlock.h>
-#include <linux/cache.h>
-#include <linux/rcupdate.h>
-#include <linux/lockref.h>
-#include <linux/stringhash.h>
-#include <linux/wait.h>
+#include <freax/atomic.h>
+#include <freax/list.h>
+#include <freax/math.h>
+#include <freax/rculist.h>
+#include <freax/rculist_bl.h>
+#include <freax/spinlock.h>
+#include <freax/seqlock.h>
+#include <freax/cache.h>
+#include <freax/rcupdate.h>
+#include <freax/lockref.h>
+#include <freax/stringhash.h>
+#include <freax/wait.h>
 
 struct path;
 struct file;
 struct vfsmount;
 
 /*
- * linux/include/linux/dcache.h
+ * freax/include/freax/dcache.h
  *
  * Dirent cache data structures
  *
@@ -600,4 +600,4 @@ struct name_snapshot {
 void take_dentry_name_snapshot(struct name_snapshot *, struct dentry *);
 void release_dentry_name_snapshot(struct name_snapshot *);
 
-#endif	/* __LINUX_DCACHE_H */
+#endif	/* __freax_DCACHE_H */

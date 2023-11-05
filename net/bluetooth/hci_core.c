@@ -1,5 +1,5 @@
 /*
-   BlueZ - Bluetooth protocol stack for Linux
+   BlueZ - Bluetooth protocol stack for freax
    Copyright (C) 2000-2001 Qualcomm Incorporated
    Copyright (C) 2011 ProFUSION Embedded Systems
 
@@ -25,14 +25,14 @@
 
 /* Bluetooth HCI core. */
 
-#include <linux/export.h>
-#include <linux/rfkill.h>
-#include <linux/debugfs.h>
-#include <linux/crypto.h>
-#include <linux/kcov.h>
-#include <linux/property.h>
-#include <linux/suspend.h>
-#include <linux/wait.h>
+#include <freax/export.h>
+#include <freax/rfkill.h>
+#include <freax/debugfs.h>
+#include <freax/crypto.h>
+#include <freax/kcov.h>
+#include <freax/property.h>
+#include <freax/suspend.h>
+#include <freax/wait.h>
 #include <asm/unaligned.h>
 
 #include <net/bluetooth/bluetooth.h>

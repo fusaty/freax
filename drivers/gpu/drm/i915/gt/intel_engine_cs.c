@@ -3,7 +3,7 @@
  * Copyright © 2016 Intel Corporation
  */
 
-#include <linux/string_helpers.h>
+#include <freax/string_helpers.h>
 
 #include <drm/drm_print.h>
 

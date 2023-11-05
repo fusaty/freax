@@ -9,12 +9,12 @@
 **
 */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/dma-mapping.h>
-#include <linux/ioport.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/dma-mapping.h>
+#include <freax/ioport.h>
 
 #include <asm/io.h>
 #include <asm/hardware.h>

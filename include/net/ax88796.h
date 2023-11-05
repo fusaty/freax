@@ -8,7 +8,7 @@
 #ifndef __NET_AX88796_PLAT_H
 #define __NET_AX88796_PLAT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct sk_buff;
 struct net_device;

@@ -4,10 +4,10 @@
 
 #include "b43.h"
 
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/list.h>
+#include <freax/skbuff.h>
 
 
 /*** Registers for PIO queues up to revision 7. ***/

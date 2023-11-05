@@ -10,13 +10,13 @@
  *  - a GPIO block
  */
 
-#include <linux/device.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/wm97xx.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/wm97xx.h>
+#include <freax/device.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/wm97xx.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/wm97xx.h>
 #include <sound/ac97/codec.h>
 #include <sound/ac97/compat.h>
 

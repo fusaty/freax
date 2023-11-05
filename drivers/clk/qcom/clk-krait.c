@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0
-// Copyright (c) 2018, The Linux Foundation. All rights reserved.
+// Copyright (c) 2018, The freax Foundation. All rights reserved.
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/clk-provider.h>
-#include <linux/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/clk-provider.h>
+#include <freax/spinlock.h>
 
 #include <asm/krait-l2-accessors.h>
 

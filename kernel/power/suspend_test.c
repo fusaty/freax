@@ -5,8 +5,8 @@
  * Copyright (c) 2009 Pavel Machek <pavel@ucw.cz>
  */
 
-#include <linux/init.h>
-#include <linux/rtc.h>
+#include <freax/init.h>
+#include <freax/rtc.h>
 
 #include "power.h"
 

@@ -7,18 +7,18 @@
  * Author: David Dajun Chen <dchen@diasemi.com>
  */
 
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/hwmon.h>
-#include <linux/hwmon-sysfs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/completion.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/hwmon.h>
+#include <freax/hwmon-sysfs.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/completion.h>
 
-#include <linux/mfd/da9055/core.h>
-#include <linux/mfd/da9055/reg.h>
+#include <freax/mfd/da9055/core.h>
+#include <freax/mfd/da9055/reg.h>
 
 #define DA9055_ADCIN_DIV	102
 #define DA9055_VSYS_DIV	85

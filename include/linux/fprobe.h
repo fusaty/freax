@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /* Simple ftrace probe wrapper */
-#ifndef _LINUX_FPROBE_H
-#define _LINUX_FPROBE_H
+#ifndef _freax_FPROBE_H
+#define _freax_FPROBE_H
 
-#include <linux/compiler.h>
-#include <linux/ftrace.h>
-#include <linux/rethook.h>
+#include <freax/compiler.h>
+#include <freax/ftrace.h>
+#include <freax/rethook.h>
 
 /**
  * struct fprobe - ftrace based probe.

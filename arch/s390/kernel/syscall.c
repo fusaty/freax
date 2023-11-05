@@ -8,30 +8,30 @@
  *  Derived from "arch/i386/kernel/sys_i386.c"
  *
  *  This file contains various random system calls that
- *  have a non-standard calling sequence on the Linux/s390
+ *  have a non-standard calling sequence on the freax/s390
  *  platform.
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/smp.h>
-#include <linux/sem.h>
-#include <linux/msg.h>
-#include <linux/shm.h>
-#include <linux/stat.h>
-#include <linux/syscalls.h>
-#include <linux/mman.h>
-#include <linux/file.h>
-#include <linux/utsname.h>
-#include <linux/personality.h>
-#include <linux/unistd.h>
-#include <linux/ipc.h>
-#include <linux/uaccess.h>
-#include <linux/string.h>
-#include <linux/thread_info.h>
-#include <linux/entry-common.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/smp.h>
+#include <freax/sem.h>
+#include <freax/msg.h>
+#include <freax/shm.h>
+#include <freax/stat.h>
+#include <freax/syscalls.h>
+#include <freax/mman.h>
+#include <freax/file.h>
+#include <freax/utsname.h>
+#include <freax/personality.h>
+#include <freax/unistd.h>
+#include <freax/ipc.h>
+#include <freax/uaccess.h>
+#include <freax/string.h>
+#include <freax/thread_info.h>
+#include <freax/entry-common.h>
 
 #include <asm/ptrace.h>
 #include <asm/vtime.h>
@@ -39,7 +39,7 @@
 #include "entry.h"
 
 /*
- * Perform the mmap() system call. Linux for S/390 isn't able to handle more
+ * Perform the mmap() system call. freax for S/390 isn't able to handle more
  * than 5 system call parameters, so this system call uses a memory block
  * for parameter passing.
  */
@@ -90,15 +90,15 @@ SYSCALL_DEFINE1(s390_personality, unsigned int, personality)
 {
 	unsigned int ret = current->personality;
 
-	if (personality(current->personality) == PER_LINUX32 &&
-	    personality(personality) == PER_LINUX)
-		personality |= PER_LINUX32;
+	if (personality(current->personality) == PER_freax32 &&
+	    personality(personality) == PER_freax)
+		personality |= PER_freax32;
 
 	if (personality != 0xffffffff)
 		set_personality(personality);
 
-	if (personality(ret) == PER_LINUX32)
-		ret &= ~PER_LINUX32;
+	if (personality(ret) == PER_freax32)
+		ret &= ~PER_freax32;
 
 	return ret;
 }

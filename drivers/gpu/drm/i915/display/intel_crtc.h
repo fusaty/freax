@@ -6,7 +6,7 @@
 #ifndef _INTEL_CRTC_H_
 #define _INTEL_CRTC_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 enum i9xx_plane_id;
 enum pipe;

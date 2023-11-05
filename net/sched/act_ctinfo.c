@@ -4,19 +4,19 @@
  * Copyright (c) 2019 Kevin Darbyshire-Bryant <ldir@darbyshire-bryant.me.uk>
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/pkt_cls.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
+#include <freax/pkt_cls.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 #include <net/netlink.h>
 #include <net/pkt_sched.h>
 #include <net/act_api.h>
 #include <net/pkt_cls.h>
-#include <uapi/linux/tc_act/tc_ctinfo.h>
+#include <uapi/freax/tc_act/tc_ctinfo.h>
 #include <net/tc_act/tc_ctinfo.h>
 #include <net/tc_wrapper.h>
 

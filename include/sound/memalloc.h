@@ -9,7 +9,7 @@
 #ifndef __SOUND_MEMALLOC_H
 #define __SOUND_MEMALLOC_H
 
-#include <linux/dma-direction.h>
+#include <freax/dma-direction.h>
 #include <asm/page.h>
 
 struct device;

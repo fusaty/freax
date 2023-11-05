@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * QNX6 file system, Linux implementation.
+ * QNX6 file system, freax implementation.
  *
  * Version : 1.0.0
  *
@@ -11,19 +11,19 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/highuid.h>
-#include <linux/pagemap.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
-#include <linux/statfs.h>
-#include <linux/parser.h>
-#include <linux/seq_file.h>
-#include <linux/mount.h>
-#include <linux/crc32.h>
-#include <linux/mpage.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/highuid.h>
+#include <freax/pagemap.h>
+#include <freax/buffer_head.h>
+#include <freax/writeback.h>
+#include <freax/statfs.h>
+#include <freax/parser.h>
+#include <freax/seq_file.h>
+#include <freax/mount.h>
+#include <freax/crc32.h>
+#include <freax/mpage.h>
 #include "qnx6.h"
 
 static const struct super_operations qnx6_sops;

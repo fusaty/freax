@@ -1,7 +1,7 @@
-#ifndef _UAPI_LINUX_MOUNT_H
-#define _UAPI_LINUX_MOUNT_H
+#ifndef _UAPI_freax_MOUNT_H
+#define _UAPI_freax_MOUNT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * These are the fs-independent mount-flags: up to 32 flags are supported
@@ -138,4 +138,4 @@ struct mount_attr {
 /* List of all mount_attr versions. */
 #define MOUNT_ATTR_SIZE_VER0	32 /* sizeof first published struct */
 
-#endif /* _UAPI_LINUX_MOUNT_H */
+#endif /* _UAPI_freax_MOUNT_H */

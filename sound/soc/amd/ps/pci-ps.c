@@ -5,18 +5,18 @@
  * Copyright 2022 Advanced Micro Devices, Inc.
  */
 
-#include <linux/pci.h>
-#include <linux/bitops.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/platform_device.h>
-#include <linux/acpi.h>
-#include <linux/interrupt.h>
+#include <freax/pci.h>
+#include <freax/bitops.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/interrupt.h>
 #include <sound/pcm_params.h>
-#include <linux/pm_runtime.h>
-#include <linux/iopoll.h>
-#include <linux/soundwire/sdw_amd.h>
+#include <freax/pm_runtime.h>
+#include <freax/iopoll.h>
+#include <freax/soundwire/sdw_amd.h>
 
 #include "acp63.h"
 

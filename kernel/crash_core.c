@@ -4,17 +4,17 @@
  * Copyright (C) 2002-2004 Eric Biederman  <ebiederm@xmission.com>
  */
 
-#include <linux/buildid.h>
-#include <linux/init.h>
-#include <linux/utsname.h>
-#include <linux/vmalloc.h>
-#include <linux/sizes.h>
-#include <linux/kexec.h>
-#include <linux/memory.h>
-#include <linux/cpuhotplug.h>
-#include <linux/memblock.h>
-#include <linux/kexec.h>
-#include <linux/kmemleak.h>
+#include <freax/buildid.h>
+#include <freax/init.h>
+#include <freax/utsname.h>
+#include <freax/vmalloc.h>
+#include <freax/sizes.h>
+#include <freax/kexec.h>
+#include <freax/memory.h>
+#include <freax/cpuhotplug.h>
+#include <freax/memblock.h>
+#include <freax/kexec.h>
+#include <freax/kmemleak.h>
 
 #include <asm/page.h>
 #include <asm/sections.h>

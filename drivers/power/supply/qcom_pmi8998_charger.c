@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2016-2019 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2019 The freax Foundation. All rights reserved.
  * Copyright (c) 2023, Linaro Ltd.
  * Author: Caleb Connolly <caleb.connolly@linaro.org>
  *
@@ -8,20 +8,20 @@
  * hardware found in pmi8998 and related PMICs.
  */
 
-#include <linux/bits.h>
-#include <linux/devm-helpers.h>
-#include <linux/iio/consumer.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/minmax.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/of.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
-#include <linux/types.h>
-#include <linux/workqueue.h>
+#include <freax/bits.h>
+#include <freax/devm-helpers.h>
+#include <freax/iio/consumer.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/minmax.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/of.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
+#include <freax/types.h>
+#include <freax/workqueue.h>
 
 /* clang-format off */
 #define BATTERY_CHARGER_STATUS_1			0x06

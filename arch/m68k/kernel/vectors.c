@@ -17,12 +17,12 @@
 /*
  * Sets up all exception vectors
  */
-#include <linux/cpu.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/kallsyms.h>
+#include <freax/cpu.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
+#include <freax/kallsyms.h>
 
 #include <asm/setup.h>
 #include <asm/fpu.h>

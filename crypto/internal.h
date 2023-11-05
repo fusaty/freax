@@ -9,18 +9,18 @@
 #define _CRYPTO_INTERNAL_H
 
 #include <crypto/algapi.h>
-#include <linux/completion.h>
-#include <linux/err.h>
-#include <linux/jump_label.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/notifier.h>
-#include <linux/numa.h>
-#include <linux/refcount.h>
-#include <linux/rwsem.h>
-#include <linux/scatterlist.h>
-#include <linux/sched.h>
-#include <linux/types.h>
+#include <freax/completion.h>
+#include <freax/err.h>
+#include <freax/jump_label.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/notifier.h>
+#include <freax/numa.h>
+#include <freax/refcount.h>
+#include <freax/rwsem.h>
+#include <freax/scatterlist.h>
+#include <freax/sched.h>
+#include <freax/types.h>
 
 struct akcipher_request;
 struct crypto_akcipher;

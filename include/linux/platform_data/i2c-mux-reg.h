@@ -6,8 +6,8 @@
  * York Sun <yorksun@freescale.com>
  */
 
-#ifndef __LINUX_PLATFORM_DATA_I2C_MUX_REG_H
-#define __LINUX_PLATFORM_DATA_I2C_MUX_REG_H
+#ifndef __freax_PLATFORM_DATA_I2C_MUX_REG_H
+#define __freax_PLATFORM_DATA_I2C_MUX_REG_H
 
 /**
  * struct i2c_mux_reg_platform_data - Platform-dependent data for i2c-mux-reg
@@ -37,4 +37,4 @@ struct i2c_mux_reg_platform_data {
 	resource_size_t reg_size;
 };
 
-#endif	/* __LINUX_PLATFORM_DATA_I2C_MUX_REG_H */
+#endif	/* __freax_PLATFORM_DATA_I2C_MUX_REG_H */

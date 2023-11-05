@@ -7,11 +7,11 @@
  * Contains all ONFI related definitions
  */
 
-#ifndef __LINUX_MTD_ONFI_H
-#define __LINUX_MTD_ONFI_H
+#ifndef __freax_MTD_ONFI_H
+#define __freax_MTD_ONFI_H
 
-#include <linux/types.h>
-#include <linux/bitfield.h>
+#include <freax/types.h>
+#include <freax/bitfield.h>
 
 /* ONFI version bits */
 #define ONFI_VERSION_1_0		BIT(1)
@@ -187,4 +187,4 @@ struct onfi_params {
 	u8 vendor[88];
 };
 
-#endif /* __LINUX_MTD_ONFI_H */
+#endif /* __freax_MTD_ONFI_H */

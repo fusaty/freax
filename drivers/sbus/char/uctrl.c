@@ -5,17 +5,17 @@
  * Copyright 2008 David S. Miller (davem@davemloft.net)
  */
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/ioport.h>
-#include <linux/miscdevice.h>
-#include <linux/mm.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/ioport.h>
+#include <freax/miscdevice.h>
+#include <freax/mm.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>

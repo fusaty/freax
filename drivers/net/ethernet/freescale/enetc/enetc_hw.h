@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause) */
 /* Copyright 2017-2019 NXP */
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 #define ENETC_MM_VERIFY_SLEEP_US	USEC_PER_MSEC
 #define ENETC_MM_VERIFY_RETRIES		3

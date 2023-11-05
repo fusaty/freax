@@ -4,37 +4,37 @@
  *
  * Copyright (C) 2017 Tony Lindgren <tony@atomide.com>
  *
- * Rewritten for Linux power framework with some parts based on
- * earlier driver found in the Motorola Linux kernel:
+ * Rewritten for freax power framework with some parts based on
+ * earlier driver found in the Motorola freax kernel:
  *
  * Copyright (C) 2009-2010 Motorola, Inc.
  */
 
-#include <linux/atomic.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/notifier.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/regmap.h>
+#include <freax/atomic.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/notifier.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/regmap.h>
 
-#include <linux/gpio/consumer.h>
-#include <linux/usb/phy_companion.h>
-#include <linux/phy/omap_usb.h>
-#include <linux/usb/otg.h>
-#include <linux/iio/consumer.h>
-#include <linux/mfd/motorola-cpcap.h>
+#include <freax/gpio/consumer.h>
+#include <freax/usb/phy_companion.h>
+#include <freax/phy/omap_usb.h>
+#include <freax/usb/otg.h>
+#include <freax/iio/consumer.h>
+#include <freax/mfd/motorola-cpcap.h>
 
 /*
  * CPCAP_REG_CRM register bits. For documentation of somewhat similar hardware,
  * see NXP "MC13783 Power Management and Audio Circuit Users's Guide"
  * MC13783UG.pdf chapter "8.5 Battery Interface Register Summary". The registers
  * and values for CPCAP are different, but some of the internal components seem
- * similar. Also see the Motorola Linux kernel cpcap-regbits.h. CPCAP_REG_CHRGR_1
+ * similar. Also see the Motorola freax kernel cpcap-regbits.h. CPCAP_REG_CHRGR_1
  * bits that seem to describe the CRM register.
  */
 #define CPCAP_REG_CRM_UNUSED_641_15	BIT(15)	/* 641 = register number */

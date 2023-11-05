@@ -4,10 +4,10 @@
 #ifndef _IONIC_DEV_H_
 #define _IONIC_DEV_H_
 
-#include <linux/atomic.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
-#include <linux/skbuff.h>
+#include <freax/atomic.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
+#include <freax/skbuff.h>
 
 #include "ionic_if.h"
 #include "ionic_regs.h"

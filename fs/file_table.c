@@ -1,36 +1,36 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/file_table.c
+ *  freax/fs/file_table.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  *  Copyright (C) 1997 David S. Miller (davem@caip.rutgers.edu)
  */
 
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/security.h>
-#include <linux/cred.h>
-#include <linux/eventpoll.h>
-#include <linux/rcupdate.h>
-#include <linux/mount.h>
-#include <linux/capability.h>
-#include <linux/cdev.h>
-#include <linux/fsnotify.h>
-#include <linux/sysctl.h>
-#include <linux/percpu_counter.h>
-#include <linux/percpu.h>
-#include <linux/task_work.h>
-#include <linux/ima.h>
-#include <linux/swap.h>
-#include <linux/kmemleak.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/file.h>
+#include <freax/fdtable.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/fs.h>
+#include <freax/filelock.h>
+#include <freax/security.h>
+#include <freax/cred.h>
+#include <freax/eventpoll.h>
+#include <freax/rcupdate.h>
+#include <freax/mount.h>
+#include <freax/capability.h>
+#include <freax/cdev.h>
+#include <freax/fsnotify.h>
+#include <freax/sysctl.h>
+#include <freax/percpu_counter.h>
+#include <freax/percpu.h>
+#include <freax/task_work.h>
+#include <freax/ima.h>
+#include <freax/swap.h>
+#include <freax/kmemleak.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 #include "internal.h"
 

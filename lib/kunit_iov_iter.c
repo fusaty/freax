@@ -7,11 +7,11 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/uio.h>
-#include <linux/bvec.h>
+#include <freax/module.h>
+#include <freax/vmalloc.h>
+#include <freax/mm.h>
+#include <freax/uio.h>
+#include <freax/bvec.h>
 #include <kunit/test.h>
 
 MODULE_DESCRIPTION("iov_iter testing");

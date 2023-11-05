@@ -12,16 +12,16 @@
  *	Copyright 2005 Phil Blundell
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/gpio.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio_keys.h>
-#include <linux/property.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/gpio.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio_keys.h>
+#include <freax/property.h>
 
 #define DRV_NAME	"gpio-keys-polled"
 
@@ -167,7 +167,7 @@ gpio_keys_polled_get_devtree_pdata(struct device *dev)
 	device_property_read_string(dev, "label", &pdata->name);
 
 	device_for_each_child_node(dev, child) {
-		if (fwnode_property_read_u32(child, "linux,code",
+		if (fwnode_property_read_u32(child, "freax,code",
 					     &button->code)) {
 			dev_err(dev, "button without keycode\n");
 			fwnode_handle_put(child);
@@ -176,11 +176,11 @@ gpio_keys_polled_get_devtree_pdata(struct device *dev)
 
 		fwnode_property_read_string(child, "label", &button->desc);
 
-		if (fwnode_property_read_u32(child, "linux,input-type",
+		if (fwnode_property_read_u32(child, "freax,input-type",
 					     &button->type))
 			button->type = EV_KEY;
 
-		if (fwnode_property_read_u32(child, "linux,input-value",
+		if (fwnode_property_read_u32(child, "freax,input-value",
 					     (u32 *)&button->value))
 			button->value = 1;
 

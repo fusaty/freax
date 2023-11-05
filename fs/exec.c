@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/fs/exec.c
+ *  freax/fs/exec.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
@@ -13,7 +13,7 @@
  * the header into memory. The inode of the executable is put into
  * "current->executable", and page faults do the actual loading. Clean.
  *
- * Once more I can proudly say that linux stood up to being changed: it
+ * Once more I can proudly say that freax stood up to being changed: it
  * was less than 2 hours work to get demand-loading completely implemented.
  *
  * Demand loading changed July 1993 by Eric Youngdale.   Use mmap instead,
@@ -23,51 +23,51 @@
  * formats.
  */
 
-#include <linux/kernel_read_file.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/fdtable.h>
-#include <linux/mm.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/swap.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/sched/mm.h>
-#include <linux/sched/coredump.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/numa_balancing.h>
-#include <linux/sched/task.h>
-#include <linux/pagemap.h>
-#include <linux/perf_event.h>
-#include <linux/highmem.h>
-#include <linux/spinlock.h>
-#include <linux/key.h>
-#include <linux/personality.h>
-#include <linux/binfmts.h>
-#include <linux/utsname.h>
-#include <linux/pid_namespace.h>
-#include <linux/module.h>
-#include <linux/namei.h>
-#include <linux/mount.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/tsacct_kern.h>
-#include <linux/cn_proc.h>
-#include <linux/audit.h>
-#include <linux/kmod.h>
-#include <linux/fsnotify.h>
-#include <linux/fs_struct.h>
-#include <linux/oom.h>
-#include <linux/compat.h>
-#include <linux/vmalloc.h>
-#include <linux/io_uring.h>
-#include <linux/syscall_user_dispatch.h>
-#include <linux/coredump.h>
-#include <linux/time_namespace.h>
-#include <linux/user_events.h>
+#include <freax/kernel_read_file.h>
+#include <freax/slab.h>
+#include <freax/file.h>
+#include <freax/fdtable.h>
+#include <freax/mm.h>
+#include <freax/stat.h>
+#include <freax/fcntl.h>
+#include <freax/swap.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/sched/mm.h>
+#include <freax/sched/coredump.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/numa_balancing.h>
+#include <freax/sched/task.h>
+#include <freax/pagemap.h>
+#include <freax/perf_event.h>
+#include <freax/highmem.h>
+#include <freax/spinlock.h>
+#include <freax/key.h>
+#include <freax/personality.h>
+#include <freax/binfmts.h>
+#include <freax/utsname.h>
+#include <freax/pid_namespace.h>
+#include <freax/module.h>
+#include <freax/namei.h>
+#include <freax/mount.h>
+#include <freax/security.h>
+#include <freax/syscalls.h>
+#include <freax/tsacct_kern.h>
+#include <freax/cn_proc.h>
+#include <freax/audit.h>
+#include <freax/kmod.h>
+#include <freax/fsnotify.h>
+#include <freax/fs_struct.h>
+#include <freax/oom.h>
+#include <freax/compat.h>
+#include <freax/vmalloc.h>
+#include <freax/io_uring.h>
+#include <freax/syscall_user_dispatch.h>
+#include <freax/coredump.h>
+#include <freax/time_namespace.h>
+#include <freax/user_events.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/mmu_context.h>
 #include <asm/tlb.h>
 
@@ -76,14 +76,14 @@
 
 #include <trace/events/sched.h>
 
-static int bprm_creds_from_file(struct linux_binprm *bprm);
+static int bprm_creds_from_file(struct freax_binprm *bprm);
 
 int suid_dumpable = 0;
 
 static LIST_HEAD(formats);
 static DEFINE_RWLOCK(binfmt_lock);
 
-void __register_binfmt(struct linux_binfmt * fmt, int insert)
+void __register_binfmt(struct freax_binfmt * fmt, int insert)
 {
 	write_lock(&binfmt_lock);
 	insert ? list_add(&fmt->lh, &formats) :
@@ -93,7 +93,7 @@ void __register_binfmt(struct linux_binfmt * fmt, int insert)
 
 EXPORT_SYMBOL(__register_binfmt);
 
-void unregister_binfmt(struct linux_binfmt * fmt)
+void unregister_binfmt(struct freax_binfmt * fmt)
 {
 	write_lock(&binfmt_lock);
 	list_del(&fmt->lh);
@@ -102,7 +102,7 @@ void unregister_binfmt(struct linux_binfmt * fmt)
 
 EXPORT_SYMBOL(unregister_binfmt);
 
-static inline void put_binfmt(struct linux_binfmt * fmt)
+static inline void put_binfmt(struct freax_binfmt * fmt)
 {
 	module_put(fmt->module);
 }
@@ -122,7 +122,7 @@ bool path_noexec(const struct path *path)
  */
 SYSCALL_DEFINE1(uselib, const char __user *, library)
 {
-	struct linux_binfmt *fmt;
+	struct freax_binfmt *fmt;
 	struct file *file;
 	struct filename *tmp = getname(library);
 	int error = PTR_ERR(tmp);
@@ -182,7 +182,7 @@ out:
  * for oom_badness()->get_mm_rss(). Once exec succeeds or fails, we
  * change the counter back via acct_arg_size(0).
  */
-static void acct_arg_size(struct linux_binprm *bprm, unsigned long pages)
+static void acct_arg_size(struct freax_binprm *bprm, unsigned long pages)
 {
 	struct mm_struct *mm = current->mm;
 	long diff = (long)(pages - bprm->vma_pages);
@@ -194,7 +194,7 @@ static void acct_arg_size(struct linux_binprm *bprm, unsigned long pages)
 	add_mm_counter(mm, MM_ANONPAGES, diff);
 }
 
-static struct page *get_arg_page(struct linux_binprm *bprm, unsigned long pos,
+static struct page *get_arg_page(struct freax_binprm *bprm, unsigned long pos,
 		int write)
 {
 	struct page *page;
@@ -240,17 +240,17 @@ static void put_arg_page(struct page *page)
 	put_page(page);
 }
 
-static void free_arg_pages(struct linux_binprm *bprm)
+static void free_arg_pages(struct freax_binprm *bprm)
 {
 }
 
-static void flush_arg_page(struct linux_binprm *bprm, unsigned long pos,
+static void flush_arg_page(struct freax_binprm *bprm, unsigned long pos,
 		struct page *page)
 {
 	flush_cache_page(bprm->vma, pos, page_to_pfn(page));
 }
 
-static int __bprm_mm_init(struct linux_binprm *bprm)
+static int __bprm_mm_init(struct freax_binprm *bprm)
 {
 	int err;
 	struct vm_area_struct *vma = NULL;
@@ -294,18 +294,18 @@ err_free:
 	return err;
 }
 
-static bool valid_arg_len(struct linux_binprm *bprm, long len)
+static bool valid_arg_len(struct freax_binprm *bprm, long len)
 {
 	return len <= MAX_ARG_STRLEN;
 }
 
 #else
 
-static inline void acct_arg_size(struct linux_binprm *bprm, unsigned long pages)
+static inline void acct_arg_size(struct freax_binprm *bprm, unsigned long pages)
 {
 }
 
-static struct page *get_arg_page(struct linux_binprm *bprm, unsigned long pos,
+static struct page *get_arg_page(struct freax_binprm *bprm, unsigned long pos,
 		int write)
 {
 	struct page *page;
@@ -325,7 +325,7 @@ static void put_arg_page(struct page *page)
 {
 }
 
-static void free_arg_page(struct linux_binprm *bprm, int i)
+static void free_arg_page(struct freax_binprm *bprm, int i)
 {
 	if (bprm->page[i]) {
 		__free_page(bprm->page[i]);
@@ -333,7 +333,7 @@ static void free_arg_page(struct linux_binprm *bprm, int i)
 	}
 }
 
-static void free_arg_pages(struct linux_binprm *bprm)
+static void free_arg_pages(struct freax_binprm *bprm)
 {
 	int i;
 
@@ -341,18 +341,18 @@ static void free_arg_pages(struct linux_binprm *bprm)
 		free_arg_page(bprm, i);
 }
 
-static void flush_arg_page(struct linux_binprm *bprm, unsigned long pos,
+static void flush_arg_page(struct freax_binprm *bprm, unsigned long pos,
 		struct page *page)
 {
 }
 
-static int __bprm_mm_init(struct linux_binprm *bprm)
+static int __bprm_mm_init(struct freax_binprm *bprm)
 {
 	bprm->p = PAGE_SIZE * MAX_ARG_PAGES - sizeof(void *);
 	return 0;
 }
 
-static bool valid_arg_len(struct linux_binprm *bprm, long len)
+static bool valid_arg_len(struct freax_binprm *bprm, long len)
 {
 	return len <= bprm->p;
 }
@@ -365,7 +365,7 @@ static bool valid_arg_len(struct linux_binprm *bprm, long len)
  * flags, permissions, and offset, so we use temporary values.  We'll update
  * them later in setup_arg_pages().
  */
-static int bprm_mm_init(struct linux_binprm *bprm)
+static int bprm_mm_init(struct freax_binprm *bprm)
 {
 	int err;
 	struct mm_struct *mm = NULL;
@@ -474,7 +474,7 @@ static int count_strings_kernel(const char *const *argv)
 	return i;
 }
 
-static int bprm_stack_limits(struct linux_binprm *bprm)
+static int bprm_stack_limits(struct freax_binprm *bprm)
 {
 	unsigned long limit, ptr_size;
 
@@ -521,7 +521,7 @@ static int bprm_stack_limits(struct linux_binprm *bprm)
  * ensures the destination page is created and not swapped out.
  */
 static int copy_strings(int argc, struct user_arg_ptr argv,
-			struct linux_binprm *bprm)
+			struct freax_binprm *bprm)
 {
 	struct page *kmapped_page = NULL;
 	char *kaddr = NULL;
@@ -615,7 +615,7 @@ out:
 /*
  * Copy and argument/environment string from the kernel to the processes stack.
  */
-int copy_string_kernel(const char *arg, struct linux_binprm *bprm)
+int copy_string_kernel(const char *arg, struct freax_binprm *bprm)
 {
 	int len = strnlen(arg, MAX_ARG_STRLEN) + 1 /* terminating NUL */;
 	unsigned long pos = bprm->p;
@@ -653,7 +653,7 @@ int copy_string_kernel(const char *arg, struct linux_binprm *bprm)
 EXPORT_SYMBOL(copy_string_kernel);
 
 static int copy_strings_kernel(int argc, const char *const *argv,
-			       struct linux_binprm *bprm)
+			       struct freax_binprm *bprm)
 {
 	while (argc-- > 0) {
 		int ret = copy_string_kernel(argv[argc], bprm);
@@ -746,7 +746,7 @@ static int shift_arg_pages(struct vm_area_struct *vma, unsigned long shift)
  * Finalizes the stack vm_area_struct. The flags and permissions are updated,
  * the stack is optionally relocated, and some extra space is added.
  */
-int setup_arg_pages(struct linux_binprm *bprm,
+int setup_arg_pages(struct freax_binprm *bprm,
 		    unsigned long stack_top,
 		    int executable_stack)
 {
@@ -874,7 +874,7 @@ EXPORT_SYMBOL(setup_arg_pages);
  * Transfer the program arguments and environment from the holding pages
  * onto the stack. The provided stack pointer is adjusted accordingly.
  */
-int transfer_args_to_stack(struct linux_binprm *bprm,
+int transfer_args_to_stack(struct freax_binprm *bprm,
 			   unsigned long *sp_location)
 {
 	unsigned long index, stop, sp;
@@ -1241,7 +1241,7 @@ void __set_task_comm(struct task_struct *tsk, const char *buf, bool exec)
  * signal (via de_thread() or coredump), or will have SEGV raised
  * (after exec_mmap()) by search_binary_handler (see below).
  */
-int begin_new_exec(struct linux_binprm * bprm)
+int begin_new_exec(struct freax_binprm * bprm)
 {
 	struct task_struct *me = current;
 	int retval;
@@ -1413,7 +1413,7 @@ out:
 }
 EXPORT_SYMBOL(begin_new_exec);
 
-void would_dump(struct linux_binprm *bprm, struct file *file)
+void would_dump(struct freax_binprm *bprm, struct file *file)
 {
 	struct inode *inode = file_inode(file);
 	struct mnt_idmap *idmap = file_mnt_idmap(file);
@@ -1435,7 +1435,7 @@ void would_dump(struct linux_binprm *bprm, struct file *file)
 }
 EXPORT_SYMBOL(would_dump);
 
-void setup_new_exec(struct linux_binprm * bprm)
+void setup_new_exec(struct freax_binprm * bprm)
 {
 	/* Setup things that can depend upon the personality */
 	struct task_struct *me = current;
@@ -1455,7 +1455,7 @@ void setup_new_exec(struct linux_binprm * bprm)
 EXPORT_SYMBOL(setup_new_exec);
 
 /* Runs immediately before start_thread() takes over. */
-void finalize_exec(struct linux_binprm *bprm)
+void finalize_exec(struct freax_binprm *bprm)
 {
 	/* Store any stack rlimit changes before starting thread. */
 	task_lock(current->group_leader);
@@ -1470,7 +1470,7 @@ EXPORT_SYMBOL(finalize_exec);
  * Or, if exec fails before, free_bprm() should release ->cred
  * and unlock.
  */
-static int prepare_bprm_creds(struct linux_binprm *bprm)
+static int prepare_bprm_creds(struct freax_binprm *bprm)
 {
 	if (mutex_lock_interruptible(&current->signal->cred_guard_mutex))
 		return -ERESTARTNOINTR;
@@ -1483,7 +1483,7 @@ static int prepare_bprm_creds(struct linux_binprm *bprm)
 	return -ENOMEM;
 }
 
-static void free_bprm(struct linux_binprm *bprm)
+static void free_bprm(struct freax_binprm *bprm)
 {
 	if (bprm->mm) {
 		acct_arg_size(bprm, 0);
@@ -1507,9 +1507,9 @@ static void free_bprm(struct linux_binprm *bprm)
 	kfree(bprm);
 }
 
-static struct linux_binprm *alloc_bprm(int fd, struct filename *filename)
+static struct freax_binprm *alloc_bprm(int fd, struct filename *filename)
 {
-	struct linux_binprm *bprm = kzalloc(sizeof(*bprm), GFP_KERNEL);
+	struct freax_binprm *bprm = kzalloc(sizeof(*bprm), GFP_KERNEL);
 	int retval = -ENOMEM;
 	if (!bprm)
 		goto out;
@@ -1540,7 +1540,7 @@ out:
 	return ERR_PTR(retval);
 }
 
-int bprm_change_interp(const char *interp, struct linux_binprm *bprm)
+int bprm_change_interp(const char *interp, struct freax_binprm *bprm)
 {
 	/* If a binfmt changed the interp, free it first. */
 	if (bprm->interp != bprm->filename)
@@ -1557,7 +1557,7 @@ EXPORT_SYMBOL(bprm_change_interp);
  * - the caller must hold ->cred_guard_mutex to protect against
  *   PTRACE_ATTACH or seccomp thread-sync
  */
-static void check_unsafe_exec(struct linux_binprm *bprm)
+static void check_unsafe_exec(struct freax_binprm *bprm)
 {
 	struct task_struct *p = current, *t;
 	unsigned n_fs;
@@ -1595,7 +1595,7 @@ static void check_unsafe_exec(struct linux_binprm *bprm)
 	spin_unlock(&p->fs->lock);
 }
 
-static void bprm_fill_uid(struct linux_binprm *bprm, struct file *file)
+static void bprm_fill_uid(struct freax_binprm *bprm, struct file *file)
 {
 	/* Handle suid and sgid on files */
 	struct mnt_idmap *idmap;
@@ -1644,7 +1644,7 @@ static void bprm_fill_uid(struct linux_binprm *bprm, struct file *file)
 /*
  * Compute brpm->cred based upon the final binary.
  */
-static int bprm_creds_from_file(struct linux_binprm *bprm)
+static int bprm_creds_from_file(struct freax_binprm *bprm)
 {
 	/* Compute creds based on which file? */
 	struct file *file = bprm->execfd_creds ? bprm->executable : bprm->file;
@@ -1659,7 +1659,7 @@ static int bprm_creds_from_file(struct linux_binprm *bprm)
  *
  * This may be called multiple times for binary chains (scripts for example).
  */
-static int prepare_binprm(struct linux_binprm *bprm)
+static int prepare_binprm(struct freax_binprm *bprm)
 {
 	loff_t pos = 0;
 
@@ -1672,7 +1672,7 @@ static int prepare_binprm(struct linux_binprm *bprm)
  * points to; chop off the first by relocating brpm->p to right after
  * the first '\0' encountered.
  */
-int remove_arg_zero(struct linux_binprm *bprm)
+int remove_arg_zero(struct freax_binprm *bprm)
 {
 	int ret = 0;
 	unsigned long offset;
@@ -1712,10 +1712,10 @@ EXPORT_SYMBOL(remove_arg_zero);
 /*
  * cycle the list of binary formats handler, until one recognizes the image
  */
-static int search_binary_handler(struct linux_binprm *bprm)
+static int search_binary_handler(struct freax_binprm *bprm)
 {
 	bool need_retry = IS_ENABLED(CONFIG_MODULES);
-	struct linux_binfmt *fmt;
+	struct freax_binfmt *fmt;
 	int retval;
 
 	retval = prepare_binprm(bprm);
@@ -1759,7 +1759,7 @@ static int search_binary_handler(struct linux_binprm *bprm)
 }
 
 /* binfmt handlers will call back into begin_new_exec() on success. */
-static int exec_binprm(struct linux_binprm *bprm)
+static int exec_binprm(struct freax_binprm *bprm)
 {
 	pid_t old_pid, old_vpid;
 	int ret, depth;
@@ -1807,7 +1807,7 @@ static int exec_binprm(struct linux_binprm *bprm)
 /*
  * sys_execve() executes a new program.
  */
-static int bprm_execve(struct linux_binprm *bprm,
+static int bprm_execve(struct freax_binprm *bprm,
 		       int fd, struct filename *filename, int flags)
 {
 	struct file *file;
@@ -1888,7 +1888,7 @@ static int do_execveat_common(int fd, struct filename *filename,
 			      struct user_arg_ptr envp,
 			      int flags)
 {
-	struct linux_binprm *bprm;
+	struct freax_binprm *bprm;
 	int retval;
 
 	if (IS_ERR(filename))
@@ -1972,7 +1972,7 @@ int kernel_execve(const char *kernel_filename,
 		  const char *const *argv, const char *const *envp)
 {
 	struct filename *filename;
-	struct linux_binprm *bprm;
+	struct freax_binprm *bprm;
 	int fd = AT_FDCWD;
 	int retval;
 
@@ -2080,7 +2080,7 @@ static int compat_do_execveat(int fd, struct filename *filename,
 }
 #endif
 
-void set_binfmt(struct linux_binfmt *new)
+void set_binfmt(struct freax_binfmt *new)
 {
 	struct mm_struct *mm = current->mm;
 

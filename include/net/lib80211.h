@@ -15,7 +15,7 @@
  * Copyright (c) 2002-2003, Jouni Malinen <j@w1.fi>
  *
  * Adaption to a generic IEEE 802.11 stack by James Ketrenos
- * <jketreno@linux.intel.com>
+ * <jketreno@freax.intel.com>
  *
  * Copyright (c) 2004, Intel Corporation
  *
@@ -24,14 +24,14 @@
 #ifndef LIB80211_H
 #define LIB80211_H
 
-#include <linux/types.h>
-#include <linux/list.h>
-#include <linux/atomic.h>
-#include <linux/if.h>
-#include <linux/skbuff.h>
-#include <linux/ieee80211.h>
-#include <linux/timer.h>
-#include <linux/seq_file.h>
+#include <freax/types.h>
+#include <freax/list.h>
+#include <freax/atomic.h>
+#include <freax/if.h>
+#include <freax/skbuff.h>
+#include <freax/ieee80211.h>
+#include <freax/timer.h>
+#include <freax/seq_file.h>
 
 #define NUM_WEP_KEYS	4
 

@@ -1,17 +1,17 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
  * Copyright (c) 2013-2023, Intel Corporation. All rights reserved.
- * Intel Management Engine Interface (Intel MEI) Linux driver
+ * Intel Management Engine Interface (Intel MEI) freax driver
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/slab.h>
 
-#include <linux/mei.h>
-#include <linux/mei_cl_bus.h>
+#include <freax/mei.h>
+#include <freax/mei_cl_bus.h>
 
 #include "mei_dev.h"
 #include "client.h"
@@ -80,7 +80,7 @@ static void whitelist(struct mei_cl_device *cldev)
 	cldev->do_match = 1;
 }
 
-#define OSTYPE_LINUX    2
+#define OSTYPE_freax    2
 struct mei_os_ver {
 	__le16 build;
 	__le16 reserved1;
@@ -126,7 +126,7 @@ static int mei_osver(struct mei_cl_device *cldev)
 	fwcaps->id.feature_id = MKHI_FEATURE_PTT;
 	fwcaps->len = sizeof(*os_ver);
 	os_ver = (struct mei_os_ver *)fwcaps->data;
-	os_ver->os_type = OSTYPE_LINUX;
+	os_ver->os_type = OSTYPE_freax;
 
 	return __mei_cl_send(cldev->cl, buf, size, 0, mode);
 }
@@ -295,7 +295,7 @@ out:
  * @cldev: me clients device
  */
 #if IS_ENABLED(CONFIG_INTEL_MEI_ME)
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include "hw-me-regs.h"
 static void mei_wd(struct mei_cl_device *cldev)
 {

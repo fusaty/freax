@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * linux/sound/rt5660.h -- Platform data for RT5660
+ * freax/sound/rt5660.h -- Platform data for RT5660
  *
  * Copyright 2016 Realtek Semiconductor Corp.
  * Author: Oder Chiou <oder_chiou@realtek.com>
  */
 
-#ifndef __LINUX_SND_RT5660_H
-#define __LINUX_SND_RT5660_H
+#ifndef __freax_SND_RT5660_H
+#define __freax_SND_RT5660_H
 
 enum rt5660_dmic1_data_pin {
 	RT5660_DMIC1_NULL,

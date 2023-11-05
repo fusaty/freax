@@ -14,14 +14,14 @@
  *
  *  Jan, 2008
  */
-#include <linux/ipv6.h>
+#include <freax/ipv6.h>
 #include <net/ipv6.h>
-#include <linux/in.h>
-#include <linux/module.h>
+#include <freax/in.h>
+#include <freax/module.h>
 #include <net/dsfield.h>
-#include <linux/netfilter/x_tables.h>
-#include <linux/netfilter_bridge/ebtables.h>
-#include <linux/netfilter_bridge/ebt_ip6.h>
+#include <freax/netfilter/x_tables.h>
+#include <freax/netfilter_bridge/ebtables.h>
+#include <freax/netfilter_bridge/ebt_ip6.h>
 
 union pkthdr {
 	struct {

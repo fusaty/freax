@@ -3,11 +3,11 @@
  * Copyright (c) 2015 Pengutronix, Sascha Hauer <kernel@pengutronix.de>
  */
 
-#include <linux/export.h>
-#include <linux/jiffies.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
-#include <linux/soc/mediatek/infracfg.h>
+#include <freax/export.h>
+#include <freax/jiffies.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
+#include <freax/soc/mediatek/infracfg.h>
 #include <asm/processor.h>
 
 #define MTK_POLL_DELAY_US   10

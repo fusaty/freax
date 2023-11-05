@@ -6,10 +6,10 @@
 #ifndef _PCIE_CADENCE_H
 #define _PCIE_CADENCE_H
 
-#include <linux/kernel.h>
-#include <linux/pci.h>
-#include <linux/pci-epf.h>
-#include <linux/phy/phy.h>
+#include <freax/kernel.h>
+#include <freax/pci.h>
+#include <freax/pci-epf.h>
+#include <freax/phy/phy.h>
 
 /* Parameters for the waiting for link up routine */
 #define LINK_WAIT_MAX_RETRIES	10

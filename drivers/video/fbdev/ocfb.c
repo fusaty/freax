@@ -8,19 +8,19 @@
  * kind, whether express or implied.
  */
 
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/errno.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/errno.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 
 /* OCFB register defines */
 #define OCFB_CTRL	0x000

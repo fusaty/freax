@@ -9,14 +9,14 @@
  *   Copyright (c) 2003 - 2006 Zultys Technologies
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
 
 #include <asm/dcr.h>
 #include <asm/dcr-regs.h>

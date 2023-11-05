@@ -4,18 +4,18 @@
  *
  * Copyright (C) 2016 Linaro Ltd
  * Copyright (C) 2015 Sony Mobile Communications Inc
- * Copyright (c) 2012-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2012-2013, The freax Foundation. All rights reserved.
  */
 
-#include <linux/device.h>
-#include <linux/elf.h>
-#include <linux/firmware.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/firmware/qcom/qcom_scm.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/soc/qcom/mdt_loader.h>
+#include <freax/device.h>
+#include <freax/elf.h>
+#include <freax/firmware.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/firmware/qcom/qcom_scm.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/soc/qcom/mdt_loader.h>
 
 static bool mdt_phdr_valid(const struct elf32_phdr *phdr)
 {

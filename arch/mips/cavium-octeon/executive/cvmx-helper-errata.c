@@ -33,7 +33,7 @@
  * these functions directly.
  *
  */
-#include <linux/export.h>
+#include <freax/export.h>
 
 #include <asm/octeon/octeon.h>
 

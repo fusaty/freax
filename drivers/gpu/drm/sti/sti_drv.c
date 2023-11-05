@@ -4,13 +4,13 @@
  * Author: Benjamin Gaignard <benjamin.gaignard@st.com> for STMicroelectronics.
  */
 
-#include <linux/component.h>
-#include <linux/dma-mapping.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/component.h>
+#include <freax/dma-mapping.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_SECUREBITS_H
-#define _UAPI_LINUX_SECUREBITS_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_SECUREBITS_H
+#define _UAPI_freax_SECUREBITS_H
 
 /* Each securesetting is implemented using two bits. One bit specifies
    whether the setting is on or off. The other bit specify whether the
@@ -58,4 +58,4 @@
 				 issecure_mask(SECURE_NO_CAP_AMBIENT_RAISE))
 #define SECURE_ALL_LOCKS	(SECURE_ALL_BITS << 1)
 
-#endif /* _UAPI_LINUX_SECUREBITS_H */
+#endif /* _UAPI_freax_SECUREBITS_H */

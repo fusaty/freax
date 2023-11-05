@@ -4,8 +4,8 @@
  *
  * Interface between console.c, selection.c  and consolemap.c
  */
-#ifndef __LINUX_CONSOLEMAP_H__
-#define __LINUX_CONSOLEMAP_H__
+#ifndef __freax_CONSOLEMAP_H__
+#define __freax_CONSOLEMAP_H__
 
 enum translation_map {
 	LAT1_MAP,
@@ -17,7 +17,7 @@ enum translation_map {
 	LAST_MAP = USER_MAP,
 };
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct vc_data;
 
@@ -59,4 +59,4 @@ static inline int conv_uni_to_8bit(u32 uni)
 static inline void console_map_init(void) { }
 #endif /* CONFIG_CONSOLE_TRANSLATIONS */
 
-#endif /* __LINUX_CONSOLEMAP_H__ */
+#endif /* __freax_CONSOLEMAP_H__ */

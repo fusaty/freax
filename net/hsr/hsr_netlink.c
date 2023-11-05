@@ -8,7 +8,7 @@
  */
 
 #include "hsr_netlink.h"
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <net/rtnetlink.h>
 #include <net/genetlink.h>
 #include "hsr_main.h"

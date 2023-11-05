@@ -4,11 +4,11 @@
  *  Copyright (c) by Jaroslav Kysela <perex@suse.cz>
  */
 
-#ifndef LINUX_ISAPNP_H
-#define LINUX_ISAPNP_H
+#ifndef freax_ISAPNP_H
+#define freax_ISAPNP_H
 
-#include <linux/errno.h>
-#include <linux/pnp.h>
+#include <freax/errno.h>
+#include <freax/pnp.h>
 
 /*
  *
@@ -28,7 +28,7 @@
  */
 
 #ifdef __KERNEL__
-#include <linux/mod_devicetable.h>
+#include <freax/mod_devicetable.h>
 
 #define DEVICE_COUNT_COMPATIBLE 4
 
@@ -97,4 +97,4 @@ static inline struct pnp_dev *pnp_find_dev(struct pnp_card *card,
 #endif /* CONFIG_ISAPNP */
 
 #endif /* __KERNEL__ */
-#endif /* LINUX_ISAPNP_H */
+#endif /* freax_ISAPNP_H */

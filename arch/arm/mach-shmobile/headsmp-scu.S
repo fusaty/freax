@@ -5,8 +5,8 @@
  * Copyright (C) 2012 Bastian Hecht
  */
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
 #include <asm/page.h>
 
 /*

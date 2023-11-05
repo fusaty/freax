@@ -7,7 +7,7 @@
  *         Trevor Wu <trevor.wu@mediatek.com>
  */
 
-#include <linux/regmap.h>
+#include <freax/regmap.h>
 #include <sound/pcm_params.h>
 #include "mt8195-afe-clk.h"
 #include "mt8195-afe-common.h"

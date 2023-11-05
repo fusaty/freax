@@ -5,14 +5,14 @@
 //
 // Copyright(c) 2019 Intel Corporation. All rights reserved.
 //
-// Authors: Guennadi Liakhovetski <guennadi.liakhovetski@linux.intel.com>
+// Authors: Guennadi Liakhovetski <guennadi.liakhovetski@freax.intel.com>
 
 /* Generic SOF IPC code */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/module.h>
-#include <linux/types.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/module.h>
+#include <freax/types.h>
 
 #include <sound/pcm.h>
 #include <sound/sof/stream.h>

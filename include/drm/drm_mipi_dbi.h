@@ -5,10 +5,10 @@
  * Copyright 2016 Noralf Trønnes
  */
 
-#ifndef __LINUX_MIPI_DBI_H
-#define __LINUX_MIPI_DBI_H
+#ifndef __freax_MIPI_DBI_H
+#define __freax_MIPI_DBI_H
 
-#include <linux/mutex.h>
+#include <freax/mutex.h>
 #include <drm/drm_device.h>
 #include <drm/drm_simple_kms_helper.h>
 
@@ -244,4 +244,4 @@ static inline void mipi_dbi_debugfs_init(struct drm_minor *minor) {}
 	.duplicate_plane_state = mipi_dbi_pipe_duplicate_plane_state, \
 	.destroy_plane_state = mipi_dbi_pipe_destroy_plane_state
 
-#endif /* __LINUX_MIPI_DBI_H */
+#endif /* __freax_MIPI_DBI_H */

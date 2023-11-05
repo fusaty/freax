@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_STDDEF_H
-#define _UAPI_LINUX_STDDEF_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_STDDEF_H
+#define _UAPI_freax_STDDEF_H
 
-#include <linux/compiler_types.h>
+#include <freax/compiler_types.h>
 
 #ifndef __always_inline
 #define __always_inline inline
@@ -55,4 +55,4 @@
 #define __counted_by(m)
 #endif
 
-#endif /* _UAPI_LINUX_STDDEF_H */
+#endif /* _UAPI_freax_STDDEF_H */

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0
 /* Copyright 2021 Collabora ltd. */
 
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/devcoredump.h>
-#include <linux/moduleparam.h>
-#include <linux/iosys-map.h>
+#include <freax/err.h>
+#include <freax/device.h>
+#include <freax/devcoredump.h>
+#include <freax/moduleparam.h>
+#include <freax/iosys-map.h>
 #include <drm/panfrost_drm.h>
 #include <drm/drm_device.h>
 

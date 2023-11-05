@@ -4,8 +4,8 @@
  *
  *   Author(s): Long Li <longli@microsoft.com>
  */
-#include <linux/module.h>
-#include <linux/highmem.h>
+#include <freax/module.h>
+#include <freax/highmem.h>
 #include "smbdirect.h"
 #include "cifs_debug.h"
 #include "cifsproto.h"

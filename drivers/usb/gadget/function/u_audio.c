@@ -12,14 +12,14 @@
  *    Jaswinder Singh (jaswinder.singh@linaro.org)
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/control.h>
 #include <sound/tlv.h>
-#include <linux/usb/audio.h>
+#include <freax/usb/audio.h>
 
 #include "u_audio.h"
 
@@ -135,7 +135,7 @@ static void u_audio_set_fback_frequency(enum usb_device_speed speed,
 		 *
 		 * Win10 and OSX UAC2 drivers require number of samples per packet
 		 * in order to honor the feedback value.
-		 * Linux snd-usb-audio detects the applied bit-shift automatically.
+		 * freax snd-usb-audio detects the applied bit-shift automatically.
 		 */
 		ep_desc = out_ep->desc;
 		freq <<= 4 + (ep_desc->bInterval - 1);

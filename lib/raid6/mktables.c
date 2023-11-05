@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-/* -*- linux-c -*- ------------------------------------------------------- *
+/* -*- freax-c -*- ------------------------------------------------------- *
  *
  *   Copyright 2002-2007 H. Peter Anvin - All Rights Reserved
  *
@@ -57,9 +57,9 @@ int main(int argc, char *argv[])
 	uint8_t exptbl[256], invtbl[256];
 
 	printf("#ifdef __KERNEL__\n");
-	printf("#include <linux/export.h>\n");
+	printf("#include <freax/export.h>\n");
 	printf("#endif\n");
-	printf("#include <linux/raid/pq.h>\n");
+	printf("#include <freax/raid/pq.h>\n");
 
 	/* Compute multiplication table */
 	printf("\nconst u8  __attribute__((aligned(256)))\n"

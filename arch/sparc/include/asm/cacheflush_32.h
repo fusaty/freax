@@ -2,7 +2,7 @@
 #ifndef _SPARC_CACHEFLUSH_H
 #define _SPARC_CACHEFLUSH_H
 
-#include <linux/page-flags.h>
+#include <freax/page-flags.h>
 #include <asm/cachetlb_32.h>
 
 #define flush_cache_all() \

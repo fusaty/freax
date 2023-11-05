@@ -6,7 +6,7 @@
  * Author: Roberto Sassu <roberto.sassu@huawei.com>
  */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include <errno.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>

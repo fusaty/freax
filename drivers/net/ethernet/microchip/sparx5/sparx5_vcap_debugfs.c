@@ -4,8 +4,8 @@
  * Copyright (c) 2022 Microchip Technology Inc. and its subsidiaries.
  */
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/list.h>
 
 #include "sparx5_vcap_debugfs.h"
 #include "sparx5_main_regs.h"

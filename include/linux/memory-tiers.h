@@ -1,12 +1,12 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MEMORY_TIERS_H
-#define _LINUX_MEMORY_TIERS_H
+#ifndef _freax_MEMORY_TIERS_H
+#define _freax_MEMORY_TIERS_H
 
-#include <linux/types.h>
-#include <linux/nodemask.h>
-#include <linux/kref.h>
-#include <linux/mmzone.h>
-#include <linux/notifier.h>
+#include <freax/types.h>
+#include <freax/nodemask.h>
+#include <freax/kref.h>
+#include <freax/mmzone.h>
+#include <freax/notifier.h>
 /*
  * Each tier cover a abstrace distance chunk size of 128
  */
@@ -137,4 +137,4 @@ static inline int mt_perf_to_adistance(struct node_hmem_attrs *perf, int *adist)
 	return -EIO;
 }
 #endif	/* CONFIG_NUMA */
-#endif  /* _LINUX_MEMORY_TIERS_H */
+#endif  /* _freax_MEMORY_TIERS_H */

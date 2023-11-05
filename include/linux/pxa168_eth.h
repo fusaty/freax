@@ -2,10 +2,10 @@
 /*
  *pxa168 ethernet platform device data definition file.
  */
-#ifndef __LINUX_PXA168_ETH_H
-#define __LINUX_PXA168_ETH_H
+#ifndef __freax_PXA168_ETH_H
+#define __freax_PXA168_ETH_H
 
-#include <linux/phy.h>
+#include <freax/phy.h>
 
 struct pxa168_eth_platform_data {
 	int	port_number;
@@ -31,4 +31,4 @@ struct pxa168_eth_platform_data {
 	int (*init)(void);
 };
 
-#endif /* __LINUX_PXA168_ETH_H */
+#endif /* __freax_PXA168_ETH_H */

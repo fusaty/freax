@@ -11,10 +11,10 @@
  *      2 of the License, or (at your option) any later version.
  */
 
-#ifndef _UAPI_LINUX_SEG6_LOCAL_H
-#define _UAPI_LINUX_SEG6_LOCAL_H
+#ifndef _UAPI_freax_SEG6_LOCAL_H
+#define _UAPI_freax_SEG6_LOCAL_H
 
-#include <linux/seg6.h>
+#include <freax/seg6.h>
 
 enum {
 	SEG6_LOCAL_UNSPEC,

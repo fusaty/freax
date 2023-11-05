@@ -3,9 +3,9 @@
  * Copyright (C) 2020-21 Intel Corporation.
  */
 
-#include <linux/device.h>
-#include <linux/kobject.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/kobject.h>
+#include <freax/slab.h>
 
 #include "iosm_ipc_uevent.h"
 

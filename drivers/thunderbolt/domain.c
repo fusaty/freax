@@ -3,15 +3,15 @@
  * Thunderbolt bus support
  *
  * Copyright (C) 2017, Intel Corporation
- * Author: Mika Westerberg <mika.westerberg@linux.intel.com>
+ * Author: Mika Westerberg <mika.westerberg@freax.intel.com>
  */
 
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/module.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/random.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/module.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/random.h>
 #include <crypto/hash.h>
 
 #include "tb.h"

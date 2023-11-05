@@ -6,9 +6,9 @@
 #ifndef __ASM_CPU_OPS_H
 #define __ASM_CPU_OPS_H
 
-#include <linux/init.h>
-#include <linux/sched.h>
-#include <linux/threads.h>
+#include <freax/init.h>
+#include <freax/sched.h>
+#include <freax/threads.h>
 
 /**
  * struct cpu_operations - Callback operations for hotplugging CPUs.

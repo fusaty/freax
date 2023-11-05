@@ -19,14 +19,14 @@
 
 #include "udf_i.h"
 #include "udf_sb.h"
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/crc-itu-t.h>
-#include <linux/exportfs.h>
-#include <linux/iversion.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/crc-itu-t.h>
+#include <freax/exportfs.h>
+#include <freax/iversion.h>
 
 static inline int udf_match(int len1, const unsigned char *name1, int len2,
 			    const unsigned char *name2)

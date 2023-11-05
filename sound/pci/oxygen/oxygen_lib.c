@@ -5,12 +5,12 @@
  * Copyright (c) Clemens Ladisch <clemens@ladisch.de>
  */
 
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/module.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/module.h>
 #include <sound/ac97_codec.h>
 #include <sound/asoundef.h>
 #include <sound/core.h>

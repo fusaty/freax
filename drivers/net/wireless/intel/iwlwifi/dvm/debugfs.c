@@ -5,11 +5,11 @@
  * Copyright (C) 2018 Intel Corporation
  *****************************************************************************/
 
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/debugfs.h>
-#include <linux/ieee80211.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/debugfs.h>
+#include <freax/ieee80211.h>
 #include <net/mac80211.h>
 
 #include "iwl-debug.h"

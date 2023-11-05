@@ -5,12 +5,12 @@
  * Copyright (C) 2020 Google, Inc.
  */
 
-#ifndef _LINUX_VIRTIO_DMA_BUF_H
-#define _LINUX_VIRTIO_DMA_BUF_H
+#ifndef _freax_VIRTIO_DMA_BUF_H
+#define _freax_VIRTIO_DMA_BUF_H
 
-#include <linux/dma-buf.h>
-#include <linux/uuid.h>
-#include <linux/virtio.h>
+#include <freax/dma-buf.h>
+#include <freax/uuid.h>
+#include <freax/virtio.h>
 
 /**
  * struct virtio_dma_buf_ops - operations possible on exported object dma-buf
@@ -34,4 +34,4 @@ struct dma_buf *virtio_dma_buf_export
 bool is_virtio_dma_buf(struct dma_buf *dma_buf);
 int virtio_dma_buf_get_uuid(struct dma_buf *dma_buf, uuid_t *uuid);
 
-#endif /* _LINUX_VIRTIO_DMA_BUF_H */
+#endif /* _freax_VIRTIO_DMA_BUF_H */

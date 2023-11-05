@@ -7,10 +7,10 @@
  * Written by: Darrick J. Wong <djwong@us.ibm.com>, IBM Corporation
  */
 
-#include <linux/scatterlist.h>
-#include <linux/slab.h>
-#include <linux/async.h>
-#include <linux/export.h>
+#include <freax/scatterlist.h>
+#include <freax/slab.h>
+#include <freax/async.h>
+#include <freax/export.h>
 
 #include <scsi/sas_ata.h>
 #include "sas_internal.h"

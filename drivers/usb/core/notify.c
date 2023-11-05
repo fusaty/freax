@@ -11,11 +11,11 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/notifier.h>
-#include <linux/usb.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/notifier.h>
+#include <freax/usb.h>
+#include <freax/mutex.h>
 #include "usb.h"
 
 static BLOCKING_NOTIFIER_HEAD(usb_notifier_list);

@@ -6,13 +6,13 @@
  * Copyright (c) 2017-19 David Ahern <dsa@cumulusnetworks.com>
  */
 
-#ifndef __LINUX_NEXTHOP_H
-#define __LINUX_NEXTHOP_H
+#ifndef __freax_NEXTHOP_H
+#define __freax_NEXTHOP_H
 
-#include <linux/netdevice.h>
-#include <linux/notifier.h>
-#include <linux/route.h>
-#include <linux/types.h>
+#include <freax/netdevice.h>
+#include <freax/notifier.h>
+#include <freax/route.h>
+#include <freax/types.h>
 #include <net/ip_fib.h>
 #include <net/ip6_fib.h>
 #include <net/netlink.h>

@@ -4,11 +4,11 @@
  * Copyright(c) 2016 - 2017 Intel Corporation.
  */
 
-#include <linux/list.h>
-#include <linux/rculist.h>
-#include <linux/mmu_notifier.h>
-#include <linux/interval_tree_generic.h>
-#include <linux/sched/mm.h>
+#include <freax/list.h>
+#include <freax/rculist.h>
+#include <freax/mmu_notifier.h>
+#include <freax/interval_tree_generic.h>
+#include <freax/sched/mm.h>
 
 #include "mmu_rb.h"
 #include "trace.h"

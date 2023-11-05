@@ -9,14 +9,14 @@
 
 #undef DEBUG
 
-#include <linux/crash_dump.h>
-#include <linux/io.h>
-#include <linux/memblock.h>
-#include <linux/of.h>
+#include <freax/crash_dump.h>
+#include <freax/io.h>
+#include <freax/memblock.h>
+#include <freax/of.h>
 #include <asm/code-patching.h>
 #include <asm/kdump.h>
 #include <asm/firmware.h>
-#include <linux/uio.h>
+#include <freax/uio.h>
 #include <asm/rtas.h>
 #include <asm/inst.h>
 #include <asm/fadump.h>
@@ -115,7 +115,7 @@ void crash_free_reserved_phys_range(unsigned long begin, unsigned long end)
 	const __be32 *basep, *sizep;
 	unsigned int rtas_start = 0, rtas_end = 0;
 
-	basep = of_get_property(rtas.dev, "linux,rtas-base", NULL);
+	basep = of_get_property(rtas.dev, "freax,rtas-base", NULL);
 	sizep = of_get_property(rtas.dev, "rtas-size", NULL);
 
 	if (basep && sizep) {

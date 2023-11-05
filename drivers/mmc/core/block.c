@@ -18,36 +18,36 @@
  * Author:  Andrew Christian
  *          28 May 2002
  */
-#include <linux/moduleparam.h>
-#include <linux/module.h>
-#include <linux/init.h>
+#include <freax/moduleparam.h>
+#include <freax/module.h>
+#include <freax/init.h>
 
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/hdreg.h>
-#include <linux/kdev_t.h>
-#include <linux/kref.h>
-#include <linux/blkdev.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
-#include <linux/scatterlist.h>
-#include <linux/string_helpers.h>
-#include <linux/delay.h>
-#include <linux/capability.h>
-#include <linux/compat.h>
-#include <linux/pm_runtime.h>
-#include <linux/idr.h>
-#include <linux/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/hdreg.h>
+#include <freax/kdev_t.h>
+#include <freax/kref.h>
+#include <freax/blkdev.h>
+#include <freax/cdev.h>
+#include <freax/mutex.h>
+#include <freax/scatterlist.h>
+#include <freax/string_helpers.h>
+#include <freax/delay.h>
+#include <freax/capability.h>
+#include <freax/compat.h>
+#include <freax/pm_runtime.h>
+#include <freax/idr.h>
+#include <freax/debugfs.h>
 
-#include <linux/mmc/ioctl.h>
-#include <linux/mmc/card.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
+#include <freax/mmc/ioctl.h>
+#include <freax/mmc/card.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/sd.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "queue.h"
 #include "block.h"

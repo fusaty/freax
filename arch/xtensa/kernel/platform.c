@@ -12,8 +12,8 @@
  * Chris Zankel <chris@zankel.net>
  */
 
-#include <linux/printk.h>
-#include <linux/types.h>
+#include <freax/printk.h>
+#include <freax/types.h>
 #include <asm/platform.h>
 #include <asm/timex.h>
 

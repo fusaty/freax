@@ -7,7 +7,7 @@
  * manually reworked for use in kernel space.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 .text
 .arch armv7-a

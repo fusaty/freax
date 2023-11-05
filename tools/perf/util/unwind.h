@@ -2,8 +2,8 @@
 #ifndef __UNWIND_H
 #define __UNWIND_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
 #include "util/map_symbol.h"
 
 struct maps;

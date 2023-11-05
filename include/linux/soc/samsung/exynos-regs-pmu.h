@@ -11,8 +11,8 @@
  * between SoCs. For now, put here only the used registers.
  */
 
-#ifndef __LINUX_SOC_EXYNOS_REGS_PMU_H
-#define __LINUX_SOC_EXYNOS_REGS_PMU_H __FILE__
+#ifndef __freax_SOC_EXYNOS_REGS_PMU_H
+#define __freax_SOC_EXYNOS_REGS_PMU_H __FILE__
 
 #define S5P_CENTRAL_SEQ_CONFIGURATION		0x0200
 
@@ -657,4 +657,4 @@
 #define EXYNOS5433_PAD_RETENTION_UFS_OPTION			(0x3268)
 #define EXYNOS5433_PAD_RETENTION_FSYSGENIO_OPTION		(0x32A8)
 
-#endif /* __LINUX_SOC_EXYNOS_REGS_PMU_H */
+#endif /* __freax_SOC_EXYNOS_REGS_PMU_H */

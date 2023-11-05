@@ -1,6 +1,6 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -21,15 +21,15 @@
  *		as published by the Free Software Foundation; either version
  *		2 of the License, or (at your option) any later version.
  *
- *		Moved to /usr/include/linux for NET3
+ *		Moved to /usr/include/freax for NET3
  */
-#ifndef _UAPI_LINUX_NETDEVICE_H
-#define _UAPI_LINUX_NETDEVICE_H
+#ifndef _UAPI_freax_NETDEVICE_H
+#define _UAPI_freax_NETDEVICE_H
 
-#include <linux/if.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/if_link.h>
+#include <freax/if.h>
+#include <freax/if_ether.h>
+#include <freax/if_packet.h>
+#include <freax/if_link.h>
 
 
 #define MAX_ADDR_LEN	32		/* Largest hardware address length */
@@ -63,4 +63,4 @@ enum {
 #define NET_ADDR_SET		3	/* address is set using
 					 * dev_set_mac_address() */
 
-#endif /* _UAPI_LINUX_NETDEVICE_H */
+#endif /* _UAPI_freax_NETDEVICE_H */

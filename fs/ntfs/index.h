@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * index.h - Defines for NTFS kernel index handling.  Part of the Linux-NTFS
+ * index.h - Defines for NTFS kernel index handling.  Part of the freax-NTFS
  *	     project.
  *
  * Copyright (c) 2004 Anton Altaparmakov
  */
 
-#ifndef _LINUX_NTFS_INDEX_H
-#define _LINUX_NTFS_INDEX_H
+#ifndef _freax_NTFS_INDEX_H
+#define _freax_NTFS_INDEX_H
 
-#include <linux/fs.h>
+#include <freax/fs.h>
 
 #include "types.h"
 #include "layout.h"
@@ -131,4 +131,4 @@ static inline void ntfs_index_entry_mark_dirty(ntfs_index_context *ictx)
 
 #endif /* NTFS_RW */
 
-#endif /* _LINUX_NTFS_INDEX_H */
+#endif /* _freax_NTFS_INDEX_H */

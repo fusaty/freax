@@ -20,18 +20,18 @@
  *                    Toufeeq Hussain <toufeeq_hussain@infosys.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/spi/spi.h>
-#include <linux/gpio/machine.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/i2c.h>
+#include <freax/spi/spi.h>
+#include <freax/gpio/machine.h>
 
 #include <sound/cs4271.h>
 
 #include "hardware.h"
-#include <linux/platform_data/video-ep93xx.h>
-#include <linux/platform_data/spi-ep93xx.h>
+#include <freax/platform_data/video-ep93xx.h>
+#include <freax/platform_data/spi-ep93xx.h>
 #include "gpio-ep93xx.h"
 
 #include <asm/mach-types.h>

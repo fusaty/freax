@@ -18,11 +18,11 @@
  * kernel; copyright (C) 2001-2003 Greg Kroah-Hartman (greg@kroah.com)
  */
 
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/usb.h>
-#include <linux/usb/input.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/usb.h>
+#include <freax/usb/input.h>
 #include <media/rc-core.h>
 
 #define DRIVER_NAME	"streamzap"

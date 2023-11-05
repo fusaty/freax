@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_TTY_BUFFER_H
-#define _LINUX_TTY_BUFFER_H
+#ifndef _freax_TTY_BUFFER_H
+#define _freax_TTY_BUFFER_H
 
-#include <linux/atomic.h>
-#include <linux/llist.h>
-#include <linux/mutex.h>
-#include <linux/workqueue.h>
+#include <freax/atomic.h>
+#include <freax/llist.h>
+#include <freax/mutex.h>
+#include <freax/workqueue.h>
 
 struct tty_buffer {
 	union {

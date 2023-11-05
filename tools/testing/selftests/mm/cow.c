@@ -15,11 +15,11 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <assert.h>
-#include <linux/mman.h>
+#include <freax/mman.h>
 #include <sys/mman.h>
 #include <sys/ioctl.h>
 #include <sys/wait.h>
-#include <linux/memfd.h>
+#include <freax/memfd.h>
 
 #include "local_config.h"
 #ifdef LOCAL_CONFIG_HAVE_LIBURING

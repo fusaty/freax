@@ -11,14 +11,14 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/blkdev.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/blkdev.h>
 #include <scsi/scsi_host.h>
-#include <linux/ata.h>
-#include <linux/libata.h>
-#include <linux/platform_device.h>
-#include <linux/ata_platform.h>
+#include <freax/ata.h>
+#include <freax/libata.h>
+#include <freax/platform_device.h>
+#include <freax/ata_platform.h>
 
 #define DRV_NAME "pata_platform"
 #define DRV_VERSION "1.2"

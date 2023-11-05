@@ -5,20 +5,20 @@
  * Written by: Atul Gupta (atul.gupta@chelsio.com)
  */
 
-#include <linux/module.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/skbuff.h>
-#include <linux/timer.h>
-#include <linux/notifier.h>
-#include <linux/inetdevice.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sched/signal.h>
-#include <linux/kallsyms.h>
-#include <linux/kprobes.h>
-#include <linux/if_vlan.h>
-#include <linux/ipv6.h>
+#include <freax/module.h>
+#include <freax/list.h>
+#include <freax/workqueue.h>
+#include <freax/skbuff.h>
+#include <freax/timer.h>
+#include <freax/notifier.h>
+#include <freax/inetdevice.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/sched/signal.h>
+#include <freax/kallsyms.h>
+#include <freax/kprobes.h>
+#include <freax/if_vlan.h>
+#include <freax/ipv6.h>
 #include <net/ipv6.h>
 #include <net/transp_v6.h>
 #include <net/ip6_route.h>

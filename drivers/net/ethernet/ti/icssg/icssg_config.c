@@ -4,9 +4,9 @@
  * Copyright (C) 2022 Texas Instruments Incorporated - https://www.ti.com
  */
 
-#include <linux/iopoll.h>
-#include <linux/regmap.h>
-#include <uapi/linux/if_ether.h>
+#include <freax/iopoll.h>
+#include <freax/regmap.h>
+#include <uapi/freax/if_ether.h>
 #include "icssg_config.h"
 #include "icssg_prueth.h"
 #include "icssg_switch_map.h"

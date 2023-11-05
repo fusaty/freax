@@ -3,11 +3,11 @@
 #ifndef _FUNETH_H
 #define _FUNETH_H
 
-#include <uapi/linux/if_ether.h>
-#include <uapi/linux/net_tstamp.h>
-#include <linux/mutex.h>
-#include <linux/seqlock.h>
-#include <linux/xarray.h>
+#include <uapi/freax/if_ether.h>
+#include <uapi/freax/net_tstamp.h>
+#include <freax/mutex.h>
+#include <freax/seqlock.h>
+#include <freax/xarray.h>
 #include <net/devlink.h>
 #include "fun_dev.h"
 

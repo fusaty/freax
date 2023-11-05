@@ -2,21 +2,21 @@
 #ifndef _BCACHEFS_UTIL_H
 #define _BCACHEFS_UTIL_H
 
-#include <linux/bio.h>
-#include <linux/blkdev.h>
-#include <linux/closure.h>
-#include <linux/errno.h>
-#include <linux/freezer.h>
-#include <linux/kernel.h>
-#include <linux/sched/clock.h>
-#include <linux/llist.h>
-#include <linux/log2.h>
-#include <linux/percpu.h>
-#include <linux/preempt.h>
-#include <linux/ratelimit.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/workqueue.h>
+#include <freax/bio.h>
+#include <freax/blkdev.h>
+#include <freax/closure.h>
+#include <freax/errno.h>
+#include <freax/freezer.h>
+#include <freax/kernel.h>
+#include <freax/sched/clock.h>
+#include <freax/llist.h>
+#include <freax/log2.h>
+#include <freax/percpu.h>
+#include <freax/preempt.h>
+#include <freax/ratelimit.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/workqueue.h>
 
 #include "mean_and_variance.h"
 
@@ -847,6 +847,6 @@ static inline int cmp_le32(__le32 l, __le32 r)
 	return cmp_int(le32_to_cpu(l), le32_to_cpu(r));
 }
 
-#include <linux/uuid.h>
+#include <freax/uuid.h>
 
 #endif /* _BCACHEFS_UTIL_H */

@@ -1,13 +1,13 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2021 Mellanox Technologies. */
 
 #ifndef __MLX5_ESW_BRIDGE_H__
 #define __MLX5_ESW_BRIDGE_H__
 
-#include <linux/notifier.h>
-#include <linux/list.h>
-#include <linux/workqueue.h>
-#include <linux/xarray.h>
+#include <freax/notifier.h>
+#include <freax/list.h>
+#include <freax/workqueue.h>
+#include <freax/xarray.h>
 #include "eswitch.h"
 
 struct dentry;

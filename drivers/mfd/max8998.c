@@ -6,18 +6,18 @@
 //  Kyungmin Park <kyungmin.park@samsung.com>
 //  Marek Szyprowski <m.szyprowski@samsung.com>
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/pm_runtime.h>
-#include <linux/mutex.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/max8998.h>
-#include <linux/mfd/max8998-private.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/pm_runtime.h>
+#include <freax/mutex.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/max8998.h>
+#include <freax/mfd/max8998-private.h>
 
 #define RTC_I2C_ADDR		(0x0c >> 1)
 
@@ -145,7 +145,7 @@ static struct max8998_platform_data *max8998_i2c_parse_dt_pdata(
 	pd->ono = irq_of_parse_and_map(dev->of_node, 1);
 
 	/*
-	 * ToDo: the 'wakeup' member in the platform data is more of a linux
+	 * ToDo: the 'wakeup' member in the platform data is more of a freax
 	 * specfic information. Hence, there is no binding for that yet and
 	 * not parsed here.
 	 */

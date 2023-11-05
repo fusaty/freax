@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- *  linux/drivers/clocksource/timer-sp.c
+ *  freax/drivers/clocksource/timer-sp.c
  *
  *  Copyright (C) 1999 - 2003 ARM Limited
  *  Copyright (C) 2000 Deep Blue Solutions Ltd
@@ -8,18 +8,18 @@
 
 #define pr_fmt(fmt)    KBUILD_MODNAME ": " fmt
 
-#include <linux/clk.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/err.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_clk.h>
-#include <linux/of_irq.h>
-#include <linux/sched_clock.h>
+#include <freax/clk.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
+#include <freax/err.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_clk.h>
+#include <freax/of_irq.h>
+#include <freax/sched_clock.h>
 
 #include "timer-sp.h"
 

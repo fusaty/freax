@@ -7,7 +7,7 @@
 #ifndef PMC_ATOM_H
 #define PMC_ATOM_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /* ValleyView Power Control Unit PCI Device ID */
 #define	PCI_DEVICE_ID_VLV_PMC	0x0F1C

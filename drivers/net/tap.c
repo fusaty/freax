@@ -1,30 +1,30 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/etherdevice.h>
-#include <linux/if_tap.h>
-#include <linux/if_vlan.h>
-#include <linux/interrupt.h>
-#include <linux/nsproxy.h>
-#include <linux/compat.h>
-#include <linux/if_tun.h>
-#include <linux/module.h>
-#include <linux/skbuff.h>
-#include <linux/cache.h>
-#include <linux/sched/signal.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/wait.h>
-#include <linux/cdev.h>
-#include <linux/idr.h>
-#include <linux/fs.h>
-#include <linux/uio.h>
+#include <freax/etherdevice.h>
+#include <freax/if_tap.h>
+#include <freax/if_vlan.h>
+#include <freax/interrupt.h>
+#include <freax/nsproxy.h>
+#include <freax/compat.h>
+#include <freax/if_tun.h>
+#include <freax/module.h>
+#include <freax/skbuff.h>
+#include <freax/cache.h>
+#include <freax/sched/signal.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/wait.h>
+#include <freax/cdev.h>
+#include <freax/idr.h>
+#include <freax/fs.h>
+#include <freax/uio.h>
 
 #include <net/gso.h>
 #include <net/net_namespace.h>
 #include <net/rtnetlink.h>
 #include <net/sock.h>
 #include <net/xdp.h>
-#include <linux/virtio_net.h>
-#include <linux/skb_array.h>
+#include <freax/virtio_net.h>
+#include <freax/skb_array.h>
 
 #define TAP_IFFEATURES (IFF_VNET_HDR | IFF_MULTI_QUEUE)
 

@@ -1,24 +1,24 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX__INIT_TASK_H
-#define _LINUX__INIT_TASK_H
+#ifndef _freax__INIT_TASK_H
+#define _freax__INIT_TASK_H
 
-#include <linux/rcupdate.h>
-#include <linux/irqflags.h>
-#include <linux/utsname.h>
-#include <linux/lockdep.h>
-#include <linux/ftrace.h>
-#include <linux/ipc.h>
-#include <linux/pid_namespace.h>
-#include <linux/user_namespace.h>
-#include <linux/securebits.h>
-#include <linux/seqlock.h>
-#include <linux/rbtree.h>
-#include <linux/refcount.h>
-#include <linux/sched/autogroup.h>
+#include <freax/rcupdate.h>
+#include <freax/irqflags.h>
+#include <freax/utsname.h>
+#include <freax/lockdep.h>
+#include <freax/ftrace.h>
+#include <freax/ipc.h>
+#include <freax/pid_namespace.h>
+#include <freax/user_namespace.h>
+#include <freax/securebits.h>
+#include <freax/seqlock.h>
+#include <freax/rbtree.h>
+#include <freax/refcount.h>
+#include <freax/sched/autogroup.h>
 #include <net/net_namespace.h>
-#include <linux/sched/rt.h>
-#include <linux/livepatch.h>
-#include <linux/mm_types.h>
+#include <freax/sched/rt.h>
+#include <freax/livepatch.h>
+#include <freax/mm_types.h>
 
 #include <asm/thread_info.h>
 

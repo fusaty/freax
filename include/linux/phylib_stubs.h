@@ -3,7 +3,7 @@
  * Stubs for the Network PHY library
  */
 
-#include <linux/rtnetlink.h>
+#include <freax/rtnetlink.h>
 
 struct kernel_hwtstamp_config;
 struct netlink_ext_ack;

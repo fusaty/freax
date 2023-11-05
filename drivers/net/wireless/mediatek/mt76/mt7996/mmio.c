@@ -3,9 +3,9 @@
  * Copyright (C) 2022 MediaTek Inc.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
 
 #include "mt7996.h"
 #include "mac.h"

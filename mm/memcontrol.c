@@ -2,7 +2,7 @@
 /* memcontrol.c - Memory Controller
  *
  * Copyright IBM Corporation, 2007
- * Author Balbir Singh <balbir@linux.vnet.ibm.com>
+ * Author Balbir Singh <balbir@freax.vnet.ibm.com>
  *
  * Copyright 2007 OpenVZ SWsoft Inc
  * Author: Pavel Emelianov <xemul@openvz.org>
@@ -25,52 +25,52 @@
  * Copyright (C) 2020 Alibaba, Inc, Alex Shi
  */
 
-#include <linux/page_counter.h>
-#include <linux/memcontrol.h>
-#include <linux/cgroup.h>
-#include <linux/pagewalk.h>
-#include <linux/sched/mm.h>
-#include <linux/shmem_fs.h>
-#include <linux/hugetlb.h>
-#include <linux/pagemap.h>
-#include <linux/vm_event_item.h>
-#include <linux/smp.h>
-#include <linux/page-flags.h>
-#include <linux/backing-dev.h>
-#include <linux/bit_spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/limits.h>
-#include <linux/export.h>
-#include <linux/mutex.h>
-#include <linux/rbtree.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/spinlock.h>
-#include <linux/eventfd.h>
-#include <linux/poll.h>
-#include <linux/sort.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/vmpressure.h>
-#include <linux/memremap.h>
-#include <linux/mm_inline.h>
-#include <linux/swap_cgroup.h>
-#include <linux/cpu.h>
-#include <linux/oom.h>
-#include <linux/lockdep.h>
-#include <linux/file.h>
-#include <linux/resume_user_mode.h>
-#include <linux/psi.h>
-#include <linux/seq_buf.h>
-#include <linux/sched/isolation.h>
+#include <freax/page_counter.h>
+#include <freax/memcontrol.h>
+#include <freax/cgroup.h>
+#include <freax/pagewalk.h>
+#include <freax/sched/mm.h>
+#include <freax/shmem_fs.h>
+#include <freax/hugetlb.h>
+#include <freax/pagemap.h>
+#include <freax/vm_event_item.h>
+#include <freax/smp.h>
+#include <freax/page-flags.h>
+#include <freax/backing-dev.h>
+#include <freax/bit_spinlock.h>
+#include <freax/rcupdate.h>
+#include <freax/limits.h>
+#include <freax/export.h>
+#include <freax/mutex.h>
+#include <freax/rbtree.h>
+#include <freax/slab.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/spinlock.h>
+#include <freax/eventfd.h>
+#include <freax/poll.h>
+#include <freax/sort.h>
+#include <freax/fs.h>
+#include <freax/seq_file.h>
+#include <freax/vmpressure.h>
+#include <freax/memremap.h>
+#include <freax/mm_inline.h>
+#include <freax/swap_cgroup.h>
+#include <freax/cpu.h>
+#include <freax/oom.h>
+#include <freax/lockdep.h>
+#include <freax/file.h>
+#include <freax/resume_user_mode.h>
+#include <freax/psi.h>
+#include <freax/seq_buf.h>
+#include <freax/sched/isolation.h>
 #include "internal.h"
 #include <net/sock.h>
 #include <net/ip.h>
 #include "slab.h"
 #include "swap.h"
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include <trace/events/vmscan.h>
 
@@ -3804,7 +3804,7 @@ static int mem_cgroup_hierarchy_write(struct cgroup_subsys_state *css,
 		return 0;
 
 	pr_warn_once("Non-hierarchical mode is deprecated. "
-		     "Please report your usecase to linux-mm@kvack.org if you "
+		     "Please report your usecase to freax-mm@kvack.org if you "
 		     "depend on this functionality.\n");
 
 	return -EINVAL;
@@ -4021,7 +4021,7 @@ static ssize_t mem_cgroup_write(struct kernfs_open_file *of,
 		case _KMEM:
 			pr_warn_once("kmem.limit_in_bytes is deprecated and will be removed. "
 				     "Writing any value to this file has no effect. "
-				     "Please report your usecase to linux-mm@kvack.org if you "
+				     "Please report your usecase to freax-mm@kvack.org if you "
 				     "depend on this functionality.\n");
 			ret = 0;
 			break;
@@ -4092,7 +4092,7 @@ static int mem_cgroup_move_charge_write(struct cgroup_subsys_state *css,
 	struct mem_cgroup *memcg = mem_cgroup_from_css(css);
 
 	pr_warn_once("Cgroup memory moving (move_charge_at_immigrate) is deprecated. "
-		     "Please report your usecase to linux-mm@kvack.org if you "
+		     "Please report your usecase to freax-mm@kvack.org if you "
 		     "depend on this functionality.\n");
 
 	if (val & ~MOVE_MASK)
@@ -6041,7 +6041,7 @@ out:
  * * MC_TARGET_DEVICE - Like MC_TARGET_PAGE but page is device memory and
  *   thus not on the lru.  For now such page is charged like a regular page
  *   would be as it is just special memory taking the place of a regular page.
- *   See Documentations/vm/hmm.txt and include/linux/hmm.h
+ *   See Documentations/vm/hmm.txt and include/freax/hmm.h
  */
 static enum mc_target_type get_mctgt_type(struct vm_area_struct *vma,
 		unsigned long addr, pte_t ptent, union mc_target *target)
@@ -7894,7 +7894,7 @@ bool mem_cgroup_swap_full(struct folio *folio)
 static int __init setup_swap_account(char *s)
 {
 	pr_warn_once("The swapaccount= commandline option is deprecated. "
-		     "Please report your usecase to linux-mm@kvack.org if you "
+		     "Please report your usecase to freax-mm@kvack.org if you "
 		     "depend on this functionality.\n");
 	return 1;
 }

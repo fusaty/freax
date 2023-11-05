@@ -6,13 +6,13 @@
  *
  */
 
-#include <linux/bits.h>
-#include <linux/err.h>
-#include <linux/i2c.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
+#include <freax/bits.h>
+#include <freax/err.h>
+#include <freax/i2c.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
 #include "pmbus.h"
 
 #define LT7182S_NUM_PAGES	2
@@ -189,7 +189,7 @@ static struct i2c_driver lt7182s_driver = {
 
 module_i2c_driver(lt7182s_driver);
 
-MODULE_AUTHOR("Guenter Roeck <linux@roeck-us.net>");
+MODULE_AUTHOR("Guenter Roeck <freax@roeck-us.net>");
 MODULE_DESCRIPTION("PMBus driver for Analog Devices LT7182S");
 MODULE_LICENSE("GPL");
 MODULE_IMPORT_NS(PMBUS);

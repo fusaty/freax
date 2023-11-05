@@ -1,5 +1,5 @@
 #
-# gdb helper commands and functions for Linux kernel debugging
+# gdb helper commands and functions for freax kernel debugging
 #
 #  list tools
 #
@@ -13,7 +13,7 @@
 
 import gdb
 
-from linux import utils
+from freax import utils
 
 list_head = utils.CachedType("struct list_head")
 hlist_head = utils.CachedType("struct hlist_head")

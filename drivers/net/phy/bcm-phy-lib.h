@@ -3,12 +3,12 @@
  * Copyright (C) 2015 Broadcom Corporation
  */
 
-#ifndef _LINUX_BCM_PHY_LIB_H
-#define _LINUX_BCM_PHY_LIB_H
+#ifndef _freax_BCM_PHY_LIB_H
+#define _freax_BCM_PHY_LIB_H
 
-#include <linux/brcmphy.h>
-#include <linux/phy.h>
-#include <linux/interrupt.h>
+#include <freax/brcmphy.h>
+#include <freax/phy.h>
+#include <freax/interrupt.h>
 
 struct ethtool_wolinfo;
 
@@ -121,4 +121,4 @@ irqreturn_t bcm_phy_wol_isr(int irq, void *dev_id);
 int bcm_phy_led_brightness_set(struct phy_device *phydev,
 			       u8 index, enum led_brightness value);
 
-#endif /* _LINUX_BCM_PHY_LIB_H */
+#endif /* _freax_BCM_PHY_LIB_H */

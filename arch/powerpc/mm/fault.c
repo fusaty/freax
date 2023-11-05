@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
  *  PowerPC version
- *    Copyright (C) 1995-1996 Gary Thomas (gdt@linuxppc.org)
+ *    Copyright (C) 1995-1996 Gary Thomas (gdt@freaxppc.org)
  *
  *  Derived from "arch/i386/mm/fault.c"
  *    Copyright (C) 1991, 1992, 1993, 1994  Linus Torvalds
@@ -11,29 +11,29 @@
  *  Modified for PPC64 by Dave Engebretsen (engebret@ibm.com)
  */
 
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/pagemap.h>
-#include <linux/ptrace.h>
-#include <linux/mman.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/highmem.h>
-#include <linux/extable.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/perf_event.h>
-#include <linux/ratelimit.h>
-#include <linux/context_tracking.h>
-#include <linux/hugetlb.h>
-#include <linux/uaccess.h>
-#include <linux/kfence.h>
-#include <linux/pkeys.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/pagemap.h>
+#include <freax/ptrace.h>
+#include <freax/mman.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/highmem.h>
+#include <freax/extable.h>
+#include <freax/kprobes.h>
+#include <freax/kdebug.h>
+#include <freax/perf_event.h>
+#include <freax/ratelimit.h>
+#include <freax/context_tracking.h>
+#include <freax/hugetlb.h>
+#include <freax/uaccess.h>
+#include <freax/kfence.h>
+#include <freax/pkeys.h>
 
 #include <asm/firmware.h>
 #include <asm/interrupt.h>

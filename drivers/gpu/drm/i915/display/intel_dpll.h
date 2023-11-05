@@ -6,7 +6,7 @@
 #ifndef _INTEL_DPLL_H_
 #define _INTEL_DPLL_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct dpll;
 struct drm_i915_private;

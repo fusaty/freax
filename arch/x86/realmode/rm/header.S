@@ -5,7 +5,7 @@
  * or .bss sections as appropriate.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/page_types.h>
 #include <asm/segment.h>
 

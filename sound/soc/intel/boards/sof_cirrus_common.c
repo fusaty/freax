@@ -5,7 +5,7 @@
  *
  * Copyright 2022 Intel Corporation.
  */
-#include <linux/module.h>
+#include <freax/module.h>
 #include <sound/sof.h>
 #include "../../codecs/cs35l41.h"
 #include "sof_cirrus_common.h"

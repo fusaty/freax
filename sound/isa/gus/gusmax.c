@@ -4,12 +4,12 @@
  *  Copyright (c) by Jaroslav Kysela <perex@perex.cz>
  */
 
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/isa.h>
-#include <linux/delay.h>
-#include <linux/time.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/isa.h>
+#include <freax/delay.h>
+#include <freax/time.h>
+#include <freax/module.h>
 #include <asm/dma.h>
 #include <sound/core.h>
 #include <sound/gus.h>

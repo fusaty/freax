@@ -1,12 +1,12 @@
 #ifndef IOU_CORE_H
 #define IOU_CORE_H
 
-#include <linux/errno.h>
-#include <linux/lockdep.h>
-#include <linux/resume_user_mode.h>
-#include <linux/kasan.h>
-#include <linux/io_uring_types.h>
-#include <uapi/linux/eventpoll.h>
+#include <freax/errno.h>
+#include <freax/lockdep.h>
+#include <freax/resume_user_mode.h>
+#include <freax/kasan.h>
+#include <freax/io_uring_types.h>
+#include <uapi/freax/eventpoll.h>
 #include "io-wq.h"
 #include "slist.h"
 #include "filetable.h"

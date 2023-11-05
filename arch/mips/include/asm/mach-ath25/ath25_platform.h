@@ -2,7 +2,7 @@
 #ifndef __ASM_MACH_ATH25_PLATFORM_H
 #define __ASM_MACH_ATH25_PLATFORM_H
 
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 
 /*
  * This is board-specific data that is stored in a "fixed" location in flash.

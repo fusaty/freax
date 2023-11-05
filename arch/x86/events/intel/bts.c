@@ -8,14 +8,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/coredump.h>
+#include <freax/bitops.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/coredump.h>
 
-#include <linux/sizes.h>
+#include <freax/sizes.h>
 #include <asm/perf_event.h>
 
 #include "../perf_event.h"

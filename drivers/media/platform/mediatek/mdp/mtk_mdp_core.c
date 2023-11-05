@@ -5,18 +5,18 @@
  *         Ming Hsiu Tsai <minghsiu.tsai@mediatek.com>
  */
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/workqueue.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/workqueue.h>
 
 #include "mtk_mdp_core.h"
 #include "mtk_mdp_m2m.h"

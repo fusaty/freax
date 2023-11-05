@@ -6,7 +6,7 @@
 #ifndef TEGRA_CBB_H
 #define TEGRA_CBB_H
 
-#include <linux/list.h>
+#include <freax/list.h>
 
 struct tegra_cbb_error {
 	const char *code;

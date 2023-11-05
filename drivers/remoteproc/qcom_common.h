@@ -2,9 +2,9 @@
 #ifndef __RPROC_QCOM_COMMON_H__
 #define __RPROC_QCOM_COMMON_H__
 
-#include <linux/remoteproc.h>
+#include <freax/remoteproc.h>
 #include "remoteproc_internal.h"
-#include <linux/soc/qcom/qmi.h>
+#include <freax/soc/qcom/qmi.h>
 
 struct qcom_glink_smem;
 struct qcom_sysmon;

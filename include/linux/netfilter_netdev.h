@@ -2,8 +2,8 @@
 #ifndef _NETFILTER_NETDEV_H_
 #define _NETFILTER_NETDEV_H_
 
-#include <linux/netfilter.h>
-#include <linux/netdevice.h>
+#include <freax/netfilter.h>
+#include <freax/netdevice.h>
 
 #ifdef CONFIG_NETFILTER_INGRESS
 static inline bool nf_hook_ingress_active(const struct sk_buff *skb)

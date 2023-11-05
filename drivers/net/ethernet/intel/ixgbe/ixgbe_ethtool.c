@@ -3,16 +3,16 @@
 
 /* ethtool support for ixgbe */
 
-#include <linux/interrupt.h>
-#include <linux/types.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/ethtool.h>
-#include <linux/vmalloc.h>
-#include <linux/highmem.h>
-#include <linux/uaccess.h>
+#include <freax/interrupt.h>
+#include <freax/types.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/ethtool.h>
+#include <freax/vmalloc.h>
+#include <freax/highmem.h>
+#include <freax/uaccess.h>
 
 #include "ixgbe.h"
 #include "ixgbe_phy.h"

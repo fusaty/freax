@@ -9,9 +9,9 @@
 
 #include "main.h"
 
-#include <linux/netlink.h>
-#include <linux/skbuff.h>
-#include <linux/types.h>
+#include <freax/netlink.h>
+#include <freax/skbuff.h>
+#include <freax/types.h>
 
 extern char batadv_routing_algo[];
 extern struct list_head batadv_hardif_list;

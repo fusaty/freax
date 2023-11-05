@@ -16,11 +16,11 @@
 #define DRIVER_VERSION "1.0.2"
 
 /* kernel includes */
-#include <linux/i2c.h>
-#include <linux/slab.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/slab.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/interrupt.h>
 
 #include "radio-si470x.h"
 
@@ -212,7 +212,7 @@ static int si470x_fops_release(struct file *file)
 
 
 /**************************************************************************
- * Video4Linux Interface
+ * Video4freax Interface
  **************************************************************************/
 
 /*
@@ -410,7 +410,7 @@ static int si470x_i2c_probe(struct i2c_client *client)
 	if ((radio->registers[SI_CHIPID] & SI_CHIPID_FIRMWARE) < RADIO_FW_VERSION) {
 		dev_warn(&client->dev,
 			"This driver is known to work with firmware version %u, but the device has firmware version %u.\n"
-			"If you have some trouble using this driver, please report to V4L ML at linux-media@vger.kernel.org\n",
+			"If you have some trouble using this driver, please report to V4L ML at freax-media@vger.kernel.org\n",
 			RADIO_FW_VERSION,
 			radio->registers[SI_CHIPID] & SI_CHIPID_FIRMWARE);
 	}

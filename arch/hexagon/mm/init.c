@@ -2,14 +2,14 @@
 /*
  * Memory subsystem initialization for Hexagon
  *
- * Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2013, The freax Foundation. All rights reserved.
  */
 
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/memblock.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/memblock.h>
 #include <asm/atomic.h>
-#include <linux/highmem.h>
+#include <freax/highmem.h>
 #include <asm/tlb.h>
 #include <asm/sections.h>
 #include <asm/vm_mmu.h>

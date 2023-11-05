@@ -8,15 +8,15 @@
  * P1023 RDB Board Setup
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/fsl_devices.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/fsl_devices.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
 
 #include <asm/time.h>
 #include <asm/machdep.h>

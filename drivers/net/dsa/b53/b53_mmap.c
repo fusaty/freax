@@ -16,13 +16,13 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/io.h>
-#include <linux/platform_device.h>
-#include <linux/platform_data/b53.h>
+#include <freax/bits.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/io.h>
+#include <freax/platform_device.h>
+#include <freax/platform_data/b53.h>
 
 #include "b53_priv.h"
 

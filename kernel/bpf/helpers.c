@@ -1,28 +1,28 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright (c) 2011-2014 PLUMgrid, http://plumgrid.com
  */
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/bpf-cgroup.h>
-#include <linux/cgroup.h>
-#include <linux/rcupdate.h>
-#include <linux/random.h>
-#include <linux/smp.h>
-#include <linux/topology.h>
-#include <linux/ktime.h>
-#include <linux/sched.h>
-#include <linux/uidgid.h>
-#include <linux/filter.h>
-#include <linux/ctype.h>
-#include <linux/jiffies.h>
-#include <linux/pid_namespace.h>
-#include <linux/poison.h>
-#include <linux/proc_ns.h>
-#include <linux/sched/task.h>
-#include <linux/security.h>
-#include <linux/btf_ids.h>
-#include <linux/bpf_mem_alloc.h>
-#include <linux/kasan.h>
+#include <freax/bpf.h>
+#include <freax/btf.h>
+#include <freax/bpf-cgroup.h>
+#include <freax/cgroup.h>
+#include <freax/rcupdate.h>
+#include <freax/random.h>
+#include <freax/smp.h>
+#include <freax/topology.h>
+#include <freax/ktime.h>
+#include <freax/sched.h>
+#include <freax/uidgid.h>
+#include <freax/filter.h>
+#include <freax/ctype.h>
+#include <freax/jiffies.h>
+#include <freax/pid_namespace.h>
+#include <freax/poison.h>
+#include <freax/proc_ns.h>
+#include <freax/sched/task.h>
+#include <freax/security.h>
+#include <freax/btf_ids.h>
+#include <freax/bpf_mem_alloc.h>
+#include <freax/kasan.h>
 
 #include "../../lib/kstrtox.h"
 
@@ -1888,7 +1888,7 @@ void bpf_rb_root_free(const struct btf_field *field, void *rb_root,
 
 __diag_push();
 __diag_ignore_all("-Wmissing-prototypes",
-		  "Global functions as their definitions will be in vmlinux BTF");
+		  "Global functions as their definitions will be in vmfreax BTF");
 
 __bpf_kfunc void *bpf_obj_new_impl(u64 local_type_id__k, void *meta__ign)
 {
@@ -1958,7 +1958,7 @@ __bpf_kfunc void *bpf_refcount_acquire_impl(void *p__refcounted_kptr, void *meta
 	struct bpf_refcount *ref;
 
 	/* Could just cast directly to refcount_t *, but need some code using
-	 * bpf_refcount type so that it is emitted in vmlinux BTF
+	 * bpf_refcount type so that it is emitted in vmfreax BTF
 	 */
 	ref = (struct bpf_refcount *)(p__refcounted_kptr + meta->record->refcount_off);
 	if (!refcount_inc_not_zero((refcount_t *)ref))

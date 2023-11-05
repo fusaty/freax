@@ -1,8 +1,8 @@
-/* typhoon.c: A Linux Ethernet device driver for 3Com 3CR990 family of NICs */
+/* typhoon.c: A freax Ethernet device driver for 3Com 3CR990 family of NICs */
 /*
 	Written 2002-2004 by David Dillow <dave@thedillows.org>
 	Based on code written 1998-2000 by Donald Becker <becker@scyld.com> and
-	Linux 2.2.x driver by David P. McLean <davidpmclean@yahoo.com>.
+	freax 2.2.x driver by David P. McLean <davidpmclean@yahoo.com>.
 
 	This software may be used and distributed according to the terms of
 	the GNU General Public License (GPL), incorporated herein by reference.
@@ -98,31 +98,31 @@ static const int multicast_filter_limit = 32;
 
 #define pr_fmt(fmt)		KBUILD_MODNAME " " fmt
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/string.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/skbuff.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/crc32.h>
-#include <linux/bitops.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/string.h>
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/skbuff.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/ethtool.h>
+#include <freax/if_vlan.h>
+#include <freax/crc32.h>
+#include <freax/bitops.h>
 #include <asm/processor.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
-#include <linux/in6.h>
-#include <linux/dma-mapping.h>
-#include <linux/firmware.h>
+#include <freax/uaccess.h>
+#include <freax/in6.h>
+#include <freax/dma-mapping.h>
+#include <freax/firmware.h>
 
 #include "typhoon.h"
 
@@ -903,7 +903,7 @@ typhoon_do_get_stats(struct typhoon *tp)
 	if (err < 0)
 		return err;
 
-	/* 3Com's Linux driver uses txMultipleCollisions as it's
+	/* 3Com's freax driver uses txMultipleCollisions as it's
 	 * collisions value, but there is some other collision info as well...
 	 *
 	 * The extra status reported would be a good candidate for

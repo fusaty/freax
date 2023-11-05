@@ -3,12 +3,12 @@
 // Copyright(c) 2021-2022 Intel Corporation. All rights reserved.
 //
 // Authors: Cezary Rojewski <cezary.rojewski@intel.com>
-//          Amadeusz Slawinski <amadeuszx.slawinski@linux.intel.com>
+//          Amadeusz Slawinski <amadeuszx.slawinski@freax.intel.com>
 //
 
-#include <linux/firmware.h>
-#include <linux/kfifo.h>
-#include <linux/slab.h>
+#include <freax/firmware.h>
+#include <freax/kfifo.h>
+#include <freax/slab.h>
 #include "avs.h"
 #include "messages.h"
 

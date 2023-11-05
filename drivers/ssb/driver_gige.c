@@ -8,12 +8,12 @@
  * Licensed under the GNU/GPL. See COPYING for details.
  */
 
-#include <linux/ssb/ssb.h>
-#include <linux/ssb/ssb_driver_gige.h>
-#include <linux/export.h>
-#include <linux/pci.h>
-#include <linux/pci_regs.h>
-#include <linux/slab.h>
+#include <freax/ssb/ssb.h>
+#include <freax/ssb/ssb_driver_gige.h>
+#include <freax/export.h>
+#include <freax/pci.h>
+#include <freax/pci_regs.h>
+#include <freax/slab.h>
 
 
 /*

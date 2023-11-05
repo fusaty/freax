@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/stop_machine.h>
-#include <linux/uaccess.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/stop_machine.h>
+#include <freax/uaccess.h>
 
 #include <asm/cacheflush.h>
 #include <asm/fixmap.h>

@@ -10,12 +10,12 @@
  * Copyright (C) 2019-2023 Intel Corporation
  */
 
-#include <linux/export.h>
-#include <linux/wireless.h>
-#include <linux/nl80211.h>
-#include <linux/if_arp.h>
-#include <linux/etherdevice.h>
-#include <linux/slab.h>
+#include <freax/export.h>
+#include <freax/wireless.h>
+#include <freax/nl80211.h>
+#include <freax/if_arp.h>
+#include <freax/etherdevice.h>
+#include <freax/slab.h>
 #include <net/iw_handler.h>
 #include <net/cfg80211.h>
 #include <net/cfg80211-wext.h>

@@ -6,19 +6,19 @@
  *  USB/RS232 I-Force joysticks and wheels.
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/spinlock.h>
-#include <linux/circ_buf.h>
-#include <linux/mutex.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/spinlock.h>
+#include <freax/circ_buf.h>
+#include <freax/mutex.h>
 
 /* This module provides arbitrary resource management routines.
  * I use it to manage the device's memory.
  * Despite the name of this module, I am *not* going to access the ioports.
  */
-#include <linux/ioport.h>
+#include <freax/ioport.h>
 
 
 #define IFORCE_MAX_LENGTH	16

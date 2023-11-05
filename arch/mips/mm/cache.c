@@ -3,19 +3,19 @@
  * License.  See the file "COPYING" in the main directory of this archive
  * for more details.
  *
- * Copyright (C) 1994 - 2003, 06, 07 by Ralf Baechle (ralf@linux-mips.org)
+ * Copyright (C) 1994 - 2003, 06, 07 by Ralf Baechle (ralf@freax-mips.org)
  * Copyright (C) 2007 MIPS Technologies, Inc.
  */
-#include <linux/fs.h>
-#include <linux/fcntl.h>
-#include <linux/kernel.h>
-#include <linux/linkage.h>
-#include <linux/export.h>
-#include <linux/sched.h>
-#include <linux/syscalls.h>
-#include <linux/mm.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
+#include <freax/fs.h>
+#include <freax/fcntl.h>
+#include <freax/kernel.h>
+#include <freax/linkage.h>
+#include <freax/export.h>
+#include <freax/sched.h>
+#include <freax/syscalls.h>
+#include <freax/mm.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
 
 #include <asm/bcache.h>
 #include <asm/cacheflush.h>

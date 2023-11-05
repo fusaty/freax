@@ -4,26 +4,26 @@
  * Author: Flora Fu, MediaTek
  */
 
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/irqdomain.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/mt6323/core.h>
-#include <linux/mfd/mt6331/core.h>
-#include <linux/mfd/mt6357/core.h>
-#include <linux/mfd/mt6358/core.h>
-#include <linux/mfd/mt6359/core.h>
-#include <linux/mfd/mt6397/core.h>
-#include <linux/mfd/mt6323/registers.h>
-#include <linux/mfd/mt6331/registers.h>
-#include <linux/mfd/mt6357/registers.h>
-#include <linux/mfd/mt6358/registers.h>
-#include <linux/mfd/mt6359/registers.h>
-#include <linux/mfd/mt6397/registers.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/irqdomain.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/mt6323/core.h>
+#include <freax/mfd/mt6331/core.h>
+#include <freax/mfd/mt6357/core.h>
+#include <freax/mfd/mt6358/core.h>
+#include <freax/mfd/mt6359/core.h>
+#include <freax/mfd/mt6397/core.h>
+#include <freax/mfd/mt6323/registers.h>
+#include <freax/mfd/mt6331/registers.h>
+#include <freax/mfd/mt6357/registers.h>
+#include <freax/mfd/mt6358/registers.h>
+#include <freax/mfd/mt6359/registers.h>
+#include <freax/mfd/mt6397/registers.h>
 
 #define MT6323_RTC_BASE		0x8000
 #define MT6323_RTC_SIZE		0x40

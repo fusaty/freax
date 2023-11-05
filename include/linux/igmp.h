@@ -1,22 +1,22 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- *	Linux NET3:	Internet Group Management Protocol  [IGMP]
+ *	freax NET3:	Internet Group Management Protocol  [IGMP]
  *
  *	Authors:
  *		Alan Cox <alan@lxorguk.ukuu.org.uk>
  *
  *	Extended to talk the BSD extended IGMP protocol of mrouted 3.6
  */
-#ifndef _LINUX_IGMP_H
-#define _LINUX_IGMP_H
+#ifndef _freax_IGMP_H
+#define _freax_IGMP_H
 
-#include <linux/skbuff.h>
-#include <linux/timer.h>
-#include <linux/in.h>
-#include <linux/ip.h>
-#include <linux/refcount.h>
-#include <linux/sockptr.h>
-#include <uapi/linux/igmp.h>
+#include <freax/skbuff.h>
+#include <freax/timer.h>
+#include <freax/in.h>
+#include <freax/ip.h>
+#include <freax/refcount.h>
+#include <freax/sockptr.h>
+#include <uapi/freax/igmp.h>
 
 static inline struct igmphdr *igmp_hdr(const struct sk_buff *skb)
 {

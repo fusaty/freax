@@ -6,12 +6,12 @@
  * Copyright (C) 2009 - 2012 Paul Mundt
  */
 
-#include <linux/device.h>
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/device.h>
+#include <freax/gpio/driver.h>
+#include <freax/module.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #include "core.h"
 

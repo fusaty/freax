@@ -5,11 +5,11 @@
 #include <memory.h>
 #include <unistd.h>
 #include <arpa/inet.h>
-#include <linux/bpf.h>
-#include <linux/if_ether.h>
-#include <linux/pkt_cls.h>
-#include <linux/rtnetlink.h>
-#include <linux/netdev.h>
+#include <freax/bpf.h>
+#include <freax/if_ether.h>
+#include <freax/pkt_cls.h>
+#include <freax/rtnetlink.h>
+#include <freax/netdev.h>
 #include <sys/socket.h>
 #include <errno.h>
 #include <time.h>

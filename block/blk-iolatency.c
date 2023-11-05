@@ -64,16 +64,16 @@
  *
  * Copyright (C) 2018 Josef Bacik
  */
-#include <linux/kernel.h>
-#include <linux/blk_types.h>
-#include <linux/backing-dev.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/memcontrol.h>
-#include <linux/sched/loadavg.h>
-#include <linux/sched/signal.h>
+#include <freax/kernel.h>
+#include <freax/blk_types.h>
+#include <freax/backing-dev.h>
+#include <freax/module.h>
+#include <freax/timer.h>
+#include <freax/memcontrol.h>
+#include <freax/sched/loadavg.h>
+#include <freax/sched/signal.h>
 #include <trace/events/block.h>
-#include <linux/blk-mq.h>
+#include <freax/blk-mq.h>
 #include "blk-rq-qos.h"
 #include "blk-stat.h"
 #include "blk-cgroup.h"

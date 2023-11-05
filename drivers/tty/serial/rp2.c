@@ -9,31 +9,31 @@
  *   ar933x_uart.c
  *     Copyright (C) 2011 Gabor Juhos <juhosg@openwrt.org>
  *
- *   rocketport_infinity_express-linux-1.20.tar.gz
+ *   rocketport_infinity_express-freax-1.20.tar.gz
  *     Copyright (C) 2004-2011 Comtrol, Inc.
  */
 
-#include <linux/bitops.h>
-#include <linux/compiler.h>
-#include <linux/completion.h>
-#include <linux/console.h>
-#include <linux/delay.h>
-#include <linux/firmware.h>
-#include <linux/init.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/serial.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/sysrq.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/compiler.h>
+#include <freax/completion.h>
+#include <freax/console.h>
+#include <freax/delay.h>
+#include <freax/firmware.h>
+#include <freax/init.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/serial.h>
+#include <freax/serial_core.h>
+#include <freax/slab.h>
+#include <freax/sysrq.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/types.h>
 
 #define DRV_NAME			"rp2"
 

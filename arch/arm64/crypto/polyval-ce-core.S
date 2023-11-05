@@ -24,7 +24,7 @@
  * multiplications and polynomial reductions.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #define STRIDE_BLOCKS 8
 
 KEY_POWERS	.req	x0

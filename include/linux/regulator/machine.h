@@ -9,11 +9,11 @@
  * Regulator Machine/Board Interface.
  */
 
-#ifndef __LINUX_REGULATOR_MACHINE_H_
-#define __LINUX_REGULATOR_MACHINE_H_
+#ifndef __freax_REGULATOR_MACHINE_H_
+#define __freax_REGULATOR_MACHINE_H_
 
-#include <linux/regulator/consumer.h>
-#include <linux/suspend.h>
+#include <freax/regulator/consumer.h>
+#include <freax/suspend.h>
 
 struct regulator;
 

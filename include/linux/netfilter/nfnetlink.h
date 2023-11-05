@@ -2,10 +2,10 @@
 #ifndef _NFNETLINK_H
 #define _NFNETLINK_H
 
-#include <linux/netlink.h>
-#include <linux/capability.h>
+#include <freax/netlink.h>
+#include <freax/capability.h>
 #include <net/netlink.h>
-#include <uapi/linux/netfilter/nfnetlink.h>
+#include <uapi/freax/netfilter/nfnetlink.h>
 
 struct nfnl_info {
 	struct net		*net;

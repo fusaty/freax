@@ -22,8 +22,8 @@
  *
  */
 
-#include <linux/list_sort.h>
-#include <linux/prime_numbers.h>
+#include <freax/list_sort.h>
+#include <freax/prime_numbers.h>
 
 #include "gem/i915_gem_context.h"
 #include "gem/i915_gem_internal.h"

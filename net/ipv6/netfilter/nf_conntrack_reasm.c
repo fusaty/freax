@@ -12,22 +12,22 @@
 
 #define pr_fmt(fmt) "IPv6-nf: " fmt
 
-#include <linux/errno.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/net.h>
-#include <linux/netdevice.h>
-#include <linux/ipv6.h>
-#include <linux/slab.h>
+#include <freax/errno.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/net.h>
+#include <freax/netdevice.h>
+#include <freax/ipv6.h>
+#include <freax/slab.h>
 
 #include <net/ipv6_frag.h>
 
 #include <net/netfilter/ipv6/nf_conntrack_ipv6.h>
-#include <linux/sysctl.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter_ipv6.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
+#include <freax/sysctl.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter_ipv6.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
 #include <net/netfilter/ipv6/nf_defrag_ipv6.h>
 #include <net/netns/generic.h>
 

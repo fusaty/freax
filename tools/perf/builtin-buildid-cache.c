@@ -28,8 +28,8 @@
 #include "util/util.h"
 #include "util/probe-file.h"
 #include "util/config.h"
-#include <linux/string.h>
-#include <linux/err.h>
+#include <freax/string.h>
+#include <freax/err.h>
 
 static int build_id_cache__kcore_buildid(const char *proc_dir, char *sbuildid)
 {

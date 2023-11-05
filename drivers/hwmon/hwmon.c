@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * hwmon.c - part of lm_sensors, Linux kernel modules for hardware monitoring
+ * hwmon.c - part of lm_sensors, freax kernel modules for hardware monitoring
  *
  * This file defines the sysfs class "hwmon", for use by sensors drivers.
  *
@@ -9,20 +9,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/bitops.h>
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/gfp.h>
-#include <linux/hwmon.h>
-#include <linux/idr.h>
-#include <linux/kstrtox.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/property.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/thermal.h>
+#include <freax/bitops.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/gfp.h>
+#include <freax/hwmon.h>
+#include <freax/idr.h>
+#include <freax/kstrtox.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/property.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/thermal.h>
 
 #define CREATE_TRACE_POINTS
 #include <trace/events/hwmon.h>

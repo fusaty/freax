@@ -1,7 +1,7 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-#ifndef __LINUX_PLATFORM_DATA_MCF_ESDHC_H__
-#define __LINUX_PLATFORM_DATA_MCF_ESDHC_H__
+#ifndef __freax_PLATFORM_DATA_MCF_ESDHC_H__
+#define __freax_PLATFORM_DATA_MCF_ESDHC_H__
 
 enum cd_types {
 	ESDHC_CD_NONE,		/* no CD, neither controller nor gpio */
@@ -14,4 +14,4 @@ struct mcf_esdhc_platform_data {
 	int cd_type;
 };
 
-#endif /* __LINUX_PLATFORM_DATA_MCF_ESDHC_H__ */
+#endif /* __freax_PLATFORM_DATA_MCF_ESDHC_H__ */

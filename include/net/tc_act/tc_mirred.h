@@ -3,7 +3,7 @@
 #define __NET_TC_MIR_H
 
 #include <net/act_api.h>
-#include <linux/tc_act/tc_mirred.h>
+#include <freax/tc_act/tc_mirred.h>
 
 struct tcf_mirred {
 	struct tc_action	common;

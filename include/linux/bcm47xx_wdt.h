@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_BCM47XX_WDT_H_
-#define LINUX_BCM47XX_WDT_H_
+#ifndef freax_BCM47XX_WDT_H_
+#define freax_BCM47XX_WDT_H_
 
-#include <linux/timer.h>
-#include <linux/types.h>
-#include <linux/watchdog.h>
+#include <freax/timer.h>
+#include <freax/types.h>
+#include <freax/watchdog.h>
 
 
 struct bcm47xx_wdt {
@@ -24,4 +24,4 @@ static inline void *bcm47xx_wdt_get_drvdata(struct bcm47xx_wdt *wdt)
 {
 	return wdt->driver_data;
 }
-#endif /* LINUX_BCM47XX_WDT_H_ */
+#endif /* freax_BCM47XX_WDT_H_ */

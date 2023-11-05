@@ -1,5 +1,5 @@
-#ifndef _LINUX_FBCON_H
-#define _LINUX_FBCON_H
+#ifndef _freax_FBCON_H
+#define _freax_FBCON_H
 
 #ifdef CONFIG_FRAMEBUFFER_CONSOLE
 void __init fb_console_init(void);
@@ -43,4 +43,4 @@ static inline int fbcon_set_con2fb_map_ioctl(void __user *argp) { return 0; }
 static inline int fbcon_get_con2fb_map_ioctl(void __user *argp) { return 0; }
 #endif
 
-#endif /* _LINUX_FBCON_H */
+#endif /* _freax_FBCON_H */

@@ -15,17 +15,17 @@
  *	OTP support
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/onenand.h>
-#include <linux/mtd/partitions.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/onenand.h>
+#include <freax/mtd/partitions.h>
 
 #include <asm/io.h>
 

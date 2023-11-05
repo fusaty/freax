@@ -10,11 +10,11 @@
 #define KMSG_COMPONENT "hmcdrv"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/irq.h>
-#include <linux/wait.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/irq.h>
+#include <freax/wait.h>
+#include <freax/string.h>
 #include <asm/asm-extable.h>
 #include <asm/ctlreg.h>
 #include <asm/diag.h>

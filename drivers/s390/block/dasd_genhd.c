@@ -4,7 +4,7 @@
  *		    Horst Hummel <Horst.Hummel@de.ibm.com>
  *		    Carsten Otte <Cotte@de.ibm.com>
  *		    Martin Schwidefsky <schwidefsky@de.ibm.com>
- * Bugreports.to..: <Linux390@de.ibm.com>
+ * Bugreports.to..: <freax390@de.ibm.com>
  * Copyright IBM Corp. 1999, 2001
  *
  * gendisk related functions for the dasd driver.
@@ -13,12 +13,12 @@
 
 #define KMSG_COMPONENT "dasd"
 
-#include <linux/interrupt.h>
-#include <linux/major.h>
-#include <linux/fs.h>
-#include <linux/blkpg.h>
+#include <freax/interrupt.h>
+#include <freax/major.h>
+#include <freax/fs.h>
+#include <freax/blkpg.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /* This is ugly... */
 #define PRINTK_HEADER "dasd_gendisk:"

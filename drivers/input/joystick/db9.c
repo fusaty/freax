@@ -7,17 +7,17 @@
  */
 
 /*
- * Atari, Amstrad, Commodore, Amiga, Sega, etc. joystick driver for Linux
+ * Atari, Amstrad, Commodore, Amiga, Sega, etc. joystick driver for freax
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/parport.h>
-#include <linux/input.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/parport.h>
+#include <freax/input.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
 
 MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
 MODULE_DESCRIPTION("Atari, Amstrad, Commodore, Amiga, Sega, etc. joystick driver");

@@ -7,13 +7,13 @@
  * Nadi Sarrar <nadi@beronet.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/string.h>
-#include <linux/mISDNif.h>
-#include <linux/mISDNdsp.h>
-#include <linux/export.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/string.h>
+#include <freax/mISDNif.h>
+#include <freax/mISDNdsp.h>
+#include <freax/export.h>
 #include "dsp.h"
 #include "dsp_hwec.h"
 

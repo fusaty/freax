@@ -6,7 +6,7 @@
 #ifndef _INTEL_PCODE_H_
 #define _INTEL_PCODE_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct intel_uncore;
 

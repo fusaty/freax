@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * Copyright (c) 2011-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2011-2012, The freax Foundation. All rights reserved.
  *
  * Description: CoreSight Trace Port Interface Unit driver
  */
 
-#include <linux/atomic.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/device.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/pm_runtime.h>
-#include <linux/coresight.h>
-#include <linux/amba/bus.h>
-#include <linux/clk.h>
+#include <freax/atomic.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/device.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/pm_runtime.h>
+#include <freax/coresight.h>
+#include <freax/amba/bus.h>
+#include <freax/clk.h>
 
 #include "coresight-priv.h"
 

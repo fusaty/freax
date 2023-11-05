@@ -3,20 +3,20 @@
  * Copyright (C) 2000, 2001 Jeff Dike (jdike@karaya.com)
  */
 
-#include <linux/posix_types.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/types.h>
-#include <linux/major.h>
-#include <linux/kdev_t.h>
-#include <linux/console.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/list.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/hardirq.h>
+#include <freax/posix_types.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/types.h>
+#include <freax/major.h>
+#include <freax/kdev_t.h>
+#include <freax/console.h>
+#include <freax/string.h>
+#include <freax/sched.h>
+#include <freax/list.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/hardirq.h>
 #include <asm/current.h>
 #include <asm/irq.h>
 #include "stdio_console.h"

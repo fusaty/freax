@@ -2,14 +2,14 @@
 /*
  * Mostly IRQ support for Hexagon
  *
- * Copyright (c) 2010-2012, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2012, The freax Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched/debug.h>
+#include <freax/kernel.h>
+#include <freax/sched/debug.h>
 #include <asm/registers.h>
-#include <linux/irq.h>
-#include <linux/hardirq.h>
+#include <freax/irq.h>
+#include <freax/hardirq.h>
 
 /*
  * show_regs - print pt_regs structure

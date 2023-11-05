@@ -5,21 +5,21 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/ktime.h>
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/pagemap.h>
-#include <linux/rxrpc.h>
-#include <linux/key.h>
-#include <linux/workqueue.h>
-#include <linux/sched.h>
-#include <linux/fscache.h>
-#include <linux/backing-dev.h>
-#include <linux/uuid.h>
-#include <linux/mm_types.h>
-#include <linux/dns_resolver.h>
+#include <freax/compiler.h>
+#include <freax/kernel.h>
+#include <freax/ktime.h>
+#include <freax/fs.h>
+#include <freax/filelock.h>
+#include <freax/pagemap.h>
+#include <freax/rxrpc.h>
+#include <freax/key.h>
+#include <freax/workqueue.h>
+#include <freax/sched.h>
+#include <freax/fscache.h>
+#include <freax/backing-dev.h>
+#include <freax/uuid.h>
+#include <freax/mm_types.h>
+#include <freax/dns_resolver.h>
 #include <net/net_namespace.h>
 #include <net/netns/generic.h>
 #include <net/sock.h>

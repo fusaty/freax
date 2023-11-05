@@ -31,9 +31,9 @@
  * SOFTWARE.
  */
 
-#include <linux/list.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
+#include <freax/list.h>
+#include <freax/rcupdate.h>
+#include <freax/spinlock.h>
 #include <net/inet_connection_sock.h>
 #include <net/tls.h>
 #include <net/tls_toe.h>

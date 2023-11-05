@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2010 ST Microelectronics
- * Rajeev Kumar <rajeevkumar.linux@gmail.com>
+ * Rajeev Kumar <rajeevkumar.freax@gmail.com>
  *
  * This file is licensed under the terms of the GNU General Public
  * License version 2. This program is licensed "as is" without any
@@ -10,10 +10,10 @@
 #ifndef __PLAT_KEYBOARD_H
 #define __PLAT_KEYBOARD_H
 
-#include <linux/bitops.h>
-#include <linux/input.h>
-#include <linux/input/matrix_keypad.h>
-#include <linux/types.h>
+#include <freax/bitops.h>
+#include <freax/input.h>
+#include <freax/input/matrix_keypad.h>
+#include <freax/types.h>
 
 #define DECLARE_9x9_KEYMAP(_name) \
 int _name[] = { \

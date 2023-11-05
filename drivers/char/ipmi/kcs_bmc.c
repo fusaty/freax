@@ -4,10 +4,10 @@
  * Copyright (c) 2021, IBM Corp.
  */
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
 
 #include "kcs_bmc.h"
 
@@ -185,6 +185,6 @@ void kcs_bmc_update_event_mask(struct kcs_bmc_device *kcs_bmc, u8 mask, u8 event
 EXPORT_SYMBOL(kcs_bmc_update_event_mask);
 
 MODULE_LICENSE("GPL v2");
-MODULE_AUTHOR("Haiyue Wang <haiyue.wang@linux.intel.com>");
+MODULE_AUTHOR("Haiyue Wang <haiyue.wang@freax.intel.com>");
 MODULE_AUTHOR("Andrew Jeffery <andrew@aj.id.au>");
 MODULE_DESCRIPTION("KCS BMC to handle the IPMI request from system software");

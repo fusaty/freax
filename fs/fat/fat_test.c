@@ -13,7 +13,7 @@
 static void fat_checksum_test(struct kunit *test)
 {
 	/* With no extension. */
-	KUNIT_EXPECT_EQ(test, fat_checksum("VMLINUX    "), (u8)44);
+	KUNIT_EXPECT_EQ(test, fat_checksum("VMfreax    "), (u8)44);
 	/* With 3-letter extension. */
 	KUNIT_EXPECT_EQ(test, fat_checksum("README  TXT"), (u8)115);
 	/* With short (1-letter) extension. */

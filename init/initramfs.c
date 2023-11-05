@@ -1,23 +1,23 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/init.h>
-#include <linux/async.h>
-#include <linux/fs.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/delay.h>
-#include <linux/string.h>
-#include <linux/dirent.h>
-#include <linux/syscalls.h>
-#include <linux/utime.h>
-#include <linux/file.h>
-#include <linux/kstrtox.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/namei.h>
-#include <linux/init_syscalls.h>
-#include <linux/task_work.h>
-#include <linux/umh.h>
+#include <freax/init.h>
+#include <freax/async.h>
+#include <freax/fs.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/delay.h>
+#include <freax/string.h>
+#include <freax/dirent.h>
+#include <freax/syscalls.h>
+#include <freax/utime.h>
+#include <freax/file.h>
+#include <freax/kstrtox.h>
+#include <freax/memblock.h>
+#include <freax/mm.h>
+#include <freax/namei.h>
+#include <freax/init_syscalls.h>
+#include <freax/task_work.h>
+#include <freax/umh.h>
 
 static __initdata bool csum_present;
 static __initdata u32 io_csum;
@@ -478,7 +478,7 @@ static long __init flush_buffer(void *bufv, unsigned long len)
 
 static unsigned long my_inptr __initdata; /* index of next byte to be processed in inbuf */
 
-#include <linux/decompress/generic.h>
+#include <freax/decompress/generic.h>
 
 static char * __init unpack_to_rootfs(char *buf, unsigned long len)
 {
@@ -571,8 +571,8 @@ __setup("initramfs_async=", initramfs_async_setup);
 
 extern char __initramfs_start[];
 extern unsigned long __initramfs_size;
-#include <linux/initrd.h>
-#include <linux/kexec.h>
+#include <freax/initrd.h>
+#include <freax/kexec.h>
 
 void __init reserve_initrd_mem(void)
 {

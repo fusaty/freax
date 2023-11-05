@@ -6,26 +6,26 @@
  * Copyright (C) 2000, 2001 Silicon Graphics, Inc.
  * Copyright (C) 2000, 2001, 2003 Broadcom Corporation
  */
-#include <linux/cache.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/smp.h>
-#include <linux/spinlock.h>
-#include <linux/threads.h>
-#include <linux/export.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/sched/mm.h>
-#include <linux/cpumask.h>
-#include <linux/cpu.h>
-#include <linux/err.h>
-#include <linux/ftrace.h>
-#include <linux/irqdomain.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
+#include <freax/cache.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/smp.h>
+#include <freax/spinlock.h>
+#include <freax/threads.h>
+#include <freax/export.h>
+#include <freax/time.h>
+#include <freax/timex.h>
+#include <freax/sched/mm.h>
+#include <freax/cpumask.h>
+#include <freax/cpu.h>
+#include <freax/err.h>
+#include <freax/ftrace.h>
+#include <freax/irqdomain.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/cpu.h>
 #include <asm/ginvt.h>
 #include <asm/processor.h>

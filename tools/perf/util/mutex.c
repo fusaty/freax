@@ -2,7 +2,7 @@
 #include "mutex.h"
 
 #include "debug.h"
-#include <linux/string.h>
+#include <freax/string.h>
 #include <errno.h>
 
 static void check_err(const char *fn, int err)

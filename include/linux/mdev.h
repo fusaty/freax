@@ -10,8 +10,8 @@
 #ifndef MDEV_H
 #define MDEV_H
 
-#include <linux/device.h>
-#include <linux/uuid.h>
+#include <freax/device.h>
+#include <freax/uuid.h>
 
 struct mdev_type;
 

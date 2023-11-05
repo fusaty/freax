@@ -8,12 +8,12 @@
 
 #include <dt-bindings/sound/microchip,pdmc.h>
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm_runtime.h>
-#include <linux/regmap.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm_runtime.h>
+#include <freax/regmap.h>
 
 #include <sound/core.h>
 #include <sound/dmaengine_pcm.h>

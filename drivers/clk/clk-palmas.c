@@ -9,13 +9,13 @@
  *		Peter Ujfalusi <peter.ujfalusi@ti.com>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/mfd/palmas.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/mfd/palmas.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 
 #define PALMAS_CLOCK_DT_EXT_CONTROL_ENABLE1	1
 #define PALMAS_CLOCK_DT_EXT_CONTROL_ENABLE2	2

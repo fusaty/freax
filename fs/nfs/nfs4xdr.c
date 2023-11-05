@@ -35,23 +35,23 @@
  *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/param.h>
-#include <linux/time.h>
-#include <linux/mm.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/pagemap.h>
-#include <linux/proc_fs.h>
-#include <linux/kdev_t.h>
-#include <linux/module.h>
-#include <linux/utsname.h>
-#include <linux/sunrpc/clnt.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/nfs.h>
-#include <linux/nfs4.h>
-#include <linux/nfs_fs.h>
+#include <freax/param.h>
+#include <freax/time.h>
+#include <freax/mm.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/in.h>
+#include <freax/pagemap.h>
+#include <freax/proc_fs.h>
+#include <freax/kdev_t.h>
+#include <freax/module.h>
+#include <freax/utsname.h>
+#include <freax/sunrpc/clnt.h>
+#include <freax/sunrpc/msg_prot.h>
+#include <freax/sunrpc/gss_api.h>
+#include <freax/nfs.h>
+#include <freax/nfs4.h>
+#include <freax/nfs_fs.h>
 
 #include "nfs4_fs.h"
 #include "nfs4trace.h"
@@ -1404,7 +1404,7 @@ static void encode_share_access(struct xdr_stream *xdr, u32 share_access)
 
 	p = reserve_space(xdr, 8);
 	*p++ = cpu_to_be32(share_access);
-	*p = cpu_to_be32(0);		/* for linux, share_deny = 0 always */
+	*p = cpu_to_be32(0);		/* for freax, share_deny = 0 always */
 }
 
 static inline void encode_openhdr(struct xdr_stream *xdr, const struct nfs_openargs *arg)
@@ -7599,7 +7599,7 @@ nfs4_stat_to_errno(int stat)
 	/* If we cannot translate the error, the recovery routines should
 	 * handle it.
 	 * Note: remaining NFSv4 error codes have values > 10000, so should
-	 * not conflict with native Linux error codes.
+	 * not conflict with native freax error codes.
 	 */
 	return -stat;
 }

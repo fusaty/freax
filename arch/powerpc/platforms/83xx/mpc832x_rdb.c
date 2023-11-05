@@ -10,16 +10,16 @@
  * Author: Michael Barkowski <michael.barkowski@freescale.com>
  */
 
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/mmc_spi.h>
-#include <linux/mmc/host.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/fsl_devices.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/mmc_spi.h>
+#include <freax/mmc/host.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/fsl_devices.h>
 
 #include <asm/time.h>
 #include <asm/ipic.h>

@@ -10,16 +10,16 @@
  * Device driver for vTPM (vTPM proxy driver)
  */
 
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/uaccess.h>
-#include <linux/wait.h>
-#include <linux/miscdevice.h>
-#include <linux/vtpm_proxy.h>
-#include <linux/file.h>
-#include <linux/anon_inodes.h>
-#include <linux/poll.h>
-#include <linux/compat.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/uaccess.h>
+#include <freax/wait.h>
+#include <freax/miscdevice.h>
+#include <freax/vtpm_proxy.h>
+#include <freax/file.h>
+#include <freax/anon_inodes.h>
+#include <freax/poll.h>
+#include <freax/compat.h>
 
 #include "tpm.h"
 

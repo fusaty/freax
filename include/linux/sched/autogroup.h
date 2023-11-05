@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_AUTOGROUP_H
-#define _LINUX_SCHED_AUTOGROUP_H
+#ifndef _freax_SCHED_AUTOGROUP_H
+#define _freax_SCHED_AUTOGROUP_H
 
 struct signal_struct;
 struct task_struct;
@@ -29,4 +29,4 @@ static inline void sched_autogroup_exit_task(struct task_struct *p) { }
 extern struct task_group root_task_group;
 #endif /* CONFIG_CGROUP_SCHED */
 
-#endif /* _LINUX_SCHED_AUTOGROUP_H */
+#endif /* _freax_SCHED_AUTOGROUP_H */

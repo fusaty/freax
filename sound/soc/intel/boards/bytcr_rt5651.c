@@ -9,19 +9,19 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/acpi.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dmi.h>
-#include <linux/input.h>
-#include <linux/gpio/consumer.h>
-#include <linux/gpio/machine.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/acpi.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/dmi.h>
+#include <freax/input.h>
+#include <freax/gpio/consumer.h>
+#include <freax/gpio/machine.h>
+#include <freax/slab.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
@@ -1147,6 +1147,6 @@ static struct platform_driver snd_byt_rt5651_mc_driver = {
 module_platform_driver(snd_byt_rt5651_mc_driver);
 
 MODULE_DESCRIPTION("ASoC Intel(R) Baytrail CR Machine driver for RT5651");
-MODULE_AUTHOR("Pierre-Louis Bossart <pierre-louis.bossart@linux.intel.com>");
+MODULE_AUTHOR("Pierre-Louis Bossart <pierre-louis.bossart@freax.intel.com>");
 MODULE_LICENSE("GPL v2");
 MODULE_ALIAS("platform:bytcr_rt5651");

@@ -13,14 +13,14 @@
  *
  */
 
-#include <linux/cec.h>
-#include <linux/dmi.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/pci.h>
-#include <linux/regmap.h>
+#include <freax/cec.h>
+#include <freax/dmi.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/pci.h>
+#include <freax/regmap.h>
 #include <media/cec.h>
 #include <media/cec-notifier.h>
 

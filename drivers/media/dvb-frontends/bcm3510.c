@@ -3,7 +3,7 @@
  *
  *  Copyright (C) 2001-5, B2C2 inc.
  *
- *  GPL/Linux driver written by Patrick Boettcher <patrick.boettcher@posteo.de>
+ *  GPL/freax driver written by Patrick Boettcher <patrick.boettcher@posteo.de>
  *
  *  This driver is "hard-coded" to be used with the 1st generation of
  *  Technisat/B2C2's Air2PC ATSC PCI/USB cards/boxes. The pll-programming
@@ -31,14 +31,14 @@
  * Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/jiffies.h>
+#include <freax/string.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
 
 #include <media/dvb_frontend.h>
 #include "bcm3510.h"

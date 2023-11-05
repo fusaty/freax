@@ -5,14 +5,14 @@
  * Copyright (C) 2023 BayLibre Incorporated - https://www.baylibre.com/
  */
 
-#include <linux/crc8.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/of_device.h>
-#include <linux/regmap.h>
-#include <linux/spi/spi.h>
+#include <freax/crc8.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/of_device.h>
+#include <freax/regmap.h>
+#include <freax/spi/spi.h>
 
-#include <linux/mfd/tps6594.h>
+#include <freax/mfd/tps6594.h>
 
 #define TPS6594_SPI_PAGE_SHIFT	5
 #define TPS6594_SPI_READ_BIT	BIT(4)

@@ -5,10 +5,10 @@
  * Copyright (c) 2020 Western Digital Corporation or its affiliates.
  */
 
-#include <linux/bits.h>
-#include <linux/init.h>
-#include <linux/pm.h>
-#include <linux/reboot.h>
+#include <freax/bits.h>
+#include <freax/init.h>
+#include <freax/pm.h>
+#include <freax/reboot.h>
 #include <asm/sbi.h>
 #include <asm/smp.h>
 
@@ -48,7 +48,7 @@ struct sbiret sbi_ecall(int ext, int fid, unsigned long arg0,
 }
 EXPORT_SYMBOL(sbi_ecall);
 
-int sbi_err_map_linux_errno(int err)
+int sbi_err_map_freax_errno(int err)
 {
 	switch (err) {
 	case SBI_SUCCESS:
@@ -65,7 +65,7 @@ int sbi_err_map_linux_errno(int err)
 		return -ENOTSUPP;
 	};
 }
-EXPORT_SYMBOL(sbi_err_map_linux_errno);
+EXPORT_SYMBOL(sbi_err_map_freax_errno);
 
 #ifdef CONFIG_RISCV_SBI_V01
 static unsigned long __sbi_v01_cpumask_to_hartmask(const struct cpumask *cpu_mask)
@@ -238,7 +238,7 @@ static void __sbi_send_ipi_v02(unsigned int cpu)
 	ret = sbi_ecall(SBI_EXT_IPI, SBI_EXT_IPI_SEND_IPI,
 			1UL, cpuid_to_hartid_map(cpu), 0, 0, 0, 0);
 	if (ret.error) {
-		result = sbi_err_map_linux_errno(ret.error);
+		result = sbi_err_map_freax_errno(ret.error);
 		pr_err("%s: hbase = [%lu] failed (error [%d])\n",
 			__func__, cpuid_to_hartid_map(cpu), result);
 	}
@@ -289,7 +289,7 @@ static int __sbi_rfence_v02_call(unsigned long fid, unsigned long hmask,
 	}
 
 	if (ret.error) {
-		result = sbi_err_map_linux_errno(ret.error);
+		result = sbi_err_map_freax_errno(ret.error);
 		pr_err("%s: hbase = [%lu] hmask = [0x%lx] failed (error [%d])\n",
 		       __func__, hbase, hmask, result);
 	}
@@ -367,7 +367,7 @@ EXPORT_SYMBOL(sbi_send_ipi);
  * sbi_remote_fence_i() - Execute FENCE.I instruction on given remote harts.
  * @cpu_mask: A cpu mask containing all the target harts.
  *
- * Return: 0 on success, appropriate linux error code otherwise.
+ * Return: 0 on success, appropriate freax error code otherwise.
  */
 int sbi_remote_fence_i(const struct cpumask *cpu_mask)
 {
@@ -383,7 +383,7 @@ EXPORT_SYMBOL(sbi_remote_fence_i);
  * @start: Start of the virtual address
  * @size: Total size of the virtual address range.
  *
- * Return: 0 on success, appropriate linux error code otherwise.
+ * Return: 0 on success, appropriate freax error code otherwise.
  */
 int sbi_remote_sfence_vma(const struct cpumask *cpu_mask,
 			   unsigned long start,
@@ -403,7 +403,7 @@ EXPORT_SYMBOL(sbi_remote_sfence_vma);
  * @size: Total size of the virtual address range.
  * @asid: The value of address space identifier (ASID).
  *
- * Return: 0 on success, appropriate linux error code otherwise.
+ * Return: 0 on success, appropriate freax error code otherwise.
  */
 int sbi_remote_sfence_vma_asid(const struct cpumask *cpu_mask,
 				unsigned long start,
@@ -547,7 +547,7 @@ static long __sbi_base_ecall(int fid)
 	if (!ret.error)
 		return ret.value;
 	else
-		return sbi_err_map_linux_errno(ret.error);
+		return sbi_err_map_freax_errno(ret.error);
 }
 
 static inline long sbi_get_spec_version(void)

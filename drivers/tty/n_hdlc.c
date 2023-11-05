@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-1.0+
-/* generic HDLC line discipline for Linux
+/* generic HDLC line discipline for freax
  *
  * Written by Paul Fulghum paulkf@microgate.com
  * for Microgate Corporation
@@ -76,27 +76,27 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/interrupt.h>
-#include <linux/ptrace.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/interrupt.h>
+#include <freax/ptrace.h>
 
-#include <linux/poll.h>
-#include <linux/in.h>
-#include <linux/ioctl.h>
-#include <linux/slab.h>
-#include <linux/tty.h>
-#include <linux/errno.h>
-#include <linux/string.h>	/* used in new tty drivers */
-#include <linux/signal.h>	/* used in new tty drivers */
-#include <linux/if.h>
-#include <linux/bitops.h>
+#include <freax/poll.h>
+#include <freax/in.h>
+#include <freax/ioctl.h>
+#include <freax/slab.h>
+#include <freax/tty.h>
+#include <freax/errno.h>
+#include <freax/string.h>	/* used in new tty drivers */
+#include <freax/signal.h>	/* used in new tty drivers */
+#include <freax/if.h>
+#include <freax/bitops.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include "tty.h"
 
 /*

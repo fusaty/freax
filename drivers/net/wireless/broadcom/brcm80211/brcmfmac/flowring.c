@@ -4,9 +4,9 @@
  */
 
 
-#include <linux/types.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
+#include <freax/types.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
 #include <brcmu_utils.h>
 
 #include "core.h"

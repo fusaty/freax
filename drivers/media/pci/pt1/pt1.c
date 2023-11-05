@@ -8,20 +8,20 @@
  *	by Tomoaki Ishikawa <tomy@users.sourceforge.jp>
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/signal.h>
-#include <linux/hrtimer.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/pci.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/ratelimit.h>
-#include <linux/string.h>
-#include <linux/i2c.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/signal.h>
+#include <freax/hrtimer.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/pci.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/ratelimit.h>
+#include <freax/string.h>
+#include <freax/i2c.h>
 
 #include <media/dvbdev.h>
 #include <media/dvb_demux.h>

@@ -7,11 +7,11 @@
  * Copyright IBM Corp. 2018
  */
 
-#include <linux/spinlock.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
+#include <freax/spinlock.h>
+#include <freax/jiffies.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
 
 #include "zfcp_diag.h"
 #include "zfcp_ext.h"

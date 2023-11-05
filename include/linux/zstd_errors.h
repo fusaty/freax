@@ -13,7 +13,7 @@
 
 
 /*===== dependency =====*/
-#include <linux/types.h>   /* size_t */
+#include <freax/types.h>   /* size_t */
 
 
 /* =====   ZSTDERRORLIB_API : control library symbols visibility   ===== */

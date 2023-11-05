@@ -2,12 +2,12 @@
 /*
  *  Registration of Cobalt LCD platform device.
  *
- *  Copyright (C) 2008  Yoichi Yuasa <yuasa@linux-mips.org>
+ *  Copyright (C) 2008  Yoichi Yuasa <yuasa@freax-mips.org>
  */
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
 
 static struct resource cobalt_lcd_resource __initdata = {
 	.start	= 0x1f000000,

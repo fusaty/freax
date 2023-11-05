@@ -18,11 +18,11 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#ifndef __LINUX_NFC_H
-#define __LINUX_NFC_H
+#ifndef __freax_NFC_H
+#define __freax_NFC_H
 
-#include <linux/types.h>
-#include <linux/socket.h>
+#include <freax/types.h>
+#include <freax/socket.h>
 
 #define NFC_GENL_NAME "nfc"
 #define NFC_GENL_VERSION 1
@@ -314,4 +314,4 @@ struct sockaddr_nfc_llcp {
 #define NFC_LLCP_REMOTE_LTO	3
 #define NFC_LLCP_REMOTE_RW	4
 
-#endif /*__LINUX_NFC_H */
+#endif /*__freax_NFC_H */

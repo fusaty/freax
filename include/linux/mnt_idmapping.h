@@ -1,9 +1,9 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MNT_IDMAPPING_H
-#define _LINUX_MNT_IDMAPPING_H
+#ifndef _freax_MNT_IDMAPPING_H
+#define _freax_MNT_IDMAPPING_H
 
-#include <linux/types.h>
-#include <linux/uidgid.h>
+#include <freax/types.h>
+#include <freax/uidgid.h>
 
 struct mnt_idmap;
 struct user_namespace;
@@ -244,4 +244,4 @@ static inline kgid_t mapped_fsgid(struct mnt_idmap *idmap,
 bool check_fsmapping(const struct mnt_idmap *idmap,
 		     const struct super_block *sb);
 
-#endif /* _LINUX_MNT_IDMAPPING_H */
+#endif /* _freax_MNT_IDMAPPING_H */

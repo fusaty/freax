@@ -5,14 +5,14 @@
  *   Copyright 2021 Lauri Kasanen
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
+#include <freax/dma-mapping.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
 
 #include <sound/control.h>
 #include <sound/core.h>

@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_MIGRATE_H
-#define _LINUX_MIGRATE_H
+#ifndef _freax_MIGRATE_H
+#define _freax_MIGRATE_H
 
-#include <linux/mm.h>
-#include <linux/mempolicy.h>
-#include <linux/migrate_mode.h>
-#include <linux/hugetlb.h>
+#include <freax/mm.h>
+#include <freax/mempolicy.h>
+#include <freax/migrate_mode.h>
+#include <freax/hugetlb.h>
 
 typedef struct folio *new_folio_t(struct folio *folio, unsigned long private);
 typedef void free_folio_t(struct folio *folio, unsigned long private);
@@ -229,4 +229,4 @@ void migrate_device_finalize(unsigned long *src_pfns,
 
 #endif /* CONFIG_MIGRATION */
 
-#endif /* _LINUX_MIGRATE_H */
+#endif /* _freax_MIGRATE_H */

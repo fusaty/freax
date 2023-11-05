@@ -7,18 +7,18 @@
  */
 
 #include <crypto/hash_info.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/parser.h>
-#include <linux/string.h>
-#include <linux/err.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/parser.h>
+#include <freax/string.h>
+#include <freax/err.h>
 #include <keys/trusted-type.h>
-#include <linux/key-type.h>
-#include <linux/crypto.h>
+#include <freax/key-type.h>
+#include <freax/crypto.h>
 #include <crypto/hash.h>
 #include <crypto/sha1.h>
-#include <linux/tpm.h>
-#include <linux/tpm_command.h>
+#include <freax/tpm.h>
+#include <freax/tpm_command.h>
 
 #include <keys/trusted_tpm.h>
 

@@ -22,14 +22,14 @@
  * irq levels 10 and 11.
  */
 
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/eisa.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/eisa.h>
 
 #include <asm/byteorder.h>
 #include <asm/io.h>

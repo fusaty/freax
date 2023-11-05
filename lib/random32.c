@@ -32,14 +32,14 @@
  * s1 > 1, s2 > 7, s3 > 15, s4 > 127.
  */
 
-#include <linux/types.h>
-#include <linux/percpu.h>
-#include <linux/export.h>
-#include <linux/jiffies.h>
-#include <linux/random.h>
-#include <linux/sched.h>
-#include <linux/bitops.h>
-#include <linux/slab.h>
+#include <freax/types.h>
+#include <freax/percpu.h>
+#include <freax/export.h>
+#include <freax/jiffies.h>
+#include <freax/random.h>
+#include <freax/sched.h>
+#include <freax/bitops.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
 
 /**

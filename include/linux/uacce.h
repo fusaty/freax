@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
-#ifndef _LINUX_UACCE_H
-#define _LINUX_UACCE_H
+#ifndef _freax_UACCE_H
+#define _freax_UACCE_H
 
-#include <linux/cdev.h>
+#include <freax/cdev.h>
 #include <uapi/misc/uacce/uacce.h>
 
 #define UACCE_NAME		"uacce"
@@ -158,4 +158,4 @@ static inline void uacce_remove(struct uacce_device *uacce) {}
 
 #endif /* CONFIG_UACCE */
 
-#endif /* _LINUX_UACCE_H */
+#endif /* _freax_UACCE_H */

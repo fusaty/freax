@@ -9,19 +9,19 @@
  *          Suman Anna <s-anna@ti.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/mutex.h>
-#include <linux/slab.h>
-#include <linux/kfifo.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/omap-mailbox.h>
-#include <linux/mailbox_controller.h>
-#include <linux/mailbox_client.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/slab.h>
+#include <freax/kfifo.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/omap-mailbox.h>
+#include <freax/mailbox_controller.h>
+#include <freax/mailbox_client.h>
 
 #include "mailbox.h"
 

@@ -6,19 +6,19 @@
  * Samsung EXYNOS5 SoC series G-Scaler driver
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/errno.h>
-#include <linux/bug.h>
-#include <linux/interrupt.h>
-#include <linux/workqueue.h>
-#include <linux/device.h>
-#include <linux/platform_device.h>
-#include <linux/list.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/errno.h>
+#include <freax/bug.h>
+#include <freax/interrupt.h>
+#include <freax/workqueue.h>
+#include <freax/device.h>
+#include <freax/platform_device.h>
+#include <freax/list.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
 
 #include <media/v4l2-ioctl.h>
 

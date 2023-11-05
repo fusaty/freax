@@ -172,12 +172,12 @@
  * - usages	: Usage history
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/time64.h>
-#include <linux/parser.h>
-#include <linux/sched/signal.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/timer.h>
+#include <freax/time64.h>
+#include <freax/parser.h>
+#include <freax/sched/signal.h>
 #include <asm/local.h>
 #include <asm/local64.h>
 #include "blk-rq-qos.h"

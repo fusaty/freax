@@ -6,7 +6,7 @@
 #ifndef _AMPHION_VPU_V4L2_H
 #define _AMPHION_VPU_V4L2_H
 
-#include <linux/videodev2.h>
+#include <freax/videodev2.h>
 
 void vpu_inst_lock(struct vpu_inst *inst);
 void vpu_inst_unlock(struct vpu_inst *inst);

@@ -3,19 +3,19 @@
  * Driver for s390 eadm subchannels
  *
  * Copyright IBM Corp. 2012
- * Author(s): Sebastian Ott <sebott@linux.vnet.ibm.com>
+ * Author(s): Sebastian Ott <sebott@freax.vnet.ibm.com>
  */
 
-#include <linux/kernel_stat.h>
-#include <linux/completion.h>
-#include <linux/workqueue.h>
-#include <linux/spinlock.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/slab.h>
-#include <linux/list.h>
-#include <linux/io.h>
+#include <freax/kernel_stat.h>
+#include <freax/completion.h>
+#include <freax/workqueue.h>
+#include <freax/spinlock.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/timer.h>
+#include <freax/slab.h>
+#include <freax/list.h>
+#include <freax/io.h>
 
 #include <asm/css_chars.h>
 #include <asm/debug.h>

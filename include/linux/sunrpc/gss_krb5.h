@@ -34,13 +34,13 @@
  *
  */
 
-#ifndef _LINUX_SUNRPC_GSS_KRB5_H
-#define _LINUX_SUNRPC_GSS_KRB5_H
+#ifndef _freax_SUNRPC_GSS_KRB5_H
+#define _freax_SUNRPC_GSS_KRB5_H
 
 #include <crypto/skcipher.h>
-#include <linux/sunrpc/auth_gss.h>
-#include <linux/sunrpc/gss_err.h>
-#include <linux/sunrpc/gss_asn1.h>
+#include <freax/sunrpc/auth_gss.h>
+#include <freax/sunrpc/gss_err.h>
+#include <freax/sunrpc/gss_asn1.h>
 
 /* Length of constant used in key derivation */
 #define GSS_KRB5_K5CLENGTH (5)
@@ -125,7 +125,7 @@ enum seal_alg {
 #define KG_NO_CTYPES                             (39756045L)
 
 /* per Kerberos v5 protocol spec crypto types from the wire. 
- * these get mapped to linux kernel crypto routines.  
+ * these get mapped to freax kernel crypto routines.  
  *
  * These values are assigned by IANA and published via the
  * subregistry at the link below:
@@ -171,4 +171,4 @@ enum seal_alg {
 #define KG_USAGE_INITIATOR_SEAL (24)
 #define KG_USAGE_INITIATOR_SIGN (25)
 
-#endif /* _LINUX_SUNRPC_GSS_KRB5_H */
+#endif /* _freax_SUNRPC_GSS_KRB5_H */

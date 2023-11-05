@@ -8,7 +8,7 @@
 #ifndef _KEYS_RXRPC_TYPE_H
 #define _KEYS_RXRPC_TYPE_H
 
-#include <linux/key.h>
+#include <freax/key.h>
 
 /*
  * key type for AF_RXRPC keys

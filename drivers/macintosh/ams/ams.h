@@ -2,13 +2,13 @@
 #ifndef _AMS_H
 #define _AMS_H
 
-#include <linux/i2c.h>
-#include <linux/input.h>
-#include <linux/kthread.h>
-#include <linux/mutex.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/i2c.h>
+#include <freax/input.h>
+#include <freax/kthread.h>
+#include <freax/mutex.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 enum ams_irq {
 	AMS_IRQ_FREEFALL = 0x01,

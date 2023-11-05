@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_SOC_DOVE_PMU_H
-#define LINUX_SOC_DOVE_PMU_H
+#ifndef freax_SOC_DOVE_PMU_H
+#define freax_SOC_DOVE_PMU_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct dove_pmu_domain_initdata {
 	u32 pwr_mask;

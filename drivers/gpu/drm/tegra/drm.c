@@ -4,13 +4,13 @@
  * Copyright (C) 2012-2016 NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/bitops.h>
-#include <linux/host1x.h>
-#include <linux/idr.h>
-#include <linux/iommu.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
+#include <freax/bitops.h>
+#include <freax/host1x.h>
+#include <freax/idr.h>
+#include <freax/iommu.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
 
 #include <drm/drm_aperture.h>
 #include <drm/drm_atomic.h>

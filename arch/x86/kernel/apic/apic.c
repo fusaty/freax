@@ -15,26 +15,26 @@
  *	Mikael Pettersson	:	PM converted to driver model.
  */
 
-#include <linux/perf_event.h>
-#include <linux/kernel_stat.h>
-#include <linux/mc146818rtc.h>
-#include <linux/acpi_pmtmr.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/memblock.h>
-#include <linux/ftrace.h>
-#include <linux/ioport.h>
-#include <linux/export.h>
-#include <linux/syscore_ops.h>
-#include <linux/delay.h>
-#include <linux/timex.h>
-#include <linux/i8253.h>
-#include <linux/dmar.h>
-#include <linux/init.h>
-#include <linux/cpu.h>
-#include <linux/dmi.h>
-#include <linux/smp.h>
-#include <linux/mm.h>
+#include <freax/perf_event.h>
+#include <freax/kernel_stat.h>
+#include <freax/mc146818rtc.h>
+#include <freax/acpi_pmtmr.h>
+#include <freax/clockchips.h>
+#include <freax/interrupt.h>
+#include <freax/memblock.h>
+#include <freax/ftrace.h>
+#include <freax/ioport.h>
+#include <freax/export.h>
+#include <freax/syscore_ops.h>
+#include <freax/delay.h>
+#include <freax/timex.h>
+#include <freax/i8253.h>
+#include <freax/dmar.h>
+#include <freax/init.h>
+#include <freax/cpu.h>
+#include <freax/dmi.h>
+#include <freax/smp.h>
+#include <freax/mm.h>
 
 #include <xen/xen.h>
 
@@ -43,7 +43,7 @@
 #include <asm/pc-conf-reg.h>
 #include <asm/perf_event.h>
 #include <asm/x86_init.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/barrier.h>
 #include <asm/mpspec.h>
 #include <asm/i8259.h>
@@ -1212,10 +1212,10 @@ void disable_local_APIC(void)
 }
 
 /*
- * If Linux enabled the LAPIC against the BIOS default disable it down before
+ * If freax enabled the LAPIC against the BIOS default disable it down before
  * re-entering the BIOS on shutdown.  Otherwise the BIOS may get confused and
  * not power-off.  Additionally clear all LVT entries before disable_local_APIC
- * for the case where Linux didn't enable the LAPIC.
+ * for the case where freax didn't enable the LAPIC.
  */
 void lapic_shutdown(void)
 {

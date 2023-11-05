@@ -6,9 +6,9 @@
  *	   Sean Wang <sean.wang@mediatek.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/usb.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/usb.h>
 
 #include "mt7615.h"
 #include "mac.h"

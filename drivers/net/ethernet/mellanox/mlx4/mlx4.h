@@ -37,28 +37,28 @@
 #ifndef MLX4_H
 #define MLX4_H
 
-#include <linux/mutex.h>
-#include <linux/radix-tree.h>
-#include <linux/rbtree.h>
-#include <linux/timer.h>
-#include <linux/semaphore.h>
-#include <linux/workqueue.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
+#include <freax/mutex.h>
+#include <freax/radix-tree.h>
+#include <freax/rbtree.h>
+#include <freax/timer.h>
+#include <freax/semaphore.h>
+#include <freax/workqueue.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
 #include <net/devlink.h>
-#include <linux/rwsem.h>
-#include <linux/auxiliary_bus.h>
-#include <linux/notifier.h>
+#include <freax/rwsem.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/notifier.h>
 
-#include <linux/mlx4/device.h>
-#include <linux/mlx4/driver.h>
-#include <linux/mlx4/doorbell.h>
-#include <linux/mlx4/cmd.h>
+#include <freax/mlx4/device.h>
+#include <freax/mlx4/driver.h>
+#include <freax/mlx4/doorbell.h>
+#include <freax/mlx4/cmd.h>
 #include "fw_qos.h"
 
 #define DRV_NAME	"mlx4_core"
 #define DRV_VERSION	"4.0-0"
-#define DRV_NAME_FOR_FW		"Linux," DRV_NAME "," DRV_VERSION
+#define DRV_NAME_FOR_FW		"freax," DRV_NAME "," DRV_VERSION
 
 #define MLX4_FS_UDP_UC_EN		(1 << 1)
 #define MLX4_FS_TCP_UC_EN		(1 << 2)

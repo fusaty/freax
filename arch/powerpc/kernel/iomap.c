@@ -4,9 +4,9 @@
  *
  * (C) Copyright 2004 Linus Torvalds
  */
-#include <linux/pci.h>
-#include <linux/mm.h>
-#include <linux/export.h>
+#include <freax/pci.h>
+#include <freax/mm.h>
+#include <freax/export.h>
 #include <asm/io.h>
 #include <asm/pci-bridge.h>
 #include <asm/isa-bridge.h>

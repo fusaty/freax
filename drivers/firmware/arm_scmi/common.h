@@ -9,18 +9,18 @@
 #ifndef _SCMI_COMMON_H
 #define _SCMI_COMMON_H
 
-#include <linux/bitfield.h>
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/hashtable.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/refcount.h>
-#include <linux/scmi_protocol.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/hashtable.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/refcount.h>
+#include <freax/scmi_protocol.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #include <asm/unaligned.h>
 
@@ -45,7 +45,7 @@ enum scmi_error_codes {
 	SCMI_ERR_PROTOCOL = -10,/* Protocol Error */
 };
 
-static const int scmi_linux_errmap[] = {
+static const int scmi_freax_errmap[] = {
 	/* better than switch case as long as return value is continuous */
 	0,			/* SCMI_SUCCESS */
 	-EOPNOTSUPP,		/* SCMI_ERR_SUPPORT */
@@ -60,12 +60,12 @@ static const int scmi_linux_errmap[] = {
 	-EPROTO,		/* SCMI_ERR_PROTOCOL */
 };
 
-static inline int scmi_to_linux_errno(int errno)
+static inline int scmi_to_freax_errno(int errno)
 {
 	int err_idx = -errno;
 
-	if (err_idx >= SCMI_SUCCESS && err_idx < ARRAY_SIZE(scmi_linux_errmap))
-		return scmi_linux_errmap[err_idx];
+	if (err_idx >= SCMI_SUCCESS && err_idx < ARRAY_SIZE(scmi_freax_errmap))
+		return scmi_freax_errmap[err_idx];
 	return -EIO;
 }
 

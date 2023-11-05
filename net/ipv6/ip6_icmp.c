@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/export.h>
-#include <linux/icmpv6.h>
-#include <linux/mutex.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
+#include <freax/export.h>
+#include <freax/icmpv6.h>
+#include <freax/mutex.h>
+#include <freax/netdevice.h>
+#include <freax/spinlock.h>
 
 #include <net/ipv6.h>
 

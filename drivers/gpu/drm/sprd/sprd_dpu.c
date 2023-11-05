@@ -3,16 +3,16 @@
  * Copyright (C) 2020 Unisoc Inc.
  */
 
-#include <linux/component.h>
-#include <linux/delay.h>
-#include <linux/dma-buf.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/platform_device.h>
-#include <linux/wait.h>
-#include <linux/workqueue.h>
+#include <freax/component.h>
+#include <freax/delay.h>
+#include <freax/dma-buf.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/platform_device.h>
+#include <freax/wait.h>
+#include <freax/workqueue.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_blend.h>

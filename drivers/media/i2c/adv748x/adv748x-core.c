@@ -10,15 +10,15 @@
  *	Kieran Bingham <kieran.bingham@ideasonboard.com>
  */
 
-#include <linux/delay.h>
-#include <linux/errno.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/of_graph.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/v4l2-dv-timings.h>
+#include <freax/delay.h>
+#include <freax/errno.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/of_graph.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/v4l2-dv-timings.h>
 
 #include <media/v4l2-ctrls.h>
 #include <media/v4l2-device.h>

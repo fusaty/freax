@@ -30,10 +30,10 @@
  * SUCH DAMAGE.
  */
 
-#ifndef _UAPI_LINUX_QUOTA_
-#define _UAPI_LINUX_QUOTA_
+#ifndef _UAPI_freax_QUOTA_
+#define _UAPI_freax_QUOTA_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define __DQUOT_VERSION__	"dquot_6.6.0"
 
@@ -197,4 +197,4 @@ enum {
 #define QUOTA_NL_A_MAX (__QUOTA_NL_A_MAX - 1)
 
 
-#endif /* _UAPI_LINUX_QUOTA_ */
+#endif /* _UAPI_freax_QUOTA_ */

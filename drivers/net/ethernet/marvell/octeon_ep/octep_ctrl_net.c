@@ -4,11 +4,11 @@
  * Copyright (C) 2020 Marvell.
  *
  */
-#include <linux/string.h>
-#include <linux/types.h>
-#include <linux/etherdevice.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
+#include <freax/string.h>
+#include <freax/types.h>
+#include <freax/etherdevice.h>
+#include <freax/pci.h>
+#include <freax/wait.h>
 
 #include "octep_config.h"
 #include "octep_main.h"

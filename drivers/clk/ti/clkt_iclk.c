@@ -7,10 +7,10 @@
  */
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/clk/ti.h>
+#include <freax/kernel.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/clk/ti.h>
 
 #include "clock.h"
 

@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Copyright (c) 2016-2019, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2016-2019, The freax Foundation. All rights reserved.
  * Copyright (c) 2020 Linaro Ltd.
  */
 #ifndef __PINCTRL_LPASS_LPI_H__
 #define __PINCTRL_LPASS_LPI_H__
 
-#include <linux/bits.h>
-#include <linux/kernel.h>
+#include <freax/bits.h>
+#include <freax/kernel.h>
 
 #include "../core.h"
 

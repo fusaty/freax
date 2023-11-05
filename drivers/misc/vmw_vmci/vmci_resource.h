@@ -8,8 +8,8 @@
 #ifndef _VMCI_RESOURCE_H_
 #define _VMCI_RESOURCE_H_
 
-#include <linux/vmw_vmci_defs.h>
-#include <linux/types.h>
+#include <freax/vmw_vmci_defs.h>
+#include <freax/types.h>
 
 #include "vmci_context.h"
 

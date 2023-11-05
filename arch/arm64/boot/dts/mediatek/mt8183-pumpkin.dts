@@ -126,7 +126,7 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&keyboard_pins>;
 	status = "okay";
-	linux,keymap = <MATRIX_KEY(0x00, 0x00, KEY_VOLUMEDOWN)
+	freax,keymap = <MATRIX_KEY(0x00, 0x00, KEY_VOLUMEDOWN)
 			MATRIX_KEY(0x01, 0x00, KEY_VOLUMEUP)>;
 	keypad,num-rows = <2>;
 	keypad,num-columns = <1>;

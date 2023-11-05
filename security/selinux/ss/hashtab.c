@@ -4,9 +4,9 @@
  *
  * Author : Stephen Smalley, <stephen.smalley.work@gmail.com>
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
 #include "hashtab.h"
 #include "security.h"
 
@@ -103,7 +103,7 @@ int hashtab_map(struct hashtab *h,
 	return 0;
 }
 
-#ifdef CONFIG_SECURITY_SELINUX_DEBUG
+#ifdef CONFIG_SECURITY_SEfreax_DEBUG
 void hashtab_stat(struct hashtab *h, struct hashtab_info *info)
 {
 	u32 i, chain_len, slots_used, max_chain_len;
@@ -134,7 +134,7 @@ void hashtab_stat(struct hashtab *h, struct hashtab_info *info)
 	info->max_chain_len = max_chain_len;
 	info->chain2_len_sum = chain2_len_sum;
 }
-#endif /* CONFIG_SECURITY_SELINUX_DEBUG */
+#endif /* CONFIG_SECURITY_SEfreax_DEBUG */
 
 int hashtab_duplicate(struct hashtab *new, struct hashtab *orig,
 		int (*copy)(struct hashtab_node *new,

@@ -4,16 +4,16 @@
  * Copyright (c) 2009-2013 QLogic Corporation
  */
 
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/swab.h>
-#include <linux/dma-mapping.h>
-#include <linux/if_vlan.h>
+#include <freax/vmalloc.h>
+#include <freax/interrupt.h>
+#include <freax/swab.h>
+#include <freax/dma-mapping.h>
+#include <freax/if_vlan.h>
 #include <net/ip.h>
-#include <linux/ipv6.h>
-#include <linux/inetdevice.h>
-#include <linux/log2.h>
-#include <linux/pci.h>
+#include <freax/ipv6.h>
+#include <freax/inetdevice.h>
+#include <freax/log2.h>
+#include <freax/pci.h>
 #include <net/vxlan.h>
 
 #include "qlcnic.h"
@@ -22,12 +22,12 @@
 
 MODULE_DESCRIPTION("QLogic 1/10 GbE Converged/Intelligent Ethernet Driver");
 MODULE_LICENSE("GPL");
-MODULE_VERSION(QLCNIC_LINUX_VERSIONID);
+MODULE_VERSION(QLCNIC_freax_VERSIONID);
 MODULE_FIRMWARE(QLCNIC_UNIFIED_ROMIMAGE_NAME);
 
 char qlcnic_driver_name[] = "qlcnic";
 static const char qlcnic_driver_string[] = "QLogic 1/10 GbE "
-	"Converged/Intelligent Ethernet Driver v" QLCNIC_LINUX_VERSIONID;
+	"Converged/Intelligent Ethernet Driver v" QLCNIC_freax_VERSIONID;
 
 static int qlcnic_mac_learn;
 module_param(qlcnic_mac_learn, int, 0444);
@@ -1251,7 +1251,7 @@ qlcnic_check_options(struct qlcnic_adapter *adapter)
 	}
 
 	dev_info(&pdev->dev, "Driver v%s, firmware v%d.%d.%d\n",
-		 QLCNIC_LINUX_VERSIONID, fw_major, fw_minor, fw_build);
+		 QLCNIC_freax_VERSIONID, fw_major, fw_minor, fw_build);
 
 	if (adapter->ahw->port_type == QLCNIC_XGBE) {
 		if (adapter->flags & QLCNIC_ESWITCH_ENABLED) {

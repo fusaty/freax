@@ -10,29 +10,29 @@
  * Copyright (C) 1999 Silicon Graphics, Inc.
  * Copyright (C) 2000, 2001, 2002, 2007	 Maciej W. Rozycki
  */
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/cpu.h>
-#include <linux/dmi.h>
-#include <linux/efi.h>
-#include <linux/export.h>
-#include <linux/memblock.h>
-#include <linux/initrd.h>
-#include <linux/ioport.h>
-#include <linux/kexec.h>
-#include <linux/crash_dump.h>
-#include <linux/root_dev.h>
-#include <linux/console.h>
-#include <linux/pfn.h>
-#include <linux/platform_device.h>
-#include <linux/sizes.h>
-#include <linux/device.h>
-#include <linux/dma-map-ops.h>
-#include <linux/libfdt.h>
-#include <linux/of_fdt.h>
-#include <linux/of_address.h>
-#include <linux/suspend.h>
-#include <linux/swiotlb.h>
+#include <freax/init.h>
+#include <freax/acpi.h>
+#include <freax/cpu.h>
+#include <freax/dmi.h>
+#include <freax/efi.h>
+#include <freax/export.h>
+#include <freax/memblock.h>
+#include <freax/initrd.h>
+#include <freax/ioport.h>
+#include <freax/kexec.h>
+#include <freax/crash_dump.h>
+#include <freax/root_dev.h>
+#include <freax/console.h>
+#include <freax/pfn.h>
+#include <freax/platform_device.h>
+#include <freax/sizes.h>
+#include <freax/device.h>
+#include <freax/dma-map-ops.h>
+#include <freax/libfdt.h>
+#include <freax/of_fdt.h>
+#include <freax/of_address.h>
+#include <freax/suspend.h>
+#include <freax/swiotlb.h>
 
 #include <asm/addrspace.h>
 #include <asm/alternative.h>

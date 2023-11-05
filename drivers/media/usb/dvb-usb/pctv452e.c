@@ -26,7 +26,7 @@
 #include <media/dvb_ca_en50221.h>
 #include "ttpci-eeprom.h"
 
-#include <linux/etherdevice.h>
+#include <freax/etherdevice.h>
 
 static int debug;
 module_param(debug, int, 0644);

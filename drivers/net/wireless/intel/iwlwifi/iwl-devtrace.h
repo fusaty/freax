@@ -7,8 +7,8 @@
  *****************************************************************************/
 
 #ifndef __IWLWIFI_DEVICE_TRACE
-#include <linux/skbuff.h>
-#include <linux/ieee80211.h>
+#include <freax/skbuff.h>
+#include <freax/ieee80211.h>
 #include <net/cfg80211.h>
 #include <net/mac80211.h>
 #include "iwl-trans.h"
@@ -74,8 +74,8 @@ static inline size_t iwl_rx_trace_len(const struct iwl_trans *trans,
 
 #define __IWLWIFI_DEVICE_TRACE
 
-#include <linux/tracepoint.h>
-#include <linux/device.h>
+#include <freax/tracepoint.h>
+#include <freax/device.h>
 
 
 #if !defined(CONFIG_IWLWIFI_DEVICE_TRACING) || defined(__CHECKER__)

@@ -7,7 +7,7 @@
  * Authors: Dipankar Sarma <dipankar@in.ibm.com>
  *	    Manfred Spraul <manfred@colorfullife.com>
  *
- * Based on the original work by Paul McKenney <paulmck@linux.ibm.com>
+ * Based on the original work by Paul McKenney <paulmck@freax.ibm.com>
  * and inputs from Rusty Russell, Andrea Arcangeli and Andi Kleen.
  * Papers:
  * http://www.rdrop.com/users/paulmck/paper/rclockpdcsproof.pdf
@@ -17,33 +17,33 @@
  *		http://lse.sourceforge.net/locking/rcupdate.html
  *
  */
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/sched/signal.h>
-#include <linux/sched/debug.h>
-#include <linux/torture.h>
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/percpu.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/mutex.h>
-#include <linux/export.h>
-#include <linux/hardirq.h>
-#include <linux/delay.h>
-#include <linux/moduleparam.h>
-#include <linux/kthread.h>
-#include <linux/tick.h>
-#include <linux/rcupdate_wait.h>
-#include <linux/sched/isolation.h>
-#include <linux/kprobes.h>
-#include <linux/slab.h>
-#include <linux/irq_work.h>
-#include <linux/rcupdate_trace.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/sched/signal.h>
+#include <freax/sched/debug.h>
+#include <freax/torture.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/percpu.h>
+#include <freax/notifier.h>
+#include <freax/cpu.h>
+#include <freax/mutex.h>
+#include <freax/export.h>
+#include <freax/hardirq.h>
+#include <freax/delay.h>
+#include <freax/moduleparam.h>
+#include <freax/kthread.h>
+#include <freax/tick.h>
+#include <freax/rcupdate_wait.h>
+#include <freax/sched/isolation.h>
+#include <freax/kprobes.h>
+#include <freax/slab.h>
+#include <freax/irq_work.h>
+#include <freax/rcupdate_trace.h>
 
 #define CREATE_TRACE_POINTS
 

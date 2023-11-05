@@ -2,7 +2,7 @@
 #ifndef _ASM_GENERIC_LOCAL64_H
 #define _ASM_GENERIC_LOCAL64_H
 
-#include <linux/percpu.h>
+#include <freax/percpu.h>
 #include <asm/types.h>
 
 /*
@@ -65,7 +65,7 @@ static inline bool local64_try_cmpxchg(local64_t *l, s64 *old, s64 new)
 
 #else /* BITS_PER_LONG != 64 */
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 
 /* Don't use typedef: don't want them to be mixed with atomic_t's. */
 typedef struct {

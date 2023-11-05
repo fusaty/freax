@@ -11,8 +11,8 @@
 #ifndef __DEBUG_H__
 #define __DEBUG_H__
 
-#include <linux/bitops.h>
-#include <linux/printk.h>
+#include <freax/bitops.h>
+#include <freax/printk.h>
 
 #define DRIVER_NAME "wlcore"
 #define DRIVER_PREFIX DRIVER_NAME ": "

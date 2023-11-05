@@ -7,9 +7,9 @@
  * Copyright (c) 2022 Vincent Mailhol <mailhol.vincent@wanadoo.fr>
  */
 
-#include <linux/ctype.h>
-#include <linux/device.h>
-#include <linux/usb.h>
+#include <freax/ctype.h>
+#include <freax/device.h>
+#include <freax/usb.h>
 #include <net/devlink.h>
 
 #include "es58x_core.h"

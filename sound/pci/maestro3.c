@@ -16,17 +16,17 @@
 #define CARD_NAME "ESS Maestro3/Allegro/Canyon3D-2"
 #define DRIVER_NAME "Maestro3"
 
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/module.h>
-#include <linux/firmware.h>
-#include <linux/input.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/module.h>
+#include <freax/firmware.h>
+#include <freax/input.h>
 #include <sound/core.h>
 #include <sound/info.h>
 #include <sound/control.h>

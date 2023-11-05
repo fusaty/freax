@@ -1,20 +1,20 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mm/flush.c
+ *  freax/arch/arm/mm/flush.c
  *
  *  Copyright (C) 1995-2002 Russell King
  */
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pagemap.h>
-#include <linux/highmem.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/pagemap.h>
+#include <freax/highmem.h>
 
 #include <asm/cacheflush.h>
 #include <asm/cachetype.h>
 #include <asm/highmem.h>
 #include <asm/smp_plat.h>
 #include <asm/tlbflush.h>
-#include <linux/hugetlb.h>
+#include <freax/hugetlb.h>
 
 #include "mm.h"
 
@@ -281,7 +281,7 @@ static void __flush_dcache_aliases(struct address_space *mapping, struct folio *
 	flush_dcache_mmap_unlock(mapping);
 }
 
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 void __sync_icache_dcache(pte_t pteval)
 {
 	unsigned long pfn;

@@ -6,9 +6,9 @@
  *
  */
 
-#include <linux/bpf.h>
-#include <linux/filter.h>
-#include <linux/memory.h>
+#include <freax/bpf.h>
+#include <freax/filter.h>
+#include <freax/memory.h>
 #include <asm/patch.h>
 #include "bpf_jit.h"
 

@@ -8,8 +8,8 @@
  * Author: Leonard Crestez <leonard.crestez@nxp.com>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 #include <dt-bindings/interconnect/imx8mm.h>
 
 #include "imx.h"

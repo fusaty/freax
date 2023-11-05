@@ -8,13 +8,13 @@
 #include <kunit/test.h>
 #include <kunit/visibility.h>
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 
 #include <net/sock.h>
 #include <net/genetlink.h>
 #include <net/netns/generic.h>
 
-#include <uapi/linux/handshake.h>
+#include <uapi/freax/handshake.h>
 #include "handshake.h"
 
 MODULE_IMPORT_NS(EXPORTED_FOR_KUNIT_TESTING);

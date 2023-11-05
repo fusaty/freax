@@ -3,7 +3,7 @@
  * Helper functions used by the EFI stub on multiple
  * architectures to deal with physical address space randomization.
  */
-#include <linux/efi.h>
+#include <freax/efi.h>
 
 #include "efistub.h"
 
@@ -20,7 +20,7 @@ u32 efi_kaslr_get_phys_seed(efi_handle_t image_handle)
 {
 	efi_status_t status;
 	u32 phys_seed;
-	efi_guid_t li_fixed_proto = LINUX_EFI_LOADED_IMAGE_FIXED_GUID;
+	efi_guid_t li_fixed_proto = freax_EFI_LOADED_IMAGE_FIXED_GUID;
 	void *p;
 
 	if (!IS_ENABLED(CONFIG_RANDOMIZE_BASE))

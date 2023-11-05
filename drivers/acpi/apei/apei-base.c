@@ -18,15 +18,15 @@
  *	Author: Huang Ying <ying.huang@intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/kref.h>
-#include <linux/interrupt.h>
-#include <linux/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/acpi.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/kref.h>
+#include <freax/interrupt.h>
+#include <freax/debugfs.h>
 #include <acpi/apei.h>
 #include <asm/unaligned.h>
 

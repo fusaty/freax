@@ -7,8 +7,8 @@
  * Author: Arnd Bergmann <arndb@de.ibm.com>
  */
 
-#include <linux/list.h>
-#include <linux/slab.h>
+#include <freax/list.h>
+#include <freax/slab.h>
 
 #include "spufs.h"
 

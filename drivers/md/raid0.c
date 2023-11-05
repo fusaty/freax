@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
-   raid0.c : Multiple Devices driver for Linux
+   raid0.c : Multiple Devices driver for freax
 	     Copyright (C) 1994-96 Marc ZYNGIER
 	     <zyngier@ufr-info-p7.ibp.fr> or
 	     <maz@gloups.fdn.fr>
@@ -10,10 +10,10 @@
 
 */
 
-#include <linux/blkdev.h>
-#include <linux/seq_file.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/blkdev.h>
+#include <freax/seq_file.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include <trace/events/block.h>
 #include "md.h"
 #include "raid0.h"

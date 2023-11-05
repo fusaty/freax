@@ -8,15 +8,15 @@
  * GNU General Public License.
  */
 
-#include <linux/module.h>
-#include <linux/ctype.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/pci_ids.h>
-#include <linux/slab.h>
-#include <linux/mmzone.h>
-#include <linux/edac.h>
-#include <linux/bitfield.h>
+#include <freax/module.h>
+#include <freax/ctype.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/pci_ids.h>
+#include <freax/slab.h>
+#include <freax/mmzone.h>
+#include <freax/edac.h>
+#include <freax/bitfield.h>
 #include <asm/cpu_device_id.h>
 #include <asm/msr.h>
 #include "edac_module.h"

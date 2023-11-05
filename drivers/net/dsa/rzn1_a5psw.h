@@ -5,14 +5,14 @@
  * Clément Léger <clement.leger@bootlin.com>
  */
 
-#include <linux/clk.h>
-#include <linux/debugfs.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/platform_device.h>
-#include <linux/pcs-rzn1-miic.h>
+#include <freax/clk.h>
+#include <freax/debugfs.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/platform_device.h>
+#include <freax/pcs-rzn1-miic.h>
 #include <net/dsa.h>
 
 #define A5PSW_REVISION			0x0

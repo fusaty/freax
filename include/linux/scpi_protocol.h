@@ -5,10 +5,10 @@
  * Copyright (C) 2014 ARM Ltd.
  */
 
-#ifndef _LINUX_SCPI_PROTOCOL_H
-#define _LINUX_SCPI_PROTOCOL_H
+#ifndef _freax_SCPI_PROTOCOL_H
+#define _freax_SCPI_PROTOCOL_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct scpi_opp {
 	u32 freq;
@@ -84,4 +84,4 @@ struct scpi_ops *get_scpi_ops(void);
 static inline struct scpi_ops *get_scpi_ops(void) { return NULL; }
 #endif
 
-#endif /* _LINUX_SCPI_PROTOCOL_H */
+#endif /* _freax_SCPI_PROTOCOL_H */

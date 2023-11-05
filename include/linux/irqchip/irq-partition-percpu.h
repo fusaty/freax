@@ -4,12 +4,12 @@
  * Author: Marc Zyngier <marc.zyngier@arm.com>
  */
 
-#ifndef __LINUX_IRQCHIP_IRQ_PARTITION_PERCPU_H
-#define __LINUX_IRQCHIP_IRQ_PARTITION_PERCPU_H
+#ifndef __freax_IRQCHIP_IRQ_PARTITION_PERCPU_H
+#define __freax_IRQCHIP_IRQ_PARTITION_PERCPU_H
 
-#include <linux/fwnode.h>
-#include <linux/cpumask.h>
-#include <linux/irqdomain.h>
+#include <freax/fwnode.h>
+#include <freax/cpumask.h>
+#include <freax/irqdomain.h>
 
 struct partition_affinity {
 	cpumask_t			mask;
@@ -50,4 +50,4 @@ struct irq_domain *partition_get_domain(struct partition_desc *dsc)
 }
 #endif
 
-#endif /* __LINUX_IRQCHIP_IRQ_PARTITION_PERCPU_H */
+#endif /* __freax_IRQCHIP_IRQ_PARTITION_PERCPU_H */

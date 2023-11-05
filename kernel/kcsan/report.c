@@ -5,17 +5,17 @@
  * Copyright (C) 2019, Google LLC.
  */
 
-#include <linux/debug_locks.h>
-#include <linux/delay.h>
-#include <linux/jiffies.h>
-#include <linux/kallsyms.h>
-#include <linux/kernel.h>
-#include <linux/lockdep.h>
-#include <linux/preempt.h>
-#include <linux/printk.h>
-#include <linux/sched.h>
-#include <linux/spinlock.h>
-#include <linux/stacktrace.h>
+#include <freax/debug_locks.h>
+#include <freax/delay.h>
+#include <freax/jiffies.h>
+#include <freax/kallsyms.h>
+#include <freax/kernel.h>
+#include <freax/lockdep.h>
+#include <freax/preempt.h>
+#include <freax/printk.h>
+#include <freax/sched.h>
+#include <freax/spinlock.h>
+#include <freax/stacktrace.h>
 
 #include "kcsan.h"
 #include "encoding.h"

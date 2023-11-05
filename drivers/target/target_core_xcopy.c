@@ -12,11 +12,11 @@
  *
  ******************************************************************************/
 
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/list.h>
-#include <linux/configfs.h>
-#include <linux/ratelimit.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/list.h>
+#include <freax/configfs.h>
+#include <freax/ratelimit.h>
 #include <scsi/scsi_proto.h>
 #include <asm/unaligned.h>
 

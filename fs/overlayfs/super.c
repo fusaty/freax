@@ -4,20 +4,20 @@
  * Copyright (C) 2011 Novell Inc.
  */
 
-#include <uapi/linux/magic.h>
-#include <linux/fs.h>
-#include <linux/namei.h>
-#include <linux/xattr.h>
-#include <linux/mount.h>
-#include <linux/parser.h>
-#include <linux/module.h>
-#include <linux/statfs.h>
-#include <linux/seq_file.h>
-#include <linux/posix_acl_xattr.h>
-#include <linux/exportfs.h>
-#include <linux/file.h>
-#include <linux/fs_context.h>
-#include <linux/fs_parser.h>
+#include <uapi/freax/magic.h>
+#include <freax/fs.h>
+#include <freax/namei.h>
+#include <freax/xattr.h>
+#include <freax/mount.h>
+#include <freax/parser.h>
+#include <freax/module.h>
+#include <freax/statfs.h>
+#include <freax/seq_file.h>
+#include <freax/posix_acl_xattr.h>
+#include <freax/exportfs.h>
+#include <freax/file.h>
+#include <freax/fs_context.h>
+#include <freax/fs_parser.h>
 #include "overlayfs.h"
 #include "params.h"
 

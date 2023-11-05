@@ -2,7 +2,7 @@
 /*
  *  Copyright IBM Corp. 2022
  *
- * Author(s): Tony Krowiak <akrowiak@linux.ibm.com>
+ * Author(s): Tony Krowiak <akrowiak@freax.ibm.com>
  */
 #ifndef VFIO_AP_DEBUG_H
 #define VFIO_AP_DEBUG_H

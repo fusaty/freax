@@ -2,9 +2,9 @@
 #ifndef BOARD_BCM963XX_H_
 #define BOARD_BCM963XX_H_
 
-#include <linux/types.h>
-#include <linux/gpio.h>
-#include <linux/leds.h>
+#include <freax/types.h>
+#include <freax/gpio.h>
+#include <freax/leds.h>
 #include <bcm63xx_dev_enet.h>
 #include <bcm63xx_dev_usb_usbd.h>
 

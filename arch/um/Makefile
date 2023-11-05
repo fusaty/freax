@@ -2,7 +2,7 @@
 # This file is included by the global makefile so that you can add your own
 # architecture-specific flags and dependencies.
 #
-# Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+# Copyright (C) 2002 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
 # Licensed under the GPL
 #
 
@@ -18,7 +18,7 @@ else
 endif
 
 ARCH_DIR := arch/um
-# We require bash because the vmlinux link and loader script cpp use bash
+# We require bash because the vmfreax link and loader script cpp use bash
 # features.
 SHELL := /bin/bash
 
@@ -73,7 +73,7 @@ USER_CFLAGS = $(patsubst $(KERNEL_DEFINES),,$(patsubst -I%,,$(KBUILD_CFLAGS))) \
 		-idirafter $(objtree)/include -D__KERNEL__ -D__UM_HOST__
 
 #This will adjust *FLAGS accordingly to the platform.
-include $(srctree)/$(ARCH_DIR)/Makefile-os-Linux
+include $(srctree)/$(ARCH_DIR)/Makefile-os-freax
 
 KBUILD_CPPFLAGS += -I$(srctree)/$(HOST_DIR)/include \
 		   -I$(srctree)/$(HOST_DIR)/include/uapi \
@@ -93,18 +93,18 @@ KERNEL_DEFINES = $(strip -Derrno=kernel_errno -Dsigprocmask=kernel_sigprocmask \
 			 -Dmktime=kernel_mktime $(ARCH_KERNEL_DEFINES))
 KBUILD_CFLAGS += $(KERNEL_DEFINES)
 
-PHONY += linux
+PHONY += freax
 
-all: linux
+all: freax
 
-linux: vmlinux
+freax: vmfreax
 	@echo '  LINK $@'
 	$(Q)ln -f $< $@
 
 define archhelp
-  echo '* linux		- Binary kernel image (./linux) - for backward'
+  echo '* freax		- Binary kernel image (./freax) - for backward'
   echo '		   compatibility only, this creates a hard link to the'
-  echo '		   real kernel binary, the "vmlinux" binary you'
+  echo '		   real kernel binary, the "vmfreax" binary you'
   echo '		   find in the kernel root.'
 endef
 
@@ -138,12 +138,12 @@ endif
 
 LD_FLAGS_CMDLINE = $(foreach opt,$(KBUILD_LDFLAGS) $(LDFLAGS_EXECSTACK),-Wl,$(opt))
 
-# Used by link-vmlinux.sh which has special support for um link
-export CFLAGS_vmlinux := $(LINK-y) $(LINK_WRAPS) $(LD_FLAGS_CMDLINE) $(CC_FLAGS_LTO)
+# Used by link-vmfreax.sh which has special support for um link
+export CFLAGS_vmfreax := $(LINK-y) $(LINK_WRAPS) $(LD_FLAGS_CMDLINE) $(CC_FLAGS_LTO)
 
 # When cleaning we don't include .config, so we don't include
 # TT or skas makefiles and don't clean skas_ptregs.h.
-CLEAN_FILES += linux x.i gmon.out
+CLEAN_FILES += freax x.i gmon.out
 MRPROPER_FILES += $(HOST_DIR)/include/generated
 
 archclean:

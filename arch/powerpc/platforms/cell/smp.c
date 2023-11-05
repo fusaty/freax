@@ -10,21 +10,21 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/cache.h>
-#include <linux/err.h>
-#include <linux/device.h>
-#include <linux/cpu.h>
-#include <linux/pgtable.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/cache.h>
+#include <freax/err.h>
+#include <freax/device.h>
+#include <freax/cpu.h>
+#include <freax/pgtable.h>
 
 #include <asm/ptrace.h>
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/irq.h>
 #include <asm/page.h>
 #include <asm/io.h>

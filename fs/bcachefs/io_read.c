@@ -24,7 +24,7 @@
 #include "subvolume.h"
 #include "trace.h"
 
-#include <linux/sched/mm.h>
+#include <freax/sched/mm.h>
 
 #ifndef CONFIG_BCACHEFS_NO_LATENCY_ACCT
 

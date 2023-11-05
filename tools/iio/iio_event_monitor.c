@@ -23,8 +23,8 @@
 #include <fcntl.h>
 #include <sys/ioctl.h>
 #include "iio_utils.h"
-#include <linux/iio/events.h>
-#include <linux/iio/types.h>
+#include <freax/iio/events.h>
+#include <freax/iio/types.h>
 
 static const char * const iio_chan_type_name_spec[] = {
 	[IIO_VOLTAGE] = "voltage",

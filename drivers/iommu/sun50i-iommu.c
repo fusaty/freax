@@ -2,29 +2,29 @@
 // Copyright (C) 2016-2018, Allwinner Technology CO., LTD.
 // Copyright (C) 2019-2020, Cerno
 
-#include <linux/bitfield.h>
-#include <linux/bug.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/dma-direction.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/iopoll.h>
-#include <linux/ioport.h>
-#include <linux/log2.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/reset.h>
-#include <linux/sizes.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
+#include <freax/bitfield.h>
+#include <freax/bug.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/dma-direction.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/interrupt.h>
+#include <freax/iommu.h>
+#include <freax/iopoll.h>
+#include <freax/ioport.h>
+#include <freax/log2.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/reset.h>
+#include <freax/sizes.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
 
 #define IOMMU_RESET_REG			0x010
 #define IOMMU_RESET_RELEASE_ALL			0xffffffff

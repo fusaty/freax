@@ -26,14 +26,14 @@
 #include <errno.h>
 #include <ctype.h>
 #include <asm/unistd.h>
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/bpf.h>
-#include <linux/btf.h>
-#include <linux/filter.h>
-#include <linux/limits.h>
-#include <linux/perf_event.h>
-#include <linux/ring_buffer.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/bpf.h>
+#include <freax/btf.h>
+#include <freax/filter.h>
+#include <freax/limits.h>
+#include <freax/perf_event.h>
+#include <freax/ring_buffer.h>
 #include <sys/epoll.h>
 #include <sys/ioctl.h>
 #include <sys/mman.h>
@@ -393,7 +393,7 @@ struct bpf_sec_def {
 
 /*
  * bpf_prog should be a better name but it has been used in
- * linux/filter.h.
+ * freax/filter.h.
  */
 struct bpf_program {
 	char *name;
@@ -473,7 +473,7 @@ struct bpf_struct_ops {
 	/* e.g. struct tcp_congestion_ops in bpf_prog's btf format */
 	void *data;
 	/* e.g. struct bpf_struct_ops_tcp_congestion_ops in
-	 *      btf_vmlinux's format.
+	 *      btf_vmfreax's format.
 	 * struct bpf_struct_ops_tcp_congestion_ops {
 	 *	[... some other kernel fields ...]
 	 *	struct tcp_congestion_ops data;
@@ -529,7 +529,7 @@ struct bpf_map {
 	__u32 btf_var_idx;
 	__u32 btf_key_type_id;
 	__u32 btf_value_type_id;
-	__u32 btf_vmlinux_value_type_id;
+	__u32 btf_vmfreax_value_type_id;
 	enum libbpf_map_type libbpf_type;
 	void *mmaped;
 	struct bpf_struct_ops *st_ops;
@@ -585,7 +585,7 @@ struct extern_desc {
 			/* local btf_id of the ksym extern's type. */
 			__u32 type_id;
 			/* BTF fd index to be patched in for insn->off, this is
-			 * 0 for vmlinux BTF, index in obj->fd_array for module
+			 * 0 for vmfreax BTF, index in obj->fd_array for module
 			 * BTF
 			 */
 			__s16 btf_fd_idx;
@@ -666,16 +666,16 @@ struct bpf_object {
 	struct btf *btf;
 	struct btf_ext *btf_ext;
 
-	/* Parse and load BTF vmlinux if any of the programs in the object need
+	/* Parse and load BTF vmfreax if any of the programs in the object need
 	 * it at load time.
 	 */
-	struct btf *btf_vmlinux;
+	struct btf *btf_vmfreax;
 	/* Path to the custom BTF to be used for BPF CO-RE relocations as an
-	 * override for vmlinux BTF.
+	 * override for vmfreax BTF.
 	 */
 	char *btf_custom_path;
-	/* vmlinux BTF override for CO-RE relocations */
-	struct btf *btf_vmlinux_override;
+	/* vmfreax BTF override for CO-RE relocations */
+	struct btf *btf_vmfreax_override;
 	/* Lazily initialized kernel module BTFs */
 	struct module_btf *btf_modules;
 	bool btf_modules_loaded;
@@ -956,7 +956,7 @@ find_struct_ops_kern_types(const struct btf *btf, const char *tname,
 	/* Find the corresponding "map_value" type that will be used
 	 * in map_update(BPF_MAP_TYPE_STRUCT_OPS).  For example,
 	 * find "struct bpf_struct_ops_tcp_congestion_ops" from the
-	 * btf_vmlinux.
+	 * btf_vmfreax.
 	 */
 	kern_vtype_id = find_btf_by_prefix_kind(btf, STRUCT_OPS_VALUE_PREFIX,
 						tname, BTF_KIND_STRUCT);
@@ -1025,7 +1025,7 @@ static int bpf_map__init_kern_struct_ops(struct bpf_map *map,
 		 map->name, st_ops->type_id, kern_type_id, kern_vtype_id);
 
 	map->def.value_size = kern_vtype->size;
-	map->btf_vmlinux_value_type_id = kern_vtype_id;
+	map->btf_vmfreax_value_type_id = kern_vtype_id;
 
 	st_ops->kern_vdata = calloc(1, kern_vtype->size);
 	if (!st_ops->kern_vdata)
@@ -1142,7 +1142,7 @@ static int bpf_object__init_kern_struct_ops_maps(struct bpf_object *obj)
 			continue;
 
 		err = bpf_map__init_kern_struct_ops(map, obj->btf,
-						    obj->btf_vmlinux);
+						    obj->btf_vmfreax);
 		if (err)
 			return err;
 	}
@@ -3039,14 +3039,14 @@ static int bpf_object_fixup_btf(struct bpf_object *obj)
 	return 0;
 }
 
-static bool prog_needs_vmlinux_btf(struct bpf_program *prog)
+static bool prog_needs_vmfreax_btf(struct bpf_program *prog)
 {
 	if (prog->type == BPF_PROG_TYPE_STRUCT_OPS ||
 	    prog->type == BPF_PROG_TYPE_LSM)
 		return true;
 
 	/* BPF_PROG_TYPE_TRACING programs which do not attach to other programs
-	 * also need vmlinux BTF
+	 * also need vmfreax BTF
 	 */
 	if (prog->type == BPF_PROG_TYPE_TRACING && !prog->attach_prog_fd)
 		return true;
@@ -3054,7 +3054,7 @@ static bool prog_needs_vmlinux_btf(struct bpf_program *prog)
 	return false;
 }
 
-static bool obj_needs_vmlinux_btf(const struct bpf_object *obj)
+static bool obj_needs_vmfreax_btf(const struct bpf_object *obj)
 {
 	struct bpf_program *prog;
 	int i;
@@ -3077,29 +3077,29 @@ static bool obj_needs_vmlinux_btf(const struct bpf_object *obj)
 	bpf_object__for_each_program(prog, obj) {
 		if (!prog->autoload)
 			continue;
-		if (prog_needs_vmlinux_btf(prog))
+		if (prog_needs_vmfreax_btf(prog))
 			return true;
 	}
 
 	return false;
 }
 
-static int bpf_object__load_vmlinux_btf(struct bpf_object *obj, bool force)
+static int bpf_object__load_vmfreax_btf(struct bpf_object *obj, bool force)
 {
 	int err;
 
-	/* btf_vmlinux could be loaded earlier */
-	if (obj->btf_vmlinux || obj->gen_loader)
+	/* btf_vmfreax could be loaded earlier */
+	if (obj->btf_vmfreax || obj->gen_loader)
 		return 0;
 
-	if (!force && !obj_needs_vmlinux_btf(obj))
+	if (!force && !obj_needs_vmfreax_btf(obj))
 		return 0;
 
-	obj->btf_vmlinux = btf__load_vmlinux_btf();
-	err = libbpf_get_error(obj->btf_vmlinux);
+	obj->btf_vmfreax = btf__load_vmfreax_btf();
+	err = libbpf_get_error(obj->btf_vmfreax);
 	if (err) {
-		pr_warn("Error loading vmlinux BTF: %d\n", err);
-		obj->btf_vmlinux = NULL;
+		pr_warn("Error loading vmfreax BTF: %d\n", err);
+		obj->btf_vmfreax = NULL;
 		return err;
 	}
 	return 0;
@@ -5202,7 +5202,7 @@ static int bpf_object__create_map(struct bpf_object *obj, struct bpf_map *map, b
 	create_attr.map_extra = map->map_extra;
 
 	if (bpf_map__is_struct_ops(map))
-		create_attr.btf_vmlinux_value_type_id = map->btf_vmlinux_value_type_id;
+		create_attr.btf_vmfreax_value_type_id = map->btf_vmfreax_value_type_id;
 
 	if (obj->btf && btf__fd(obj->btf) >= 0) {
 		create_attr.btf_fd = btf__fd(obj->btf);
@@ -5649,12 +5649,12 @@ static int load_module_btfs(struct bpf_object *obj)
 		}
 
 		/* ignore non-module BTFs */
-		if (!info.kernel_btf || strcmp(name, "vmlinux") == 0) {
+		if (!info.kernel_btf || strcmp(name, "vmfreax") == 0) {
 			close(fd);
 			continue;
 		}
 
-		btf = btf_get_from_fd(fd, obj->btf_vmlinux);
+		btf = btf_get_from_fd(fd, obj->btf_vmfreax);
 		err = libbpf_get_error(btf);
 		if (err) {
 			pr_warn("failed to load module [%s]'s BTF object #%d: %d\n",
@@ -5713,18 +5713,18 @@ bpf_core_find_cands(struct bpf_object *obj, const struct btf *local_btf, __u32 l
 	if (!cands)
 		return ERR_PTR(-ENOMEM);
 
-	/* Attempt to find target candidates in vmlinux BTF first */
-	main_btf = obj->btf_vmlinux_override ?: obj->btf_vmlinux;
-	err = bpf_core_add_cands(&local_cand, local_essent_len, main_btf, "vmlinux", 1, cands);
+	/* Attempt to find target candidates in vmfreax BTF first */
+	main_btf = obj->btf_vmfreax_override ?: obj->btf_vmfreax;
+	err = bpf_core_add_cands(&local_cand, local_essent_len, main_btf, "vmfreax", 1, cands);
 	if (err)
 		goto err_out;
 
-	/* if vmlinux BTF has any candidate, don't got for module BTFs */
+	/* if vmfreax BTF has any candidate, don't got for module BTFs */
 	if (cands->len)
 		return cands;
 
-	/* if vmlinux BTF was overridden, don't attempt to load module BTFs */
-	if (obj->btf_vmlinux_override)
+	/* if vmfreax BTF was overridden, don't attempt to load module BTFs */
+	if (obj->btf_vmfreax_override)
 		return cands;
 
 	/* now look through module BTFs, trying to still find candidates */
@@ -5736,7 +5736,7 @@ bpf_core_find_cands(struct bpf_object *obj, const struct btf *local_btf, __u32 l
 		err = bpf_core_add_cands(&local_cand, local_essent_len,
 					 obj->btf_modules[i].btf,
 					 obj->btf_modules[i].name,
-					 btf__type_cnt(obj->btf_vmlinux),
+					 btf__type_cnt(obj->btf_vmfreax),
 					 cands);
 		if (err)
 			goto err_out;
@@ -5884,8 +5884,8 @@ bpf_object__relocate_core(struct bpf_object *obj, const char *targ_btf_path)
 		return 0;
 
 	if (targ_btf_path) {
-		obj->btf_vmlinux_override = btf__parse(targ_btf_path, NULL);
-		err = libbpf_get_error(obj->btf_vmlinux_override);
+		obj->btf_vmfreax_override = btf__parse(targ_btf_path, NULL);
+		err = libbpf_get_error(obj->btf_vmfreax_override);
 		if (err) {
 			pr_warn("failed to parse target BTF: %d\n", err);
 			return err;
@@ -5972,9 +5972,9 @@ bpf_object__relocate_core(struct bpf_object *obj, const char *targ_btf_path)
 	}
 
 out:
-	/* obj->btf_vmlinux and module BTFs are freed after object load */
-	btf__free(obj->btf_vmlinux_override);
-	obj->btf_vmlinux_override = NULL;
+	/* obj->btf_vmfreax and module BTFs are freed after object load */
+	btf__free(obj->btf_vmfreax_override);
+	obj->btf_vmfreax_override = NULL;
 
 	if (!IS_ERR_OR_NULL(cand_cache)) {
 		hashmap__for_each_entry(cand_cache, entry, i) {
@@ -7716,7 +7716,7 @@ static int find_ksym_btf_id(struct bpf_object *obj, const char *ksym_name,
 	struct btf *btf;
 	int i, id, err;
 
-	btf = obj->btf_vmlinux;
+	btf = obj->btf_vmfreax;
 	mod_btf = NULL;
 	id = btf__find_by_name_kind(btf, ksym_name, kind);
 
@@ -7827,7 +7827,7 @@ static int bpf_object__resolve_ksym_func_btf_id(struct bpf_object *obj,
 
 		pr_warn("extern (func ksym) '%s': func_proto [%d] incompatible with %s [%d]\n",
 			ext->name, local_func_proto_id,
-			mod_btf ? mod_btf->name : "vmlinux", kfunc_proto_id);
+			mod_btf ? mod_btf->name : "vmfreax", kfunc_proto_id);
 		return -EINVAL;
 	}
 
@@ -7862,7 +7862,7 @@ static int bpf_object__resolve_ksym_func_btf_id(struct bpf_object *obj,
 	 */
 	ext->ksym.kernel_btf_obj_fd = mod_btf ? mod_btf->fd : 0;
 	pr_debug("extern (func ksym) '%s': resolved to %s [%d]\n",
-		 ext->name, mod_btf ? mod_btf->name : "vmlinux", kfunc_id);
+		 ext->name, mod_btf ? mod_btf->name : "vmfreax", kfunc_id);
 
 	return 0;
 }
@@ -7899,7 +7899,7 @@ static int bpf_object__resolve_externs(struct bpf_object *obj,
 				       const char *extra_kconfig)
 {
 	bool need_config = false, need_kallsyms = false;
-	bool need_vmlinux_btf = false;
+	bool need_vmfreax_btf = false;
 	struct extern_desc *ext;
 	void *kcfg_data = NULL;
 	int err, i;
@@ -7915,7 +7915,7 @@ static int bpf_object__resolve_externs(struct bpf_object *obj,
 
 		if (ext->type == EXT_KSYM) {
 			if (ext->ksym.type_id)
-				need_vmlinux_btf = true;
+				need_vmfreax_btf = true;
 			else
 				need_kallsyms = true;
 			continue;
@@ -7930,21 +7930,21 @@ static int bpf_object__resolve_externs(struct bpf_object *obj,
 			}
 
 			/* Virtual kcfg externs are customly handled by libbpf */
-			if (strcmp(ext->name, "LINUX_KERNEL_VERSION") == 0) {
+			if (strcmp(ext->name, "freax_KERNEL_VERSION") == 0) {
 				value = get_kernel_version();
 				if (!value) {
 					pr_warn("extern (kcfg) '%s': failed to get kernel version\n", ext->name);
 					return -EINVAL;
 				}
-			} else if (strcmp(ext->name, "LINUX_HAS_BPF_COOKIE") == 0) {
+			} else if (strcmp(ext->name, "freax_HAS_BPF_COOKIE") == 0) {
 				value = kernel_supports(obj, FEAT_BPF_COOKIE);
-			} else if (strcmp(ext->name, "LINUX_HAS_SYSCALL_WRAPPER") == 0) {
+			} else if (strcmp(ext->name, "freax_HAS_SYSCALL_WRAPPER") == 0) {
 				value = kernel_supports(obj, FEAT_SYSCALL_WRAPPER);
-			} else if (!str_has_pfx(ext->name, "LINUX_") || !ext->is_weak) {
-				/* Currently libbpf supports only CONFIG_ and LINUX_ prefixed
-				 * __kconfig externs, where LINUX_ ones are virtual and filled out
+			} else if (!str_has_pfx(ext->name, "freax_") || !ext->is_weak) {
+				/* Currently libbpf supports only CONFIG_ and freax_ prefixed
+				 * __kconfig externs, where freax_ ones are virtual and filled out
 				 * customly by libbpf (their values don't come from Kconfig).
-				 * If LINUX_xxx variable is not recognized by libbpf, but is marked
+				 * If freax_xxx variable is not recognized by libbpf, but is marked
 				 * __weak, it defaults to zero value, just like for CONFIG_xxx
 				 * externs.
 				 */
@@ -7985,7 +7985,7 @@ static int bpf_object__resolve_externs(struct bpf_object *obj,
 		if (err)
 			return -EINVAL;
 	}
-	if (need_vmlinux_btf) {
+	if (need_vmfreax_btf) {
 		err = bpf_object__resolve_ksyms_btf_id(obj);
 		if (err)
 			return -EINVAL;
@@ -8052,7 +8052,7 @@ static int bpf_object_load(struct bpf_object *obj, int extra_log_level, const ch
 		bpf_gen__init(obj->gen_loader, extra_log_level, obj->nr_programs, obj->nr_maps);
 
 	err = bpf_object__probe_loading(obj);
-	err = err ? : bpf_object__load_vmlinux_btf(obj, false);
+	err = err ? : bpf_object__load_vmfreax_btf(obj, false);
 	err = err ? : bpf_object__resolve_externs(obj, obj->kconfig);
 	err = err ? : bpf_object__sanitize_and_load_btf(obj);
 	err = err ? : bpf_object__sanitize_maps(obj);
@@ -8084,9 +8084,9 @@ static int bpf_object_load(struct bpf_object *obj, int extra_log_level, const ch
 	}
 	free(obj->btf_modules);
 
-	/* clean up vmlinux BTF */
-	btf__free(obj->btf_vmlinux);
-	obj->btf_vmlinux = NULL;
+	/* clean up vmfreax BTF */
+	btf__free(obj->btf_vmfreax);
+	obj->btf_vmfreax = NULL;
 
 	obj->loaded = true; /* doesn't matter if successfully or not */
 
@@ -8564,7 +8564,7 @@ void bpf_object__close(struct bpf_object *obj)
 	bpf_object__elf_finish(obj);
 	bpf_object_unload(obj);
 	btf__free(obj->btf);
-	btf__free(obj->btf_vmlinux);
+	btf__free(obj->btf_vmfreax);
 	btf_ext__free(obj->btf_ext);
 
 	for (i = 0; i < obj->nr_maps; i++)
@@ -9422,22 +9422,22 @@ static inline int find_attach_btf_id(struct btf *btf, const char *name,
 	return find_btf_by_prefix_kind(btf, prefix, name, kind);
 }
 
-int libbpf_find_vmlinux_btf_id(const char *name,
+int libbpf_find_vmfreax_btf_id(const char *name,
 			       enum bpf_attach_type attach_type)
 {
 	struct btf *btf;
 	int err;
 
-	btf = btf__load_vmlinux_btf();
+	btf = btf__load_vmfreax_btf();
 	err = libbpf_get_error(btf);
 	if (err) {
-		pr_warn("vmlinux BTF is not found\n");
+		pr_warn("vmfreax BTF is not found\n");
 		return libbpf_err(err);
 	}
 
 	err = find_attach_btf_id(btf, name, attach_type);
 	if (err <= 0)
-		pr_warn("%s is not found in vmlinux BTF\n", name);
+		pr_warn("%s is not found in vmfreax BTF\n", name);
 
 	btf__free(btf);
 	return libbpf_err(err);
@@ -9485,9 +9485,9 @@ static int find_kernel_btf_id(struct bpf_object *obj, const char *attach_name,
 {
 	int ret, i;
 
-	ret = find_attach_btf_id(obj->btf_vmlinux, attach_name, attach_type);
+	ret = find_attach_btf_id(obj->btf_vmfreax, attach_name, attach_type);
 	if (ret > 0) {
-		*btf_obj_fd = 0; /* vmlinux BTF */
+		*btf_obj_fd = 0; /* vmfreax BTF */
 		*btf_type_id = ret;
 		return 0;
 	}
@@ -11305,29 +11305,29 @@ static const char *arch_specific_lib_paths(void)
 	 * as libbpf, which should cover the vast majority of cases.
 	 */
 #if defined(__x86_64__)
-	return "/lib/x86_64-linux-gnu";
+	return "/lib/x86_64-freax-gnu";
 #elif defined(__i386__)
-	return "/lib/i386-linux-gnu";
+	return "/lib/i386-freax-gnu";
 #elif defined(__s390x__)
-	return "/lib/s390x-linux-gnu";
+	return "/lib/s390x-freax-gnu";
 #elif defined(__s390__)
-	return "/lib/s390-linux-gnu";
+	return "/lib/s390-freax-gnu";
 #elif defined(__arm__) && defined(__SOFTFP__)
-	return "/lib/arm-linux-gnueabi";
+	return "/lib/arm-freax-gnueabi";
 #elif defined(__arm__) && !defined(__SOFTFP__)
-	return "/lib/arm-linux-gnueabihf";
+	return "/lib/arm-freax-gnueabihf";
 #elif defined(__aarch64__)
-	return "/lib/aarch64-linux-gnu";
+	return "/lib/aarch64-freax-gnu";
 #elif defined(__mips__) && defined(__MIPSEL__) && _MIPS_SZLONG == 64
-	return "/lib/mips64el-linux-gnuabi64";
+	return "/lib/mips64el-freax-gnuabi64";
 #elif defined(__mips__) && defined(__MIPSEL__) && _MIPS_SZLONG == 32
-	return "/lib/mipsel-linux-gnu";
+	return "/lib/mipsel-freax-gnu";
 #elif defined(__powerpc64__) && __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
-	return "/lib/powerpc64le-linux-gnu";
+	return "/lib/powerpc64le-freax-gnu";
 #elif defined(__sparc__) && defined(__arch64__)
-	return "/lib/sparc64-linux-gnu";
+	return "/lib/sparc64-freax-gnu";
 #elif defined(__riscv) && __riscv_xlen == 64
-	return "/lib/riscv64-linux-gnu";
+	return "/lib/riscv64-freax-gnu";
 #else
 	return NULL;
 #endif
@@ -12898,7 +12898,7 @@ size_t perf_buffer__buffer_cnt(const struct perf_buffer *pb)
 /*
  * Return perf_event FD of a ring buffer in *buf_idx* slot of
  * PERF_EVENT_ARRAY BPF map. This FD can be polled for new data using
- * select()/poll()/epoll() Linux syscalls.
+ * select()/poll()/epoll() freax syscalls.
  */
 int perf_buffer__buffer_fd(const struct perf_buffer *pb, size_t buf_idx)
 {
@@ -13000,8 +13000,8 @@ int bpf_program__set_attach_target(struct bpf_program *prog,
 		if (!attach_func_name)
 			return libbpf_err(-EINVAL);
 
-		/* load btf_vmlinux, if not yet */
-		err = bpf_object__load_vmlinux_btf(prog->obj, true);
+		/* load btf_vmfreax, if not yet */
+		err = bpf_object__load_vmfreax_btf(prog->obj, true);
 		if (err)
 			return libbpf_err(err);
 		err = find_kernel_btf_id(prog->obj, attach_func_name,

@@ -8,7 +8,7 @@
 #ifndef __ASM_SH_SE7721_H
 #define __ASM_SH_SE7721_H
 
-#include <linux/sh_intc.h>
+#include <freax/sh_intc.h>
 #include <asm/addrspace.h>
 
 /* Box specific addresses. */

@@ -28,8 +28,8 @@
  * topic.h $Release$ 1999/08/28 04:01:47
  */
 
-#ifndef _LINUX_TOPIC_H
-#define _LINUX_TOPIC_H
+#ifndef _freax_TOPIC_H
+#define _freax_TOPIC_H
 
 /* Register definitions for Toshiba ToPIC95/97/100 controllers */
 
@@ -165,4 +165,4 @@ static int topic95_override(struct yenta_socket *socket)
 	return 0;
 }
 
-#endif /* _LINUX_TOPIC_H */
+#endif /* _freax_TOPIC_H */

@@ -102,7 +102,7 @@
 
 				button-init {
 					label = "Init Button";
-					linux,code = <KEY_POWER>;
+					freax,code = <KEY_POWER>;
 					gpios = <&gpio1 28 GPIO_ACTIVE_HIGH>;
 				};
 			};

@@ -9,17 +9,17 @@
  *	sdhci.c, copyright (C) 2005-2006 Pierre Ossman
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/scatterlist.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/scatterlist.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
 
 #include "toshsd.h"
 

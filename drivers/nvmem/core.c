@@ -6,18 +6,18 @@
  * Copyright (C) 2013 Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/fs.h>
-#include <linux/idr.h>
-#include <linux/init.h>
-#include <linux/kref.h>
-#include <linux/module.h>
-#include <linux/nvmem-consumer.h>
-#include <linux/nvmem-provider.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/fs.h>
+#include <freax/idr.h>
+#include <freax/init.h>
+#include <freax/kref.h>
+#include <freax/module.h>
+#include <freax/nvmem-consumer.h>
+#include <freax/nvmem-provider.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
+#include <freax/slab.h>
 
 struct nvmem_device {
 	struct module		*owner;

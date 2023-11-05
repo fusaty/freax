@@ -8,7 +8,7 @@
 #ifndef __WINDFARM_MPU_H
 #define __WINDFARM_MPU_H
 
-#include <linux/of.h>
+#include <freax/of.h>
 
 typedef unsigned short fu16;
 typedef int fs32;

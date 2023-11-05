@@ -4,7 +4,7 @@
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  */
 
-#include <linux/if_bridge.h>
+#include <freax/if_bridge.h>
 #include <net/switchdev.h>
 
 #include "sparx5_main_regs.h"

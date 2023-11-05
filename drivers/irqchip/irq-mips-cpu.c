@@ -22,12 +22,12 @@
  * is present, or for old CPUs with an external FPU by convention it's the
  * FPU exception interrupt.
  */
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/irq.h>
-#include <linux/irqchip.h>
-#include <linux/irqdomain.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/irq.h>
+#include <freax/irqchip.h>
+#include <freax/irqdomain.h>
 
 #include <asm/irq_cpu.h>
 #include <asm/mipsregs.h>

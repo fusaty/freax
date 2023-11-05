@@ -6,11 +6,11 @@
  * Author: Boris BREZILLON <boris.brezillon@free-electrons.com>
  */
 
-#ifndef __LINUX_MFD_HLCDC_H
-#define __LINUX_MFD_HLCDC_H
+#ifndef __freax_MFD_HLCDC_H
+#define __freax_MFD_HLCDC_H
 
-#include <linux/clk.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/regmap.h>
 
 #define ATMEL_HLCDC_CFG(i)		((i) * 0x4)
 #define ATMEL_HLCDC_SIG_CFG		LCDCFG(5)
@@ -71,4 +71,4 @@ struct atmel_hlcdc {
 	int irq;
 };
 
-#endif /* __LINUX_MFD_HLCDC_H */
+#endif /* __freax_MFD_HLCDC_H */

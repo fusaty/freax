@@ -10,12 +10,12 @@
  * Firmware must be in binary "rbf" format.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/fpga/fpga-mgr.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/sizes.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/fpga/fpga-mgr.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/sizes.h>
 
 #define CVP_BAR		0	/* BAR used for data transfer in memory mode */
 #define CVP_DUMMY_WR	244	/* dummy writes to clear CvP state machine */

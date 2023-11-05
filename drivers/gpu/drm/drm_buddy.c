@@ -3,9 +3,9 @@
  * Copyright © 2021 Intel Corporation
  */
 
-#include <linux/kmemleak.h>
-#include <linux/module.h>
-#include <linux/sizes.h>
+#include <freax/kmemleak.h>
+#include <freax/module.h>
+#include <freax/sizes.h>
 
 #include <drm/drm_buddy.h>
 

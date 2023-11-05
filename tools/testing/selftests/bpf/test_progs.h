@@ -12,17 +12,17 @@
 #include <time.h>
 #include <signal.h>
 
-#include <linux/types.h>
+#include <freax/types.h>
 typedef __u16 __sum16;
 #include <arpa/inet.h>
-#include <linux/if_ether.h>
-#include <linux/if_packet.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
-#include <linux/filter.h>
-#include <linux/perf_event.h>
-#include <linux/socket.h>
-#include <linux/unistd.h>
+#include <freax/if_ether.h>
+#include <freax/if_packet.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
+#include <freax/filter.h>
+#include <freax/perf_event.h>
+#include <freax/socket.h>
+#include <freax/unistd.h>
 
 #include <sys/ioctl.h>
 #include <sys/wait.h>
@@ -31,8 +31,8 @@ typedef __u16 __sum16;
 #include <sys/param.h>
 #include <fcntl.h>
 #include <pthread.h>
-#include <linux/bpf.h>
-#include <linux/err.h>
+#include <freax/bpf.h>
+#include <freax/err.h>
 #include <bpf/bpf.h>
 #include <bpf/libbpf.h>
 

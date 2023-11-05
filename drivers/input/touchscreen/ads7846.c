@@ -14,22 +14,22 @@
  *	Copyright (C) 2004 Texas Instruments
  *	Copyright (C) 2005 Dirk Behme
  */
-#include <linux/types.h>
-#include <linux/hwmon.h>
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/delay.h>
-#include <linux/input.h>
-#include <linux/input/touchscreen.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/property.h>
-#include <linux/gpio/consumer.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/ads7846.h>
-#include <linux/regulator/consumer.h>
-#include <linux/module.h>
+#include <freax/types.h>
+#include <freax/hwmon.h>
+#include <freax/err.h>
+#include <freax/sched.h>
+#include <freax/delay.h>
+#include <freax/input.h>
+#include <freax/input/touchscreen.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/pm.h>
+#include <freax/property.h>
+#include <freax/gpio/consumer.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/ads7846.h>
+#include <freax/regulator/consumer.h>
+#include <freax/module.h>
 #include <asm/unaligned.h>
 
 /*
@@ -1164,7 +1164,7 @@ static const struct ads7846_platform_data *ads7846_get_props(struct device *dev)
 			     &pdata->gpio_pendown_debounce);
 
 	pdata->wakeup = device_property_read_bool(dev, "wakeup-source") ||
-			device_property_read_bool(dev, "linux,wakeup");
+			device_property_read_bool(dev, "freax,wakeup");
 
 	return pdata;
 }

@@ -12,7 +12,7 @@
  *
  *  Group scheduling enhancements by Srivatsa Vaddagiri
  *  Copyright IBM Corporation, 2007
- *  Author: Srivatsa Vaddagiri <vatsa@linux.vnet.ibm.com>
+ *  Author: Srivatsa Vaddagiri <vatsa@freax.vnet.ibm.com>
  *
  *  Scaled math optimizations by Thomas Gleixner
  *  Copyright (C) 2007, Thomas Gleixner <tglx@linutronix.de>
@@ -20,34 +20,34 @@
  *  Adaptive scheduling granularity, math enhancements by Peter Zijlstra
  *  Copyright (C) 2007 Red Hat, Inc., Peter Zijlstra
  */
-#include <linux/energy_model.h>
-#include <linux/mmap_lock.h>
-#include <linux/hugetlb_inline.h>
-#include <linux/jiffies.h>
-#include <linux/mm_api.h>
-#include <linux/highmem.h>
-#include <linux/spinlock_api.h>
-#include <linux/cpumask_api.h>
-#include <linux/lockdep_api.h>
-#include <linux/softirq.h>
-#include <linux/refcount_api.h>
-#include <linux/topology.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/cond_resched.h>
-#include <linux/sched/cputime.h>
-#include <linux/sched/isolation.h>
-#include <linux/sched/nohz.h>
+#include <freax/energy_model.h>
+#include <freax/mmap_lock.h>
+#include <freax/hugetlb_inline.h>
+#include <freax/jiffies.h>
+#include <freax/mm_api.h>
+#include <freax/highmem.h>
+#include <freax/spinlock_api.h>
+#include <freax/cpumask_api.h>
+#include <freax/lockdep_api.h>
+#include <freax/softirq.h>
+#include <freax/refcount_api.h>
+#include <freax/topology.h>
+#include <freax/sched/clock.h>
+#include <freax/sched/cond_resched.h>
+#include <freax/sched/cputime.h>
+#include <freax/sched/isolation.h>
+#include <freax/sched/nohz.h>
 
-#include <linux/cpuidle.h>
-#include <linux/interrupt.h>
-#include <linux/memory-tiers.h>
-#include <linux/mempolicy.h>
-#include <linux/mutex_api.h>
-#include <linux/profile.h>
-#include <linux/psi.h>
-#include <linux/ratelimit.h>
-#include <linux/task_work.h>
-#include <linux/rbtree_augmented.h>
+#include <freax/cpuidle.h>
+#include <freax/interrupt.h>
+#include <freax/memory-tiers.h>
+#include <freax/mempolicy.h>
+#include <freax/mutex_api.h>
+#include <freax/profile.h>
+#include <freax/psi.h>
+#include <freax/ratelimit.h>
+#include <freax/task_work.h>
+#include <freax/rbtree_augmented.h>
 
 #include <asm/switch_to.h>
 

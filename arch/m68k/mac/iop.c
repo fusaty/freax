@@ -108,12 +108,12 @@
  * should execute quickly.)
  */
 
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
 
 #include <asm/macintosh.h>
 #include <asm/macints.h>

@@ -11,12 +11,12 @@
  * used as clock_event_device.
  */
 
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/sched_clock.h>
+#include <freax/kernel.h>
+#include <freax/timer.h>
+#include <freax/clockchips.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/sched_clock.h>
 #include <plat/time.h>
 #include <asm/delay.h>
 

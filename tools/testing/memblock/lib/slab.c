@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/slab.h>
+#include <freax/slab.h>
 
 enum slab_state slab_state;
 

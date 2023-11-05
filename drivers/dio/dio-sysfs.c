@@ -11,9 +11,9 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/dio.h>
-#include <linux/stat.h>
+#include <freax/kernel.h>
+#include <freax/dio.h>
+#include <freax/stat.h>
 
 /* show configuration fields */
 

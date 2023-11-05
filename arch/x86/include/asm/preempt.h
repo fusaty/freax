@@ -6,8 +6,8 @@
 #include <asm/percpu.h>
 #include <asm/current.h>
 
-#include <linux/thread_info.h>
-#include <linux/static_call_types.h>
+#include <freax/thread_info.h>
+#include <freax/static_call_types.h>
 
 /* We use the MSB mostly because its available */
 #define PREEMPT_NEED_RESCHED	0x80000000

@@ -3,13 +3,13 @@
  * Copyright (c) 2012, 2013, NVIDIA CORPORATION.  All rights reserved.
  */
 
-#include <linux/io.h>
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/clk/tegra.h>
+#include <freax/io.h>
+#include <freax/clk-provider.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/clk/tegra.h>
 
 #include "clk.h"
 #include "clk-id.h"

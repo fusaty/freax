@@ -7,14 +7,14 @@
  *
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/blkdev.h>
-#include <linux/vringh.h>
-#include <linux/vdpa.h>
-#include <uapi/linux/virtio_blk.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/blkdev.h>
+#include <freax/vringh.h>
+#include <freax/vdpa.h>
+#include <uapi/freax/virtio_blk.h>
 
 #include "vdpa_sim.h"
 

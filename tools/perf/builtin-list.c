@@ -21,7 +21,7 @@
 #include "util/strbuf.h"
 #include <subcmd/pager.h>
 #include <subcmd/parse-options.h>
-#include <linux/zalloc.h>
+#include <freax/zalloc.h>
 #include <stdarg.h>
 #include <stdio.h>
 

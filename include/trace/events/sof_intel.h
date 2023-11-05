@@ -10,7 +10,7 @@
 
 #if !defined(_TRACE_SOF_INTEL_H) || defined(TRACE_HEADER_MULTI_READ)
 #define _TRACE_SOF_INTEL_H
-#include <linux/tracepoint.h>
+#include <freax/tracepoint.h>
 #include <sound/hdaudio.h>
 #include "../../../sound/soc/sof/sof-audio.h"
 

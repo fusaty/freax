@@ -25,10 +25,10 @@
  *  with this program; if not, write  to the Free Software Foundation, Inc.,
  *  675 Mass Ave, Cambridge, MA 02139, USA.
  */
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/pci.h>
-#include <linux/types.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/pci.h>
+#include <freax/types.h>
 
 #include <asm/cpu.h>
 #include <asm/mach-rc32434/rc32434.h>

@@ -1,18 +1,18 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_INETDEVICE_H
-#define _LINUX_INETDEVICE_H
+#ifndef _freax_INETDEVICE_H
+#define _freax_INETDEVICE_H
 
 #ifdef __KERNEL__
 
-#include <linux/bitmap.h>
-#include <linux/if.h>
-#include <linux/ip.h>
-#include <linux/netdevice.h>
-#include <linux/rcupdate.h>
-#include <linux/timer.h>
-#include <linux/sysctl.h>
-#include <linux/rtnetlink.h>
-#include <linux/refcount.h>
+#include <freax/bitmap.h>
+#include <freax/if.h>
+#include <freax/ip.h>
+#include <freax/netdevice.h>
+#include <freax/rcupdate.h>
+#include <freax/timer.h>
+#include <freax/sysctl.h>
+#include <freax/rtnetlink.h>
+#include <freax/refcount.h>
 
 struct ipv4_devconf {
 	void	*sysctl;
@@ -300,4 +300,4 @@ static __inline__ int inet_mask_len(__be32 mask)
 }
 
 
-#endif /* _LINUX_INETDEVICE_H */
+#endif /* _freax_INETDEVICE_H */

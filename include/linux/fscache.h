@@ -11,12 +11,12 @@
  * for a description of the network filesystem interface declared here.
  */
 
-#ifndef _LINUX_FSCACHE_H
-#define _LINUX_FSCACHE_H
+#ifndef _freax_FSCACHE_H
+#define _freax_FSCACHE_H
 
-#include <linux/fs.h>
-#include <linux/netfs.h>
-#include <linux/writeback.h>
+#include <freax/fs.h>
+#include <freax/netfs.h>
+#include <freax/writeback.h>
 
 #if defined(CONFIG_FSCACHE) || defined(CONFIG_FSCACHE_MODULE)
 #define __fscache_available (1)
@@ -692,4 +692,4 @@ void fscache_note_page_release(struct fscache_cookie *cookie)
 		clear_bit(FSCACHE_COOKIE_NO_DATA_TO_READ, &cookie->flags);
 }
 
-#endif /* _LINUX_FSCACHE_H */
+#endif /* _freax_FSCACHE_H */

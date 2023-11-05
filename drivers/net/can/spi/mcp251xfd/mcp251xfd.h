@@ -10,18 +10,18 @@
 #ifndef _MCP251XFD_H
 #define _MCP251XFD_H
 
-#include <linux/bitfield.h>
-#include <linux/can/core.h>
-#include <linux/can/dev.h>
-#include <linux/can/rx-offload.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
-#include <linux/regmap.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
-#include <linux/timecounter.h>
-#include <linux/workqueue.h>
+#include <freax/bitfield.h>
+#include <freax/can/core.h>
+#include <freax/can/dev.h>
+#include <freax/can/rx-offload.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
+#include <freax/regmap.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
+#include <freax/timecounter.h>
+#include <freax/workqueue.h>
 
 /* MPC251x registers */
 

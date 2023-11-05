@@ -2,8 +2,8 @@
 #ifndef _NF_CONNTRACK_COMMON_H
 #define _NF_CONNTRACK_COMMON_H
 
-#include <linux/refcount.h>
-#include <uapi/linux/netfilter/nf_conntrack_common.h>
+#include <freax/refcount.h>
+#include <uapi/freax/netfilter/nf_conntrack_common.h>
 
 struct ip_conntrack_stat {
 	unsigned int found;

@@ -4,28 +4,28 @@
  * Author: Guennadi Liakhovetski <g.liakhovetski@gmx.de>
  */
 
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/highmem.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/log2.h>
-#include <linux/mmc/host.h>
-#include <linux/mmc/mmc.h>
-#include <linux/mmc/sd.h>
-#include <linux/mmc/sdio.h>
-#include <linux/module.h>
-#include <linux/pagemap.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/platform_device.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
-#include <linux/time.h>
-#include <linux/virtio.h>
-#include <linux/workqueue.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/highmem.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/log2.h>
+#include <freax/mmc/host.h>
+#include <freax/mmc/mmc.h>
+#include <freax/mmc/sd.h>
+#include <freax/mmc/sdio.h>
+#include <freax/module.h>
+#include <freax/pagemap.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/platform_device.h>
+#include <freax/scatterlist.h>
+#include <freax/string.h>
+#include <freax/time.h>
+#include <freax/virtio.h>
+#include <freax/workqueue.h>
 
 #define USDHI6_SD_CMD		0x0000
 #define USDHI6_SD_PORT_SEL	0x0004

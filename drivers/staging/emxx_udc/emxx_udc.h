@@ -5,8 +5,8 @@
  *  Copyright (C) 2010 Renesas Electronics Corporation
  */
 
-#ifndef _LINUX_EMXX_H
-#define _LINUX_EMXX_H
+#ifndef _freax_EMXX_H
+#define _freax_EMXX_H
 
 /*---------------------------------------------------------------------------*/
 
@@ -528,8 +528,8 @@ struct nbu2ss_udc {
 
 	unsigned		softconnect:1;
 	unsigned		vbus_active:1;
-	unsigned		linux_suspended:1;
-	unsigned		linux_resume:1;
+	unsigned		freax_suspended:1;
+	unsigned		freax_resume:1;
 	unsigned		usb_suspended:1;
 	unsigned		remote_wakeup:1;
 	unsigned		udc_enabled:1;
@@ -551,4 +551,4 @@ union usb_reg_access {
 
 /*-------------------------------------------------------------------------*/
 
-#endif  /* _LINUX_EMXX_H */
+#endif  /* _freax_EMXX_H */

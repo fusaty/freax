@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0
 
-#include <linux/highmem.h>
-#include <linux/genalloc.h>
+#include <freax/highmem.h>
+#include <freax/genalloc.h>
 #include <asm/tlbflush.h>
 #include <asm/fixmap.h>
 

@@ -9,8 +9,8 @@
 /*
  */
 
-#include <linux/hid.h>
-#include <linux/types.h>
+#include <freax/hid.h>
+#include <freax/types.h>
 
 #define ROCCATIOCGREPSIZE _IOR('H', 0xf1, int)
 

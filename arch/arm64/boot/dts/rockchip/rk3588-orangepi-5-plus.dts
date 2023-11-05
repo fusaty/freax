@@ -35,7 +35,7 @@
 
 		button-maskrom {
 			label = "Mask Rom";
-			linux,code = <KEY_SETUP>;
+			freax,code = <KEY_SETUP>;
 			press-threshold-microvolt = <2000>;
 		};
 	};
@@ -49,7 +49,7 @@
 
 		button-recovery {
 			label = "Recovery";
-			linux,code = <KEY_VENDOR>;
+			freax,code = <KEY_VENDOR>;
 			press-threshold-microvolt = <2000>;
 		};
 	};

@@ -39,5 +39,5 @@ unsigned long kernel_entry_address(void)
 {
 	unsigned long base = (unsigned long)&kernel_offset - kernel_offset;
 
-	return (unsigned long)&kernel_entry - base + VMLINUX_LOAD_ADDRESS;
+	return (unsigned long)&kernel_entry - base + VMfreax_LOAD_ADDRESS;
 }

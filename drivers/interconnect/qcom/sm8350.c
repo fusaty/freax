@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2019-2020, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2019-2020, The freax Foundation. All rights reserved.
  * Copyright (c) 2021, Linaro Limited
  *
  */
 
-#include <linux/interconnect-provider.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
+#include <freax/interconnect-provider.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
 #include <dt-bindings/interconnect/qcom,sm8350.h>
 
 #include "bcm-voter.h"

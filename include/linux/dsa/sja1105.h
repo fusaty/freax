@@ -7,9 +7,9 @@
 #ifndef _NET_DSA_SJA1105_H
 #define _NET_DSA_SJA1105_H
 
-#include <linux/skbuff.h>
-#include <linux/etherdevice.h>
-#include <linux/dsa/8021q.h>
+#include <freax/skbuff.h>
+#include <freax/etherdevice.h>
+#include <freax/dsa/8021q.h>
 #include <net/dsa.h>
 
 #define ETH_P_SJA1105				ETH_P_DSA_8021Q

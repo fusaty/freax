@@ -12,14 +12,14 @@
  * Code for /proc/lockdep and /proc/lockdep_stats:
  *
  */
-#include <linux/export.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/kallsyms.h>
-#include <linux/debug_locks.h>
-#include <linux/vmalloc.h>
-#include <linux/sort.h>
-#include <linux/uaccess.h>
+#include <freax/export.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/kallsyms.h>
+#include <freax/debug_locks.h>
+#include <freax/vmalloc.h>
+#include <freax/sort.h>
+#include <freax/uaccess.h>
 #include <asm/div64.h>
 
 #include "lockdep_internals.h"

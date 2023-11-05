@@ -114,12 +114,12 @@
  *     THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/kmod.h>
-#include <linux/mdio.h>
-#include <linux/phy.h>
-#include <linux/ethtool.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/kmod.h>
+#include <freax/mdio.h>
+#include <freax/phy.h>
+#include <freax/ethtool.h>
 
 #include "xgbe.h"
 #include "xgbe-common.h"

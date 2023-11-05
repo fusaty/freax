@@ -5,11 +5,11 @@
  *	Created by: Hariprasad Nellitheertha (hari@in.ibm.com)
  *	Copyright (C) IBM Corporation, 2004. All rights reserved
  */
-#include <linux/errno.h>
-#include <linux/crash_dump.h>
-#include <linux/io.h>
-#include <linux/uio.h>
-#include <linux/uaccess.h>
+#include <freax/errno.h>
+#include <freax/crash_dump.h>
+#include <freax/io.h>
+#include <freax/uio.h>
+#include <freax/uaccess.h>
 
 ssize_t copy_oldmem_page(struct iov_iter *iter, unsigned long pfn,
 			 size_t csize, unsigned long offset)

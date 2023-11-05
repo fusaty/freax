@@ -10,20 +10,20 @@
  * Author:     Srikar Dronamraju
  */
 
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/smp.h>
-#include <linux/tracefs.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/ptrace.h>
-#include <linux/perf_event.h>
-#include <linux/kprobes.h>
-#include <linux/stringify.h>
-#include <linux/limits.h>
-#include <linux/uaccess.h>
-#include <linux/bitops.h>
-#include <linux/btf.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/smp.h>
+#include <freax/tracefs.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/ptrace.h>
+#include <freax/perf_event.h>
+#include <freax/kprobes.h>
+#include <freax/stringify.h>
+#include <freax/limits.h>
+#include <freax/uaccess.h>
+#include <freax/bitops.h>
+#include <freax/btf.h>
 #include <asm/bitsperlong.h>
 
 #include "trace.h"

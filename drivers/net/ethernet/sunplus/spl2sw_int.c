@@ -3,12 +3,12 @@
  *       All rights reserved.
  */
 
-#include <linux/platform_device.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/bitfield.h>
-#include <linux/spinlock.h>
-#include <linux/of_mdio.h>
+#include <freax/platform_device.h>
+#include <freax/etherdevice.h>
+#include <freax/netdevice.h>
+#include <freax/bitfield.h>
+#include <freax/spinlock.h>
+#include <freax/of_mdio.h>
 
 #include "spl2sw_register.h"
 #include "spl2sw_define.h"

@@ -7,9 +7,9 @@
  * Any tests that only require the interface of the tree.
  */
 
-#include <linux/maple_tree.h>
-#include <linux/module.h>
-#include <linux/rwsem.h>
+#include <freax/maple_tree.h>
+#include <freax/module.h>
+#include <freax/rwsem.h>
 
 #define MTREE_ALLOC_MAX 0x2000000000000Ul
 #define CONFIG_MAPLE_SEARCH

@@ -11,19 +11,19 @@
 #ifndef _PCIE_DESIGNWARE_H
 #define _PCIE_DESIGNWARE_H
 
-#include <linux/bitfield.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/dma-mapping.h>
-#include <linux/dma/edma.h>
-#include <linux/gpio/consumer.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <linux/pci.h>
-#include <linux/reset.h>
+#include <freax/bitfield.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/dma-mapping.h>
+#include <freax/dma/edma.h>
+#include <freax/gpio/consumer.h>
+#include <freax/irq.h>
+#include <freax/msi.h>
+#include <freax/pci.h>
+#include <freax/reset.h>
 
-#include <linux/pci-epc.h>
-#include <linux/pci-epf.h>
+#include <freax/pci-epc.h>
+#include <freax/pci-epf.h>
 
 /* DWC PCIe IP-core versions (native support since v4.70a) */
 #define DW_PCIE_VER_365A		0x3336352a

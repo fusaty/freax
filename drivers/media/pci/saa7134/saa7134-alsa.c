@@ -6,18 +6,18 @@
 #include "saa7134.h"
 #include "saa7134-reg.h"
 
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/wait.h>
-#include <linux/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/wait.h>
+#include <freax/module.h>
 #include <sound/core.h>
 #include <sound/control.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/initval.h>
-#include <linux/interrupt.h>
-#include <linux/vmalloc.h>
+#include <freax/interrupt.h>
+#include <freax/vmalloc.h>
 
 /*
  * Configuration macros

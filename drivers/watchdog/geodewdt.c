@@ -7,17 +7,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/fs.h>
-#include <linux/platform_device.h>
-#include <linux/reboot.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/types.h>
+#include <freax/miscdevice.h>
+#include <freax/watchdog.h>
+#include <freax/fs.h>
+#include <freax/platform_device.h>
+#include <freax/reboot.h>
+#include <freax/uaccess.h>
 
-#include <linux/cs5535.h>
+#include <freax/cs5535.h>
 
 #define GEODEWDT_HZ 500
 #define GEODEWDT_SCALE 6

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Linux VM pressure
+ * freax VM pressure
  *
  * Copyright 2012 Linaro Ltd.
  *		  Anton Vorontsov <anton.vorontsov@linaro.org>
@@ -9,17 +9,17 @@
  * Leonid Moiseichuk, Mel Gorman, Minchan Kim and Pekka Enberg.
  */
 
-#include <linux/cgroup.h>
-#include <linux/fs.h>
-#include <linux/log2.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
-#include <linux/vmstat.h>
-#include <linux/eventfd.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/printk.h>
-#include <linux/vmpressure.h>
+#include <freax/cgroup.h>
+#include <freax/fs.h>
+#include <freax/log2.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
+#include <freax/vmstat.h>
+#include <freax/eventfd.h>
+#include <freax/slab.h>
+#include <freax/swap.h>
+#include <freax/printk.h>
+#include <freax/vmpressure.h>
 
 /*
  * The window size (vmpressure_win) is the number of scanned pages before

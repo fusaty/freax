@@ -9,16 +9,16 @@
  * Copyright (C) 2008 Wind River Systems
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/libata.h>
-#include <linux/hrtimer.h>
-#include <linux/slab.h>
-#include <linux/irq.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/libata.h>
+#include <freax/hrtimer.h>
+#include <freax/slab.h>
+#include <freax/irq.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 #include <scsi/scsi_host.h>
 #include <trace/events/libata.h>
 #include <asm/byteorder.h>

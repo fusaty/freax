@@ -7,28 +7,28 @@
  * Copyright © 2021-2022 Microsoft Corporation
  */
 
-#include <linux/atomic.h>
-#include <linux/bitops.h>
-#include <linux/bits.h>
-#include <linux/compiler_types.h>
-#include <linux/dcache.h>
-#include <linux/err.h>
-#include <linux/fs.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/limits.h>
-#include <linux/list.h>
-#include <linux/lsm_hooks.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/path.h>
-#include <linux/rcupdate.h>
-#include <linux/spinlock.h>
-#include <linux/stat.h>
-#include <linux/types.h>
-#include <linux/wait_bit.h>
-#include <linux/workqueue.h>
-#include <uapi/linux/landlock.h>
+#include <freax/atomic.h>
+#include <freax/bitops.h>
+#include <freax/bits.h>
+#include <freax/compiler_types.h>
+#include <freax/dcache.h>
+#include <freax/err.h>
+#include <freax/fs.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/limits.h>
+#include <freax/list.h>
+#include <freax/lsm_hooks.h>
+#include <freax/mount.h>
+#include <freax/namei.h>
+#include <freax/path.h>
+#include <freax/rcupdate.h>
+#include <freax/spinlock.h>
+#include <freax/stat.h>
+#include <freax/types.h>
+#include <freax/wait_bit.h>
+#include <freax/workqueue.h>
+#include <uapi/freax/landlock.h>
 
 #include "common.h"
 #include "cred.h"

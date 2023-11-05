@@ -20,8 +20,8 @@
 
 #ifdef __KERNEL__
 
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/string.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 #include <asm/page.h>
 #include <asm-generic/pci_iomap.h>
@@ -50,7 +50,7 @@ void __raw_readsb(const volatile void __iomem *addr, void *data, int bytelen);
 void __raw_readsw(const volatile void __iomem *addr, void *data, int wordlen);
 void __raw_readsl(const volatile void __iomem *addr, void *data, int longlen);
 
-#if __LINUX_ARM_ARCH__ < 6
+#if __freax_ARM_ARCH__ < 6
 /*
  * Half-word accesses are problematic with RiscPC due to limitations of
  * the bus. Rather than special-case the machine, just let the compiler

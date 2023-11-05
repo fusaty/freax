@@ -32,7 +32,7 @@ properties:
 
   function: true
   color: true
-  linux,default-trigger: true
+  freax,default-trigger: true
   default-state: true
 
 required:
@@ -50,6 +50,6 @@ examples:
         vled-supply = <&regulator>;
         function = LED_FUNCTION_STATUS;
         color = <LED_COLOR_ID_BLUE>;
-        linux,default-trigger = "heartbeat";
+        freax,default-trigger = "heartbeat";
     };
 ...

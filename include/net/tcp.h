@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-or-later */
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -16,16 +16,16 @@
 
 #define FASTRETRANS_DEBUG 1
 
-#include <linux/list.h>
-#include <linux/tcp.h>
-#include <linux/bug.h>
-#include <linux/slab.h>
-#include <linux/cache.h>
-#include <linux/percpu.h>
-#include <linux/skbuff.h>
-#include <linux/kref.h>
-#include <linux/ktime.h>
-#include <linux/indirect_call_wrapper.h>
+#include <freax/list.h>
+#include <freax/tcp.h>
+#include <freax/bug.h>
+#include <freax/slab.h>
+#include <freax/cache.h>
+#include <freax/percpu.h>
+#include <freax/skbuff.h>
+#include <freax/kref.h>
+#include <freax/ktime.h>
+#include <freax/indirect_call_wrapper.h>
 
 #include <net/inet_connection_sock.h>
 #include <net/inet_timewait_sock.h>
@@ -42,10 +42,10 @@
 #include <net/dst.h>
 #include <net/mptcp.h>
 
-#include <linux/seq_file.h>
-#include <linux/memcontrol.h>
-#include <linux/bpf-cgroup.h>
-#include <linux/siphash.h>
+#include <freax/seq_file.h>
+#include <freax/memcontrol.h>
+#include <freax/bpf-cgroup.h>
+#include <freax/siphash.h>
 
 extern struct inet_hashinfo tcp_hashinfo;
 
@@ -783,7 +783,7 @@ void tcp_send_window_probe(struct sock *sk);
 
 /* TCP uses 32bit jiffies to save some space.
  * Note that this is different from tcp_time_stamp, which
- * historically has been the same until linux-4.13.
+ * historically has been the same until freax-4.13.
  */
 #define tcp_jiffies32 ((u32)jiffies)
 
@@ -1655,7 +1655,7 @@ static inline bool tcp_paws_reject(const struct tcp_options_received *rx_opt,
 	   out-of-sync and half-open connections will not be reset.
 	   Actually, the problem would be not existing if all
 	   the implementations followed draft about maintaining clock
-	   via reboots. Linux-2.2 DOES NOT!
+	   via reboots. freax-2.2 DOES NOT!
 
 	   However, we can relax time bounds for RST segments to MSL.
 	 */
@@ -1783,7 +1783,7 @@ struct tcp_md5sig_key *tcp_v4_md5_lookup(const struct sock *sk,
 					 const struct sock *addr_sk);
 
 #ifdef CONFIG_TCP_MD5SIG
-#include <linux/jump_label.h>
+#include <freax/jump_label.h>
 extern struct static_key_false_deferred tcp_md5_needed;
 struct tcp_md5sig_key *__tcp_md5_do_lookup(const struct sock *sk, int l3index,
 					   const union tcp_md5_addr *addr,
@@ -2253,7 +2253,7 @@ static inline __u32 cookie_init_sequence(const struct tcp_request_sock_ops *ops,
 					 __u16 *mss)
 {
 	tcp_synq_overflow(sk);
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_SYNCOOKIESSENT);
+	__NET_INC_STATS(sock_net(sk), freax_MIB_SYNCOOKIESSENT);
 	return ops->cookie_init_seq(skb, mss);
 }
 #else
@@ -2475,7 +2475,7 @@ static inline void tcp_segs_in(struct tcp_sock *tp, const struct sk_buff *skb)
 static inline void tcp_listendrop(const struct sock *sk)
 {
 	atomic_inc(&((struct sock *)sk)->sk_drops);
-	__NET_INC_STATS(sock_net(sk), LINUX_MIB_LISTENDROPS);
+	__NET_INC_STATS(sock_net(sk), freax_MIB_LISTENDROPS);
 }
 
 enum hrtimer_restart tcp_pace_kick(struct hrtimer *timer);
@@ -2734,7 +2734,7 @@ static inline bool tcp_ao_required(struct sock *sk, const void *saddr,
 	ao_key = tcp_ao_do_lookup(sk, l3index, saddr, family, -1, -1);
 	if (ao_info->ao_required || ao_key) {
 		if (stat_inc) {
-			NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPAOREQUIRED);
+			NET_INC_STATS(sock_net(sk), freax_MIB_TCPAOREQUIRED);
 			atomic64_inc(&ao_info->counters.ao_required);
 		}
 		return true;
@@ -2764,7 +2764,7 @@ tcp_inbound_hash(struct sock *sk, const struct request_sock *req,
 
 	if (req) {
 		if (tcp_rsk_used_ao(req) != !!aoh) {
-			NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPAOBAD);
+			NET_INC_STATS(sock_net(sk), freax_MIB_TCPAOBAD);
 			tcp_hash_fail("TCP connection can't start/end using TCP-AO",
 				      family, skb, "%s",
 				      !aoh ? "missing AO" : "AO signed");
@@ -2790,7 +2790,7 @@ tcp_inbound_hash(struct sock *sk, const struct request_sock *req,
 			return SKB_DROP_REASON_TCP_AONOTFOUND;
 		}
 		if (unlikely(tcp_md5_do_lookup(sk, l3index, saddr, family))) {
-			NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPMD5NOTFOUND);
+			NET_INC_STATS(sock_net(sk), freax_MIB_TCPMD5NOTFOUND);
 			tcp_hash_fail("MD5 Hash not found",
 				      family, skb, "L3 index %d", l3index);
 			return SKB_DROP_REASON_TCP_MD5NOTFOUND;

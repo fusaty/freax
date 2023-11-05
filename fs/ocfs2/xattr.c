@@ -5,27 +5,27 @@
  * Copyright (C) 2004, 2008 Oracle.  All rights reserved.
  *
  * CREDITS:
- * Lots of code in this file is copy from linux/fs/ext3/xattr.c.
+ * Lots of code in this file is copy from freax/fs/ext3/xattr.c.
  * Copyright (C) 2001-2003 Andreas Gruenbacher, <agruen@suse.de>
  */
 
-#include <linux/capability.h>
-#include <linux/fs.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/highmem.h>
-#include <linux/pagemap.h>
-#include <linux/uio.h>
-#include <linux/sched.h>
-#include <linux/splice.h>
-#include <linux/mount.h>
-#include <linux/writeback.h>
-#include <linux/falloc.h>
-#include <linux/sort.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/string.h>
-#include <linux/security.h>
+#include <freax/capability.h>
+#include <freax/fs.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/highmem.h>
+#include <freax/pagemap.h>
+#include <freax/uio.h>
+#include <freax/sched.h>
+#include <freax/splice.h>
+#include <freax/mount.h>
+#include <freax/writeback.h>
+#include <freax/falloc.h>
+#include <freax/sort.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/string.h>
+#include <freax/security.h>
 
 #include <cluster/masklog.h>
 

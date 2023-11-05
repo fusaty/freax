@@ -5,10 +5,10 @@
  * is compiled to provide a dso to match the synthesized perf.data file.
  */
 
-#include <linux/compiler.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/perf_event.h>
+#include <freax/compiler.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/perf_event.h>
 #include <internal/lib.h>
 #include <subcmd/exec-cmd.h>
 #include <sys/types.h>

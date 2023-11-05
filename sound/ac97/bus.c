@@ -3,18 +3,18 @@
  * Copyright (C) 2016 Robert Jarzmik <robert.jarzmik@free.fr>
  */
 
-#include <linux/module.h>
-#include <linux/bitops.h>
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/pm_runtime.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <freax/module.h>
+#include <freax/bitops.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/of.h>
+#include <freax/pm.h>
+#include <freax/pm_runtime.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
 #include <sound/ac97/codec.h>
 #include <sound/ac97/controller.h>
 #include <sound/ac97/regs.h>

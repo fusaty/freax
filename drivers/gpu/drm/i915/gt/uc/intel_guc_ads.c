@@ -3,7 +3,7 @@
  * Copyright © 2014-2019 Intel Corporation
  */
 
-#include <linux/bsearch.h>
+#include <freax/bsearch.h>
 
 #include "gem/i915_gem_lmem.h"
 #include "gt/intel_engine_regs.h"

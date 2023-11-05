@@ -3,12 +3,12 @@
  * comedi_usb.c
  * Comedi USB driver specific functions.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1997-2000 David A. Schleef <ds@schleef.org>
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedi_usb.h>
+#include <freax/module.h>
+#include <freax/comedi/comedi_usb.h>
 
 /**
  * comedi_to_usb_interface() - Return USB interface attached to COMEDI device

@@ -5,12 +5,12 @@
  * Copyright (C) 2016 Texas Instruments Incorporated - https://www.ti.com/
  */
 
-#ifndef __LINUX_MFD_LP873X_H
-#define __LINUX_MFD_LP873X_H
+#ifndef __freax_MFD_LP873X_H
+#define __freax_MFD_LP873X_H
 
-#include <linux/i2c.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
+#include <freax/i2c.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
 
 /* LP873x chip id list */
 #define LP873X			0x00
@@ -257,4 +257,4 @@ struct lp873x {
 	u8 rev;
 	struct regmap *regmap;
 };
-#endif /* __LINUX_MFD_LP873X_H */
+#endif /* __freax_MFD_LP873X_H */

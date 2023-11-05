@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include <bpf/bpf.h>
-#include <linux/err.h>
+#include <freax/err.h>
 #include <internal/xyarray.h>
 
 #include "util/debug.h"

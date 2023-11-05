@@ -10,8 +10,8 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-#include <linux/thermal.h>
-#include <linux/minmax.h>
+#include <freax/thermal.h>
+#include <freax/minmax.h>
 #include "thermal_trace.h"
 
 #include "thermal_core.h"

@@ -6,10 +6,10 @@
  *	Inki Dae <inki.dae@samsung.com>
  */
 
-#include <linux/component.h>
-#include <linux/kernel.h>
-#include <linux/platform_device.h>
-#include <linux/timer.h>
+#include <freax/component.h>
+#include <freax/kernel.h>
+#include <freax/platform_device.h>
+#include <freax/timer.h>
 
 #include <drm/drm_atomic_helper.h>
 #include <drm/drm_edid.h>

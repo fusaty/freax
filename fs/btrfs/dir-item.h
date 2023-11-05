@@ -3,7 +3,7 @@
 #ifndef BTRFS_DIR_ITEM_H
 #define BTRFS_DIR_ITEM_H
 
-#include <linux/crc32c.h>
+#include <freax/crc32c.h>
 
 struct fscrypt_str;
 

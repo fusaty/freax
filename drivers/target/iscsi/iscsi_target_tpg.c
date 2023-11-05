@@ -4,11 +4,11 @@
  *
  * (c) Copyright 2007-2013 Datera, Inc.
  *
- * Author: Nicholas A. Bellinger <nab@linux-iscsi.org>
+ * Author: Nicholas A. Bellinger <nab@freax-iscsi.org>
  *
  ******************************************************************************/
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include <target/target_core_base.h>
 #include <target/target_core_fabric.h>
 #include <target/iscsi/iscsi_target_core.h>

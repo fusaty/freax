@@ -10,9 +10,9 @@
 
 #ifdef __KERNEL__
 
-#include <linux/mtd/mtd.h>
-#include <linux/fs.h>
-#include <linux/mount.h>
+#include <freax/mtd/mtd.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
 
 extern int get_tree_mtd(struct fs_context *fc,
 		     int (*fill_super)(struct super_block *sb,

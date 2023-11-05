@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Linux/PA-RISC Project (http://www.parisc-linux.org/)
+ * freax/PA-RISC Project (http://www.parisc-freax.org/)
  *
  * Floating-point emulation code
  *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
@@ -27,7 +27,7 @@
  * END_DESC
 */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include "float.h"
 #include "sgl_float.h"
 #include "dbl_float.h"

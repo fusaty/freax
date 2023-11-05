@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_SSB_PRIVATE_H_
-#define LINUX_SSB_PRIVATE_H_
+#ifndef freax_SSB_PRIVATE_H_
+#define freax_SSB_PRIVATE_H_
 
 #define PFX		"ssb: "
 #define pr_fmt(fmt)	PFX fmt
 
-#include <linux/ssb/ssb.h>
-#include <linux/types.h>
-#include <linux/bcm47xx_wdt.h>
+#include <freax/ssb/ssb.h>
+#include <freax/types.h>
+#include <freax/bcm47xx_wdt.h>
 
 
 /* pci.c */
@@ -263,4 +263,4 @@ static inline int ssb_gpio_unregister(struct ssb_bus *bus)
 }
 #endif /* CONFIG_SSB_DRIVER_GPIO */
 
-#endif /* LINUX_SSB_PRIVATE_H_ */
+#endif /* freax_SSB_PRIVATE_H_ */

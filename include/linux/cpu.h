@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * include/linux/cpu.h - generic cpu definition
+ * include/freax/cpu.h - generic cpu definition
  *
  * This is mainly for topological representation. We define the 
  * basic 'struct cpu' here, which can be embedded in per-arch 
@@ -11,14 +11,14 @@
  * CPUs are exported via sysfs in the devices/system/cpu
  * directory. 
  */
-#ifndef _LINUX_CPU_H_
-#define _LINUX_CPU_H_
+#ifndef _freax_CPU_H_
+#define _freax_CPU_H_
 
-#include <linux/node.h>
-#include <linux/compiler.h>
-#include <linux/cpumask.h>
-#include <linux/cpuhotplug.h>
-#include <linux/cpu_smt.h>
+#include <freax/node.h>
+#include <freax/compiler.h>
+#include <freax/cpumask.h>
+#include <freax/cpuhotplug.h>
+#include <freax/cpu_smt.h>
 
 struct device;
 struct device_node;
@@ -215,4 +215,4 @@ static inline void cpuhp_report_idle_dead(void) { }
 extern bool cpu_mitigations_off(void);
 extern bool cpu_mitigations_auto_nosmt(void);
 
-#endif /* _LINUX_CPU_H_ */
+#endif /* _freax_CPU_H_ */

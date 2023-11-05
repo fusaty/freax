@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/plat-pxa/mfp.c
+ * freax/arch/arm/plat-pxa/mfp.c
  *
  *   Multi-Function Pin Support
  *
@@ -10,12 +10,12 @@
  *             initial version
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/io.h>
 
-#include <linux/soc/pxa/mfp.h>
+#include <freax/soc/pxa/mfp.h>
 
 #define MFPR_SIZE	(PAGE_SIZE)
 

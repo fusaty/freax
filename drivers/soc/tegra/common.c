@@ -5,12 +5,12 @@
 
 #define dev_fmt(fmt)	"tegra-soc: " fmt
 
-#include <linux/clk.h>
-#include <linux/device.h>
-#include <linux/export.h>
-#include <linux/of.h>
-#include <linux/pm_opp.h>
-#include <linux/pm_runtime.h>
+#include <freax/clk.h>
+#include <freax/device.h>
+#include <freax/export.h>
+#include <freax/of.h>
+#include <freax/pm_opp.h>
+#include <freax/pm_runtime.h>
 
 #include <soc/tegra/common.h>
 #include <soc/tegra/fuse.h>

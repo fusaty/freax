@@ -5,14 +5,14 @@
  * Copyright (c) 2013 Scott Feldman <sfeldma@cumulusnetworks.com>
  */
 
-#include <linux/errno.h>
-#include <linux/if.h>
-#include <linux/netdevice.h>
-#include <linux/spinlock.h>
-#include <linux/rcupdate.h>
-#include <linux/ctype.h>
-#include <linux/inet.h>
-#include <linux/sched/signal.h>
+#include <freax/errno.h>
+#include <freax/if.h>
+#include <freax/netdevice.h>
+#include <freax/spinlock.h>
+#include <freax/rcupdate.h>
+#include <freax/ctype.h>
+#include <freax/inet.h>
+#include <freax/sched/signal.h>
 
 #include <net/bonding.h>
 

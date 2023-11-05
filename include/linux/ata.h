@@ -10,12 +10,12 @@
  *  Hardware documentation available from http://www.t13.org/
  */
 
-#ifndef __LINUX_ATA_H__
-#define __LINUX_ATA_H__
+#ifndef __freax_ATA_H__
+#define __freax_ATA_H__
 
-#include <linux/bits.h>
-#include <linux/string.h>
-#include <linux/types.h>
+#include <freax/bits.h>
+#include <freax/string.h>
+#include <freax/types.h>
 
 /* defines only for the constants which don't work well as enums */
 #define ATA_DMA_BOUNDARY	0xffffUL
@@ -1048,4 +1048,4 @@ static inline bool lba_48_ok(u64 block, u32 n_block)
 #define sata_pmp_gscr_rev(gscr)		(((gscr)[SATA_PMP_GSCR_REV] >> 8) & 0xff)
 #define sata_pmp_gscr_ports(gscr)	((gscr)[SATA_PMP_GSCR_PORT_INFO] & 0xf)
 
-#endif /* __LINUX_ATA_H__ */
+#endif /* __freax_ATA_H__ */

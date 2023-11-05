@@ -50,21 +50,21 @@
  * granted us permission to leverage.
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/jiffies.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/skbuff.h>
-#include <linux/jhash.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/reciprocal_div.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/jiffies.h>
+#include <freax/string.h>
+#include <freax/in.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/skbuff.h>
+#include <freax/jhash.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/reciprocal_div.h>
 #include <net/netlink.h>
-#include <linux/if_vlan.h>
+#include <freax/if_vlan.h>
 #include <net/gso.h>
 #include <net/pkt_sched.h>
 #include <net/pkt_cls.h>

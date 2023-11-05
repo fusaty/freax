@@ -10,9 +10,9 @@
  *  Copyright (C) 1996 Dave Redman (djhr@tadpole.co.uk)
  */
 
-#include <linux/slab.h>
-#include <linux/sched/debug.h>
-#include <linux/pgtable.h>
+#include <freax/slab.h>
+#include <freax/sched/debug.h>
+#include <freax/pgtable.h>
 
 #include <asm/timer.h>
 #include <asm/traps.h>
@@ -43,7 +43,7 @@
  * clear the bit to enable the interrupt.
  *
  * Interrupts numbered less than 0x10 are software triggered interrupts
- * and unused by Linux.
+ * and unused by freax.
  *
  * Interrupt level assignment on sun4m:
  *

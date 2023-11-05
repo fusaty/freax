@@ -6,7 +6,7 @@
 #ifndef __INTEL_TC_H__
 #define __INTEL_TC_H__
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct intel_crtc_state;
 struct intel_digital_port;

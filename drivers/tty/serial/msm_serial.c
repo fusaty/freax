@@ -7,27 +7,27 @@
  * Copyright (c) 2011, Code Aurora Forum. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/atomic.h>
-#include <linux/dma/qcom_adm.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/slab.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/of_device.h>
-#include <linux/wait.h>
+#include <freax/kernel.h>
+#include <freax/atomic.h>
+#include <freax/dma/qcom_adm.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/serial_core.h>
+#include <freax/slab.h>
+#include <freax/clk.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/of_device.h>
+#include <freax/wait.h>
 
 #define MSM_UART_MR1			0x0000
 

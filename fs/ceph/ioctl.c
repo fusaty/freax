@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: GPL-2.0
-#include <linux/ceph/ceph_debug.h>
-#include <linux/in.h>
+#include <freax/ceph/ceph_debug.h>
+#include <freax/in.h>
 
 #include "super.h"
 #include "mds_client.h"
 #include "ioctl.h"
-#include <linux/ceph/striper.h>
-#include <linux/fscrypt.h>
+#include <freax/ceph/striper.h>
+#include <freax/fscrypt.h>
 
 /*
  * ioctls

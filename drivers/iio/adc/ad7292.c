@@ -5,14 +5,14 @@
  * Copyright 2019 Analog Devices Inc.
  */
 
-#include <linux/bitfield.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <freax/bitfield.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
 
-#include <linux/iio/iio.h>
+#include <freax/iio/iio.h>
 
 #define ADI_VENDOR_ID 0x0018
 

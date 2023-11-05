@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _XT_IPVS_H
 #define _XT_IPVS_H
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
+#include <freax/types.h>
+#include <freax/netfilter.h>
 
 enum {
 	XT_IPVS_IPVS_PROPERTY =	1 << 0, /* all other options imply this one */

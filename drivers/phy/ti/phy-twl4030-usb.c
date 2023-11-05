@@ -11,23 +11,23 @@
  *	- 3-pin mode support may be added in future.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/workqueue.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/usb/otg.h>
-#include <linux/phy/phy.h>
-#include <linux/pm_runtime.h>
-#include <linux/usb/musb.h>
-#include <linux/usb/ulpi.h>
-#include <linux/mfd/twl.h>
-#include <linux/regulator/consumer.h>
-#include <linux/err.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/workqueue.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/usb/otg.h>
+#include <freax/phy/phy.h>
+#include <freax/pm_runtime.h>
+#include <freax/usb/musb.h>
+#include <freax/usb/ulpi.h>
+#include <freax/mfd/twl.h>
+#include <freax/regulator/consumer.h>
+#include <freax/err.h>
+#include <freax/slab.h>
 
 /* Register defines */
 

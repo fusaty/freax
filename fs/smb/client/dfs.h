@@ -9,7 +9,7 @@
 #include "cifsglob.h"
 #include "fs_context.h"
 #include "cifs_unicode.h"
-#include <linux/namei.h>
+#include <freax/namei.h>
 
 #define DFS_INTERLINK(v) \
 	(((v) & DFSREF_REFERRAL_SERVER) && !((v) & DFSREF_STORAGE_SERVER))

@@ -6,15 +6,15 @@
  * Author: Manivannan Sadhasivam <manivannan.sadhasivam@linaro.org>
  */
 
-#include <linux/bitfield.h>
-#include <linux/delay.h>
-#include <linux/dma-direction.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/mhi_ep.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
+#include <freax/bitfield.h>
+#include <freax/delay.h>
+#include <freax/dma-direction.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/mhi_ep.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
 #include "internal.h"
 
 #define M0_WAIT_DELAY_MS	100

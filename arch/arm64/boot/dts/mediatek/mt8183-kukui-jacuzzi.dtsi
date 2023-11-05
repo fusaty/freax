@@ -65,7 +65,7 @@
 
 		button-volume-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			debounce-interval = <100>;
 
 			gpios = <&pio 6 GPIO_ACTIVE_LOW>;
@@ -73,7 +73,7 @@
 
 		button-volume-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			debounce-interval = <100>;
 
 			gpios = <&pio 5 GPIO_ACTIVE_LOW>;

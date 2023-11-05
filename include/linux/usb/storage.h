@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
-#ifndef __LINUX_USB_STORAGE_H
-#define __LINUX_USB_STORAGE_H
+#ifndef __freax_USB_STORAGE_H
+#define __freax_USB_STORAGE_H
 
 /*
- * linux/usb/storage.h
+ * freax/usb/storage.h
  *
  * Copyright Matthew Wilcox for Intel Corp, 2010
  *

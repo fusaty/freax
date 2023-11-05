@@ -12,14 +12,14 @@
  * Hardware interface for Renoir ACP block
  */
 
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/err.h>
-#include <linux/io.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/err.h>
+#include <freax/io.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 #include <sound/soc-dai.h>
-#include <linux/dma-mapping.h>
+#include <freax/dma-mapping.h>
 
 #include "amd.h"
 #include "acp-mach.h"

@@ -1,13 +1,13 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * xdp_diag: interface for query/monitor XDP sockets
  * Copyright(c) 2019 Intel Corporation.
  */
 
-#ifndef _LINUX_XDP_DIAG_H
-#define _LINUX_XDP_DIAG_H
+#ifndef _freax_XDP_DIAG_H
+#define _freax_XDP_DIAG_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct xdp_diag_req {
 	__u8	sdiag_family;
@@ -80,4 +80,4 @@ struct xdp_diag_stats {
 	__u64	n_tx_ring_empty;
 };
 
-#endif /* _LINUX_XDP_DIAG_H */
+#endif /* _freax_XDP_DIAG_H */

@@ -6,25 +6,25 @@
  * Author(s): Martin Schwidefsky (schwidefsky@de.ibm.com),
  */
 
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/export.h>
-#include <linux/kallsyms.h>
-#include <linux/reboot.h>
-#include <linux/kprobes.h>
-#include <linux/kdebug.h>
-#include <linux/uaccess.h>
-#include <linux/atomic.h>
-#include <linux/io.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
+#include <freax/timer.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/export.h>
+#include <freax/kallsyms.h>
+#include <freax/reboot.h>
+#include <freax/kprobes.h>
+#include <freax/kdebug.h>
+#include <freax/uaccess.h>
+#include <freax/atomic.h>
+#include <freax/io.h>
 #include <asm/dis.h>
 #include <asm/cpcmd.h>
 #include <asm/lowcore.h>

@@ -12,18 +12,18 @@
  * e-mail - mail your message to Paul Stewart <stewart@wetlogic.net>
  */
 
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/sched/signal.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/usb.h>
-#include <linux/hid.h>
-#include <linux/hiddev.h>
-#include <linux/compat.h>
-#include <linux/vmalloc.h>
-#include <linux/nospec.h>
+#include <freax/poll.h>
+#include <freax/slab.h>
+#include <freax/sched/signal.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/usb.h>
+#include <freax/hid.h>
+#include <freax/hiddev.h>
+#include <freax/compat.h>
+#include <freax/vmalloc.h>
+#include <freax/nospec.h>
 #include "usbhid.h"
 
 #ifdef CONFIG_USB_DYNAMIC_MINORS

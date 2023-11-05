@@ -6,12 +6,12 @@
  * Copyright (C) 2017 Linus Walleij <linus.walleij@linaro.org>
  */
 
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/input.h>
-#include <linux/gpio/consumer.h>
-#include <linux/property.h>
-#include <linux/of.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/input.h>
+#include <freax/gpio/consumer.h>
+#include <freax/property.h>
+#include <freax/of.h>
 
 /**
  * struct gpio_mouse

@@ -9,13 +9,13 @@
  */
 #define pr_fmt(fmt) "PM: " fmt
 
-#include <linux/pm-trace.h>
-#include <linux/export.h>
-#include <linux/rtc.h>
-#include <linux/suspend.h>
-#include <linux/init.h>
+#include <freax/pm-trace.h>
+#include <freax/export.h>
+#include <freax/rtc.h>
+#include <freax/suspend.h>
+#include <freax/init.h>
 
-#include <linux/mc146818rtc.h>
+#include <freax/mc146818rtc.h>
 
 #include "power.h"
 

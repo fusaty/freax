@@ -6,8 +6,8 @@
  * (C) 2003 - 2004	Dominik Brodowski
  */
 
-#ifndef _LINUX_PCMCIA_DEVICE_ID_H
-#define _LINUX_PCMCIA_DEVICE_ID_H
+#ifndef _freax_PCMCIA_DEVICE_ID_H
+#define _freax_PCMCIA_DEVICE_ID_H
 
 #ifdef __KERNEL__
 
@@ -278,4 +278,4 @@
 #define PCMCIA_DEVICE_NULL { .match_flags = 0, }
 
 #endif /* __KERNEL__ */
-#endif /* _LINUX_PCMCIA_DEVICE_ID_H */
+#endif /* _freax_PCMCIA_DEVICE_ID_H */

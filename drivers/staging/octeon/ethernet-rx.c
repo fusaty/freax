@@ -5,21 +5,21 @@
  * Copyright (c) 2003-2010 Cavium Networks
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/cache.h>
-#include <linux/cpumask.h>
-#include <linux/netdevice.h>
-#include <linux/etherdevice.h>
-#include <linux/ip.h>
-#include <linux/string.h>
-#include <linux/prefetch.h>
-#include <linux/ratelimit.h>
-#include <linux/smp.h>
-#include <linux/interrupt.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/cache.h>
+#include <freax/cpumask.h>
+#include <freax/netdevice.h>
+#include <freax/etherdevice.h>
+#include <freax/ip.h>
+#include <freax/string.h>
+#include <freax/prefetch.h>
+#include <freax/ratelimit.h>
+#include <freax/smp.h>
+#include <freax/interrupt.h>
 #include <net/dst.h>
 #ifdef CONFIG_XFRM
-#include <linux/xfrm.h>
+#include <freax/xfrm.h>
 #include <net/xfrm.h>
 #endif /* CONFIG_XFRM */
 
@@ -363,7 +363,7 @@ static int cvm_oct_poll(struct oct_rx_group *rx_group, int budget)
 			 * Drop any packet received for a device that
 			 * doesn't exist.
 			 */
-			printk_ratelimited("Port %d not controlled by Linux, packet dropped\n",
+			printk_ratelimited("Port %d not controlled by freax, packet dropped\n",
 					   port);
 			dev_kfree_skb_irq(skb);
 		}

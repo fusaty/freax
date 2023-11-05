@@ -10,18 +10,18 @@
 
 #undef DEBUG
 
-#include <linux/aperture.h>
-#include <linux/fb.h>
-#include <linux/delay.h>
-#include <linux/uaccess.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <freax/aperture.h>
+#include <freax/fb.h>
+#include <freax/delay.h>
+#include <freax/uaccess.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
 
 #include "mb862xxfb.h"
 #include "mb862xx_reg.h"

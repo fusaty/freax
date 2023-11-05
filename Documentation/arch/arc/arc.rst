@@ -1,6 +1,6 @@
 .. SPDX-License-Identifier: GPL-2.0
 
-Linux kernel for ARC processors
+freax kernel for ARC processors
 *******************************
 
 Other sources of information
@@ -35,21 +35,21 @@ Important note on ARC processors configurability
 ################################################
 
 ARC processors are highly configurable and several configurable options
-are supported in Linux. Some options are transparent to software
+are supported in freax. Some options are transparent to software
 (i.e cache geometries, some can be detected at runtime and configured
 and used accordingly, while some need to be explicitly selected or configured
 in the kernel's configuration utility (AKA "make menuconfig").
 
 However not all configurable options are supported when an ARC processor
-is to run Linux. SoC design teams should refer to "Appendix E:
-Configuration for ARC Linux" in the ARC HS Databook for configurability
+is to run freax. SoC design teams should refer to "Appendix E:
+Configuration for ARC freax" in the ARC HS Databook for configurability
 guidelines.
 
 Following these guidelines and selecting valid configuration options
 up front is critical to help prevent any unwanted issues during
 SoC bringup and software development in general.
 
-Building the Linux kernel for ARC processors
+Building the freax kernel for ARC processors
 ############################################
 
 The process of kernel building for ARC processors is the same as for any other
@@ -68,17 +68,17 @@ available from:
 - Synopsys GNU toolchain releases:
   `<https://github.com/foss-for-synopsys-dwc-arc-processors/toolchain/releases>`_
 
-- Linux kernel compilers collection:
+- freax kernel compilers collection:
   `<https://mirrors.edge.kernel.org/pub/tools/crosstool>`_
 
 - Bootlin's toolchain collection: `<https://toolchains.bootlin.com>`_
 
 Once the toolchain is installed in the system, make sure its "bin" folder
 is added in your ``PATH`` environment variable. Then set ``ARCH=arc`` &
-``CROSS_COMPILE=arc-linux`` (or whatever matches installed ARC toolchain prefix)
+``CROSS_COMPILE=arc-freax`` (or whatever matches installed ARC toolchain prefix)
 and then as usual ``make defconfig && make``.
 
-This will produce "vmlinux" file in the root of the kernel source tree
+This will produce "vmfreax" file in the root of the kernel source tree
 usable for loading on the target system via JTAG.
 If you need to get an image usable with U-Boot bootloader,
 type ``make uImage`` and ``uImage`` will be produced in ``arch/arc/boot``

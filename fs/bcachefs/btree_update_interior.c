@@ -22,7 +22,7 @@
 #include "super-io.h"
 #include "trace.h"
 
-#include <linux/random.h>
+#include <freax/random.h>
 
 static int bch2_btree_insert_node(struct btree_update *, struct btree_trans *,
 				  struct btree_path *, struct btree *,

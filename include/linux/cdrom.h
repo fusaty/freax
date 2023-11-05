@@ -1,21 +1,21 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * -- <linux/cdrom.h>
- * General header file for linux CD-ROM drivers 
+ * -- <freax/cdrom.h>
+ * General header file for freax CD-ROM drivers 
  * Copyright (C) 1992         David Giller, rafetmad@oxy.edu
  *               1994, 1995   Eberhard Mönkeberg, emoenke@gwdg.de
  *               1996         David van Leeuwen, david@tm.tno.nl
  *               1997, 1998   Erik Andersen, andersee@debian.org
  *               1998-2002    Jens Axboe, axboe@suse.de
  */
-#ifndef	_LINUX_CDROM_H
-#define	_LINUX_CDROM_H
+#ifndef	_freax_CDROM_H
+#define	_freax_CDROM_H
 
-#include <linux/fs.h>		/* not really needed, later.. */
-#include <linux/list.h>
-#include <linux/blkdev.h>
+#include <freax/fs.h>		/* not really needed, later.. */
+#include <freax/list.h>
+#include <freax/blkdev.h>
 #include <scsi/scsi_common.h>
-#include <uapi/linux/cdrom.h>
+#include <uapi/freax/cdrom.h>
 
 struct packet_command
 {
@@ -319,4 +319,4 @@ static inline int msf_to_lba(u8 m, u8 s, u8 f)
 {
 	return (((m * CD_SECS) + s) * CD_FRAMES + f) - CD_MSF_OFFSET;
 }
-#endif  /* _LINUX_CDROM_H */
+#endif  /* _freax_CDROM_H */

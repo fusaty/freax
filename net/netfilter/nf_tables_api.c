@@ -5,17 +5,17 @@
  * Development of this code funded by Astaro AG (http://www.astaro.com/)
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/list.h>
-#include <linux/skbuff.h>
-#include <linux/netlink.h>
-#include <linux/vmalloc.h>
-#include <linux/rhashtable.h>
-#include <linux/audit.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nfnetlink.h>
-#include <linux/netfilter/nf_tables.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/list.h>
+#include <freax/skbuff.h>
+#include <freax/netlink.h>
+#include <freax/vmalloc.h>
+#include <freax/rhashtable.h>
+#include <freax/audit.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter/nfnetlink.h>
+#include <freax/netfilter/nf_tables.h>
 #include <net/netfilter/nf_flow_table.h>
 #include <net/netfilter/nf_tables_core.h>
 #include <net/netfilter/nf_tables.h>

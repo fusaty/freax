@@ -4,7 +4,7 @@
  * Copyright 2020 Google LLC.
  */
 
-#include "vmlinux.h"
+#include "vmfreax.h"
 #include <errno.h>
 #include <bpf/bpf_helpers.h>
 #include <bpf/bpf_tracing.h>
@@ -64,13 +64,13 @@ static int ima_test_deny(void)
 }
 
 SEC("lsm.s/bprm_committed_creds")
-void BPF_PROG(bprm_committed_creds, struct linux_binprm *bprm)
+void BPF_PROG(bprm_committed_creds, struct freax_binprm *bprm)
 {
 	ima_test_common(bprm->file);
 }
 
 SEC("lsm.s/bprm_creds_for_exec")
-int BPF_PROG(bprm_creds_for_exec, struct linux_binprm *bprm)
+int BPF_PROG(bprm_creds_for_exec, struct freax_binprm *bprm)
 {
 	if (!enable_bprm_creds_for_exec)
 		return 0;

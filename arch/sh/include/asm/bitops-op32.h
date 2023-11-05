@@ -2,7 +2,7 @@
 #ifndef __ASM_SH_BITOPS_OP32_H
 #define __ASM_SH_BITOPS_OP32_H
 
-#include <linux/bits.h>
+#include <freax/bits.h>
 
 /*
  * The bit modifying instructions on SH-2A are only capable of working

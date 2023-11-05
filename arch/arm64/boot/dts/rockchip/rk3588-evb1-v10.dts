@@ -33,25 +33,25 @@
 
 		button-vol-up {
 			label = "Volume Up";
-			linux,code = <KEY_VOLUMEUP>;
+			freax,code = <KEY_VOLUMEUP>;
 			press-threshold-microvolt = <17000>;
 		};
 
 		button-vol-down {
 			label = "Volume Down";
-			linux,code = <KEY_VOLUMEDOWN>;
+			freax,code = <KEY_VOLUMEDOWN>;
 			press-threshold-microvolt = <417000>;
 		};
 
 		button-menu {
 			label = "Menu";
-			linux,code = <KEY_MENU>;
+			freax,code = <KEY_MENU>;
 			press-threshold-microvolt = <890000>;
 		};
 
 		button-escape {
 			label = "Escape";
-			linux,code = <KEY_ESC>;
+			freax,code = <KEY_ESC>;
 			press-threshold-microvolt = <1235000>;
 		};
 	};

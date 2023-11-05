@@ -125,7 +125,7 @@ config RISCV
 	select HAVE_KPROBES if !XIP_KERNEL
 	select HAVE_KPROBES_ON_FTRACE if !XIP_KERNEL
 	select HAVE_KRETPROBES if !XIP_KERNEL
-	# https://github.com/ClangBuiltLinux/linux/issues/1881
+	# https://github.com/ClangBuiltfreax/freax/issues/1881
 	select HAVE_LD_DEAD_CODE_DATA_ELIMINATION if !LD_IS_LLD
 	select HAVE_MOVE_PMD
 	select HAVE_MOVE_PUD
@@ -167,7 +167,7 @@ config CLANG_SUPPORTS_DYNAMIC_FTRACE
 	def_bool CC_IS_CLANG
 	# https://github.com/llvm/llvm-project/commit/6ab8927931851bb42b2c93a00801dc499d7d9b1e
 	depends on CLANG_VERSION >= 130000
-	# https://github.com/ClangBuiltLinux/linux/issues/1817
+	# https://github.com/ClangBuiltfreax/freax/issues/1817
 	depends on AS_IS_GNU || (AS_IS_LLVM && (LD_IS_LLD || LD_VERSION >= 23600))
 
 config GCC_SUPPORTS_DYNAMIC_FTRACE
@@ -441,12 +441,12 @@ config RISCV_ALTERNATIVE_EARLY
 	  Allows early patching of the kernel for special errata
 
 config RISCV_ISA_C
-	bool "Emit compressed instructions when building Linux"
+	bool "Emit compressed instructions when building freax"
 	default y
 	help
 	  Adds "C" to the ISA subsets that the toolchain is allowed to emit
-	  when building Linux, which results in compressed instructions in the
-	  Linux binary.
+	  when building freax, which results in compressed instructions in the
+	  freax binary.
 
 	  If you don't know what to do here, say Y.
 
@@ -653,18 +653,18 @@ config RISCV_BOOT_SPINWAIT
 	depends on SMP
 	default y if RISCV_SBI_V01 || RISCV_M_MODE
 	help
-	  This enables support for booting Linux via spinwait method. In the
-	  spinwait method, all cores randomly jump to Linux. One of the cores
+	  This enables support for booting freax via spinwait method. In the
+	  spinwait method, all cores randomly jump to freax. One of the cores
 	  gets chosen via lottery and all other keep spinning on a percpu
 	  variable. This method cannot support CPU hotplug and sparse hartid
-	  scheme. It should be only enabled for M-mode Linux or platforms relying
+	  scheme. It should be only enabled for M-mode freax or platforms relying
 	  on older firmware without SBI HSM extension. All other platforms should
 	  rely on ordered booting via SBI HSM extension which gets chosen
 	  dynamically at runtime if the firmware supports it.
 
 	  Since spinwait is incompatible with sparse hart IDs, it requires
 	  NR_CPUS be large enough to contain the physical hart ID of the first
-	  hart to enter Linux.
+	  hart to enter freax.
 
 	  If unsure what to do here, say N.
 
@@ -908,7 +908,7 @@ source "kernel/power/Kconfig"
 
 # Hibernation is only possible on systems where the SBI implementation has
 # marked its reserved memory as not accessible from, or does not run
-# from the same memory as, Linux
+# from the same memory as, freax
 config ARCH_HIBERNATION_POSSIBLE
 	def_bool NONPORTABLE
 

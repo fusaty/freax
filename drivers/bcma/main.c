@@ -6,16 +6,16 @@
  */
 
 #include "bcma_private.h"
-#include <linux/module.h>
-#include <linux/mmc/sdio_func.h>
-#include <linux/platform_device.h>
-#include <linux/pci.h>
-#include <linux/bcma/bcma.h>
-#include <linux/slab.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
+#include <freax/module.h>
+#include <freax/mmc/sdio_func.h>
+#include <freax/platform_device.h>
+#include <freax/pci.h>
+#include <freax/bcma/bcma.h>
+#include <freax/slab.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/of_device.h>
+#include <freax/of_platform.h>
 
 MODULE_DESCRIPTION("Broadcom's specific AMBA driver");
 MODULE_LICENSE("GPL");

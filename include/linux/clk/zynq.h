@@ -4,10 +4,10 @@
  * Copyright (C) 2012 National Instruments
  */
 
-#ifndef __LINUX_CLK_ZYNQ_H_
-#define __LINUX_CLK_ZYNQ_H_
+#ifndef __freax_CLK_ZYNQ_H_
+#define __freax_CLK_ZYNQ_H_
 
-#include <linux/spinlock.h>
+#include <freax/spinlock.h>
 
 void zynq_clock_init(void);
 

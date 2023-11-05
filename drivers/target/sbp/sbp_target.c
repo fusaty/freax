@@ -8,16 +8,16 @@
 #define KMSG_COMPONENT "sbp_target"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/configfs.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/configfs.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/firewire.h>
+#include <freax/firewire-constants.h>
 #include <scsi/scsi_proto.h>
 #include <scsi/scsi_tcq.h>
 #include <target/target_core_base.h>

@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  * USB Communications Device Class (CDC) definitions
  *
@@ -7,10 +7,10 @@
  * firmware based USB peripherals.
  */
 
-#ifndef __UAPI_LINUX_USB_CDC_H
-#define __UAPI_LINUX_USB_CDC_H
+#ifndef __UAPI_freax_USB_CDC_H
+#define __UAPI_freax_USB_CDC_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #define USB_CDC_SUBCLASS_ACM			0x02
 #define USB_CDC_SUBCLASS_ETHERNET		0x06
@@ -458,4 +458,4 @@ struct usb_cdc_ncm_ndp_input_size {
 #define USB_CDC_NCM_CRC_NOT_APPENDED			0x00
 #define USB_CDC_NCM_CRC_APPENDED			0x01
 
-#endif /* __UAPI_LINUX_USB_CDC_H */
+#endif /* __UAPI_freax_USB_CDC_H */

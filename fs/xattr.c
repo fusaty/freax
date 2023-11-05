@@ -5,26 +5,26 @@
   Extended attribute handling.
 
   Copyright (C) 2001 by Andreas Gruenbacher <a.gruenbacher@computer.org>
-  Copyright (C) 2001 SGI - Silicon Graphics, Inc <linux-xfs@oss.sgi.com>
+  Copyright (C) 2001 SGI - Silicon Graphics, Inc <freax-xfs@oss.sgi.com>
   Copyright (c) 2004 Red Hat, Inc., James Morris <jmorris@redhat.com>
  */
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/slab.h>
-#include <linux/file.h>
-#include <linux/xattr.h>
-#include <linux/mount.h>
-#include <linux/namei.h>
-#include <linux/security.h>
-#include <linux/evm.h>
-#include <linux/syscalls.h>
-#include <linux/export.h>
-#include <linux/fsnotify.h>
-#include <linux/audit.h>
-#include <linux/vmalloc.h>
-#include <linux/posix_acl_xattr.h>
+#include <freax/fs.h>
+#include <freax/filelock.h>
+#include <freax/slab.h>
+#include <freax/file.h>
+#include <freax/xattr.h>
+#include <freax/mount.h>
+#include <freax/namei.h>
+#include <freax/security.h>
+#include <freax/evm.h>
+#include <freax/syscalls.h>
+#include <freax/export.h>
+#include <freax/fsnotify.h>
+#include <freax/audit.h>
+#include <freax/vmalloc.h>
+#include <freax/posix_acl_xattr.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "internal.h"
 

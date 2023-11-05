@@ -1,12 +1,12 @@
 ====================
-The Linux Kernel API
+The freax Kernel API
 ====================
 
 
 List Management Functions
 =========================
 
-.. kernel-doc:: include/linux/list.h
+.. kernel-doc:: include/freax/list.h
    :internal:
 
 Basic C Library Functions
@@ -24,7 +24,7 @@ String Conversions
 .. kernel-doc:: lib/vsprintf.c
    :export:
 
-.. kernel-doc:: include/linux/kstrtox.h
+.. kernel-doc:: include/freax/kstrtox.h
    :functions: kstrtol kstrtoul
 
 .. kernel-doc:: lib/kstrtox.c
@@ -36,13 +36,13 @@ String Conversions
 String Manipulation
 -------------------
 
-.. kernel-doc:: include/linux/fortify-string.h
+.. kernel-doc:: include/freax/fortify-string.h
    :internal:
 
 .. kernel-doc:: lib/string.c
    :export:
 
-.. kernel-doc:: include/linux/string.h
+.. kernel-doc:: include/freax/string.h
    :internal:
 
 .. kernel-doc:: mm/util.c
@@ -52,7 +52,7 @@ String Manipulation
 Basic Kernel Library Functions
 ==============================
 
-The Linux kernel provides more basic utility functions.
+The freax kernel provides more basic utility functions.
 
 Bit Operations
 --------------
@@ -72,13 +72,13 @@ Bitmap Operations
 .. kernel-doc:: lib/bitmap.c
    :doc: bitmap introduction
 
-.. kernel-doc:: include/linux/bitmap.h
+.. kernel-doc:: include/freax/bitmap.h
    :doc: declare bitmap
 
-.. kernel-doc:: include/linux/bitmap.h
+.. kernel-doc:: include/freax/bitmap.h
    :doc: bitmap overview
 
-.. kernel-doc:: include/linux/bitmap.h
+.. kernel-doc:: include/freax/bitmap.h
    :doc: bitmap bitops
 
 .. kernel-doc:: lib/bitmap.c
@@ -87,7 +87,7 @@ Bitmap Operations
 .. kernel-doc:: lib/bitmap.c
    :internal:
 
-.. kernel-doc:: include/linux/bitmap.h
+.. kernel-doc:: include/freax/bitmap.h
    :internal:
 
 Command-line Parsing
@@ -99,7 +99,7 @@ Command-line Parsing
 Error Pointers
 --------------
 
-.. kernel-doc:: include/linux/err.h
+.. kernel-doc:: include/freax/err.h
    :internal:
 
 Sorting
@@ -120,17 +120,17 @@ Text Searching
 .. kernel-doc:: lib/textsearch.c
    :export:
 
-.. kernel-doc:: include/linux/textsearch.h
+.. kernel-doc:: include/freax/textsearch.h
    :functions: textsearch_find textsearch_next \
                textsearch_get_pattern textsearch_get_pattern_len
 
-CRC and Math Functions in Linux
+CRC and Math Functions in freax
 ===============================
 
 Arithmetic Overflow Checking
 ----------------------------
 
-.. kernel-doc:: include/linux/overflow.h
+.. kernel-doc:: include/freax/overflow.h
    :internal:
 
 CRC Functions
@@ -159,13 +159,13 @@ CRC Functions
 Base 2 log and power Functions
 ------------------------------
 
-.. kernel-doc:: include/linux/log2.h
+.. kernel-doc:: include/freax/log2.h
    :internal:
 
 Integer log and power Functions
 -------------------------------
 
-.. kernel-doc:: include/linux/int_log.h
+.. kernel-doc:: include/freax/int_log.h
 
 .. kernel-doc:: lib/math/int_pow.c
    :export:
@@ -179,7 +179,7 @@ Division Functions
 .. kernel-doc:: include/asm-generic/div64.h
    :functions: do_div
 
-.. kernel-doc:: include/linux/math64.h
+.. kernel-doc:: include/freax/math64.h
    :internal:
 
 .. kernel-doc:: lib/math/gcd.c
@@ -206,7 +206,7 @@ FIFO Buffer
 kfifo interface
 ---------------
 
-.. kernel-doc:: include/linux/kfifo.h
+.. kernel-doc:: include/freax/kfifo.h
    :internal:
 
 relay interface support
@@ -311,7 +311,7 @@ Accounting Framework
 Block Devices
 =============
 
-.. kernel-doc:: include/linux/bio.h
+.. kernel-doc:: include/freax/bio.h
 .. kernel-doc:: block/blk-core.c
    :export:
 
@@ -390,7 +390,7 @@ Some platforms support programmable clock generators. These can be used
 by external chips of various kinds, such as other CPUs, multimedia
 codecs, and devices with strict requirements for interface clocking.
 
-.. kernel-doc:: include/linux/clk.h
+.. kernel-doc:: include/freax/clk.h
    :internal:
 
 Synchronization Primitives
@@ -399,7 +399,7 @@ Synchronization Primitives
 Read-Copy Update (RCU)
 ----------------------
 
-.. kernel-doc:: include/linux/rcupdate.h
+.. kernel-doc:: include/freax/rcupdate.h
 
 .. kernel-doc:: kernel/rcu/tree.c
 
@@ -407,17 +407,17 @@ Read-Copy Update (RCU)
 
 .. kernel-doc:: kernel/rcu/update.c
 
-.. kernel-doc:: include/linux/srcu.h
+.. kernel-doc:: include/freax/srcu.h
 
 .. kernel-doc:: kernel/rcu/srcutree.c
 
-.. kernel-doc:: include/linux/rculist_bl.h
+.. kernel-doc:: include/freax/rculist_bl.h
 
-.. kernel-doc:: include/linux/rculist.h
+.. kernel-doc:: include/freax/rculist.h
 
-.. kernel-doc:: include/linux/rculist_nulls.h
+.. kernel-doc:: include/freax/rculist_nulls.h
 
-.. kernel-doc:: include/linux/rcu_sync.h
+.. kernel-doc:: include/freax/rcu_sync.h
 
 .. kernel-doc:: kernel/rcu/sync.c
 
@@ -425,10 +425,10 @@ Read-Copy Update (RCU)
 
 .. kernel-doc:: kernel/rcu/tree_stall.h
 
-.. kernel-doc:: include/linux/rcupdate_trace.h
+.. kernel-doc:: include/freax/rcupdate_trace.h
 
-.. kernel-doc:: include/linux/rcupdate_wait.h
+.. kernel-doc:: include/freax/rcupdate_wait.h
 
-.. kernel-doc:: include/linux/rcuref.h
+.. kernel-doc:: include/freax/rcuref.h
 
-.. kernel-doc:: include/linux/rcutree.h
+.. kernel-doc:: include/freax/rcutree.h

@@ -37,21 +37,21 @@
 
 		switch-1 {
 			label = "switch1";
-			linux,code = <BTN_0>;
+			freax,code = <BTN_0>;
 			gpios = <&gpio1 5 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
 
 		btn2: switch-2 {
 			label = "switch2";
-			linux,code = <BTN_1>;
+			freax,code = <BTN_1>;
 			gpios = <&gpio2 0 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
 
 		switch-3 {
 			label = "switch3";
-			linux,code = <BTN_2>;
+			freax,code = <BTN_2>;
 			gpios = <&gpio1 7 GPIO_ACTIVE_LOW>;
 			wakeup-source;
 		};
@@ -65,13 +65,13 @@
 		led1 {
 			label = "led1";
 			gpios = <&gpio1 0 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "default-on";
+			freax,default-trigger = "default-on";
 		};
 
 		led2: led2 {
 			label = "led2";
 			gpios = <&gpio3 14 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

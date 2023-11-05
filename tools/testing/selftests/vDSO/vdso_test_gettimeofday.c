@@ -25,13 +25,13 @@
  * a special case.
  */
 #if defined(__aarch64__)
-const char *version = "LINUX_2.6.39";
+const char *version = "freax_2.6.39";
 const char *name = "__kernel_gettimeofday";
 #elif defined(__riscv)
-const char *version = "LINUX_4.15";
+const char *version = "freax_4.15";
 const char *name = "__vdso_gettimeofday";
 #else
-const char *version = "LINUX_2.6";
+const char *version = "freax_2.6";
 const char *name = "__vdso_gettimeofday";
 #endif
 

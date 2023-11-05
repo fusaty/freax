@@ -5,12 +5,12 @@
  * Chen-Yu Tsai <wens@csie.org>
  */
 
-#include <linux/clk.h>
-#include <linux/clk-provider.h>
-#include <linux/io.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/of_address.h>
+#include <freax/clk.h>
+#include <freax/clk-provider.h>
+#include <freax/io.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/of_address.h>
 
 #define SUN8I_MBUS_ENABLE	31
 #define SUN8I_MBUS_MUX_SHIFT	24

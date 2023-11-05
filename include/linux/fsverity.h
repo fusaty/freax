@@ -8,14 +8,14 @@
  * Copyright 2019 Google LLC
  */
 
-#ifndef _LINUX_FSVERITY_H
-#define _LINUX_FSVERITY_H
+#ifndef _freax_FSVERITY_H
+#define _freax_FSVERITY_H
 
-#include <linux/fs.h>
-#include <linux/mm.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
 #include <crypto/hash_info.h>
 #include <crypto/sha2.h>
-#include <uapi/linux/fsverity.h>
+#include <uapi/freax/fsverity.h>
 
 /*
  * Largest digest size among all hash algorithms supported by fs-verity.
@@ -319,4 +319,4 @@ static inline int fsverity_prepare_setattr(struct dentry *dentry,
 	return 0;
 }
 
-#endif	/* _LINUX_FSVERITY_H */
+#endif	/* _freax_FSVERITY_H */

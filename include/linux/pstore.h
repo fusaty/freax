@@ -7,16 +7,16 @@
  * This code is the generic layer to export data records from platform
  * level persistent storage via a file system.
  */
-#ifndef _LINUX_PSTORE_H
-#define _LINUX_PSTORE_H
+#ifndef _freax_PSTORE_H
+#define _freax_PSTORE_H
 
-#include <linux/compiler.h>
-#include <linux/errno.h>
-#include <linux/kmsg_dump.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/time.h>
-#include <linux/types.h>
+#include <freax/compiler.h>
+#include <freax/errno.h>
+#include <freax/kmsg_dump.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/time.h>
+#include <freax/types.h>
 
 struct module;
 
@@ -286,4 +286,4 @@ pstore_ftrace_write_timestamp(struct pstore_ftrace_record *rec, u64 val)
 }
 #endif
 
-#endif /*_LINUX_PSTORE_H*/
+#endif /*_freax_PSTORE_H*/

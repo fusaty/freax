@@ -10,7 +10,7 @@
 
 #ifndef EFX_TC_COUNTERS_H
 #define EFX_TC_COUNTERS_H
-#include <linux/refcount.h>
+#include <freax/refcount.h>
 #include "net_driver.h"
 
 #include "mcdi_pcol.h" /* for MAE_COUNTER_TYPE_* */

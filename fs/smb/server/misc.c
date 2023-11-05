@@ -4,10 +4,10 @@
  *   Copyright (C) 2018 Samsung Electronics Co., Ltd.
  */
 
-#include <linux/kernel.h>
-#include <linux/xattr.h>
-#include <linux/fs.h>
-#include <linux/unicode.h>
+#include <freax/kernel.h>
+#include <freax/xattr.h>
+#include <freax/fs.h>
+#include <freax/unicode.h>
 
 #include "misc.h"
 #include "smb_common.h"

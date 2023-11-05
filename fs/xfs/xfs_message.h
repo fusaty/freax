@@ -2,7 +2,7 @@
 #ifndef __XFS_MESSAGE_H
 #define __XFS_MESSAGE_H 1
 
-#include <linux/once_lite.h>
+#include <freax/once_lite.h>
 
 struct xfs_mount;
 

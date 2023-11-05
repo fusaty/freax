@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
-#ifndef _LINUX_EXPORT_H
-#define _LINUX_EXPORT_H
+#ifndef _freax_EXPORT_H
+#define _freax_EXPORT_H
 
-#include <linux/compiler.h>
-#include <linux/linkage.h>
-#include <linux/stringify.h>
+#include <freax/compiler.h>
+#include <freax/linkage.h>
+#include <freax/stringify.h>
 
 /*
  * Export symbols from the kernel to modules.  Forked from module.h
@@ -88,4 +88,4 @@ extern struct module __this_module;
 #define EXPORT_SYMBOL_NS(sym, ns)	__EXPORT_SYMBOL(sym, "", __stringify(ns))
 #define EXPORT_SYMBOL_NS_GPL(sym, ns)	__EXPORT_SYMBOL(sym, "GPL", __stringify(ns))
 
-#endif /* _LINUX_EXPORT_H */
+#endif /* _freax_EXPORT_H */

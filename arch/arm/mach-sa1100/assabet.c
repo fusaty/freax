@@ -1,32 +1,32 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-sa1100/assabet.c
+ * freax/arch/arm/mach-sa1100/assabet.c
  *
  * Author: Nicolas Pitre
  *
  * This file contains all Assabet-specific tweaks.
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/gpio-reg.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio_keys.h>
-#include <linux/ioport.h>
-#include <linux/platform_data/sa11x0-serial.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/serial_core.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/ucb1x00.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/partitions.h>
-#include <linux/delay.h>
-#include <linux/mm.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/gpio-reg.h>
+#include <freax/gpio/machine.h>
+#include <freax/gpio_keys.h>
+#include <freax/ioport.h>
+#include <freax/platform_data/sa11x0-serial.h>
+#include <freax/regulator/fixed.h>
+#include <freax/regulator/machine.h>
+#include <freax/serial_core.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/ucb1x00.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/partitions.h>
+#include <freax/delay.h>
+#include <freax/mm.h>
+#include <freax/leds.h>
+#include <freax/slab.h>
 
 #include <video/sa1100fb.h>
 
@@ -41,7 +41,7 @@
 #include <asm/mach/flash.h>
 #include <asm/mach/map.h>
 #include <mach/assabet.h>
-#include <linux/platform_data/mfd-mcp-sa11x0.h>
+#include <freax/platform_data/mfd-mcp-sa11x0.h>
 #include <mach/irqs.h>
 
 #include "generic.h"

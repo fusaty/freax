@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0
  *
- * linux/sound/soc-topology.h -- ALSA SoC Firmware Controls and DAPM
+ * freax/sound/soc-topology.h -- ALSA SoC Firmware Controls and DAPM
  *
  * Copyright (C) 2012 Texas Instruments Inc.
  * Copyright (C) 2015 Intel Corporation.
@@ -9,11 +9,11 @@
  * algorithms, equalisers, DAIs, widgets, FE caps, BE caps, codec link caps etc.
  */
 
-#ifndef __LINUX_SND_SOC_TPLG_H
-#define __LINUX_SND_SOC_TPLG_H
+#ifndef __freax_SND_SOC_TPLG_H
+#define __freax_SND_SOC_TPLG_H
 
 #include <sound/asoc.h>
-#include <linux/list.h>
+#include <freax/list.h>
 
 struct firmware;
 struct snd_kcontrol;

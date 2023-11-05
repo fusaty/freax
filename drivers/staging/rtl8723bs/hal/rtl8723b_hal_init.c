@@ -5,8 +5,8 @@
  *
  ******************************************************************************/
 
-#include <linux/firmware.h>
-#include <linux/slab.h>
+#include <freax/firmware.h>
+#include <freax/slab.h>
 #include <drv_types.h>
 #include <rtw_debug.h>
 #include <rtl8723b_hal.h>

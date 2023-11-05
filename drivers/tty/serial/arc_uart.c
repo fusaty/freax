@@ -21,17 +21,17 @@
  *  -check if sysreq works
  */
 
-#include <linux/module.h>
-#include <linux/serial.h>
-#include <linux/console.h>
-#include <linux/sysrq.h>
-#include <linux/platform_device.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/serial_core.h>
-#include <linux/io.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
+#include <freax/module.h>
+#include <freax/serial.h>
+#include <freax/console.h>
+#include <freax/sysrq.h>
+#include <freax/platform_device.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/serial_core.h>
+#include <freax/io.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
 
 /*************************************
  * ARC UART Hardware Specs

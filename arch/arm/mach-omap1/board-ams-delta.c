@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * linux/arch/arm/mach-omap1/board-ams-delta.c
+ * freax/arch/arm/mach-omap1/board-ams-delta.c
  *
  * Modified from board-generic.c
  *
@@ -8,33 +8,33 @@
  *
  * Copyright (C) 2006 Jonathan McDowell <noodles@earth.li>
  */
-#include <linux/gpio/driver.h>
-#include <linux/gpio/machine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/leds.h>
-#include <linux/mtd/nand-gpio.h>
-#include <linux/mtd/partitions.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/consumer.h>
-#include <linux/regulator/fixed.h>
-#include <linux/regulator/machine.h>
-#include <linux/serial_8250.h>
-#include <linux/export.h>
-#include <linux/omapfb.h>
-#include <linux/io.h>
-#include <linux/platform_data/gpio-omap.h>
-#include <linux/soc/ti/omap1-mux.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/machine.h>
+#include <freax/gpio/consumer.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/leds.h>
+#include <freax/mtd/nand-gpio.h>
+#include <freax/mtd/partitions.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/consumer.h>
+#include <freax/regulator/fixed.h>
+#include <freax/regulator/machine.h>
+#include <freax/serial_8250.h>
+#include <freax/export.h>
+#include <freax/omapfb.h>
+#include <freax/io.h>
+#include <freax/platform_data/gpio-omap.h>
+#include <freax/soc/ti/omap1-mux.h>
 
 #include <asm/serial.h>
 #include <asm/mach-types.h>
 #include <asm/mach/arch.h>
 #include <asm/mach/map.h>
 
-#include <linux/platform_data/keypad-omap.h>
+#include <freax/platform_data/keypad-omap.h>
 
 #include "hardware.h"
 #include "usb.h"

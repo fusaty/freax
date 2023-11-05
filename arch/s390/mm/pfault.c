@@ -3,11 +3,11 @@
  * Copyright IBM Corp. 1999, 2023
  */
 
-#include <linux/cpuhotplug.h>
-#include <linux/sched/task.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <freax/cpuhotplug.h>
+#include <freax/sched/task.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/irq.h>
 #include <asm/asm-extable.h>
 #include <asm/pfault.h>
 #include <asm/diag.h>
@@ -93,7 +93,7 @@ static LIST_HEAD(pfault_list);
 #define PF_COMPLETE	0x0080
 
 /*
- * The mechanism of our pfault code: if Linux is running as guest, runs a user
+ * The mechanism of our pfault code: if freax is running as guest, runs a user
  * space process and the user space process accesses a page that the host has
  * paged out we get a pfault interrupt.
  *

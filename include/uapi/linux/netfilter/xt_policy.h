@@ -1,11 +1,11 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef _XT_POLICY_H
 #define _XT_POLICY_H
 
-#include <linux/netfilter.h>
-#include <linux/types.h>
-#include <linux/in.h>
-#include <linux/in6.h>
+#include <freax/netfilter.h>
+#include <freax/types.h>
+#include <freax/in.h>
+#include <freax/in6.h>
 
 #define XT_POLICY_MAX_ELEM	4
 

@@ -6,14 +6,14 @@
 #ifndef __XFS_BUF_H__
 #define __XFS_BUF_H__
 
-#include <linux/list.h>
-#include <linux/types.h>
-#include <linux/spinlock.h>
-#include <linux/mm.h>
-#include <linux/fs.h>
-#include <linux/dax.h>
-#include <linux/uio.h>
-#include <linux/list_lru.h>
+#include <freax/list.h>
+#include <freax/types.h>
+#include <freax/spinlock.h>
+#include <freax/mm.h>
+#include <freax/fs.h>
+#include <freax/dax.h>
+#include <freax/uio.h>
+#include <freax/list_lru.h>
 
 extern struct kmem_cache *xfs_buf_cache;
 

@@ -8,10 +8,10 @@
 #include <sys/types.h>
 #include <signal.h>
 #include <errno.h>
-#include <linux/bitmap.h>
-#include <linux/bitops.h>
-#include <linux/atomic.h>
-#include <linux/sizes.h>
+#include <freax/bitmap.h>
+#include <freax/bitops.h>
+#include <freax/atomic.h>
+#include <freax/sizes.h>
 
 #include "kvm_util.h"
 #include "test_util.h"

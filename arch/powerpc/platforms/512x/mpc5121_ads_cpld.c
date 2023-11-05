@@ -10,12 +10,12 @@
 
 #undef DEBUG
 
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/io.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/io.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
 
 static struct device_node *cpld_pic_node;
 static struct irq_domain *cpld_pic_host;

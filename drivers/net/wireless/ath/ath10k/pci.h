@@ -7,8 +7,8 @@
 #ifndef _PCI_H_
 #define _PCI_H_
 
-#include <linux/interrupt.h>
-#include <linux/mutex.h>
+#include <freax/interrupt.h>
+#include <freax/mutex.h>
 
 #include "hw.h"
 #include "ce.h"

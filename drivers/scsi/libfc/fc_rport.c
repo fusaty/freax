@@ -45,15 +45,15 @@
  * - an rport is removed
  */
 
-#include <linux/kernel.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/slab.h>
-#include <linux/rcupdate.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/export.h>
-#include <linux/rculist.h>
+#include <freax/kernel.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/slab.h>
+#include <freax/rcupdate.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
+#include <freax/export.h>
+#include <freax/rculist.h>
 
 #include <asm/unaligned.h>
 

@@ -28,16 +28,16 @@
  *   if it receives <Vendor Specific Command> [0x03 0x00] from an LG TV.
  */
 
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/workqueue.h>
-#include <linux/serio.h>
-#include <linux/slab.h>
-#include <linux/time.h>
-#include <linux/delay.h>
+#include <freax/completion.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/workqueue.h>
+#include <freax/serio.h>
+#include <freax/slab.h>
+#include <freax/time.h>
+#include <freax/delay.h>
 
 #include <media/cec.h>
 

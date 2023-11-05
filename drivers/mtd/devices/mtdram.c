@@ -9,14 +9,14 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/ioport.h>
-#include <linux/vmalloc.h>
-#include <linux/mm.h>
-#include <linux/init.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/mtdram.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/ioport.h>
+#include <freax/vmalloc.h>
+#include <freax/mm.h>
+#include <freax/init.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/mtdram.h>
 
 static unsigned long total_size = CONFIG_MTDRAM_TOTAL_SIZE;
 static unsigned long erase_size = CONFIG_MTDRAM_ERASE_SIZE;

@@ -6,9 +6,9 @@
  * Copyright © 2022-2023 Microsoft Corporation
  */
 
-#include <linux/in.h>
-#include <linux/net.h>
-#include <linux/socket.h>
+#include <freax/in.h>
+#include <freax/net.h>
+#include <freax/socket.h>
 #include <net/ipv6.h>
 
 #include "common.h"

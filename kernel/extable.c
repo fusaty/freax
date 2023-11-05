@@ -3,18 +3,18 @@
    Copyright (C) 2001 Rusty Russell, 2002 Rusty Russell IBM.
 
 */
-#include <linux/elf.h>
-#include <linux/ftrace.h>
-#include <linux/memory.h>
-#include <linux/extable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/init.h>
-#include <linux/kprobes.h>
-#include <linux/filter.h>
+#include <freax/elf.h>
+#include <freax/ftrace.h>
+#include <freax/memory.h>
+#include <freax/extable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/init.h>
+#include <freax/kprobes.h>
+#include <freax/filter.h>
 
 #include <asm/sections.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /*
  * mutex protecting text section modification (dynamic code patching).

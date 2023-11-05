@@ -14,21 +14,21 @@
  */
 
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/input.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/platform_device.h>
-#include <linux/io.h>
-#include <linux/delay.h>
-#include <linux/of.h>
-#include <linux/sort.h>
-#include <linux/pm_wakeirq.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/input.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/clk.h>
+#include <freax/platform_device.h>
+#include <freax/io.h>
+#include <freax/delay.h>
+#include <freax/of.h>
+#include <freax/sort.h>
+#include <freax/pm_wakeirq.h>
 
-#include <linux/mfd/ti_am335x_tscadc.h>
+#include <freax/mfd/ti_am335x_tscadc.h>
 
 #define ADCFSM_STEPID		0x10
 #define SEQ_SETTLE		275

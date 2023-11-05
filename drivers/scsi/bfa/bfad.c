@@ -5,21 +5,21 @@
  * All rights reserved
  * www.qlogic.com
  *
- * Linux driver for QLogic BR-series Fibre Channel Host Bus Adapter.
+ * freax driver for QLogic BR-series Fibre Channel Host Bus Adapter.
  */
 
 /*
- *  bfad.c Linux driver PCI interface module.
+ *  bfad.c freax driver PCI interface module.
  */
-#include <linux/module.h>
-#include <linux/kthread.h>
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/kthread.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/pci.h>
+#include <freax/firmware.h>
+#include <freax/uaccess.h>
 #include <asm/fcntl.h>
 
 #include "bfad_drv.h"

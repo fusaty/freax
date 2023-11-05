@@ -3,7 +3,7 @@
  * Copyright (C) 2018 Google, Inc.
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 #include <asm/assembler.h>
 
 /*
@@ -51,7 +51,7 @@
 .endm
 
 .macro __ldrd		a, b, src, offset
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	ldrd		\a, \b, [\src, #\offset]
 #else
 	ldr		\a, [\src, #\offset]
@@ -60,7 +60,7 @@
 .endm
 
 .macro __strd		a, b, dst, offset
-#if __LINUX_ARM_ARCH__ >= 6
+#if __freax_ARM_ARCH__ >= 6
 	strd		\a, \b, [\dst, #\offset]
 #else
 	str		\a, [\dst, #\offset]
@@ -328,7 +328,7 @@
 	movgt		r1, #64
 	// r1 is number of bytes to XOR, in range [1, 64]
 
-.if __LINUX_ARM_ARCH__ < 6
+.if __freax_ARM_ARCH__ < 6
 	orr		r2, r12, r14
 	tst		r2, #3			// IN or OUT misaligned?
 	bne		.Lxor_next_byte\@

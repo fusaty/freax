@@ -4,11 +4,11 @@
  * All rights reserved.
  */
 
-#include <linux/irq.h>
-#include <linux/kthread.h>
-#include <linux/firmware.h>
-#include <linux/netdevice.h>
-#include <linux/inetdevice.h>
+#include <freax/irq.h>
+#include <freax/kthread.h>
+#include <freax/firmware.h>
+#include <freax/netdevice.h>
+#include <freax/inetdevice.h>
 
 #include "cfg80211.h"
 #include "wlan_cfg.h"

@@ -4,10 +4,10 @@
  * Copyright (c) 2018 Lightbits Labs. All rights reserved.
  */
 
-#ifndef _LINUX_NVME_TCP_H
-#define _LINUX_NVME_TCP_H
+#ifndef _freax_NVME_TCP_H
+#define _freax_NVME_TCP_H
 
-#include <linux/nvme.h>
+#include <freax/nvme.h>
 
 #define NVME_TCP_DISC_PORT	8009
 #define NVME_TCP_ADMIN_CCSZ	SZ_8K
@@ -194,4 +194,4 @@ union nvme_tcp_pdu {
 	struct nvme_tcp_data_pdu	data;
 };
 
-#endif /* _LINUX_NVME_TCP_H */
+#endif /* _freax_NVME_TCP_H */

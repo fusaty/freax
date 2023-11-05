@@ -5,13 +5,13 @@
  * Copyright 2016 Noralf Trønnes
  */
 
-#include <linux/backlight.h>
-#include <linux/debugfs.h>
-#include <linux/delay.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/regulator/consumer.h>
-#include <linux/spi/spi.h>
+#include <freax/backlight.h>
+#include <freax/debugfs.h>
+#include <freax/delay.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/regulator/consumer.h>
+#include <freax/spi/spi.h>
 
 #include <drm/drm_connector.h>
 #include <drm/drm_damage_helper.h>

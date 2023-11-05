@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_BUG_H
-#define _LINUX_BUG_H
+#ifndef _freax_BUG_H
+#define _freax_BUG_H
 
 #include <asm/bug.h>
 
@@ -8,4 +8,4 @@
 
 #define BUG() abort()
 
-#endif /* _LINUX_BUG_H */
+#endif /* _freax_BUG_H */

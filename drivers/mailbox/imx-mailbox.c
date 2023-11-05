@@ -4,21 +4,21 @@
  * Copyright 2022 NXP, Peng Fan <peng.fan@nxp.com>
  */
 
-#include <linux/clk.h>
-#include <linux/firmware/imx/ipc.h>
-#include <linux/firmware/imx/s4.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/iopoll.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/mailbox_controller.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/suspend.h>
-#include <linux/slab.h>
+#include <freax/clk.h>
+#include <freax/firmware/imx/ipc.h>
+#include <freax/firmware/imx/s4.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/iopoll.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/mailbox_controller.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/suspend.h>
+#include <freax/slab.h>
 
 #define IMX_MU_CHANS		17
 /* TX0/RX0/RXDB[0-3] */

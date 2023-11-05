@@ -7,8 +7,8 @@
 #ifndef __MSM_GEM_H__
 #define __MSM_GEM_H__
 
-#include <linux/kref.h>
-#include <linux/dma-resv.h>
+#include <freax/kref.h>
+#include <freax/dma-resv.h>
 #include "drm/gpu_scheduler.h"
 #include "msm_drv.h"
 

@@ -7,17 +7,17 @@
  *
  */
 
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/clk.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/pwm.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/clk.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/pwm.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 /* PWM registers and bits definitions */
 #define PWMCON			0x00
@@ -42,7 +42,7 @@ struct pwm_mediatek_of_data {
 
 /**
  * struct pwm_mediatek_chip - struct representing PWM chip
- * @chip: linux PWM chip representation
+ * @chip: freax PWM chip representation
  * @regs: base address of PWM chip
  * @clk_top: the top clock generator
  * @clk_main: the clock used by PWM core

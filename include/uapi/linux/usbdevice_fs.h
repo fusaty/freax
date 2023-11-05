@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0+ WITH freax-syscall-note */
 /*****************************************************************************/
 
 /*
@@ -27,11 +27,11 @@
 
 /*****************************************************************************/
 
-#ifndef _UAPI_LINUX_USBDEVICE_FS_H
-#define _UAPI_LINUX_USBDEVICE_FS_H
+#ifndef _UAPI_freax_USBDEVICE_FS_H
+#define _UAPI_freax_USBDEVICE_FS_H
 
-#include <linux/types.h>
-#include <linux/magic.h>
+#include <freax/types.h>
+#include <freax/magic.h>
 
 /* --------------------------------------------------------------------- */
 
@@ -181,7 +181,7 @@ struct usbdevfs_streams {
 
 /*
  * USB_SPEED_* values returned by USBDEVFS_GET_SPEED are defined in
- * linux/usb/ch9.h
+ * freax/usb/ch9.h
  */
 
 #define USBDEVFS_CONTROL           _IOWR('U', 0, struct usbdevfs_ctrltransfer)
@@ -228,4 +228,4 @@ struct usbdevfs_streams {
 #define USBDEVFS_ALLOW_SUSPEND     _IO('U', 34)
 #define USBDEVFS_WAIT_FOR_RESUME   _IO('U', 35)
 
-#endif /* _UAPI_LINUX_USBDEVICE_FS_H */
+#endif /* _UAPI_freax_USBDEVICE_FS_H */

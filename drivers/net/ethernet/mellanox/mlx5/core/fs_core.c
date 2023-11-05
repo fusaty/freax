@@ -30,10 +30,10 @@
  * SOFTWARE.
  */
 
-#include <linux/mutex.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/eswitch.h>
+#include <freax/mutex.h>
+#include <freax/mlx5/driver.h>
+#include <freax/mlx5/vport.h>
+#include <freax/mlx5/eswitch.h>
 #include <net/devlink.h>
 
 #include "mlx5_core.h"

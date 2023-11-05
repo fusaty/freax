@@ -3,13 +3,13 @@
  *
  * Copyright (c) 2017 Jesper Dangaard Brouer, Red Hat Inc.
  */
-#ifndef __LINUX_NET_XDP_H__
-#define __LINUX_NET_XDP_H__
+#ifndef __freax_NET_XDP_H__
+#define __freax_NET_XDP_H__
 
-#include <linux/bitfield.h>
-#include <linux/filter.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h> /* skb_shared_info */
+#include <freax/bitfield.h>
+#include <freax/filter.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h> /* skb_shared_info */
 
 /**
  * DOC: XDP RX-queue information
@@ -506,4 +506,4 @@ static __always_inline u32 bpf_prog_run_xdp(const struct bpf_prog *prog,
 
 	return act;
 }
-#endif /* __LINUX_NET_XDP_H__ */
+#endif /* __freax_NET_XDP_H__ */

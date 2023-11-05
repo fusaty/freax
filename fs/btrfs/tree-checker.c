@@ -15,9 +15,9 @@
  * carefully reviewed otherwise so it does not prevent mount of valid images.
  */
 
-#include <linux/types.h>
-#include <linux/stddef.h>
-#include <linux/error-injection.h>
+#include <freax/types.h>
+#include <freax/stddef.h>
+#include <freax/error-injection.h>
 #include "messages.h"
 #include "ctree.h"
 #include "tree-checker.h"

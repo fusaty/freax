@@ -10,16 +10,16 @@
  * storage device to each channel for storing ECC data.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/irq_work.h>
-#include <linux/llist.h>
-#include <linux/genalloc.h>
-#include <linux/edac.h>
-#include <linux/bits.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/irq_work.h>
+#include <freax/llist.h>
+#include <freax/genalloc.h>
+#include <freax/edac.h>
+#include <freax/bits.h>
+#include <freax/io.h>
 #include <asm/mach_traps.h>
 #include <asm/nmi.h>
 #include <asm/mce.h>

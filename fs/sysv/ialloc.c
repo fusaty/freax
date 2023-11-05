@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/sysv/ialloc.c
+ *  freax/fs/sysv/ialloc.c
  *
  *  minix/bitmap.c
  *  Copyright (C) 1991, 1992  Linus Torvalds
@@ -20,13 +20,13 @@
  *  This file contains code for allocating/freeing inodes.
  */
 
-#include <linux/kernel.h>
-#include <linux/stddef.h>
-#include <linux/sched.h>
-#include <linux/stat.h>
-#include <linux/string.h>
-#include <linux/buffer_head.h>
-#include <linux/writeback.h>
+#include <freax/kernel.h>
+#include <freax/stddef.h>
+#include <freax/sched.h>
+#include <freax/stat.h>
+#include <freax/string.h>
+#include <freax/buffer_head.h>
+#include <freax/writeback.h>
 #include "sysv.h"
 
 /* We don't trust the value of

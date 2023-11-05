@@ -8,12 +8,12 @@
 
 #define pr_fmt(fmt) "CCACHE: " fmt
 
-#include <linux/debugfs.h>
-#include <linux/interrupt.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/device.h>
-#include <linux/bitfield.h>
+#include <freax/debugfs.h>
+#include <freax/interrupt.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
+#include <freax/device.h>
+#include <freax/bitfield.h>
 #include <asm/cacheinfo.h>
 #include <soc/sifive/sifive_ccache.h>
 

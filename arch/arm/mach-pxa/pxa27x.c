@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/arch/arm/mach-pxa/pxa27x.c
+ *  freax/arch/arm/mach-pxa/pxa27x.c
  *
  *  Author:	Nicolas Pitre
  *  Created:	Nov 05, 2002
@@ -8,23 +8,23 @@
  *
  * Code specific to PXA27x aka Bulverde.
  */
-#include <linux/dmaengine.h>
-#include <linux/dma/pxa-dma.h>
-#include <linux/gpio.h>
-#include <linux/gpio-pxa.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/irqchip.h>
-#include <linux/suspend.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
-#include <linux/io.h>
-#include <linux/irq.h>
-#include <linux/platform_data/i2c-pxa.h>
-#include <linux/platform_data/mmp_dma.h>
-#include <linux/soc/pxa/cpu.h>
-#include <linux/soc/pxa/smemc.h>
+#include <freax/dmaengine.h>
+#include <freax/dma/pxa-dma.h>
+#include <freax/gpio.h>
+#include <freax/gpio-pxa.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/irqchip.h>
+#include <freax/suspend.h>
+#include <freax/platform_device.h>
+#include <freax/syscore_ops.h>
+#include <freax/io.h>
+#include <freax/irq.h>
+#include <freax/platform_data/i2c-pxa.h>
+#include <freax/platform_data/mmp_dma.h>
+#include <freax/soc/pxa/cpu.h>
+#include <freax/soc/pxa/smemc.h>
 
 #include <asm/mach/map.h>
 #include <asm/irq.h>
@@ -32,17 +32,17 @@
 #include "irqs.h"
 #include "pxa27x.h"
 #include "reset.h"
-#include <linux/platform_data/pxa2xx_udc.h>
-#include <linux/platform_data/usb-ohci-pxa27x.h>
-#include <linux/platform_data/asoc-pxa.h>
+#include <freax/platform_data/pxa2xx_udc.h>
+#include <freax/platform_data/usb-ohci-pxa27x.h>
+#include <freax/platform_data/asoc-pxa.h>
 #include "pm.h"
 #include "addr-map.h"
 #include "smemc.h"
 
 #include "generic.h"
 #include "devices.h"
-#include <linux/clk-provider.h>
-#include <linux/clkdev.h>
+#include <freax/clk-provider.h>
+#include <freax/clkdev.h>
 
 void pxa27x_clear_otgph(void)
 {

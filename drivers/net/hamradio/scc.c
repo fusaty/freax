@@ -12,7 +12,7 @@
 
 /*
    ********************************************************************
-   *   SCC.C - Linux driver for Z8530 based HDLC cards for AX.25      *
+   *   SCC.C - freax driver for Z8530 based HDLC cards for AX.25      *
    ********************************************************************
 
 
@@ -43,7 +43,7 @@
 
    This program is free software; you can redistribute it and/or modify 
    it under the terms of the (modified) GNU General Public License 
-   delivered with the Linux kernel source.
+   delivered with the freax kernel source.
    
    This program is distributed in the hope that it will be useful,
    but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -51,7 +51,7 @@
    GNU General Public License for more details.
 
    You should find a copy of the GNU General Public License in 
-   /usr/src/linux/COPYING; 
+   /usr/src/freax/COPYING; 
    
    ******************************************************************** 
 
@@ -87,7 +87,7 @@
    		  The move to version number 3.0 reflects theses changes.
    		  You can use 'kissbridge' if you need a KISS TNC emulator.
 
-   1996-12-13	Fixed for Linux networking changes. (G4KLX)
+   1996-12-13	Fixed for freax networking changes. (G4KLX)
    1997-01-08	Fixed the remaining problems.
    1997-04-02	Hopefully fixed the problems with the new *_timer()
    		routines, added calibration code.
@@ -115,15 +115,15 @@
    	 the version number. Just replace my callsign in
    	 "v3.0.dl1bke" with your own. Just to avoid confusion...
 
-   If you want to add your modification to the linux distribution
+   If you want to add your modification to the freax distribution
    please (!) contact me first.
    
-   New versions of the driver will be announced on the linux-hams
+   New versions of the driver will be announced on the freax-hams
    mailing list on vger.kernel.org. To subscribe send an e-mail
    to majordomo@vger.kernel.org with the following line in
    the body of the mail:
    
-	   subscribe linux-hams
+	   subscribe freax-hams
 	   
    The content of the "Subject" field will be ignored.
 
@@ -148,38 +148,38 @@
 
 /* ----------------------------------------------------------------------- */
 
-#include <linux/compat.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/signal.h>
-#include <linux/timer.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/string.h>
-#include <linux/in.h>
-#include <linux/fcntl.h>
-#include <linux/ptrace.h>
-#include <linux/delay.h>
-#include <linux/skbuff.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/if_ether.h>
-#include <linux/if_arp.h>
-#include <linux/socket.h>
-#include <linux/init.h>
-#include <linux/scc.h>
-#include <linux/ctype.h>
-#include <linux/kernel.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/bitops.h>
+#include <freax/compat.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/signal.h>
+#include <freax/timer.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/string.h>
+#include <freax/in.h>
+#include <freax/fcntl.h>
+#include <freax/ptrace.h>
+#include <freax/delay.h>
+#include <freax/skbuff.h>
+#include <freax/netdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/if_ether.h>
+#include <freax/if_arp.h>
+#include <freax/socket.h>
+#include <freax/init.h>
+#include <freax/scc.h>
+#include <freax/ctype.h>
+#include <freax/kernel.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/bitops.h>
 
 #include <net/net_namespace.h>
 #include <net/ax25.h>
 
 #include <asm/irq.h>
 #include <asm/io.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "z8530.h"
 

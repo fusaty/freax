@@ -2,12 +2,12 @@
 /*
  * The proc filesystem constants/structures
  */
-#ifndef _LINUX_PROC_FS_H
-#define _LINUX_PROC_FS_H
+#ifndef _freax_PROC_FS_H
+#define _freax_PROC_FS_H
 
-#include <linux/compiler.h>
-#include <linux/types.h>
-#include <linux/fs.h>
+#include <freax/compiler.h>
+#include <freax/types.h>
+#include <freax/fs.h>
 
 struct proc_dir_entry;
 struct seq_file;
@@ -243,4 +243,4 @@ static inline struct pid_namespace *proc_pid_ns(struct super_block *sb)
 
 bool proc_ns_file(const struct file *file);
 
-#endif /* _LINUX_PROC_FS_H */
+#endif /* _freax_PROC_FS_H */

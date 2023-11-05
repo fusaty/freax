@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmfreax.lds.h>
 
 #ifdef CONFIG_PPC64_BOOT_WRAPPER
 OUTPUT_ARCH(powerpc:common64)
@@ -61,11 +61,11 @@ SECTIONS
   }
 
   . = ALIGN(4096);
-  .kernel:vmlinux.strip :
+  .kernel:vmfreax.strip :
   {
-    _vmlinux_start =  .;
-    *(.kernel:vmlinux.strip)
-    _vmlinux_end =  .;
+    _vmfreax_start =  .;
+    *(.kernel:vmfreax.strip)
+    _vmfreax_end =  .;
   }
 
   . = ALIGN(4096);

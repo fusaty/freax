@@ -1,13 +1,13 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_RCUPDATE_WAIT_H
-#define _LINUX_SCHED_RCUPDATE_WAIT_H
+#ifndef _freax_SCHED_RCUPDATE_WAIT_H
+#define _freax_SCHED_RCUPDATE_WAIT_H
 
 /*
  * RCU synchronization types and methods:
  */
 
-#include <linux/rcupdate.h>
-#include <linux/completion.h>
+#include <freax/rcupdate.h>
+#include <freax/completion.h>
 
 /*
  * Structure allowing asynchronous waiting on RCU.
@@ -55,4 +55,4 @@ do {									\
 #define synchronize_rcu_mult(...) \
 	_wait_rcu_gp(IS_ENABLED(CONFIG_TINY_RCU), __VA_ARGS__)
 
-#endif /* _LINUX_SCHED_RCUPDATE_WAIT_H */
+#endif /* _freax_SCHED_RCUPDATE_WAIT_H */

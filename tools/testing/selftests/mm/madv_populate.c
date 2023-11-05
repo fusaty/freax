@@ -14,7 +14,7 @@
 #include <unistd.h>
 #include <errno.h>
 #include <fcntl.h>
-#include <linux/mman.h>
+#include <freax/mman.h>
 #include <sys/mman.h>
 
 #include "../kselftest.h"

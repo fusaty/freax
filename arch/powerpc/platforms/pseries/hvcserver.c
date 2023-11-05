@@ -6,11 +6,11 @@
  * PPC64 virtual I/O console server support.
  */
 
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 #include <asm/hvcall.h>
 #include <asm/hvcserver.h>

@@ -3,25 +3,25 @@
  * Copyright (c) 2022 Pablo Neira Ayuso <pablo@netfilter.org>
  */
 
-#include <linux/kernel.h>
-#include <linux/if_vlan.h>
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/netlink.h>
-#include <linux/netfilter.h>
-#include <linux/netfilter/nf_tables.h>
+#include <freax/kernel.h>
+#include <freax/if_vlan.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/netlink.h>
+#include <freax/netfilter.h>
+#include <freax/netfilter/nf_tables.h>
 #include <net/netfilter/nf_tables_core.h>
 #include <net/netfilter/nf_tables.h>
 #include <net/netfilter/nft_meta.h>
 #include <net/netfilter/nf_tables_offload.h>
-#include <linux/tcp.h>
-#include <linux/udp.h>
+#include <freax/tcp.h>
+#include <freax/udp.h>
 #include <net/gre.h>
 #include <net/geneve.h>
 #include <net/ip.h>
-#include <linux/icmpv6.h>
-#include <linux/ip.h>
-#include <linux/ipv6.h>
+#include <freax/icmpv6.h>
+#include <freax/ip.h>
+#include <freax/ipv6.h>
 
 static DEFINE_PER_CPU(struct nft_inner_tun_ctx, nft_pcpu_tun_ctx);
 

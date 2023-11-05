@@ -3,12 +3,12 @@
 //
 // Copyright (C) 2015 Google, Inc
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/slab.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/module.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
 
 #include "cros_ec_trace.h"
@@ -591,7 +591,7 @@ EXPORT_SYMBOL(cros_ec_query_all);
  *
  * Call this to send a command to the ChromeOS EC. This should be used instead
  * of calling the EC's cmd_xfer() callback directly. This function does not
- * convert EC command execution error codes to Linux error codes. Most
+ * convert EC command execution error codes to freax error codes. Most
  * in-kernel users will want to use cros_ec_cmd_xfer_status() instead since
  * that function implements the conversion.
  *
@@ -602,7 +602,7 @@ EXPORT_SYMBOL(cros_ec_query_all);
  *      reported in msg->result. The result will be EC_RES_SUCCESS if the
  *      command was executed successfully or report an EC command execution
  *      error.
- * <0 - EC communication error. Return value is the Linux error code.
+ * <0 - EC communication error. Return value is the freax error code.
  */
 int cros_ec_cmd_xfer(struct cros_ec_device *ec_dev, struct cros_ec_command *msg)
 {
@@ -662,7 +662,7 @@ EXPORT_SYMBOL(cros_ec_cmd_xfer);
  *
  * Return:
  * >=0 - The number of bytes transferred.
- * <0 - Linux error code
+ * <0 - freax error code
  */
 int cros_ec_cmd_xfer_status(struct cros_ec_device *ec_dev,
 			    struct cros_ec_command *msg)

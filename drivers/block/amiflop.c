@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  linux/amiga/amiflop.c
+ *  freax/amiga/amiflop.c
  *
  *  Copyright (C) 1993  Greg Harp
  *  Portions of this driver are based on code contributed by Brad Pepers
@@ -54,22 +54,22 @@
  * - fixed some race conditions (who finds the next may send it to me ;-)
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 
-#include <linux/fd.h>
-#include <linux/hdreg.h>
-#include <linux/delay.h>
-#include <linux/init.h>
-#include <linux/major.h>
-#include <linux/mutex.h>
-#include <linux/fs.h>
-#include <linux/blk-mq.h>
-#include <linux/interrupt.h>
-#include <linux/platform_device.h>
+#include <freax/fd.h>
+#include <freax/hdreg.h>
+#include <freax/delay.h>
+#include <freax/init.h>
+#include <freax/major.h>
+#include <freax/mutex.h>
+#include <freax/fs.h>
+#include <freax/blk-mq.h>
+#include <freax/interrupt.h>
+#include <freax/platform_device.h>
 
 #include <asm/setup.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/amigahw.h>
 #include <asm/amigaints.h>
 #include <asm/irq.h>

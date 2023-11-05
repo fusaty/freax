@@ -30,14 +30,14 @@
  * SOFTWARE.
  *
  */
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 #include <net/sock.h>
-#include <linux/in.h>
-#include <linux/export.h>
-#include <linux/sched/clock.h>
-#include <linux/time.h>
-#include <linux/rds.h>
+#include <freax/in.h>
+#include <freax/export.h>
+#include <freax/sched/clock.h>
+#include <freax/time.h>
+#include <freax/rds.h>
 
 #include "rds.h"
 

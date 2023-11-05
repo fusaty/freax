@@ -3,7 +3,7 @@
  * Copyright © 2021-2022 Intel Corporation
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 #include <drm/drm_print.h>
 

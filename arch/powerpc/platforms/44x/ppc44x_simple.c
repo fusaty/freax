@@ -17,8 +17,8 @@
 #include <asm/udbg.h>
 #include <asm/uic.h>
 
-#include <linux/init.h>
-#include <linux/of_platform.h>
+#include <freax/init.h>
+#include <freax/of_platform.h>
 
 static const struct of_device_id ppc44x_of_bus[] __initconst = {
 	{ .compatible = "ibm,plb4", },

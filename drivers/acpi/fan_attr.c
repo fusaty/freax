@@ -7,10 +7,10 @@
  *  Copyright (C) 2022 Intel Corporation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/acpi.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/acpi.h>
 
 #include "fan.h"
 

@@ -13,22 +13,22 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/cdev.h>
-#include <linux/poll.h>
-#include <linux/device.h>
-#include <linux/major.h>
-#include <linux/slab.h>
-#include <linux/hid.h>
-#include <linux/mutex.h>
-#include <linux/sched/signal.h>
-#include <linux/string.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/cdev.h>
+#include <freax/poll.h>
+#include <freax/device.h>
+#include <freax/major.h>
+#include <freax/slab.h>
+#include <freax/hid.h>
+#include <freax/mutex.h>
+#include <freax/sched/signal.h>
+#include <freax/string.h>
 
-#include <linux/hidraw.h>
+#include <freax/hidraw.h>
 
 static int hidraw_major;
 static struct cdev hidraw_cdev;

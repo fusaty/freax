@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/fs/ocfs2/ioctl.c
+ * freax/fs/ocfs2/ioctl.c
  *
  * Copyright (C) 2006 Herbert Poetzl
  * adapted from Remy Card's ext2/ioctl.c
  */
 
-#include <linux/fs.h>
-#include <linux/mount.h>
-#include <linux/blkdev.h>
-#include <linux/compat.h>
-#include <linux/fileattr.h>
+#include <freax/fs.h>
+#include <freax/mount.h>
+#include <freax/blkdev.h>
+#include <freax/compat.h>
+#include <freax/fileattr.h>
 
 #include <cluster/masklog.h>
 
@@ -113,7 +113,7 @@ int ocfs2_fileattr_set(struct mnt_idmap *idmap,
 	/* Check already done by VFS, but repeat with ocfs lock */
 	status = -EPERM;
 	if ((flags ^ oldflags) & (FS_APPEND_FL | FS_IMMUTABLE_FL) &&
-	    !capable(CAP_LINUX_IMMUTABLE))
+	    !capable(CAP_freax_IMMUTABLE))
 		goto bail_unlock;
 
 	handle = ocfs2_start_trans(osb, OCFS2_INODE_UPDATE_CREDITS);

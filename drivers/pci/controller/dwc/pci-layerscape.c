@@ -8,19 +8,19 @@
  * Author: Minghuan Lian <Minghuan.Lian@freescale.com>
  */
 
-#include <linux/delay.h>
-#include <linux/kernel.h>
-#include <linux/interrupt.h>
-#include <linux/init.h>
-#include <linux/iopoll.h>
-#include <linux/of_pci.h>
-#include <linux/of_platform.h>
-#include <linux/of_address.h>
-#include <linux/pci.h>
-#include <linux/platform_device.h>
-#include <linux/resource.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
+#include <freax/delay.h>
+#include <freax/kernel.h>
+#include <freax/interrupt.h>
+#include <freax/init.h>
+#include <freax/iopoll.h>
+#include <freax/of_pci.h>
+#include <freax/of_platform.h>
+#include <freax/of_address.h>
+#include <freax/pci.h>
+#include <freax/platform_device.h>
+#include <freax/resource.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
 
 #include "../../pci.h"
 #include "pcie-designware.h"

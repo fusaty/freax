@@ -3,7 +3,7 @@
 #ifndef __ASM_S390_RWONCE_H
 #define __ASM_S390_RWONCE_H
 
-#include <linux/compiler_types.h>
+#include <freax/compiler_types.h>
 
 /*
  * Use READ_ONCE_ALIGNED_128() for 128-bit block concurrent (atomic) read

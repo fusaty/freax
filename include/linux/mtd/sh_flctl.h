@@ -8,11 +8,11 @@
 #ifndef __SH_FLCTL_H__
 #define __SH_FLCTL_H__
 
-#include <linux/completion.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/pm_qos.h>
+#include <freax/completion.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/pm_qos.h>
 
 /* FLCTL registers */
 #define FLCMNCR(f)		(f->reg + 0x0)

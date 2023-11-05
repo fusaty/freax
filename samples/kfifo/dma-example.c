@@ -5,9 +5,9 @@
  * Copyright (C) 2010 Stefani Seibold <stefani@seibold.net>
  */
 
-#include <linux/init.h>
-#include <linux/module.h>
-#include <linux/kfifo.h>
+#include <freax/init.h>
+#include <freax/module.h>
+#include <freax/kfifo.h>
 
 /*
  * This module shows how to handle fifo dma operations.

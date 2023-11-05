@@ -10,26 +10,26 @@
  */
 #define pr_fmt(fmt) "debug_vm_pgtable: [%-25s]: " fmt, __func__
 
-#include <linux/gfp.h>
-#include <linux/highmem.h>
-#include <linux/hugetlb.h>
-#include <linux/kernel.h>
-#include <linux/kconfig.h>
-#include <linux/memblock.h>
-#include <linux/mm.h>
-#include <linux/mman.h>
-#include <linux/mm_types.h>
-#include <linux/module.h>
-#include <linux/pfn_t.h>
-#include <linux/printk.h>
-#include <linux/pgtable.h>
-#include <linux/random.h>
-#include <linux/spinlock.h>
-#include <linux/swap.h>
-#include <linux/swapops.h>
-#include <linux/start_kernel.h>
-#include <linux/sched/mm.h>
-#include <linux/io.h>
+#include <freax/gfp.h>
+#include <freax/highmem.h>
+#include <freax/hugetlb.h>
+#include <freax/kernel.h>
+#include <freax/kconfig.h>
+#include <freax/memblock.h>
+#include <freax/mm.h>
+#include <freax/mman.h>
+#include <freax/mm_types.h>
+#include <freax/module.h>
+#include <freax/pfn_t.h>
+#include <freax/printk.h>
+#include <freax/pgtable.h>
+#include <freax/random.h>
+#include <freax/spinlock.h>
+#include <freax/swap.h>
+#include <freax/swapops.h>
+#include <freax/start_kernel.h>
+#include <freax/sched/mm.h>
+#include <freax/io.h>
 
 #include <asm/cacheflush.h>
 #include <asm/pgalloc.h>

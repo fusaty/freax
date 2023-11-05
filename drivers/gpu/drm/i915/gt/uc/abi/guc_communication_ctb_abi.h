@@ -6,8 +6,8 @@
 #ifndef _ABI_GUC_COMMUNICATION_CTB_ABI_H
 #define _ABI_GUC_COMMUNICATION_CTB_ABI_H
 
-#include <linux/types.h>
-#include <linux/build_bug.h>
+#include <freax/types.h>
+#include <freax/build_bug.h>
 
 #include "guc_messages_abi.h"
 

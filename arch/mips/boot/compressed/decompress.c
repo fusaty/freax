@@ -10,14 +10,14 @@
 #define DISABLE_BRANCH_PROFILING
 
 #define __NO_FORTIFY
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/libfdt.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/libfdt.h>
 
 #include <asm/addrspace.h>
 #include <asm/unaligned.h>
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmfreax.lds.h>
 
 /*
  * These two variables specify the free mem region
@@ -106,14 +106,14 @@ void decompress_kernel(unsigned long boot_heap_start)
 	free_mem_ptr = boot_heap_start;
 	free_mem_end_ptr = boot_heap_start + BOOT_HEAP_SIZE;
 
-	/* Display standard Linux/MIPS boot prompt */
-	puts("Uncompressing Linux at load address ");
-	puthex(VMLINUX_LOAD_ADDRESS_ULL);
+	/* Display standard freax/MIPS boot prompt */
+	puts("Uncompressing freax at load address ");
+	puthex(VMfreax_LOAD_ADDRESS_ULL);
 	puts("\n");
 
 	/* Decompress the kernel with according algorithm */
 	__decompress((char *)zimage_start, zimage_size, 0, 0,
-		   (void *)VMLINUX_LOAD_ADDRESS_ULL, 0, 0, error);
+		   (void *)VMfreax_LOAD_ADDRESS_ULL, 0, 0, error);
 
 	if (IS_ENABLED(CONFIG_MIPS_RAW_APPENDED_DTB) &&
 	    fdt_magic((void *)&__appended_dtb) == FDT_MAGIC) {
@@ -128,11 +128,11 @@ void decompress_kernel(unsigned long boot_heap_start)
 		image_size = ALIGN(image_size, STRUCT_ALIGNMENT);
 
 		puts("Copy device tree to address  ");
-		puthex(VMLINUX_LOAD_ADDRESS_ULL + image_size);
+		puthex(VMfreax_LOAD_ADDRESS_ULL + image_size);
 		puts("\n");
 
 		/* copy dtb to where the booted kernel will expect it */
-		memcpy((void *)VMLINUX_LOAD_ADDRESS_ULL + image_size,
+		memcpy((void *)VMfreax_LOAD_ADDRESS_ULL + image_size,
 		       __appended_dtb, dtb_size);
 	}
 

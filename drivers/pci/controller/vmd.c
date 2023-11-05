@@ -4,18 +4,18 @@
  * Copyright (c) 2015, Intel Corporation.
  */
 
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/pci.h>
-#include <linux/pci-acpi.h>
-#include <linux/pci-ecam.h>
-#include <linux/srcu.h>
-#include <linux/rculist.h>
-#include <linux/rcupdate.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/pci.h>
+#include <freax/pci-acpi.h>
+#include <freax/pci-ecam.h>
+#include <freax/srcu.h>
+#include <freax/rculist.h>
+#include <freax/rcupdate.h>
 
 #include <asm/irqdomain.h>
 
@@ -113,7 +113,7 @@ struct vmd_irq {
  * @srcu:	SRCU struct for local synchronization.
  * @count:	number of child IRQs assigned to this vector; used to track
  *		sharing.
- * @virq:	The underlying VMD Linux interrupt number
+ * @virq:	The underlying VMD freax interrupt number
  */
 struct vmd_irq_list {
 	struct list_head	irq_list;

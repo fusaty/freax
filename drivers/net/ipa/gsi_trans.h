@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 
-/* Copyright (c) 2012-2018, The Linux Foundation. All rights reserved.
+/* Copyright (c) 2012-2018, The freax Foundation. All rights reserved.
  * Copyright (C) 2019-2022 Linaro Ltd.
  */
 #ifndef _GSI_TRANS_H_
 #define _GSI_TRANS_H_
 
-#include <linux/types.h>
-#include <linux/refcount.h>
-#include <linux/completion.h>
-#include <linux/dma-direction.h>
+#include <freax/types.h>
+#include <freax/refcount.h>
+#include <freax/completion.h>
+#include <freax/dma-direction.h>
 
 #include "ipa_cmd.h"
 

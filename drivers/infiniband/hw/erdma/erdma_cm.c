@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause
 
-/* Authors: Cheng Xu <chengyou@linux.alibaba.com> */
-/*          Kai Shen <kaishen@linux.alibaba.com> */
+/* Authors: Cheng Xu <chengyou@freax.alibaba.com> */
+/*          Kai Shen <kaishen@freax.alibaba.com> */
 /* Copyright (c) 2020-2022, Alibaba Group. */
 
 /* Authors: Bernard Metzler <bmt@zurich.ibm.com> */
@@ -10,7 +10,7 @@
 /* Copyright (c) 2008-2019, IBM Corporation */
 /* Copyright (c) 2017, Open Grid Computing, Inc. */
 
-#include <linux/workqueue.h>
+#include <freax/workqueue.h>
 #include <trace/events/sock.h>
 
 #include "erdma.h"

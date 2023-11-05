@@ -7,18 +7,18 @@
  * Author: Mark Brown <broonie@opensource.wolfsonmicro.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/i2c.h>
-#include <linux/delay.h>
-#include <linux/mfd/core.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/i2c.h>
+#include <freax/delay.h>
+#include <freax/mfd/core.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 
-#include <linux/mfd/wm831x/core.h>
-#include <linux/mfd/wm831x/pdata.h>
+#include <freax/mfd/wm831x/core.h>
+#include <freax/mfd/wm831x/pdata.h>
 
 static int wm831x_i2c_probe(struct i2c_client *i2c)
 {

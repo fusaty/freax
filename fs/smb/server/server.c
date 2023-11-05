@@ -7,11 +7,11 @@
 #include "glob.h"
 #include "oplock.h"
 #include "misc.h"
-#include <linux/sched/signal.h>
-#include <linux/workqueue.h>
-#include <linux/sysfs.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <freax/sched/signal.h>
+#include <freax/workqueue.h>
+#include <freax/sysfs.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
 
 #include "server.h"
 #include "smb_common.h"
@@ -626,7 +626,7 @@ static void __exit ksmbd_server_exit(void)
 
 MODULE_AUTHOR("Namjae Jeon <linkinjeon@kernel.org>");
 MODULE_VERSION(KSMBD_VERSION);
-MODULE_DESCRIPTION("Linux kernel CIFS/SMB SERVER");
+MODULE_DESCRIPTION("freax kernel CIFS/SMB SERVER");
 MODULE_LICENSE("GPL");
 MODULE_SOFTDEP("pre: ecb");
 MODULE_SOFTDEP("pre: hmac");

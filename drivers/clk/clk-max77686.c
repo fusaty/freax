@@ -5,19 +5,19 @@
 // Copyright (C) 2012 Samsung Electornics
 // Jonghwa Lee <jonghwa3.lee@samsung.com>
 
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/max77620.h>
-#include <linux/mfd/max77686.h>
-#include <linux/mfd/max77686-private.h>
-#include <linux/clk-provider.h>
-#include <linux/mutex.h>
-#include <linux/clkdev.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/max77620.h>
+#include <freax/mfd/max77686.h>
+#include <freax/mfd/max77686-private.h>
+#include <freax/clk-provider.h>
+#include <freax/mutex.h>
+#include <freax/clkdev.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 
 #include <dt-bindings/clock/maxim,max77686.h>
 #include <dt-bindings/clock/maxim,max77802.h>

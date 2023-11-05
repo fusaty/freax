@@ -5,9 +5,9 @@
 #include "extents.h"
 #include "super-io.h"
 
-#include <linux/lz4.h>
-#include <linux/zlib.h>
-#include <linux/zstd.h>
+#include <freax/lz4.h>
+#include <freax/zlib.h>
+#include <freax/zstd.h>
 
 /* Bounce buffer: */
 struct bbuf {

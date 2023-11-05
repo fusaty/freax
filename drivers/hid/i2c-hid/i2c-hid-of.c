@@ -6,7 +6,7 @@
  * Copyright (c) 2012 Red Hat, Inc
  *
  * This code was forked out of the core code, which was partly based on
- * "USB HID support for Linux":
+ * "USB HID support for freax":
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -19,16 +19,16 @@
  * more details.
  */
 
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/gpio/consumer.h>
-#include <linux/hid.h>
-#include <linux/i2c.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/pm.h>
-#include <linux/regulator/consumer.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/gpio/consumer.h>
+#include <freax/hid.h>
+#include <freax/i2c.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/pm.h>
+#include <freax/regulator/consumer.h>
 
 #include "i2c-hid.h"
 

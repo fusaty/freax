@@ -5,7 +5,7 @@
  * Copyright (c) 2012 Ecole Nationale de l'Aviation Civile, France
  * Copyright (c) 2012 Red Hat, Inc
  *
- * This code is partly based on "USB HID support for Linux":
+ * This code is partly based on "USB HID support for freax":
  *
  *  Copyright (c) 1999 Andreas Gal
  *  Copyright (c) 2000-2005 Vojtech Pavlik <vojtech@suse.cz>
@@ -18,24 +18,24 @@
  * more details.
  */
 
-#include <linux/module.h>
-#include <linux/i2c.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/irq.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/pm.h>
-#include <linux/pm_wakeirq.h>
-#include <linux/device.h>
-#include <linux/wait.h>
-#include <linux/err.h>
-#include <linux/string.h>
-#include <linux/list.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/hid.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/i2c.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
+#include <freax/irq.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/pm.h>
+#include <freax/pm_wakeirq.h>
+#include <freax/device.h>
+#include <freax/wait.h>
+#include <freax/err.h>
+#include <freax/string.h>
+#include <freax/list.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/hid.h>
+#include <freax/mutex.h>
 #include <asm/unaligned.h>
 
 #include <drm/drm_panel.h>

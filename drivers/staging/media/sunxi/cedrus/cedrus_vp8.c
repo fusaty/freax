@@ -16,8 +16,8 @@
  * for proper decoding. Biggest suspect is "VP8 probs update" trigger.
  */
 
-#include <linux/delay.h>
-#include <linux/types.h>
+#include <freax/delay.h>
+#include <freax/types.h>
 
 #include <media/videobuf2-dma-contig.h>
 

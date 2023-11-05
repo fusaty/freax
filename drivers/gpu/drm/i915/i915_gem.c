@@ -25,16 +25,16 @@
  *
  */
 
-#include <linux/dma-fence-array.h>
-#include <linux/kthread.h>
-#include <linux/dma-resv.h>
-#include <linux/shmem_fs.h>
-#include <linux/slab.h>
-#include <linux/stop_machine.h>
-#include <linux/swap.h>
-#include <linux/pci.h>
-#include <linux/dma-buf.h>
-#include <linux/mman.h>
+#include <freax/dma-fence-array.h>
+#include <freax/kthread.h>
+#include <freax/dma-resv.h>
+#include <freax/shmem_fs.h>
+#include <freax/slab.h>
+#include <freax/stop_machine.h>
+#include <freax/swap.h>
+#include <freax/pci.h>
+#include <freax/dma-buf.h>
+#include <freax/mman.h>
 
 #include <drm/drm_cache.h>
 #include <drm/drm_vma_manager.h>

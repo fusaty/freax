@@ -6,11 +6,11 @@
  * Rahul Tanwar <rtanwar@maxlinear.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/iopoll.h>
-#include <linux/of.h>
+#include <freax/clk-provider.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/iopoll.h>
+#include <freax/of.h>
 
 #include "clk-cgu.h"
 

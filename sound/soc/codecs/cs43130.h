@@ -10,7 +10,7 @@
 #ifndef __CS43130_H__
 #define __CS43130_H__
 
-#include <linux/math.h>
+#include <freax/math.h>
 
 /* CS43130 registers addresses */
 /* all reg address is shifted by a byte for control byte to be LSB */

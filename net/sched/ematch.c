@@ -77,13 +77,13 @@
  *      open up a beer to watch the compilation going.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/rtnetlink.h>
+#include <freax/skbuff.h>
 #include <net/pkt_cls.h>
 
 static LIST_HEAD(ematch_ops);

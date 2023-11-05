@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * This is <linux/capability.h>
+ * This is <freax/capability.h>
  *
  * Andrew G. Morgan <morgan@kernel.org>
  * Alexander Kjeldaas <astor@guardian.no>
@@ -8,16 +8,16 @@
  *
  * See here for the libcap library ("POSIX draft" compliance):
  *
- * ftp://www.kernel.org/pub/linux/libs/security/linux-privs/kernel-2.6/
+ * ftp://www.kernel.org/pub/freax/libs/security/freax-privs/kernel-2.6/
  */
-#ifndef _LINUX_CAPABILITY_H
-#define _LINUX_CAPABILITY_H
+#ifndef _freax_CAPABILITY_H
+#define _freax_CAPABILITY_H
 
-#include <uapi/linux/capability.h>
-#include <linux/uidgid.h>
-#include <linux/bits.h>
+#include <uapi/freax/capability.h>
+#include <freax/uidgid.h>
+#include <freax/bits.h>
 
-#define _KERNEL_CAPABILITY_VERSION _LINUX_CAPABILITY_VERSION_3
+#define _KERNEL_CAPABILITY_VERSION _freax_CAPABILITY_VERSION_3
 
 extern int file_caps_enabled;
 
@@ -45,7 +45,7 @@ struct mnt_idmap;
  * CAP_FS_MASK and CAP_NFSD_MASKS:
  *
  * The fs mask is all the privileges that fsuid==0 historically meant.
- * At one time in the past, that included CAP_MKNOD and CAP_LINUX_IMMUTABLE.
+ * At one time in the past, that included CAP_MKNOD and CAP_freax_IMMUTABLE.
  *
  * It has never meant setting security.* and trusted.* xattrs.
  *
@@ -65,7 +65,7 @@ struct mnt_idmap;
 
 # define CAP_EMPTY_SET    ((kernel_cap_t) { 0 })
 # define CAP_FULL_SET     ((kernel_cap_t) { CAP_VALID_MASK })
-# define CAP_FS_SET       ((kernel_cap_t) { CAP_FS_MASK | BIT_ULL(CAP_LINUX_IMMUTABLE) })
+# define CAP_FS_SET       ((kernel_cap_t) { CAP_FS_MASK | BIT_ULL(CAP_freax_IMMUTABLE) })
 # define CAP_NFSD_SET     ((kernel_cap_t) { CAP_FS_MASK | BIT_ULL(CAP_SYS_RESOURCE) })
 
 # define cap_clear(c)         do { (c).val = 0; } while (0)
@@ -216,4 +216,4 @@ int get_vfs_caps_from_disk(struct mnt_idmap *idmap,
 int cap_convert_nscap(struct mnt_idmap *idmap, struct dentry *dentry,
 		      const void **ivalue, size_t size);
 
-#endif /* !_LINUX_CAPABILITY_H */
+#endif /* !_freax_CAPABILITY_H */

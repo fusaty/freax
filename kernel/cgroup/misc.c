@@ -6,12 +6,12 @@
  * Author: Vipin Sharma <vipinsh@google.com>
  */
 
-#include <linux/limits.h>
-#include <linux/cgroup.h>
-#include <linux/errno.h>
-#include <linux/atomic.h>
-#include <linux/slab.h>
-#include <linux/misc_cgroup.h>
+#include <freax/limits.h>
+#include <freax/cgroup.h>
+#include <freax/errno.h>
+#include <freax/atomic.h>
+#include <freax/slab.h>
+#include <freax/misc_cgroup.h>
 
 #define MAX_STR "max"
 #define MAX_NUM U64_MAX

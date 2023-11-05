@@ -1,12 +1,12 @@
 /*
- *  linux/drivers/video/ps3fb.c -- PS3 GPU frame buffer device
+ *  freax/drivers/video/ps3fb.c -- PS3 GPU frame buffer device
  *
  *	Copyright (C) 2006 Sony Computer Entertainment Inc.
  *	Copyright 2006, 2007 Sony Corporation
  *
  *  This file is based on :
  *
- *  linux/drivers/video/vfb.c -- Virtual frame buffer device
+ *  freax/drivers/video/vfb.c -- Virtual frame buffer device
  *
  *	Copyright (C) 2002 James Simmons
  *
@@ -17,20 +17,20 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/console.h>
-#include <linux/ioctl.h>
-#include <linux/kthread.h>
-#include <linux/freezer.h>
-#include <linux/uaccess.h>
-#include <linux/fb.h>
-#include <linux/fbcon.h>
-#include <linux/init.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/console.h>
+#include <freax/ioctl.h>
+#include <freax/kthread.h>
+#include <freax/freezer.h>
+#include <freax/uaccess.h>
+#include <freax/fb.h>
+#include <freax/fbcon.h>
+#include <freax/init.h>
 
 #include <asm/cell-regs.h>
 #include <asm/lv1call.h>

@@ -11,11 +11,11 @@
  * mapping representation such as dm-stripe.
  */
 
-#include <linux/device-mapper.h>
+#include <freax/device-mapper.h>
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/vmalloc.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/vmalloc.h>
 
 #define DM_MSG_PREFIX "switch"
 

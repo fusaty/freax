@@ -4,11 +4,11 @@
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/syscalls.h>
-#include <linux/signal.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/syscalls.h>
+#include <freax/signal.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
 #include <asm/guarded_storage.h>
 #include "entry.h"
 

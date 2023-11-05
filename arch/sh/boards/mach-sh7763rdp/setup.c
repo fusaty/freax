@@ -1,21 +1,21 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/arch/sh/boards/renesas/sh7763rdp/setup.c
+ * freax/arch/sh/boards/renesas/sh7763rdp/setup.c
  *
  * Renesas Solutions sh7763rdp board
  *
  * Copyright (C) 2008 Renesas Solutions Corp.
  * Copyright (C) 2008 Nobuhiro Iwamatsu <iwamatsu.nobuhiro@renesas.com>
  */
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/input.h>
-#include <linux/mtd/physmap.h>
-#include <linux/fb.h>
-#include <linux/io.h>
-#include <linux/sh_eth.h>
-#include <linux/sh_intc.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/input.h>
+#include <freax/mtd/physmap.h>
+#include <freax/fb.h>
+#include <freax/io.h>
+#include <freax/sh_eth.h>
+#include <freax/sh_intc.h>
 #include <mach/sh7763rdp.h>
 #include <asm/sh7760fb.h>
 
@@ -27,7 +27,7 @@ static struct mtd_partition sh7763rdp_nor_flash_partitions[] = {
 		.size = (2 * 128 * 1024),
 		.mask_flags = MTD_WRITEABLE,	/* Read-only */
 	}, {
-		.name = "Linux-Kernel",
+		.name = "freax-Kernel",
 		.offset = MTDPART_OFS_APPEND,
 		.size = (20 * 128 * 1024),
 	}, {

@@ -9,7 +9,7 @@
 #include <string.h>
 #include <endian.h>
 #include <byteswap.h>
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 #include <stdarg.h>
 
 #include "../color.h"

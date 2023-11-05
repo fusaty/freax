@@ -16,8 +16,8 @@
  * NONINFRINGEMENT.  See the GNU General Public License for more
  * details.
  **********************************************************************/
-#include <linux/pci.h>
-#include <linux/netdevice.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
 #include "liquidio_common.h"
 #include "octeon_droq.h"
 #include "octeon_iq.h"

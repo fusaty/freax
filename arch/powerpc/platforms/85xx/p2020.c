@@ -6,9 +6,9 @@
  * Copyright 2022-2023 Pali Rohár <pali@kernel.org>
  */
 
-#include <linux/stddef.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
+#include <freax/stddef.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
 
 #include <asm/machdep.h>
 #include <asm/udbg.h>

@@ -7,14 +7,14 @@
  * Author: Peter Griffin <peter.griffin@linaro.org>
  *
  */
-#include <linux/debugfs.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/seq_file.h>
-#include <linux/slab.h>
-#include <linux/types.h>
+#include <freax/debugfs.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/seq_file.h>
+#include <freax/slab.h>
+#include <freax/types.h>
 
 #include "c8sectpfe-debugfs.h"
 

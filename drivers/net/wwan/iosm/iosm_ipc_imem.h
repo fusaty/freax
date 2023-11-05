@@ -6,7 +6,7 @@
 #ifndef IOSM_IPC_IMEM_H
 #define IOSM_IPC_IMEM_H
 
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 
 #include "iosm_ipc_mmio.h"
 #include "iosm_ipc_pcie.h"

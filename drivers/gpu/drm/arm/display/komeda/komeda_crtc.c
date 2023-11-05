@@ -4,9 +4,9 @@
  * Author: James.Qian.Wang <james.qian.wang@arm.com>
  *
  */
-#include <linux/clk.h>
-#include <linux/pm_runtime.h>
-#include <linux/spinlock.h>
+#include <freax/clk.h>
+#include <freax/pm_runtime.h>
+#include <freax/spinlock.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

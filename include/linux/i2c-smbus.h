@@ -5,12 +5,12 @@
  * Copyright (C) 2010-2019 Jean Delvare <jdelvare@suse.de>
  */
 
-#ifndef _LINUX_I2C_SMBUS_H
-#define _LINUX_I2C_SMBUS_H
+#ifndef _freax_I2C_SMBUS_H
+#define _freax_I2C_SMBUS_H
 
-#include <linux/i2c.h>
-#include <linux/spinlock.h>
-#include <linux/workqueue.h>
+#include <freax/i2c.h>
+#include <freax/spinlock.h>
+#include <freax/workqueue.h>
 
 
 /**
@@ -49,4 +49,4 @@ void i2c_register_spd(struct i2c_adapter *adap);
 static inline void i2c_register_spd(struct i2c_adapter *adap) { }
 #endif
 
-#endif /* _LINUX_I2C_SMBUS_H */
+#endif /* _freax_I2C_SMBUS_H */

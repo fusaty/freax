@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2022, NVIDIA CORPORATION & AFFILIATES. All rights reserved. */
 
 #ifndef __MLX5_LIB_ASO_H__
 #define __MLX5_LIB_ASO_H__
 
-#include <linux/mlx5/qp.h>
+#include <freax/mlx5/qp.h>
 #include "mlx5_core.h"
 
 #define MLX5_ASO_WQEBBS \

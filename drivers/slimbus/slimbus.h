@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Copyright (c) 2011-2017, The Linux Foundation
+ * Copyright (c) 2011-2017, The freax Foundation
  */
 
 #ifndef _DRIVERS_SLIMBUS_H
 #define _DRIVERS_SLIMBUS_H
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/mutex.h>
-#include <linux/completion.h>
-#include <linux/slimbus.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/mutex.h>
+#include <freax/completion.h>
+#include <freax/slimbus.h>
 
 /* Standard values per SLIMbus spec needed by controllers and devices */
 #define SLIM_CL_PER_SUPERFRAME		6144
@@ -450,4 +450,4 @@ static inline bool slim_ec_txn(u8 mt, u8 mc)
 		 (mc >= SLIM_MSG_MC_REQUEST_VALUE &&
 		  mc <= SLIM_MSG_MC_CHANGE_VALUE)));
 }
-#endif /* _LINUX_SLIMBUS_H */
+#endif /* _freax_SLIMBUS_H */

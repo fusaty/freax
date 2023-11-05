@@ -6,16 +6,16 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Ursula Braun <ubraun@linux.vnet.ibm.com>
+ *  Author(s):  Ursula Braun <ubraun@freax.vnet.ibm.com>
  */
 #ifndef _SMC_H
 #define _SMC_H
 
-#include <linux/device.h>
-#include <linux/spinlock.h>
-#include <linux/types.h>
-#include <linux/wait.h>
-#include "linux/ism.h"
+#include <freax/device.h>
+#include <freax/spinlock.h>
+#include <freax/types.h>
+#include <freax/wait.h>
+#include "freax/ism.h"
 
 struct sock;
 

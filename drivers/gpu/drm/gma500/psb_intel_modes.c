@@ -5,7 +5,7 @@
  * Authers: Jesse Barnes <jesse.barnes@intel.com>
  */
 
-#include <linux/i2c.h>
+#include <freax/i2c.h>
 
 #include <drm/drm_edid.h>
 

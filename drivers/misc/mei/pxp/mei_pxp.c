@@ -11,12 +11,12 @@
  * negotiation messages to ME FW command payloads and vice versa.
  */
 
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/mei.h>
-#include <linux/mei_cl_bus.h>
-#include <linux/component.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/mei.h>
+#include <freax/mei_cl_bus.h>
+#include <freax/component.h>
 #include <drm/drm_connector.h>
 #include <drm/i915_component.h>
 #include <drm/i915_pxp_tee_interface.h>

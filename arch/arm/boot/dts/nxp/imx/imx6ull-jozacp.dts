@@ -44,7 +44,7 @@
 			function-enumerator = <2>;
 			pwms = <&pwm5 0 10000000 0>;
 			max-brightness = <255>;
-			linux,default-trigger = "heartbeat";
+			freax,default-trigger = "heartbeat";
 		};
 	};
 

@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /* MCP23S08 SPI/I2C GPIO driver */
 
-#include <linux/gpio/driver.h>
-#include <linux/irq.h>
-#include <linux/mutex.h>
-#include <linux/pinctrl/pinctrl.h>
-#include <linux/types.h>
+#include <freax/gpio/driver.h>
+#include <freax/irq.h>
+#include <freax/mutex.h>
+#include <freax/pinctrl/pinctrl.h>
+#include <freax/types.h>
 
 /*
  * MCP types supported by driver

@@ -6,9 +6,9 @@
  *
  */
 
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/fsl/mc.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/fsl/mc.h>
 
 #include "fsl-mc-private.h"
 

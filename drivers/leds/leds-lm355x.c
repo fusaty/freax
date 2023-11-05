@@ -4,15 +4,15 @@
 * Copyright (C) 2012 Texas Instruments
 */
 
-#include <linux/module.h>
-#include <linux/delay.h>
-#include <linux/i2c.h>
-#include <linux/leds.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/fs.h>
-#include <linux/regmap.h>
-#include <linux/platform_data/leds-lm355x.h>
+#include <freax/module.h>
+#include <freax/delay.h>
+#include <freax/i2c.h>
+#include <freax/leds.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/fs.h>
+#include <freax/regmap.h>
+#include <freax/platform_data/leds-lm355x.h>
 
 enum lm355x_type {
 	CHIP_LM3554 = 0,

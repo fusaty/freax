@@ -8,31 +8,31 @@
  *	    Sebastian Andrzej Siewior <bigeasy@linutronix.de>
  */
 
-#include <linux/clk.h>
-#include <linux/version.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/platform_device.h>
-#include <linux/pm_runtime.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/io.h>
-#include <linux/list.h>
-#include <linux/delay.h>
-#include <linux/dma-mapping.h>
-#include <linux/of.h>
-#include <linux/of_graph.h>
-#include <linux/acpi.h>
-#include <linux/pinctrl/consumer.h>
-#include <linux/reset.h>
-#include <linux/bitfield.h>
+#include <freax/clk.h>
+#include <freax/version.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/platform_device.h>
+#include <freax/pm_runtime.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/io.h>
+#include <freax/list.h>
+#include <freax/delay.h>
+#include <freax/dma-mapping.h>
+#include <freax/of.h>
+#include <freax/of_graph.h>
+#include <freax/acpi.h>
+#include <freax/pinctrl/consumer.h>
+#include <freax/reset.h>
+#include <freax/bitfield.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
-#include <linux/usb/of.h>
-#include <linux/usb/otg.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
+#include <freax/usb/of.h>
+#include <freax/usb/otg.h>
 
 #include "core.h"
 #include "gadget.h"
@@ -1228,10 +1228,10 @@ static int dwc3_core_init(struct dwc3 *dwc)
 	hw_mode = DWC3_GHWPARAMS0_MODE(dwc->hwparams.hwparams0);
 
 	/*
-	 * Write Linux Version Code to our GUID register so it's easy to figure
+	 * Write freax Version Code to our GUID register so it's easy to figure
 	 * out which kernel version a bug was found.
 	 */
-	dwc3_writel(dwc->regs, DWC3_GUID, LINUX_VERSION_CODE);
+	dwc3_writel(dwc->regs, DWC3_GUID, freax_VERSION_CODE);
 
 	ret = dwc3_phy_setup(dwc);
 	if (ret)
@@ -1538,7 +1538,7 @@ static void dwc3_get_properties(struct dwc3 *dwc)
 	dwc->hsphy_mode = of_usb_get_phy_mode(dev->of_node);
 
 	dwc->sysdev_is_parent = device_property_read_bool(dev,
-				"linux,sysdev_is_parent");
+				"freax,sysdev_is_parent");
 	if (dwc->sysdev_is_parent)
 		dwc->sysdev = dwc->dev->parent;
 	else
@@ -1798,7 +1798,7 @@ static struct extcon_dev *dwc3_get_extcon(struct dwc3 *dwc)
 	 * This device property is for kernel internal use only and
 	 * is expected to be set by the glue code.
 	 */
-	if (device_property_read_string(dev, "linux,extcon-name", &name) == 0)
+	if (device_property_read_string(dev, "freax,extcon-name", &name) == 0)
 		return extcon_get_extcon_dev(name);
 
 	/*

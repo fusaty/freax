@@ -8,20 +8,20 @@
  * Copyright (C) 2008-2009 MontaVista Software, Inc. <source@mvista.com>
  */
 
-#include <linux/clk.h>
-#include <linux/gpio/consumer.h>
-#include <linux/io.h>
-#include <linux/interrupt.h>
-#include <linux/jiffies.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/phy/phy.h>
-#include <linux/platform_data/usb-davinci.h>
-#include <linux/regulator/consumer.h>
-#include <linux/usb.h>
-#include <linux/usb/hcd.h>
+#include <freax/clk.h>
+#include <freax/gpio/consumer.h>
+#include <freax/io.h>
+#include <freax/interrupt.h>
+#include <freax/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/phy/phy.h>
+#include <freax/platform_data/usb-davinci.h>
+#include <freax/regulator/consumer.h>
+#include <freax/usb.h>
+#include <freax/usb/hcd.h>
 #include <asm/unaligned.h>
 
 #include "ohci.h"

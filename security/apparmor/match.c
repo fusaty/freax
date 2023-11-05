@@ -8,13 +8,13 @@
  * Copyright 2009-2012 Canonical Ltd.
  */
 
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/err.h>
-#include <linux/kref.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/err.h>
+#include <freax/kref.h>
 
 #include "include/lib.h"
 #include "include/match.h"

@@ -1,10 +1,10 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef __LINUX_PLATFORM_DATA_BCMGENET_H__
-#define __LINUX_PLATFORM_DATA_BCMGENET_H__
+#ifndef __freax_PLATFORM_DATA_BCMGENET_H__
+#define __freax_PLATFORM_DATA_BCMGENET_H__
 
-#include <linux/types.h>
-#include <linux/if_ether.h>
-#include <linux/phy.h>
+#include <freax/types.h>
+#include <freax/if_ether.h>
+#include <freax/phy.h>
 
 struct bcmgenet_platform_data {
 	bool		mdio_enabled;

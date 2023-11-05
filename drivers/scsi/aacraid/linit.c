@@ -4,7 +4,7 @@
  *	(c) Copyright 2001 Red Hat Inc.
  *
  * based on the old aacraid driver that is..
- * Adaptec aacraid device driver for Linux.
+ * Adaptec aacraid device driver for freax.
  *
  * Copyright (c) 2000-2010 Adaptec, Inc.
  *               2010-2015 PMC-Sierra, Inc. (aacraid@pmc-sierra.com)
@@ -13,27 +13,27 @@
  * Module Name:
  *   linit.c
  *
- * Abstract: Linux Driver entry module for Adaptec RAID Array Controller
+ * Abstract: freax Driver entry module for Adaptec RAID Array Controller
  */
 
 
-#include <linux/compat.h>
-#include <linux/blkdev.h>
-#include <linux/blk-mq-pci.h>
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/pci.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/syscalls.h>
-#include <linux/delay.h>
-#include <linux/kthread.h>
-#include <linux/msdos_partition.h>
+#include <freax/compat.h>
+#include <freax/blkdev.h>
+#include <freax/blk-mq-pci.h>
+#include <freax/completion.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/pci.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/syscalls.h>
+#include <freax/delay.h>
+#include <freax/kthread.h>
+#include <freax/msdos_partition.h>
 
 #include <scsi/scsi.h>
 #include <scsi/scsi_cmnd.h>
@@ -72,7 +72,7 @@ static int aac_cfg_major = AAC_CHARDEV_UNREGISTERED;
 char aac_driver_version[] = AAC_DRIVER_FULL_VERSION;
 
 /*
- * Because of the way Linux names scsi devices, the order in this table has
+ * Because of the way freax names scsi devices, the order in this table has
  * become important.  Check for on-board Raid first, add-in cards second.
  *
  * Note: The last field is used to index into aac_drivers below.

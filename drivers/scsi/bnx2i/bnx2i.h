@@ -17,21 +17,21 @@
 #ifndef _BNX2I_H_
 #define _BNX2I_H_
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
 
-#include <linux/errno.h>
-#include <linux/pci.h>
-#include <linux/spinlock.h>
-#include <linux/interrupt.h>
-#include <linux/delay.h>
-#include <linux/sched/signal.h>
-#include <linux/in.h>
-#include <linux/kfifo.h>
-#include <linux/netdevice.h>
-#include <linux/completion.h>
-#include <linux/kthread.h>
-#include <linux/cpu.h>
+#include <freax/errno.h>
+#include <freax/pci.h>
+#include <freax/spinlock.h>
+#include <freax/interrupt.h>
+#include <freax/delay.h>
+#include <freax/sched/signal.h>
+#include <freax/in.h>
+#include <freax/kfifo.h>
+#include <freax/netdevice.h>
+#include <freax/completion.h>
+#include <freax/kthread.h>
+#include <freax/cpu.h>
 
 #include <scsi/scsi_cmnd.h>
 #include <scsi/scsi_device.h>

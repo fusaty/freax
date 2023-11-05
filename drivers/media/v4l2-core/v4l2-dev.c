@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * Video capture interface for Linux version 2
+ * Video capture interface for freax version 2
  *
- *	A generic video device interface for the LINUX operating system
+ *	A generic video device interface for the freax operating system
  *	using a set of device structures/vectors for low level operations.
  *
  * Authors:	Alan Cox, <alan@lxorguk.ukuu.org.uk> (version 1)
@@ -14,17 +14,17 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/debugfs.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/string.h>
-#include <linux/errno.h>
-#include <linux/init.h>
-#include <linux/kmod.h>
-#include <linux/slab.h>
-#include <linux/uaccess.h>
+#include <freax/debugfs.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/string.h>
+#include <freax/errno.h>
+#include <freax/init.h>
+#include <freax/kmod.h>
+#include <freax/slab.h>
+#include <freax/uaccess.h>
 
 #include <media/v4l2-common.h>
 #include <media/v4l2-device.h>
@@ -32,7 +32,7 @@
 #include <media/v4l2-event.h>
 
 #define VIDEO_NUM_DEVICES	256
-#define VIDEO_NAME              "video4linux"
+#define VIDEO_NAME              "video4freax"
 
 #define dprintk(fmt, arg...) do {					\
 		printk(KERN_DEBUG pr_fmt("%s: " fmt),			\
@@ -1072,7 +1072,7 @@ cleanup:
 EXPORT_SYMBOL(__video_register_device);
 
 /**
- *	video_unregister_device - unregister a video4linux device
+ *	video_unregister_device - unregister a video4freax device
  *	@vdev: the device to unregister
  *
  *	This unregisters the passed device. Future open calls will
@@ -1169,14 +1169,14 @@ EXPORT_SYMBOL_GPL(video_device_pipeline);
 #endif /* CONFIG_MEDIA_CONTROLLER */
 
 /*
- *	Initialise video for linux
+ *	Initialise video for freax
  */
 static int __init videodev_init(void)
 {
 	dev_t dev = MKDEV(VIDEO_MAJOR, 0);
 	int ret;
 
-	pr_info("Linux video capture interface: v2.00\n");
+	pr_info("freax video capture interface: v2.00\n");
 	ret = register_chrdev_region(dev, VIDEO_NUM_DEVICES, VIDEO_NAME);
 	if (ret < 0) {
 		pr_warn("videodev: unable to get major %d\n",
@@ -1206,6 +1206,6 @@ subsys_initcall(videodev_init);
 module_exit(videodev_exit)
 
 MODULE_AUTHOR("Alan Cox, Mauro Carvalho Chehab <mchehab@kernel.org>, Bill Dirks, Justin Schoeman, Gerd Knorr");
-MODULE_DESCRIPTION("Video4Linux2 core driver");
+MODULE_DESCRIPTION("Video4freax2 core driver");
 MODULE_LICENSE("GPL");
 MODULE_ALIAS_CHARDEV_MAJOR(VIDEO_MAJOR);

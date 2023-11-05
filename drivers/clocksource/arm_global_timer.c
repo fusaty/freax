@@ -7,19 +7,19 @@
  * Author: Srinivas Kandagatla <srinivas.kandagatla@st.com>
  */
 
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/cpu.h>
-#include <linux/clk.h>
-#include <linux/delay.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_address.h>
-#include <linux/sched_clock.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
+#include <freax/cpu.h>
+#include <freax/clk.h>
+#include <freax/delay.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_address.h>
+#include <freax/sched_clock.h>
 
 #include <asm/cputype.h>
 

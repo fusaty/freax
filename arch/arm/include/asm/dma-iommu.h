@@ -4,9 +4,9 @@
 
 #ifdef __KERNEL__
 
-#include <linux/mm_types.h>
-#include <linux/scatterlist.h>
-#include <linux/kref.h>
+#include <freax/mm_types.h>
+#include <freax/scatterlist.h>
+#include <freax/kref.h>
 
 struct dma_iommu_mapping {
 	/* iommu specific data */

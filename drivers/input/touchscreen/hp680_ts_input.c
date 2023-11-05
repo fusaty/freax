@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-2.0-only
-#include <linux/input.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
+#include <freax/input.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
 #include <asm/io.h>
 #include <asm/delay.h>
 #include <asm/adc.h>

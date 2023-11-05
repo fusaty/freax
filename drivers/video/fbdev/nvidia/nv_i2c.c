@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/nvidia/nvidia-i2c.c - nVidia i2c
+ * freax/drivers/video/nvidia/nvidia-i2c.c - nVidia i2c
  *
  * Copyright 2004 Antonino A. Daplas <adaplas @pol.net>
  *
@@ -10,12 +10,12 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/pci.h>
-#include <linux/fb.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/gfp.h>
+#include <freax/pci.h>
+#include <freax/fb.h>
 
 #include <asm/io.h>
 

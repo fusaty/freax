@@ -7,13 +7,13 @@
  * Copyright (c) 2003 by Digigram <alsa@digigram.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/firmware.h>
-#include <linux/vmalloc.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/io.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/firmware.h>
+#include <freax/vmalloc.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/io.h>
 #include <sound/core.h>
 #include "mixart.h"
 #include "mixart_mixer.h"

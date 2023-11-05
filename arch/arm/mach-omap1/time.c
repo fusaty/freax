@@ -1,5 +1,5 @@
 /*
- * linux/arch/arm/mach-omap1/time.c
+ * freax/arch/arm/mach-omap1/time.c
  *
  * OMAP Timers
  *
@@ -33,17 +33,17 @@
  * 675 Mass Ave, Cambridge, MA 02139, USA.
  */
 
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/spinlock.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/clocksource.h>
-#include <linux/clockchips.h>
-#include <linux/io.h>
-#include <linux/sched_clock.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/spinlock.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/clocksource.h>
+#include <freax/clockchips.h>
+#include <freax/io.h>
+#include <freax/sched_clock.h>
 
 #include <asm/irq.h>
 

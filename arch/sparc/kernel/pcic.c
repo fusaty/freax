@@ -11,22 +11,22 @@
  * CP-1200 by Eric Brower.
  */
 
-#include <linux/kernel.h>
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/jiffies.h>
+#include <freax/kernel.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/jiffies.h>
 
 #include <asm/swift.h> /* for cache flushing. */
 #include <asm/io.h>
 
-#include <linux/ctype.h>
-#include <linux/pci.h>
-#include <linux/time.h>
-#include <linux/timex.h>
-#include <linux/interrupt.h>
-#include <linux/export.h>
+#include <freax/ctype.h>
+#include <freax/pci.h>
+#include <freax/time.h>
+#include <freax/timex.h>
+#include <freax/interrupt.h>
+#include <freax/export.h>
 
 #include <asm/irq.h>
 #include <asm/oplib.h>
@@ -34,7 +34,7 @@
 #include <asm/pcic.h>
 #include <asm/timex.h>
 #include <asm/timer.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/irq_regs.h>
 
 #include "kernel.h"
@@ -161,7 +161,7 @@ static struct pcic_sn2list pcic_known_sysnames[] = {
  * and since we have no SMP IIep, only one per system.
  */
 static int pcic0_up;
-static struct linux_pcic pcic0;
+static struct freax_pcic pcic0;
 
 void __iomem *pcic_regs;
 static volatile int pcic_speculative;
@@ -176,7 +176,7 @@ unsigned int pcic_build_device_irq(struct platform_device *op,
 static int pcic_read_config_dword(unsigned int busno, unsigned int devfn,
     int where, u32 *value)
 {
-	struct linux_pcic *pcic;
+	struct freax_pcic *pcic;
 	unsigned long flags;
 
 	pcic = &pcic0;
@@ -237,7 +237,7 @@ static int pcic_read_config(struct pci_bus *bus, unsigned int devfn,
 static int pcic_write_config_dword(unsigned int busno, unsigned int devfn,
     int where, u32 value)
 {
-	struct linux_pcic *pcic;
+	struct freax_pcic *pcic;
 	unsigned long flags;
 
 	pcic = &pcic0;
@@ -286,9 +286,9 @@ static struct pci_ops pcic_ops = {
  */
 int __init pcic_probe(void)
 {
-	struct linux_pcic *pcic;
-	struct linux_prom_registers regs[PROMREG_MAX];
-	struct linux_pbm_info* pbm;
+	struct freax_pcic *pcic;
+	struct freax_prom_registers regs[PROMREG_MAX];
+	struct freax_pbm_info* pbm;
 	char namebuf[64];
 	phandle node;
 	int err;
@@ -387,9 +387,9 @@ int __init pcic_probe(void)
 	return 0;
 }
 
-static void __init pcic_pbm_scan_bus(struct linux_pcic *pcic)
+static void __init pcic_pbm_scan_bus(struct freax_pcic *pcic)
 {
-	struct linux_pbm_info *pbm = &pcic->pbm;
+	struct freax_pbm_info *pbm = &pcic->pbm;
 
 	pbm->pci_bus = pci_scan_bus(pbm->pci_first_busno, &pcic_ops, pbm);
 	if (!pbm->pci_bus)
@@ -409,7 +409,7 @@ static void __init pcic_pbm_scan_bus(struct linux_pcic *pcic)
  */
 static int __init pcic_init(void)
 {
-	struct linux_pcic *pcic;
+	struct freax_pcic *pcic;
 
 	/*
 	 * PCIC should be initialized at start of the timer.
@@ -444,9 +444,9 @@ int pcic_present(void)
 	return pcic0_up;
 }
 
-static int pdev_to_pnode(struct linux_pbm_info *pbm, struct pci_dev *pdev)
+static int pdev_to_pnode(struct freax_pbm_info *pbm, struct pci_dev *pdev)
 {
-	struct linux_prom_pci_registers regs[PROMREG_MAX];
+	struct freax_prom_pci_registers regs[PROMREG_MAX];
 	int err;
 	phandle node = prom_getchild(pbm->prom_node);
 
@@ -468,7 +468,7 @@ static inline struct pcidev_cookie *pci_devcookie_alloc(void)
 	return kmalloc(sizeof(struct pcidev_cookie), GFP_ATOMIC);
 }
 
-static void pcic_map_pci_device(struct linux_pcic *pcic,
+static void pcic_map_pci_device(struct freax_pcic *pcic,
     struct pci_dev *dev, int node)
 {
 	char namebuf[64];
@@ -528,7 +528,7 @@ static void pcic_map_pci_device(struct linux_pcic *pcic,
 }
 
 static void
-pcic_fill_irq(struct linux_pcic *pcic, struct pci_dev *dev, int node)
+pcic_fill_irq(struct freax_pcic *pcic, struct pci_dev *dev, int node)
 {
 	struct pcic_ca2irq *p;
 	unsigned int real_irq;
@@ -602,8 +602,8 @@ pcic_fill_irq(struct linux_pcic *pcic, struct pci_dev *dev, int node)
 void pcibios_fixup_bus(struct pci_bus *bus)
 {
 	struct pci_dev *dev;
-	struct linux_pcic *pcic;
-	/* struct linux_pbm_info* pbm = &pcic->pbm; */
+	struct freax_pcic *pcic;
+	/* struct freax_pbm_info* pbm = &pcic->pbm; */
 	int node;
 	struct pcidev_cookie *pcp;
 
@@ -701,7 +701,7 @@ static unsigned int pcic_cycles_offset(void)
 
 void __init pci_time_init(void)
 {
-	struct linux_pcic *pcic = &pcic0;
+	struct freax_pcic *pcic = &pcic0;
 	unsigned long v;
 	int timer_irq, irq;
 	int err;

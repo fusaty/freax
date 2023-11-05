@@ -7,7 +7,7 @@
 #ifndef _V4L2_CCI_H
 #define _V4L2_CCI_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct i2c_client;
 struct regmap;

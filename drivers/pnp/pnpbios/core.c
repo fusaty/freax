@@ -32,23 +32,23 @@
  *		Removed some useless includes
  */
 
-#include <linux/types.h>
-#include <linux/init.h>
-#include <linux/linkage.h>
-#include <linux/kernel.h>
-#include <linux/device.h>
-#include <linux/pnp.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
-#include <linux/completion.h>
-#include <linux/spinlock.h>
-#include <linux/dmi.h>
-#include <linux/delay.h>
-#include <linux/acpi.h>
-#include <linux/freezer.h>
-#include <linux/kmod.h>
-#include <linux/kthread.h>
+#include <freax/types.h>
+#include <freax/init.h>
+#include <freax/linkage.h>
+#include <freax/kernel.h>
+#include <freax/device.h>
+#include <freax/pnp.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/slab.h>
+#include <freax/completion.h>
+#include <freax/spinlock.h>
+#include <freax/dmi.h>
+#include <freax/delay.h>
+#include <freax/acpi.h>
+#include <freax/freezer.h>
+#include <freax/kmod.h>
+#include <freax/kthread.h>
 
 #include <asm/page.h>
 #include <asm/desc.h>

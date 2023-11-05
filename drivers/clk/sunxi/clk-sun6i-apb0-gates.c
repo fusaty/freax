@@ -7,10 +7,10 @@
  * Allwinner A31 APB0 clock gates driver
  */
 
-#include <linux/clk-provider.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
+#include <freax/clk-provider.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
 
 #define SUN6I_APB0_GATES_MAX_SIZE	32
 

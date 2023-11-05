@@ -5,7 +5,7 @@
  *  Copyright (C) 2012  Renesas Electronics Europe Ltd
  */
 
-#include <linux/kernel.h>
+#include <freax/kernel.h>
 #include <cpu/sh7264.h>
 
 #include "sh_pfc.h"

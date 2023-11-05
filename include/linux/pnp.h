@@ -1,19 +1,19 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Linux Plug and Play Support
+ * freax Plug and Play Support
  * Copyright by Adam Belay <ambx1@neo.rr.com>
  * Copyright (C) 2008 Hewlett-Packard Development Company, L.P.
  *	Bjorn Helgaas <bjorn.helgaas@hp.com>
  */
 
-#ifndef _LINUX_PNP_H
-#define _LINUX_PNP_H
+#ifndef _freax_PNP_H
+#define _freax_PNP_H
 
-#include <linux/device.h>
-#include <linux/list.h>
-#include <linux/errno.h>
-#include <linux/mod_devicetable.h>
-#include <linux/console.h>
+#include <freax/device.h>
+#include <freax/list.h>
+#include <freax/errno.h>
+#include <freax/mod_devicetable.h>
+#include <freax/console.h>
 
 #define PNP_NAME_LEN		50
 
@@ -514,4 +514,4 @@ static inline void pnp_unregister_driver(struct pnp_driver *drv) { }
 	module_driver(__pnp_driver, pnp_register_driver, \
 				    pnp_unregister_driver)
 
-#endif /* _LINUX_PNP_H */
+#endif /* _freax_PNP_H */

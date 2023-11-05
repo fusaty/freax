@@ -1,5 +1,5 @@
 /*
- *  linux/drivers/video/modedb.c -- Standard video mode database management
+ *  freax/drivers/video/modedb.c -- Standard video mode database management
  *
  *	Copyright (C) 1999 Geert Uytterhoeven
  *
@@ -11,10 +11,10 @@
  *  more details.
  */
 
-#include <linux/module.h>
-#include <linux/slab.h>
-#include <linux/fb.h>
-#include <linux/kernel.h>
+#include <freax/module.h>
+#include <freax/slab.h>
+#include <freax/fb.h>
+#include <freax/kernel.h>
 
 #undef DEBUG
 

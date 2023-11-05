@@ -6,33 +6,33 @@
  * Copyright (C) 2001 PPC64 Team, IBM Corp
  */
 
-#include <linux/export.h>
-#include <linux/string.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/reboot.h>
-#include <linux/delay.h>
-#include <linux/initrd.h>
-#include <linux/seq_file.h>
-#include <linux/ioport.h>
-#include <linux/console.h>
-#include <linux/utsname.h>
-#include <linux/tty.h>
-#include <linux/root_dev.h>
-#include <linux/notifier.h>
-#include <linux/cpu.h>
-#include <linux/unistd.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
-#include <linux/memblock.h>
-#include <linux/pci.h>
-#include <linux/lockdep.h>
-#include <linux/memory.h>
-#include <linux/nmi.h>
-#include <linux/pgtable.h>
-#include <linux/of.h>
-#include <linux/of_fdt.h>
+#include <freax/export.h>
+#include <freax/string.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/reboot.h>
+#include <freax/delay.h>
+#include <freax/initrd.h>
+#include <freax/seq_file.h>
+#include <freax/ioport.h>
+#include <freax/console.h>
+#include <freax/utsname.h>
+#include <freax/tty.h>
+#include <freax/root_dev.h>
+#include <freax/notifier.h>
+#include <freax/cpu.h>
+#include <freax/unistd.h>
+#include <freax/serial.h>
+#include <freax/serial_8250.h>
+#include <freax/memblock.h>
+#include <freax/pci.h>
+#include <freax/lockdep.h>
+#include <freax/memory.h>
+#include <freax/nmi.h>
+#include <freax/pgtable.h>
+#include <freax/of.h>
+#include <freax/of_fdt.h>
 
 #include <asm/asm-prototypes.h>
 #include <asm/kvm_guest.h>
@@ -293,7 +293,7 @@ static void cpu_ready_for_interrupts(void)
 
 	/*
 	 * Set HFSCR:TM based on CPU features:
-	 * In the special case of TM no suspend (P9N DD2.1), Linux is
+	 * In the special case of TM no suspend (P9N DD2.1), freax is
 	 * told TM is off via the dt-ftrs but told to (partially) use
 	 * it via OPAL_REINIT_CPUS_TM_SUSPEND_DISABLED. So HFSCR[TM]
 	 * will be off from dt-ftrs but we need to turn it on for the
@@ -506,7 +506,7 @@ static bool use_spinloop(void)
 	 * When book3e boots from kexec, the ePAPR spin table does
 	 * not get used.
 	 */
-	return of_property_read_bool(of_chosen, "linux,booted-from-kexec");
+	return of_property_read_bool(of_chosen, "freax,booted-from-kexec");
 }
 
 void smp_release_cpus(void)

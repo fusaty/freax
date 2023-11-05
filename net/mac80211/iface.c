@@ -10,12 +10,12 @@
  * Copyright (c) 2016        Intel Deutschland GmbH
  * Copyright (C) 2018-2023 Intel Corporation
  */
-#include <linux/slab.h>
-#include <linux/kernel.h>
-#include <linux/if_arp.h>
-#include <linux/netdevice.h>
-#include <linux/rtnetlink.h>
-#include <linux/kcov.h>
+#include <freax/slab.h>
+#include <freax/kernel.h>
+#include <freax/if_arp.h>
+#include <freax/netdevice.h>
+#include <freax/rtnetlink.h>
+#include <freax/kcov.h>
 #include <net/mac80211.h>
 #include <net/ieee80211_radiotap.h>
 #include "ieee80211_i.h"

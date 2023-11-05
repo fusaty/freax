@@ -1,5 +1,5 @@
 /*
- * linux/include/kmsg_dump.h
+ * freax/include/kmsg_dump.h
  *
  * Copyright (C) 2009 Net Insight AB
  *
@@ -9,11 +9,11 @@
  * License.  See the file COPYING in the main directory of this archive
  * for more details.
  */
-#ifndef _LINUX_KMSG_DUMP_H
-#define _LINUX_KMSG_DUMP_H
+#ifndef _freax_KMSG_DUMP_H
+#define _freax_KMSG_DUMP_H
 
-#include <linux/errno.h>
-#include <linux/list.h>
+#include <freax/errno.h>
+#include <freax/list.h>
 
 /*
  * Keep this list arranged in rough order of priority. Anything listed after
@@ -107,4 +107,4 @@ static inline const char *kmsg_dump_reason_str(enum kmsg_dump_reason reason)
 }
 #endif
 
-#endif /* _LINUX_KMSG_DUMP_H */
+#endif /* _freax_KMSG_DUMP_H */

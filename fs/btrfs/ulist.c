@@ -4,7 +4,7 @@
  * written by Arne Jansen <sensille@gmx.net>
  */
 
-#include <linux/slab.h>
+#include <freax/slab.h>
 #include "messages.h"
 #include "ulist.h"
 #include "ctree.h"

@@ -7,9 +7,9 @@
  * Status accumulation and basic sense functions.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/io.h>
 
 #include <asm/ccwdev.h>
 #include <asm/cio.h>

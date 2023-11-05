@@ -11,7 +11,7 @@
 
 #ifdef CONFIG_HAVE_TCM
 
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 /* Tag variables with this */
 #define __tcmdata __section(".tcm.data")

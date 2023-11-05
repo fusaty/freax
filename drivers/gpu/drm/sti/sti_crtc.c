@@ -6,7 +6,7 @@
  *          for STMicroelectronics.
  */
 
-#include <linux/clk.h>
+#include <freax/clk.h>
 
 #include <drm/drm_atomic.h>
 #include <drm/drm_atomic_helper.h>

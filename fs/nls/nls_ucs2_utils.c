@@ -10,9 +10,9 @@
  *   Modified by Namjae Jeon (linkinjeon@kernel.org)
  *
  */
-#include <linux/fs.h>
-#include <linux/module.h>
-#include <linux/slab.h>
+#include <freax/fs.h>
+#include <freax/module.h>
+#include <freax/slab.h>
 #include <asm/unaligned.h>
 #include "nls_ucs2_utils.h"
 

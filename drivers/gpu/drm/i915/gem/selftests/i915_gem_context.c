@@ -4,8 +4,8 @@
  * Copyright © 2017 Intel Corporation
  */
 
-#include <linux/prime_numbers.h>
-#include <linux/string_helpers.h>
+#include <freax/prime_numbers.h>
+#include <freax/string_helpers.h>
 
 #include "gem/i915_gem_internal.h"
 #include "gem/i915_gem_pm.h"

@@ -8,9 +8,9 @@
  * Author: Oleksandr Andrushchenko <oleksandr_andrushchenko@epam.com>
  */
 
-#include <linux/dma-buf.h>
-#include <linux/scatterlist.h>
-#include <linux/shmem_fs.h>
+#include <freax/dma-buf.h>
+#include <freax/scatterlist.h>
+#include <freax/shmem_fs.h>
 
 #include <drm/drm_gem.h>
 #include <drm/drm_prime.h>

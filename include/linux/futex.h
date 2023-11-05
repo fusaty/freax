@@ -1,11 +1,11 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_FUTEX_H
-#define _LINUX_FUTEX_H
+#ifndef _freax_FUTEX_H
+#define _freax_FUTEX_H
 
-#include <linux/sched.h>
-#include <linux/ktime.h>
+#include <freax/sched.h>
+#include <freax/ktime.h>
 
-#include <uapi/linux/futex.h>
+#include <uapi/freax/futex.h>
 
 struct inode;
 struct mm_struct;

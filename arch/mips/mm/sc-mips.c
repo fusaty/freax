@@ -2,10 +2,10 @@
 /*
  * Copyright (C) 2006 Chris Dearman (chris@mips.com),
  */
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/mm.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/mm.h>
 
 #include <asm/cpu-type.h>
 #include <asm/mipsregs.h>

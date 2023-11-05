@@ -10,15 +10,15 @@
 #ifndef __CS35L41_HDA_H__
 #define __CS35L41_HDA_H__
 
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/regulator/consumer.h>
-#include <linux/gpio/consumer.h>
-#include <linux/device.h>
+#include <freax/acpi.h>
+#include <freax/efi.h>
+#include <freax/regulator/consumer.h>
+#include <freax/gpio/consumer.h>
+#include <freax/device.h>
 #include <sound/cs35l41.h>
 
-#include <linux/firmware/cirrus/cs_dsp.h>
-#include <linux/firmware/cirrus/wmfw.h>
+#include <freax/firmware/cirrus/cs_dsp.h>
+#include <freax/firmware/cirrus/wmfw.h>
 
 struct cs35l41_amp_cal_data {
 	u32 calTarget[2];

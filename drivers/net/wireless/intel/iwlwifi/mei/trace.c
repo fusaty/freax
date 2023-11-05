@@ -3,7 +3,7 @@
  * Copyright (C) 2021 Intel Corporation
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 /* sparse doesn't like tracepoint macros */
 #ifndef __CHECKER__

@@ -7,11 +7,11 @@
  *
  */
 
-#include <linux/platform_device.h>
-#include <linux/init.h>
-#include <linux/netdevice.h>
-#include <linux/phy.h>
-#include <linux/of.h>
+#include <freax/platform_device.h>
+#include <freax/init.h>
+#include <freax/netdevice.h>
+#include <freax/phy.h>
+#include <freax/of.h>
 
 #include "cpsw.h"
 

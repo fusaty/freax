@@ -1,15 +1,15 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * Linux driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
+ * freax driver for digital TV devices equipped with B2C2 FlexcopII(b)/III
  * flexcop-common.h - common header file for device-specific source files
  * see flexcop.c for copyright information
  */
 #ifndef __FLEXCOP_COMMON_H__
 #define __FLEXCOP_COMMON_H__
 
-#include <linux/interrupt.h>
-#include <linux/pci.h>
-#include <linux/mutex.h>
+#include <freax/interrupt.h>
+#include <freax/pci.h>
+#include <freax/mutex.h>
 
 #include "flexcop-reg.h"
 

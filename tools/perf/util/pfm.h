@@ -17,7 +17,7 @@ int parse_libpfm_events_option(const struct option *opt, const char *str,
 void print_libpfm_events(const struct print_callbacks *print_cb, void *print_state);
 
 #else
-#include <linux/compiler.h>
+#include <freax/compiler.h>
 
 static inline int parse_libpfm_events_option(
 	const struct option *opt __maybe_unused,

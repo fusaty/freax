@@ -14,19 +14,19 @@
  *
  */
 
-#include <linux/compat.h>
-#include <linux/workqueue.h>
+#include <freax/compat.h>
+#include <freax/workqueue.h>
 #include <net/xfrm.h>
-#include <linux/pfkeyv2.h>
-#include <linux/ipsec.h>
-#include <linux/module.h>
-#include <linux/cache.h>
-#include <linux/audit.h>
-#include <linux/uaccess.h>
-#include <linux/ktime.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
+#include <freax/pfkeyv2.h>
+#include <freax/ipsec.h>
+#include <freax/module.h>
+#include <freax/cache.h>
+#include <freax/audit.h>
+#include <freax/uaccess.h>
+#include <freax/ktime.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
 
 #include <crypto/aead.h>
 

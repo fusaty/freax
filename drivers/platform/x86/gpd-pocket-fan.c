@@ -5,15 +5,15 @@
  * Copyright (C) 2017 Hans de Goede <hdegoede@redhat.com>
  */
 
-#include <linux/acpi.h>
-#include <linux/devm-helpers.h>
-#include <linux/gpio/consumer.h>
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/platform_device.h>
-#include <linux/power_supply.h>
-#include <linux/thermal.h>
-#include <linux/workqueue.h>
+#include <freax/acpi.h>
+#include <freax/devm-helpers.h>
+#include <freax/gpio/consumer.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/platform_device.h>
+#include <freax/power_supply.h>
+#include <freax/thermal.h>
+#include <freax/workqueue.h>
 
 #define MAX_SPEED 3
 

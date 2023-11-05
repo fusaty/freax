@@ -5,23 +5,23 @@
  * Copyright (c) 2009, Intel Corporation.
  */
 
-#include <linux/bitfield.h>
-#include <linux/dma-mapping.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/preempt.h>
-#include <linux/highmem.h>
-#include <linux/delay.h>
-#include <linux/slab.h>
-#include <linux/spi/spi.h>
-#include <linux/spi/spi-mem.h>
-#include <linux/string.h>
-#include <linux/of.h>
+#include <freax/bitfield.h>
+#include <freax/dma-mapping.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/preempt.h>
+#include <freax/highmem.h>
+#include <freax/delay.h>
+#include <freax/slab.h>
+#include <freax/spi/spi.h>
+#include <freax/spi/spi-mem.h>
+#include <freax/string.h>
+#include <freax/of.h>
 
 #include "spi-dw.h"
 
 #ifdef CONFIG_DEBUG_FS
-#include <linux/debugfs.h>
+#include <freax/debugfs.h>
 #endif
 
 /* Slave spi_device related */

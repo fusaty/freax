@@ -5,13 +5,13 @@
  * Written by David Howells (dhowells@redhat.com)
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/init.h>
-#include <linux/completion.h>
-#include <linux/sched.h>
-#include <linux/random.h>
-#include <linux/proc_fs.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/init.h>
+#include <freax/completion.h>
+#include <freax/sched.h>
+#include <freax/random.h>
+#include <freax/proc_fs.h>
 #define CREATE_TRACE_POINTS
 #include "internal.h"
 
@@ -32,31 +32,31 @@ struct workqueue_struct *afs_wq;
 static struct proc_dir_entry *afs_proc_symlink;
 
 #if defined(CONFIG_ALPHA)
-const char afs_init_sysname[] = "alpha_linux26";
+const char afs_init_sysname[] = "alpha_freax26";
 #elif defined(CONFIG_X86_64)
-const char afs_init_sysname[] = "amd64_linux26";
+const char afs_init_sysname[] = "amd64_freax26";
 #elif defined(CONFIG_ARM)
-const char afs_init_sysname[] = "arm_linux26";
+const char afs_init_sysname[] = "arm_freax26";
 #elif defined(CONFIG_ARM64)
-const char afs_init_sysname[] = "aarch64_linux26";
+const char afs_init_sysname[] = "aarch64_freax26";
 #elif defined(CONFIG_X86_32)
-const char afs_init_sysname[] = "i386_linux26";
+const char afs_init_sysname[] = "i386_freax26";
 #elif defined(CONFIG_PPC64)
-const char afs_init_sysname[] = "ppc64_linux26";
+const char afs_init_sysname[] = "ppc64_freax26";
 #elif defined(CONFIG_PPC32)
-const char afs_init_sysname[] = "ppc_linux26";
+const char afs_init_sysname[] = "ppc_freax26";
 #elif defined(CONFIG_S390)
 #ifdef CONFIG_64BIT
-const char afs_init_sysname[] = "s390x_linux26";
+const char afs_init_sysname[] = "s390x_freax26";
 #else
-const char afs_init_sysname[] = "s390_linux26";
+const char afs_init_sysname[] = "s390_freax26";
 #endif
 #elif defined(CONFIG_SPARC64)
-const char afs_init_sysname[] = "sparc64_linux26";
+const char afs_init_sysname[] = "sparc64_freax26";
 #elif defined(CONFIG_SPARC32)
-const char afs_init_sysname[] = "sparc_linux26";
+const char afs_init_sysname[] = "sparc_freax26";
 #else
-const char afs_init_sysname[] = "unknown_linux26";
+const char afs_init_sysname[] = "unknown_freax26";
 #endif
 
 /*

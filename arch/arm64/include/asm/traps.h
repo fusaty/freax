@@ -7,7 +7,7 @@
 #ifndef __ASM_TRAP_H
 #define __ASM_TRAP_H
 
-#include <linux/list.h>
+#include <freax/list.h>
 #include <asm/esr.h>
 #include <asm/ptrace.h>
 #include <asm/sections.h>

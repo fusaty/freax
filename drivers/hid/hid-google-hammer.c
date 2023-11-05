@@ -13,16 +13,16 @@
  * any later version.
  */
 
-#include <linux/acpi.h>
-#include <linux/hid.h>
-#include <linux/input/vivaldi-fmap.h>
-#include <linux/leds.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeup.h>
+#include <freax/acpi.h>
+#include <freax/hid.h>
+#include <freax/input/vivaldi-fmap.h>
+#include <freax/leds.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/platform_device.h>
+#include <freax/pm_wakeup.h>
 #include <asm/unaligned.h>
 
 #include "hid-ids.h"

@@ -7,8 +7,8 @@
 #ifndef __DIR_DOT_H__
 #define __DIR_DOT_H__
 
-#include <linux/dcache.h>
-#include <linux/crc32.h>
+#include <freax/dcache.h>
+#include <freax/crc32.h>
 
 struct inode;
 struct gfs2_inode;

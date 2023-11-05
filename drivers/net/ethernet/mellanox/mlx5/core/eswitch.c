@@ -30,13 +30,13 @@
  * SOFTWARE.
  */
 
-#include <linux/etherdevice.h>
-#include <linux/debugfs.h>
-#include <linux/mlx5/driver.h>
-#include <linux/mlx5/mlx5_ifc.h>
-#include <linux/mlx5/vport.h>
-#include <linux/mlx5/fs.h>
-#include <linux/mlx5/mpfs.h>
+#include <freax/etherdevice.h>
+#include <freax/debugfs.h>
+#include <freax/mlx5/driver.h>
+#include <freax/mlx5/mlx5_ifc.h>
+#include <freax/mlx5/vport.h>
+#include <freax/mlx5/fs.h>
+#include <freax/mlx5/mpfs.h>
 #include "esw/acl/lgcy.h"
 #include "esw/legacy.h"
 #include "esw/qos.h"

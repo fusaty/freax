@@ -11,14 +11,14 @@
  *         Roger Quadros <rogerq@ti.com>
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
+#include <freax/dma-mapping.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
 
 #include "core.h"
 #include "host-export.h"

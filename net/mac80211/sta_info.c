@@ -7,16 +7,16 @@
  * Copyright (C) 2018-2023 Intel Corporation
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/etherdevice.h>
-#include <linux/netdevice.h>
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/skbuff.h>
-#include <linux/if_arp.h>
-#include <linux/timer.h>
-#include <linux/rtnetlink.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/etherdevice.h>
+#include <freax/netdevice.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/skbuff.h>
+#include <freax/if_arp.h>
+#include <freax/timer.h>
+#include <freax/rtnetlink.h>
 
 #include <net/codel.h>
 #include <net/mac80211.h>

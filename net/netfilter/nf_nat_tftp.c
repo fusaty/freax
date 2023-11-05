@@ -2,13 +2,13 @@
 /* (C) 2001-2002 Magnus Boden <mb@ozaba.mine.nu>
  */
 
-#include <linux/module.h>
-#include <linux/udp.h>
+#include <freax/module.h>
+#include <freax/udp.h>
 
 #include <net/netfilter/nf_conntrack_helper.h>
 #include <net/netfilter/nf_conntrack_expect.h>
 #include <net/netfilter/nf_nat_helper.h>
-#include <linux/netfilter/nf_conntrack_tftp.h>
+#include <freax/netfilter/nf_conntrack_tftp.h>
 
 #define NAT_HELPER_NAME "tftp"
 

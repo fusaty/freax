@@ -1,4 +1,4 @@
-/* linux/mfd/tps6507x.h
+/* freax/mfd/tps6507x.h
  *
  * Functions to access TPS65070 power management chip.
  *
@@ -8,8 +8,8 @@
  *  For licencing details see kernel-base/COPYING
  */
 
-#ifndef __LINUX_MFD_TPS6507X_H
-#define __LINUX_MFD_TPS6507X_H
+#ifndef __freax_MFD_TPS6507X_H
+#define __freax_MFD_TPS6507X_H
 
 /*
  * ----------------------------------------------------------------------------
@@ -165,4 +165,4 @@ struct tps6507x_dev {
 	struct tps6507x_pmic *pmic;
 };
 
-#endif /*  __LINUX_MFD_TPS6507X_H */
+#endif /*  __freax_MFD_TPS6507X_H */

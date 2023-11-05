@@ -1,39 +1,39 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/arch/sparc/kernel/setup.c
+ *  freax/arch/sparc/kernel/setup.c
  *
  *  Copyright (C) 1995  David S. Miller (davem@caip.rutgers.edu)
  *  Copyright (C) 2000  Anton Blanchard (anton@samba.org)
  */
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/stddef.h>
-#include <linux/unistd.h>
-#include <linux/ptrace.h>
-#include <linux/slab.h>
-#include <linux/initrd.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/stddef.h>
+#include <freax/unistd.h>
+#include <freax/ptrace.h>
+#include <freax/slab.h>
+#include <freax/initrd.h>
 #include <asm/smp.h>
-#include <linux/user.h>
-#include <linux/delay.h>
-#include <linux/fs.h>
-#include <linux/seq_file.h>
-#include <linux/syscalls.h>
-#include <linux/kdev_t.h>
-#include <linux/major.h>
-#include <linux/string.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/console.h>
-#include <linux/spinlock.h>
-#include <linux/root_dev.h>
-#include <linux/cpu.h>
-#include <linux/kdebug.h>
-#include <linux/export.h>
-#include <linux/start_kernel.h>
-#include <uapi/linux/mount.h>
+#include <freax/user.h>
+#include <freax/delay.h>
+#include <freax/fs.h>
+#include <freax/seq_file.h>
+#include <freax/syscalls.h>
+#include <freax/kdev_t.h>
+#include <freax/major.h>
+#include <freax/string.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/console.h>
+#include <freax/spinlock.h>
+#include <freax/root_dev.h>
+#include <freax/cpu.h>
+#include <freax/kdebug.h>
+#include <freax/export.h>
+#include <freax/start_kernel.h>
+#include <uapi/freax/mount.h>
 
 #include <asm/io.h>
 #include <asm/processor.h>
@@ -257,7 +257,7 @@ struct tt_entry *sparc_ttable;
 /* Called from head_32.S - before we have setup anything
  * in the kernel. Be very careful with what you do here.
  */
-void __init sparc32_start_kernel(struct linux_romvec *rp)
+void __init sparc32_start_kernel(struct freax_romvec *rp)
 {
 	prom_init(rp);
 
@@ -343,10 +343,10 @@ void __init setup_arch(char **cmdline_p)
 
 	prom_setsync(prom_sync_me);
 
-	if((boot_flags & BOOTME_DEBUG) && (linux_dbvec != NULL) &&
-	   ((*(short *)linux_dbvec) != -1)) {
+	if((boot_flags & BOOTME_DEBUG) && (freax_dbvec != NULL) &&
+	   ((*(short *)freax_dbvec) != -1)) {
 		printk("Booted under KADB. Syncing trap table.\n");
-		(*(linux_dbvec->teach_debugger))();
+		(*(freax_dbvec->teach_debugger))();
 	}
 
 	/* Run-time patch instructions to match the cpu model */

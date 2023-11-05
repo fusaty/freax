@@ -4,29 +4,29 @@
 #ifndef _IAVF_H_
 #define _IAVF_H_
 
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/netdevice.h>
-#include <linux/vmalloc.h>
-#include <linux/interrupt.h>
-#include <linux/ethtool.h>
-#include <linux/if_vlan.h>
-#include <linux/ip.h>
-#include <linux/tcp.h>
-#include <linux/sctp.h>
-#include <linux/ipv6.h>
-#include <linux/kernel.h>
-#include <linux/bitops.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
-#include <linux/wait.h>
-#include <linux/delay.h>
-#include <linux/gfp.h>
-#include <linux/skbuff.h>
-#include <linux/dma-mapping.h>
-#include <linux/etherdevice.h>
-#include <linux/socket.h>
-#include <linux/jiffies.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/netdevice.h>
+#include <freax/vmalloc.h>
+#include <freax/interrupt.h>
+#include <freax/ethtool.h>
+#include <freax/if_vlan.h>
+#include <freax/ip.h>
+#include <freax/tcp.h>
+#include <freax/sctp.h>
+#include <freax/ipv6.h>
+#include <freax/kernel.h>
+#include <freax/bitops.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
+#include <freax/wait.h>
+#include <freax/delay.h>
+#include <freax/gfp.h>
+#include <freax/skbuff.h>
+#include <freax/dma-mapping.h>
+#include <freax/etherdevice.h>
+#include <freax/socket.h>
+#include <freax/jiffies.h>
 #include <net/ip6_checksum.h>
 #include <net/pkt_cls.h>
 #include <net/pkt_sched.h>
@@ -35,11 +35,11 @@
 #include <net/tc_act/tc_mirred.h>
 
 #include "iavf_type.h"
-#include <linux/avf/virtchnl.h>
+#include <freax/avf/virtchnl.h>
 #include "iavf_txrx.h"
 #include "iavf_fdir.h"
 #include "iavf_adv_rss.h"
-#include <linux/bitmap.h>
+#include <freax/bitmap.h>
 
 #define DEFAULT_DEBUG_LEVEL_SHIFT 3
 #define PFX "iavf: "

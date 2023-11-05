@@ -4,8 +4,8 @@
  * Copyright (c) 2021, Western Digital Corporation
  */
 
-#include <linux/hwmon.h>
-#include <linux/units.h>
+#include <freax/hwmon.h>
+#include <freax/units.h>
 
 #include <ufs/ufshcd.h>
 #include "ufshcd-priv.h"

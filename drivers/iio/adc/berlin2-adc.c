@@ -10,20 +10,20 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/iio/iio.h>
-#include <linux/iio/driver.h>
-#include <linux/iio/machine.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/mfd/syscon.h>
-#include <linux/regmap.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/driver.h>
+#include <freax/iio/machine.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/mfd/syscon.h>
+#include <freax/regmap.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
 
 #define BERLIN2_SM_CTRL				0x14
 #define  BERLIN2_SM_CTRL_SM_SOC_INT		BIT(1)

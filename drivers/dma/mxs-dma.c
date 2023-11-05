@@ -4,26 +4,26 @@
 //
 // Refer to drivers/dma/imx-sdma.c
 
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/interrupt.h>
-#include <linux/clk.h>
-#include <linux/wait.h>
-#include <linux/sched.h>
-#include <linux/semaphore.h>
-#include <linux/device.h>
-#include <linux/dma-mapping.h>
-#include <linux/slab.h>
-#include <linux/platform_device.h>
-#include <linux/dmaengine.h>
-#include <linux/delay.h>
-#include <linux/module.h>
-#include <linux/stmp_device.h>
-#include <linux/of.h>
-#include <linux/of_dma.h>
-#include <linux/list.h>
-#include <linux/dma/mxs-dma.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/interrupt.h>
+#include <freax/clk.h>
+#include <freax/wait.h>
+#include <freax/sched.h>
+#include <freax/semaphore.h>
+#include <freax/device.h>
+#include <freax/dma-mapping.h>
+#include <freax/slab.h>
+#include <freax/platform_device.h>
+#include <freax/dmaengine.h>
+#include <freax/delay.h>
+#include <freax/module.h>
+#include <freax/stmp_device.h>
+#include <freax/of.h>
+#include <freax/of_dma.h>
+#include <freax/list.h>
+#include <freax/dma/mxs-dma.h>
 
 #include <asm/irq.h>
 

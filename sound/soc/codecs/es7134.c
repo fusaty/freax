@@ -4,8 +4,8 @@
  * Author: Jerome Brunet <jbrunet@baylibre.com>
  */
 
-#include <linux/of_platform.h>
-#include <linux/module.h>
+#include <freax/of_platform.h>
+#include <freax/module.h>
 #include <sound/soc.h>
 
 /*

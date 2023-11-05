@@ -7,7 +7,7 @@
 
 #include "fsverity_private.h"
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /**
  * fsverity_ioctl_measure() - get a verity file's digest

@@ -13,8 +13,8 @@
 #if !defined(__DWC3_TRACE_H) || defined(TRACE_HEADER_MULTI_READ)
 #define __DWC3_TRACE_H
 
-#include <linux/types.h>
-#include <linux/tracepoint.h>
+#include <freax/types.h>
+#include <freax/tracepoint.h>
 #include <asm/byteorder.h>
 #include "core.h"
 #include "debug.h"

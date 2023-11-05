@@ -1,5 +1,5 @@
 /*
- * include/linux/dmapool.h
+ * include/freax/dmapool.h
  *
  * Allocation pools for DMAable (coherent) memory.
  *
@@ -8,10 +8,10 @@
  * warranty of any kind, whether express or implied.
  */
 
-#ifndef LINUX_DMAPOOL_H
-#define	LINUX_DMAPOOL_H
+#ifndef freax_DMAPOOL_H
+#define	freax_DMAPOOL_H
 
-#include <linux/scatterlist.h>
+#include <freax/scatterlist.h>
 #include <asm/io.h>
 
 struct device;

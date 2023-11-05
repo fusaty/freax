@@ -1,6 +1,6 @@
 /*
  * Copyright 2000 ATI Technologies Inc., Markham, Ontario, and
- *                VA Linux Systems Inc., Fremont, California.
+ *                VA freax Systems Inc., Fremont, California.
  * Copyright 2008 Red Hat Inc.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
@@ -36,8 +36,8 @@
 #include <drm/drm_encoder.h>
 #include <drm/drm_fixed.h>
 #include <drm/drm_modeset_helper_vtables.h>
-#include <linux/i2c.h>
-#include <linux/i2c-algo-bit.h>
+#include <freax/i2c.h>
+#include <freax/i2c-algo-bit.h>
 
 struct radeon_bo;
 struct radeon_device;

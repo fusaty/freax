@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- *  Based on linux/arch/arm/mm/dma-mapping.c
+ *  Based on freax/arch/arm/mm/dma-mapping.c
  *
  *  Copyright (C) 2000-2004 Russell King
  */
 
-#include <linux/dma-map-ops.h>
+#include <freax/dma-map-ops.h>
 #include <asm/cachetype.h>
 #include <asm/cacheflush.h>
 #include <asm/outercache.h>

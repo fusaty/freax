@@ -4,12 +4,12 @@
 // Copyright (C) 2012 Google, Inc.
 // Copyright (C) 2015 Collabora Ltd.
 
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/platform_data/cros_ec_commands.h>
-#include <linux/platform_data/cros_ec_proto.h>
-#include <linux/slab.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/platform_data/cros_ec_commands.h>
+#include <freax/platform_data/cros_ec_proto.h>
+#include <freax/slab.h>
 
 #define DRV_NAME "cros-ec-vbc"
 

@@ -3,7 +3,7 @@
  *  (C) 2004 Bruno Ducrot <ducrot@poupinou.org>
  *
  * Based on code found in
- * linux/arch/i386/kernel/cpu/cpufreq/powernow-k8.c
+ * freax/arch/i386/kernel/cpu/cpufreq/powernow-k8.c
  * and originally developed by Paul Devriendt
  */
 

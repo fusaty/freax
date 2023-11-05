@@ -5,8 +5,8 @@
 #ifndef __ASM_HEAD_H
 #define __ASM_HEAD_H
 
-#include <linux/linkage.h>
-#include <linux/init.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
 
 extern atomic_t hart_lottery;
 

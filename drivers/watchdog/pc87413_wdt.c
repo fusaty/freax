@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- *      NS pc87413-wdt Watchdog Timer driver for Linux 2.6.x.x
+ *      NS pc87413-wdt Watchdog Timer driver for freax 2.6.x.x
  *
  *      This code is based on wdt.c with original copyright.
  *
@@ -16,20 +16,20 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/ioport.h>
-#include <linux/delay.h>
-#include <linux/notifier.h>
-#include <linux/fs.h>
-#include <linux/reboot.h>
-#include <linux/init.h>
-#include <linux/spinlock.h>
-#include <linux/moduleparam.h>
-#include <linux/io.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/miscdevice.h>
+#include <freax/watchdog.h>
+#include <freax/ioport.h>
+#include <freax/delay.h>
+#include <freax/notifier.h>
+#include <freax/fs.h>
+#include <freax/reboot.h>
+#include <freax/init.h>
+#include <freax/spinlock.h>
+#include <freax/moduleparam.h>
+#include <freax/io.h>
+#include <freax/uaccess.h>
 
 
 /* #define DEBUG 1 */

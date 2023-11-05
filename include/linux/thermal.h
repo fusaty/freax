@@ -10,12 +10,12 @@
 #ifndef __THERMAL_H__
 #define __THERMAL_H__
 
-#include <linux/of.h>
-#include <linux/idr.h>
-#include <linux/device.h>
-#include <linux/sysfs.h>
-#include <linux/workqueue.h>
-#include <uapi/linux/thermal.h>
+#include <freax/of.h>
+#include <freax/idr.h>
+#include <freax/device.h>
+#include <freax/sysfs.h>
+#include <freax/workqueue.h>
+#include <uapi/freax/thermal.h>
 
 /* invalid cooling state */
 #define THERMAL_CSTATE_INVALID -1UL

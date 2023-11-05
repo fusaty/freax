@@ -1,7 +1,7 @@
-#ifndef _LINUX_UNALIGNED_PACKED_STRUCT_H
-#define _LINUX_UNALIGNED_PACKED_STRUCT_H
+#ifndef _freax_UNALIGNED_PACKED_STRUCT_H
+#define _freax_UNALIGNED_PACKED_STRUCT_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct __una_u16 { u16 x; } __packed;
 struct __una_u32 { u32 x; } __packed;
@@ -43,4 +43,4 @@ static inline void __put_unaligned_cpu64(u64 val, void *p)
 	ptr->x = val;
 }
 
-#endif /* _LINUX_UNALIGNED_PACKED_STRUCT_H */
+#endif /* _freax_UNALIGNED_PACKED_STRUCT_H */

@@ -6,14 +6,14 @@
  * Author: Boris BREZILLON <boris.brezillon@free-electrons.com>
  */
 
-#include <linux/clk.h>
-#include <linux/iopoll.h>
-#include <linux/mfd/atmel-hlcdc.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
+#include <freax/clk.h>
+#include <freax/iopoll.h>
+#include <freax/mfd/atmel-hlcdc.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
 
 #define ATMEL_HLCDC_REG_MAX		(0x4000 - 0x4)
 

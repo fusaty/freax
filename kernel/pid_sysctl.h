@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_PID_SYSCTL_H
-#define LINUX_PID_SYSCTL_H
+#ifndef freax_PID_SYSCTL_H
+#define freax_PID_SYSCTL_H
 
-#include <linux/pid_namespace.h>
+#include <freax/pid_namespace.h>
 
 #if defined(CONFIG_SYSCTL) && defined(CONFIG_MEMFD_CREATE)
 static int pid_mfd_noexec_dointvec_minmax(struct ctl_table *table,
@@ -51,4 +51,4 @@ static inline void register_pid_ns_sysctl_table_vm(void)
 static inline void register_pid_ns_sysctl_table_vm(void) {}
 #endif
 
-#endif /* LINUX_PID_SYSCTL_H */
+#endif /* freax_PID_SYSCTL_H */

@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_SSB_PCICORE_H_
-#define LINUX_SSB_PCICORE_H_
+#ifndef freax_SSB_PCICORE_H_
+#define freax_SSB_PCICORE_H_
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 struct pci_dev;
 
@@ -128,4 +128,4 @@ int ssb_pcicore_pcibios_map_irq(const struct pci_dev *dev, u8 slot, u8 pin)
 }
 
 #endif /* CONFIG_SSB_DRIVER_PCICORE */
-#endif /* LINUX_SSB_PCICORE_H_ */
+#endif /* freax_SSB_PCICORE_H_ */

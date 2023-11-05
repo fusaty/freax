@@ -3,13 +3,13 @@
  *
  * Copyright (C) 2009 David S. Miller (davem@davemloft.net)
  */
-#include <linux/kernel.h>
-#include <linux/export.h>
-#include <linux/init.h>
-#include <linux/irq.h>
+#include <freax/kernel.h>
+#include <freax/export.h>
+#include <freax/init.h>
+#include <freax/irq.h>
 
-#include <linux/irq_work.h>
-#include <linux/ftrace.h>
+#include <freax/irq_work.h>
+#include <freax/ftrace.h>
 
 #include <asm/pil.h>
 #include <asm/pcr.h>

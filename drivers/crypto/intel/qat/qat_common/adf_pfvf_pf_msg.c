@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: (BSD-3-Clause OR GPL-2.0-only)
 /* Copyright(c) 2015 - 2021 Intel Corporation */
-#include <linux/pci.h>
+#include <freax/pci.h>
 #include "adf_accel_devices.h"
 #include "adf_pfvf_msg.h"
 #include "adf_pfvf_pf_msg.h"

@@ -5,10 +5,10 @@
  * Copyright 2021 Google LLC
  */
 
-#include <linux/kvm_host.h>
-#include <linux/kvm.h>
-#include <linux/errno.h>
-#include <linux/uaccess.h>
+#include <freax/kvm_host.h>
+#include <freax/kvm.h>
+#include <freax/errno.h>
+#include <freax/uaccess.h>
 
 /**
  * kvm_stats_read() - Common function to read from the binary statistics

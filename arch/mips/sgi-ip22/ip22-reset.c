@@ -5,15 +5,15 @@
  *
  * Copyright (C) 1997, 1998, 2001, 03, 05, 06 by Ralf Baechle
  */
-#include <linux/linkage.h>
-#include <linux/init.h>
-#include <linux/rtc/ds1286.h>
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/sched/signal.h>
-#include <linux/panic_notifier.h>
-#include <linux/pm.h>
-#include <linux/timer.h>
+#include <freax/linkage.h>
+#include <freax/init.h>
+#include <freax/rtc/ds1286.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/sched/signal.h>
+#include <freax/panic_notifier.h>
+#include <freax/pm.h>
+#include <freax/timer.h>
 
 #include <asm/io.h>
 #include <asm/irq.h>

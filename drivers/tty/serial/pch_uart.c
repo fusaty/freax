@@ -2,26 +2,26 @@
 /*
  *Copyright (C) 2011 LAPIS Semiconductor Co., Ltd.
  */
-#include <linux/kernel.h>
-#include <linux/serial.h>
-#include <linux/serial_reg.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/console.h>
-#include <linux/serial_core.h>
-#include <linux/tty.h>
-#include <linux/tty_flip.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/dmi.h>
-#include <linux/nmi.h>
-#include <linux/delay.h>
-#include <linux/of.h>
+#include <freax/kernel.h>
+#include <freax/serial.h>
+#include <freax/serial_reg.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/console.h>
+#include <freax/serial_core.h>
+#include <freax/tty.h>
+#include <freax/tty_flip.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/dmi.h>
+#include <freax/nmi.h>
+#include <freax/delay.h>
+#include <freax/of.h>
 
-#include <linux/debugfs.h>
-#include <linux/dmaengine.h>
-#include <linux/pch_dma.h>
+#include <freax/debugfs.h>
+#include <freax/dmaengine.h>
+#include <freax/pch_dma.h>
 
 enum {
 	PCH_UART_HANDLED_RX_INT_SHIFT,

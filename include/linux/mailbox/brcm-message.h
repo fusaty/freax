@@ -6,10 +6,10 @@
  * Broadcom SoCs and Broadcom mailbox client drivers.
  */
 
-#ifndef _LINUX_BRCM_MESSAGE_H_
-#define _LINUX_BRCM_MESSAGE_H_
+#ifndef _freax_BRCM_MESSAGE_H_
+#define _freax_BRCM_MESSAGE_H_
 
-#include <linux/scatterlist.h>
+#include <freax/scatterlist.h>
 
 enum brcm_message_type {
 	BRCM_MESSAGE_UNKNOWN = 0,
@@ -56,4 +56,4 @@ struct brcm_message {
 	int error;
 };
 
-#endif /* _LINUX_BRCM_MESSAGE_H_ */
+#endif /* _freax_BRCM_MESSAGE_H_ */

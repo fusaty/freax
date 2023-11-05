@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- * linux/ipc/shm.c
+ * freax/ipc/shm.c
  * Copyright (C) 1992, 1993 Krishna Balasubramanian
  *	 Many improvements/fixes by Bruno Haible.
  * Replaced `struct shm_desc' by `struct vm_area_struct', July 1994.
@@ -25,27 +25,27 @@
  * Davidlohr Bueso <davidlohr.bueso@hp.com>, June 2013.
  */
 
-#include <linux/slab.h>
-#include <linux/mm.h>
-#include <linux/hugetlb.h>
-#include <linux/shm.h>
-#include <linux/init.h>
-#include <linux/file.h>
-#include <linux/mman.h>
-#include <linux/shmem_fs.h>
-#include <linux/security.h>
-#include <linux/syscalls.h>
-#include <linux/audit.h>
-#include <linux/capability.h>
-#include <linux/ptrace.h>
-#include <linux/seq_file.h>
-#include <linux/rwsem.h>
-#include <linux/nsproxy.h>
-#include <linux/mount.h>
-#include <linux/ipc_namespace.h>
-#include <linux/rhashtable.h>
+#include <freax/slab.h>
+#include <freax/mm.h>
+#include <freax/hugetlb.h>
+#include <freax/shm.h>
+#include <freax/init.h>
+#include <freax/file.h>
+#include <freax/mman.h>
+#include <freax/shmem_fs.h>
+#include <freax/security.h>
+#include <freax/syscalls.h>
+#include <freax/audit.h>
+#include <freax/capability.h>
+#include <freax/ptrace.h>
+#include <freax/seq_file.h>
+#include <freax/rwsem.h>
+#include <freax/nsproxy.h>
+#include <freax/mount.h>
+#include <freax/ipc_namespace.h>
+#include <freax/rhashtable.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 #include "util.h"
 
@@ -1149,7 +1149,7 @@ static int shmctl_stat(struct ipc_namespace *ns, int shmid,
 		err = 0;
 	} else {
 		/*
-		 * SHM_STAT and SHM_STAT_ANY (both Linux specific)
+		 * SHM_STAT and SHM_STAT_ANY (both freax specific)
 		 * Return the full id, including the sequence number
 		 */
 		err = shp->shm_perm.id;

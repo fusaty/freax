@@ -3,7 +3,7 @@
  * unsigned long __xdiv64_32(unsigned long long n, unsigned long d); 
  */
 
-#include <linux/linkage.h>
+#include <freax/linkage.h>
 
 .text
 ENTRY(__xdiv64_32)

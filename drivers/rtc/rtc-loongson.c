@@ -7,13 +7,13 @@
  *                           Binbin Zhou <zhoubinbin@loongson.cn>
  */
 
-#include <linux/bitfield.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regmap.h>
-#include <linux/rtc.h>
-#include <linux/acpi.h>
+#include <freax/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regmap.h>
+#include <freax/rtc.h>
+#include <freax/acpi.h>
 
 /* Time Of Year(TOY) counters registers */
 #define TOY_TRIM_REG		0x20 /* Must be initialized to 0 */

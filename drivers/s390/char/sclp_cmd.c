@@ -8,17 +8,17 @@
 #define KMSG_COMPONENT "sclp_cmd"
 #define pr_fmt(fmt) KMSG_COMPONENT ": " fmt
 
-#include <linux/completion.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/mmzone.h>
-#include <linux/memory.h>
-#include <linux/module.h>
+#include <freax/completion.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/mmzone.h>
+#include <freax/memory.h>
+#include <freax/module.h>
 #include <asm/ctlreg.h>
 #include <asm/chpid.h>
 #include <asm/setup.h>

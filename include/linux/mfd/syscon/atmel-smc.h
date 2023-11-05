@@ -8,12 +8,12 @@
  * Author: Boris Brezillon <boris.brezillon@free-electrons.com>
  */
 
-#ifndef _LINUX_MFD_SYSCON_ATMEL_SMC_H_
-#define _LINUX_MFD_SYSCON_ATMEL_SMC_H_
+#ifndef _freax_MFD_SYSCON_ATMEL_SMC_H_
+#define _freax_MFD_SYSCON_ATMEL_SMC_H_
 
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/regmap.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
 
 #define ATMEL_SMC_SETUP(cs)			(((cs) * 0x10))
 #define ATMEL_HSMC_SETUP(layout, cs)		\
@@ -116,4 +116,4 @@ void atmel_hsmc_cs_conf_get(struct regmap *regmap,
 const struct atmel_hsmc_reg_layout *
 atmel_hsmc_get_reg_layout(struct device_node *np);
 
-#endif /* _LINUX_MFD_SYSCON_ATMEL_SMC_H_ */
+#endif /* _freax_MFD_SYSCON_ATMEL_SMC_H_ */

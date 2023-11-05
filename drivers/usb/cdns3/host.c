@@ -9,12 +9,12 @@
  *          Pawel Laszczak <pawell@cadence.com>
  */
 
-#include <linux/platform_device.h>
-#include <linux/slab.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
 #include "core.h"
 #include "drd.h"
 #include "host-export.h"
-#include <linux/usb/hcd.h>
+#include <freax/usb/hcd.h>
 #include "../host/xhci.h"
 #include "../host/xhci-plat.h"
 

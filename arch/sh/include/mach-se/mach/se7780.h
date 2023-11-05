@@ -3,13 +3,13 @@
 #define __ASM_SH_SE7780_H
 
 /*
- * linux/include/asm-sh/se7780.h
+ * freax/include/asm-sh/se7780.h
  *
  * Copyright (C) 2006,2007  Nobuhiro Iwamatsu
  *
  * Hitachi UL SolutionEngine 7780 Support.
  */
-#include <linux/sh_intc.h>
+#include <freax/sh_intc.h>
 #include <asm/addrspace.h>
 
 /* Box specific addresses.  */

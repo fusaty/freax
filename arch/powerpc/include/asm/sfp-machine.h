@@ -158,8 +158,8 @@
   } while (0)
 
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
 
 #define __FPU_TRAP_P(bits) \
 	((__FPU_ENABLED_EXC & (bits)) != 0)
@@ -202,7 +202,7 @@
  * stdlib/longlong.h
  */
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 
 /* add_ssaaaa is used in op-2.h and should be equivalent to

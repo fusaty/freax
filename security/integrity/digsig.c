@@ -6,14 +6,14 @@
  * Dmitry Kasatkin <dmitry.kasatkin@intel.com>
  */
 
-#include <linux/err.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/cred.h>
-#include <linux/kernel_read_file.h>
-#include <linux/key-type.h>
-#include <linux/digsig.h>
-#include <linux/vmalloc.h>
+#include <freax/err.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/cred.h>
+#include <freax/kernel_read_file.h>
+#include <freax/key-type.h>
+#include <freax/digsig.h>
+#include <freax/vmalloc.h>
 #include <crypto/public_key.h>
 #include <keys/system_keyring.h>
 

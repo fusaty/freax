@@ -7,10 +7,10 @@
 #ifndef _CAN_LENGTH_H
 #define _CAN_LENGTH_H
 
-#include <linux/bits.h>
-#include <linux/can.h>
-#include <linux/can/netlink.h>
-#include <linux/math.h>
+#include <freax/bits.h>
+#include <freax/can.h>
+#include <freax/can/netlink.h>
+#include <freax/math.h>
 
 /*
  * Size of a Classical CAN Standard Frame header in bits

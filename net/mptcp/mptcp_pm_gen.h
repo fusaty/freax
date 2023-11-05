@@ -1,15 +1,15 @@
-/* SPDX-License-Identifier: ((GPL-2.0 WITH Linux-syscall-note) OR BSD-3-Clause) */
+/* SPDX-License-Identifier: ((GPL-2.0 WITH freax-syscall-note) OR BSD-3-Clause) */
 /* Do not edit directly, auto-generated from: */
 /*	Documentation/netlink/specs/mptcp.yaml */
 /* YNL-GEN kernel header */
 
-#ifndef _LINUX_MPTCP_PM_GEN_H
-#define _LINUX_MPTCP_PM_GEN_H
+#ifndef _freax_MPTCP_PM_GEN_H
+#define _freax_MPTCP_PM_GEN_H
 
 #include <net/netlink.h>
 #include <net/genetlink.h>
 
-#include <uapi/linux/mptcp_pm.h>
+#include <uapi/freax/mptcp_pm.h>
 
 /* Common nested types */
 extern const struct nla_policy mptcp_pm_address_nl_policy[MPTCP_PM_ADDR_ATTR_IF_IDX + 1];
@@ -55,4 +55,4 @@ int mptcp_pm_nl_subflow_create_doit(struct sk_buff *skb,
 int mptcp_pm_nl_subflow_destroy_doit(struct sk_buff *skb,
 				     struct genl_info *info);
 
-#endif /* _LINUX_MPTCP_PM_GEN_H */
+#endif /* _freax_MPTCP_PM_GEN_H */

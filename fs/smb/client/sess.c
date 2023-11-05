@@ -15,9 +15,9 @@
 #include "cifs_debug.h"
 #include "ntlmssp.h"
 #include "nterr.h"
-#include <linux/utsname.h>
-#include <linux/slab.h>
-#include <linux/version.h>
+#include <freax/utsname.h>
+#include <freax/slab.h>
+#include <freax/version.h>
 #include "cifsfs.h"
 #include "cifs_spnego.h"
 #include "smb2proto.h"
@@ -569,7 +569,7 @@ unicode_oslm_strings(char **pbcc_area, const struct nls_table *nls_cp)
 	int bytes_ret = 0;
 
 	/* Copy OS version */
-	bytes_ret = cifs_strtoUTF16((__le16 *)bcc_ptr, "Linux version ", 32,
+	bytes_ret = cifs_strtoUTF16((__le16 *)bcc_ptr, "freax version ", 32,
 				    nls_cp);
 	bcc_ptr += 2 * bytes_ret;
 	bytes_ret = cifs_strtoUTF16((__le16 *) bcc_ptr, init_utsname()->release,
@@ -666,8 +666,8 @@ static void ascii_ssetup_strings(char **pbcc_area, struct cifs_ses *ses,
 
 	/* BB check for overflow here */
 
-	strcpy(bcc_ptr, "Linux version ");
-	bcc_ptr += strlen("Linux version ");
+	strcpy(bcc_ptr, "freax version ");
+	bcc_ptr += strlen("freax version ");
 	strcpy(bcc_ptr, init_utsname()->release);
 	bcc_ptr += strlen(init_utsname()->release) + 1;
 
@@ -998,8 +998,8 @@ int build_ntlmssp_smb3_negotiate_blob(unsigned char **pbuffer,
 	if (!server->session_estab || ses->ntlmssp->sesskey_per_smbsess)
 		flags |= NTLMSSP_NEGOTIATE_KEY_XCH;
 
-	sec_blob->Version.ProductMajorVersion = LINUX_VERSION_MAJOR;
-	sec_blob->Version.ProductMinorVersion = LINUX_VERSION_PATCHLEVEL;
+	sec_blob->Version.ProductMajorVersion = freax_VERSION_MAJOR;
+	sec_blob->Version.ProductMinorVersion = freax_VERSION_PATCHLEVEL;
 	sec_blob->Version.ProductBuild = cpu_to_le16(SMB3_PRODUCT_BUILD);
 	sec_blob->Version.NTLMRevisionCurrent = NTLMSSP_REVISION_W2K3;
 
@@ -1064,8 +1064,8 @@ int build_ntlmssp_auth_blob(unsigned char **pbuffer,
 		NTLMSSP_NEGOTIATE_TARGET_INFO | NTLMSSP_NEGOTIATE_VERSION |
 		NTLMSSP_NEGOTIATE_WORKSTATION_SUPPLIED;
 
-	sec_blob->Version.ProductMajorVersion = LINUX_VERSION_MAJOR;
-	sec_blob->Version.ProductMinorVersion = LINUX_VERSION_PATCHLEVEL;
+	sec_blob->Version.ProductMajorVersion = freax_VERSION_MAJOR;
+	sec_blob->Version.ProductMinorVersion = freax_VERSION_PATCHLEVEL;
 	sec_blob->Version.ProductBuild = cpu_to_le16(SMB3_PRODUCT_BUILD);
 	sec_blob->Version.NTLMRevisionCurrent = NTLMSSP_REVISION_W2K3;
 

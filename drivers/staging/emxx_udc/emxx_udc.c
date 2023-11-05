@@ -6,28 +6,28 @@
  *  Copyright (C) 2010 Renesas Electronics Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/delay.h>
-#include <linux/ioport.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
-#include <linux/list.h>
-#include <linux/interrupt.h>
-#include <linux/proc_fs.h>
-#include <linux/clk.h>
-#include <linux/ctype.h>
-#include <linux/string.h>
-#include <linux/dma-mapping.h>
-#include <linux/workqueue.h>
-#include <linux/device.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/delay.h>
+#include <freax/ioport.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
+#include <freax/list.h>
+#include <freax/interrupt.h>
+#include <freax/proc_fs.h>
+#include <freax/clk.h>
+#include <freax/ctype.h>
+#include <freax/string.h>
+#include <freax/dma-mapping.h>
+#include <freax/workqueue.h>
+#include <freax/device.h>
 
-#include <linux/usb/ch9.h>
-#include <linux/usb/gadget.h>
+#include <freax/usb/ch9.h>
+#include <freax/usb/gadget.h>
 
-#include <linux/irq.h>
-#include <linux/gpio/consumer.h>
+#include <freax/irq.h>
+#include <freax/gpio/consumer.h>
 
 #include "emxx_udc.h"
 
@@ -2215,7 +2215,7 @@ static inline void _nbu2ss_check_vbus(struct nbu2ss_udc *udc)
 	/* VBUS ON Check*/
 	reg_dt = gpiod_get_value(vbus_gpio);
 	if (reg_dt == 0) {
-		udc->linux_suspended = 0;
+		udc->freax_suspended = 0;
 
 		_nbu2ss_reset_controller(udc);
 		dev_info(udc->dev, " ----- VBUS OFF\n");
@@ -2246,7 +2246,7 @@ static inline void _nbu2ss_check_vbus(struct nbu2ss_udc *udc)
 
 		dev_info(udc->dev, " ----- VBUS ON\n");
 
-		if (udc->linux_suspended)
+		if (udc->freax_suspended)
 			return;
 
 		if (udc->vbus_active == 0) {
@@ -3168,7 +3168,7 @@ static int nbu2ss_drv_suspend(struct platform_device *pdev, pm_message_t state)
 	if (udc->vbus_active) {
 		udc->vbus_active = 0;
 		udc->devstate = USB_STATE_NOTATTACHED;
-		udc->linux_suspended = 1;
+		udc->freax_suspended = 1;
 
 		if (udc->usb_suspended) {
 			udc->usb_suspended = 0;
@@ -3200,7 +3200,7 @@ static int nbu2ss_drv_resume(struct platform_device *pdev)
 		_nbu2ss_pullup(udc, 1);
 	}
 
-	udc->linux_suspended = 0;
+	udc->freax_suspended = 0;
 
 	return 0;
 }

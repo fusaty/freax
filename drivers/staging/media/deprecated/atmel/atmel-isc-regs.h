@@ -2,7 +2,7 @@
 #ifndef __ATMEL_ISC_REGS_H
 #define __ATMEL_ISC_REGS_H
 
-#include <linux/bitops.h>
+#include <freax/bitops.h>
 
 /* ISC Control Enable Register 0 */
 #define ISC_CTRLEN      0x00000000

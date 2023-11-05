@@ -11,21 +11,21 @@
  * TODO:	Support the motion detector
  */
 
-#include <linux/device.h>
-#include <linux/kernel.h>
-#include <linux/sysfs.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/regmap.h>
-#include <linux/bitops.h>
-#include <linux/delay.h>
-#include <linux/regulator/consumer.h>
-#include <linux/pm_runtime.h>
-#include <linux/iio/iio.h>
-#include <linux/iio/sysfs.h>
-#include <linux/iio/buffer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/trigger_consumer.h>
+#include <freax/device.h>
+#include <freax/kernel.h>
+#include <freax/sysfs.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/regmap.h>
+#include <freax/bitops.h>
+#include <freax/delay.h>
+#include <freax/regulator/consumer.h>
+#include <freax/pm_runtime.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/sysfs.h>
+#include <freax/iio/buffer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/trigger_consumer.h>
 
 #include "kxsd9.h"
 

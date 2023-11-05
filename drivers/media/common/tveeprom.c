@@ -18,13 +18,13 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/module.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/types.h>
-#include <linux/videodev2.h>
-#include <linux/i2c.h>
+#include <freax/module.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/types.h>
+#include <freax/videodev2.h>
+#include <freax/i2c.h>
 
 #include <media/tuner.h>
 #include <media/tveeprom.h>

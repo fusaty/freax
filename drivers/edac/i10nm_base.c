@@ -5,8 +5,8 @@
  *
  */
 
-#include <linux/kernel.h>
-#include <linux/io.h>
+#include <freax/kernel.h>
+#include <freax/io.h>
 #include <asm/cpu_device_id.h>
 #include <asm/intel-family.h>
 #include <asm/mce.h>
@@ -1224,7 +1224,7 @@ module_param_cb(decoding_via_mca, &decoding_via_mca_param_ops, &decoding_via_mca
 MODULE_PARM_DESC(decoding_via_mca, "decoding_via_mca: 0=off(default), 1=enable");
 
 module_param(retry_rd_err_log, int, 0444);
-MODULE_PARM_DESC(retry_rd_err_log, "retry_rd_err_log: 0=off(default), 1=bios(Linux doesn't reset any control bits, but just reports values.), 2=linux(Linux tries to take control and resets mode bits, clear valid/UC bits after reading.)");
+MODULE_PARM_DESC(retry_rd_err_log, "retry_rd_err_log: 0=off(default), 1=bios(freax doesn't reset any control bits, but just reports values.), 2=freax(freax tries to take control and resets mode bits, clear valid/UC bits after reading.)");
 
 MODULE_LICENSE("GPL v2");
 MODULE_DESCRIPTION("MC Driver for Intel 10nm server processors");

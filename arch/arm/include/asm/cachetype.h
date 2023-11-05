@@ -21,17 +21,17 @@ extern unsigned int cacheid;
 #define icache_is_pipt()		cacheid_is(CACHEID_PIPT)
 
 /*
- * __LINUX_ARM_ARCH__ is the minimum supported CPU architecture
+ * __freax_ARM_ARCH__ is the minimum supported CPU architecture
  * Mask out support which will never be present on newer CPUs.
  * - v6+ is never VIVT
  * - v7+ VIPT never aliases on D-side
  */
-#if __LINUX_ARM_ARCH__ >= 7
+#if __freax_ARM_ARCH__ >= 7
 #define __CACHEID_ARCH_MIN	(CACHEID_VIPT_NONALIASING |\
 				 CACHEID_ASID_TAGGED |\
 				 CACHEID_VIPT_I_ALIASING |\
 				 CACHEID_PIPT)
-#elif __LINUX_ARM_ARCH__ >= 6
+#elif __freax_ARM_ARCH__ >= 6
 #define	__CACHEID_ARCH_MIN	(~CACHEID_VIVT)
 #else
 #define __CACHEID_ARCH_MIN	(~0)
@@ -82,7 +82,7 @@ static inline unsigned int read_ccsidr(void)
 	return val;
 }
 #else /* CONFIG_CPU_V7M */
-#include <linux/io.h>
+#include <freax/io.h>
 #include "asm/v7m.h"
 
 static inline void set_csselr(unsigned int cache_selector)

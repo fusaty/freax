@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -86,54 +86,54 @@
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
 #include <asm/unaligned.h>
-#include <linux/capability.h>
-#include <linux/errno.h>
-#include <linux/errqueue.h>
-#include <linux/types.h>
-#include <linux/socket.h>
-#include <linux/in.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/proc_fs.h>
-#include <linux/seq_file.h>
-#include <linux/sched.h>
-#include <linux/sched/mm.h>
-#include <linux/timer.h>
-#include <linux/string.h>
-#include <linux/sockios.h>
-#include <linux/net.h>
-#include <linux/mm.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/poll.h>
-#include <linux/tcp.h>
-#include <linux/init.h>
-#include <linux/highmem.h>
-#include <linux/user_namespace.h>
-#include <linux/static_key.h>
-#include <linux/memcontrol.h>
-#include <linux/prefetch.h>
-#include <linux/compat.h>
-#include <linux/mroute.h>
-#include <linux/mroute6.h>
-#include <linux/icmpv6.h>
+#include <freax/capability.h>
+#include <freax/errno.h>
+#include <freax/errqueue.h>
+#include <freax/types.h>
+#include <freax/socket.h>
+#include <freax/in.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/proc_fs.h>
+#include <freax/seq_file.h>
+#include <freax/sched.h>
+#include <freax/sched/mm.h>
+#include <freax/timer.h>
+#include <freax/string.h>
+#include <freax/sockios.h>
+#include <freax/net.h>
+#include <freax/mm.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/poll.h>
+#include <freax/tcp.h>
+#include <freax/init.h>
+#include <freax/highmem.h>
+#include <freax/user_namespace.h>
+#include <freax/static_key.h>
+#include <freax/memcontrol.h>
+#include <freax/prefetch.h>
+#include <freax/compat.h>
+#include <freax/mroute.h>
+#include <freax/mroute6.h>
+#include <freax/icmpv6.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 #include <net/protocol.h>
-#include <linux/skbuff.h>
+#include <freax/skbuff.h>
 #include <net/net_namespace.h>
 #include <net/request_sock.h>
 #include <net/sock.h>
-#include <linux/net_tstamp.h>
+#include <freax/net_tstamp.h>
 #include <net/xfrm.h>
-#include <linux/ipsec.h>
+#include <freax/ipsec.h>
 #include <net/cls_cgroup.h>
 #include <net/netprio_cgroup.h>
-#include <linux/sock_diag.h>
+#include <freax/sock_diag.h>
 
-#include <linux/filter.h>
+#include <freax/filter.h>
 #include <net/sock_reuseport.h>
 #include <net/bpf_sk_storage.h>
 
@@ -143,7 +143,7 @@
 #include <net/busy_poll.h>
 #include <net/phonet/phonet.h>
 
-#include <linux/ethtool.h>
+#include <freax/ethtool.h>
 
 #include "dev.h"
 

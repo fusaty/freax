@@ -13,8 +13,8 @@
 #include <asm-generic/kprobes.h>
 
 #ifdef CONFIG_KPROBES
-#include <linux/ptrace.h>
-#include <linux/types.h>
+#include <freax/ptrace.h>
+#include <freax/types.h>
 
 #include <asm/cacheflush.h>
 #include <asm/kdebug.h>

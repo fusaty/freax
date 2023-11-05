@@ -5,19 +5,19 @@
  * Copyright 2009-2011 Analog Devices Inc.
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/errno.h>
-#include <linux/pm.h>
-#include <linux/platform_device.h>
-#include <linux/i2c.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
-#include <linux/leds.h>
-#include <linux/workqueue.h>
-#include <linux/slab.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/errno.h>
+#include <freax/pm.h>
+#include <freax/platform_device.h>
+#include <freax/i2c.h>
+#include <freax/fb.h>
+#include <freax/backlight.h>
+#include <freax/leds.h>
+#include <freax/workqueue.h>
+#include <freax/slab.h>
 
-#include <linux/platform_data/adp8870.h>
+#include <freax/platform_data/adp8870.h>
 #define ADP8870_EXT_FEATURES
 #define ADP8870_USE_LEDS
 

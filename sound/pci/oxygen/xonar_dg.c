@@ -43,8 +43,8 @@
  *   aux out -> front panel headphones
  */
 
-#include <linux/pci.h>
-#include <linux/delay.h>
+#include <freax/pci.h>
+#include <freax/delay.h>
 #include <sound/control.h>
 #include <sound/core.h>
 #include <sound/info.h>

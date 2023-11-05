@@ -5,8 +5,8 @@
  * Copyright (C) 2001-2002 Thomas Bogendoerfer <tsbogend@alpha.franken.de>
  */
 
-#include <linux/fb.h>
-#include <linux/module.h>
+#include <freax/fb.h>
+#include <freax/module.h>
 
 #include <video/sticore.h>
 

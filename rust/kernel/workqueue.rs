@@ -132,7 +132,7 @@
 //! }
 //! ```
 //!
-//! C header: [`include/linux/workqueue.h`](../../../../include/linux/workqueue.h)
+//! C header: [`include/freax/workqueue.h`](../../../../include/freax/workqueue.h)
 
 use crate::{bindings, prelude::*, sync::Arc, sync::LockClassKey, types::Opaque};
 use alloc::alloc::AllocError;

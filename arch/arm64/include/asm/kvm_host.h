@@ -11,14 +11,14 @@
 #ifndef __ARM64_KVM_HOST_H__
 #define __ARM64_KVM_HOST_H__
 
-#include <linux/arm-smccc.h>
-#include <linux/bitmap.h>
-#include <linux/types.h>
-#include <linux/jump_label.h>
-#include <linux/kvm_types.h>
-#include <linux/maple_tree.h>
-#include <linux/percpu.h>
-#include <linux/psci.h>
+#include <freax/arm-smccc.h>
+#include <freax/bitmap.h>
+#include <freax/types.h>
+#include <freax/jump_label.h>
+#include <freax/kvm_types.h>
+#include <freax/maple_tree.h>
+#include <freax/percpu.h>
+#include <freax/psci.h>
 #include <asm/arch_gicv3.h>
 #include <asm/barrier.h>
 #include <asm/cpufeature.h>

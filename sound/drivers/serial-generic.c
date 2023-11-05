@@ -10,17 +10,17 @@
  * Generic serial MIDI driver using the serdev serial bus API for hardware interaction
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/ioport.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/serdev.h>
-#include <linux/serial_reg.h>
-#include <linux/slab.h>
-#include <linux/dev_printk.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/ioport.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/serdev.h>
+#include <freax/serial_reg.h>
+#include <freax/slab.h>
+#include <freax/dev_printk.h>
 
 #include <sound/core.h>
 #include <sound/rawmidi.h>

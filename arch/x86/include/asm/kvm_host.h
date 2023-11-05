@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- * Kernel-based Virtual Machine driver for Linux
+ * Kernel-based Virtual Machine driver for freax
  *
  * This header defines architecture specific interfaces, x86 version
  */
@@ -8,24 +8,24 @@
 #ifndef _ASM_X86_KVM_HOST_H
 #define _ASM_X86_KVM_HOST_H
 
-#include <linux/types.h>
-#include <linux/mm.h>
-#include <linux/mmu_notifier.h>
-#include <linux/tracepoint.h>
-#include <linux/cpumask.h>
-#include <linux/irq_work.h>
-#include <linux/irq.h>
-#include <linux/workqueue.h>
+#include <freax/types.h>
+#include <freax/mm.h>
+#include <freax/mmu_notifier.h>
+#include <freax/tracepoint.h>
+#include <freax/cpumask.h>
+#include <freax/irq_work.h>
+#include <freax/irq.h>
+#include <freax/workqueue.h>
 
-#include <linux/kvm.h>
-#include <linux/kvm_para.h>
-#include <linux/kvm_types.h>
-#include <linux/perf_event.h>
-#include <linux/pvclock_gtod.h>
-#include <linux/clocksource.h>
-#include <linux/irqbypass.h>
-#include <linux/hyperv.h>
-#include <linux/kfifo.h>
+#include <freax/kvm.h>
+#include <freax/kvm_para.h>
+#include <freax/kvm_types.h>
+#include <freax/perf_event.h>
+#include <freax/pvclock_gtod.h>
+#include <freax/clocksource.h>
+#include <freax/irqbypass.h>
+#include <freax/hyperv.h>
+#include <freax/kfifo.h>
 
 #include <asm/apic.h>
 #include <asm/pvclock-abi.h>

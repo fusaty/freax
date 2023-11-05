@@ -6,8 +6,8 @@
 //
 // Author: Stefan Binding <sbinding@opensource.cirrus.com>
 
-#include <linux/gpio/consumer.h>
-#include <linux/string.h>
+#include <freax/gpio/consumer.h>
+#include <freax/string.h>
 #include "cs35l41_hda_property.h"
 
 /*

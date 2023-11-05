@@ -8,11 +8,11 @@
  *
  */
 
-#include <linux/mdio.h>
-#include <linux/of.h>
-#include <linux/pcs/pcs-mtk-lynxi.h>
-#include <linux/phylink.h>
-#include <linux/regmap.h>
+#include <freax/mdio.h>
+#include <freax/of.h>
+#include <freax/pcs/pcs-mtk-lynxi.h>
+#include <freax/phylink.h>
+#include <freax/regmap.h>
 
 /* SGMII subsystem config registers */
 /* BMCR (low 16) BMSR (high 16) */

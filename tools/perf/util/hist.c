@@ -26,10 +26,10 @@
 #include <math.h>
 #include <inttypes.h>
 #include <sys/param.h>
-#include <linux/rbtree.h>
-#include <linux/string.h>
-#include <linux/time64.h>
-#include <linux/zalloc.h>
+#include <freax/rbtree.h>
+#include <freax/string.h>
+#include <freax/time64.h>
+#include <freax/zalloc.h>
 
 static bool hists__filter_entry_by_dso(struct hists *hists,
 				       struct hist_entry *he);

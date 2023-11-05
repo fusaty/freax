@@ -6,10 +6,10 @@
  * Inspired by Benjamin Gaignard's stm32-timers driver
  */
 
-#include <linux/mfd/stm32-lptimer.h>
-#include <linux/module.h>
-#include <linux/of_platform.h>
-#include <linux/platform_device.h>
+#include <freax/mfd/stm32-lptimer.h>
+#include <freax/module.h>
+#include <freax/of_platform.h>
+#include <freax/platform_device.h>
 
 #define STM32_LPTIM_MAX_REGISTER	0x3fc
 

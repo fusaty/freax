@@ -96,10 +96,10 @@ else
 cflags-$(CONFIG_STACKPROTECTOR)	+= -mstack-protector-guard-reg=r2
 endif
 
-LDFLAGS_vmlinux-y := -Bstatic
-LDFLAGS_vmlinux-$(CONFIG_RELOCATABLE) := -pie
-LDFLAGS_vmlinux-$(CONFIG_RELOCATABLE) += -z notext
-LDFLAGS_vmlinux	:= $(LDFLAGS_vmlinux-y)
+LDFLAGS_vmfreax-y := -Bstatic
+LDFLAGS_vmfreax-$(CONFIG_RELOCATABLE) := -pie
+LDFLAGS_vmfreax-$(CONFIG_RELOCATABLE) += -z notext
+LDFLAGS_vmfreax	:= $(LDFLAGS_vmfreax-y)
 
 ifdef CONFIG_PPC64
 ifndef CONFIG_PPC_KERNEL_PCREL
@@ -213,7 +213,7 @@ cpu-as-$(CONFIG_ALTIVEC)	+= $(call as-option,-Wa$(comma)-maltivec)
 # When using '-many -mpower4' gas will first try and find a matching power4
 # mnemonic and failing that it will allow any valid mnemonic that GAS knows
 # about. GCC will pass -many to GAS when assembling, clang does not.
-# LLVM IAS doesn't understand either flag: https://github.com/ClangBuiltLinux/linux/issues/675
+# LLVM IAS doesn't understand either flag: https://github.com/ClangBuiltfreax/freax/issues/675
 # but LLVM IAS only supports ISA >= 2.06 for Book3S 64 anyway...
 cpu-as-$(CONFIG_PPC_BOOK3S_64)	+= $(call as-option,-Wa$(comma)-mpower4) $(call as-option,-Wa$(comma)-many)
 
@@ -234,9 +234,9 @@ PHONY += $(BOOT_TARGETS1) $(BOOT_TARGETS2)
 
 boot := arch/$(ARCH)/boot
 
-$(BOOT_TARGETS1): vmlinux
+$(BOOT_TARGETS1): vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $(patsubst %,$(boot)/%,$@)
-$(BOOT_TARGETS2): vmlinux
+$(BOOT_TARGETS2): vmfreax
 	$(Q)$(MAKE) $(build)=$(boot) $(patsubst %,$(boot)/%,$@)
 
 

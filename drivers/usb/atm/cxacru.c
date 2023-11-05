@@ -15,15 +15,15 @@
  *  into usbatm), and the userspace firmware loading utility.
  */
 
-#include <linux/module.h>
-#include <linux/moduleparam.h>
-#include <linux/kernel.h>
-#include <linux/timer.h>
-#include <linux/errno.h>
-#include <linux/slab.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/mutex.h>
+#include <freax/module.h>
+#include <freax/moduleparam.h>
+#include <freax/kernel.h>
+#include <freax/timer.h>
+#include <freax/errno.h>
+#include <freax/slab.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/mutex.h>
 #include <asm/unaligned.h>
 
 #include "usbatm.h"

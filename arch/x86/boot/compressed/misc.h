@@ -28,9 +28,9 @@
 #define __pa(x)  ((unsigned long)(x))
 #define __va(x)  ((void *)((unsigned long)(x)))
 
-#include <linux/linkage.h>
-#include <linux/screen_info.h>
-#include <linux/elf.h>
+#include <freax/linkage.h>
+#include <freax/screen_info.h>
+#include <freax/elf.h>
 #include <asm/page.h>
 #include <asm/boot.h>
 #include <asm/bootparam.h>
@@ -39,7 +39,7 @@
 #include "tdx.h"
 
 #define BOOT_CTYPE_H
-#include <linux/acpi.h>
+#include <freax/acpi.h>
 
 #define BOOT_BOOT_H
 #include "../ctype.h"
@@ -53,7 +53,7 @@
 #define memptr unsigned
 #endif
 
-/* boot/compressed/vmlinux start and end markers */
+/* boot/compressed/vmfreax start and end markers */
 extern char _head[], _end[];
 
 /* misc.c */

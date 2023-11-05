@@ -17,10 +17,10 @@
  *	Tuned number of hash slots for avtab to reduce memory usage
  */
 
-#include <linux/bitops.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
+#include <freax/bitops.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
 #include "avtab.h"
 #include "policydb.h"
 
@@ -302,7 +302,7 @@ int avtab_alloc(struct avtab *h, u32 nrules)
 			return rc;
 	}
 
-	pr_debug("SELinux: %d avtab hash slots, %d rules.\n", nslot, nrules);
+	pr_debug("SEfreax: %d avtab hash slots, %d rules.\n", nslot, nrules);
 	return 0;
 }
 
@@ -311,7 +311,7 @@ int avtab_alloc_dup(struct avtab *new, const struct avtab *orig)
 	return avtab_alloc_common(new, orig->nslot);
 }
 
-#ifdef CONFIG_SECURITY_SELINUX_DEBUG
+#ifdef CONFIG_SECURITY_SEfreax_DEBUG
 void avtab_hash_eval(struct avtab *h, const char *tag)
 {
 	u32 i, chain_len, slots_used, max_chain_len;
@@ -337,12 +337,12 @@ void avtab_hash_eval(struct avtab *h, const char *tag)
 		}
 	}
 
-	pr_debug("SELinux: %s:  %d entries and %d/%d buckets used, "
+	pr_debug("SEfreax: %s:  %d entries and %d/%d buckets used, "
 	       "longest chain length %d, sum of chain length^2 %llu\n",
 	       tag, h->nel, slots_used, h->nslot, max_chain_len,
 	       chain2_len_sum);
 }
-#endif /* CONFIG_SECURITY_SELINUX_DEBUG */
+#endif /* CONFIG_SECURITY_SEfreax_DEBUG */
 
 static const uint16_t spec_order[] = {
 	AVTAB_ALLOWED,
@@ -377,18 +377,18 @@ int avtab_read_item(struct avtab *a, void *fp, struct policydb *pol,
 	if (vers < POLICYDB_VERSION_AVTAB) {
 		rc = next_entry(buf32, fp, sizeof(u32));
 		if (rc) {
-			pr_err("SELinux: avtab: truncated entry\n");
+			pr_err("SEfreax: avtab: truncated entry\n");
 			return rc;
 		}
 		items2 = le32_to_cpu(buf32[0]);
 		if (items2 > ARRAY_SIZE(buf32)) {
-			pr_err("SELinux: avtab: entry overflow\n");
+			pr_err("SEfreax: avtab: entry overflow\n");
 			return -EINVAL;
 
 		}
 		rc = next_entry(buf32, fp, sizeof(u32)*items2);
 		if (rc) {
-			pr_err("SELinux: avtab: truncated entry\n");
+			pr_err("SEfreax: avtab: truncated entry\n");
 			return rc;
 		}
 		items = 0;
@@ -396,19 +396,19 @@ int avtab_read_item(struct avtab *a, void *fp, struct policydb *pol,
 		val = le32_to_cpu(buf32[items++]);
 		key.source_type = (u16)val;
 		if (key.source_type != val) {
-			pr_err("SELinux: avtab: truncated source type\n");
+			pr_err("SEfreax: avtab: truncated source type\n");
 			return -EINVAL;
 		}
 		val = le32_to_cpu(buf32[items++]);
 		key.target_type = (u16)val;
 		if (key.target_type != val) {
-			pr_err("SELinux: avtab: truncated target type\n");
+			pr_err("SEfreax: avtab: truncated target type\n");
 			return -EINVAL;
 		}
 		val = le32_to_cpu(buf32[items++]);
 		key.target_class = (u16)val;
 		if (key.target_class != val) {
-			pr_err("SELinux: avtab: truncated target class\n");
+			pr_err("SEfreax: avtab: truncated target class\n");
 			return -EINVAL;
 		}
 
@@ -416,16 +416,16 @@ int avtab_read_item(struct avtab *a, void *fp, struct policydb *pol,
 		enabled = (val & AVTAB_ENABLED_OLD) ? AVTAB_ENABLED : 0;
 
 		if (!(val & (AVTAB_AV | AVTAB_TYPE))) {
-			pr_err("SELinux: avtab: null entry\n");
+			pr_err("SEfreax: avtab: null entry\n");
 			return -EINVAL;
 		}
 		if ((val & AVTAB_AV) &&
 		    (val & AVTAB_TYPE)) {
-			pr_err("SELinux: avtab: entry has both access vectors and types\n");
+			pr_err("SEfreax: avtab: entry has both access vectors and types\n");
 			return -EINVAL;
 		}
 		if (val & AVTAB_XPERMS) {
-			pr_err("SELinux: avtab: entry has extended permissions\n");
+			pr_err("SEfreax: avtab: entry has extended permissions\n");
 			return -EINVAL;
 		}
 
@@ -440,7 +440,7 @@ int avtab_read_item(struct avtab *a, void *fp, struct policydb *pol,
 		}
 
 		if (items != items2) {
-			pr_err("SELinux: avtab: entry only had %d items, expected %d\n",
+			pr_err("SEfreax: avtab: entry only had %d items, expected %d\n",
 			       items2, items);
 			return -EINVAL;
 		}
@@ -449,7 +449,7 @@ int avtab_read_item(struct avtab *a, void *fp, struct policydb *pol,
 
 	rc = next_entry(buf16, fp, sizeof(u16)*4);
 	if (rc) {
-		pr_err("SELinux: avtab: truncated entry\n");
+		pr_err("SEfreax: avtab: truncated entry\n");
 		return rc;
 	}
 
@@ -462,19 +462,19 @@ int avtab_read_item(struct avtab *a, void *fp, struct policydb *pol,
 	if (!policydb_type_isvalid(pol, key.source_type) ||
 	    !policydb_type_isvalid(pol, key.target_type) ||
 	    !policydb_class_isvalid(pol, key.target_class)) {
-		pr_err("SELinux: avtab: invalid type or class\n");
+		pr_err("SEfreax: avtab: invalid type or class\n");
 		return -EINVAL;
 	}
 
 	set = hweight16(key.specified & (AVTAB_XPERMS | AVTAB_TYPE | AVTAB_AV));
 	if (!set || set > 1) {
-		pr_err("SELinux:  avtab:  more than one specifier\n");
+		pr_err("SEfreax:  avtab:  more than one specifier\n");
 		return -EINVAL;
 	}
 
 	if ((vers < POLICYDB_VERSION_XPERMS_IOCTL) &&
 			(key.specified & AVTAB_XPERMS)) {
-		pr_err("SELinux:  avtab:  policy version %u does not "
+		pr_err("SEfreax:  avtab:  policy version %u does not "
 				"support extended permissions rules and one "
 				"was specified\n", vers);
 		return -EINVAL;
@@ -482,17 +482,17 @@ int avtab_read_item(struct avtab *a, void *fp, struct policydb *pol,
 		memset(&xperms, 0, sizeof(struct avtab_extended_perms));
 		rc = next_entry(&xperms.specified, fp, sizeof(u8));
 		if (rc) {
-			pr_err("SELinux: avtab: truncated entry\n");
+			pr_err("SEfreax: avtab: truncated entry\n");
 			return rc;
 		}
 		rc = next_entry(&xperms.driver, fp, sizeof(u8));
 		if (rc) {
-			pr_err("SELinux: avtab: truncated entry\n");
+			pr_err("SEfreax: avtab: truncated entry\n");
 			return rc;
 		}
 		rc = next_entry(buf32, fp, sizeof(u32)*ARRAY_SIZE(xperms.perms.p));
 		if (rc) {
-			pr_err("SELinux: avtab: truncated entry\n");
+			pr_err("SEfreax: avtab: truncated entry\n");
 			return rc;
 		}
 		for (i = 0; i < ARRAY_SIZE(xperms.perms.p); i++)
@@ -501,14 +501,14 @@ int avtab_read_item(struct avtab *a, void *fp, struct policydb *pol,
 	} else {
 		rc = next_entry(buf32, fp, sizeof(u32));
 		if (rc) {
-			pr_err("SELinux: avtab: truncated entry\n");
+			pr_err("SEfreax: avtab: truncated entry\n");
 			return rc;
 		}
 		datum.u.data = le32_to_cpu(*buf32);
 	}
 	if ((key.specified & AVTAB_TYPE) &&
 	    !policydb_type_isvalid(pol, datum.u.data)) {
-		pr_err("SELinux: avtab: invalid type\n");
+		pr_err("SEfreax: avtab: invalid type\n");
 		return -EINVAL;
 	}
 	return insertf(a, &key, &datum, p);
@@ -529,12 +529,12 @@ int avtab_read(struct avtab *a, void *fp, struct policydb *pol)
 
 	rc = next_entry(buf, fp, sizeof(u32));
 	if (rc < 0) {
-		pr_err("SELinux: avtab: truncated table\n");
+		pr_err("SEfreax: avtab: truncated table\n");
 		goto bad;
 	}
 	nel = le32_to_cpu(buf[0]);
 	if (!nel) {
-		pr_err("SELinux: avtab: table is empty\n");
+		pr_err("SEfreax: avtab: table is empty\n");
 		rc = -EINVAL;
 		goto bad;
 	}
@@ -547,9 +547,9 @@ int avtab_read(struct avtab *a, void *fp, struct policydb *pol)
 		rc = avtab_read_item(a, fp, pol, avtab_insertf, NULL);
 		if (rc) {
 			if (rc == -ENOMEM)
-				pr_err("SELinux: avtab: out of memory\n");
+				pr_err("SEfreax: avtab: out of memory\n");
 			else if (rc == -EEXIST)
-				pr_err("SELinux: avtab: duplicate entry\n");
+				pr_err("SEfreax: avtab: duplicate entry\n");
 
 			goto bad;
 		}

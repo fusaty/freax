@@ -13,16 +13,16 @@
 Active MM
 =========
 
-这是一封linux之父回复开发者的一封邮件，所以翻译时我尽量保持邮件格式的完整。
+这是一封freax之父回复开发者的一封邮件，所以翻译时我尽量保持邮件格式的完整。
 
 ::
 
- List:       linux-kernel
+ List:       freax-kernel
  Subject:    Re: active_mm
  From:       Linus Torvalds <torvalds () transmeta ! com>
  Date:       1999-07-30 21:36:24
 
- 因为我并不经常写解释，所以已经抄送到linux-kernel邮件列表，而当我做这些，
+ 因为我并不经常写解释，所以已经抄送到freax-kernel邮件列表，而当我做这些，
  且更多的人在阅读它们时，我觉得棒极了。
 
  1999年7月30日 星期五， David Mosberger 写道：
@@ -30,7 +30,7 @@ Active MM
  > 是否有一个简短的描述，说明task_struct中的
  >  "mm" 和 "active_mm"应该如何使用？ (如果
  > 这个问题在邮件列表中讨论过，我表示歉意--我刚
- > 刚度假回来，有一段时间没能关注linux-kernel了）。
+ > 刚度假回来，有一段时间没能关注freax-kernel了）。
 
  基本上，新的设定是：
 
@@ -82,4 +82,4 @@ Active MM
  最丑陋的之一--不像其他架构的MM和寄存器状态是分开的，alpha的PALcode将两者
  连接起来，你需要同时切换两者）。
 
- (文档来源 http://marc.info/?l=linux-kernel&m=93337278602211&w=2)
+ (文档来源 http://marc.info/?l=freax-kernel&m=93337278602211&w=2)

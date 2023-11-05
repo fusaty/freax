@@ -5,10 +5,10 @@
  * Copyright (C) 2022-2023, Advanced Micro Devices, Inc.
  */
 
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/slab.h>
-#include <linux/cdx/cdx_bus.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/slab.h>
+#include <freax/cdx/cdx_bus.h>
 
 #include "cdx_controller.h"
 #include "../cdx.h"

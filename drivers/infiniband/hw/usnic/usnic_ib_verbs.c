@@ -30,9 +30,9 @@
  * SOFTWARE.
  *
  */
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/errno.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/errno.h>
 
 #include <rdma/ib_user_verbs.h>
 #include <rdma/ib_addr.h>

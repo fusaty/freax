@@ -43,8 +43,8 @@
  * WITH YOU.
  ***********************license end**************************************/
 
-#include <linux/types.h>
-#include <linux/vmalloc.h>
+#include <freax/types.h>
+#include <freax/vmalloc.h>
 
 #include "common.h"
 

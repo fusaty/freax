@@ -7,16 +7,16 @@
  *				ipv6/reassembly. and ipv6 nf conntrack reassembly
  */
 
-#include <linux/list.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
-#include <linux/timer.h>
-#include <linux/mm.h>
-#include <linux/random.h>
-#include <linux/skbuff.h>
-#include <linux/rtnetlink.h>
-#include <linux/slab.h>
-#include <linux/rhashtable.h>
+#include <freax/list.h>
+#include <freax/spinlock.h>
+#include <freax/module.h>
+#include <freax/timer.h>
+#include <freax/mm.h>
+#include <freax/random.h>
+#include <freax/skbuff.h>
+#include <freax/rtnetlink.h>
+#include <freax/slab.h>
+#include <freax/rhashtable.h>
 
 #include <net/sock.h>
 #include <net/inet_frag.h>

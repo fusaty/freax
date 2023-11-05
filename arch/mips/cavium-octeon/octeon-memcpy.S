@@ -13,7 +13,7 @@
  * Mnemonic names for arguments to memcpy/__copy_user
  */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #include <asm/asm.h>
 #include <asm/asm-offsets.h>
 #include <asm/regdef.h>

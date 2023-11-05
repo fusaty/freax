@@ -8,7 +8,7 @@
 #ifndef __U_UAC1_H
 #define __U_UAC1_H
 
-#include <linux/usb/composite.h>
+#include <freax/usb/composite.h>
 #include "uac_common.h"
 
 #define UAC1_OUT_EP_MAX_PACKET_SIZE	200

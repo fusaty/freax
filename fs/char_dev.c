@@ -1,27 +1,27 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *  linux/fs/char_dev.c
+ *  freax/fs/char_dev.c
  *
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/kdev_t.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/kdev_t.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
-#include <linux/major.h>
-#include <linux/errno.h>
-#include <linux/module.h>
-#include <linux/seq_file.h>
+#include <freax/major.h>
+#include <freax/errno.h>
+#include <freax/module.h>
+#include <freax/seq_file.h>
 
-#include <linux/kobject.h>
-#include <linux/kobj_map.h>
-#include <linux/cdev.h>
-#include <linux/mutex.h>
-#include <linux/backing-dev.h>
-#include <linux/tty.h>
+#include <freax/kobject.h>
+#include <freax/kobj_map.h>
+#include <freax/cdev.h>
+#include <freax/mutex.h>
+#include <freax/backing-dev.h>
+#include <freax/tty.h>
 
 #include "internal.h"
 

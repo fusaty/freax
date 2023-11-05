@@ -16,10 +16,10 @@
 
 #define pr_fmt(fmt)	"resctrl: " fmt
 
-#include <linux/slab.h>
-#include <linux/err.h>
-#include <linux/cacheinfo.h>
-#include <linux/cpuhotplug.h>
+#include <freax/slab.h>
+#include <freax/err.h>
+#include <freax/cacheinfo.h>
+#include <freax/cpuhotplug.h>
 
 #include <asm/intel-family.h>
 #include <asm/resctrl.h>

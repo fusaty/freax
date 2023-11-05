@@ -5,7 +5,7 @@
  * Copyright (C) 2000, 2003 Brent Baccala <baccala@freesoft.org>
  * The DAQP interface code in this file is released into the public domain.
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  * https://www.comedi.org/
  *
@@ -40,8 +40,8 @@
  * Status: works
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedi_pcmcia.h>
+#include <freax/module.h>
+#include <freax/comedi/comedi_pcmcia.h>
 
 /*
  * Register I/O map

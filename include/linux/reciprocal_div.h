@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_RECIPROCAL_DIV_H
-#define _LINUX_RECIPROCAL_DIV_H
+#ifndef _freax_RECIPROCAL_DIV_H
+#define _freax_RECIPROCAL_DIV_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 
 /*
  * This algorithm is based on the paper "Division by Invariant
@@ -101,4 +101,4 @@ struct reciprocal_value_adv {
  */
 struct reciprocal_value_adv reciprocal_value_adv(u32 d, u8 prec);
 
-#endif /* _LINUX_RECIPROCAL_DIV_H */
+#endif /* _freax_RECIPROCAL_DIV_H */

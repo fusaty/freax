@@ -8,13 +8,13 @@
 #include <crypto/engine.h>
 #include <crypto/internal/des.h>
 #include <crypto/internal/skcipher.h>
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/string.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/scatterlist.h>
+#include <freax/string.h>
 
 #ifdef CONFIG_CRYPTO_DEV_ASPEED_HACE_CRYPTO_DEBUG
 #define CIPHER_DBG(h, fmt, ...)	\

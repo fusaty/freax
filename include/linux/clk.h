@@ -1,17 +1,17 @@
 /* SPDX-License-Identifier: GPL-2.0-only */
 /*
- *  linux/include/linux/clk.h
+ *  freax/include/freax/clk.h
  *
  *  Copyright (C) 2004 ARM Limited.
  *  Written by Deep Blue Solutions Limited.
  *  Copyright (C) 2011-2012 Linaro Ltd <mturquette@linaro.org>
  */
-#ifndef __LINUX_CLK_H
-#define __LINUX_CLK_H
+#ifndef __freax_CLK_H
+#define __freax_CLK_H
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/notifier.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/notifier.h>
 
 struct device;
 struct clk;

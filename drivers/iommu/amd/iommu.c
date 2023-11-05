@@ -8,27 +8,27 @@
 #define pr_fmt(fmt)     "AMD-Vi: " fmt
 #define dev_fmt(fmt)    pr_fmt(fmt)
 
-#include <linux/ratelimit.h>
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/pci-ats.h>
-#include <linux/bitmap.h>
-#include <linux/slab.h>
-#include <linux/debugfs.h>
-#include <linux/scatterlist.h>
-#include <linux/dma-map-ops.h>
-#include <linux/dma-direct.h>
-#include <linux/iommu-helper.h>
-#include <linux/delay.h>
-#include <linux/amd-iommu.h>
-#include <linux/notifier.h>
-#include <linux/export.h>
-#include <linux/irq.h>
-#include <linux/msi.h>
-#include <linux/irqdomain.h>
-#include <linux/percpu.h>
-#include <linux/io-pgtable.h>
-#include <linux/cc_platform.h>
+#include <freax/ratelimit.h>
+#include <freax/pci.h>
+#include <freax/acpi.h>
+#include <freax/pci-ats.h>
+#include <freax/bitmap.h>
+#include <freax/slab.h>
+#include <freax/debugfs.h>
+#include <freax/scatterlist.h>
+#include <freax/dma-map-ops.h>
+#include <freax/dma-direct.h>
+#include <freax/iommu-helper.h>
+#include <freax/delay.h>
+#include <freax/amd-iommu.h>
+#include <freax/notifier.h>
+#include <freax/export.h>
+#include <freax/irq.h>
+#include <freax/msi.h>
+#include <freax/irqdomain.h>
+#include <freax/percpu.h>
+#include <freax/io-pgtable.h>
+#include <freax/cc_platform.h>
 #include <asm/irq_remapping.h>
 #include <asm/io_apic.h>
 #include <asm/apic.h>
@@ -37,7 +37,7 @@
 #include <asm/iommu.h>
 #include <asm/gart.h>
 #include <asm/dma.h>
-#include <uapi/linux/iommufd.h>
+#include <uapi/freax/iommufd.h>
 
 #include "amd_iommu.h"
 #include "../dma-iommu.h"

@@ -3,10 +3,10 @@
  * Copyright © 2021 Intel Corporation
  */
 
-#include <linux/kernel.h>
-#include <linux/moduleparam.h>
-#include <linux/slab.h>
-#include <linux/string.h>
+#include <freax/kernel.h>
+#include <freax/moduleparam.h>
+#include <freax/slab.h>
+#include <freax/string.h>
 
 #include "i915_driver.h"
 #include "i915_drv.h"

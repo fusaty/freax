@@ -2,14 +2,14 @@
 #ifndef _BPF_CGROUP_H
 #define _BPF_CGROUP_H
 
-#include <linux/bpf.h>
-#include <linux/bpf-cgroup-defs.h>
-#include <linux/errno.h>
-#include <linux/jump_label.h>
-#include <linux/percpu.h>
-#include <linux/rbtree.h>
+#include <freax/bpf.h>
+#include <freax/bpf-cgroup-defs.h>
+#include <freax/errno.h>
+#include <freax/jump_label.h>
+#include <freax/percpu.h>
+#include <freax/rbtree.h>
 #include <net/sock.h>
-#include <uapi/linux/bpf.h>
+#include <uapi/freax/bpf.h>
 
 struct sock;
 struct sockaddr;

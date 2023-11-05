@@ -3,9 +3,9 @@
  * Copyright (c) 2011 Zhang, Keguang <keguang.zhang@gmail.com>
  */
 
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/smp.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/smp.h>
 #include <asm/cpu-info.h>
 #include <asm/bootinfo.h>
 

@@ -6,7 +6,7 @@
  *     Anup Patel <anup.patel@wdc.com>
  */
 
-#include <linux/kvm_host.h>
+#include <freax/kvm_host.h>
 #include <asm/csr.h>
 #include <asm/insn-def.h>
 

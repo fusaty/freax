@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: GPL-2.0
 #define pr_fmt(fmt) "mtd_test: " fmt
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/printk.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/printk.h>
 
 #include "mtd_test.h"
 

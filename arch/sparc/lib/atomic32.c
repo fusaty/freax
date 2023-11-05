@@ -8,9 +8,9 @@
  * Based on asm-parisc/atomic.h Copyright (C) 2000 Philipp Rumpf
  */
 
-#include <linux/atomic.h>
-#include <linux/spinlock.h>
-#include <linux/module.h>
+#include <freax/atomic.h>
+#include <freax/spinlock.h>
+#include <freax/module.h>
 
 #ifdef CONFIG_SMP
 #define ATOMIC_HASH_SIZE	4

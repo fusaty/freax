@@ -5,17 +5,17 @@
  * Copyright (C) 2023 Renesas Electronics Corporation
  */
 
-#include <linux/bitfield.h>
-#include <linux/clk.h>
-#include <linux/interrupt.h>
-#include <linux/irq.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/rz-mtu3.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/platform_device.h>
-#include <linux/reset.h>
-#include <linux/spinlock.h>
+#include <freax/bitfield.h>
+#include <freax/clk.h>
+#include <freax/interrupt.h>
+#include <freax/irq.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/rz-mtu3.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/platform_device.h>
+#include <freax/reset.h>
+#include <freax/spinlock.h>
 
 #include "rz-mtu3.h"
 

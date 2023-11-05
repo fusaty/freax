@@ -3,14 +3,14 @@
  * Copyright (C) 2015 Maxime Ripard <maxime.ripard@free-electrons.com>
  */
 
-#include <linux/bitops.h>
-#include <linux/clk-provider.h>
-#include <linux/err.h>
-#include <linux/export.h>
-#include <linux/io.h>
-#include <linux/kernel.h>
-#include <linux/of.h>
-#include <linux/slab.h>
+#include <freax/bitops.h>
+#include <freax/clk-provider.h>
+#include <freax/err.h>
+#include <freax/export.h>
+#include <freax/io.h>
+#include <freax/kernel.h>
+#include <freax/of.h>
+#include <freax/slab.h>
 
 static inline u32 clk_mult_readl(struct clk_multiplier *mult)
 {

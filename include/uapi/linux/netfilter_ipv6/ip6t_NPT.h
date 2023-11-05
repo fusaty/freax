@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef __NETFILTER_IP6T_NPT
 #define __NETFILTER_IP6T_NPT
 
-#include <linux/types.h>
-#include <linux/netfilter.h>
+#include <freax/types.h>
+#include <freax/netfilter.h>
 
 struct ip6t_npt_tginfo {
 	union nf_inet_addr	src_pfx;

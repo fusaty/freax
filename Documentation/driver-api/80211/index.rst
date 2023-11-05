@@ -1,5 +1,5 @@
 =====================================
-Linux 802.11 Driver Developer's Guide
+freax 802.11 Driver Developer's Guide
 =====================================
 
 .. toctree::

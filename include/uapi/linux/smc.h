@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 /*
  *  Shared Memory Communications over RDMA (SMC-R) and RoCE
  *
@@ -6,11 +6,11 @@
  *
  *  Copyright IBM Corp. 2016
  *
- *  Author(s):  Thomas Richter <tmricht@linux.vnet.ibm.com>
+ *  Author(s):  Thomas Richter <tmricht@freax.vnet.ibm.com>
  */
 
-#ifndef _UAPI_LINUX_SMC_H_
-#define _UAPI_LINUX_SMC_H_
+#ifndef _UAPI_freax_SMC_H_
+#define _UAPI_freax_SMC_H_
 
 /* Netlink SMC_PNETID attributes */
 enum {
@@ -302,4 +302,4 @@ enum {
 /* SMC socket options */
 #define SMC_LIMIT_HS 1	/* constraint on smc handshake */
 
-#endif /* _UAPI_LINUX_SMC_H */
+#endif /* _UAPI_freax_SMC_H */

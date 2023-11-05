@@ -5,14 +5,14 @@
  * Copyright (c) 2020, Intel Corporation.
  * All Rights Reserved.
  *
- * Author: "Alexander Duyck" <alexander.h.duyck@linux.intel.com>
+ * Author: "Alexander Duyck" <alexander.h.duyck@freax.intel.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/module.h>
-#include <linux/mm.h>
-#include <linux/pci.h>
+#include <freax/kernel.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/module.h>
+#include <freax/mm.h>
+#include <freax/pci.h>
 
 #include "../vsec.h"
 #include "class.h"
@@ -357,6 +357,6 @@ static void __exit pmt_class_exit(void)
 module_init(pmt_class_init);
 module_exit(pmt_class_exit);
 
-MODULE_AUTHOR("Alexander Duyck <alexander.h.duyck@linux.intel.com>");
+MODULE_AUTHOR("Alexander Duyck <alexander.h.duyck@freax.intel.com>");
 MODULE_DESCRIPTION("Intel PMT Class driver");
 MODULE_LICENSE("GPL v2");

@@ -5,13 +5,13 @@
  * Copyright (C) 2019 Google LLC
  */
 
-#ifndef _LINUX_SCS_H
-#define _LINUX_SCS_H
+#ifndef _freax_SCS_H
+#define _freax_SCS_H
 
-#include <linux/gfp.h>
-#include <linux/poison.h>
-#include <linux/sched.h>
-#include <linux/sizes.h>
+#include <freax/gfp.h>
+#include <freax/poison.h>
+#include <freax/sched.h>
+#include <freax/sizes.h>
 
 #ifdef CONFIG_SHADOW_CALL_STACK
 
@@ -83,4 +83,4 @@ static inline bool scs_is_dynamic(void) { return false; }
 
 #endif /* CONFIG_SHADOW_CALL_STACK */
 
-#endif /* _LINUX_SCS_H */
+#endif /* _freax_SCS_H */

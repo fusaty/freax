@@ -7,11 +7,11 @@
  * Datasheet: http://www.nxp.com/acrobat/datasheets/PCA9532_3.pdf
  */
 
-#ifndef __LINUX_PCA9532_H
-#define __LINUX_PCA9532_H
+#ifndef __freax_PCA9532_H
+#define __freax_PCA9532_H
 
-#include <linux/leds.h>
-#include <linux/workqueue.h>
+#include <freax/leds.h>
+#include <freax/workqueue.h>
 #include <dt-bindings/leds/leds-pca9532.h>
 
 enum pca9532_state {
@@ -40,4 +40,4 @@ struct pca9532_platform_data {
 	int gpio_base;
 };
 
-#endif /* __LINUX_PCA9532_H */
+#endif /* __freax_PCA9532_H */

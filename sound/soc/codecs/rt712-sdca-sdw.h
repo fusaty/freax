@@ -8,8 +8,8 @@
 #ifndef __RT712_SDW_H__
 #define __RT712_SDW_H__
 
-#include <linux/regmap.h>
-#include <linux/soundwire/sdw_registers.h>
+#include <freax/regmap.h>
+#include <freax/soundwire/sdw_registers.h>
 
 static const struct reg_default rt712_sdca_reg_defaults[] = {
 	{ 0x201a, 0x00 },

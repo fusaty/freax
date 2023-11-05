@@ -6,14 +6,14 @@
 #ifndef _ASM_BITOPS_H
 #define _ASM_BITOPS_H
 
-#ifndef _LINUX_BITOPS_H
-#error only <linux/bitops.h> can be included directly
+#ifndef _freax_BITOPS_H
+#error only <freax/bitops.h> can be included directly
 #endif
 
 #ifndef __ASSEMBLY__
 
-#include <linux/types.h>
-#include <linux/compiler.h>
+#include <freax/types.h>
+#include <freax/compiler.h>
 
 #ifdef CONFIG_ISA_ARCOMPACT
 

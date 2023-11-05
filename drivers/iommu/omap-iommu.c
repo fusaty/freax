@@ -9,25 +9,25 @@
  *		Paul Mundt and Toshihiro Kobayashi
  */
 
-#include <linux/dma-mapping.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/interrupt.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/iommu.h>
-#include <linux/omap-iommu.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/pm_runtime.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/of_platform.h>
-#include <linux/regmap.h>
-#include <linux/mfd/syscon.h>
+#include <freax/dma-mapping.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/interrupt.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/iommu.h>
+#include <freax/omap-iommu.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/io.h>
+#include <freax/pm_runtime.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/of_platform.h>
+#include <freax/regmap.h>
+#include <freax/mfd/syscon.h>
 
-#include <linux/platform_data/iommu-omap.h>
+#include <freax/platform_data/iommu-omap.h>
 
 #include "omap-iopgtable.h"
 #include "omap-iommu.h"

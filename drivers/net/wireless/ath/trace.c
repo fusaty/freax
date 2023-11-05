@@ -14,7 +14,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <linux/module.h>
+#include <freax/module.h>
 
 #define CREATE_TRACE_POINTS
 #include "trace.h"

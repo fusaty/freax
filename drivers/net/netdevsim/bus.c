@@ -3,15 +3,15 @@
  * Copyright (C) 2019 Mellanox Technologies. All rights reserved
  */
 
-#include <linux/completion.h>
-#include <linux/device.h>
-#include <linux/idr.h>
-#include <linux/kernel.h>
-#include <linux/list.h>
-#include <linux/mutex.h>
-#include <linux/refcount.h>
-#include <linux/slab.h>
-#include <linux/sysfs.h>
+#include <freax/completion.h>
+#include <freax/device.h>
+#include <freax/idr.h>
+#include <freax/kernel.h>
+#include <freax/list.h>
+#include <freax/mutex.h>
+#include <freax/refcount.h>
+#include <freax/slab.h>
+#include <freax/sysfs.h>
 
 #include "netdevsim.h"
 

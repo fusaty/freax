@@ -8,20 +8,20 @@
  *              Jeremy Allison (jra@samba.org)
  *
  */
-#include <linux/fs.h>
-#include <linux/filelock.h>
-#include <linux/backing-dev.h>
-#include <linux/stat.h>
-#include <linux/fcntl.h>
-#include <linux/pagemap.h>
-#include <linux/pagevec.h>
-#include <linux/writeback.h>
-#include <linux/task_io_accounting_ops.h>
-#include <linux/delay.h>
-#include <linux/mount.h>
-#include <linux/slab.h>
-#include <linux/swap.h>
-#include <linux/mm.h>
+#include <freax/fs.h>
+#include <freax/filelock.h>
+#include <freax/backing-dev.h>
+#include <freax/stat.h>
+#include <freax/fcntl.h>
+#include <freax/pagemap.h>
+#include <freax/pagevec.h>
+#include <freax/writeback.h>
+#include <freax/task_io_accounting_ops.h>
+#include <freax/delay.h>
+#include <freax/mount.h>
+#include <freax/slab.h>
+#include <freax/swap.h>
+#include <freax/mm.h>
 #include <asm/div64.h>
 #include "cifsfs.h"
 #include "cifspdu.h"
@@ -4733,7 +4733,7 @@ static int is_inode_writable(struct cifsInodeInfo *cifs_inode)
    the file - in the future we could consider allowing
    refreshing the inode only on increases in the file size
    but this is tricky to do without racing with writebehind
-   page caching in the current Linux kernel design */
+   page caching in the current freax kernel design */
 bool is_size_safe_to_change(struct cifsInodeInfo *cifsInode, __u64 end_of_file)
 {
 	if (!cifsInode)

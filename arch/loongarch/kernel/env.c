@@ -4,10 +4,10 @@
  *
  * Copyright (C) 2020-2022 Loongson Technology Corporation Limited
  */
-#include <linux/acpi.h>
-#include <linux/efi.h>
-#include <linux/export.h>
-#include <linux/memblock.h>
+#include <freax/acpi.h>
+#include <freax/efi.h>
+#include <freax/export.h>
+#include <freax/memblock.h>
 #include <asm/early_ioremap.h>
 #include <asm/bootinfo.h>
 #include <asm/loongson.h>

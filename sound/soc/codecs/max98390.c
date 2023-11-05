@@ -6,17 +6,17 @@
  *
  */
 
-#include <linux/acpi.h>
-#include <linux/cdev.h>
-#include <linux/dmi.h>
-#include <linux/firmware.h>
-#include <linux/gpio/consumer.h>
-#include <linux/i2c.h>
-#include <linux/module.h>
-#include <linux/of_gpio.h>
-#include <linux/regmap.h>
-#include <linux/slab.h>
-#include <linux/time.h>
+#include <freax/acpi.h>
+#include <freax/cdev.h>
+#include <freax/dmi.h>
+#include <freax/firmware.h>
+#include <freax/gpio/consumer.h>
+#include <freax/i2c.h>
+#include <freax/module.h>
+#include <freax/of_gpio.h>
+#include <freax/regmap.h>
+#include <freax/slab.h>
+#include <freax/time.h>
 #include <sound/pcm.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>

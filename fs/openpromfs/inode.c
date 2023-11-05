@@ -5,20 +5,20 @@
  * Copyright (C) 1998      Eddie C. Dost  (ecd@skynet.be)
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/string.h>
-#include <linux/fs.h>
-#include <linux/fs_context.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/seq_file.h>
-#include <linux/magic.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/string.h>
+#include <freax/fs.h>
+#include <freax/fs_context.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/seq_file.h>
+#include <freax/magic.h>
 
 #include <asm/openprom.h>
 #include <asm/oplib.h>
 #include <asm/prom.h>
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 static DEFINE_MUTEX(op_mutex);
 

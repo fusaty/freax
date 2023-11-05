@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0
 /*
- *	linux/arch/alpha/kernel/core_cia.c
+ *	freax/arch/alpha/kernel/core_cia.c
  *
  * Written by David A Rusling (david.rusling@reo.mts.dec.com).
  * December 1995.
@@ -17,11 +17,11 @@
 #include <asm/core_cia.h>
 #undef __EXTERN_INLINE
 
-#include <linux/types.h>
-#include <linux/pci.h>
-#include <linux/sched.h>
-#include <linux/init.h>
-#include <linux/memblock.h>
+#include <freax/types.h>
+#include <freax/pci.h>
+#include <freax/sched.h>
+#include <freax/init.h>
+#include <freax/memblock.h>
 
 #include <asm/ptrace.h>
 #include <asm/mce.h>

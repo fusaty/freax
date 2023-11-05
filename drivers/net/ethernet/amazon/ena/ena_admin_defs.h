@@ -1,4 +1,4 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /*
  * Copyright 2015-2020 Amazon.com, Inc. or its affiliates. All rights reserved.
  */
@@ -814,7 +814,7 @@ struct ena_admin_feature_rss_flow_hash_input {
 };
 
 enum ena_admin_os_type {
-	ENA_ADMIN_OS_LINUX                          = 1,
+	ENA_ADMIN_OS_freax                          = 1,
 	ENA_ADMIN_OS_WIN                            = 2,
 	ENA_ADMIN_OS_DPDK                           = 3,
 	ENA_ADMIN_OS_FREEBSD                        = 4,

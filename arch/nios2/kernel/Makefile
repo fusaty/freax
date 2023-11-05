@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: GPL-2.0
 #
-# Makefile for the nios2 linux kernel.
+# Makefile for the nios2 freax kernel.
 #
 
-extra-y	+= vmlinux.lds
+extra-y	+= vmfreax.lds
 
 obj-y	+= head.o
 obj-y	+= cpuinfo.o

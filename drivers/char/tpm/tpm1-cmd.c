@@ -13,12 +13,12 @@
  * Specifications at www.trustedcomputinggroup.org
  */
 
-#include <linux/poll.h>
-#include <linux/slab.h>
-#include <linux/mutex.h>
-#include <linux/spinlock.h>
-#include <linux/freezer.h>
-#include <linux/tpm_eventlog.h>
+#include <freax/poll.h>
+#include <freax/slab.h>
+#include <freax/mutex.h>
+#include <freax/spinlock.h>
+#include <freax/freezer.h>
+#include <freax/tpm_eventlog.h>
 
 #include "tpm.h"
 

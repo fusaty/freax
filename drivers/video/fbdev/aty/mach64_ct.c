@@ -4,8 +4,8 @@
  *  ATI Mach64 CT/VT/GT/LT Support
  */
 
-#include <linux/fb.h>
-#include <linux/delay.h>
+#include <freax/fb.h>
+#include <freax/delay.h>
 #include <asm/io.h>
 #include <video/mach64.h>
 #include "atyfb.h"

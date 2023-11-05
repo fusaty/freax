@@ -9,11 +9,11 @@
  * Margarita Olaya Cabrera <magi@slimlogic.co.uk>
  */
 
-#include <linux/interrupt.h>
-#include <linux/mfd/core.h>
-#include <linux/module.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/core.h>
+#include <freax/module.h>
 
-#include <linux/mfd/tps65912.h>
+#include <freax/mfd/tps65912.h>
 
 static const struct mfd_cell tps65912_cells[] = {
 	{ .name = "tps65912-regulator", },

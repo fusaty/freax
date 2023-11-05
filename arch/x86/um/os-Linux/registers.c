@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2004 PathScale, Inc
- * Copyright (C) 2004 - 2007 Jeff Dike (jdike@{addtoit,linux.intel}.com)
+ * Copyright (C) 2004 - 2007 Jeff Dike (jdike@{addtoit,freax.intel}.com)
  * Licensed under the GPL
  */
 
@@ -14,7 +14,7 @@
 #include <sysdep/ptrace_user.h>
 #include <sys/uio.h>
 #include <asm/sigcontext.h>
-#include <linux/elf.h>
+#include <freax/elf.h>
 #include <registers.h>
 
 int have_xstate_support;

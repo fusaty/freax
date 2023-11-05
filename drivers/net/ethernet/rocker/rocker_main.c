@@ -5,33 +5,33 @@
  * Copyright (c) 2014 Scott Feldman <sfeldma@gmail.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pci.h>
-#include <linux/interrupt.h>
-#include <linux/sched.h>
-#include <linux/wait.h>
-#include <linux/spinlock.h>
-#include <linux/sort.h>
-#include <linux/random.h>
-#include <linux/netdevice.h>
-#include <linux/skbuff.h>
-#include <linux/socket.h>
-#include <linux/etherdevice.h>
-#include <linux/ethtool.h>
-#include <linux/if_ether.h>
-#include <linux/if_vlan.h>
-#include <linux/if_bridge.h>
-#include <linux/bitops.h>
-#include <linux/ctype.h>
-#include <linux/workqueue.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pci.h>
+#include <freax/interrupt.h>
+#include <freax/sched.h>
+#include <freax/wait.h>
+#include <freax/spinlock.h>
+#include <freax/sort.h>
+#include <freax/random.h>
+#include <freax/netdevice.h>
+#include <freax/skbuff.h>
+#include <freax/socket.h>
+#include <freax/etherdevice.h>
+#include <freax/ethtool.h>
+#include <freax/if_ether.h>
+#include <freax/if_vlan.h>
+#include <freax/if_bridge.h>
+#include <freax/bitops.h>
+#include <freax/ctype.h>
+#include <freax/workqueue.h>
 #include <net/switchdev.h>
 #include <net/rtnetlink.h>
 #include <net/netevent.h>
 #include <net/arp.h>
 #include <net/fib_rules.h>
 #include <net/fib_notifier.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
 #include <generated/utsrelease.h>
 
 #include "rocker_hw.h"

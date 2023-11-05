@@ -2,8 +2,8 @@
 #ifndef _FIB_LOOKUP_H
 #define _FIB_LOOKUP_H
 
-#include <linux/types.h>
-#include <linux/list.h>
+#include <freax/types.h>
+#include <freax/list.h>
 #include <net/inet_dscp.h>
 #include <net/ip_fib.h>
 #include <net/nexthop.h>

@@ -5,28 +5,28 @@
  * Copyright (C) 2005-2006  Kristian Hoegsberg <krh@bitplanet.net>
  */
 
-#include <linux/bug.h>
-#include <linux/ctype.h>
-#include <linux/delay.h>
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/firewire.h>
-#include <linux/firewire-constants.h>
-#include <linux/idr.h>
-#include <linux/jiffies.h>
-#include <linux/kobject.h>
-#include <linux/list.h>
-#include <linux/mod_devicetable.h>
-#include <linux/module.h>
-#include <linux/mutex.h>
-#include <linux/random.h>
-#include <linux/rwsem.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
-#include <linux/string.h>
-#include <linux/workqueue.h>
+#include <freax/bug.h>
+#include <freax/ctype.h>
+#include <freax/delay.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/firewire.h>
+#include <freax/firewire-constants.h>
+#include <freax/idr.h>
+#include <freax/jiffies.h>
+#include <freax/kobject.h>
+#include <freax/list.h>
+#include <freax/mod_devicetable.h>
+#include <freax/module.h>
+#include <freax/mutex.h>
+#include <freax/random.h>
+#include <freax/rwsem.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
+#include <freax/string.h>
+#include <freax/workqueue.h>
 
-#include <linux/atomic.h>
+#include <freax/atomic.h>
 #include <asm/byteorder.h>
 
 #include "core.h"

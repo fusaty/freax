@@ -5,11 +5,11 @@
 
 #include <drm/drm_drv.h>
 
-#include <linux/seq_file.h>
-#include <linux/circ_buf.h>
-#include <linux/ctype.h>
-#include <linux/debugfs.h>
-#include <linux/platform_device.h>
+#include <freax/seq_file.h>
+#include <freax/circ_buf.h>
+#include <freax/ctype.h>
+#include <freax/debugfs.h>
+#include <freax/platform_device.h>
 
 #include "vc4_drv.h"
 #include "vc4_regs.h"

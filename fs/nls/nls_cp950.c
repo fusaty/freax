@@ -1,5 +1,5 @@
 /*
- * linux/fs/nls/nls_cp950.c
+ * freax/fs/nls/nls_cp950.c
  *
  * Charset cp950 translation tables.
  * This translation table was generated automatically, the
@@ -7,11 +7,11 @@
  * (http://www.microsoft.com/typography/unicode/unicodecp.htm)
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/string.h>
-#include <linux/nls.h>
-#include <linux/errno.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/string.h>
+#include <freax/nls.h>
+#include <freax/errno.h>
 
 static const wchar_t c2u_A1[256] = {
 	0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,/* 0x00-0x07 */

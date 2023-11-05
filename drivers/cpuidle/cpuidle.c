@@ -8,24 +8,24 @@
  * This code is licenced under the GPL.
  */
 
-#include "linux/percpu-defs.h"
-#include <linux/clockchips.h>
-#include <linux/kernel.h>
-#include <linux/mutex.h>
-#include <linux/sched.h>
-#include <linux/sched/clock.h>
-#include <linux/sched/idle.h>
-#include <linux/notifier.h>
-#include <linux/pm_qos.h>
-#include <linux/cpu.h>
-#include <linux/cpuidle.h>
-#include <linux/ktime.h>
-#include <linux/hrtimer.h>
-#include <linux/module.h>
-#include <linux/suspend.h>
-#include <linux/tick.h>
-#include <linux/mmu_context.h>
-#include <linux/context_tracking.h>
+#include "freax/percpu-defs.h"
+#include <freax/clockchips.h>
+#include <freax/kernel.h>
+#include <freax/mutex.h>
+#include <freax/sched.h>
+#include <freax/sched/clock.h>
+#include <freax/sched/idle.h>
+#include <freax/notifier.h>
+#include <freax/pm_qos.h>
+#include <freax/cpu.h>
+#include <freax/cpuidle.h>
+#include <freax/ktime.h>
+#include <freax/hrtimer.h>
+#include <freax/module.h>
+#include <freax/suspend.h>
+#include <freax/tick.h>
+#include <freax/mmu_context.h>
+#include <freax/context_tracking.h>
 #include <trace/events/power.h>
 
 #include "cpuidle.h"

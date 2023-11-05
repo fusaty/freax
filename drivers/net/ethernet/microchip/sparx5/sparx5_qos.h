@@ -7,7 +7,7 @@
 #ifndef __SPARX5_QOS_H__
 #define __SPARX5_QOS_H__
 
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 /* Number of Layers */
 #define SPX5_HSCH_LAYER_CNT 3

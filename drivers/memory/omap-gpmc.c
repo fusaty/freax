@@ -9,31 +9,31 @@
  * Copyright (C) 2009 Texas Instruments
  * Added OMAP4 support - Santosh Shilimkar <santosh.shilimkar@ti.com>
  */
-#include <linux/cpu_pm.h>
-#include <linux/irq.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/err.h>
-#include <linux/clk.h>
-#include <linux/ioport.h>
-#include <linux/spinlock.h>
-#include <linux/io.h>
-#include <linux/gpio/driver.h>
-#include <linux/gpio/consumer.h> /* GPIO descriptor enum */
-#include <linux/gpio/machine.h>
-#include <linux/interrupt.h>
-#include <linux/irqdomain.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/of_device.h>
-#include <linux/of_platform.h>
-#include <linux/omap-gpmc.h>
-#include <linux/pm_runtime.h>
-#include <linux/sizes.h>
+#include <freax/cpu_pm.h>
+#include <freax/irq.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/err.h>
+#include <freax/clk.h>
+#include <freax/ioport.h>
+#include <freax/spinlock.h>
+#include <freax/io.h>
+#include <freax/gpio/driver.h>
+#include <freax/gpio/consumer.h> /* GPIO descriptor enum */
+#include <freax/gpio/machine.h>
+#include <freax/interrupt.h>
+#include <freax/irqdomain.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/of_device.h>
+#include <freax/of_platform.h>
+#include <freax/omap-gpmc.h>
+#include <freax/pm_runtime.h>
+#include <freax/sizes.h>
 
-#include <linux/platform_data/mtd-nand-omap2.h>
+#include <freax/platform_data/mtd-nand-omap2.h>
 
 #define	DEVICE_NAME		"omap-gpmc"
 

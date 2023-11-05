@@ -1,8 +1,8 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _UAPI_LINUX_DCCP_H
-#define _UAPI_LINUX_DCCP_H
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
+#ifndef _UAPI_freax_DCCP_H
+#define _UAPI_freax_DCCP_H
 
-#include <linux/types.h>
+#include <freax/types.h>
 #include <asm/byteorder.h>
 
 /**
@@ -235,4 +235,4 @@ enum dccp_packet_dequeueing_policy {
 #define DCCP_SERVICE_LIST_MAX_LEN      32
 
 
-#endif /* _UAPI_LINUX_DCCP_H */
+#endif /* _UAPI_freax_DCCP_H */

@@ -5,9 +5,9 @@
  * (c) 2007 MSC Vertriebsges.m.b.H, Manuel Lauss <mlau@msc-ge.com>
  */
 
-#include <linux/interrupt.h>
-#include <linux/kernel.h>
-#include <linux/slab.h>
+#include <freax/interrupt.h>
+#include <freax/kernel.h>
+#include <freax/slab.h>
 #include <asm/dma.h>
 #include <asm/dmabrg.h>
 #include <asm/io.h>

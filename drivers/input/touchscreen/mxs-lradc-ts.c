@@ -10,16 +10,16 @@
  *  Ksenija Stanojevic <ksenija.stanojevic@gmail.com>
  */
 
-#include <linux/device.h>
-#include <linux/err.h>
-#include <linux/input.h>
-#include <linux/interrupt.h>
-#include <linux/module.h>
-#include <linux/mfd/core.h>
-#include <linux/mfd/mxs-lradc.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
+#include <freax/device.h>
+#include <freax/err.h>
+#include <freax/input.h>
+#include <freax/interrupt.h>
+#include <freax/module.h>
+#include <freax/mfd/core.h>
+#include <freax/mfd/mxs-lradc.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
 
 static const char * const mxs_lradc_ts_irq_names[] = {
 	"mxs-lradc-touchscreen",

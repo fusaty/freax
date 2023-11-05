@@ -1,16 +1,16 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_SCHED_SIGNAL_H
-#define _LINUX_SCHED_SIGNAL_H
+#ifndef _freax_SCHED_SIGNAL_H
+#define _freax_SCHED_SIGNAL_H
 
-#include <linux/rculist.h>
-#include <linux/signal.h>
-#include <linux/sched.h>
-#include <linux/sched/jobctl.h>
-#include <linux/sched/task.h>
-#include <linux/cred.h>
-#include <linux/refcount.h>
-#include <linux/posix-timers.h>
-#include <linux/mm_types.h>
+#include <freax/rculist.h>
+#include <freax/signal.h>
+#include <freax/sched.h>
+#include <freax/sched/jobctl.h>
+#include <freax/sched/task.h>
+#include <freax/cred.h>
+#include <freax/refcount.h>
+#include <freax/posix-timers.h>
+#include <freax/mm_types.h>
 #include <asm/ptrace.h>
 
 /*
@@ -781,4 +781,4 @@ static inline unsigned long rlimit_max(unsigned int limit)
 	return task_rlimit_max(current, limit);
 }
 
-#endif /* _LINUX_SCHED_SIGNAL_H */
+#endif /* _freax_SCHED_SIGNAL_H */

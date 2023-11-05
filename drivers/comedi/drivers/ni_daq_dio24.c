@@ -22,9 +22,9 @@
  * the PCMCIA interface.
  */
 
-#include <linux/module.h>
-#include <linux/comedi/comedi_pcmcia.h>
-#include <linux/comedi/comedi_8255.h>
+#include <freax/module.h>
+#include <freax/comedi/comedi_pcmcia.h>
+#include <freax/comedi/comedi_8255.h>
 
 static int dio24_auto_attach(struct comedi_device *dev,
 			     unsigned long context)

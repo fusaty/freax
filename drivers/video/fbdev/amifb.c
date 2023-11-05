@@ -1,5 +1,5 @@
 /*
- * linux/drivers/video/amifb.c -- Amiga builtin chipset frame buffer device
+ * freax/drivers/video/amifb.c -- Amiga builtin chipset frame buffer device
  *
  *    Copyright (C) 1995-2003 Geert Uytterhoeven
  *
@@ -40,18 +40,18 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/errno.h>
-#include <linux/string.h>
-#include <linux/mm.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/fb.h>
-#include <linux/init.h>
-#include <linux/ioport.h>
-#include <linux/platform_device.h>
-#include <linux/uaccess.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/errno.h>
+#include <freax/string.h>
+#include <freax/mm.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/fb.h>
+#include <freax/init.h>
+#include <freax/ioport.h>
+#include <freax/platform_device.h>
+#include <freax/uaccess.h>
 
 #include <asm/irq.h>
 #include <asm/amigahw.h>
@@ -662,7 +662,7 @@ static u_short currentcop = 0;
 
 	/*
 	 * Hardware Cursor API Definitions
-	 * These used to be in linux/fb.h, but were preliminary and used by
+	 * These used to be in freax/fb.h, but were preliminary and used by
 	 * amifb only anyway
 	 */
 

@@ -1,24 +1,24 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Generic HDLC support routines for Linux
+ * Generic HDLC support routines for freax
  * HDLC Ethernet emulation support
  *
  * Copyright (C) 2002-2006 Krzysztof Halasa <khc@pm.waw.pl>
  */
 
-#include <linux/errno.h>
-#include <linux/etherdevice.h>
-#include <linux/gfp.h>
-#include <linux/hdlc.h>
-#include <linux/if_arp.h>
-#include <linux/inetdevice.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/pkt_sched.h>
-#include <linux/poll.h>
-#include <linux/rtnetlink.h>
-#include <linux/skbuff.h>
+#include <freax/errno.h>
+#include <freax/etherdevice.h>
+#include <freax/gfp.h>
+#include <freax/hdlc.h>
+#include <freax/if_arp.h>
+#include <freax/inetdevice.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/pkt_sched.h>
+#include <freax/poll.h>
+#include <freax/rtnetlink.h>
+#include <freax/skbuff.h>
 
 static int raw_eth_ioctl(struct net_device *dev, struct if_settings *ifs);
 

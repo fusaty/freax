@@ -9,11 +9,11 @@
  *  Routines for control of EMU10K1 chips
  */
 
-#include <linux/time.h>
+#include <freax/time.h>
 #include <sound/core.h>
 #include <sound/emu10k1.h>
-#include <linux/delay.h>
-#include <linux/export.h>
+#include <freax/delay.h>
+#include <freax/export.h>
 #include "p17v.h"
 
 static inline bool check_ptr_reg(struct snd_emu10k1 *emu, unsigned int reg)

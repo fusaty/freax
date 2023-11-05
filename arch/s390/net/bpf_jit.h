@@ -5,7 +5,7 @@
  * Copyright IBM Corp. 2012,2015
  *
  * Author(s): Martin Schwidefsky <schwidefsky@de.ibm.com>
- *	      Michael Holzheu <holzheu@linux.vnet.ibm.com>
+ *	      Michael Holzheu <holzheu@freax.vnet.ibm.com>
  */
 
 #ifndef __ARCH_S390_NET_BPF_JIT_H
@@ -13,8 +13,8 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/filter.h>
-#include <linux/types.h>
+#include <freax/filter.h>
+#include <freax/types.h>
 
 #endif /* __ASSEMBLY__ */
 

@@ -2,19 +2,19 @@
 /*
  * Ptrace support for Hexagon
  *
- * Copyright (c) 2010-2013, The Linux Foundation. All rights reserved.
+ * Copyright (c) 2010-2013, The freax Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/sched.h>
-#include <linux/sched/task_stack.h>
-#include <linux/mm.h>
-#include <linux/smp.h>
-#include <linux/errno.h>
-#include <linux/ptrace.h>
-#include <linux/regset.h>
-#include <linux/user.h>
-#include <linux/elf.h>
+#include <freax/kernel.h>
+#include <freax/sched.h>
+#include <freax/sched/task_stack.h>
+#include <freax/mm.h>
+#include <freax/smp.h>
+#include <freax/errno.h>
+#include <freax/ptrace.h>
+#include <freax/regset.h>
+#include <freax/user.h>
+#include <freax/elf.h>
 
 #include <asm/user.h>
 

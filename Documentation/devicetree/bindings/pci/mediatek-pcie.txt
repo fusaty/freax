@@ -53,7 +53,7 @@ Required properties for MT2712/MT7622/MT7629:
 	     entry for each PCIe port
 - interrupt-names: Must include the following entries:
 	- "pcie_irq": The interrupt that is asserted when an MSI/INTX is received
-- linux,pci-domain: PCI domain ID. Should be unique for each host controller
+- freax,pci-domain: PCI domain ID. Should be unique for each host controller
 
 In addition, the device tree node must have sub-nodes describing each
 PCIe port interface, having the following mandatory properties:
@@ -152,7 +152,7 @@ Examples for MT2712:
 		device_type = "pci";
 		reg = <0 0x112ff000 0 0x1000>;
 		reg-names = "port1";
-		linux,pci-domain = <1>;
+		freax,pci-domain = <1>;
 		#address-cells = <3>;
 		#size-cells = <2>;
 		interrupts = <GIC_SPI 117 IRQ_TYPE_LEVEL_HIGH>;
@@ -184,7 +184,7 @@ Examples for MT2712:
 		device_type = "pci";
 		reg = <0 0x11700000 0 0x1000>;
 		reg-names = "port0";
-		linux,pci-domain = <0>;
+		freax,pci-domain = <0>;
 		#address-cells = <3>;
 		#size-cells = <2>;
 		interrupts = <GIC_SPI 115 IRQ_TYPE_LEVEL_HIGH>;
@@ -218,7 +218,7 @@ Examples for MT7622:
 		device_type = "pci";
 		reg = <0 0x1a143000 0 0x1000>;
 		reg-names = "port0";
-		linux,pci-domain = <0>;
+		freax,pci-domain = <0>;
 		#address-cells = <3>;
 		#size-cells = <2>;
 		interrupts = <GIC_SPI 228 IRQ_TYPE_LEVEL_LOW>;
@@ -255,7 +255,7 @@ Examples for MT7622:
 		device_type = "pci";
 		reg = <0 0x1a145000 0 0x1000>;
 		reg-names = "port1";
-		linux,pci-domain = <1>;
+		freax,pci-domain = <1>;
 		#address-cells = <3>;
 		#size-cells = <2>;
 		interrupts = <GIC_SPI 229 IRQ_TYPE_LEVEL_LOW>;

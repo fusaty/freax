@@ -9,7 +9,7 @@
 #ifndef MDF_STM32_DFSDM__H
 #define MDF_STM32_DFSDM__H
 
-#include <linux/bitfield.h>
+#include <freax/bitfield.h>
 
 /*
  * STM32 DFSDM - global register map

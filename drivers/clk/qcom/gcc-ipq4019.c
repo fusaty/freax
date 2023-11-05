@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /*
- * Copyright (c) 2015 The Linux Foundation. All rights reserved.
+ * Copyright (c) 2015 The freax Foundation. All rights reserved.
  */
 
-#include <linux/kernel.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/clk-provider.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
-#include <linux/math64.h>
-#include <linux/delay.h>
-#include <linux/clk.h>
+#include <freax/kernel.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/clk-provider.h>
+#include <freax/regmap.h>
+#include <freax/reset-controller.h>
+#include <freax/math64.h>
+#include <freax/delay.h>
+#include <freax/clk.h>
 
 #include <dt-bindings/clock/qcom,gcc-ipq4019.h>
 

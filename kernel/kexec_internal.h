@@ -1,8 +1,8 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef LINUX_KEXEC_INTERNAL_H
-#define LINUX_KEXEC_INTERNAL_H
+#ifndef freax_KEXEC_INTERNAL_H
+#define freax_KEXEC_INTERNAL_H
 
-#include <linux/kexec.h>
+#include <freax/kexec.h>
 
 struct kimage *do_kimage_alloc_init(void);
 int sanity_check_segment_list(struct kimage *image);
@@ -29,11 +29,11 @@ static inline void kexec_unlock(void)
 }
 
 #ifdef CONFIG_KEXEC_FILE
-#include <linux/purgatory.h>
+#include <freax/purgatory.h>
 void kimage_file_post_load_cleanup(struct kimage *image);
 extern char kexec_purgatory[];
 extern size_t kexec_purgatory_size;
 #else /* CONFIG_KEXEC_FILE */
 static inline void kimage_file_post_load_cleanup(struct kimage *image) { }
 #endif /* CONFIG_KEXEC_FILE */
-#endif /* LINUX_KEXEC_INTERNAL_H */
+#endif /* freax_KEXEC_INTERNAL_H */

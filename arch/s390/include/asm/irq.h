@@ -27,10 +27,10 @@
 
 #ifndef __ASSEMBLY__
 
-#include <linux/hardirq.h>
-#include <linux/percpu.h>
-#include <linux/cache.h>
-#include <linux/types.h>
+#include <freax/hardirq.h>
+#include <freax/percpu.h>
+#include <freax/cache.h>
+#include <freax/types.h>
 #include <asm/ctlreg.h>
 
 enum interruption_class {

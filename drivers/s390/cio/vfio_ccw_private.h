@@ -5,20 +5,20 @@
  * Copyright IBM Corp. 2017
  * Copyright Red Hat, Inc. 2019
  *
- * Author(s): Dong Jia Shi <bjsdjshi@linux.vnet.ibm.com>
- *            Xiao Feng Ren <renxiaof@linux.vnet.ibm.com>
+ * Author(s): Dong Jia Shi <bjsdjshi@freax.vnet.ibm.com>
+ *            Xiao Feng Ren <renxiaof@freax.vnet.ibm.com>
  *            Cornelia Huck <cohuck@redhat.com>
  */
 
 #ifndef _VFIO_CCW_PRIVATE_H_
 #define _VFIO_CCW_PRIVATE_H_
 
-#include <linux/completion.h>
-#include <linux/eventfd.h>
-#include <linux/workqueue.h>
-#include <linux/vfio_ccw.h>
-#include <linux/vfio.h>
-#include <linux/mdev.h>
+#include <freax/completion.h>
+#include <freax/eventfd.h>
+#include <freax/workqueue.h>
+#include <freax/vfio_ccw.h>
+#include <freax/vfio.h>
+#include <freax/mdev.h>
 #include <asm/crw.h>
 #include <asm/debug.h>
 

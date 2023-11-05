@@ -4,13 +4,13 @@
  * Copyright © 2019 Intel Corporation
  */
 
-#include <linux/delay.h>
-#include <linux/dma-fence.h>
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/sched/signal.h>
-#include <linux/slab.h>
-#include <linux/spinlock.h>
+#include <freax/delay.h>
+#include <freax/dma-fence.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/sched/signal.h>
+#include <freax/slab.h>
+#include <freax/spinlock.h>
 
 #include "selftest.h"
 

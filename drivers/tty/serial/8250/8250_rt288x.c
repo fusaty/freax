@@ -3,12 +3,12 @@
  * RT288x/Au1xxx driver
  */
 
-#include <linux/module.h>
-#include <linux/io.h>
-#include <linux/init.h>
-#include <linux/console.h>
-#include <linux/serial.h>
-#include <linux/serial_8250.h>
+#include <freax/module.h>
+#include <freax/io.h>
+#include <freax/init.h>
+#include <freax/console.h>
+#include <freax/serial.h>
+#include <freax/serial_8250.h>
 
 #include "8250.h"
 

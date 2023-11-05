@@ -3,14 +3,14 @@
  * Copyright © 2008 Keith Packard <keithp@keithp.com>
  */
 
-#ifndef _LINUX_IO_MAPPING_H
-#define _LINUX_IO_MAPPING_H
+#ifndef _freax_IO_MAPPING_H
+#define _freax_IO_MAPPING_H
 
-#include <linux/types.h>
-#include <linux/slab.h>
-#include <linux/bug.h>
-#include <linux/io.h>
-#include <linux/pgtable.h>
+#include <freax/types.h>
+#include <freax/slab.h>
+#include <freax/bug.h>
+#include <freax/io.h>
+#include <freax/pgtable.h>
 #include <asm/page.h>
 
 /*
@@ -29,7 +29,7 @@ struct io_mapping {
 
 #ifdef CONFIG_HAVE_ATOMIC_IOMAP
 
-#include <linux/pfn.h>
+#include <freax/pfn.h>
 #include <asm/iomap.h>
 /*
  * For small address space machines, mapping large objects
@@ -124,7 +124,7 @@ io_mapping_unmap(void __iomem *vaddr)
 
 #else  /* HAVE_ATOMIC_IOMAP */
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /* Create the io_mapping object*/
 static inline struct io_mapping *
@@ -228,4 +228,4 @@ io_mapping_free(struct io_mapping *iomap)
 int io_mapping_map_user(struct io_mapping *iomap, struct vm_area_struct *vma,
 		unsigned long addr, unsigned long pfn, unsigned long size);
 
-#endif /* _LINUX_IO_MAPPING_H */
+#endif /* _freax_IO_MAPPING_H */

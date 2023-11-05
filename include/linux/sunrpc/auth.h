@@ -1,23 +1,23 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/auth.h
+ * freax/include/freax/sunrpc/auth.h
  *
  * Declarations for the RPC client authentication machinery.
  *
  * Copyright (C) 1996, Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef _LINUX_SUNRPC_AUTH_H
-#define _LINUX_SUNRPC_AUTH_H
+#ifndef _freax_SUNRPC_AUTH_H
+#define _freax_SUNRPC_AUTH_H
 
-#include <linux/sunrpc/sched.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/xdr.h>
+#include <freax/sunrpc/sched.h>
+#include <freax/sunrpc/msg_prot.h>
+#include <freax/sunrpc/xdr.h>
 
-#include <linux/atomic.h>
-#include <linux/rcupdate.h>
-#include <linux/uidgid.h>
-#include <linux/utsname.h>
+#include <freax/atomic.h>
+#include <freax/rcupdate.h>
+#include <freax/uidgid.h>
+#include <freax/utsname.h>
 
 /*
  * Maximum size of AUTH_NONE authentication information, in XDR words.
@@ -27,7 +27,7 @@
 
 /*
  * Size of the nodename buffer. RFC1831 specifies a hard limit of 255 bytes,
- * but Linux hostnames are actually limited to __NEW_UTS_LEN bytes.
+ * but freax hostnames are actually limited to __NEW_UTS_LEN bytes.
  */
 #define UNX_MAXNODENAME	__NEW_UTS_LEN
 #define UNX_CALLSLACK	(21 + XDR_QUADLEN(UNX_MAXNODENAME))
@@ -194,4 +194,4 @@ struct rpc_cred *get_rpccred(struct rpc_cred *cred)
 	return NULL;
 }
 
-#endif /* _LINUX_SUNRPC_AUTH_H */
+#endif /* _freax_SUNRPC_AUTH_H */

@@ -4,11 +4,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <linux/capability.h>
-#include <linux/kernel.h>
-#include <linux/mman.h>
-#include <linux/string.h>
-#include <linux/time64.h>
+#include <freax/capability.h>
+#include <freax/kernel.h>
+#include <freax/mman.h>
+#include <freax/string.h>
+#include <freax/time64.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/param.h>
@@ -33,8 +33,8 @@
 #include "namespaces.h"
 #include "header.h"
 #include "path.h"
-#include <linux/ctype.h>
-#include <linux/zalloc.h>
+#include <freax/ctype.h>
+#include <freax/zalloc.h>
 
 #include <elf.h>
 #include <limits.h>
@@ -45,8 +45,8 @@ static int dso__load_kernel_sym(struct dso *dso, struct map *map);
 static int dso__load_guest_kernel_sym(struct dso *dso, struct map *map);
 static bool symbol__is_idle(const char *name);
 
-int vmlinux_path__nr_entries;
-char **vmlinux_path;
+int vmfreax_path__nr_entries;
+char **vmfreax_path;
 
 struct map_list_node {
 	struct list_head node;
@@ -56,7 +56,7 @@ struct map_list_node {
 struct symbol_conf symbol_conf = {
 	.nanosecs		= false,
 	.use_modules		= true,
-	.try_vmlinux_path	= true,
+	.try_vmfreax_path	= true,
 	.demangle		= true,
 	.demangle_kernel	= false,
 	.cumulate_callchain	= true,
@@ -840,7 +840,7 @@ static int maps__split_kallsyms_for_kcore(struct maps *kmaps, struct dso *dso)
 /*
  * Split the symbols into maps, making sure there are no overlaps, i.e. the
  * kernel range is broken in several maps, named [kernel].N, as we don't have
- * the original ELF section names vmlinux have.
+ * the original ELF section names vmfreax have.
  */
 static int maps__split_kallsyms(struct maps *kmaps, struct dso *dso, u64 delta,
 				struct map *initial_map)
@@ -1802,12 +1802,12 @@ static bool dso__is_compatible_symtab_type(struct dso *dso, bool kmod,
 		return !kmod && dso->kernel == DSO_SPACE__USER;
 
 	case DSO_BINARY_TYPE__KALLSYMS:
-	case DSO_BINARY_TYPE__VMLINUX:
+	case DSO_BINARY_TYPE__VMfreax:
 	case DSO_BINARY_TYPE__KCORE:
 		return dso->kernel == DSO_SPACE__KERNEL;
 
 	case DSO_BINARY_TYPE__GUEST_KALLSYMS:
-	case DSO_BINARY_TYPE__GUEST_VMLINUX:
+	case DSO_BINARY_TYPE__GUEST_VMfreax:
 	case DSO_BINARY_TYPE__GUEST_KCORE:
 		return dso->kernel == DSO_SPACE__KERNEL_GUEST;
 
@@ -2185,66 +2185,66 @@ out_unlock:
 	return map;
 }
 
-int dso__load_vmlinux(struct dso *dso, struct map *map,
-		      const char *vmlinux, bool vmlinux_allocated)
+int dso__load_vmfreax(struct dso *dso, struct map *map,
+		      const char *vmfreax, bool vmfreax_allocated)
 {
 	int err = -1;
 	struct symsrc ss;
-	char symfs_vmlinux[PATH_MAX];
+	char symfs_vmfreax[PATH_MAX];
 	enum dso_binary_type symtab_type;
 
-	if (vmlinux[0] == '/')
-		snprintf(symfs_vmlinux, sizeof(symfs_vmlinux), "%s", vmlinux);
+	if (vmfreax[0] == '/')
+		snprintf(symfs_vmfreax, sizeof(symfs_vmfreax), "%s", vmfreax);
 	else
-		symbol__join_symfs(symfs_vmlinux, vmlinux);
+		symbol__join_symfs(symfs_vmfreax, vmfreax);
 
 	if (dso->kernel == DSO_SPACE__KERNEL_GUEST)
-		symtab_type = DSO_BINARY_TYPE__GUEST_VMLINUX;
+		symtab_type = DSO_BINARY_TYPE__GUEST_VMfreax;
 	else
-		symtab_type = DSO_BINARY_TYPE__VMLINUX;
+		symtab_type = DSO_BINARY_TYPE__VMfreax;
 
-	if (symsrc__init(&ss, dso, symfs_vmlinux, symtab_type))
+	if (symsrc__init(&ss, dso, symfs_vmfreax, symtab_type))
 		return -1;
 
 	/*
 	 * dso__load_sym() may copy 'dso' which will result in the copies having
 	 * an incorrect long name unless we set it here first.
 	 */
-	dso__set_long_name(dso, vmlinux, vmlinux_allocated);
+	dso__set_long_name(dso, vmfreax, vmfreax_allocated);
 	if (dso->kernel == DSO_SPACE__KERNEL_GUEST)
-		dso->binary_type = DSO_BINARY_TYPE__GUEST_VMLINUX;
+		dso->binary_type = DSO_BINARY_TYPE__GUEST_VMfreax;
 	else
-		dso->binary_type = DSO_BINARY_TYPE__VMLINUX;
+		dso->binary_type = DSO_BINARY_TYPE__VMfreax;
 
 	err = dso__load_sym(dso, map, &ss, &ss, 0);
 	symsrc__destroy(&ss);
 
 	if (err > 0) {
 		dso__set_loaded(dso);
-		pr_debug("Using %s for symbols\n", symfs_vmlinux);
+		pr_debug("Using %s for symbols\n", symfs_vmfreax);
 	}
 
 	return err;
 }
 
-int dso__load_vmlinux_path(struct dso *dso, struct map *map)
+int dso__load_vmfreax_path(struct dso *dso, struct map *map)
 {
 	int i, err = 0;
 	char *filename = NULL;
 
-	pr_debug("Looking at the vmlinux_path (%d entries long)\n",
-		 vmlinux_path__nr_entries + 1);
+	pr_debug("Looking at the vmfreax_path (%d entries long)\n",
+		 vmfreax_path__nr_entries + 1);
 
-	for (i = 0; i < vmlinux_path__nr_entries; ++i) {
-		err = dso__load_vmlinux(dso, map, vmlinux_path[i], false);
+	for (i = 0; i < vmfreax_path__nr_entries; ++i) {
+		err = dso__load_vmfreax(dso, map, vmfreax_path[i], false);
 		if (err > 0)
 			goto out;
 	}
 
-	if (!symbol_conf.ignore_vmlinux_buildid)
+	if (!symbol_conf.ignore_vmfreax_buildid)
 		filename = dso__build_id_filename(dso, NULL, 0, false);
 	if (filename != NULL) {
-		err = dso__load_vmlinux(dso, map, filename, true);
+		err = dso__load_vmfreax(dso, map, filename, true);
 		if (err > 0)
 			goto out;
 		free(filename);
@@ -2310,7 +2310,7 @@ static char *dso__find_kallsyms(struct dso *dso, struct map *map)
 	if (!dso->has_build_id) {
 		/*
 		 * Last resort, if we don't have a build-id and couldn't find
-		 * any vmlinux file, try the running kernel kallsyms table.
+		 * any vmfreax file, try the running kernel kallsyms table.
 		 */
 		goto proc_kallsyms;
 	}
@@ -2349,7 +2349,7 @@ proc_kallsyms:
 
 	/* Finally, find a cache of kallsyms */
 	if (!build_id_cache__kallsyms_path(sbuild_id, path, sizeof(path))) {
-		pr_err("No kallsyms or vmlinux with build-id %s was found\n",
+		pr_err("No kallsyms or vmfreax with build-id %s was found\n",
 		       sbuild_id);
 		return NULL;
 	}
@@ -2365,18 +2365,18 @@ static int dso__load_kernel_sym(struct dso *dso, struct map *map)
 	char *filename = NULL;
 
 	/*
-	 * Step 1: if the user specified a kallsyms or vmlinux filename, use
+	 * Step 1: if the user specified a kallsyms or vmfreax filename, use
 	 * it and only it, reporting errors to the user if it cannot be used.
 	 *
 	 * For instance, try to analyse an ARM perf.data file _without_ a
 	 * build-id, or if the user specifies the wrong path to the right
-	 * vmlinux file, obviously we can't fallback to another vmlinux (a
+	 * vmfreax file, obviously we can't fallback to another vmfreax (a
 	 * x86_86 one, on the machine where analysis is being performed, say),
 	 * or worse, /proc/kallsyms.
 	 *
 	 * If the specified file _has_ a build-id and there is a build-id
 	 * section in the perf.data file, we will still do the expected
-	 * validation in dso__load_vmlinux and will bail out if they don't
+	 * validation in dso__load_vmfreax and will bail out if they don't
 	 * match.
 	 */
 	if (symbol_conf.kallsyms_name != NULL) {
@@ -2384,26 +2384,26 @@ static int dso__load_kernel_sym(struct dso *dso, struct map *map)
 		goto do_kallsyms;
 	}
 
-	if (!symbol_conf.ignore_vmlinux && symbol_conf.vmlinux_name != NULL) {
-		return dso__load_vmlinux(dso, map, symbol_conf.vmlinux_name, false);
+	if (!symbol_conf.ignore_vmfreax && symbol_conf.vmfreax_name != NULL) {
+		return dso__load_vmfreax(dso, map, symbol_conf.vmfreax_name, false);
 	}
 
 	/*
-	 * Before checking on common vmlinux locations, check if it's
+	 * Before checking on common vmfreax locations, check if it's
 	 * stored as standard build id binary (not kallsyms) under
 	 * .debug cache.
 	 */
-	if (!symbol_conf.ignore_vmlinux_buildid)
+	if (!symbol_conf.ignore_vmfreax_buildid)
 		filename = __dso__build_id_filename(dso, NULL, 0, false, false);
 	if (filename != NULL) {
-		err = dso__load_vmlinux(dso, map, filename, true);
+		err = dso__load_vmfreax(dso, map, filename, true);
 		if (err > 0)
 			return err;
 		free(filename);
 	}
 
-	if (!symbol_conf.ignore_vmlinux && vmlinux_path != NULL) {
-		err = dso__load_vmlinux_path(dso, map);
+	if (!symbol_conf.ignore_vmfreax && vmfreax_path != NULL) {
+		err = dso__load_vmfreax_path(dso, map);
 		if (err > 0)
 			return err;
 	}
@@ -2445,13 +2445,13 @@ static int dso__load_guest_kernel_sym(struct dso *dso, struct map *map)
 		kallsyms_filename = machine->kallsyms_filename;
 	} else if (machine__is_default_guest(machine)) {
 		/*
-		 * if the user specified a vmlinux filename, use it and only
+		 * if the user specified a vmfreax filename, use it and only
 		 * it, reporting errors to the user if it cannot be used.
 		 * Or use file guest_kallsyms inputted by user on commandline
 		 */
-		if (symbol_conf.default_guest_vmlinux_name != NULL) {
-			err = dso__load_vmlinux(dso, map,
-						symbol_conf.default_guest_vmlinux_name,
+		if (symbol_conf.default_guest_vmfreax_name != NULL) {
+			err = dso__load_vmfreax(dso, map,
+						symbol_conf.default_guest_vmfreax_name,
 						false);
 			return err;
 		}
@@ -2477,52 +2477,52 @@ static int dso__load_guest_kernel_sym(struct dso *dso, struct map *map)
 	return err;
 }
 
-static void vmlinux_path__exit(void)
+static void vmfreax_path__exit(void)
 {
-	while (--vmlinux_path__nr_entries >= 0)
-		zfree(&vmlinux_path[vmlinux_path__nr_entries]);
-	vmlinux_path__nr_entries = 0;
+	while (--vmfreax_path__nr_entries >= 0)
+		zfree(&vmfreax_path[vmfreax_path__nr_entries]);
+	vmfreax_path__nr_entries = 0;
 
-	zfree(&vmlinux_path);
+	zfree(&vmfreax_path);
 }
 
-static const char * const vmlinux_paths[] = {
-	"vmlinux",
-	"/boot/vmlinux"
+static const char * const vmfreax_paths[] = {
+	"vmfreax",
+	"/boot/vmfreax"
 };
 
-static const char * const vmlinux_paths_upd[] = {
-	"/boot/vmlinux-%s",
-	"/usr/lib/debug/boot/vmlinux-%s",
-	"/lib/modules/%s/build/vmlinux",
-	"/usr/lib/debug/lib/modules/%s/vmlinux",
-	"/usr/lib/debug/boot/vmlinux-%s.debug"
+static const char * const vmfreax_paths_upd[] = {
+	"/boot/vmfreax-%s",
+	"/usr/lib/debug/boot/vmfreax-%s",
+	"/lib/modules/%s/build/vmfreax",
+	"/usr/lib/debug/lib/modules/%s/vmfreax",
+	"/usr/lib/debug/boot/vmfreax-%s.debug"
 };
 
-static int vmlinux_path__add(const char *new_entry)
+static int vmfreax_path__add(const char *new_entry)
 {
-	vmlinux_path[vmlinux_path__nr_entries] = strdup(new_entry);
-	if (vmlinux_path[vmlinux_path__nr_entries] == NULL)
+	vmfreax_path[vmfreax_path__nr_entries] = strdup(new_entry);
+	if (vmfreax_path[vmfreax_path__nr_entries] == NULL)
 		return -1;
-	++vmlinux_path__nr_entries;
+	++vmfreax_path__nr_entries;
 
 	return 0;
 }
 
-static int vmlinux_path__init(struct perf_env *env)
+static int vmfreax_path__init(struct perf_env *env)
 {
 	struct utsname uts;
 	char bf[PATH_MAX];
 	char *kernel_version;
 	unsigned int i;
 
-	vmlinux_path = malloc(sizeof(char *) * (ARRAY_SIZE(vmlinux_paths) +
-			      ARRAY_SIZE(vmlinux_paths_upd)));
-	if (vmlinux_path == NULL)
+	vmfreax_path = malloc(sizeof(char *) * (ARRAY_SIZE(vmfreax_paths) +
+			      ARRAY_SIZE(vmfreax_paths_upd)));
+	if (vmfreax_path == NULL)
 		return -1;
 
-	for (i = 0; i < ARRAY_SIZE(vmlinux_paths); i++)
-		if (vmlinux_path__add(vmlinux_paths[i]) < 0)
+	for (i = 0; i < ARRAY_SIZE(vmfreax_paths); i++)
+		if (vmfreax_path__add(vmfreax_paths[i]) < 0)
 			goto out_fail;
 
 	/* only try kernel version if no symfs was given */
@@ -2538,16 +2538,16 @@ static int vmlinux_path__init(struct perf_env *env)
 		kernel_version = uts.release;
 	}
 
-	for (i = 0; i < ARRAY_SIZE(vmlinux_paths_upd); i++) {
-		snprintf(bf, sizeof(bf), vmlinux_paths_upd[i], kernel_version);
-		if (vmlinux_path__add(bf) < 0)
+	for (i = 0; i < ARRAY_SIZE(vmfreax_paths_upd); i++) {
+		snprintf(bf, sizeof(bf), vmfreax_paths_upd[i], kernel_version);
+		if (vmfreax_path__add(bf) < 0)
 			goto out_fail;
 	}
 
 	return 0;
 
 out_fail:
-	vmlinux_path__exit();
+	vmfreax_path__exit();
 	return -1;
 }
 
@@ -2675,7 +2675,7 @@ int symbol__init(struct perf_env *env)
 
 	symbol__elf_init();
 
-	if (symbol_conf.try_vmlinux_path && vmlinux_path__init(env) < 0)
+	if (symbol_conf.try_vmfreax_path && vmfreax_path__init(env) < 0)
 		return -1;
 
 	if (symbol_conf.field_sep && *symbol_conf.field_sep == '.') {
@@ -2753,7 +2753,7 @@ void symbol__exit(void)
 	intlist__delete(symbol_conf.tid_list);
 	intlist__delete(symbol_conf.pid_list);
 	intlist__delete(symbol_conf.addr_list);
-	vmlinux_path__exit();
+	vmfreax_path__exit();
 	symbol_conf.sym_list = symbol_conf.dso_list = symbol_conf.comm_list = NULL;
 	symbol_conf.bt_stop_list = NULL;
 	symbol_conf.initialized = false;
@@ -2816,9 +2816,9 @@ struct mem_info *mem_info__new(void)
  */
 int symbol__validate_sym_arguments(void)
 {
-	if (symbol_conf.vmlinux_name &&
-	    access(symbol_conf.vmlinux_name, R_OK)) {
-		pr_err("Invalid file: %s\n", symbol_conf.vmlinux_name);
+	if (symbol_conf.vmfreax_name &&
+	    access(symbol_conf.vmfreax_name, R_OK)) {
+		pr_err("Invalid file: %s\n", symbol_conf.vmfreax_name);
 		return -EINVAL;
 	}
 	if (symbol_conf.kallsyms_name &&

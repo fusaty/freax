@@ -6,7 +6,7 @@
 #ifndef _CCU_PHASE_H_
 #define _CCU_PHASE_H_
 
-#include <linux/clk-provider.h>
+#include <freax/clk-provider.h>
 
 #include "ccu_common.h"
 

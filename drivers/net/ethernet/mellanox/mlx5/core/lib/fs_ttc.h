@@ -1,10 +1,10 @@
-/* SPDX-License-Identifier: GPL-2.0 OR Linux-OpenIB */
+/* SPDX-License-Identifier: GPL-2.0 OR freax-OpenIB */
 /* Copyright (c) 2020 Mellanox Technologies. */
 
 #ifndef __ML5_FS_TTC_H__
 #define __ML5_FS_TTC_H__
 
-#include <linux/mlx5/fs.h>
+#include <freax/mlx5/fs.h>
 
 enum mlx5_traffic_types {
 	MLX5_TT_IPV4_TCP,

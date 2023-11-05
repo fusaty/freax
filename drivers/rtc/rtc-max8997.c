@@ -8,14 +8,14 @@
 
 #define pr_fmt(fmt) KBUILD_MODNAME ": " fmt
 
-#include <linux/slab.h>
-#include <linux/rtc.h>
-#include <linux/delay.h>
-#include <linux/mutex.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mfd/max8997-private.h>
-#include <linux/irqdomain.h>
+#include <freax/slab.h>
+#include <freax/rtc.h>
+#include <freax/delay.h>
+#include <freax/mutex.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mfd/max8997-private.h>
+#include <freax/irqdomain.h>
 
 /* Module parameter for WTSR function control */
 static int wtsr_en = 1;

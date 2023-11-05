@@ -3,14 +3,14 @@
  * Copyright (C) Sunplus Technology Co., Ltd.
  *       All rights reserved.
  */
-#include <linux/module.h>
-#include <linux/clk-provider.h>
-#include <linux/of.h>
-#include <linux/bitfield.h>
-#include <linux/slab.h>
-#include <linux/io.h>
-#include <linux/err.h>
-#include <linux/platform_device.h>
+#include <freax/module.h>
+#include <freax/clk-provider.h>
+#include <freax/of.h>
+#include <freax/bitfield.h>
+#include <freax/slab.h>
+#include <freax/io.h>
+#include <freax/err.h>
+#include <freax/platform_device.h>
 
 #include <dt-bindings/clock/sunplus,sp7021-clkc.h>
 

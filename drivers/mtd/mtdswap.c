@@ -11,20 +11,20 @@
  * support and lock-less operation written by Adrian Hunter.
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/blktrans.h>
-#include <linux/rbtree.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/vmalloc.h>
-#include <linux/blkdev.h>
-#include <linux/swap.h>
-#include <linux/debugfs.h>
-#include <linux/seq_file.h>
-#include <linux/device.h>
-#include <linux/math64.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/blktrans.h>
+#include <freax/rbtree.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/vmalloc.h>
+#include <freax/blkdev.h>
+#include <freax/swap.h>
+#include <freax/debugfs.h>
+#include <freax/seq_file.h>
+#include <freax/device.h>
+#include <freax/math64.h>
 
 #define MTDSWAP_PREFIX "mtdswap"
 

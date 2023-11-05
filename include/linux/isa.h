@@ -3,12 +3,12 @@
  * ISA bus.
  */
 
-#ifndef __LINUX_ISA_H
-#define __LINUX_ISA_H
+#ifndef __freax_ISA_H
+#define __freax_ISA_H
 
-#include <linux/device.h>
-#include <linux/errno.h>
-#include <linux/kernel.h>
+#include <freax/device.h>
+#include <freax/errno.h>
+#include <freax/kernel.h>
 
 struct isa_driver {
 	int (*match)(struct device *, unsigned int);
@@ -102,4 +102,4 @@ module_isa_driver_exit(__isa_driver)
  */
 #define max_num_isa_dev(__isa_dev_ext) (1024 / __isa_dev_ext)
 
-#endif /* __LINUX_ISA_H */
+#endif /* __freax_ISA_H */

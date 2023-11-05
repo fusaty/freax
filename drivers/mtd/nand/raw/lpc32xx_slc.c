@@ -10,22 +10,22 @@
  * Copyright © 2012 Roland Stigge
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/mtd/mtd.h>
-#include <linux/mtd/rawnand.h>
-#include <linux/mtd/partitions.h>
-#include <linux/clk.h>
-#include <linux/err.h>
-#include <linux/delay.h>
-#include <linux/io.h>
-#include <linux/mm.h>
-#include <linux/dma-mapping.h>
-#include <linux/dmaengine.h>
-#include <linux/gpio/consumer.h>
-#include <linux/of.h>
-#include <linux/mtd/lpc32xx_slc.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/mtd/mtd.h>
+#include <freax/mtd/rawnand.h>
+#include <freax/mtd/partitions.h>
+#include <freax/clk.h>
+#include <freax/err.h>
+#include <freax/delay.h>
+#include <freax/io.h>
+#include <freax/mm.h>
+#include <freax/dma-mapping.h>
+#include <freax/dmaengine.h>
+#include <freax/gpio/consumer.h>
+#include <freax/of.h>
+#include <freax/mtd/lpc32xx_slc.h>
 
 #define LPC32XX_MODNAME		"lpc32xx-nand"
 

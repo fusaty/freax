@@ -7,19 +7,19 @@
  * Author: Minghuan Lian <Minghuan.Lian@nxp.com>
  */
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/msi.h>
-#include <linux/interrupt.h>
-#include <linux/iommu.h>
-#include <linux/irq.h>
-#include <linux/irqchip/chained_irq.h>
-#include <linux/irqdomain.h>
-#include <linux/of_irq.h>
-#include <linux/of_pci.h>
-#include <linux/platform_device.h>
-#include <linux/property.h>
-#include <linux/spinlock.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/msi.h>
+#include <freax/interrupt.h>
+#include <freax/iommu.h>
+#include <freax/irq.h>
+#include <freax/irqchip/chained_irq.h>
+#include <freax/irqdomain.h>
+#include <freax/of_irq.h>
+#include <freax/of_pci.h>
+#include <freax/platform_device.h>
+#include <freax/property.h>
+#include <freax/spinlock.h>
 
 #define MSI_IRQS_PER_MSIR	32
 #define MSI_MSIR_OFFSET		4

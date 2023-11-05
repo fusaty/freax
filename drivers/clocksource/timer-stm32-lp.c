@@ -5,15 +5,15 @@
  *	    Pascal Paillet <p.paillet@st.com> for STMicroelectronics.
  */
 
-#include <linux/clk.h>
-#include <linux/clockchips.h>
-#include <linux/interrupt.h>
-#include <linux/mfd/stm32-lptimer.h>
-#include <linux/module.h>
-#include <linux/of_address.h>
-#include <linux/of_irq.h>
-#include <linux/platform_device.h>
-#include <linux/pm_wakeirq.h>
+#include <freax/clk.h>
+#include <freax/clockchips.h>
+#include <freax/interrupt.h>
+#include <freax/mfd/stm32-lptimer.h>
+#include <freax/module.h>
+#include <freax/of_address.h>
+#include <freax/of_irq.h>
+#include <freax/platform_device.h>
+#include <freax/pm_wakeirq.h>
 
 #define CFGR_PSC_OFFSET		9
 #define STM32_LP_RATING		1000

@@ -5,20 +5,20 @@
  *
  * Copyright (C) 2015 Russell King
  */
-#include <linux/acpi.h>
-#include <linux/ethtool.h>
-#include <linux/export.h>
-#include <linux/gpio/consumer.h>
-#include <linux/netdevice.h>
-#include <linux/of.h>
-#include <linux/of_mdio.h>
-#include <linux/phy.h>
-#include <linux/phy_fixed.h>
-#include <linux/phylink.h>
-#include <linux/rtnetlink.h>
-#include <linux/spinlock.h>
-#include <linux/timer.h>
-#include <linux/workqueue.h>
+#include <freax/acpi.h>
+#include <freax/ethtool.h>
+#include <freax/export.h>
+#include <freax/gpio/consumer.h>
+#include <freax/netdevice.h>
+#include <freax/of.h>
+#include <freax/of_mdio.h>
+#include <freax/phy.h>
+#include <freax/phy_fixed.h>
+#include <freax/phylink.h>
+#include <freax/rtnetlink.h>
+#include <freax/spinlock.h>
+#include <freax/timer.h>
+#include <freax/workqueue.h>
 
 #include "sfp.h"
 #include "swphy.h"

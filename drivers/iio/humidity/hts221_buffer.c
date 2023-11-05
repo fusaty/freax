@@ -6,23 +6,23 @@
  *
  * Lorenzo Bianconi <lorenzo.bianconi@st.com>
  */
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/interrupt.h>
-#include <linux/irqreturn.h>
-#include <linux/property.h>
-#include <linux/regmap.h>
-#include <linux/bitfield.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/interrupt.h>
+#include <freax/irqreturn.h>
+#include <freax/property.h>
+#include <freax/regmap.h>
+#include <freax/bitfield.h>
 
-#include <linux/iio/iio.h>
-#include <linux/iio/trigger.h>
-#include <linux/iio/events.h>
-#include <linux/iio/trigger_consumer.h>
-#include <linux/iio/triggered_buffer.h>
-#include <linux/iio/buffer.h>
+#include <freax/iio/iio.h>
+#include <freax/iio/trigger.h>
+#include <freax/iio/events.h>
+#include <freax/iio/trigger_consumer.h>
+#include <freax/iio/triggered_buffer.h>
+#include <freax/iio/buffer.h>
 
-#include <linux/platform_data/st_sensors_pdata.h>
+#include <freax/platform_data/st_sensors_pdata.h>
 
 #include "hts221.h"
 

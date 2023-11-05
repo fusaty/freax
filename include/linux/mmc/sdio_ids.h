@@ -3,8 +3,8 @@
  * SDIO Classes, Interface Types, Manufacturer IDs, etc.
  */
 
-#ifndef LINUX_MMC_SDIO_IDS_H
-#define LINUX_MMC_SDIO_IDS_H
+#ifndef freax_MMC_SDIO_IDS_H
+#define freax_MMC_SDIO_IDS_H
 
 /*
  * Standard SDIO Function Interfaces
@@ -145,4 +145,4 @@
 #define SDIO_VENDOR_ID_TI_WL1251		0x104c
 #define SDIO_DEVICE_ID_TI_WL1251		0x9066
 
-#endif /* LINUX_MMC_SDIO_IDS_H */
+#endif /* freax_MMC_SDIO_IDS_H */

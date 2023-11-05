@@ -26,17 +26,17 @@
  *      Includes, defines, variables, module parameters, ...
  */
 
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/kernel.h>
-#include <linux/fs.h>
-#include <linux/mm.h>
-#include <linux/miscdevice.h>
-#include <linux/watchdog.h>
-#include <linux/pci.h>
-#include <linux/ioport.h>
-#include <linux/uaccess.h>
-#include <linux/io.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/kernel.h>
+#include <freax/fs.h>
+#include <freax/mm.h>
+#include <freax/miscdevice.h>
+#include <freax/watchdog.h>
+#include <freax/pci.h>
+#include <freax/ioport.h>
+#include <freax/uaccess.h>
+#include <freax/io.h>
 
 /* Module and version information */
 #define ESB_MODULE_NAME "i6300ESB timer"

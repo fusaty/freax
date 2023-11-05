@@ -1,5 +1,5 @@
 /*******************************************************************
- * This file is part of the Emulex Linux Device Driver for         *
+ * This file is part of the Emulex freax Device Driver for         *
  * Fibre Channel Host Bus Adapters.                                *
  * Copyright (C) 2017-2023 Broadcom. All Rights Reserved. The term *
  * “Broadcom” refers to Broadcom Inc. and/or its subsidiaries.     *
@@ -21,8 +21,8 @@
  * included with this package.                                     *
  *******************************************************************/
 
-#include <linux/interrupt.h>
-#include <linux/dma-direction.h>
+#include <freax/interrupt.h>
+#include <freax/dma-direction.h>
 
 #include <scsi/scsi_transport_fc.h>
 

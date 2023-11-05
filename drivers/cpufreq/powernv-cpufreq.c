@@ -4,22 +4,22 @@
  *
  * (C) Copyright IBM 2014
  *
- * Author: Vaidyanathan Srinivasan <svaidy at linux.vnet.ibm.com>
+ * Author: Vaidyanathan Srinivasan <svaidy at freax.vnet.ibm.com>
  */
 
 #define pr_fmt(fmt)	"powernv-cpufreq: " fmt
 
-#include <linux/kernel.h>
-#include <linux/sysfs.h>
-#include <linux/cpumask.h>
-#include <linux/module.h>
-#include <linux/cpufreq.h>
-#include <linux/smp.h>
-#include <linux/of.h>
-#include <linux/reboot.h>
-#include <linux/slab.h>
-#include <linux/cpu.h>
-#include <linux/hashtable.h>
+#include <freax/kernel.h>
+#include <freax/sysfs.h>
+#include <freax/cpumask.h>
+#include <freax/module.h>
+#include <freax/cpufreq.h>
+#include <freax/smp.h>
+#include <freax/of.h>
+#include <freax/reboot.h>
+#include <freax/slab.h>
+#include <freax/cpu.h>
+#include <freax/hashtable.h>
 #include <trace/events/power.h>
 
 #include <asm/cputhreads.h>
@@ -27,7 +27,7 @@
 #include <asm/reg.h>
 #include <asm/smp.h> /* Required for cpu_sibling_mask() in UP configs */
 #include <asm/opal.h>
-#include <linux/timer.h>
+#include <freax/timer.h>
 
 #define POWERNV_MAX_PSTATES_ORDER  8
 #define POWERNV_MAX_PSTATES	(1UL << (POWERNV_MAX_PSTATES_ORDER))
@@ -1163,4 +1163,4 @@ static void __exit powernv_cpufreq_exit(void)
 module_exit(powernv_cpufreq_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Vaidyanathan Srinivasan <svaidy at linux.vnet.ibm.com>");
+MODULE_AUTHOR("Vaidyanathan Srinivasan <svaidy at freax.vnet.ibm.com>");

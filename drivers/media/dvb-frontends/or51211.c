@@ -18,15 +18,15 @@
  */
 #define OR51211_DEFAULT_FIRMWARE "dvb-fe-or51211.fw"
 
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/device.h>
-#include <linux/firmware.h>
-#include <linux/string.h>
-#include <linux/slab.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/device.h>
+#include <freax/firmware.h>
+#include <freax/string.h>
+#include <freax/slab.h>
 #include <asm/byteorder.h>
 
-#include <linux/int_log.h>
+#include <freax/int_log.h>
 #include <media/dvb_frontend.h>
 #include "or51211.h"
 

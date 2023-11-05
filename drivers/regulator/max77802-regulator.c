@@ -11,17 +11,17 @@
 //
 // This driver is based on max8997.c
 
-#include <linux/kernel.h>
-#include <linux/bug.h>
-#include <linux/err.h>
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/regulator/driver.h>
-#include <linux/regulator/machine.h>
-#include <linux/regulator/of_regulator.h>
-#include <linux/mfd/max77686.h>
-#include <linux/mfd/max77686-private.h>
+#include <freax/kernel.h>
+#include <freax/bug.h>
+#include <freax/err.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/regulator/driver.h>
+#include <freax/regulator/machine.h>
+#include <freax/regulator/of_regulator.h>
+#include <freax/mfd/max77686.h>
+#include <freax/mfd/max77686-private.h>
 #include <dt-bindings/regulator/maxim,max77802.h>
 
 /* Default ramp delay in case it is not manually set */

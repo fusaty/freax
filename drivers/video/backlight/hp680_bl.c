@@ -10,13 +10,13 @@
  * for more details.
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/platform_device.h>
-#include <linux/spinlock.h>
-#include <linux/fb.h>
-#include <linux/backlight.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
+#include <freax/init.h>
+#include <freax/platform_device.h>
+#include <freax/spinlock.h>
+#include <freax/fb.h>
+#include <freax/backlight.h>
 
 #include <cpu/dac.h>
 #include <mach/hp6xx.h>

@@ -4,12 +4,12 @@
 #ifndef _IIDC_H_
 #define _IIDC_H_
 
-#include <linux/auxiliary_bus.h>
-#include <linux/dcbnl.h>
-#include <linux/device.h>
-#include <linux/if_ether.h>
-#include <linux/kernel.h>
-#include <linux/netdevice.h>
+#include <freax/auxiliary_bus.h>
+#include <freax/dcbnl.h>
+#include <freax/device.h>
+#include <freax/if_ether.h>
+#include <freax/kernel.h>
+#include <freax/netdevice.h>
 
 enum iidc_event_type {
 	IIDC_EVENT_BEFORE_MTU_CHANGE,

@@ -4,7 +4,7 @@
 /* ethtool support for iavf */
 #include "iavf.h"
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 
 /* ethtool statistics helpers */
 

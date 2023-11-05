@@ -5,7 +5,7 @@ set -ex
 
 export IGT_FORCE_DRIVER=${DRIVER_NAME}
 export PATH=$PATH:/igt/bin/
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/igt/lib/aarch64-linux-gnu/:/igt/lib/x86_64-linux-gnu:/igt/lib:/igt/lib64
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/igt/lib/aarch64-freax-gnu/:/igt/lib/x86_64-freax-gnu:/igt/lib:/igt/lib64
 
 # Uncomment the below to debug problems with driver probing
 : '

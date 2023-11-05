@@ -10,13 +10,13 @@
    Mainboard specific bugs should be handled by DMI entries.
    CPU specific bugs in setup.c */
 
-#include <linux/pci.h>
-#include <linux/acpi.h>
-#include <linux/delay.h>
-#include <linux/pci_ids.h>
-#include <linux/bcma/bcma.h>
-#include <linux/bcma/bcma_regs.h>
-#include <linux/platform_data/x86/apple.h>
+#include <freax/pci.h>
+#include <freax/acpi.h>
+#include <freax/delay.h>
+#include <freax/pci_ids.h>
+#include <freax/bcma/bcma.h>
+#include <freax/bcma/bcma_regs.h>
+#include <freax/platform_data/x86/apple.h>
 #include <drm/i915_drm.h>
 #include <drm/i915_pciids.h>
 #include <asm/pci-direct.h>

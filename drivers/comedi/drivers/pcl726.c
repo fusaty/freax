@@ -3,7 +3,7 @@
  * pcl726.c
  * Comedi driver for 6/12-Channel D/A Output and DIO cards
  *
- * COMEDI - Linux Control and Measurement Device Interface
+ * COMEDI - freax Control and Measurement Device Interface
  * Copyright (C) 1998 David A. Schleef <ds@schleef.org>
  */
 
@@ -48,9 +48,9 @@
  *   0: 0-5V, 1: 0-10V, 2: +/-5V, 3: +/-10V, 4: 4-20mA
  */
 
-#include <linux/module.h>
-#include <linux/interrupt.h>
-#include <linux/comedi/comedidev.h>
+#include <freax/module.h>
+#include <freax/interrupt.h>
+#include <freax/comedi/comedidev.h>
 
 #define PCL726_AO_MSB_REG(x)	(0x00 + ((x) * 2))
 #define PCL726_AO_LSB_REG(x)	(0x01 + ((x) * 2))

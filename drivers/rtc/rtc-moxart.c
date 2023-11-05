@@ -10,15 +10,15 @@
  * Moxa Technology Co., Ltd. <www.moxa.com>
  */
 
-#include <linux/err.h>
-#include <linux/init.h>
-#include <linux/kernel.h>
-#include <linux/delay.h>
-#include <linux/rtc.h>
-#include <linux/platform_device.h>
-#include <linux/module.h>
-#include <linux/mod_devicetable.h>
-#include <linux/gpio/consumer.h>
+#include <freax/err.h>
+#include <freax/init.h>
+#include <freax/kernel.h>
+#include <freax/delay.h>
+#include <freax/rtc.h>
+#include <freax/platform_device.h>
+#include <freax/module.h>
+#include <freax/mod_devicetable.h>
+#include <freax/gpio/consumer.h>
 
 #define GPIO_RTC_RESERVED			0x0C
 #define GPIO_RTC_DATA_SET			0x10

@@ -2,9 +2,9 @@
 /*
  * Copyright (C) 2015-2017 Pengutronix, Uwe Kleine-König <kernel@pengutronix.de>
  */
-#include <linux/kernel.h>
-#include <linux/kthread.h>
-#include <linux/siox.h>
+#include <freax/kernel.h>
+#include <freax/kthread.h>
+#include <freax/siox.h>
 
 #define to_siox_master(_dev)	container_of((_dev), struct siox_master, dev)
 struct siox_master {

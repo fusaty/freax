@@ -7,9 +7,9 @@
 #ifndef __CLK_BT1_CCU_RST_H__
 #define __CLK_BT1_CCU_RST_H__
 
-#include <linux/of.h>
-#include <linux/regmap.h>
-#include <linux/reset-controller.h>
+#include <freax/of.h>
+#include <freax/regmap.h>
+#include <freax/reset-controller.h>
 
 struct ccu_rst_info;
 

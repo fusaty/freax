@@ -6,11 +6,11 @@
  * Based on the TPS65912 driver
  */
 
-#include <linux/gpio/driver.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
+#include <freax/gpio/driver.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
 
-#include <linux/mfd/tps65086.h>
+#include <freax/mfd/tps65086.h>
 
 struct tps65086_gpio {
 	struct gpio_chip chip;

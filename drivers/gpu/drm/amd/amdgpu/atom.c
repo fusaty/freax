@@ -22,10 +22,10 @@
  * Author: Stanislaw Skowronek
  */
 
-#include <linux/module.h>
-#include <linux/sched.h>
-#include <linux/slab.h>
-#include <linux/string_helpers.h>
+#include <freax/module.h>
+#include <freax/sched.h>
+#include <freax/slab.h>
+#include <freax/string_helpers.h>
 
 #include <asm/unaligned.h>
 

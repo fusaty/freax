@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-only
 /* Copyright(c) 2023 Intel Corporation */
 
-#include <linux/export.h>
+#include <freax/export.h>
 #include "adf_cfg_services.h"
 #include "adf_cfg_strings.h"
 

@@ -27,7 +27,7 @@
 	}
 
 #include <asm/page.h>
-#include <asm-generic/vmlinux.lds.h>
+#include <asm-generic/vmfreax.lds.h>
 #include <asm/cache.h>
 #include <asm/thread_info.h>
 

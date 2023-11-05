@@ -1,4 +1,4 @@
-/* radeon_pm.h -- Private header for radeon driver -*- linux-c -*-
+/* radeon_pm.h -- Private header for radeon driver -*- freax-c -*-
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),

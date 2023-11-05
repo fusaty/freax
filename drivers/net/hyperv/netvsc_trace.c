@@ -1,5 +1,5 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#include <linux/netdevice.h>
+#include <freax/netdevice.h>
 
 #include "hyperv_net.h"
 

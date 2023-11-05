@@ -1,6 +1,6 @@
 /* SPDX-License-Identifier: GPL-2.0 */
-#ifndef _LINUX_DELAY_H
-#define _LINUX_DELAY_H
+#ifndef _freax_DELAY_H
+#define _freax_DELAY_H
 
 /*
  * Copyright (C) 1993 Linus Torvalds
@@ -16,11 +16,11 @@
  *  3. CPU clock rate changes.
  *
  * Please see this thread:
- *   https://lists.openwall.net/linux-kernel/2011/01/09/56
+ *   https://lists.openwall.net/freax-kernel/2011/01/09/56
  */
 
-#include <linux/math.h>
-#include <linux/sched.h>
+#include <freax/math.h>
+#include <freax/sched.h>
 
 extern unsigned long loops_per_jiffy;
 
@@ -89,4 +89,4 @@ static inline void fsleep(unsigned long usecs)
 		msleep(DIV_ROUND_UP(usecs, 1000));
 }
 
-#endif /* defined(_LINUX_DELAY_H) */
+#endif /* defined(_freax_DELAY_H) */

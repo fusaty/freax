@@ -83,7 +83,7 @@
 				<0 0 0 2 &pcie3x1_intc 1>,
 				<0 0 0 3 &pcie3x1_intc 2>,
 				<0 0 0 4 &pcie3x1_intc 3>;
-		linux,pci-domain = <1>;
+		freax,pci-domain = <1>;
 		num-ib-windows = <6>;
 		num-ob-windows = <2>;
 		max-link-speed = <3>;
@@ -136,7 +136,7 @@
 				<0 0 0 2 &pcie3x2_intc 1>,
 				<0 0 0 3 &pcie3x2_intc 2>,
 				<0 0 0 4 &pcie3x2_intc 3>;
-		linux,pci-domain = <2>;
+		freax,pci-domain = <2>;
 		num-ib-windows = <6>;
 		num-ob-windows = <2>;
 		max-link-speed = <3>;

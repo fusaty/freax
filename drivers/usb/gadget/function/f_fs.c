@@ -14,27 +14,27 @@
 /* #define DEBUG */
 /* #define VERBOSE_DEBUG */
 
-#include <linux/blkdev.h>
-#include <linux/pagemap.h>
-#include <linux/export.h>
-#include <linux/fs_parser.h>
-#include <linux/hid.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/scatterlist.h>
-#include <linux/sched/signal.h>
-#include <linux/uio.h>
-#include <linux/vmalloc.h>
+#include <freax/blkdev.h>
+#include <freax/pagemap.h>
+#include <freax/export.h>
+#include <freax/fs_parser.h>
+#include <freax/hid.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/scatterlist.h>
+#include <freax/sched/signal.h>
+#include <freax/uio.h>
+#include <freax/vmalloc.h>
 #include <asm/unaligned.h>
 
-#include <linux/usb/ccid.h>
-#include <linux/usb/composite.h>
-#include <linux/usb/functionfs.h>
+#include <freax/usb/ccid.h>
+#include <freax/usb/composite.h>
+#include <freax/usb/functionfs.h>
 
-#include <linux/aio.h>
-#include <linux/kthread.h>
-#include <linux/poll.h>
-#include <linux/eventfd.h>
+#include <freax/aio.h>
+#include <freax/kthread.h>
+#include <freax/poll.h>
+#include <freax/eventfd.h>
 
 #include "u_fs.h"
 #include "u_f.h"

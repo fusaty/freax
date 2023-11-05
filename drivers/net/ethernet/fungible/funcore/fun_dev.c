@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: (GPL-2.0-only OR BSD-3-Clause)
 
-#include <linux/bitmap.h>
-#include <linux/delay.h>
-#include <linux/interrupt.h>
-#include <linux/io.h>
-#include <linux/io-64-nonatomic-lo-hi.h>
-#include <linux/mm.h>
-#include <linux/module.h>
-#include <linux/nvme.h>
-#include <linux/pci.h>
-#include <linux/wait.h>
-#include <linux/sched/signal.h>
+#include <freax/bitmap.h>
+#include <freax/delay.h>
+#include <freax/interrupt.h>
+#include <freax/io.h>
+#include <freax/io-64-nonatomic-lo-hi.h>
+#include <freax/mm.h>
+#include <freax/module.h>
+#include <freax/nvme.h>
+#include <freax/pci.h>
+#include <freax/wait.h>
+#include <freax/sched/signal.h>
 
 #include "fun_queue.h"
 #include "fun_dev.h"

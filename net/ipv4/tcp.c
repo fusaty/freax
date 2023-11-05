@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 /*
- * INET		An implementation of the TCP/IP protocol suite for the LINUX
+ * INET		An implementation of the TCP/IP protocol suite for the freax
  *		operating system.  INET is implemented using the  BSD Socket
  *		interface as the means of communication with the user level.
  *
@@ -244,29 +244,29 @@
 #define pr_fmt(fmt) "TCP: " fmt
 
 #include <crypto/hash.h>
-#include <linux/kernel.h>
-#include <linux/module.h>
-#include <linux/types.h>
-#include <linux/fcntl.h>
-#include <linux/poll.h>
-#include <linux/inet_diag.h>
-#include <linux/init.h>
-#include <linux/fs.h>
-#include <linux/skbuff.h>
-#include <linux/scatterlist.h>
-#include <linux/splice.h>
-#include <linux/net.h>
-#include <linux/socket.h>
-#include <linux/random.h>
-#include <linux/memblock.h>
-#include <linux/highmem.h>
-#include <linux/cache.h>
-#include <linux/err.h>
-#include <linux/time.h>
-#include <linux/slab.h>
-#include <linux/errqueue.h>
-#include <linux/static_key.h>
-#include <linux/btf.h>
+#include <freax/kernel.h>
+#include <freax/module.h>
+#include <freax/types.h>
+#include <freax/fcntl.h>
+#include <freax/poll.h>
+#include <freax/inet_diag.h>
+#include <freax/init.h>
+#include <freax/fs.h>
+#include <freax/skbuff.h>
+#include <freax/scatterlist.h>
+#include <freax/splice.h>
+#include <freax/net.h>
+#include <freax/socket.h>
+#include <freax/random.h>
+#include <freax/memblock.h>
+#include <freax/highmem.h>
+#include <freax/cache.h>
+#include <freax/err.h>
+#include <freax/time.h>
+#include <freax/slab.h>
+#include <freax/errqueue.h>
+#include <freax/static_key.h>
+#include <freax/btf.h>
 
 #include <net/icmp.h>
 #include <net/inet_common.h>
@@ -276,7 +276,7 @@
 #include <net/ip.h>
 #include <net/sock.h>
 
-#include <linux/uaccess.h>
+#include <freax/uaccess.h>
 #include <asm/ioctls.h>
 #include <net/busy_poll.h>
 
@@ -337,7 +337,7 @@ void tcp_enter_memory_pressure(struct sock *sk)
 	if (!val)
 		val--;
 	if (!cmpxchg(&tcp_memory_pressure, 0, val))
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPMEMORYPRESSURES);
+		NET_INC_STATS(sock_net(sk), freax_MIB_TCPMEMORYPRESSURES);
 }
 EXPORT_SYMBOL_GPL(tcp_enter_memory_pressure);
 
@@ -349,7 +349,7 @@ void tcp_leave_memory_pressure(struct sock *sk)
 		return;
 	val = xchg(&tcp_memory_pressure, 0);
 	if (val)
-		NET_ADD_STATS(sock_net(sk), LINUX_MIB_TCPMEMORYPRESSURESCHRONO,
+		NET_ADD_STATS(sock_net(sk), freax_MIB_TCPMEMORYPRESSURESCHRONO,
 			      jiffies_to_msecs(jiffies - val));
 }
 EXPORT_SYMBOL_GPL(tcp_leave_memory_pressure);
@@ -720,7 +720,7 @@ void tcp_push(struct sock *sk, int flags, int mss_now,
 
 		/* avoid atomic op if TSQ_THROTTLED bit is already set */
 		if (!test_bit(TSQ_THROTTLED, &sk->sk_tsq_flags)) {
-			NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPAUTOCORKING);
+			NET_INC_STATS(sock_net(sk), freax_MIB_TCPAUTOCORKING);
 			set_bit(TSQ_THROTTLED, &sk->sk_tsq_flags);
 		}
 		/* It is possible TX completion already happened
@@ -2608,12 +2608,12 @@ void tcp_set_state(struct sock *sk, int state)
 	BUILD_BUG_ON((int)BPF_TCP_MAX_STATES != (int)TCP_MAX_STATES);
 
 	/* bpf uapi header bpf.h defines an anonymous enum with values
-	 * BPF_TCP_* used by bpf programs. Currently gcc built vmlinux
+	 * BPF_TCP_* used by bpf programs. Currently gcc built vmfreax
 	 * is able to emit this enum in DWARF due to the above BUILD_BUG_ON.
-	 * But clang built vmlinux does not have this enum in DWARF
+	 * But clang built vmfreax does not have this enum in DWARF
 	 * since clang removes the above code before generating IR/debuginfo.
 	 * Let us explicitly emit the type debuginfo to ensure the
-	 * above-mentioned anonymous enum in the vmlinux DWARF and hence BTF
+	 * above-mentioned anonymous enum in the vmfreax DWARF and hence BTF
 	 * regardless of which compiler is used.
 	 */
 	BTF_TYPE_EMIT_ENUM(BPF_TCP_ESTABLISHED);
@@ -2792,13 +2792,13 @@ void __tcp_close(struct sock *sk, long timeout)
 		sk->sk_prot->disconnect(sk, 0);
 	} else if (data_was_unread) {
 		/* Unread data was tossed, zap the connection. */
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPABORTONCLOSE);
+		NET_INC_STATS(sock_net(sk), freax_MIB_TCPABORTONCLOSE);
 		tcp_set_state(sk, TCP_CLOSE);
 		tcp_send_active_reset(sk, sk->sk_allocation);
 	} else if (sock_flag(sk, SOCK_LINGER) && !sk->sk_lingertime) {
 		/* Check zero linger _after_ checking for unread data. */
 		sk->sk_prot->disconnect(sk, 0);
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPABORTONDATA);
+		NET_INC_STATS(sock_net(sk), freax_MIB_TCPABORTONDATA);
 	} else if (tcp_close_state(sk)) {
 		/* We FIN if the application ate all the data before
 		 * zapping the connection.
@@ -2815,13 +2815,13 @@ void __tcp_close(struct sock *sk, long timeout)
 		 * rather than queued out of window. Purists blame.
 		 *
 		 * F.e. "RFC state" is ESTABLISHED,
-		 * if Linux state is FIN-WAIT-1, but FIN is still not sent.
+		 * if freax state is FIN-WAIT-1, but FIN is still not sent.
 		 *
 		 * The visible declinations are that sometimes
 		 * we enter time-wait state, when it is not required really
 		 * (harmless), do not send active resets, when they are
 		 * required by specs (TCP_ESTABLISHED, TCP_CLOSE_WAIT, when
-		 * they look as CLOSING or LAST_ACK for Linux)
+		 * they look as CLOSING or LAST_ACK for freax)
 		 * Probably, I missed some more holelets.
 		 * 						--ANK
 		 * XXX (TFO) - To start off we don't support SYN+ACK+FIN
@@ -2870,7 +2870,7 @@ adjudge_to_death:
 			tcp_set_state(sk, TCP_CLOSE);
 			tcp_send_active_reset(sk, GFP_ATOMIC);
 			__NET_INC_STATS(sock_net(sk),
-					LINUX_MIB_TCPABORTONLINGER);
+					freax_MIB_TCPABORTONLINGER);
 		} else {
 			const int tmo = tcp_fin_time(sk);
 
@@ -2888,7 +2888,7 @@ adjudge_to_death:
 			tcp_set_state(sk, TCP_CLOSE);
 			tcp_send_active_reset(sk, GFP_ATOMIC);
 			__NET_INC_STATS(sock_net(sk),
-					LINUX_MIB_TCPABORTONMEMORY);
+					freax_MIB_TCPABORTONMEMORY);
 		} else if (!check_net(sock_net(sk))) {
 			/* Not possible to send reset; just close */
 			tcp_set_state(sk, TCP_CLOSE);
@@ -2985,7 +2985,7 @@ int tcp_disconnect(struct sock *sk, int flags)
 	} else if (tcp_need_reset(old_state) ||
 		   (tp->snd_nxt != tp->write_seq &&
 		    (1 << old_state) & (TCPF_CLOSING | TCPF_LAST_ACK))) {
-		/* The last check adjusts for discrepancy of Linux wrt. RFC
+		/* The last check adjusts for discrepancy of freax wrt. RFC
 		 * states
 		 */
 		tcp_send_active_reset(sk, gfp_any());
@@ -4414,7 +4414,7 @@ tcp_inbound_md5_hash(const struct sock *sk, const struct sk_buff *skb,
 	key = tcp_md5_do_lookup(sk, l3index, saddr, family);
 
 	if (!key && hash_location) {
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPMD5UNEXPECTED);
+		NET_INC_STATS(sock_net(sk), freax_MIB_TCPMD5UNEXPECTED);
 		tcp_hash_fail("Unexpected MD5 Hash found", family, skb, "");
 		return SKB_DROP_REASON_TCP_MD5UNEXPECTED;
 	}
@@ -4429,7 +4429,7 @@ tcp_inbound_md5_hash(const struct sock *sk, const struct sk_buff *skb,
 		genhash = tp->af_specific->calc_md5_hash(newhash, key,
 							 NULL, skb);
 	if (genhash || memcmp(hash_location, newhash, 16) != 0) {
-		NET_INC_STATS(sock_net(sk), LINUX_MIB_TCPMD5FAILURE);
+		NET_INC_STATS(sock_net(sk), freax_MIB_TCPMD5FAILURE);
 		if (family == AF_INET) {
 			tcp_hash_fail("MD5 Hash failed", AF_INET, skb, "%s L3 index %d",
 				      genhash ? "tcp_v4_calc_md5_hash failed"

@@ -2,10 +2,10 @@
 //
 // ASoC machine driver for Snow boards
 
-#include <linux/clk.h>
-#include <linux/module.h>
-#include <linux/platform_device.h>
-#include <linux/of.h>
+#include <freax/clk.h>
+#include <freax/module.h>
+#include <freax/platform_device.h>
+#include <freax/of.h>
 #include <sound/pcm_params.h>
 #include <sound/soc.h>
 

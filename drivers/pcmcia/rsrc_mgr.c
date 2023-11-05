@@ -9,9 +9,9 @@
  * (C) 1999		David A. Hinds
  */
 
-#include <linux/slab.h>
-#include <linux/module.h>
-#include <linux/kernel.h>
+#include <freax/slab.h>
+#include <freax/module.h>
+#include <freax/kernel.h>
 
 #include <pcmcia/ss.h>
 #include <pcmcia/cistpl.h>

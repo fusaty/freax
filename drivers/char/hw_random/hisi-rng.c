@@ -3,14 +3,14 @@
  * Copyright (C) 2016 HiSilicon Co., Ltd.
  */
 
-#include <linux/err.h>
-#include <linux/kernel.h>
-#include <linux/hw_random.h>
-#include <linux/io.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/platform_device.h>
-#include <linux/random.h>
+#include <freax/err.h>
+#include <freax/kernel.h>
+#include <freax/hw_random.h>
+#include <freax/io.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/platform_device.h>
+#include <freax/random.h>
 
 #define RNG_SEED	0x0
 #define RNG_CTRL	0x4

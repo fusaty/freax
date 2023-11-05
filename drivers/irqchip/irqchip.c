@@ -8,12 +8,12 @@
  * warranty of any kind, whether express or implied.
  */
 
-#include <linux/acpi.h>
-#include <linux/init.h>
-#include <linux/of.h>
-#include <linux/of_irq.h>
-#include <linux/irqchip.h>
-#include <linux/platform_device.h>
+#include <freax/acpi.h>
+#include <freax/init.h>
+#include <freax/of.h>
+#include <freax/of_irq.h>
+#include <freax/irqchip.h>
+#include <freax/platform_device.h>
 
 /*
  * This special of_device_id is the sentinel at the end of the

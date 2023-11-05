@@ -7,20 +7,20 @@
  * Author: Will Deacon <will.deacon@arm.com>
  */
 
-#include <linux/cache.h>
-#include <linux/clocksource.h>
-#include <linux/elf.h>
-#include <linux/err.h>
-#include <linux/errno.h>
-#include <linux/gfp.h>
-#include <linux/kernel.h>
-#include <linux/mm.h>
-#include <linux/sched.h>
-#include <linux/signal.h>
-#include <linux/slab.h>
-#include <linux/time_namespace.h>
-#include <linux/timekeeper_internal.h>
-#include <linux/vmalloc.h>
+#include <freax/cache.h>
+#include <freax/clocksource.h>
+#include <freax/elf.h>
+#include <freax/err.h>
+#include <freax/errno.h>
+#include <freax/gfp.h>
+#include <freax/kernel.h>
+#include <freax/mm.h>
+#include <freax/sched.h>
+#include <freax/signal.h>
+#include <freax/slab.h>
+#include <freax/time_namespace.h>
+#include <freax/timekeeper_internal.h>
+#include <freax/vmalloc.h>
 #include <vdso/datapage.h>
 #include <vdso/helpers.h>
 #include <vdso/vsyscall.h>
@@ -187,7 +187,7 @@ static vm_fault_t vvar_fault(const struct vm_special_mapping *sm,
 
 static int __setup_additional_pages(enum vdso_abi abi,
 				    struct mm_struct *mm,
-				    struct linux_binprm *bprm,
+				    struct freax_binprm *bprm,
 				    int uses_interp)
 {
 	unsigned long vdso_base, vdso_text_len, vdso_mapping_len;
@@ -385,7 +385,7 @@ out:
 	return PTR_ERR_OR_ZERO(ret);
 }
 
-int aarch32_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int aarch32_setup_additional_pages(struct freax_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	int ret;
@@ -436,7 +436,7 @@ static int __init vdso_init(void)
 }
 arch_initcall(vdso_init);
 
-int arch_setup_additional_pages(struct linux_binprm *bprm, int uses_interp)
+int arch_setup_additional_pages(struct freax_binprm *bprm, int uses_interp)
 {
 	struct mm_struct *mm = current->mm;
 	int ret;

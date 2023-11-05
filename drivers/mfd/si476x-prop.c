@@ -8,9 +8,9 @@
  *
  * Author: Andrey Smirnov <andrew.smirnov@gmail.com>
  */
-#include <linux/module.h>
+#include <freax/module.h>
 
-#include <linux/mfd/si476x-core.h>
+#include <freax/mfd/si476x-core.h>
 
 struct si476x_property_range {
 	u16 low, high;

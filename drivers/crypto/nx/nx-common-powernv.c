@@ -9,7 +9,7 @@
 
 #include "nx-842.h"
 
-#include <linux/timer.h>
+#include <freax/timer.h>
 
 #include <asm/prom.h>
 #include <asm/icswx.h>

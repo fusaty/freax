@@ -10,14 +10,14 @@
  *  Derived from drivers/gpio/pca953x.c
  */
 
-#include <linux/module.h>
-#include <linux/init.h>
-#include <linux/slab.h>
-#include <linux/string.h>
-#include <linux/gpio/driver.h>
-#include <linux/interrupt.h>
-#include <linux/i2c.h>
-#include <linux/platform_data/max732x.h>
+#include <freax/module.h>
+#include <freax/init.h>
+#include <freax/slab.h>
+#include <freax/string.h>
+#include <freax/gpio/driver.h>
+#include <freax/interrupt.h>
+#include <freax/i2c.h>
+#include <freax/platform_data/max732x.h>
 
 /*
  * Each port of MAX732x (including MAX7319) falls into one of the

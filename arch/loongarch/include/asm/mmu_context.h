@@ -7,11 +7,11 @@
 #ifndef _ASM_MMU_CONTEXT_H
 #define _ASM_MMU_CONTEXT_H
 
-#include <linux/errno.h>
-#include <linux/sched.h>
-#include <linux/mm_types.h>
-#include <linux/smp.h>
-#include <linux/slab.h>
+#include <freax/errno.h>
+#include <freax/sched.h>
+#include <freax/mm_types.h>
+#include <freax/smp.h>
+#include <freax/slab.h>
 
 #include <asm/cacheflush.h>
 #include <asm/tlbflush.h>

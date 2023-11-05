@@ -1,9 +1,9 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
+/* SPDX-License-Identifier: GPL-2.0 WITH freax-syscall-note */
 #ifndef __UAPI_TC_CTINFO_H
 #define __UAPI_TC_CTINFO_H
 
-#include <linux/types.h>
-#include <linux/pkt_cls.h>
+#include <freax/types.h>
+#include <freax/pkt_cls.h>
 
 struct tc_ctinfo {
 	tc_gen;

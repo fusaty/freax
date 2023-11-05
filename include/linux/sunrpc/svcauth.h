@@ -1,22 +1,22 @@
 /* SPDX-License-Identifier: GPL-2.0 */
 /*
- * linux/include/linux/sunrpc/svcauth.h
+ * freax/include/freax/sunrpc/svcauth.h
  *
  * RPC server-side authentication stuff.
  *
  * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
  */
 
-#ifndef _LINUX_SUNRPC_SVCAUTH_H_
-#define _LINUX_SUNRPC_SVCAUTH_H_
+#ifndef _freax_SUNRPC_SVCAUTH_H_
+#define _freax_SUNRPC_SVCAUTH_H_
 
-#include <linux/string.h>
-#include <linux/sunrpc/msg_prot.h>
-#include <linux/sunrpc/cache.h>
-#include <linux/sunrpc/gss_api.h>
-#include <linux/hash.h>
-#include <linux/stringhash.h>
-#include <linux/cred.h>
+#include <freax/string.h>
+#include <freax/sunrpc/msg_prot.h>
+#include <freax/sunrpc/cache.h>
+#include <freax/sunrpc/gss_api.h>
+#include <freax/hash.h>
+#include <freax/stringhash.h>
+#include <freax/cred.h>
 
 struct svc_cred {
 	kuid_t			cr_uid;
@@ -178,4 +178,4 @@ static inline unsigned long hash_mem(char const *buf, int length, int bits)
 	return full_name_hash(NULL, buf, length) >> (32 - bits);
 }
 
-#endif /* _LINUX_SUNRPC_SVCAUTH_H_ */
+#endif /* _freax_SUNRPC_SVCAUTH_H_ */

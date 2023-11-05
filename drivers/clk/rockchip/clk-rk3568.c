@@ -4,12 +4,12 @@
  * Author: Elaine Zhang <zhangqing@rock-chips.com>
  */
 
-#include <linux/clk-provider.h>
-#include <linux/module.h>
-#include <linux/of.h>
-#include <linux/of_address.h>
-#include <linux/platform_device.h>
-#include <linux/syscore_ops.h>
+#include <freax/clk-provider.h>
+#include <freax/module.h>
+#include <freax/of.h>
+#include <freax/of_address.h>
+#include <freax/platform_device.h>
+#include <freax/syscore_ops.h>
 #include <dt-bindings/clock/rk3568-cru.h>
 #include "clk.h"
 
